@@ -9,11 +9,6 @@ const config: Config = {
   tagline: 'HarmonyOS OH API Documentation',
   favicon: 'img/favicon.ico',
 
-  future: {
-    v4: true,
-    faster: false,
-  },
-
   url: 'https://designer-docs.example.com',
   baseUrl: '/',
 
