@@ -1,0 +1,67 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted, linux, x64]
+    timeout-minutes: 360
+    env:
+      HTTP_PROXY: 'http://127.0.0.1:7890'
+      HTTPS_PROXY: 'http://127.0.0.1:7890'
+    steps:
+      - name: Checkout
+        run: |
+          rm -f .git/shallow.lock .git/index.lock 2>/dev/null
+          if [ -d .git ]; then
+            git fetch origin main --depth=1
+            git reset --hard origin/main
+          else
+            git clone --depth=1 --branch main \
+              https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git .
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Setup swap
+        run: |
+          sudo swapoff /swapfile 2>/dev/null || true
+          sudo rm -f /swapfile
+          sudo fallocate -l 16G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+
+      - name: Build
+        run: npx docusaurus build --no-minify
+        env:
+          NODE_OPTIONS: '--max-old-space-size=16384'
+          DOCUSAURUS_SSG_CONCURRENCY: '32'
+
+      - name: Deploy to Netlify
+        run: |
+          if ! command -v netlify &> /dev/null; then
+            npm install -g netlify-cli
+          fi
+          netlify deploy \
+            --prod \
+            --dir=build \
+            --message "Deploy ${{ github.sha }}"
+        timeout-minutes: 360
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          HTTP_PROXY: ''
+          HTTPS_PROXY: ''
