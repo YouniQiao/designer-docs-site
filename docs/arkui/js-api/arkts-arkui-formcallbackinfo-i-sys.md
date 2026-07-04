@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FormCallbackInfo (System API)
 
 Represents the parameters for obtaining a widget ID (**formId**) when querying or uninstalling a widget.

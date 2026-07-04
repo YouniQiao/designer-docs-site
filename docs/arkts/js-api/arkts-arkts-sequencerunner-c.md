@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SequenceRunner
 
 Implements a serial queue, in which all tasks are executed in sequence.

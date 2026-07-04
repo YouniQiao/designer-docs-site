@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoAdComponent
 
 本模块提供展示轮播广告的能力。

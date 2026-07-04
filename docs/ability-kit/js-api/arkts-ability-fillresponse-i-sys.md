@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FillResponse (System API)
 
 Defines the information about the response to an auto-fill request.

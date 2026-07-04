@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksRsaPssSaltLenType
 
 表示Rsa在签名验签、padding为pss时需指定的salt_len类型。

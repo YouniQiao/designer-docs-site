@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AlternateIconInfo
 
 描述应用备用图标信息。

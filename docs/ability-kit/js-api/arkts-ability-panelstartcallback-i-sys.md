@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PanelStartCallback (System API)
 
 The callback of start vertical panel.

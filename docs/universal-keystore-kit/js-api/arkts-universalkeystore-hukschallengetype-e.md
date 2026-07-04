@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksChallengeType
 
 Enumerates the types of the challenges generated when a key is used.

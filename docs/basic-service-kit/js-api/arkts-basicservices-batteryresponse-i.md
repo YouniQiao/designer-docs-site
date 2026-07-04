@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BatteryResponse
 
 Defines a response that returns the charging status and remaining power of the device.

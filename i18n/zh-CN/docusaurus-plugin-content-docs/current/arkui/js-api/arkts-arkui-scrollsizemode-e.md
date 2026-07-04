@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollSizeMode
 
 半模态面板上下滑动时的内容更新方式。

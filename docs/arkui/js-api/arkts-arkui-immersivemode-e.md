@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImmersiveMode
 
 Enumerates the display area modes of the dialog box overlay within a page.

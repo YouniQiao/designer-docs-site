@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Constants (System API)
 
 ## TIMER_TYPE_EXACT

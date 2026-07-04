@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConstraintSizeOptions
 
 Defines the constrain size options.

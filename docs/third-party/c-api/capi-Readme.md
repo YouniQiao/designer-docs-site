@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [types.h](capi-types-h.md)
     - [queue.h](capi-queue-h.md)

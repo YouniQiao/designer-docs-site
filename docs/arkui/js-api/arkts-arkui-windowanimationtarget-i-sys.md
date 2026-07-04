@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowAnimationTarget (System API)
 
 Window animation target.

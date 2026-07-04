@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EdgeLightMode（系统接口）
 
 边缘光效动画模式枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResultSet
 
 Provides APIs to access the result set obtained by querying the RDB store. This result set is the collection of results returned with the **query()** method called. The **ResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. For the following APIs, you should use either [query] {@link @ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)}, [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), [remoteQuery] {@link @ohos.data.relationalStore:relationalStore.RdbStore.remoteQuery(device: string, table: string)} , or [queryLockedRow](arkts-arkdata-rdbstore-i.md#querylockedrow-1) to obtain the **ResultSet** instance first, and then use this instance to call the corresponding method.

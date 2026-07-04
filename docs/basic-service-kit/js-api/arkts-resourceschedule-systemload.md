@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.resourceschedule.systemload
 
 This module provides the capability to get systemLoad.

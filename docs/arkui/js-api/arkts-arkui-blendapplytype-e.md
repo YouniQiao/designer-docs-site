@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlendApplyType
 
 Defines how to apply the specified blend mode to the content of a view.

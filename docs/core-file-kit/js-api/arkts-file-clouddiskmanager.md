@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.file.cloudDiskManager
 
 This module enables the File Manager to obtain the sync root information registered by third-party cloud disks.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuAlignType
 
 Enumerates drop-down menu alignment modes.

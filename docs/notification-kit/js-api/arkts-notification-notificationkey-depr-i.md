@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationKey
 
 > **NOTE** > This API is supported since API version 7 and deprecated since API version 9. <!--Del-->You are advised to use > [notificationManager.NotificationKey](arkts-notification-notificationkey-i-sys.md#notificationkey).<! > --DelEnd-->

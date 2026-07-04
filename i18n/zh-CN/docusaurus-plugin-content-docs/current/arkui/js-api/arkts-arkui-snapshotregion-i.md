@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SnapshotRegion
 
 定义组件截图的矩形区域。

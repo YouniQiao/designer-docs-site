@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipV2
 
 V2状态管理Chip组件。

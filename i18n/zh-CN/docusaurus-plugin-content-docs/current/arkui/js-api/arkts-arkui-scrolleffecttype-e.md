@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollEffectType
 
 滑动模糊效果类型。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AeadParamsSpec
 
 用于AEAD（带关联数据的认证加密）对称加解密的 [init()](arkts-cryptoarchitecture-cipher-i.md#init-4)方法参数，继承自 [ParamsSpec](arkts-cryptoarchitecture-paramsspec-i.md#paramsspec)。 适用于[AES算法](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#aes)的CCM和GCM分组模式。 适用于[SM4算法](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#sm4)的GCM分组模式。 适用于[ChaCha20-Poly1305算法](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#chacha20) 分组模式。 > **说明：** > > 在AES-CCM模式下使用AeadParamsSpec加密时： > - 如果加密时指定了tag长度，解密时也必须传入相同的长度。 > > - CCM模式下[update](arkts-cryptoarchitecture-cipher-i.md#update-1)与[doFinal](arkts-cryptoarchitecture-cipher-i.md#dofinal-1)只能调用其 > 中一个进行加密或者解密，且每个方法只能调用一次。

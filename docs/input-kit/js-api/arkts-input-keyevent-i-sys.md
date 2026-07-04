@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyEvent (System API)
 
 Defines the key event to inject.

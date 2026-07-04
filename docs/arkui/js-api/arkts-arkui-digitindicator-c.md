@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DigitIndicator
 
 A constructor used to create a **DigitIndicator** object. It inherits from [Indicator](arkts-arkui-indicator-c.md#indicator). > **NOTE** > > When pages are turned by group, the child nodes displayed in the digit-style navigation indicator do not count > placeholder nodes. > > The maximum value of [maxFontScale](TextAttribute#maxFontScale) for the digit-style navigation indicator is > **2**. > > The mirror display of the page number depends on the RTL status of the system.

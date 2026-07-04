@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DisplaySourceMode
 
 Enumerates the display modes for screen content.

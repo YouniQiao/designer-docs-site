@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReturnMode
 
 Enumerates the modes that define how the execution result of an intent is returned to the intent initiator.

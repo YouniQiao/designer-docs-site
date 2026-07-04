@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DepthVector3 (System API)
 
 3D vector in depth space.

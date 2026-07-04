@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ServiceProfileInfo（系统接口）
 
 服务配置信息。根据云端返回的数据填充。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UndoStyle
 
 撤销还原是否保留原样式选项。

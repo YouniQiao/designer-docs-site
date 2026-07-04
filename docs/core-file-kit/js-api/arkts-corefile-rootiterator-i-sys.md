@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RootIterator (System API)
 
 Provides an iterator object of the device root directory.

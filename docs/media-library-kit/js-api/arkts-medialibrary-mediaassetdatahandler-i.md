@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaAssetDataHandler
 
 Media asset handler, which can be used to customize the media asset processing logic in onDataPrepared.

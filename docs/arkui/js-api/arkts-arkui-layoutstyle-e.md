@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LayoutStyle
 
 Enumerates the tab layout styles of the tab bar when not scrolling in scrollable mode.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NewVersionInfo (System API)
 
 Represents information about the new version.

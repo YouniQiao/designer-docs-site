@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsGeneratorOptions
 
 表示生成Cms签名结果的配置选项。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [asset_api.h](capi-asset-api-h.md)
     - [asset_type.h](capi-asset-type-h.md)

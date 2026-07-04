@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SymbolItemOptions
 
 ChipGroup的尾部图标选项类型。

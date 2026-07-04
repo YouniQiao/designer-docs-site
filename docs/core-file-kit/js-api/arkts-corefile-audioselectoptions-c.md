@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioSelectOptions
 
 Defines the options for selecting audio clips.

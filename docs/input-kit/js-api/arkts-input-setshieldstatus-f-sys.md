@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # setShieldStatus (System API)
 
 ## Modules to Import

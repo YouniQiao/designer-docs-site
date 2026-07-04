@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureEvent
 
 定义手势的事件信息。继承自[BaseEvent](arkts-arkui-baseevent-i.md#baseevent)。

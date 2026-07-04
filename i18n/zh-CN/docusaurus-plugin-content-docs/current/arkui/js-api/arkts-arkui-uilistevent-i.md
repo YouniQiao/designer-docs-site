@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIListEvent
 
 frameNode中[getEvent('List')](FrameNode:typeNode.getEvent(node: FrameNode, nodeType: 'List'))方法的返回值，可用于给List节点设置 滚动事件。 UIListEvent继承于[UIScrollableCommonEvent](arkts-arkui-uiscrollablecommonevent-i.md#uiscrollablecommonevent)。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TimePickerResult
 
 Describes a time in 24-hour format.

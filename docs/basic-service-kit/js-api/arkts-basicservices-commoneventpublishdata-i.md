@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonEventPublishData
 
 The **CommonEventPublishData** module provides APIs for defining common event content and attributes. > **NOTE** > > If there is no restriction, any application can subscribe to common events and read related information. In this > case, sensitive information should not be carried in common events. The **subscriberPermissions** and > **bundleName** parameters of this module can be used to restrict the receiving scope of common events.

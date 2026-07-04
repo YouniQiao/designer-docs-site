@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeySource
 
 定义触发按键事件的设备类型。

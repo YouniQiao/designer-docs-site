@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeviceBasicInfo
 
 分布式设备基本信息。

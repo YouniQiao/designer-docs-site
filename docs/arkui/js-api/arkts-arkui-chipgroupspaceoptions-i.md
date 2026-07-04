@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipGroupSpaceOptions
 
 Defines the left and right padding of the chip group, and the spacing between chips.

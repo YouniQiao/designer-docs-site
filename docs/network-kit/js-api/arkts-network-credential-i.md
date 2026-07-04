@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Credential
 
 HTTP credential. Some server or proxy server need this.

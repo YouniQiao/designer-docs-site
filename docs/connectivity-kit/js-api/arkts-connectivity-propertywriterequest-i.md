@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PropertyWriteRequest
 
 Describes the parameters of the SSAP client's property write request.

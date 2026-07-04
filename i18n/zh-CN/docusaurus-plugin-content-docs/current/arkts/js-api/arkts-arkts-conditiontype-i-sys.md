@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConditionType（系统接口）
 
 提供 ConditionType 类型，包括 timeout、killSignal、maxBuffer。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RectChangeReason
 
 窗口矩形（窗口位置及窗口大小）变化的原因。

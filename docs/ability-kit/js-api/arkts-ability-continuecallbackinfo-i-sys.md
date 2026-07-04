@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContinueCallbackInfo (System API)
 
 Defines the information about the callback that is triggered for mission continuation state changes.

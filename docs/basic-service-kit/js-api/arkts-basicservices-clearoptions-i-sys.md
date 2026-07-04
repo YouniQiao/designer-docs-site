@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ClearOptions (System API)
 
 Represents options for clearing errors.

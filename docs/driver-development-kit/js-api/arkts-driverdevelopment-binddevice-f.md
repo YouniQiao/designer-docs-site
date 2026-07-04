@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # bindDevice
 
 ## Modules to Import
@@ -101,7 +106,8 @@ Binds a peripheral device based on the device information returned by **queryDev
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;{deviceId: number;    remote: rpc.IRemoteObject;}&gt; |  |
+| Promise&lt;{deviceId: number;
+    remote: rpc.IRemoteObject;}&gt; |  |
 
 **Error codes:**
 

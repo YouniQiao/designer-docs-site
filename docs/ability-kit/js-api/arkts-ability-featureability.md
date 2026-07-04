@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.ability.featureAbility
 
 A Feature Ability represents an ability with a UI and is designed to interact with users.

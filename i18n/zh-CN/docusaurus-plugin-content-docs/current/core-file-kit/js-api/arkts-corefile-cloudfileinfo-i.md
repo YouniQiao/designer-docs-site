@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CloudFileInfo
 
 应用本地和云端文件个数以及大小信息。

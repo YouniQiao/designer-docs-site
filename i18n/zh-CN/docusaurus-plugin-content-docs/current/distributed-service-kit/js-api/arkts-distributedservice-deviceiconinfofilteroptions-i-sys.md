@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeviceIconInfoFilterOptions（系统接口）
 
 设备图标信息过滤选项。

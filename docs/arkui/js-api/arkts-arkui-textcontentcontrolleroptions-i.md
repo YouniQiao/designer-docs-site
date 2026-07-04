@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextContentControllerOptions
 
 Provides configuration options for text insertion operations in text input components.

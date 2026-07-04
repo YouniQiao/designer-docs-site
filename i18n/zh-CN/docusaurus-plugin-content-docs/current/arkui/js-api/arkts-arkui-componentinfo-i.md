@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ComponentInfo
 
 组件大小、位置、平移缩放旋转及仿射矩阵属性信息。

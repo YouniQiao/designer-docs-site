@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # domain
 
 Provides domain name constants. | Name| Type | Read Only | Description | | --- | ------ | ------ | ---------- | | OS | string | Yes| System domain.|

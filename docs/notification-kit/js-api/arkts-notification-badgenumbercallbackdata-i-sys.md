@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BadgeNumberCallbackData (System API)
 
 Describes the badge number of the application has changed.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SegmentButtonItemOptionsArray
 
 用于保存按钮信息的数组。 > **说明：** > > SegmentButtonItemOptionsArray仅支持保存2到5个按钮信息元素。

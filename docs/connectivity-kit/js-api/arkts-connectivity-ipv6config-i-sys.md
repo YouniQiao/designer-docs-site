@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Ipv6Config (System API)
 
 Wi-Fi Ipv6 configuration information.

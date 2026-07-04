@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # inputmethod_private_command_capi.h
 
 ## Overview

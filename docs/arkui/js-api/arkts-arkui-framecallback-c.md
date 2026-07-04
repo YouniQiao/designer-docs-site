@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FrameCallback
 
 Implements the API for setting the task that needs to be executed during the next frame rendering. > **NOTE** > > - The following APIs must be used in conjunction with [postFrameCallback](arkts-arkui-uicontext-c.md#postframecallback-1) and > [postDelayedFrameCallback](arkts-arkui-uicontext-c.md#postdelayedframecallback-1) from [UIContext](arkts-arkui-uicontext.md). > Extend this class and override either the [onFrame](arkts-arkui-framecallback-c.md#onframe-1) or > [onIdle](arkts-arkui-framecallback-c.md#onidle-1) method to implement specific service logic.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.userIAM.companionDeviceAuth
 
 The **companionDeviceAuth** module provides capabilities such as companion device query, subscription, and service scope management for system applications. A companion device is an identity authentication credential added by a user on the main device. If the conditions are met, the companion device can interact with the main device to authenticate the user identity. The companion device can be applied in such scenarios as a watch as a companion device to unlock a mobile phone or a headset as a companion device to execute voice commands without unlocking the mobile phone.

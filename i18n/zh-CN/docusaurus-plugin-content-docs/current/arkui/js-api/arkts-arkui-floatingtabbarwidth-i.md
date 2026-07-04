@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatingTabBarWidth
 
 提供了一个接口，用于设置不同断点处的tab宽度的浮动栏宽度。

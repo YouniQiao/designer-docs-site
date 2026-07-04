@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CameraBufferCrop (System API)
 
 Camera buffer crop parameters.

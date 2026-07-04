@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReturningConfig
 
 Specifies the list of field names to return after returning-related APIs are called and the maximum number of records allowed in the result set.

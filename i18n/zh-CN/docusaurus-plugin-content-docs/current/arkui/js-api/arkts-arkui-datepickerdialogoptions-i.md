@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DatePickerDialogOptions
 
 日期选择器弹窗选项。 继承自[DatePickerOptions](arkts-arkui-datepickeroptions-i.md#datepickeroptions)。

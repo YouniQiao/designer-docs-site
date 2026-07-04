@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Window
 
 Represents a window instance, which is the basic unit managed by the window manager. In the following API examples, you must use [getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1), [createWindow()](arkts-arkui-createwindow-f.md#createwindow-1), or [findWindow()](arkts-arkui-findwindow-f.md#findwindow-1) to obtain a Window instance (named windowClass in this example) and then call a method in this instance.

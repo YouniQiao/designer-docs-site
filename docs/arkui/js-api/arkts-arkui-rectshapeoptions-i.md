@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RectShapeOptions
 
 Represents the parameter of the constructor used to create a **RectShape** object. This API inherits from [ShapeSize](arkts-arkui-shapesize-i.md#shapesize).

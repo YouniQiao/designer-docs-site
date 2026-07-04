@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIEnvAvoidAreaVP
 
 Describes the information about the window avoidance area in units of vp, which requires careful attention during [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout) adaptation.

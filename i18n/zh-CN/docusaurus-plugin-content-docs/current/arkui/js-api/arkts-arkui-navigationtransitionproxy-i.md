@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavigationTransitionProxy
 
 自定义转场动画代理对象。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AssetLoader (System API)
 
 Provides APIs for uploading and downloading assets.

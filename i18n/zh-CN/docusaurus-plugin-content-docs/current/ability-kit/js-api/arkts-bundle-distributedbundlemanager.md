@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.distributedBundleManager
 
 本模块提供分布式应用的管理能力。 > **说明：** > > 本模块为系统接口。

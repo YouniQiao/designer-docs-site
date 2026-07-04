@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileSpec
 
 Provides the file information of a table item.

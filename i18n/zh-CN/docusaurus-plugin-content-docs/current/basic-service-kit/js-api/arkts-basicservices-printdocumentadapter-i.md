@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrintDocumentAdapter
 
 第三方应用程序实现此接口来渲染要打印的文件。

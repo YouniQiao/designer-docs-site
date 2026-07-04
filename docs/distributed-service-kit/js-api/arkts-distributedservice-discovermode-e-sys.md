@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DiscoverMode (System API)
 
 Enumerates the device discovery modes.

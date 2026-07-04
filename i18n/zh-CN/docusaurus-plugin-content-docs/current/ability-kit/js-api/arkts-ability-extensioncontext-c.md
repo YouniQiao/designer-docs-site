@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExtensionContext
 
 ExtensionContext是[ExtensionAbility](arkts-ability-extensionability-c.md#extensionability)的上下文环境，继承自 [Context](../../../../reference/apis-ability-kit/js-apis-inner-application-context.md#context)。 ExtensionContext模块提供访问特定[ExtensionAbility](arkts-ability-extensionability-c.md#extensionability)的资源的能力。

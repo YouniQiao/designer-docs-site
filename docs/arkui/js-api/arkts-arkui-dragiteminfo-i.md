@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragItemInfo
 
 Defines the information about the dragged item during drag.

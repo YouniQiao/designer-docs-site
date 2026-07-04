@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ComponentObserver
 
 The ComponentObserver is used to listen for layout, draw and drawChildren events.

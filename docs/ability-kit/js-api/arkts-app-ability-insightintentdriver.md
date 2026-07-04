@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.insightIntentDriver
 
 The module provides APIs for executing intent calls. The system executes intent calls based on user interaction and more. > **NOTE** > > Starting from API version 20, this module supports application navigation using intents defined by the > [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) > decorator.

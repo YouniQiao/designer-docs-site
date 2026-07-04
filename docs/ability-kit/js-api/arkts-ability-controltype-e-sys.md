@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ControlType (System API)
 
 Enumerates the control type of application disposal.

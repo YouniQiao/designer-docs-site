@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HttpRequestOptions
 
 Specifies the type and value range of the optional parameters in the HTTP request.

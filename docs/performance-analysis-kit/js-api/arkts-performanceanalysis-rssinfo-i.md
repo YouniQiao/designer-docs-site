@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RssInfo
 
 Describes the physical memory information of the application process.

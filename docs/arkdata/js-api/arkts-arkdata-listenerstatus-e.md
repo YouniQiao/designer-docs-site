@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListenerStatus
 
 Enumerates the status codes returned when data is obtained from the UDMF.

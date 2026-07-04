@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebKeyboardOptions
 
 Represents the return value of the callback that intercepts the soft keyboard started from editable elements on the web page. You can specify the types of the keyboard, and return the value to the Web kernel to control the startup of different types of soft keyboards.

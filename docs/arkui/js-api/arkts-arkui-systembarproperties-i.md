@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemBarProperties
 
 Describes the properties of the status bar<!--Del--> and three-button navigation bar<!--DelEnd-->.

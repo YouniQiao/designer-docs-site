@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavigationDividerStyle
 
 Navigation分割线颜色及上下边距。

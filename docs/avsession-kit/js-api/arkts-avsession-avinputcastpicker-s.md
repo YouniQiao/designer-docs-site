@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVInputCastPicker
 
 Picker used to show available input devices.

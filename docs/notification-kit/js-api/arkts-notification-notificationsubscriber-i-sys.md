@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationSubscriber (System API)
 
 Provides callback methods for subscribers to receive and cancel notifications.

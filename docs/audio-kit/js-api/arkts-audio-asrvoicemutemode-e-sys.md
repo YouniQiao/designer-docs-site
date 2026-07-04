@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AsrVoiceMuteMode (System API)
 
 ASR voice mute mode.

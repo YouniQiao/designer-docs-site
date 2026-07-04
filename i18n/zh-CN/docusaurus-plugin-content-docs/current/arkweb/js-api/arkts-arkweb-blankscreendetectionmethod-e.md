@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlankScreenDetectionMethod
 
 白屏检测使用的检测策略的方法。

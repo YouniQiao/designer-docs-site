@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadConfig
 
 下载任务的配置信息。

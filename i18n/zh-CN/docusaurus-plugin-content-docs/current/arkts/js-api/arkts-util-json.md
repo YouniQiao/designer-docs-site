@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.util.json
 
 JSON模块提供了一系列API，用于将JSON文本转换为JSON对象或值，以及将对象转换为JSON文本。

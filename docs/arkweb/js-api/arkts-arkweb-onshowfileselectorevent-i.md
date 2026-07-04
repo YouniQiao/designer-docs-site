@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnShowFileSelectorEvent
 
 Represents the callback invoked to notify the file selector result.

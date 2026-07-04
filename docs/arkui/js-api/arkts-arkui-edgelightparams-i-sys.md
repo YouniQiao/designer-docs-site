@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EdgeLightParams (System API)
 
 Defines the parameters of the edge light effect.

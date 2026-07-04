@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SpatialAudioSourceType (System API)
 
 Enumerates the spatial audio source type.

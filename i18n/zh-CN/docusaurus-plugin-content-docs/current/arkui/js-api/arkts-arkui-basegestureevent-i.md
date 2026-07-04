@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BaseGestureEvent
 
 基础手势事件类型。继承自[BaseEvent](arkts-arkui-baseevent-i.md#baseevent)。

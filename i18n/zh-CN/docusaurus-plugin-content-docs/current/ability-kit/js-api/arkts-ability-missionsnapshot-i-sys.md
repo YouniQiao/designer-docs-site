@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MissionSnapshot（系统接口）
 
 一个任务的任务快照对象，可以通过 [missionManager.getMissionSnapShot](arkts-ability-getmissionsnapshot-f-sys.md#getmissionsnapshot-1) 获取。

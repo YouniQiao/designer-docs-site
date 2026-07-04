@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Mask（系统接口）
 
 Mask效果类，作为Filter以及VisualEffect的输入使用。

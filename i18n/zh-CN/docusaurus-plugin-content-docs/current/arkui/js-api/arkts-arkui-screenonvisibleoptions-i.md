@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScreenOnVisibleOptions
 
 定义屏幕上可见接口的选项。

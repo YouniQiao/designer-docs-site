@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # XComponentController
 
 Defines the controller of the XComponent. You can bind the controller to the XComponent to call the component APIs through the controller.

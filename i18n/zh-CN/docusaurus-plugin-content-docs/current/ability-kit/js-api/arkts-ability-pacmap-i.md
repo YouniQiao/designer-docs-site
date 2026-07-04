@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PacMap
 
 用于存储数据的PacMap类型。

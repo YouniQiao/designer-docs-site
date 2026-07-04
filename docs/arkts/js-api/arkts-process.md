@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.process
 
 The **process** module provides process management APIs, for example, APIs for obtaining process information.

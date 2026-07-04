@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StyledNumberFormatOptions
 
 Represents optional configuration items for the **NumberFormat** object.

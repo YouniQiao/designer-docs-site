@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ParagraphStyle
 
 Describes the text paragraph style. Except the first paragraph, all paragraphs are formed using the escape character '\n'. The style of a paragraph is the one (if any) set for the first element or the paragraph style of the bound component. Before API version 26.0.0, if the first placeholder in a paragraph of the styled string is a [CustomSpan](arkts-arkui-customspan-c.md#customspan) or [ImageAttachment](arkts-arkui-imageattachment-c.md#imageattachment), the paragraph style set for that paragraph does not take effect. From API version 26.0.0, the paragraph style takes effect.

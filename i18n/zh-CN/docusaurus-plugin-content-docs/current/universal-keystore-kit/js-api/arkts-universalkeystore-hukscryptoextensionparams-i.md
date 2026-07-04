@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksCryptoExtensionParams
 
 定义API中使用的选项。

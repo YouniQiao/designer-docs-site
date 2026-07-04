@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RoundRectShapeOptions
 
 RectShape 带有半径的构造函数参数。 继承自[ShapeSize](arkts-arkui-shapesize-i.md#shapesize)。

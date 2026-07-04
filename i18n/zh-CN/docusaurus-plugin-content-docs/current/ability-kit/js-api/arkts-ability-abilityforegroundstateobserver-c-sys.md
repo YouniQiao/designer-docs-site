@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityForegroundStateObserver（系统接口）
 
 定义应用前后台状态监听。

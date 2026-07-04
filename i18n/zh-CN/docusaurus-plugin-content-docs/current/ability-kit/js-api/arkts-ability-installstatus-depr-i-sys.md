@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InstallStatus（系统接口）
 
 应用程序安装卸载的结果。

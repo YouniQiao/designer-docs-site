@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScriptItem
 
 Defines the contents of the JavaScript to be injected.

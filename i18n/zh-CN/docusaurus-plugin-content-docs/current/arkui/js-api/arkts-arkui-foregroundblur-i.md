@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ForegroundBlur
 
 设置前景模糊效果。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContactType (System API)
 
 Indicates the contact types.

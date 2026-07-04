@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AvoidAreaInfo
 
 Represents the information about the avoidance area of the window.

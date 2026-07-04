@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MicrophoneCaptureStateChangeInfo
 
 Defines the state information of the microphone before and after the callback is triggered.

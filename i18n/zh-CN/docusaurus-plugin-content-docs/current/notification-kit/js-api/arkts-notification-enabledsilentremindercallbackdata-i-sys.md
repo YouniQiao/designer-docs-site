@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EnabledSilentReminderCallbackData（系统接口）
 
 应用通知静默提醒使能状态变化。

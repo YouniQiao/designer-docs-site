@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SyntaxErrorConstructor
 
 **Inheritance/Implementation:** SyntaxErrorConstructor extends [ErrorConstructor](arkts-na-errorconstructor-i.md#errorconstructor)

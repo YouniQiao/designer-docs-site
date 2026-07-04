@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RequestInfo
 
 Defines the request information, which is used as an input parameter for binding the modal dialog box.

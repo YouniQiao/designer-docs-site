@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WakeupIntelligentVoiceEngineCallbackInfo (System API)
 
 Describes wakeup intelligent voice engine callback information.

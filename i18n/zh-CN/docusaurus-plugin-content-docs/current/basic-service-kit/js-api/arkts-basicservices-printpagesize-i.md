@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrintPageSize
 
 定义打印页面尺寸的接口。

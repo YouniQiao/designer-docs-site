@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChildProcess (System API)
 
 The childprocess object can be used to create a new process.

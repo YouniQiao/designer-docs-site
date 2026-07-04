@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PositionRelativeToDoor (System API)
 
 Enum for identification result inside and outside the door

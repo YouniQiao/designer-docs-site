@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ToastShowMode
 
 Enumerates display modes for toasts. By default, the toast is displayed within the application and supports display in subwindows.

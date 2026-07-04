@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Channel
 
 Channel represents an [ISO 7816-4] channel opened to a SE. It can be either a logical channel or the basic channel.

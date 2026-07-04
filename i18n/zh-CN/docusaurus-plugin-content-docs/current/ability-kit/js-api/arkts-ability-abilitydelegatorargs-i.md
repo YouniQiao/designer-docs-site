@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityDelegatorArgs
 
 AbilityDelegatorArgs模块提供在应用程序执行测试用例期间，获取测试用例参数AbilityDelegatorArgs对象的能力。 > **说明：** > > 本模块接口仅可在[单元测试框架](../../../../application-test/unittest-guidelines.md)中使用。

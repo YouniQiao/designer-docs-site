@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavDestinationActiveReason
 
 Enumerates reasons for the activation state changes of the **NavDestination** component.

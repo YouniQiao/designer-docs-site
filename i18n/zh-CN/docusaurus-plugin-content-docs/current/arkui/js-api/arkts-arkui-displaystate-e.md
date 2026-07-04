@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DisplayState
 
 显示设备的状态枚举。

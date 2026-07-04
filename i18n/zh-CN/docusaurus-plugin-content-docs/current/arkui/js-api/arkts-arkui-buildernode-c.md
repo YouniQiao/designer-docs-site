@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BuilderNode
 
 class BuilderNode\<Args extends Object[]> BuilderNode支持通过无状态的UI方法[@Builder](../../../../ui/state-management/arkts-builder.md)生成组件树，并持有组件树的根节点。不支持定义为状态变量。 BuilderNode中持有的FrameNode仅用于将该BuilderNode作为子节点挂载到其他FrameNode上。对BuilderNode持有的FrameNode进行属性设置与子节点操作可能会产生未定义行为，因此不建议通过 BuilderNode的[getFrameNode](arkts-arkui-buildernode-c.md#getframenode-1)方法和[FrameNode](arkts-arkui-framenode-c.md#framenode)的 [getRenderNode](arkts-arkui-framenode-c.md#getrendernode-1)方法获取RenderNode，并通过[RenderNode](arkts-arkui-rendernode-c.md#rendernode)的接 口对其进行属性设置与子节点操作。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MeasureText
 
 定义测算文本相关接口。

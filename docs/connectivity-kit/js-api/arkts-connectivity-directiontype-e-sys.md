@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DirectionType (System API)
 
 Enum for file transfer direction.

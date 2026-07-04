@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageLoadResult
 
 图片数据加载成功和解码成功触发回调时返回的对象。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthForm (System API)
 
 Enumerates the device authentication types.

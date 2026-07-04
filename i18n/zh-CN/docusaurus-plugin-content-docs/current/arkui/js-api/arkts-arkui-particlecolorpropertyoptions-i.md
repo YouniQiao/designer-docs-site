@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ParticleColorPropertyOptions
 
 设置粒子颜色属性更新器配置。

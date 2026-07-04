@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EnrolledCredInfo（系统接口）
 
 表示已注册凭据的信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowMode
 
 启动UIAbility时窗口的创建模式，类型为枚举。可配合 [startAbility](arkts-ability-uiabilitycontext-c.md#startability-3) 方法使用。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.abilityDelegatorRegistry
 
 **AbilityDelegatorRegistry**, a module of the automatic test framework, is used to obtain [AbilityDelegator](application/AbilityDelegator:AbilityDelegator) and [AbilityDelegatorArgs](application/abilityDelegatorArgs:AbilityDelegatorArgs) objects. **AbilityDelegator** provides APIs for creating [AbilityMonitor](application/AbilityMonitor:AbilityMonitor) objects, which can be used to listen for ability lifecycle changes. **AbilityDelegatorArgs** provides APIs for obtaining test parameters. > **NOTE** > > The APIs of this module can be used only in [JsUnit](../../../../application-test/unittest-guidelines.md).

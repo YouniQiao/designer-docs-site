@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InputDeviceData
 
 描述输入设备的信息。

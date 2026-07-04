@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # display
 
 Provides methods for setting the display effect, including the font size, screen brightness, screen rotation, animation factor, and display color.

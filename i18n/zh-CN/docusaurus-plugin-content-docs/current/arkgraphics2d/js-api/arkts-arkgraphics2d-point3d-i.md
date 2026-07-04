@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Point3d
 
 三维的坐标点。继承自[Point](arkts-arkgraphics2d-point-i.md#point)。

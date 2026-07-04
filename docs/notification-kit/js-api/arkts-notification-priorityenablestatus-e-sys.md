@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PriorityEnableStatus (System API)
 
 Describes the enabling status of the priority notification for an application.

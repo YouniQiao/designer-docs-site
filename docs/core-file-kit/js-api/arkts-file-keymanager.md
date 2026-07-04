@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.file.keyManager
 
 This module provides common features related to user key management, including user key uninstallation. > **NOTE** > > - This topic describes only the system APIs provided by the module.

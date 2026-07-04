@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuOptions
 
 菜单项的信息，继承自[ContextMenuOptions](arkts-arkui-contextmenuoptions-i.md#contextmenuoptions)。

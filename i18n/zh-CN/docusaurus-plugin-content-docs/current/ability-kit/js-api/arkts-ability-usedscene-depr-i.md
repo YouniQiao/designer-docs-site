@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsedScene
 
 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[UsedScene](arkts-ability-usedscene-depr-i.md#usedscene)替代。 描述权限使用的场景和时机。

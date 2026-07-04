@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SoundPool
 
 音频池提供了系统声音的加载、播放、音量设置、循环设置、停止播放和资源卸载等功能，在调用SoundPool的接口前，需要先通过 [media.createSoundPool](../../../../reference/apis-media-kit/arkts-apis-media-f.md) 创建实例。 > **说明：** > > - 在使用SoundPool实例的方法时，建议开发者注册相关回调，主动获取当前状态变化。 > > - [on('loadComplete')](arkts-media-soundpool-i.md#on-1)：监听资源加载完成。建议开发者监听此回调以确 > 保音频在加载完成后进行播放。 > > - > [on('playFinishedWithStreamId')](arkts-media-soundpool-i.md#on-4)：监听播 > 放完成，同时返回播放结束的音频的streamId。 > > - [on('playFinished')](arkts-media-soundpool-i.md#on-4)：监听播放完成。 > > - [on('error')](arkts-media-soundpool-i.md#on-3)：监听错误事件。 > > - [on('errorOccurred')](arkts-media-soundpool-i.md#on-5)：监听错误事件，同时返回 > [errorInfo](arkts-media-errorinfo-i.md#errorinfo)。 > > - SoundPool目前不支持后台播放、设置音频打断等音频焦点策略和跳过音频头尾的静音帧。SoundPool低时延播放可参考 > [使用SoundPool播放短音频(ArkTS)](../../../../media/media/using-soundpool-for-playback.md)。

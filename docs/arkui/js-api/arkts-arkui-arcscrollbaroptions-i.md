@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArcScrollBarOptions
 
 Represents the parameters used to construct an **ArcScrollBar** component. > **NOTE** > > **ArcScrollBar** must be bound to a scrollable component through **scroller** to achieve synchronization. Only a > one-to-one binding is allowed between **ArcScrollBar** and a scrollable component.

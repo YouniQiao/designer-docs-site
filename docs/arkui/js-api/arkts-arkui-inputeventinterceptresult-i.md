@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InputEventInterceptResult
 
 Input event interception result interface, used by the listener callback [InputEventListener](arkts-arkui-inputeventlistener-t.md#inputeventlistener) to return the interception decision.

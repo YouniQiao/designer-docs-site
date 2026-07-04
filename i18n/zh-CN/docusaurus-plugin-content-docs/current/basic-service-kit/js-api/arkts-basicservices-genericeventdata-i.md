@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GenericEventData
 
 发送事件时传递的泛型数据。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuPosition
 
 Position definition of one component on which the menu will bind and popup.

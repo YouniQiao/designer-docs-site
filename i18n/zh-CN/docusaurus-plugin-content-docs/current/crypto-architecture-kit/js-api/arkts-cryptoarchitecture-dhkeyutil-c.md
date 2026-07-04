@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DHKeyUtil
 
 根据素数P的长度和私钥长度（bit位数）生成DH公共密钥参数。

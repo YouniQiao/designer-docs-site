@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HorizontalAlignParam
 
 定义相对容器的水平对齐规则。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EnvironmentCallback
 
 EnvironmentCallback模块提供对系统环境变化监听回调的能力。

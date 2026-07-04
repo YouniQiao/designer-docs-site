@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileSelectorMode
 
 文件选择器的模式。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.telephony.observer
 
 Monitors telephony state updates of a device, including updates of the network state, signal strength, call state, the data link connection state and others.

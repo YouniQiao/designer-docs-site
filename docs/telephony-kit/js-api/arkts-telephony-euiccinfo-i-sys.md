@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EuiccInfo (System API)
 
 Information related to eUICC chips/devices.

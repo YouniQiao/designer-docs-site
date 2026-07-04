@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AddFilterRule (System API)
 
 Defines the network packet filtering rule to add.

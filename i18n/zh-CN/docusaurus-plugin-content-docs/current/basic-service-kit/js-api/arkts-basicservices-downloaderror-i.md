@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadError
 
 预下载错误回调的返回信息。

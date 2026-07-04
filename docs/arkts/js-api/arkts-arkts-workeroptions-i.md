@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WorkerOptions
 
 Provides options that can be set for the Worker instance to create.

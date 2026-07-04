@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OperationType
 
 枚举，附属的操作类型。

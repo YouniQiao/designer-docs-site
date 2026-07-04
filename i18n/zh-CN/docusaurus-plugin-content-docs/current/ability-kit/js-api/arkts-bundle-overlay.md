@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.overlay
 
 本模块提供overlay特征应用的[OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md#overlaymoduleinfo)信息查询以及禁用使能的能力。 overlay特征应用指应用中包含有overlay资源包，overlay资源包详见 [overlay机制](../../../../quick-start/resource-categories-and-access.md#overlay机制)。 > **说明：** > > 本模块接口仅适用于stage模型，且仅适用于[静态overlay](../../../../quick-start/resource-categories-and-access.md#静态overlay配置方式)。

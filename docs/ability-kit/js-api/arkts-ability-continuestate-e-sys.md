@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContinueState (System API)
 
 Enumerates the mission continuation states.

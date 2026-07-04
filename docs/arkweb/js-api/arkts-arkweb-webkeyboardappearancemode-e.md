@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebKeyboardAppearanceMode
 
 Enum type supplied to {@link keyboardAppearance} for setting the web keyboard appearance mode.

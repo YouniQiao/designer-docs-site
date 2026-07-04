@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MicrophoneCaptureState
 
 定义麦克风使用状态的值。

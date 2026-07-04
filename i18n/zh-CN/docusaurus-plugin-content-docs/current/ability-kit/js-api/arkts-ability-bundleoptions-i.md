@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BundleOptions
 
 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，暂无替代接口。 查询选项，包含userId。

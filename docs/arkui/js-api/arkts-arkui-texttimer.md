@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextTimer
 
 The **TextTimer** component displays timing information and is controlled in text format.

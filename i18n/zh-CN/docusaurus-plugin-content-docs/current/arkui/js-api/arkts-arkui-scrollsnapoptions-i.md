@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollSnapOptions
 
 限位滚动模式对象。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemMemInfo
 
 Describes the system memory information, including the total memory, free memory, and available memory.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Grid properties/events
 
 In addition to [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) and [scrollable component common attributes](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#attributes) , the following attributes are also supported. In addition to [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) and [scrollable component common events](../../../../reference/apis-arkui/arkui-ts/ts-container-scrollable-common.md#events) , the following events are also supported.

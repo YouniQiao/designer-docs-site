@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebBlanklessErrorCode
 
 Enumerates the error codes of the blankless loading.

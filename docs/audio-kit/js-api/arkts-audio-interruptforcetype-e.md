@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InterruptForceType
 
 Enumerates the types of force that causes audio interruption. The force type is obtained when an [InterruptEvent](arkts-audio-interruptevent-i.md#interruptevent) is received. This type specifies whether audio interruption is forcibly performed by the system. The operation information (such as audio pause or stop) can be obtained through [InterruptHint](arkts-audio-interrupthint-e.md#interrupthint). For details about the audio interruption policy, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).

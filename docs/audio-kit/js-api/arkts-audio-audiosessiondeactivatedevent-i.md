@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioSessionDeactivatedEvent
 
 Describes the event indicating that an audio session is deactivated.

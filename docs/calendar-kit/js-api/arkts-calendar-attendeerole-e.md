@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AttendeeRole
 
 Enumerates the attendee role types in a conference event.

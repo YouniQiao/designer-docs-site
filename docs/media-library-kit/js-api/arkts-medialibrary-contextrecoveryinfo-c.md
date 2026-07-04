@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContextRecoveryInfo
 
 Context information of the exit status of PhotoPicker, which can be used for on-site recovery of PhotoPicker next time.

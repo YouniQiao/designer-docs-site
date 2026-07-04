@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppAccountInfo
 
 表示应用账号信息。

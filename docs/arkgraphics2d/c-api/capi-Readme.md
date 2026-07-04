@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [vulkan_ohos.h](capi-vulkan-ohos-h.md)
     - [graphic_error_code.h](capi-graphic-error-code-h.md)

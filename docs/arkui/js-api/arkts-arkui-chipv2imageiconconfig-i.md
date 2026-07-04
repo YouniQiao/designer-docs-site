@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipV2ImageIconConfig
 
 Defines icon common config.

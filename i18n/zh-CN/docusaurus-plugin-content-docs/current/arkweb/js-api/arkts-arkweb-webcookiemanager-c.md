@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebCookieManager
 
 提供了用于管理网页Cookie的方法。

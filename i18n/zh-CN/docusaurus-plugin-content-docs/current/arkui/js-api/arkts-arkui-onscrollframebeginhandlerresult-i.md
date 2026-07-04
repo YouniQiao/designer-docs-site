@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnScrollFrameBeginHandlerResult
 
 onScrollFrameBegin回调返回的实际滚动偏移量。

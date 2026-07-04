@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PageInfo
 
 Represents the page information of the router or navigation destination. If there is no related page information, **undefined** is returned.

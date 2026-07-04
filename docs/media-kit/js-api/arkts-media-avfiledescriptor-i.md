@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVFileDescriptor
 
 Media file descriptor. The caller needs to ensure that the fd is valid and the offset and length are correct.

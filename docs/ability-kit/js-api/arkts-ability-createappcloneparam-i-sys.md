@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CreateAppCloneParam (System API)
 
 Describes the parameters used for creating an application clone.

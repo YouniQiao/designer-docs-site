@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebKeyboardCallbackInfo
 
 Defines the web keyboard callback info related to the {@link onInterceptKeyboardAttach} event.

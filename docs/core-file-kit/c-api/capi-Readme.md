@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [oh_file_share.h](capi-oh-file-share-h.md)
     - [oh_file_uri.h](capi-oh-file-uri-h.md)

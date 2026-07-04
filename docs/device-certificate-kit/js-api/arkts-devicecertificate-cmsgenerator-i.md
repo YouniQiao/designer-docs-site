@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsGenerator
 
 Provides APIs for generating the messages in CMS format. > **NOTE** > > PKCS #7 is a standard syntax for storing signed or encrypted data. CMS is an extension of PKCS #7. PKCS #7 > supports data types including data, signature data, envelope data, signature and envelope data, message digest > data, and encrypted data. It is often used to protect data integrity and confidentiality.

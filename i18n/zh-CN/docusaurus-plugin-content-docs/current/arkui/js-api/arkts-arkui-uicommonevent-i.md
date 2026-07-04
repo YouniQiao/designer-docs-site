@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UICommonEvent
 
 用于设置基础事件回调。方法入参为undefined的时候，重置对应的事件回调。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FinishCallbackType
 
 动画中定义onFinish回调的类型。

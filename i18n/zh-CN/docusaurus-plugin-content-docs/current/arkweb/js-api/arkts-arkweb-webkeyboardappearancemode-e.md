@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebKeyboardAppearanceMode
 
 提供给{@链接键盘外观}的枚举类型，用于设置Web键盘外观模式。

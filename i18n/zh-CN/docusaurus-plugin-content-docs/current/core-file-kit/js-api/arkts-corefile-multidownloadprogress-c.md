@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MultiDownloadProgress
 
 云文件批量缓存的进度信息。

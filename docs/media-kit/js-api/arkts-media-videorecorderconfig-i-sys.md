@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VideoRecorderConfig (System API)
 
 Provides the video recorder configuration definitions.

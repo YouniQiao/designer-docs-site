@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # hid_ddk_types.h
 
 ## 概述

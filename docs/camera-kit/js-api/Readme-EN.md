@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArkTS API<!--arkts-camerakit-->
 
 - [@ohos.multimedia.camera](arkts-multimedia-camera.md)

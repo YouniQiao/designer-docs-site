@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PlaybackSpeed
 
 Enumerates the video playback speeds, which can be passed in the **setSpeed** API.

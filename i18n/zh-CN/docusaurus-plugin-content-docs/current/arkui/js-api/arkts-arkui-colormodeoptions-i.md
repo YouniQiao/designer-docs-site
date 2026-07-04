@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ColorModeOptions
 
 定义截图时所使用的色彩空间。

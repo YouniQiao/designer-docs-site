@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConsumptionType（系统接口）
 
 表示电量消耗类型的枚举值。

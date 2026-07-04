@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UserAuth
 
 Provides APIs for managing the **UserAuth** object.

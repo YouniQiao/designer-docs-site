@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VerticalAlignParam
 
 Defines the vertical align rule of relative container.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FingerprintEvent（系统接口）
 
 指纹手势事件的类型和相对侧边指纹器件的偏移位置。

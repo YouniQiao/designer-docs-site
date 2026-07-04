@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlanklessFrameInterpolationInfo
 
 1.定义插帧状态信息 2.ArkWeb使能白屏插帧优化的场景 设备行为差异:仅支持手机平台，其他平台返回801

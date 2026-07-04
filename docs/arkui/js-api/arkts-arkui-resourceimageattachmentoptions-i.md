@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResourceImageAttachmentOptions
 
 Defines the settings for images of the ResourceStr type.

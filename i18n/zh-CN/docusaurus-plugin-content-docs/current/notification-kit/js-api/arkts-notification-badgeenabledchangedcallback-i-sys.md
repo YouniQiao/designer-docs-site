@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BadgeEnabledChangedCallback
 
 注册应用角标使能状态变化的回调函数类型。 type BadgeEnabledChangedCallback = (data: EnabledNotificationCallbackData) => void

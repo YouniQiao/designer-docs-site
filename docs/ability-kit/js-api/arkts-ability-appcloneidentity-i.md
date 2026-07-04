@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppCloneIdentity
 
 Describes the identity information of an application clone.

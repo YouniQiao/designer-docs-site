@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [purgeable_memory.h](capi-purgeable-memory-h.md)
     - [qos.h](capi-qos-h.md)

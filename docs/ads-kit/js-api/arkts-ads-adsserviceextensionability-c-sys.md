@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AdsServiceExtensionAbility (System API)
 
 Provides the capability of integrating advertising services with vendors.

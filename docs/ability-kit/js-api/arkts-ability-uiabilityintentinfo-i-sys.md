@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIAbilityIntentInfo (System API)
 
 Describes the information of the UIAbility bound to the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadErrorType
 
 端云下载错误类型，为枚举类型。

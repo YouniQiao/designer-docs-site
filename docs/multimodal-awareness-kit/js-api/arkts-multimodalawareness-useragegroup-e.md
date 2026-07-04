@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UserAgeGroup
 
 Enumerates the user age groups, for example, child or adult.

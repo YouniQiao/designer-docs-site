@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HideSensitiveType (System API)
 
 Enumerates the types of media resource information to be hidden from an application.

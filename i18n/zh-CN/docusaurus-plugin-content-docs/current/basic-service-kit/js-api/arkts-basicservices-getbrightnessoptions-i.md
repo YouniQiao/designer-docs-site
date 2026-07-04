@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetBrightnessOptions
 
 获取屏幕亮度的参数对象。

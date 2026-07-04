@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsRecipientInfo
 
 CMS封装数据的接收者信息。 > **说明：** > > 至少需要设置一个接收者。

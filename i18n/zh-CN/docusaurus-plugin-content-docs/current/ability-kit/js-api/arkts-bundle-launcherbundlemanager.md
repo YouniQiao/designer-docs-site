@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.launcherBundleManager
 
 本模块支持launcher应用（桌面有图标的应用）所需的查询能力，支持 [LauncherAbilityInfo](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo)信息的查询。

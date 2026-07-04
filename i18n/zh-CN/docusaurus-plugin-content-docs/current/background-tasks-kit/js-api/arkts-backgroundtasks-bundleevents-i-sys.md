@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BundleEvents（系统接口）
 
 FA模型的使用信息属性集合。

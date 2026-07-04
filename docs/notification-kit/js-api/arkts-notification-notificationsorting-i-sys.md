@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationSorting (System API)
 
 The **NotificationSorting** module provides APIs for defining the sorting information of active notifications. > **NOTE** > > The APIs provided by this module are system APIs.

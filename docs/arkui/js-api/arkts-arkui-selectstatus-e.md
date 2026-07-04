@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectStatus
 
 Enumerates the selection states of check boxes in the check box group.

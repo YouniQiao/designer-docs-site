@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessModeType
 
 Enumerates the access modes to verify. If this parameter is left blank, the system checks whether the file exists.

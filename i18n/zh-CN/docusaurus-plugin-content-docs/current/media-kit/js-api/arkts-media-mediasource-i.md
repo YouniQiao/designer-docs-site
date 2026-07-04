@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaSource
 
 媒体数据信息。来源于 [createMediaSourceWithUrl](arkts-media-createmediasourcewithurl-f.md#createmediasourcewithurl-1) 。 > **说明：** > > - 本Interface首批接口从API version 12开始支持。

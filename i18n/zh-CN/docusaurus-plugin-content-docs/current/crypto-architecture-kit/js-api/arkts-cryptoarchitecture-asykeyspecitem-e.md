@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AsyKeySpecItem
 
 表示密钥参数的枚举。

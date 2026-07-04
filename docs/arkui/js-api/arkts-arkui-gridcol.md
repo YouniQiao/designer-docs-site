@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GridCol
 
 Defines the the new version of grid-container child component.

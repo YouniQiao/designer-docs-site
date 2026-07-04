@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DLPProperty（系统接口）
 
 表示授权相关信息。

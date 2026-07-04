@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Watcher
 
 文件目录变化监听对象。由createWatcher接口获得。

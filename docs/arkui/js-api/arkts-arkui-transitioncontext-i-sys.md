@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransitionContext (System API)
 
 Provides the context for the transition animation.

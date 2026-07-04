@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowChangeType
 
 Enumerates the window change event types that can be listened for.

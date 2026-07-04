@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BrightnessInfo
 
 Describes the screen brightness information. The information comes from the underlying screen data.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.installer
 
 在设备上安装、升级和卸载应用。 > **说明：** > > 本模块为系统接口。

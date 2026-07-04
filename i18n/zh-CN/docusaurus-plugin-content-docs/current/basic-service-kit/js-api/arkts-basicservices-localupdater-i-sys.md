@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocalUpdater（系统接口）
 
 提供本地固件更新功能的工具类。

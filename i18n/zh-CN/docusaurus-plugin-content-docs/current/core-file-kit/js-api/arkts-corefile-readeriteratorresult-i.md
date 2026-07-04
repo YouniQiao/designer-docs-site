@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReaderIteratorResult
 
 文件读取迭代器返回结果，支持ReaderIterator接口使用。

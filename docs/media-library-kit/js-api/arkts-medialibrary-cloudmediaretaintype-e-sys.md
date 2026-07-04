@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CloudMediaRetainType (System API)
 
 Enumerates the modes used for deleting cloud media assets.

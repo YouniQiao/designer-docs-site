@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScaleToFit
 
 Enumerates the modes of scaling a source rectangle into a destination rectangle.

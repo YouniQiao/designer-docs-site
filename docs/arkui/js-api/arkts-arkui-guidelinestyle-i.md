@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GuideLineStyle
 
 Defines the ID, direction, and position of a guideline.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Transform
 
 A special duplex stream that supports data conversion and result output. The **Transform** class inherits from [Duplex](arkts-arkts-duplex-c.md#duplex) and supports all the APIs in **Duplex**.

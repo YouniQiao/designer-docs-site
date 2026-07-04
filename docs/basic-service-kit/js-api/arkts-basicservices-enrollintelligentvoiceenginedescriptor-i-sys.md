@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EnrollIntelligentVoiceEngineDescriptor (System API)
 
 Describes enroll intelligent voice engine.

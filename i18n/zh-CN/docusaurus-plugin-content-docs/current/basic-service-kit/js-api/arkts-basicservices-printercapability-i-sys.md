@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrinterCapability（系统接口）
 
 定义打印能力的接口。

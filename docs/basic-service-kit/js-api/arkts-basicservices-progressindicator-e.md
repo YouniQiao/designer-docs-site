@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ProgressIndicator
 
 Enumerates options for the progress indicator. You can choose whether to use the default progress indicator.

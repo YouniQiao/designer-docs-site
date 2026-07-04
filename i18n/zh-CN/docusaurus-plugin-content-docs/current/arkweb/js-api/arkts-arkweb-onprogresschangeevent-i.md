@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnProgressChangeEvent
 
 定义网页加载进度变化时触发该回调。

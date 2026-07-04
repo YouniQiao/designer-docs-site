@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoProxy (System API)
 
 Photo proxy object, which is used by the camera application to write image data.

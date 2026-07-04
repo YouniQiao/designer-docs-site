@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # QuotaPolicy (System API)
 
 Policies that limit network quota.

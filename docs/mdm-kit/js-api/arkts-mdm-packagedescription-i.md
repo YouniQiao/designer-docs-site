@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PackageDescription
 
 Represents the description of a system update package.

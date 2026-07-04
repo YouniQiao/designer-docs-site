@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IncrementalUpdatePolicy
 
 文本渲染的增量更新策略。

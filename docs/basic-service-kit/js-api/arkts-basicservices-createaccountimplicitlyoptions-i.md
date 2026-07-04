@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CreateAccountImplicitlyOptions
 
 Defines the options for implicitly creating an application account.

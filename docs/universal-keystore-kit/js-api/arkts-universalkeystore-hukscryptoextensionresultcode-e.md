@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksCryptoExtensionResultCode
 
 Enum for crypto extension ability result code, used by HuksCryptoExtensionResult.resultCode.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextPickerOptions
 
 文本选择器的参数说明。

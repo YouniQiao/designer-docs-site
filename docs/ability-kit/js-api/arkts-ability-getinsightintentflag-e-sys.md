@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetInsightIntentFlag (System API)
 
 Enumerates the flags of intent information ([InsightIntentInfo](arkts-ability-insightintentinfo-i-sys.md#insightintentinfo)). It is used in [getAllInsightIntentInfo](arkts-ability-getinsightintentinfobybundlename-f-sys.md#getinsightintentinfobybundlename-1), [getInsightIntentInfoByBundleName](arkts-ability-getinsightintentinfobybundlename-f-sys.md#getinsightintentinfobybundlename-1), and [getInsightIntentInfoByIntentName](arkts-ability-getinsightintentinfobyintentname-f-sys.md#getinsightintentinfobyintentname-1). > **NOTE** > > - For intents developed using a configuration file, the full and brief information queried through the preceding > APIs are the same. > > - For intents developed using a decorator, the full and brief information queried through the preceding APIs are > different, as described below. > > Table 1 Differences between full intent information and brief intent information > > | Name| Included in Full Intent Information| Included in Brief Intent Information| > | -------- | -------- | -------- | > | bundleName | Yes| Yes| > | moduleName | Yes| Yes| > | intentName | Yes| Yes| > | domain | Yes| No| > | intentVersion | Yes| No| > | displayName | Yes| Yes| > | displayDescription | Yes| No| > | schema | Yes| No| > | icon | Yes| No| > | llmDescription | Yes| No| > | keywords | Yes| No| > | intentType | Yes| Yes| > | subIntentInfo | Yes| Yes| > | parameters | Yes| Yes| > | entities | No| No| > | developType<sup>23+</sup> | Yes| Yes| > | subIntentInfoForConfiguration<sup>23+</sup> | No| No|

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Vector2
 
 Defines a vector that contains the x and y coordinate values.

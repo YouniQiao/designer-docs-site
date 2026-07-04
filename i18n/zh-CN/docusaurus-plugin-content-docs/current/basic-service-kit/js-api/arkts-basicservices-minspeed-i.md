@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MinSpeed
 
 任务的最低限速配置。若任务速度持续低于设定值并达到指定时长，则任务失败，失败原因为 [LOW_SPEED](arkts-basicservices-faults-e.md#faults)。

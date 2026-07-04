@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IndicatorIconInfo
 
 Set the indicator item's icon for a specified index.

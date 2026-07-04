@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bluetooth.pbap
 
 Provides methods to accessing bluetooth PBAP(Phone Book Access Profile)-related capabilities.

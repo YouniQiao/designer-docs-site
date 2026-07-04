@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArkTS API<!--arkts-avsessionkit-->
 
 - [@ohos.app.ability.MediaControlExtensionAbility](arkts-app-ability-mediacontrolextensionability.md)

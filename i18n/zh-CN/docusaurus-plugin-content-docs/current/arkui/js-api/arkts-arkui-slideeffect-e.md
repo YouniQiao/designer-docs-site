@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SlideEffect
 
 页面转场时的滑入滑出效果。

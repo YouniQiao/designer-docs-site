@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConnectionInterval (System API)
 
 The enum of connection interval values.

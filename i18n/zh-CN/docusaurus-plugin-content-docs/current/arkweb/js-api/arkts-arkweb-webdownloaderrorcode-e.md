@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebDownloadErrorCode
 
 下载任务的错误码。

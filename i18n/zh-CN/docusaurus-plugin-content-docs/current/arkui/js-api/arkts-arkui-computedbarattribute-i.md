@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ComputedBarAttribute
 
 滚动条位置和长度对象。

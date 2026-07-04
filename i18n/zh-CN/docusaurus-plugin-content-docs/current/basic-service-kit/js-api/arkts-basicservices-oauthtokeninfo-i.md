@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OAuthTokenInfo
 
 表示OAuth令牌信息。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用[AuthTokenInfo](arkts-basicservices-authtokeninfo-i.md#authtokeninfo)替代。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksKeySecurityLevel
 
 表示密钥安全级别的枚举。

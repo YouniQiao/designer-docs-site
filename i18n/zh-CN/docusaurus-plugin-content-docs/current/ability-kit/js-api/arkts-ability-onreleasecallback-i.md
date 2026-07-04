@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnReleaseCallback
 
 注册通用组件服务端Stub（桩）断开监听通知的回调函数类型。

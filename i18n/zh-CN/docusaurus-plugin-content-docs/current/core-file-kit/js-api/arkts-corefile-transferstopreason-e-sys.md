@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransferStopReason（系统接口）
 
 搬迁停止原因的枚举。

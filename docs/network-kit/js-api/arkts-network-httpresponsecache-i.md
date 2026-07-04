@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HttpResponseCache
 
 Defines an object that stores the response to an HTTP request.

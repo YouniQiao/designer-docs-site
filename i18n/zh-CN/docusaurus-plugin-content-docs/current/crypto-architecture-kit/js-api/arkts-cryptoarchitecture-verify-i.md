@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Verify
 
 Verify类，使用Verify方法之前需要创建该类的实例进行操作，通过 [createVerify(algName: string): Verify](arkts-cryptoarchitecture-createverify-f.md#createverify-1)方法构造此实例。按序调用本类中的init、update、 verify方法完成签名操作。验签操作的示例代码详见 [签名验签开发指导](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md)。 Verify类不支持重复初始化，当业务方需要使用新密钥验签时，需要重新创建新Verify对象并调用init初始化。 业务方使用时，在createVerify时确定验签的模式，调用init接口设置密钥。 当被签名的消息较短时，可在init初始化后，（无需update）直接调用verify接口传入被签名的消息和签名(signatureData)进行验签。 当被签名的消息较长时，可通过update接口分段传入被签名的消息，最后调用verify接口对消息全文进行验签。verify接口的data入参在API 10之前只 支持DataBlob， API 10之后增加支持null。业务方可在循环中调用update接口，循环结束后调用verify传入签名(signatureData)进行验签。 当使用DSA算法进行验签，并设置了摘要算法为NoHash时，则不支持update操作，update接口会返回错误码ERR_CRYPTO_OPERATION。

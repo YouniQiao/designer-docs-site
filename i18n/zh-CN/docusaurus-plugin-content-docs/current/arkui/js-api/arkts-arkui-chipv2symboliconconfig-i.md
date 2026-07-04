@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipV2SymbolIconConfig
 
 定义符号图标配置。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Coordinate2D
 
 描述一个二维坐标。

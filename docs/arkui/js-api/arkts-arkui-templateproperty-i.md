@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TemplateProperty
 
 Provides parameter configuration required for switching the float view template and modifying the size of the window.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LengthMetrics
 
 Defines the length attribute. When the length unit is PERCENT, the value **1** indicates 100%.

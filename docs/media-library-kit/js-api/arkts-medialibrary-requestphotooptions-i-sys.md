@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RequestPhotoOptions (System API)
 
 Defines the options for obtaining the thumbnail of an image or video.

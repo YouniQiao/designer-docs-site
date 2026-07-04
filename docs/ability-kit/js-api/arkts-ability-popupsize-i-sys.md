@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PopupSize (System API)
 
 Describes the width and height of the auto-fill pop-up.

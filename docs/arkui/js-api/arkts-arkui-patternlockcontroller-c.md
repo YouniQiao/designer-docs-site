@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PatternLockController
 
 Controller of the **PatternLock** component, which is used to reset the component status and challenge result of the pattern password. ###### Objects to Import ```ts patternLockController: PatternLockController = new PatternLockController() ```

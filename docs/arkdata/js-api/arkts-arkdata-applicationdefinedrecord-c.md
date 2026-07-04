@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ApplicationDefinedRecord
 
 Represents the custom data type for applications only. It is a child class of [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md#unifiedrecord) and a base class of custom data types of applications. Applications can extend custom data types based on this class.

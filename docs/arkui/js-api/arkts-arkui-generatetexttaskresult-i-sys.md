@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GenerateTextTaskResult (System API)
 
 Configuration result for AI-generated text tasks.

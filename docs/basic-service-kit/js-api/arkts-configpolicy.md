@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.configPolicy
 
 The **configPolicy** module provides APIs for obtaining the corresponding directory and file path based on the predefined custom configuration level.

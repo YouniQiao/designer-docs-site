@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ColorReservation (System API)
 
 ColorReservation extends [ColorReservationQuery](arkts-camera-colorreservationquery-i-sys.md#colorreservationquery) Provides API for obtaining and setting a color reservation type.

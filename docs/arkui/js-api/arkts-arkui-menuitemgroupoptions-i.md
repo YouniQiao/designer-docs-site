@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuItemGroupOptions
 
 Describes the header and footer of the menu item group.

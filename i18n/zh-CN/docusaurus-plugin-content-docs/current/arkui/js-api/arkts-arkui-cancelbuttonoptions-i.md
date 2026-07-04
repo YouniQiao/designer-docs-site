@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CancelButtonOptions
 
 定义清除按钮选项。

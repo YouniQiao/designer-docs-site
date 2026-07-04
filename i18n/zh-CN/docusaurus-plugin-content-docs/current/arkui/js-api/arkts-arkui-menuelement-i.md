@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuElement
 
 菜单项的图标、文本和交互信息。

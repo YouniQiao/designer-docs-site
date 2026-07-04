@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIState
 
 Enumerates polymorphic style states, which are used to process polymorphic styles.

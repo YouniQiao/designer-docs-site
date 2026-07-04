@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextContextInfo
 
 Represents the text information about the recommended images.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatViewState
 
 Enumerates the states of the float view.

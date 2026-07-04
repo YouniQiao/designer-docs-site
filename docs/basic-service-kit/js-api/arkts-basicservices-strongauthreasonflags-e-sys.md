@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StrongAuthReasonFlags (System API)
 
 Indicates the strong authentication reason flags used to request.

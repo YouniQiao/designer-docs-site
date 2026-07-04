@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - 头文件
     - [oh_pointer_style.h](capi-oh-pointer-style-h.md)
     - [oh_key_code.h](capi-oh-key-code-h.md)

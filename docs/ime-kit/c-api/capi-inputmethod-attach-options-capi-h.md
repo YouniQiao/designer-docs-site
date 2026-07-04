@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # inputmethod_attach_options_capi.h
 
 ## Overview

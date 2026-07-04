@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeneralNameType
 
 表示证书主体用途的枚举。

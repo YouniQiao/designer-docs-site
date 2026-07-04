@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LightWeightSet
 
 LightWeightSet可用于存储一系列值的集合，存储元素中value值唯一。

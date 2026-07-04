@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadProgress
 
 Represents information about the download progress of a cloud file.

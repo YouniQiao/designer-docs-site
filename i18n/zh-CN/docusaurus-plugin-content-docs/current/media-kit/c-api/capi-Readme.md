@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - 头文件
     - [avmedia_source.h](capi-avmedia-source-h.md)
     - [native_avscreen_capture.h](capi-native-avscreen-capture-h.md)

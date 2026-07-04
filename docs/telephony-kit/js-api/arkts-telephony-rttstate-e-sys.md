@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RttState (System API)
 
 Indicates the state of the rtt.

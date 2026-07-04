@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PasteButtonOptions
 
 Declares the interface for setting the paste button options.

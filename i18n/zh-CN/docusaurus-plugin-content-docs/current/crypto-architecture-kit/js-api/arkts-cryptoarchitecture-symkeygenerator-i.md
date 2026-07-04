@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SymKeyGenerator
 
 对称密钥生成器。 在使用该类的方法前，先使用[createSymKeyGenerator](arkts-cryptoarchitecture-createsymkeygenerator-f.md#createsymkeygenerator-1)构建SymKeyGenerator实例。

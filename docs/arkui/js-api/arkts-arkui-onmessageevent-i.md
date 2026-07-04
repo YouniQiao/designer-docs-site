@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnMessageEvent
 
 Message event after page is back or destroyed if postMessage() is called in H5 page.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragAndDropInfo
 
 拖拽过程中监听到status改变时上报的数据。

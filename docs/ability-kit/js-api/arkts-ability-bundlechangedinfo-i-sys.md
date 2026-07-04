@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BundleChangedInfo (System API)
 
 This module defines the result information of monitoring install, update and uninstall.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LongPressGestureHandler
 
 长按手势处理器对象类型。

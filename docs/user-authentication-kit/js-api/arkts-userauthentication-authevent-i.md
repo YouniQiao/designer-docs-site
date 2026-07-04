@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthEvent
 
 Provides an asynchronous callback to return the authentication event information.

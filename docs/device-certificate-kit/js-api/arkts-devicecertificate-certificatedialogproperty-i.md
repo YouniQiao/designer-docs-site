@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertificateDialogProperty
 
 Defines the property of the certificate management dialog box.

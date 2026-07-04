@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessAuthorization (System API)
 
 Enum for the PBAP or MAP access authorization.

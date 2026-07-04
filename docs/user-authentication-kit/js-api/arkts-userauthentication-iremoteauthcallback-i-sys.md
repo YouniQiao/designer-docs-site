@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IRemoteAuthCallback (System API)
 
 Provides APIs for getting WidgetParam in remote authentication scenarios.

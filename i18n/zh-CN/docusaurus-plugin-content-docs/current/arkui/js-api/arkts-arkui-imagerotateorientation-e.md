@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageRotateOrientation
 
 期望的图像内容显示方向。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HapticFeedbackMode
 
 菜单弹出时振动效果。

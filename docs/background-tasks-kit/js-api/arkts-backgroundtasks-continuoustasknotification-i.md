@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContinuousTaskNotification
 
 Describes the information about a continuous-task notification.

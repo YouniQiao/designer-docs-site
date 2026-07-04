@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlurBubblesRiseEffectParam（系统接口）
 
 模糊气泡上升效果的参数。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragPreview
 
 拖拽背板的对象，在OnDrop和OnDragEnd回调中使用不生效。

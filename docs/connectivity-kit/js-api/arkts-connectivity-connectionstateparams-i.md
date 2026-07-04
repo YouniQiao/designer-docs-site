@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConnectionStateParams
 
 Describes the parameters required for obtaining the connection status.

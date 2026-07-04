@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PolicyRules (System API)
 
 The policy rules of the profile.

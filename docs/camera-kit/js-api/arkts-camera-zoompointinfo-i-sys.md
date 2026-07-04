@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ZoomPointInfo (System API)
 
 Describes the equivalent focal length information.

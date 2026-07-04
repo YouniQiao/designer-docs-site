@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.UiTest
 
 The static builder for building {@link On}object conveniently,usage example:ON.text('txt').enabled(true).

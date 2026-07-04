@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EventTarget
 
 用于管理Worker的监听事件。

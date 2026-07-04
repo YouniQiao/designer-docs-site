@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextContentStyle
 
 The polymorphic style of the text box.

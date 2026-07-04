@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SetPropertyRequest（系统接口）
 
 提供设置属性请求的信息。

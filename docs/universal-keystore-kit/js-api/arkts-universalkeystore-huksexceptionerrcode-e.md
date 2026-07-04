@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksExceptionErrCode
 
 Enumerates error codes and error details. For details about the error codes, see [Universal Error Codes](../../../../reference/errorcode-universal.md) and [HUKS Error Codes](../../../../reference/apis-universal-keystore-kit/errorcode-huks.md).

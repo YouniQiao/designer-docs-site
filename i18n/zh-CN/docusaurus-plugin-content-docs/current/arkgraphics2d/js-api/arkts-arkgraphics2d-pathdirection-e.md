@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PathDirection
 
 添加闭合轮廓方向的枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RootInfo (System API)
 
 Provides APIs for managing the device's root attribute information.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListItemGroupStyle
 
 ListItemGroup组件卡片样式枚举。

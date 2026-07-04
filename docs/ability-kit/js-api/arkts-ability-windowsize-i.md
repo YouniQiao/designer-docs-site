@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowSize
 
 Describes the window size. **Atomic service API**: This API can be used in atomic services since API version 11.

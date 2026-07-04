@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksCryptoExtensionParam
 
 定义调用接口的param类型。

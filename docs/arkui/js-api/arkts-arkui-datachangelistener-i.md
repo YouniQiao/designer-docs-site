@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataChangeListener
 
 Listener for data changes. > **NOTE** > > In APIs of **DataChangeListener** other than **onDatasetChange**, if the value of **index** is negative, the value > is treated as **0** by default. In **onDatasetChange**, if the specified index in a **DataOperation** is outside > the data source index range, the corresponding **DataOperation** does not take effect. (In **DataAddOperation**, > the value of **index** can equal the data source length.)

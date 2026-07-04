@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ProgressConfiguration
 
 Provides progress indicator configuration. Inherits from [CommonConfiguration](arkts-arkui-commonconfiguration-i.md#commonconfiguration).

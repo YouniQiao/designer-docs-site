@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityResult
 
 The module defines the result code and data returned to the caller when a started UIAbility is terminated.

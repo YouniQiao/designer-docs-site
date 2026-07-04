@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatingBallTemplate
 
 闪控球模板类型的枚举。

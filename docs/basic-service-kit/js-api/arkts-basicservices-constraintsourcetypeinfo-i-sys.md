@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConstraintSourceTypeInfo (System API)
 
 Defines the constraint source type.

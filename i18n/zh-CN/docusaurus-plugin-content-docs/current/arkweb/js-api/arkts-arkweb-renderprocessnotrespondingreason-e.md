@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderProcessNotRespondingReason
 
 Enum type supplied to {@link RenderProcessNotRespondingData} when onRenderProcessNotResponding is called.

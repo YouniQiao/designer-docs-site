@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CameraErrorCode
 
 Enumerates the camera error codes, which are returned when an API call is incorrect or the **on()** API is used to listen for the error status.

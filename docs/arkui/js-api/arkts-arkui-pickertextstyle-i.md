@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerTextStyle
 
 Provide an interface for the text style of picker

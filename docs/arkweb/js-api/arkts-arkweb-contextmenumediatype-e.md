@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContextMenuMediaType
 
 Enumerates the media types that trigger the context menu.

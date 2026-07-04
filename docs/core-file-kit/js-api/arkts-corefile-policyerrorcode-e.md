@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PolicyErrorCode
 
 Enumerates the error code of the permission policy for the URI operation.

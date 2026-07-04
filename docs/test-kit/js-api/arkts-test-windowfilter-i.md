@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowFilter
 
 Provides the flag attributes of this window.

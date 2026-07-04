@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MappingMode
 
 枚举，文件内存映射模式类型，支持mmap接口使用。

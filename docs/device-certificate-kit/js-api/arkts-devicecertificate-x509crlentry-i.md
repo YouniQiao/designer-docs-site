@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # X509CRLEntry
 
 Provides APIs for operating on revoked certificates.

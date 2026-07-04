@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatingBallTextUpdateAnimationType
 
 闪控球文本更新动画类型的枚举。

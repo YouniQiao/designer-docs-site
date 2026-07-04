@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FunInteractionParams (System API)
 
 The fun interaction form params.

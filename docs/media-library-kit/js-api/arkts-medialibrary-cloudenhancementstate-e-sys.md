@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CloudEnhancementState (System API)
 
 Enumerates the cloud enhancement states.

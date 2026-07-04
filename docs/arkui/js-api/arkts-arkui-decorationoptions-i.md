@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DecorationOptions
 
 Provides additional configuration options for the text decoration line style.

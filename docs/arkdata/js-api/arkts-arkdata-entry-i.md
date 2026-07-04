@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Entry
 
 Provides key-value pairs stored in the distributedKVStore.

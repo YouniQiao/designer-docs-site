@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileUri
 
 FileUri represents the uri of the file.

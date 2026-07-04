@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RingChannel
 
 Enumerates the audio playback channels for the custom prompt tone.

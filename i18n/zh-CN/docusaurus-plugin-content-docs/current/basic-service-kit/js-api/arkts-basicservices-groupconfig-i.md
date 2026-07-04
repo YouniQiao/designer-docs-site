@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GroupConfig
 
 下载任务分组配置选项。

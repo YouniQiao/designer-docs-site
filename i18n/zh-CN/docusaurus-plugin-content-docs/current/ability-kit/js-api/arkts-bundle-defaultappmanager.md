@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.defaultAppManager
 
 本模块提供查询默认应用的能力，支持查询当前应用是否是默认应用。

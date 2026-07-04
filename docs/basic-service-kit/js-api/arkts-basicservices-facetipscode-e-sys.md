@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FaceTipsCode (System API)
 
 Enumerates the tip codes for facial authentication.

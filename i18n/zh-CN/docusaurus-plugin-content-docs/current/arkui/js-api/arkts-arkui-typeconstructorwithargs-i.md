@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TypeConstructorWithArgs
 
 含有任意入参的类构造器。

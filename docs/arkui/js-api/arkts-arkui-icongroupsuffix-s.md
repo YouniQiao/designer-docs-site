@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IconGroupSuffix
 
 The **ChipGroup** component provides a set of chips for organizing and categorizing files or resource content. > **NOTE** > > With **SymbolGlyphModifier**, neither modifying the animation type with **symbolEffect** nor setting the effect > strategy with [effectStrategy](SymbolGlyphAttribute#effectStrategy) is supported.

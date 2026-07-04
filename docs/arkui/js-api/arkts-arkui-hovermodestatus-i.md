@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HoverModeStatus
 
 Provides information about the device or application's folding, rotation, and window state.

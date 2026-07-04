@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RemoteDeviceDriver
 
 远程设备驱动。

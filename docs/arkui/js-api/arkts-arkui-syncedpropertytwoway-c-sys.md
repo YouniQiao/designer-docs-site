@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SyncedPropertyTwoWay (System API)
 
 Inherits from [SubscribedAbstractProperty<T>](arkts-arkui-subscribedabstractproperty-c.md#subscribedabstractproperty). Represents a property with two-way synchronization.

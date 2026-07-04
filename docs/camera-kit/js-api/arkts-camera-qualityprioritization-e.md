@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # QualityPrioritization
 
 Enumerates the priority levels for video recording quality.

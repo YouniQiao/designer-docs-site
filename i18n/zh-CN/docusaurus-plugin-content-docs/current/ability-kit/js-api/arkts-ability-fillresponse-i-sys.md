@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FillResponse（系统接口）
 
 自动填充响应。

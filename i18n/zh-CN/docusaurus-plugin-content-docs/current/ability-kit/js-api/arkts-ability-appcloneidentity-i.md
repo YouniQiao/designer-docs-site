@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppCloneIdentity
 
 描述应用包的身份信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # QueryParam（系统接口）
 
 查询洞察意图实体时的Param。

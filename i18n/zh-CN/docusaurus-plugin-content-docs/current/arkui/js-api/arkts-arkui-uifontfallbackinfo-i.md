@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIFontFallbackInfo
 
 系统的UI字体配置信息。

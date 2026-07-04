@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthToken (System API)
 
 Represents the AuthToken data returned after a successful verification.

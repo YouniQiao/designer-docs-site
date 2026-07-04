@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnPromptEvent
 
 Defines the callback used when a web page triggers **prompt()**.

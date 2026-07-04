@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResultCode（系统接口）
 
 表示身份验证结果码。

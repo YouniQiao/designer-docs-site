@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # crypto_asym_key.h
 
 ## 概述

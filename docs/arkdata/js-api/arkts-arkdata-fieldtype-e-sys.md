@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FieldType (System API)
 
 Enumerates the types of the fields in a database table. Use the enum name rather than the enum value.

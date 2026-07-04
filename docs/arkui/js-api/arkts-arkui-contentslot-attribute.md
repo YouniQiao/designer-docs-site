@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContentSlot properties/events
 
 Define ContentSlot attribute, to prevent improper recursive usage of ContentSlot.

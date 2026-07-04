@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavigationMenuItem
 
 导航菜单项，包括菜单图标和菜单信息。

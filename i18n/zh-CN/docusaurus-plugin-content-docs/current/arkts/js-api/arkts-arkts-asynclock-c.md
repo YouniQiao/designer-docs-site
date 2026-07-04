@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AsyncLock
 
 在锁下执行异步操作的类。

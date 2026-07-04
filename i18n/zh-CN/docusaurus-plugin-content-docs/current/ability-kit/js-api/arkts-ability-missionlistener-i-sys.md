@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MissionListener（系统接口）
 
 定义系统任务状态监听，可以通过[on](arkts-ability-on-f-sys.md#on-1)注册。

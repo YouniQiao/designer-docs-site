@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FocusMoveResult (System API)
 
 Queries the return value type of the target accessibility nodes.

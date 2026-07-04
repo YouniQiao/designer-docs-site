@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TriggerInfo
 
 The module defines the information required for triggering the WantAgent. The information is used as an input parameter of [trigger](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagenttrigger).

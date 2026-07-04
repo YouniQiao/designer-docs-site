@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PanGestureInterface
 
 PanGesture is used to trigger a pan gesture when the movement distance of a finger on the screen reaches the minimum value.

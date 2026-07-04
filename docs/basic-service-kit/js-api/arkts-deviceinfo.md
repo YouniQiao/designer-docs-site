@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.deviceInfo
 
 The **deviceInfo** module provides terminal device information query, which cannot be configured by developers. > **NOTE** > > The initial APIs of this module are supported since API version 6. Newly added APIs > will be marked with a superscript to indicate their earliest API version. > Some parameters whose return value is the default value are not yet available. > The APIs of this module return information about device constants. You are not expected to call these APIs > frequently.

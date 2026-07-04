@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShapeSize
 
 形状的尺寸参数。

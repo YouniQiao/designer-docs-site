@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIExtensionHostWindowProxyProperties（系统接口）
 
 用于表示宿主应用窗口和UIExtensionComponent组件的信息。

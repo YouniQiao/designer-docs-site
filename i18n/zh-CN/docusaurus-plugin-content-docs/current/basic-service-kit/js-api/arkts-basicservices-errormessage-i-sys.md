@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ErrorMessage（系统接口）
 
 错误信息。

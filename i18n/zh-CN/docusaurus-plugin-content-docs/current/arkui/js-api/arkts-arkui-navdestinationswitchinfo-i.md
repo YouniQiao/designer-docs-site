@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavDestinationSwitchInfo
 
 Navigation组件页面切换的信息。

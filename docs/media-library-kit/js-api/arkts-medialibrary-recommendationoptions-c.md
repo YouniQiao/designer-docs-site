@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RecommendationOptions
 
 Defines the image recommendation options. The image recommendation feature depends on the image data analysis capability, which varies with devices.

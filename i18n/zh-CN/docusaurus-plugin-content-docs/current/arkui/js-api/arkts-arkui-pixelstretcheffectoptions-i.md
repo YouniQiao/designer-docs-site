@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PixelStretchEffectOptions
 
 像素扩展属性集合，用于描述像素扩展的信息。

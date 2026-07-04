@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemUpdateInfo
 
 待更新的系统版本信息。

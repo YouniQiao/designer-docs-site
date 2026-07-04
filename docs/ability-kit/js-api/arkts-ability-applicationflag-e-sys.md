@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ApplicationFlag (System API)
 
 Enumerates the application flags, which indicate the type of application information to obtain.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SuffixImageIconOptions
 
 Defines the configuration options for suffix icons. Inherits from [IconOptions](arkts-arkui-iconoptions-i.md#iconoptions).

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.convertxml
 
 The convertxml module provides APIs for converting XML text into JavaScript objects.

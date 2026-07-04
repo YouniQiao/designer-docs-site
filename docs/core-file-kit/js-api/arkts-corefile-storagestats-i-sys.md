@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StorageStats (System API)
 
 Get the user storage statistics.

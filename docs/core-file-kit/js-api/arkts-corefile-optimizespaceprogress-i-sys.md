@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OptimizeSpaceProgress (System API)
 
 Represents the space optimization states and optimization progress.

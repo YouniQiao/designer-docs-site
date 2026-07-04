@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DarkMode（系统接口）
 
 深色模式枚举。 | 名称 | 值 | 说明 | | -- | -- | -- | | ALWAYS_DARK | 0 | 系统始终为深色。 | | ALWAYS_LIGHT | 1 | 系统始终为浅色。 |

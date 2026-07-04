@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChildProcess（系统接口）
 
 childprocess 对象可用于创建新的进程。

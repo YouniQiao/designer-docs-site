@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SearchParams
 
 Events and styles supported by the search area.

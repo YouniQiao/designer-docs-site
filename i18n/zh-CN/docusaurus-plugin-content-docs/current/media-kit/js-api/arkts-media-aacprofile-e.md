@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AacProfile
 
 高级音频编码（AAC）类型枚举。

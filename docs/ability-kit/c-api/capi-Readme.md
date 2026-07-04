@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [ability_access_control.h](capi-ability-access-control-h.md)
     - [want.h](capi-want-h.md)

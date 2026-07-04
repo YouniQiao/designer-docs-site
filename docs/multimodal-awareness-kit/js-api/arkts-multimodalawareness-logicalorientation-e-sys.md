@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LogicalOrientation (System API)
 
 Enum for logical orientation calculated by smart algorithms.

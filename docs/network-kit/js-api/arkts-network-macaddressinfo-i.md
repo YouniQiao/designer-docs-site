@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MacAddressInfo
 
 Defines the mac address info of the Ethernet.

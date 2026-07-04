@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksParam
 
 Defines the **param** field in the **properties** array of **options** used in the APIs.

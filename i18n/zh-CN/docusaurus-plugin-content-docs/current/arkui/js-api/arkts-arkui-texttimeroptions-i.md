@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextTimerOptions
 
 用于构建TextTimer组件的选项。

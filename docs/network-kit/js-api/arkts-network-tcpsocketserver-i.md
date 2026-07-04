@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TCPSocketServer
 
 Defines a TCPSocket server connection.

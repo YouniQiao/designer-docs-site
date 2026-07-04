@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DLPFileAccess
 
 DLP文件授权类型的枚举。

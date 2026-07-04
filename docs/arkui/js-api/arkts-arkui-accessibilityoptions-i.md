@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityOptions
 
 Defines the accessibility options of the suffix icon.

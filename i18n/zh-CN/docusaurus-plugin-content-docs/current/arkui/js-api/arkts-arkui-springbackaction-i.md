@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SpringBackAction
 
 控制半模态关闭前的回弹。

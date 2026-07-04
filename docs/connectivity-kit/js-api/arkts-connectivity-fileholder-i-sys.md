@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileHolder (System API)
 
 Describes the file info for transfer

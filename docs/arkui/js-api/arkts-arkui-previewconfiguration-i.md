@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PreviewConfiguration
 
 Configures the style of the preview image during custom drag operations.

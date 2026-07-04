@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GridItem属性/事件
 
 **继承/实现关系：** GridItemAttribute extends [CommonMethod<GridItemAttribute>](CommonMethod<GridItemAttribute>)

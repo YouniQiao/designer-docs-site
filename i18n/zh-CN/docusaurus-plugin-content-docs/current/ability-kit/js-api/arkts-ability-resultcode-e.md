@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResultCode
 
 模态弹框请求结果码。

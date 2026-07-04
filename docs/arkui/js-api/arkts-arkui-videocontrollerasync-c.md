@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VideoControllerAsync
 
 Video playback controller class for asynchronous operations. Provides methods to control video playback, timing, and display mode.

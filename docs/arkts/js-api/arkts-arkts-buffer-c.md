@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Buffer
 
 The Buffer object is a method of handling buffers dedicated to binary data.

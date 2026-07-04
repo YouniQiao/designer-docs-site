@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UiDirection
 
 Describes the direction of a UI operation such as fling.

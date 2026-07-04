@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ControlObject (System API)
 
 Describes the control object.

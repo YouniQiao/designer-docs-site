@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ActionButton
 
 Describes the button displayed for a reminder.

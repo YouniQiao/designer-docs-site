@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OsAccountSwitchEventData (System API)
 
 Defines the event that indicates the start or end of a foreground-background OS account switchover.

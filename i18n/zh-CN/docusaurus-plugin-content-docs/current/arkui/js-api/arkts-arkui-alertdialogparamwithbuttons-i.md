@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AlertDialogParamWithButtons
 
 继承自[AlertDialogParam](arkts-arkui-alertdialogparam-i.md#alertdialogparam)。

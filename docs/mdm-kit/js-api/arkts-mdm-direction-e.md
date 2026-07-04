@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Direction
 
 Enumerates the direction chains to which the rule applies.

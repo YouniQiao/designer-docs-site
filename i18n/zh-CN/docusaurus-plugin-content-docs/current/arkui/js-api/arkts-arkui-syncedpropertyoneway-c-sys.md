@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SyncedPropertyOneWay（系统接口）
 
 继承自[SubscribedAbstractProperty<T>](arkts-arkui-subscribedabstractproperty-c.md#subscribedabstractproperty)。用来定义父组件的状态值。

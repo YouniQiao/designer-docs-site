@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragSpringLoadingConfiguration
 
 Defines the configuration parameters for drag hover detection. The default settings typically suffice. These settings can be customized through [onDragSpringLoading](../arkts-components/arkts-arkui-commonmethod-c.md#ondragspringloading-1) binding or dynamically updated during BEGIN state using [updateConfiguration](arkts-arkui-springloadingcontext-c.md#updateconfiguration-1).

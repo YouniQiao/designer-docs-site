@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackupPriority (System API)
 
 Control backup and restore priority sequence

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - 头文件
     - [syscap_ndk.h](capi-syscap-ndk-h.md)
     - [deviceinfo.h](capi-deviceinfo-h.md)

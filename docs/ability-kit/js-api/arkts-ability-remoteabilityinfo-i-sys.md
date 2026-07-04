@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RemoteAbilityInfo (System API)
 
 The module provides information about a remote ability, which can be obtained through [distributedBundle.getRemoteAbilityInfo](arkts-ability-getremoteabilityinfo-f-sys.md#getremoteabilityinfo-1) . > **NOTE** > > The APIs provided by this module are system APIs.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaControlExtensionAbility (System API)
 
 The class of media control extension ability.

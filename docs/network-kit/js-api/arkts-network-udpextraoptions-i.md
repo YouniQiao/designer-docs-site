@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UDPExtraOptions
 
 Defines other properties of the UDPSocket connection.

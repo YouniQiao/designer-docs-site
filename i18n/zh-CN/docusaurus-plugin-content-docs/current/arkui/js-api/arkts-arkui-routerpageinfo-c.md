@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RouterPageInfo
 
 RouterPageInfo包含的信息，由系统返回给开发者。

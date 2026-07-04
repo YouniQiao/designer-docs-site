@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Audio
 
 Represents audio data. It is a child class of [File](arkts-arkdata-file-c.md#file) and is used to describe an audio file.

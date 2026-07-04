@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVScreenCaptureRecordPreset
 
 进行屏幕录制时的编码、封装格式参数的枚举。

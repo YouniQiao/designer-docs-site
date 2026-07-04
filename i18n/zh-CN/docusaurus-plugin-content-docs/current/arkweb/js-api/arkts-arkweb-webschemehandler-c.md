@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebSchemeHandler
 
 This class is used to intercept requests for a specified scheme.

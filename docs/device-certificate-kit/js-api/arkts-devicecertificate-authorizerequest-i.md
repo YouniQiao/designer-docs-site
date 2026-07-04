@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthorizeRequest
 
 Represents the authorization request information of the credentials.

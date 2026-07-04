@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Context
 
 Context is the context base class of the stage model. It is used to access application-specific resources and perform callbacks for application-level operations. docroot://

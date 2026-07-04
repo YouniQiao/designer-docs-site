@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DevelopType (System API)
 
 Enumerates the modes that define how an intent is developed.

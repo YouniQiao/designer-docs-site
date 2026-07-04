@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnErrorReceiveEvent
 
 定义网页加载遇到错误时触发该回调。

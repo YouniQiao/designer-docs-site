@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransientTaskInfo
 
 所有短时任务信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebStorageOrigin
 
 提供Web SQL数据库的使用信息。

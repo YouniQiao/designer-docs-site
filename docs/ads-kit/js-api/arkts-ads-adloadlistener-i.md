@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AdLoadListener
 
 Enumerates the callbacks used for the request for loading an ad.

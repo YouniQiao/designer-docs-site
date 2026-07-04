@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CacheMode
 
 Enum type supplied to {@link cacheMode} for setting the Web cache mode.

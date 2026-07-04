@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CompositeDisplayMode (System API)
 
 Enumerates the composite photo display mode.

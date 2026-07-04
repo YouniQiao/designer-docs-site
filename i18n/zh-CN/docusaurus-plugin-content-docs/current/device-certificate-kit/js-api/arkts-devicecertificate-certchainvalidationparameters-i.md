@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertChainValidationParameters
 
 表示证书链校验的参数。

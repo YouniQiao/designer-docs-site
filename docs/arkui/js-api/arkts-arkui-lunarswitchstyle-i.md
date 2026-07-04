@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LunarSwitchStyle
 
 Defines the style of the lunar calendar switch in the **DatePickerDialog** component.

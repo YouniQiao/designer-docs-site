@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PublishedItem (System API)
 
 Defines the data to publish.

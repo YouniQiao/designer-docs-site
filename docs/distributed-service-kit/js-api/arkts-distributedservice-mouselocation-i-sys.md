@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MouseLocation (System API)
 
 Defines the mouse pointer position for screen hopping.

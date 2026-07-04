@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Direction
 
 表示屏幕方向的枚举，用于[Configuration.direction](arkts-ability-configuration-i.md#configuration)字段。开发者可以使用这些预置枚举设置或获取系统/应 用的显示方向。

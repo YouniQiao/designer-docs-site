@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ElementName
 
 A structured identifier for an application component, containing fields such as **bundleName**, **moduleName**, and **abilityName**. It is usually used in [AbilityRunningInfo.ability](arkts-ability-abilityrunninginfo-i.md#abilityrunninginfo) for component launch information and in the [connectOptions.onConnect](arkts-ability-connectoptions-i.md#onconnect-1) callback for component connection.

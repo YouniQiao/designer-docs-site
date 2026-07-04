@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ErrorCode
 
 The APIs of this module return exceptions since API version 9. The following table lists the error codes.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppFreezePolicy
 
 Defines the application freeze event configuration policy.

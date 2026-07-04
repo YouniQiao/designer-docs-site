@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListItemSwipeActionDirection
 
 ListItem划出菜单的展开方向。

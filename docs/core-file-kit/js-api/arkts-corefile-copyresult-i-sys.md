@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CopyResult (System API)
 
 Defines the information returned when the file copy operation fails. If the copy operation is successful, no information is returned.

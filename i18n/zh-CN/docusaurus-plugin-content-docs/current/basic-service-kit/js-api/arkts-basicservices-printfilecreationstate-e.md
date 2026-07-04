@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrintFileCreationState
 
 打印文件创建状态的枚举。

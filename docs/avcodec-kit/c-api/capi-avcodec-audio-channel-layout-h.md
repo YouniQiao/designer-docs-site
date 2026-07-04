@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # avcodec_audio_channel_layout.h
 
 ## Overview

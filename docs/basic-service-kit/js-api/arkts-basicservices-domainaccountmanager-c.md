@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DomainAccountManager
 
 Provides APIs for domain account management.

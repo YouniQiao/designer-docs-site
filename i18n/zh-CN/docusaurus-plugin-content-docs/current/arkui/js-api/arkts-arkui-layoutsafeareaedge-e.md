@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LayoutSafeAreaEdge
 
 扩展安全区域的边缘。

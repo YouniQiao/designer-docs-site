@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityCustomAction
 
 定义AccessibilityCustomAction的结构体，可以在可访问性下的自定义操作处理中处理。

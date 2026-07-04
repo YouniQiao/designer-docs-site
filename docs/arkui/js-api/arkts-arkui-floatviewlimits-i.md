@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatViewLimits
 
 Provides the limits of the float view.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ColorMode
 
 用于表示当前设备颜色模式。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # USBConfig
 
 USB配置，一个[USBDevice](arkts-basicservices-usbdevice-i.md#usbdevice)中可以含有多个配置。

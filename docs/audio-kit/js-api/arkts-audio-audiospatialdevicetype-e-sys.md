@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioSpatialDeviceType (System API)
 
 Describes a spatial device type group.

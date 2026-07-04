@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PasteData
 
 Implements a **PasteData** object. PasteData contains one or more data records ( [PasteDataRecord](arkts-basicservices-pastedatarecord-i.md#pastedatarecord)) and property description objects ( [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md#pastedataproperty)). Before calling any API in **PasteData**, you must use ** [createData()](arkts-basicservices-createdata-f.md#createdata-1)** or ** [getData()](arkts-basicservices-systempasteboard-i.md#getdata-1)** to create a **PasteData** object.

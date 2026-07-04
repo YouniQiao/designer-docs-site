@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SecurityLevel
 
 Defines the security level for the page.

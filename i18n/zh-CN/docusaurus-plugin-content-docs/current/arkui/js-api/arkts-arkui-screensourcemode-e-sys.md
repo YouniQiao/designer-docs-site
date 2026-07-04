@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScreenSourceMode（系统接口）
 
 屏幕显示内容来源模式枚举。

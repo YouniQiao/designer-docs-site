@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RefreshStatus
 
 Enumerates the states of a refresh operation.

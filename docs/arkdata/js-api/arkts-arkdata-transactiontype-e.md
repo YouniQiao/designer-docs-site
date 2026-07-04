@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransactionType
 
 Enumerates the types of transaction objects that can be created. Use the enum name rather than the enum value.

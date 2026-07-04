@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NodeContainer
 
 Defines the Interface of NodeContainer. To display the node build by an associated NodeController.

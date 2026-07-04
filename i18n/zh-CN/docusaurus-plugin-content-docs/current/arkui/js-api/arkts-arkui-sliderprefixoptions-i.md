@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SliderPrefixOptions
 
 Slider前缀组件无障碍信息参数。

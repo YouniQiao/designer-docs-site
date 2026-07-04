@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogSessionInfo (System API)
 
 Provides session information, including the requester information, target ability information list, and other parameters.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksKeyGenerateType
 
 表示生成密钥的类型。

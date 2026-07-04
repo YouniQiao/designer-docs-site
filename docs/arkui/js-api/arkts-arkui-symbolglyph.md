@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SymbolGlyph
 
 The **SymbolGlyph** component represents a symbol glyph.<!--RP1--><!--RP1End-->

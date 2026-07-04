@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.bundleMonitor
 
 本模块提供监听应用安装，卸载，更新的能力。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NetworkInfo
 
 Describes the pre-downloaded network information.

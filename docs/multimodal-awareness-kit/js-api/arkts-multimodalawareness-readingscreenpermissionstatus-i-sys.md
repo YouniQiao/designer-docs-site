@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReadingScreenPermissionStatus (System API)
 
 Returns the status of the permission for reading screen information.

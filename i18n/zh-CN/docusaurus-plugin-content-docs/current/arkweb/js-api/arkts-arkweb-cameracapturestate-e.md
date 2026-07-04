@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CameraCaptureState
 
 定义摄像头使用状态的值。

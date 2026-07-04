@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PlaceholderStyle
 
 设置提示文本的字体样式。

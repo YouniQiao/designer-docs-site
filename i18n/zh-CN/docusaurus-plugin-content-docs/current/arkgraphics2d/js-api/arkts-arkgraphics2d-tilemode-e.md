@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TileMode
 
 着色器效果平铺模式的枚举。

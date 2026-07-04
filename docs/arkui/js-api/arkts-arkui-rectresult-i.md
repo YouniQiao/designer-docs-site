@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RectResult
 
 Describes the position, width, and height of a component.

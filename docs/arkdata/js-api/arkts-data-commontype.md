@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.data.commonType
 
 The commonType module defines common data types in data management.

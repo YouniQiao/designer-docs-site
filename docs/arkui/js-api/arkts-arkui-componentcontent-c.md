@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ComponentContent
 
 Inherits from [Content](../../../../reference/apis-arkui/js-apis-arkui-Content.md#content-1).

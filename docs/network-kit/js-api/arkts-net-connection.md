@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.net.connection
 
 Provides interfaces to manage and use data networks.

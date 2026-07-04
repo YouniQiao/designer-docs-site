@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MultiAppMode
 
 表示[应用多开](../../../../quick-start/multiInstance.md)模式。

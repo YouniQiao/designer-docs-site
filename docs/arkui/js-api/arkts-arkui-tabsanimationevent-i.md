@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TabsAnimationEvent
 
 Describes the animation information of the **Tabs** component.

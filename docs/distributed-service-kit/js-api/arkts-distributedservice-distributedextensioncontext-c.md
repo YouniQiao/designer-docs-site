@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DistributedExtensionContext
 
 Class inherited for the distributed extension function.

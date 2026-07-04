@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NativeEmbedParamDataInfo
 
 提供同层渲染object标签内嵌param元素变化时同层标签的详细信息。

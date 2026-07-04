@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LengthMetrics
 
 用于设置长度属性，当长度单位为PERCENT时，值为1表示100%。

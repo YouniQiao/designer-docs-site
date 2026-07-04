@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIServiceExtensionContext (System API)
 
 The UIServiceExtensionContext module provides the context environment for a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md#uiserviceextensionability). It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md#extensioncontext). UIServiceExtensionContext provides access to a [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md#uiserviceextensionability) and APIs for operating the ability, for example, starting, terminating, connecting, and disconnecting ability. > **NOTE** > > - The APIs of this module must be used on the main thread, but not on child threads such as Worker and TaskPool.

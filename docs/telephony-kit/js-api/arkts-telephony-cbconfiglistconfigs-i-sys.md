@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CBConfigListConfigs (System API)
 
 Defines the cell broadcast configuration list configs.

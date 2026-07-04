@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIExtensionHostWindowProxyProperties (System API)
 
 Defines information about the host application window and **UIExtensionComponent**.

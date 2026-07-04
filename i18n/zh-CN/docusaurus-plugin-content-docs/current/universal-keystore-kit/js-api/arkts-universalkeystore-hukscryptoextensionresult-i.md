@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksCryptoExtensionResult
 
 接口返回值的通用类型。

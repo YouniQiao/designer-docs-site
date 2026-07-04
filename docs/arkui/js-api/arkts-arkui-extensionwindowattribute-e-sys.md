@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExtensionWindowAttribute (System API)
 
 Enumerates the attributes of a window for a UI ServiceExtensionAbility.

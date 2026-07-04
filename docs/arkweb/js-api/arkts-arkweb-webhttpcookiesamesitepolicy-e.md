@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebHttpCookieSameSitePolicy
 
 Indicates whether to restrict cookies so that only requests sent back to the same site that created them can carry them.

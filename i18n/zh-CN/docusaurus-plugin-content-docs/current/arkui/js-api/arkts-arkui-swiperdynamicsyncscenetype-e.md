@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwiperDynamicSyncSceneType
 
 枚举值，表示动态帧率场景的类型。

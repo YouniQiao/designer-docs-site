@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HdrMetadataKey
 
 Enumerates the keys of HDR metadata used by [pixelmap](arkts-image-pixelmap-i.md#pixelmap).

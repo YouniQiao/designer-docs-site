@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthOptions (System API)
 
 Represents a set of optional parameters for [auth](arkts-basicservices-userauth-c-sys.md#auth-2).

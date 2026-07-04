@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NativeEmbedMouseInfo
 
 Provides detailed information about clicking or touching and holding a same-layer tag using the mouse or touchpad.

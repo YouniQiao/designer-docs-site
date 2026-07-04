@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # QuickShotPhotoSession (System API)
 
 Quick shot photo session object.

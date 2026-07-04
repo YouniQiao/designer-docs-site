@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FormLocation (System API)
 
 Enumerates the widget locations.

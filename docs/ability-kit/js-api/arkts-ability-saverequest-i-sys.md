@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SaveRequest (System API)
 
 Defines the information about an auto-saving request.

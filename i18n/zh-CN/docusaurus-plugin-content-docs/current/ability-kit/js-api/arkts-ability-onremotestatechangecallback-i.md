@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnRemoteStateChangeCallback
 
 注册协同场景下跨设备组件状态变化监听通知的回调函数类型。

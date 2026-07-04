@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GridRowOptions
 
 Defines layout options of the **GridRow** container.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioDeviceCallbackInfo (System API)
 
 Indicates the information of the audio device.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MmsSendConf (System API)
 
 Defines the MMS message sending configuration.

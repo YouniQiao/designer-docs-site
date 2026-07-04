@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NetQuotaPolicy (System API)
 
 Net quota policies, including matching network rule usage periods, restrictions, and warnings.

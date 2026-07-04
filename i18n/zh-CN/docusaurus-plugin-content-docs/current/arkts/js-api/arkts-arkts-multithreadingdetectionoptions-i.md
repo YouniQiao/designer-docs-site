@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MultithreadingDetectionOptions
 
 多线程检测功能参数配置。

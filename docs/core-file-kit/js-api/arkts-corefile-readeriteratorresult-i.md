@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReaderIteratorResult
 
 Represents the information obtained by the **ReaderIterator** object.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnLoadStartedEvent
 
 Defines the triggered function at the begin of web page loading.

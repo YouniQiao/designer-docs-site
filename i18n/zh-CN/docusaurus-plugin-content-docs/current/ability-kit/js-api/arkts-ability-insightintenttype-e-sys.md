@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InsightIntentType（系统接口）
 
 表示通过意图装饰器定义的意图类型，可通过[getAllInsightIntentInfo](arkts-ability-getallinsightintentinfo-f-sys.md#getallinsightintentinfo-1)等方法返回的 [LinkIntentInfo](arkts-ability-linkintentinfo-i-sys.md#linkintentinfo)获取。

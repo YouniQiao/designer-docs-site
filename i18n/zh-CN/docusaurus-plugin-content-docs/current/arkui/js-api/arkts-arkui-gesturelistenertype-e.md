@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureListenerType
 
 此枚举类型用于指定需要监控的手势类型。

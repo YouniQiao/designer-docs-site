@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # oh_device_manager_err_code.h
 
 ## Overview

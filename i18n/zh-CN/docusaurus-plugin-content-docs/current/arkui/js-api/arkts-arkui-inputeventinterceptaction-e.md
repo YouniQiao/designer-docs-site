@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InputEventInterceptAction
 
 输入事件拦截动作枚举。

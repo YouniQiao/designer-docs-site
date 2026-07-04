@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SegmentButtonV2ItemOptions
 
 配置分段按钮选项参数。 > **说明** > > 1. 当配置`symbol`和`icon`时，`symbol`的显示优先级更高。 > > 2. 当`symbol`和`symbolModifier`同时设置HM Symbol资源时，`symbolModifier`设置的资源具有更高的显示优先级。

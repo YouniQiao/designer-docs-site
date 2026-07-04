@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UserAuthResult
 
 Represents the user authentication result. If the authentication is successful, the authentication type and token information are returned.

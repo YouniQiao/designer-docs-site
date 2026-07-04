@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataAbilityResult
 
 定义DataAbility数据操作结果，通过 [executeBatch](../../../../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch) 操作数据库时，操作结果使用DataAbilityResult对象返回。

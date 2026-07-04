@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScannerSyncMode
 
 定义扫描仪同步码的枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Pkcs12Data
 
 Represents data of the parsed PKCS #12 (.p12) file.

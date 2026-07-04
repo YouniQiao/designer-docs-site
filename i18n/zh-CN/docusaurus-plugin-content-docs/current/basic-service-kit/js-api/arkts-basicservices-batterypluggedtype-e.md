@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BatteryPluggedType
 
 表示连接的充电器类型的枚举。

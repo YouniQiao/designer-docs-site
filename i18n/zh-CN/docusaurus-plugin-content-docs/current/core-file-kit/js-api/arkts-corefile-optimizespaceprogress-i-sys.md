@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OptimizeSpaceProgress（系统接口）
 
 立即优化空间状态和当前进度。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextMarqueeOptions
 
 Describes the initialization options of the **Marquee** component.

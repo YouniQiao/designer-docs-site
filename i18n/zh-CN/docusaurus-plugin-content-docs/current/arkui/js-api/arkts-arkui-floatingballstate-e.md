@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatingBallState
 
 闪控球生命周期状态的枚举。

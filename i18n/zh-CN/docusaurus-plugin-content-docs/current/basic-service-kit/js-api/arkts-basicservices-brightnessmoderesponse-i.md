@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BrightnessModeResponse
 
 包含屏幕亮度模式的对象。

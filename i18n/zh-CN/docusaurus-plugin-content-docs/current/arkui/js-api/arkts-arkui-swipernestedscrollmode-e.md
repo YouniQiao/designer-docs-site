@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwiperNestedScrollMode
 
 Swiper组件和父组件的嵌套滚动模式枚举。

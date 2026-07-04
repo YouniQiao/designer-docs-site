@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ProcessManager
 
 Provides APIs for throwing exceptions during the addition of a process. Construct a **ProcessManager** object.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TimePickerFormat
 
 Enumerates time display formats of the time picker.

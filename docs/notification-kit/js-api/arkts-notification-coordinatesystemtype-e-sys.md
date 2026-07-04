@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CoordinateSystemType (System API)
 
 Enumerates the coordinate systems of a geofence.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SaveSuccessResponse
 
 Represents the information returned by the callback of save. .

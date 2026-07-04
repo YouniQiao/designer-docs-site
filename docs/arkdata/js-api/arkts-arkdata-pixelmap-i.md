@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PixelMap
 
 Represents data of the pixel map type defined by the system.

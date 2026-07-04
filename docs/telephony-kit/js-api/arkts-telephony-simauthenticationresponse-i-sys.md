@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SimAuthenticationResponse (System API)
 
 Defines the SIM card authentication response.

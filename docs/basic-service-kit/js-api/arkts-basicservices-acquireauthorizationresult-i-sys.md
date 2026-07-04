@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AcquireAuthorizationResult (System API)
 
 Defines the result of the authorization.

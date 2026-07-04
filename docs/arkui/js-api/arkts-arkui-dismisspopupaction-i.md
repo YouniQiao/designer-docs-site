@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DismissPopupAction
 
 Provides information about the dismissal of the popup.

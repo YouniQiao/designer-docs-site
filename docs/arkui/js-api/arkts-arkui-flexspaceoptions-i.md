@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FlexSpaceOptions
 
 Sets the spacing between child components along the main axis or cross axis of the **Flex** component.

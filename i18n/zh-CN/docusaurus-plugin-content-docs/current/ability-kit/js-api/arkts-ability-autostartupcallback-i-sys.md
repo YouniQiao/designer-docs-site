@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoStartupCallback（系统接口）
 
 应用设置为开机自启动时的回调函数。

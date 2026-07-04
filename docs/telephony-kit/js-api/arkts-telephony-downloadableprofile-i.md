@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadableProfile
 
 Information about a profile which is downloadable to an eUICC using.

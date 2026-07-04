@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PathMeasureMatrixFlags
 
 Enumerates the dimensions of matrix information in path measurement. It is often used in animation scenarios where objects move along a path.

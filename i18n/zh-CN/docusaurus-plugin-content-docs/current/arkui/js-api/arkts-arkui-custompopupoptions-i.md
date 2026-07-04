@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CustomPopupOptions
 
 弹出自定义气泡的信息。

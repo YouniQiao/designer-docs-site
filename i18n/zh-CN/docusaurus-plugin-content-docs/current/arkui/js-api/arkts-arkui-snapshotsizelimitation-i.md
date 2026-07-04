@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SnapshotSizeLimitation
 
 定义组件截图的尺寸限制。

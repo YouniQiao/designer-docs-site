@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeneralNameType
 
 Enumerates the types of the common name (CN), which uniquely identifies the subject of the certificate.

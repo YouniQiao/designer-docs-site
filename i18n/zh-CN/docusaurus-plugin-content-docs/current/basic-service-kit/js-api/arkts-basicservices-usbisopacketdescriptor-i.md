@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsbIsoPacketDescriptor
 
 实时传输模式回调返回的分包信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VerifyCredentialOptions
 
 表示用于验证凭据的选项。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScreenshotEventType
 
 截屏事件类型枚举。

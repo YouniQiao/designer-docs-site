@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AxisAction
 
 定义轴事件的轴动作类型。

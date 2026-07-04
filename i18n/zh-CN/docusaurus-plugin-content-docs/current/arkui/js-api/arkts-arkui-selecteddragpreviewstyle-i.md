@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectedDragPreviewStyle
 
 文本拖拽时的背板样式。

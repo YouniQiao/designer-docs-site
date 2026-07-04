@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIUtils
 
 UIUtils提供一些方法，用于处理状态管理相关的数据转换。

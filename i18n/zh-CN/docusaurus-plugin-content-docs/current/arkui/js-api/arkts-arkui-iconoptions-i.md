@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IconOptions
 
 IconOptions定义图标的共通属性。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogBaseOptions
 
 Base options shared by all dialog types.

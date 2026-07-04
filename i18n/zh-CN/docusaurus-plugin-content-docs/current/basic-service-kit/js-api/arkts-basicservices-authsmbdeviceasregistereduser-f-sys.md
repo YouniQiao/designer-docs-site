@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # authSmbDeviceAsRegisteredUser（系统接口）
 
 ## authSmbDeviceAsRegisteredUser

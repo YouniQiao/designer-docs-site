@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [oh_location_type.h](capi-oh-location-type-h.md)
     - [oh_location.h](capi-oh-location-h.md)

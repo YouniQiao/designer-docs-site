@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemFontType
 
 字体类型枚举，通过位或运算可实现组合类型。

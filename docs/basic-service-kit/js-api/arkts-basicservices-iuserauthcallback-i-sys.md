@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IUserAuthCallback (System API)
 
 Provides callbacks for user authentication.

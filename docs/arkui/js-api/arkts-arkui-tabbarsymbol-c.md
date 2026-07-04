@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TabBarSymbol
 
 Represents a tab bar symbol style object.

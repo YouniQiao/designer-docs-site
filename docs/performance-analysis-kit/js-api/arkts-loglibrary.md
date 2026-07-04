@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.logLibrary
 
 The **logLibrary** module provides APIs for obtaining various system maintenance and test logs.

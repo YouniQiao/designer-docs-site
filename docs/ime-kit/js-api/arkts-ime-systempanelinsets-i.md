@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemPanelInsets
 
 Defines the offset area between the input method soft keyboard and the system panel.

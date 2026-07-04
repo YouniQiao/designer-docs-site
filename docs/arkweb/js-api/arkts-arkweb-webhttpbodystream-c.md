@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebHttpBodyStream
 
 The http body stream of the request.

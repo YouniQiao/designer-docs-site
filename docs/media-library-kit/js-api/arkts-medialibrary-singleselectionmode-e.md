@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SingleSelectionMode
 
 Enumeration type of single selection mode

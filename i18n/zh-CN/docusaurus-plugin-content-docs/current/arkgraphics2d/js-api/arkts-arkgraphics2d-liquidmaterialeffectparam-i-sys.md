@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LiquidMaterialEffectParam（系统接口）
 
 材质的各项参数及其用途的详细说明。

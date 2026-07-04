@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.form.formAgent
 
 The **FormAgent** module provides APIs related to the widget agent. Currently, you can use the APIs to request to publish widgets only.

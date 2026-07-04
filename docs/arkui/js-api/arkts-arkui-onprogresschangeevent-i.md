@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnProgressChangeEvent
 
 Progress change event when the page loading progress changes.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RichEditorSpanStyleOptions
 
 Defines the text span style options. Inherits [RichEditorRange](arkts-arkui-richeditorrange-i.md#richeditorrange).

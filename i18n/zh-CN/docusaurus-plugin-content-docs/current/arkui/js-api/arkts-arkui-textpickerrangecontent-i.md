@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextPickerRangeContent
 
 单列数据选择器的数据选项内容。

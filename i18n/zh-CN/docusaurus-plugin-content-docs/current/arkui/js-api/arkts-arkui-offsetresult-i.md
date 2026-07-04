@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OffsetResult
 
 表示滚动操作产生的偏移量。

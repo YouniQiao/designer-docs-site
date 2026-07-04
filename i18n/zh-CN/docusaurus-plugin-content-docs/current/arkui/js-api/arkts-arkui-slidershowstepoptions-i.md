@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SliderShowStepOptions
 
 Slider刻度点的无障碍文本信息映射集。

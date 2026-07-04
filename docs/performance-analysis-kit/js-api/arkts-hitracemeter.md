@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.hiTraceMeter
 
 The **HiTraceMeter** module provides the functions of tracing service processes and monitoring the system performance. It provides the data needed for HiTraceMeter to carry out performance analysis. For details about the development process, see [Using HiTraceMeter (ArkTS)](../../../../dfx/hitracemeter-guidelines-arkts.md). > **NOTE** > > You are advised to use the performance tracing APIs of API version 19. The > [startTrace()](arkts-performanceanalysis-starttrace-f.md#starttrace-1), [finishTrace()](arkts-performanceanalysis-finishtrace-f.md#finishtrace-1), and > [traceByValue()](arkts-performanceanalysis-tracebyvalue-f.md#tracebyvalue-1) APIs will be deprecated. > > The trace output level cannot be specified in the [startTrace()](arkts-performanceanalysis-starttrace-f.md#starttrace-1), > [finishTrace()](arkts-performanceanalysis-finishtrace-f.md#finishtrace-1) and > [traceByValue()](arkts-performanceanalysis-tracebyvalue-f.md#tracebyvalue-1) APIs. By default, the trace output > level is **COMMERCIAL**. > > The vertical bar (|) is used as the separator in > [user-mode trace format](../../../../dfx/hitracemeter-view.md#user-mode-trace-format). Therefore, the string > parameters passed by the performance tracing APIs must exclude this character to avoid trace parsing exceptions. > > The maximum length of a [user-mode trace](../../../../dfx/hitracemeter-view.md#user-mode-trace-format) is 512 > characters. Excess characters will be truncated.

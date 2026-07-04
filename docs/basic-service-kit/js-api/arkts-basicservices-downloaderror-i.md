@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadError
 
 Describes the error message returned when a pre-download error occurs.

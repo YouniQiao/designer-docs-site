@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OperatorId (System API)
 
 Information about the eUICC chip/device.

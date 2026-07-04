@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IMEClient
 
 输入控件绑定输入法客户端类型。

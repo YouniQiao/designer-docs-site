@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RequestResult
 
 模态弹框请求结果，包含结果码ResultCode和请求结果ResultWant。

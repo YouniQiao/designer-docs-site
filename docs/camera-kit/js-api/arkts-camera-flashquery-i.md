@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FlashQuery
 
 Provides APIs to obtain the flash information of a camera device, including whether the LCD flash is supported.

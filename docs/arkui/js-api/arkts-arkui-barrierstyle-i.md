@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BarrierStyle
 
 Defines the ID, direction, and referenced components of a barrier.

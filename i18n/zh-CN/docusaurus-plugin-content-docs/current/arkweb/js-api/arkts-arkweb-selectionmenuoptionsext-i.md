@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectionMenuOptionsExt
 
 自定义菜单扩展项。

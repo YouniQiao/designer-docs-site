@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EfficiencyResourcesCpuLevel (System API)
 
 Defines the CPU level of the efficiency resource.

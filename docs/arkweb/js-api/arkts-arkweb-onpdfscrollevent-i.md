@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnPdfScrollEvent
 
 Defines the function triggered when the PDF page is scrolled to the bottom.

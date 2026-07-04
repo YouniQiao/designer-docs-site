@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SharingIfaceState (System API)
 
 Enumerates the network sharing states of an NIC.

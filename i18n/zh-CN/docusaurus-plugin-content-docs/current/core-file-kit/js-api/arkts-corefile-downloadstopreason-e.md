@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadStopReason
 
 全量下载停止原因的枚举，默认值为NO_STOP。

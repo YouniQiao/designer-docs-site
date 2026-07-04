@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LaunchMode
 
 > **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use > [bundleManager.LaunchType](arkts-ability-launchtype-e.md#launchtype) instead. Enumerates the ability launch modes.

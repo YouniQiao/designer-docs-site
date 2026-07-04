@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TemplateProperty
 
 切换悬浮窗模板并修改窗口尺寸时需要提供的参数配置。

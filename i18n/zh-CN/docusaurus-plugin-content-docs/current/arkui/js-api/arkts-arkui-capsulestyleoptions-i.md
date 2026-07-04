@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CapsuleStyleOptions
 
 胶囊样式选项。 继承自[ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md#scaneffectoptions)和[CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions)。

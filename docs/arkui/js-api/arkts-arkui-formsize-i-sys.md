@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FormSize (System API)
 
 Provides the widget size information.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TLSSocketConnection
 
 Defines the connection of the TLSSocket client and server.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollSnapAlign
 
 Enumerates the alignment modes of list items when scrolling ends.

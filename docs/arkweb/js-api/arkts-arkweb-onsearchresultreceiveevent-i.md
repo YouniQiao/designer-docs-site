@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnSearchResultReceiveEvent
 
 Defines function Triggered when the host application call searchAllAsync.

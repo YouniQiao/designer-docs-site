@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChangeInfo (System API)
 
 Represents the data change information, including the data change type, URI of the data changed, and changed data content.

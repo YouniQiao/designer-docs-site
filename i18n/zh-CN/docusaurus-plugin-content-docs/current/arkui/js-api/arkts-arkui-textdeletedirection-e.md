@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextDeleteDirection
 
 定义删除文本方向。

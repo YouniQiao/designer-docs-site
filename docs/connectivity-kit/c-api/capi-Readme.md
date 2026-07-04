@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [oh_bluetooth.h](capi-oh-bluetooth-h.md)
     - [oh_wifi.h](capi-oh-wifi-h.md)

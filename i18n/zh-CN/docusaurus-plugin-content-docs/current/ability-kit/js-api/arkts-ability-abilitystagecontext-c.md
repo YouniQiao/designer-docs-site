@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityStageContext
 
 AbilityStageContext是AbilityStage的上下文环境，继承自[Context](arkts-ability-context-depr-i.md#context)。 AbilityStageContext提供允许访问特定于abilityStage的资源的能力，包括获取AbilityStage对应的ModuleInfo对象、环境变化对象。

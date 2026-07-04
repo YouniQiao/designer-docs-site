@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransferStopReason (System API)
 
 Describes the state type of transfer stop reason.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocalStorage
 
 For details about how to use LocalStorage on the UI, see [LocalStorage: UI State Storage](../../../../ui/state-management/arkts-localstorage.md).

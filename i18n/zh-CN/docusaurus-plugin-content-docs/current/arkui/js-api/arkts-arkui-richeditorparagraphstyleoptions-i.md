@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RichEditorParagraphStyleOptions
 
 段落样式选项。 继承自[RichEditorRange](arkts-arkui-richeditorrange-i.md#richeditorrange)。 > **说明：** > > 接口作用的范围：设定的区间所涉及的段落。

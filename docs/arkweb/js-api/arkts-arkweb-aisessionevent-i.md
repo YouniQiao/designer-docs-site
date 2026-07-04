@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AISessionEvent
 
 Custom AI session model integration for Web components. Users can define custom AI session behaviors via this interface.

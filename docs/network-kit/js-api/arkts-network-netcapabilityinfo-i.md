@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NetCapabilityInfo
 
 Receive information about changes in network capabilities.

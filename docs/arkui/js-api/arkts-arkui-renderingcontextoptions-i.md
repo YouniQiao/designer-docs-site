@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderingContextOptions
 
 Defines the specific configuration parameters for the rendering context.

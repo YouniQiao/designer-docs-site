@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RttMessageInfo (System API)
 
 Indicates the info of the rtt message.

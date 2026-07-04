@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityRoleType
 
 定义组件的屏幕朗读功能角色类型。

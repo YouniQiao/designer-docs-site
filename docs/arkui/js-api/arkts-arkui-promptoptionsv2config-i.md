@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PromptOptionsV2Config
 
 Configuration information interface for PromptOptionsV2. Used to construct PromptOptionsV2 object.

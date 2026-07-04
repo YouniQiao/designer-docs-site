@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksExternalCryptoParam
 
 表示调用接口使用的param数组的类型。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowMode (System API)
 
 Enumerates the window modes.

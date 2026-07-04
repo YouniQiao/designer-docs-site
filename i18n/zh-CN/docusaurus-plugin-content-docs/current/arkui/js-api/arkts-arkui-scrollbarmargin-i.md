@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollBarMargin
 
 定义滚动条边距选项。

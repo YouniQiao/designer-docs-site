@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnDownloadStartEvent
 
 Defines the triggered function when starting to download.

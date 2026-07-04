@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GravityCenterOptions（系统接口）
 
 定义引力中心的参数。

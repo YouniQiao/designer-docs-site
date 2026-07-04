@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BarState
 
 Used to set the status of the scroll bar.

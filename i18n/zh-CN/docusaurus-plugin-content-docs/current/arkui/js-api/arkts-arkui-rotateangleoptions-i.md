@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RotateAngleOptions
 
 指定各轴旋转角的旋转参数选项。

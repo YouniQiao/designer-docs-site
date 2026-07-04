@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextSpanType
 
 Provides the [span](arkts-arkui-span.md) type information. > **NOTE** > > The system follows the priority order below when determining the menu type to display during text interactions: >

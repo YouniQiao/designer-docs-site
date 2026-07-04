@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeolocationPermissions
 
 Provides a method for managing web geographic location permissions.

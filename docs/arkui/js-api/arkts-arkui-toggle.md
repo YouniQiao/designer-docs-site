@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Toggle
 
 The **Toggle** component provides a clickable element of the checkbox, button, or switch type. > **NOTE**

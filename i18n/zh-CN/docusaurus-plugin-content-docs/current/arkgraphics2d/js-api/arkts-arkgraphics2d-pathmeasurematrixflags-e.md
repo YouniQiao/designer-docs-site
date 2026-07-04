@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PathMeasureMatrixFlags
 
 路径测量中的矩阵信息维度枚举，常用于控制物体沿路径移动的动画场景。

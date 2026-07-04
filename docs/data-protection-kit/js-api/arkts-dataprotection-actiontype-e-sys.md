@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ActionType (System API)
 
 Enumerates the actions to be performed when the file's permission expiration time is reached. The default value is **NOT_OPEN**.

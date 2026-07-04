@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwipeEdgeEffect
 
 滑动效果枚举

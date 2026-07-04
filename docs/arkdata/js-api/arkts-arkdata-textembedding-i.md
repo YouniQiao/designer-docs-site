@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextEmbedding
 
 Describes the text embedding functions of the multi-modal embedding model. Chinese and English are supported.

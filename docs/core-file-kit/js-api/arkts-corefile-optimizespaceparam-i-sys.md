@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OptimizeSpaceParam (System API)
 
 Sets the total optimization space and aging days.

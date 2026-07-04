@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnContinueResult
 
 Enumerates the ability continuation results. You can use it in [onContinue()](arkts-ability-uiability-c.md#oncontinue-1) of the UIAbility to complete different operations.

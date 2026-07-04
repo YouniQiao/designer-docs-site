@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackForwardList
 
 Provides back and forward history list information method. related to {@link HistoryItem}.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SeekMode
 
 Enumerates the video playback seek modes, which can be passed in the **seek** API.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransitionOptions
 
 TransitionOptions通过指定结构体内的参数来指定转场效果。 > **说明：** > > 1. 当使用TransitionOptions类型的入参指定转场效果时，**必须**配合 > [animateTo](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#animateto)使用才有动画效果，动效时长、曲线、延时跟随 > animateTo中的配置。 > > 2. 当使用TransitionOptions作为入参，且不指定除type外的任何参数时，此时相当于指定了透明度的转场效果。例如，指定{type: TransitionType.Insert}相当于指定了{type: > TransitionType.Insert, opacity: 0}的转场效果。而指定了具体效果时，则不会添加默认的透明度转场效果。

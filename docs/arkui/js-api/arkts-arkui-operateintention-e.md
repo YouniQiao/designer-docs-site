@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OperateIntention
 
 Define the smart gesture's operation intention.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioEncoder
 
 > **说明：** > > 从API version 6开始支持，从API version 8开始废弃，建议使用[CodecMimeType](media.CodecMimeType)替代。 表示音频编码格式的枚举。

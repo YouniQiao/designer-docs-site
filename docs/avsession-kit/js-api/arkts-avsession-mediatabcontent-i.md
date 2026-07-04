@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaTabContent
 
 The definition of the tab page content.

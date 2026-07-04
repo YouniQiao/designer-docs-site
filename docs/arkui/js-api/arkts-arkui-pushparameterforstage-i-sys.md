@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PushParameterForStage (System API)
 
 Plugin component push parameters which is used in push function.

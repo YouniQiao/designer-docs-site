@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageError
 
 图片加载异常时触发回调的返回对象。 当组件的参数类型为[AnimatedDrawableDescriptor](../arkts-apis/arkts-arkui-animateddrawabledescriptor-c.md#animateddrawabledescriptor)时该 事件不触发。

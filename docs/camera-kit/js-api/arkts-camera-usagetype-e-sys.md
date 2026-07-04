@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsageType (System API)
 
 Enum for usage type used in capture session.

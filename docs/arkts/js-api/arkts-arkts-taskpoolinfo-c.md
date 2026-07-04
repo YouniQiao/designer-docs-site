@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TaskPoolInfo
 
 Describes the internal information about a task pool.

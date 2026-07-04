@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ViewportFit
 
 网页meta中viewport-fit配置的视口类型。

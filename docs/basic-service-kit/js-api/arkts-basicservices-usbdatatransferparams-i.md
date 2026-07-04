@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsbDataTransferParams
 
 As a USB data transfer interface, it is required for a client to initiate a transfer request.

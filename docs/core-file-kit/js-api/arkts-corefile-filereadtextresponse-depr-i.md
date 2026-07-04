@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileReadTextResponse
 
 Returns the text read, including the text content.

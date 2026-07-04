@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DlpFileQueryOptions
 
 表示企业DLP文件的查询选项。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderMode
 
 Defines the web render mode, related to {@link RenderMode}.

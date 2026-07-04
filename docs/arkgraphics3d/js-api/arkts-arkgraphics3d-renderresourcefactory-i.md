@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderResourceFactory
 
 The render resource factory. RenderResourceFactory is used to create resources that can be shared across Scenes that share a RenderContext

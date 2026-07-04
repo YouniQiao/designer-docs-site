@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.graphics.text
 
 本模块提供一系列用于文本布局和字体管理的编程接口。文本布局相关的接口旨在提供高质量的排版，包括字符到字形的转换、字距调整、换行、对齐、文本测量等。字体管理接口提供字体注册、字体描述符、字体集管理等功能。 该模块提供以下创建复杂样式的文本段落的常用类： - [TextStyle](arkts-arkgraphics2d-textstyle-i.md#textstyle)：文本样式，控制文本的字体类型、大小、间距等属性。 - [FontCollection](arkts-arkgraphics2d-fontcollection-c.md#fontcollection)：字体集，控制各种不同的字体。 - [FontDescriptor](arkts-arkgraphics2d-fontdescriptor-i.md#fontdescriptor)：字体描述符信息。 - [ParagraphStyle](arkts-arkgraphics2d-paragraphstyle-i.md#paragraphstyle)：段落样式，控制整个段落的断行策略、断词策略等属性。 - [ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md#paragraphbuilder)：段落生成器，控制生成不同的段落对象。 - [Paragraph](arkts-arkgraphics2d-paragraph-c.md#paragraph)：段落，由ParagraphBuilder类调用[build()](arkts-arkgraphics2d-paragraphbuilder-c.md#build-1)接口构建而成。 - [LineTypeset](arkts-arkgraphics2d-linetypeset-c.md#linetypeset)：行排版器，由ParagraphBuilder类调用 [buildLineTypeset()](arkts-arkgraphics2d-paragraphbuilder-c.md#buildlinetypeset-1)接口构建而成。 - [TextLine](arkts-arkgraphics2d-textline-c.md#textline)：以行为单位的段落文本的载体，由Paragraph类调用[getTextLines()](arkts-arkgraphics2d-paragraph-c.md#gettextlines-1)接口获取。 - [Run](arkts-arkgraphics2d-runmetrics-i.md#runmetrics)：文本排版单元，由TextLine类调用[getGlyphRuns()](arkts-arkgraphics2d-textline-c.md#getglyphruns-1)接口获取。

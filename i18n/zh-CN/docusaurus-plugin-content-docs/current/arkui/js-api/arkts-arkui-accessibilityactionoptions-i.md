@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityActionOptions
 
 包含无障碍操作的参数的结构体。

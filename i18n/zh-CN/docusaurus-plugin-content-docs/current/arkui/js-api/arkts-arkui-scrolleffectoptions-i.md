@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollEffectOptions
 
 定义标题栏的滑动模糊效果选项。

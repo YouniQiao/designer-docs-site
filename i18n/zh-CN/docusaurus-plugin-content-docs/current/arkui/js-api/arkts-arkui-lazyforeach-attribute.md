@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LazyForEach属性/事件
 
 支持[拖拽排序](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)属性。

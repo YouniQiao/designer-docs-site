@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AvoidAreaOptions
 
 系统避让区变化后返回当前避让区域以及避让区域类型。

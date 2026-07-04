@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChargingType
 
 Enumerates the charging types that trigger deferred task callback.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PixelRoundPolicy
 
 指定组件级像素取整的方向。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExpandedMenuOptions
 
 Describes the expanded drop-down menu options. Inherits from [MenuItemOptions](../arkts-components/arkts-arkui-menuitemoptions-i.md#menuitemoptions).

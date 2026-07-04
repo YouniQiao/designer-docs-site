@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HashStream
 
 HashStream 类是用于创建数据的哈希摘要的实用工具。由 [createHash](arkts-corefile-createhash-f.md#createhash-1) 接口获得。

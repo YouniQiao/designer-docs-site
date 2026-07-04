@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResourceType (System API)
 
 The type of exemption resources requested by the application.

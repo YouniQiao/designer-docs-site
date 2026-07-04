@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlankScreenDetails
 
 Defines details of the blank screen issue detected.

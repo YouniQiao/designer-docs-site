@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RemoteAbilityInfo（系统接口）
 
 remoteAbility信息。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md#remoteabilityinfo)替代。 > > 本模块为系统接口。

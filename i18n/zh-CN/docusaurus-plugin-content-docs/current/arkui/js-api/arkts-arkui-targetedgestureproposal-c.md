@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TargetedGestureProposal
 
 带目标节点的智慧手势处理基类。

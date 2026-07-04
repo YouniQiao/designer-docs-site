@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuPreviewMode
 
 Defines the preview style of a menu.

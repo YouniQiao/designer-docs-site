@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # native_audio_session_base.h
 
 ## Overview

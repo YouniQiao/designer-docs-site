@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArkTS API<!--arkts-na-->
 
 - [lib.es2015.collection](arkts-lib-es2015-collection.md)

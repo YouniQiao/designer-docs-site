@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HistoryVersion
 
 Represents the historical version information of the device-cloud file when the [gethistoryversionlist](arkts-corefile-fileversion-c.md#gethistoryversionlist-1) method of the [FileVersion](arkts-corefile-fileversion-c.md#fileversion) class is called.

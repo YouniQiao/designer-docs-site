@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Map
 
 一种基于键值对存储的非线性数据结构。 > **说明** > > - 此模块仅支持在ArkTS文件（文件后缀为.ets）中导入使用。 > 本节使用以下标识符来表示泛型的使用： - K：键。 - V：值。 K和V类型都需为 [Sendable支持的数据类型](../../../../arkts-utils/arkts-sendable.md#sendable支持的数据类型)。 **装饰器类型**：\@Sendable

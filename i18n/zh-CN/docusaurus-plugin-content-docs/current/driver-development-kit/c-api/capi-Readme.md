@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - 头文件
     - [ddk_api.h](capi-ddk-api-h.md)
     - [ddk_types.h](capi-ddk-types-h.md)

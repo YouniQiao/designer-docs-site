@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RadialGradientOptions
 
 Defines the radial gradient parameters. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element > 's @since version number is higher than inner elements'. This does not affect interface usability. > **NOTE** > > When using the **colors** parameter, take note of the following: > > [ResourceColor](arkts-arkui-resourcecolor-t.md#resourcecolor) indicates the color, and **number** indicates the color's position, which > ranges from 0 to 1.0: **0** indicates the start of the container, and **1.0** indicates the end of the container. > To create a gradient with multiple color stops, you are advised to set the **number** values in ascending order. If > a value of **number** in an array is smaller than that in the previous one, it is considered as equal to the > previous value.

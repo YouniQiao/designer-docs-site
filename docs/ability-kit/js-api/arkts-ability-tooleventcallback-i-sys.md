@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ToolEventCallback (System API)
 
 This interface is used to receive cli event when the cli tool process is running.

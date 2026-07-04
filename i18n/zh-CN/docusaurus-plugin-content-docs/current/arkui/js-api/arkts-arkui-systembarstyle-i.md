@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemBarStyle
 
 状态栏的属性。在设置页面级状态栏属性时使用。

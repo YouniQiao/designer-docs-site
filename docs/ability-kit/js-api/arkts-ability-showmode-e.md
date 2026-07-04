@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShowMode
 
 Enumerates the display modes of an [EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md#embeddableuiability) when it is launched.

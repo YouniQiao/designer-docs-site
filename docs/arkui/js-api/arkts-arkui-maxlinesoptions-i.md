@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MaxLinesOptions
 
 Configures the display effect of the **TextArea** component when the text exceeds the maximum number of lines.

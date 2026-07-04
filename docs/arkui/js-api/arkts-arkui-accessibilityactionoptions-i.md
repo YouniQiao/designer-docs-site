@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityActionOptions
 
 Defines the struct of AccessibilityActionOptions that can affect operation under accessibility.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RttErrorInfo (System API)
 
 Indicates the info of the rtt error.

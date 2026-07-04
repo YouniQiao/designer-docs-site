@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectionExtensionAbility (System API)
 
 This module provides ExtensionAbility for word selection, allowing users to search or translate text selected using a mouse or touchpad. > **NOTE** > - This module is supported only on PCs/2-in-1 devices.

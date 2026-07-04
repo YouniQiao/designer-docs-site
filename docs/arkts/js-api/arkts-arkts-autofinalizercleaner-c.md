@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoFinalizerCleaner
 
 A cleaner for releasing resources managed by developers through a developer-defined callback.

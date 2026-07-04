@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Scroller
 
 Defines a controller for scrollable container components. <p><strong>NOTE</strong> <br>1. The binding of a <em>Scroller</em> instance to a scrollable container component occurs during the component creation phase. <br>2. <em>Scroller</em> APIs can only be effectively called after the <em>Scroller</em> instance is bound to a scrollable container component. Otherwise, depending on the API called, it may have no effect or throw an exception. <br>3. For example, with aboutToAppear, this callback is executed after a new instance of a custom component is created and before its <em>build()</em> method is called. Therefore, if a scrollable component is defined within the <em>build</em> method of a custom component, the internal scrollable component has not yet been created during the <em>aboutToAppear</em> callback of that custom component, and therefore the <em>Scroller</em> APIs cannot be called effectively. </p>

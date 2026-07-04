@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragPreviewOptions
 
 Preview image processing mode and badge count during dragging.

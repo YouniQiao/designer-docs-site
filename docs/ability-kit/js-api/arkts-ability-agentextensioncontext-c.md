@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AgentExtensionContext
 
 The context of the agent service extension. It provides resources and methods that developers can access.

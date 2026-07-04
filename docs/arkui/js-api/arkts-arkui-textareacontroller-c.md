@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextAreaController
 
 The controller for the **TextArea** component inherits from [TextContentControllerBase](arkts-arkui-textcontentcontrollerbase-c.md#textcontentcontrollerbase). The APIs involved are as follows:<!--Del--> system API [getText](arkts-arkui-textcontentcontrollerbase-c-sys.md#gettext-1) and other APIs like<!--DelEnd--> [getTextContentRect](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentrect-1), [getTextContentLineCount](arkts-arkui-textcontentcontrollerbase-c.md#gettextcontentlinecount-1), [getCaretOffset](arkts-arkui-textcontentcontrollerbase-c.md#getcaretoffset-1), [addText](arkts-arkui-textcontentcontrollerbase-c.md#addtext-1), [deleteText](arkts-arkui-textcontentcontrollerbase-c.md#deletetext-1), [getSelection](arkts-arkui-textcontentcontrollerbase-c.md#getselection-1), [clearPreviewText](arkts-arkui-textcontentcontrollerbase-c.md#clearpreviewtext-1), [setStyledPlaceholder](arkts-arkui-textcontentcontrollerbase-c.md#setstyledplaceholder-1), and [deleteBackward](arkts-arkui-textcontentcontrollerbase-c.md#deletebackward-1).

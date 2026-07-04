@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebCaptureMode
 
 Enum type supplied to {@link captureMode} for setting the web capture mode.

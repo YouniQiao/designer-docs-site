@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DomainAccountInfo
 
 表示域账号信息。

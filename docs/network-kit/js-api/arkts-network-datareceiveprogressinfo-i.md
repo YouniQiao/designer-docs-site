@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataReceiveProgressInfo
 
 This interface is used to obtain the progress information of file upload or download.

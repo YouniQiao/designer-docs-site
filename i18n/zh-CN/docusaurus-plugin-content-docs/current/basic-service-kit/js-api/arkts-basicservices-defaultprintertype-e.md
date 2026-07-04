@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DefaultPrinterType
 
 默认打印类型的枚举。

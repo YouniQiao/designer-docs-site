@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityResult
 
 定义UIAbility被拉起并退出后返回给调用方的结果码和数据。

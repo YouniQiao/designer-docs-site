@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipGroup
 
 > **说明：** > > 1. 针对`selectedIndexes`和`multiple`接口，当`multiple`等于`false`时，如果没有传入`selectedIndexes`，默认是第一个Chip被选中，如果传入的 > `selectedIndexes`有一个以上的元素时，默认第一个索引的Chip被选中。 > > 2. 使用suffix接口时，需引入IconGroupSuffix接口，若不传入，suffix将为空。 > > 3. 图标填充色（`fillColor`和`activedFillColor`）的设置应与字体颜色（`fontColor`）保持一致。如果需要设置不同的颜色，可以在传入 > `[ChipGroupSpaceOptions](#chipgroupspaceoptions)`时使用`prefixSymbol`。

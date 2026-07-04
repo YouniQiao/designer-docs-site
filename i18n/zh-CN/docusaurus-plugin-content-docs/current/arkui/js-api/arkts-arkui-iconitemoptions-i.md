@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IconItemOptions
 
 定义了尾部builder接口，针对背板大小及颜色设置限制。

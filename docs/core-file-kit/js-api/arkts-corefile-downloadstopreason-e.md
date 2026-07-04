@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadStopReason
 
 Enumerates the reasons why the full download stops. The default value is **NO_STOP**.

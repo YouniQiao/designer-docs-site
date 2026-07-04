@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackgroundTaskStateInfo（系统接口）
 
 长时任务授权信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EdgeLightParams（系统接口）
 
 定义边缘流光效果参数。

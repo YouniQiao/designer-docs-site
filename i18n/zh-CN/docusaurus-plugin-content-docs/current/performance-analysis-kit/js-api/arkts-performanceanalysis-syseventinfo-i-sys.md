@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SysEventInfo（系统接口）
 
 系统事件信息对象接口。

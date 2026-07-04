@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HttpResponse
 
 任务响应头的数据结构。

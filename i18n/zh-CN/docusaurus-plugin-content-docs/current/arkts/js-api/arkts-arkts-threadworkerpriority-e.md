@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ThreadWorkerPriority
 
 Worker线程的优先级枚举，各优先级对应关系请参考QoS等级定义。

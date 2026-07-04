@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CapitalizeMode
 
 Enumerates the modes of capitalizing the first letter of a text.

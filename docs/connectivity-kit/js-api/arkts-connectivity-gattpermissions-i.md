@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GattPermissions
 
 Describes the permission of a att attribute item.

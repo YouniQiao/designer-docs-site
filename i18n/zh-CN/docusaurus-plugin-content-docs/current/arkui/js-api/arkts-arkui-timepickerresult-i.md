@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TimePickerResult
 
 返回24小时制时间。

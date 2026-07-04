@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HttpInterceptor
 
 Defines an HTTP Interceptor. User can implement this interface to define the handle function.

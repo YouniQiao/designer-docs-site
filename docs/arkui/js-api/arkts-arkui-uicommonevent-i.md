@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UICommonEvent
 
 Implements a common event callback. Passing **undefined** as the input parameter resets the corresponding event callback.

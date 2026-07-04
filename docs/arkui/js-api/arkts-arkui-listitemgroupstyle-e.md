@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListItemGroupStyle
 
 Enumerates the card styles of the **ListItemGroup** component.

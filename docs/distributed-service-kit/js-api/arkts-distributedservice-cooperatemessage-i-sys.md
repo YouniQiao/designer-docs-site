@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CooperateMessage (System API)
 
 Defines a screen hopping status change event.

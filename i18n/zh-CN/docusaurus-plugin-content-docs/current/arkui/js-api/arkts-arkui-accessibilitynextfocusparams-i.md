@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityNextFocusParams
 
 定义用于配置下一个可访问性焦点转换的参数的结构。

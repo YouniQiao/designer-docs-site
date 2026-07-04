@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PlayParameters
 
 Describes the playback parameters of the sound pool. These parameters are used to control the playback volume, number of loops, and priority.

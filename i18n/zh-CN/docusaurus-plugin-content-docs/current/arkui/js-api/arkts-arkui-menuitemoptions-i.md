@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuItemOptions
 
 Menu中具体item菜单项信息。

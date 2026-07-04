@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PlainText
 
 Represents the plain text data. It is a child class of [Text](arkts-arkdata-text-c.md#text).

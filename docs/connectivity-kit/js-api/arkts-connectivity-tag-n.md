@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # tag
 
 Provides methods to operate or manage NFC tag.

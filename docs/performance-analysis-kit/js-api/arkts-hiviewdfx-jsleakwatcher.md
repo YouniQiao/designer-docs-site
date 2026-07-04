@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.hiviewdfx.jsLeakWatcher
 
 This module provides the capability of monitoring whether JS objects are leaked.

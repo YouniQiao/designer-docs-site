@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationClassification（系统接口）
 
 描述通知分类信息。

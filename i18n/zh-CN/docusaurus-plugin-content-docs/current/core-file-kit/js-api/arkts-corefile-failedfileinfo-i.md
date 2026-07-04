@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FailedFileInfo
 
 云文件批量缓存失败列表及失败原因。

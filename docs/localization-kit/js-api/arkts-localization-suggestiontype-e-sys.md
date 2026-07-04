@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SuggestionType (System API)
 
 Represents the language or country/region suggestion type.

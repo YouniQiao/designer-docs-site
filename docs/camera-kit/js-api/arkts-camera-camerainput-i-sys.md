@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CameraInput
 
 Defines the camera input object. It provides camera device information used in [Session](arkts-camera-session-i.md#session).

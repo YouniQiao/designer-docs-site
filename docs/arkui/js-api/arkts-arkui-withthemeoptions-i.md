@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WithThemeOptions
 
 Defines the default theme and color mode for components within the **WithTheme** scope.

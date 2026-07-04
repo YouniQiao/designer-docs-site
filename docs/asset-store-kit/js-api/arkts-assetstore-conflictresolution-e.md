@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConflictResolution
 
 Enumerates the policies for resolving conflicts (for example, a duplicate alias) when an asset is added.

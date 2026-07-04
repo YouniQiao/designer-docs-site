@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SliderCustomContentOptions
 
 Provides accessibility configuration of the slider prefix and suffix.

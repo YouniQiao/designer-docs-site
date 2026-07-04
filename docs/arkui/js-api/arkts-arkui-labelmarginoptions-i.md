@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LabelMarginOptions
 
 Defines the spacing between the text and the left and right icons.

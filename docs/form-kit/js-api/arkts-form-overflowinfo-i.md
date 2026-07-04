@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OverflowInfo
 
 Provides OverflowInfo about funInteraction or sceneAnimation form

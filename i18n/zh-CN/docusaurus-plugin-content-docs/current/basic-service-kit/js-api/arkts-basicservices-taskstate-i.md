@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TaskState
 
 上传任务的任务信息，是 [on('complete' | 'fail')](arkts-basicservices-uploadtask-i.md#on-3) 和 [off('complete' | 'fail')](arkts-basicservices-uploadtask-i.md#off-3) 接口的回调参数。

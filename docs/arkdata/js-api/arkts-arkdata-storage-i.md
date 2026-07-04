@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Storage
 
 Provides APIs for obtaining and modifying storage data. Before calling the following APIs, use [data_storage.getStorage](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) or [data_storage.getStorageSync](arkts-arkdata-getstoragesync-f.md#getstoragesync-1) to obtain the **Storage** instance.

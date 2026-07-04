@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.process
 
 **process** 模块提供进程管理相关接口，例如获取进程信息的接口。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IRemoteObject
 
 Provides methods to query of obtain interface descriptors, add or delete death notifications, dump object status to specific files, and send messages.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RestrictedWorker（系统接口）
 
 RestrictedWorker类包含所有Worker功能。

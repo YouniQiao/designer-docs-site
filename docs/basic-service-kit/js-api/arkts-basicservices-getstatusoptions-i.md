@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetStatusOptions
 
 Object that contains the API calling result.

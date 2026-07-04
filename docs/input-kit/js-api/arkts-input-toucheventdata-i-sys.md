@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TouchEventData (System API)
 
 Defines the touch event data.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackgroundBlurStyleOptions
 
 继承自[BlurStyleOptions](arkts-arkui-blurstyleoptions-i.md#blurstyleoptions)。

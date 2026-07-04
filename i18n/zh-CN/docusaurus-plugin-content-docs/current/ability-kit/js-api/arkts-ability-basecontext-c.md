@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BaseContext
 
 BaseContext抽象类用于表示继承的子类Context是Stage模型还是FA模型，是所有Context类型的父类。

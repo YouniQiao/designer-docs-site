@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HeapMemoryThreshold
 
 描述 GC 后触发已注册回调的堆内存预警阈值。

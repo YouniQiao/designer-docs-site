@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IfaceInfo (System API)
 
 Parameters for obtaining detailed information on network interface traffic usage.

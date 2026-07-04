@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderSort
 
 Render sort Layer. Within a render slot a layer can define a sort layer order. There are 0-63 values available (0 first, 63 last). Default id value is 32. 1. Typical use case is to set render sort layer to objects which render with depth test without depth write. 2. Typical use case is to always render character and/or camera object first to cull large parts of the view. 3. Sort e.g. plane layers.

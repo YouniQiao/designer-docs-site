@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ParseReturnType
 
 解析结果的返回类型。

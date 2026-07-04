@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScreenCaptureConfig
 
 Provides the web screen capture configuration.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnAudioStateChangedEvent
 
 Represents the callback invoked when the audio playback status on the web page changes.

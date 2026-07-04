@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksCryptoExtensionResultCode
 
 [HuksCryptoExtensionResult](arkts-universalkeystore-hukscryptoextensionresultcode-e.md#hukscryptoextensionresultcode)中的resultCode枚举值。

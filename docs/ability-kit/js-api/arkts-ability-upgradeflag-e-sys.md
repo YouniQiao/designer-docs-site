@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UpgradeFlag (System API)
 
 Upgrade flag, which is for internal use only.

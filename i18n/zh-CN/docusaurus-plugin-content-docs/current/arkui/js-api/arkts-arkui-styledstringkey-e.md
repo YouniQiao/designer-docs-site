@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StyledStringKey
 
 范围属性字符串样式。

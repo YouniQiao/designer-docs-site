@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ICurve
 
 曲线对象，支持通过本模块中的[curves.cubicBezierCurve](arkts-arkui-cubicbeziercurve-f.md#cubicbeziercurve-1)、 [curves.interpolatingSpring](arkts-arkui-interpolatingspring-f.md#interpolatingspring-1)等方法创建不同类型的曲线对象，并可通过曲线对象调用其 [interpolate](arkts-arkui-icurve-i.md#interpolate-1)的成员方法。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppStorage
 
 AppStorage具体UI使用说明，详见[AppStorage(应用全局的UI状态存储)](../../../../ui/state-management/arkts-appstorage.md)

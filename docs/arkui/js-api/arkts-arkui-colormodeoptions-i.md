@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ColorModeOptions
 
 Defines the color space used for the snapshot.

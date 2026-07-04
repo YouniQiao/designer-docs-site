@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RectHeightStyle
 
 矩形区域高度规格枚举。

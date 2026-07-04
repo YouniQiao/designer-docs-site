@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CMSignatureSpec
 
 Represents a set of parameters used for signing or signature verification, including the key usage purpose, padding mode, and digest algorithm.

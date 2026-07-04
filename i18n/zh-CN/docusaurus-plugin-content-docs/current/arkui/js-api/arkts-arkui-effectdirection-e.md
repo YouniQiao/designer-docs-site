@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EffectDirection
 
 符号动效方向的枚举值。

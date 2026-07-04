@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DLPPermissionInfo
 
 表示DLP文件的权限信息。

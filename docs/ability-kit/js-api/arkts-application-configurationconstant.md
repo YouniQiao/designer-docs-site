@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.application.ConfigurationConstant
 
 The ConfigurationConstant module provides the enumerated values of the environment configuration information.

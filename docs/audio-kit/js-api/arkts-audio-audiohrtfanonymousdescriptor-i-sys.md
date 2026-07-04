@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioHRTFAnonymousDescriptor (System API)
 
 Anonymous personalzied HRTF file descriptor for cross-process transfer.

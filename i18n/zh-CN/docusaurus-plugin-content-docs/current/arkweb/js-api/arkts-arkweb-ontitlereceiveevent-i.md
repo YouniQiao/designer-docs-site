@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnTitleReceiveEvent
 
 定义网页document标题更改时触发该回调。

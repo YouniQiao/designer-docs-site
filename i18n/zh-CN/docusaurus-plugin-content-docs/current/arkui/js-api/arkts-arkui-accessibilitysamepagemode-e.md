@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilitySamePageMode
 
 当前跨进程嵌入式显示的组件和宿主应用的同page模式。

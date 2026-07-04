@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BatteryChargeState
 
 表示电池充电状态的枚举。

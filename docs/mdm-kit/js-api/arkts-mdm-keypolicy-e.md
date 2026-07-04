@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyPolicy
 
 Enumerates key policies. This refers to the system behavior triggered after the key code delivered by the MDM app matches the system key event.

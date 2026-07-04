@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CustomImportIcon (System API)
 
 Customize the import icon, which is used to add images and text from the application side.

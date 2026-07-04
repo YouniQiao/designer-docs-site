@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnFirstContentfulPaintEvent
 
 定义网页首次内容绘制回调函数。

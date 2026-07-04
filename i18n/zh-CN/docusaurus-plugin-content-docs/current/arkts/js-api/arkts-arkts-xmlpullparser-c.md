@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # XmlPullParser
 
 XmlPullParser接口用于解析现有的XML文件。

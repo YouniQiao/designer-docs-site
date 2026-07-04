@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.multimedia.drm
 
 This module provides the DRM capability to multimedia player.

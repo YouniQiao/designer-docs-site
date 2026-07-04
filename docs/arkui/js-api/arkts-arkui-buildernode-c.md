@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BuilderNode
 
 class BuilderNode\<Args extends Object[]> Implements a BuilderNode, which can create a component tree through the stateless UI method [@Builder](../../../../ui/state-management/arkts-builder.md) and hold the root node of the component tree. A BuilderNode cannot be defined as a state variable. The FrameNode held in the BuilderNode is only used to mount the BuilderNode to other FrameNodes as a child node. Undefined behavior may occur if you set attributes or perform operations on subnodes of the FrameNode held by the BuilderNode. Therefore, after you have obtained a [RenderNode](arkts-arkui-rendernode-c.md#rendernode) through the [getFrameNode](arkts-arkui-buildernode-c.md#getframenode-1) method of the BuilderNode and the [getRenderNode](arkts-arkui-framenode-c.md#getrendernode-1) method of the [FrameNode](arkts-arkui-framenode-c.md#framenode), avoid setting the attributes or operating the subnodes through APIs of [RenderNode](arkts-arkui-rendernode-c.md#rendernode).

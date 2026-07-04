@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReplaceSymbolEffect
 
 定义ReplaceSymbolEffect类，继承自父类SymbolEffect。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AeadParamsSpec
 
 Describes parameters in [init()](arkts-cryptoarchitecture-cipher-i.md#init-4) for symmetric encryption and decryption using authenticated encryption with association data (AEAD). It inherits from [ParamsSpec](arkts-cryptoarchitecture-paramsspec-i.md#paramsspec). It is applicable to the CCM and GCM modes of [AES](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#aes). It is applicable to the GCM mode of [SM4](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#sm4). It is applicable to [ChaCha20-Poly1305](../../../../security/CryptoArchitectureKit/crypto-sym-encrypt-decrypt-spec.md#chacha20). > **NOTE** > > When **AeadParamsSpec** is used for encryption in AES-CCM mode: > - If the tag length is specified during encryption, the same length must be passed during decryption. > > - Only one of [update](arkts-cryptoarchitecture-cipher-i.md#update-1) and > [doFinal](arkts-cryptoarchitecture-cipher-i.md#dofinal-1) can be called for encryption or decryption in CCM mode. Each > method can be called only once.

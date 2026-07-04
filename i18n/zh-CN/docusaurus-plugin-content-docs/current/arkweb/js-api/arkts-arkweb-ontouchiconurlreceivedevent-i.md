@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnTouchIconUrlReceivedEvent
 
 定义设置接收到apple-touch-icon url地址时的回调函数。

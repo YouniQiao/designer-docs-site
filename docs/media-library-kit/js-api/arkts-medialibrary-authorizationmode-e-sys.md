@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthorizationMode (System API)
 
 Enumerates the authorization modes.

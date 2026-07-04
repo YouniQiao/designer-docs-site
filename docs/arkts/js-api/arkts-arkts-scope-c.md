@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Scope
 
 The Scope interface is used to describe the valid range of a field.

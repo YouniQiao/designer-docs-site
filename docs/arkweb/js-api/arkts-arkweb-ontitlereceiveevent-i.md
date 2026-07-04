@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnTitleReceiveEvent
 
 Defines the triggered function when the title of the main application document changes.

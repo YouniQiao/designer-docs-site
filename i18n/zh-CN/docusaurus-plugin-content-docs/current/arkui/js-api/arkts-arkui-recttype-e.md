@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RectType
 
 窗口矩形区域坐标系类型。

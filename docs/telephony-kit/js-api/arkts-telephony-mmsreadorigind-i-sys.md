@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MmsReadOrigInd (System API)
 
 Defines the original MMS message reading indication.

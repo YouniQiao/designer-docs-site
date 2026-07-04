@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FontVariationAxis
 
 Represents the font variable axis information.

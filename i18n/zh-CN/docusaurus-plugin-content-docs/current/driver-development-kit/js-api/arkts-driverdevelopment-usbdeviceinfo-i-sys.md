@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # USBDeviceInfo（系统接口）
 
 USB设备详细信息，继承自[DeviceInfo](arkts-driverdevelopment-deviceinfo-i-sys.md#deviceinfo)。

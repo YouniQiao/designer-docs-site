@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Aperture (System API)
 
 Provides the APIs for aperture settings. It inherits from [ApertureQuery](arkts-camera-aperturequery-i-sys.md#aperturequery).

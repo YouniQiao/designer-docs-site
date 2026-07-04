@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoSelectResult
 
 返回图库选择后的结果集。

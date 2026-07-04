@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NfcForumType
 
 NfcForum Type definition. The NDEF tag may use one of them.

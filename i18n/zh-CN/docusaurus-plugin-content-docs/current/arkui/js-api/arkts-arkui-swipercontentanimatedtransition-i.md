@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwiperContentAnimatedTransition
 
 ArcSwiper自定义切换动画相关信息。

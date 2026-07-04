@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Task
 
 Implements an upload or download task. Before using this API, you must obtain a **Task** object, from a promise through [request.agent.create](arkts-basicservices-create-f.md#create-2) or from a callback through [request.agent.create](arkts-basicservices-create-f.md#create-1). > **NOTE** > > The **Task** object and its mounting callback function are released and automatically reclaimed by the system > after the **remove** method is called.

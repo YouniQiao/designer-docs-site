@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureMode
 
 Defines the recognition mode of a gesture group.

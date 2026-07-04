@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileWriteTextOption
 
 可选项类型，支持writeText接口使用。

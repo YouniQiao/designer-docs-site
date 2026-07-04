@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadErrorType
 
 Enumerates the device-cloud download error types.

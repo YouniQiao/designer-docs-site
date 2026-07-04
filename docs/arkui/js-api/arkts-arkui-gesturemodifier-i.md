@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureModifier
 
 You need a custom class to implement the **GestureModifier** API.

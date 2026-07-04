@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmKeyDigest
 
 Enumerates the digest algorithms that can be used for signing and signature verification.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StyledStringChangeValue
 
 属性字符串的文本变化信息。

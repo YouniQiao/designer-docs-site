@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SheetTitleOptions
 
 半模态面板的标题。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthType (System API)
 
 Enumerates the authentication credential types.

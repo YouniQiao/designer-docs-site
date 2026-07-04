@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileReadTextOption
 
 可选项类型，支持readText接口使用。

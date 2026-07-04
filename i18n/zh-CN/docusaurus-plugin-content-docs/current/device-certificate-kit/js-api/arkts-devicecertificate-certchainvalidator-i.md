@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertChainValidator
 
 证书链校验器对象。

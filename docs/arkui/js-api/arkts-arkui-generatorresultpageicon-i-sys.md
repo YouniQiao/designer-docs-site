@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeneratorResultPageIcon (System API)
 
 Custom icon object in the generation result page of ImageGeneratorDialog.

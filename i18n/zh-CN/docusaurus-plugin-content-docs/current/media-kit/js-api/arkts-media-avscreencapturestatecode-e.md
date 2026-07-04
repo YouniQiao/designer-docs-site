@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVScreenCaptureStateCode
 
 屏幕录制的状态回调。

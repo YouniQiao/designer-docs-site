@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PINAuth（系统接口）
 
 PIN码认证基类。

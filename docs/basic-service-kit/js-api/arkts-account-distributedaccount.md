@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.account.distributedAccount
 
 The **distributedAccount** module provides APIs for managing distributed accounts, including querying and updating account login states.

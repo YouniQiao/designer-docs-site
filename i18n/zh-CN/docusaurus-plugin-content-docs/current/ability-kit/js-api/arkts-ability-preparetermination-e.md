@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrepareTermination
 
 应用准备关闭时返回的动作，该类型为枚举。需要配合[AbilityStage](arkts-ability-abilitystage-c.md#abilitystage)的 [onPrepareTermination](arkts-ability-abilitystage-c.md#onpreparetermination-1)或者 [onPrepareTerminationAsync](arkts-ability-abilitystage-c.md#onprepareterminationasync-1)方法使用。

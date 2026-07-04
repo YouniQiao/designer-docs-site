@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeviceAddressType
 
 Wi-Fi device address( mac / bssid ) type.

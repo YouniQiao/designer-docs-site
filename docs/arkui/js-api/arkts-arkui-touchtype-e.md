@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TouchType
 
 Sets the trigger status type of a touch operation.

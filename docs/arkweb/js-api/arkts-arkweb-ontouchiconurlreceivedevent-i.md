@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnTouchIconUrlReceivedEvent
 
 Defines the triggered callback when the application receive an new url of an apple-touch-icon.

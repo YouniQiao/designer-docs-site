@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIInspector
 
 Provides APIs for registering the component layout and drawing display completion callbacks.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TouchPoint
 
 Represents information about a single touch point on the display.

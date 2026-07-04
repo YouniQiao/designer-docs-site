@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CryptoExtensionAbility
 
 Class to be override for external crypto extension ability.

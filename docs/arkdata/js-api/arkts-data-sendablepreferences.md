@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.data.sendablePreferences
 
 The **sendablePreferences** module provides APIs for processing data in the form of key-value (KV) pairs, including querying, modifying, and persisting KV pairs. In the KV pairs, the key must be a string, and the value can be a number, a string, a Boolean value, a bigint, or a serializable object. The persistent files of the shared user preferences are stored in the [preferencesDir](../../../../application-models/application-context-stage.md#obtaining-application-file-paths) directory. Before creating a preferences object, ensure that the **preferencesDir** path can be read and written. The [encryption level](../../apis-ability-kit/arkts-apis/arkts-ability-areamode-e.md#areamode) of the persistent file directory determines the access to the files. For details, see [Application File Directory and Application File Path](../../../../file-management/app-sandbox-directory.md#application-file-directory-and-application-file-path) . Sendable preferences can be passed between concurrent ArkTS instances (including the main thread and TaskPool or Worker threads) by reference. It allows for higher performance than [user preferences](arkts-data-preferences.md#preferences). For more information, see [Using Sendable Objects](../../../../arkts-utils/sendable-guide.md). > **NOTE** > > The shared user preferences are not thread-safe and may cause file damage and data loss when used in multi-process > scenarios. Do not use it in multi-process scenarios.

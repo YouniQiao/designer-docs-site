@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FlipDirection
 
 翻牌方向。默认值为DOWN。

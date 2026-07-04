@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollSnapAnimationSpeed
 
 设置列表项滚动限位动画速度。

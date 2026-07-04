@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IntentResult
 
 Defines the return result of intent execution. The [generic type](../../../../quick-start/introduction-to-arkts.md#generic-class-and-interface) is supported.

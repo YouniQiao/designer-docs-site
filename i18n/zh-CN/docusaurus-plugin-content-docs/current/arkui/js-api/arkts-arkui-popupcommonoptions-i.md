@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PopupCommonOptions
 
 配置弹出气泡的参数。使用[UIContext](../arkts-apis/arkts-arkui-uicontext.md)中的 [getPromptAction()](@ohos.arkui.UIContext#getPromptAction)方法获取到 [PromptAction](@ohos.arkui.UIContext#PromptAction)对象，再通过该对象调用 [openPopup](../../../../reference/apis-arkui/arkts-apis-uicontext-promptaction.md#openpopup18)和 [updatePopup](../../../../reference/apis-arkui/arkts-apis-uicontext-promptaction.md#updatepopup18)时传入的options参数。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.ability.wantConstant
 
 wantConstant模块提供want中操作want常数和解释Flags说明的能力。

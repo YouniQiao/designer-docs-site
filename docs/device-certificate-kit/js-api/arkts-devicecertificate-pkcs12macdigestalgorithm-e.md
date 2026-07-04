@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Pkcs12MacDigestAlgorithm
 
 Enumerates the PKCS #12 MAC digest algorithms.

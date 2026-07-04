@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnScreenCaptureRequestEvent
 
 Represents the callback invoked when a screen capture request is received.

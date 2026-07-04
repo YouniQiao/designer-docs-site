@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyItem
 
 Enumerates other key information. This refers to the information of other keys that have been pressed when the current [KeyCode](arkts-mdm-keycode-e.md#keycode) event occurs.

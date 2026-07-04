@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UploadTask
 
 上传任务，使用下列方法前，需要先获取UploadTask对象，promise形式通过 [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-2)获取，callback形式通过 [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-1) 获取。

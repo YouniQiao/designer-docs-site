@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Visibility
 
 Defines the visibility and layout placeholder status of the component.

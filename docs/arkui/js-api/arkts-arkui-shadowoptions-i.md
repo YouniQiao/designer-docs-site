@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShadowOptions
 
 Provides the shadow attributes, including the blur radius, color, and offset along the x-axis and y-axis.

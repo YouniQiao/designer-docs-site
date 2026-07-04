@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetReportData
 
 Describe the GET_REPORT data is received from remote host.

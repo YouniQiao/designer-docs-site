@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Kem
 
 Indicates the KEM(key encapsulation mechanism) type, which is used for key encapsulation and decapsulation operations.

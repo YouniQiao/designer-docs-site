@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # drawing_pixel_map.h
 
 ## 概述

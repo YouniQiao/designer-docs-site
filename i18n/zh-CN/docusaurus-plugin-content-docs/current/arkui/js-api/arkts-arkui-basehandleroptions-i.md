@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BaseHandlerOptions
 
 基础手势处理器配置参数。

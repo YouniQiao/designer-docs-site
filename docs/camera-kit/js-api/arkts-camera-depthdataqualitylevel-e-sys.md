@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DepthDataQualityLevel (System API)
 
 Enumerates the quality levels of depth data.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WorkSchedulerExtensionAbility
 
 Provides callbacks to be invoked when the scheduling conditions are met or the scheduling ends, for example, [onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1) or [onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1) in WorkSchedulerExtensionAbility.

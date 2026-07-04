@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OpenHarmonyAppItem
 
 Represents data of the home screen icon type defined by the system.

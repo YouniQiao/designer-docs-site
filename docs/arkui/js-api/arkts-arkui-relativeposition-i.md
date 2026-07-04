@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RelativePosition
 
 Describes a coordinate position in the relative coordinate system, with the origin in the top-left corner of the screen specified by **displayId**.

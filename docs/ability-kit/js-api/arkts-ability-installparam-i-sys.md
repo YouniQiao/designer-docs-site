@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InstallParam (System API)
 
 Defines the parameters that need to be specified for bundle installation, uninstall, or recovering.

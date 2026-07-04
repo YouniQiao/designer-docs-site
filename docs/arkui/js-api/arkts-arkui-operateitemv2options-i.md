@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OperateItemV2Options
 
 Declare interface OperateItemV2Options

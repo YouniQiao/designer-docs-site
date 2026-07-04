@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipV2CloseIcon
 
 定义默认的关闭图标。

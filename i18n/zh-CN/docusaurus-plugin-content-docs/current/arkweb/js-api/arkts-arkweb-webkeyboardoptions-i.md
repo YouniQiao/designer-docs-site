@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebKeyboardOptions
 
 Defines the web keyboard options when onInterceptKeyboardAttach event return.

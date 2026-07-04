@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ViewportFit
 
 Enumerates the viewport types available for **viewport-fit** in the web page **\<meta>** tag.

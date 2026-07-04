@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.resourceManager
 
 本模块提供资源获取能力。根据当前的[Configuration](arkts-localization-configuration-c.md#configuration)配置，获取最匹配的应用资源或系统资源。 具体匹配规则参考[资源匹配](../../../../quick-start/resource-categories-and-access.md#资源匹配)。 Configuration配置包括语言、区域、横竖屏、颜色模式、Mcc（移动国家码）和Mnc（移动网络码）、Device capability（设备类型）、Density（分辨率）。

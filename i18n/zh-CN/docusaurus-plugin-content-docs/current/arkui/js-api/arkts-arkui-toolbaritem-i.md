@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ToolbarItem
 
 工具栏可配置参数。

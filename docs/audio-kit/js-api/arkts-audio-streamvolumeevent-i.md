@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StreamVolumeEvent
 
 Describes the event received by the application when the audio stream volume is changed.

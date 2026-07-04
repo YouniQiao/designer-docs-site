@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppAccountManager
 
 应用账号管理器，可用于管理应用自身的账号信息。

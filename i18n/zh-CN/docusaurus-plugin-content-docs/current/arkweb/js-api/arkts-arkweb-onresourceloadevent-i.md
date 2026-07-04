@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnResourceLoadEvent
 
 定义加载url时触发。

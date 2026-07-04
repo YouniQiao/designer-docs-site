@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PointLightStyle（系统接口）
 
 通过设置光源和被照亮的类型实现点光源照亮周围组件的UI效果。

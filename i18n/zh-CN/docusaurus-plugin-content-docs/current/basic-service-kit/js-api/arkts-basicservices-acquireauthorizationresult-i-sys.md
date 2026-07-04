@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AcquireAuthorizationResult（系统接口）
 
 表示获取授权的结果。

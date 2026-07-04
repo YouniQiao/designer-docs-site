@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Mesh
 
 The mesh instance owned by the mesh node

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResourceRequest (System API)
 
 The request of standby resources.

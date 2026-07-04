@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollSnapAnimationSpeed
 
 Enumerates the speeds of the snap animation for list scrolling.

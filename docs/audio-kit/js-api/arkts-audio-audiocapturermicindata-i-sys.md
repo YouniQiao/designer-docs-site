@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioCapturerMicInData (System API)
 
 Describes audio capturer data that contains processed audio data and microphone input (mic-in) audio data before any processing.

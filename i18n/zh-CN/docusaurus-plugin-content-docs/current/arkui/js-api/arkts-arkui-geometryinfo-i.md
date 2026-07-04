@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeometryInfo
 
 父组件（自定义组件）布局信息，继承自[SizeResult](arkts-arkui-sizeresult-i.md#sizeresult)。

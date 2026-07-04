@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - 头文件
     - [raw_file_manager.h](capi-raw-file-manager-h.md)
     - [raw_dir.h](capi-raw-dir-h.md)

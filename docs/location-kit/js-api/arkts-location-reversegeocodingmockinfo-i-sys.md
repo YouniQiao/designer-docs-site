@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReverseGeocodingMockInfo (System API)
 
 Configuration parameters for simulating reverse geocoding.

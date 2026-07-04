@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConsoleMessage
 
 Encompassed message information as parameters to {@link onConsole} method.

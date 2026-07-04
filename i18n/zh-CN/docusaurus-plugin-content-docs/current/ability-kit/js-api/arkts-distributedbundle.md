@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.distributedBundle
 
 本模块提供分布式包的管理。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用 > [@ohos.bundle.distributedBundleManager](arkts-bundle-distributedbundlemanager.md#distributedbundlemanager)替代。 > > 本模块为系统接口。

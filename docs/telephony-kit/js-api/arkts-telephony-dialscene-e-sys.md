@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialScene (System API)
 
 Indicates the scenarios of the call to be made.

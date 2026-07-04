@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextDecoderOptions
 
 描述解码相关的选项，包含 **fatal** 和 **ignoreBOM**。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TabsOptions
 
 Tabs组件参数，设置Tabs的页签位置，当前显示页签的索引，Tabs控制器和TabBar的[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MonitorOptions
 
 Defines the optional parameters for [addMonitor](arkts-arkui-uiutils-c.md#addmonitor-1), which are used to configure the callback type and whether to enable the wildcard capability.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InputEvent
 
 The **inputEvent** module provides the basic events reported by the device.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CopyOptions
 
 Defines the callback for listening for the copy progress.

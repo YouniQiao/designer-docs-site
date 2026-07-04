@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GcmParamsSpec
 
 Encapsulates the parameters for encryption or decryption using a block cipher mode that requires an IV. It is a child class of [ParamsSpec](arkts-cryptoarchitecture-paramsspec-i.md#paramsspec) and used as a parameter in [init()](arkts-cryptoarchitecture-cipher-i.md#init-4) for symmetric encryption or decryption. Applies to the GCM mode. > **NOTE** > > 1. Before passing a value to [init()](arkts-cryptoarchitecture-cipher-i.md#init-4), specify **algName** for its parent class [ParamsSpec](#paramsspec). > 2. The Crypto framework imposes no additional restrictions on the IV of 1 to 128 bytes. However, the operation result depends on the underlying OpenSSL support. > 3. If **aad** is not required or the **aad** length is 0, you can set its **data** attribute to an empty Uint8Array in the **aad: { data: new Uint8Array() }** format when constructing **GcmParamsSpec**.

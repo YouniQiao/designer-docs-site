@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScanFilter
 
 Describes the criteria for filtering scanning results can be set.

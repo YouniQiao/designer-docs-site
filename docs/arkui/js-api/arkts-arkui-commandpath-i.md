@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommandPath
 
 Describes the command for drawing a path.

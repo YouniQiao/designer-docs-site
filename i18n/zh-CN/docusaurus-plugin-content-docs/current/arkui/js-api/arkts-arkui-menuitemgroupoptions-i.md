@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MenuItemGroupOptions
 
 菜单MenuItem分组的标题和尾部信息。

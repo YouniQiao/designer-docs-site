@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DistributedAccountAbility
 
 提供查询和更新分布式账号登录状态方法（需要先获取分布式账号的单实例对象）。

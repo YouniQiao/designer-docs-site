@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OH_Drawing_Font_Metrics
 
 ```c

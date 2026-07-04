@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ControlEventParam
 
 画中画控制面板控件动作回调的参数。

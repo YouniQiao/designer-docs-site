@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EapMethod
 
 Enumerates the EAP authentication methods. > **NOTE** > > Currently, only the EAP_PEAP and EAP_TLS authentication methods are supported.

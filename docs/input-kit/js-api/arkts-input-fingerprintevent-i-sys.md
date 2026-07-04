@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FingerprintEvent (System API)
 
 Provides fingerprint gesture event types and the offset of the fingerprint sensor relative to the side edge.

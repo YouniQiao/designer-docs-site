@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NightPhotoSession (System API)
 
 NightPhotoSession extends Session, Flash, AutoExposure, Focus, Zoom, ColorEffect, ColorManagement, ManualExposure Implements a night photo session, which sets the parameters of the night photo mode and saves all [CameraInput](arkts-camera-camerainput-i.md#camerainput), [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput), and [PhotoOutput](arkts-camera-photooutput-i.md#photooutput) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md#session). For night photo capture scenarios, you must listen for the [onCaptureEnd](arkts-camera-photooutput-i.md#on-8) event to mark the end of the photo capture session.

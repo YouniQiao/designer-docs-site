@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ApplicationFlag（系统接口）
 
 应用信息标志，指示需要获取的应用信息的内容。

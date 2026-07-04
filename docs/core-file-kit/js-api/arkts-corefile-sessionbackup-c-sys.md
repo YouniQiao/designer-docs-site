@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SessionBackup (System API)
 
 Control class for backup procedure.

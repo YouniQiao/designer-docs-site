@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Timeout
 
 任务的超时配置。任务处于等待状态的时间不参与计算，上传下载任务会存在以下任务等待的原因: [WaitingReason<sup>20+</sup>](arkts-basicservices-waitingreason-e.md#waitingreason) 。

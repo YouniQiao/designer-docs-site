@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CancelButtonSymbolOptions
 
 定义清除按钮Symbol图标选项。

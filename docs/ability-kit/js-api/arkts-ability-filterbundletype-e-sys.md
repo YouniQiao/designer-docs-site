@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FilterBundleType (System API)
 
 Enumerates the types of applications to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the application types you want to listen for.

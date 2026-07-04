@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InsightIntentExecutor
 
 The module provides the base class for intent execution. You can use this module to interface with the [InsightIntent framework](../../../../application-models/insight-intent-overview.md) on the device side and implement intent service logic through [configuration files](../../../../application-models/insight-intent-config-development.md) . In addition to developing intents via configuration files, intents can also be developed using decorators. For API version 20 and later, you are advised to [develop intents using decorators](../../../../application-models/insight-intent-decorator-development.md).

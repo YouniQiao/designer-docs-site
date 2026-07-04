@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollOffset
 
 Represents the current scrolling offset of a web page.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Entity
 
 Enumerates the entity constants of the Want object. **entity** specifies additional information of the target ability.

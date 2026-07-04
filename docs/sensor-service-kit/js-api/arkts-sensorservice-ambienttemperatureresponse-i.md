@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AmbientTemperatureResponse
 
 Describes the ambient temperature sensor data. It extends from [Response](arkts-sensorservice-response-i.md#response).

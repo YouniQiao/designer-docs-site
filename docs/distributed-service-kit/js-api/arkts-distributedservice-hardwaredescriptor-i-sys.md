@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HardwareDescriptor (System API)
 
 Represents the distributed hardware information.

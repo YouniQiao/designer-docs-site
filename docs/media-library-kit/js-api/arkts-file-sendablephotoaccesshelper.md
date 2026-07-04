@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.file.sendablePhotoAccessHelper
 
 Helper functions to access image and video assets

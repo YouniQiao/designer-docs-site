@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderMode
 
 Enumerates the rendering modes of the **Web** component. By default, the asynchronous rendering mode is used.

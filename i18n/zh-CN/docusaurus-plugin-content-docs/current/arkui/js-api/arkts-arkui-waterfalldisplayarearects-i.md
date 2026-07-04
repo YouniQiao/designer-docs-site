@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WaterfallDisplayAreaRects
 
 瀑布屏曲面部分显示区域。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CaptureFilterOptions
 
 Defines the options for filtering the played audio streams to be recorded.

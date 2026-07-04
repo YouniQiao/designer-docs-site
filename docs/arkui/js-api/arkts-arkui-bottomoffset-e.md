@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BottomOffset
 
 dialog relative to bottom distance if tabs are present.

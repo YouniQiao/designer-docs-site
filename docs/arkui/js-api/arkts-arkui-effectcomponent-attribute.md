@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EffectComponent properties/events
 
 The universal attributes are supported. Currently, this component only works with the **backgroundBlurStyle** attribute. The universal events are not supported.

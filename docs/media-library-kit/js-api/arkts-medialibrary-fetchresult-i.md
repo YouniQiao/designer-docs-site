@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FetchResult
 
 Provides APIs to manage the file retrieval result.

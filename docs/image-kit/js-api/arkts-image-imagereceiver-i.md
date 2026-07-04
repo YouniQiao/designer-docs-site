@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageReceiver
 
 Image receiver class. You can use it to obtain the surface ID of a component, read the latest image and the next image, and release **ImageReceiver** instances. Before calling any APIs in ImageReceiver, you must create an ImageReceiver instance.

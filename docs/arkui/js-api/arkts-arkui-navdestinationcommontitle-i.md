@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavDestinationCommonTitle
 
 Defines a general title for the **NavDestination** component.

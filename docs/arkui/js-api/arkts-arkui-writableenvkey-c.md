@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WritableEnvKey
 
 Defines the writable system environment key.

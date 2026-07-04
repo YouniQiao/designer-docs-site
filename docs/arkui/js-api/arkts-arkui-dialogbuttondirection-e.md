@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogButtonDirection
 
 Enumerates the alignment modes of the buttons in the alert dialog box.

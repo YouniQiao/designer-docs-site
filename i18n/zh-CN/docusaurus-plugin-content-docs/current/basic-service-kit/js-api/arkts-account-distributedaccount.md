@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.account.distributedAccount
 
 本模块提供管理分布式账号的一些基础功能，主要包括查询和更新账号登录状态。

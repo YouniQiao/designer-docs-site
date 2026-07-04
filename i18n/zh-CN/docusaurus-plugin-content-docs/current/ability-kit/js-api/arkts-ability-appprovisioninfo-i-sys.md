@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppProvisionInfo（系统接口）
 
 应用[HarmonyAppProvision配置文件](../../../../security/app-provision-structure.md)中的信息。

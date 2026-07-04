@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChineseCalendar
 
 Provide a ChineseCalendar interface which could handle unique characteristics of the chinese calendar, such as leap month.

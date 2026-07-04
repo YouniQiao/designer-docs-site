@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DistributedBundleEnableInfo (System API)
 
 Describes the bundle information of an application that enables cross-device collaboration.

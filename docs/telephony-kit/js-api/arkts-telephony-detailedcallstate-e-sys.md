@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DetailedCallState (System API)
 
 Indicates the detailed state of call.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LazyColumnLayoutAttribute
 
 Defines the lazy column layout attribute.

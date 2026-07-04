@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthenticatorInfo
 
 表示OAuth认证器信息。

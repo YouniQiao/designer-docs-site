@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EffectScope
 
 The scope type of the symbol effect.

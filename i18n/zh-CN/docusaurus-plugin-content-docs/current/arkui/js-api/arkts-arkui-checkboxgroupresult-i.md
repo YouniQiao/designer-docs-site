@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CheckboxGroupResult
 
 多选框群组的名称和状态。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NativeEmbedVisibilityInfo
 
 Provides visibility information about the same-layer tag.

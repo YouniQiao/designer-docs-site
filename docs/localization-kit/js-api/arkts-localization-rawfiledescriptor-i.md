@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RawFileDescriptor
 
 Provides the descriptor of the HAP where the rawfile is located.

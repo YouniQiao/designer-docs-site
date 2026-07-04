@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AxisEvent
 
 轴事件的对象说明，继承于[BaseEvent](arkts-arkui-baseevent-i.md#baseevent)。

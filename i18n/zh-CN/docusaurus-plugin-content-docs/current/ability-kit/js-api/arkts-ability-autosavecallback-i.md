@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoSaveCallback
 
 当保存请求完成时所触发的回调接口。

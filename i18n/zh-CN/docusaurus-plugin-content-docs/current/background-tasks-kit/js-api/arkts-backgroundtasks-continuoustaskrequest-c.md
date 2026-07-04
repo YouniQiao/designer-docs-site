@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContinuousTaskRequest
 
 通常作为 [startBackgroundRunning()](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4) 和 [updateBackgroundRunning()](arkts-backgroundtasks-updatebackgroundrunning-f.md#updatebackgroundrunning-2) 接口的入参，用于指定申请或更新的长时任务信息。其中： 1. 通过[startBackgroundRunning()](arkts-backgroundtasks-startbackgroundrunning-f.md#startbackgroundrunning-4)接口申请长时任务时，如果待申请长时任务与当前应用下已存在长时任务，两者的主类型和子类型均相同，且combinedTaskNotification均取值为true，则会合并通知。否则不会合并通知。 2. 如果长时任务本身没有通知，则不会合并，长时任务类型是否会通知请参考[BackgroundTaskMode](arkts-backgroundtasks-backgroundtaskmode-e.md#backgroundtaskmode)。 3. 如果长时任务类型中包含数据传输类型，则不会合并通知。 4. 通知合并后不能取消合并，已合并的不能更新成不合并。 5. 通知合并后，点击通知栏消息，会跳转到第一个申请的长时任务对应的UIAbility，如果调用了更新接口，则跳转到最后一次更新的长时任务对应的UIAbility。 6. 通过[updateBackgroundRunning()](arkts-backgroundtasks-updatebackgroundrunning-f.md#updatebackgroundrunning-2)接口更新长时任务时，传入的continuousTaskId必须存在，否则更新失败。 7. 从API version 22开始支持特殊场景类型[MODE_SPECIAL_SCENARIO_PROCESSING](arkts-backgroundtasks-backgroundtaskmode-e.md#backgroundtaskmode)的长时任务。必须单独使用且不支持通知合并，即申请或更新长时任务时，长时任务类型只能有特殊场景类型，否则返回错误。

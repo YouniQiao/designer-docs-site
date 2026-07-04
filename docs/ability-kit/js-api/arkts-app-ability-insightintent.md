@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.insightIntent
 
 This module provides basic definitions of the [InsightIntent framework](../../../../application-models/insight-intent-overview.md).

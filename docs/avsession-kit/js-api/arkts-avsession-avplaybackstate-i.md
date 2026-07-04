@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVPlaybackState
 
 Used to indicate the playback state of the current media. If the playback state of the media changes, it needs to be updated synchronously

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoSubType (System API)
 
 Enumeration types for different types of FileAsset

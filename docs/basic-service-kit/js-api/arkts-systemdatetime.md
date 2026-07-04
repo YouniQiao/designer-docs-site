@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.systemDateTime
 
 The **systemTime** module provides system time and time zone features. You can obtain the system time and time zone by using the following APIs.

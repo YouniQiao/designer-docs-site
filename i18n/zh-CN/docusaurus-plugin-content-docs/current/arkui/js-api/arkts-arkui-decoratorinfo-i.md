@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DecoratorInfo
 
 可被观察对象关联的装饰器和组件信息。

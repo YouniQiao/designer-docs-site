@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertChainBuildResult
 
 用于指定证书链创建结果。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVErrorCode
 
 Enumerates the types of [Media error codes](../../../../reference/apis-media-kit/errorcode-media.md).

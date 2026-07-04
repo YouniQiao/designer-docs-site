@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnscreenAwarenessCap (System API)
 
 Defines onscreen awareness capabilities (including but not limited to awareness in a reading scenario and OCR).

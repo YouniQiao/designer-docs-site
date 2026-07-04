@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectionMenuOptions
 
 SelectionMenuOptions定义SelectionMenu的可选菜单类型项及其具体配置参数。

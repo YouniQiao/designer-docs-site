@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DlpConnPlugin
 
 Registers the callback capability with the system ability (SA). This API is used in the **registerPlugin** API. > **NOTE** > > [registerPlugin](arkts-dataprotection-dlpconnmanager-c.md#registerplugin-1) requires identical parameters to this API. > [connectServer](arkts-dataprotection-dlpconnplugin-i.md#connectserver-1) is called by the SA and the parameters are > returned through the callback.

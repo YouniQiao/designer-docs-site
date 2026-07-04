@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsedScene
 
 Describes the use scenario and timing for using the permission.

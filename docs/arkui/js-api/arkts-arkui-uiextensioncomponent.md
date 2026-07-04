@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIExtensionComponent
 
 Provide an interface for the UIExtensionComponent, which is used <br/>to render UI of a remote UIExtensionAbility

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrinterEvent
 
 打印机相关事件的枚举。

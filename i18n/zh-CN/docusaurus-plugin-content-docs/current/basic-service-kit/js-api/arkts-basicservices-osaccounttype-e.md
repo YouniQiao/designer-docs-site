@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OsAccountType
 
 表示系统账号类型的枚举。

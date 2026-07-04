@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationActionButton
 
 描述通知中显示的操作按钮。

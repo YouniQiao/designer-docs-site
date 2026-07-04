@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ItemDragEventHandler
 
 定义拖拽事件

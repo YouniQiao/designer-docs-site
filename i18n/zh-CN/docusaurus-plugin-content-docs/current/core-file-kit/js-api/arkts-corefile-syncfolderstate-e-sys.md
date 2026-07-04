@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SyncFolderState（系统接口）
 
 枚举，云盘的同步根的状态。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebHeader
 
 Web组件返回的请求/响应头对象。

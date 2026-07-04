@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.file.securityLabel
 
 The **securityLabel** module provides APIs for managing data security levels of files, including obtaining and setting file security levels.

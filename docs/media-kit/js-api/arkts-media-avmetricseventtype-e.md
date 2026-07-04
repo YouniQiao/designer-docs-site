@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVMetricsEventType
 
 Enumerates the metric events supported by the media service.

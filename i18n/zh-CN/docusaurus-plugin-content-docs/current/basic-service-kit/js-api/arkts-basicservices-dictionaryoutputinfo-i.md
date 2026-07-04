@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DictionaryOutputInfo
 
 InflateGetDictionary和deflateGetDictionary这两个函数会返回值的相关信息。

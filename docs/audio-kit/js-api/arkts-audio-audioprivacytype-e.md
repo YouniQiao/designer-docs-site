@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioPrivacyType
 
 Enumerates whether an audio stream can be recorded by other applications.

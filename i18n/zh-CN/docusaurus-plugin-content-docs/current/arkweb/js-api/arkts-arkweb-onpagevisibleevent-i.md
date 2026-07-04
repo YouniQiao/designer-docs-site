@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnPageVisibleEvent
 
 Defines the triggered callback when previous page will no longer be drawn and next page begin to draw.

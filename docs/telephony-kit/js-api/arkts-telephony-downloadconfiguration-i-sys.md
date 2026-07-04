@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadConfiguration (System API)
 
 Specifies the download configuration.

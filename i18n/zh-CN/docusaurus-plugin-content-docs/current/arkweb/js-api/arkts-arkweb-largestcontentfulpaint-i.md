@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LargestContentfulPaint
 
 提供网页绘制页面最大内容的详细信息。

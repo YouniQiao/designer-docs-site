@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IChipV2OptionsConfig
 
 定义ChipV2选项接口。

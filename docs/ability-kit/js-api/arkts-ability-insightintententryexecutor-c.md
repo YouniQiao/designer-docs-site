@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InsightIntentEntryExecutor
 
 The class of insight intent entry executor.

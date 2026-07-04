@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SourceTool
 
 定义输入源对应的工具类型。

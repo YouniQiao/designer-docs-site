@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [moving_photo_capi.h](capi-moving-photo-capi-h.md)
     - [media_asset_manager_capi.h](capi-media-asset-manager-capi-h.md)

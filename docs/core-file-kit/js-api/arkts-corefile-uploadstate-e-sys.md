@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UploadState (System API)
 
 Describes the State type of file upload.

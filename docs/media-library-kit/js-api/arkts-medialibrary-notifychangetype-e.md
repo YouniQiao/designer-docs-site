@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotifyChangeType
 
 Enumerates the types of media asset and album changes.

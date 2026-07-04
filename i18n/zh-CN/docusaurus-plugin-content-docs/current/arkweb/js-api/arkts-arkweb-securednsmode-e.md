@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SecureDnsMode
 
 Web组件使用HTTPDNS的模式。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Scope
 
 Scope 接口用于描述字段的有效范围。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnPageEndEvent
 
 Defines the triggered function at the end of web page loading.

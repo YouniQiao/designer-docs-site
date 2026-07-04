@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.arkui.intelligence.imageGeneration
 
 Module for AI-generated images using UI Component.

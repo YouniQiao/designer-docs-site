@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # authPrintJob（系统接口）
 
 ## authPrintJob

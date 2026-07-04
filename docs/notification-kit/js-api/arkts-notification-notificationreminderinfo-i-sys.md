@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationReminderInfo (System API)
 
 Describes the information about the application reminder.

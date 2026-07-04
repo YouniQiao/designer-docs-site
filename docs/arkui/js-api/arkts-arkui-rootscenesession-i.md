@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RootSceneSession (System API)
 
 Defines the session of RootScene.

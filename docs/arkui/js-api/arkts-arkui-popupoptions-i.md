@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PopupOptions
 
 Defines the style parameters of the popup.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GridItem properties/events
 
 **Inheritance/Implementation:** GridItemAttribute extends [CommonMethod<GridItemAttribute>](CommonMethod<GridItemAttribute>)

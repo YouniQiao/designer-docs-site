@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SegmentButtonOptions
 
 > **NOTE** > > The component does not support custom font type settings. Provides initial data and custom properties for the **SegmentButton** component.

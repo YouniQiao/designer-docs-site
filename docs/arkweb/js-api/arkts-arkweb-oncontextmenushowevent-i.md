@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnContextMenuShowEvent
 
 Represents the callback invoked during a call to allow for the display of a custom context menu.

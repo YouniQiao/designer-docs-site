@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AdvancedMeasureFormat
 
 Building upon the measurement unit formatting capabilities provided by Intl.NumberFormat, the formatting functionality has been enhanced. It supports automatically selecting appropriate measurement units based on usage scenarios to format numbers.For example, there are many units of measurement for length, including millimeters, centimeters, meters, kilometers, and so on. However, depending on the context in which the measurement is used, each scenario has its commonly used units. Millimeters are more frequently used when expressing rainfall, while meters are more commonly used to describe visibility.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Statistic
 
 Defines a struct for the device-cloud sync statistics of a database table.

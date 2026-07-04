@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureMask
 
 定义是否屏蔽子组件手势。

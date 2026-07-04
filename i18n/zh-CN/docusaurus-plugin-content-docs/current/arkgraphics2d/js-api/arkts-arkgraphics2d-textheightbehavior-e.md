@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextHeightBehavior
 
 文本高度修饰符模式枚举。

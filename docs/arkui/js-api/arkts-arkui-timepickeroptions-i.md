@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TimePickerOptions
 
 Describes the parameters of the time picker. Property modifications made to **TimePickerOptions** during the **TimePicker** scrolling process may not take effect. The **Date** object is used to handle dates and time. It can be used in the following ways: **Method 1**: new Date() Obtains the current system date and time. **Method 2**: new Date(value: number | string) **Method 3**: new Date(year: number, monthIndex: number, date?: number, hours?: number, minutes?: number, seconds?: number, ms?: number)

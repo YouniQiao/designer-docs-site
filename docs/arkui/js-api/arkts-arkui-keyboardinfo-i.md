@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyboardInfo
 
 Describes the information about the soft keyboard window.

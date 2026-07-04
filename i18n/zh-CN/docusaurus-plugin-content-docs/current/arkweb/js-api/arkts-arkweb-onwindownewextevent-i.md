@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnWindowNewExtEvent
 
 Defines the triggered callback when web page requires the user to create a window.

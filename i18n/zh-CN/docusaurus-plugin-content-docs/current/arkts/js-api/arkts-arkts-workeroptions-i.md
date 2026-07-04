@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WorkerOptions
 
 Worker构造函数的选项，用于为Worker添加其他信息。

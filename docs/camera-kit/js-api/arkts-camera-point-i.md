@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Point
 
 Describes the point coordinates, which are used for focus and exposure configuration.

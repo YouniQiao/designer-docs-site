@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Curve
 
 Defines an interpolation curve. For details about the curves and animations, see <!--RP1--> [Bezier Curve](../../../../../design/ux-design/animation-attributes.md)<!--RP1End-->.

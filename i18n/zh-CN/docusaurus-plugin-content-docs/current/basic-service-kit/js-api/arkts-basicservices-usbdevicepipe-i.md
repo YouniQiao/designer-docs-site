@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # USBDevicePipe
 
 USB设备消息传输通道，用于确定设备。

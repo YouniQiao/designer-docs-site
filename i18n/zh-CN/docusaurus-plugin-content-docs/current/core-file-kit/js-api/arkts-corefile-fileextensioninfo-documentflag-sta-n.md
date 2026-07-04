@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DocumentFlag
 
 组成FileInfo中的mode字段，通过与运算判断是否具备某种能力。

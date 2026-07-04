@@ -11,7 +11,6 @@ const config: Config = {
 
   future: {
     v4: true,
-    faster: false,
   },
 
   url: 'https://designer-docs.example.com',
@@ -51,6 +50,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {

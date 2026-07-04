@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExposureMeteringMode (System API)
 
 Enumerates the exposure metering modes.

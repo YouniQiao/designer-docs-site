@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsRsaSignaturePadding
 
 表示RSA类型CMS签名填充方式的枚举。

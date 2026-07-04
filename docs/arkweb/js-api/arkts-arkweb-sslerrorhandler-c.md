@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SslErrorHandler
 
 Defines the ssl error request result, related to {@link onSslErrorEventReceive} method.

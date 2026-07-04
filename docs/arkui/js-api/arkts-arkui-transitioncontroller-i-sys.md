@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransitionController (System API)
 
 Implements the transition animation controller. Before calling any API, you must create a system window. For details, see the sample code.

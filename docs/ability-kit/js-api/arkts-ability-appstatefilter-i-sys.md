@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppStateFilter (System API)
 
 Describes the filter for application lifecycle change events. It can be used as a parameter of [on](arkts-ability-on-f-sys.md#on-3) to filter application lifecycle change events you want to listen for.

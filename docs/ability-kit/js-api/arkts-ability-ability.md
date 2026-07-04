@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.ability.ability
 
 The module provides all level-2 module APIs for developers to export.

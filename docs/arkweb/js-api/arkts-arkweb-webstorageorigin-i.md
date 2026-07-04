@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebStorageOrigin
 
 Provides usage information of the Web SQL Database.

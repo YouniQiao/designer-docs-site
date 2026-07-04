@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShowNotificationOptions
 
 **起始版本：** 3

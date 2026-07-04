@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DocumentSaveOptions
 
 文档保存选项。

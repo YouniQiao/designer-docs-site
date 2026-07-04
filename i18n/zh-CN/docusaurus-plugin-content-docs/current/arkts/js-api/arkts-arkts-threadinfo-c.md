@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ThreadInfo
 
 工作线程的内部信息。

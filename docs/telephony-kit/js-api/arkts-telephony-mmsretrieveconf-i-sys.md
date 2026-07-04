@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MmsRetrieveConf (System API)
 
 Defines the MMS message retrieval configuration.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScreenDensity
 
 用于表示当前设备屏幕密度。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EffectFillStyle
 
 EffectFillStyle的枚举值。

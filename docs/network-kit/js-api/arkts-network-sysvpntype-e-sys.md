@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SysVpnType (System API)
 
 Defines the type for the VPN network.

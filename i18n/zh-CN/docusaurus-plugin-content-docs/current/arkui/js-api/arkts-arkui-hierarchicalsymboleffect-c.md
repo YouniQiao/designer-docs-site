@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HierarchicalSymbolEffect
 
 定义HierarchicalSymbolEffect类，继承自父类SymbolEffect。

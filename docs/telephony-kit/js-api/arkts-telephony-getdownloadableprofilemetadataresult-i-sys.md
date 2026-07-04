@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetDownloadableProfileMetadataResult (System API)
 
 Result the metadata for a downloadableProfile.

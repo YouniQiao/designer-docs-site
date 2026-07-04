@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoEditorExtensionAbility
 
 Class of the photo editor ExtensionAbility, which provides APIs for you to edit photos.

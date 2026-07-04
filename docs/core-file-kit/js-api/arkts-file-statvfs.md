@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.file.statvfs
 
 This module provides APIs for obtaining file system information, including the total size and free size of a file system, in bytes.

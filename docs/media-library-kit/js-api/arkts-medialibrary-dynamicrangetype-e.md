@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DynamicRangeType
 
 Enumerates the dynamic range types of media assets.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderFit
 
 Enumerates the modes in which the final state of the component's content is rendered during its width and height animation process.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Phase2Method
 
 表示第二阶段认证方式的枚举。

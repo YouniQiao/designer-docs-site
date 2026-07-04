@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Event (System API)
 
 Describes the SSAP event.

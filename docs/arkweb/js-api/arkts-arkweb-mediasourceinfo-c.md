@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaSourceInfo
 
 Implements a **MediaSourceInfo** object to provide the information about the media source. > **NOTE** > > - The sample effect is subject to the actual device.

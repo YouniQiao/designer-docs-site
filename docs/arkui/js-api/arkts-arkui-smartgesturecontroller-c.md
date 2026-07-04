@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SmartGestureController
 
 Provides the capability to enable smart gestures, monitor them, control the selection state, and dynamically determine smart gesture behavior. > **NOTE** > > The following APIs must be called using a **SmartGestureController** instance obtained via > [getSmartGestureController()](arkts-arkui-uicontext-c.md#getsmartgesturecontroller-1) in **UIContext**.

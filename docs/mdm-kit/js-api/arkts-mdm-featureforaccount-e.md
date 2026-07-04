@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FeatureForAccount
 
 Enumerates the features that can be disabled or enabled for a specified user.

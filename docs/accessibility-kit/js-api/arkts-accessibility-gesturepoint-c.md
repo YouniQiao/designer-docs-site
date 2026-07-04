@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GesturePoint
 
 The **GesturePoint** module provides APIs for creating gesture touch point information required for an accessibility application to inject gestures.

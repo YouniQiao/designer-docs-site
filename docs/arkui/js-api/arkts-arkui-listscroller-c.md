@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListScroller
 
 Implements the scroll controller of the **List** component. A **List** component is bound to a **ListScroller** on a one-to-one basis. > **NOTE** > > **ListScroller** inherits from [Scroller](arkts-arkui-scroller-c.md#scroller) and has all methods of > [Scroller](arkts-arkui-scroller-c.md#scroller).

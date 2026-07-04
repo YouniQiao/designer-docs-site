@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonController
 
 Implements a common controller for managing components related to **promptAction**.

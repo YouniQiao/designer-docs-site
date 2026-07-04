@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MotionBlurAnchor
 
 Define motion blur anchor coordinates.

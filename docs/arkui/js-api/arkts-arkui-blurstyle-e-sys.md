@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlurStyle (System API)
 
 Enumerates the window blur styles.

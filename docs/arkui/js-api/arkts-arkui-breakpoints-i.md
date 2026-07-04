@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BreakPoints
 
 Sets breakpoints for the responsive grid container. For details about breakpoints, see [Breakpoints](../../../../ui/arkts-layout-development-grid-layout.md#breakpoints). <!--code_no_check-->

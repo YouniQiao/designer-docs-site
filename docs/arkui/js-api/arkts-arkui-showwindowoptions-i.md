@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShowWindowOptions
 
 Describes the parameters for displaying a child window or system window.

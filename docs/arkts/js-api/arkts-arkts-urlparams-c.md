@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # URLParams
 
 The URLParams interface defines some practical methods to process URL query strings.

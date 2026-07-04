@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnAudioStateChangedEvent
 
 定义网页上的音频播放状态发生改变时的回调函数。

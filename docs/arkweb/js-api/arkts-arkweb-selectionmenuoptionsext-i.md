@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectionMenuOptionsExt
 
 Represents the selection menu option extension.

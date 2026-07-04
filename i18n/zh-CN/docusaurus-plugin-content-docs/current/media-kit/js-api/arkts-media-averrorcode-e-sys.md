@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVErrorCode
 
 [Media错误码](../../../../reference/apis-media-kit/errorcode-media.md)类型枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RichEditorController
 
 RichEditor组件的控制器，继承自[RichEditorBaseController](arkts-arkui-richeditorbasecontroller-c.md#richeditorbasecontroller)。 > **说明：** > > 当内容的长度超过组件显示区域的高度时，调用插入接口（例如[addTextSpan](arkts-arkui-richeditorcontroller-c.md#addtextspan-1)、 > [addImageSpan](arkts-arkui-richeditorcontroller-c.md#addimagespan-1)、[addBuilderSpan](arkts-arkui-richeditorcontroller-c.md#addbuilderspan-1) > 、[addSymbolSpan](arkts-arkui-richeditorcontroller-c.md#addsymbolspan-1)），组件会自动滚动内容使得插入内容末尾可见。

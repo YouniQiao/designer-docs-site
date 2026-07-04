@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoFillRect（系统接口）
 
 用于自动填充的矩形区域。

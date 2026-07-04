@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MultiAppMode (System API)
 
 The module defines whether an application supports the multi-app mode.

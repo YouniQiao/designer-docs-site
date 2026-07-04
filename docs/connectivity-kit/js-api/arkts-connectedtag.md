@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.connectedTag
 
 Provides methods to operate or manage Connected Tag.

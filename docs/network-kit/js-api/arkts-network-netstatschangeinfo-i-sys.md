@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NetStatsChangeInfo (System API)
 
 Used to monitor and manage the status and usage of network interfaces.

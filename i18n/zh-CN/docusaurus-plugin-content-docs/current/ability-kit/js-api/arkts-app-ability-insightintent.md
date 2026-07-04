@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.insightIntent
 
 本模块提供[意图框架](../../../../application-models/insight-intent-overview.md)基础定义。

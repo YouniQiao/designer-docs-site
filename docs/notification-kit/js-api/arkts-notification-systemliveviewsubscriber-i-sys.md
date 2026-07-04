@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemLiveViewSubscriber (System API)
 
 Subscriber of the system live view notification.

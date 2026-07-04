@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationSubscriber（系统接口）
 
 提供订阅者接收到新通知、取消通知等的回调方法。

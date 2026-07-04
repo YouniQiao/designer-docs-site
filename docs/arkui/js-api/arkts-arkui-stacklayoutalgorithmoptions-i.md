@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StackLayoutAlgorithmOptions
 
 Sets the alignment method of the stack layout algorithm.

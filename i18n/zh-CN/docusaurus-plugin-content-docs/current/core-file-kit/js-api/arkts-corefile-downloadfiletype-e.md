@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DownloadFileType
 
 云盘缓存文件类型的枚举。

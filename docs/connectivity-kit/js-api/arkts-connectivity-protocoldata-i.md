@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ProtocolData
 
 Describe the protocol data is received from remote host.

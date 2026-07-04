@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MixMode
 
 the enum for the blend mode of background color.

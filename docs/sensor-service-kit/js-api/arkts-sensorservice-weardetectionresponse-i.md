@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WearDetectionResponse
 
 Describes the wear detection sensor data. It extends from [Response](arkts-sensorservice-response-i.md#response).

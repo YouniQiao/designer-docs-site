@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HmacSpec
 
 Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec). It is used as an input parameter for HMAC generation. > **NOTE** > > **mdName** specifies the HMAC message digest algorithm. It is mandatory.

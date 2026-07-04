@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HighlightAlbum (System API)
 
 Provides APIs for managing the Highlights album, which is an automatically generated collection of memorable photos or videos.

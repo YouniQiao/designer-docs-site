@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogDismissal
 
 Provides information about the action to dismiss the dialog box.

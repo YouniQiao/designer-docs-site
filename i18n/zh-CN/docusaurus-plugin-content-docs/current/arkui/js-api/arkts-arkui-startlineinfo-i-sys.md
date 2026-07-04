@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StartLineInfo（系统接口）
 
 用于记录Grid页面内起始行的位置信息。

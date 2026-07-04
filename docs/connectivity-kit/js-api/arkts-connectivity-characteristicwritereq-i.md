@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CharacteristicWriteReq
 
 Describes the parameters of the of the Gatt client's characteristic write request.

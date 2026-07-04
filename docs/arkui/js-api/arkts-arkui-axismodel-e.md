@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AxisModel
 
 Enumerates the axis types for focus axis events.

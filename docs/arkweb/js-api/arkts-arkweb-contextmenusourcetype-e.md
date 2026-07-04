@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContextMenuSourceType
 
 Enumerates the event source types that trigger the context menu.

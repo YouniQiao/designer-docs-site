@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LayerMask
 
 Defines the layer mask of the node.

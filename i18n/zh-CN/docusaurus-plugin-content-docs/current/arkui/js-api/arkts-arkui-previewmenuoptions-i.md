@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PreviewMenuOptions
 
 预览菜单的选项。

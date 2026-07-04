@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ParameterItem (System API)
 
 Describes the custom data in the shortcut configuration. You can define your own key-value pairs, and obtain the values using the keys.

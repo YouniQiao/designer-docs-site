@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsedScene
 
 > **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use > [UsedScene](arkts-ability-usedscene-depr-i.md#usedscene) instead. Describes the application scenario and timing for using the permission.

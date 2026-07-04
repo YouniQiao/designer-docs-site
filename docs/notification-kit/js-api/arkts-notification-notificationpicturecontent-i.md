@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationPictureContent
 
 Describes the picture-attached notification. This API is inherited from [NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md#notificationbasiccontent). > **NOTE** > > The display effect depends on the device capability and notification center UI style.

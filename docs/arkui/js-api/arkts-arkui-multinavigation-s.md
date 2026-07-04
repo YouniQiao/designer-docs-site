@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MultiNavigation
 
 **MultiNavigation** is a component designed for multi-column display and routing navigation on large-screen devices. > **NOTE** > Due to the nested stack structure of **MultiNavigation**, calling APIs explicitly stated as unsupported in this > document or APIs not listed in the supported API list (such as **getParent**, **setInterception**, and > **pushDestination**) may lead to unpredictable issues. > In scenarios with deep nesting, **MultiNavigation** may encounter routing animation issues.

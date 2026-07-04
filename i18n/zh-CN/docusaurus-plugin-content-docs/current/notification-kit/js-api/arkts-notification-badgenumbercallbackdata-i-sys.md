@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BadgeNumberCallbackData（系统接口）
 
 应用通知角标数量状态变化的回调函数类型。

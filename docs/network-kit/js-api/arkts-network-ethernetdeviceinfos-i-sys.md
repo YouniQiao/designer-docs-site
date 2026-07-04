@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EthernetDeviceInfos (System API)
 
 Defines the device information of the Ethernet.

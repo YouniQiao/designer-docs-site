@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Deque
 
 Deque（double ended queue）是基于队列数据结构实现的序列容器，具备先进先出和先进后出的特点。 支持在两端进行元素的插入和删除。

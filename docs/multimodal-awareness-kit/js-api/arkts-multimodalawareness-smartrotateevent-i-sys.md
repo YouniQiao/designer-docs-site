@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SmartRotateEvent (System API)
 
 The basic data structure of the smart rotate sensor event.

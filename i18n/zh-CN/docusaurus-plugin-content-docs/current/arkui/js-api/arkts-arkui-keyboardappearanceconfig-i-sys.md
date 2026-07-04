@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyboardAppearanceConfig（系统接口）
 
 键盘外观样式属性。

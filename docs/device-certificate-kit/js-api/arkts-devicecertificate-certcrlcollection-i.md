@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertCRLCollection
 
 Provides APIs for locating certificates or CRLs in a **CertCRLCollection** object.

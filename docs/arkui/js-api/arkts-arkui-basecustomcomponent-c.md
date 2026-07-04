@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BaseCustomComponent
 
 Custom Component base class and it is migrated from class CustomComponent.

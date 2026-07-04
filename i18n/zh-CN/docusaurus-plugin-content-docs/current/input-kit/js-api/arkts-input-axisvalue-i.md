@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AxisValue
 
 鼠标轴类型和轴的值。

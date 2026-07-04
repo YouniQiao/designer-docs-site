@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Checkbox
 
 提供多选框组件，通常用于某选项的打开或关闭。 > **说明：** > > API version 11开始，Checkbox默认样式由圆角方形变为圆形。

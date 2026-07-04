@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderingContextSettings
 
 Configures the settings of a **CanvasRenderingContext2D** object, including whether to enable anti-aliasing.

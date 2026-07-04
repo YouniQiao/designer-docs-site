@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InterfaceConfig
 
 Enumerates Ethernet network interface configurations. Only IPv4 is supported.

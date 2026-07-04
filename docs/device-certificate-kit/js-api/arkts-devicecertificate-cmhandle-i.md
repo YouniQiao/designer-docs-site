@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CMHandle
 
 Represents the handle to a signing or signature verification operation.

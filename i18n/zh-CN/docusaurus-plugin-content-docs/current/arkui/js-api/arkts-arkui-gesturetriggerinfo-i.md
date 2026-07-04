@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureTriggerInfo
 
 特定手势回调函数触发时的信息。

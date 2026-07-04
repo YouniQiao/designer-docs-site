@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CrownSensitivity
 
 旋转表冠灵敏度。

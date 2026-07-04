@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileGenerationMode
 
 表示创建媒体文件模式的枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsbTransferStatus
 
 Enumerates the status code returned after data processing is complete.

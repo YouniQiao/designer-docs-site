@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SplitRatioPreference
 
 描述分屏窗口分屏比例

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IDataSourcePrefetching
 
 继承自[IDataSource](../arkts-components/arkts-arkui-idatasource-i.md#idatasource)。实现该接口，提供具备预取能力的DataSource。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AnimationPropertyType
 
 用于动画的属性类型。

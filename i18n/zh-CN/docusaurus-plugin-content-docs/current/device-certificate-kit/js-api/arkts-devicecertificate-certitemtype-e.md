@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertItemType
 
 表示获取证书字段的枚举。

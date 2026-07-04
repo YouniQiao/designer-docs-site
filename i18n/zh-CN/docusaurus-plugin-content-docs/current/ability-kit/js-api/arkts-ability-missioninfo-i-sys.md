@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MissionInfo（系统接口）
 
 表示任务的详细信息，可以通过 [getMissionInfo](arkts-ability-getmissioninfo-f-sys.md#getmissioninfo-1) 获取。

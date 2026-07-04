@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PanGestureInterface
 
 滑动手势事件，当滑动的最小距离达到设定的最小值时触发滑动手势事件。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Attribute
 
 枚举，类型为number。联系人属性列表。 通过JSON格式创建数据。

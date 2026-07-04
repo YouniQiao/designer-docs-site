@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContinueState
 
 流转状态枚举值。用于表示当前应用任务流转的状态。可配合[UIAbilityContext](arkts-ability-uiabilitycontext-c.md#uiabilitycontext)的 [setMissionContinueState](arkts-ability-uiabilitycontext-c.md#setmissioncontinuestate-1) 方法进行设置。

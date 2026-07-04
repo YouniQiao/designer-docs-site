@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InterruptActionType
 
 Enumerates the returned event types for audio interruption events.

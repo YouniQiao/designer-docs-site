@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatViewStateChangeInfo
 
 标准悬浮窗状态变化信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ThumbnailChangeStatus (System API)
 
 Enumeration status of thumbnail change.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.telephony.sms
 
 Provides the capabilities and methods for obtaining Short Message Service (SMS) management objects.

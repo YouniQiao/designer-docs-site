@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.multimedia.videoProcessingEngine
 
 This module provides the capability of content processing for images, including image scaling.

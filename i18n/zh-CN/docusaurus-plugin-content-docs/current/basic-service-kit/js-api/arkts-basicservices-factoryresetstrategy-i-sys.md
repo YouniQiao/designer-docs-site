@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FactoryResetStrategy（系统接口）
 
 恢复出厂设置策略。

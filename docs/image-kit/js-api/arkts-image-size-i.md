@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Size
 
 Describes the size of an image. It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).

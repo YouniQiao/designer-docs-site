@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CompatiblePolicy
 
 标识动态共享库的版本兼容类型。

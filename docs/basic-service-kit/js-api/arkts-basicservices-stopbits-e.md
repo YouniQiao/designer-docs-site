@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StopBits
 
 Enumerates of the number of stop bits.

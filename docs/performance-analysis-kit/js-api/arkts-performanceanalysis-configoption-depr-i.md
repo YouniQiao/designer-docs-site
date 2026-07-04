@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConfigOption
 
 Provides the configuration items for application event logging.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [malloc.h](capi-malloc-h.md)
 - Module

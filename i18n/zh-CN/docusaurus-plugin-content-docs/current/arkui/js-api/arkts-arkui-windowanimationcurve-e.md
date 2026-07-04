@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowAnimationCurve
 
 窗口动画曲线类型。

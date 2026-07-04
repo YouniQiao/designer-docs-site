@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwipeGestureHandler
 
 快滑手势处理器对象类型。

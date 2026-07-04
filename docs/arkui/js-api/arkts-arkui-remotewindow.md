@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RemoteWindow
 
 Provides an interface for controlling the remote window.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Flex
 
 Provides a Flex component that uses the flexible box model for layout.

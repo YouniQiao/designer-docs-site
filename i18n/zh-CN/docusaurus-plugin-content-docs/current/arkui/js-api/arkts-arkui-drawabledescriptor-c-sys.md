@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DrawableDescriptor
 
 父类对象提供可重写的方法，包含：获取[PixelMap](@ohos.multimedia.image:image.PixelMap)实例，图片资源加载能力。

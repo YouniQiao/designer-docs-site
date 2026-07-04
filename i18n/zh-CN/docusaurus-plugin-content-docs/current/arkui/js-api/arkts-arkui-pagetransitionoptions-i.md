@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PageTransitionOptions
 
 退场/进场动效的参数。

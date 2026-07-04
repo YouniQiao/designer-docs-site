@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Key
 
 密钥（父类），在运行密码算法（如加解密）时需要提前生成其子类对象，并传入[Cipher](arkts-cryptoarchitecture-cipher-i.md#cipher)实例的 [init()](arkts-cryptoarchitecture-cipher-i.md#init-4)方法。 密钥通过子类密钥生成器来生成，详见子类描述。具体子类有： [SymKey](arkts-cryptoarchitecture-symkey-i.md#symkey)、[PubKey](arkts-cryptoarchitecture-pubkey-i.md#pubkey)、 [PriKey](arkts-cryptoarchitecture-prikey-i.md#prikey)。

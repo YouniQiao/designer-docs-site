@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SubscribeGyroscopeOptions
 
 Defines the type of data to return for a subscription to data changes of the gyroscope sensor.

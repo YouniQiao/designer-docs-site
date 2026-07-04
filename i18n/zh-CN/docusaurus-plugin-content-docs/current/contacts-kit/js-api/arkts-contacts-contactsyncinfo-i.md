@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContactSyncInfo
 
 调用应用程序相关的联系人同步的信息。

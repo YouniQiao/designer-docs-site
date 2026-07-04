@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UnifiedGroupInfo (System API)
 
 Describes the fields of notification intelligent unification information.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransientParam
 
 Defines the parameters for transient vibration.

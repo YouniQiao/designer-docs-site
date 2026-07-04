@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CutoutInfo
 
 Describes the unusable area of a display, including punch hole, notch, and curved area of a waterfall display.

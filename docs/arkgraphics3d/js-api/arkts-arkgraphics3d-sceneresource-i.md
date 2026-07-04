@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SceneResource
 
 Define scene resource extended by other 3d resource.

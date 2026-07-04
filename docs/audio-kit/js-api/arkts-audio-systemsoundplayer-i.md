@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemSoundPlayer
 
 Implements a system sound player that provides functions for loading, unloading, playing system sounds. Before using these functions, application must call [createSystemSoundPlayer](#systemSoundManager.createSystemSoundPlayer) to create a SystemSoundPlayer instance first.

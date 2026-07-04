@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIEnvWindowAvoidAreaInfoPX
 
 窗口不同类型避让区域信息组成的[环境变量](../../../../ui/arkts-env-system-property.md)数据类型，每种类型避让区域单位为px。

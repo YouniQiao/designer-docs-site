@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WantAgentFlags
 
 表示WantAgent行为控制标志，用于配置WantAgent的创建和触发行为。

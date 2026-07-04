@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AgentExtensionAbility
 
 The class of agent extension ability. This class cannot be used in Harmony Archive(HAR).

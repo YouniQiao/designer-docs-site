@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PermissionUsedType (System API)
 
 Enumerates the means by which sensitive resources are accessed.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PointerMatrix
 
 表示设备显示上的指针二维数组，用于构建可通过UiDriver注入的多指轨迹。

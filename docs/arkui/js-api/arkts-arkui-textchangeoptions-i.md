@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextChangeOptions
 
 Provides information about the text before and after a change, including the selection ranges.

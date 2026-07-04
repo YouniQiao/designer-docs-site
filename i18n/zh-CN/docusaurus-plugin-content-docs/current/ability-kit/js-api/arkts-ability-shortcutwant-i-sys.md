@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShortcutWant（系统接口）
 
 快捷方式内定义的目标[wants](../../../../quick-start/module-configuration-file.md#wants标签)信息集合。

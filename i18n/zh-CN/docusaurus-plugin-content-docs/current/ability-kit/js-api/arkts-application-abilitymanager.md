@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.application.abilityManager
 
 AbilityManager模块提供对Ability相关信息和状态信息进行获取、新增、修改等能力。

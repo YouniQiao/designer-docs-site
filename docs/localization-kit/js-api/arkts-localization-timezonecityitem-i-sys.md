@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TimeZoneCityItem (System API)
 
 Represents a time zone and city combination item.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnContinueResult
 
 Ability迁移结果，该类型为枚举，可配合UIAbility的[onContinue()](arkts-ability-uiability-c.md#oncontinue-1)方法完成相应的返回。

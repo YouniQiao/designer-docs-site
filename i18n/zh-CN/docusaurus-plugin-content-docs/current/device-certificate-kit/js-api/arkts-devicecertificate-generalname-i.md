@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeneralName
 
 用于表示证书主体信息对象。

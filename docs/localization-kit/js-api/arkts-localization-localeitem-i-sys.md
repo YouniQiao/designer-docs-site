@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocaleItem (System API)
 
 Represents the locale information, which consists of the language, script, and country/region.

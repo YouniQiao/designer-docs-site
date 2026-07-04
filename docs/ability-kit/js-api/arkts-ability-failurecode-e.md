@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FailureCode
 
 Enumerates the errors codes available for failures in launching an atomic service.

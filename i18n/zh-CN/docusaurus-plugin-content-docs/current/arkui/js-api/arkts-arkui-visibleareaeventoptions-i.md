@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VisibleAreaEventOptions
 
 关于区域变化相关的参数。

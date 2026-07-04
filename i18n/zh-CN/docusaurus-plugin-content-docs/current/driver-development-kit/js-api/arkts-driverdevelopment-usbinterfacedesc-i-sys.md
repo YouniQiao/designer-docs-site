@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # USBInterfaceDesc（系统接口）
 
 USB设备接口描述符。

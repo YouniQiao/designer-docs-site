@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CustomKeyboardContinueFeature
 
 自定义键盘接续特性的枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Common_ts_ets_api
 
 ## 汇总

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WidgetParam
 
 Represents the information presented on the user authentication page.

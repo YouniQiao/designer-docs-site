@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScannerOptionValue
 
 定义扫描仪选项值的接口。

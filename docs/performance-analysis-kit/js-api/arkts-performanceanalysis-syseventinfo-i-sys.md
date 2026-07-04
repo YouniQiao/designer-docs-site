@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SysEventInfo (System API)
 
 Defines a system event.

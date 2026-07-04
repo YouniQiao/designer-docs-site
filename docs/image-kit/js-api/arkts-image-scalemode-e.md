@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScaleMode
 
 Enumerates the scale modes of images.

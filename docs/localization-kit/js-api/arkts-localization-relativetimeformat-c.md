@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RelativeTimeFormat
 
 Given a Time period length value and a unit, RelativeTimeFormat object enables language-sensitive relative time formatting.

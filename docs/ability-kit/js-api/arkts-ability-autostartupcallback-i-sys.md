@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoStartupCallback (System API)
 
 The module defines the callback to be invoked when auto-startup is set or canceled for an application component.

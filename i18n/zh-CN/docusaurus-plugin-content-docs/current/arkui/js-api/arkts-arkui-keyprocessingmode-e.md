@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyProcessingMode
 
 设置按键事件处理的优先级。

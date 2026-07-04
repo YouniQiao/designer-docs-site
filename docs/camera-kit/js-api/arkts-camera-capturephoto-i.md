@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CapturePhoto
 
 **CapturePhoto** provides APIs for obtaining the objects of the full-quality image and the uncompressed image.

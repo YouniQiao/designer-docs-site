@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebRotateEffect
 
 Enumerates the modes in which the component's content is rendered to fit the new size during its width and height animation process when the component is rotated.

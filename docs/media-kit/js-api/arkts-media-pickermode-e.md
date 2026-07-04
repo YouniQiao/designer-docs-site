@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerMode
 
 Enumerates the display mode for the screen capture picker.

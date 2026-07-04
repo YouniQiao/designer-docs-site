@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavigationMenuOptions
 
 页面右上角菜单选项。

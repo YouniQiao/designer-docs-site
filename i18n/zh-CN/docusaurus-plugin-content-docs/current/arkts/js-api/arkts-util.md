@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.util
 
 util模块提供了一系列常用的工具函数，包括用于字符串编码解码的[TextEncoder](arkts-arkts-textencoder-c.md#textencoder)和 [TextDecoder](arkts-arkts-textdecoderoptions-i.md#textdecoderoptions)、用于有理数运算的[RationalNumber<sup>8+</sup>](arkts-arkts-rationalnumber-c.md#rationalnumber)、 用于缓存管理的[LRUCache<sup>9+</sup>](arkts-arkts-lrucache-c.md#lrucache)、用于范围判定的[ScopeHelper<sup>9+</sup>](arkts-arkts-scopehelper-c.md#scopehelper)、 用于Base64编解码的[Base64Helper<sup>9+</sup>](arkts-arkts-base64helper-c.md#base64helper)、用于内置对象类型判断的 [types<sup>8+</sup>](arkts-arkts-types-c.md#types)，以及用于方法插桩和替换的[Aspect<sup>11+</sup>](arkts-arkts-aspect-c.md#aspect)。

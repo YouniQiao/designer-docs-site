@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnClientAuthenticationEvent
 
 Defines the triggered callback when needs ssl client certificate from the user.

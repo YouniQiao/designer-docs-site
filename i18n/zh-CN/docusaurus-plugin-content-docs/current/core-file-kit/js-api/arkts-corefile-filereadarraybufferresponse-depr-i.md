@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileReadArrayBufferResponse
 
 文件读取返回，包含读取到的文件内容。

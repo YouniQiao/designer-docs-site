@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.security.huksExternalCrypto
 
 模块提供外部密钥管理扩展功能的注册与注销，PIN码认证与认证状态获取等。

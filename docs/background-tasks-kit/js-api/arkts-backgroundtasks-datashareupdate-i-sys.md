@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataShareUpdate (System API)
 
 Defines the parameter information used to update the database. The data provider needs to set the ID, read/write permissions, and basic information of the table to be shared under **proxyData** in the **module.json5** file. For details about the configuration method, see [Data Provider Application Development](../../../../database/share-data-by-silent-access-sys.md#data-provider-application-development)

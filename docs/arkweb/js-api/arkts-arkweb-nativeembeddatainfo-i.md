@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NativeEmbedDataInfo
 
 Provides detailed information about the changes of the same-layer tag lifecycle.

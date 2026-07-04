@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksErrorCode
 
 Enumerates the error codes. > **NOTE** > > This API is deprecated since API version 9. You are advised to use > [HuksExceptionErrCode<sup>9+</sup>](arkts-universalkeystore-huksexceptionerrcode-e.md#huksexceptionerrcode).

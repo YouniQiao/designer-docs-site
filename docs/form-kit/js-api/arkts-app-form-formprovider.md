@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.form.formProvider
 
 The **formProvider** module provides APIs to obtain widget information, update widgets, and set the update time.

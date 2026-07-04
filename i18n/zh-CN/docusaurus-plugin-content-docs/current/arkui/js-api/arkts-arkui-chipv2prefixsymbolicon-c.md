@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipV2PrefixSymbolIcon
 
 定义symbol类型前缀符号图标。

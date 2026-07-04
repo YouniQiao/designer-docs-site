@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsbIsoPacketDescriptor
 
 Describes packet information returned in real time by the transfer callback.

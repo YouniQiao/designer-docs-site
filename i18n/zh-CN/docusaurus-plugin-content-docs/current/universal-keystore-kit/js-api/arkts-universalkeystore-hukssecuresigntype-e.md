@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksSecureSignType
 
 表示生成或导入密钥时，指定该密钥的签名类型。

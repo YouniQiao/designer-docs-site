@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Flag (System API)
 
 Enumerates the operations that can be performed on a database. Use the enum name rather than the enum value.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwiperAnimationMode
 
 Swiper组件翻页至指定页面的动效模式。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.agent.agentManager
 
 The module provides the capability to interact with agents in the system.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TouchResult
 
 Defines the custom event dispatch result. You can influence event dispatch by returning specific results.

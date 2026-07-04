@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LoadingRequestError
 
 枚举，数据加载过程中状态变化的原因。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Point3d
 
 Describes a 3D coordinate point. It inherits from [Point](arkts-arkgraphics2d-point-i.md#point).

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # hidebug
 
 Provide interfaces related to debugger access and obtaining CPU, memory and other virtual machine information during runtime for JS programs

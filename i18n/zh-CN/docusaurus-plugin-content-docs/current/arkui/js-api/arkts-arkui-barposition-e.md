@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BarPosition
 
 Tabs页签位置枚举。

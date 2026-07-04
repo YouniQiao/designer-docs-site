@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OptionWidthMode
 
 Decide whether the width of select menu fit the trigger or content

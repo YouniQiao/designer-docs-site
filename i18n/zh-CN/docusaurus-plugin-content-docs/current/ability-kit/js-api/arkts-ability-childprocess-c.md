@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChildProcess
 
 开发者自定义子进程的基类。通过[childProcessManager](arkts-app-ability-childprocessmanager.md#childprocessmanager)启动子进程时，需要继承此类并重写 入口方法。

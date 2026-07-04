@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PathShape
 
 用于clipShape和maskShape接口的路径。 继承自[CommonShapeMethod](arkts-arkui-commonshapemethod-c.md#commonshapemethod)。

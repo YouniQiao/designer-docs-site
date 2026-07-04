@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FullScreenEnterEvent
 
 Web组件进入全屏回调事件的详情。

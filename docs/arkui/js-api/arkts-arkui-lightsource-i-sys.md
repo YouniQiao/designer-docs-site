@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LightSource (System API)
 
 Each component allows for one light source.

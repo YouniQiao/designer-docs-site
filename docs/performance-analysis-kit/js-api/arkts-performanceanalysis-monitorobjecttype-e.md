@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MonitorObjectType
 
 Enumerates the types of component objects to be monitored.

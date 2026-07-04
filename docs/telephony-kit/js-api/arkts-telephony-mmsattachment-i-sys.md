@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MmsAttachment (System API)
 
 Defines the attachment of an MMS message.

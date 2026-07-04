@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextDataDetectorType
 
 定义文本数据检测类型。

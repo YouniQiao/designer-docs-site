@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WhiteBalance (System API)
 
 **WhiteBalance** inherits from [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md#whitebalancequery). It provides APIs to process white balance, including obtaining and setting the white balance mode and white balance value.

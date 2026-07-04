@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StarStyleOptions
 
 Provides style settings for the selected, unselected, and partially selected stars in the **Rating** component. > **NOTE** > > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element > 's @since version number is higher than inner elements'. This does not affect interface usability. > **NOTE** > > The string type can be used to load network images and local images. When a relative path is used to reference a > local image, for example, **Image("common/test.jpg")**, the **common** directory must be placed at the same level > as the **pages** directory. Base64-encoded strings are also supported.

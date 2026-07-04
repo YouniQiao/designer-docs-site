@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RequestCallback
 
 Provides a callback for setting the modal dialog box request result.

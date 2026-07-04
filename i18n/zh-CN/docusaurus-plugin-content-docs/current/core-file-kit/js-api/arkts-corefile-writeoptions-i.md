@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WriteOptions
 
 可选项类型，支持write接口使用，WriteOptions继承至[Options](arkts-corefile-options-i.md#options)。

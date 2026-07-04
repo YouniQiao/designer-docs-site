@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ActivityResponse
 
 Defines the response interface to receive the device status.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChainEdgeEffect (System API)
 
 Declare edge effect of chain animation.

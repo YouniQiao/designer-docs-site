@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NetworkInformationState (System API)
 
 Obtains network information status.

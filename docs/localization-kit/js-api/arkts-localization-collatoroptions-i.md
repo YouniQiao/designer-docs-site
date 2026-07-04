@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CollatorOptions
 
 Defines the options for creating a **Collator** object. Since API version 9, the attributes in **CollatorOptions** are optional.

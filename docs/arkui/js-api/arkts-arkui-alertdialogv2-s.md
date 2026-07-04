@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AlertDialogV2
 
 Declare CustomDialog AlertDialogV2.

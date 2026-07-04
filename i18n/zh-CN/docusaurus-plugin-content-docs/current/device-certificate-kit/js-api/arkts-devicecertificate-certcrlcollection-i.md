@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertCRLCollection
 
 证书和证书吊销列表集合对象。

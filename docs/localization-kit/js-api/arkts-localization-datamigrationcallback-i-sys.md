@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataMigrationCallback (System API)
 
 Callback type used during data migration.

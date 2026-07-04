@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AsyncLockState
 
 Information about all lock operations on the AsyncLock instance.

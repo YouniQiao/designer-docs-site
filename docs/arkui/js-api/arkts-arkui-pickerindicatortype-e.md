@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerIndicatorType
 
 Enumerates the types of the selected item indicator.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Options
 
 Options用于指定在压缩或解压Zip文件时的选项。

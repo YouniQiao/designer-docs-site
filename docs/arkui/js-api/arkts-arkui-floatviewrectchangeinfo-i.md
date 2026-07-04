@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatViewRectChangeInfo
 
 Provides the rectangle area change information of the float view.

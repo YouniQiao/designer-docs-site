@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextVerticalAlign
 
 文本垂直对齐方式枚举。

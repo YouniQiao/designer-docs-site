@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CharacteristicReadRequest
 
 Describes the parameters of the Gatt client's characteristic read request.

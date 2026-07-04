@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIServiceExtensionAbility（系统接口）
 
 UIServiceExtensionAbility提供浮窗组件相关扩展能力，继承自[ExtensionAbility](arkts-ability-extensionability-c.md#extensionability). 主要用于向三方应用提供带界面的服务。

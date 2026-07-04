@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVCastControlCommand
 
 The definition of cast command to be sent to the session

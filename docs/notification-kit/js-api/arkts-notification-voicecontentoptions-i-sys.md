@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VoiceContentOptions (System API)
 
 Describes the voice content options for notification subscriptions.

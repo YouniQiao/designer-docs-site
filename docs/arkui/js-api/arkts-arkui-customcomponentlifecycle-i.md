@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CustomComponentLifecycle
 
 **CustomComponentLifecycle** monitors the lifecycle changes of a custom component.

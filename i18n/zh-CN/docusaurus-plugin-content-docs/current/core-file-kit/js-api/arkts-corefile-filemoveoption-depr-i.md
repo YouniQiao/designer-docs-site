@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileMoveOption
 
 可选项类型，支持move接口使用。

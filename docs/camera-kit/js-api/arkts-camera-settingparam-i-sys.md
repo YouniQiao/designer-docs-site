@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SettingParam (System API)
 
 Defines the effect parameters used to preheat an image.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DateData
 
 DateData定义了日期通用属性和方法，包括年、月、日。

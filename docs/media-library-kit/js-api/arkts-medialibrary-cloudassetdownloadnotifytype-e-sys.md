@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CloudAssetDownloadNotifyType (System API)
 
 Enumerates download cloud asset event type.

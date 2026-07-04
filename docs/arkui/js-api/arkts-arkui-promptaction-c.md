@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PromptAction
 
 Provides APIs to create and display toasts, dialog boxes, action menus, and custom popups. > **NOTE** > > - The initial APIs of this class are supported since API version 10. > > - In the following API examples, you must first use [getPromptAction()](arkts-arkui-uicontext-c.md#getpromptaction-1) in > **UIContext** to obtain a **PromptAction** instance, and then call the APIs using the obtained instance.

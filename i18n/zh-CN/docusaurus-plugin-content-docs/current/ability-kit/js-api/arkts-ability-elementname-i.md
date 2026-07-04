@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ElementName
 
 应用组件结构体，包含bundleName、moduleName和abilityName等。通常用于组件启动信息 [AbilityRunningInfo.ability](arkts-ability-abilityrunninginfo-i.md#abilityrunninginfo)和组件启动回调函数 [connectOptions.onConnect](arkts-ability-connectoptions-i.md#onconnect-1) 中。

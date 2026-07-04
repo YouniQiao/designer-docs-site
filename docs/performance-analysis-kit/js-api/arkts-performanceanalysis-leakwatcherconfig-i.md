@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LeakWatcherConfig
 
 Defines the **LeakWatcherConfig** object, which contains multiple configurable properties for memory leak monitoring.

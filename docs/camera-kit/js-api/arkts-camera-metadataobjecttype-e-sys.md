@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MetadataObjectType
 
 Enumerates the types of metadata objects used for camera detection.

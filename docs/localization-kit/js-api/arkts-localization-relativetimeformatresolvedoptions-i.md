@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RelativeTimeFormatResolvedOptions
 
 Represents the formatting options for the **RelativeTimeFormat** object.

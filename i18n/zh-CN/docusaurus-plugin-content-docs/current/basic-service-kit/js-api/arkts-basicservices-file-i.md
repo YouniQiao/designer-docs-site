@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # File
 
 [UploadConfig](arkts-basicservices-uploadconfig-i.md#uploadconfig)中的文件列表。

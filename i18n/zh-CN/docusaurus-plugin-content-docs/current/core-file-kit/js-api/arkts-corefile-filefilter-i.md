@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileFilter
 
 文件名过滤器，支持listFileExt接口使用。

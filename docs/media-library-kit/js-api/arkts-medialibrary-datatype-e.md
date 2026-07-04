@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataType
 
 DataType represents the type of the data set to picker component

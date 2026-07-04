@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContactSelectionOptions
 
 选择联系人条件。

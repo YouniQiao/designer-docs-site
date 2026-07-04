@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmKeyDigest
 
 表示签名、验签使用的摘要算法的枚举。

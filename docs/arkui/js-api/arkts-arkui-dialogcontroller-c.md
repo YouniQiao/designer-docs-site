@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogController
 
 Implements a custom dialog controller that inherits from [CommonController](#commoncontroller18). It can be used as a member variable of **UIContext** to display custom dialog boxes. For specific usage, see the examples for [openCustomDialogWithController](arkts-apis-uicontext-promptaction.md#opencustomdialogwithcontroller18) and [presentCustomDialog](arkts-apis-uicontext-promptaction.md#presentcustomdialog18).

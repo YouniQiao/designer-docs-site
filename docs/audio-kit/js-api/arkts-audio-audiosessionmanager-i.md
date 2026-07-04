@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioSessionManager
 
 This interface implements audio session management. Before calling any API in AudioSessionManager, you must use [getSessionManager](arkts-audio-audiomanager-i.md#getsessionmanager-1) to obtain an AudioSessionManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 12.

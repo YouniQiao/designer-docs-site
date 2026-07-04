@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ControlCenterStatusInfo
 
 Describes the effect status information of a camera controller.

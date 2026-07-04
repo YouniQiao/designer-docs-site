@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnPermissionRequestEvent
 
 定义通知收到获取权限请求。

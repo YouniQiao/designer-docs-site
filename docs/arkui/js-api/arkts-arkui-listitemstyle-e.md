@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListItemStyle
 
 Enumerates the card styles of the List component.

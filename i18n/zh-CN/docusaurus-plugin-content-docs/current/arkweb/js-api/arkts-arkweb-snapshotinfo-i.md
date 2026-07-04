@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SnapshotInfo
 
 获取全量绘制结果入参。

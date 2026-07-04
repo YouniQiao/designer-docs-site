@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UsbDataTransferParams
 
 作为通用USB数据传输接口，客户端需要填充这个对象中的参数，用以发起传输请求。

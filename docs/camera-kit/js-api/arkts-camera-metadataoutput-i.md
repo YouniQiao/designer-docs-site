@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MetadataOutput
 
 Implements metadata streams. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput).

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DlpFeatureStatus（系统接口）
 
 DLP特性开关状态的枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AxisType
 
 Enumerates the axis types for axis events.

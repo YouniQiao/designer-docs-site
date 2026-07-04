@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReminderRequestTimer
 
 ReminderRequestTimer extends ReminderRequest 倒计时实例对象，用于设置提醒的时间。

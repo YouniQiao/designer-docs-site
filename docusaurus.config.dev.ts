@@ -45,6 +45,7 @@ const config: Config = {
           sidebarPath: './sidebars-dev.ts',
           routeBasePath: '/',
           include: ['ability-kit/**'],
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {

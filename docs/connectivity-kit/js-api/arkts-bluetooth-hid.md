@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bluetooth.hid
 
 Provides methods to accessing bluetooth HID(Human Interface Device)-related capabilities.

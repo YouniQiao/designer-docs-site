@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SearchButtonOptions
 
 定义搜索按钮选项。

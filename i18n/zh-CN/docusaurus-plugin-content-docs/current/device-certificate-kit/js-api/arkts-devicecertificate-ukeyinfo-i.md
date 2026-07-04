@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UkeyInfo
 
 提供USB Key证书凭据属性信息。

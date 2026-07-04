@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileListResponse
 
 文件列表返回，包含文件列表信息。

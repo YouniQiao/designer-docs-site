@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.bundleResourceManager
 
 The module provides APIs for obtaining resource information, including [BundleResourceInfo](arkts-ability-bundleresourceinfo-i-sys.md#bundleresourceinfo) and [LauncherAbilityResourceInfo](arkts-ability-launcherabilityresourceinfo-i-sys.md#launcherabilityresourceinfo). > **NOTE** > > Starting from API version 12, this module supports query of icons and names of disabled applications and > applications installed by all users. > > The APIs provided by this module are system APIs.

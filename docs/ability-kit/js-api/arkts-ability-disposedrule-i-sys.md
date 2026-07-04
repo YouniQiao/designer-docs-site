@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DisposedRule (System API)
 
 Defines a disposed rule.

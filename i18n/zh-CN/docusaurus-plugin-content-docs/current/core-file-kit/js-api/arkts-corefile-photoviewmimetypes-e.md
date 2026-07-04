@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoViewMIMETypes
 
 Enumerates the media file types that can be selected.

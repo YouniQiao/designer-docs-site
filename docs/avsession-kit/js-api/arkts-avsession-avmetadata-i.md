@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVMetadata
 
 The metadata of the current media.Used to set the properties of the current media file

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FetchResult
 
 Enumerates the results of obtaining thumbnails in batches.

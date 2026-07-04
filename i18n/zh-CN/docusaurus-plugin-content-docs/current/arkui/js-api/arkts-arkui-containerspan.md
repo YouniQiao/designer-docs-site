@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContainerSpan
 
 提供一个用于创建ContainerSpan组件的接口。

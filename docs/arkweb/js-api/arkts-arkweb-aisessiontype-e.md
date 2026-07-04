@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AISessionType
 
 Enum representing the supported types of AI sessions.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnScrollEvent
 
 Represents the callback invoked when the scrollbar scrolls to a specified position.

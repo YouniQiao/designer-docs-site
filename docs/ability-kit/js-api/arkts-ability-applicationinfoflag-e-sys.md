@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ApplicationInfoFlag (System API)
 
 Enumerates the application information flag, which describes the status between an application and user.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OperationType
 
 表示WantAgent支持的操作类型。

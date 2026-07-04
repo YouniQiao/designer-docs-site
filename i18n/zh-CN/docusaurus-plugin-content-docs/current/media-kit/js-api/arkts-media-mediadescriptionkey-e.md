@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaDescriptionKey
 
 媒体信息描述枚举。

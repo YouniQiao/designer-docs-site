@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OsAccountSubProfileEventData (System API)
 
 Represents the event data of an OS account sub-profile.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RunningFormInfo (System API)
 
 The class of a running form information.

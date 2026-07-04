@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwipeDirection
 
 Enumerates the directions in which the swipe gesture can be recognized.

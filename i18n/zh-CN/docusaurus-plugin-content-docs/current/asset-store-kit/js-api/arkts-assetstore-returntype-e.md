@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReturnType
 
 枚举，关键资产查询返回的结果类型。

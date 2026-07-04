@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Button
 
 The **Button** component can be used to create different types of buttons. > **NOTE**

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.usbManager
 
 本模块主要提供管理USB设备的相关功能，包括主设备上查询USB设备列表、批量数据传输、控制命令传输、权限控制等；从设备上端口管理、功能切换及查询等。 > **使用说明** > > 凡是参数类型为[usbManager.USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md#usbdevicepipe)的接口,都需要执行如下操作： > **在使用接口前：** > 1. 调用[usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1)获取设备列表。 > 2. 调用[usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1)获取请求权限。 > 3. 调用[usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1)得到[usbManager.USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md#usbdevicepipe)作为参数。 > **在使用接口后：** > 调用[usbManager.closePipe](usbManager.closePipe(USBDevicePipe: pipe))关闭设备消息控制通道。

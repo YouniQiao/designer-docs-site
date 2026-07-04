@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IReusePool
 
 `IReusePool` 接口提供自定义组件上的全局复用池的相关功能。

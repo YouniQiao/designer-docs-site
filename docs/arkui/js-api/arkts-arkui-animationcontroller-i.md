@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AnimationController
 
 Implements an animation controller object. It provides APIs for playing, stopping, resuming, and pausing animations, as well as querying the status.

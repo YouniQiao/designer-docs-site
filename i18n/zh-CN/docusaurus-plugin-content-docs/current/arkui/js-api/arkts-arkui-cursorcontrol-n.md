@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # cursorControl
 
 控制鼠标光标的显示样式。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # sound
 
 Provides methods for setting the sound effect, including the ringtone, dial tone, alarm sound, notification tone, and haptic feedback.

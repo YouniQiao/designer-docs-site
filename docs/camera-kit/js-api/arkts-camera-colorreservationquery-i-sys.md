@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ColorReservationQuery (System API)
 
 Provides APIs for querying the color retention type supported by the device.

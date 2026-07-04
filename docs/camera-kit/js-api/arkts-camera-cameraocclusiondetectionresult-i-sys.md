@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CameraOcclusionDetectionResult (System API)
 
 Describes the instance returned by the occlusion status callback, which indicates whether the camera lens is blocked or dirty.

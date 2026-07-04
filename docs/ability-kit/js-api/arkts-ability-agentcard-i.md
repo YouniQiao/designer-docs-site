@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AgentCard
 
 AgentCard describes the basic information and capabilities provided by an Agent.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PenKeyOperation
 
 手写笔按键操作类型枚举。

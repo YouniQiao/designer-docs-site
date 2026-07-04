@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConflictResolution
 
 Enumerates the resolutions used when a conflict occurs during data insertion or modification. Use the enum name rather than the enum value.

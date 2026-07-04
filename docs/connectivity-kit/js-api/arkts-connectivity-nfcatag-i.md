@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NfcATag
 
 Provides interfaces to control the read and write of tags that support the NFC-A technology. <p>This class is inherited from the {@link TagSession} abstract class, and provides methods to create {@code NfcATag} objects and obtain the ATQA and SAK.

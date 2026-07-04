@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackForwardCacheOptions
 
 前进后退缓存相关设置对象，用来控制Web组件前进后退缓存相关选项。

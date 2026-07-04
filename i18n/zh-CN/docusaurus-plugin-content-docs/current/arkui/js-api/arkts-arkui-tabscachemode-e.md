@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TabsCacheMode
 
 子组件的缓存模式。

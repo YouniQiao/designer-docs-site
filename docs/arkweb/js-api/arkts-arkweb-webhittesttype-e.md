@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebHitTestType
 
 Enumerates the cursor node types for the [getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1) API.

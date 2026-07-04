@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Portrait (System API)
 
 Portrait: inherits from [PortraitQuery](arkts-camera-portraitquery-i-sys.md#portraitquery). Provides the APIs for portrait photo settings.

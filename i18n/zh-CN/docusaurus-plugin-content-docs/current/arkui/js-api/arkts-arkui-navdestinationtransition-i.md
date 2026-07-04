@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavDestinationTransition
 
 NavDestination自定义动画接口。

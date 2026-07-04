@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.application.ConfigurationConstant
 
 ConfigurationConstant模块提供配置信息枚举值定义的能力。

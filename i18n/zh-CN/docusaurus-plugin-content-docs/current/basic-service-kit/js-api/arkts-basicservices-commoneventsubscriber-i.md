@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonEventSubscriber
 
 表示公共事件的订阅者。

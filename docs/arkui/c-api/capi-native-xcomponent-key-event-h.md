@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # native_xcomponent_key_event.h
 
 ## Overview

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonEventBatteryChangedKey
 
 Enumerates keys for querying the additional information about the **COMMON_EVENT_BATTERY_CHANGED** event.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityStartCallback
 
 The module describes the callback invoked to return the UIExtensionAbility startup result.

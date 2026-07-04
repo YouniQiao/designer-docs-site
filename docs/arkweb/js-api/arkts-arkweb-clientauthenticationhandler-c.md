@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ClientAuthenticationHandler
 
 Defines the client certificate request result, related to {@link onClientAuthenticationRequest} method.

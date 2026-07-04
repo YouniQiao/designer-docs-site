@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageSpan属性/事件
 
 属性继承自[BaseSpan](arkts-arkui-basespan-c.md#basespan)，通用属性方法支持[尺寸设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)、[背景设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)、[边框设置](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)。 通用事件仅支持[点击控制事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)。还支持以下事件：

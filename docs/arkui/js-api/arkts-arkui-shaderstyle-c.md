@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShaderStyle
 
 Defines the base class for text shader effects.

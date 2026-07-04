@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVScreenCaptureStateCode
 
 Enumerates the screen capture states used in callbacks.

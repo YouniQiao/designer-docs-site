@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SwiperAnimationMode
 
 Enumerates the animation mode for moving to a specific page in the **Swiper** component.

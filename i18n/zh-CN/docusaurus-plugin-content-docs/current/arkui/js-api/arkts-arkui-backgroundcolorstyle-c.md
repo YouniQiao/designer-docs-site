@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackgroundColorStyle
 
 文本背景颜色对象说明。

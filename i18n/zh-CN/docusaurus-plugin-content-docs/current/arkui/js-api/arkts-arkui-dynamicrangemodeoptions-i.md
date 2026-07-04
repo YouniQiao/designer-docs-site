@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DynamicRangeModeOptions
 
 定义截图所使用的动态范围模式。

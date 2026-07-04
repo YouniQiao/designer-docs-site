@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MessageEvent
 
 消息类，持有Worker线程间传递的数据，MessageEvent类继承Event。

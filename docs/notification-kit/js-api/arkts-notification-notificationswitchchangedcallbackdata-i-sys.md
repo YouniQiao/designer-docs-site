@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationSwitchChangedCallbackData (System API)
 
 Describes the notification switch state changes callback data.

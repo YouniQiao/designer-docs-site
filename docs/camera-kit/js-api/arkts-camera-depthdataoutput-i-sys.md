@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DepthDataOutput (System API)
 
 Implements depth data output. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput).

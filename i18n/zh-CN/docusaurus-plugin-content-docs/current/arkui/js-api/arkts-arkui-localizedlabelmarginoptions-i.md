@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocalizedLabelMarginOptions
 
 LocalizedLabelMarginOptions用于定义本地化文本与左右侧图标之间间距。

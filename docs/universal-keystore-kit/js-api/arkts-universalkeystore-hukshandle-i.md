@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksHandle
 
 Defines the struct for a HUKS handle. > **NOTE** > > This API is deprecated since API version 9. You are advised to use > [HuksSessionHandle<sup>9+</sup>](arkts-universalkeystore-hukssessionhandle-i.md#hukssessionhandle).

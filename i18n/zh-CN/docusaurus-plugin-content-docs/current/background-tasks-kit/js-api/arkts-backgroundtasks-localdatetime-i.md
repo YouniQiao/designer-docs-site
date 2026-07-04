@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocalDateTime
 
 用于日历类提醒设置时指定时间信息。

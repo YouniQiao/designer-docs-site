@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LightWeightMap
 
 LightWeightMap stores key-value (KV) pairs. Each key must be unique and have only one value.

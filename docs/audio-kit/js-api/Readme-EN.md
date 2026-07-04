@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArkTS API<!--arkts-audiokit-->
 
 - [@ohos.multimedia.audio](arkts-multimedia-audio.md)<!--Del-->

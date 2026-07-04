@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LoadingProgressStyle
 
 Enumerates style types of **LoadingProgress**. This API is not recommended for use.

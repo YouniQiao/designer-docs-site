@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocatingRequiredDataType (System API)
 
 Enum for locating required data type.

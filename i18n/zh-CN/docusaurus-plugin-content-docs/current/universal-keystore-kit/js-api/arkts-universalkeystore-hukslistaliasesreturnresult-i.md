@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksListAliasesReturnResult
 
 返回的密钥别名数组。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArcButtonStatus
 
 定义ArcButton可设置的弧形按钮状态。

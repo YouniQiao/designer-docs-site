@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DisposedRuleConfiguration (System API)
 
 Describes the configurations for setting disposed rules in batches.

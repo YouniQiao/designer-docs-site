@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReplaceEffectType
 
 替换动效类型的枚举值。

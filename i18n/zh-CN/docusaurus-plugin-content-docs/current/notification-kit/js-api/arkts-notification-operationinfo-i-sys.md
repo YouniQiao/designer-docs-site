@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OperationInfo（系统接口）
 
 跨设备协同操作信息。

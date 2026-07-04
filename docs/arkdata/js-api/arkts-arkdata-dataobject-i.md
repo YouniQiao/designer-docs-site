@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataObject
 
 Provides APIs for managing a distributed data object. Before using any API of this class, use create() to create a DataObject object.

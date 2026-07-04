@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ComponentEventType
 
 枚举可监听的组件操作事件类型。

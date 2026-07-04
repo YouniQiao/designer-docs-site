@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReportingMode (System API)
 
 Enum for distance measurement result reporting modes.

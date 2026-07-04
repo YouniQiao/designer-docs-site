@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # network
 
 Provides methods for setting network information, including the data roaming status, HTTP proxy configurations, and preferred networks.

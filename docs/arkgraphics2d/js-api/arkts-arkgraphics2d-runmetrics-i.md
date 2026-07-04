@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RunMetrics
 
 Describes the layout information and measurement information of a run of text in a text line.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnSearchResultReceiveEvent
 
 定义通知调用方网页页内查找的结果。

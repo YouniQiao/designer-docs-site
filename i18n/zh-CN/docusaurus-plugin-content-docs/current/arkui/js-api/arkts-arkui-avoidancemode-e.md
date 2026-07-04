@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AvoidanceMode
 
 下拉菜单避让模式的枚举选项。

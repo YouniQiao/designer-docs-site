@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExtraKey
 
 Define some common extra keys used in different scenarios.

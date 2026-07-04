@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Attribute
 
 Enumerates contact attributes. The enumerated value is of the number type. Create contact data in JSON format:

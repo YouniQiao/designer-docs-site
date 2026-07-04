@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MarqueeUpdatePolicy
 
 Sets the scrolling policy of the marquee after its attributes are updated.

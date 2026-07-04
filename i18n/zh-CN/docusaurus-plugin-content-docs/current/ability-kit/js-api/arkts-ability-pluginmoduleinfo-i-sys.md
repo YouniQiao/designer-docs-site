@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PluginModuleInfo（系统接口）
 
 插件的模块信息。

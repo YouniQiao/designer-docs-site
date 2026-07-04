@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowChangeOptions
 
 Describes the extended configuration of window change event listening, which is used to specify the listening process configuration and event filtering conditions.

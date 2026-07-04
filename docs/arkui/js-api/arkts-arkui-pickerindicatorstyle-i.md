@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerIndicatorStyle
 
 Sets parameters of the selected item indicator style.

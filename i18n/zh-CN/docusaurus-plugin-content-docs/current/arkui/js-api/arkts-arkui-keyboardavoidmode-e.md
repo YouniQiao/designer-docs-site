@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyboardAvoidMode
 
 配置键盘弹出时页面的避让模式。

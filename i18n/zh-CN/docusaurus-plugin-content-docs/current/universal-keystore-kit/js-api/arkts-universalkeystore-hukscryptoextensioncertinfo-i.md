@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksCryptoExtensionCertInfo
 
 [HuksCryptoExtensionResult](arkts-universalkeystore-hukscryptoextensionresultcode-e.md#hukscryptoextensionresultcode)中的certs数组中的元素。

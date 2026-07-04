@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RevocationCheckParameter
 
 表示证书链校验证书吊销状态的参数。

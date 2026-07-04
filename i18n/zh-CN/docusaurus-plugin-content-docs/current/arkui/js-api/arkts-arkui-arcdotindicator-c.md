@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArcDotIndicator
 
 提供弧形圆点指示器属性及功能。

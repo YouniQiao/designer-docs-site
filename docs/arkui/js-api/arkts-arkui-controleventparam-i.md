@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ControlEventParam
 
 Describes the parameters in the callback of the action event of the PiP controller.

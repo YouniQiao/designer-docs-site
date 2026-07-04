@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScanErrorCode
 
 定义扫描错误码的枚举。

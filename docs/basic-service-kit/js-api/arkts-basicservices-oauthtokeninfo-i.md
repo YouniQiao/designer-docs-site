@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OAuthTokenInfo
 
 Defines authorization token information. > **NOTE** > > This API is supported since API version 8 and deprecated since API version 9. You are advised to use > [AuthTokenInfo](arkts-basicservices-authtokeninfo-i.md#authtokeninfo) instead.

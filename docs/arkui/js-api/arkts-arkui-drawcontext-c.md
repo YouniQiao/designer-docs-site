@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DrawContext
 
 Graphics drawing context, which provides the canvas width and height required for drawing.

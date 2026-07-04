@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PreloadMode (System API)
 
 Enumerates the modes used for preloading an application process.

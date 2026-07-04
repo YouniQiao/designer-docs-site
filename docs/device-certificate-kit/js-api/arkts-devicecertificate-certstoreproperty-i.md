@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertStoreProperty
 
 Represents the storage information about a certificate, including the certificate type and location.

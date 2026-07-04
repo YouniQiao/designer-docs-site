@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OverlayManagerOptions
 
 Provides the parameters used for initializing [OverlayManager](arkts-arkui-uicontext.md).

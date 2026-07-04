@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertStoreProperty
 
 表示获取证书存储位置的参数集合，包括证书的类型及证书的位置。

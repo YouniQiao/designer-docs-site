@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RectType
 
 Enumerates the types of window rectangle coordinate systems.

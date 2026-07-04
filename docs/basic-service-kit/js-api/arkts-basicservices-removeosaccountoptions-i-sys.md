@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RemoveOsAccountOptions (System API)
 
 Represents the optional parameter used to remove an OS account.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PackingDynamicRange
 
 Enumerates the desired dynamic range of an image during encoding.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Accessibility
 
 枚举，关键资产基于锁屏状态的访问控制类型。

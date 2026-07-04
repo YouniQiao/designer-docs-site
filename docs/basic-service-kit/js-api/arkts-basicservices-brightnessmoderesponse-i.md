@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BrightnessModeResponse
 
 Defines a response that returns the screen brightness mode.

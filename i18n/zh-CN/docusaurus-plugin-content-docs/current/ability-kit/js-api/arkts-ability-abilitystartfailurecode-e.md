@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityStartFailureCode
 
 拉起指定类型的Ability组件失败的特定错误码。

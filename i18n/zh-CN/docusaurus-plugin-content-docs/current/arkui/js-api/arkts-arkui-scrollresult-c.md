@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollResult
 
 The actual offset by which the scrollable scrolls.

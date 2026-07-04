@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SaveButtonOnClickResult
 
 Enumerates the click event results of the save button.

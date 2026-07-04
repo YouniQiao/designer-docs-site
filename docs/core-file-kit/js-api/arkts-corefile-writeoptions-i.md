@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WriteOptions
 
 Defines the options used in **write()**. It inherits from [Options](arkts-corefile-options-i.md#options).

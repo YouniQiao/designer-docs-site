@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonConfiguration
 
 开发者需要自定义class实现ContentModifier接口。

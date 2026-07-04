@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReadStream
 
 Defines a readable stream. You need to use [fileIo.createReadStream](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileiocreatereadstream12) to create a **ReadStream** instance, which is inherited from [stream.Readable](../../apis-arkts/arkts-apis/arkts-arkts-readableoptions-i.md#readableoptions). The data obtained by **ReadStream** is a decoded string. Currently, only the UTF-8 format is supported.

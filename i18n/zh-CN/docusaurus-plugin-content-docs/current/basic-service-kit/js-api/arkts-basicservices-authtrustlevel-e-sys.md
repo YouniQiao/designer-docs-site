@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthTrustLevel（系统接口）
 
 表示认证结果的受信任级别的枚举。

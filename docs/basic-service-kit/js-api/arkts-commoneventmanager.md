@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.commonEventManager
 
 The **CommonEventManager** module provides common event capabilities to publish, subscribe to, and unsubscribe from common events.

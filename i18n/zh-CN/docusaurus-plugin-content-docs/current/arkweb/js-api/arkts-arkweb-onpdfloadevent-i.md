@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnPdfLoadEvent
 
 定义PDF加载成功或失败时触发的函数。

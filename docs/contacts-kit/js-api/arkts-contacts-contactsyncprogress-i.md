@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContactSyncProgress
 
 Information about the contact synchronization progress. Contains the sync ID, current batch, and total batch.

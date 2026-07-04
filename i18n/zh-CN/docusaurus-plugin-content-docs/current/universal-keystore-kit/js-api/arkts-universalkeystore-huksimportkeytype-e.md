@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksImportKeyType
 
 表示导入密钥的密钥类型，默认为导入公钥，导入对称密钥时不需要该字段。

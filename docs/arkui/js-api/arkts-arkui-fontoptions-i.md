@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FontOptions
 
 Information about the custom font to register. > **NOTE** > > Directly using **font** can lead to the issue of > [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain the > [Font](arkts-arkui-uicontext.md) object associated with the current UI context by using the > [getFont](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getfont) API in > [UIContext](arkts-arkui-uicontext.md).

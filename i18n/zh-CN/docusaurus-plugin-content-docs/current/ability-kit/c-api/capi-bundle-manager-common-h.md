@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # bundle_manager_common.h
 
 ## 概述

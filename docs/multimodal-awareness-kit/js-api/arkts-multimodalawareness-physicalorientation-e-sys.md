@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhysicalOrientation (System API)
 
 Enum for physical orientation detected by the sensor.

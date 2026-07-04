@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppPreloadType
 
 Enumerates the preloading types of the current application process.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MaxLinesMode
 
 TextArea组件在文本超长时显示效果。默认值为CLIP，按最大行截断显示。

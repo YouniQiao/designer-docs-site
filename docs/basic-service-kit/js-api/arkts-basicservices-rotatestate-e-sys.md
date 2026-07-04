@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RotateState (System API)
 
 Define the rotation state of wallpaper

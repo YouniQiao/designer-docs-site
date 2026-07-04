@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyCode
 
 The **keyCode** module provides key codes of key devices, including keyboards, CDs, and gamepads.

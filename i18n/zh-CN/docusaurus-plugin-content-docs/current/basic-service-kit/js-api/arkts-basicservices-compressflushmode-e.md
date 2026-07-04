@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CompressFlushMode
 
 压缩刷新模式。

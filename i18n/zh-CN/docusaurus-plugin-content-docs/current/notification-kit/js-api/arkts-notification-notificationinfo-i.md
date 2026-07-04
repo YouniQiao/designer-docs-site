@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationInfo
 
 通知订阅扩展能力中 [onReceiveMessage](arkts-notification-notificationsubscriberextensionability-c.md#onreceivemessage-1) 回调的通知信息。

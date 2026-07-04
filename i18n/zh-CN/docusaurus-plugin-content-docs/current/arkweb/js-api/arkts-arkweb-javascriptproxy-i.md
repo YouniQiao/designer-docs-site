@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # JavaScriptProxy
 
 定义要注入的JavaScript对象。

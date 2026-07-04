@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MoreButtonOptions
 
 更多图标的菜单选项。

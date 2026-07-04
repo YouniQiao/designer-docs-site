@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChildrenCountMode
 
 Enum for children count mode. Specifies how to count children when querying number of child nodes.

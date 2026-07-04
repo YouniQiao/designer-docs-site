@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SEService
 
 SEService realizes the communication to available SEs on the device.

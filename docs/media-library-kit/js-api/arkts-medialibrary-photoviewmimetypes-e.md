@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoViewMIMETypes
 
 PhotoViewMIMETypes represents the type of media resource that photo picker selects.

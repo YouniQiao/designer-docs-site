@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaAnalysisAlbumChangeRequest (System API)
 
 Defines the class of media analysis album change request.

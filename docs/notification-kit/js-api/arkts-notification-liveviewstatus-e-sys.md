@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LiveViewStatus (System API)
 
 Enumerates the statuses of the common live view.

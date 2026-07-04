@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioDevicePair
 
 Describes an audio device pair including both input and output devices.

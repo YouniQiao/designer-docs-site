@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BatchErrInfo
 
 Result object containing error information with a specific index, error code, and message for a single asset.

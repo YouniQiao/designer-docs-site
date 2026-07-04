@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArcSliderLayoutOptionsConstructorOptions
 
 Defines the construction information for **ArcSliderLayoutValueOptions**.

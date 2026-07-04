@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RdbDataChangeNode (System API)
 
 Represents the RDB data change result. The data returned by the callback is not larger than 10 MB in size.

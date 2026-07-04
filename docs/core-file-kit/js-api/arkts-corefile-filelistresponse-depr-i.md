@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileListResponse
 
 Returns a file list, including the file list information.

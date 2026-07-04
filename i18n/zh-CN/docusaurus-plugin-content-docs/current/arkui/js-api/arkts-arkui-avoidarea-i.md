@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AvoidArea
 
 窗口内容的避让区域。 窗口内容做[沉浸式布局](../../../../windowmanager/window-terminology.md#沉浸式布局)适配时，需要按照 [AvoidAreaType](arkts-arkui-avoidareatype-e.md#avoidareatype)对应的AvoidArea做窗口内容避让。 在避让区域内，应用窗口内容被遮挡且无法响应用户点击事件。 > **说明：** > > 示意图展示了leftRect、topRect、rightRect、bottomRect的含义。 > > ![avoidArea](../../../../reference/apis-arkui/figures/avoidArea.png)

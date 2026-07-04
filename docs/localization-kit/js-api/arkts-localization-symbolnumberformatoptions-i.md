@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SymbolNumberFormatOptions
 
 Represents optional configuration items for the SymbolNumberFormat object. Define the symbol element and value that need to be replaced.

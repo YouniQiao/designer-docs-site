@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CursorController
 
 提供光标样式设置的能力。 > **说明：** > > - 本Class首批接口从API version 12开始支持。 > > - 以下API需先使用UIContext中的[getCursorController()](arkts-arkui-uicontext-c.md#getcursorcontroller-1)方法获取CursorController实例，再通过此实例调用对应方法。

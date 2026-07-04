@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReadStreamOptions
 
 可选项类型，支持 createReadStream 接口使用。

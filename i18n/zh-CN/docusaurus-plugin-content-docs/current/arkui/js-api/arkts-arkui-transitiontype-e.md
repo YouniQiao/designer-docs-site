@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransitionType
 
 指定该转场样式生效的场景。

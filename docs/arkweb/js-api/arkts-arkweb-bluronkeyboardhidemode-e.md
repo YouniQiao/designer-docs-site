@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlurOnKeyboardHideMode
 
 Enumerates whether the **Web** component loses focus when the soft keyboard is hidden.

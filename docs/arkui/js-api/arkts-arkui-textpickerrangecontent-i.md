@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextPickerRangeContent
 
 Defines the content for single-column picker options.

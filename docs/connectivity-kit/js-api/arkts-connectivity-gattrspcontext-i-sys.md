@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GattRspContext (System API)
 
 Describe the context of GATT responses.

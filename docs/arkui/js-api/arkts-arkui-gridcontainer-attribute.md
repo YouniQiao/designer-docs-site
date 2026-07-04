@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GridContainer properties/events
 
 Defines the grid container attribute from inheritance Column

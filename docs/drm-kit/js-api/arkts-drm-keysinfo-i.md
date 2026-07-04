@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeysInfo
 
 Used to indicate the media key status with a key and its value.

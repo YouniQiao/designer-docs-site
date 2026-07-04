@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EditableTitleV2Options
 
 Indicates the options of the title.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IsolatedOptions (System API)
 
 This interface is used to set the options for IsolatedComponentAttribute during construction

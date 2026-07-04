@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.installer
 
 The module provides APIs for you to install, uninstall, and recover bundles on devices. > **NOTE** > > The APIs provided by this module are system APIs.

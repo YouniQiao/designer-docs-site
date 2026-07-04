@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GaugeShadowOptions
 
 Inherits from [MultiShadowOptions](arkts-arkui-multishadowoptions-i.md#multishadowoptions) and has all attributes of **MultiShadowOptions**.

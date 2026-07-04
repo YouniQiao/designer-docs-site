@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LiveFormExtensionAbility
 
 Interactive widget extension class. It provides APIs for the widget provider to receive notifications about widget creation and destruction.

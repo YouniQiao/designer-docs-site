@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DatePickerResult
 
 日期选择器返回的时间格式。

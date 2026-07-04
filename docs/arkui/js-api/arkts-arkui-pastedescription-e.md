@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PasteDescription
 
 Enumerates the text that can be displayed on the paste button.

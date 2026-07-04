@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogButton
 
 固定样式对话框的按钮配置。

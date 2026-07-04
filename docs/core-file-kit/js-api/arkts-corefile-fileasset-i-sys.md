@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileAsset (System API)
 
 Provides methods to encapsulate file attributes.

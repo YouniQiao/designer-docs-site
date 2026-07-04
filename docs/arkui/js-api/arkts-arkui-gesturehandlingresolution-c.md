@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureHandlingResolution
 
 Class for declaring the result of smart gesture handling.

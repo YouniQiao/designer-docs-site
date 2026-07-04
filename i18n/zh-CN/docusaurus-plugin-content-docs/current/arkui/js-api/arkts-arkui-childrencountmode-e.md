@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChildrenCountMode
 
 子节点计数模式枚举。用于指定获取子节点数量时的计数方式。

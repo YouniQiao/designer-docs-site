@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MeasureUtils
 
 class MeasureUtils <p><strong>NOTE</strong>: <br>You must first use getMeasureUtils() in UIContext to obtain a MeasureUtils instance, and then call the APIs using the obtained instance. </p>

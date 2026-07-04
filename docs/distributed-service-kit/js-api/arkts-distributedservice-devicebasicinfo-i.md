@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeviceBasicInfo
 
 Represents the basic information about a distributed device.

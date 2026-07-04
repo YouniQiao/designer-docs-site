@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnPdfScrollEvent
 
 定义PDF页面滚动到底时触发的回调函数。

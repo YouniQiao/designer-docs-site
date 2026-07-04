@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DensityInfo
 
 屏幕像素密度变化回调包含的信息。

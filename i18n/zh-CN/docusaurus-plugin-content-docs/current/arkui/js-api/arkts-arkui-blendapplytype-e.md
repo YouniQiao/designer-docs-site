@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlendApplyType
 
 指示如何将指定的混合模式应用于视图的内容。

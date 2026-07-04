@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RevocationCheckParameter
 
 Represents the parameters for checking the certificate revocation status for a certificate chain.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataProxyErrorCode
 
 Enumerates the status code returned by the batch operations of shared configuration.

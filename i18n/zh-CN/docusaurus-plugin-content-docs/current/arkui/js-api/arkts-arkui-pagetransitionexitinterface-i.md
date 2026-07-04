@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PageTransitionExitInterface
 
 当前页面的自定义退场动效。继承自[CommonTransition](arkts-arkui-commontransition-c.md#commontransition)。

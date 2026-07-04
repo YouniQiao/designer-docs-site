@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.appRecovery
 
 appRecovery模块提供了应用在故障状态下的恢复能力。 > **说明：** > > API9仅支持单进程中单Ability的应用恢复。 > > API10支持进程中包含多个Ability的场景。 > > API24支持发生CPP_CRASH时应用恢复。

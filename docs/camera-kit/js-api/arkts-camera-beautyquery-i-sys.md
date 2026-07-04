@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BeautyQuery (System API)
 
 Provides APIs to obtain and set the beauty effect.

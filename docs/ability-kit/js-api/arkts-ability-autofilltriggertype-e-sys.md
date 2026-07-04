@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoFillTriggerType (System API)
 
 This module specifies how the autofill service is triggered, based on different user gestures.

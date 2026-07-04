@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextChangeOptions
 
 变化前的文本信息，以及变化后的选区范围。

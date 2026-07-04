@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [ipc_kit.h](capi-ipc-kit-h.md)
     - [ipc_cremote_object.h](capi-ipc-cremote-object-h.md)

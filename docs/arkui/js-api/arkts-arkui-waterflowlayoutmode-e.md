@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WaterFlowLayoutMode
 
 Enumerates the layout modes of the **WaterFlow** component.

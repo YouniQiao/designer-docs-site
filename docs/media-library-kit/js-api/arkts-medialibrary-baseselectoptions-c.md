@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BaseSelectOptions
 
 Class BaseSelectOptions, which is extracted from class PhotoSelectOptions

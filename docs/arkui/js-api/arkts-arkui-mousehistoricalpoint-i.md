@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MouseHistoricalPoint
 
 Mouse event historical point information. Historical points are arranged in chronological order. The first historical point obtained is the earliest event, and the last is the most recent event. The number of historical points depends on the system event queue configuration and hardware performance. Historical points are mainly used for the following scenarios: 1. Smooth drawing: Historical points enable smoother drawing effects, especially when the mouse moves quickly. 2. Gesture recognition: By analyzing the trajectory of historical points, various mouse gestures can be recognized. 3. Performance optimization: Processing multiple historical points in one event callback reduces event processing frequency and improves performance. 4. Trajectory analysis: Analyzing mouse movement trajectories for drawing applications or gesture control. 5. Data analysis: The **timestamp** in historical points can be used to calculate mouse movement speed.

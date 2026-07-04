@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BatteryResponse
 
 包含充电状态及剩余电量的对象。

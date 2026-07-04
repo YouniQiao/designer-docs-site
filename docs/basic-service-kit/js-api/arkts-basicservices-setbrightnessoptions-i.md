@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SetBrightnessOptions
 
 Options for setting the screen brightness.

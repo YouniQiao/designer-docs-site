@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioRenderer
 
 This interface provides APIs for audio rendering. Before calling any API in AudioRenderer, you must use [createAudioRenderer](arkts-audio-createaudiorenderer-f.md#createaudiorenderer-1) to create an AudioRenderer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8.

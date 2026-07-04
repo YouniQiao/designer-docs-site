@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerMediaType
 
 Enumerates the media types displayed in the camera picker.

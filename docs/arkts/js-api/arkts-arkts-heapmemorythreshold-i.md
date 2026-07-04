@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HeapMemoryThreshold
 
 Describes the heap memory threshold at which the registered callback is triggered after a GC.

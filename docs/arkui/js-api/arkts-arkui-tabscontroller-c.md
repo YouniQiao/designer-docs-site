@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TabsController
 
 Defines a tab controller, which is used to control switching of tabs. One **TabsController** cannot control multiple **Tabs** components.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlanklessFrameInterpolationState
 
 Enumerates the current frame interpolation states. Device behavior differences: Only the mobile phone is supported. For other devices, 801 is returned.

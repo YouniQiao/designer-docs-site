@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DecorButtonStyle
 
 系统装饰栏按钮样式。

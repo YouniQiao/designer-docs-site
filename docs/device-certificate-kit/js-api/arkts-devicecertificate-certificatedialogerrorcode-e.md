@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertificateDialogErrorCode
 
 Enumerates the error codes reported when the certificate management dialog box APIs are called.

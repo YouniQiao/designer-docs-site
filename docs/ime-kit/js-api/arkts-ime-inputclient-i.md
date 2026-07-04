@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InputClient
 
 You must first use [on('inputStart')](inputMethodEngine.InputMethodAbility. on(type: 'inputStart', callback: (kbController: KeyboardController, inputClient: InputClient) => void): void;) to obtain a **InputClient** instance, and then use this instance to call the following APIs.

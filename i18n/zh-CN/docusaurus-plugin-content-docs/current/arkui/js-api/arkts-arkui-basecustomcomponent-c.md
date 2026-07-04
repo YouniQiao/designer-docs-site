@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BaseCustomComponent
 
 自定义组件基类，它是从类CustomComponent迁移过来的。

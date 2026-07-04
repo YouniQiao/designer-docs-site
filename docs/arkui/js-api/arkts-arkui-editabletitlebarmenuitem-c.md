@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EditableTitleBarMenuItem
 
 Declaration of the menu item on the right side.

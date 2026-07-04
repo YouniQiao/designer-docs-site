@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReadTextOptions
 
 Defines the options used in **readText()**. It inherits from [ReadOptions](arkts-corefile-readoptions-i.md#readoptions).

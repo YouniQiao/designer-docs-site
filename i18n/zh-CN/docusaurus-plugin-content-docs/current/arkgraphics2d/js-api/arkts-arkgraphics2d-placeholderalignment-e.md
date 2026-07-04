@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PlaceholderAlignment
 
 占位符相对于周围文本的纵向对齐方式。 ! [zh-ch_image_PlaceholderAlignment.png](../../../../reference/apis-arkgraphics2d/figures/zh-ch_image_PlaceholderAlignment.png) > **说明：** > > 示意图展示了后三种对齐方式，前三种对齐方式在文本基线对齐方式上类似，比较位置是文本基线，即绿色线条部分。 > > ![zh-ch_image_Baseline.png](../../../../reference/apis-arkgraphics2d/figures/zh-ch_image_Baseline.png)

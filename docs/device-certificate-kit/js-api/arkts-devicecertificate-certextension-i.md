@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertExtension
 
 Provides APIs for operating on certificate extensions.

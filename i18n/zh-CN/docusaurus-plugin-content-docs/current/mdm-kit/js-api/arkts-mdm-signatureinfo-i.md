@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SignatureInfo
 
 描述应用包的签名信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TabsCacheMode
 
 Enumerates the caching modes for child components.

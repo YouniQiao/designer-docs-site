@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationSortingMap (System API)
 
 The **NotificationSortingMap** module provides APIs for defining the sorting information of active notifications in all subscribed notifications. > **NOTE** > > The APIs provided by this module are system APIs.

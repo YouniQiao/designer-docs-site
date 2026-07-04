@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextDataDetectorConfig
 
 This configuration is only available for the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md#text) and [RichEditor](arkts-arkui-richeditor.md) components.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DatePickerOptions
 
 Describes the parameters of the date picker. > **NOTE** > > - For details about how to use **Date**, see [TimePickerOptions](arkts-arkui-timepickeroptions-i.md#timepickeroptions). > > - Property modifications made to **DatePickerOptions** during the **DatePicker** scrolling process may not take > effect. > **NOTE** > > Handle exceptions for the start and end dates first, followed by exceptions for the selected date.

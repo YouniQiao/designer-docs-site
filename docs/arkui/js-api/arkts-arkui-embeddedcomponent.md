@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EmbeddedComponent
 
 Provide an interface for the EmbeddedComponent, which is used <br/>to render UI asynchronously

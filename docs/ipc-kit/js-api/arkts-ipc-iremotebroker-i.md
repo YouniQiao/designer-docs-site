@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IRemoteBroker
 
 Represents the holder of a remote proxy object. It is used to obtain a proxy object.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChannelStateInfo
 
 当代理通道状态变化时，用于表示代理通道的连接状态。

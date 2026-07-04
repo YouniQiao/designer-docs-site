@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KVManagerConfig
 
 Provides the **KVManager** instance configuration, including the bundle name of the invoker and the application context.

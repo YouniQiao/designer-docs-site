@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Mac
 
 Mac类，调用Mac方法进行消息认证码（Message Authentication Code）计算。调用前，需要通过 [createMac](arkts-cryptoarchitecture-createmac-f.md#createmac-1)构造Mac实例。

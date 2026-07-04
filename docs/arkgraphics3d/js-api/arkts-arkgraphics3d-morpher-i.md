@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Morpher
 
 Defines Morpher interface for specifying morph targets for Node's geometry.

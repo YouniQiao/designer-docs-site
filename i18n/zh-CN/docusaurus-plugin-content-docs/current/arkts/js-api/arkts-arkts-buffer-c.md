@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Buffer
 
 Buffer对象是处理二进制数据的缓存区。

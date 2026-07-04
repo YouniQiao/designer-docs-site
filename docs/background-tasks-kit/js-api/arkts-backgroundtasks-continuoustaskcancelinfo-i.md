@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContinuousTaskCancelInfo
 
 Describes the information about the cancellation of a continuous task.

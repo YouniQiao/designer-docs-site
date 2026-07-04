@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PageTransitionEnter
 
 Provides an interface to set transition style when a page enters.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollbarMode
 
 Web页面场景下，全局滚动条模式。

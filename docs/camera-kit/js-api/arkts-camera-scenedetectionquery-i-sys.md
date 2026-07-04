@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SceneDetectionQuery (System API)
 
 Provides the scene detection and query capabilities.

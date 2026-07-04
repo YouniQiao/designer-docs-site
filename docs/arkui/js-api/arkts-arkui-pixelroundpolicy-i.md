@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PixelRoundPolicy
 
 Enumerates the directions of pixel rounding at the component level.

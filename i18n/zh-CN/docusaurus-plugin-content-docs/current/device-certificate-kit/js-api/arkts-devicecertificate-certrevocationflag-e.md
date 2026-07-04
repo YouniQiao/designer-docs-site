@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertRevocationFlag
 
 表示证书吊销检查标志的枚举。

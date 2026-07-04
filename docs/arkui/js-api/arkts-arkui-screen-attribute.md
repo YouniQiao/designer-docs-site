@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Screen properties/events
 
 Defines the attribute functions of Screen.

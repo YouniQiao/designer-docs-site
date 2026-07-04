@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Watcher
 
 Listens for file change. You can call the **Watcher.stop()** method synchronously or asynchronously to stop the listening.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StyledDateTimeFormatOptions
 
 Optional configuration items for creating the time and date formatting object for rich text display.

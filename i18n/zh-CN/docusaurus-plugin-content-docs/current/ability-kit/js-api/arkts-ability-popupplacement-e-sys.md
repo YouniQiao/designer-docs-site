@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PopupPlacement（系统接口）
 
 表示气泡弹窗位置的枚举。

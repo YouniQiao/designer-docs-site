@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StatusBarProperty
 
 状态栏的属性。在获取状态栏属性信息时返回。

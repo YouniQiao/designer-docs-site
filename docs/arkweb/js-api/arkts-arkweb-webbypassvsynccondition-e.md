@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebBypassVsyncCondition
 
 Enumerates whether to allow the rendering process to bypass the vsync scheduling.

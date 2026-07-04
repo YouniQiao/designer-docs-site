@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageParticleParameters
 
 Defines the parameters for an image-like particle.

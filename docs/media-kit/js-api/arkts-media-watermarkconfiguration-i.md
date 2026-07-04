@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WatermarkConfiguration
 
 Set configuration of a watermark. The position starts at top left corner.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageSpan properties/events
 
 The attributes inherit from [BaseSpan](arkts-arkui-basespan-c.md#basespan). Among the universal attributes, [size](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), [background](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), and [border](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) are supported. Among all the universal events, only the [click event](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) is supported. The following events are also supported.

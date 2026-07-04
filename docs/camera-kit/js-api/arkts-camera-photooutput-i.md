@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoOutput
 
 Implements output information used in a photo session. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput).

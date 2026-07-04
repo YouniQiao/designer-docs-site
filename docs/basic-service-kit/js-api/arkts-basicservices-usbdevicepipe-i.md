@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # USBDevicePipe
 
 Represents a USB device pipe, which is used to determine a USB device.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebExtensionConnectionCallback
 
 As an input parameter when connecting a web native messaging extension, it is used to receive state changes during the connection.

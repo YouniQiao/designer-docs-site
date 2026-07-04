@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityComponent properties/events
 
 Define the attribute functions of ability component.

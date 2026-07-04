@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BondStateParam
 
 Describes the class of a bluetooth device.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LastExitReason
 
 Ability上次退出原因，该类型为枚举，可配合UIAbility的[onCreate()](arkts-ability-uiability-c.md#oncreate-1)方法根据 launchParam.lastExitReason的不同类型执行相应操作。

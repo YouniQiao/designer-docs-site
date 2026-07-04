@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderContext
 
 Render context defines the context for all rendering resources. Resources within the same render context may be shared between scenes created within the same render context.

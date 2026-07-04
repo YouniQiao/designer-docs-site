@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoSelectOptions
 
 Defines the options for selecting images or videos.

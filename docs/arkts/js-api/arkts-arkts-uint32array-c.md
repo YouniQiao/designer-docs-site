@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Uint32Array
 
 A linear data structure that is implemented on [ArkTS ArrayBuffer](arkts-collections.md#collections). > **NOTE** > > - This module can be imported only to ArkTS files (with the file name extension .ets). > **Decorator**: \@Sendable

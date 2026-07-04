@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [udmf_meta.h](capi-udmf-meta-h.md)
     - [udmf_err_code.h](capi-udmf-err-code-h.md)

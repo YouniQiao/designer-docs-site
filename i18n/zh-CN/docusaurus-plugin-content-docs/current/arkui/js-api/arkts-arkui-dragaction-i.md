@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragAction
 
 监听状态改变，启动拖拽服务的对象。

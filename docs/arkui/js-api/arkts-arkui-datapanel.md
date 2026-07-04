@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataPanel
 
 The **DataPanel** component is used to display proportions in a chart. > **NOTE**

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SignalInformation
 
 Returns child class objects specific to the network type.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DisconnectedDetails (System API)
 
 Indicates the cause of a call disconnection.

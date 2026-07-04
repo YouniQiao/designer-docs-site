@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavRouter
 
 The **NavRouter** component provides default processing logic for responding to clicks, eliminating the need for manual logic definition.

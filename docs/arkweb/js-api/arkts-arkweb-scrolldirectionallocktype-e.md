@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollDirectionalLockType
 
 Enum defining the scope of directional lock behavior in the WebView, used with {@link enableScrollDirectionalLock}.

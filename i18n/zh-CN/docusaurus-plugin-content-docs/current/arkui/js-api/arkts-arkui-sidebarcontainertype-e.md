@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SideBarContainerType
 
 容器内侧边栏样式枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContainerReaderAttribute
 
 Defines the ContainerReader attribute functions. Provides methods for configuring container reading parameters and breakpoint analysis properties.

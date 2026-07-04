@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragPreviewOptions
 
 设置拖拽过程中预览图处理模式及数量角标的显示。

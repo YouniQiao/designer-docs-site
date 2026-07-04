@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IconItemOptions
 
 Defines the configuration for the trailing builder, with constraints applied to background size and color settings.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IntentResult
 
 意图执行的返回结果，支持[泛型类型](../../../../quick-start/introduction-to-arkts.md#泛型类和接口)。

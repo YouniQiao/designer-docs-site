@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SupportWindowMode
 
 标识该组件所支持的窗口模式。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AsyKeyDataItem
 
 表示非对称密钥数据项类型的枚举。

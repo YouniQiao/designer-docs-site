@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MaxLinesOptions
 
 配置TextArea组件，文本超长时的显示效果。

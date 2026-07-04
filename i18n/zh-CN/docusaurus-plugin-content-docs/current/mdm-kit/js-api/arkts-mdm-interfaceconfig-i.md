@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InterfaceConfig
 
 以太网的网络接口配置。仅支持IPv4。

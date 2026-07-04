@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SubmitTransferCallback
 
 Usb异步传输回调。

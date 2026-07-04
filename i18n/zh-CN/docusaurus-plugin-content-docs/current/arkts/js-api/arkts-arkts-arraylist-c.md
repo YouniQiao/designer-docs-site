@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArrayList
 
 ArrayList是一种线性数据结构，底层基于数组实现。 ArrayList会根据实际需要动态调整容量，每次扩容增加50%。

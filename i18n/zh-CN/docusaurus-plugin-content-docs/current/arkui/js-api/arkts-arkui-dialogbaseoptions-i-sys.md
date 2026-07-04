@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogBaseOptions
 
 所有Dialog类型共享的基本选项。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StaticSubscriberExtensionAbility (System API)
 
 The **StaticSubscriberExtensionAbility** module provides Extension abilities for static subscribers.

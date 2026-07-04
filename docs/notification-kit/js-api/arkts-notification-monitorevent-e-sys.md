@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MonitorEvent (System API)
 
 Enumerates the event types of monitoring a geofence.

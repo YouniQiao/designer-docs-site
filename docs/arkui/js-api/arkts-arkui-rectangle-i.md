@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Rectangle
 
 The data type used to describe a rectangular area. > **NOTE** > > - **x** and **y** can be set to a positive or negative percentage value. For example, when **x** is set to > **'100%'**, the touch target is the offset from the right edge of the component by the component's width. When > **x** is set to **'-100%'**, the touch target is the offset from the left edge of the component by the component's > width. When **y** is set to **'100%'**, the touch target is the offset from the bottom edge of the component by the > component's height. When **y** is set to **'-100%'**, the touch target is the offset from the top edge of the > component by the component's height. > > - **width** and **height** can only be set to positive percentage values. When **width** is set to **'100%'**, the > width of the touch target is equal to that of the component. For example, if the width of a component is 100 vp, > **'100%'** indicates that the width of the touch target is also 100 vp. When **height** is set to **'100%'**, the > height of the touch target is equal to that of the component. > > - The percentage is measured relative to the component itself. > > - When the parent component has [clip](arkts-arkui-commonmethod-c.md#clip-1) set to **true**, child component > interaction is affected by the parent component's response region. Children outside the parent component's response > region won't respond to gestures or events. > > - **width** and **height** do not support **calc()** dynamic calculations.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AlphabetIndexer
 
 The **AlphabetIndexer** component can create a logically indexed array of items in a container for instant location. > **NOTE**

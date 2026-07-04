@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatingBallWindowInfo
 
 Describes the floating ball window information.

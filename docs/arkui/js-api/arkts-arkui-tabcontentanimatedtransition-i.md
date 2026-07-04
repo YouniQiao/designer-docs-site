@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TabContentAnimatedTransition
 
 Provides the information about the custom tab switching animation.

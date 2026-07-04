@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContextMenuAnimationOptions
 
 长按预览时显示的样式信息。

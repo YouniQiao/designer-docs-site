@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIScrollableCommonEvent
 
 Defines a UIScrollableCommonEvent which is used to set event to target component.

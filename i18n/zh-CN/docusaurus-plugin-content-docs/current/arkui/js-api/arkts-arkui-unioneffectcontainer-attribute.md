@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UnionEffectContainer属性/事件
 
 支持通用事件。

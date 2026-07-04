@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.abilityManager
 
 The AbilityManager module provides APIs for obtaining, adding, and updating ability information and running status information.

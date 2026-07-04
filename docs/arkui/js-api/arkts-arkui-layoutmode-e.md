@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LayoutMode
 
 Enumerates the layout modes of the images and texts on the bottom tabs.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataProxyGetResult
 
 Defines a struct for obtaining the batch operation result of shared configuration.

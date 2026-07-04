@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BreakpointsReference
 
 Breakpoint reference of the grid container component.

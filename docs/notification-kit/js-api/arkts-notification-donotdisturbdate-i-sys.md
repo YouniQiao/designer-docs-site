@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DoNotDisturbDate (System API)
 
 DND time to set.

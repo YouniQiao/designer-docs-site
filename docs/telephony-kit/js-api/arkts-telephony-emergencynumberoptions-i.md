@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EmergencyNumberOptions
 
 Indicates the option for determining if a number is an emergency number for specified slot.

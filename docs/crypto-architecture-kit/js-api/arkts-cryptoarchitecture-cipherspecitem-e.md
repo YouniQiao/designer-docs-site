@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CipherSpecItem
 
 Enumerates encryption and decryption parameters, which can be set by using [setCipherSpec](arkts-cryptoarchitecture-cipher-i.md#setcipherspec-1) and obtained by using [getCipherSpec](arkts-cryptoarchitecture-cipher-i.md#getcipherspec-1). Currently, only RSA and SM2 are supported. Since API version 11, the **SM2_MD_NAME_STR** parameter is supported. For details, see [Asymmetric Key Encryption and Decryption Algorithm Specifications](../../../../security/CryptoArchitectureKit/crypto-asym-encrypt-decrypt-spec.md) .

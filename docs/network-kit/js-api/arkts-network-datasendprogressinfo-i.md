@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataSendProgressInfo
 
 This interface is used to monitor the progress of sending data.

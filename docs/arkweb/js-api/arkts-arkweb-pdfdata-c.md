@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PdfData
 
 Implements the output data stream class of **createPdf()**. > **NOTE** > > - The sample effect is subject to the actual device. > > - When a PDF file is generated on a web page, a data stream is returned, which is encapsulated by the **PdfData** > class.

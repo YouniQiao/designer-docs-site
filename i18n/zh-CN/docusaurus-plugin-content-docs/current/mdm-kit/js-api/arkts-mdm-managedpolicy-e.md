@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ManagedPolicy
 
 企业设备管控策略。

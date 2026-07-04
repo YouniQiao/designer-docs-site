@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextContentControllerBase
 
 Represents the base controller for **TextInput**, **TextArea**, and **Search** components.

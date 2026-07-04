@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksChallengeType
 
 表示密钥使用时生成challenge的类型。

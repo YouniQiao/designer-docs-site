@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoFillType (System API)
 
 AutoFillType enumerates the types of elements to be automatically filled in.

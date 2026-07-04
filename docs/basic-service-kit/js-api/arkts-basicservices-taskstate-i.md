@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TaskState
 
 Upload task information, which is the callback parameter of the [on('complete' | 'fail')](arkts-basicservices-uploadtask-i.md#on-3) and [off('complete' | 'fail')](arkts-basicservices-uploadtask-i.md#off-3) APIs.

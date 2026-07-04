@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CooperateOptions（系统接口）
 
 键鼠穿越可选控制参数，控制穿出点位置。

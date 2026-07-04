@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AsyKeySpecType
 
 表示密钥参数类型的枚举。

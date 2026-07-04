@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [media_types.h](capi-media-types-h.md)
     - [native_audio_channel_layout.h](capi-native-audio-channel-layout-h.md)

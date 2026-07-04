@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FailedFileInfo
 
 Represents a list of files that fail to be downloaded from the Drive Kit and failure causes.

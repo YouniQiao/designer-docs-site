@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.secureElement
 
 Provides APIs for mobile applications to access different SEs in mobile devices, such as SIMs or embedded SEs. See "Open Mobile API Specification".

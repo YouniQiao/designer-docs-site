@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeyboardAvoidMode
 
 Enumerates the modes in which the layout responds when the keyboard is displayed.

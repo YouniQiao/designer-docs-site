@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackupExtensionAbility
 
 Class to be override for backup extension ability.

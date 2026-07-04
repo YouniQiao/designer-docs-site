@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SimpleAnimatorOptions
 
 animator简易动画参数对象。与AnimatorOptions相比，部分动画参数有默认值，可不设置。

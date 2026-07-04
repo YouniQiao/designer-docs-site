@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bluetooth.map
 
 Provides methods to accessing bluetooth MAP(Message Access Profile)-related capabilities.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebMessageType
 
 向 {@link onMessageEventExt} 提供的枚举类型，用于指示网络消息的类型。

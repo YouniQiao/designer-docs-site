@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KVStore
 
 Provides APIs to manage data in a KV store, for example, adding or deleting data and subscribing to data changes or completion of data sync. Before calling any method in **KVStore**, you must use [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-2) to obtain a **KVStore** object.

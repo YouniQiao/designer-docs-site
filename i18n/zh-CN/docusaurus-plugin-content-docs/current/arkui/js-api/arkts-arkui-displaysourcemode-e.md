@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DisplaySourceMode
 
 屏幕显示内容的显示模式枚举。

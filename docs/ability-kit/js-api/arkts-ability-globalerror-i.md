@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GlobalError
 
 Describes the object related to the exception event name, message, error stack information, exception thread name, and exception thread type.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UpdateRequest (System API)
 
 Defines the information about an auto-update request.

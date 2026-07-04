@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TimeLapseRecordState (System API)
 
 Enumerates the time-lapse recording states.

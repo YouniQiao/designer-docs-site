@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SuspendMessage
 
 长时任务暂停原因。

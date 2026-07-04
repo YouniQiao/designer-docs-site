@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResourceImageAttachmentOptions
 
 ResourceStr类型图片设置项。

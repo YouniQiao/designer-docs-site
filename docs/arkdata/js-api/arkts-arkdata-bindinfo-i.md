@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BindInfo
 
 Represents the information about the joint asset in the RDB store to bind. Currently, only the RDB stores are supported.

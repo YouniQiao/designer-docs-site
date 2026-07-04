@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatViewConfiguration
 
 Provides parameter configuration required for creating a float view controller.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AacProfile
 
 Enumerates the supported Advanced Audio Coding (AAC) formats.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileSelectorMode
 
 Enumerates the modes of the file selector.

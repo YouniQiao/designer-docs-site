@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.bundleManager
 
 The module provides APIs for obtaining application information, including [bundle information](bundleManager/BundleInfo), [application information](bundleManager/ApplicationInfo), [ability information](bundleManager/AbilityInfo) (information about a UIAbility), and [ExtensionAbility information](bundleManager/ExtensionAbilityInfo:ExtensionAbilityInfo).

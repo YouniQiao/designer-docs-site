@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SetPropertyType（系统接口）
 
 表示要设置的属性类型的枚举。

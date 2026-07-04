@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InsightIntentInfoFilter（系统接口）
 
 意图筛选器，描述目标意图的筛选条件，用于筛选设备上符合条件的意图。

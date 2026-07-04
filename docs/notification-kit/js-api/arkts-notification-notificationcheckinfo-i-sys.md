@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationCheckInfo (System API)
 
 Describes the parameters of check notifications.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UkeyAuthRequest
 
 USB Key PIN码认证请求。

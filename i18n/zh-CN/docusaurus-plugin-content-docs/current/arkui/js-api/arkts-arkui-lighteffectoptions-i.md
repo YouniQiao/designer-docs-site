@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LightEffectOptions
 
 沉浸式材质的光感交互反馈配置。用于自定义反馈光感的颜色。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FaultLogInfo
 
 Defines the data structure of the fault log information.

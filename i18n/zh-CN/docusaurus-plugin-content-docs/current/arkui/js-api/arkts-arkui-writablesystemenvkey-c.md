@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WritableSystemEnvKey
 
 定义可写的系统环境变量键。

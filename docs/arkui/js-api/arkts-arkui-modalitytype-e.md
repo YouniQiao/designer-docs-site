@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ModalityType
 
 Enumerates the modality types of the child window.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle.shortcutManager
 
 本模块提供应用对于[快捷方式](../../../../quick-start/typical-scenario-configuration.md)的管理能力，包括设置快捷方式是否显示等。

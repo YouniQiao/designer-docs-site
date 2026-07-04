@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RequestFullWindowOptions
 
 Defines the option of RequestFullWindow interface.

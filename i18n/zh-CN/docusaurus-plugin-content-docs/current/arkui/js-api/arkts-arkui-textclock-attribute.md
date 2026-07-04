@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextClock属性/事件
 
 除支持[通用属性](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md)外，还支持以下属性。 除支持[通用事件](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md)外，还支持以下事件。

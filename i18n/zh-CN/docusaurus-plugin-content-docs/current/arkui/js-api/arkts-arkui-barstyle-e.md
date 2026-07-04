@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BarStyle
 
 标题栏或工具栏的布局样式。NavDestination的工具栏不支持设置该属性。

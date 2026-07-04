@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BatteryStatsInfo (System API)
 
 Describes the device power consumption information.

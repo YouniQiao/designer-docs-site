@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CdsmInfo
 
 Describes the coordinated devices set information.

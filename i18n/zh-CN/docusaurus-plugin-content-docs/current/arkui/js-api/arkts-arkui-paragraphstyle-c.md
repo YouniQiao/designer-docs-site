@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ParagraphStyle
 
 文本段落样式对象说明。 除首个段落外，后续段落按'\n'划分。 每个段落的段落样式按首个占位设置的段落样式生效，未设置时，段落按被绑定组件的段落样式生效。 在API版本26.0.0之前，如果属性字符串段落内首个占位为[CustomSpan](arkts-arkui-customspan-c.md#customspan)或[ImageAttachment](arkts-arkui-imageattachment-c.md#imageattachment)时，设置在该段落上的段落样式不生 效。从API版本26.0.0开始，设置段落样式生效。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GridItemStyle
 
 Enumerates styles of grid items. > **NOTE** > > To set the focused style for the grid item, the grid container must have paddings of greater than 4 vp for > accommodating the focus frame of the grid item.

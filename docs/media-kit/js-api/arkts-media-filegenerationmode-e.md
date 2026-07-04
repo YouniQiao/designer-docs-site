@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileGenerationMode
 
 Enumerates the modes for creating media files.

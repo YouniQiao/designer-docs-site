@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerBackgroundStyle
 
 选择器选中项的背景样式，包括选中项的背景颜色和边框圆角半径。

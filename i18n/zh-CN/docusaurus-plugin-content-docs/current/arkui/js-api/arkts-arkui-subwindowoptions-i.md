@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SubWindowOptions
 
 子窗口创建参数。

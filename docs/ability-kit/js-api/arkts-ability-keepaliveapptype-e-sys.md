@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KeepAliveAppType (System API)
 
 Enumerates the types of applications to be kept alive.

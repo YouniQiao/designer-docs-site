@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ValueType
 
 Indicates the {@code ValueType}. <p>{@code ValueType} is obtained based on the value.

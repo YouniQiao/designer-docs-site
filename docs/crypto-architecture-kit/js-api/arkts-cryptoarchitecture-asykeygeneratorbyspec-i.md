@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AsyKeyGeneratorBySpec
 
 Provides APIs for using the **AsyKeyGenerator**. Before using the APIs of this class, you need to use [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create an **AsyKeyGeneratorBySpec** instance.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Md
 
 Md类，调用Md方法进行消息摘要（Message Digest）计算。调用前，需要通过[createMd](arkts-cryptoarchitecture-createmd-f.md#createmd-1)构造Md实例。

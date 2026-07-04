@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CounterV2CommonOptions
 
 CounterV2CommonOptions定义了CounterV2的共通属性和事件。

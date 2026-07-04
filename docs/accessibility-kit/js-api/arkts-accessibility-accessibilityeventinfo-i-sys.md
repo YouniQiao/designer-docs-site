@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityEventInfo (System API)
 
 Describes the accessibility event information.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackgroundTaskSubscriber (System API)
 
 Represents a listener object used to listen for background task state changes.

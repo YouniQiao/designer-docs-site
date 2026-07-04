@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebSocketRequestOptions
 
 Defines the optional parameters carried in the request for establishing a WebSocket connection.

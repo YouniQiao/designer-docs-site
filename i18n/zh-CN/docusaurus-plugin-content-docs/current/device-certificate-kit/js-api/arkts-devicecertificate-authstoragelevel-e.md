@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthStorageLevel
 
 表示凭据的存储级别。

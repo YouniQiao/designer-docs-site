@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HdrDecomposeOptions (System API)
 
 Describes the options for decomposing an HDR Pixelmap to a Picture containing an SDR PixelMap and a gainmap.

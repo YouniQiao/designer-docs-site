@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PartnerAgentExtensionAbilityDestroyReason
 
 The enum of reasons for destroying partner agent extension ability.

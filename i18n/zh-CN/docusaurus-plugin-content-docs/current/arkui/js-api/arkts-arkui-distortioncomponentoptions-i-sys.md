@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DistortionComponentOptions（系统接口）
 
 空间扭曲形变选项。

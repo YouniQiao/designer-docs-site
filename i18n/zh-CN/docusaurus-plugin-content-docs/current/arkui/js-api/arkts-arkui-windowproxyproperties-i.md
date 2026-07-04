@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowProxyProperties
 
 用于表示组件的相关信息。

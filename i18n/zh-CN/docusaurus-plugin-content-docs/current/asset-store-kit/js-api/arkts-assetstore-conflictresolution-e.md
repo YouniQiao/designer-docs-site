@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConflictResolution
 
 枚举，新增关键资产时的冲突（如：别名相同）处理策略。

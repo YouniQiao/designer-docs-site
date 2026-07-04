@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ProgressMask
 
 ProgressMask设置遮罩的进度、最大值和颜色。

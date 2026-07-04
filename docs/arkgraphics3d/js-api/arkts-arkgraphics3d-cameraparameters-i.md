@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CameraParameters
 
 Camera creation parameters. Can be used to define extra options for camera creation.

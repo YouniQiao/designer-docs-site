@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BluetoothAddressType
 
 Enum for the type of Bluetooth address.

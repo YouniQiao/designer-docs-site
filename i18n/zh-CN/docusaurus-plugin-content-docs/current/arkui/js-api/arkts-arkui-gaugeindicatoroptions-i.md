@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GaugeIndicatorOptions
 
 数据量规图表指针选项。

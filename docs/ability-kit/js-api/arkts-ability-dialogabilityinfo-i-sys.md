@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogAbilityInfo (System API)
 
 Provides DialogAbility information, including the bundle name, module name, and ability name.

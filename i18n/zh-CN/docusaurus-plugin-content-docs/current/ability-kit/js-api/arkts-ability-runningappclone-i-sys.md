@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RunningAppClone（系统接口）
 
 定义分身应用在运行态的结构信息。

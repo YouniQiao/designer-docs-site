@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TemplateStatus (System API)
 
 Provides the template status maintained by the **companionDeviceAuth** module.

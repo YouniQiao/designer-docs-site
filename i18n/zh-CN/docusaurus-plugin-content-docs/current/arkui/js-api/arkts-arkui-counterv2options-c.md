@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CounterV2Options
 
 CounterV2Options定义CounterV2类型及样式。

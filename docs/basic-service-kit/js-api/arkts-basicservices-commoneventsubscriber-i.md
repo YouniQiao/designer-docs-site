@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonEventSubscriber
 
 The **CommonEventSubscriber** module provides APIs for describing the common event subscriber.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.bundle
 
 The module provides APIs for obtaining information about an application, including [bundle information](arkts-ability-bundleinfo-depr-i.md#bundleinfo), [application information](arkts-ability-applicationinfo-depr-i.md#applicationinfo), and [ability information](arkts-ability-abilityinfo-depr-i.md#abilityinfo). It also provides APIs to obtain and set the application disabling state. > **NOTE** > > The APIs of this module have been deprecated since API version 9. You are advised to use > [@ohos.bundle.bundleManager](arkts-bundle-bundlemanager.md#bundlemanager) instead.

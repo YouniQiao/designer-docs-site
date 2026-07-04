@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataProxyChangeInfo
 
 Defines a struct for notifying subscribers of the shared configuration changes, including data change type, URI, and content.

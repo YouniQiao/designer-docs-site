@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SequenceRunner
 
 表示串行队列的任务，用于执行一组需要串行执行的任务。

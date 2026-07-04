@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ValidationPolicyType
 
 表示证书链在线校验策略的枚举。

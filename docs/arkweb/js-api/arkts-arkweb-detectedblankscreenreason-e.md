@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DetectedBlankScreenReason
 
 Enumerates the reasons for the blank screen.

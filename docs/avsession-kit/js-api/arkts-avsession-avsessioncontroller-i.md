@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVSessionController
 
 Session controller,used to control media playback and get media information

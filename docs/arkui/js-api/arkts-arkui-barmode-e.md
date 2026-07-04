@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BarMode
 
 Enumerates layout modes of the tab bar.

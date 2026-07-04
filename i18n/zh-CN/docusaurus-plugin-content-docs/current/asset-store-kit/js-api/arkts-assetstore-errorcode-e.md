@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ErrorCode
 
 表示错误码的枚举。

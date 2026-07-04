@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ShadowFlag
 
 控制阴影绘制行为的枚举。

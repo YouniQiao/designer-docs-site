@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TouchTestInfo
 
 Provides information about the coordinate system, ID, and size of the component where the current touch point is located.

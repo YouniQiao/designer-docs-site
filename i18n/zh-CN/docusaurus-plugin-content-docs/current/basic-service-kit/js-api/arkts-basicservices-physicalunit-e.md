@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhysicalUnit
 
 定义物理单位的枚举。

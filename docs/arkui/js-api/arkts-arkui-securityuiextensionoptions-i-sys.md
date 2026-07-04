@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SecurityUIExtensionOptions (System API)
 
 This interface is used to set the options for UIExtensionComponentAttribute during construction

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.abilityDelegatorRegistry
 
 AbilityDelegatorRegistry是自动化测试框架使用指南模块，该模块用于获取[AbilityDelegator](application/AbilityDelegator:AbilityDelegator) 和[AbilityDelegatorArgs](application/abilityDelegatorArgs:AbilityDelegatorArgs)对象，其中 [AbilityDelegator](application/AbilityDelegator:AbilityDelegator)对象提供添加用于监视指定ability的生命周期状态更改的 [AbilityMonitor](application/AbilityMonitor:AbilityMonitor)对象的能力， [AbilityDelegatorArgs](application/abilityDelegatorArgs:AbilityDelegatorArgs)对象提供获取当前测试参数的能力。 > **说明：** > > 本模块接口仅可在[单元测试框架](../../../../application-test/unittest-guidelines.md)中使用。

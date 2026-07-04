@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ErrorCode (System API)
 
 Enumerates the device-cloud sync states. Use the enum name rather than the enum value.

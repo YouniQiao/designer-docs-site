@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VolumeAdjustType (System API)
 
 Enumerates volume adjustment types.

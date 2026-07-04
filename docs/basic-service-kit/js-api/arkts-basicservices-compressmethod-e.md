@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CompressMethod
 
 The deflate compression method (the only one supported in this version).

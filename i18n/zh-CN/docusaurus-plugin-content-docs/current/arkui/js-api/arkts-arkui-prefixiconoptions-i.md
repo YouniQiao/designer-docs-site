@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrefixIconOptions
 
 PrefixIconOptions定义前缀图标的属性。 继承于[IconCommonOptions](arkts-arkui-iconcommonoptions-i.md#iconcommonoptions)。

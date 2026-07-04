@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MeasureResult
 
 Provides the measurement result of the component. This API inherits from [SizeResult](arkts-arkui-sizeresult-i.md#sizeresult).

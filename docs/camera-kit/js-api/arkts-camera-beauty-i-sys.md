@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Beauty (System API)
 
 Beauty extends [BeautyQuery](arkts-camera-beautyquery-i-sys.md#beautyquery) Provides APIs to obtain and set the beauty effect.

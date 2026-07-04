@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExtensionOidType
 
 Enumerates the OID types of the certificate extensions that can be obtained.

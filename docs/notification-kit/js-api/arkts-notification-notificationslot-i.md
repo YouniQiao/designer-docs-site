@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationSlot
 
 The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes vary according to notification slots.

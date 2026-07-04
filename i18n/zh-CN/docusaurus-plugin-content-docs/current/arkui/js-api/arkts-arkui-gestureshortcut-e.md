@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureShortcut
 
 组件的智慧手势响应优先级枚举。

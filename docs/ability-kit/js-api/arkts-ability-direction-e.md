@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Direction
 
 Enumerates the screen directions, which are used in the [Configuration.direction](arkts-ability-configuration-i.md#configuration) field. You can use these predefined enumerated values to set or obtain the screen direction of the system or application.

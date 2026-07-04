@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PinchGestureEvent
 
 继承自[BaseGestureEvent](arkts-arkui-basegestureevent-i.md#basegestureevent)。可将该对象作为[onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1)的 event参数来传递。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlurStyleActivePolicy
 
 定义背景模糊激活策略。

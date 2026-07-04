@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RichEditorImageSpanStyleResult
 
 后端返回的图片样式信息。

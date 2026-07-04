@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NativeEmbedParamDataInfo
 
 Provides details about the same-layer tag when the **param** element embedded in the **object** tag changes.

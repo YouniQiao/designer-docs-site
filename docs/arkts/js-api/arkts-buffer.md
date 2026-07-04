@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.buffer
 
 A **Buffer** object represents a byte sequence of a fixed length. It is used to store binary data. **Recommended use case**: Use Buffer when you need to process images and a large amount of binary data, and receive or upload files.

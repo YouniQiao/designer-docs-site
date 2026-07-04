@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PopupMaskType
 
 设置遮罩层颜色。

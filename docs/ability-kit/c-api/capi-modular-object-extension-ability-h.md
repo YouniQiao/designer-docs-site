@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # modular_object_extension_ability.h
 
 ## Overview

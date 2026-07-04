@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DomainServerConfigManager
 
 域服务器配置管理类。

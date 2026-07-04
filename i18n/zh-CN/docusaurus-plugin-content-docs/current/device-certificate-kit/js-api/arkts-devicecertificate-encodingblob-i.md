@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EncodingBlob
 
 带编码格式的证书二进制数组。

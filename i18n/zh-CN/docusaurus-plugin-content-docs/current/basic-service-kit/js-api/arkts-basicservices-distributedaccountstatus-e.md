@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DistributedAccountStatus
 
 表示分布式账号状态枚举。

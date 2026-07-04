@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectMode
 
 SelectMode. include SINGLE_SELECT and MULTI_SELECT

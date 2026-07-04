@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StorageRequest
 
 触发延迟任务回调的存储状态。

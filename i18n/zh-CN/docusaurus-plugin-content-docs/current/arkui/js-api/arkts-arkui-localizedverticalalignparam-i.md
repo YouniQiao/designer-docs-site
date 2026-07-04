@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocalizedVerticalAlignParam
 
 Defines the localized vertical align param of relative container.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResizeDirection
 
 Enumerates the directions in which a window can be resized.

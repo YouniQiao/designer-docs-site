@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Transliterator
 
 Provides text transliteration capabilities, such as obtaining the supported language IDs and transliterating text.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TransitionEffect
 
 Defines the transition effect by using the provided APIs, as listed below.

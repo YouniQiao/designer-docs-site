@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogCustomOptions
 
 自定义样式对话框的选项。 对话内容作为present()方法的第一个参数提供。 不在此选项对象中。

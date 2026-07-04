@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavigationDividerStyle
 
 Color of the navigation divider and the upper and lower margins of the **Navigation** component.

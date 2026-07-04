@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DrawModifier
 
 Defined the draw modifier of node. Provides draw callbacks for the associated Node.

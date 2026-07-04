@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SkillUri
 
 Indicates the uris of the skill

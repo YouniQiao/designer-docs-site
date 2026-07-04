@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [arkweb_scheme_handler.h](capi-arkweb-scheme-handler-h.md)
     - [arkweb_interface.h](capi-arkweb-interface-h.md)

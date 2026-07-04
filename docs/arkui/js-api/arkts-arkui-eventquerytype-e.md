@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EventQueryType
 
 Enumerates interaction event types that can be queried.

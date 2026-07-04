@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScanEffectOptions
 
 Defines the scan effect options.

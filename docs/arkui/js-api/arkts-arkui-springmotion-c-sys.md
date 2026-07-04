@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SpringMotion (System API)
 
 Spring animation model. You can build a spring animation based on the start point, end point, initial speed, and spring attributes.

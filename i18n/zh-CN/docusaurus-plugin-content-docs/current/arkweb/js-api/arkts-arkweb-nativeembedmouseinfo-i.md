@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NativeEmbedMouseInfo
 
 提供鼠标/触摸板在同层标签上点击或长按的详细信息。

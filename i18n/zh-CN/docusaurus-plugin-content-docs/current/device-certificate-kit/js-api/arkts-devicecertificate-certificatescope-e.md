@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CertificateScope
 
 表示安装证书的使用范围。

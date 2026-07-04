@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OrientationResponse
 
 Describes the orientation sensor data. It extends from [Response](arkts-sensorservice-response-i.md#response).

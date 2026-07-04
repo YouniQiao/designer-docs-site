@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VideoCallControlGroup
 
 视频通话控件组枚举。仅当[PiPTemplateType](arkts-arkui-piptemplatetype-e.md#piptemplatetype) 为VIDEO_CALL时使用。

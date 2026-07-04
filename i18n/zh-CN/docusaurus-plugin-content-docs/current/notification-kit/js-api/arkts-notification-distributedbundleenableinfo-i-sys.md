@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DistributedBundleEnableInfo（系统接口）
 
 描述多设备协同的包信息。

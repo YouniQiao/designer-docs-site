@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SuppressWarningsType
 
 Defines the warning types that support suppression. Developers can selectively suppress compatibility warnings, multi-device warnings, and permission warnings as required. This helps ensure code quality, reduce unnecessary warning interference, and improve development experience.

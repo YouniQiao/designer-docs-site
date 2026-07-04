@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.batteryInfo
 
 该模块主要提供电池状态和充放电状态的查询接口。

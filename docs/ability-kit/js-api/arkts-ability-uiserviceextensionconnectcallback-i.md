@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIServiceExtensionConnectCallback
 
 UIServiceExtensionConnectCallback provides callbacks for the connection to a UIServiceExtensionAbility. > **NOTE** > > - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool.

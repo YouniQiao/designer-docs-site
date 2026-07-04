@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CallingInfo
 
 Defines the IPC context, including the PID and UID, local and remote device IDs, and whether the API is invoked on the same device.

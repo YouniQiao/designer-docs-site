@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageRotateOrientation
 
 Describes the desired display orientation for image content.

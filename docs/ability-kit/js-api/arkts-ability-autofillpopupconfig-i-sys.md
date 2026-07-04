@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoFillPopupConfig (System API)
 
 The module describes the size and position information of an auto-fill pop-up.

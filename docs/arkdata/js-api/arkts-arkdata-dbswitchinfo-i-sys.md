@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DBSwitchInfo (System API)
 
 Defines the switch information of a device-cloud synergy database.

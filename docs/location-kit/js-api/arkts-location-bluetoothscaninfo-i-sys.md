@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BluetoothScanInfo (System API)
 
 Describes the contents of the Bluetooth scan results.

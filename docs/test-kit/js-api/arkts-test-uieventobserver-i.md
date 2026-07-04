@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIEventObserver
 
 Observer to monitor UI events.

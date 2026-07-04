@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.autoStartupManager
 
 autoStartupManager模块提供获取自身应用的开机自启状态。

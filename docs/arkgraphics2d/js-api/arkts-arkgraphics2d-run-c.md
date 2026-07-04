@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Run
 
 Implements a unit for text layout. Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-arkgraphics2d-textline-c.md#getglyphruns-1) of the [TextLine](arkts-arkgraphics2d-textline-c.md#textline) class to create a **Run** object.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PixelFormat (System API)
 
 Enumerates the color formats supported by the video thumbnail.

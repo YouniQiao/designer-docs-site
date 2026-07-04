@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HistoryVersion
 
 端云文件历史版本信息，调用端云文件版本管理类[FileVersion](arkts-corefile-fileversion-c.md#fileversion)的 [gethistoryversionlist](arkts-corefile-fileversion-c.md#gethistoryversionlist-1)方法时，历史版本列表中的属性。

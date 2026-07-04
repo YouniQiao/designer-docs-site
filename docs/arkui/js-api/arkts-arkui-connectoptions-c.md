@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ConnectOptions
 
 Defines the parameter type for **globalConnect**.

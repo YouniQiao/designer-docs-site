@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VideoSourceType
 
 表示视频录制中视频源类型的枚举。

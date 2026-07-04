@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CalendarPicker
 
 The **CalendarPicker** component provides a drop-down calendar for users to select a date. > **NOTE**

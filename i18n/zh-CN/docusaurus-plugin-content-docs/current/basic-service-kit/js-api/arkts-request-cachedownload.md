@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.request.cacheDownload
 
 request部件主要给应用提供上传下载文件、后台传输代理的基础能力。 - request的cacheDownload子组件主要给应用提供应用资源提前缓存的基础能力。 - cacheDownload组件使用HTTP协议进行数据下载，并将数据资源缓存至应用内存或应用沙箱目录的指定文件中。 - 这些缓存数据可以被特定的ArkUI组件（例如：Image组件）使用，从而提升资源加载效率。请查看ArkUI组件文档确定组件是否支持该功能。

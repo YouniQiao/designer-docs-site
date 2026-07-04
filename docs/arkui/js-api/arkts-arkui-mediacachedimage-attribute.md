@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaCachedImage properties/events
 
 Attributes of MediaCachedImage inherited from ImageAttribute.

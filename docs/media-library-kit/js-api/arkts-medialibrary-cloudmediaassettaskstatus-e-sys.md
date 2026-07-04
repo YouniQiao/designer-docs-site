@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CloudMediaAssetTaskStatus (System API)
 
 Enumerates the statuses of tasks used for downloading cloud media assets.

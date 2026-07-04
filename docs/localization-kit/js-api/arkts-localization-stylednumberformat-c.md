@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StyledNumberFormat
 
 Provide a number formatting interface which could format number to StyleString.

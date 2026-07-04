@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ButtonStyle
 
 设置侧边栏控制按钮的样式。

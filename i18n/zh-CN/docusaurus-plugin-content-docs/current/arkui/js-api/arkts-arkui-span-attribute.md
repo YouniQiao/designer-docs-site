@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Span属性/事件
 
 属性继承自[BaseSpan](arkts-arkui-basespan-c.md#basespan)。 通用事件支持[点击事件onClick](arkts-arkui-commonmethod-c.md#onclick-2)、 [悬浮事件onHover](arkts-arkui-commonmethod-c.md#onhover-1)。

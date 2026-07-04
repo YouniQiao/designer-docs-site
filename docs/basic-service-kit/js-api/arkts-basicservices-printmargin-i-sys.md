@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrintMargin (System API)
 
 Defines the page margins for printing.

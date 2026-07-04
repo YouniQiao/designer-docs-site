@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SplitPolicy
 
 表示MultiNavigation中页面的类型。

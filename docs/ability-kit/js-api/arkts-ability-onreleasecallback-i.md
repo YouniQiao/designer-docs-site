@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnReleaseCallback
 
 Defines the callback that is invoked when the stub on the target UIAbility is disconnected.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsKeyAgreeRecipientDigestAlgorithm
 
 CMS KeyAgree类型接收者摘要算法的枚举。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SetBrightnessModeOptions
 
 设置屏幕亮度模式的参数对象。

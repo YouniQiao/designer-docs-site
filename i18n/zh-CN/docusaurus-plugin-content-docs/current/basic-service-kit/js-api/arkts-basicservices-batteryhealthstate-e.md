@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BatteryHealthState
 
 表示电池健康状态的枚举。

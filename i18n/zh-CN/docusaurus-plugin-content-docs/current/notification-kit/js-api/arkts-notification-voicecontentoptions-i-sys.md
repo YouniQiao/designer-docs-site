@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VoiceContentOptions（系统接口）
 
 描述订阅通知的语音播报内容配置项。

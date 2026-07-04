@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SendMessageOptions
 
 Provides the options (including callbacks) for sending an SMS message.

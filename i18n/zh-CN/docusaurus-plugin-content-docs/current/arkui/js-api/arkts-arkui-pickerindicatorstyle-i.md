@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerIndicatorStyle
 
 选中项指示器样式的参数说明。

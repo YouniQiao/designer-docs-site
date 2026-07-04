@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScreenShape
 
 显示设备的屏幕形状枚举。

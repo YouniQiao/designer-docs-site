@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaQueryListener
 
 Implements the media query listener, including the first query result when the listener is applied for. The specified media query condition, for example, **'(width <= 600vp)'**, is compared system information. If related information is not initialized during the first query, **matches** returns **false**. Inherits from [MediaQueryResult](arkts-arkui-mediaqueryresult-i.md#mediaqueryresult).

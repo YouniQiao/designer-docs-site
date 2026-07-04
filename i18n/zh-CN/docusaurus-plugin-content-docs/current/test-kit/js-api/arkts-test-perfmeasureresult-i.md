@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PerfMeasureResult
 
 表示性能指标对应的测量结果数据。

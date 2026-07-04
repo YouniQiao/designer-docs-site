@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StateChangeReason
 
 表示播放或录制实例状态机切换原因的枚举，伴随state一起上报。

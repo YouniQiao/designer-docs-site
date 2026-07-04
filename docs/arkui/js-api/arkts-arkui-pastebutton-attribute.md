@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PasteButton properties/events
 
 Defines the attributes of the paste button.

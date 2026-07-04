@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SliderBlockStyle
 
 Describes the style of the slider in the block direction.

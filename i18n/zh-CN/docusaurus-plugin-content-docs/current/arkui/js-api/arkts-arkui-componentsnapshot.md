@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.arkui.componentSnapshot
 
 本模块提供获取组件截图的能力，包括已加载的组件的截图和没有加载的组件的截图。组件截图只能够截取组件大小的区域，如果组件的绘制超出了它的区域，或子组件的绘制超出了父组件的区域，这些在组件区域外绘制的内容不会在截图中呈现。兄弟节点堆叠在组 件区域内，截图不会显示兄弟组件。 缩放、平移、旋转等图形变换属性只对被截图组件的子组件生效；对目标组件本身应用图形变换属性不生效，显示的仍然是图形变换前的效果。 组件截图典型使用场景（如长截图）及最佳实践请参考[使用组件截图](../../../../ui/arkts-uicontext-component-snapshot.md)。 > **说明：** > > - 对于使用[XComponent](xcomponent)的场景，例如：Video或者相机流媒体展示类组件，不建议使用组件截图相关接口，建议使用 > [createPixelMapFromSurface](@ohos.multimedia.image:image.createPixelMapFromSurface(surfaceId: string, region: Region)) > 直接获取图片。 > > - 如果组件自身内容不能填满组件大小区域，那么剩余位置截图返回的内容为透明像素。如果组件使用了[图像效果](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)类属性或其他的效果类属性，则可能产生非用户预期的截图结果。请排查是否需要填充组件透明内容区域，或 > 使用窗口截图接口[snapshot](arkts-arkui-window-i.md#snapshot-1)替代。 > > - 示例效果请以真机运行为准，当前 DevEco Studio预览器不支持。

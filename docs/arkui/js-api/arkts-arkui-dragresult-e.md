@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragResult
 
 Defines the result of a drag operation and the drop-selection state of a component.

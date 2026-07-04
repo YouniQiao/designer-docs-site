@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UidNetworkAccessPolicy (System API)
 
 Provides the container definition for network access policy key-value pairs.

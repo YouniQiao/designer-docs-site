@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollOffset
 
 网页当前的滚动偏移量。

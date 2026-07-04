@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GestureListenerType
 
 Enumerates the types of gestures to be listened for.

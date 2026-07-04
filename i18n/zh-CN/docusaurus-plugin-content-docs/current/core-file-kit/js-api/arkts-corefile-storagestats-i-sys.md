@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StorageStats（系统接口）
 
 **起始版本：** 9

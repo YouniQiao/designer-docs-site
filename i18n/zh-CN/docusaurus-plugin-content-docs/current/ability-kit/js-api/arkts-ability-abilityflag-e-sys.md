@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityFlag（系统接口）
 
 Ability组件信息标志，指示需要获取的Ability组件信息的内容。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ErrorCode
 
 ErrorCode定义启动Ability时返回的错误码，包括无效的参数、权限拒绝等。

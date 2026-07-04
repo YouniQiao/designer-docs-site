@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerBackgroundStyle
 
 Defines the background style configuration for selected picker items.

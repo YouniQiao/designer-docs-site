@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RichEditorController
 
 Implements the **RichEditor** component controller. Inherits from [RichEditorBaseController](arkts-arkui-richeditorbasecontroller-c.md#richeditorbasecontroller). > **NOTE** > > When the length of the content exceeds the height of the display area of the component, the insertion interface ( > such as [addTextSpan](arkts-arkui-richeditorcontroller-c.md#addtextspan-1), > [addImageSpan](arkts-arkui-richeditorcontroller-c.md#addimagespan-1), > [addBuilderSpan](arkts-arkui-richeditorcontroller-c.md#addbuilderspan-1) and > [addSymbolSpan](arkts-arkui-richeditorcontroller-c.md#addsymbolspan-1)) is called. The component automatically scrolls the > content to make the end of the inserted content visible.

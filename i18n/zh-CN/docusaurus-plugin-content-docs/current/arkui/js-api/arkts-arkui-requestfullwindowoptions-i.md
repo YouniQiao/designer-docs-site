@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RequestFullWindowOptions
 
 定义RequestFullWindow接口的选项。

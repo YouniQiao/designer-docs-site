@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Pkcs12ParsingConfig
 
 Represents the configuration for parsing .p12 files.

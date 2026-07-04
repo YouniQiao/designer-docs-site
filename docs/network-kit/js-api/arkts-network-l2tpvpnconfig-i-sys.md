@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # L2tpVpnConfig (System API)
 
 Define configuration of the l2tp VPN network.

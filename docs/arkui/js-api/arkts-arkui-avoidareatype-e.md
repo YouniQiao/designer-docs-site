@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AvoidAreaType
 
 Enumerates the types of areas to avoid for window content. When adapting window content for an [immersive layout](../../../../windowmanager/window-terminology.md#immersive-layout), you should adjust the content based on the corresponding [AvoidArea](arkts-arkui-avoidarea-i.md#avoidarea) specified by **AvoidAreaType**.

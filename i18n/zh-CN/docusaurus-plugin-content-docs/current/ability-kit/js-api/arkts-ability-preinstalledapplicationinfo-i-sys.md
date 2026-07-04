@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PreinstalledApplicationInfo（系统接口）
 
 预装应用的信息。

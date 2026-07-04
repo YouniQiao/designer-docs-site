@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CloudMediaTaskPauseCause (System API)
 
 Enumerates the reasons why a cloud media asset download task is paused.

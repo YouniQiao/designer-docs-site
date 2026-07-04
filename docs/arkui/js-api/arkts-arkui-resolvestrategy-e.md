@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ResolveStrategy
 
 Enumerates resolution strategies for **UIContext** objects.

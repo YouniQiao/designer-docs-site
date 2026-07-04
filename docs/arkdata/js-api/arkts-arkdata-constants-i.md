@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Constants
 
 Provides constants of the distributed KV store.

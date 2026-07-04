@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StartAbilityParameter
 
 定义启动Ability参数，可以作为入参，调用 [startAbility](./../@ohos.ability.featureAbility:featureAbility.startAbility(parameter: StartAbilityParameter, callback: AsyncCallback<number>)) 启动指定的Ability。

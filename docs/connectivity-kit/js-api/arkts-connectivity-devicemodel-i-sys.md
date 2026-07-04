@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeviceModel (System API)
 
 Describes the remote device's model information.

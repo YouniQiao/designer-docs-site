@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SaveButtonOptions
 
 Declares the interface for setting the save button options.

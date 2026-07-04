@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AVScreenCaptureFillMode
 
 进行屏幕录制时视频填充模式的枚举。

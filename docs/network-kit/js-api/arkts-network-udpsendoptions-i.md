@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UDPSendOptions
 
 Defines the parameters for sending data over the UDPSocket connection.

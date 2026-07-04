@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AvailableLayoutArea
 
 预览图宽高设置为百分比时的参考可布局区域大小。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReturnType
 
 Enumerates the type of information returned by an asset query operation.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonSegmentButtonOptions
 
 Defines the customizable attributes of a segment button component.

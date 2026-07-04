@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.multimodalInput.pointer
 
 本模块提供鼠标光标管理能力，包括查询、设置鼠标光标属性。 > **说明**：

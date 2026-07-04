@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrintDocumentAdapter
 
 Provides information about the document to print. This API must be implemented by a third-party application.

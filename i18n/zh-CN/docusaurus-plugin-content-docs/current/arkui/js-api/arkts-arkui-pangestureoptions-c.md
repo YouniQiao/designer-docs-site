@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PanGestureOptions
 
 定义PanGesture配置参数选项。

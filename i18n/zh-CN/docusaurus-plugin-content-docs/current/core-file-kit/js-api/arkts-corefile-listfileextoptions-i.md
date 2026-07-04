@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListFileExtOptions
 
 可选项类型，支持listFileExt接口使用自定义过滤规则。

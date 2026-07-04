@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArcSliderStyleOptions
 
 配置弧形Slider的样式信息。

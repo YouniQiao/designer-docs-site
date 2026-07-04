@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ToolbarItemStatus
 
 工具栏单个选项的状态。

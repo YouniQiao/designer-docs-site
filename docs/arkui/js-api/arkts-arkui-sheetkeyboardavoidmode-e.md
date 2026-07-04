@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SheetKeyboardAvoidMode
 
 Define the mode of sheet how to avoid keyboard.

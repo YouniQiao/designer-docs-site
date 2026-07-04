@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowAnchorInfo (System API)
 
 Describes the anchor point information used to maintain the relative position between the level-1 child window and the main window.

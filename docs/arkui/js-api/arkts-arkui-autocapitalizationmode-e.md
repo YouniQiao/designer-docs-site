@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoCapitalizationMode
 
 Enumerates automatic capitalization modes. This only provides API capabilities; the specific implementation depends on the input method application.

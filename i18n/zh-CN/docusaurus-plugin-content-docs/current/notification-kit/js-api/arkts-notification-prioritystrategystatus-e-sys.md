@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PriorityStrategyStatus（系统接口）
 
 描述应用通知的优先策略。

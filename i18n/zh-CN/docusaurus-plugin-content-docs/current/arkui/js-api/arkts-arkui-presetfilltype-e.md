@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PresetFillType
 
 Specify the number of columns for different responsive breakpoints.

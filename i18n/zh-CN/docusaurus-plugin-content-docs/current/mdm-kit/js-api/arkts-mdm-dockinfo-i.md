@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DockInfo
 
 快捷栏中的应用信息。

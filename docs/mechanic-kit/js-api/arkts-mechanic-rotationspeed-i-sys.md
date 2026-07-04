@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RotationSpeed (System API)
 
 Rotational speed. A negative value indicates a clockwise rotation, and a positive value indicates a counterclockwise rotation.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Server
 
 Manages SSAP server. Before calling a SSAP server method, you must use {@link createServer} to create a SSAP server instance.

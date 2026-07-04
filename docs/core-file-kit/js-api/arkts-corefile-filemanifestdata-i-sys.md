@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileManifestData (System API)
 
 Manifest file information in incremental data. FileManifestData is useful when doing IPC with the backup service.

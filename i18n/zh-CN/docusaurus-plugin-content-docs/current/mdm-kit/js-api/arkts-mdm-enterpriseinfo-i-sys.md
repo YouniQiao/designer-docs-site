@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EnterpriseInfo（系统接口）
 
 设备管理应用的企业信息。

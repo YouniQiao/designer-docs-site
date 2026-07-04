@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PermissionManagedState
 
 应用权限的管理状态。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ListItemGroupHeaderFooterStyle
 
 Enumerates the header and footer styles of **ListItemGroup**.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeolocationPermissions
 
 Implements a **GeolocationPermissions** object. > **NOTE** > > - The sample effect is subject to the actual device. > > - You must load the **Web** component before calling the APIs in **GeolocationPermissions**. > > - Required Permissions > **ohos.permission.LOCATION**, **ohos.permission.APPROXIMATELY_LOCATION**, and > **ohos.permission.LOCATION_IN_BACKGROUND**, which are required for accessing the location information. For details > about the permissions, see > [@ohos.geolocation (Geolocation)](../../../../reference/apis-location-kit/js-apis-geolocation.md).

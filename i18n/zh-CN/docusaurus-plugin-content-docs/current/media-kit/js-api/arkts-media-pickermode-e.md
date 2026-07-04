@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PickerMode
 
 表示屏幕录制Picker模式的枚举。

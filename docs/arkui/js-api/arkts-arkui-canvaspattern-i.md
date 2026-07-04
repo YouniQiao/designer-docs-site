@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CanvasPattern
 
 Describes an opaque object of a template, which is created using the createPattern() method.

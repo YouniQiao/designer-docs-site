@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Screen（系统接口）
 
 [物理屏](../../../../displaymanager/display-terminology.md#物理屏)屏幕实例。 下列API示例中都需先使用[getAllScreens()](arkts-arkui-getallscreens-f-sys.md#getallscreens-1)、 [createVirtualScreen()](arkts-arkui-createvirtualscreen-f-sys.md#createvirtualscreen-1) 中的任一方法获取到Screen实例，再通过此实例调用对应方法。

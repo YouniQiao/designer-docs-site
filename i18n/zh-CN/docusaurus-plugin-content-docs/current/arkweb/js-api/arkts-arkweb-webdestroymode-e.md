@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebDestroyMode
 
 提供SetWebDestroyMode接口配置web组件的销毁模式

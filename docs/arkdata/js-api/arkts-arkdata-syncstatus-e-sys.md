@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SyncStatus (System API)
 
 Enumerates the device-cloud sync task statuses.

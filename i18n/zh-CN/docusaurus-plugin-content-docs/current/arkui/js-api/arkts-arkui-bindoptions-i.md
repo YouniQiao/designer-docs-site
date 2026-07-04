@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BindOptions
 
 半模态、全模态的公共配置接口。

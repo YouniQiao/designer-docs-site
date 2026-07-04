@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RichEditorBaseController
 
 Represents the base class of the **RichEditor** component controller.

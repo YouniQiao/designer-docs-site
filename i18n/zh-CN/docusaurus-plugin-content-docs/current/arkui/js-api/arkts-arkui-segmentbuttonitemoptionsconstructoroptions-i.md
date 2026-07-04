@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SegmentButtonItemOptionsConstructorOptions
 
 构造参数用于SegmentButtonItemOptions。

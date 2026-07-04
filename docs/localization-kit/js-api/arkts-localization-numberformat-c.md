@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NumberFormat
 
 Provides the API for formatting number strings.

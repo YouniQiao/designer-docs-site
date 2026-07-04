@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GeneralCallbacks (System API)
 
 General callbacks for both backup and restore procedure. The backup service will notify the client by these callbacks.

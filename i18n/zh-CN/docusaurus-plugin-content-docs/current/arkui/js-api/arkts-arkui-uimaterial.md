@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.arkui.uiMaterial
 
 本模块提供系统材质的接口定义。不同的系统材质对应不同的UI效果，包括背景色 [backgroundColor](../../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-background.md#backgroundcolor)、边框颜色 [borderColor](../arkts-components/arkts-arkui-commonmethod-c.md#bordercolor-1)、边框宽度[borderWidth](../arkts-components/arkts-arkui-commonmethod-c.md#borderwidth-1)、阴影 [shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow-1)效果。

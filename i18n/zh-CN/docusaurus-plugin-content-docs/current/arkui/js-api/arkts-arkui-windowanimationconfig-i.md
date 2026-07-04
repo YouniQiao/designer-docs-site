@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowAnimationConfig
 
 窗口动画参数配置。

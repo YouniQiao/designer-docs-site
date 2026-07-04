@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # X500DistinguishedName
 
 Provides APIs for managing the **X500DistinguishedName** instance.

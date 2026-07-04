@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArkTS API<!--arkts-userauthenticationkit-->
 
 - [@ohos.app.ability.UserAuthExtensionAbility](arkts-app-ability-userauthextensionability.md)

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.file.environment
 
 The **Environment** module provides ArkTS APIs for obtaining the root directories of the storage and user files.

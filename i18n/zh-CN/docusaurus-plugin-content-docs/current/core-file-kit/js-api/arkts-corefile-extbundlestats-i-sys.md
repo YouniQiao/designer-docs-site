@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExtBundleStats（系统接口）
 
 系统应用或系统服务的空间占用详情。

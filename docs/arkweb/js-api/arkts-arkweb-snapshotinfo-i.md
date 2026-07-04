@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SnapshotInfo
 
 Provides information used to obtain a full drawing result.

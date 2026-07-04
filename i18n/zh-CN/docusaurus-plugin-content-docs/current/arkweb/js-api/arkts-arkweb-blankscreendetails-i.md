@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BlankScreenDetails
 
 定义检测到白屏时的结果的细节。

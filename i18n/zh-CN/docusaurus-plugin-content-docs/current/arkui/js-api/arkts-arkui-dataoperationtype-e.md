@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DataOperationType
 
 枚举类型，数据操作说明。

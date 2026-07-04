@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DLPSandboxState（系统接口）
 
 DLP沙箱的状态信息。

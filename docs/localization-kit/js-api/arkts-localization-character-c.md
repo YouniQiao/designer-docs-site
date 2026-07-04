@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Character
 
 Provides the API for accessing unicode character properties. For example, determine whether a character is a number.

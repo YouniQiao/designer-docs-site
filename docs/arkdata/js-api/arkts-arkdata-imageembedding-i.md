@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ImageEmbedding
 
 Describes the image embedding functions of the multi-modal embedding model.

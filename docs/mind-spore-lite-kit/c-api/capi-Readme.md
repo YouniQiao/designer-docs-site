@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [context.h](capi-context-h.md)
     - [tensor.h](capi-tensor-h.md)

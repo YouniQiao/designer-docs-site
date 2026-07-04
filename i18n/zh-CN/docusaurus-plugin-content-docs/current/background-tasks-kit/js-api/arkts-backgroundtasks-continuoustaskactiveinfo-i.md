@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContinuousTaskActiveInfo
 
 长时任务激活信息。

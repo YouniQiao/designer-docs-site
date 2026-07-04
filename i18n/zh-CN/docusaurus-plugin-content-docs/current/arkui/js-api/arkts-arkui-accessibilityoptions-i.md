@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilityOptions
 
 后缀图标的无障碍朗读功能属性。

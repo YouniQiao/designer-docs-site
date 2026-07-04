@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RepeatMemOptStrategy
 
 Repeat内存优化策略枚举。

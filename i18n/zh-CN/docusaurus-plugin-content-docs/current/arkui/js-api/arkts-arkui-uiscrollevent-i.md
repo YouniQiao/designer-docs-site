@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIScrollEvent
 
 定义UIScrollEvent，用于设置目标组件的不同通用事件。

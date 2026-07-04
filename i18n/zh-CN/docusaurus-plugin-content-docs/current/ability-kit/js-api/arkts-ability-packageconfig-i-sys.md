@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PackageConfig（系统接口）
 
 pack.info的包信息。

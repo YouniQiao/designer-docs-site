@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DecodeWithStreamOptions
 
 定义解码是否跟随数据块。

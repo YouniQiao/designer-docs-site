@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TouchPoint
 
 表示屏幕上的单个触点信息。

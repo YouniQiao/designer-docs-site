@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.fastbuffer
 
 The FastBuffer class is a container type for dealing with binary data directly. It can be constructed in a variety of ways.

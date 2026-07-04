@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessedDLPFileInfo
 
 表示被打开的DLP文件的信息。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HuksSecureSignType
 
 Enumerates the signature types of the key generated or imported.

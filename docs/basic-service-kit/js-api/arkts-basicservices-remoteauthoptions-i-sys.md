@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RemoteAuthOptions (System API)
 
 Represents a set of optional parameters for remote authentication.

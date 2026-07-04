@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DialogBaseAlignment
 
 对话框的对齐方式。

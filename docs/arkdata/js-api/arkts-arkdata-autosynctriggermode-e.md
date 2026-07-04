@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoSyncTriggerMode
 
 Indicates automatic synchronization triggering method for Device-Cloud data.

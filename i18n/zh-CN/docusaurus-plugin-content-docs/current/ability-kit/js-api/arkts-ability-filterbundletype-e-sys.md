@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FilterBundleType（系统接口）
 
 表示要监听的的应用类型，该类型为枚举。可配合[AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter)过滤想要监听的应用类型。

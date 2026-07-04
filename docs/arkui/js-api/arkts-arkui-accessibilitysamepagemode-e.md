@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessibilitySamePageMode
 
 Enumerates the same-page modes for cross-process embedded components and their host applications.

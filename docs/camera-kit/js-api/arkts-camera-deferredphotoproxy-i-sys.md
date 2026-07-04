@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeferredPhotoProxy (System API)
 
 A class object that functions as a thumbnail proxy.

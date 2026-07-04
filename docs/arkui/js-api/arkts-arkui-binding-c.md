@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Binding
 
 Represents the generic class for read-only data binding, which can bind data of any type.

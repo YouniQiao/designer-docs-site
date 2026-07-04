@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeviceBlockStatusInfo
 
 Describes the audio device blocked status and device information.

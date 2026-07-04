@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CommonController
 
 公共控制器，可以控制promptAction相关组件。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SegmentButtonV2Items
 
 分段按钮选项集合。 继承自 Array\<[SegmentButtonV2Item](arkts-arkui-segmentbuttonv2items-c.md#segmentbuttonv2items)>

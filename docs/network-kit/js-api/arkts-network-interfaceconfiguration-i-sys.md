@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InterfaceConfiguration (System API)
 
 Defines the network configuration for the Ethernet connection.

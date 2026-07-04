@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VisibleListContentInfo
 
 用于表示List可见内容区子组件的详细信息。

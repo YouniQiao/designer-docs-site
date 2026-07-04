@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BluetoothInfo
 
 设备的蓝牙信息。

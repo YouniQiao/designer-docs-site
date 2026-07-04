@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PermissionRequest
 
 Implements the **PermissionRequest** object.For details about the sample code, see [onPermissionRequest](./arkts-basic-components-web-events.md#onpermissionrequest9). > **NOTE** > > - The initial APIs of this component are supported since API version 8. > Updates will be marked with a superscript to indicate their earliest API version. > > - The initial APIs of this class are supported since API version 9. > > - The sample effect is subject to the actual device.

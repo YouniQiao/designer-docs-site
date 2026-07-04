@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextBlobRunBuffer
 
 Describes a series of consecutive glyphs with the same attributes in a text blob.

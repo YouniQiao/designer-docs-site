@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PopupBorderLinearGradient
 
 弹出边框线性渐变色。

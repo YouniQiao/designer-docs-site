@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ISendShortMessageCallback
 
 Provides the callback for the SMS message sending result.

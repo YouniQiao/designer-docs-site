@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LaunchReason
 
 Ability启动原因，该类型为枚举，可配合UIAbility的[onCreate(want, launchParam)](arkts-ability-uiability-c.md#oncreate-1) 方法根据launchParam.launchReason的不同类型执行相应操作。

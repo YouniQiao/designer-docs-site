@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.application.uriPermissionManager
 
 URI权限管理模块。用于应用A授权/撤销授权URI给应用B。

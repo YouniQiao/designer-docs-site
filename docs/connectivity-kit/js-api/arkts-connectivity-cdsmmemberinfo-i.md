@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CdsmMemberInfo
 
 Describes the member information of coordinated devices set.

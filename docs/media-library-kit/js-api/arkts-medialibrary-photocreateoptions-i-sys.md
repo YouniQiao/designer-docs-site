@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoCreateOptions (System API)
 
 Options for creating an image or video asset.

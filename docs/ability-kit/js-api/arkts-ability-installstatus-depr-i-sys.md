@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InstallStatus (System API)
 
 Describes the bundle installation or uninstall status.

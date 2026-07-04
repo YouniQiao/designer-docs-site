@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipGroupV2SymbolItemConfig
 
 ChipGroupV2SymbolItemConfig定义了尾部Symbol图标的配置类型。

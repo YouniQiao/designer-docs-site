@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WorkSchedulerExtensionAbility
 
 延迟任务回调，当满足调度条件或调度结束时，系统会回调应用WorkSchedulerExtensionAbility中 [onWorkStart()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstart-1)或 [onWorkStop()](arkts-backgroundtasks-workschedulerextensionability-c.md#onworkstop-1)的方法。

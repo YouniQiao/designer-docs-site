@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExceptionPromptV2
 
 Declare struct ExceptionPromptV2 higher-order component. The exception prompt component is used to show an error message when an error arises.

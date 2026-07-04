@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoFillType
 
 表示提供自动填充类型的枚举。

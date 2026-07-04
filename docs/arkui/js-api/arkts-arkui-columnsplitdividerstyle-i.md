@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ColumnSplitDividerStyle
 
 Sets the distance between the child component and the upper and lower dividers. > **NOTE** > > Similar to [RowSplit](RowSplit), the dividers of **ColumnSplit** adjust the height of adjacent child > components. However, this adjustment is only applied to the extent that the resulting height stays within the > height limits of the child components. > > Universal attributes such as [clip](arkts-arkui-commonmethod-c.md#clip-1) and [margin](arkts-arkui-commonmethod-c.md#margin-1) are supported. > If **clip** is not set, the default value **true** is used.

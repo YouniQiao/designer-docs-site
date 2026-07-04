@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # X509CertChain
 
 Provides APIs for managing the X.509 certificate chain.

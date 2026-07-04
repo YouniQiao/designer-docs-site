@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PluginParam (System API)
 
 Defines the parameters for installing or uninstalling a plugin.

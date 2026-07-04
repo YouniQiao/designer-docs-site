@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipGroupV2ItemConfig
 
 ChipGroupV2ItemConfig定义每个ChipV2的非通用属性配置。

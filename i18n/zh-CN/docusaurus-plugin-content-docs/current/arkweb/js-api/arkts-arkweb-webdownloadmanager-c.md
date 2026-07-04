@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WebDownloadManager
 
 可以通过该类提供的接口来恢复失败的下载任务。

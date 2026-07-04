@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # InnerEvent
 
 订阅或发送的事件，订阅事件时`EventPriority`不生效。

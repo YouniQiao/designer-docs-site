@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PictureScanProgress
 
 Defines the progress of scanning pictures.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # promptAction
 
 This module provides API for creating and displaying toasts, dialog boxes, and action menus. > **NOTE** > > - This module cannot be used in the file declaration of the [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md). In > other words, the APIs of this module can be used only after a component instance is created; they cannot be called > in the lifecycle of the UIAbility. > > - The functionality of this module depends on UI context. This means that the APIs of this module cannot be used > where [the UI context is ambiguous](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). For details, see > [UIContext](arkts-arkui-uicontext.md). It is recommended that you use the dialog box APIs provided by > **UIContext**<!--Del-->, except for UI-less scenarios such as > [ServiceExtensionAbility](../../../../application-models/serviceextensionability-sys.md)<!--DelEnd-->.

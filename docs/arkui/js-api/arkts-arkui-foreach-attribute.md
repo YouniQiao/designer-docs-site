@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ForEach properties/events
 
 The [drag-and-drop sorting](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) attribute is supported.

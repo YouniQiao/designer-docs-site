@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OsAccountSubProfileEvent（系统接口）
 
 枚举系统账号子profile的事件。

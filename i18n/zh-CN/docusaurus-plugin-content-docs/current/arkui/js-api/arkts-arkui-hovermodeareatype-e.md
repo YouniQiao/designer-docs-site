@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # HoverModeAreaType
 
 悬停态显示区域类型。

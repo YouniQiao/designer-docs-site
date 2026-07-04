@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PiPTemplateType
 
 画中画模板类型枚举。

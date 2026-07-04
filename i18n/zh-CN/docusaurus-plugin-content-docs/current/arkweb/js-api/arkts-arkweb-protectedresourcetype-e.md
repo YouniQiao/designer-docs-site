@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ProtectedResourceType
 
 定义可访问的资源类型，与 {@link onPermissionRequest} 方法相关。

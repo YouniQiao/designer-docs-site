@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MicrophoneCaptureStateChangeInfo
 
 定义麦克风触发回调时的改变前后的状态信息。

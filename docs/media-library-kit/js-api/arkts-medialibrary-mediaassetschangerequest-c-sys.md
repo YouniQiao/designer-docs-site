@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaAssetsChangeRequest (System API)
 
 Defines the class of media assets change request.

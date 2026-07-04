@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NotificationSubscribeInfo（系统接口）
 
 通知发布者的信息。 > **说明：** > > 本模块为系统接口。

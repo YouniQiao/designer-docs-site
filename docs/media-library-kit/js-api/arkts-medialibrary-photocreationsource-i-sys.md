@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoCreationSource (System API)
 
 Defines the application information provided to create assets on behalf of the application.

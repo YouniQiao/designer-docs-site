@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Paragraph
 
 保存文本内容及样式的载体，支持排版与绘制操作。 下列API示例中都需先使用[ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md#paragraphbuilder)类的[build()](arkts-arkgraphics2d-paragraphbuilder-c.md#build-1)接口获取到 Paragraph对象实例，再通过此实例调用对应方法。

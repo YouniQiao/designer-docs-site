@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [video_processing.h](capi-video-processing-h.md)
     - [video_processing_types.h](capi-video-processing-types-h.md)

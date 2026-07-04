@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AuthorizationManager（系统接口）
 
 系统账号授权管理类，用于管理系统账号授权。

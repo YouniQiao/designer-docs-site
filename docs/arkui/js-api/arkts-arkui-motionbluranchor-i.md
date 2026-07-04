@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MotionBlurAnchor
 
 Describes the coordinates of the motion blur anchor.

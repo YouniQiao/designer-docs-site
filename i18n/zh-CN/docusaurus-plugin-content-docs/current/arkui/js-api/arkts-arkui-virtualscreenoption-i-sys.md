@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VirtualScreenOption（系统接口）
 
 创建虚拟屏幕的参数。

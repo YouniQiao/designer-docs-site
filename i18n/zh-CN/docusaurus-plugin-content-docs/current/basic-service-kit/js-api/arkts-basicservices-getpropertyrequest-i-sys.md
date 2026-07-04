@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetPropertyRequest（系统接口）
 
 提供获取属性请求的信息。

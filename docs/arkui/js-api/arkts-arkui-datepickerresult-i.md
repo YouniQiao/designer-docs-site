@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DatePickerResult
 
 Defines the time format returned by the date picker.

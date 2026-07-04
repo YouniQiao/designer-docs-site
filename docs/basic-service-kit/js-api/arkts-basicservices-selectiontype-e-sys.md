@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SelectionType (System API)
 
 Enumerates the operations for selecting words.

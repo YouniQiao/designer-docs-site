@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetPropertyRequest (System API)
 
 Defines the request for obtaining property information.

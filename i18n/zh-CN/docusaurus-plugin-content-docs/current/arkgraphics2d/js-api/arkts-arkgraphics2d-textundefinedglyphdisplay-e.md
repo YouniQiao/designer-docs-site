@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextUndefinedGlyphDisplay
 
 文本未定义字形时的显示方式枚举。

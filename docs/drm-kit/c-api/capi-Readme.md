@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [native_mediakeysession.h](capi-native-mediakeysession-h.md)
     - [native_mediakeysystem.h](capi-native-mediakeysystem-h.md)

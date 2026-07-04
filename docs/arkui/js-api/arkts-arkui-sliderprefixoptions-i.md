@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SliderPrefixOptions
 
 Provides accessibility configuration of the slider prefix.

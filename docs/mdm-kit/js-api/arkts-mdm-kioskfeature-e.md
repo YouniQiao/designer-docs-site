@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # KioskFeature
 
 Defines the features of the kiosk mode.

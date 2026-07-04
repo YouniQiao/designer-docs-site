@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FactoryResetInfo (System API)
 
 Describes the information of restoring factory settings.

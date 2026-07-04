@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ChipV2SymbolIcon
 
 定义Symbol类型图标。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PictureOptions（系统接口）
 
 实况通知图片配置项。

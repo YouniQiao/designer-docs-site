@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextLine
 
 描述段落基础文本行结构的载体。 下列API示例中都需先使用[Paragraph](arkts-arkgraphics2d-paragraphstyle-i.md#paragraphstyle)类的[getTextLines()](arkts-arkgraphics2d-paragraph-c.md#gettextlines-1)接口或者 [LineTypeset](arkts-arkgraphics2d-linetypeset-c.md#linetypeset)类的[createLine()](arkts-arkgraphics2d-linetypeset-c.md#createline-1)接口获取到TextLine对象实例，再通过此实例调用对 应方法。

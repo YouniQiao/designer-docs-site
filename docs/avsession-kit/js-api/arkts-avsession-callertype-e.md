@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CallerType
 
 Enumerates CallerType including caller source type.

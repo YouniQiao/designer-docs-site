@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsKeyTransRecipientInfo
 
 CMS封装数据的KeyTrans接收方信息。

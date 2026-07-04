@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SubscribeCallbackData（系统接口）
 
 返回携带系统属性值的通知信息。

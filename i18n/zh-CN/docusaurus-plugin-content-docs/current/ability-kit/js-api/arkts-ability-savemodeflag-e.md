@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SaveModeFlag
 
 状态保存标志，[enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1)接口状态保存方式的参数，该类型为枚举。

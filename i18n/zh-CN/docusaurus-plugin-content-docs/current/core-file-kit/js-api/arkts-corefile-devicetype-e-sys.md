@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DeviceType（系统接口）
 
 组成RootInfo中的deviceType字段，表明此设备的类型。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FastBuffer
 
 The FastBuffer object is a method of handling buffers dedicated to binary data.

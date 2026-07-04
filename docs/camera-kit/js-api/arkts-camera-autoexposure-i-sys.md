@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AutoExposure
 
 AutoExposure inherits from [AutoExposureQuery](arkts-camera-autoexposurequery-i.md#autoexposurequery). It provides APIs related to auto exposure.

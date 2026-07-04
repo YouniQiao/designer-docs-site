@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsFormat
 
 表示Cms签名格式的枚举。

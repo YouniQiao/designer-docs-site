@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.ability.dataUriUtils
 
 A utility class used for handling objects that use the DataAbilityHelper scheme.

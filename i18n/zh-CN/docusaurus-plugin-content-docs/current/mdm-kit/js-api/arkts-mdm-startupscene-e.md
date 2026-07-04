@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StartupScene
 
 开机向导完成场景。端侧系统在首次切换子用户完成（仅限PC）、OTA升级完成、首次开机完成开机向导时会通过 [onStartupGuideCompleted](arkts-mdm-enterpriseadminextensionability-c.md#onstartupguidecompleted-1) 回调接口通知设备管理应用。

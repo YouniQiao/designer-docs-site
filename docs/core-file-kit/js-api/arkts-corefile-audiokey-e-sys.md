@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AudioKey (System API)
 
 Describes AUDIO TYPE FetchOptions's predicate

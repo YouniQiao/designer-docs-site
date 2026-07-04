@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # TextBox
 
 Rectangular area of the text, indicating the rectangular space occupied by the text during layout.

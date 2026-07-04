@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MakerNoteHuaweiMetadata
 
 MakerNoteHuaweiMetadata implements Metadata Photo metadata from Huawei cameras.

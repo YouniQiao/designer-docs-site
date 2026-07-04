@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AcrossDisplayPresentation
 
 Enum for across-display policy used when maximizing in the half-folded state of a foldable 2-in-1 device.

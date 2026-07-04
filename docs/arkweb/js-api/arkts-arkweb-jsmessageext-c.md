@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # JsMessageExt
 
 The message for indicating the of result of JavaScript code execution.

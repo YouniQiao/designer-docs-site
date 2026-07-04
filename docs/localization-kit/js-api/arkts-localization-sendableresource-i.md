@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SendableResource
 
 The **SendableResource** module provides sendable resource information, such as the application bundle name, application module name, and resource ID.

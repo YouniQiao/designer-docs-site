@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SM2CryptoUtil
 
 用于SM2密码学运算的工具类。

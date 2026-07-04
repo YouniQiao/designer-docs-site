@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ComponentEventOptions
 
 描述组件操作事件监听的扩展配置， 用于指定监听流程配置和事件过滤条件。

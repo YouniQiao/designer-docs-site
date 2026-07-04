@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UiDirection
 
 描述fling等UI操作的方向。

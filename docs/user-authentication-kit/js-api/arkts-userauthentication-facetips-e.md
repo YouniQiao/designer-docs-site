@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FaceTips
 
 Enumerates the tip codes used during the facial authentication process.

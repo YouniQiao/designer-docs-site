@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RenderingMode (System API)
 
 Enumerates the rendering modes supported by the widget.

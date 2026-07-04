@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IterableIterator
 
 **Inheritance/Implementation:** IterableIterator extends [Iterator<T>](Iterator<T>)

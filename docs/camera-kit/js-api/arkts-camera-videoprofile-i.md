@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VideoProfile
 
 Describes the video configuration information. It inherits from [Profile](arkts-camera-profile-i.md#profile).

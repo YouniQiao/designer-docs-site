@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EncodeIntoUint8ArrayInfo
 
 编码信息，包含已读取的字符数和已写入的字节数。

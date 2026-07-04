@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LazyForEachCustomComponentFreezeMode
 
 Enumerates the freeze modes for cached custom nodes that have been removed from the component tree in LazyForEach.

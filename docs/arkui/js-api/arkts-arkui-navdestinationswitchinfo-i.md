@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NavDestinationSwitchInfo
 
 Provides the information about page switching of the **Navigation** component.

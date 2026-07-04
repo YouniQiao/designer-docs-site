@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CoverUriSource (System API)
 
 Enumerates the source types of cover URIs.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LocalizedHorizontalAlignParam
 
 Defines the localized horizontal align param of relative container.

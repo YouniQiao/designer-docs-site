@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.app.ability.application
 
 You can use this module to create a [Context](../../../../application-models/application-context-stage.md).

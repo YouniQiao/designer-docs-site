@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.ability.screenLockFileManager
 
 Provides the capability to access data under lock screen.

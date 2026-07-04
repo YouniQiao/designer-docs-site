@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ScrollbarLayoutPolicy
 
 Defines the layout policy for scrollbars, used with {@link scrollbarLayoutPolicy}.

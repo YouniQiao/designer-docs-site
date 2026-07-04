@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SliderChangeMode
 
 滑块的状态值。包括按下、拖动、离开以及点击滑动条使滑块位置时。

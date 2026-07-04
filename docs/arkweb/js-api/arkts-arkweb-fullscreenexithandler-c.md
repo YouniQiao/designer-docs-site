@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FullScreenExitHandler
 
 Implements the **FullScreenExitHandler** object to notify you that the **Web** component exits full screen mode. For details about the sample code, see [onFullScreenEnter](./arkts-basic-components-web-events.md#onfullscreenenter9). > **NOTE** > > - The sample effect is subject to the actual device.

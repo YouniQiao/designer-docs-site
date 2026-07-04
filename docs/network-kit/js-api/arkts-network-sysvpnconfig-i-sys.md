@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SysVpnConfig (System API)
 
 Define configuration of the system VPN network.

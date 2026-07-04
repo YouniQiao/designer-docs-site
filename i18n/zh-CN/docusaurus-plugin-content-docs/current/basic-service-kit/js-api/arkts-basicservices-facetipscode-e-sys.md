@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FaceTipsCode（系统接口）
 
 表示人脸验证过程中提示的枚举。

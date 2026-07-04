@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LruBuffer
 
 The LruBuffer algorithm replaces the least used data with new data when the buffer space is insufficient.

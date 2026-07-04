@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ElementName
 
 The module provides element name information, which can be obtained through [Context.getElementName](arkts-ability-context-depr-i.md#context). > **NOTE** > > The APIs of this module have been deprecated since API version 9. You are advised to use > [bundleManager-ElementName](arkts-ability-elementname-depr-i.md#elementname) instead.

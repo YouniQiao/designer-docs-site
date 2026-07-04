@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VideoRequestResultType (System API)
 
 Indicates the type of video request result.

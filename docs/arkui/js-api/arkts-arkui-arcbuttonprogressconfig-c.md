@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArcButtonProgressConfig
 
 Defines the progress indicator configuration options of the **ArcButton** component.

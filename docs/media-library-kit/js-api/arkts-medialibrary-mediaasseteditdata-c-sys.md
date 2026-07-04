@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MediaAssetEditData (System API)
 
 Represents the edited media asset data.

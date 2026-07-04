@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IPrefetcher
 
 实现此接口以提供预取能力。

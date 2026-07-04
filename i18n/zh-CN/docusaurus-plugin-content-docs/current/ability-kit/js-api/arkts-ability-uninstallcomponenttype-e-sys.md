@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UninstallComponentType（系统接口）
 
 标识卸载时功能组件类型。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # NativeEmbedVisibilityInfo
 
 提供同层标签的可见性信息。

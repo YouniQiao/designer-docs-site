@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AccessRule
 
 Establishes a single UICC access rule pursuant to the GlobalPlatform Secure Element Access Control specification.

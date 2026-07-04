@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Select
 
 The **Select** component provides a drop-down menu that allows users to select among multiple options. > **NOTE**

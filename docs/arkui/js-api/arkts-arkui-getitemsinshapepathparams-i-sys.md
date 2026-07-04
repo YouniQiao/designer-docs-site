@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GetItemsInShapePathParams (System API)
 
 Image options setted when need to get the image objects.

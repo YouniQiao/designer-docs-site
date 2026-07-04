@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ReadOut
 
 Obtains the file read result. This class applies only to the **read()** method.

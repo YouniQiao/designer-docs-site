@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContentCoverOptions
 
 Inherited from [BindOptions](arkts-arkui-bindoptions-i.md#bindoptions). Provides content options of the modal.

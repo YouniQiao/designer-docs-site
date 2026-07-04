@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ErrorEvent
 
 Provides detailed information about the exception that occurs during worker execution. The ErrorEvent class inherits from Event.

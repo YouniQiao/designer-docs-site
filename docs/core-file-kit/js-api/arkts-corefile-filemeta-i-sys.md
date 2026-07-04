@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FileMeta (System API)
 
 Corresponding to a file's metadata. FileMeta is useful when doing IPC with the backup service.

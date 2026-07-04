@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 - Header file
     - [trace.h](capi-trace-h.md)
     - [hicollie.h](capi-hicollie-h.md)

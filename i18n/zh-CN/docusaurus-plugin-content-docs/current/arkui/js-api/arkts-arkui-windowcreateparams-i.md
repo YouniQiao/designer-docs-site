@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # WindowCreateParams
 
 应用启动时的窗口参数配置。

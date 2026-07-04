@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EncodingType
 
 表示编码格式的枚举。

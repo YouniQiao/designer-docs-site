@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FontMetrics
 
 Describes the attributes that describe the font size and layout. A typeface has similar font metrics.

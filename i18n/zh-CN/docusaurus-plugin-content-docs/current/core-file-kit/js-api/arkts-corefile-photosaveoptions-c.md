@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoSaveOptions
 
 图片或视频的保存选项。

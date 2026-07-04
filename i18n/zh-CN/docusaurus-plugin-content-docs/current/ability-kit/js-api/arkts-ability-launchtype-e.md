@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # LaunchType
 
 标识组件的[启动模式](../../../../application-models/uiability-launch-type.md)。

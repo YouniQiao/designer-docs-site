@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # VerifyCredentialOptions
 
 Represents the options for verifying the user credential.

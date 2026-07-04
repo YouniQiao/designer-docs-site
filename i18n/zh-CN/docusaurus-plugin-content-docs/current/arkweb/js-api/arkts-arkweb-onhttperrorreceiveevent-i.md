@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OnHttpErrorReceiveEvent
 
 定义网页收到资源加载HTTP错误时触发。

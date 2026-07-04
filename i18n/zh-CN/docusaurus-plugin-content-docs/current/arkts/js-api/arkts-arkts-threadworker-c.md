@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ThreadWorker
 
 使用以下方法前，需先构造ThreadWorker实例。ThreadWorker类继承WorkerEventTarget。

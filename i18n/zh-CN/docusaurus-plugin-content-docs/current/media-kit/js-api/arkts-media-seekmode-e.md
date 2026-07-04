@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SeekMode
 
 视频播放的Seek模式枚举，可通过seek方法作为参数传递下去。

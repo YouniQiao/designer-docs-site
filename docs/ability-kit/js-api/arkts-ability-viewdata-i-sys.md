@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ViewData (System API)
 
 The module defines the view data used for auto-fill.

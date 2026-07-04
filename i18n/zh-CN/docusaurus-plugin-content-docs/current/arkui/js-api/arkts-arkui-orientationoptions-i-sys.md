@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OrientationOptions（系统接口）
 
 设置旋转行为的参数

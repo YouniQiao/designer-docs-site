@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.account.appAccount
 
 The **appAccount** module provides APIs for adding, deleting, modifying, and querying application account information , and supports inter-application authentication and distributed data synchronization.

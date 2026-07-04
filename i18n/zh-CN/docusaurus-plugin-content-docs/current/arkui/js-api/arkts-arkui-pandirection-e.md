@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PanDirection
 
 与SwipeDirection不同，PanDirection没有角度限制。

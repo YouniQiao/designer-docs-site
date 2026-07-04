@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.nearlink.scan
 
 Provides methods for scanning and discovering nearby devices.

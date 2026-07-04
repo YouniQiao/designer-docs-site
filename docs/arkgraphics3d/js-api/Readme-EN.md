@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ArkTS API<!--arkts-arkgraphics3d-->
 
 - graphics3d<!--arkts-arkgraphics3d-graphics3d-->

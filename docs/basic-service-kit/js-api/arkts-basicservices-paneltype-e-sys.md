@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PanelType (System API)
 
 Enumerates the word selection panel types.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BufferingInfoType
 
 缓存事件类型枚举。

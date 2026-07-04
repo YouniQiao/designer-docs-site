@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AdaptiveColor
 
 Enumerates the adaptive color modes used for the background blur effect.

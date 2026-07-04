@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # tee_mem_mgmt_api.h
 
 ## Overview

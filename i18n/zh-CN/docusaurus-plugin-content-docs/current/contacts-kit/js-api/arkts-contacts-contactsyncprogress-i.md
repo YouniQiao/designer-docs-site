@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ContactSyncProgress
 
 联系人同步进度的信息。 包含同步ID、当前批次和总批次。

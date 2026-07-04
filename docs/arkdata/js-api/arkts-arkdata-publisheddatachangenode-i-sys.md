@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PublishedDataChangeNode (System API)
 
 Defines the subscription/unsubscription result of the changes in the published data.

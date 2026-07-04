@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AppDistributionType (System API)
 
 Enumerates the application [distribution types](../../../../security/app-provision-structure.md).

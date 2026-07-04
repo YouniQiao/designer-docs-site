@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PathIteratorVerb
 
 Enumerates the path operation types contained in an iterator. It is used to read path operation instructions.

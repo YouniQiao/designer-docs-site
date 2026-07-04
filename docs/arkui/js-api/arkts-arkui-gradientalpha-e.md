@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GradientAlpha
 
 the enum for the opacity of the background color.

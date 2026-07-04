@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.commonEventManager
 
 本模块提供了公共事件相关的能力，包括发布公共事件、订阅公共事件、以及退订公共事件。

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SmartGestureController
 
 提供智慧手势使能、监听、选中态控制，以及动态决策智慧手势行为的能力。 > **说明：** > > 以下API需先使用UIContext中的[getSmartGestureController()](arkts-arkui-uicontext-c.md#getsmartgesturecontroller-1)方法获取SmartGestureController实例， > 再通过该实例调用对应方法。

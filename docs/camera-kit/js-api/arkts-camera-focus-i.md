@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Focus
 
 Focus extends [FocusQuery](arkts-camera-focusquery-i.md#focusquery) Provides APIs to obtain and set the camera focus mode and focus position.

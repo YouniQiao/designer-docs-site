@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RotationChangeInfo
 
 Describes the window information obtained during window rotation changes.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # MessageLevel
 
 Enum type supplied to {@link getMessageLevel} for receiving the console log level of JavaScript.

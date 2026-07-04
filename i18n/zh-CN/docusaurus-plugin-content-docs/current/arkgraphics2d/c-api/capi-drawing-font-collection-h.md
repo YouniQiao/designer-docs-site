@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # drawing_font_collection.h
 
 ## 概述

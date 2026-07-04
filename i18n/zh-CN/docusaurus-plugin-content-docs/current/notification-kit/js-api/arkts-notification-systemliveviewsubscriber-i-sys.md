@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SystemLiveViewSubscriber（系统接口）
 
 系统实况窗订阅者。

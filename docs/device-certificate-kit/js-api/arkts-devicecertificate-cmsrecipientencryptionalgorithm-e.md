@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmsRecipientEncryptionAlgorithm
 
 Enumerates the symmetric algorithms of the CMS recipient.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # GcmParamsSpec
 
 加解密参数[ParamsSpec](arkts-cryptoarchitecture-paramsspec-i.md#paramsspec)的子类，用于在对称加解密时作为 [init()](arkts-cryptoarchitecture-cipher-i.md#init-4)方法的参数。 适用于GCM模式。 > **说明：** > > 1. 传入[init()](arkts-cryptoarchitecture-cipher-i.md#init-4)方法前需 > 要指定其algName属性（来源于父类[ParamsSpec](arkts-cryptoarchitecture-paramsspec-i.md#paramsspec)）。 > 2. Crypto框架对1到128字节的iv不做额外限制，但实际结果取决于底层OpenSSL的支持。 > 3. 如果不需要aad或者aad长度为0，构造GcmParamsSpec时可以将aad的data属性设置为空的Uint8Array， > 即aad: { data: new Uint8Array() }。

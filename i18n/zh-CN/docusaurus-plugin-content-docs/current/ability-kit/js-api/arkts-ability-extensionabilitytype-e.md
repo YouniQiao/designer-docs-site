@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExtensionAbilityType
 
 扩展组件的类型。 <!--Table: 30%; 10%; 60%--> <!--RP2--><!--RP2End-->

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PiPControlStatus
 
 控制面板控件状态枚举。

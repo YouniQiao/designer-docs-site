@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ExpandedMenuOptions
 
 扩展下拉菜单。 继承于[MenuItemOptions](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-menuitem.md#menuitemoptions对象说明)。

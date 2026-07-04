@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Portrait
 
 联系人的头像类。 > **说明：** > > 从API version 22开始，支持通过uri和[PixelMap](@ohos.multimedia.image:image.PixelMap)格式设置联系人头像资源(暂不支持通过 > [addContactViaUI](arkts-contacts-addcontactviaui-f.md#addcontactviaui-1)、 > [saveToExistingContactViaUI](arkts-contacts-savetoexistingcontactviaui-f.md#savetoexistingcontactviaui-1)接口设置)。 > > uri为可访问的联系人头像文件地址，[PixelMap](@ohos.multimedia.image:image.PixelMap)为通过联系人头像资源生成的 > [PixelMap](@ohos.multimedia.image:image.PixelMap)对象。 > > 从API version 22开始，支持通过uri格式读取联系人头像资源，该格式仅支持以 > [fs.open](../../apis-core-file-kit/arkts-apis/arkts-corefile-file-fs-open-f.md#open-1)方式打开，无法直接在Image组件内显示，需读取后转换为 > [PixelMap](@ohos.multimedia.image:image.PixelMap)格式显示。

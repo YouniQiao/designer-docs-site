@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ParticlePropertyAnimation
 
 设置粒子属性生命周期。

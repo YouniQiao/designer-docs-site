@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # AbilityStartCallback
 
 定义拉起UIExtensionAbility执行结果的回调。

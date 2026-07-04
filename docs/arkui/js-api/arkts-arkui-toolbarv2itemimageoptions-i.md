@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ToolBarV2ItemImageOptions
 
 Declare the options of ToolBarV2ItemImage

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DistributedOptions
 
 Describes options for cross-device notifications. Not supported currently.

@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DragAnimationType（系统接口）
 
 拖拽动画类型。

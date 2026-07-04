@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DoNotDisturbType（系统接口）
 
 > **说明：** > 从 API version 8开始支持，从API version 9开始废弃。建议使用 [notificationManager.DoNotDisturbType](arkts-notification-donotdisturbtype-e-sys.md#donotdisturbtype)替代。

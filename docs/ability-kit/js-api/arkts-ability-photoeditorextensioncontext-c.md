@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PhotoEditorExtensionContext
 
 The context of Photo Editor extension. It allows access to PhotoEditorExtension-specific resources.

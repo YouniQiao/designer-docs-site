@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # PrintDocumentFormat
 
 打印数据格式的枚举。

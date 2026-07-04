@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # StyledStringChangedListener
 
 Defines the listener for changes of the styled string text content.

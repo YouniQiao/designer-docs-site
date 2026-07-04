@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EditableSaveButtonV2
 
 Declaration of the save button configuration.

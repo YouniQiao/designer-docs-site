@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # @ohos.router
 
 本模块提供通过不同的url访问不同的页面，包括跳转到应用内的指定页面、同应用内的某个页面替换当前页面、返回上一页面或指定的页面等。 推荐使用[Navigation组件](../../../../ui/arkts-navigation-architecture.md)作为应用路由框架。 > **说明：** > > - 页面路由需要在页面渲染完成之后才能调用，在onInit和onReady生命周期中页面还处于渲染阶段，禁止调用页面路由方法。 > > - 本模块功能依赖UI的执行上下文，不可在[UI上下文不明确](../../../../ui/arkts-global-interface.md#ui上下文不明确)的地方使用，参见 > [UIContext](arkts-arkui-uicontext.md)说明。 > > - 如果使用传入callback形式的 > [pushUrl](arkts-arkui-router-c.md#pushurl-1) > 或 > [pushNamedRoute](arkts-arkui-router-c.md#pushnamedroute-1) > 接口，callback中通过[getLength](arkts-arkui-router-c.md#getlength-1)等接口获取的栈信息为中间态的栈信息，可能与栈操作完全结束后，再通过 > [getLength](arkts-arkui-router-c.md#getlength-1)等接口获取的栈信息不一致。

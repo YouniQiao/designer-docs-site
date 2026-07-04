@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # BackupExtensionContext
 
 The context of an ability or an application. It allows access to application-specific resources. Can only be obtained through the ability.

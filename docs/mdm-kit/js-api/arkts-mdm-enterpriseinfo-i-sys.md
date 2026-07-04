@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # EnterpriseInfo (System API)
 
 Represents the enterprise information of a device administrator application.

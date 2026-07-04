@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # SubTabBarStyle
 
 Implements the subtab style. A transition animation is played when the user switches between tabs.

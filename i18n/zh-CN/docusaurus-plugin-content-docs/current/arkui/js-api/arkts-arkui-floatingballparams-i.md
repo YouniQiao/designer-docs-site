@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # FloatingBallParams
 
 启动和更新闪控球的配置参数。

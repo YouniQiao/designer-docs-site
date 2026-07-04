@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Flags
 
 Flags说明。用于表示处理Want的方式。

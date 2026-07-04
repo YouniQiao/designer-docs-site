@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ProfileType（系统接口）
 
 标识配置文件类型。

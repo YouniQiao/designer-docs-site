@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Tokenizer
 
 Enumerates tokenizers that can be used for FTS. Use the enum name rather than the enum value. The table creation statement varies with the tokenizer in use. For details about the definition of **this.context** in the sample code, see the application [context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context) of the stage model. The following is an example of the table creation statement when **ICU_TOKENIZER** is used: The following is an example of the table creation statement when **CUSTOM_TOKENIZER** is used: The following is an example of the table creation statement when **CUSTOM_TOKENIZER** is used:

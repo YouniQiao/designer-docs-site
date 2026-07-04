@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # OperationResult (System API)
 
 Defines the result of the operation for subscribing to or unsubscribing from the data changes or published data.

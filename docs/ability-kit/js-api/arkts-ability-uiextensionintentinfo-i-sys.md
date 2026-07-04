@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # UIExtensionIntentInfo (System API)
 
 Describes the information of the UIExtensionAbility bound to the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).

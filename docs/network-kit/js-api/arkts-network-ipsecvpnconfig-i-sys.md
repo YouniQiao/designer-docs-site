@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # IpsecVpnConfig (System API)
 
 Define configuration of the ipsec VPN network.

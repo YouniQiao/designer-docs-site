@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # Scenarios
 
 表示不触发[onNewWant](arkts-ability-uiability-c.md#onnewwant-1)生命周期回调场景的枚举，用于 [setOnNewWantSkipScenarios](arkts-ability-uiabilitycontext-c.md#setonnewwantskipscenarios-1)接口。

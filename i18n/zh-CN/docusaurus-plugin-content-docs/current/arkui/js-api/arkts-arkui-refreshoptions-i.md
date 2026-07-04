@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # RefreshOptions
 
 用于设置Refresh组件参数。 > **补充说明：** > > - 当未设置builder或refreshingContent时，是通过更新子组件的[translate](arkts-arkui-commonmethod-c.md#translate-1)属性实现的下拉 > 位移效果，下拉位移过程中不会触发子组件的 > [onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1)事件，子组件设置 > [translate](arkts-arkui-commonmethod-c.md#translate-1)属性时不会生效。 > > - 当设置了builder或refreshingContent时，是通过更新子组件相对于Refresh组件的位置实现的下拉位移效果，下拉位移过程中可以触发子组件的 > [onAreaChange](arkts-arkui-commonmethod-c.md#onareachange-1)事件，子组件设置 > [position](arkts-arkui-commonmethod-c.md#position-1)属性时会固定子组件相对于Refresh组件的位置导致子组件不会跟手进行下拉位移。 > > - 通过builder参数设置的自定义组件在未指定宽度和高度时，其尺寸将自适应子组件，在指定宽度而未指定高度时，其高度将自适应下拉距离。通过refreshingContent参数设置的自定义组件若未指定高度，其高度同样会自适应下拉 > 距离。当自定义组件高度自适应下拉距离时，随着下拉距离的增加，该组件的高度亦随之增加；当自定义组件的高度设定为固定值或达到最大高度限制时，随着下拉距离的增加，自定义组件与Refresh组件上边界之间的间距亦会随之增加。

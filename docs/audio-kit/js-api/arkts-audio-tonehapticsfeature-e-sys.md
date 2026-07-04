@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # ToneHapticsFeature (System API)
 
 Definition of haptics feature in tone scenario.

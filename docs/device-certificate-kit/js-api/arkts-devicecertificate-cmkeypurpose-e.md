@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # CmKeyPurpose
 
 Enumerates the purposes of using the key.

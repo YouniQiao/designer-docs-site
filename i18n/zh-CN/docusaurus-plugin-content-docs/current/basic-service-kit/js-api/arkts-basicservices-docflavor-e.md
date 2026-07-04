@@ -1,3 +1,8 @@
+---
+last_update:
+  date: 2026-07-04
+---
+
 # DocFlavor
 
 打印数据来源形式的枚举。
