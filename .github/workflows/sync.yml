@@ -2,8 +2,8 @@ name: Sync Docs from Gitcode
 
 on:
   schedule:
-    # Daily at 12:00 AM Beijing time (UTC+8 → 16:00 UTC)
-    - cron: '0 16 * * *'
+    # Daily at 11:00 PM Beijing time (UTC+8 → 15:00 UTC)
+    - cron: '0 15 * * *'
   workflow_dispatch:
 
 jobs:
