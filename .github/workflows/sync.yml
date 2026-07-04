@@ -35,17 +35,17 @@ jobs:
 
       - name: Push changes
         run: |
+          # If sync script didn't commit, do it now
           if git status --porcelain | grep -q .; then
             git add docs/ i18n/ sidebars.ts scripts/ 2>/dev/null || true
-            if git diff --cached --quiet; then
-              echo "No changes to commit."
-            else
-              git config user.email "ci@designer-docs.local"
-              git config user.name "CI Bot"
-              git commit -m "sync: update API docs from gitcode [automated]" || true
-              git push origin main
-              echo "✅ Pushed sync changes."
-            fi
+            git config user.email "ci@designer-docs.local"
+            git config user.name "CI Bot"
+            git commit -m "sync: update API docs from gitcode [automated]" || true
+          fi
+          # Push if there are new commits
+          if git log origin/main..HEAD --oneline | grep -q .; then
+            git push origin main
+            echo "✅ Pushed sync changes."
           else
             echo "No changes to push."
           fi
