@@ -9,7 +9,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'accessibility-kit-js-api',
+        key: 'accessibility-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -123,8 +123,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ads-kit-js-api',
-        id: 'accessibility-kit-js-api',
+        key: 'accessibility-kit-js-api_2',
         label: 'JS API',
         items: [
           {
@@ -202,8 +201,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ads-kit-js-api',
-        id: 'ads-kit-js-api',
+        key: 'ads-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -731,13 +729,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'ads-kit-c-api',
-        id: 'arkdata-c-api',
+        key: 'arkdata-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'arkdata-c-api-header-file',
+            key: 'arkdata-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -768,8 +765,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-module',
-            id: 'arkdata-c-api-module',
+            key: 'arkdata-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -781,8 +777,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-struct',
-            id: 'arkdata-c-api-struct',
+            key: 'arkdata-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -846,8 +841,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ads-kit-js-api',
-        id: 'arkdata-js-api',
+        key: 'arkdata-js-api',
         label: 'JS API',
         items: [
           {
@@ -1081,14 +1075,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'ads-kit-c-api',
-        id: 'arkgraphics2d-c-api',
+        key: 'arkgraphics2d-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'ads-kit-c-api-header-file',
-            id: 'arkgraphics2d-c-api-header-file',
+            key: 'arkgraphics2d-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -1153,8 +1145,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-module',
-            id: 'arkgraphics2d-c-api-module',
+            key: 'arkgraphics2d-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -1173,8 +1164,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-struct',
-            id: 'arkgraphics2d-c-api-struct',
+            key: 'arkgraphics2d-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -1309,8 +1299,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ads-kit-js-api',
-        id: 'arkgraphics2d-js-api',
+        key: 'arkts-js-api',
         label: 'JS API',
         items: [
           {
@@ -1327,7 +1316,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'arkgraphics2d-js-api',
+        key: 'arkts-js-api_2',
         label: 'JS API',
         items: [
           {
@@ -1810,14 +1799,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'ads-kit-c-api',
-        id: 'arkts-c-api',
+        key: 'arkts-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'ads-kit-c-api-header-file',
-            id: 'arkts-c-api-header-file',
+            key: 'arkts-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -1830,7 +1817,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'arkts-c-api-module',
+            key: 'arkts-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -1841,8 +1828,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-struct',
-            id: 'arkts-c-api-struct',
+            key: 'arkts-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -1899,8 +1885,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ads-kit-js-api',
-        id: 'arkts-js-api',
+        key: 'arkts-js-api_3',
         label: 'JS API',
         items: [
           {
@@ -3841,14 +3826,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'ads-kit-c-api',
-        id: 'arkui-c-api',
+        key: 'arkui-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'ads-kit-c-api-header-file',
-            id: 'arkui-c-api-header-file',
+            key: 'arkui-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -3906,8 +3889,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-module',
-            id: 'arkui-c-api-module',
+            key: 'arkui-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -3923,8 +3905,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-struct',
-            id: 'arkui-c-api-struct',
+            key: 'arkui-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -4156,8 +4137,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ads-kit-js-api',
-        id: 'arkui-js-api',
+        key: 'arkweb-js-api',
         label: 'JS API',
         items: [
           {
@@ -4304,14 +4284,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'ads-kit-c-api',
-        id: 'arkweb-c-api',
+        key: 'arkweb-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'ads-kit-c-api-header-file',
-            id: 'arkweb-c-api-header-file',
+            key: 'arkweb-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -4326,8 +4304,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ads-kit-c-api-module',
-            id: 'arkweb-c-api-module',
+            key: 'arkweb-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -4337,7 +4314,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'arkweb-c-api-struct',
+            key: 'arkweb-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -4377,8 +4354,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'asset-store-kit-js-api',
-        id: 'arkweb-js-api',
+        key: 'arkweb-js-api_2',
         label: 'JS API',
         items: [
           {
@@ -4432,14 +4408,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'asset-store-kit-c-api',
-        id: 'asset-store-kit-c-api',
+        key: 'asset-store-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'asset-store-kit-c-api-header-file',
-            id: 'asset-store-kit-c-api-header-file',
+            key: 'asset-store-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -4450,8 +4424,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'asset-store-kit-c-api-module',
-            id: 'asset-store-kit-c-api-module',
+            key: 'asset-store-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -4462,8 +4435,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'asset-store-kit-c-api-struct',
-            id: 'asset-store-kit-c-api-struct',
+            key: 'asset-store-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -4486,7 +4458,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'asset-store-kit-js-api',
+        key: 'asset-store-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -4727,14 +4699,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'audio-kit-c-api',
-        id: 'audio-kit-c-api',
+        key: 'audio-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'audio-kit-c-api-header-file',
-            id: 'audio-kit-c-api-header-file',
+            key: 'audio-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -4763,7 +4733,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'audio-kit-c-api-module',
+            key: 'audio-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -4776,8 +4746,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'audio-kit-c-api-struct',
-            id: 'audio-kit-c-api-struct',
+            key: 'audio-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -4834,14 +4803,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'audio-kit-c-api',
-        id: 'audio-kit-c-api',
+        key: 'audio-kit-c-api_2',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'audio-kit-c-api-header-file',
-            id: 'audio-kit-c-api-header-file',
+            key: 'audio-kit-c-api-header-file_2',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -4871,7 +4838,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'audio-kit-c-api-module',
+            key: 'audio-kit-c-api-module_2',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -4892,8 +4859,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'audio-kit-c-api-struct',
-            id: 'audio-kit-c-api-struct',
+            key: 'audio-kit-c-api-struct_2',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -4936,8 +4902,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'avsession-kit-js-api',
-        id: 'audio-kit-js-api',
+        key: 'avsession-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -5184,14 +5149,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'avsession-kit-c-api',
-        id: 'avsession-kit-c-api',
+        key: 'avsession-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'avsession-kit-c-api-header-file',
-            id: 'avsession-kit-c-api-header-file',
+            key: 'avsession-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -5208,8 +5171,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'avsession-kit-c-api-module',
-            id: 'avsession-kit-c-api-module',
+            key: 'avsession-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -5219,8 +5181,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'avsession-kit-c-api-struct',
-            id: 'avsession-kit-c-api-struct',
+            key: 'avsession-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -5248,8 +5209,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'background-tasks-kit-js-api',
-        id: 'avsession-kit-js-api',
+        key: 'avsession-kit-js-api_2',
         label: 'JS API',
         items: [
           {
@@ -5512,14 +5472,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'background-tasks-kit-c-api',
-        id: 'background-tasks-kit-c-api',
+        key: 'background-tasks-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'background-tasks-kit-c-api-header-file',
-            id: 'background-tasks-kit-c-api-header-file',
+            key: 'background-tasks-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -5531,8 +5489,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'background-tasks-kit-c-api-module',
-            id: 'background-tasks-kit-c-api-module',
+            key: 'background-tasks-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -5543,8 +5500,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'background-tasks-kit-c-api-struct',
-            id: 'background-tasks-kit-c-api-struct',
+            key: 'background-tasks-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -5563,7 +5519,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'background-tasks-kit-js-api',
+        key: 'background-tasks-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -6832,14 +6788,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'basic-service-kit-c-api',
-        id: 'basic-service-kit-c-api',
+        key: 'basic-service-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'basic-service-kit-c-api-header-file',
-            id: 'basic-service-kit-c-api-header-file',
+            key: 'basic-service-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -6861,8 +6815,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'basic-service-kit-c-api-module',
-            id: 'basic-service-kit-c-api-module',
+            key: 'basic-service-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -6881,8 +6834,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'basic-service-kit-c-api-struct',
-            id: 'basic-service-kit-c-api-struct',
+            key: 'basic-service-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -6922,8 +6874,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'calendar-kit-js-api',
-        id: 'basic-service-kit-js-api',
+        key: 'basic-service-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -6963,8 +6914,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'camera-kit-js-api',
-        id: 'calendar-kit-js-api',
+        key: 'calendar-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -7227,14 +7177,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'camera-kit-c-api',
-        id: 'camera-kit-c-api',
+        key: 'camera-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'camera-kit-c-api-header-file',
-            id: 'camera-kit-c-api-header-file',
+            key: 'camera-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -7255,8 +7203,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'camera-kit-c-api-module',
-            id: 'camera-kit-c-api-module',
+            key: 'camera-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -7268,8 +7215,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'camera-kit-c-api-struct',
-            id: 'camera-kit-c-api-struct',
+            key: 'camera-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -7332,8 +7278,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'connectivity-kit-js-api',
-        id: 'camera-kit-js-api',
+        key: 'camera-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -8345,14 +8290,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'connectivity-kit-c-api',
-        id: 'connectivity-kit-c-api',
+        key: 'connectivity-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'connectivity-kit-c-api-header-file',
-            id: 'connectivity-kit-c-api-header-file',
+            key: 'connectivity-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -8363,8 +8306,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'connectivity-kit-c-api-module',
-            id: 'connectivity-kit-c-api-module',
+            key: 'connectivity-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -8375,7 +8317,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'connectivity-kit-c-api-struct',
+            key: 'connectivity-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -8393,7 +8335,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'connectivity-kit-js-api',
+        key: 'connectivity-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -8467,14 +8409,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'contacts-kit-c-api',
-        id: 'contacts-kit-c-api',
+        key: 'contacts-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'contacts-kit-c-api-header-file',
-            id: 'contacts-kit-c-api-header-file',
+            key: 'contacts-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -8487,8 +8427,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'contacts-kit-c-api-module',
-            id: 'contacts-kit-c-api-module',
+            key: 'contacts-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -8498,8 +8437,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'contacts-kit-c-api-struct',
-            id: 'contacts-kit-c-api-struct',
+            key: 'contacts-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -8531,8 +8469,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'core-file-kit-js-api',
-        id: 'contacts-kit-js-api',
+        key: 'contacts-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -9222,13 +9159,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'core-file-kit-c-api',
+        key: 'core-file-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'core-file-kit-c-api-header-file',
-            id: 'core-file-kit-c-api-header-file',
+            key: 'core-file-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -9245,8 +9181,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'core-file-kit-c-api-module',
-            id: 'core-file-kit-c-api-module',
+            key: 'core-file-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -9261,8 +9196,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'core-file-kit-c-api-struct',
-            id: 'core-file-kit-c-api-struct',
+            key: 'core-file-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -9295,8 +9229,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'crypto-architecture-kit-js-api',
-        id: 'core-file-kit-js-api',
+        key: 'core-file-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -9409,14 +9342,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'crypto-architecture-kit-c-api',
-        id: 'crypto-architecture-kit-c-api',
+        key: 'crypto-architecture-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'crypto-architecture-kit-c-api-header-file',
-            id: 'crypto-architecture-kit-c-api-header-file',
+            key: 'crypto-architecture-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -9437,8 +9368,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'crypto-architecture-kit-c-api-module',
-            id: 'crypto-architecture-kit-c-api-module',
+            key: 'crypto-architecture-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -9459,8 +9389,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'crypto-architecture-kit-c-api-struct',
-            id: 'crypto-architecture-kit-c-api-struct',
+            key: 'crypto-architecture-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -9501,14 +9430,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'crypto-architecture-kit-c-api',
-        id: 'crypto-architecture-kit-c-api',
+        key: 'crypto-architecture-kit-c-api_2',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'crypto-architecture-kit-c-api-header-file',
-            id: 'crypto-architecture-kit-c-api-header-file',
+            key: 'crypto-architecture-kit-c-api-header-file_2',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -9518,7 +9445,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'crypto-architecture-kit-c-api-module',
+            key: 'crypto-architecture-kit-c-api-module_2',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -9528,8 +9455,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'crypto-architecture-kit-c-api-struct',
-            id: 'crypto-architecture-kit-c-api-struct',
+            key: 'crypto-architecture-kit-c-api-struct_2',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -9548,8 +9474,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'data-protection-kit-js-api',
-        id: 'crypto-architecture-kit-js-api',
+        key: 'crypto-architecture-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -9644,14 +9569,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'data-protection-kit-c-api',
-        id: 'data-protection-kit-c-api',
+        key: 'data-protection-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'data-protection-kit-c-api-header-file',
-            id: 'data-protection-kit-c-api-header-file',
+            key: 'data-protection-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -9661,8 +9584,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'data-protection-kit-c-api-module',
-            id: 'data-protection-kit-c-api-module',
+            key: 'data-protection-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -9680,8 +9602,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'data-protection-kit-js-api',
-        id: 'data-protection-kit-js-api',
+        key: 'data-protection-kit-js-api',
         label: 'JS API',
         items: [
           'default/js-api/arkts-arkui-layoutalgorithm',
@@ -9708,8 +9629,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'device-certificate-kit-js-api',
-        id: 'default-js-api',
+        key: 'default-js-api',
         label: 'JS API',
         items: [
           {
@@ -9895,14 +9815,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'device-certificate-kit-c-api',
-        id: 'device-certificate-kit-c-api',
+        key: 'device-certificate-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'device-certificate-kit-c-api-header-file',
-            id: 'device-certificate-kit-c-api-header-file',
+            key: 'device-certificate-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -9913,8 +9831,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'device-certificate-kit-c-api-module',
-            id: 'device-certificate-kit-c-api-module',
+            key: 'device-certificate-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -9925,8 +9842,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'device-certificate-kit-c-api-struct',
-            id: 'device-certificate-kit-c-api-struct',
+            key: 'device-certificate-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -9947,8 +9863,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'distributed-service-kit-js-api',
-        id: 'device-certificate-kit-js-api',
+        key: 'device-certificate-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -10160,13 +10075,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'distributed-service-kit-c-api',
-        id: 'distributed-service-kit-c-api',
+        key: 'distributed-service-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'distributed-service-kit-c-api-header-file',
+            key: 'distributed-service-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -10177,8 +10091,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'distributed-service-kit-c-api-module',
-            id: 'distributed-service-kit-c-api-module',
+            key: 'distributed-service-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -10196,8 +10109,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'driver-development-kit-js-api',
-        id: 'distributed-service-kit-js-api',
+        key: 'distributed-service-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -10242,14 +10154,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'driver-development-kit-c-api',
-        id: 'driver-development-kit-c-api',
+        key: 'driver-development-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'driver-development-kit-c-api-header-file',
-            id: 'driver-development-kit-c-api-header-file',
+            key: 'driver-development-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -10268,8 +10178,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'driver-development-kit-c-api-module',
-            id: 'driver-development-kit-c-api-module',
+            key: 'driver-development-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -10283,8 +10192,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'driver-development-kit-c-api-struct',
-            id: 'driver-development-kit-c-api-struct',
+            key: 'driver-development-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -10340,7 +10248,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'driver-development-kit-js-api',
+        key: 'driver-development-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -10378,13 +10286,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'drm-kit-c-api',
-        id: 'drm-kit-c-api',
+        key: 'drm-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'drm-kit-c-api-header-file',
+            key: 'drm-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -10397,8 +10304,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'drm-kit-c-api-module',
-            id: 'drm-kit-c-api-module',
+            key: 'drm-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -10408,8 +10314,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'drm-kit-c-api-struct',
-            id: 'drm-kit-c-api-struct',
+            key: 'drm-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -10439,8 +10344,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'form-kit-js-api',
-        id: 'drm-kit-js-api',
+        key: 'drm-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -10731,14 +10635,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'form-kit-c-api',
-        id: 'form-kit-c-api',
+        key: 'form-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'form-kit-c-api-header-file',
-            id: 'form-kit-c-api-header-file',
+            key: 'form-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -10756,8 +10658,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'form-kit-c-api-module',
-            id: 'form-kit-c-api-module',
+            key: 'form-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -10767,8 +10668,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'form-kit-c-api-struct',
-            id: 'form-kit-c-api-struct',
+            key: 'form-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -10797,13 +10697,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'form-kit-c-api',
-        id: 'form-kit-c-api',
+        key: 'form-kit-c-api_2',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'form-kit-c-api-header-file',
+            key: 'form-kit-c-api-header-file_2',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -10817,8 +10716,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'form-kit-c-api-module',
-            id: 'form-kit-c-api-module',
+            key: 'form-kit-c-api-module_2',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -10828,8 +10726,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'form-kit-c-api-struct',
-            id: 'form-kit-c-api-struct',
+            key: 'form-kit-c-api-struct_2',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -10852,7 +10749,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'form-kit-js-api',
+        key: 'form-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -11018,14 +10915,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'image-kit-c-api',
-        id: 'image-kit-c-api',
+        key: 'image-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'image-kit-c-api-header-file',
-            id: 'image-kit-c-api-header-file',
+            key: 'image-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -11053,8 +10948,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'image-kit-c-api-module',
-            id: 'image-kit-c-api-module',
+            key: 'image-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -11067,8 +10961,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'image-kit-c-api-struct',
-            id: 'image-kit-c-api-struct',
+            key: 'image-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -11148,8 +11041,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ime-kit-js-api',
-        id: 'image-kit-js-api',
+        key: 'image-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -11346,14 +11238,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'ime-kit-c-api',
-        id: 'ime-kit-c-api',
+        key: 'ime-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'ime-kit-c-api-header-file',
-            id: 'ime-kit-c-api-header-file',
+            key: 'ime-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -11371,7 +11261,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ime-kit-c-api-module',
+            key: 'ime-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -11381,7 +11271,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ime-kit-c-api-struct',
+            key: 'ime-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -11405,8 +11295,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'input-kit-js-api',
-        id: 'ime-kit-js-api',
+        key: 'ime-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -11705,13 +11594,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'input-kit-c-api',
+        key: 'input-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'input-kit-c-api-header-file',
-            id: 'input-kit-c-api-header-file',
+            key: 'input-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -11724,8 +11612,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'input-kit-c-api-module',
-            id: 'input-kit-c-api-module',
+            key: 'input-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -11735,7 +11622,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'input-kit-c-api-struct',
+            key: 'input-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -11766,8 +11653,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ipc-kit-js-api',
-        id: 'input-kit-js-api',
+        key: 'input-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -11800,13 +11686,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'ipc-kit-c-api',
+        key: 'ipc-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'ipc-kit-c-api-header-file',
-            id: 'ipc-kit-c-api-header-file',
+            key: 'ipc-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -11820,8 +11705,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ipc-kit-c-api-module',
-            id: 'ipc-kit-c-api-module',
+            key: 'ipc-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -11835,7 +11719,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ipc-kit-c-api-struct',
+            key: 'ipc-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -11857,14 +11741,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'ipc-kit-c-api',
-        id: 'ipc-kit-c-api',
+        key: 'ipc-kit-c-api_2',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'ipc-kit-c-api-header-file',
-            id: 'ipc-kit-c-api-header-file',
+            key: 'ipc-kit-c-api-header-file_2',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -11875,8 +11757,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ipc-kit-c-api-module',
-            id: 'ipc-kit-c-api-module',
+            key: 'ipc-kit-c-api-module_2',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -11887,8 +11768,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'ipc-kit-c-api-struct',
-            id: 'ipc-kit-c-api-struct',
+            key: 'ipc-kit-c-api-struct_2',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -11908,8 +11788,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'localization-kit-js-api',
-        id: 'ipc-kit-js-api',
+        key: 'ipc-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -12069,14 +11948,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'localization-kit-c-api',
-        id: 'localization-kit-c-api',
+        key: 'localization-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'localization-kit-c-api-header-file',
-            id: 'localization-kit-c-api-header-file',
+            key: 'localization-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -12092,8 +11969,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'localization-kit-c-api-module',
-            id: 'localization-kit-c-api-module',
+            key: 'localization-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -12105,8 +11981,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'localization-kit-c-api-struct',
-            id: 'localization-kit-c-api-struct',
+            key: 'localization-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -12136,8 +12011,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'location-kit-js-api',
-        id: 'localization-kit-js-api',
+        key: 'localization-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -12329,14 +12203,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'location-kit-c-api',
-        id: 'location-kit-c-api',
+        key: 'location-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'location-kit-c-api-header-file',
-            id: 'location-kit-c-api-header-file',
+            key: 'location-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -12347,8 +12219,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'location-kit-c-api-module',
-            id: 'location-kit-c-api-module',
+            key: 'location-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -12358,8 +12229,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'location-kit-c-api-struct',
-            id: 'location-kit-c-api-struct',
+            key: 'location-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -12379,8 +12249,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'mdm-kit-js-api',
-        id: 'location-kit-js-api',
+        key: 'location-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -12983,8 +12852,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'mechanic-kit-js-api',
-        id: 'mdm-kit-js-api',
+        key: 'mdm-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -13063,8 +12931,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'media-kit-js-api',
-        id: 'mechanic-kit-js-api',
+        key: 'mechanic-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -13212,14 +13079,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'media-kit-c-api',
-        id: 'media-kit-c-api',
+        key: 'media-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'media-kit-c-api-header-file',
-            id: 'media-kit-c-api-header-file',
+            key: 'media-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -13251,8 +13116,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'media-kit-c-api-module',
-            id: 'media-kit-c-api-module',
+            key: 'media-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -13274,8 +13138,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'media-kit-c-api-struct',
-            id: 'media-kit-c-api-struct',
+            key: 'media-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -13346,8 +13209,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'media-library-kit-js-api',
-        id: 'media-kit-js-api',
+        key: 'media-library-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -13683,14 +13545,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'media-library-kit-c-api',
-        id: 'media-library-kit-c-api',
+        key: 'media-library-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'media-library-kit-c-api-header-file',
-            id: 'media-library-kit-c-api-header-file',
+            key: 'media-library-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -13705,8 +13565,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'media-library-kit-c-api-module',
-            id: 'media-library-kit-c-api-module',
+            key: 'media-library-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -13716,8 +13575,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'media-library-kit-c-api-struct',
-            id: 'media-library-kit-c-api-struct',
+            key: 'media-library-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -13740,8 +13598,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'mind-spore-lite-kit-js-api',
-        id: 'media-library-kit-js-api',
+        key: 'media-library-kit-js-api_2',
         label: 'JS API',
         items: [
           {
@@ -13780,13 +13637,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'mind-spore-lite-kit-c-api',
+        key: 'mind-spore-lite-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'mind-spore-lite-kit-c-api-header-file',
-            id: 'mind-spore-lite-kit-c-api-header-file',
+            key: 'mind-spore-lite-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -13801,8 +13657,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'mind-spore-lite-kit-c-api-module',
-            id: 'mind-spore-lite-kit-c-api-module',
+            key: 'mind-spore-lite-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -13812,8 +13667,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'mind-spore-lite-kit-c-api-struct',
-            id: 'mind-spore-lite-kit-c-api-struct',
+            key: 'mind-spore-lite-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -13835,8 +13689,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'multimodal-awareness-kit-js-api',
-        id: 'mind-spore-lite-kit-js-api',
+        key: 'mind-spore-lite-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -14000,8 +13853,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'multimodal-awareness-kit-js-api',
-        id: 'multimodal-awareness-kit-js-api',
+        key: 'multimodal-awareness-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -14270,7 +14122,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'na-js-api',
+        key: 'na-js-api',
         label: 'JS API',
         items: [
           {
@@ -14809,14 +14661,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'network-kit-c-api',
-        id: 'network-kit-c-api',
+        key: 'network-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'network-kit-c-api-header-file',
-            id: 'network-kit-c-api-header-file',
+            key: 'network-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -14839,8 +14689,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'network-kit-c-api-module',
-            id: 'network-kit-c-api-module',
+            key: 'network-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -14853,8 +14702,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'network-kit-c-api-struct',
-            id: 'network-kit-c-api-struct',
+            key: 'network-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -14926,14 +14774,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'network-kit-c-api',
-        id: 'network-kit-c-api',
+        key: 'network-kit-c-api_2',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'network-kit-c-api-header-file',
-            id: 'network-kit-c-api-header-file',
+            key: 'network-kit-c-api-header-file_2',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -14945,8 +14791,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'network-kit-c-api-module',
-            id: 'network-kit-c-api-module',
+            key: 'network-kit-c-api-module_2',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -14956,8 +14801,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'network-kit-c-api-struct',
-            id: 'network-kit-c-api-struct',
+            key: 'network-kit-c-api-struct_2',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -14984,7 +14828,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'network-kit-js-api',
+        key: 'network-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -15324,14 +15168,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'notification-kit-c-api',
-        id: 'notification-kit-c-api',
+        key: 'notification-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'notification-kit-c-api-header-file',
-            id: 'notification-kit-c-api-header-file',
+            key: 'notification-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -15341,8 +15183,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'notification-kit-c-api-module',
-            id: 'notification-kit-c-api-module',
+            key: 'notification-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -15360,8 +15201,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'notification-kit-c-api',
-        id: 'notification-kit-c-api',
+        key: 'notification-kit-c-api_2',
         label: 'C API',
         items: [
           {
@@ -15378,8 +15218,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'performance-analysis-kit-js-api',
-        id: 'notification-kit-js-api',
+        key: 'notification-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -15620,14 +15459,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'performance-analysis-kit-c-api',
-        id: 'performance-analysis-kit-c-api',
+        key: 'performance-analysis-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'performance-analysis-kit-c-api-header-file',
-            id: 'performance-analysis-kit-c-api-header-file',
+            key: 'performance-analysis-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -15645,8 +15482,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'performance-analysis-kit-c-api-module',
-            id: 'performance-analysis-kit-c-api-module',
+            key: 'performance-analysis-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -15660,7 +15496,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'performance-analysis-kit-c-api-struct',
+            key: 'performance-analysis-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -15700,8 +15536,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'security-guard-kit-js-api',
-        id: 'performance-analysis-kit-js-api',
+        key: 'performance-analysis-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -15739,8 +15574,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'sensor-service-kit-js-api',
-        id: 'security-guard-kit-js-api',
+        key: 'security-guard-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -15907,13 +15741,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'sensor-service-kit-c-api',
-        id: 'sensor-service-kit-c-api',
+        key: 'sensor-service-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'sensor-service-kit-c-api-header-file',
+            key: 'sensor-service-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -15926,8 +15759,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'sensor-service-kit-c-api-module',
-            id: 'sensor-service-kit-c-api-module',
+            key: 'sensor-service-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -15938,8 +15770,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'sensor-service-kit-c-api-struct',
-            id: 'sensor-service-kit-c-api-struct',
+            key: 'sensor-service-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -15963,14 +15794,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'sensor-service-kit-c-api',
-        id: 'sensor-service-kit-c-api',
+        key: 'sensor-service-kit-c-api_2',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'sensor-service-kit-c-api-header-file',
-            id: 'sensor-service-kit-c-api-header-file',
+            key: 'sensor-service-kit-c-api-header-file_2',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -15998,8 +15827,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'sensor-service-kit-c-api-module',
-            id: 'sensor-service-kit-c-api-module',
+            key: 'sensor-service-kit-c-api-module_2',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -16010,8 +15838,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'sensor-service-kit-c-api-struct',
-            id: 'sensor-service-kit-c-api-struct',
+            key: 'sensor-service-kit-c-api-struct_2',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -16058,8 +15885,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'telephony-kit-js-api',
-        id: 'sensor-service-kit-js-api',
+        key: 'sensor-service-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -16569,13 +16395,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'telephony-kit-c-api',
-        id: 'telephony-kit-c-api',
+        key: 'telephony-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'telephony-kit-c-api-header-file',
+            key: 'telephony-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -16587,8 +16412,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'telephony-kit-c-api-module',
-            id: 'telephony-kit-c-api-module',
+            key: 'telephony-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -16598,8 +16422,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'telephony-kit-c-api-struct',
-            id: 'telephony-kit-c-api-struct',
+            key: 'telephony-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -16617,8 +16440,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'test-kit-js-api',
-        id: 'telephony-kit-js-api',
+        key: 'telephony-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -16725,14 +16547,12 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'test-kit-c-api',
-        id: 'test-kit-c-api',
+        key: 'test-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'test-kit-c-api-header-file',
-            id: 'test-kit-c-api-header-file',
+            key: 'test-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -16743,8 +16563,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'test-kit-c-api-struct',
-            id: 'test-kit-c-api-struct',
+            key: 'test-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -18222,8 +18041,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'universal-keystore-kit-js-api',
-        id: 'test-kit-js-api',
+        key: 'universal-keystore-kit-js-api',
         label: 'JS API',
         items: [
           {
@@ -18355,14 +18173,12 @@ const sidebars: SidebarsConfig = {
       },
     {
         type: 'category',
-        id: 'universal-keystore-kit-c-api',
-        id: 'universal-keystore-kit-c-api',
+        key: 'universal-keystore-kit-c-api',
         label: 'C API',
         items: [
           {
             type: 'category',
-            id: 'universal-keystore-kit-c-api-header-file',
-            id: 'universal-keystore-kit-c-api-header-file',
+            key: 'universal-keystore-kit-c-api-header-file',
             label: 'Header file',
             collapsible: true,
             collapsed: true,
@@ -18376,8 +18192,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'universal-keystore-kit-c-api-module',
-            id: 'universal-keystore-kit-c-api-module',
+            key: 'universal-keystore-kit-c-api-module',
             label: 'Module',
             collapsible: true,
             collapsed: true,
@@ -18391,8 +18206,7 @@ const sidebars: SidebarsConfig = {
           },
           {
             type: 'category',
-            id: 'universal-keystore-kit-c-api-struct',
-            id: 'universal-keystore-kit-c-api-struct',
+            key: 'universal-keystore-kit-c-api-struct',
             label: 'Struct',
             collapsible: true,
             collapsed: true,
@@ -18424,7 +18238,7 @@ const sidebars: SidebarsConfig = {
       items: [
     {
         type: 'category',
-        id: 'universal-keystore-kit-js-api',
+        key: 'universal-keystore-kit-js-api_2',
         label: 'JS API',
         items: [
           {
