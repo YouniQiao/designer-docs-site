@@ -4,13 +4,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // Dev config — Ability Kit only, for faster development cycles
 const config: Config = {
-  title: 'Designer API Reference',
-  tagline: 'HarmonyOS Designer API Documentation',
+  title: 'OH API',
+  tagline: 'HarmonyOS OH API Documentation',
   favicon: 'img/favicon.ico',
-
-  future: {
-    v4: true,
-  },
 
   url: 'https://designer-docs.example.com',
   baseUrl: '/',
@@ -18,13 +14,14 @@ const config: Config = {
   organizationName: 'facebook',
   projectName: 'docusaurus',
 
-  onBrokenLinks: 'warn',
-  onBrokenAnchors: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenAnchors: 'ignore',
 
   markdown: {
     format: 'md',
     hooks: {
-      onBrokenMarkdownImages: 'warn',
+      onBrokenMarkdownImages: 'ignore',
+      onBrokenMarkdownLinks: 'ignore',
     },
   },
 
@@ -61,10 +58,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Designer API',
+      title: 'OH API',
       logo: {
-        alt: 'Designer API',
-        src: 'img/logo.svg',
+        alt: 'OH API',
+        src: 'img/logo.png',
       },
       items: [
         {

@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Designer API Reference',
-  tagline: 'HarmonyOS Designer API Documentation',
+  title: 'OH API',
+  tagline: 'HarmonyOS OH API Documentation',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -68,10 +68,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Designer API',
+      title: 'OH API',
       logo: {
-        alt: 'Designer API',
-        src: 'img/logo.svg',
+        alt: 'OH API',
+        src: 'img/logo.png',
       },
       items: [
         {

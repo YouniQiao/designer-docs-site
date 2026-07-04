@@ -1,23 +1,69 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
+  padding: 3rem 0 2rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0;
+}
+
+.main {
+  padding: 2rem 0 4rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 0 8px 8px 0;
+}
+
+[data-theme='dark'] .section {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.sectionTitle {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.sectionBody p {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.sectionBody ul {
+  margin-bottom: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.sectionBody li {
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+.sectionBody code {
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
+    padding: 2rem 0 1.5rem;
   }
-}
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .main {
+    padding: 1rem 0 2rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
 }
