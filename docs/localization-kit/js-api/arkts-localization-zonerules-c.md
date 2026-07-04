@@ -1,0 +1,40 @@
+# ZoneRules
+
+Queries the time zone transition rule.
+
+**Since:** 20
+
+**System capability:** SystemCapability.Global.I18n
+
+## Modules to Import
+
+```TypeScript
+import { i18n } from '@ohos.i18n';
+```
+
+## nextTransition
+
+```TypeScript
+public nextTransition(date?: number): ZoneOffsetTransition
+```
+
+Obtains the **nextTransition** object for the specified time.
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+**System capability:** SystemCapability.Global.I18n
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| date | number | No |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| ZoneOffsetTransition | **ZoneOffsetTransition** object for next transition. |
+

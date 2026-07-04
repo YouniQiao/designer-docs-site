@@ -1,0 +1,42 @@
+# CurrentInputDeviceChangedEvent
+
+Describes the event indicating that the input device changes.
+
+**Since:** 21
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+## Modules to Import
+
+```TypeScript
+import { audio } from '@ohos.multimedia.audio';
+```
+
+## changeReason
+
+```TypeScript
+changeReason: AudioStreamDeviceChangeReason
+```
+
+Audio input device change reason.
+
+**Type:** AudioStreamDeviceChangeReason
+
+**Since:** 21
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+## devices
+
+```TypeScript
+devices: AudioDeviceDescriptors
+```
+
+Audio input device descriptors after change.
+
+**Type:** AudioDeviceDescriptors
+
+**Since:** 21
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+

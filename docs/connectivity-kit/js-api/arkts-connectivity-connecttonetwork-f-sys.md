@@ -1,0 +1,54 @@
+# connectToNetwork (System API)
+
+## Modules to Import
+
+```TypeScript
+import { wifi } from '@ohos.wifi';
+```
+
+## connectToNetwork
+
+```TypeScript
+function connectToNetwork(networkId: number): boolean
+```
+
+Connects to Wi-Fi network.
+
+**Since:** 6
+
+**Deprecated since:** 9
+
+**Substitutes:** connectToNetwork
+
+**Required permissions:** ohos.permission.MANAGE_WIFI_CONNECTION
+
+**System capability:** SystemCapability.Communication.WiFi.STA
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| networkId | number | Yes | ID of the connected network. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Returns {@code true} if the network connection is successful, returns {@code false} otherwise. |
+
+**Example**
+
+```TypeScript
+import wifi from '@ohos.wifi';
+
+try {
+    let networkId = 0;
+    wifi.connectToNetwork(networkId);
+}catch(error){
+    console.error("failed:" + JSON.stringify(error));
+}    
+
+```
+

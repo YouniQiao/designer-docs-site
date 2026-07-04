@@ -1,0 +1,14 @@
+# Telephony
+
+## Overview
+
+Provides C interface for the telephony cellular data.
+
+**Since**: 13
+## Files
+
+| Name | Description |
+| -- | -- |
+| [telephony_data.h](capi-telephony-data-h.md) | Provides C interface for the telephony cellular data. |
+| [telephony_radio_type.h](capi-telephony-radio-type-h.md) | Provides the data structures for the C APIs of the the telephony radio. |
+| [telephony_radio.h](capi-telephony-radio-h.md) | Provides C interface for the telephony radio. |

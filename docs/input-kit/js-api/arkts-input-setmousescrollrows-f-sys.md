@@ -1,0 +1,132 @@
+# setMouseScrollRows (System API)
+
+## Modules to Import
+
+```TypeScript
+import { pointer } from '@ohos.multimodalInput.pointer';
+```
+
+## setMouseScrollRows
+
+```TypeScript
+function setMouseScrollRows(rows: number, callback: AsyncCallback<void>): void
+```
+
+Sets the number of mouse scroll lines. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**System capability:** SystemCapability.MultimodalInput.Input.Pointer
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| rows | number | Yes | Number of mouse scroll lines. The value ranges from 1 to 100. The default value is **3**. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | SystemAPI permission error. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { pointer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          try {
+            // Set the number of mouse scroll lines.
+            pointer.setMouseScrollRows(1, (error: BusinessError) => {
+              if (error) {
+                console.error(`Failed to set mouse scroll rows, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+                return;
+              }
+              console.info(`Succeeded in setting mouse scroll rows.`);
+            });
+          } catch (error) {
+            console.error(`Failed to set mouse scroll rows, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+          }
+        })
+    }
+  }
+}
+
+```
+
+
+## setMouseScrollRows
+
+```TypeScript
+function setMouseScrollRows(rows: number): Promise<void>
+```
+
+Sets the number of mouse scroll lines. This API uses a promise to return the result.
+
+**Since:** 10
+
+**System capability:** SystemCapability.MultimodalInput.Input.Pointer
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| rows | number | Yes | Number of mouse scroll lines. The value ranges from 1 to 100. The default value is **3**. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void&gt; | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | SystemAPI permission error. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { pointer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          try {
+            // Set the number of mouse scroll lines.
+            pointer.setMouseScrollRows(20).then(() => {
+              console.info(`Succeeded in setting mouse scroll rows.`);
+            }).catch((error: BusinessError) => {
+              console.error(`Failed to set mouse scroll rows, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+            })
+          } catch (error) {
+            console.error(`Failed to set mouse scroll rows, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+          }
+        })
+    }
+  }
+}
+
+```
+

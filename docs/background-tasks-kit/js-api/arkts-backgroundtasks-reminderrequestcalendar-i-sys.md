@@ -1,0 +1,32 @@
+# ReminderRequestCalendar
+
+ReminderRequestCalendar extends ReminderRequest Defines a reminder for a calendar event.
+
+**Inheritance/Implementation:** ReminderRequestCalendar extends [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md#reminderrequest)
+
+**Since:** 9
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+## Modules to Import
+
+```TypeScript
+import { reminderAgentManager } from '@ohos.reminderAgentManager';
+```
+
+## rruleWantAgent
+
+```TypeScript
+rruleWantAgent?: WantAgent
+```
+
+Custom reminder, which specifies the ServiceExtensionAbility to start.
+
+**Type:** WantAgent
+
+**Since:** 12
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+**System API:** This is a system API.
+

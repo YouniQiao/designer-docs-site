@@ -1,0 +1,375 @@
+# usb_serial_api.h
+
+## Overview
+
+Declares the USB Serial DDK APIs used by the host to access the serial port device through the USB port.
+
+**Library**: libusb_serial_ndk.z.so
+
+**System capability**: SystemCapability.Driver.UsbSerial.Extension
+
+**Since**: 18
+
+**Related module**: [USBSerialDDK](capi-usbserialddk.md)
+
+## Summary
+
+### Function
+
+| Name | Description |
+| -- | -- |
+| [int32_t OH_UsbSerial_Init(void)](#oh_usbserial_init) | Initializes the USB Serial DDK. |
+| [int32_t OH_UsbSerial_Release(void)](#oh_usbserial_release) | Releases the USB Serial DDK. |
+| [int32_t OH_UsbSerial_Open(uint64_t deviceId, uint8_t interfaceIndex, UsbSerial_Device **dev)](#oh_usbserial_open) | Opens the USB serial port device based on the specified **deviceId** and **interfaceIndex**. |
+| [int32_t OH_UsbSerial_Close(UsbSerial_Device **dev)](#oh_usbserial_close) | Closes the USB serial port device. |
+| [int32_t OH_UsbSerial_Read(UsbSerial_Device *dev, uint8_t *buff, uint32_t bufferSize, uint32_t *bytesRead)](#oh_usbserial_read) | Reads data from the USB serial port device to the buffer. |
+| [int32_t OH_UsbSerial_Write(UsbSerial_Device *dev, uint8_t *buff, uint32_t bufferSize, uint32_t *bytesWritten)](#oh_usbserial_write) | Writes the data in the buffer to the USB serial port device. |
+| [int32_t OH_UsbSerial_SetBaudRate(UsbSerial_Device *dev, uint32_t baudRate)](#oh_usbserial_setbaudrate) | Sets the baud rate for a USB serial port device. If the parameters of the USB serial port device are set tothe default values (the data bit is **8**, the stop bit is **1**, and parity is disabled for data transfer), youonly need to call this API to set the baud rate. |
+| [int32_t OH_UsbSerial_SetParams(UsbSerial_Device *dev, UsbSerial_Params *params)](#oh_usbserial_setparams) | Sets the parameters of the USB serial port device. If the parameters of the USB serial port device are notset to the default values (the data bit is **8**, the stop bit is **1**, and parity is disabled for data transfer),you only need to call this API to set the related parameters. |
+| [int32_t OH_UsbSerial_SetTimeout(UsbSerial_Device *dev, int timeout)](#oh_usbserial_settimeout) | Sets the timeout interval (ms) for reading data reported by a USB serial port device. If this function is notcalled, the timeout value is **0** by default, indicating that data is returned immediately regardless of whetherdata is read. If you need to wait for a certain period of time or data must be read, call this API to set thetimeout interval. |
+| [int32_t OH_UsbSerial_SetFlowControl(UsbSerial_Device *dev, UsbSerial_FlowControl flowControl)](#oh_usbserial_setflowcontrol) | Sets flow control parameters. Flow control is used to manage the data transfer rate during communication withthe USB serial port device to ensure that the sender does not send data that exceeds the processing capability ofthe receiver.If flow control is required, call this API to set flow control parameters. If this API is not called, flow controlis not performed by default. |
+| [int32_t OH_UsbSerial_Flush(UsbSerial_Device *dev)](#oh_usbserial_flush) | Flushes the input and output buffers after the write operation is complete. If a large amount of data is tobe transmitted to the USB serial port device, the data may be buffered in the kernel for transmission. If theapplication closes the file descriptor or exits before the data is completely sent out, some data may be lost.If the data is not sent out, some data may be lost. You can call this API to ensure that all data is sent beforesubsequent operations are performed. |
+| [int32_t OH_UsbSerial_FlushInput(UsbSerial_Device *dev)](#oh_usbserial_flushinput) | Flushes the input buffer. The data in the buffer is cleared immediately. During the communication with theUSB serial port device, especially in the debugging phase, disordered data packets or other exceptions may occur.You can call this API to clear these exceptions to restore the communication. |
+| [int32_t OH_UsbSerial_FlushOutput(UsbSerial_Device *dev)](#oh_usbserial_flushoutput) | Flushes the output buffer. The data in the buffer is cleared immediately. During the communication with theUSB serial port device, especially in the debugging phase, disordered data packets or other exceptions may occur.You can call this API to clear these exceptions to restore the communication. |
+
+## Function description
+
+### OH_UsbSerial_Init()
+
+```c
+int32_t OH_UsbSerial_Init(void)
+```
+
+**Description**
+
+Initializes the USB Serial DDK.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK initialization fails. |
+
+### OH_UsbSerial_Release()
+
+```c
+int32_t OH_UsbSerial_Release(void)
+```
+
+**Description**
+
+Releases the USB Serial DDK.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails. |
+
+### OH_UsbSerial_Open()
+
+```c
+int32_t OH_UsbSerial_Open(uint64_t deviceId, uint8_t interfaceIndex, UsbSerial_Device **dev)
+```
+
+**Description**
+
+Opens the USB serial port device based on the specified **deviceId** and **interfaceIndex**.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| uint64_t deviceId | Device ID. |
+| uint8_t interfaceIndex | Interface index, which corresponds to {@link bInterfaceNumber} in the USB protocol. |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) **dev | Device handle. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. The possible cause is that dev<br>     or dev is null.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_MEMORY_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The memory is insufficient.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_DEVICE_NOT_FOUND](capi-usb-serial-types-h.md#usbserial_ddkretcode): The device or interface is not found. |
+
+### OH_UsbSerial_Close()
+
+```c
+int32_t OH_UsbSerial_Close(UsbSerial_Device **dev)
+```
+
+**Description**
+
+Closes the USB serial port device.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) **dev | Device handle. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. The possible cause is that dev<br>     or dev is null.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_Read()
+
+```c
+int32_t OH_UsbSerial_Read(UsbSerial_Device *dev, uint8_t *buff, uint32_t bufferSize, uint32_t *bytesRead)
+```
+
+**Description**
+
+Reads data from the USB serial port device to the buffer.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+| uint8_t *buff | Buffer for storing the data read from the USB serial port device. |
+| uint32_t bufferSize | Buffer size. |
+| uint32_t *bytesRead | Number of bytes that are actually read. If the block mode is set, the number of bytes that areactually read is returned only when it is equal to the value of **bufferSize**.For details, see [OH_UsbSerial_SetTimeout](capi-usb-serial-api-h.md#oh_usbserial_settimeout). |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible causes: 1. dev is a<br>     null pointer.<br>     2. buff is a null pointer. 3. bufferSize is 0. 4. bytesRead is a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_MEMORY_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The buffer address is invalid.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_Write()
+
+```c
+int32_t OH_UsbSerial_Write(UsbSerial_Device *dev, uint8_t *buff, uint32_t bufferSize, uint32_t *bytesWritten)
+```
+
+**Description**
+
+Writes the data in the buffer to the USB serial port device.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+| uint8_t *buff | Buffer whose data is written to the USB serial port device. |
+| uint32_t bufferSize | Buffer size. |
+| uint32_t *bytesWritten | Number of bytes that are actually written. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible causes: 1. dev is a<br>     null pointer. 2. buff is a null pointer. 3. bufferSize is 0. 4. bytesWritten is a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_SetBaudRate()
+
+```c
+int32_t OH_UsbSerial_SetBaudRate(UsbSerial_Device *dev, uint32_t baudRate)
+```
+
+**Description**
+
+Sets the baud rate for a USB serial port device. If the parameters of the USB serial port device are set tothe default values (the data bit is **8**, the stop bit is **1**, and parity is disabled for data transfer), youonly need to call this API to set the baud rate.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+| uint32_t baudRate | Baud rate of the USB serial port device. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible cause: The input dev is<br>     a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_SetParams()
+
+```c
+int32_t OH_UsbSerial_SetParams(UsbSerial_Device *dev, UsbSerial_Params *params)
+```
+
+**Description**
+
+Sets the parameters of the USB serial port device. If the parameters of the USB serial port device are notset to the default values (the data bit is **8**, the stop bit is **1**, and parity is disabled for data transfer),you only need to call this API to set the related parameters.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+| [UsbSerial_Params](capi-usbserialddk-usbserial-params.md) *params | USB serial port device parameters. For details, see [UsbSerial_Params](capi-usbserialddk-usbserial-params.md). |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible causes: 1. dev is a<br>     null pointer.<br>     2. params is a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_SetTimeout()
+
+```c
+int32_t OH_UsbSerial_SetTimeout(UsbSerial_Device *dev, int timeout)
+```
+
+**Description**
+
+Sets the timeout interval (ms) for reading data reported by a USB serial port device. If this function is notcalled, the timeout value is **0** by default, indicating that data is returned immediately regardless of whetherdata is read. If you need to wait for a certain period of time or data must be read, call this API to set thetimeout interval.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+| int timeout | Timeout interval for reading data from a USB serial port device, in milliseconds. The value range is- (0, 25500]. The value is rounded off to the nearest 100 milliseconds as the actual timeout interval. Forexample, if the value is set to **12321**, the effective timeout interval is **12300**. - **0**: Data isreturned immediately. - **-1**: Data is read in block mode. That is, data is returned only after data of thespecified length is read. For details, see [OH_UsbSerial_Read](capi-usb-serial-api-h.md#oh_usbserial_read). |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible causes: 1. dev is a<br>     null pointer. 2.timeout < -1 or timeout > 25500.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_SetFlowControl()
+
+```c
+int32_t OH_UsbSerial_SetFlowControl(UsbSerial_Device *dev, UsbSerial_FlowControl flowControl)
+```
+
+**Description**
+
+Sets flow control parameters. Flow control is used to manage the data transfer rate during communication withthe USB serial port device to ensure that the sender does not send data that exceeds the processing capability ofthe receiver.If flow control is required, call this API to set flow control parameters. If this API is not called, flow controlis not performed by default.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+| [UsbSerial_FlowControl](capi-usb-serial-types-h.md#usbserial_flowcontrol) flowControl | Flow control mode. For details, see [UsbSerial_FlowControl](capi-usb-serial-types-h.md#usbserial_flowcontrol). |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible cause: The input dev is<br>     a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_Flush()
+
+```c
+int32_t OH_UsbSerial_Flush(UsbSerial_Device *dev)
+```
+
+**Description**
+
+Flushes the input and output buffers after the write operation is complete. If a large amount of data is tobe transmitted to the USB serial port device, the data may be buffered in the kernel for transmission. If theapplication closes the file descriptor or exits before the data is completely sent out, some data may be lost.If the data is not sent out, some data may be lost. You can call this API to ensure that all data is sent beforesubsequent operations are performed.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible cause: The input dev is<br>     a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_FlushInput()
+
+```c
+int32_t OH_UsbSerial_FlushInput(UsbSerial_Device *dev)
+```
+
+**Description**
+
+Flushes the input buffer. The data in the buffer is cleared immediately. During the communication with theUSB serial port device, especially in the debugging phase, disordered data packets or other exceptions may occur.You can call this API to clear these exceptions to restore the communication.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible cause: The input dev is<br>     a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+### OH_UsbSerial_FlushOutput()
+
+```c
+int32_t OH_UsbSerial_FlushOutput(UsbSerial_Device *dev)
+```
+
+**Description**
+
+Flushes the output buffer. The data in the buffer is cleared immediately. During the communication with theUSB serial port device, especially in the debugging phase, disordered data packets or other exceptions may occur.You can call this API to clear these exceptions to restore the communication.
+
+**Required permission**: ohos.permission.ACCESS_DDK_USB_SERIAL
+
+**Since**: 18
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [UsbSerial_Device](capi-usbserialddk-usbserial-device.md) *dev | Device handle. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | [USB_SERIAL_DDK_SUCCESS](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is successful.<br>     [USB_SERIAL_DDK_NO_PERM](capi-usb-serial-types-h.md#usbserial_ddkretcode): The permission verification fails.<br>     [USB_SERIAL_DDK_INVALID_PARAMETER](capi-usb-serial-types-h.md#usbserial_ddkretcode): The parameter verification fails. Possible cause: The input dev is<br>     a null pointer.<br>     [USB_SERIAL_DDK_INIT_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK is not initialized.<br>     [USB_SERIAL_DDK_SERVICE_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): The DDK service communication fails.<br>     [USB_SERIAL_DDK_IO_ERROR](capi-usb-serial-types-h.md#usbserial_ddkretcode): An I/O exception occurs.<br>     [USB_SERIAL_DDK_INVALID_OPERATION](capi-usb-serial-types-h.md#usbserial_ddkretcode): The operation is invalid. |
+
+

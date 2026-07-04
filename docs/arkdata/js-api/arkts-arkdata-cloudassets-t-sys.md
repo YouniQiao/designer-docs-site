@@ -1,0 +1,16 @@
+# CloudAssets (System API)
+
+```TypeScript
+type CloudAssets = Array<CloudAsset>
+```
+
+Represents an array of CloudAsset.
+
+**Since:** 11
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Server
+
+**System API:** This is a system API.
+
+**Property type:** Array<CloudAsset>
+

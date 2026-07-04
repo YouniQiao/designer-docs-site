@@ -1,0 +1,48 @@
+# wrapKeyItem
+
+## Modules to Import
+
+```TypeScript
+import { huks } from '@ohos.security.huks';
+```
+
+## wrapKeyItem
+
+```TypeScript
+function wrapKeyItem(keyAlias: string, params: HuksOptions): Promise<HuksReturnResult>
+```
+
+Wraps a key. This API uses a promise to return the result. <!--Del-->This feature is not supported currently.<!--DelEnd-->
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.Security.Huks.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| keyAlias | string | Yes | Key alias, which must be the same as the alias used when the key was generated. |
+| params | HuksOptions | Yes | Encryption type of the key to be exported. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;HuksReturnResult&gt; | Promise that returns the operation result. If the operation is successful,**outData** in **HuksReturnResult** is the exported key ciphertext. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | api is not supported |
+| [12000004](../errorcode-huks.md#12000004-file-error) | operating file failed |
+| [12000005](../errorcode-huks.md#12000005-ipc-error) | IPC communication failed |
+| [12000011](../errorcode-huks.md#12000011-the-entity-does-not-exist) | queried entity does not exist |
+| [12000012](../errorcode-huks.md#12000012-external-error) | Device environment or input parameter abnormal |
+| [12000014](../errorcode-huks.md#12000014-insufficient-memory) | memory is insufficient |
+| [12000018](../errorcode-huks.md#12000018-invalid-input-parameter) | the input parameter is invalid |
+| [12000026](../errorcode-huks.md#12000026-secure-element-fault) | the secure element is not available<br>**Applicable version:** 26.0.0 |
+

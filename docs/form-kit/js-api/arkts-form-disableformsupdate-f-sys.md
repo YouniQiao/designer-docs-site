@@ -1,0 +1,86 @@
+# disableFormsUpdate (System API)
+
+## Modules to Import
+
+```TypeScript
+import { formHost } from '@ohos.app.form.formHost';
+```
+
+## disableFormsUpdate
+
+```TypeScript
+function disableFormsUpdate(formIds: Array<string>, callback: AsyncCallback<void>): void
+```
+
+Instructs the widget framework to make a widget not updatable. After this API is called, the widget cannot receive updates from the widget provider. This API uses an asynchronous callback to return the result.
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.REQUIRE_FORM
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If a notification is sent to thewidget framework to make the widget not updatable, **error** is undefined; otherwise, **error** is an errorobject. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permissions denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The application is not a system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
+| [16500050](../errorcode-form.md#16500050-ipc-failure) | IPC connection error. |
+| [16500060](../errorcode-form.md#16500060-service-connection-failure) | Service connection error. |
+| [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
+| [16501001](../errorcode-form.md#16501001-widget-id-not-exist) | The ID of the form to be operated does not exist. |
+| [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
+
+
+## disableFormsUpdate
+
+```TypeScript
+function disableFormsUpdate(formIds: Array<string>): Promise<void>
+```
+
+Instructs the widget framework to make a widget not updatable. After this API is called, the widget cannot receive updates from the widget provider. This API uses a promise to return the result.
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.REQUIRE_FORM
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| formIds | Array&lt;string&gt; | Yes | List of widget IDs. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void&gt; | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permissions denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The application is not a system application. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3.Parameter verification failed. |
+| [16500050](../errorcode-form.md#16500050-ipc-failure) | IPC connection error. |
+| [16500060](../errorcode-form.md#16500060-service-connection-failure) | Service connection error. |
+| [16501000](../errorcode-form.md#16501000-internal-function-error) | An internal functional error occurred. |
+| [16501001](../errorcode-form.md#16501001-widget-id-not-exist) | The ID of the form to be operated does not exist. |
+| [16501003](../errorcode-form.md#16501003-widget-not-operatable) | The form cannot be operated by the current application. |
+

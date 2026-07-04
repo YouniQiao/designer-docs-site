@@ -1,0 +1,106 @@
+# AcquireAuthorizationResult (System API)
+
+Defines the result of the authorization.
+
+**Since:** 24
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { osAccount } from '@ohos.account.osAccount';
+```
+
+## isReused
+
+```TypeScript
+isReused?: boolean
+```
+
+Whether the authorization result is reused. The default value is **undefined**. **true**: The authorization result is reused. **false**: The authorization result is not reused.
+
+**Type:** boolean
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+## privilege
+
+```TypeScript
+privilege: string
+```
+
+Permission associated with the authorization.
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+## resultCode
+
+```TypeScript
+resultCode: AuthorizationResultCode
+```
+
+Authorization result code. If the authorization is successful, AuthorizationResultCode#AUTHORIZATION_SUCCESS is returned. Otherwise, an error code is returned. For details, see AuthorizationResultCode.
+
+**Type:** AuthorizationResultCode
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+## token
+
+```TypeScript
+token?: Uint8Array
+```
+
+Authorization token. The default value is **undefined**.
+
+**Type:** Uint8Array
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+
+## validityPeriod
+
+```TypeScript
+validityPeriod?: number
+```
+
+Validity period of the authorization, in seconds. The default value is **300**.
+
+**Type:** number
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Account.OsAccount
+
+**System API:** This is a system API.
+

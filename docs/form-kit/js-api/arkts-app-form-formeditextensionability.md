@@ -1,0 +1,16 @@
+# @ohos.app.form.FormEditExtensionAbility
+
+## Modules to Import
+
+```TypeScript
+import { FormEditExtensionAbility } from '@ohos.app.form.FormEditExtensionAbility';
+```
+
+## Summary
+
+### Classes
+
+| Name | Description |
+| --- | --- |
+| [FormEditExtensionAbility](arkts-form-formeditextensionability-c.md) | The **FormEditExtensionAbility** module, inherited from [UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#uiextensionability), provides the widget editing function. |
+

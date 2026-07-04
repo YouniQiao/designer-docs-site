@@ -1,0 +1,30 @@
+# @ohos.sendableResourceManager
+
+The **sendableResourceManager** module provides the [resourceToSendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) and [sendableResourceToResource](arkts-localization-sendableresourcetoresource-f.md#sendableresourcetoresource-1) APIs to implement conversion between [Resource](arkts-localization-resource-t.md#resource) and [SendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) objects. A **Resource** object can be held by the [Sendable](../../../../arkts-utils/arkts-sendable.md) class after being converted into a **SendableResource** object. After cross-thread transmission, the **Sendable** class converts the **SendableResource** object into a **Resource** object and uses it as an input parameter for the API used to obtain resources.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Global.ResourceManager
+
+## Modules to Import
+
+```TypeScript
+import { sendableResourceManager } from '@ohos.sendableResourceManager';
+```
+
+## Summary
+
+### Functions
+
+| Name | Description |
+| --- | --- |
+| [resourceToSendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) | Converts a **Resource** object to a **SendableResource** object. |
+| [sendableResourceToResource](arkts-localization-sendableresourcetoresource-f.md#sendableresourcetoresource-1) | Converts a **SendableResource** object to a **Resource** object. |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [Resource](arkts-localization-resource-t.md) | Defines a Resource object. |
+| [SendableResource](arkts-localization-sendableresource-t.md) | Defines a SendableResource object. |
+

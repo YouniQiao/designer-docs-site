@@ -1,0 +1,136 @@
+# requestPrintPreview (System API)
+
+## Modules to Import
+
+```TypeScript
+import { print } from '@ohos.print';
+```
+
+## requestPrintPreview
+
+```TypeScript
+function requestPrintPreview(jobInfo: PrintJob, callback: Callback<number>): void
+```
+
+Requests print preview data. This API uses a callback to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_PRINT_JOB
+
+**System capability:** SystemCapability.Print.PrintFramework
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| jobInfo | PrintJob | Yes | Information about the print job. |
+| callback | Callback&lt;number&gt; | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | the application does not have permission to call this function. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+
+**Example**
+
+```TypeScript
+import { print } from '@kit.BasicServicesKit';
+
+let jobInfo : print.PrintJob = {
+    fdList : [44,45],
+    jobId : 'jobId_12',
+    printerId : 'printerId_32',
+    jobState : PRINT_JOB_COMPLETED,
+    jobSubstate : print.PrintJobSubState.PRINT_JOB_COMPLETED_SUCCESS,
+    copyNumber : 1,
+    pageRange : {},
+    isSequential : false,
+    pageSize : {id : '', name : '', width : 10, height : 20},
+    isLandscape : false,
+    colorMode : COLOR_MODE_COLOR,
+    duplexMode : DUPLEX_MODE_NONE,
+    margin : undefined,
+    preview : undefined,
+    options : undefined
+};
+print.requestPrintPreview(jobInfo, (num : number) => {
+    console.info('requestPrintPreview success, num : ' + JSON.stringify(num));
+
+})
+
+```
+
+
+## requestPrintPreview
+
+```TypeScript
+function requestPrintPreview(jobInfo: PrintJob): Promise<number>
+```
+
+Requests print preview data. This API uses a promise to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_PRINT_JOB
+
+**System capability:** SystemCapability.Print.PrintFramework
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| jobInfo | PrintJob | Yes | Information about the print job. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;number&gt; | Promise used to return the preview result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | the application does not have permission to call this function. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+
+**Example**
+
+```TypeScript
+import { print } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let jobInfo : print.PrintJob = {
+    fdList : [44,45],
+    jobId : 'jobId_12',
+    printerId : 'printerId_32',
+    jobState : PRINT_JOB_COMPLETED,
+    jobSubstate : print.PrintJobSubState.PRINT_JOB_COMPLETED_SUCCESS,
+    copyNumber : 1,
+    pageRange : {},
+    isSequential : false,
+    pageSize : {id : '', name : '', width : 10, height : 20},
+    isLandscape : false,
+    colorMode : COLOR_MODE_COLOR,
+    duplexMode : DUPLEX_MODE_NONE,
+    margin : undefined,
+    preview : undefined,
+    options : undefined
+};
+print.requestPrintPreview(jobInfo).then((num: number) => {
+    console.info('requestPrintPreview success, num : ' + JSON.stringify(num));
+}).catch((error: BusinessError) => {
+    console.error('requestPrintPreview failed, because : ' + JSON.stringify(error));
+})
+
+```
+

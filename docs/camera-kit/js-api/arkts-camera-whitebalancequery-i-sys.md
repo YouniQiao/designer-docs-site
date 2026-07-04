@@ -1,0 +1,81 @@
+# WhiteBalanceQuery (System API)
+
+WhiteBalanceQuery provides APIs to check whether a white balance mode is supported and obtain the white balance mode range supported.
+
+**Since:** 20
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { camera } from '@ohos.multimedia.camera';
+```
+
+## getWhiteBalanceRange
+
+```TypeScript
+getWhiteBalanceRange(): Array<number>
+```
+
+Obtains the range of white balance values in manual white balance mode.
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Array&lt;number&gt; | Range of white balance values, for example, [2800, ...,10000], in units of K (Kelvin).The actual value depends on the bottom-layer capability. If the API call fails, undefined is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+
+## isWhiteBalanceModeSupported
+
+```TypeScript
+isWhiteBalanceModeSupported(mode: WhiteBalanceMode): boolean
+```
+
+Checks whether a white balance mode is supported.
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services since API version 20.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| mode | WhiteBalanceMode | Yes | White balance mode. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Check result for the support of the white balance mode. **true** if supported, **false**otherwise. If the API call fails, undefined is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
+| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
+| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+

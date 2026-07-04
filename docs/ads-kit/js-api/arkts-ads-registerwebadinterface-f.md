@@ -1,0 +1,127 @@
+# registerWebAdInterface
+
+## Modules to Import
+
+```TypeScript
+import { advertising } from '@ohos.advertising';
+```
+
+## registerWebAdInterface
+
+```TypeScript
+function registerWebAdInterface(controller: web_webview.WebviewController, context: common.UIAbilityContext): void
+```
+
+Injects an ad JavaScript object to the **Web** component (this API is only open to some pre-installed system applications).
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Advertising.Ads
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| controller | web_webview.WebviewController | Yes | Web component controller. |
+| context | common.UIAbilityContext | Yes | Context of the UIAbility. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid input parameter. Possible causes: 1. Mandatory parameters are leftunspecified. |
+| [21800001](../errorcode-ads.md#21800001-internal-system-error) | System internal error. |
+
+**Example**
+
+```TypeScript
+import { common } from '@kit.AbilityKit';
+import { advertising } from '@kit.AdsKit';
+import { webview } from '@kit.ArkWeb';
+
+@Entry
+@Component
+struct Index {
+  private context: common.UIAbilityContext = this.getUIContext().getHostContext() as common.UIAbilityContext;
+  private webViewController: webview.WebviewController = new webview.WebviewController();
+
+  build() {
+    Column() {
+      Button('registerWebAdInterface')
+        .onClick(() => {
+          advertising.registerWebAdInterface(this.webViewController, this.context);
+        })
+      // ...
+
+      Web({ src: 'https://www.example.com', controller: this.webViewController })
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+
+```
+
+
+## registerWebAdInterface
+
+```TypeScript
+function registerWebAdInterface(controller: web_webview.WebviewController, context: common.UIAbilityContext, 
+    needRefresh: boolean): void
+```
+
+Injects an ad JavaScript object to the **Web** component (this API is only open to some pre-installed system applications).
+
+**Since:** 16
+
+**Atomic service API:** This API can be used in atomic services since API version 16.
+
+**System capability:** SystemCapability.Advertising.Ads
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| controller | web_webview.WebviewController | Yes | Web component controller. |
+| context | common.UIAbilityContext | Yes | Context of the UIAbility. |
+| needRefresh | boolean | Yes | Whether to refresh the page (true: yes; false: no). |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../errorcode-ads.md#401-incorrect-ads-request-parameter) | Invalid input parameter. Possible causes: Mandatory parameters are leftunspecified. |
+| [21800001](../errorcode-ads.md#21800001-internal-system-error) | System internal error. |
+
+**Example**
+
+```TypeScript
+import { common } from '@kit.AbilityKit';
+import { advertising } from '@kit.AdsKit';
+import { webview } from '@kit.ArkWeb';
+
+@Entry
+@Component
+struct Index {
+  private context: common.UIAbilityContext = this.getUIContext().getHostContext() as common.UIAbilityContext;
+  private webViewController: webview.WebviewController = new webview.WebviewController();
+
+  build() {
+    Column() {
+      // ...
+      Button('registerWebAdInterface')
+        .onClick(() => {
+          advertising.registerWebAdInterface(this.webViewController, this.context, true);
+        })
+
+      Web({ src: 'https://www.example.com', controller: this.webViewController })
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+
+```
+

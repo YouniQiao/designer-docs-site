@@ -1,0 +1,26 @@
+# Constants
+
+## VISIBILITY_COMPLETION
+
+```TypeScript
+const VISIBILITY_COMPLETION: 1
+```
+
+([Notification](arkts-basicservices-notification-i.md#notification) visibility type) Displays completion notifications.
+
+**Since:** 21
+
+**System capability:** SystemCapability.Request.FileTransferAgent
+
+## VISIBILITY_PROGRESS
+
+```TypeScript
+const VISIBILITY_PROGRESS: 2
+```
+
+([Notification](arkts-basicservices-notification-i.md#notification) visibility type) Displays progress notifications.
+
+**Since:** 21
+
+**System capability:** SystemCapability.Request.FileTransferAgent
+

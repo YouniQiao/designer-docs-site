@@ -1,0 +1,78 @@
+# isSimActive
+
+## Modules to Import
+
+```TypeScript
+import { sim } from '@ohos.telephony.sim';
+```
+
+## isSimActive
+
+```TypeScript
+function isSimActive(slotId: number, callback: AsyncCallback<boolean>): void
+```
+
+Checks whether the SIM card in a specified slot is activated.
+
+**Since:** 7
+
+**System capability:** SystemCapability.Telephony.CoreService
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| slotId | number | Yes | Indicates the card slot index number,ranging from {@code 0} to the maximum card slot index number supported by the device. |
+| callback | AsyncCallback&lt;boolean&gt; | Yes | Indicates the callback for checkingwhether the SIM card in a specified slot is activated.Returns {@code true} if the SIM card is activated; returns {@code false} otherwise. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { sim } from '@kit.TelephonyKit';
+
+sim.isSimActive(0, (err: BusinessError, data: boolean) => {
+    console.info(`callback: err->${JSON.stringify(err)}, data->${JSON.stringify(data)}`);
+});
+
+```
+
+
+## isSimActive
+
+```TypeScript
+function isSimActive(slotId: number): Promise<boolean>
+```
+
+Checks whether the SIM card in a specified slot is activated.
+
+**Since:** 7
+
+**System capability:** SystemCapability.Telephony.CoreService
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| slotId | number | Yes | Indicates the card slot index number,ranging from {@code 0} to the maximum card slot index number supported by the device. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;boolean&gt; | Returns {@code true} if the SIM card is activated; returns {@code false} otherwise. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { sim } from '@kit.TelephonyKit';
+
+sim.isSimActive(0).then((data: boolean) => {
+    console.info(`isSimActive success, promise: data->${JSON.stringify(data)}`);
+}).catch((err: BusinessError) => {
+    console.error(`isSimActive failed, promise: err->${JSON.stringify(err)}`);
+});
+
+```
+

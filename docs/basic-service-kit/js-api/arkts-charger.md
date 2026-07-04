@@ -1,0 +1,26 @@
+# @ohos.charger
+
+The **charger** module enumerates charging types. > **NOTE** > > The APIs provided by this module are system APIs.
+
+**Since:** 10
+
+**System capability:** SystemCapability.PowerManager.BatteryManager.Core
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { charger } from '@ohos.charger';
+```
+
+## Summary
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ChargeType](arkts-basicservices-chargetype-e-sys.md) | Enumerates charging types. |
+<!--DelEnd-->
+

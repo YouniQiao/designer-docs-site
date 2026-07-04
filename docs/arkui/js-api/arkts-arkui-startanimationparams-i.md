@@ -1,0 +1,28 @@
+# StartAnimationParams
+
+Describes the parameters for the startup animation. The configuration is valid only for transitions between different abilities within the same application. The configuration is valid only full-screen applications.
+
+**Since:** 20
+
+**System capability:** SystemCapability.Window.SessionManager
+
+## Modules to Import
+
+```TypeScript
+import { window } from '@ohos.window';
+```
+
+## type
+
+```TypeScript
+type: AnimationType
+```
+
+The type of window animation
+
+**Type:** AnimationType
+
+**Since:** 20
+
+**System capability:** SystemCapability.Window.SessionManager
+

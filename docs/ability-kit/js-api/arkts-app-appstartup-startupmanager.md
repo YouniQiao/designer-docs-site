@@ -1,0 +1,27 @@
+# @ohos.app.appstartup.startupManager
+
+The module provides the capability to manage startup tasks in [AppStartup](../../../../application-models/app-startup.md). The APIs of this module can be called only on the main thread. > **NOTE** > > This module supports .so file preloading since API version 18.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Ability.AppStartup
+
+## Modules to Import
+
+```TypeScript
+import { startupManager } from '@ohos.app.appstartup.startupManager';
+```
+
+## Summary
+
+### Functions
+
+| Name | Description |
+| --- | --- |
+| [getStartupTaskResult](arkts-ability-getstartuptaskresult-f.md#getstartuptaskresult-1) | Obtains the execution result of a startup task or .so file preloading task. |
+| [isStartupTaskInitialized](arkts-ability-isstartuptaskinitialized-f.md#isstartuptaskinitialized-1) | Checks whether a startup task or .so file preloading task is initialized. |
+| [removeAllStartupTaskResults](arkts-ability-removeallstartuptaskresults-f.md#removeallstartuptaskresults-1) | Removes all startup task results. If there are preloading tasks for .so files, the corresponding .so files is set to the unloaded state. However, .so files that have already been loaded in the cache will not be removed. |
+| [removeStartupTaskResult](arkts-ability-removestartuptaskresult-f.md#removestartuptaskresult-1) | Removes the initialization result of a startup task or .so file preloading task. - If a startup task name is passed, the initialization result of that startup task is removed. - If a .so file is passed, the .so file is set to the unloaded state, but the loaded .so file in the cache is not removed. |
+| [run](arkts-ability-run-f.md#run-1) | Runs startup tasks or loads .so files. &gt; **NOTE** &gt; &gt; This API cannot be used to run startup tasks defined in a feature-type HAP. To run those tasks, use &gt; [startupManager.run](arkts-ability-run-f.md#run-2) &gt; . |
+| [run](arkts-ability-run-f.md#run-2) | Runs startup tasks or loads .so files. You can specify [AbilityStageContext](arkts-ability-abilitystagecontext-c.md#abilitystagecontext) for loading startup tasks. This API uses a promise to return the result. |
+

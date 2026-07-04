@@ -1,0 +1,32 @@
+# cancelSuspendDelay
+
+## cancelSuspendDelay
+
+```TypeScript
+function cancelSuspendDelay(requestId: number): void
+```
+
+Cancels the suspension delay.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** [cancelSuspendDelay](arkts-backgroundtasks-cancelsuspenddelay-f.md#cancelsuspenddelay-1)
+
+**System capability:** SystemCapability.ResourceSchedule.BackgroundTaskManager.TransientTask
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| requestId | number | Yes | ID of the suspension delay request. The value is obtained by calling[requestSuspendDelay](arkts-backgroundtasks-requestsuspenddelay-depr-f.md#requestsuspenddelay-1). |
+
+**Example**
+
+```TypeScript
+let delayInfo = backgroundTaskManager.requestSuspendDelay("test", () => {});
+backgroundTaskManager.cancelSuspendDelay(delayInfo.requestId);
+
+```
+

@@ -1,0 +1,112 @@
+# USBInterface
+
+Represents a USB interface. One [USBConfiguration](arkts-basicservices-usbconfiguration-i.md#usbconfiguration) object can contain multiple * *USBInterface** instances, each providing a specific function.
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+
+## Modules to Import
+
+```TypeScript
+import { usbManager } from '@ohos.usbManager';
+```
+
+## alternateSetting
+
+```TypeScript
+alternateSetting: number
+```
+
+Settings for alternating between descriptors of the same USB interface. The value size indicates the number of optional modes. The value 0 indicates that no optional mode is supported.
+
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+
+## clazz
+
+```TypeScript
+clazz: number
+```
+
+Device type.
+
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+
+## endpoints
+
+```TypeScript
+endpoints: Array<USBEndpoint>
+```
+
+Endpoints that belong to the USB interface.
+
+**Type:** Array<USBEndpoint>
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+
+## id
+
+```TypeScript
+id: number
+```
+
+Unique ID of the USB interface.
+
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+
+## name
+
+```TypeScript
+name: string
+```
+
+Interface name.
+
+**Type:** string
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+
+## protocol
+
+```TypeScript
+protocol: number
+```
+
+Interface protocol.
+
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+
+## subClass
+
+```TypeScript
+subClass: number
+```
+
+Device subclass.
+
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.USB.USBManager
+

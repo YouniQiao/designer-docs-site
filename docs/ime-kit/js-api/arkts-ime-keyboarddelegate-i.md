@@ -1,0 +1,452 @@
+# KeyboardDelegate
+
+In the following API examples, you must first use [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md#getkeyboarddelegate-1) to obtain a **KeyboardDelegate** instance, and then call the APIs using the obtained instance.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+## Modules to Import
+
+```TypeScript
+import { inputMethodEngine } from '@ohos.inputMethodEngine';
+```
+
+## off('keyDown' | 'keyUp')
+
+```TypeScript
+off(type: 'keyDown' | 'keyUp', callback?: (event: KeyEvent) => boolean): void
+```
+
+Disables listening for a physical keyboard event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
+| callback | (event: KeyEvent) =&gt; boolean | No | Callback to unregister. If this parameter is not specified, this API unregistersall callbacks for the specified type. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().off('keyUp', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info('delete keyUp notification.');
+  return true;
+});
+inputMethodEngine.getKeyboardDelegate().off('keyDown', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info('delete keyDown notification.');
+  return true;
+});
+
+```
+
+## off('keyDown' | 'keyUp')
+
+```TypeScript
+off(type: 'keyDown' | 'keyUp', callback?: (event: KeyEvent) => boolean): void
+```
+
+Disables listening for a physical keyboard event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
+| callback | (event: KeyEvent) =&gt; boolean | No | Callback to unregister. If this parameter is not specified, this API unregistersall callbacks for the specified type. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().off('keyUp', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info('delete keyUp notification.');
+  return true;
+});
+inputMethodEngine.getKeyboardDelegate().off('keyDown', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info('delete keyDown notification.');
+  return true;
+});
+
+```
+
+## off('keyEvent')
+
+```TypeScript
+off(type: 'keyEvent', callback?: (event: InputKeyEvent) => boolean): void
+```
+
+Disables listening for a keyboard event. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'keyEvent' | Yes | Event type, which is **'keyEvent'**. |
+| callback | (event: InputKeyEvent) =&gt; boolean | No | Callback to unregister. If this parameter is not specified, this API unregistersall callbacks for the specified type. |
+
+**Example**
+
+```TypeScript
+import type { KeyEvent } from '@kit.InputKit';
+
+inputMethodEngine.getKeyboardDelegate().off('keyEvent', (keyEvent: KeyEvent) => {
+  console.info('This is a callback function which will be deregistered.');
+  return true;
+});
+inputMethodEngine.getKeyboardDelegate().off('keyEvent');
+
+```
+
+## off('cursorContextChange')
+
+```TypeScript
+off(type: 'cursorContextChange', callback?: (x: number, y: number, height: number) => void): void
+```
+
+Disables listening for cursor context changes. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'cursorContextChange' | Yes | Event type, which is **'cursorContextChange'**. |
+| callback | (x: number, y: number, height: number) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregistersall callbacks for the specified type. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().off('cursorContextChange', (x: number, y: number, height: number) => {
+  console.info('delete cursorContextChange notification.');
+});
+
+```
+
+## off('selectionChange')
+
+```TypeScript
+off(
+      type: 'selectionChange',
+      callback?: (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) => void
+    ): void
+```
+
+Disables listening for the text selection change event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'selectionChange' | Yes | Event type, which is **'selectionChange'**. |
+| callback | (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregistersall callbacks for the specified type. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate()
+  .off('selectionChange', (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) => {
+    console.info('delete selectionChange notification.');
+  });
+
+```
+
+## off('textChange')
+
+```TypeScript
+off(type: 'textChange', callback?: (text: string) => void): void
+```
+
+Disables listening for the text change event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'textChange' | Yes | Event type, which is **'textChange'**. |
+| callback | (text: string) =&gt; void | No | Callback to unregister. If this parameter is not specified, this API unregistersall callbacks for the specified type. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().off('textChange', (text: string) => {
+  console.info('delete textChange notification. text:' + text);
+});
+
+```
+
+## off('editorAttributeChanged')
+
+```TypeScript
+off(type: 'editorAttributeChanged', callback?: (attr: EditorAttribute) => void): void
+```
+
+Disables listening for the edit box attribute change event. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'editorAttributeChanged' | Yes | Event type, which is **'editorAttributeChanged'**. |
+| callback | (attr: EditorAttribute) =&gt; void | No | Callback used for unsubscription. If this parameter is not specified, this APIunregisters all callbacks for the specified type by default. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().off('editorAttributeChanged');
+
+```
+
+## on('keyDown' | 'keyUp')
+
+```TypeScript
+on(type: 'keyDown' | 'keyUp', callback: (event: KeyEvent) => boolean): void
+```
+
+Enables listening for a physical keyboard event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
+| callback | (event: KeyEvent) =&gt; boolean | Yes | Callback used to return the key information. If the event is consumed by the eventsubscriber, **true** is returned. Otherwise, **false** is returned. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().on('keyUp', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info(`inputMethodEngine keyCode.(keyUp): ${keyEvent.keyCode}`);
+  console.info(`inputMethodEngine keyAction.(keyUp): ${keyEvent.keyAction}`);
+  return true;
+});
+inputMethodEngine.getKeyboardDelegate().on('keyDown', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info(`inputMethodEngine keyCode.(keyDown): ${keyEvent.keyCode}`);
+  console.info(`inputMethodEngine keyAction.(keyDown): ${keyEvent.keyAction}`);
+  return true;
+});
+
+```
+
+## on('keyDown' | 'keyUp')
+
+```TypeScript
+on(type: 'keyDown' | 'keyUp', callback: (event: KeyEvent) => boolean): void
+```
+
+Enables listening for a physical keyboard event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'keyDown' \| 'keyUp' | Yes | Event type.<br>- The value **'keyDown'** indicates the keydown event.<br>- The value **'keyUp'** indicates the keyup event. |
+| callback | (event: KeyEvent) =&gt; boolean | Yes | Callback used to return the key information. If the event is consumed by the eventsubscriber, **true** is returned. Otherwise, **false** is returned. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().on('keyUp', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info(`inputMethodEngine keyCode.(keyUp): ${keyEvent.keyCode}`);
+  console.info(`inputMethodEngine keyAction.(keyUp): ${keyEvent.keyAction}`);
+  return true;
+});
+inputMethodEngine.getKeyboardDelegate().on('keyDown', (keyEvent: inputMethodEngine.KeyEvent) => {
+  console.info(`inputMethodEngine keyCode.(keyDown): ${keyEvent.keyCode}`);
+  console.info(`inputMethodEngine keyAction.(keyDown): ${keyEvent.keyAction}`);
+  return true;
+});
+
+```
+
+## on('keyEvent')
+
+```TypeScript
+on(type: 'keyEvent', callback: (event: InputKeyEvent) => boolean): void
+```
+
+Enables listening for a keyboard event. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'keyEvent' | Yes | Event type, which is **'keyEvent'**. |
+| callback | (event: InputKeyEvent) =&gt; boolean | Yes | Callback used to return the result. The input parameter is the key eventinformation and the return value is of the Boolean type.<br>- Input parameter: [InputKeyEvent](../../apis-input-kit/arkts-apis/arkts-input-keyevent-i.md#keyevent).<br>- If the event is consumed by the eventsubscriber, **true** is returned. Otherwise, **false** is returned. |
+
+**Example**
+
+```TypeScript
+import type { KeyEvent } from '@kit.InputKit';
+
+inputMethodEngine.getKeyboardDelegate().on('keyEvent', (keyEvent: KeyEvent) => {
+  console.info(`inputMethodEngine keyEvent.action:${ keyEvent.action}`);
+  console.info(`inputMethodEngine keyEvent.key.code: ${keyEvent.key.code}`);
+  console.info(`inputMethodEngine keyEvent.ctrlKey: ${keyEvent.ctrlKey}`);
+  console.info(`inputMethodEngine keyEvent.unicodeChar: ${keyEvent.unicodeChar}`);
+  return true;
+});
+
+```
+
+## on('cursorContextChange')
+
+```TypeScript
+on(type: 'cursorContextChange', callback: (x: number, y: number, height: number) => void): void
+```
+
+Enables listening for the cursor change event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'cursorContextChange' | Yes | Event type, which is **'cursorContextChange'**. |
+| callback | (x: number, y: number, height: number) =&gt; void | Yes | Callback used to return the cursor information.<br>- **x**: x coordinate of the top of the cursor.<br>- **y**: y coordinate of the bottom of the cursor.<br>- **height**: height of the cursor. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().on('cursorContextChange', (x: number, y: number, height: number) => {
+  console.info('inputMethodEngine cursorContextChange x:' + x);
+  console.info('inputMethodEngine cursorContextChange y:' + y);
+  console.info('inputMethodEngine cursorContextChange height:' + height);
+});
+
+```
+
+## on('selectionChange')
+
+```TypeScript
+on(
+      type: 'selectionChange',
+      callback: (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) => void
+    ): void
+```
+
+Enables listening for the text selection change event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'selectionChange' | Yes | Event type, which is **'selectionChange'**. |
+| callback | (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) =&gt; void | Yes | Callback used to return the text selection information.<br>- **oldBegin**: start of the selected text before the change.<br>- **oldEnd**: end of the selected text before the change.<br>- **newBegin**: start of the selected text after the change.<br>- **newEnd**: end of the selected text after the change. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate()
+  .on('selectionChange', (oldBegin: number, oldEnd: number, newBegin: number, newEnd: number) => {
+    console.info('selectionChange oldBegin:' + oldBegin);
+    console.info('selectionChange oldEnd:' + oldEnd);
+    console.info('selectionChange newBegin:' + newBegin);
+    console.info('selectionChange newEnd:' + newEnd);
+  });
+
+```
+
+## on('textChange')
+
+```TypeScript
+on(type: 'textChange', callback: (text: string) => void): void
+```
+
+Enables listening for the text change event. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'textChange' | Yes | Event type, which is **'textChange'**. |
+| callback | (text: string) =&gt; void | Yes | Callback used to return the text content. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate().on('textChange', (text: string) => {
+  console.info('inputMethodEngine textChange. text:' + text);
+});
+
+```
+
+## on('editorAttributeChanged')
+
+```TypeScript
+on(type: 'editorAttributeChanged', callback: (attr: EditorAttribute) => void): void
+```
+
+Enables listening for the edit box attribute change event. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**System capability:** SystemCapability.MiscServices.InputMethodFramework
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'editorAttributeChanged' | Yes | Event type, which is **'editorAttributeChanged'**. |
+| callback | (attr: EditorAttribute) =&gt; void | Yes | Callback used to return the changed edit box attribute. |
+
+**Example**
+
+```TypeScript
+inputMethodEngine.getKeyboardDelegate()
+  .on('editorAttributeChanged', (attr: inputMethodEngine.EditorAttribute) => {
+    console.info(`Succeeded in receiving attribute of editor, inputPattern = ${attr.inputPattern}, enterKeyType = ${attr.enterKeyType}`);
+  });
+
+```
+

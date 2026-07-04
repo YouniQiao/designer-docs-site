@@ -1,0 +1,34 @@
+# ArkTS API<!--arkts-localizationkit-->
+
+- [@ohos.fontManager](arkts-fontmanager.md)<!--Del-->
+  - [dataMigration(系统接口)](arkts-localization-datamigration-f-sys.md)<!--DelEnd--><!--Del-->
+  - [installFont(系统接口)](arkts-localization-installfont-f-sys.md)<!--DelEnd--><!--Del-->
+  - [uninstallFont(系统接口)](arkts-localization-uninstallfont-f-sys.md)<!--DelEnd--><!--Del-->
+  - [DataMigrationCallback(系统接口)](arkts-localization-datamigrationcallback-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DataMigrationProgress(系统接口)](arkts-localization-datamigrationprogress-i-sys.md)<!--DelEnd-->
+- [@ohos.resourceManager](arkts-resourcemanager.md)
+  - [getResourceManager](arkts-localization-getresourcemanager-f.md)
+  - [getSysResourceManager](arkts-localization-getsysresourcemanager-f.md)
+  - [getSystemResourceManager](arkts-localization-getsystemresourcemanager-f.md)
+  - [Configuration](arkts-localization-configuration-c.md)
+  - [DeviceCapability](arkts-localization-devicecapability-c.md)
+  - [AsyncCallback](arkts-localization-asynccallback-i.md)
+  - [ResourceManager](arkts-localization-resourcemanager-i.md)
+  - [RawFileDescriptor](arkts-localization-rawfiledescriptor-t.md)
+  - [Resource](arkts-localization-resource-t.md)
+  - [ColorMode](arkts-localization-colormode-e.md)
+  - [DeviceType](arkts-localization-devicetype-e.md)
+  - [Direction](arkts-localization-direction-e.md)
+  - [ScreenDensity](arkts-localization-screendensity-e.md)
+- [@ohos.sendableResourceManager](arkts-sendableresourcemanager.md)
+  - [resourceToSendableResource](arkts-localization-resourcetosendableresource-f.md)
+  - [sendableResourceToResource](arkts-localization-sendableresourcetoresource-f.md)
+  - [Resource](arkts-localization-resource-t.md)
+  - [SendableResource](arkts-localization-sendableresource-t.md)
+- global<!--arkts-localizationkit-global-->
+  - [rawFileDescriptor](arkts-rawfiledescriptor.md)
+    - [RawFileDescriptor](arkts-localization-rawfiledescriptor-i.md)
+  - [resource](arkts-resource.md)
+    - [Resource](arkts-localization-resource-i.md)
+  - [sendableResource](arkts-sendableresource.md)
+    - [SendableResource](arkts-localization-sendableresource-i.md)

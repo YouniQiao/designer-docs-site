@@ -1,0 +1,34 @@
+# Video
+
+Represents video data. It is a child class of [File](arkts-arkdata-file-c.md#file) and is used to describe a video file.
+
+**Inheritance/Implementation:** Video extends [File](arkts-arkdata-file-c.md#file)
+
+**Since:** 10
+
+**System capability:** SystemCapability.DistributedDataManager.UDMF.Core
+
+## Modules to Import
+
+```TypeScript
+import { unifiedDataChannel } from '@ohos.data.unifiedDataChannel';
+```
+
+## videoUri
+
+```TypeScript
+set videoUri(value: string)
+```
+
+Indicates the uri of video
+
+**Type:** string
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.DistributedDataManager.UDMF.Core
+

@@ -1,0 +1,200 @@
+# EventTarget
+
+Specific event features.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** WorkerEventTarget
+
+**System capability:** SystemCapability.Utils.Lang
+
+## Modules to Import
+
+```TypeScript
+import { MessageEvents, PostMessageOptions, MessageEvent, Priority, WorkerEventTarget, ThreadWorkerPriority, ThreadWorkerGlobalScope, DedicatedWorkerGlobalScope, ErrorEvent, Event, EventListener, WorkerOptions, EventTarget, WorkerEventListener } from '@ohos.worker';
+```
+
+## addEventListener
+
+```TypeScript
+addEventListener(type: string, listener: EventListener): void
+```
+
+Adds an event listener to the worker.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** addEventListener
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | string | Yes | Type of the event to listen for. |
+| listener | EventListener | Yes | listener Callback to invoke when an event of the specified type occurs. |
+
+**Example**
+
+```TypeScript
+// worker.ets
+import { DedicatedWorkerGlobalScope, ErrorEvent, MessageEvents, worker } from '@kit.ArkTS';
+
+const workerPort: DedicatedWorkerGlobalScope = worker.parentPort;
+
+workerPort.addEventListener("alert", () => {
+  console.info("alert listener callback");
+})
+
+```
+
+## dispatchEvent
+
+```TypeScript
+dispatchEvent(event: Event): boolean
+```
+
+Dispatches the event defined for the worker.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** dispatchEvent
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| event | Event | Yes | Event to dispatch. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | @syscap SystemCapability.Utils.Lang |
+
+**Example**
+
+```TypeScript
+// worker.ets
+import { DedicatedWorkerGlobalScope, ErrorEvent, MessageEvents, worker } from '@kit.ArkTS';
+
+const workerPort: DedicatedWorkerGlobalScope = worker.parentPort;
+
+workerPort.addEventListener("alert_add", ()=>{
+  console.info("alert listener callback");
+})
+
+workerPort.dispatchEvent({type: 'alert_add', timeStamp: 0}); // timeStamp is not supported yet.
+
+```
+
+The dispatchEvent API can be used together with the addEventListener API. The sample code is as follows:
+
+```TypeScript
+// Index.ets
+import { worker } from '@kit.ArkTS';
+
+const workerInstance = new worker.Worker("entry/ets/workers/worker.ets");
+workerInstance.postMessage("hello world");
+workerInstance.onmessage = (): void => {
+    console.info("receive data from worker.ets");
+}
+
+```
+
+```TypeScript
+// worker.ets
+import { DedicatedWorkerGlobalScope, ErrorEvent, MessageEvents, worker } from '@kit.ArkTS';
+
+const workerPort: DedicatedWorkerGlobalScope = worker.parentPort;
+
+workerPort.addEventListener("alert", ()=>{
+  console.info("alert listener callback");
+})
+
+workerPort.onmessage = (event: MessageEvents) => {
+  workerPort.dispatchEvent({type:"alert", timeStamp:0}); // timeStamp is not supported yet.
+}
+
+```
+
+## removeAllListener
+
+```TypeScript
+removeAllListener(): void
+```
+
+Removes all event listeners for the worker.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** removeAllListener
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Example**
+
+```TypeScript
+// worker.ets
+import { DedicatedWorkerGlobalScope, ErrorEvent, MessageEvents, worker } from '@kit.ArkTS';
+
+const workerPort: DedicatedWorkerGlobalScope = worker.parentPort;
+
+workerPort.addEventListener("alert_add", ()=>{
+  console.info("alert listener callback");
+})
+
+workerPort.removeAllListener();
+
+```
+
+## removeEventListener
+
+```TypeScript
+removeEventListener(type: string, callback?: EventListener): void
+```
+
+Removes an event defined for the worker.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** removeEventListener
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | string | Yes | Type of the event for which the event listener is removed. |
+| callback | EventListener | No | Callback of the event listener to remove. |
+
+**Example**
+
+```TypeScript
+// worker.ets
+import { DedicatedWorkerGlobalScope, ErrorEvent, MessageEvents, worker } from '@kit.ArkTS';
+
+const workerPort: DedicatedWorkerGlobalScope = worker.parentPort;
+
+workerPort.addEventListener("alert", () => {
+  console.info("alert listener callback");
+})
+
+workerPort.removeEventListener('alert');
+
+```
+

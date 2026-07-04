@@ -1,0 +1,54 @@
+# toSendableAsset
+
+## Modules to Import
+
+```TypeScript
+import { sendableRelationalStore } from '@ohos.data.sendableRelationalStore';
+```
+
+## toSendableAsset
+
+```TypeScript
+function toSendableAsset(asset: NonSendableAsset): Asset
+```
+
+Converts the asset data that cannot be passed across threads into the data that can be passed across threads.
+
+**Since:** 12
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| asset | NonSendableAsset | Yes | Asset data that cannot be passed across threads. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Asset | Asset data that can be passed across threads. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
+
+**Example**
+
+```TypeScript
+const asset1: sendableRelationalStore.NonSendableAsset = {
+  name: 'hangman',
+  uri: '//path/example',
+  path: '//path/example',
+  createTime: 'createTime1',
+  modifyTime: 'modifyTime1',
+  size: 'size1'
+};
+const sendableAsset = sendableRelationalStore.toSendableAsset(asset1);
+
+```
+

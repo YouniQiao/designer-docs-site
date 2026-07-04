@@ -1,0 +1,35 @@
+# ArkTS API<!--arkts-performanceanalysiskit-->
+
+- [@ohos.hiSysEvent](arkts-hisysevent.md)<!--Del-->
+  - [addWatcher(系统接口)](arkts-performanceanalysis-addwatcher-f-sys.md)<!--DelEnd--><!--Del-->
+  - [exportSysEvents(系统接口)](arkts-performanceanalysis-exportsysevents-f-sys.md)<!--DelEnd--><!--Del-->
+  - [query(系统接口)](arkts-performanceanalysis-query-f-sys.md)<!--DelEnd--><!--Del-->
+  - [removeWatcher(系统接口)](arkts-performanceanalysis-removewatcher-f-sys.md)<!--DelEnd--><!--Del-->
+  - [subscribe(系统接口)](arkts-performanceanalysis-subscribe-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unsubscribe(系统接口)](arkts-performanceanalysis-unsubscribe-f-sys.md)<!--DelEnd--><!--Del-->
+  - [write(系统接口)](arkts-performanceanalysis-write-f-sys.md)<!--DelEnd--><!--Del-->
+  - [Querier(系统接口)](arkts-performanceanalysis-querier-i-sys.md)<!--DelEnd--><!--Del-->
+  - [QueryArg(系统接口)](arkts-performanceanalysis-queryarg-i-sys.md)<!--DelEnd--><!--Del-->
+  - [QueryRule(系统接口)](arkts-performanceanalysis-queryrule-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SysEventInfo(系统接口)](arkts-performanceanalysis-syseventinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Watcher(系统接口)](arkts-performanceanalysis-watcher-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WatchRule(系统接口)](arkts-performanceanalysis-watchrule-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EventType(系统接口)](arkts-performanceanalysis-eventtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RuleType(系统接口)](arkts-performanceanalysis-ruletype-e-sys.md)<!--DelEnd-->
+- [@ohos.hilog](arkts-hilog.md)
+  - [debug](arkts-performanceanalysis-debug-f.md)
+  - [error](arkts-performanceanalysis-error-f.md)
+  - [fatal](arkts-performanceanalysis-fatal-f.md)
+  - [info](arkts-performanceanalysis-info-f.md)
+  - [isLoggable](arkts-performanceanalysis-isloggable-f.md)
+  - [setLogLevel](arkts-performanceanalysis-setloglevel-f.md)
+  - [setMinLogLevel](arkts-performanceanalysis-setminloglevel-f.md)
+  - [warn](arkts-performanceanalysis-warn-f.md)
+  - [LogLevel](arkts-performanceanalysis-loglevel-e.md)
+  - [PreferStrategy](arkts-performanceanalysis-preferstrategy-e.md)
+- [@ohos.logLibrary](arkts-loglibrary.md)<!--Del-->
+  - [copy(系统接口)](arkts-performanceanalysis-copy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [list(系统接口)](arkts-performanceanalysis-list-f-sys.md)<!--DelEnd--><!--Del-->
+  - [move(系统接口)](arkts-performanceanalysis-move-f-sys.md)<!--DelEnd--><!--Del-->
+  - [remove(系统接口)](arkts-performanceanalysis-remove-f-sys.md)<!--DelEnd--><!--Del-->
+  - [LogEntry(系统接口)](arkts-performanceanalysis-logentry-i-sys.md)<!--DelEnd-->

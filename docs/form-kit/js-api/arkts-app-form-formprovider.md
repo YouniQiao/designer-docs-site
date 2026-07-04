@@ -1,0 +1,58 @@
+# @ohos.app.form.formProvider
+
+The **formProvider** module provides APIs to obtain widget information, update widgets, and set the update time.
+
+**Since:** 9
+
+**System capability:** SystemCapability.Ability.Form
+
+## Modules to Import
+
+```TypeScript
+import { formProvider } from '@ohos.app.form.formProvider';
+```
+
+## Summary
+
+### Functions
+
+| Name | Description |
+| --- | --- |
+| [cancelOverflow](arkts-form-canceloverflow-f.md#canceloverflow-1) | Cancels an animation. This API takes effect only for [scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. |
+| [closeFormEditAbility](arkts-form-closeformeditability-f.md#closeformeditability-1) | Closes the widget editing page. |
+| [getFormRect](arkts-form-getformrect-f.md#getformrect-1) | Obtains the position and dimension of a widget. This API uses a promise to return the result. |
+| [getFormsInfo](arkts-form-getformsinfo-f.md#getformsinfo-1) | Obtains the application's widget information that meets a filter criterion on the device. This API uses an asynchronous callback to return the result. |
+| [getFormsInfo](arkts-form-getformsinfo-f.md#getformsinfo-2) | Obtains the application's widget information on the device. This API uses an asynchronous callback to return the result. |
+| [getFormsInfo](arkts-form-getformsinfo-f.md#getformsinfo-3) | Obtains information about widgets that meet the criteria of the current application. This API uses a promise to return the result. |
+| [getPublishedFormInfoById](arkts-form-getpublishedforminfobyid-f.md#getpublishedforminfobyid-1) | Obtains the information of the widget that has been added to the home screen on the device. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; This field is supported since API version 18 and deprecated since API version 20. You are advised to use &gt; [getPublishedRunningFormInfoById](arkts-form-getpublishedrunningforminfobyid-f.md#getpublishedrunningforminfobyid-1) instead. |
+| [getPublishedFormInfos](arkts-form-getpublishedforminfos-f.md#getpublishedforminfos-1) | Obtains the information of all widgets that have been added to the home screen on the device. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; This field is supported since API version 18 and deprecated since API version 20. You are advised to use &gt; [getPublishedRunningFormInfos](arkts-form-getpublishedrunningforminfos-f.md#getpublishedrunningforminfos-1) instead. |
+| [getPublishedRunningFormInfoById](arkts-form-getpublishedrunningforminfobyid-f.md#getpublishedrunningforminfobyid-1) | Obtains the information of a specified widget that has been added to the home screen. This API uses a promise to return the result. |
+| [getPublishedRunningFormInfos](arkts-form-getpublishedrunningforminfos-f.md#getpublishedrunningforminfos-1) | Obtains information about all widgets that have been added to the home screen. This API uses a promise to return the result. |
+| [openFormEditAbility](arkts-form-openformeditability-f.md#openformeditability-1) | Opens the widget editing page. |
+| [openFormManager](arkts-form-openformmanager-f.md#openformmanager-1) | Opens the Widget Manager page of the current application. |
+| [reloadAllForms](arkts-form-reloadallforms-f.md#reloadallforms-1) | Reloads all widgets. Invoked in the main process of the application, this API notifies the FormExtension process to perform batch updates of all widgets added to the current application. It can only be called within a [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) and uses a promise to return the result. |
+| [reloadForms](arkts-form-reloadforms-f.md#reloadforms-1) | Reloads widgets. For widgets with the same **moduleName**, **abilityName**, and **formName** of the current application, each widget has a different widget ID after being added to the home screen for multiple times. Widget providers can use this API to batch update widgets that have different IDs but share the same **moduleName**, **abilityName**, and **formName**. Invoked in the main process of the application, this API notifies the FormExtension process to perform batch updates. It can only be called within a [UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md) and uses a promise to return the result. |
+| [requestOverflow](arkts-form-requestoverflow-f.md#requestoverflow-1) | Requests an animation. This API takes effect only for [scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. &gt; **NOTE** &gt; |
+| [setFormNextRefreshTime](arkts-form-setformnextrefreshtime-f.md#setformnextrefreshtime-1) | Sets the next refresh time for a widget. This API uses an asynchronous callback to return the result. |
+| [setFormNextRefreshTime](arkts-form-setformnextrefreshtime-f.md#setformnextrefreshtime-2) | Sets the next refresh time for a widget. This API uses a promise to return the result. |
+| [updateForm](arkts-form-updateform-f.md#updateform-1) | Updates a widget. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; Starting from API version 20, when widget refresh data is updated via shared memory, the total size of the &gt; refreshed data must not exceed 10 MB, and the number of refreshed images must not exceed 20. For API version 19 &gt; and earlier versions, the upper limit for image files is 5, with a per-image memory limit of 2 MB. Any images &gt; that exceed these limits will display abnormally. |
+| [updateForm](arkts-form-updateform-f.md#updateform-2) | Updates a widget. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; Starting from API version 20, when widget refresh data is updated via shared memory, the total size of the &gt; refreshed data must not exceed 10 MB, and the number of refreshed images must not exceed 20. For API version 19 &gt; and earlier versions, the upper limit for image files is 5, with a per-image memory limit of 2 MB. Any images &gt; that exceed these limits will display abnormally. |
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [activateSceneAnimation](arkts-form-activatesceneanimation-f-sys.md#activatesceneanimation-1) | Requests to activate a widget. This API takes effect only for [scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. An interactive widget can be in the active or inactive state. In the inactive state, the widget is the same as a common widget. In the active state, the widget can start the **LiveFormExtensionAbility** process developed by the widget host to implement animations. |
+| [deactivateSceneAnimation](arkts-form-deactivatesceneanimation-f-sys.md#deactivatesceneanimation-1) | Requests to deactivate a widget. This API takes effect only for [scene-based widgets](../../../../form/arkts-ui-widget-configuration.md#sceneanimationparams-field). This API uses a promise to return the result. An interactive widget can be in the active or inactive state. In the inactive state, the widget is the same as a common widget. In the active state, the widget can start the **LiveFormExtensionAbility** process developed by the widget host to implement animations. |
+| [isRequestPublishFormSupported](arkts-form-isrequestpublishformsupported-f-sys.md#isrequestpublishformsupported-1) | Checks whether a widget can be added to the widget host. This API uses an asynchronous callback to return the result. |
+| [isRequestPublishFormSupported](arkts-form-isrequestpublishformsupported-f-sys.md#isrequestpublishformsupported-2) | Checks whether a widget can be added to the widget host. This API uses a promise to return the result. |
+| [offPublishFormCrossBundleControl](arkts-form-offpublishformcrossbundlecontrol-f-sys.md#offpublishformcrossbundlecontrol-1) | Unsubscribes from controls on cross-bundle widget addition to the home screen. This API uses an asynchronous callback to return the result. |
+| [onPublishFormCrossBundleControl](arkts-form-onpublishformcrossbundlecontrol-f-sys.md#onpublishformcrossbundlecontrol-1) | Subscribes to controls on cross-bundle widget addition to the home screen. This API uses an asynchronous callback to return the result. |
+| [openFormManagerCrossBundle](arkts-form-openformmanagercrossbundle-f-sys.md#openformmanagercrossbundle-1) | Open the view of forms belonging to the specified bundle. Client to communication with FormManagerService. |
+| [requestPublishForm](arkts-form-requestpublishform-f-sys.md#requestpublishform-1) | Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback to return the result. |
+| [requestPublishForm](arkts-form-requestpublishform-f-sys.md#requestpublishform-2) | Requests to publish a widget to the widget host (usually the home screen). This API uses an asynchronous callback to return the result. |
+| [requestPublishForm](arkts-form-requestpublishform-f-sys.md#requestpublishform-3) | Requests to publish a widget to the widget host (usually the home screen). This API uses a promise to return the result. |
+| [updateTemplateFormDetailInfo](arkts-form-updatetemplateformdetailinfo-f-sys.md#updatetemplateformdetailinfo-1) | Updates the static configuration information of a specified template widget on the current device. This API uses a promise to return the result. |
+<!--DelEnd-->
+

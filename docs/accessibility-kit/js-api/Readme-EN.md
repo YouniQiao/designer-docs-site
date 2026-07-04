@@ -1,0 +1,128 @@
+# ArkTS API<!--arkts-accessibilitykit-->
+
+- [@ohos.accessibility](arkts-accessibility.md)
+  - [accessibility](arkts-accessibility-accessibility-n.md)
+    - [getAbilityLists](arkts-accessibility-getabilitylists-f.md)
+    - [getAccessibilityExtensionList](arkts-accessibility-getaccessibilityextensionlist-f.md)
+    - [getAccessibilityExtensionListSync](arkts-accessibility-getaccessibilityextensionlistsync-f.md)
+    - [getCaptionsManager](arkts-accessibility-getcaptionsmanager-f.md)
+    - [getSeniorModeStateForSelf](arkts-accessibility-getseniormodestateforself-f.md)
+    - [getTouchModeSync](arkts-accessibility-gettouchmodesync-f.md)
+    - [isAnimationReduceEnabled](arkts-accessibility-isanimationreduceenabled-f.md)
+    - [isAnimationReduceEnabledSync](arkts-accessibility-isanimationreduceenabledsync-f.md)
+    - [isAudioMonoEnabled](arkts-accessibility-isaudiomonoenabled-f.md)
+    - [isAudioMonoEnabledSync](arkts-accessibility-isaudiomonoenabledsync-f.md)
+    - [isFlashReminderEnabled](arkts-accessibility-isflashreminderenabled-f.md)
+    - [isFlashReminderEnabledSync](arkts-accessibility-isflashreminderenabledsync-f.md)
+    - [isOpenAccessibility](arkts-accessibility-isopenaccessibility-f.md)
+    - [isOpenAccessibilitySync](arkts-accessibility-isopenaccessibilitysync-f.md)
+    - [isOpenTouchGuide](arkts-accessibility-isopentouchguide-f.md)
+    - [isOpenTouchGuideSync](arkts-accessibility-isopentouchguidesync-f.md)
+    - [isScreenReaderOpenSync](arkts-accessibility-isscreenreaderopensync-f.md)
+    - [isSeniorModeEnabled](arkts-accessibility-isseniormodeenabled-f.md)
+    - [off](arkts-accessibility-off-f.md)
+    - [offAnimationReduceStateChange](arkts-accessibility-offanimationreducestatechange-f.md)
+    - [offAudioMonoStateChange](arkts-accessibility-offaudiomonostatechange-f.md)
+    - [offFlashReminderStateChange](arkts-accessibility-offflashreminderstatechange-f.md)
+    - [offSeniorModeStateChange](arkts-accessibility-offseniormodestatechange-f.md)
+    - [offSeniorModeStateChangeForSelf](arkts-accessibility-offseniormodestatechangeforself-f.md)
+    - [on](arkts-accessibility-on-f.md)
+    - [onAnimationReduceStateChange](arkts-accessibility-onanimationreducestatechange-f.md)
+    - [onAudioMonoStateChange](arkts-accessibility-onaudiomonostatechange-f.md)
+    - [onFlashReminderStateChange](arkts-accessibility-onflashreminderstatechange-f.md)
+    - [onSeniorModeStateChange](arkts-accessibility-onseniormodestatechange-f.md)
+    - [onSeniorModeStateChangeForSelf](arkts-accessibility-onseniormodestatechangeforself-f.md)
+    - [sendAccessibilityEvent](arkts-accessibility-sendaccessibilityevent-f.md)
+    - [sendEvent](arkts-accessibility-sendevent-f.md)
+    - [setSeniorModeStateForSelf](arkts-accessibility-setseniormodestateforself-f.md)
+    - [EventInfo](arkts-accessibility-eventinfo-c.md)
+    - [AccessibilityAbilityInfo](arkts-accessibility-accessibilityabilityinfo-i.md)
+    - [CaptionsManager](arkts-accessibility-captionsmanager-i.md)
+    - [CaptionsStyle](arkts-accessibility-captionsstyle-i.md)
+    - [AbilityState](arkts-accessibility-abilitystate-t.md)
+    - [AbilityType](arkts-accessibility-abilitytype-t.md)
+    - [Action](arkts-accessibility-action-t.md)
+    - [Capability](arkts-accessibility-capability-t.md)
+    - [CaptionsFontEdgeType](arkts-accessibility-captionsfontedgetype-t.md)
+    - [CaptionsFontFamily](arkts-accessibility-captionsfontfamily-t.md)
+    - [EventType](arkts-accessibility-eventtype-t.md)
+    - [TextMoveUnit](arkts-accessibility-textmoveunit-t.md)
+    - [WindowUpdateType](arkts-accessibility-windowupdatetype-t.md)<!--Del-->
+  - [AccessibilityAction(system api)](arkts-accessibility-accessibilityaction-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AccessibilityEventType(system api)](arkts-accessibility-accessibilityeventtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AccessibilityFocusScene(system api)](arkts-accessibility-accessibilityfocusscene-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AccessibilitySourceType(system api)](arkts-accessibility-accessibilitysourcetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FocusMoveResultCode(system api)](arkts-accessibility-focusmoveresultcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FocusRuleType(system api)](arkts-accessibility-focusruletype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [InjectActionType(system api)](arkts-accessibility-injectactiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [OperateVirtualNodeResult(system api)](arkts-accessibility-operatevirtualnoderesult-e-sys.md)<!--DelEnd-->
+- [@ohos.accessibility.GesturePath](arkts-accessibility-gesturepath.md)
+  - [GesturePath](arkts-accessibility-gesturepath-c.md)
+- [@ohos.accessibility.GesturePoint](arkts-accessibility-gesturepoint.md)
+  - [GesturePoint](arkts-accessibility-gesturepoint-c.md)
+- [@ohos.accessibility.config](arkts-accessibility-config.md)<!--Del-->
+  - [disableAbility(system api)](arkts-accessibility-disableability-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableAbility(system api)](arkts-accessibility-enableability-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableAbilityWithCallback(system api)](arkts-accessibility-enableabilitywithcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSeniorModeStateForApp(system api)](arkts-accessibility-getseniormodestateforapp-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-accessibility-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSeniorModeStateChangeForApp(system api)](arkts-accessibility-offseniormodestatechangeforapp-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-accessibility-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSeniorModeStateChangeForApp(system api)](arkts-accessibility-onseniormodestatechangeforapp-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setMagnificationState(system api)](arkts-accessibility-setmagnificationstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setSeniorModeStateForApp(system api)](arkts-accessibility-setseniormodestateforapp-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startBlinking(system api)](arkts-accessibility-startblinking-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopBlinking(system api)](arkts-accessibility-stopblinking-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AppSeniorModeInfo(system api)](arkts-accessibility-appseniormodeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Config(system api)](arkts-accessibility-config-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ConnectCallback(system api)](arkts-accessibility-connectcallback-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ClickResponseTime(system api)](arkts-accessibility-clickresponsetime-t-sys.md)<!--DelEnd--><!--Del-->
+  - [DaltonizationColorFilter(system api)](arkts-accessibility-daltonizationcolorfilter-t-sys.md)<!--DelEnd--><!--Del-->
+  - [OnDisconnectCallback(system api)](arkts-accessibility-ondisconnectcallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [RepeatClickInterval(system api)](arkts-accessibility-repeatclickinterval-t-sys.md)<!--DelEnd--><!--Del-->
+  - [BlinkingMode(system api)](arkts-accessibility-blinkingmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [BlinkingScenario(system api)](arkts-accessibility-blinkingscenario-e-sys.md)<!--DelEnd--><!--Del-->
+  - [BlinkResultCode(system api)](arkts-accessibility-blinkresultcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Constants(system api)](arkts-accessibility-config-con-sys.md)<!--DelEnd-->
+- [@ohos.application.AccessibilityExtensionAbility](arkts-application-accessibilityextensionability.md)
+  - [AccessibilityExtensionAbility](arkts-accessibility-accessibilityextensionability-c.md)<!--Del-->
+  - [AccessibilityExtensionAbility(system api)](arkts-accessibility-accessibilityextensionability-c-sys.md)<!--DelEnd-->
+  - [AccessibilityEvent](arkts-accessibility-accessibilityevent-i.md)<!--Del-->
+  - [AccessibilityEventInfo(system api)](arkts-accessibility-accessibilityeventinfo-i-sys.md)<!--DelEnd-->
+  - [AccessibilityElement](arkts-accessibility-accessibilityelement-t.md)
+  - [AccessibilityExtensionContext](arkts-accessibility-accessibilityextensioncontext-t.md)<!--Del-->
+  - [AccessibilityVirtualNode(system api)](arkts-accessibility-accessibilityvirtualnode-t-sys.md)<!--DelEnd-->
+  - [ElementAttributeKeys](arkts-accessibility-elementattributekeys-t.md)
+  - [ElementAttributeValues](arkts-accessibility-elementattributevalues-t.md)<!--Del-->
+  - [FocusCondition(system api)](arkts-accessibility-focuscondition-t-sys.md)<!--DelEnd-->
+  - [FocusDirection](arkts-accessibility-focusdirection-t.md)<!--Del-->
+  - [FocusMoveResult(system api)](arkts-accessibility-focusmoveresult-t-sys.md)<!--DelEnd--><!--Del-->
+  - [FocusRule(system api)](arkts-accessibility-focusrule-t-sys.md)<!--DelEnd-->
+  - [FocusType](arkts-accessibility-focustype-t.md)
+  - [GestureType](arkts-accessibility-gesturetype-t.md)
+  - [PageUpdateType](arkts-accessibility-pageupdatetype-t.md)<!--Del-->
+  - [Parameter(system api)](arkts-accessibility-parameter-t-sys.md)<!--DelEnd-->
+  - [Rect](arkts-accessibility-rect-t.md)
+  - [TouchGuideType](arkts-accessibility-touchguidetype-t.md)<!--Del-->
+  - [TouchPosition(system api)](arkts-accessibility-touchposition-t-sys.md)<!--DelEnd-->
+  - [WindowType](arkts-accessibility-windowtype-t.md)
+- application<!--arkts-accessibilitykit-application-->
+  - [AccessibilityExtensionContext](arkts-accessibilityextensioncontext.md)
+    - [AccessibilityExtensionContext](arkts-accessibility-accessibilityextensioncontext-c.md)<!--Del-->
+    - [AccessibilityExtensionContext(system api)](arkts-accessibility-accessibilityextensioncontext-c-sys.md)<!--DelEnd--><!--Del-->
+    - [Parameter(system api)](arkts-accessibility-parameter-c-sys.md)<!--DelEnd-->
+    - [AccessibilityElement](arkts-accessibility-accessibilityelement-i.md)<!--Del-->
+    - [AccessibilityElement(system api)](arkts-accessibility-accessibilityelement-i-sys.md)<!--DelEnd--><!--Del-->
+    - [AccessibilityGrid(system api)](arkts-accessibility-accessibilitygrid-i-sys.md)<!--DelEnd--><!--Del-->
+    - [AccessibilitySpan(system api)](arkts-accessibility-accessibilityspan-i-sys.md)<!--DelEnd--><!--Del-->
+    - [AccessibilityVirtualNode(system api)](arkts-accessibility-accessibilityvirtualnode-i-sys.md)<!--DelEnd-->
+    - [ElementAttributeValues](arkts-accessibility-elementattributevalues-i.md)<!--Del-->
+    - [ElementAttributeValues(system api)](arkts-accessibility-elementattributevalues-i-sys.md)<!--DelEnd--><!--Del-->
+    - [FocusMoveResult(system api)](arkts-accessibility-focusmoveresult-i-sys.md)<!--DelEnd-->
+    - [Rect](arkts-accessibility-rect-i.md)<!--Del-->
+    - [TouchPosition(system api)](arkts-accessibility-touchposition-i-sys.md)<!--DelEnd--><!--Del-->
+    - [FocusCondition(system api)](arkts-accessibility-focuscondition-t-sys.md)<!--DelEnd-->
+    - [FocusDirection](arkts-accessibility-focusdirection-t.md)<!--Del-->
+    - [FocusRule(system api)](arkts-accessibility-focusrule-t-sys.md)<!--DelEnd-->
+    - [FocusType](arkts-accessibility-focustype-t.md)
+    - [WindowType](arkts-accessibility-windowtype-t.md)

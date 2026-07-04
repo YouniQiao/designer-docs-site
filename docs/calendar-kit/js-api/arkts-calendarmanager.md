@@ -1,0 +1,54 @@
+# @ohos.calendarManager
+
+The calendarManager module provides APIs for calendar and event management, including those for creating, deleting, modifying, and querying calendars and events.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Applications.CalendarData
+
+## Modules to Import
+
+```TypeScript
+import { calendarManager } from '@ohos.calendarManager';
+```
+
+## Summary
+
+### Functions
+
+| Name | Description |
+| --- | --- |
+| [getCalendarManager](arkts-calendar-getcalendarmanager-f.md#getcalendarmanager-1) | Obtains a CalendarManager object based on the context. |
+
+### Classes
+
+| Name | Description |
+| --- | --- |
+| [EventFilter](arkts-calendar-eventfilter-c.md) | Implements an event filter. You can use [filterById()](arkts-calendar-eventfilter-c.md#filterbyid-1), [filterByTime()](arkts-calendar-eventfilter-c.md#filterbytime-1), [filterByTitle()](arkts-calendar-eventfilter-c.md#filterbytitle-1) to obtain an event filter, and then pass the filter in getEvents() for filtering. |
+
+### Interfaces
+
+| Name | Description |
+| --- | --- |
+| [Attendee](arkts-calendar-attendee-i.md) | Describes the attendees in a meeting. |
+| [Calendar](arkts-calendar-calendar-i.md) | In the following API examples, you need to use [createCalendar()](arkts-calendar-calendarmanager-i.md#createcalendar-2) or [getCalendar()](calendarManager.CalendarManager.getCalendar (callback: AsyncCallback&lt;Calendar&gt;)) to obtain a **Calendar** object before calling related APIs. |
+| [CalendarAccount](arkts-calendar-calendaraccount-i.md) | Describes the calendar account information. |
+| [CalendarConfig](arkts-calendar-calendarconfig-i.md) | Describes the calendar configuration information. |
+| [CalendarManager](arkts-calendar-calendarmanager-i.md) | Before calling any of the following APIs to manage the calendar, you must use [getCalendarManager()](arkts-calendar-getcalendarmanager-f.md#getcalendarmanager-1) to obtain a **CalendarManager** object first. |
+| [Event](arkts-calendar-event-i.md) | Describes an **Event** object, including the event title, start time, and end time. |
+| [EventService](arkts-calendar-eventservice-i.md) | Describes the event service. |
+| [Location](arkts-calendar-location-i.md) | Describes the event location. |
+| [RecurrenceRule](arkts-calendar-recurrencerule-i.md) | Describes the recurrence rule of a recurring event. |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [AttendeeRole](arkts-calendar-attendeerole-e.md) | Enumerates the attendee role types in a conference event. |
+| [AttendeeStatus](arkts-calendar-attendeestatus-e.md) | Enumerates the status types of an attendee. |
+| [AttendeeType](arkts-calendar-attendeetype-e.md) | Enumerates the types of attendees invited to a conference event. |
+| [CalendarType](arkts-calendar-calendartype-e.md) | Enumerates the account types. |
+| [EventType](arkts-calendar-eventtype-e.md) | Enumerates event types. |
+| [RecurrenceFrequency](arkts-calendar-recurrencefrequency-e.md) | Enumerates the types of the event recurrence rule. |
+| [ServiceType](arkts-calendar-servicetype-e.md) | Enumerates the event service types. |
+

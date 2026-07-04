@@ -1,0 +1,134 @@
+# authorizeAdmin (System API)
+
+## Modules to Import
+
+```TypeScript
+import { adminManager } from '@ohos.enterprise.adminManager';
+```
+
+## authorizeAdmin
+
+```TypeScript
+function authorizeAdmin(admin: Want, bundleName: string, callback: AsyncCallback<void>): void
+```
+
+Authorizes the administrator permission to a specified application. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_ENTERPRISE_DEVICE_ADMIN
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| admin | Want | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of theEnterpriseAdminExtensionAbility and the bundle name of the application. |
+| bundleName | string | Yes | Bundle name of the application to be authorized with the administrator rights. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [9200001](../errorcode-enterpriseDeviceManager.md#9200001-deviceadmin-not-enabled) | The application is not an administrator application of the device. |
+| [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
+| [9200009](../errorcode-enterpriseDeviceManager.md#9200009-failed-to-grant-permissions-to-an-application) | Failed to grant the permission to the application. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permissionrequired to call the API. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // Replace with actual values.
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+// Replace with actual values.
+let bundleName: string = "com.example.application";
+
+adminManager.authorizeAdmin(wantTemp, bundleName, (err) => {
+  if (err) {
+    console.error(`Failed to authorize permission to the application. Code: ${err.code}, message: ${err.message}`);
+    return;
+  }
+  console.info('Successfully authorized permission to the application');
+});
+
+```
+
+
+## authorizeAdmin
+
+```TypeScript
+function authorizeAdmin(admin: Want, bundleName: string): Promise<void>
+```
+
+Authorizes the administrator permission to a specified application. This API uses a promise to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_ENTERPRISE_DEVICE_ADMIN
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| admin | Want | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of theEnterpriseAdminExtensionAbility and the bundle name of the application. |
+| bundleName | string | Yes | Bundle name of the application to be authorized with the administrator rights. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void&gt; | Promise that returns no value. An error object is thrown when the permissions of aspecified application administrator fail to be granted. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [9200001](../errorcode-enterpriseDeviceManager.md#9200001-deviceadmin-not-enabled) | The application is not an administrator application of the device. |
+| [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
+| [9200009](../errorcode-enterpriseDeviceManager.md#9200009-failed-to-grant-permissions-to-an-application) | Failed to grant the permission to the application. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permissionrequired to call the API. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { adminManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let wantTemp: Want = {
+  // Replace with actual values.
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+// Replace with actual values.
+let bundleName: string = "com.example.application";
+
+adminManager.authorizeAdmin(wantTemp, bundleName).then(() => {
+}).catch((err: BusinessError) => {
+  console.error(`Failed to authorize permission to the application. Code: ${err.code}, message: ${err.message}`);
+})
+
+```
+

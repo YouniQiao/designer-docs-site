@@ -1,0 +1,201 @@
+# AnimatedDrawableDescriptor
+
+Defines a descriptor object used to play animated content (for example, **PixelMap** arrays or animated image resources) using the [Image](./@internal/component/ets/image) component. It inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md#drawabledescriptorloadedresult).
+
+**Inheritance/Implementation:** AnimatedDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md#drawabledescriptor)
+
+**Since:** 12
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@ohos.arkui.drawableDescriptor';
+```
+
+## constructor
+
+```TypeScript
+constructor(pixelMaps: Array<image.PixelMap>, options?: AnimationOptions)
+```
+
+A constructor used to create an **AnimatedDrawableDescriptor** object.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| pixelMaps | Array&lt;image.PixelMap&gt; | Yes | **PixelMap** image data. |
+| options | AnimationOptions | No | Animation options. |
+
+## constructor
+
+```TypeScript
+constructor(src: ResourceStr | Array<image.PixelMap>, options?: AnimationOptions)
+```
+
+A constructor used to create an **AnimatedDrawableDescriptor** object.
+
+**Since:** 21
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 21.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| src | ResourceStr \| Array&lt;image.PixelMap&gt; | Yes | Animated image source address or[PixelMap](../../apis-image-kit/arkts-apis/arkts-image-pixelmap-i.md#pixelmap) array.<br> The address (**ResourceStr**) supports thefollowing formats: application resources (**Resource**), sandbox path (file://&lt;bundleName&gt;/&lt;sandboxPath&gt;), andBase64 string. |
+| options | AnimationOptions | No | Animation playback configuration. |
+
+**Example**
+
+```TypeScript
+import { AnimationOptions, AnimatedDrawableDescriptor } from '@kit.ArkUI';
+import { fileUri } from '@kit.CoreFileKit';
+
+@Entry
+@Component
+struct Example {
+  options: AnimationOptions = { duration: 1000, iterations: -1, autoPlay: false };
+  // Sandbox paths (file://xx) and application resources are supported.
+  @State animated1: AnimatedDrawableDescriptor = new AnimatedDrawableDescriptor($r('app.media.gif'), this.options);
+  @State animated2: AnimatedDrawableDescriptor | undefined = undefined;
+
+  aboutToAppear() {
+    let files = this.getUIContext().getHostContext()?.filesDir
+    let originPath = files + "/flower.gif"
+    let resultPath = fileUri.getUriFromPath(originPath)
+    this.animated2 = new AnimatedDrawableDescriptor(resultPath, { iterations: -1 })
+  }
+
+  build() {
+    Column() {
+      Row() {
+        Image(this.animated1).width(100).height(100)
+        Image(this.animated2).width(100).height(100)
+      }
+    }
+  }
+}
+
+```
+
+## getAnimationController
+
+```TypeScript
+getAnimationController(id?: string): AnimationController | undefined
+```
+
+Obtains the animation controller for playback control.
+
+**Since:** 21
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 21.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| id | string | No | ID of the target component.<br>Optional when the[Image](./@internal/component/ets/image) component and **AnimatedDrawableDescriptor** object have a 1:1relationship.<br>Required when the same **AnimatedDrawableDescriptor** object is bound to multiple[Image](./@internal/component/ets/image) components (in this case, you must ensure the ID uniqueness).<br>This rule is based on the design principle of the animation system: Animation data can be shared acrossmultiple components, but each component's animation runs independently. Correspondingly, an**AnimationController** object maintains a strict 1:1 relationship with a component, meaning one component ispaired with exactly one **AnimationController** object.<br>In addition,[AnimatedDrawableDescriptor](arkts-arkui-animateddrawabledescriptor-c.md#animateddrawabledescriptor) supports the feature for automatically pausinganimation playback when the bound component is not visible (for example, when the component is scrolled out ofthe screen or hidden). For specific implementation details, see [onVisibleAreaChange](../arkts-components/arkts-arkui-commonmethod-c.md#onvisibleareachange-1). |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| AnimationController | Animation controller object. |
+
+**Example**
+
+Scenario 1: 1:1 relationship between the [Image](./arkui-ts/ts-basic-components-image.md) component and AnimatedDrawableDescriptor object
+
+```TypeScript
+import { AnimationOptions, AnimatedDrawableDescriptor, AnimationController } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct Example {
+  options: AnimationOptions = { duration: 1000, iterations: -1, autoPlay: false };
+  // Replace $r('app.media.gif') with the image resource file you use.
+  @State animated: AnimatedDrawableDescriptor = new AnimatedDrawableDescriptor($r('app.media.gif'), this.options);
+
+  build() {
+    Column() {
+      Image(this.animated)
+        .width(100)
+        .height(100)
+        .borderColor(Color.Red)
+        .borderWidth(1)
+      Button("start")
+        .onClick(() => {
+          let controller = this.animated.getAnimationController()
+          controller?.start()
+        })
+      Button("stop")
+        .onClick(() => {
+          let controller = this.animated.getAnimationController()
+          controller?.stop()
+        })
+    }
+  }
+}
+
+```
+
+Scenario 2: 1:N relationship between the [Image](./arkui-ts/ts-basic-components-image.md) component and AnimatedDrawableDescriptor object
+
+```TypeScript
+import { AnimationOptions, AnimatedDrawableDescriptor, AnimationController } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct Example {
+  options: AnimationOptions = { duration: 1000, iterations: -1, autoPlay: false };
+  // Replace $r('app.media.gif') with the image resource file you use.
+  @State animated: AnimatedDrawableDescriptor = new AnimatedDrawableDescriptor($r('app.media.gif'), this.options);
+
+  build() {
+    Column() {
+      Image(this.animated)
+        .width(100)
+        .height(100)
+        .borderColor(Color.Red)
+        .borderWidth(1)
+        .id("Component1")
+      Image(this.animated)
+        .width(100)
+        .height(100)
+        .borderColor(Color.Red)
+        .borderWidth(1)
+      Button("start")
+        .onClick(() => {
+          let controller = this.animated.getAnimationController("Component1")
+          controller?.start()
+        })
+      Button("stop")
+        .onClick(() => {
+          let controller = this.animated.getAnimationController("Component1")
+          controller?.stop()
+        })
+    }
+  }
+}
+
+```
+

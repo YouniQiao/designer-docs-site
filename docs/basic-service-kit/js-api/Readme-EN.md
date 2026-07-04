@@ -1,0 +1,915 @@
+# ArkTS API<!--arkts-basicserviceskit-->
+
+- [@ohos.WallpaperExtensionAbility](arkts-wallpaperextensionability.md)<!--Del-->
+  - [WallpaperExtensionAbility(system api)](arkts-basicservices-wallpaperextensionability-c-sys.md)<!--DelEnd-->
+- [@ohos.account.appAccount](arkts-account-appaccount.md)
+  - [createAppAccountManager](arkts-basicservices-createappaccountmanager-f.md)
+  - [Authenticator](arkts-basicservices-authenticator-c.md)
+  - [AppAccountInfo](arkts-basicservices-appaccountinfo-i.md)
+  - [AppAccountManager](arkts-basicservices-appaccountmanager-i.md)
+  - [AuthCallback](arkts-basicservices-authcallback-i.md)
+  - [AuthenticatorCallback](arkts-basicservices-authenticatorcallback-i.md)
+  - [AuthenticatorInfo](arkts-basicservices-authenticatorinfo-i.md)
+  - [AuthResult](arkts-basicservices-authresult-i.md)
+  - [AuthTokenInfo](arkts-basicservices-authtokeninfo-i.md)
+  - [CreateAccountImplicitlyOptions](arkts-basicservices-createaccountimplicitlyoptions-i.md)
+  - [CreateAccountOptions](arkts-basicservices-createaccountoptions-i.md)
+  - [OAuthTokenInfo](arkts-basicservices-oauthtokeninfo-i.md)
+  - [SelectAccountsOptions](arkts-basicservices-selectaccountsoptions-i.md)
+  - [SetPropertiesOptions](arkts-basicservices-setpropertiesoptions-i.md)
+  - [VerifyCredentialOptions](arkts-basicservices-verifycredentialoptions-i.md)
+  - [Constants](arkts-basicservices-constants-e.md)
+  - [ResultCode](arkts-basicservices-resultcode-e.md)
+- [@ohos.account.distributedAccount](arkts-account-distributedaccount.md)
+  - [getDistributedAccountAbility](arkts-basicservices-getdistributedaccountability-f.md)
+  - [DistributedAccountAbility](arkts-basicservices-distributedaccountability-i.md)<!--Del-->
+  - [DistributedAccountAbility(system api)](arkts-basicservices-distributedaccountability-i-sys.md)<!--DelEnd-->
+  - [DistributedInfo](arkts-basicservices-distributedinfo-i.md)
+  - [DistributedAccountStatus](arkts-basicservices-distributedaccountstatus-e.md)
+- [@ohos.account.osAccount](arkts-account-osaccount.md)
+  - [getAccountManager](arkts-basicservices-getaccountmanager-f.md)<!--Del-->
+  - [getAuthorizationManager(system api)](arkts-basicservices-getauthorizationmanager-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getOsAccountSubProfileManager(system api)](arkts-basicservices-getosaccountsubprofilemanager-f-sys.md)<!--DelEnd-->
+  - [isDomainAccountSupported](arkts-basicservices-isdomainaccountsupported-f.md)
+  - [DomainAccountManager](arkts-basicservices-domainaccountmanager-c.md)<!--Del-->
+  - [DomainAccountManager(system api)](arkts-basicservices-domainaccountmanager-c-sys.md)<!--DelEnd-->
+  - [DomainServerConfigManager](arkts-basicservices-domainserverconfigmanager-c.md)<!--Del-->
+  - [InputerManager(system api)](arkts-basicservices-inputermanager-c-sys.md)<!--DelEnd--><!--Del-->
+  - [PINAuth(system api)](arkts-basicservices-pinauth-c-sys.md)<!--DelEnd--><!--Del-->
+  - [UserAuth(system api)](arkts-basicservices-userauth-c-sys.md)<!--DelEnd--><!--Del-->
+  - [UserIdentityManager(system api)](arkts-basicservices-useridentitymanager-c-sys.md)<!--DelEnd-->
+  - [AccountManager](arkts-basicservices-accountmanager-i.md)<!--Del-->
+  - [AccountManager(system api)](arkts-basicservices-accountmanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AcquireAuthorizationOptions(system api)](arkts-basicservices-acquireauthorizationoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AcquireAuthorizationResult(system api)](arkts-basicservices-acquireauthorizationresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthOptions(system api)](arkts-basicservices-authoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthorizationManager(system api)](arkts-basicservices-authorizationmanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthResult(system api)](arkts-basicservices-authresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthStatusInfo(system api)](arkts-basicservices-authstatusinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ConstraintChangeInfo(system api)](arkts-basicservices-constraintchangeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ConstraintSourceTypeInfo(system api)](arkts-basicservices-constraintsourcetypeinfo-i-sys.md)<!--DelEnd-->
+  - [CreateOsAccountForDomainOptions](arkts-basicservices-createosaccountfordomainoptions-i.md)<!--Del-->
+  - [CreateOsAccountOptions(system api)](arkts-basicservices-createosaccountoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CredentialChangeInfo(system api)](arkts-basicservices-credentialchangeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CredentialInfo(system api)](arkts-basicservices-credentialinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DomainAccountAuthOptions(system api)](arkts-basicservices-domainaccountauthoptions-i-sys.md)<!--DelEnd-->
+  - [DomainAccountInfo](arkts-basicservices-domainaccountinfo-i.md)<!--Del-->
+  - [DomainAccountInfo(system api)](arkts-basicservices-domainaccountinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DomainPlugin(system api)](arkts-basicservices-domainplugin-i-sys.md)<!--DelEnd-->
+  - [DomainServerConfig](arkts-basicservices-domainserverconfig-i.md)<!--Del-->
+  - [EnrolledCredInfo(system api)](arkts-basicservices-enrolledcredinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ExecutorProperty(system api)](arkts-basicservices-executorproperty-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetAuthInfoOptions(system api)](arkts-basicservices-getauthinfooptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetDomainAccessTokenOptions(system api)](arkts-basicservices-getdomainaccesstokenoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetDomainAccountInfoOptions(system api)](arkts-basicservices-getdomainaccountinfooptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetDomainAccountInfoPluginOptions(system api)](arkts-basicservices-getdomainaccountinfopluginoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetInputDataOptions(system api)](arkts-basicservices-getinputdataoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetPropertyRequest(system api)](arkts-basicservices-getpropertyrequest-i-sys.md)<!--DelEnd--><!--Del-->
+  - [IIdmCallback(system api)](arkts-basicservices-iidmcallback-i-sys.md)<!--DelEnd--><!--Del-->
+  - [IInputData(system api)](arkts-basicservices-iinputdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [IInputer(system api)](arkts-basicservices-iinputer-i-sys.md)<!--DelEnd--><!--Del-->
+  - [IUserAuthCallback(system api)](arkts-basicservices-iuserauthcallback-i-sys.md)<!--DelEnd-->
+  - [OsAccountInfo](arkts-basicservices-osaccountinfo-i.md)<!--Del-->
+  - [OsAccountInfo(system api)](arkts-basicservices-osaccountinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OsAccountSubProfile(system api)](arkts-basicservices-osaccountsubprofile-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OsAccountSubProfileEventData(system api)](arkts-basicservices-osaccountsubprofileeventdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OsAccountSubProfileManager(system api)](arkts-basicservices-osaccountsubprofilemanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OsAccountSwitchEventData(system api)](arkts-basicservices-osaccountswitcheventdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RemoteAuthOptions(system api)](arkts-basicservices-remoteauthoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RemoveOsAccountOptions(system api)](arkts-basicservices-removeosaccountoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RequestResult(system api)](arkts-basicservices-requestresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SetOsAccountTypeOptions(system api)](arkts-basicservices-setosaccounttypeoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SetPropertyRequest(system api)](arkts-basicservices-setpropertyrequest-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthIntent(system api)](arkts-basicservices-authintent-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthorizationResultCode(system api)](arkts-basicservices-authorizationresultcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthSubType(system api)](arkts-basicservices-authsubtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthTrustLevel(system api)](arkts-basicservices-authtrustlevel-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthType(system api)](arkts-basicservices-authtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ConstraintSourceType(system api)](arkts-basicservices-constraintsourcetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CredentialChangeType(system api)](arkts-basicservices-credentialchangetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FaceTipsCode(system api)](arkts-basicservices-facetipscode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FingerprintTips(system api)](arkts-basicservices-fingerprinttips-e-sys.md)<!--DelEnd--><!--Del-->
+  - [GetPropertyType(system api)](arkts-basicservices-getpropertytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Module(system api)](arkts-basicservices-module-e-sys.md)<!--DelEnd--><!--Del-->
+  - [OsAccountSubProfileEvent(system api)](arkts-basicservices-osaccountsubprofileevent-e-sys.md)<!--DelEnd-->
+  - [OsAccountType](arkts-basicservices-osaccounttype-e.md)<!--Del-->
+  - [OsAccountType(system api)](arkts-basicservices-osaccounttype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ResultCode(system api)](arkts-basicservices-resultcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SetPropertyType(system api)](arkts-basicservices-setpropertytype-e-sys.md)<!--DelEnd-->
+- [@ohos.ai.intelligentVoice](arkts-ai-intelligentvoice.md)<!--Del-->
+  - [createEnrollIntelligentVoiceEngine(system api)](arkts-basicservices-createenrollintelligentvoiceengine-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createWakeupIntelligentVoiceEngine(system api)](arkts-basicservices-createwakeupintelligentvoiceengine-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getIntelligentVoiceManager(system api)](arkts-basicservices-getintelligentvoicemanager-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getWakeupManager(system api)](arkts-basicservices-getwakeupmanager-f-sys.md)<!--DelEnd--><!--Del-->
+  - [EnrollCallbackInfo(system api)](arkts-basicservices-enrollcallbackinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EnrollEngineConfig(system api)](arkts-basicservices-enrollengineconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EnrollIntelligentVoiceEngine(system api)](arkts-basicservices-enrollintelligentvoiceengine-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EnrollIntelligentVoiceEngineDescriptor(system api)](arkts-basicservices-enrollintelligentvoiceenginedescriptor-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EvaluationResult(system api)](arkts-basicservices-evaluationresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [IntelligentVoiceManager(system api)](arkts-basicservices-intelligentvoicemanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UploadFile(system api)](arkts-basicservices-uploadfile-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WakeupHapInfo(system api)](arkts-basicservices-wakeuphapinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WakeupIntelligentVoiceEngine(system api)](arkts-basicservices-wakeupintelligentvoiceengine-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WakeupIntelligentVoiceEngineCallbackInfo(system api)](arkts-basicservices-wakeupintelligentvoiceenginecallbackinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WakeupIntelligentVoiceEngineDescriptor(system api)](arkts-basicservices-wakeupintelligentvoiceenginedescriptor-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WakeupManager(system api)](arkts-basicservices-wakeupmanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WakeupSourceFile(system api)](arkts-basicservices-wakeupsourcefile-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CapturerChannel(system api)](arkts-basicservices-capturerchannel-e-sys.md)<!--DelEnd--><!--Del-->
+  - [EnrollResult(system api)](arkts-basicservices-enrollresult-e-sys.md)<!--DelEnd--><!--Del-->
+  - [EvaluationResultCode(system api)](arkts-basicservices-evaluationresultcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [IntelligentVoiceEngineType(system api)](arkts-basicservices-intelligentvoiceenginetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [IntelligentVoiceErrorCode(system api)](arkts-basicservices-intelligentvoiceerrorcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SensibilityType(system api)](arkts-basicservices-sensibilitytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ServiceChangeType(system api)](arkts-basicservices-servicechangetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [UploadFileType(system api)](arkts-basicservices-uploadfiletype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [WakeupIntelligentVoiceEventType(system api)](arkts-basicservices-wakeupintelligentvoiceeventtype-e-sys.md)<!--DelEnd-->
+- [@ohos.annotation](arkts-annotation.md)
+  - [SuppressWarningsType](arkts-basicservices-suppresswarningstype-e.md)
+- [@ohos.app.ability.PrintExtensionAbility](arkts-app-ability-printextensionability.md)
+  - [PrintExtensionAbility](arkts-basicservices-printextensionability-c.md)<!--Del-->
+  - [PrintExtensionAbility(system api)](arkts-basicservices-printextensionability-c-sys.md)<!--DelEnd-->
+- [@ohos.application.StaticSubscriberExtensionAbility](arkts-application-staticsubscriberextensionability.md)<!--Del-->
+  - [StaticSubscriberExtensionAbility(system api)](arkts-basicservices-staticsubscriberextensionability-c-sys.md)<!--DelEnd-->
+- [@ohos.application.StaticSubscriberExtensionContext](arkts-application-staticsubscriberextensioncontext.md)<!--Del-->
+  - [StaticSubscriberExtensionContext(system api)](arkts-basicservices-staticsubscriberextensioncontext-c-sys.md)<!--DelEnd-->
+- [@ohos.base](arkts-base.md)
+  - [AsyncCallback](arkts-basicservices-asynccallback-i.md)
+  - [BusinessError](arkts-basicservices-businesserror-i.md)
+  - [Callback](arkts-basicservices-callback-i.md)
+  - [ErrorCallback](arkts-basicservices-errorcallback-i.md)
+- [@ohos.batteryInfo](arkts-batteryinfo.md)<!--Del-->
+  - [getBatteryConfig(system api)](arkts-basicservices-getbatteryconfig-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isBatteryConfigSupported(system api)](arkts-basicservices-isbatteryconfigsupported-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setBatteryConfig(system api)](arkts-basicservices-setbatteryconfig-f-sys.md)<!--DelEnd-->
+  - [BatteryCapacityLevel](arkts-basicservices-batterycapacitylevel-e.md)
+  - [BatteryChargeState](arkts-basicservices-batterychargestate-e.md)
+  - [BatteryHealthState](arkts-basicservices-batteryhealthstate-e.md)
+  - [BatteryPluggedType](arkts-basicservices-batterypluggedtype-e.md)
+  - [CommonEventBatteryChangedKey](arkts-basicservices-commoneventbatterychangedkey-e.md)
+  - [Constants](arkts-basicservices-batteryinfo-con.md)<!--Del-->
+  - [Constants(system api)](arkts-basicservices-batteryinfo-con-sys.md)<!--DelEnd-->
+- [@ohos.batteryStatistics](arkts-batterystatistics.md)<!--Del-->
+  - [getAppPowerPercent(system api)](arkts-basicservices-getapppowerpercent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAppPowerValue(system api)](arkts-basicservices-getapppowervalue-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getBatteryStats(system api)](arkts-basicservices-getbatterystats-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getHardwareUnitPowerPercent(system api)](arkts-basicservices-gethardwareunitpowerpercent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getHardwareUnitPowerValue(system api)](arkts-basicservices-gethardwareunitpowervalue-f-sys.md)<!--DelEnd--><!--Del-->
+  - [BatteryStatsInfo(system api)](arkts-basicservices-batterystatsinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ConsumptionType(system api)](arkts-basicservices-consumptiontype-e-sys.md)<!--DelEnd-->
+- [@ohos.brightness](arkts-brightness.md)<!--Del-->
+  - [setValue(system api)](arkts-basicservices-setvalue-f-sys.md)<!--DelEnd-->
+- [@ohos.busManager.serial](arkts-busmanager-serial.md)<!--Del-->
+  - [addPortAuthorization(system api)](arkts-basicservices-addportauthorization-f-sys.md)<!--DelEnd-->
+  - [getSerialPortList](arkts-basicservices-getserialportlist-f.md)
+  - [SerialConfigs](arkts-basicservices-serialconfigs-i.md)
+  - [SerialPort](arkts-basicservices-serialport-i.md)
+  - [SerialPortInfo](arkts-basicservices-serialportinfo-i.md)
+  - [DataBits](arkts-basicservices-databits-e.md)
+  - [Parity](arkts-basicservices-parity-e.md)
+  - [StopBits](arkts-basicservices-stopbits-e.md)
+- [@ohos.charger](arkts-charger.md)<!--Del-->
+  - [ChargeType(system api)](arkts-basicservices-chargetype-e-sys.md)<!--DelEnd-->
+- [@ohos.commonEvent](arkts-commonevent.md)
+  - [createSubscriber](arkts-basicservices-createsubscriber-depr-f.md)
+  - [publish](arkts-basicservices-publish-depr-f.md)<!--Del-->
+  - [publishAsUser(system api)](arkts-basicservices-publishasuser-depr-f-sys.md)<!--DelEnd-->
+  - [subscribe](arkts-basicservices-subscribe-depr-f.md)
+  - [unsubscribe](arkts-basicservices-unsubscribe-depr-f.md)
+  - [Support](arkts-basicservices-support-depr-e.md)
+- [@ohos.commonEventManager](arkts-commoneventmanager.md)
+  - [createSubscriber](arkts-basicservices-createsubscriber-f.md)
+  - [createSubscriberSync](arkts-basicservices-createsubscribersync-f.md)
+  - [publish](arkts-basicservices-publish-f.md)<!--Del-->
+  - [publishAsUser(system api)](arkts-basicservices-publishasuser-f-sys.md)<!--DelEnd--><!--Del-->
+  - [removeStickyCommonEvent(system api)](arkts-basicservices-removestickycommonevent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setStaticSubscriberState(system api)](arkts-basicservices-setstaticsubscriberstate-f-sys.md)<!--DelEnd-->
+  - [subscribe](arkts-basicservices-subscribe-f.md)
+  - [subscribeToEvent](arkts-basicservices-subscribetoevent-f.md)
+  - [unsubscribe](arkts-basicservices-unsubscribe-f.md)
+  - [CommonEventData](arkts-basicservices-commoneventdata-t.md)
+  - [CommonEventPublishData](arkts-basicservices-commoneventpublishdata-t.md)
+  - [CommonEventSubscribeInfo](arkts-basicservices-commoneventsubscribeinfo-t.md)
+  - [CommonEventSubscriber](arkts-basicservices-commoneventsubscriber-t.md)
+  - [Support](arkts-basicservices-support-e.md)<!--Del-->
+  - [Support(system api)](arkts-basicservices-support-e-sys.md)<!--DelEnd-->
+- [@ohos.configPolicy](arkts-configpolicy.md)<!--Del-->
+  - [getCfgDirList(system api)](arkts-basicservices-getcfgdirlist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCfgDirListSync(system api)](arkts-basicservices-getcfgdirlistsync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCfgFiles(system api)](arkts-basicservices-getcfgfiles-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCfgFilesSync(system api)](arkts-basicservices-getcfgfilessync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getOneCfgFile(system api)](arkts-basicservices-getonecfgfile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getOneCfgFileSync(system api)](arkts-basicservices-getonecfgfilesync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [FollowXMode(system api)](arkts-basicservices-followxmode-e-sys.md)<!--DelEnd-->
+- [@ohos.customization.customConfig](arkts-customization-customconfig.md)
+  - [getChannelId](arkts-basicservices-getchannelid-f.md)
+- [@ohos.deviceAttest](arkts-deviceattest.md)<!--Del-->
+  - [getAttestStatus(system api)](arkts-basicservices-getatteststatus-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAttestStatusSync(system api)](arkts-basicservices-getatteststatussync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AttestResultInfo(system api)](arkts-basicservices-attestresultinfo-i-sys.md)<!--DelEnd-->
+- [@ohos.deviceInfo](arkts-deviceinfo.md)
+  - [apiAvailable](arkts-basicservices-apiavailable-f.md)
+  - [DeviceTypes](arkts-basicservices-devicetypes-e.md)
+  - [PerformanceClassLevel](arkts-basicservices-performanceclasslevel-e.md)
+  - [Constants](arkts-basicservices-deviceinfo-con.md)
+- [@ohos.events.emitter](arkts-events-emitter.md)
+  - [emit](arkts-basicservices-emit-f.md)
+  - [getListenerCount](arkts-basicservices-getlistenercount-f.md)
+  - [off](arkts-basicservices-off-f.md)
+  - [on](arkts-basicservices-on-f.md)
+  - [once](arkts-basicservices-once-f.md)
+  - [Emitter](arkts-basicservices-emitter-c.md)
+  - [EventData](arkts-basicservices-eventdata-i.md)
+  - [GenericEventData](arkts-basicservices-genericeventdata-i.md)
+  - [InnerEvent](arkts-basicservices-innerevent-i.md)
+  - [Options](arkts-basicservices-options-i.md)
+  - [EventPriority](arkts-basicservices-eventpriority-e.md)
+- [@ohos.intelligentScene](arkts-intelligentscene.md)
+  - [isDoNotDisturbEnabled](arkts-basicservices-isdonotdisturbenabled-f.md)
+  - [isNotifyAllowedInDoNotDisturb](arkts-basicservices-isnotifyallowedindonotdisturb-f.md)
+- [@ohos.pasteboard](arkts-pasteboard.md)
+  - [createData](arkts-basicservices-createdata-f.md)
+  - [createHtmlData](arkts-basicservices-createhtmldata-f.md)
+  - [createHtmlTextRecord](arkts-basicservices-createhtmltextrecord-f.md)
+  - [createPlainTextData](arkts-basicservices-createplaintextdata-f.md)
+  - [createPlainTextRecord](arkts-basicservices-createplaintextrecord-f.md)
+  - [createRecord](arkts-basicservices-createrecord-f.md)
+  - [createUriData](arkts-basicservices-createuridata-f.md)
+  - [createUriRecord](arkts-basicservices-createurirecord-f.md)
+  - [createWantData](arkts-basicservices-createwantdata-f.md)
+  - [createWantRecord](arkts-basicservices-createwantrecord-f.md)
+  - [getSystemPasteboard](arkts-basicservices-getsystempasteboard-f.md)
+  - [ProgressSignal](arkts-basicservices-progresssignal-c.md)
+  - [GetDataParams](arkts-basicservices-getdataparams-i.md)
+  - [PasteData](arkts-basicservices-pastedata-i.md)
+  - [PasteDataProperty](arkts-basicservices-pastedataproperty-i.md)
+  - [PasteDataRecord](arkts-basicservices-pastedatarecord-i.md)
+  - [ProgressInfo](arkts-basicservices-progressinfo-i.md)<!--Del-->
+  - [SystemPasteboard(system api)](arkts-basicservices-systempasteboard-i.md)<!--DelEnd--><!--Del-->
+  - [SystemPasteboard(system api)](arkts-basicservices-systempasteboard-i-sys.md)<!--DelEnd-->
+  - [ProgressListener](arkts-basicservices-progresslistener-t.md)
+  - [UpdateCallback](arkts-basicservices-updatecallback-t.md)
+  - [ValueType](arkts-basicservices-valuetype-t.md)
+  - [FileConflictOptions](arkts-basicservices-fileconflictoptions-e.md)
+  - [Pattern](arkts-basicservices-pattern-e.md)
+  - [ProgressIndicator](arkts-basicservices-progressindicator-e.md)
+  - [ShareOption](arkts-basicservices-shareoption-e.md)
+  - [Constants](arkts-basicservices-pasteboard-con.md)
+- [@ohos.power](arkts-power.md)<!--Del-->
+  - [getPowerConfig(system api)](arkts-basicservices-getpowerconfig-f-sys.md)<!--DelEnd-->
+  - [getPowerMode](arkts-basicservices-getpowermode-f.md)<!--Del-->
+  - [hibernate(system api)](arkts-basicservices-hibernate-f-sys.md)<!--DelEnd-->
+  - [isActive](arkts-basicservices-isactive-f.md)
+  - [isScreenOn](arkts-basicservices-isscreenon-f.md)
+  - [isStandby](arkts-basicservices-isstandby-f.md)<!--Del-->
+  - [reboot(system api)](arkts-basicservices-reboot-f-sys.md)<!--DelEnd-->
+  - [rebootDevice](arkts-basicservices-rebootdevice-f.md)<!--Del-->
+  - [refreshActivity(system api)](arkts-basicservices-refreshactivity-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerShutdownCallback(system api)](arkts-basicservices-registershutdowncallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPowerConfig(system api)](arkts-basicservices-setpowerconfig-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPowerKeyFilteringStrategy(system api)](arkts-basicservices-setpowerkeyfilteringstrategy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPowerMode(system api)](arkts-basicservices-setpowermode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setScreenOffTime(system api)](arkts-basicservices-setscreenofftime-f-sys.md)<!--DelEnd--><!--Del-->
+  - [shutdown(system api)](arkts-basicservices-shutdown-f-sys.md)<!--DelEnd--><!--Del-->
+  - [suspend(system api)](arkts-basicservices-suspend-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterShutdownCallback(system api)](arkts-basicservices-unregistershutdowncallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [wakeup(system api)](arkts-basicservices-wakeup-f-sys.md)<!--DelEnd-->
+  - [DevicePowerMode](arkts-basicservices-devicepowermode-e.md)
+  - [PowerKeyFilteringStrategy](arkts-basicservices-powerkeyfilteringstrategy-e.md)
+- [@ohos.print](arkts-print.md)
+  - [addPrinter](arkts-basicservices-addprinter-f.md)<!--Del-->
+  - [addPrinters(system api)](arkts-basicservices-addprinters-f-sys.md)<!--DelEnd--><!--Del-->
+  - [addPrinterToCups(system api)](arkts-basicservices-addprintertocups-f-sys.md)<!--DelEnd-->
+  - [addPrinterToDiscovery](arkts-basicservices-addprintertodiscovery-f.md)<!--Del-->
+  - [analyzePrintEvents(system api)](arkts-basicservices-analyzeprintevents-f-sys.md)<!--DelEnd--><!--Del-->
+  - [authPrintJob(system api)](arkts-basicservices-authprintjob-f-sys.md)<!--DelEnd--><!--Del-->
+  - [authSmbDeviceAsRegisteredUser(system api)](arkts-basicservices-authsmbdeviceasregistereduser-f-sys.md)<!--DelEnd--><!--Del-->
+  - [cancelPrintJob(system api)](arkts-basicservices-cancelprintjob-f-sys.md)<!--DelEnd--><!--Del-->
+  - [checkPreferencesConflicts(system api)](arkts-basicservices-checkpreferencesconflicts-f-sys.md)<!--DelEnd--><!--Del-->
+  - [connectPrinter(system api)](arkts-basicservices-connectprinter-f-sys.md)<!--DelEnd--><!--Del-->
+  - [connectPrinterByIdAndPpd(system api)](arkts-basicservices-connectprinterbyidandppd-f-sys.md)<!--DelEnd--><!--Del-->
+  - [connectPrinterByIpAndPpd(system api)](arkts-basicservices-connectprinterbyipandppd-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deletePrinterFromCups(system api)](arkts-basicservices-deleteprinterfromcups-f-sys.md)<!--DelEnd--><!--Del-->
+  - [disconnectPrinter(system api)](arkts-basicservices-disconnectprinter-f-sys.md)<!--DelEnd--><!--Del-->
+  - [discoverUsbPrinters(system api)](arkts-basicservices-discoverusbprinters-f-sys.md)<!--DelEnd-->
+  - [getAddedPrinters](arkts-basicservices-getaddedprinters-f.md)<!--Del-->
+  - [getPrinterDefaultPreferences(system api)](arkts-basicservices-getprinterdefaultpreferences-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPrinterInfoById(system api)](arkts-basicservices-getprinterinfobyid-f-sys.md)<!--DelEnd-->
+  - [getPrinterInformationById](arkts-basicservices-getprinterinformationbyid-f.md)<!--Del-->
+  - [getSharedHosts(system api)](arkts-basicservices-getsharedhosts-f-sys.md)<!--DelEnd--><!--Del-->
+  - [notifyPrintService(system api)](arkts-basicservices-notifyprintservice-f-sys.md)<!--DelEnd--><!--Del-->
+  - [notifyPrintServiceEvent(system api)](arkts-basicservices-notifyprintserviceevent-f-sys.md)<!--DelEnd-->
+  - [notifyWatermarkComplete](arkts-basicservices-notifywatermarkcomplete-f.md)
+  - [off](arkts-basicservices-off-f.md)<!--Del-->
+  - [off(system api)](arkts-basicservices-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offPrinterInfoQuery(system api)](arkts-basicservices-offprinterinfoquery-f-sys.md)<!--DelEnd-->
+  - [on](arkts-basicservices-on-f.md)<!--Del-->
+  - [on(system api)](arkts-basicservices-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onPrinterInfoQuery(system api)](arkts-basicservices-onprinterinfoquery-f-sys.md)<!--DelEnd-->
+  - [print](arkts-basicservices-print-f.md)<!--Del-->
+  - [queryAllActivePrintJobs(system api)](arkts-basicservices-queryallactiveprintjobs-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryAllPrinterExtensionInfos(system api)](arkts-basicservices-queryallprinterextensioninfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryAllPrinterPpds(system api)](arkts-basicservices-queryallprinterppds-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryAllPrintJobs(system api)](arkts-basicservices-queryallprintjobs-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryPrinterCapability(system api)](arkts-basicservices-queryprintercapability-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryPrinterCapabilityByUri(system api)](arkts-basicservices-queryprintercapabilitybyuri-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryPrinterInfoByIp(system api)](arkts-basicservices-queryprinterinfobyip-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryPrintJobById(system api)](arkts-basicservices-queryprintjobbyid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryPrintJobList(system api)](arkts-basicservices-queryprintjoblist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryRecommendDriversById(system api)](arkts-basicservices-queryrecommenddriversbyid-f-sys.md)<!--DelEnd-->
+  - [registerWatermarkCallback](arkts-basicservices-registerwatermarkcallback-f.md)
+  - [removePrinterFromDiscovery](arkts-basicservices-removeprinterfromdiscovery-f.md)<!--Del-->
+  - [removePrinters(system api)](arkts-basicservices-removeprinters-f-sys.md)<!--DelEnd--><!--Del-->
+  - [requestPrintPreview(system api)](arkts-basicservices-requestprintpreview-f-sys.md)<!--DelEnd--><!--Del-->
+  - [restartPrintJob(system api)](arkts-basicservices-restartprintjob-f-sys.md)<!--DelEnd--><!--Del-->
+  - [savePdfFileJob(system api)](arkts-basicservices-savepdffilejob-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDefaultPrinter(system api)](arkts-basicservices-setdefaultprinter-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPrinterPreferences(system api)](arkts-basicservices-setprinterpreferences-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startDiscoverPrinter(system api)](arkts-basicservices-startdiscoverprinter-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startGettingPrintFile(system api)](arkts-basicservices-startgettingprintfile-f-sys.md)<!--DelEnd-->
+  - [startPrint](arkts-basicservices-startprint-f.md)<!--Del-->
+  - [startPrintJob(system api)](arkts-basicservices-startprintjob-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopDiscoverPrinter(system api)](arkts-basicservices-stopdiscoverprinter-f-sys.md)<!--DelEnd-->
+  - [unregisterWatermarkCallback](arkts-basicservices-unregisterwatermarkcallback-f.md)<!--Del-->
+  - [updateExtensionInfo(system api)](arkts-basicservices-updateextensioninfo-f-sys.md)<!--DelEnd-->
+  - [updatePrinterInDiscovery](arkts-basicservices-updateprinterindiscovery-f.md)<!--Del-->
+  - [updatePrinterInformation(system api)](arkts-basicservices-updateprinterinformation-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updatePrinters(system api)](arkts-basicservices-updateprinters-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updatePrinterState(system api)](arkts-basicservices-updateprinterstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updatePrintJobState(system api)](arkts-basicservices-updateprintjobstate-f-sys.md)<!--DelEnd-->
+  - [PpdInfo](arkts-basicservices-ppdinfo-i.md)<!--Del-->
+  - [PreviewAttribute(system api)](arkts-basicservices-previewattribute-i-sys.md)<!--DelEnd-->
+  - [PrintAttributes](arkts-basicservices-printattributes-i.md)
+  - [PrintDocumentAdapter](arkts-basicservices-printdocumentadapter-i.md)
+  - [PrinterCapabilities](arkts-basicservices-printercapabilities-i.md)<!--Del-->
+  - [PrinterCapability(system api)](arkts-basicservices-printercapability-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PrinterExtensionInfo(system api)](arkts-basicservices-printerextensioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PrinterInfo(system api)](arkts-basicservices-printerinfo-i-sys.md)<!--DelEnd-->
+  - [PrinterInformation](arkts-basicservices-printerinformation-i.md)
+  - [PrinterPreferences](arkts-basicservices-printerpreferences-i.md)<!--Del-->
+  - [PrinterRange(system api)](arkts-basicservices-printerrange-i-sys.md)<!--DelEnd-->
+  - [PrintJob](arkts-basicservices-printjob-i.md)<!--Del-->
+  - [PrintJob(system api)](arkts-basicservices-printjob-i-sys.md)<!--DelEnd-->
+  - [PrintJobData](arkts-basicservices-printjobdata-i.md)<!--Del-->
+  - [PrintMargin(system api)](arkts-basicservices-printmargin-i-sys.md)<!--DelEnd-->
+  - [PrintPageRange](arkts-basicservices-printpagerange-i.md)
+  - [PrintPageSize](arkts-basicservices-printpagesize-i.md)<!--Del-->
+  - [PrintResolution(system api)](arkts-basicservices-printresolution-i-sys.md)<!--DelEnd-->
+  - [PrintTask](arkts-basicservices-printtask-i.md)
+  - [SharedHost](arkts-basicservices-sharedhost-i.md)
+  - [PrinterChangeCallback](arkts-basicservices-printerchangecallback-t.md)<!--Del-->
+  - [PrinterInfoQueryCallback(system api)](arkts-basicservices-printerinfoquerycallback-t-sys.md)<!--DelEnd-->
+  - [WatermarkCallback](arkts-basicservices-watermarkcallback-t.md)
+  - [ApplicationEvent](arkts-basicservices-applicationevent-e.md)
+  - [DefaultPrinterType](arkts-basicservices-defaultprintertype-e.md)
+  - [DocFlavor](arkts-basicservices-docflavor-e.md)
+  - [PrintColorMode](arkts-basicservices-printcolormode-e.md)
+  - [PrintDirectionMode](arkts-basicservices-printdirectionmode-e.md)
+  - [PrintDocumentAdapterState](arkts-basicservices-printdocumentadapterstate-e.md)
+  - [PrintDocumentFormat](arkts-basicservices-printdocumentformat-e.md)
+  - [PrintDuplexMode](arkts-basicservices-printduplexmode-e.md)
+  - [PrinterEvent](arkts-basicservices-printerevent-e.md)
+  - [PrintErrorCode](arkts-basicservices-printerrorcode-e.md)
+  - [PrinterState](arkts-basicservices-printerstate-e.md)
+  - [PrinterStatus](arkts-basicservices-printerstatus-e.md)
+  - [PrintFileCreationState](arkts-basicservices-printfilecreationstate-e.md)
+  - [PrintJobState](arkts-basicservices-printjobstate-e.md)
+  - [PrintJobSubState](arkts-basicservices-printjobsubstate-e.md)
+  - [PrintOrientationMode](arkts-basicservices-printorientationmode-e.md)
+  - [PrintPageType](arkts-basicservices-printpagetype-e.md)
+  - [PrintQuality](arkts-basicservices-printquality-e.md)
+  - [WatermarkHandleResult](arkts-basicservices-watermarkhandleresult-e.md)
+- [@ohos.request](arkts-request.md)
+  - [request](arkts-basicservices-request-n.md)
+    - [agent](arkts-basicservices-request-agent-n.md)
+      - [attachGroup](arkts-basicservices-attachgroup-f.md)
+      - [create](arkts-basicservices-create-f.md)
+      - [createGroup](arkts-basicservices-creategroup-f.md)
+      - [deleteGroup](arkts-basicservices-deletegroup-f.md)
+      - [getTask](arkts-basicservices-gettask-f.md)<!--Del-->
+      - [query(system api)](arkts-basicservices-query-f-sys.md)<!--DelEnd-->
+      - [remove](arkts-basicservices-remove-f.md)
+      - [search](arkts-basicservices-search-f.md)
+      - [show](arkts-basicservices-show-f.md)
+      - [touch](arkts-basicservices-touch-f.md)
+      - [Config](arkts-basicservices-config-i.md)
+      - [FileSpec](arkts-basicservices-filespec-i.md)
+      - [Filter](arkts-basicservices-filter-i.md)<!--Del-->
+      - [Filter(system api)](arkts-basicservices-filter-i-sys.md)<!--DelEnd-->
+      - [FormItem](arkts-basicservices-formitem-i.md)
+      - [GroupConfig](arkts-basicservices-groupconfig-i.md)
+      - [HttpResponse](arkts-basicservices-httpresponse-i.md)
+      - [MinSpeed](arkts-basicservices-minspeed-i.md)
+      - [Notification](arkts-basicservices-notification-i.md)<!--Del-->
+      - [Notification(system api)](arkts-basicservices-notification-i-sys.md)<!--DelEnd-->
+      - [Progress](arkts-basicservices-progress-i.md)
+      - [Task](arkts-basicservices-task-i.md)
+      - [TaskInfo](arkts-basicservices-taskinfo-i.md)<!--Del-->
+      - [TaskInfo(system api)](arkts-basicservices-taskinfo-i-sys.md)<!--DelEnd-->
+      - [Timeout](arkts-basicservices-timeout-i.md)
+      - [Action](arkts-basicservices-action-e.md)
+      - [BroadcastEvent](arkts-basicservices-broadcastevent-e.md)
+      - [Faults](arkts-basicservices-faults-e.md)
+      - [Mode](arkts-basicservices-mode-e.md)
+      - [Network](arkts-basicservices-network-e.md)
+      - [State](arkts-basicservices-state-e.md)
+      - [WaitingReason](arkts-basicservices-waitingreason-e.md)
+      - [Constants](arkts-basicservices-agent-con.md)
+    - [download](arkts-basicservices-download-f.md)
+    - [downloadFile](arkts-basicservices-downloadfile-f.md)
+    - [upload](arkts-basicservices-upload-f.md)
+    - [uploadFile](arkts-basicservices-uploadfile-f.md)
+    - [DownloadConfig](arkts-basicservices-downloadconfig-i.md)
+    - [DownloadInfo](arkts-basicservices-downloadinfo-i.md)
+    - [DownloadTask](arkts-basicservices-downloadtask-i.md)
+    - [File](arkts-basicservices-file-i.md)
+    - [RequestData](arkts-basicservices-requestdata-i.md)
+    - [TaskState](arkts-basicservices-taskstate-i.md)
+    - [UploadConfig](arkts-basicservices-uploadconfig-i.md)
+    - [UploadTask](arkts-basicservices-uploadtask-i.md)
+    - [Constants](arkts-basicservices-request-con.md)
+- [@ohos.request.cacheDownload](arkts-request-cachedownload.md)
+  - [cancel](arkts-basicservices-cancel-f.md)
+  - [clearFileCache](arkts-basicservices-clearfilecache-f.md)
+  - [clearMemoryCache](arkts-basicservices-clearmemorycache-f.md)
+  - [download](arkts-basicservices-download-f.md)
+  - [getDownloadInfo](arkts-basicservices-getdownloadinfo-f.md)
+  - [offDownloadError](arkts-basicservices-offdownloaderror-f.md)
+  - [offDownloadSuccess](arkts-basicservices-offdownloadsuccess-f.md)
+  - [onDownloadError](arkts-basicservices-ondownloaderror-f.md)
+  - [onDownloadSuccess](arkts-basicservices-ondownloadsuccess-f.md)
+  - [setDownloadInfoListSize](arkts-basicservices-setdownloadinfolistsize-f.md)
+  - [setFileCacheSize](arkts-basicservices-setfilecachesize-f.md)
+  - [setGlobalRetryOptions](arkts-basicservices-setglobalretryoptions-f.md)
+  - [setGlobalTimeoutOptions](arkts-basicservices-setglobaltimeoutoptions-f.md)
+  - [setMemoryCacheSize](arkts-basicservices-setmemorycachesize-f.md)
+  - [CacheDownloadOptions](arkts-basicservices-cachedownloadoptions-i.md)
+  - [DownloadError](arkts-basicservices-downloaderror-i.md)
+  - [DownloadInfo](arkts-basicservices-downloadinfo-i.md)
+  - [NetworkInfo](arkts-basicservices-networkinfo-i.md)
+  - [PerformanceInfo](arkts-basicservices-performanceinfo-i.md)
+  - [ResourceInfo](arkts-basicservices-resourceinfo-i.md)
+  - [RetryOptions](arkts-basicservices-retryoptions-i.md)
+  - [TimeoutOptions](arkts-basicservices-timeoutoptions-i.md)
+  - [CacheStrategy](arkts-basicservices-cachestrategy-e.md)
+  - [ErrorCode](arkts-basicservices-errorcode-e.md)
+  - [SslType](arkts-basicservices-ssltype-e.md)
+- [@ohos.resourceschedule.systemload](arkts-resourceschedule-systemload.md)
+  - [getLevel](arkts-basicservices-getlevel-f.md)
+  - [off](arkts-basicservices-off-f.md)
+  - [on](arkts-basicservices-on-f.md)<!--Del-->
+  - [SystemLoadLevel(system api)](arkts-basicservices-systemloadlevel-e.md)<!--DelEnd-->
+- [@ohos.runningLock](arkts-runninglock.md)
+  - [create](arkts-basicservices-create-f.md)
+  - [createRunningLock](arkts-basicservices-createrunninglock-f.md)
+  - [isRunningLockTypeSupported](arkts-basicservices-isrunninglocktypesupported-f.md)
+  - [isSupported](arkts-basicservices-issupported-f.md)
+  - [RunningLock](arkts-basicservices-runninglock-c.md)
+  - [RunningLockType](arkts-basicservices-runninglocktype-e.md)
+- [@ohos.scan](arkts-scan.md)<!--Del-->
+  - [addScanner(system api)](arkts-basicservices-addscanner-f-sys.md)<!--DelEnd-->
+  - [cancelScan](arkts-basicservices-cancelscan-f.md)
+  - [closeScanner](arkts-basicservices-closescanner-f.md)<!--Del-->
+  - [deleteScanner(system api)](arkts-basicservices-deletescanner-f-sys.md)<!--DelEnd-->
+  - [exit](arkts-basicservices-exit-f.md)<!--Del-->
+  - [getAddedScanners(system api)](arkts-basicservices-getaddedscanners-f-sys.md)<!--DelEnd-->
+  - [getPictureScanProgress](arkts-basicservices-getpicturescanprogress-f.md)
+  - [getScannerCurrentSetting](arkts-basicservices-getscannercurrentsetting-f.md)
+  - [getScannerParameter](arkts-basicservices-getscannerparameter-f.md)
+  - [init](arkts-basicservices-init-f.md)
+  - [off](arkts-basicservices-off-f.md)<!--Del-->
+  - [off(system api)](arkts-basicservices-off-f-sys.md)<!--DelEnd-->
+  - [on](arkts-basicservices-on-f.md)<!--Del-->
+  - [on(system api)](arkts-basicservices-on-f-sys.md)<!--DelEnd-->
+  - [openScanner](arkts-basicservices-openscanner-f.md)
+  - [setScanAutoOption](arkts-basicservices-setscanautooption-f.md)
+  - [setScannerParameter](arkts-basicservices-setscannerparameter-f.md)
+  - [startScan](arkts-basicservices-startscan-f.md)
+  - [startScannerDiscovery](arkts-basicservices-startscannerdiscovery-f.md)
+  - [PictureScanProgress](arkts-basicservices-picturescanprogress-i.md)
+  - [Range](arkts-basicservices-range-i.md)
+  - [ScannerDevice](arkts-basicservices-scannerdevice-i.md)
+  - [ScannerOptionValue](arkts-basicservices-scanneroptionvalue-i.md)
+  - [ScannerParameter](arkts-basicservices-scannerparameter-i.md)
+  - [ScannerSyncDevice](arkts-basicservices-scannersyncdevice-i.md)
+  - [ConstraintType](arkts-basicservices-constrainttype-e.md)
+  - [OptionValueType](arkts-basicservices-optionvaluetype-e.md)
+  - [PhysicalUnit](arkts-basicservices-physicalunit-e.md)
+  - [ScanErrorCode](arkts-basicservices-scanerrorcode-e.md)
+  - [ScannerDiscoveryMode](arkts-basicservices-scannerdiscoverymode-e.md)
+  - [ScannerSyncMode](arkts-basicservices-scannersyncmode-e.md)
+- [@ohos.screenLock](arkts-screenlock.md)<!--Del-->
+  - [getScreenLockAuthState(system api)](arkts-basicservices-getscreenlockauthstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getStrongAuth(system api)](arkts-basicservices-getstrongauth-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getUnlockPolicy(system api)](arkts-basicservices-getunlockpolicy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isDeviceLocked(system api)](arkts-basicservices-isdevicelocked-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isLocked(system api)](arkts-basicservices-islocked-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isScreenLockDisabled(system api)](arkts-basicservices-isscreenlockdisabled-f-sys.md)<!--DelEnd-->
+  - [isScreenLocked](arkts-basicservices-isscreenlocked-f.md)
+  - [isSecureMode](arkts-basicservices-issecuremode-f.md)<!--Del-->
+  - [lock(system api)](arkts-basicservices-lock-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemEvent(system api)](arkts-basicservices-onsystemevent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [requestStrongAuth(system api)](arkts-basicservices-requeststrongauth-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendScreenLockEvent(system api)](arkts-basicservices-sendscreenlockevent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setScreenLockAuthState(system api)](arkts-basicservices-setscreenlockauthstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setScreenLockDisabled(system api)](arkts-basicservices-setscreenlockdisabled-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unlock(system api)](arkts-basicservices-unlock-f-sys.md)<!--DelEnd-->
+  - [unlockScreen](arkts-basicservices-unlockscreen-f.md)<!--Del-->
+  - [SystemEvent(system api)](arkts-basicservices-systemevent-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EventType(system api)](arkts-basicservices-eventtype-t-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthState(system api)](arkts-basicservices-authstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [StrongAuthReasonFlags(system api)](arkts-basicservices-strongauthreasonflags-e-sys.md)<!--DelEnd--><!--Del-->
+  - [UnlockPolicy(system api)](arkts-basicservices-unlockpolicy-e-sys.md)<!--DelEnd-->
+- [@ohos.selectionInput.SelectionExtensionAbility](arkts-selectioninput-selectionextensionability.md)<!--Del-->
+  - [SelectionExtensionAbility(system api)](arkts-basicservices-selectionextensionability-c-sys.md)<!--DelEnd-->
+- [@ohos.selectionInput.SelectionExtensionContext](arkts-selectioninput-selectionextensioncontext.md)<!--Del-->
+  - [SelectionExtensionContext(system api)](arkts-basicservices-selectionextensioncontext-c-sys.md)<!--DelEnd-->
+- [@ohos.selectionInput.SelectionPanel](arkts-selectioninput-selectionpanel.md)<!--Del-->
+  - [PanelInfo(system api)](arkts-basicservices-panelinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PanelType(system api)](arkts-basicservices-paneltype-e-sys.md)<!--DelEnd-->
+- [@ohos.selectionInput.selectionManager](arkts-selectioninput-selectionmanager.md)<!--Del-->
+  - [createPanel(system api)](arkts-basicservices-createpanel-f-sys.md)<!--DelEnd--><!--Del-->
+  - [destroyPanel(system api)](arkts-basicservices-destroypanel-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSelectionContent(system api)](arkts-basicservices-getselectioncontent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-basicservices-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-basicservices-on-f-sys.md)<!--DelEnd-->
+  - [Panel](arkts-basicservices-panel-i.md)<!--Del-->
+  - [Panel(system api)](arkts-basicservices-panel-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SelectionInfo(system api)](arkts-basicservices-selectioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SelectionType(system api)](arkts-basicservices-selectiontype-e-sys.md)<!--DelEnd-->
+- [@ohos.settings](arkts-settings.md)
+  - [settings](arkts-basicservices-settings-n.md)
+    - [date](arkts-basicservices-settings-date-n.md)
+      - [Constants](arkts-basicservices-date-con.md)
+    - [display](arkts-basicservices-settings-display-n.md)
+      - [Constants](arkts-basicservices-display-con.md)
+    - [domainName](arkts-basicservices-settings-domainname-n.md)
+      - [Constants](arkts-basicservices-domainname-con.md)<!--Del-->
+      - [Constants(system api)](arkts-basicservices-domainname-con-sys.md)<!--DelEnd-->
+    - [general](arkts-basicservices-settings-general-n.md)
+      - [Constants](arkts-basicservices-general-con.md)
+    - [input](arkts-basicservices-settings-input-n.md)
+      - [Constants](arkts-basicservices-input-con.md)
+    - [network](arkts-basicservices-settings-network-n.md)
+      - [Constants](arkts-basicservices-network-con.md)
+    - [phone](arkts-basicservices-settings-phone-n.md)
+      - [Constants](arkts-basicservices-phone-con.md)
+    - [sound](arkts-basicservices-settings-sound-n.md)
+      - [Constants](arkts-basicservices-sound-con.md)
+    - [TTS](arkts-basicservices-settings-tts-n.md)
+      - [Constants](arkts-basicservices-tts-con.md)
+    - [wireless](arkts-basicservices-settings-wireless-n.md)
+      - [Constants](arkts-basicservices-wireless-con.md)
+    - [canShowFloating](arkts-basicservices-canshowfloating-f.md)
+    - [enableAirplaneMode](arkts-basicservices-enableairplanemode-f.md)
+    - [getURI](arkts-basicservices-geturi-f.md)
+    - [getUriSync](arkts-basicservices-geturisync-f.md)
+    - [getValue](arkts-basicservices-getvalue-f.md)
+    - [getValueSync](arkts-basicservices-getvaluesync-f.md)
+    - [isDoubleClickAppForSelf](arkts-basicservices-isdoubleclickappforself-f.md)
+    - [openAboutDeviceSettingsPage](arkts-basicservices-openaboutdevicesettingspage-f.md)
+    - [openAppDetailSettingsPage](arkts-basicservices-openappdetailsettingspage-f.md)
+    - [openBiometricsSettingsPage](arkts-basicservices-openbiometricssettingspage-f.md)
+    - [openDisplaySettingsPage](arkts-basicservices-opendisplaysettingspage-f.md)
+    - [openDoubleClickSettingsPage](arkts-basicservices-opendoubleclicksettingspage-f.md)
+    - [openInputMethodDetail](arkts-basicservices-openinputmethoddetail-f.md)
+    - [openInputMethodSettings](arkts-basicservices-openinputmethodsettings-f.md)
+    - [openMobileNetworkSettingsPage](arkts-basicservices-openmobilenetworksettingspage-f.md)
+    - [openNetworkManagerSettings](arkts-basicservices-opennetworkmanagersettings-f.md)
+    - [openNfcSettingsPage](arkts-basicservices-opennfcsettingspage-f.md)
+    - [openScreenRefreshRateSettingsPage](arkts-basicservices-openscreenrefreshratesettingspage-f.md)
+    - [openSoundSettingsPage](arkts-basicservices-opensoundsettingspage-f.md)
+    - [registerKeyObserver](arkts-basicservices-registerkeyobserver-f.md)
+    - [setValue](arkts-basicservices-setvalue-f.md)<!--Del-->
+    - [setValue(system api)](arkts-basicservices-setvalue-f-sys.md)<!--DelEnd-->
+    - [setValueSync](arkts-basicservices-setvaluesync-f.md)
+    - [unregisterKeyObserver](arkts-basicservices-unregisterkeyobserver-f.md)
+- [@ohos.settingsLite](arkts-settingslite.md)
+  - [isDoubleClickAppForSelf](arkts-basicservices-isdoubleclickappforself-f.md)
+  - [openDoubleClickSettingsPage](arkts-basicservices-opendoubleclicksettingspage-f.md)
+  - [openNfcSettingsPage](arkts-basicservices-opennfcsettingspage-f.md)
+  - [openPinSettingPage](arkts-basicservices-openpinsettingpage-f.md)
+  - [ClickCallback](arkts-basicservices-clickcallback-i.md)
+- [@ohos.systemCapability](arkts-systemcapability.md)<!--Del-->
+  - [querySystemCapabilities(system api)](arkts-basicservices-querysystemcapabilities-f-sys.md)<!--DelEnd-->
+- [@ohos.systemDateTime](arkts-systemdatetime.md)
+  - [getAutoTimeStatus](arkts-basicservices-getautotimestatus-f.md)
+  - [getCurrentTime](arkts-basicservices-getcurrenttime-f.md)
+  - [getDate](arkts-basicservices-getdate-f.md)<!--Del-->
+  - [getNtpTime(system api)](arkts-basicservices-getntptime-f-sys.md)<!--DelEnd-->
+  - [getRealActiveTime](arkts-basicservices-getrealactivetime-f.md)
+  - [getRealTime](arkts-basicservices-getrealtime-f.md)
+  - [getTime](arkts-basicservices-gettime-f.md)
+  - [getTimezone](arkts-basicservices-gettimezone-f.md)
+  - [getTimezoneSync](arkts-basicservices-gettimezonesync-f.md)
+  - [getUptime](arkts-basicservices-getuptime-f.md)<!--Del-->
+  - [setAutoTimeStatus(system api)](arkts-basicservices-setautotimestatus-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDate(system api)](arkts-basicservices-setdate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setTime(system api)](arkts-basicservices-settime-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setTimezone(system api)](arkts-basicservices-settimezone-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateNtpTime(system api)](arkts-basicservices-updatentptime-f-sys.md)<!--DelEnd-->
+  - [TimeType](arkts-basicservices-timetype-e.md)
+- [@ohos.systemParameterEnhance](arkts-systemparameterenhance.md)<!--Del-->
+  - [get(system api)](arkts-basicservices-get-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSync(system api)](arkts-basicservices-getsync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [set(system api)](arkts-basicservices-set-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setSync(system api)](arkts-basicservices-setsync-f-sys.md)<!--DelEnd-->
+- [@ohos.systemTime](arkts-systemtime.md)
+  - [getCurrentTime](arkts-basicservices-getcurrenttime-f.md)
+  - [getDate](arkts-basicservices-getdate-f.md)
+  - [getRealActiveTime](arkts-basicservices-getrealactivetime-f.md)
+  - [getRealTime](arkts-basicservices-getrealtime-f.md)
+  - [getTimezone](arkts-basicservices-gettimezone-f.md)
+  - [setDate](arkts-basicservices-setdate-f.md)
+  - [setTime](arkts-basicservices-settime-f.md)
+  - [setTimezone](arkts-basicservices-settimezone-f.md)
+- [@ohos.systemTimer](arkts-systemtimer.md)<!--Del-->
+  - [createTimer(system api)](arkts-basicservices-createtimer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [destroyTimer(system api)](arkts-basicservices-destroytimer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startTimer(system api)](arkts-basicservices-starttimer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopTimer(system api)](arkts-basicservices-stoptimer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [TimerOptions(system api)](arkts-basicservices-timeroptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Constants(system api)](arkts-basicservices-systemtimer-con-sys.md)<!--DelEnd-->
+- [@ohos.systemparameter](arkts-systemparameter.md)<!--Del-->
+  - [get(system api)](arkts-basicservices-get-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSync(system api)](arkts-basicservices-getsync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [set(system api)](arkts-basicservices-set-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setSync(system api)](arkts-basicservices-setsync-f-sys.md)<!--DelEnd-->
+- [@ohos.thermal](arkts-thermal.md)
+  - [getLevel](arkts-basicservices-getlevel-f.md)
+  - [getThermalLevel](arkts-basicservices-getthermallevel-f.md)
+  - [registerThermalLevelCallback](arkts-basicservices-registerthermallevelcallback-f.md)
+  - [subscribeThermalLevel](arkts-basicservices-subscribethermallevel-f.md)
+  - [unregisterThermalLevelCallback](arkts-basicservices-unregisterthermallevelcallback-f.md)
+  - [unsubscribeThermalLevel](arkts-basicservices-unsubscribethermallevel-f.md)
+  - [ThermalLevel](arkts-basicservices-thermallevel-e.md)
+- [@ohos.update](arkts-update.md)<!--Del-->
+  - [getLocalUpdater(system api)](arkts-basicservices-getlocalupdater-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getOnlineUpdater(system api)](arkts-basicservices-getonlineupdater-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getRestorer(system api)](arkts-basicservices-getrestorer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [BusinessType(system api)](arkts-basicservices-businesstype-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CheckResult(system api)](arkts-basicservices-checkresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ClearOptions(system api)](arkts-basicservices-clearoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ComponentDescription(system api)](arkts-basicservices-componentdescription-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CurrentVersionInfo(system api)](arkts-basicservices-currentversioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DescriptionInfo(system api)](arkts-basicservices-descriptioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DescriptionOptions(system api)](arkts-basicservices-descriptionoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DownloadOptions(system api)](arkts-basicservices-downloadoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ErrorMessage(system api)](arkts-basicservices-errormessage-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EventClassifyInfo(system api)](arkts-basicservices-eventclassifyinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EventInfo(system api)](arkts-basicservices-eventinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FactoryResetInfo(system api)](arkts-basicservices-factoryresetinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FactoryResetStrategy(system api)](arkts-basicservices-factoryresetstrategy-i-sys.md)<!--DelEnd--><!--Del-->
+  - [LocalUpdater(system api)](arkts-basicservices-localupdater-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NewVersionInfo(system api)](arkts-basicservices-newversioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PauseDownloadOptions(system api)](arkts-basicservices-pausedownloadoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Restorer(system api)](arkts-basicservices-restorer-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ResumeDownloadOptions(system api)](arkts-basicservices-resumedownloadoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TaskBody(system api)](arkts-basicservices-taskbody-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TaskInfo(system api)](arkts-basicservices-taskinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Updater(system api)](arkts-basicservices-updater-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradeFile(system api)](arkts-basicservices-upgradefile-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradeInfo(system api)](arkts-basicservices-upgradeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradeOptions(system api)](arkts-basicservices-upgradeoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradePeriod(system api)](arkts-basicservices-upgradeperiod-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradePolicy(system api)](arkts-basicservices-upgradepolicy-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VersionComponent(system api)](arkts-basicservices-versioncomponent-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VersionDigestInfo(system api)](arkts-basicservices-versiondigestinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradeTaskCallback(system api)](arkts-basicservices-upgradetaskcallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [BusinessSubType(system api)](arkts-basicservices-businesssubtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [BusinessVendor(system api)](arkts-basicservices-businessvendor-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ComponentType(system api)](arkts-basicservices-componenttype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DescriptionFormat(system api)](arkts-basicservices-descriptionformat-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DescriptionType(system api)](arkts-basicservices-descriptiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [EffectiveMode(system api)](arkts-basicservices-effectivemode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [EventClassify(system api)](arkts-basicservices-eventclassify-e-sys.md)<!--DelEnd--><!--Del-->
+  - [EventId(system api)](arkts-basicservices-eventid-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FactoryResetScope(system api)](arkts-basicservices-factoryresetscope-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NetType(system api)](arkts-basicservices-nettype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Order(system api)](arkts-basicservices-order-e-sys.md)<!--DelEnd--><!--Del-->
+  - [OtaMode(system api)](arkts-basicservices-otamode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradeAction(system api)](arkts-basicservices-upgradeaction-e-sys.md)<!--DelEnd--><!--Del-->
+  - [UpgradeStatus(system api)](arkts-basicservices-upgradestatus-e-sys.md)<!--DelEnd-->
+- [@ohos.usb](arkts-usb.md)
+  - [bulkTransfer](arkts-basicservices-bulktransfer-f.md)
+  - [claimInterface](arkts-basicservices-claiminterface-f.md)
+  - [closePipe](arkts-basicservices-closepipe-f.md)
+  - [connectDevice](arkts-basicservices-connectdevice-f.md)
+  - [controlTransfer](arkts-basicservices-controltransfer-f.md)<!--Del-->
+  - [getCurrentFunctions(system api)](arkts-basicservices-getcurrentfunctions-f-sys.md)<!--DelEnd-->
+  - [getDevices](arkts-basicservices-getdevices-f.md)
+  - [getFileDescriptor](arkts-basicservices-getfiledescriptor-f.md)<!--Del-->
+  - [getPorts(system api)](arkts-basicservices-getports-f-sys.md)<!--DelEnd-->
+  - [getRawDescriptor](arkts-basicservices-getrawdescriptor-f.md)<!--Del-->
+  - [getSupportedModes(system api)](arkts-basicservices-getsupportedmodes-f-sys.md)<!--DelEnd-->
+  - [hasRight](arkts-basicservices-hasright-f.md)
+  - [releaseInterface](arkts-basicservices-releaseinterface-f.md)
+  - [requestRight](arkts-basicservices-requestright-f.md)
+  - [setConfiguration](arkts-basicservices-setconfiguration-f.md)<!--Del-->
+  - [setCurrentFunctions(system api)](arkts-basicservices-setcurrentfunctions-f-sys.md)<!--DelEnd-->
+  - [setInterface](arkts-basicservices-setinterface-f.md)<!--Del-->
+  - [setPortRoles(system api)](arkts-basicservices-setportroles-f-sys.md)<!--DelEnd--><!--Del-->
+  - [usbFunctionsFromString(system api)](arkts-basicservices-usbfunctionsfromstring-f-sys.md)<!--DelEnd--><!--Del-->
+  - [usbFunctionsToString(system api)](arkts-basicservices-usbfunctionstostring-f-sys.md)<!--DelEnd-->
+  - [USBConfig](arkts-basicservices-usbconfig-i.md)
+  - [USBControlParams](arkts-basicservices-usbcontrolparams-i.md)
+  - [USBDevice](arkts-basicservices-usbdevice-i.md)
+  - [USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md)
+  - [USBEndpoint](arkts-basicservices-usbendpoint-i.md)
+  - [USBInterface](arkts-basicservices-usbinterface-i.md)<!--Del-->
+  - [USBPort(system api)](arkts-basicservices-usbport-i-sys.md)<!--DelEnd--><!--Del-->
+  - [USBPortStatus(system api)](arkts-basicservices-usbportstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DataRoleType(system api)](arkts-basicservices-dataroletype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FunctionType(system api)](arkts-basicservices-functiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PortModeType(system api)](arkts-basicservices-portmodetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PowerRoleType(system api)](arkts-basicservices-powerroletype-e-sys.md)<!--DelEnd-->
+  - [USBControlRequestType](arkts-basicservices-usbcontrolrequesttype-e.md)
+  - [USBRequestDirection](arkts-basicservices-usbrequestdirection-e.md)
+  - [USBRequestTargetType](arkts-basicservices-usbrequesttargettype-e.md)
+- [@ohos.usbManager](arkts-usbmanager.md)<!--Del-->
+  - [addAccessoryRight(system api)](arkts-basicservices-addaccessoryright-f-sys.md)<!--DelEnd--><!--Del-->
+  - [addDeviceAccessRight(system api)](arkts-basicservices-adddeviceaccessright-f-sys.md)<!--DelEnd-->
+  - [bulkTransfer](arkts-basicservices-bulktransfer-f.md)
+  - [cancelAccessoryRight](arkts-basicservices-cancelaccessoryright-f.md)
+  - [claimInterface](arkts-basicservices-claiminterface-f.md)
+  - [closeAccessory](arkts-basicservices-closeaccessory-f.md)
+  - [closePipe](arkts-basicservices-closepipe-f.md)
+  - [connectDevice](arkts-basicservices-connectdevice-f.md)
+  - [controlTransfer](arkts-basicservices-controltransfer-f.md)
+  - [getAccessoryList](arkts-basicservices-getaccessorylist-f.md)<!--Del-->
+  - [getCurrentFunctions(system api)](arkts-basicservices-getcurrentfunctions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDeviceFunctions(system api)](arkts-basicservices-getdevicefunctions-f-sys.md)<!--DelEnd-->
+  - [getDevices](arkts-basicservices-getdevices-f.md)
+  - [getFileDescriptor](arkts-basicservices-getfiledescriptor-f.md)<!--Del-->
+  - [getFunctionsFromString(system api)](arkts-basicservices-getfunctionsfromstring-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPortList(system api)](arkts-basicservices-getportlist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPorts(system api)](arkts-basicservices-getports-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPortSupportModes(system api)](arkts-basicservices-getportsupportmodes-f-sys.md)<!--DelEnd-->
+  - [getRawDescriptor](arkts-basicservices-getrawdescriptor-f.md)<!--Del-->
+  - [getStringFromFunctions(system api)](arkts-basicservices-getstringfromfunctions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSupportedModes(system api)](arkts-basicservices-getsupportedmodes-f-sys.md)<!--DelEnd-->
+  - [hasAccessoryRight](arkts-basicservices-hasaccessoryright-f.md)
+  - [hasRight](arkts-basicservices-hasright-f.md)
+  - [openAccessory](arkts-basicservices-openaccessory-f.md)
+  - [releaseInterface](arkts-basicservices-releaseinterface-f.md)
+  - [removeRight](arkts-basicservices-removeright-f.md)
+  - [requestAccessoryRight](arkts-basicservices-requestaccessoryright-f.md)
+  - [requestRight](arkts-basicservices-requestright-f.md)
+  - [resetUsbDevice](arkts-basicservices-resetusbdevice-f.md)
+  - [setConfiguration](arkts-basicservices-setconfiguration-f.md)<!--Del-->
+  - [setCurrentFunctions(system api)](arkts-basicservices-setcurrentfunctions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDeviceFunctions(system api)](arkts-basicservices-setdevicefunctions-f-sys.md)<!--DelEnd-->
+  - [setInterface](arkts-basicservices-setinterface-f.md)<!--Del-->
+  - [setPortRoles(system api)](arkts-basicservices-setportroles-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPortRoleTypes(system api)](arkts-basicservices-setportroletypes-f-sys.md)<!--DelEnd-->
+  - [usbCancelTransfer](arkts-basicservices-usbcanceltransfer-f.md)
+  - [usbControlTransfer](arkts-basicservices-usbcontroltransfer-f.md)<!--Del-->
+  - [usbFunctionsFromString(system api)](arkts-basicservices-usbfunctionsfromstring-f-sys.md)<!--DelEnd--><!--Del-->
+  - [usbFunctionsToString(system api)](arkts-basicservices-usbfunctionstostring-f-sys.md)<!--DelEnd-->
+  - [usbSubmitTransfer](arkts-basicservices-usbsubmittransfer-f.md)
+  - [SubmitTransferCallback](arkts-basicservices-submittransfercallback-i.md)
+  - [USBAccessory](arkts-basicservices-usbaccessory-i.md)
+  - [USBAccessoryHandle](arkts-basicservices-usbaccessoryhandle-i.md)
+  - [USBConfiguration](arkts-basicservices-usbconfiguration-i.md)
+  - [USBControlParams](arkts-basicservices-usbcontrolparams-i.md)
+  - [UsbDataTransferParams](arkts-basicservices-usbdatatransferparams-i.md)
+  - [USBDevice](arkts-basicservices-usbdevice-i.md)
+  - [USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md)
+  - [USBDeviceRequestParams](arkts-basicservices-usbdevicerequestparams-i.md)
+  - [USBEndpoint](arkts-basicservices-usbendpoint-i.md)
+  - [USBInterface](arkts-basicservices-usbinterface-i.md)
+  - [UsbIsoPacketDescriptor](arkts-basicservices-usbisopacketdescriptor-i.md)<!--Del-->
+  - [USBPort(system api)](arkts-basicservices-usbport-i-sys.md)<!--DelEnd--><!--Del-->
+  - [USBPortStatus(system api)](arkts-basicservices-usbportstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DataRoleType(system api)](arkts-basicservices-dataroletype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [FunctionType(system api)](arkts-basicservices-functiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PortModeType(system api)](arkts-basicservices-portmodetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PowerRoleType(system api)](arkts-basicservices-powerroletype-e-sys.md)<!--DelEnd-->
+  - [USBControlRequestType](arkts-basicservices-usbcontrolrequesttype-e.md)
+  - [UsbEndpointTransferType](arkts-basicservices-usbendpointtransfertype-e.md)
+  - [USBRequestDirection](arkts-basicservices-usbrequestdirection-e.md)
+  - [USBRequestTargetType](arkts-basicservices-usbrequesttargettype-e.md)
+  - [UsbTransferFlags](arkts-basicservices-usbtransferflags-e.md)
+  - [UsbTransferStatus](arkts-basicservices-usbtransferstatus-e.md)
+- [@ohos.usbManager.serial](arkts-usbmanager-serial.md)<!--Del-->
+  - [addSerialRight(system api)](arkts-basicservices-addserialright-f-sys.md)<!--DelEnd-->
+  - [cancelSerialRight](arkts-basicservices-cancelserialright-f.md)
+  - [close](arkts-basicservices-close-f.md)
+  - [getAttribute](arkts-basicservices-getattribute-f.md)
+  - [getPortList](arkts-basicservices-getportlist-f.md)
+  - [hasSerialRight](arkts-basicservices-hasserialright-f.md)
+  - [open](arkts-basicservices-open-f.md)
+  - [read](arkts-basicservices-read-f.md)
+  - [readSync](arkts-basicservices-readsync-f.md)
+  - [requestSerialRight](arkts-basicservices-requestserialright-f.md)
+  - [setAttribute](arkts-basicservices-setattribute-f.md)
+  - [write](arkts-basicservices-write-f.md)
+  - [writeSync](arkts-basicservices-writesync-f.md)
+  - [SerialAttribute](arkts-basicservices-serialattribute-i.md)
+  - [SerialPort](arkts-basicservices-serialport-i.md)
+  - [BaudRates](arkts-basicservices-baudrates-e.md)
+  - [DataBits](arkts-basicservices-databits-e.md)
+  - [Parity](arkts-basicservices-parity-e.md)
+  - [StopBits](arkts-basicservices-stopbits-e.md)
+- [@ohos.wallpaper](arkts-wallpaper.md)
+  - [getColors](arkts-basicservices-getcolors-f.md)<!--Del-->
+  - [getColorsSync(system api)](arkts-basicservices-getcolorssync-f-sys.md)<!--DelEnd-->
+  - [getFile](arkts-basicservices-getfile-f.md)
+  - [getId](arkts-basicservices-getid-f.md)<!--Del-->
+  - [getImage(system api)](arkts-basicservices-getimage-f-sys.md)<!--DelEnd-->
+  - [getMinHeight](arkts-basicservices-getminheight-f.md)<!--Del-->
+  - [getMinHeightSync(system api)](arkts-basicservices-getminheightsync-f-sys.md)<!--DelEnd-->
+  - [getMinWidth](arkts-basicservices-getminwidth-f.md)<!--Del-->
+  - [getMinWidthSync(system api)](arkts-basicservices-getminwidthsync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPixelMap(system api)](arkts-basicservices-getpixelmap-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getWallpaperByState(system api)](arkts-basicservices-getwallpaperbystate-f-sys.md)<!--DelEnd-->
+  - [isChangePermitted](arkts-basicservices-ischangepermitted-f.md)
+  - [isOperationAllowed](arkts-basicservices-isoperationallowed-f.md)
+  - [off](arkts-basicservices-off-f.md)<!--Del-->
+  - [off(system api)](arkts-basicservices-off-f-sys.md)<!--DelEnd-->
+  - [on](arkts-basicservices-on-f.md)<!--Del-->
+  - [on(system api)](arkts-basicservices-on-f-sys.md)<!--DelEnd-->
+  - [reset](arkts-basicservices-reset-f.md)<!--Del-->
+  - [restore(system api)](arkts-basicservices-restore-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setAllWallpapers(system api)](arkts-basicservices-setallwallpapers-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCustomWallpaper(system api)](arkts-basicservices-setcustomwallpaper-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setImage(system api)](arkts-basicservices-setimage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setVideo(system api)](arkts-basicservices-setvideo-f-sys.md)<!--DelEnd-->
+  - [setWallpaper](arkts-basicservices-setwallpaper-f.md)
+  - [RgbaColor](arkts-basicservices-rgbacolor-i.md)<!--Del-->
+  - [WallpaperInfo(system api)](arkts-basicservices-wallpaperinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [FoldState(system api)](arkts-basicservices-foldstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RotateState(system api)](arkts-basicservices-rotatestate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [WallpaperResourceType(system api)](arkts-basicservices-wallpaperresourcetype-e-sys.md)<!--DelEnd-->
+  - [WallpaperType](arkts-basicservices-wallpapertype-e.md)
+- [@ohos.zlib](arkts-zlib.md)
+  - [compressFile](arkts-basicservices-compressfile-f.md)
+  - [compressFiles](arkts-basicservices-compressfiles-f.md)
+  - [createChecksum](arkts-basicservices-createchecksum-f.md)
+  - [createChecksumSync](arkts-basicservices-createchecksumsync-f.md)
+  - [createGZip](arkts-basicservices-creategzip-f.md)
+  - [createGZipSync](arkts-basicservices-creategzipsync-f.md)
+  - [createZip](arkts-basicservices-createzip-f.md)
+  - [createZipSync](arkts-basicservices-createzipsync-f.md)
+  - [decompressFile](arkts-basicservices-decompressfile-f.md)
+  - [getOriginalSize](arkts-basicservices-getoriginalsize-f.md)
+  - [unzipFile](arkts-basicservices-unzipfile-f.md)
+  - [zipFile](arkts-basicservices-zipfile-f.md)
+  - [Checksum](arkts-basicservices-checksum-i.md)
+  - [DecompressionOutputInfo](arkts-basicservices-decompressionoutputinfo-i.md)
+  - [DeflatePendingOutputInfo](arkts-basicservices-deflatependingoutputinfo-i.md)
+  - [DictionaryOutputInfo](arkts-basicservices-dictionaryoutputinfo-i.md)
+  - [GzErrorOutputInfo](arkts-basicservices-gzerroroutputinfo-i.md)
+  - [GzHeader](arkts-basicservices-gzheader-i.md)
+  - [GZip](arkts-basicservices-gzip-i.md)
+  - [Options](arkts-basicservices-options-i.md)
+  - [Zip](arkts-basicservices-zip-i.md)
+  - [ZipOutputInfo](arkts-basicservices-zipoutputinfo-i.md)
+  - [ZStream](arkts-basicservices-zstream-i.md)
+  - [InflateBackInputCallback](arkts-basicservices-inflatebackinputcallback-t.md)
+  - [InflateBackOutputCallback](arkts-basicservices-inflatebackoutputcallback-t.md)
+  - [CompressFlushMode](arkts-basicservices-compressflushmode-e.md)
+  - [CompressLevel](arkts-basicservices-compresslevel-e.md)
+  - [CompressMethod](arkts-basicservices-compressmethod-e.md)
+  - [CompressStrategy](arkts-basicservices-compressstrategy-e.md)
+  - [ErrorCode](arkts-basicservices-errorcode-e.md)
+  - [MemLevel](arkts-basicservices-memlevel-e.md)
+  - [OffsetReferencePoint](arkts-basicservices-offsetreferencepoint-e.md)
+  - [ParallelStrategy](arkts-basicservices-parallelstrategy-e.md)
+  - [PathSeparatorStrategy](arkts-basicservices-pathseparatorstrategy-e.md)
+  - [ReturnStatus](arkts-basicservices-returnstatus-e.md)
+- [@system.battery](arkts-battery.md)
+  - [Battery](arkts-basicservices-battery-c.md)
+  - [BatteryResponse](arkts-basicservices-batteryresponse-i.md)
+  - [GetStatusOptions](arkts-basicservices-getstatusoptions-i.md)
+- [@system.brightness](arkts-brightness.md)
+  - [Brightness](arkts-basicservices-brightness-c.md)
+  - [BrightnessModeResponse](arkts-basicservices-brightnessmoderesponse-i.md)
+  - [BrightnessResponse](arkts-basicservices-brightnessresponse-i.md)
+  - [GetBrightnessModeOptions](arkts-basicservices-getbrightnessmodeoptions-i.md)
+  - [GetBrightnessOptions](arkts-basicservices-getbrightnessoptions-i.md)
+  - [SetBrightnessModeOptions](arkts-basicservices-setbrightnessmodeoptions-i.md)
+  - [SetBrightnessOptions](arkts-basicservices-setbrightnessoptions-i.md)
+  - [SetKeepScreenOnOptions](arkts-basicservices-setkeepscreenonoptions-i.md)
+- [@system.device](arkts-device.md)
+  - [Device](arkts-basicservices-device-c.md)
+  - [DeviceResponse](arkts-basicservices-deviceresponse-i.md)
+  - [GetDeviceOptions](arkts-basicservices-getdeviceoptions-i.md)
+- [@system.request](arkts-request.md)
+  - [Request](arkts-basicservices-request-c.md)
+  - [DownloadRequestOptions](arkts-basicservices-downloadrequestoptions-i.md)
+  - [DownloadResponse](arkts-basicservices-downloadresponse-i.md)
+  - [OnDownloadCompleteOptions](arkts-basicservices-ondownloadcompleteoptions-i.md)
+  - [OnDownloadCompleteResponse](arkts-basicservices-ondownloadcompleteresponse-i.md)
+  - [RequestData](arkts-basicservices-requestdata-i.md)
+  - [RequestFile](arkts-basicservices-requestfile-i.md)
+  - [UploadRequestOptions](arkts-basicservices-uploadrequestoptions-i.md)
+  - [UploadResponse](arkts-basicservices-uploadresponse-i.md)
+- commonEvent<!--arkts-basicserviceskit-commonEvent-->
+  - [commonEventData](arkts-commoneventdata.md)
+    - [CommonEventData](arkts-basicservices-commoneventdata-i.md)
+  - [commonEventPublishData](arkts-commoneventpublishdata.md)
+    - [CommonEventPublishData](arkts-basicservices-commoneventpublishdata-i.md)
+  - [commonEventSubscribeInfo](arkts-commoneventsubscribeinfo.md)
+    - [CommonEventSubscribeInfo](arkts-basicservices-commoneventsubscribeinfo-i.md)
+  - [commonEventSubscriber](arkts-commoneventsubscriber.md)
+    - [CommonEventSubscriber](arkts-basicservices-commoneventsubscriber-i.md)

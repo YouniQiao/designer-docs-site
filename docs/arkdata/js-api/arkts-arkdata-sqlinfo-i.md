@@ -1,0 +1,42 @@
+# SqlInfo
+
+Represents details about the SQL statement executed by the database.
+
+**Since:** 20
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+
+## Modules to Import
+
+```TypeScript
+import { relationalStore } from '@ohos.data.relationalStore';
+```
+
+## args
+
+```TypeScript
+args: Array<ValueType>
+```
+
+Parameters in the SQL statements to be executed.
+
+**Type:** Array<ValueType>
+
+**Since:** 20
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+
+## sql
+
+```TypeScript
+sql: string
+```
+
+SQL statements to be executed.
+
+**Type:** string
+
+**Since:** 20
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+

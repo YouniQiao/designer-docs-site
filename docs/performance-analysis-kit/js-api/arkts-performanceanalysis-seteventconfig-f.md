@@ -1,0 +1,64 @@
+# setEventConfig
+
+## Modules to Import
+
+```TypeScript
+import { hiAppEvent } from '@ohos.hiviewdfx.hiAppEvent';
+```
+
+## setEventConfig
+
+```TypeScript
+function setEventConfig(name: string, config: Record<string, ParamType>): Promise<void>
+```
+
+Sets event configuration. This method uses a promise to return the result. In the same lifecycle, you can set event configuration by event name. Configuration items vary depending on events. Currently, only the following events are supported: - **MAIN_THREAD_JANK**. (For details about the parameter configuration, see [Main Thread Jank Event Overview](../../../../dfx/hiappevent-watcher-mainthreadjank-events.md#parameters-of-seteventconfig) .) - **APP_CRASH** (For details about the parameter configuration, see [Customizing Crash Log Specifications](../../../../dfx/hiappevent-watcher-crash-events.md#customizing-crash-log-specifications) .) - **RESOURCE_OVERLIMIT** (For details about the parameter configuration, see [Resource Leak Event Overview](../../../../dfx/hiappevent-watcher-resourceleak-events.md#customizing-specifications). )
+
+**Since:** 15
+
+**Atomic service API:** This API can be used in atomic services since API version 15.
+
+**System capability:** SystemCapability.HiviewDFX.HiAppEvent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| name | string | Yes | Event name. |
+| config | Record&lt;string, ParamType&gt; | Yes | Custom parameter object. The parameter name and value are defined asfollows:<br>- The parameter name contains a maximum of 1024 characters, which is of the string type and cannotbe empty.<br>- The parameter value is of the ParamType and contains a maximum of 1024 characters. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void&gt; | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types; 3.Parameter verification failed. |
+
+**Example**
+
+The following example sets the collection stack parameters of the MAIN_THREAD_JANK event:
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+let params: Record<string, hiAppEvent.ParamType> = {
+  "log_type": "1",
+  "sample_interval": "100",
+  "ignore_startup_time": "11",
+  "sample_count": "21",
+  "report_times_per_app": "3"
+};
+hiAppEvent.setEventConfig(hiAppEvent.event.MAIN_THREAD_JANK, params).then(() => {
+  hilog.info(0x0000, 'hiAppEvent', `Successfully set sampling stack parameters.`);
+}).catch((err: BusinessError) => {
+  hilog.error(0x0000, 'hiAppEvent', `Failed to set sample stack value. Code: ${err.code}, message: ${err.message}`);
+});
+
+```
+

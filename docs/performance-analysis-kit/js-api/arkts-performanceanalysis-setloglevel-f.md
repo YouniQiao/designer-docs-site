@@ -1,0 +1,29 @@
+# setLogLevel
+
+## Modules to Import
+
+```TypeScript
+import { hilog } from '@ohos.hilog';
+```
+
+## setLogLevel
+
+```TypeScript
+function setLogLevel(level: LogLevel, prefer: PreferStrategy): void
+```
+
+Sets the minimum log level of the current application process. You can configure different preference strategies using the **prefer** parameter. The **PREFER_CLOSE_LOG** strategy has the same effect as the **setMinLogLevel()** function. > **NOTE** > > This function does not take effect for debug applications.
+
+**Since:** 21
+
+**Atomic service API:** This API can be used in atomic services since API version 21.
+
+**System capability:** SystemCapability.HiviewDFX.HiLog
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| level | LogLevel | Yes | Log level. |
+| prefer | PreferStrategy | Yes | Preference strategy. |
+

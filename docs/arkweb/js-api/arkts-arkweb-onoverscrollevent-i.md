@@ -1,0 +1,40 @@
+# OnOverScrollEvent
+
+Represents the callback invoked when the web page is overscrolled.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Web.Webview.Core
+
+## xOffset
+
+```TypeScript
+xOffset: number
+```
+
+Horizontal overscroll offset based on the leftmost edge of the web page. Unit: vp.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Web.Webview.Core
+
+## yOffset
+
+```TypeScript
+yOffset: number
+```
+
+Vertical overscroll offset based on the top edge of the web page. Unit: vp.
+
+**Type:** number
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Web.Webview.Core
+

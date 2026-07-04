@@ -1,0 +1,228 @@
+# StatusMonitor (System API)
+
+Defines the object for listening to or obtaining the template or continuous authentication status.
+
+**Since:** 23
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+```
+
+## getTemplateStatus
+
+```TypeScript
+getTemplateStatus(): Promise<TemplateStatus[]>
+```
+
+Obtains the status of the companion device template. This API uses a promise to return the result.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;TemplateStatus[]&gt; | Promise used to return the list of all template states. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## offAvailableDeviceChange
+
+```TypeScript
+offAvailableDeviceChange(callback?: AvailableDeviceStatusCallback): void
+```
+
+Unsubscribes from the events for status changes of companion devices that can be added. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AvailableDeviceStatusCallback | No | Callback to unregister. If this parameter is notspecified, all callbacks corresponding to the event type are unsubscribed. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## offContinuousAuthChange
+
+```TypeScript
+offContinuousAuthChange(callback?: ContinuousAuthStatusCallback): void
+```
+
+Unsubscribes from the events for continuous authentication status of companion devices. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ContinuousAuthStatusCallback | No | Callback to unregister. If this parameter is notspecified, all callbacks corresponding to the event type are unsubscribed. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## offTemplateChange
+
+```TypeScript
+offTemplateChange(callback?: TemplateStatusCallback): void
+```
+
+Unsubscribes from template status change events. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | TemplateStatusCallback | No | Callback to unregister. If this parameter is not specified,all callbacks corresponding to the event type are unsubscribed. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## onAvailableDeviceChange
+
+```TypeScript
+onAvailableDeviceChange(callback: AvailableDeviceStatusCallback): void
+```
+
+Subscribes to the events for status changes of companion devices that can be added. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AvailableDeviceStatusCallback | Yes | Callback used to return the available device status. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## onContinuousAuthChange
+
+```TypeScript
+onContinuousAuthChange(param: ContinuousAuthParam, callback: ContinuousAuthStatusCallback): void
+```
+
+Subscribes to the events for continuous authentication status of companion devices. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| param | ContinuousAuthParam | Yes | Device for which the events are subscribed to. |
+| callback | ContinuousAuthStatusCallback | Yes | Called when the continuous authentication status of thedevice changes. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+| [32600002](../errorcode-useriam.md#32600002-template-not-found) | The template is not found. |
+
+## onTemplateChange
+
+```TypeScript
+onTemplateChange(callback: TemplateStatusCallback): void
+```
+
+Subscribes to template status change events. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | TemplateStatusCallback | Yes | Callback used to receive the template status. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+

@@ -1,0 +1,180 @@
+# ArkTS API<!--arkts-backgroundtaskskit-->
+
+- [@ohos.WorkSchedulerExtensionAbility](arkts-workschedulerextensionability.md)
+  - [WorkSchedulerExtensionAbility](arkts-backgroundtasks-workschedulerextensionability-c.md)
+  - [WorkSchedulerExtensionContext](arkts-backgroundtasks-workschedulerextensioncontext-t.md)
+- [@ohos.backgroundTaskManager](arkts-backgroundtaskmanager.md)
+  - [cancelSuspendDelay](arkts-backgroundtasks-cancelsuspenddelay-depr-f.md)
+  - [getRemainingDelayTime](arkts-backgroundtasks-getremainingdelaytime-depr-f.md)
+  - [requestSuspendDelay](arkts-backgroundtasks-requestsuspenddelay-depr-f.md)
+  - [startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-depr-f.md)
+  - [stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-depr-f.md)
+  - [DelaySuspendInfo](arkts-backgroundtasks-delaysuspendinfo-depr-i.md)
+  - [BackgroundMode](arkts-backgroundtasks-backgroundmode-depr-e.md)<!--Del-->
+  - [BackgroundMode(system api)](arkts-backgroundtasks-backgroundmode-depr-e-sys.md)<!--DelEnd-->
+- [@ohos.bundleState](arkts-bundlestate.md)
+  - [isIdleState](arkts-backgroundtasks-isidlestate-f.md)
+  - [queryAppUsagePriorityGroup](arkts-backgroundtasks-queryappusageprioritygroup-f.md)<!--Del-->
+  - [queryBundleActiveStates(system api)](arkts-backgroundtasks-querybundleactivestates-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryBundleStateInfoByInterval(system api)](arkts-backgroundtasks-querybundlestateinfobyinterval-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryBundleStateInfos(system api)](arkts-backgroundtasks-querybundlestateinfos-f-sys.md)<!--DelEnd-->
+  - [queryCurrentBundleActiveStates](arkts-backgroundtasks-querycurrentbundleactivestates-f.md)
+  - [BundleActiveInfoResponse](arkts-backgroundtasks-bundleactiveinforesponse-i.md)
+  - [BundleActiveState](arkts-backgroundtasks-bundleactivestate-i.md)
+  - [BundleStateInfo](arkts-backgroundtasks-bundlestateinfo-i.md)
+  - [IntervalType](arkts-backgroundtasks-intervaltype-e.md)
+- [@ohos.reminderAgent](arkts-reminderagent.md)
+  - [addNotificationSlot](arkts-backgroundtasks-addnotificationslot-f.md)
+  - [cancelAllReminders](arkts-backgroundtasks-cancelallreminders-f.md)
+  - [cancelReminder](arkts-backgroundtasks-cancelreminder-f.md)
+  - [getValidReminders](arkts-backgroundtasks-getvalidreminders-f.md)
+  - [publishReminder](arkts-backgroundtasks-publishreminder-f.md)
+  - [removeNotificationSlot](arkts-backgroundtasks-removenotificationslot-f.md)
+  - [ActionButton](arkts-backgroundtasks-actionbutton-i.md)
+  - [LocalDateTime](arkts-backgroundtasks-localdatetime-i.md)
+  - [MaxScreenWantAgent](arkts-backgroundtasks-maxscreenwantagent-i.md)
+  - [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md)
+  - [ReminderRequestAlarm](arkts-backgroundtasks-reminderrequestalarm-i.md)
+  - [ReminderRequestCalendar](arkts-backgroundtasks-reminderrequestcalendar-i.md)
+  - [ReminderRequestTimer](arkts-backgroundtasks-reminderrequesttimer-i.md)
+  - [WantAgent](arkts-backgroundtasks-wantagent-i.md)
+  - [ActionButtonType](arkts-backgroundtasks-actionbuttontype-e.md)
+  - [ReminderType](arkts-backgroundtasks-remindertype-e.md)
+- [@ohos.reminderAgentManager](arkts-reminderagentmanager.md)
+  - [addExcludeDate](arkts-backgroundtasks-addexcludedate-f.md)
+  - [addNotificationSlot](arkts-backgroundtasks-addnotificationslot-f.md)
+  - [cancelAllReminders](arkts-backgroundtasks-cancelallreminders-f.md)
+  - [cancelReminder](arkts-backgroundtasks-cancelreminder-f.md)
+  - [cancelReminderOnDisplay](arkts-backgroundtasks-cancelreminderondisplay-f.md)
+  - [deleteExcludeDates](arkts-backgroundtasks-deleteexcludedates-f.md)
+  - [getAllValidReminders](arkts-backgroundtasks-getallvalidreminders-f.md)
+  - [getExcludeDates](arkts-backgroundtasks-getexcludedates-f.md)
+  - [getValidReminders](arkts-backgroundtasks-getvalidreminders-f.md)
+  - [publishReminder](arkts-backgroundtasks-publishreminder-f.md)
+  - [removeNotificationSlot](arkts-backgroundtasks-removenotificationslot-f.md)
+  - [subscribeReminderState](arkts-backgroundtasks-subscribereminderstate-f.md)
+  - [unsubscribeReminderState](arkts-backgroundtasks-unsubscribereminderstate-f.md)
+  - [updateReminder](arkts-backgroundtasks-updatereminder-f.md)
+  - [ActionButton](arkts-backgroundtasks-actionbutton-i.md)<!--Del-->
+  - [ActionButton(system api)](arkts-backgroundtasks-actionbutton-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DataShareUpdate(system api)](arkts-backgroundtasks-datashareupdate-i-sys.md)<!--DelEnd-->
+  - [LocalDateTime](arkts-backgroundtasks-localdatetime-i.md)
+  - [MaxScreenWantAgent](arkts-backgroundtasks-maxscreenwantagent-i.md)
+  - [NotificationRequestProxy](arkts-backgroundtasks-notificationrequestproxy-i.md)
+  - [ReminderInfo](arkts-backgroundtasks-reminderinfo-i.md)
+  - [ReminderRequest](arkts-backgroundtasks-reminderrequest-i.md)<!--Del-->
+  - [ReminderRequest(system api)](arkts-backgroundtasks-reminderrequest-i-sys.md)<!--DelEnd-->
+  - [ReminderRequestAlarm](arkts-backgroundtasks-reminderrequestalarm-i.md)
+  - [ReminderRequestCalendar](arkts-backgroundtasks-reminderrequestcalendar-i.md)<!--Del-->
+  - [ReminderRequestCalendar(system api)](arkts-backgroundtasks-reminderrequestcalendar-i-sys.md)<!--DelEnd-->
+  - [ReminderRequestTimer](arkts-backgroundtasks-reminderrequesttimer-i.md)
+  - [ReminderState](arkts-backgroundtasks-reminderstate-i.md)
+  - [WantAgent](arkts-backgroundtasks-wantagent-i.md)
+  - [ActionButtonType](arkts-backgroundtasks-actionbuttontype-e.md)<!--Del-->
+  - [ActionButtonType(system api)](arkts-backgroundtasks-actionbuttontype-e-sys.md)<!--DelEnd-->
+  - [ReminderType](arkts-backgroundtasks-remindertype-e.md)
+  - [RingChannel](arkts-backgroundtasks-ringchannel-e.md)
+  - [TimeZoneType](arkts-backgroundtasks-timezonetype-e.md)
+- [@ohos.resourceschedule.backgroundProcessManager](arkts-resourceschedule-backgroundprocessmanager.md)
+  - [getPowerSaveMode](arkts-backgroundtasks-getpowersavemode-f.md)
+  - [isPowerSaveMode](arkts-backgroundtasks-ispowersavemode-f.md)
+  - [resetProcessPriority](arkts-backgroundtasks-resetprocesspriority-f.md)
+  - [setPowerSaveMode](arkts-backgroundtasks-setpowersavemode-f.md)
+  - [setProcessPriority](arkts-backgroundtasks-setprocesspriority-f.md)
+  - [PowerSaveMode](arkts-backgroundtasks-powersavemode-e.md)
+  - [ProcessPriority](arkts-backgroundtasks-processpriority-e.md)
+- [@ohos.resourceschedule.backgroundTaskManager](arkts-resourceschedule-backgroundtaskmanager.md)<!--Del-->
+  - [applyEfficiencyResources(system api)](arkts-backgroundtasks-applyefficiencyresources-f-sys.md)<!--DelEnd-->
+  - [cancelSuspendDelay](arkts-backgroundtasks-cancelsuspenddelay-f.md)
+  - [getAllContinuousTasks](arkts-backgroundtasks-getallcontinuoustasks-f.md)<!--Del-->
+  - [getAllEfficiencyResources(system api)](arkts-backgroundtasks-getallefficiencyresources-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getBackgroundTaskState(system api)](arkts-backgroundtasks-getbackgroundtaskstate-f-sys.md)<!--DelEnd-->
+  - [getRemainingDelayTime](arkts-backgroundtasks-getremainingdelaytime-f.md)
+  - [getTransientTaskInfo](arkts-backgroundtasks-gettransienttaskinfo-f.md)<!--Del-->
+  - [obtainAllContinuousTasks(system api)](arkts-backgroundtasks-obtainallcontinuoustasks-f-sys.md)<!--DelEnd-->
+  - [off](arkts-backgroundtasks-off-f.md)
+  - [on](arkts-backgroundtasks-on-f.md)
+  - [requestSuspendDelay](arkts-backgroundtasks-requestsuspenddelay-f.md)<!--Del-->
+  - [resetAllEfficiencyResources(system api)](arkts-backgroundtasks-resetallefficiencyresources-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setBackgroundTaskState(system api)](arkts-backgroundtasks-setbackgroundtaskstate-f-sys.md)<!--DelEnd-->
+  - [startBackgroundRunning](arkts-backgroundtasks-startbackgroundrunning-f.md)
+  - [stopBackgroundRunning](arkts-backgroundtasks-stopbackgroundrunning-f.md)<!--Del-->
+  - [subscribeContinuousTaskState(system api)](arkts-backgroundtasks-subscribecontinuoustaskstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unsubscribeContinuousTaskState(system api)](arkts-backgroundtasks-unsubscribecontinuoustaskstate-f-sys.md)<!--DelEnd-->
+  - [updateBackgroundRunning](arkts-backgroundtasks-updatebackgroundrunning-f.md)
+  - [ContinuousTaskRequest](arkts-backgroundtasks-continuoustaskrequest-c.md)<!--Del-->
+  - [BackgroundTaskStateInfo(system api)](arkts-backgroundtasks-backgroundtaskstateinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [BackgroundTaskSubscriber(system api)](arkts-backgroundtasks-backgroundtasksubscriber-i-sys.md)<!--DelEnd-->
+  - [ContinuousTaskActiveInfo](arkts-backgroundtasks-continuoustaskactiveinfo-i.md)
+  - [ContinuousTaskCancelInfo](arkts-backgroundtasks-continuoustaskcancelinfo-i.md)
+  - [ContinuousTaskInfo](arkts-backgroundtasks-continuoustaskinfo-i.md)
+  - [ContinuousTaskNotification](arkts-backgroundtasks-continuoustasknotification-i.md)
+  - [ContinuousTaskSuspendInfo](arkts-backgroundtasks-continuoustasksuspendinfo-i.md)
+  - [DelaySuspendInfo](arkts-backgroundtasks-delaysuspendinfo-i.md)<!--Del-->
+  - [EfficiencyResourcesInfo(system api)](arkts-backgroundtasks-efficiencyresourcesinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EfficiencyResourcesRequest(system api)](arkts-backgroundtasks-efficiencyresourcesrequest-i-sys.md)<!--DelEnd-->
+  - [SuspendMessage](arkts-backgroundtasks-suspendmessage-i.md)
+  - [TransientTaskInfo](arkts-backgroundtasks-transienttaskinfo-i.md)
+  - [BackgroundMode](arkts-backgroundtasks-backgroundmode-e.md)<!--Del-->
+  - [BackgroundMode(system api)](arkts-backgroundtasks-backgroundmode-e-sys.md)<!--DelEnd-->
+  - [BackgroundModeType](arkts-backgroundtasks-backgroundmodetype-e.md)
+  - [BackgroundSubMode](arkts-backgroundtasks-backgroundsubmode-e.md)
+  - [BackgroundTaskMode](arkts-backgroundtasks-backgroundtaskmode-e.md)<!--Del-->
+  - [BackgroundTaskMode(system api)](arkts-backgroundtasks-backgroundtaskmode-e-sys.md)<!--DelEnd-->
+  - [BackgroundTaskSubmode](arkts-backgroundtasks-backgroundtasksubmode-e.md)
+  - [ContinuousTaskCancelReason](arkts-backgroundtasks-continuoustaskcancelreason-e.md)
+  - [ContinuousTaskDetailedCancelReason](arkts-backgroundtasks-continuoustaskdetailedcancelreason-e.md)
+  - [ContinuousTaskSuspendReason](arkts-backgroundtasks-continuoustasksuspendreason-e.md)<!--Del-->
+  - [EfficiencyResourcesCpuLevel(system api)](arkts-backgroundtasks-efficiencyresourcescpulevel-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ResourceType(system api)](arkts-backgroundtasks-resourcetype-e-sys.md)<!--DelEnd-->
+  - [UserAuthResult](arkts-backgroundtasks-userauthresult-e.md)
+- [@ohos.resourceschedule.deviceStandby](arkts-resourceschedule-devicestandby.md)<!--Del-->
+  - [getExemptedApps(system api)](arkts-backgroundtasks-getexemptedapps-f-sys.md)<!--DelEnd--><!--Del-->
+  - [releaseExemptionResource(system api)](arkts-backgroundtasks-releaseexemptionresource-f-sys.md)<!--DelEnd--><!--Del-->
+  - [requestExemptionResource(system api)](arkts-backgroundtasks-requestexemptionresource-f-sys.md)<!--DelEnd--><!--Del-->
+  - [ExemptedAppInfo(system api)](arkts-backgroundtasks-exemptedappinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ResourceRequest(system api)](arkts-backgroundtasks-resourcerequest-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ResourceType(system api)](arkts-backgroundtasks-resourcetype-e-sys.md)<!--DelEnd-->
+- [@ohos.resourceschedule.usageStatistics](arkts-resourceschedule-usagestatistics.md)<!--Del-->
+  - [isIdleState(system api)](arkts-backgroundtasks-isidlestate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isIdleStateSync(system api)](arkts-backgroundtasks-isidlestatesync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryAppGroup(system api)](arkts-backgroundtasks-queryappgroup-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryAppGroupSync(system api)](arkts-backgroundtasks-queryappgroupsync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryAppStatsInfos(system api)](arkts-backgroundtasks-queryappstatsinfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryBundleEvents(system api)](arkts-backgroundtasks-querybundleevents-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryBundleStatsInfoByInterval(system api)](arkts-backgroundtasks-querybundlestatsinfobyinterval-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryBundleStatsInfos(system api)](arkts-backgroundtasks-querybundlestatsinfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryCurrentBundleEvents(system api)](arkts-backgroundtasks-querycurrentbundleevents-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryDeviceEventStats(system api)](arkts-backgroundtasks-querydeviceeventstats-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryLastUseTime(system api)](arkts-backgroundtasks-querylastusetime-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryModuleUsageRecords(system api)](arkts-backgroundtasks-querymoduleusagerecords-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryNotificationEventStats(system api)](arkts-backgroundtasks-querynotificationeventstats-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerAppGroupCallBack(system api)](arkts-backgroundtasks-registerappgroupcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setAppGroup(system api)](arkts-backgroundtasks-setappgroup-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterAppGroupCallBack(system api)](arkts-backgroundtasks-unregisterappgroupcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AppGroupCallbackInfo(system api)](arkts-backgroundtasks-appgroupcallbackinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [BundleEvents(system api)](arkts-backgroundtasks-bundleevents-i-sys.md)<!--DelEnd--><!--Del-->
+  - [BundleStatsInfo(system api)](arkts-backgroundtasks-bundlestatsinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceEventStats(system api)](arkts-backgroundtasks-deviceeventstats-i-sys.md)<!--DelEnd--><!--Del-->
+  - [HapFormInfo(system api)](arkts-backgroundtasks-hapforminfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [HapModuleInfo(system api)](arkts-backgroundtasks-hapmoduleinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AppStatsMap(system api)](arkts-backgroundtasks-appstatsmap-t-sys.md)<!--DelEnd--><!--Del-->
+  - [BundleStatsMap(system api)](arkts-backgroundtasks-bundlestatsmap-t-sys.md)<!--DelEnd--><!--Del-->
+  - [GroupType(system api)](arkts-backgroundtasks-grouptype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [IntervalType(system api)](arkts-backgroundtasks-intervaltype-e-sys.md)<!--DelEnd-->
+- [@ohos.resourceschedule.workScheduler](arkts-resourceschedule-workscheduler.md)
+  - [getWorkStatus](arkts-backgroundtasks-getworkstatus-f.md)
+  - [isLastWorkTimeOut](arkts-backgroundtasks-islastworktimeout-f.md)
+  - [obtainAllWorks](arkts-backgroundtasks-obtainallworks-f.md)
+  - [startWork](arkts-backgroundtasks-startwork-f.md)
+  - [stopAndClearWorks](arkts-backgroundtasks-stopandclearworks-f.md)
+  - [stopWork](arkts-backgroundtasks-stopwork-f.md)
+  - [WorkInfo](arkts-backgroundtasks-workinfo-i.md)
+  - [BatteryStatus](arkts-backgroundtasks-batterystatus-e.md)
+  - [ChargingType](arkts-backgroundtasks-chargingtype-e.md)
+  - [NetworkType](arkts-backgroundtasks-networktype-e.md)
+  - [StorageRequest](arkts-backgroundtasks-storagerequest-e.md)<!--Del-->
+  - [Constants(system api)](arkts-backgroundtasks-workscheduler-con-sys.md)<!--DelEnd-->
+- application<!--arkts-backgroundtaskskit-application-->
+  - [WorkSchedulerExtensionContext](arkts-workschedulerextensioncontext.md)<!--Del-->
+    - [WorkSchedulerExtensionContext(system api)](arkts-backgroundtasks-workschedulerextensioncontext-c-sys.md)<!--DelEnd-->

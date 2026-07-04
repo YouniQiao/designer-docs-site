@@ -1,0 +1,120 @@
+# ArkTS API<!--arkts-imekit-->
+
+- [@ohos.InputMethodExtensionAbility](arkts-inputmethodextensionability.md)
+  - [InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md)
+- [@ohos.InputMethodExtensionContext](arkts-inputmethodextensioncontext.md)
+  - [InputMethodExtensionContext](arkts-ime-inputmethodextensioncontext-c.md)<!--Del-->
+  - [InputMethodExtensionContext(system api)](arkts-ime-inputmethodextensioncontext-c-sys.md)<!--DelEnd-->
+- [@ohos.InputMethodSubtype](arkts-inputmethodsubtype.md)
+  - [InputMethodSubtype](arkts-ime-inputmethodsubtype-i.md)
+- [@ohos.inputMethod](arkts-inputmethod.md)
+  - [getController](arkts-ime-getcontroller-f.md)
+  - [getCurrentInputMethod](arkts-ime-getcurrentinputmethod-f.md)<!--Del-->
+  - [getCurrentInputMethod(system api)](arkts-ime-getcurrentinputmethod-f-sys.md)<!--DelEnd-->
+  - [getCurrentInputMethodSubtype](arkts-ime-getcurrentinputmethodsubtype-f.md)<!--Del-->
+  - [getCurrentInputMethodSubtype(system api)](arkts-ime-getcurrentinputmethodsubtype-f-sys.md)<!--DelEnd-->
+  - [getDefaultInputMethod](arkts-ime-getdefaultinputmethod-f.md)<!--Del-->
+  - [getDefaultInputMethod(system api)](arkts-ime-getdefaultinputmethod-f-sys.md)<!--DelEnd-->
+  - [getInputMethodController](arkts-ime-getinputmethodcontroller-f.md)
+  - [getInputMethodSetting](arkts-ime-getinputmethodsetting-f.md)
+  - [getSetting](arkts-ime-getsetting-f.md)
+  - [getSystemInputMethodConfigAbility](arkts-ime-getsysteminputmethodconfigability-f.md)<!--Del-->
+  - [getSystemInputMethodConfigAbility(system api)](arkts-ime-getsysteminputmethodconfigability-f-sys.md)<!--DelEnd-->
+  - [offAttachmentDidFail](arkts-ime-offattachmentdidfail-f.md)
+  - [onAttachmentDidFail](arkts-ime-onattachmentdidfail-f.md)
+  - [setSimpleKeyboardEnabled](arkts-ime-setsimplekeyboardenabled-f.md)
+  - [switchCurrentInputMethodAndSubtype](arkts-ime-switchcurrentinputmethodandsubtype-f.md)
+  - [switchCurrentInputMethodSubtype](arkts-ime-switchcurrentinputmethodsubtype-f.md)
+  - [switchInputMethod](arkts-ime-switchinputmethod-f.md)<!--Del-->
+  - [switchInputMethod(system api)](arkts-ime-switchinputmethod-f-sys.md)<!--DelEnd--><!--Del-->
+  - [switchInputMethodWithUserId(system api)](arkts-ime-switchinputmethodwithuserid-f-sys.md)<!--DelEnd-->
+  - [AttachOptions](arkts-ime-attachoptions-i.md)
+  - [CursorInfo](arkts-ime-cursorinfo-i.md)
+  - [FunctionKey](arkts-ime-functionkey-i.md)
+  - [InputAttribute](arkts-ime-inputattribute-i.md)
+  - [InputMethodController](arkts-ime-inputmethodcontroller-i.md)<!--Del-->
+  - [InputMethodController(system api)](arkts-ime-inputmethodcontroller-i-sys.md)<!--DelEnd-->
+  - [InputMethodProperty](arkts-ime-inputmethodproperty-i.md)
+  - [InputMethodSetting](arkts-ime-inputmethodsetting-i.md)<!--Del-->
+  - [InputMethodSetting(system api)](arkts-ime-inputmethodsetting-i-sys.md)<!--DelEnd-->
+  - [InputWindowInfo](arkts-ime-inputwindowinfo-i.md)<!--Del-->
+  - [InputWindowInfo(system api)](arkts-ime-inputwindowinfo-i-sys.md)<!--DelEnd-->
+  - [MessageHandler](arkts-ime-messagehandler-i.md)
+  - [Movement](arkts-ime-movement-i.md)
+  - [Range](arkts-ime-range-i.md)
+  - [TextConfig](arkts-ime-textconfig-i.md)<!--Del-->
+  - [ImeChangeWithUserIdCallback(system api)](arkts-ime-imechangewithuseridcallback-t-sys.md)<!--DelEnd-->
+  - [SetPreviewTextCallback](arkts-ime-setpreviewtextcallback-t.md)
+  - [AttachFailureReason](arkts-ime-attachfailurereason-e.md)
+  - [CapitalizeMode](arkts-ime-capitalizemode-e.md)
+  - [Direction](arkts-ime-direction-e.md)
+  - [EnabledState](arkts-ime-enabledstate-e.md)
+  - [EnterKeyType](arkts-ime-enterkeytype-e.md)
+  - [ExtendAction](arkts-ime-extendaction-e.md)
+  - [KeyboardStatus](arkts-ime-keyboardstatus-e.md)
+  - [RequestKeyboardReason](arkts-ime-requestkeyboardreason-e.md)
+  - [TextInputType](arkts-ime-textinputtype-e.md)
+  - [Constants](arkts-ime-inputmethod-con.md)
+- [@ohos.inputMethod.ExtraConfig](arkts-inputmethod-extraconfig.md)
+  - [InputMethodExtraConfig](arkts-ime-inputmethodextraconfig-i.md)
+  - [CustomValueType](arkts-ime-customvaluetype-t.md)
+- [@ohos.inputMethod.Panel](arkts-inputmethod-panel.md)
+  - [PanelInfo](arkts-ime-panelinfo-i.md)
+  - [PanelFlag](arkts-ime-panelflag-e.md)
+  - [PanelType](arkts-ime-paneltype-e.md)
+- [@ohos.inputMethodEngine](arkts-inputmethodengine.md)
+  - [createKeyboardDelegate](arkts-ime-createkeyboarddelegate-f.md)
+  - [getInputMethodAbility](arkts-ime-getinputmethodability-f.md)
+  - [getInputMethodEngine](arkts-ime-getinputmethodengine-f.md)
+  - [getKeyboardDelegate](arkts-ime-getkeyboarddelegate-f.md)
+  - [AttachOptions](arkts-ime-attachoptions-i.md)
+  - [EditorAttribute](arkts-ime-editorattribute-i.md)<!--Del-->
+  - [EditorAttribute(system api)](arkts-ime-editorattribute-i-sys.md)<!--DelEnd-->
+  - [EnhancedPanelRect](arkts-ime-enhancedpanelrect-i.md)
+  - [ImmersiveEffect](arkts-ime-immersiveeffect-i.md)<!--Del-->
+  - [ImmersiveEffect(system api)](arkts-ime-immersiveeffect-i-sys.md)<!--DelEnd-->
+  - [InputClient](arkts-ime-inputclient-i.md)
+  - [InputMethodAbility](arkts-ime-inputmethodability-i.md)
+  - [InputMethodEngine](arkts-ime-inputmethodengine-i.md)
+  - [KeyboardArea](arkts-ime-keyboardarea-i.md)
+  - [KeyboardController](arkts-ime-keyboardcontroller-i.md)
+  - [KeyboardDelegate](arkts-ime-keyboarddelegate-i.md)
+  - [KeyEvent](arkts-ime-keyevent-i.md)
+  - [MessageHandler](arkts-ime-messagehandler-i.md)
+  - [Movement](arkts-ime-movement-i.md)
+  - [Panel](arkts-ime-panel-i.md)<!--Del-->
+  - [Panel(system api)](arkts-ime-panel-i-sys.md)<!--DelEnd-->
+  - [PanelInfo](arkts-ime-panelinfo-i.md)
+  - [PanelRect](arkts-ime-panelrect-i.md)
+  - [Range](arkts-ime-range-i.md)<!--Del-->
+  - [SystemPanelInsets(system api)](arkts-ime-systempanelinsets-i.md)<!--DelEnd-->
+  - [TextInputClient](arkts-ime-textinputclient-i.md)
+  - [WindowInfo](arkts-ime-windowinfo-i.md)
+  - [CommandDataType](arkts-ime-commanddatatype-t.md)
+  - [SizeChangeCallback](arkts-ime-sizechangecallback-t.md)<!--Del-->
+  - [SizeUpdateCallback(system api)](arkts-ime-sizeupdatecallback-t-sys.md)<!--DelEnd-->
+  - [CapitalizeMode](arkts-ime-capitalizemode-e.md)
+  - [Direction](arkts-ime-direction-e.md)
+  - [ExtendAction](arkts-ime-extendaction-e.md)<!--Del-->
+  - [FluidLightMode(system api)](arkts-ime-fluidlightmode-e-sys.md)<!--DelEnd-->
+  - [GradientMode](arkts-ime-gradientmode-e.md)
+  - [ImmersiveMode](arkts-ime-immersivemode-e.md)
+  - [PanelFlag](arkts-ime-panelflag-e.md)
+  - [PanelType](arkts-ime-paneltype-e.md)
+  - [RequestKeyboardReason](arkts-ime-requestkeyboardreason-e.md)
+  - [SecurityMode](arkts-ime-securitymode-e.md)
+  - [Constants](arkts-ime-inputmethodengine-con.md)
+- [@ohos.inputMethodList](arkts-inputmethodlist.md)
+  - [InputMethodListDialog](arkts-ime-inputmethodlistdialog-s.md)
+  - [Pattern](arkts-ime-pattern-i.md)
+  - [PatternOptions](arkts-ime-patternoptions-i.md)
+- [@ohos.inputMethodSystemPanelManager](arkts-inputmethodsystempanelmanager.md)<!--Del-->
+  - [connectSystemChannel(system api)](arkts-ime-connectsystemchannel-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSystemPanelStatusChange(system api)](arkts-ime-offsystempanelstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSystemPrivateCommand(system api)](arkts-ime-offsystemprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemPanelStatusChange(system api)](arkts-ime-onsystempanelstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemPrivateCommand(system api)](arkts-ime-onsystemprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendPrivateCommand(system api)](arkts-ime-sendprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemPanelStatus(system api)](arkts-ime-systempanelstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CommandDataType(system api)](arkts-ime-commanddatatype-t-sys.md)<!--DelEnd--><!--Del-->
+  - [InputMethodInputType(system api)](arkts-ime-inputmethodinputtype-e-sys.md)<!--DelEnd-->

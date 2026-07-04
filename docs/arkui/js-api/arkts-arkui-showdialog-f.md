@@ -1,0 +1,398 @@
+# showDialog
+
+## Modules to Import
+
+```TypeScript
+import { LevelMode, ImmersiveMode, LevelOrder } from '@ohos.promptAction';
+```
+
+## showDialog
+
+```TypeScript
+function showDialog(options: ShowDialogOptions, callback: AsyncCallback<ShowDialogSuccessResponse>): void
+```
+
+Creates and displays a dialog box. This API uses an asynchronous callback to return the result. > **NOTE** > > - This API is supported since API version 9 and deprecated since API version 18. You are advised to use [showDialog](arkts-apis-uicontext-promptaction.md#showdialog) instead. Before calling this API, you need to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object using the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) method in [UIContext](arkts-apis-uicontext-uicontext.md). Directly using **showDialog** can lead to the issue of [ambiguous UI context](../../ui/arkts-global-interface.md#ambiguous-ui-context). > > - Since API version 10, you can use the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) API in [UIContext](arkts-apis-uicontext-uicontext.md) to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object associated with the current UI context.
+
+**Since:** 9
+
+**Deprecated since:** 18
+
+**Substitutes:** showDialog
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | ShowDialogOptions | Yes | Dialog box configuration options. |
+| callback | AsyncCallback&lt;ShowDialogSuccessResponse&gt; | Yes | Callback used to return the result.On success, **err** is **undefined** and **data** contains the dialog box response.On failure, **err** provides error details. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
+
+**Example**
+
+```TypeScript
+import { promptAction } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  promptAction.showDialog({
+    title: 'showDialog Title Info',
+    message: 'Message Info',
+    buttons: [
+      {
+        text: 'button1',
+        color: '#000000'
+      },
+      {
+        text: 'button2',
+        color: '#000000'
+      }
+    ]
+  }, (err, data) => {
+    if (err) {
+      console.info('showDialog err: ' + err);
+      return;
+    }
+    console.info('showDialog success callback, click button: ' + data.index);
+  });
+} catch (error) {
+  let message = (error as BusinessError).message;
+  let code = (error as BusinessError).code;
+  console.error(`showDialog args error code is ${code}, message is ${message}`);
+};
+
+```
+
+```TypeScript
+import { promptAction } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  promptAction.showDialog({
+    title: 'showDialog Title Info',
+    message: 'Message Info',
+    buttons: [
+      {
+        text: 'button1',
+        color: '#000000'
+      },
+      {
+        text: 'button2',
+        color: '#000000'
+      }
+    ]
+  }, (err, data) => {
+    if (err) {
+      console.info('showDialog err: ' + err);
+      return;
+    }
+    console.info('showDialog success callback, click button: ' + data.index);
+  });
+} catch (error) {
+  let message = (error as BusinessError).message;
+  let code = (error as BusinessError).code;
+  console.error(`showDialog args error code is ${code}, message is ${message}`);
+};
+
+```
+
+When the showInSubWindow attribute is set to true, the toast can be displayed outside the window.
+
+```TypeScript
+import { promptAction } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  promptAction.showDialog({
+    title: 'showDialog Title Info',
+    message: 'Message Info',
+    isModal: true,
+    showInSubWindow: true,
+    buttons: [
+      {
+        text: 'button1',
+        color: '#000000'
+      },
+      {
+        text: 'button2',
+        color: '#000000'
+      }
+    ]
+  }, (err, data) => {
+    if (err) {
+      console.info('showDialog err: ' + err);
+      return;
+    }
+    console.info('showDialog success callback, click button: ' + data.index);
+  });
+} catch (error) {
+  let message = (error as BusinessError).message;
+  let code = (error as BusinessError).code;
+  console.error(`showDialog args error code is ${code}, message is ${message}`);
+};
+
+```
+
+When the showInSubWindow attribute is set to true, the toast can be displayed outside the window.
+
+```TypeScript
+import { promptAction } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  promptAction.showDialog({
+    title: 'showDialog Title Info',
+    message: 'Message Info',
+    isModal: true,
+    showInSubWindow: true,
+    buttons: [
+      {
+        text: 'button1',
+        color: '#000000'
+      },
+      {
+        text: 'button2',
+        color: '#000000'
+      }
+    ]
+  }, (err, data) => {
+    if (err) {
+      console.info('showDialog err: ' + err);
+      return;
+    }
+    console.info('showDialog success callback, click button: ' + data.index);
+  });
+} catch (error) {
+  let message = (error as BusinessError).message;
+  let code = (error as BusinessError).code;
+  console.error(`showDialog args error code is ${code}, message is ${message}`);
+};
+
+```
+
+This example demonstrates how to use the onDidAppear, onDidDisappear, onWillAppear, and onWillDisappear properties of [ShowDialogOptions](#showdialogoptions) to implement the dialog box lifecycle callbacks, supported since API version 19.
+
+```TypeScript
+// xxx.ets
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct DialogExample {
+  @State log: string = 'Log information:';
+  build() {
+    Column() {
+      Button('showDialog')
+        .onClick(() => {
+          this.showCustomDialog();
+        })
+      Text(this.log).fontSize(30).margin({ top: 200 })
+    }.width('100%').margin({ top: 5 })
+  }
+
+  showCustomDialog() {
+    try {
+      this.getUIContext().getPromptAction().showDialog({
+        title: 'Confirm',
+        message: 'Are you sure you want to continue?',
+        alignment: DialogAlignment.Bottom,
+        buttons: [
+          {
+            text: 'Cancel',
+            color: '#999999'
+          },
+          {
+            text: 'OK',
+            color: '#007DFF'
+          }
+        ],
+        onDidAppear: () => {
+          this.log += '# onDidAppear';
+          console.info("showDialog,is onDidAppear!");
+        },
+        onDidDisappear: () => {
+          this.log += '# onDidDisappear';
+          console.info("showDialog,is onDidDisappear!");
+        },
+        onWillAppear: () => {
+          this.log = 'Log information:#onWillAppear';
+          console.info("showDialog,is onWillAppear!");
+        },
+        onWillDisappear: () => {
+          this.log += '# onWillDisappear';
+          console.info("showDialog,is onWillDisappear!");
+        },
+      })
+    } catch (error) {
+      let err: BusinessError = error as BusinessError;
+      console.error(`Exception caught: ${err.code}, ${err.message}`);
+    }
+  }
+}
+
+```
+
+This example demonstrates how to use the onDidAppear, onDidDisappear, onWillAppear, and onWillDisappear properties of [ShowDialogOptions](#showdialogoptions) to implement the dialog box lifecycle callbacks, supported since API version 19.
+
+```TypeScript
+// xxx.ets
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct DialogExample {
+  @State log: string = 'Log information:';
+  build() {
+    Column() {
+      Button('showDialog')
+        .onClick(() => {
+          this.showCustomDialog();
+        })
+      Text(this.log).fontSize(30).margin({ top: 200 })
+    }.width('100%').margin({ top: 5 })
+  }
+
+  showCustomDialog() {
+    try {
+      this.getUIContext().getPromptAction().showDialog({
+        title: 'Confirm',
+        message: 'Are you sure you want to continue?',
+        alignment: DialogAlignment.Bottom,
+        buttons: [
+          {
+            text: 'Cancel',
+            color: '#999999'
+          },
+          {
+            text: 'OK',
+            color: '#007DFF'
+          }
+        ],
+        onDidAppear: () => {
+          this.log += '# onDidAppear';
+          console.info("showDialog,is onDidAppear!");
+        },
+        onDidDisappear: () => {
+          this.log += '# onDidDisappear';
+          console.info("showDialog,is onDidDisappear!");
+        },
+        onWillAppear: () => {
+          this.log = 'Log information:#onWillAppear';
+          console.info("showDialog,is onWillAppear!");
+        },
+        onWillDisappear: () => {
+          this.log += '# onWillDisappear';
+          console.info("showDialog,is onWillDisappear!");
+        },
+      })
+    } catch (error) {
+      let err: BusinessError = error as BusinessError;
+      console.error(`Exception caught: ${err.code}, ${err.message}`);
+    }
+  }
+}
+
+```
+
+
+## showDialog
+
+```TypeScript
+function showDialog(options: ShowDialogOptions): Promise<ShowDialogSuccessResponse>
+```
+
+Creates and displays a dialog box in the given settings. This API uses a promise to return the result. > **NOTE** > > - This API is supported since API version 9 and deprecated since API version 18. You are advised to use [showDialog](arkts-apis-uicontext-promptaction.md#showdialog-1) instead. Before calling this API, you need to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object using the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) method in [UIContext](arkts-apis-uicontext-uicontext.md). Directly using **showDialog** can lead to the issue of [ambiguous UI context](../../ui/arkts-global-interface.md#ambiguous-ui-context). > > - Since API version 10, you can use the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) API in [UIContext](arkts-apis-uicontext-uicontext.md) to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object associated with the current UI context.
+
+**Since:** 9
+
+**Deprecated since:** 18
+
+**Substitutes:** showDialog
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | ShowDialogOptions | Yes | Dialog box configuration options. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;ShowDialogSuccessResponse&gt; | Promise that returns the dialog box response. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
+
+**Example**
+
+```TypeScript
+import { promptAction } from '@kit.ArkUI';
+
+promptAction.showDialog({
+  title: 'Title Info',
+  message: 'Message Info',
+  buttons: [
+    {
+      text: 'button1',
+      color: '#000000'
+    },
+    {
+      text: 'button2',
+      color: '#000000'
+    }
+  ],
+})
+  .then(data => {
+    console.info('showDialog success, click button: ' + data.index);
+  })
+  .catch((err: Error) => {
+    console.info('showDialog error: ' + err);
+  })
+
+```
+
+```TypeScript
+import { promptAction } from '@kit.ArkUI';
+
+promptAction.showDialog({
+  title: 'Title Info',
+  message: 'Message Info',
+  buttons: [
+    {
+      text: 'button1',
+      color: '#000000'
+    },
+    {
+      text: 'button2',
+      color: '#000000'
+    }
+  ],
+})
+  .then(data => {
+    console.info('showDialog success, click button: ' + data.index);
+  })
+  .catch((err: Error) => {
+    console.info('showDialog error: ' + err);
+  })
+
+```
+

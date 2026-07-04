@@ -1,0 +1,446 @@
+# InsightIntentExecutor
+
+The module provides the base class for intent execution. You can use this module to interface with the [InsightIntent framework](../../../../application-models/insight-intent-overview.md) on the device side and implement intent service logic through [configuration files](../../../../application-models/insight-intent-config-development.md) . In addition to developing intents via configuration files, intents can also be developed using decorators. For API version 20 and later, you are advised to [develop intents using decorators](../../../../application-models/insight-intent-decorator-development.md).
+
+**Since:** 11
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+## Modules to Import
+
+```TypeScript
+import { InsightIntentExecutor } from '@ohos.app.ability.InsightIntentExecutor';
+```
+
+## onExecuteInServiceExtensionAbility
+
+```TypeScript
+onExecuteInServiceExtensionAbility(name: string, param: Record<string, Object>):
+    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
+```
+
+Called during the ServiceExtensionAbility lifecycle when the ServiceExtensionAbility that the intent execution depends on is started. Both synchronous calls and asynchronous calls using Promise are supported. - The ServiceExtensionAbility lifecycle callbacks are triggered in the following sequence during intent execution: **onCreate**, **onRequest**, and **onExecuteInServiceExtensionAbility**.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| name | string | Yes | Intent name. |
+| param | Record&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to theapplication for this intent execution. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| insightIntent.ExecuteResult | Intent execution result or a Promiseobject containing the intent execution result, representing the data returned to the system entry point from thisintent execution. |
+
+**Example**
+
+The code snippet below shows the synchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  onExecuteInServiceExtensionAbility(name: string, param: Record<string, Object>): insightIntent.ExecuteResult {
+    let result: insightIntent.ExecuteResult;
+    if (name !== 'SupportedInsightIntentName') {
+      hilog.warn(0x0000, 'testTag', 'Unsupported insight intent %{public}s', name);
+      result = {
+        // decided by developer
+        code: 404,
+        result: {
+          message: 'Unsupported insight intent.',
+        }
+      };
+      return result;
+    }
+
+    result = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    return result;
+  }
+}
+
+```
+
+The code snippet below shows the promise-based asynchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+async function executeInsightIntent(param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
+  return new Promise((resolve, reject) => {
+    let result: insightIntent.ExecuteResult = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    resolve(result);
+  });
+}
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  // Use the async/await syntax to implement an asynchronous API. The async keyword declares that the API is asynchronous.
+  async onExecuteInServiceExtensionAbility(name: string,
+    param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
+    let result: insightIntent.ExecuteResult;
+    if (name !== 'SupportedInsightIntentName') {
+      hilog.warn(0x0000, 'testTag', 'Unsupported insight intent %{public}s', name);
+      result = {
+        // decided by developer
+        code: 404,
+        result: {
+          message: 'Unsupported insight intent.',
+        }
+      };
+      return result;
+    }
+
+    result = await executeInsightIntent(param);
+    return result;
+  }
+}
+
+```
+
+## onExecuteInUIAbilityBackgroundMode
+
+```TypeScript
+onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>):
+    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
+```
+
+Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uiability.md) that the intent execution depends on is started in the background. Both synchronous calls and asynchronous calls using Promise are supported. - If the UIAbility is cold started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onCreate](arkts-ability-uiability-c.md#oncreate-1), onExecuteInUIAbilityBackgroundMode, and [onBackground](arkts-ability-uiability-c.md#onbackground-1). - If the UIAbility is hot started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: onExecuteInUIAbilityBackgroundMode.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| name | string | Yes | Intent name. |
+| param | Record&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to theapplication for this intent execution. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| insightIntent.ExecuteResult | Intent execution result or a Promiseobject containing the intent execution result, representing the data returned to the system entry point from thisintent execution. |
+
+**Example**
+
+The code snippet below shows the synchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>): insightIntent.ExecuteResult {
+    let result: insightIntent.ExecuteResult = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    return result;
+  }
+}
+
+```
+
+The code snippet below shows the promise-based asynchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+
+async function executeInsightIntent(param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
+  return new Promise((resolve, reject) => {
+    let result: insightIntent.ExecuteResult = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    resolve(result);
+  })
+}
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  // Use the async/await syntax to implement an asynchronous API. The async keyword declares that the API is asynchronous.
+  async onExecuteInUIAbilityBackgroundMode(name: string,
+    param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
+    let result: insightIntent.ExecuteResult = await executeInsightIntent(param);
+    return result;
+  }
+}
+
+```
+
+## onExecuteInUIAbilityForegroundMode
+
+```TypeScript
+onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>, pageLoader: window.WindowStage):
+    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
+```
+
+Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uiability.md) that the intent execution depends on is started in the foreground. Both synchronous calls and asynchronous calls using Promise are supported. - If the UIAbility is cold started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onCreate](arkts-ability-uiability-c.md#oncreate-1), [onWindowStageCreate](arkts-ability-uiability-c.md#onwindowstagecreate-1), onExecuteInUIAbilityForegroundMode, and [onForeground](arkts-ability-uiability-c.md#onforeground-1). - If the UIAbility is hot started in the background, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onNewWant](arkts-ability-uiability-c.md#onnewwant-1), onExecuteInUIAbilityForegroundMode, and [onForeground](arkts-ability-uiability-c.md#onforeground-1). - If the UIAbility is hot started in the foreground, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: onExecuteInUIAbilityForegroundMode.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| name | string | Yes | Intent name. |
+| param | Record&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to theapplication for this intent execution. |
+| pageLoader | window.WindowStage | Yes | WindowStage instance, which is the same as the WindowStage instance in the[onWindowStageCreate](arkts-ability-uiability-c.md#onwindowstagecreate-1) API and can be used to loadthe page for intent execution. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| insightIntent.ExecuteResult | Intent execution result or a Promiseobject containing the intent execution result, representing the data returned to the system entry point from thisintent execution. |
+
+**Example**
+
+The code snippet below shows the synchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+import { window } from '@kit.ArkUI';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>,
+    pageLoader: window.WindowStage): insightIntent.ExecuteResult {
+    let result: insightIntent.ExecuteResult;
+    if (name !== 'SupportedInsightIntentName') {
+      hilog.warn(0x0000, 'testTag', 'Unsupported insight intent %{public}s', name);
+      result = {
+        // decided by developer
+        code: 404,
+        result: {
+          message: 'Unsupported insight intent.',
+        }
+      };
+      return result;
+    }
+
+    // if developer need load intent content, 'pages/IntentPage' is intent page.
+    pageLoader.loadContent('pages/IntentPage', (err, data) => {
+      if (err.code) {
+        hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err));
+      } else {
+        hilog.info(0x0000, 'testTag', '%{public}s', 'Succeeded in loading the content');
+      }
+    });
+
+    result = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    return result;
+  }
+}
+
+```
+
+The code snippet below shows the promise-based asynchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+import { window } from '@kit.ArkUI';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+async function executeInsightIntent(param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
+  return new Promise((resolve, reject) => {
+    let result: insightIntent.ExecuteResult = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    resolve(result);
+  })
+}
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  // Use the async/await syntax to implement an asynchronous API. The async keyword declares that the API is asynchronous.
+  async onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>,
+    pageLoader: window.WindowStage): Promise<insightIntent.ExecuteResult> {
+    let result: insightIntent.ExecuteResult;
+    if (name !== 'SupportedInsightIntentName') {
+      hilog.warn(0x0000, 'testTag', 'Unsupported insight intent %{public}s', name);
+      result = {
+        // decided by developer
+        code: 404,
+        result: {
+          message: 'Unsupported insight intent.',
+        }
+      };
+      return result;
+    }
+
+    result = await executeInsightIntent(param);
+    return result;
+  }
+}
+
+```
+
+## onExecuteInUIExtensionAbility
+
+```TypeScript
+onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>, pageLoader: UIExtensionContentSession):
+    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>
+```
+
+Called during the UIExtensionAbility lifecycle when the [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability) that the intent execution depends on is started. Both synchronous calls and asynchronous calls using Promise are supported. - The UIExtensionAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onCreate](arkts-ability-uiextensionability-c.md#oncreate-1), [onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1), onExecuteInUIExtensionAbility, and [onForeground](arkts-ability-uiextensionability-c.md#onforeground-1).
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| name | string | Yes | Intent name. |
+| param | Record&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to theapplication for this intent execution. |
+| pageLoader | UIExtensionContentSession | Yes | UIExtensionContentSession instance, which is the same as theUIExtensionContentSession instance in the[onSessionCreate](arkts-ability-uiextensionability-c.md#onsessioncreate-1) API and can be usedto load the page for intent execution. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| insightIntent.ExecuteResult | Intent execution result or a Promiseobject containing the intent execution result, representing the data returned to the system entry point from thisintent execution. |
+
+**Example**
+
+The code snippet below shows the synchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent, UIExtensionContentSession } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>,
+    pageLoader: UIExtensionContentSession): insightIntent.ExecuteResult {
+    let result: insightIntent.ExecuteResult;
+    if (name !== 'SupportedInsightIntentName') {
+      hilog.warn(0x0000, 'testTag', 'Unsupported insight intent %{public}s', name);
+      result = {
+        // decided by developer
+        code: 404,
+        result: {
+          message: 'Unsupported insight intent.',
+        }
+      };
+      return result;
+    }
+
+    // if developer need load intent content, 'pages/IntentPage' is intent page.
+    pageLoader.loadContent('pages/Index');
+
+    result = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    return result;
+  }
+}
+
+```
+
+The code snippet below shows the promise-based asynchronous call that returns the intent execution result:
+
+```TypeScript
+import { InsightIntentExecutor, insightIntent, UIExtensionContentSession } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+async function executeInsightIntent(param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
+  return new Promise((resolve, reject) => {
+    let result: insightIntent.ExecuteResult = {
+      code: 0,
+      result: {
+        message: 'Execute insight intent succeed.',
+      }
+    };
+    resolve(result);
+  })
+}
+
+export default class IntentExecutorImpl extends InsightIntentExecutor {
+  // Use the async/await syntax to implement an asynchronous API. The async keyword declares that the API is asynchronous.
+  async onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>,
+    pageLoader: UIExtensionContentSession): Promise<insightIntent.ExecuteResult> {
+    let result: insightIntent.ExecuteResult;
+    if (name !== 'SupportedInsightIntentName') {
+      hilog.warn(0x0000, 'testTag', 'Unsupported insight intent %{public}s', name);
+      result = {
+        // decided by developer
+        code: 404,
+        result: {
+          message: 'Unsupported insight intent.',
+        }
+      };
+      return result;
+    }
+
+    result = await executeInsightIntent(param);
+    return result;
+  }
+}
+
+```
+
+## context
+
+```TypeScript
+context: InsightIntentContext
+```
+
+Context for intent execution.
+
+**Type:** InsightIntentContext
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+

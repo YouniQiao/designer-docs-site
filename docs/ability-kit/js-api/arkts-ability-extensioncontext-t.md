@@ -1,0 +1,18 @@
+# ExtensionContext
+
+```TypeScript
+export type ExtensionContext = _ExtensionContext.default
+```
+
+Defines the context environment for the [ExtensionAbility](arkts-ability-extensionability-c.md#extensionability). It inherits from Context.
+
+**Since:** 9
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**Property type:** _ExtensionContext.default
+

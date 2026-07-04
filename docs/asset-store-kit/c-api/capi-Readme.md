@@ -1,0 +1,13 @@
+- Header file
+    - [asset_api.h](capi-asset-api-h.md)
+    - [asset_type.h](capi-asset-type-h.md)
+- Module
+    - [AssetApi](capi-assetapi.md)
+    - [AssetType](capi-assettype.md)
+- Struct
+    - [Asset_Blob](capi-assettype-asset-blob.md)
+    - [Asset_Value](capi-assettype-asset-value.md)
+    - [Asset_Attr](capi-assettype-asset-attr.md)
+    - [Asset_Result](capi-assettype-asset-result.md)
+    - [Asset_ResultSet](capi-assettype-asset-resultset.md)
+    - [Asset_SyncResult](capi-assettype-asset-syncresult.md)

@@ -1,0 +1,85 @@
+# @ohos.file.cloudSyncManager
+
+The **cloudSyncManager** module provides APIs for managing device-cloud sync for applications. You can use the APIs to manage the full download state, the reason why the full download stops, and number of local and cloud files.
+
+**Since:** 10
+
+**System capability:** SystemCapability.FileManagement.DistributedFileService.CloudSyncManager
+
+## Modules to Import
+
+```TypeScript
+import { cloudSyncManager } from '@ohos.file.cloudSyncManager';
+```
+
+## Summary
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [changeAppCloudSwitch](arkts-corefile-changeappcloudswitch-f-sys.md#changeappcloudswitch-1) | Changes the device-cloud file sync switch for an application. This API uses a promise to return the result. |
+| [changeAppCloudSwitch](arkts-corefile-changeappcloudswitch-f-sys.md#changeappcloudswitch-2) | Changes the device-cloud file sync switch for an application. This API uses an asynchronous callback to return the result. |
+| [clean](arkts-corefile-clean-f-sys.md#clean-1) | Callback used to clear the cloud data locally. This API uses a promise to return the result. |
+| [clean](arkts-corefile-clean-f-sys.md#clean-2) | Callback used to clear the cloud data locally. This API uses an asynchronous callback to return the result. |
+| [disableCloud](arkts-corefile-disablecloud-f-sys.md#disablecloud-1) | Disables device-cloud sync. This API uses a promise to return the result. |
+| [disableCloud](arkts-corefile-disablecloud-f-sys.md#disablecloud-2) | Disables device-cloud sync. This API uses an asynchronous callback to return the result. |
+| [enableCloud](arkts-corefile-enablecloud-f-sys.md#enablecloud-1) | Enables device-cloud sync. This API uses a promise to return the result. |
+| [enableCloud](arkts-corefile-enablecloud-f-sys.md#enablecloud-2) | Enables device-cloud sync. This API uses an asynchronous callback to return the result. |
+| [getBundlesLocalFilePresentStatus](arkts-corefile-getbundleslocalfilepresentstatus-f-sys.md#getbundleslocalfilepresentstatus-1) | Obtains the existence status of local files for multiple applications and checks whether there are files that have not been uploaded to the cloud in the cloud storage space. This API uses a promise to return the result. |
+| [getDowngradeDownloadTaskState](arkts-corefile-getdowngradedownloadtaskstate-f-sys.md#getdowngradedownloadtaskstate-1) | Supports querying the execution status of full data download tasks for integrated cloud drive applications. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-1) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has been changed. This API uses a promise to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-2) | Notifies the device-cloud service that the cloud data of a specific application under a specified account has been changed. This API uses an asynchronous callback to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-3) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses a promise to return the result. |
+| [notifyDataChange](arkts-corefile-notifydatachange-f-sys.md#notifydatachange-4) | Notifies the device-cloud service of the cloud data change information of a specified user. This API uses an asynchronous callback to return the result. |
+<!--DelEnd-->
+
+### Classes
+
+| Name | Description |
+| --- | --- |
+| [DownloadProgress](arkts-corefile-downloadprogress-c.md) | Describes the full download progress. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DowngradeDownload](arkts-corefile-downgradedownload-c-sys.md) | Full download: provides the capability of downloading cloud data for applications. It supports the full download of cloud application files. |
+<!--DelEnd-->
+
+### Interfaces
+
+| Name | Description |
+| --- | --- |
+| [CloudFileInfo](arkts-corefile-cloudfileinfo-i.md) | Represents the number and size of local and cloud files of an application. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ExtraData](arkts-corefile-extradata-i-sys.md) | Represents the cloud data change information. |
+| [LocalFilePresentStatus](arkts-corefile-localfilepresentstatus-i-sys.md) | Specifies a result object that contains the application bundle name and the status information about whether there are files that have not been uploaded to the cloud in the cloud storage space. |
+| [TransferProgress](arkts-corefile-transferprogress-i-sys.md) | Defines the TransferProgress data structure. |
+<!--DelEnd-->
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [DownloadState](arkts-corefile-downloadstate-e.md) | Enumerates the full download states. |
+| [DownloadStopReason](arkts-corefile-downloadstopreason-e.md) | Enumerates the reasons why the full download stops. The default value is **NO_STOP**. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [Action](arkts-corefile-action-e-sys.md) | Enumerates the actions that can be taken to clear local cloud data. |
+| [DownloadState](arkts-corefile-downloadstate-e-sys.md) | Enumerates the full download states. |
+| [TransferState](arkts-corefile-transferstate-e-sys.md) | Describes the state type of transfer task. |
+| [TransferStopReason](arkts-corefile-transferstopreason-e-sys.md) | Describes the state type of transfer stop reason. |
+<!--DelEnd-->
+

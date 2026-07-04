@@ -1,0 +1,34 @@
+# hasCallSync
+
+## Modules to Import
+
+```TypeScript
+import { call } from '@ohos.telephony.call';
+```
+
+## hasCallSync
+
+```TypeScript
+function hasCallSync(): boolean
+```
+
+Checks whether a call is ongoing.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Telephony.CallManager
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Returns {@code true} if at least one call is not in the {@link CallState#CALL_STATE_IDLE}state; returns {@code false} otherwise. |
+
+**Example**
+
+```TypeScript
+let hasCall: boolean = call.hasCallSync();
+console.info(`hasCallSync success, has call is ` + hasCall);
+
+```
+

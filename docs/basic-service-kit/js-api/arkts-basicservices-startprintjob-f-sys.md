@@ -1,0 +1,140 @@
+# startPrintJob (System API)
+
+## Modules to Import
+
+```TypeScript
+import { print } from '@ohos.print';
+```
+
+## startPrintJob
+
+```TypeScript
+function startPrintJob(jobInfo: PrintJob, callback: AsyncCallback<void>): void
+```
+
+Starts the specified print job. This API uses an asynchronous callback to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_PRINT_JOB
+
+**System capability:** SystemCapability.Print.PrintFramework
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| jobInfo | PrintJob | Yes | Information about the print job. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | the application does not have permission to call this function. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+
+**Example**
+
+```TypeScript
+import { print } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let jobInfo : print.PrintJob = {
+    fdList : [44,45],
+    jobId : 'jobId_12',
+    printerId : 'printerId_32',
+    jobState : print.PrintJobState.PRINT_JOB_COMPLETED,
+    jobSubstate : print.PrintJobSubState.PRINT_JOB_COMPLETED_SUCCESS,
+    copyNumber : 1,
+    pageRange : {},
+    isSequential : false,
+    pageSize : {id : '', name : '', width : 10, height : 20},
+    isLandscape : false,
+    colorMode : print.PrintColorMode.COLOR_MODE_COLOR,
+    duplexMode : print.PrintDuplexMode.DUPLEX_MODE_NONE,
+    margin : undefined,
+    preview : undefined,
+    options : undefined
+};
+print.startPrintJob(jobInfo, (err: BusinessError) => {
+    if (err) {
+        console.error('failed to start Print Job because : ' + JSON.stringify(err));
+    } else {
+        console.info('start Print Job success');
+    }
+})
+
+```
+
+
+## startPrintJob
+
+```TypeScript
+function startPrintJob(jobInfo: PrintJob): Promise<void>
+```
+
+Starts the specified print job. This API uses a promise to return the result.
+
+**Since:** 10
+
+**Required permissions:** ohos.permission.MANAGE_PRINT_JOB
+
+**System capability:** SystemCapability.Print.PrintFramework
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| jobInfo | PrintJob | Yes | Information about the print job. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void&gt; | Promise that returns no value. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | the application does not have permission to call this function. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified; 2.Incorrect parameter types. |
+
+**Example**
+
+```TypeScript
+import { print } from '@kit.BasicServicesKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let jobInfo : print.PrintJob = {
+    fdList : [44,45],
+    jobId : 'jobId_12',
+    printerId : 'printerId_32',
+    jobState : print.PrintJobState.PRINT_JOB_COMPLETED,
+    jobSubstate : print.PrintJobSubState.PRINT_JOB_COMPLETED_SUCCESS,
+    copyNumber : 1,
+    pageRange : {},
+    isSequential : false,
+    pageSize : {id : '', name : '', width : 10, height : 20},
+    isLandscape : false,
+    colorMode : print.PrintColorMode.COLOR_MODE_COLOR,
+    duplexMode : print.PrintDuplexMode.DUPLEX_MODE_NONE,
+    margin : undefined,
+    preview : undefined,
+    options : undefined
+};
+print.startPrintJob(jobInfo).then(() => {
+    console.info('start Print success');
+}).catch((error: BusinessError) => {
+    console.error('failed to start Print because : ' + JSON.stringify(error));
+})
+
+```
+

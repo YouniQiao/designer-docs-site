@@ -1,0 +1,59 @@
+# createCertChainValidator
+
+## Modules to Import
+
+```TypeScript
+import { cert } from '@ohos.security.cert';
+```
+
+## createCertChainValidator
+
+```TypeScript
+function createCertChainValidator(algorithm: string): CertChainValidator
+```
+
+Creates a **CertChainValidator** object.
+
+**Since:** 9
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.Security.Cert
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| algorithm | string | Yes | Certificate chain validator algorithm. Currently, only **PKIX** is supported. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| CertChainValidator | **CertChainValidator** object created. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | invalid parameters. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | this operation is not supported. |
+| [19020001](../errorcode-cert.md#19020001-memory-error) | memory malloc failed. |
+| [19020002](../errorcode-cert.md#19020002-runtime-error) | runtime error. Possible causes:<br>1. Memory copy failed;<br>2. A null pointer occurs inside the system;<br>3. Failed to obtain the native object or convert parameters. |
+| [19030001](../errorcode-cert.md#19030001-crypto-operation-error) | crypto operation error. |
+
+**Example**
+
+```TypeScript
+import { cert } from '@kit.DeviceCertificateKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  let validator = cert.createCertChainValidator('PKIX');
+} catch (error) {
+  let e: BusinessError = error as BusinessError;
+  console.error(`createCertChainValidator failed, errCode: ${e.code}, errMsg: ${e.message}`);
+}
+
+```
+

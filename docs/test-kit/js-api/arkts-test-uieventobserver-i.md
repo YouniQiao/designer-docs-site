@@ -1,0 +1,221 @@
+# UIEventObserver
+
+Observer to monitor UI events.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Test.UiTest
+
+## Modules to Import
+
+```TypeScript
+import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@ohos.UiTest';
+```
+
+## once('toastShow')
+
+```TypeScript
+once(type: 'toastShow', callback: Callback<UIElementInfo>): void
+```
+
+Subscribes to events of the toast component. This API uses a callback to return the result.
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Test.UiTest
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'toastShow' | Yes | Event type. The value is fixed at **'toastShow'**. |
+| callback | Callback&lt;UIElementInfo&gt; | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+// xxx.test.ets
+import { Driver, UIElementInfo, UIEventObserver } from '@kit.TestKit';
+
+async function demo() {
+  let driver: Driver = Driver.create();
+  let observer: UIEventObserver = driver.createUIEventObserver();
+  let callback = (UIElementInfo: UIElementInfo) => {
+    console.info(UIElementInfo.bundleName);
+    console.info(UIElementInfo.text);
+    console.info(UIElementInfo.type);
+  }
+  observer.once('toastShow', callback);
+}
+
+```
+
+## once('dialogShow')
+
+```TypeScript
+once(type: 'dialogShow', callback: Callback<UIElementInfo>): void
+```
+
+Subscribes to events of the dialog component. This API uses a callback to return the result.
+
+**Since:** 10
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.Test.UiTest
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'dialogShow' | Yes | Event type. The value is fixed at **'dialogShow'**. |
+| callback | Callback&lt;UIElementInfo&gt; | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified; 2.Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+// xxx.test.ets
+import { Driver, UIElementInfo, UIEventObserver } from '@kit.TestKit';
+
+async function demo() {
+  let driver: Driver = Driver.create();
+  let observer: UIEventObserver = driver.createUIEventObserver();
+  let callback = (UIElementInfo: UIElementInfo) => {
+    console.info(UIElementInfo.bundleName);
+    console.info(UIElementInfo.text);
+    console.info(UIElementInfo.type);
+  }
+  observer.once('dialogShow', callback);
+}
+
+```
+
+## once('windowChange')
+
+```TypeScript
+once(type: 'windowChange', windowChangeType: WindowChangeType, options: WindowChangeOptions, callback: Callback<UIElementInfo>): void
+```
+
+Starts listening for window change events of the specified type with extended configuration supported. This API triggers a callback when a specified window change event is detected. This API can be used only in [free windows](../../../../windowmanager/window-terminology.md#free-windows) mode.
+
+**Since:** 22
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+**System capability:** SystemCapability.Test.UiTest
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'windowChange' | Yes | Type of the event to subscribe to, which can be **windowChange**. This event istriggered when the window changes. |
+| windowChangeType | WindowChangeType | Yes | Type of the window change event. |
+| options | WindowChangeOptions | Yes | Extended configuration, including the listening timeout interval and thebundle name of the window to be listened for. |
+| callback | Callback&lt;UIElementInfo&gt; | Yes | Callback triggered to return event information when an event occurs. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [17000005](../errorcode-uitest.md#17000005-operation-not-supported) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+// xxx.test.ets
+import { Driver, UIElementInfo, UIEventObserver, WindowChangeOptions, WindowChangeType } from '@kit.TestKit';
+
+async function demo() {
+  let driver: Driver = Driver.create();
+  let observer: UIEventObserver = driver.createUIEventObserver();
+  let options: WindowChangeOptions = {
+    timeout: 20000,
+    bundleName: 'com.example.myapplication'  // Use the actual bundle name.
+  }
+  let callback = (UIElementInfo: UIElementInfo) => {
+    console.info(UIElementInfo.bundleName);
+    console.info(UIElementInfo.text);
+    console.info(UIElementInfo.type);
+    console.info(UIElementInfo.windowChangeType?.toString());
+    console.info(UIElementInfo.windowId?.toString());
+  }
+  observer.once('windowChange', WindowChangeType.WINDOW_ADDED, options, callback);
+}
+
+```
+
+## once('componentEventOccur')
+
+```TypeScript
+once(type: 'componentEventOccur', componentEventType: ComponentEventType, options: ComponentEventOptions, callback: Callback<UIElementInfo>): void
+```
+
+Starts listening for component operation events of the specified type with extended configuration supported. This API triggers a callback when a specified component operation event is detected.
+
+**Since:** 22
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+**System capability:** SystemCapability.Test.UiTest
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'componentEventOccur' | Yes | Type of the event to subscribe to, which can be **componentEventOccur**.This event is triggered when the component operation is detected. |
+| componentEventType | ComponentEventType | Yes | Type of the component operation event. |
+| options | ComponentEventOptions | Yes | Extended configuration, including the listening timeout interval andthe matching condition of the component to be listened for. |
+| callback | Callback&lt;UIElementInfo&gt; | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [17000005](../errorcode-uitest.md#17000005-operation-not-supported) | This operation is not supported. |
+| [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+// xxx.test.ets
+import { Driver, UIElementInfo, UIEventObserver, ComponentEventOptions, ComponentEventType, ON } from '@kit.TestKit';
+
+async function demo() {
+  let driver: Driver = Driver.create();
+  let observer: UIEventObserver = driver.createUIEventObserver();
+  let option: ComponentEventOptions = {
+    timeout: 20000,
+    on: ON.id('123')  // Use the actual component ID.
+  };
+  let callback = (UIElementInfo: UIElementInfo) => {
+    console.info(UIElementInfo.bundleName);
+    console.info(UIElementInfo.text);
+    console.info(UIElementInfo.type);
+    console.info(UIElementInfo.componentEventType?.toString());
+    console.info(UIElementInfo.windowId?.toString());
+    console.info(UIElementInfo.componentId);
+    console.info(UIElementInfo.componentRect?.left.toString());
+    console.info(UIElementInfo.componentRect?.top.toString());
+    console.info(UIElementInfo.componentRect?.right.toString());
+    console.info(UIElementInfo.componentRect?.bottom.toString());
+  };
+  observer.once('componentEventOccur', ComponentEventType.COMPONENT_CLICKED, option, callback);
+}
+
+```
+

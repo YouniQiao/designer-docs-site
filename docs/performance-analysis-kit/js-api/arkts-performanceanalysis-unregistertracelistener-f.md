@@ -1,0 +1,45 @@
+# unregisterTraceListener
+
+## Modules to Import
+
+```TypeScript
+import { hiTraceMeter } from '@ohos.hiTraceMeter';
+```
+
+## unregisterTraceListener
+
+```TypeScript
+function unregisterTraceListener(index: number): number
+```
+
+Unregisters the callback function used to notify whether the trace capture is enabled, which is registered using **registerTraceListener()**.
+
+**Since:** 22
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+**System capability:** SystemCapability.HiviewDFX.HiTrace
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | number | Yes | Index of the registered callback function, that is, the return value when[registerTraceListener()](arkts-performanceanalysis-registertracelistener-f.md#registertracelistener-1) is successfully called<br>The value range is all integers. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Callback deregistration status.<br>**0**: Deregistration succeeded.<br>**-1**: The callback corresponding to the index is not registered.<br>**-2**: Invalid index. The index value is not within the range of 0 to 9. |
+
+**Example**
+
+```TypeScript
+// Deregister the callback used to notify whether the application trace capture is enabled. index is the callback index returned by hiTraceMeter.registerTraceListener.
+let ret = hiTraceMeter.unregisterTraceListener(index);
+if (ret < 0) {
+  // Handle exceptions.
+}
+
+```
+

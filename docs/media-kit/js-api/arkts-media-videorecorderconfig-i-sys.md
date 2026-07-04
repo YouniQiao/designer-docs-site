@@ -1,0 +1,112 @@
+# VideoRecorderConfig (System API)
+
+Provides the video recorder configuration definitions.
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { media } from '@ohos.multimedia.media';
+```
+
+## audioSourceType
+
+```TypeScript
+audioSourceType?: AudioSourceType
+```
+
+audio source type, details see @AudioSourceType .
+
+**Type:** AudioSourceType
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+
+## location
+
+```TypeScript
+location?: Location
+```
+
+geographical location information.
+
+**Type:** Location
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+
+## profile
+
+```TypeScript
+profile: VideoRecorderProfile
+```
+
+video recorder profile, can get by "getVideoRecorderProfile", details see @VideoRecorderProfile .=
+
+**Type:** VideoRecorderProfile
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+
+## rotation
+
+```TypeScript
+rotation?: number
+```
+
+Sets the video rotation angle in output file, and for the file to playback, in degrees. mp4 support. the range of rotation angle should be {0, 90, 180, 270}, default is 0.
+
+**Type:** number
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+
+## url
+
+```TypeScript
+url: string
+```
+
+video output uri.support two kind of uri now. format like: scheme + "://" + "context". fd: fd://fd
+
+**Type:** string
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+
+## videoSourceType
+
+```TypeScript
+videoSourceType: VideoSourceType
+```
+
+video source type, details see @VideoSourceType .
+
+**Type:** VideoSourceType
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.VideoRecorder
+
+**System API:** This is a system API.
+

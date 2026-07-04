@@ -1,0 +1,210 @@
+# ArkTS API<!--arkts-audiokit-->
+
+- [@ohos.multimedia.audio](arkts-multimedia-audio.md)<!--Del-->
+  - [createAsrProcessingController(system api)](arkts-audio-createasrprocessingcontroller-f-sys.md)<!--DelEnd-->
+  - [createAudioCapturer](arkts-audio-createaudiocapturer-f.md)
+  - [createAudioLoopback](arkts-audio-createaudioloopback-f.md)
+  - [createAudioRenderer](arkts-audio-createaudiorenderer-f.md)<!--Del-->
+  - [createGlobalAudioLoopback(system api)](arkts-audio-createglobalaudioloopback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createMicInAudioCapturer(system api)](arkts-audio-createmicinaudiocapturer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createTonePlayer(system api)](arkts-audio-createtoneplayer-f-sys.md)<!--DelEnd-->
+  - [getAudioManager](arkts-audio-getaudiomanager-f.md)<!--Del-->
+  - [ActiveStreamVolumeInfo(system api)](arkts-audio-activestreamvolumeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AppIdInfo(system api)](arkts-audio-appidinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AsrProcessingController(system api)](arkts-audio-asrprocessingcontroller-i-sys.md)<!--DelEnd-->
+  - [AudioCapturer](arkts-audio-audiocapturer-i.md)<!--Del-->
+  - [AudioCapturer(system api)](arkts-audio-audiocapturer-i-sys.md)<!--DelEnd-->
+  - [AudioCapturerChangeInfo](arkts-audio-audiocapturerchangeinfo-i.md)<!--Del-->
+  - [AudioCapturerChangeInfo(system api)](arkts-audio-audiocapturerchangeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioCapturerFilter(system api)](arkts-audio-audiocapturerfilter-i-sys.md)<!--DelEnd-->
+  - [AudioCapturerInfo](arkts-audio-audiocapturerinfo-i.md)<!--Del-->
+  - [AudioCapturerMicInConfig(system api)](arkts-audio-audiocapturermicinconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioCapturerMicInData(system api)](arkts-audio-audiocapturermicindata-i-sys.md)<!--DelEnd-->
+  - [AudioCapturerOptions](arkts-audio-audiocaptureroptions-i.md)<!--Del-->
+  - [AudioCapturerOptions(system api)](arkts-audio-audiocaptureroptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioCollaborativeManager(system api)](arkts-audio-audiocollaborativemanager-i-sys.md)<!--DelEnd-->
+  - [AudioDebuggingManager](arkts-audio-audiodebuggingmanager-i.md)
+  - [AudioDeviceDescriptor](arkts-audio-audiodevicedescriptor-i.md)<!--Del-->
+  - [AudioDeviceDescriptor(system api)](arkts-audio-audiodevicedescriptor-i-sys.md)<!--DelEnd-->
+  - [AudioDeviceEnhanceManager](arkts-audio-audiodeviceenhancemanager-i.md)<!--Del-->
+  - [AudioDeviceEnhanceManager(system api)](arkts-audio-audiodeviceenhancemanager-i-sys.md)<!--DelEnd-->
+  - [AudioDevicePair](arkts-audio-audiodevicepair-i.md)<!--Del-->
+  - [AudioEffectManager(system api)](arkts-audio-audioeffectmanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioEffectProperty(system api)](arkts-audio-audioeffectproperty-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioHRTFAnonymousDescriptor(system api)](arkts-audio-audiohrtfanonymousdescriptor-i-sys.md)<!--DelEnd-->
+  - [AudioInterrupt](arkts-audio-audiointerrupt-i.md)
+  - [AudioLoopback](arkts-audio-audioloopback-i.md)
+  - [AudioManager](arkts-audio-audiomanager-i.md)<!--Del-->
+  - [AudioManager(system api)](arkts-audio-audiomanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioPersonalizedSpatialEnabledChangeForAnyDevice(system api)](arkts-audio-audiopersonalizedspatialenabledchangeforanydevice-i-sys.md)<!--DelEnd-->
+  - [AudioPlaybackCaptureConfig](arkts-audio-audioplaybackcaptureconfig-i.md)
+  - [AudioRenderer](arkts-audio-audiorenderer-i.md)<!--Del-->
+  - [AudioRenderer(system api)](arkts-audio-audiorenderer-i-sys.md)<!--DelEnd-->
+  - [AudioRendererChangeInfo](arkts-audio-audiorendererchangeinfo-i.md)<!--Del-->
+  - [AudioRendererChangeInfo(system api)](arkts-audio-audiorendererchangeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioRendererFilter(system api)](arkts-audio-audiorendererfilter-i-sys.md)<!--DelEnd-->
+  - [AudioRendererInfo](arkts-audio-audiorendererinfo-i.md)
+  - [AudioRendererOptions](arkts-audio-audiorendereroptions-i.md)<!--Del-->
+  - [AudioRendererOptions(system api)](arkts-audio-audiorendereroptions-i-sys.md)<!--DelEnd-->
+  - [AudioRoutingManager](arkts-audio-audioroutingmanager-i.md)<!--Del-->
+  - [AudioRoutingManager(system api)](arkts-audio-audioroutingmanager-i-sys.md)<!--DelEnd-->
+  - [AudioSessionDeactivatedEvent](arkts-audio-audiosessiondeactivatedevent-i.md)
+  - [AudioSessionManager](arkts-audio-audiosessionmanager-i.md)
+  - [AudioSessionStateChangedEvent](arkts-audio-audiosessionstatechangedevent-i.md)
+  - [AudioSessionStrategy](arkts-audio-audiosessionstrategy-i.md)<!--Del-->
+  - [AudioSpatialDeviceState(system api)](arkts-audio-audiospatialdevicestate-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioSpatialEnabledStateForDevice(system api)](arkts-audio-audiospatialenabledstatefordevice-i-sys.md)<!--DelEnd-->
+  - [AudioSpatializationManager](arkts-audio-audiospatializationmanager-i.md)<!--Del-->
+  - [AudioSpatializationManager(system api)](arkts-audio-audiospatializationmanager-i-sys.md)<!--DelEnd-->
+  - [AudioStreamDeviceChangeInfo](arkts-audio-audiostreamdevicechangeinfo-i.md)
+  - [AudioStreamInfo](arkts-audio-audiostreaminfo-i.md)
+  - [AudioStreamManager](arkts-audio-audiostreammanager-i.md)
+  - [AudioTimestampInfo](arkts-audio-audiotimestampinfo-i.md)
+  - [AudioVolumeGroupManager](arkts-audio-audiovolumegroupmanager-i.md)<!--Del-->
+  - [AudioVolumeGroupManager(system api)](arkts-audio-audiovolumegroupmanager-i-sys.md)<!--DelEnd-->
+  - [AudioVolumeManager](arkts-audio-audiovolumemanager-i.md)<!--Del-->
+  - [AudioVolumeManager(system api)](arkts-audio-audiovolumemanager-i-sys.md)<!--DelEnd-->
+  - [CaptureFilterOptions](arkts-audio-capturefilteroptions-i.md)
+  - [CurrentInputDeviceChangedEvent](arkts-audio-currentinputdevicechangedevent-i.md)
+  - [CurrentOutputDeviceChangedEvent](arkts-audio-currentoutputdevicechangedevent-i.md)
+  - [DeviceBlockStatusInfo](arkts-audio-deviceblockstatusinfo-i.md)
+  - [DeviceChangeAction](arkts-audio-devicechangeaction-i.md)
+  - [InterruptAction](arkts-audio-interruptaction-i.md)
+  - [InterruptEvent](arkts-audio-interruptevent-i.md)<!--Del-->
+  - [InterruptResult(system api)](arkts-audio-interruptresult-i-sys.md)<!--DelEnd-->
+  - [MicStateChangeEvent](arkts-audio-micstatechangeevent-i.md)<!--Del-->
+  - [SoundCardInfo(system api)](arkts-audio-soundcardinfo-i-sys.md)<!--DelEnd-->
+  - [StreamVolumeEvent](arkts-audio-streamvolumeevent-i.md)<!--Del-->
+  - [SystemVolumeFilter(system api)](arkts-audio-systemvolumefilter-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TonePlayer(system api)](arkts-audio-toneplayer-i-sys.md)<!--DelEnd-->
+  - [VolumeEvent](arkts-audio-volumeevent-i.md)<!--Del-->
+  - [VolumeEvent(system api)](arkts-audio-volumeevent-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VolumeGroupInfo(system api)](arkts-audio-volumegroupinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ActiveStreamsVolumeInfoArray(system api)](arkts-audio-activestreamsvolumeinfoarray-t-sys.md)<!--DelEnd-->
+  - [AudioCapturerChangeInfoArray](arkts-audio-audiocapturerchangeinfoarray-t.md)
+  - [AudioDeviceDescriptors](arkts-audio-audiodevicedescriptors-t.md)
+  - [AudioEffectInfoArray](arkts-audio-audioeffectinfoarray-t.md)
+  - [AudioRendererChangeInfoArray](arkts-audio-audiorendererchangeinfoarray-t.md)
+  - [AudioRendererWriteDataCallback](arkts-audio-audiorendererwritedatacallback-t.md)
+  - [DeviceTypeArray](arkts-audio-devicetypearray-t.md)<!--Del-->
+  - [StreamUsageArray(system api)](arkts-audio-streamusagearray-t-sys.md)<!--DelEnd--><!--Del-->
+  - [VolumeGroupInfos(system api)](arkts-audio-volumegroupinfos-t-sys.md)<!--DelEnd-->
+  - [ActiveDeviceType](arkts-audio-activedevicetype-e.md)<!--Del-->
+  - [AsrAecMode(system api)](arkts-audio-asraecmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AsrNoiseSuppressionMode(system api)](arkts-audio-asrnoisesuppressionmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AsrVoiceControlMode(system api)](arkts-audio-asrvoicecontrolmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AsrVoiceMuteMode(system api)](arkts-audio-asrvoicemutemode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AsrWhisperDetectionMode(system api)](arkts-audio-asrwhisperdetectionmode-e-sys.md)<!--DelEnd-->
+  - [AudioChannel](arkts-audio-audiochannel-e.md)
+  - [AudioChannelLayout](arkts-audio-audiochannellayout-e.md)
+  - [AudioConcurrencyMode](arkts-audio-audioconcurrencymode-e.md)
+  - [AudioDataCallbackResult](arkts-audio-audiodatacallbackresult-e.md)<!--Del-->
+  - [AudioDevcieSelectStrategy(system api)](arkts-audio-audiodevcieselectstrategy-e-sys.md)<!--DelEnd-->
+  - [AudioEffectMode](arkts-audio-audioeffectmode-e.md)
+  - [AudioEncodingType](arkts-audio-audioencodingtype-e.md)
+  - [AudioErrors](arkts-audio-audioerrors-e.md)
+  - [AudioLatencyType](arkts-audio-audiolatencytype-e.md)
+  - [AudioLoopbackEqualizerPreset](arkts-audio-audioloopbackequalizerpreset-e.md)
+  - [AudioLoopbackMode](arkts-audio-audioloopbackmode-e.md)
+  - [AudioLoopbackReverbPreset](arkts-audio-audioloopbackreverbpreset-e.md)
+  - [AudioLoopbackStatus](arkts-audio-audioloopbackstatus-e.md)
+  - [AudioPlaybackCaptureMode](arkts-audio-audioplaybackcapturemode-e.md)
+  - [AudioPrivacyType](arkts-audio-audioprivacytype-e.md)
+  - [AudioRendererRate](arkts-audio-audiorendererrate-e.md)
+  - [AudioRingMode](arkts-audio-audioringmode-e.md)
+  - [AudioSampleFormat](arkts-audio-audiosampleformat-e.md)
+  - [AudioSamplingRate](arkts-audio-audiosamplingrate-e.md)
+  - [AudioScene](arkts-audio-audioscene-e.md)<!--Del-->
+  - [AudioSeparationVolumeType(system api)](arkts-audio-audioseparationvolumetype-e-sys.md)<!--DelEnd-->
+  - [AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md)
+  - [AudioSessionDeactivatedReason](arkts-audio-audiosessiondeactivatedreason-e.md)
+  - [AudioSessionScene](arkts-audio-audiosessionscene-e.md)
+  - [AudioSessionStateChangeHint](arkts-audio-audiosessionstatechangehint-e.md)<!--Del-->
+  - [AudioSpatialDeviceType(system api)](arkts-audio-audiospatialdevicetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioSpatializationSceneType(system api)](arkts-audio-audiospatializationscenetype-e-sys.md)<!--DelEnd-->
+  - [AudioState](arkts-audio-audiostate-e.md)
+  - [AudioStreamDeviceChangeReason](arkts-audio-audiostreamdevicechangereason-e.md)
+  - [AudioVolumeMode](arkts-audio-audiovolumemode-e.md)
+  - [AudioVolumeType](arkts-audio-audiovolumetype-e.md)<!--Del-->
+  - [AudioVolumeType(system api)](arkts-audio-audiovolumetype-e-sys.md)<!--DelEnd-->
+  - [BluetoothAndNearlinkPreferredRecordCategory](arkts-audio-bluetoothandnearlinkpreferredrecordcategory-e.md)
+  - [ChannelBlendMode](arkts-audio-channelblendmode-e.md)
+  - [CommunicationDeviceType](arkts-audio-communicationdevicetype-e.md)<!--Del-->
+  - [ConnectType(system api)](arkts-audio-connecttype-e-sys.md)<!--DelEnd-->
+  - [ContentType](arkts-audio-contenttype-e.md)
+  - [DeviceBlockStatus](arkts-audio-deviceblockstatus-e.md)
+  - [DeviceChangeType](arkts-audio-devicechangetype-e.md)
+  - [DeviceFlag](arkts-audio-deviceflag-e.md)<!--Del-->
+  - [DeviceFlag(system api)](arkts-audio-deviceflag-e-sys.md)<!--DelEnd-->
+  - [DeviceRole](arkts-audio-devicerole-e.md)
+  - [DeviceType](arkts-audio-devicetype-e.md)<!--Del-->
+  - [DeviceType(system api)](arkts-audio-devicetype-e-sys.md)<!--DelEnd-->
+  - [DeviceUsage](arkts-audio-deviceusage-e.md)<!--Del-->
+  - [EffectFlag(system api)](arkts-audio-effectflag-e-sys.md)<!--DelEnd-->
+  - [InterruptActionType](arkts-audio-interruptactiontype-e.md)
+  - [InterruptForceType](arkts-audio-interruptforcetype-e.md)
+  - [InterruptHint](arkts-audio-interrupthint-e.md)
+  - [InterruptMode](arkts-audio-interruptmode-e.md)<!--Del-->
+  - [InterruptRequestResultType(system api)](arkts-audio-interruptrequestresulttype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [InterruptRequestType(system api)](arkts-audio-interruptrequesttype-e-sys.md)<!--DelEnd-->
+  - [InterruptType](arkts-audio-interrupttype-e.md)
+  - [OutputDeviceChangeRecommendedAction](arkts-audio-outputdevicechangerecommendedaction-e.md)
+  - [PlaybackCaptureStartState](arkts-audio-playbackcapturestartstate-e.md)<!--Del-->
+  - [PolicyType(system api)](arkts-audio-policytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RenderTarget(system api)](arkts-audio-rendertarget-e-sys.md)<!--DelEnd-->
+  - [SourceType](arkts-audio-sourcetype-e.md)<!--Del-->
+  - [SourceType(system api)](arkts-audio-sourcetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SpatialAudioSourceType(system api)](arkts-audio-spatialaudiosourcetype-e-sys.md)<!--DelEnd-->
+  - [StreamUsage](arkts-audio-streamusage-e.md)<!--Del-->
+  - [StreamUsage(system api)](arkts-audio-streamusage-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneType(system api)](arkts-audio-tonetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VolumeAdjustType(system api)](arkts-audio-volumeadjusttype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VolumeFlag(system api)](arkts-audio-volumeflag-e-sys.md)<!--DelEnd-->
+  - [Constants](arkts-audio-audio-con.md)<!--Del-->
+  - [Constants(system api)](arkts-audio-audio-con-sys.md)<!--DelEnd-->
+- [@ohos.multimedia.audioHaptic](arkts-multimedia-audiohaptic.md)
+  - [getAudioHapticManager](arkts-audio-getaudiohapticmanager-f.md)
+  - [AudioHapticFileDescriptor](arkts-audio-audiohapticfiledescriptor-i.md)
+  - [AudioHapticManager](arkts-audio-audiohapticmanager-i.md)
+  - [AudioHapticPlayer](arkts-audio-audiohapticplayer-i.md)<!--Del-->
+  - [AudioHapticPlayer(system api)](arkts-audio-audiohapticplayer-i-sys.md)<!--DelEnd-->
+  - [AudioHapticPlayerOptions](arkts-audio-audiohapticplayeroptions-i.md)
+  - [AudioHapticType](arkts-audio-audiohaptictype-e.md)
+  - [AudioLatencyMode](arkts-audio-audiolatencymode-e.md)
+- [@ohos.multimedia.avVolumePanel](arkts-multimedia-avvolumepanel.md)
+  - [AVVolumePanelParameter](arkts-audio-avvolumepanelparameter-c.md)
+  - [AVVolumePanel](arkts-audio-avvolumepanel-s.md)
+- [@ohos.multimedia.systemSoundManager](arkts-multimedia-systemsoundmanager.md)<!--Del-->
+  - [createCustomizedToneAttrs(system api)](arkts-audio-createcustomizedtoneattrs-f-sys.md)<!--DelEnd-->
+  - [createSystemSoundPlayer](arkts-audio-createsystemsoundplayer-f.md)<!--Del-->
+  - [getSystemSoundManager(system api)](arkts-audio-getsystemsoundmanager-f-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemSoundManager(system api)](arkts-audio-systemsoundmanager-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneAttrs(system api)](arkts-audio-toneattrs-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneHapticsAttrs(system api)](arkts-audio-tonehapticsattrs-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneHapticsSettings(system api)](arkts-audio-tonehapticssettings-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RingtoneOptions(system api)](arkts-audio-ringtoneoptions-t-sys.md)<!--DelEnd--><!--Del-->
+  - [RingtonePlayer(system api)](arkts-audio-ringtoneplayer-t-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemSoundPlayer(system api)](arkts-audio-systemsoundplayer-t.md)<!--DelEnd--><!--Del-->
+  - [SystemToneOptions(system api)](arkts-audio-systemtoneoptions-t-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemTonePlayer(system api)](arkts-audio-systemtoneplayer-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneAttrsArray(system api)](arkts-audio-toneattrsarray-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneHapticsAttrsArray(system api)](arkts-audio-tonehapticsattrsarray-t-sys.md)<!--DelEnd--><!--Del-->
+  - [MediaType(system api)](arkts-audio-mediatype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RingtoneType(system api)](arkts-audio-ringtonetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemSoundError(system api)](arkts-audio-systemsounderror-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemSoundType(system api)](arkts-audio-systemsoundtype-e.md)<!--DelEnd--><!--Del-->
+  - [SystemToneType(system api)](arkts-audio-systemtonetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneCustomizedType(system api)](arkts-audio-tonecustomizedtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneHapticsFeature(system api)](arkts-audio-tonehapticsfeature-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneHapticsMode(system api)](arkts-audio-tonehapticsmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ToneHapticsType(system api)](arkts-audio-tonehapticstype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Constants(system api)](arkts-audio-systemsoundmanager-con-sys.md)<!--DelEnd-->
+- multimedia<!--arkts-audiokit-multimedia-->
+  - [SystemSoundPlayer](arkts-systemsoundplayer.md)<!--Del-->
+    - [SystemSoundPlayer(system api)](arkts-audio-systemsoundplayer-i.md)<!--DelEnd-->
+  - [ringtonePlayer](arkts-ringtoneplayer.md)<!--Del-->
+    - [RingtoneOptions(system api)](arkts-audio-ringtoneoptions-i-sys.md)<!--DelEnd--><!--Del-->
+    - [RingtonePlayer(system api)](arkts-audio-ringtoneplayer-i-sys.md)<!--DelEnd-->
+  - [systemTonePlayer](arkts-systemtoneplayer.md)<!--Del-->
+    - [SystemToneOptions(system api)](arkts-audio-systemtoneoptions-i-sys.md)<!--DelEnd--><!--Del-->
+    - [SystemTonePlayer(system api)](arkts-audio-systemtoneplayer-i-sys.md)<!--DelEnd-->

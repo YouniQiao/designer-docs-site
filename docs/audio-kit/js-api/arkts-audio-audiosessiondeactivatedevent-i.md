@@ -1,0 +1,28 @@
+# AudioSessionDeactivatedEvent
+
+Describes the event indicating that an audio session is deactivated.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+## Modules to Import
+
+```TypeScript
+import { audio } from '@ohos.multimedia.audio';
+```
+
+## reason
+
+```TypeScript
+reason: AudioSessionDeactivatedReason
+```
+
+Reason for deactivating an audio session.
+
+**Type:** AudioSessionDeactivatedReason
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+

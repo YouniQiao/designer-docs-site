@@ -1,0 +1,22 @@
+# @ohos.customization.customConfig
+
+This module provides APIs for applications to obtain custom configurations, such as channel IDs.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Customization.CustomConfig
+
+## Modules to Import
+
+```TypeScript
+import { customConfig } from '@ohos.customization.customConfig';
+```
+
+## Summary
+
+### Functions
+
+| Name | Description |
+| --- | --- |
+| [getChannelId](arkts-basicservices-getchannelid-f.md#getchannelid-1) | Obtains a pre-installed channel ID of this application. |
+

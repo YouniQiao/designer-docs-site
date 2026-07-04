@@ -1,0 +1,394 @@
+# oh_key_code.h
+
+## Overview
+
+Defines the key event structure and related enumeration values.
+
+**Library**: libohinput.so
+
+**System capability**: SystemCapability.MultimodalInput.Input.Core
+
+**Since**: 12
+
+**Related module**: [input](capi-input.md)
+
+## Summary
+
+### Enum
+
+| Name | typedef keyword | Description |
+| -- | -- | -- |
+| [Input_KeyCode](#input_keycode) | Input_KeyCode | Enumerates the key codes. |
+
+## Enum type description
+
+### Input_KeyCode
+
+```c
+enum Input_KeyCode
+```
+
+**Description**
+
+Enumerates the key codes.
+
+**Since**: 12
+
+| Enum item | Description |
+| -- | -- |
+| KEYCODE_UNKNOWN = -1 | Unknown key |
+| KEYCODE_FN = 0 | Function (Fn) key |
+| KEYCODE_HOME = 1 |  |
+| KEYCODE_BACK = 2 |  |
+| KEYCODE_SEARCH = 9 |  |
+| KEYCODE_MEDIA_PLAY_PAUSE = 10 |  |
+| KEYCODE_MEDIA_STOP = 11 |  |
+| KEYCODE_MEDIA_NEXT = 12 |  |
+| KEYCODE_MEDIA_PREVIOUS = 13 |  |
+| KEYCODE_MEDIA_REWIND = 14 |  |
+| KEYCODE_MEDIA_FAST_FORWARD = 15 |  |
+| KEYCODE_VOLUME_UP = 16 | Volume Up key |
+| KEYCODE_VOLUME_DOWN = 17 | Volume Down key |
+| KEYCODE_POWER = 18 | Power key |
+| KEYCODE_CAMERA = 19 | Camera key |
+| KEYCODE_VOLUME_MUTE = 22 | Speaker Mute key |
+| KEYCODE_MUTE = 23 | Mute key |
+| KEYCODE_BRIGHTNESS_UP = 40 | Brightness Up key |
+| KEYCODE_BRIGHTNESS_DOWN = 41 | Brightness Down key |
+| KEYCODE_0 = 2000 | Key 0 |
+| KEYCODE_1 = 2001 | Key 1 |
+| KEYCODE_2 = 2002 | Key 2 |
+| KEYCODE_3 = 2003 | Key 3 |
+| KEYCODE_4 = 2004 | Key 4 |
+| KEYCODE_5 = 2005 | Key 5 |
+| KEYCODE_6 = 2006 | Key 6 |
+| KEYCODE_7 = 2007 | Key 7 |
+| KEYCODE_8 = 2008 | Key 8 |
+| KEYCODE_9 = 2009 | Key 9 |
+| KEYCODE_STAR = 2010 | Key |
+| KEYCODE_POUND = 2011 | Key # |
+| KEYCODE_DPAD_UP = 2012 | Up key on D-pad |
+| KEYCODE_DPAD_DOWN = 2013 | Down key on D-pad |
+| KEYCODE_DPAD_LEFT = 2014 | Left key on D-pad |
+| KEYCODE_DPAD_RIGHT = 2015 | Right key on D-pad |
+| KEYCODE_DPAD_CENTER = 2016 | Center key on D-pad |
+| KEYCODE_A = 2017 | Key A |
+| KEYCODE_B = 2018 | Key B |
+| KEYCODE_C = 2019 | Key C |
+| KEYCODE_D = 2020 | Key D |
+| KEYCODE_E = 2021 | Key E |
+| KEYCODE_F = 2022 | Key F |
+| KEYCODE_G = 2023 | Key G |
+| KEYCODE_H = 2024 | Key H |
+| KEYCODE_I = 2025 | Key I |
+| KEYCODE_J = 2026 | Key J |
+| KEYCODE_K = 2027 | Key K |
+| KEYCODE_L = 2028 | Key L |
+| KEYCODE_M = 2029 | Key M |
+| KEYCODE_N = 2030 | Key N |
+| KEYCODE_O = 2031 | Key O |
+| KEYCODE_P = 2032 | Key P |
+| KEYCODE_Q = 2033 | Key Q |
+| KEYCODE_R = 2034 | Key R |
+| KEYCODE_S = 2035 | Key S |
+| KEYCODE_T = 2036 | Key T |
+| KEYCODE_U = 2037 | Key U |
+| KEYCODE_V = 2038 | Key V |
+| KEYCODE_W = 2039 | Key W |
+| KEYCODE_X = 2040 | Key X |
+| KEYCODE_Y = 2041 | Key Y |
+| KEYCODE_Z = 2042 | Key Z |
+| KEYCODE_COMMA = 2043 | Key , |
+| KEYCODE_PERIOD = 2044 | Key . |
+| KEYCODE_ALT_LEFT = 2045 | Left Alt key |
+| KEYCODE_ALT_RIGHT = 2046 | Right Alt key |
+| KEYCODE_SHIFT_LEFT = 2047 | Left Shift key |
+| KEYCODE_SHIFT_RIGHT = 2048 | Right Shift key |
+| KEYCODE_TAB = 2049 | Tab key |
+| KEYCODE_SPACE = 2050 | Space key |
+| KEYCODE_SYM = 2051 | Symbol key |
+| KEYCODE_EXPLORER = 2052 | Browser function key, used to launch the browser application. |
+| KEYCODE_ENVELOPE = 2053 | Email function key, used to launch the email application. |
+| KEYCODE_ENTER = 2054 | Enter key |
+| KEYCODE_DEL = 2055 | Delete key |
+| KEYCODE_GRAVE = 2056 | Key |
+| KEYCODE_MINUS = 2057 | Key - |
+| KEYCODE_EQUALS = 2058 | Key = |
+| KEYCODE_LEFT_BRACKET = 2059 | Key [ |
+| KEYCODE_RIGHT_BRACKET = 2060 | Key ] |
+| KEYCODE_BACKSLASH = 2061 | Key \\| |
+| KEYCODE_SEMICOLON = 2062 | Key ; |
+| KEYCODE_APOSTROPHE = 2063 | Key ' |
+| KEYCODE_SLASH = 2064 | Key |
+| KEYCODE_AT = 2065 | Key @ |
+| KEYCODE_PLUS = 2066 | Key + |
+| KEYCODE_MENU = 2067 | Menu key |
+| KEYCODE_PAGE_UP = 2068 | Page Up key |
+| KEYCODE_PAGE_DOWN = 2069 | Page Down key |
+| KEYCODE_ESCAPE = 2070 | Esc key |
+| KEYCODE_FORWARD_DEL = 2071 | Forward Delete key |
+| KEYCODE_CTRL_LEFT = 2072 | Left Ctrl key |
+| KEYCODE_CTRL_RIGHT = 2073 | Right Ctrl key |
+| KEYCODE_CAPS_LOCK = 2074 | Caps Lock key |
+| KEYCODE_SCROLL_LOCK = 2075 | Scroll Lock key |
+| KEYCODE_META_LEFT = 2076 | Left Meta key |
+| KEYCODE_META_RIGHT = 2077 | Right Meta key |
+| KEYCODE_FUNCTION = 2078 | Function key |
+| KEYCODE_SYSRQ = 2079 | System Request/Print Screen key |
+| KEYCODE_BREAK = 2080 | Break/Pause key |
+| KEYCODE_MOVE_HOME = 2081 | Move to Home key |
+| KEYCODE_MOVE_END = 2082 | Move to End key |
+| KEYCODE_INSERT = 2083 | Insert key |
+| KEYCODE_FORWARD = 2084 | Forward key |
+| KEYCODE_MEDIA_PLAY = 2085 | Media: Play key |
+| KEYCODE_MEDIA_PAUSE = 2086 | Media: Pause key |
+| KEYCODE_MEDIA_CLOSE = 2087 | Media: Close key |
+| KEYCODE_MEDIA_EJECT = 2088 | Media: Reject key |
+| KEYCODE_MEDIA_RECORD = 2089 | Media: Record key |
+| KEYCODE_F1 = 2090 | F1 key |
+| KEYCODE_F2 = 2091 | F2 key |
+| KEYCODE_F3 = 2092 | F3 key |
+| KEYCODE_F4 = 2093 | F4 key |
+| KEYCODE_F5 = 2094 | F5 key |
+| KEYCODE_F6 = 2095 | F6 key |
+| KEYCODE_F7 = 2096 | F7 key |
+| KEYCODE_F8 = 2097 | F8 key |
+| KEYCODE_F9 = 2098 | F9 key |
+| KEYCODE_F10 = 2099 | F10 key |
+| KEYCODE_F11 = 2100 | F11 key |
+| KEYCODE_F12 = 2101 | F12 key |
+| KEYCODE_NUM_LOCK = 2102 | Number Lock key |
+| KEYCODE_NUMPAD_0 = 2103 | Key 0 on numeric keypad |
+| KEYCODE_NUMPAD_1 = 2104 | Key 1 on numeric keypad |
+| KEYCODE_NUMPAD_2 = 2105 | Key 2 on numeric keypad |
+| KEYCODE_NUMPAD_3 = 2106 | Key 3 on numeric keypad |
+| KEYCODE_NUMPAD_4 = 2107 | Key 4 on numeric keypad |
+| KEYCODE_NUMPAD_5 = 2108 | Key 5 on numeric keypad |
+| KEYCODE_NUMPAD_6 = 2109 | Key 6 on numeric keypad |
+| KEYCODE_NUMPAD_7 = 2110 | Key 7 on numeric keypad |
+| KEYCODE_NUMPAD_8 = 2111 | Key 8 on numeric keypad |
+| KEYCODE_NUMPAD_9 = 2112 | Key 9 on numeric keypad |
+| KEYCODE_NUMPAD_DIVIDE = 2113 | Key / on numeric keypad |
+| KEYCODE_NUMPAD_MULTIPLY = 2114 | Key * on numeric keypad |
+| KEYCODE_NUMPAD_SUBTRACT = 2115 | Key - on numeric keypad |
+| KEYCODE_NUMPAD_ADD = 2116 | Key + on numeric keypad |
+| KEYCODE_NUMPAD_DOT = 2117 | Key . on numeric keypad |
+| KEYCODE_NUMPAD_COMMA = 2118 | Key , on numeric keypad |
+| KEYCODE_NUMPAD_ENTER = 2119 | Enter key on numeric keypad |
+| KEYCODE_NUMPAD_EQUALS = 2120 | Key = on numeric keypad |
+| KEYCODE_NUMPAD_LEFT_PAREN = 2121 | Key ( on numeric keypad |
+| KEYCODE_NUMPAD_RIGHT_PAREN = 2122 | Key ) on numeric keypad |
+| KEYCODE_VIRTUAL_MULTITASK = 2210 |  |
+| KEYCODE_BUTTON_A = 2301 |  |
+| KEYCODE_BUTTON_B = 2302 |  |
+| KEYCODE_BUTTON_X = 2304 |  |
+| KEYCODE_BUTTON_Y = 2305 |  |
+| KEYCODE_BUTTON_L1 = 2307 |  |
+| KEYCODE_BUTTON_R1 = 2308 |  |
+| KEYCODE_BUTTON_L2 = 2309 |  |
+| KEYCODE_BUTTON_R2 = 2310 |  |
+| KEYCODE_BUTTON_SELECT = 2311 |  |
+| KEYCODE_BUTTON_START = 2312 |  |
+| KEYCODE_BUTTON_MODE = 2313 |  |
+| KEYCODE_BUTTON_THUMBL = 2314 |  |
+| KEYCODE_BUTTON_THUMBR = 2315 |  |
+| KEYCODE_SLEEP = 2600 |  |
+| KEYCODE_ZENKAKU_HANKAKU = 2601 |  |
+| KEYCODE_102ND = 2602 |  |
+| KEYCODE_RO = 2603 |  |
+| KEYCODE_KATAKANA = 2604 |  |
+| KEYCODE_HIRAGANA = 2605 |  |
+| KEYCODE_HENKAN = 2606 |  |
+| KEYCODE_KATAKANA_HIRAGANA = 2607 |  |
+| KEYCODE_MUHENKAN = 2608 |  |
+| KEYCODE_LINEFEED = 2609 |  |
+| KEYCODE_MACRO = 2610 |  |
+| KEYCODE_NUMPAD_PLUSMINUS = 2611 |  |
+| KEYCODE_SCALE = 2612 |  |
+| KEYCODE_HANGUEL = 2613 |  |
+| KEYCODE_HANJA = 2614 |  |
+| KEYCODE_YEN = 2615 |  |
+| KEYCODE_STOP = 2616 |  |
+| KEYCODE_AGAIN = 2617 |  |
+| KEYCODE_PROPS = 2618 |  |
+| KEYCODE_UNDO = 2619 |  |
+| KEYCODE_COPY = 2620 |  |
+| KEYCODE_OPEN = 2621 |  |
+| KEYCODE_PASTE = 2622 |  |
+| KEYCODE_FIND = 2623 |  |
+| KEYCODE_CUT = 2624 |  |
+| KEYCODE_HELP = 2625 |  |
+| KEYCODE_CALC = 2626 |  |
+| KEYCODE_FILE = 2627 |  |
+| KEYCODE_BOOKMARKS = 2628 |  |
+| KEYCODE_NEXT = 2629 |  |
+| KEYCODE_PLAYPAUSE = 2630 |  |
+| KEYCODE_PREVIOUS = 2631 |  |
+| KEYCODE_STOPCD = 2632 |  |
+| KEYCODE_CONFIG = 2634 |  |
+| KEYCODE_REFRESH = 2635 |  |
+| KEYCODE_EXIT = 2636 |  |
+| KEYCODE_EDIT = 2637 |  |
+| KEYCODE_SCROLLUP = 2638 |  |
+| KEYCODE_SCROLLDOWN = 2639 |  |
+| KEYCODE_NEW = 2640 |  |
+| KEYCODE_REDO = 2641 |  |
+| KEYCODE_CLOSE = 2642 |  |
+| KEYCODE_PLAY = 2643 |  |
+| KEYCODE_BASSBOOST = 2644 |  |
+| KEYCODE_PRINT = 2645 |  |
+| KEYCODE_CHAT = 2646 |  |
+| KEYCODE_FINANCE = 2647 |  |
+| KEYCODE_CANCEL = 2648 |  |
+| KEYCODE_KBDILLUM_TOGGLE = 2649 |  |
+| KEYCODE_KBDILLUM_DOWN = 2650 |  |
+| KEYCODE_KBDILLUM_UP = 2651 |  |
+| KEYCODE_SEND = 2652 |  |
+| KEYCODE_REPLY = 2653 |  |
+| KEYCODE_FORWARDMAIL = 2654 |  |
+| KEYCODE_SAVE = 2655 |  |
+| KEYCODE_DOCUMENTS = 2656 |  |
+| KEYCODE_VIDEO_NEXT = 2657 |  |
+| KEYCODE_VIDEO_PREV = 2658 |  |
+| KEYCODE_BRIGHTNESS_CYCLE = 2659 |  |
+| KEYCODE_BRIGHTNESS_ZERO = 2660 |  |
+| KEYCODE_DISPLAY_OFF = 2661 |  |
+| KEYCODE_BTN_MISC = 2662 |  |
+| KEYCODE_GOTO = 2663 |  |
+| KEYCODE_INFO = 2664 |  |
+| KEYCODE_PROGRAM = 2665 |  |
+| KEYCODE_PVR = 2666 |  |
+| KEYCODE_SUBTITLE = 2667 |  |
+| KEYCODE_FULL_SCREEN = 2668 |  |
+| KEYCODE_KEYBOARD = 2669 |  |
+| KEYCODE_ASPECT_RATIO = 2670 |  |
+| KEYCODE_PC = 2671 |  |
+| KEYCODE_TV = 2672 |  |
+| KEYCODE_TV2 = 2673 |  |
+| KEYCODE_VCR = 2674 |  |
+| KEYCODE_VCR2 = 2675 |  |
+| KEYCODE_SAT = 2676 |  |
+| KEYCODE_CD = 2677 |  |
+| KEYCODE_TAPE = 2678 |  |
+| KEYCODE_TUNER = 2679 |  |
+| KEYCODE_PLAYER = 2680 |  |
+| KEYCODE_DVD = 2681 |  |
+| KEYCODE_AUDIO = 2682 |  |
+| KEYCODE_VIDEO = 2683 |  |
+| KEYCODE_MEMO = 2684 |  |
+| KEYCODE_CALENDAR = 2685 |  |
+| KEYCODE_RED = 2686 |  |
+| KEYCODE_GREEN = 2687 |  |
+| KEYCODE_YELLOW = 2688 |  |
+| KEYCODE_BLUE = 2689 |  |
+| KEYCODE_CHANNELUP = 2690 |  |
+| KEYCODE_CHANNELDOWN = 2691 |  |
+| KEYCODE_LAST = 2692 |  |
+| KEYCODE_RESTART = 2693 |  |
+| KEYCODE_SLOW = 2694 |  |
+| KEYCODE_SHUFFLE = 2695 |  |
+| KEYCODE_VIDEOPHONE = 2696 |  |
+| KEYCODE_GAMES = 2697 |  |
+| KEYCODE_ZOOMIN = 2698 |  |
+| KEYCODE_ZOOMOUT = 2699 |  |
+| KEYCODE_ZOOMRESET = 2700 |  |
+| KEYCODE_WORDPROCESSOR = 2701 |  |
+| KEYCODE_EDITOR = 2702 |  |
+| KEYCODE_SPREADSHEET = 2703 |  |
+| KEYCODE_GRAPHICSEDITOR = 2704 |  |
+| KEYCODE_PRESENTATION = 2705 |  |
+| KEYCODE_DATABASE = 2706 |  |
+| KEYCODE_NEWS = 2707 |  |
+| KEYCODE_VOICEMAIL = 2708 |  |
+| KEYCODE_ADDRESSBOOK = 2709 |  |
+| KEYCODE_MESSENGER = 2710 |  |
+| KEYCODE_BRIGHTNESS_TOGGLE = 2711 |  |
+| KEYCODE_SPELLCHECK = 2712 |  |
+| KEYCODE_COFFEE = 2713 |  |
+| KEYCODE_MEDIA_REPEAT = 2714 |  |
+| KEYCODE_IMAGES = 2715 |  |
+| KEYCODE_BUTTONCONFIG = 2716 |  |
+| KEYCODE_TASKMANAGER = 2717 |  |
+| KEYCODE_JOURNAL = 2718 |  |
+| KEYCODE_CONTROLPANEL = 2719 |  |
+| KEYCODE_APPSELECT = 2720 |  |
+| KEYCODE_SCREENSAVER = 2721 |  |
+| KEYCODE_ASSISTANT = 2722 |  |
+| KEYCODE_KBD_LAYOUT_NEXT = 2723 |  |
+| KEYCODE_BRIGHTNESS_MIN = 2724 |  |
+| KEYCODE_BRIGHTNESS_MAX = 2725 |  |
+| KEYCODE_KBDINPUTASSIST_PREV = 2726 |  |
+| KEYCODE_KBDINPUTASSIST_NEXT = 2727 |  |
+| KEYCODE_KBDINPUTASSIST_PREVGROUP = 2728 |  |
+| KEYCODE_KBDINPUTASSIST_NEXTGROUP = 2729 |  |
+| KEYCODE_KBDINPUTASSIST_ACCEPT = 2730 |  |
+| KEYCODE_KBDINPUTASSIST_CANCEL = 2731 |  |
+| KEYCODE_MOUSE_ASSISTANT = 2732 |  |
+| KEYCODE_MOUSE_INTELLIGENCE_SELECTION = 2733 |  |
+| KEYCODE_AOD_SINGLE_CLICK = 2740 |  |
+| KEYCODE_FRONT = 2800 |  |
+| KEYCODE_SETUP = 2801 |  |
+| KEYCODE_WAKEUP = 2802 |  |
+| KEYCODE_SENDFILE = 2803 |  |
+| KEYCODE_DELETEFILE = 2804 |  |
+| KEYCODE_XFER = 2805 |  |
+| KEYCODE_PROG1 = 2806 |  |
+| KEYCODE_PROG2 = 2807 |  |
+| KEYCODE_MSDOS = 2808 |  |
+| KEYCODE_SCREENLOCK = 2809 |  |
+| KEYCODE_DIRECTION_ROTATE_DISPLAY = 2810 |  |
+| KEYCODE_CYCLEWINDOWS = 2811 |  |
+| KEYCODE_COMPUTER = 2812 |  |
+| KEYCODE_EJECTCLOSECD = 2813 |  |
+| KEYCODE_ISO = 2814 |  |
+| KEYCODE_MOVE = 2815 |  |
+| KEYCODE_F13 = 2816 |  |
+| KEYCODE_F14 = 2817 |  |
+| KEYCODE_F15 = 2818 |  |
+| KEYCODE_F16 = 2819 |  |
+| KEYCODE_F17 = 2820 |  |
+| KEYCODE_F18 = 2821 |  |
+| KEYCODE_F19 = 2822 |  |
+| KEYCODE_F20 = 2823 |  |
+| KEYCODE_F21 = 2824 |  |
+| KEYCODE_F22 = 2825 |  |
+| KEYCODE_F23 = 2826 |  |
+| KEYCODE_F24 = 2827 |  |
+| KEYCODE_PROG3 = 2828 |  |
+| KEYCODE_PROG4 = 2829 |  |
+| KEYCODE_DASHBOARD = 2830 |  |
+| KEYCODE_SUSPEND = 2831 |  |
+| KEYCODE_HP = 2832 |  |
+| KEYCODE_SOUND = 2833 |  |
+| KEYCODE_QUESTION = 2834 |  |
+| KEYCODE_CONNECT = 2836 |  |
+| KEYCODE_SPORT = 2837 |  |
+| KEYCODE_SHOP = 2838 |  |
+| KEYCODE_ALTERASE = 2839 |  |
+| KEYCODE_SWITCHVIDEOMODE = 2841 |  |
+| KEYCODE_BATTERY = 2842 |  |
+| KEYCODE_BLUETOOTH = 2843 |  |
+| KEYCODE_WLAN = 2844 |  |
+| KEYCODE_UWB = 2845 |  |
+| KEYCODE_WWAN_WIMAX = 2846 |  |
+| KEYCODE_RFKILL = 2847 |  |
+| KEYCODE_CHANNEL = 3001 |  |
+| KEYCODE_BTN_0 = 3100 |  |
+| KEYCODE_BTN_1 = 3101 |  |
+| KEYCODE_BTN_2 = 3102 |  |
+| KEYCODE_BTN_3 = 3103 |  |
+| KEYCODE_BTN_4 = 3104 |  |
+| KEYCODE_BTN_5 = 3105 |  |
+| KEYCODE_BTN_6 = 3106 |  |
+| KEYCODE_BTN_7 = 3107 |  |
+| KEYCODE_BTN_8 = 3108 |  |
+| KEYCODE_BTN_9 = 3109 |  |
+| KEYCODE_DAGGER_CLICK = 3211 |  |
+| KEYCODE_DAGGER_DOUBLE_CLICK = 3212 |  |
+| KEYCODE_DAGGER_LONG_PRESS = 3213 |  |
+| KEYCODE_DIV = 3220 |  |
+| KEYCODE_XKEY = 3232 |  |
+| KEYCODE_FINGERPRINT_SLIDE_UP = 3233 |  |
+| KEYCODE_FINGERPRINT_SLIDE_DOWN = 3234 |  |
+
+

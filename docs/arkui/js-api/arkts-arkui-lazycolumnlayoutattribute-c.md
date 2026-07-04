@@ -1,0 +1,184 @@
+# LazyColumnLayoutAttribute
+
+Defines the lazy column layout attribute.
+
+**Inheritance/Implementation:** LazyColumnLayoutAttribute extends [CommonMethod<LazyColumnLayoutAttribute>](CommonMethod<LazyColumnLayoutAttribute>)
+
+**Since:** 26.0.0
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { LazyColumnLayoutAttribute, LazyColumnLayout } from '@ohos.arkui.components.ArkLazyColumnLayout';
+```
+
+## alignItems
+
+```TypeScript
+alignItems(value: HorizontalAlign | undefined): LazyColumnLayoutAttribute
+```
+
+Sets the horizontal alignment of the row content.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | HorizontalAlign \| undefined | Yes | the horizontal alignment of the row content.<br>Default value HorizontalAlign.Center. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| LazyColumnLayoutAttribute | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+
+## footer
+
+```TypeScript
+footer(builder: CustomBuilder | undefined): LazyColumnLayoutAttribute
+```
+
+Sets the footer of the lazy column layout.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| builder | CustomBuilder \| undefined | Yes | The footer builder function<br>Passing undefined will remove the footer. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| LazyColumnLayoutAttribute | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+
+## header
+
+```TypeScript
+header(builder: CustomBuilder | undefined): LazyColumnLayoutAttribute
+```
+
+Sets the header of the lazy column layout.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| builder | CustomBuilder \| undefined | Yes | The header builder function<br>Passing undefined will remove the header. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| LazyColumnLayoutAttribute | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+
+## onVisibleIndexesChange
+
+```TypeScript
+onVisibleIndexesChange(callback: OnVisibleIndexesChangeCallback | undefined): LazyColumnLayoutAttribute
+```
+
+Triggered when the index of child components in the visible area changes.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | OnVisibleIndexesChangeCallback \| undefined | Yes | callback function, triggeredwhen the index of child components in the visible area changes.<br>Passing undefined will unregister the callback. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| LazyColumnLayoutAttribute | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+
+## space
+
+```TypeScript
+space(space: LengthMetrics | undefined): LazyColumnLayoutAttribute
+```
+
+The spacing between rows.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| space | LengthMetrics \| undefined | Yes | the spacing between rows.<br>Default value: 0. <br>Range: [0, +∞). |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| LazyColumnLayoutAttribute | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+
+## sticky
+
+```TypeScript
+sticky(sticky: StickyStyle | undefined): LazyColumnLayoutAttribute
+```
+
+Sets sticky style for header and footer.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| sticky | StickyStyle \| undefined | Yes | The sticky style for header and footer. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| LazyColumnLayoutAttribute | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform@atomicservice |
+

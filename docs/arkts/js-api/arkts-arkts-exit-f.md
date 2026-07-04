@@ -1,0 +1,37 @@
+# exit
+
+## Modules to Import
+
+```TypeScript
+import { process } from '@ohos.process';
+```
+
+## exit
+
+```TypeScript
+function exit(code: number): void
+```
+
+Terminates this process. Exercise caution when using this API. After this API is called, the application exits. If the input parameter is not 0, data loss or exceptions may occur.
+
+**Since:** 7
+
+**Deprecated since:** 9
+
+**Substitutes:** [exit](arkts-arkts-processmanager-c.md#exit-1)
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| code | number | Yes | Exit code of the process. |
+
+**Example**
+
+```TypeScript
+process.exit(0);
+
+```
+

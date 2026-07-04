@@ -1,0 +1,27 @@
+# @ohos.uiExtensionHost
+
+Intended only for the **UIExtensionComponent** that has process isolation requirements, the **uiExtensionHost** module provides APIs for obtaining the host application window information and information about the component itself. > **NOTE** > > No new function will be added to this module. Related functions will be provided in the > [uiExtension](arkts-arkui-uiextension.md#uiextension) interface. > > The APIs provided by this module are system APIs.
+
+**Since:** 11
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { uiExtensionHost } from '@ohos.uiExtensionHost';
+```
+
+## Summary
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [UIExtensionHostWindowProxy](arkts-arkui-uiextensionhostwindowproxy-i-sys.md) | Transition Controller |
+| [UIExtensionHostWindowProxyProperties](arkts-arkui-uiextensionhostwindowproxyproperties-i-sys.md) | Defines information about the host application window and **UIExtensionComponent**. |
+<!--DelEnd-->
+

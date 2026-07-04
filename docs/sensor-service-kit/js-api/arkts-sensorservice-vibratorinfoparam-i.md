@@ -1,0 +1,42 @@
+# VibratorInfoParam
+
+Defines the vibrator parameters. If **VibratorInfoParam** is left unspecified, an API applies to all vibrators of the local device by default.
+
+**Since:** 19
+
+**System capability:** SystemCapability.Sensors.MiscDevice
+
+## Modules to Import
+
+```TypeScript
+import { vibrator } from '@ohos.vibrator';
+```
+
+## deviceId
+
+```TypeScript
+deviceId?: number
+```
+
+Device ID. The default value is **-1**, indicating the local device. Since API version 19, you can use [getVibratorInfoSync](arkts-sensorservice-getvibratorinfosync-f.md#getvibratorinfosync-1) or [on](vibrator.on) to query the device ID.
+
+**Type:** number
+
+**Since:** 19
+
+**System capability:** SystemCapability.Sensors.MiscDevice
+
+## vibratorId
+
+```TypeScript
+vibratorId?: number
+```
+
+Vibrator ID. The default value is **0**, which indicates all vibrators of the local device. Since API version 19, you can use [getVibratorInfoSync](arkts-sensorservice-getvibratorinfosync-f.md#getvibratorinfosync-1) or [on](vibrator.on) to query the vibrator ID.
+
+**Type:** number
+
+**Since:** 19
+
+**System capability:** SystemCapability.Sensors.MiscDevice
+

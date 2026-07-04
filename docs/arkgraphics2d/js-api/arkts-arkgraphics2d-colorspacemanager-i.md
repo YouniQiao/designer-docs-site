@@ -1,0 +1,110 @@
+# ColorSpaceManager
+
+Implements management of color space objects. Before calling any of the following APIs, you must use [create()](arkts-arkgraphics2d-create-f.md#create-1) to create a color space manager.
+
+**Inheritance/Implementation:** ColorSpaceManager extends [ISendable](arkts-arkgraphics2d-isendable-t.md#isendable)
+
+**Since:** 12
+
+**System capability:** SystemCapability.Graphic.Graphic2D.ColorManager.Core
+
+## Modules to Import
+
+```TypeScript
+import { sendableColorSpaceManager } from '@ohos.graphics.sendableColorSpaceManager';
+```
+
+## getColorSpaceName
+
+```TypeScript
+getColorSpaceName(): colorSpaceManager.ColorSpace
+```
+
+Obtains the color space type.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Graphic.Graphic2D.ColorManager.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| colorSpaceManager.ColorSpace | Color space type. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [18600001](../errorcode-colorspace-manager.md#18600001-abnormal-parameter-value) | The parameter value is abnormal.<br>**Applicable version:** 12 - 22 |
+
+**Example**
+
+```TypeScript
+let spaceName: colorSpaceManager.ColorSpace = colorSpace.getColorSpaceName();
+
+```
+
+## getGamma
+
+```TypeScript
+getGamma(): number
+```
+
+Obtains the gamma of the color space.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Graphic.Graphic2D.ColorManager.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| number | Gamma of the color space. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [18600001](../errorcode-colorspace-manager.md#18600001-abnormal-parameter-value) | The parameter value is abnormal.<br>**Applicable version:** 12 - 22 |
+
+**Example**
+
+```TypeScript
+let gamma: number = colorSpace.getGamma();
+
+```
+
+## getWhitePoint
+
+```TypeScript
+getWhitePoint(): collections.Array<number>
+```
+
+Obtains the coordinates of the white point in the color space.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Graphic.Graphic2D.ColorManager.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| collections.Array&lt;number&gt; | Coordinates [x, y] of the white point. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [18600001](../errorcode-colorspace-manager.md#18600001-abnormal-parameter-value) | The parameter value is abnormal.<br>**Applicable version:** 12 - 22 |
+
+**Example**
+
+```TypeScript
+import { collections } from '@kit.ArkTS';
+let point: collections.Array<number> = colorSpace.getWhitePoint();
+
+```
+

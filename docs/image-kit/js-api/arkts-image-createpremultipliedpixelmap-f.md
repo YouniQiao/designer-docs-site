@@ -1,0 +1,129 @@
+# createPremultipliedPixelMap
+
+## Modules to Import
+
+```TypeScript
+import { image } from '@ohos.multimedia.image';
+```
+
+## createPremultipliedPixelMap
+
+```TypeScript
+function createPremultipliedPixelMap(src: PixelMap, dst: PixelMap, callback: AsyncCallback<void>): void
+```
+
+Transforms pixelmap from unpremultiplied alpha format to premultiplied alpha format.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| src | PixelMap | Yes | The source pixelmap. |
+| dst | PixelMap | Yes | The destination pixelmap. |
+| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the operation result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [62980103](../errorcode-image.md#62980103-unsupported-image-type) | The image data is not supported. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980246](../errorcode-image.md#62980246-failure-in-reading-the-pixelmap) | Failed to read the pixelMap. |
+| [62980248](../errorcode-image.md#62980248-no-modification-to-the-pixelmap) | Pixelmap not allow modify. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function CreatePremultipliedPixelMap() {
+  const color: ArrayBuffer = new ArrayBuffer(16); // 16 is the size of the pixel buffer to create. The value is calculated as follows: height * width * 4.
+  let bufferArr = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i += 4) {
+    bufferArr[i] = 255;
+    bufferArr[i+1] = 255;
+    bufferArr[i+2] = 122;
+    bufferArr[i+3] = 122;
+  }
+  let optsForUnpre: image.InitializationOptions = { editable: true, pixelFormat: image.PixelMapFormat.RGBA_8888, size: { height: 2, width: 2 } , alphaType: image.AlphaType.UNPREMUL}
+  let srcPixelmap = image.createPixelMapSync(color, optsForUnpre);
+  let optsForPre: image.InitializationOptions = { editable: true, pixelFormat: image.PixelMapFormat.RGBA_8888, size: { height: 2, width: 2 } , alphaType: image.AlphaType.PREMUL}
+  let dstPixelMap = image.createPixelMapSync(optsForPre);
+  image.createPremultipliedPixelMap(srcPixelmap, dstPixelMap, (error: BusinessError) => {
+    if(error) {
+      console.error(`Failed to convert pixelmap, error code is ${error}`);
+      return;
+    } else {
+      console.info('Succeeded in converting pixelmap.');
+    }
+  })
+}
+
+```
+
+
+## createPremultipliedPixelMap
+
+```TypeScript
+function createPremultipliedPixelMap(src: PixelMap, dst: PixelMap): Promise<void>
+```
+
+Transforms pixelmap from premultiplied alpha format to unpremultiplied alpha format.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| src | PixelMap | Yes | The source pixelMap. |
+| dst | PixelMap | Yes | The destination pixelmap. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [62980103](../errorcode-image.md#62980103-unsupported-image-type) | The image data is not supported. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| [62980246](../errorcode-image.md#62980246-failure-in-reading-the-pixelmap) | Failed to read the pixelMap. |
+| [62980248](../errorcode-image.md#62980248-no-modification-to-the-pixelmap) | Pixelmap not allow modify. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function CreatePremultipliedPixelMap() {
+  const color: ArrayBuffer = new ArrayBuffer(16); // 16 is the size of the pixel buffer to create. The value is calculated as follows: height * width * 4.
+  let bufferArr = new Uint8Array(color);
+  for (let i = 0; i < bufferArr.length; i += 4) {
+    bufferArr[i] = 255;
+    bufferArr[i+1] = 255;
+    bufferArr[i+2] = 122;
+    bufferArr[i+3] = 122;
+  }
+  let optsForUnpre: image.InitializationOptions = { editable: true, pixelFormat: image.PixelMapFormat.RGBA_8888, size: { height: 2, width: 2 } , alphaType: image.AlphaType.UNPREMUL}
+  let srcPixelmap = image.createPixelMapSync(color, optsForUnpre);
+  let optsForPre: image.InitializationOptions = { editable: true, pixelFormat: image.PixelMapFormat.RGBA_8888, size: { height: 2, width: 2 } , alphaType: image.AlphaType.PREMUL}
+  let dstPixelMap = image.createPixelMapSync(optsForPre);
+  image.createPremultipliedPixelMap(srcPixelmap, dstPixelMap).then(() => {
+    console.info('Succeeded in converting pixelmap.');
+  }).catch((error: BusinessError) => {
+    console.error(`Failed to convert pixelmap, error code is ${error}`);
+  })
+}
+
+```
+

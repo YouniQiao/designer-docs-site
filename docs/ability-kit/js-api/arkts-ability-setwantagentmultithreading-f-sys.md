@@ -1,0 +1,37 @@
+# setWantAgentMultithreading (System API)
+
+## Modules to Import
+
+```TypeScript
+import { WantAgent } from '@ohos.app.ability.wantAgent';
+```
+
+## setWantAgentMultithreading
+
+```TypeScript
+function setWantAgentMultithreading(isMultithreadingSupported: boolean) : void
+```
+
+Enables or disables the WantAgent multithreading feature.
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| isMultithreadingSupported | boolean | Yes | Whether to enable the multithreading feature. The value<code>true</code> means to enable multithreading, and <code>false</code> means the opposite. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. Interface caller is not a system app. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types. |
+

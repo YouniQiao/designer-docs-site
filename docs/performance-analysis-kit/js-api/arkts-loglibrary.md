@@ -1,0 +1,39 @@
+# @ohos.logLibrary
+
+The **logLibrary** module provides APIs for obtaining various system maintenance and test logs.
+
+**Since:** 10
+
+**System capability:** SystemCapability.HiviewDFX.Hiview.LogLibrary
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { logLibrary } from '@ohos.logLibrary';
+```
+
+## Summary
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-1) | Copies log files of the specified type to the target application directory. This API uses a promise to return the result. |
+| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-2) | Copies log files of the specified type to the target application directory. This API uses an asynchronous callback to return the result. |
+| [list](arkts-performanceanalysis-list-f-sys.md#list-1) | Obtains the list of log files of the specified type in synchronous mode. This API accepts objects of the string type as input parameters and returns a list log files of the specified type. |
+| [move](arkts-performanceanalysis-move-f-sys.md#move-1) | Moves log files of the specified type to the target application directory. This API uses a promise to return the result. |
+| [move](arkts-performanceanalysis-move-f-sys.md#move-2) | Moves log files of the specified type to the target application directory. This API uses an asynchronous callback to return the result. |
+| [remove](arkts-performanceanalysis-remove-f-sys.md#remove-1) | Deletes log files of the specified type in synchronous mode. |
+<!--DelEnd-->
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [LogEntry](arkts-performanceanalysis-logentry-i-sys.md) | Defines a **LogEntry** object. |
+<!--DelEnd-->
+

@@ -1,0 +1,143 @@
+# ListScroller
+
+Implements the scroll controller of the **List** component. A **List** component is bound to a **ListScroller** on a one-to-one basis. > **NOTE** > > **ListScroller** inherits from [Scroller](arkts-arkui-scroller-c.md#scroller) and has all methods of > [Scroller](arkts-arkui-scroller-c.md#scroller).
+
+**Inheritance/Implementation:** ListScroller extends [Scroller](arkts-arkui-scroller-c.md#scroller)
+
+**Since:** 11
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## closeAllSwipeActions
+
+```TypeScript
+closeAllSwipeActions(options?: CloseSwipeActionOptions): void
+```
+
+Collapses the [list items](arkts-arkui-listitem.md) in the [EXPANDED](arkts-arkui-swipeactionstate-e.md#swipeactionstate) state and sets callback events.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | CloseSwipeActionOptions | No | Callback events for collapsing [list items](arkts-arkui-listitem.md) in the[EXPANDED](arkts-arkui-swipeactionstate-e.md#swipeactionstate) state. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to a component. |
+
+## getItemRectInGroup
+
+```TypeScript
+getItemRectInGroup(index: number, indexInGroup: number): RectResult
+```
+
+Obtains the size of a [list item](arkts-arkui-listitem.md) in a [list item group](arkts-arkui-listitemgroup.md) and its position relative to the list.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | number | Yes | Index of the list item group in the list. |
+| indexInGroup | number | Yes | Index of the list item in the list item group. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| RectResult | Size of the list item in the list item group and its position relative to the list.<br>Unit: vp |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to a component. |
+
+## getVisibleListContentInfo
+
+```TypeScript
+getVisibleListContentInfo(x: number, y: number): VisibleListContentInfo
+```
+
+Obtains the index information of the child component at the specified coordinates.
+
+**Since:** 14
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 14.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| x | number | Yes | X-coordinate, in vp. |
+| y | number | Yes | Y-coordinate, in vp. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| VisibleListContentInfo | Index information of a child component at the specified coordinates. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to a component. |
+
+## scrollToItemInGroup
+
+```TypeScript
+scrollToItemInGroup(index: number, indexInGroup:number, smooth?: boolean, align?: ScrollAlign): void
+```
+
+Scrolls to the specified list item in the specified list item group.
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | number | Yes | Index of the target list item group in the current container.<br>**NOTE**<br>If the valueset is a negative value or greater than the maximum index of the items in the container, the value is deemedabnormal, and no scrolling will be performed. |
+| indexInGroup | number | Yes | Index of the target list item in the list item group specified by **index**.<br>**NOTE**<br>If the value set is a negative value or greater than the maximum index of the items in the listitem group, the value is deemed abnormal, and no scrolling will be performed. |
+| smooth | boolean | No | Whether the scroll animation is enabled. The options are **true** (enabled) and**false** (disabled).<br>Default value: **false**<br>**NOTE**<br>When **smooth** is set to **true**, all passeditems are loaded and counted in layout calculation. This may result in performance issues if a large number ofitems are involved. |
+| align | ScrollAlign | No | How the list item to scroll to is aligned with the container.<br>Default value:**ScrollAlign.START** |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
+| [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to a component. |
+

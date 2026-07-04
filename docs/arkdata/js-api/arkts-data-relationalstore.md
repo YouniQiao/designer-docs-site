@@ -1,0 +1,136 @@
+# @ohos.data.relationalStore
+
+The relational database (RDB) manages data based on relational models. The **relationalStore** module provides a complete mechanism for managing local databases based on the underlying SQLite. You can use the APIs to perform operations such as adding, deleting, modifying, and querying data, and directly run SQL statements. In addition, you can obtain sendable data using [ResultSet.getSendableRow](arkts-arkdata-resultset-i.md#getsendablerow-1) and transfer the data across threads. To ensure successful data access, limit the size of a data record to 2 MB. If a data record exceeds 2 MB, it can be inserted successfully but cannot be read. Querying data from a large amount of data may take time or even cause application suspension. In this case, you can perform batch operations. For details, see [Batch Database Operations](../../../../arkts-utils/batch-database-operations-guide.md). Moreover, observe the following: - The number of data records to be queried at a time should not exceed 5000. - Use [TaskPool](../../apis-arkts/arkts-apis/arkts-taskpool.md#taskpool) if there is a large amount of data needs to be queried. - Keep concatenated SQL statements as concise as possible. - Query data in batches. The **relationalStore** module provides the following functionalities: - [RdbPredicates](arkts-data-relationalstore.md#relationalstore): provides predicates indicating the nature, feature, or relationship of a data entity in an RDB store. It is used to define the operation conditions for an RDB store. - [RdbStore](arkts-data-relationalstore.md#relationalstore): provides APIs for managing data in an RDB store. - [ResultSet](arkts-data-relationalstore.md#relationalstore): provides APIs for accessing the result set obtained from the RDB store. - [LiteResultSet](arkts-data-relationalstore.md#relationalstore): provides APIs for accessing the result set obtained from the RDB store, such as [queryWithoutRowCount](arkts-arkdata-rdbstore-i.md#querywithoutrowcount-1) and [querySqlWithoutRowCount](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1). Unlike [ResultSet](arkts-data-relationalstore.md#relationalstore), **LiteResultSet** does not include the total number of rows in the query result. - [Transaction](arkts-data-relationalstore.md#relationalstore): provides APIs for managing transaction objects.
+
+**Since:** 9
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+
+## Modules to Import
+
+```TypeScript
+import { relationalStore } from '@ohos.data.relationalStore';
+```
+
+## Summary
+
+### Functions
+
+| Name | Description |
+| --- | --- |
+| [deleteRdbStore](arkts-arkdata-deleterdbstore-f.md#deleterdbstore-1) | Deletes the RDB store with the specified database file name. This API uses a promise to return the result. If **vector** is set to **true** in [StoreConfig] {@link @ohos.data.relationalStore:relationalStore.StoreConfig} when an RDB store is created, using this API cannot delete the RDB store. Use [deleteRdbStore] {@link relationalStore.deleteRdbStore(context: Context, config: StoreConfig)} instead. Before calling **deleteRdbStore**, ensure that the **RdbStore** and **ResultSet** of the vector store have been closed. |
+| [deleteRdbStore](arkts-arkdata-deleterdbstore-f.md#deleterdbstore-2) | Deletes an RDB store. This API uses an asynchronous callback to return the result. After the deletion, you are advised to set the database object to null. If the database file is stored in the sandbox directory, use this API to delete the database. If multiple processes operate the same database, other processes should be notified about the database deletion so that they can detect and process the deletion. If a custom path is set in [StoreConfig](arkts-arkdata-storeconfig-i.md#storeconfig) during RDB store creation, using this API to delete the RDB store. Before calling **deleteRdbStore**, ensure that the **RdbStore** and **ResultSet** of the vector store have been closed. |
+| [deleteRdbStore](arkts-arkdata-deleterdbstore-f.md#deleterdbstore-3) | Deletes an RDB store. This API uses a promise to return the result. After the deletion, you are advised to set the database object to null. If a custom path is set in [StoreConfig](arkts-arkdata-storeconfig-i.md#storeconfig) when an RDB store is created, using this API cannot delete the RDB store. Use [deleteRdbStore](arkts-arkdata-deleterdbstore-f.md#deleterdbstore-4) instead. Before calling **deleteRdbStore**, ensure that the **RdbStore** and **ResultSet** of the vector store have been closed. |
+| [deleteRdbStore](arkts-arkdata-deleterdbstore-f.md#deleterdbstore-4) | Deletes an RDB store. This API uses a promise to return the result. After the deletion, you are advised to set the database object to null. If the database file is stored in the sandbox directory, use this API to delete the database. If multiple processes operate the same database, other processes should be notified about the database deletion so that they can detect and process the deletion. If a custom path is set in [StoreConfig](arkts-arkdata-storeconfig-i.md#storeconfig) during RDB store creation, using this API to delete the RDB store. Before calling **deleteRdbStore**, ensure that the **RdbStore** and **ResultSet** of the vector store have been closed. |
+| [getDeleteSqlInfo](arkts-arkdata-getdeletesqlinfo-f.md#getdeletesqlinfo-1) | Obtains the SQL statement used to delete data. This API returns the result synchronously. |
+| [getInsertSqlInfo](arkts-arkdata-getinsertsqlinfo-f.md#getinsertsqlinfo-1) | Obtains the SQL statement used to insert data. This API returns the result synchronously. |
+| [getQuerySqlInfo](arkts-arkdata-getquerysqlinfo-f.md#getquerysqlinfo-1) | Obtains the SQL statement used to query data. This API returns the result synchronously. |
+| [getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-1) | Obtains an RdbStore instance. You can set the **config** parameter as required and use **RdbStore** APIs to perform data operations. This API uses an asynchronous callback to return the result. If no database file exists in the corresponding sandbox directory, a database file is created. For details, see [StoreConfig](arkts-arkdata-storeconfig-i.md#storeconfig). If a database file exists in the corresponding directory, the existing database file is opened. When creating a database, you should consider whether to configure the [encrypt](arkts-arkdata-storeconfig-i.md#storeconfig) parameter. Once the database is created, you are not allowed to change this parameter. \| Encryption Type When the RDB Store Is Opened \| Encryption Type When the RDB Store Is Created \| Result\| \| ------- \| -------------------------------- \| ---- \| \| Non-encryption\| Encryption \| The RDB store is opened in encrypted mode. \| \| Encryption\| Non-encryption \| The RDB store is opened in non-encrypted mode. \| Currently, **getRdbStore()** does not support multi-thread concurrent operations. |
+| [getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-2) | Obtains an RdbStore instance. You can set the **config** parameter as required and use **RdbStore** APIs to perform data operations. This API uses a promise to return the result. If no database file exists in the corresponding sandbox directory, a database file is created. For details, see [StoreConfig](arkts-arkdata-storeconfig-i.md#storeconfig). If a database file exists in the corresponding directory, the existing database file is opened. When creating a database, you should consider whether to configure the [encrypt](arkts-arkdata-storeconfig-i.md#storeconfig) parameter. Once the database is created, you are not allowed to change this parameter. \| Encryption Type When the RDB Store Is Opened \| Encryption Type When the RDB Store Is Created \| Result\| \| ------- \| -------------------------------- \| ---- \| \| Non-encryption\| Encryption \| The RDB store is opened in encrypted mode. \| \| Encryption\| Non-encryption \| The RDB store is opened in non-encrypted mode. \| Currently, **getRdbStore()** does not support multi-thread concurrent operations. |
+| [getRdbStoreSync](arkts-arkdata-getrdbstoresync-f.md#getrdbstoresync-1) | Obtains a RDB store. You can set parameters of the RDB store as required. This is a synchronous method that blocks the thread until the RDB store is obtained. |
+| [getUpdateSqlInfo](arkts-arkdata-getupdatesqlinfo-f.md#getupdatesqlinfo-1) | Obtains the SQL statement used to update data. This API returns the result synchronously. |
+| [isTokenizerSupported](arkts-arkdata-istokenizersupported-f.md#istokenizersupported-1) | Checks whether the specified tokenizer is supported. This API returns the result synchronously. This API returns **true** if the specified tokenizer is supported; returns **false** otherwise. |
+| [isVectorSupported](arkts-arkdata-isvectorsupported-f.md#isvectorsupported-1) | Checks whether the system supports vector stores. |
+
+### Classes
+
+| Name | Description |
+| --- | --- |
+| [LiteResultSet](arkts-arkdata-literesultset-c.md) | Defines APIs to access the result set obtained by querying the RDB store. This result set is the collection of results returned with the **query()** method called. The **LiteResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. In the following API examples, you need to obtain an **LiteResultSet** instance by using a query method, such as [queryWithoutRowCount](arkts-arkdata-rdbstore-i.md#querywithoutrowcount-1) or [querySqlWithoutRowCount](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), and then call the corresponding method through this instance. &gt; **NOTE** &gt; &gt; - The initial APIs of this class are supported since API version 23. |
+| [RdbPredicates](arkts-arkdata-rdbpredicates-c.md) | Defines the predicates for an RDB store. This class determines whether the conditional expression for the RDB store is true or false. Multiple predicates statements can be concatenated by using **and()** by default. **RdbPredicates** cannot be passed across threads using Sendable. |
+
+<!--Del-->
+### Classes（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [LiteResultSet](arkts-arkdata-literesultset-c-sys.md) | Defines APIs to access the result set obtained by querying the RDB store. This result set is the collection of results returned with the **query()** method called. The **LiteResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. In the following API examples, you need to obtain an **LiteResultSet** instance by using a query method, such as [queryWithoutRowCount](arkts-arkdata-rdbstore-i.md#querywithoutrowcount-1) or [querySqlWithoutRowCount](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), and then call the corresponding method through this instance. &gt; **NOTE** &gt; &gt; - The initial APIs of this class are supported since API version 23. |
+<!--DelEnd-->
+
+### Interfaces
+
+| Name | Description |
+| --- | --- |
+| [Asset](arkts-arkdata-asset-i.md) | Represents the asset (such as a document, image, or video). |
+| [ChangeInfo](arkts-arkdata-changeinfo-i.md) | Defines a struct for the details about the device-cloud sync process. |
+| [CloudSyncConfig](arkts-arkdata-cloudsyncconfig-i.md) | Cloud sync configuration. |
+| [CryptoParam](arkts-arkdata-cryptoparam-i.md) | Represents the configuration of database encryption parameters. This configuration is valid only when **encrypt** of **StoreConfig** is set to **true** or the key is not empty. |
+| [DistributedConfig](arkts-arkdata-distributedconfig-i.md) | Defines a struct for distributed configuration of a table. |
+| [ExceptionMessage](arkts-arkdata-exceptionmessage-i.md) | Represents an exception message about the SQL statement executed by the database. |
+| [ProgressDetails](arkts-arkdata-progressdetails-i.md) | Describes detail of the cloud sync {@code Progress}. |
+| [RdbStore](arkts-arkdata-rdbstore-i.md) | Provides APIs for managing data in an RDB store. Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-2) method and then call the corresponding method through the instance. In addition, use [execute](arkts-arkdata-rdbstore-i.md#execute-1) to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met. |
+| [Result](arkts-arkdata-result-i.md) | Records the number of affected data rows and the result set. |
+| [ResultSet](arkts-arkdata-resultset-i.md) | Provides APIs to access the result set obtained by querying the RDB store. This result set is the collection of results returned with the **query()** method called. The **ResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. For the following APIs, you should use either [query] {@link @ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)}, [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), [remoteQuery] {@link @ohos.data.relationalStore:relationalStore.RdbStore.remoteQuery(device: string, table: string)} , or [queryLockedRow](arkts-arkdata-rdbstore-i.md#querylockedrow-1) to obtain the **ResultSet** instance first, and then use this instance to call the corresponding method. |
+| [ReturningConfig](arkts-arkdata-returningconfig-i.md) | Specifies the list of field names to return after returning-related APIs are called and the maximum number of records allowed in the result set. |
+| [SqlExecutionInfo](arkts-arkdata-sqlexecutioninfo-i.md) | Represents statistics about SQL statements executed by the database. |
+| [SqlInfo](arkts-arkdata-sqlinfo-i.md) | Represents details about the SQL statement executed by the database. |
+| [Statistic](arkts-arkdata-statistic-i.md) | Defines a struct for the device-cloud sync statistics of a database table. |
+| [StoreConfig](arkts-arkdata-storeconfig-i.md) | Defines the RDB store configuration. |
+| [SyncResult](arkts-arkdata-syncresult-i.md) | Indicates synchronization result. |
+| [TableDetails](arkts-arkdata-tabledetails-i.md) | Defines a struct for statistics of device-cloud upload and download tasks of a database table. |
+| [Transaction](arkts-arkdata-transaction-i.md) | Provides APIs for managing databases in transaction mode. A transaction object is created by using [createTransaction](arkts-arkdata-rdbstore-i.md#createtransaction-1). Operations on different transaction objects are isolated. For details about the transaction types, see [TransactionType](arkts-arkdata-transactiontype-e.md#transactiontype). Currently, an RDB store supports only one write transaction at a time. If the current [RdbStore](arkts-data-relationalstore.md#relationalstore) has a write transaction that is not released, creating an **IMMEDIATE** or **EXCLUSIVE** transaction object will return error 14800024. If a **DEFERRED** transaction object is created, error 14800024 may be returned when it is used to invoke a write operation for the first time. After a write transaction is created using **IMMEDIATE** or **EXCLUSIVE**, or a **DEFERRED** transaction is upgraded to a write transaction, write operations in the [RdbStore](arkts-data-relationalstore.md#relationalstore) will also return error 14800024. When the number of concurrent transactions is large and the write transaction duration is long, the frequency of returning error 14800024 may increase. You can reduce the occurrence of error 14800024 by shortening the transaction duration or by handling the error 14800024 through retries. Before using the following APIs, you should obtain a **Transaction** instance by calling the [createTransaction](arkts-arkdata-rdbstore-i.md#createtransaction-1) method and then call the corresponding method through the instance. **System capability**: SystemCapability.DistributedDataManager.RelationalStore.Core **Example**: For details about the definition of **this.context** in the sample code, see the application [context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context) of the stage model. |
+| [TransactionOptions](arkts-arkdata-transactionoptions-i.md) | Represents the configuration of a transaction object. |
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [CloudSyncConfig](arkts-arkdata-cloudsyncconfig-i-sys.md) | Cloud sync configuration. |
+| [DistributedConfig](arkts-arkdata-distributedconfig-i-sys.md) | Defines a struct for distributed configuration of a table. |
+| [DistributedInfo](arkts-arkdata-distributedinfo-i-sys.md) | Manages the distributed info of the table. |
+| [RdbStore](arkts-arkdata-rdbstore-i-sys.md) | Provides APIs for managing data in an RDB store. Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-getrdbstore-f.md#getrdbstore-2) method and then call the corresponding method through the instance. In addition, use [execute](arkts-arkdata-rdbstore-i.md#execute-1) to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met. |
+| [Reference](arkts-arkdata-reference-i-sys.md) | Indicates the reference between tables. |
+| [ResultSet](arkts-arkdata-resultset-i-sys.md) | Provides APIs to access the result set obtained by querying the RDB store. This result set is the collection of results returned with the **query()** method called. The **ResultSet** instance is not refreshed in real time. After using the result set, if the data in the database is changed (by being added, deleted, or modified), you need to query the result set again to obtain the latest data. For the following APIs, you should use either [query] {@link @ohos.data.relationalStore:relationalStore.RdbStore.query(predicates: RdbPredicates)}, [querySql](arkts-arkdata-rdbstore-i.md#querysqlwithoutrowcount-1), [remoteQuery] {@link @ohos.data.relationalStore:relationalStore.RdbStore.remoteQuery(device: string, table: string)} , or [queryLockedRow](arkts-arkdata-rdbstore-i.md#querylockedrow-1) to obtain the **ResultSet** instance first, and then use this instance to call the corresponding method. |
+| [StoreConfig](arkts-arkdata-storeconfig-i-sys.md) | Defines the RDB store configuration. |
+<!--DelEnd-->
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [AssetConflictPolicy](arkts-arkdata-assetconflictpolicy-e.md) | Describes the asset conflict policy. |
+| [AssetStatus](arkts-arkdata-assetstatus-e.md) | Enumerates the asset statuses. Use the enum name rather than the enum value. |
+| [ChangeType](arkts-arkdata-changetype-e.md) | Enumerates data change types. Use the enum name rather than the enum value. |
+| [ColumnType](arkts-arkdata-columntype-e.md) | Enumerates the types of the column data. Use the enum name rather than the enum value. |
+| [ConflictResolution](arkts-arkdata-conflictresolution-e.md) | Enumerates the resolutions used when a conflict occurs during data insertion or modification. Use the enum name rather than the enum value. |
+| [DistributedTableType](arkts-arkdata-distributedtabletype-e.md) | Enumerates the distributed table types. Use the enum name rather than the enum value. This item is a database-level configuration. If a database contains multiple distributed tables, all tables must use the same distributed table type; switching the table type or upgrade tables is not supported. |
+| [DistributedType](arkts-arkdata-distributedtype-e.md) | Enumerates the distributed database table types. Use the enum name rather than the enum value. |
+| [EncryptionAlgo](arkts-arkdata-encryptionalgo-e.md) | Enumerates the encryption algorithms for the database. Use the enum name rather than the enum value. |
+| [Field](arkts-arkdata-field-e.md) | Enumerates predicates used as query conditions. Use the enum name rather than the enum value. |
+| [HmacAlgo](arkts-arkdata-hmacalgo-e.md) | Enumerates the HMAC algorithms for the database. Use the enum name rather than the enum value. |
+| [KdfAlgo](arkts-arkdata-kdfalgo-e.md) | Enumerates the PBKDF2 algorithms for the database. Use the enum name rather than the enum value. |
+| [Origin](arkts-arkdata-origin-e.md) | Enumerates the data sources. Use the enum name rather than the enum value. |
+| [Progress](arkts-arkdata-progress-e.md) | Enumerates the stages in the device-cloud sync progress. Use the enum name rather than the enum value. |
+| [ProgressCode](arkts-arkdata-progresscode-e.md) | Describes the status of {@code Progress}. |
+| [RebuildType](arkts-arkdata-rebuildtype-e.md) | Enumerates the RDB store rebuild types. Use the enum name rather than the enum value. |
+| [SecurityLevel](arkts-arkdata-securitylevel-e.md) | Enumerates the KV store security levels. Use the enum name rather than the enum value. You cannot change the security level of an RDB store from a higher level to a lower one. &gt; **NOTE** &gt; &gt; To perform data sync operations, the RDB store security level must be lower than or equal to that of the peer &gt; device. For details, see [Access Control Mechanism in Cross-Device Sync] &gt; (../../../../database/sync-app-data-across-devices-overview.md#access-control-mechanism-in-cross-device-sync). |
+| [SubscribeType](arkts-arkdata-subscribetype-e.md) | Enumerates the subscription types. Use the enum name rather than the enum value. |
+| [SyncMode](arkts-arkdata-syncmode-e.md) | Defines the database synchronization mode. Use the enum name rather than the enum value. |
+| [SyncResultCode](arkts-arkdata-syncresultcode-e.md) | Describes the status of device sync. |
+| [Tokenizer](arkts-arkdata-tokenizer-e.md) | Enumerates tokenizers that can be used for FTS. Use the enum name rather than the enum value. The table creation statement varies with the tokenizer in use. For details about the definition of **this.context** in the sample code, see the application [context](../../apis-ability-kit/arkts-apis/arkts-ability-context-c.md#context) of the stage model. The following is an example of the table creation statement when **ICU_TOKENIZER** is used: The following is an example of the table creation statement when **CUSTOM_TOKENIZER** is used: The following is an example of the table creation statement when **CUSTOM_TOKENIZER** is used: |
+| [TransactionType](arkts-arkdata-transactiontype-e.md) | Enumerates the types of transaction objects that can be created. Use the enum name rather than the enum value. |
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DistributedField](arkts-arkdata-distributedfield-e-sys.md) | Enumerates the DistributedField. |
+| [DistributedOrigin](arkts-arkdata-distributedorigin-e-sys.md) | Describes the data origin sources. |
+| [HAMode](arkts-arkdata-hamode-e-sys.md) | Enumerates the high availability modes of the RDB store. |
+<!--DelEnd-->
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [Assets](arkts-arkdata-assets-t.md) | Indicates several assets in one column |
+| [ModifyTime](arkts-arkdata-modifytime-t.md) | Indicates the primary key and UTC time of the modified rows. |
+| [PRIKeyType](arkts-arkdata-prikeytype-t.md) | The type of the priority key can be number or string |
+| [RowData](arkts-arkdata-rowdata-t.md) | Indicates a row of data with an array. |
+| [RowsData](arkts-arkdata-rowsdata-t.md) | Indicates multiple rows of data with an array. |
+| [UTCTime](arkts-arkdata-utctime-t.md) | The time is in UTC format. |
+| [ValueType](arkts-arkdata-valuetype-t.md) | Indicates possible value types |
+| [ValuesBucket](arkts-arkdata-valuesbucket-t.md) | Values in buckets are stored in key-value pairs, change {[key: string]: ValueType;} to Record&lt;string, ValueType&gt; |
+

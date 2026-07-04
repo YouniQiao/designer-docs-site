@@ -1,0 +1,78 @@
+# Column properties/events
+
+In addition to the [universal attributes](arkts-arkui-commonmethod-c.md#commonmethod), the following attributes are supported. The [universal events](arkts-arkui-commonmethod-c.md#commonmethod) are supported.
+
+**Inheritance/Implementation:** ColumnAttribute extends [CommonMethod<ColumnAttribute>](CommonMethod<ColumnAttribute>)
+
+**Since:** 7
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## alignItems
+
+```TypeScript
+alignItems(value: HorizontalAlign)
+```
+
+Alignment mode of the child components in the horizontal direction.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | HorizontalAlign | Yes | Alignment mode of child components in the horizontal direction.<br>Default value: **HorizontalAlign.Center** |
+
+## justifyContent
+
+```TypeScript
+justifyContent(value: FlexAlign)
+```
+
+Alignment mode of the child components in the vertical direction.
+
+**Since:** 8
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | FlexAlign | Yes | Alignment mode of child components in the vertical direction.<br>Default value:**FlexAlign.Start** |
+
+## reverse
+
+```TypeScript
+reverse(isReversed: Optional<boolean>)
+```
+
+Sets whether to reverse the vertical arrangement of child components.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| isReversed | Optional&lt;boolean&gt; | Yes | Whether to reverse the vertical arrangement of child components.<br>Default value: **true**. **true**: Child components are arranged in reverse order vertically. **false**: Childcomponents are arranged in normal order vertically. |
+

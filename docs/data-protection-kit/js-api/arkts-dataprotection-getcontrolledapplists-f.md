@@ -1,0 +1,38 @@
+# getControlledAppLists
+
+## Modules to Import
+
+```TypeScript
+import { dlpPermission } from '@ohos.dlpPermission';
+```
+
+## getControlledAppLists
+
+```TypeScript
+function getControlledAppLists(): Promise<Array<string>>
+```
+
+Obtain the list of applications that are subject to enterprise DLP control for the current user.
+
+**Since:** 26.0.0
+
+**Required permissions:** ohos.permission.DLP_POLICY_MANAGER
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Security.DataLossPrevention
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise that returns the appIdentifiers of controlled applicationfor the current user. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| [19100011](../errorcode-dlp.md#19100011-system-service-abnormal) | The system ability works abnormally. |
+

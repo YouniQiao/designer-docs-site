@@ -1,0 +1,48 @@
+# MenuOptions
+
+Configues menu item information, which is inherited from [ContextMenuOptions](arkts-arkui-contextmenuoptions-i.md#contextmenuoptions).
+
+**Inheritance/Implementation:** MenuOptions extends [ContextMenuOptions](arkts-arkui-contextmenuoptions-i.md#contextmenuoptions)
+
+**Since:** 10
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## showInSubWindow
+
+```TypeScript
+showInSubWindow?: boolean
+```
+
+Whether to show the menu in a subwindow. **true**: yes; **false**: no Default value: **true** for 2-in-1 devices and **false** for other devices **NOTE** This parameter takes effect only for 2-in-1 devices.
+
+**Type:** boolean
+
+**Default:** true for 2-in-1 devices [since 12]
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## title
+
+```TypeScript
+title?: ResourceStr
+```
+
+Menu title. **NOTE** This parameter is effective only when **content** is set to Array<[MenuElement](arkts-arkui-menuelement-i.md#menuelement)>.
+
+**Type:** ResourceStr
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

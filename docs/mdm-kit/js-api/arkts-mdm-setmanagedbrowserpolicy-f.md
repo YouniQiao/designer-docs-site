@@ -1,0 +1,67 @@
+# setManagedBrowserPolicy
+
+## Modules to Import
+
+```TypeScript
+import { browser } from '@ohos.enterprise.browser';
+```
+
+## setManagedBrowserPolicy
+
+```TypeScript
+function setManagedBrowserPolicy(admin: Want, bundleName: string, policyName: string, policyValue: string): void
+```
+
+Sets the browser policy. After the setting is successful, the system common event [COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed) is released.
+
+**Since:** 15
+
+**Required permissions:** ohos.permission.ENTERPRISE_SET_BROWSER_POLICY
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| admin | Want | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of theEnterpriseAdminExtensionAbility and the bundle name of the application. |
+| bundleName | string | Yes | Application bundle name, which is used to specify the browser. |
+| policyName | string | Yes | Browser policy name. |
+| policyValue | string | Yes | Browser policy value. If the value is an empty string, the policy corresponding tothe policy name is removed. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [9200001](../errorcode-enterpriseDeviceManager.md#9200001-deviceadmin-not-enabled) | The application is not an administrator application of the device. |
+| [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permissionrequired to call the API. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { browser } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // Replace with actual values.
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+// Replace with actual values.
+let bundleName: string = 'com.example.testbrowser';
+let policyName: string = 'InsecurePrivateNetworkRequestsAllowed';
+let policyValue: string = '{"level":"mandatory","scope":"machine","source":"platform","value":true}';
+
+try {
+  browser.setManagedBrowserPolicy(wantTemp, bundleName, policyName, policyValue);
+  console.info('Succeeded in setting managed browser policy.');
+} catch (err) {
+  console.error(`Failed to set managed browser policy. Code is ${err.code}, message is ${err.message}`);
+}
+
+```
+

@@ -1,0 +1,50 @@
+# @ohos.multimodalAwareness.spatialAwareness
+
+This module provides the capability to subscribe to report the distance measurement result.
+
+**Since:** 23
+
+**System capability:** SystemCapability.MultimodalAwareness.DistanceMeasurement
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { spatialAwareness } from '@ohos.multimodalAwareness.spatialAwareness';
+```
+
+## Summary
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [offDistanceMeasure](arkts-multimodalawareness-offdistancemeasure-f-sys.md#offdistancemeasure-1) | Unsubscribe from distance measurement result data. |
+| [offIndoorOrOutdoorIdentify](arkts-multimodalawareness-offindoororoutdooridentify-f-sys.md#offindoororoutdooridentify-1) | Unsubscribe from the results of indoor and outdoor recognition. |
+| [onDistanceMeasure](arkts-multimodalawareness-ondistancemeasure-f-sys.md#ondistancemeasure-1) | Subscribe to distance measurement result data. |
+| [onIndoorOrOutdoorIdentify](arkts-multimodalawareness-onindoororoutdooridentify-f-sys.md#onindoororoutdooridentify-1) | Subscribe to the results of indoorand outdoor identification. |
+<!--DelEnd-->
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DistanceMeasurementConfigParams](arkts-multimodalawareness-distancemeasurementconfigparams-i-sys.md) | Configuration parameters for the distance measurement interface |
+| [DistanceMeasurementResponse](arkts-multimodalawareness-distancemeasurementresponse-i-sys.md) | Interface for distance measurement result |
+| [DoorPositionResponse](arkts-multimodalawareness-doorpositionresponse-i-sys.md) | Interface for indoor or outdoor identify result |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [DistanceRank](arkts-multimodalawareness-distancerank-e-sys.md) | Enum for distance rank. |
+| [PositionRelativeToDoor](arkts-multimodalawareness-positionrelativetodoor-e-sys.md) | Enum for identification result inside and outside the door |
+| [ReportingMode](arkts-multimodalawareness-reportingmode-e-sys.md) | Enum for distance measurement result reporting modes. |
+| [TechnologyType](arkts-multimodalawareness-technologytype-e-sys.md) | Enum for distance measurement technology types. |
+<!--DelEnd-->
+

@@ -1,0 +1,28 @@
+# TransactionOptions
+
+Represents the configuration of a transaction object.
+
+**Since:** 14
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+
+## Modules to Import
+
+```TypeScript
+import { relationalStore } from '@ohos.data.relationalStore';
+```
+
+## transactionType
+
+```TypeScript
+transactionType?: TransactionType
+```
+
+Transaction object type. Default value: **DEFERRED**.
+
+**Type:** TransactionType
+
+**Since:** 14
+
+**System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
+

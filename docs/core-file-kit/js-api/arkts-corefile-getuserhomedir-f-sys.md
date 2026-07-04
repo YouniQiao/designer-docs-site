@@ -1,0 +1,39 @@
+# getUserHomeDir (System API)
+
+## Modules to Import
+
+```TypeScript
+import { Environment } from '@ohos.file.environment';
+```
+
+## getUserHomeDir
+
+```TypeScript
+function getUserHomeDir(): string
+```
+
+Obtains the sandbox path of the built-in card directory of the current user. This API is available only to the devices with the SystemCapability.FileManagement.File.Environment.FolderObtain system capability.
+
+**Since:** 11
+
+**Required permissions:** ohos.permission.FILE_ACCESS_MANAGER
+
+**System capability:** SystemCapability.FileManagement.File.Environment.FolderObtain
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| string | Sandbox path of the built-in card directory obtained. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed, usually the result returned by VerifyAccessToken. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed, application which is not a system application usessystem API. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+| 13900042 | Unknown error. |
+

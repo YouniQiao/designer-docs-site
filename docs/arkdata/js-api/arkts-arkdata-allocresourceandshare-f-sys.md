@@ -1,0 +1,244 @@
+# allocResourceAndShare (System API)
+
+## Modules to Import
+
+```TypeScript
+import { cloudData } from '@ohos.data.cloudData';
+```
+
+## allocResourceAndShare
+
+```TypeScript
+function allocResourceAndShare(
+      storeId: string,
+      predicates: relationalStore.RdbPredicates,
+      participants: Array<Participant>,
+      columns?: Array<string>
+    ): Promise<relationalStore.ResultSet>
+```
+
+Allocates a shared resource ID based on the data that matches the specified predicates. This API uses a promise to return the result set of the data to share, which also includes the column names if they are specified.
+
+**Since:** 11
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Client
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| storeId | string | Yes | Name of the RDB store. |
+| predicates | relationalStore.RdbPredicates | Yes | Predicates for matching the data to share. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
+| columns | Array&lt;string&gt; | No | Columns in which the data is located.The default value is undefined, which means column names are not returned. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;relationalStore.ResultSet&gt; | Promise used to return the result set of the data to share. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed,application which is not a system application uses system API. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { relationalStore } from '@kit.ArkData';
+
+let participants = new Array<cloudData.sharing.Participant>();
+participants.push({
+  identity: '000000000',
+  role: cloudData.sharing.Role.ROLE_INVITER,
+  state: cloudData.sharing.State.STATE_UNKNOWN,
+  privilege: {
+    writable: true,
+    readable: true,
+    creatable: false,
+    deletable: false,
+    shareable: false
+  },
+  attachInfo: ''
+})
+let sharingResource: string;
+let predicates = new relationalStore.RdbPredicates('test_table');
+predicates.equalTo('data', 'data_test');
+cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, ['uuid', 'data']).then((resultSet) => {
+  if (!resultSet.goToFirstRow()) {
+    console.error(`row error`);
+    return;
+  }
+  const res = resultSet.getString(resultSet.getColumnIndex(relationalStore.Field.SHARING_RESOURCE_FIELD));
+  console.info(`sharing resource: ${res}`);
+  sharingResource = res;
+}).catch((err: BusinessError) => {
+  console.error(`alloc resource and share failed, code is ${err.code},message is ${err.message}`);
+})
+
+
+```
+
+
+## allocResourceAndShare
+
+```TypeScript
+function allocResourceAndShare(
+      storeId: string,
+      predicates: relationalStore.RdbPredicates,
+      participants: Array<Participant>,
+      callback: AsyncCallback<relationalStore.ResultSet>
+    ): void
+```
+
+Allocates a shared resource ID based on the data that matches the specified predicates. This API uses an asynchronous callback to return the result.
+
+**Since:** 11
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Client
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| storeId | string | Yes | Name of the RDB store. |
+| predicates | relationalStore.RdbPredicates | Yes | Predicates for matching the data to share. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
+| callback | AsyncCallback&lt;relationalStore.ResultSet&gt; | Yes | Callback used to return the result. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed,application which is not a system application uses system API. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+
+**Example**
+
+```TypeScript
+import { relationalStore } from '@kit.ArkData';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let participants = new Array<cloudData.sharing.Participant>();
+participants.push({
+  identity: '000000000',
+  role: cloudData.sharing.Role.ROLE_INVITER,
+  state: cloudData.sharing.State.STATE_UNKNOWN,
+  privilege: {
+    writable: true,
+    readable: true,
+    creatable: false,
+    deletable: false,
+    shareable: false
+  },
+  attachInfo: ''
+})
+let sharingResource: string;
+let predicates = new relationalStore.RdbPredicates('test_table');
+predicates.equalTo('data', 'data_test');
+cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, (err: BusinessError, resultSet) => {
+  if (err) {
+    console.error(`alloc resource and share failed, code is ${err.code},message is ${err.message}`);
+    return;
+  }
+  if (!resultSet.goToFirstRow()) {
+    console.error(`row error`);
+    return;
+  }
+  const res = resultSet.getString(resultSet.getColumnIndex(relationalStore.Field.SHARING_RESOURCE_FIELD));
+  console.info(`sharing resource: ${res}`);
+  sharingResource = res;
+})
+
+
+```
+
+
+## allocResourceAndShare
+
+```TypeScript
+function allocResourceAndShare(
+      storeId: string,
+      predicates: relationalStore.RdbPredicates,
+      participants: Array<Participant>,
+      columns: Array<string>,
+      callback: AsyncCallback<relationalStore.ResultSet>
+    ): void
+```
+
+Allocates a shared resource ID based on the data that matches the specified predicates. This API uses an asynchronous callback to return the result set of the data to share, which includes the shared resource ID and column names.
+
+**Since:** 11
+
+**System capability:** SystemCapability.DistributedDataManager.CloudSync.Client
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| storeId | string | Yes | Name of the RDB store. |
+| predicates | relationalStore.RdbPredicates | Yes | Predicates for matching the data to share. |
+| participants | Array&lt;Participant&gt; | Yes | Participants of the share. |
+| columns | Array&lt;string&gt; | Yes | Columns in which the data is located. |
+| callback | AsyncCallback&lt;relationalStore.ResultSet&gt; | Yes | Callback used to return the result set of the data to share. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed,application which is not a system application uses system API. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
+
+**Example**
+
+```TypeScript
+import { relationalStore } from '@kit.ArkData';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let participants = new Array<cloudData.sharing.Participant>();
+participants.push({
+  identity: '000000000',
+  role: cloudData.sharing.Role.ROLE_INVITER,
+  state: cloudData.sharing.State.STATE_UNKNOWN,
+  privilege: {
+    writable: true,
+    readable: true,
+    creatable: false,
+    deletable: false,
+    shareable: false
+  },
+  attachInfo: ''
+})
+let sharingResource: string;
+let predicates = new relationalStore.RdbPredicates('test_table');
+predicates.equalTo('data', 'data_test');
+cloudData.sharing.allocResourceAndShare('storeName', predicates, participants, ['uuid', 'data'], (err: BusinessError, resultSet) => {
+  if (err) {
+    console.error(`alloc resource and share failed, code is ${err.code},message is ${err.message}`);
+    return;
+  }
+  if (!resultSet.goToFirstRow()) {
+    console.error(`row error`);
+    return;
+  }
+  const res = resultSet.getString(resultSet.getColumnIndex(relationalStore.Field.SHARING_RESOURCE_FIELD));
+  console.info(`sharing resource: ${res}`);
+  sharingResource = res;
+})
+
+
+```
+

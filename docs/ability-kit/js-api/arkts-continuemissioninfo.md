@@ -1,0 +1,12 @@
+# ContinueMissionInfo
+
+## Summary
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [ContinueMissionInfo](arkts-ability-continuemissioninfo-i-sys.md) | The module defines the parameters required for initiating mission continuation with the bundle name specified. For details about mission continuation, see [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-3) |
+<!--DelEnd-->
+

@@ -1,0 +1,112 @@
+# publishReminder
+
+## Modules to Import
+
+```TypeScript
+import { reminderAgentManager } from '@ohos.reminderAgentManager';
+```
+
+## publishReminder
+
+```TypeScript
+function publishReminder(reminderReq: ReminderRequest, callback: AsyncCallback<number>): void
+```
+
+Publishes a reminder. This API uses an asynchronous callback to return the result. > **NOTE** > > This API can be called only after the > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > permission is obtained. >
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.PUBLISH_AGENT_REMINDER
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| reminderReq | ReminderRequest | Yes | Request used for publishing the reminder. |
+| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result.After the agent-powered reminder ispublished, **err** is **undefined**, and **data** is the ID of the published reminder. Otherwise, **err** is anerror object. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter is not valid parameter. |
+| [1700001](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700001-notification-disabled) | Notification is not enabled. |
+| [1700002](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700002-too-many-reminders) | The number of reminders exceeds the limit. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
+
+let timer: reminderAgentManager.ReminderRequestTimer = {
+  reminderType: reminderAgentManager.ReminderType.REMINDER_TYPE_TIMER,
+  triggerTimeInSeconds: 10
+}
+
+reminderAgentManager.publishReminder(timer, (err: BusinessError, reminderId: number) => {
+  if (err.code) {
+    console.error("callback err code:" + err.code + " message:" + err.message);
+  } else {
+    console.info("callback, reminderId = " + reminderId);
+  }
+});
+
+```
+
+
+## publishReminder
+
+```TypeScript
+function publishReminder(reminderReq: ReminderRequest): Promise<number>
+```
+
+Publishes a reminder. This API uses a promise to return the result. > **NOTE** > > This API can be called only after the > [notificationManager.requestEnableNotification](../../apis-notification-kit/arkts-apis/arkts-notification-requestenablenotification-f.md#requestenablenotification-2) > permission is obtained. >
+
+**Since:** 9
+
+**Required permissions:** ohos.permission.PUBLISH_AGENT_REMINDER
+
+**System capability:** SystemCapability.Notification.ReminderAgent
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| reminderReq | ReminderRequest | Yes | Request used for publishing the reminder. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;number&gt; | Promise used to return the published reminder ID. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | If the input parameter is not valid parameter. |
+| [1700001](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700001-notification-disabled) | Notification is not enabled. |
+| [1700002](../../apis-backgroundtasks-kit/errorcode-reminderAgentManager.md#1700002-too-many-reminders) | The number of reminders exceeds the limit. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+import { reminderAgentManager } from '@kit.BackgroundTasksKit';
+
+let timer: reminderAgentManager.ReminderRequestTimer = {
+  reminderType: reminderAgentManager.ReminderType.REMINDER_TYPE_TIMER,
+  triggerTimeInSeconds: 10
+}
+
+reminderAgentManager.publishReminder(timer).then((reminderId: number) => {
+  console.info("promise, reminderId = " + reminderId);
+}).catch((err: BusinessError) => {
+  console.error("promise err code:" + err.code + " message:" + err.message);
+});
+
+```
+

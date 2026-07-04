@@ -1,0 +1,32 @@
+# VibratorStopMode
+
+Enumerates vibration stop modes. This parameter is required for [vibrator.stopVibration9+](arkts-sensorservice-stopvibration-f.md#stopvibration-2) or [vibrator.stopVibration9+](arkts-sensorservice-stopvibration-f.md#stopvibration-1). The stop mode must match that delivered in [VibrateEffect9+](arkts-sensorservice-vibrateeffect-t.md#vibrateeffect).
+
+**Since:** 8
+
+**System capability:** SystemCapability.Sensors.MiscDevice
+
+## VIBRATOR_STOP_MODE_TIME
+
+```TypeScript
+VIBRATOR_STOP_MODE_TIME = 'time'
+```
+
+The vibration to stop is in **duration** mode.
+
+**Since:** 8
+
+**System capability:** SystemCapability.Sensors.MiscDevice
+
+## VIBRATOR_STOP_MODE_PRESET
+
+```TypeScript
+VIBRATOR_STOP_MODE_PRESET = 'preset'
+```
+
+The vibration to stop is in **EffectId** mode.
+
+**Since:** 8
+
+**System capability:** SystemCapability.Sensors.MiscDevice
+

@@ -1,0 +1,73 @@
+# @ohos.arkui.intelligence.imageGeneration
+
+Module for AI-generated images using UI Component.
+
+**Since:** 23
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { imageGeneration } from '@ohos.arkui.intelligence.imageGeneration';
+```
+
+## Summary
+
+<!--Del-->
+### Functions（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [closeGeneratorDialog](arkts-arkui-closegeneratordialog-f-sys.md#closegeneratordialog-1) | Close the AI image generation task popup. |
+| [closeGeneratorNodeGraph](arkts-arkui-closegeneratornodegraph-f-sys.md#closegeneratornodegraph-1) | Close the AI node graph Sheet. |
+| [hideGeneratorDialog](arkts-arkui-hidegeneratordialog-f-sys.md#hidegeneratordialog-1) | Hide the AI image generation task popup. |
+| [hideGeneratorNodeGraph](arkts-arkui-hidegeneratornodegraph-f-sys.md#hidegeneratornodegraph-1) | Hide the AI node graph Sheet. |
+| [openGeneratorNodeGraph](arkts-arkui-opengeneratornodegraph-f-sys.md#opengeneratornodegraph-1) | Open the AI node graph Sheet. |
+| [restoreGeneratorDialog](arkts-arkui-restoregeneratordialog-f-sys.md#restoregeneratordialog-1) | Restore the AI image generation task popup. |
+| [restoreGeneratorNodeGraph](arkts-arkui-restoregeneratornodegraph-f-sys.md#restoregeneratornodegraph-1) | Restore the AI node graph Sheet. |
+| [showGeneratorDialog](arkts-arkui-showgeneratordialog-f-sys.md#showgeneratordialog-1) | Open the AI image generation task popup and perform AI image generation operations. |
+<!--DelEnd-->
+
+<!--Del-->
+### Interfaces（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [CustomImportIcon](arkts-arkui-customimporticon-i-sys.md) | Customize the import icon, which is used to add images and text from the application side. |
+| [CustomImportResult](arkts-arkui-customimportresult-i-sys.md) | The result of import operation for custom import icon. |
+| [GenerateImageTaskParams](arkts-arkui-generateimagetaskparams-i-sys.md) | Configuration parameter options for AI-generated image tasks. |
+| [GenerateImageTaskPartialResult](arkts-arkui-generateimagetaskpartialresult-i-sys.md) | Configuration stream result for AI-generated image tasks. |
+| [GenerateImageTaskResult](arkts-arkui-generateimagetaskresult-i-sys.md) | Configuration result for AI-generated image tasks. |
+| [GenerateTextTaskPartialResult](arkts-arkui-generatetexttaskpartialresult-i-sys.md) | Configuration stream result for AI-generated text tasks. |
+| [GenerateTextTaskResult](arkts-arkui-generatetexttaskresult-i-sys.md) | Configuration result for AI-generated text tasks. |
+| [GeneratorDialogOptions](arkts-arkui-generatordialogoptions-i-sys.md) | Parameters used to open the ImageGeneratorDialog. |
+| [GeneratorNodeGraphOptions](arkts-arkui-generatornodegraphoptions-i-sys.md) | Parameters used to open the NodeGraphComponent. |
+| [GeneratorResult](arkts-arkui-generatorresult-i-sys.md) | The result of AI-generated images |
+| [GeneratorResultPageIcon](arkts-arkui-generatorresultpageicon-i-sys.md) | Custom icon object in the generation result page of ImageGeneratorDialog. |
+| [ImageGenerationModel](arkts-arkui-imagegenerationmodel-i-sys.md) | AI Image Model Abstract Interface. |
+| [ImageItem](arkts-arkui-imageitem-i-sys.md) | Image information for AI-generated images. |
+| [ImageStyle](arkts-arkui-imagestyle-i-sys.md) | Style types supported by AI image generation models, like Graffiti, Watercolor. |
+| [LiveViewInfo](arkts-arkui-liveviewinfo-i-sys.md) | Information for LiveView in AI image generation. |
+| [TaskStatistic](arkts-arkui-taskstatistic-i-sys.md) | Statistics Related to AI Image Generation Tasks. |
+| [TextGenerationModel](arkts-arkui-textgenerationmodel-i-sys.md) | AI Text Model Abstract Interface. |
+<!--DelEnd-->
+
+<!--Del-->
+### Enums（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [PartialResultType](arkts-arkui-partialresulttype-e-sys.md) | Provides stream output result type definition. |
+<!--DelEnd-->
+
+<!--Del-->
+### Types（系统接口）
+
+| Name | Description |
+| --- | --- |
+| [CustomImportCallback](arkts-arkui-customimportcallback-t-sys.md) | Async callback type for custom import operation. |
+<!--DelEnd-->
+

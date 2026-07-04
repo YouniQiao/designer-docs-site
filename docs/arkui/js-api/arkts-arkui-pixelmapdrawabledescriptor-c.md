@@ -1,0 +1,87 @@
+# PixelMapDrawableDescriptor
+
+Implements a **PixelMapDrawableDescriptor** object, which can be created by passing in a **PixelMap** object. Inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md#drawabledescriptorloadedresult).
+
+**Inheritance/Implementation:** PixelMapDrawableDescriptor extends [DrawableDescriptor](arkts-arkui-drawabledescriptor-c.md#drawabledescriptor)
+
+**Since:** 12
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@ohos.arkui.drawableDescriptor';
+```
+
+## constructor
+
+```TypeScript
+constructor(src?: image.PixelMap)
+```
+
+A constructor used to create a **PixelMapDrawableDescriptor** object.
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| src | image.PixelMap | No | **PixelMap** image data. |
+
+## constructor
+
+```TypeScript
+constructor(src?: image.PixelMap | ResourceStr)
+```
+
+A constructor used to create a **PixelMapDrawableDescriptor** object through the PixelMap type or **ResourceStr**.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| src | image.PixelMap \| ResourceStr | No | **PixelMap** image data. You can use application resources, systemresources, sandbox paths (file://&lt;bundleName&gt;/&lt;sandboxPath&gt;), and Base64 strings to create**PixelMapDrawableDescriptor** objects. |
+
+**Example**
+
+The following is the sample code for creating a PixelMapDrawableDescriptor object using ResourceStr:
+
+```TypeScript
+// xxx.ets
+import { PixelMapDrawableDescriptor } from '@kit.ArkUI';
+
+@Entry
+@Component
+struct PixelMapDrawableDescriptorExample {
+  // Create a PixelMapDrawableDescriptor object using Resource.
+  // Replace $r('app.media.icon') with the image resource file you use.
+  @State drawable: DrawableDescriptor = new PixelMapDrawableDescriptor($r('app.media.icon'))
+
+  build() {
+    Column() {
+      Image(this.drawable)
+        .width(100)
+        .height(100)
+        .margin({ bottom: 20 })
+    }
+  }
+}
+
+```
+

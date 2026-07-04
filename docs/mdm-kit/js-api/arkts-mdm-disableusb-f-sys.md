@@ -1,0 +1,68 @@
+# disableUsb (System API)
+
+## Modules to Import
+
+```TypeScript
+import { usbManager } from '@ohos.enterprise.usbManager';
+```
+
+## disableUsb
+
+```TypeScript
+function disableUsb(admin: Want, disable: boolean): void
+```
+
+Enables or disables USB.
+
+**Since:** 11
+
+**Deprecated since:** 26.0.0
+
+**Substitutes:** setDisallowedPolicy(admin:
+
+**Required permissions:** ohos.permission.ENTERPRISE_MANAGE_USB
+
+**Model restriction:** This API can be used only in the stage model.
+
+**System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| admin | Want | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of theEnterpriseAdminExtensionAbility and the bundle name of the application. |
+| disable | boolean | Yes | Whether to disable USB. The value **true** means to disable USB; the value **false**means the opposite. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [9200001](../errorcode-enterpriseDeviceManager.md#9200001-deviceadmin-not-enabled) | The application is not an administrator application of the device. |
+| [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
+| [9200010](../errorcode-enterpriseDeviceManager.md#9200010-policy-conflict) | A conflict policy has been configured. |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed. The application does not have the permissionrequired to call the API. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+import { usbManager } from '@kit.MDMKit';
+import { Want } from '@kit.AbilityKit';
+
+let wantTemp: Want = {
+  // Replace with actual values.
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility'
+};
+try {
+  usbManager.disableUsb(wantTemp, true);
+  console.info(`Succeeded in disabling USB`);
+} catch (err) {
+  console.error(`Failed to disable USB. Code: ${err.code}, message: ${err.message}`);
+}
+
+```
+
