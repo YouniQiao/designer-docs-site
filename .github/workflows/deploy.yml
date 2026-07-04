@@ -48,8 +48,7 @@ jobs:
         run: npx docusaurus build --no-minify
         env:
           NODE_OPTIONS: '--max-old-space-size=16384'
-          DOCUSAURUS_SSG_CONCURRENCY: '64'
-          GENERATE_SOURCEMAP: 'false'
+          DOCUSAURUS_SSG_CONCURRENCY: '32'
 
       - name: Deploy to Netlify
         run: |
