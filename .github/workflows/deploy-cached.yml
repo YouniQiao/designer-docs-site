@@ -27,6 +27,7 @@ jobs:
 
           netlify deploy \
             --prod \
+            --skip-build \
             --dir="$BUILD_DIR" \
             --message "Deploy cached build ${{ github.sha }}"
 
