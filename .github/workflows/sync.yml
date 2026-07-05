@@ -18,6 +18,9 @@ jobs:
         run: |
           rm -f .git/shallow.lock .git/index.lock 2>/dev/null
           if [ -d .git ]; then
+            # Update remote URL with fresh token for this run
+            git remote set-url origin \
+              https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git fetch origin main --depth=1
             git reset --hard origin/main
           else
