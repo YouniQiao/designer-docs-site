@@ -192,7 +192,7 @@ If this parameter is set, the system will use ca path specified by user, or else
 dnsOverHttps?: string
 ```
 
-If this parameter is set, incoming DNS resolution server URL for the DoH server to use for name resolving. The parameter must be URL-encoded in the following format: "https://host:port/path". It MUST specify an HTTPS URL.
+If this parameter is set, incoming DNS resolution server URL for the DoH server to use for name resolving. The parameter must be URL-encoded in the following format: `https://host:port/path`. It MUST specify an HTTPS URL.
 
 **Type:** string
 
