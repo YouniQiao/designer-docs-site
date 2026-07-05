@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [RawFileDescriptor](arkts-localization-rawfiledescriptor-i.md) | Provides the descriptor of the HAP where the rawfile is located. |
+| [RawFileDescriptor](arkts-rawfiledescriptor-i.md) | 本模块提供rawfile文件所在hap的descriptor信息。 |
 

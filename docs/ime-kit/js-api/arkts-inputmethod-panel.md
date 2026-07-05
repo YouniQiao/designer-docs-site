@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { PanelInfo, PanelType, PanelFlag } from '@ohos.inputMethod.Panel';
+import { PanelInfo,PanelType,PanelFlag } from '@kit.IMEKit';
 ```
 
 ## Summary
@@ -12,12 +12,12 @@ import { PanelInfo, PanelType, PanelFlag } from '@ohos.inputMethod.Panel';
 
 | Name | Description |
 | --- | --- |
-| [PanelInfo](arkts-ime-panelinfo-i.md) | Defines the attributes of the input method panel. |
+| [PanelInfo](arkts-panelinfo-i.md) | Defines the attributes of the input method panel. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [PanelFlag](arkts-ime-panelflag-e.md) | Enumerates the state types of the input method panel. &gt; **NOTE** &gt; &gt; Currently, only the **SOFT_KEYBOARD** panel is supported. |
-| [PanelType](arkts-ime-paneltype-e.md) | Enumerates the types of the input method panel. |
+| [PanelFlag](arkts-panelflag-e.md) | Enumerates the state types of the input method panel. > **NOTE** > > Currently, only the **SOFT_KEYBOARD** panel is supported. |
+| [PanelType](arkts-paneltype-e.md) | Enumerates the types of the input method panel. |
 

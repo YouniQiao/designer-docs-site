@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { VibrateOptions } from '@system.vibrator';
+import { VibrateOptions } from '@kit.SensorServiceKit';
 ```
 
 ## Summary
@@ -12,11 +12,11 @@ import { VibrateOptions } from '@system.vibrator';
 
 | Name | Description |
 | --- | --- |
-| [Vibrator](arkts-sensorservice-vibrator-c.md) |  |
+| [Vibrator](arkts-vibrator-c.md) |  |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [VibrateOptions](arkts-sensorservice-vibrateoptions-i.md) | Defines the vibration options. |
+| [VibrateOptions](arkts-vibrateoptions-i.md) | Defines the vibration options. |
 

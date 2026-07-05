@@ -2,21 +2,19 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AbilityFormInfo](arkts-ability-abilityforminfo-i-sys.md) | AbilityFormInfo: the form info of an ability. |
-| [ApiVersion](arkts-ability-apiversion-i-sys.md) | ApiVersion: the bundle Api version class. |
-| [BundleConfigInfo](arkts-ability-bundleconfiginfo-i-sys.md) | BundleConfigInfo: the bundle summary class. |
-| [BundlePackInfo](arkts-ability-bundlepackinfo-i-sys.md) | The bundle pack info class. |
-| [ExtensionAbility](arkts-ability-extensionability-i-sys.md) | ExtensionAbility: the extension ability forms class. |
-| [ModuleAbilityInfo](arkts-ability-moduleabilityinfo-i-sys.md) | ModuleAbilityInfo: the ability info of a module. |
-| [ModuleConfigInfo](arkts-ability-moduleconfiginfo-i-sys.md) | ModuleConfigInfo: the module summary of a bundle. |
-| [ModuleDistroInfo](arkts-ability-moduledistroinfo-i-sys.md) | ModuleDistroInfo: the bundle info summary class. |
-| [PackageConfig](arkts-ability-packageconfig-i-sys.md) | PackageConfig: the package info class. |
-| [PackageSummary](arkts-ability-packagesummary-i-sys.md) | PackageSummary: the package summary class. |
-| [Version](arkts-ability-version-i-sys.md) | Version: the bundle version class. |
-<!--DelEnd-->
+| <!--DelRow-->[AbilityFormInfo](arkts-abilityforminfo-i.md) | 卡片信息。 |
+| <!--DelRow-->[ApiVersion](arkts-apiversion-i.md) | module的api版本。 |
+| <!--DelRow-->[BundleConfigInfo](arkts-bundleconfiginfo-i.md) | 包的配置信息。 |
+| <!--DelRow-->[BundlePackInfo](arkts-bundlepackinfo-i.md) | 应用包信息 |
+| <!--DelRow-->[ExtensionAbility](arkts-extensionability-i.md) | 描述extensionAbilities的配置信息。 |
+| <!--DelRow-->[ModuleAbilityInfo](arkts-moduleabilityinfo-i.md) | module包含的ability组件信息。 |
+| <!--DelRow-->[ModuleConfigInfo](arkts-moduleconfiginfo-i.md) | 包的module配置信息。 |
+| <!--DelRow-->[ModuleDistroInfo](arkts-moduledistroinfo-i.md) | module发行版信息。 |
+| <!--DelRow-->[PackageConfig](arkts-packageconfig-i.md) | pack.info的包信息。 |
+| <!--DelRow-->[PackageSummary](arkts-packagesummary-i.md) | pack.info中的包摘要信息。 |
+| <!--DelRow-->[Version](arkts-version-i.md) | 包的版本。 |
 

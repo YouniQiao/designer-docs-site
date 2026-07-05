@@ -1,11 +1,9 @@
 # @ohos.bluetoothManager
 
-Provides methods to operate or manage Bluetooth.
-
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.bluetoothManager';
+import { bluetoothManager } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -14,5 +12,5 @@ import { bluetoothManager } from '@ohos.bluetoothManager';
 
 | Name | Description |
 | --- | --- |
-| [bluetoothManager](arkts-connectivity-bluetoothmanager-n.md) | Provides methods to operate or manage Bluetooth. |
+| [bluetoothManager](arkts-bluetoothmanager-n.md) | Provides methods to operate or manage Bluetooth. |
 

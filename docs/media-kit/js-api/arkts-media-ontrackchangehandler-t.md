@@ -1,14 +1,14 @@
 # OnTrackChangeHandler
 
 ```TypeScript
-type OnTrackChangeHandler = (index: number, isSelected: boolean) => void
+type OnTrackChangeHandler = (index: int, isSelected: boolean) => void
 ```
 
-Describes the callback invoked for the track change event.
+track变更事件回调方法。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -16,6 +16,6 @@ Describes the callback invoked for the track change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | int | Yes | Index of the track that has changed. |
-| isSelected | boolean | Yes | Whether the track at the current index is selected. **true** if selected, **false**otherwise. |
+| index | int | Yes | 当前变更的track索引。 |
+| isSelected | boolean | Yes | 当前变更的track索引是否被选中。true表示处于选中状态，false表示处于非选中状态。 |
 

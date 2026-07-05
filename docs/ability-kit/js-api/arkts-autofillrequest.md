@@ -6,18 +6,10 @@
 
 | Name | Description |
 | --- | --- |
-| [FillFailureResult](arkts-ability-fillfailureresult-i.md) | Fill fail result. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [FillRequest](arkts-ability-fillrequest-i-sys.md) | Defines the information about an auto-fill request. |
-| [FillRequestCallback](arkts-ability-fillrequestcallback-i-sys.md) | Implements callbacks for an auto-fill request, which is used to automatically fill in or generate a password. The callbacks can be used to notify the client of the success or failure of the request. |
-| [FillResponse](arkts-ability-fillresponse-i-sys.md) | Defines the information about the response to an auto-fill request. |
-| [SaveRequest](arkts-ability-saverequest-i-sys.md) | Defines the information about an auto-saving request. |
-| [SaveRequestCallback](arkts-ability-saverequestcallback-i-sys.md) | Implements callbacks for an automatic or a manual saving request. |
-| [UpdateRequest](arkts-ability-updaterequest-i-sys.md) | Defines the information about an auto-update request. |
-<!--DelEnd-->
+| <!--DelRow-->[FillRequest](arkts-fillrequest-i.md) | 自动填充的填充请求。 |
+| <!--DelRow-->[FillRequestCallback](arkts-fillrequestcallback-i.md) | 自动填充或者生成密码时的回调对象，可以通过此回调通知客户端成功或者失败。 |
+| <!--DelRow-->[FillResponse](arkts-fillresponse-i.md) | 自动填充响应。 |
+| <!--DelRow-->[SaveRequest](arkts-saverequest-i.md) | 保存自动填充的请求。 |
+| <!--DelRow-->[SaveRequestCallback](arkts-saverequestcallback-i.md) | 自动保存或者手动保存请求回调。 |
+| <!--DelRow-->[UpdateRequest](arkts-updaterequest-i.md) | 自动填充更新信息。 |
 

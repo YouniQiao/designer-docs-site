@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { HashMap } from '@ohos.util.HashMap';
+import { HashMap } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -12,5 +12,11 @@ import { HashMap } from '@ohos.util.HashMap';
 
 | Name | Description |
 | --- | --- |
-| [HashMap](arkts-arkts-hashmap-c.md) | HashMap is a map implemented based on the array, linked list, and red-black tree. It provides efficient data query, insertion, and removal. The elements in a HashMap instance are mappings of key-value pairs. Each key must be unique and have only one value. |
+| [HashMap](arkts-hashmap-c.md) | HashMap底层采用数组、链表和红黑树实现，支持高效查询、插入和删除。 HashMap实例中的元素为键值对的映射，每个键必须唯一且只能对应一个值。 |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [HashMapCbFn](arkts-hashmapcbfn-t.md) | HashMap的回调函数类型。 |
 

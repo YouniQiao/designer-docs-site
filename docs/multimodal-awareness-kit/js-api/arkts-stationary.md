@@ -9,7 +9,7 @@ The **stationary** module provides APIs to report the device status, including a
 ## Modules to Import
 
 ```TypeScript
-import { stationary } from '@ohos.stationary';
+import { stationary } from '@kit.MultimodalAwarenessKit';
 ```
 
 ## Summary
@@ -18,26 +18,26 @@ import { stationary } from '@ohos.stationary';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-multimodalawareness-off-f.md#off-1) | Unsubscribes from the device status. |
-| [on](arkts-multimodalawareness-on-f.md#on-1) | Subscribes to the device status. |
-| [once](arkts-multimodalawareness-once-f.md#once-1) | Obtains the device status. |
+| [off](arkts-stationary-off-f.md#off-1) | Unsubscribes from the device status. |
+| [on](arkts-stationary-on-f.md#on-1) | Subscribes to the device status. |
+| [once](arkts-stationary-once-f.md#once-1) | Obtains the device status. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ActivityResponse](arkts-multimodalawareness-activityresponse-i.md) | Defines the response interface to receive the device status. |
-
-### Enums
-
-| Name | Description |
-| --- | --- |
-| [ActivityEvent](arkts-multimodalawareness-activityevent-e.md) | Enumerates the device status events. |
-| [ActivityState](arkts-multimodalawareness-activitystate-e.md) | Enumerates the device statuses. |
+| [ActivityResponse](arkts-stationary-activityresponse-i.md) | Defines the response interface to receive the device status. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ActivityType](arkts-multimodalawareness-activitytype-t.md) | Enumerates the device status types. |
+| [ActivityType](arkts-stationary-activitytype-t.md) | Enumerates the device status types. |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [ActivityEvent](arkts-stationary-activityevent-e.md) | Enumerates the device status events. |
+| [ActivityState](arkts-stationary-activitystate-e.md) | Enumerates the device statuses. |
 

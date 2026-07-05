@@ -1,4 +1,8 @@
-# PortraitEffect (System API)
+# PortraitEffect
+
+```TypeScript
+enum PortraitEffect
+```
 
 Enumerates the portrait effects.
 

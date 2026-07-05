@@ -6,13 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [NotificationSlot](arkts-notification-notificationslot-i.md) | The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes vary according to notification slots. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [NotificationSlot](arkts-notification-notificationslot-i-sys.md) | The **NotificationSlot** module provides APIs for defining the notification slots. The notification reminder modes vary according to notification slots. |
-<!--DelEnd-->
+| [NotificationSlot](arkts-notificationslot-i.md) | 描述通知渠道，不同通知渠道对应的通知提醒方式不同。 |
 

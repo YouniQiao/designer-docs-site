@@ -1,6 +1,10 @@
 # PlaybackInfoKey
 
-播放信息描述枚举。
+```TypeScript
+enum PlaybackInfoKey
+```
+
+Enumerates the playback description keys.
 
 **起始版本：** 12
 
@@ -12,7 +16,7 @@
 SERVER_IP_ADDRESS = 'server_ip_address'
 ```
 
-表示服务器IP地址，其对应键值类型为string。
+IP address of the server. The corresponding key value type is string.
 
 **起始版本：** 12
 
@@ -24,7 +28,7 @@ SERVER_IP_ADDRESS = 'server_ip_address'
 AVG_DOWNLOAD_RATE = 'average_download_rate'
 ```
 
-表示平均下载速率，其对应键值类型为number，单位为比特率（bps）。
+Average download rate. The corresponding key value type is number, measured in bit/s.
 
 **起始版本：** 12
 
@@ -36,7 +40,7 @@ AVG_DOWNLOAD_RATE = 'average_download_rate'
 DOWNLOAD_RATE = 'download_rate'
 ```
 
-表示1s的下载速率，其对应键值类型为number，单位为比特率（bps）。
+Download rate in one second. The corresponding key value type is number, measured in bit/s.
 
 **起始版本：** 12
 
@@ -48,7 +52,7 @@ DOWNLOAD_RATE = 'download_rate'
 IS_DOWNLOADING = 'is_downloading'
 ```
 
-表示下载状态，1表示在下载状态，0表示非下载状态（下载完成），其对应键值类型为number。
+Download status. The corresponding key value type is number. The value **1** means that the downloaded is in progress, and **0** means that the download is complete.
 
 **起始版本：** 12
 
@@ -60,7 +64,7 @@ IS_DOWNLOADING = 'is_downloading'
 BUFFER_DURATION = 'buffer_duration'
 ```
 
-表示缓存数据的可播放时长，其对应键值类型为number，单位为秒（s）。
+Duration that the cached data can be played. The corresponding key value type is number, measured in seconds.
 
 **起始版本：** 12
 

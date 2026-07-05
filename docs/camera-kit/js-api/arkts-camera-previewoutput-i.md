@@ -1,8 +1,8 @@
 # PreviewOutput
 
-Implements preview output. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput).
+Implements preview output. It inherits from [CameraOutput]camera.CameraOutput.
 
-**Inheritance/Implementation:** PreviewOutput extends [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput)
+**Inheritance:** PreviewOutputextends: CameraOutput.
 
 **Since:** 10
 
@@ -11,7 +11,87 @@ Implements preview output. It inherits from [CameraOutput](arkts-camera-cameraou
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
+```
+
+## addDeferredSurface
+
+```TypeScript
+addDeferredSurface(surfaceId: string): void
+```
+
+Adds a deferred surface.
+
+**Since:** 10
+
+**Atomic service API:** From API version 24 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| surfaceId | string | Yes | Surface object id used in camera photo output. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 202 | Permission verification failed. A non-system application calls a system  API. [since 13 - 23] |
+
+## attachSketchSurface
+
+```TypeScript
+attachSketchSurface(surfaceId: string): void
+```
+
+Attaches a surface for PiP preview.
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| surfaceId | string | Yes | Surface ID, which is obtained from  [XComponent]XComponent. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400101 | Parameter missing or parameter type incorrect. [since 12] |
+| 7400201 | Camera service fatal error. [since 12] |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function attachSketchSurface(previewOutput: camera.PreviewOutput, session: camera.Session, cameraInput: camera.CameraInput, sketchSurfaceId: string): void {
+  try {
+    session.beginConfig();
+    session.addInput(cameraInput);
+    session.addOutput(previewOutput);
+    previewOutput.enableSketch(true);
+    session.commitConfig();
+    previewOutput.attachSketchSurface(sketchSurfaceId);
+  } catch (error) {
+    // If the operation fails, error.code is returned and processed.
+    let err = error as BusinessError;
+    console.error(`The attachSketchSurface call failed. error code: ${err.code}`);
+  }
+}
+
 ```
 
 ## enableBandwidthCompression
@@ -20,11 +100,11 @@ import { camera } from '@ohos.multimedia.camera';
 enableBandwidthCompression(enabled: boolean): void
 ```
 
-Enables preview bandwidth compression. Before enabling this feature, you can call [isBandwidthCompressionSupported](arkts-camera-previewoutput-i.md#isbandwidthcompressionsupported-1) to check whether the device supports preview bandwidth compression. > **NOTE** > > This function must be called prior to > [Session.commitConfig](arkts-camera-session-i.md#commitconfig-1). > Otherwise, the preview output stream format will be affected.
+Enables preview bandwidth compression. Before enabling this feature, you can call [isBandwidthCompressionSupported]camera.PreviewOutput.isBandwidthCompressionSupported to check whether the device supports preview bandwidth compression. > **NOTE** > > This function must be called prior to > [Session.commitConfig]camera.Session.commitConfig(callback: AsyncCallback<void>). > Otherwise, the preview output stream format will be affected.
 
 **Since:** 23
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,15 +112,65 @@ Enables preview bandwidth compression. Before enabling this feature, you can cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | boolean | Yes | Whether to enable preview bandwidth compression. **true** to enable, **false**otherwise. |
+| enabled | boolean | Yes | Whether to enable preview bandwidth compression. true to enable, false  otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 7400102 | Operation not allowed. |
+| 7400103 | Session not config. |
+| 7400201 | Camera service fatal error. |
+
+## enableSketch
+
+```TypeScript
+enableSketch(enabled: boolean): void
+```
+
+Enables or disables PiP preview.
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| enabled | boolean | Yes | Whether to enable or disable PiP view. true to enable, false otherwise. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed. [since 12] |
+| 7400201 | Camera service fatal error. [since 12] |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function enableSketch(previewOutput: camera.PreviewOutput, session: camera.Session, cameraInput: camera.CameraInput): void {
+  try {
+    session.beginConfig();
+    session.addInput(cameraInput);
+    session.addOutput(previewOutput);
+    previewOutput.enableSketch(true);
+    session.commitConfig();
+  } catch (error) {
+    // If the operation fails, error.code is returned and processed.
+    let err = error as BusinessError;
+    console.error(`The enableSketch call failed. error code: ${err.code}`);
+  }
+}
+
+```
 
 ## getActiveFrameRate
 
@@ -48,11 +178,11 @@ Enables preview bandwidth compression. Before enabling this feature, you can cal
 getActiveFrameRate(): FrameRateRange
 ```
 
-Obtains the configured frame rate range. This API is valid only after [setFrameRate](arkts-camera-previewoutput-i.md#setframerate-1) is called to set a frame rate range for preview streams.
+Obtains the configured frame rate range. This API is valid only after [setFrameRate]camera.PreviewOutput.setFrameRate is called to set a frame rate range for preview streams.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -72,7 +202,7 @@ Obtains the profile that takes effect currently.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -86,21 +216,21 @@ Obtains the profile that takes effect currently.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 7400201 | Camera service fatal error. |
 
 ## getPreviewRotation
 
 ```TypeScript
-getPreviewRotation(displayRotation?: number): ImageRotation
+getPreviewRotation(displayRotation?: int): ImageRotation
 ```
 
 Obtains the preview rotation angle. - Device's natural orientation: the default orientation for using a device. For example, the default orientation of the bar-type phone is in portrait mode, with the charging port facing downward. - Camera lens angle: equivalent to the angle at which the camera is rotated clockwise to match the device's natural orientation. For example, the rear camera sensor of a bar-type phone is installed in landscape mode. Therefore, it needs to be rotated by 90 degrees clockwise to match the device's natural orientation. - [Screen rotation](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-multi-device-window-direction#section15598121101615) : indicates the clockwise rotation angle of the device screen.
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -108,7 +238,7 @@ Obtains the preview rotation angle. - Device's natural orientation: the default 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayRotation | number | No | Screen rotation angle of the display. It is obtained by calling[display.getDefaultDisplaySync](../../apis-arkui/arkts-apis/arkts-arkui-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1).<br> Since API version 23,the input parameter **displayRotation** is optional. If no parameter is passed, the system obtains the**displayRotation** value to calculate rotation angle of a video.<br>**Since:** 23 |
+| displayRotation | int | No | Screen rotation angle of the display. It is obtained by calling  [display.getDefaultDisplaySync](../../apis-arkui/arkts-apis/arkts-display-getdefaultdisplaysync-f.md#getDefaultDisplaySync-1). Since API version 23,  the input parameter displayRotation is optional. If no parameter is passed, the system obtains the  displayRotation value to calculate rotation angle of a video. [since 12 - 22] |
 
 **Return value:**
 
@@ -120,8 +250,45 @@ Obtains the preview rotation angle. - Device's natural orientation: the default 
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect.<br>**Applicable version:** 12 - 22 |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 7400101 | Parameter missing or parameter type incorrect. [since 12 - 22] |
+| 7400201 | Camera service fatal error. |
+
+## getSketchRatio
+
+```TypeScript
+getSketchRatio(): double
+```
+
+Obtains the zoom ratio when PiP preview is enabled.
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| double | Zoom ratio. If PiP preview is not supported, the value -1 is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+
+**Example**
+
+```TypeScript
+function getSketchRatio(previewOutput: camera.PreviewOutput): number {
+  let sketchRatio: number = previewOutput.getSketchRatio();
+  return sketchRatio;
+}
+
+```
 
 ## getSupportedFrameRates
 
@@ -133,7 +300,7 @@ Obtains the supported frame rates.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -141,7 +308,7 @@ Obtains the supported frame rates.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;FrameRateRange&gt; | Array of supported frame rates. If the API call fails, undefined is returned. |
+| Array&lt;FrameRateRange> | Array of supported frame rates. If the API call fails, undefined is returned. |
 
 ## isBandwidthCompressionSupported
 
@@ -153,7 +320,7 @@ Checks whether preview bandwidth compression is supported. This involves reducin
 
 **Since:** 23
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -161,7 +328,7 @@ Checks whether preview bandwidth compression is supported. This involves reducin
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of preview bandwidth compression. **true** if supported,**false** otherwise. |
+| boolean | Check result for the support of preview bandwidth compression. true if supported,  false otherwise. |
 
 ## isLogViewAssistSupported
 
@@ -173,9 +340,9 @@ Checks whether log video view assistance is supported.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -183,7 +350,52 @@ Checks whether log video view assistance is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of log video view assistance. **true** if supported,**false** otherwise. |
+| boolean | Check result for the support of log video view assistance. true if supported,  false otherwise. |
+
+## isSketchSupported
+
+```TypeScript
+isSketchSupported(): boolean
+```
+
+Checks whether Picture-in-Picture (PiP) preview is supported.
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Check result for the support of the PiP preview. true if supported, false otherwise. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function isSketchSupported(previewOutput: camera.PreviewOutput): boolean {
+  try {
+    let isSupported: boolean = previewOutput.isSketchSupported();
+    return isSupported;
+  } catch (error) {
+    // If the operation fails, error.code is returned and processed.
+    let err = error as BusinessError;
+    console.error(`The isSketchSupported call failed. error code: ${err.code}`);
+  }
+  return false;
+}
+
+```
 
 ## off('frameStart')
 
@@ -195,7 +407,7 @@ Unsubscribes from preview frame start events.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -203,8 +415,8 @@ Unsubscribes from preview frame start events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'frameStart' | Yes | Event type. The value is fixed at **'frameStart'**. The event can be listened forwhen a previewOutput instance is created. |
-| callback | AsyncCallback&lt;void&gt; | No | Callback used to return the result. If this parameter is specified, thesubscription to the specified event with the specified callback is canceled. (The callback object cannot bean anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks arecanceled. |
+| type | 'frameStart' | Yes | Event type. The value is fixed at 'frameStart'. The event can be listened for  when a previewOutput instance is created. |
+| callback | AsyncCallback&lt;void> | No | Callback used to return the result. If this parameter is specified, the  subscription to the specified event with the specified callback is canceled. (The callback object cannot be  an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are  canceled. |
 
 ## off('frameEnd')
 
@@ -216,7 +428,7 @@ Unsubscribes from preview frame end events.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -224,8 +436,8 @@ Unsubscribes from preview frame end events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'frameEnd' | Yes | Event type. The value is fixed at **'frameEnd'**. The event can be listened for whena previewOutput instance is created. |
-| callback | AsyncCallback&lt;void&gt; | No | Callback used to return the result. If this parameter is specified, thesubscription to the specified event with the specified callback is canceled. (The callback object cannot bean anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks arecanceled. |
+| type | 'frameEnd' | Yes | Event type. The value is fixed at 'frameEnd'. The event can be listened for when  a previewOutput instance is created. |
+| callback | AsyncCallback&lt;void> | No | Callback used to return the result. If this parameter is specified, the  subscription to the specified event with the specified callback is canceled. (The callback object cannot be  an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are  canceled. |
 
 ## off('error')
 
@@ -237,7 +449,7 @@ Unsubscribes from PreviewOutput error events.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -245,8 +457,124 @@ Unsubscribes from PreviewOutput error events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when apreviewOutput instance is created. |
-| callback | ErrorCallback | No | Callback used to return the result. If this parameter is specified, thesubscription to the specified event with the specified callback is canceled. (The callback object cannot bean anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks arecanceled. |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  previewOutput instance is created. |
+| callback | ErrorCallback | No | Callback used to return the result. If this parameter is specified, the  subscription to the specified event with the specified callback is canceled. (The callback object cannot be  an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are  canceled. |
+
+## off('sketchStatusChanged')
+
+```TypeScript
+off(type: 'sketchStatusChanged', callback?: AsyncCallback<SketchStatusData>): void
+```
+
+Unsubscribes from PiP status change events.
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | 'sketchStatusChanged' | Yes | Event type. The value is fixed at 'sketchStatusChanged'. The event  can be listened for when a PiP preview stream is created. |
+| callback | AsyncCallback&lt;SketchStatusData> | No | Callback used to return the result. This parameter is  optional. If this parameter is specified, the subscription to the specified event  on('sketchStatusChanged') with the specified callback is canceled. (The callback object cannot be an  anonymous function.) |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+**Example**
+
+```TypeScript
+function unregisterSketchStatusChanged(previewOutput: camera.PreviewOutput): void {
+  previewOutput.off('sketchStatusChanged');
+}
+
+```
+
+## offError
+
+```TypeScript
+offError(callback?: ErrorCallback): void
+```
+
+Unsubscribes from error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | No |  |
+
+## offFrameEnd
+
+```TypeScript
+offFrameEnd(callback?: AsyncCallback<void>): void
+```
+
+Unsubscribes from frame end event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;void> | No |  |
+
+## offFrameStart
+
+```TypeScript
+offFrameStart(callback?: AsyncCallback<void>): void
+```
+
+Unsubscribes from frame start event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;void> | No |  |
+
+## offSketchStatusChanged
+
+```TypeScript
+offSketchStatusChanged(callback?: AsyncCallback<SketchStatusData>): void
+```
+
+Unsubscribes sketch status changed event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;SketchStatusData> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
 
 ## on('frameStart')
 
@@ -258,7 +586,7 @@ Subscribes to preview frame start events. This API uses an asynchronous callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -266,8 +594,8 @@ Subscribes to preview frame start events. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'frameStart' | Yes | Event type. The value is fixed at **'frameStart'**. The event can be listened forwhen a previewOutput instance is created. This event is triggered and returned when the bottom layer startsexposure for the first time. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. The preview starts as long as thisevent is returned. |
+| type | 'frameStart' | Yes | Event type. The value is fixed at 'frameStart'. The event can be listened for  when a previewOutput instance is created. This event is triggered and returned when the bottom layer starts  exposure for the first time. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. The preview starts as long as this  event is returned. |
 
 ## on('frameEnd')
 
@@ -279,7 +607,7 @@ Subscribes to preview frame end events. This API uses an asynchronous callback t
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -287,8 +615,8 @@ Subscribes to preview frame end events. This API uses an asynchronous callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'frameEnd' | Yes | Event type. The value is fixed at **'frameEnd'**. The event can be listened for whena previewOutput instance is created. This event is triggered and returned when the last frame of previewends. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. The preview ends as long as thisevent is returned. |
+| type | 'frameEnd' | Yes | Event type. The value is fixed at 'frameEnd'. The event can be listened for when  a previewOutput instance is created. This event is triggered and returned when the last frame of preview  ends. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. The preview ends as long as this  event is returned. |
 
 ## on('error')
 
@@ -300,7 +628,7 @@ Subscribes to PreviewOutput error events. This API uses an asynchronous callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -308,36 +636,162 @@ Subscribes to PreviewOutput error events. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when apreviewOutput instance is created. This event is triggered and the corresponding error message is returnedwhen an error occurs during the use of a preview-related API such as[Session.start](arkts-camera-session-i.md#start-2) or[CameraOutput.release](arkts-camera-cameraoutput-i.md#release-2). |
-| callback | ErrorCallback | Yes | Callback used to return an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode). |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  previewOutput instance is created. This event is triggered and the corresponding error message is returned  when an error occurs during the use of a preview-related API such as  [Session.start]camera.Session.start() or  [CameraOutput.release]camera.CameraOutput.release(). |
+| callback | ErrorCallback | Yes | Callback used to return an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
 
-## setFrameRate
+## on('sketchStatusChanged')
 
 ```TypeScript
-setFrameRate(minFps: number, maxFps: number): void
+on(type: 'sketchStatusChanged', callback: AsyncCallback<SketchStatusData>): void
 ```
 
-Sets a frame rate range for preview streams. The range must be within the supported frame rate range, which can be obtained by calling [getSupportedFrameRates](arkts-camera-previewoutput-i.md#getsupportedframerates-1). > **NOTE** > > This API is valid only in [PhotoSession](arkts-camera-photosession-i.md#photosession) or > [VideoSession](arkts-camera-videosession-i.md#videosession) mode.
+Subscribes to PiP status change events. This API uses an asynchronous callback to return the result.
 
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Since:** 11
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
 
 **Parameters:**
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| minFps | number | Yes | Minimum frame rate, in fps. When the maximum value is less than the minimum value, theAPI does not take effect. |
-| maxFps | number | Yes | Maximum frame rate, in fps. When the minimum value is greater than the maximum value, theAPI does not take effect. |
+| type | 'sketchStatusChanged' | Yes | Event type. The value is fixed at 'sketchStatusChanged'. The event  can be listened for when a PiP preview stream is created. This event is triggered when PiP preview is enabled  or disabled or the zoom ratio changes while PiP preview is enabled. |
+| callback | AsyncCallback&lt;SketchStatusData> | Yes | Callback used to return the PiP status data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400110](../errorcode-camera.md#7400110-configuration-conflicts) | Unresolved conflicts with current configurations. |
+| 202 | Not System Application. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+function callback(error: BusinessError, data: camera.SketchStatusData): void {
+  if (error !== undefined && error.code !== 0) {
+    console.error(`Callback Error, errorCode: ${error.code}`);
+    return;
+  }
+  console.info(`sketch errorCode is ${error.code}, data is ${JSON.stringify(data)}`);
+}
+
+function registerSketchStatusChanged(previewOutput: camera.PreviewOutput): void {
+  previewOutput.on('sketchStatusChanged', callback);
+}
+
+```
+
+## onError
+
+```TypeScript
+onError(callback: ErrorCallback): void
+```
+
+Subscribes to error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | Yes | Callback used to get the preview output errors. |
+
+## onFrameEnd
+
+```TypeScript
+onFrameEnd(callback: AsyncCallback<void>): void
+```
+
+Subscribes frame end event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. |
+
+## onFrameStart
+
+```TypeScript
+onFrameStart(callback: AsyncCallback<void>): void
+```
+
+Subscribes frame start event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. |
+
+## onSketchStatusChanged
+
+```TypeScript
+onSketchStatusChanged(callback: AsyncCallback<SketchStatusData>): void
+```
+
+Subscribes sketch status changed event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;SketchStatusData> | Yes | Callback used to sketch status data. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## setFrameRate
+
+```TypeScript
+setFrameRate(minFps: int, maxFps: int): void
+```
+
+Sets a frame rate range for preview streams. The range must be within the supported frame rate range, which can be obtained by calling [getSupportedFrameRates]camera.PreviewOutput.getSupportedFrameRates. > **NOTE** > > This API is valid only in [PhotoSession]camera.PhotoSession or > [VideoSession]camera.VideoSession mode.
+
+**Since:** 12
+
+**Atomic service API:** From API version 19 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| minFps | int | Yes | Minimum frame rate, in fps. When the maximum value is less than the minimum value, the  API does not take effect. |
+| maxFps | int | Yes | Maximum frame rate, in fps. When the minimum value is greater than the maximum value, the  API does not take effect. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400110 | Unresolved conflicts with current configurations. |
 
 ## setLogViewAssistEnable
 
@@ -345,13 +799,13 @@ Sets a frame rate range for preview streams. The range must be within the suppor
 setLogViewAssistEnable(enable: boolean): void
 ```
 
-Log video view assistance toggle. Before enabling this feature, you can call [isLogViewAssistSupported](arkts-camera-previewoutput-i.md#islogviewassistsupported-1) to check whether the device supports log video view assistance.
+Log video view assistance toggle. Before enabling this feature, you can call [isLogViewAssistSupported]camera.PreviewOutput.isLogViewAssistSupported to check whether the device supports log video view assistance.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -359,15 +813,15 @@ Log video view assistance toggle. Before enabling this feature, you can call [is
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | boolean | Yes | Whether to enable log video view assistance, **true** to enable, **false** otherwise. |
+| enable | boolean | Yes | Whether to enable log video view assistance, true to enable, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 801 | Capability not supported. |
+| 7400103 | Session not config. |
+| 7400201 | Camera service fatal error. |
 
 ## setPreviewRotation
 
@@ -379,7 +833,7 @@ Sets the preview rotation angle.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -388,14 +842,14 @@ Sets the preview rotation angle.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | previewRotation | ImageRotation | Yes | Preview rotation angle. |
-| isDisplayLocked | boolean | No | Whether the orientation of the surface is locked when the screen rotates. Ifthis parameter is not set, the default value **false** is used, indicating that the orientation is notlocked. **true** if locked, **false** otherwise. For details, see[SurfaceRotationOptions](../../apis-arkui/arkts-components/arkts-arkui-surfacerotationoptions-i.md#surfacerotationoptions). |
+| isDisplayLocked | boolean | No | Whether the orientation of the surface is locked when the screen rotates. If  this parameter is not set, the default value false is used, indicating that the orientation is not  locked. true if locked, false otherwise. For details, see  [SurfaceRotationOptions]SurfaceRotationOptions. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400201 | Camera service fatal error. |
 
 ## start
 
@@ -409,7 +863,7 @@ Starts to output preview streams. This API uses an asynchronous callback to retu
 
 **Deprecated since:** 11
 
-**Substitutes:** start(callback:
+**Substitute:** camera.Session.start(callback:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -417,13 +871,13 @@ Starts to output preview streams. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the preview stream output startssuccessfully, **err** is **undefined**; otherwise, **err** is an error object with an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode). |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the preview stream output starts  successfully, err is undefined; otherwise, err is an error object with an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400103 | Session not config. |
 
 ## start
 
@@ -437,7 +891,7 @@ Starts to output preview streams. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [start()](arkts-camera-session-i.md#start-2)
+**Substitute:** camera.Session.start()
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -445,13 +899,13 @@ Starts to output preview streams. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400103 | Session not config. |
 
 ## stop
 
@@ -465,7 +919,7 @@ Stops outputting preview streams. This API uses an asynchronous callback to retu
 
 **Deprecated since:** 11
 
-**Substitutes:** stop(callback:
+**Substitute:** camera.Session.stop(callback:
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -473,7 +927,7 @@ Stops outputting preview streams. This API uses an asynchronous callback to retu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the preview stream output stopssuccessfully, **err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the preview stream output stops  successfully, err is undefined; otherwise, err is an error object. |
 
 ## stop
 
@@ -487,7 +941,7 @@ Stops outputting preview streams. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [stop()](arkts-camera-session-i.md#stop-2)
+**Substitute:** camera.Session.stop()
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -495,5 +949,5 @@ Stops outputting preview streams. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 

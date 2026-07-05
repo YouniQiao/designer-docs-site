@@ -1,5 +1,9 @@
 # AudioEncodingType
 
+```TypeScript
+enum AudioEncodingType
+```
+
 Enumerates the audio encoding types.
 
 **Since:** 8
@@ -16,7 +20,7 @@ Invalid.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -30,7 +34,7 @@ PCM encoding.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

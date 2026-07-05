@@ -1,6 +1,6 @@
 # MetadataObject
 
-Implements the basic metadata object used for camera detection. It serves as the data source of the camera information in [CameraInput](arkts-camera-camerainput-i.md#camerainput). It is obtained by calling metadataOutput. [on('metadataObjectsAvailable')](arkts-camera-metadataoutput-i.md#on-1).
+Implements the basic metadata object used for camera detection. It serves as the data source of the camera information in [CameraInput]camera.CameraInput. It is obtained by calling metadataOutput. [on('metadataObjectsAvailable')]camera.MetadataOutput.on(type: 'metadataObjectsAvailable', callback: AsyncCallback<Array<MetadataObject>>).
 
 **Since:** 10
 
@@ -9,7 +9,7 @@ Implements the basic metadata object used for camera detection. It serves as the
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## boundingBox
@@ -24,43 +24,25 @@ Metadata rectangle.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-## isLockFocusTracked
+## confidence
 
 ```TypeScript
-readonly isLockFocusTracked?: boolean
+readonly confidence: double
 ```
 
-Whether the focus is locked and being tracked currently.
+Confidence of the detection, with a value range of [0, 1].
 
-**Type:** boolean
+**Type:** double
 
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Since:** 13
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-## timestamp
-
-```TypeScript
-readonly timestamp: number
-```
-
-Current timestamp, in nanoseconds (ns).
-
-**Type:** number
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 19.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
+**System API:** This is a system API.
 
 ## type
 
@@ -74,7 +56,57 @@ Metadata object type.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## objectId
+
+```TypeScript
+readonly objectId: int
+```
+
+Metadata object ID.
+
+**Type:** int
+
+**Since:** 13
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## isLockFocusTracked
+
+```TypeScript
+readonly isLockFocusTracked?: boolean
+```
+
+Whether the focus is locked and being tracked currently.
+
+**Type:** boolean
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## timestamp
+
+```TypeScript
+readonly timestamp: int
+```
+
+Current timestamp, in nanoseconds (ns).
+
+**Type:** int
+
+**Since:** 10
+
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

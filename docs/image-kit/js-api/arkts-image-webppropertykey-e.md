@@ -1,6 +1,10 @@
 # WebPPropertyKey
 
-Enumerates the properties available for the metadata of a WebP image.
+```TypeScript
+enum WebPPropertyKey
+```
+
+表示WebP图片信息的枚举。
 
 **Since:** 24
 
@@ -12,11 +16,11 @@ Enumerates the properties available for the metadata of a WebP image.
 CANVAS_WIDTH = 'WebPCanvasWidth'
 ```
 
-Canvas Width.
+WebP图片的画布像素宽度。 单位：像素（px）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -26,11 +30,11 @@ Canvas Width.
 CANVAS_HEIGHT = 'WebPCanvasHeight'
 ```
 
-Canvas Height.
+WebP图片的画布像素高度。 单位：像素（px）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -40,11 +44,11 @@ Canvas Height.
 DELAY_TIME = 'WebPDelayTime'
 ```
 
-Delay of each frame in milliseconds.
+WebP图片钳制后的帧延迟时长。钳制范围为[100, 65535]。 单位：毫秒（ms）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,11 +58,11 @@ Delay of each frame in milliseconds.
 UNCLAMPED_DELAY_TIME = 'WebPUnclampedDelayTime'
 ```
 
-Unclamped delay of each frame in milliseconds.
+WebP图片未钳制的帧延迟时长。 单位：毫秒（ms）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -68,11 +72,11 @@ Unclamped delay of each frame in milliseconds.
 LOOP_COUNT = 'WebPLoopCount'
 ```
 
-Loop count.
+WebP图片动画循环的次数。如果取值为0，则表示不限次数。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

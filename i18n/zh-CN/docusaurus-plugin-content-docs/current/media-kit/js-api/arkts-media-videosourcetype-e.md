@@ -1,6 +1,10 @@
 # VideoSourceType
 
-表示视频录制中视频源类型的枚举。
+```TypeScript
+enum VideoSourceType
+```
+
+Enumerates the video source types for video recording.
 
 **起始版本：** 9
 
@@ -12,7 +16,7 @@
 VIDEO_SOURCE_TYPE_SURFACE_YUV = 0
 ```
 
-输入surface中携带的是raw data。
+The input surface carries raw data.
 
 **起始版本：** 9
 
@@ -24,7 +28,7 @@ VIDEO_SOURCE_TYPE_SURFACE_YUV = 0
 VIDEO_SOURCE_TYPE_SURFACE_ES = 1
 ```
 
-输入surface中携带的是ES data。
+The input surface carries ES data.
 
 **起始版本：** 9
 

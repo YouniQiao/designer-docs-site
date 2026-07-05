@@ -1,5 +1,9 @@
 # AVScreenCaptureStateCode
 
+```TypeScript
+enum AVScreenCaptureStateCode
+```
+
 Enumerates the screen capture states used in callbacks.
 
 **Since:** 12
@@ -148,7 +152,7 @@ Screen capture paused by user.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -162,7 +166,7 @@ Screen capture resumed by user.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -176,7 +180,7 @@ Screen capture paused by app.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -190,7 +194,7 @@ Screen capture resumed by app.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 

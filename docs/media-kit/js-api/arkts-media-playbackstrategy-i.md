@@ -9,7 +9,7 @@ Provides preferred playback settings for player.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## enableSuperResolution
@@ -24,23 +24,23 @@ Enable super-resolution feature. default is false. Must enable super-resolution 
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
-## keepDecodingOnMute
+## preferredWidth
 
 ```TypeScript
-keepDecodingOnMute?: boolean
+preferredWidth?: int
 ```
 
-Indicates whether to keep the decoder working when closing the media, which is used to facilitate quick opening of the media. Currently only supports video
+Choose a stream with width close to it.
 
-**Type:** boolean
+**Type:** int
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -58,51 +58,19 @@ mute the specified media stream when playing.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
-## preferredAudioLanguage
-
-```TypeScript
-preferredAudioLanguage?: string
-```
-
-Audio language.
-
-**Type:** string
-
-**Since:** 13
-
-**Atomic service API:** This API can be used in atomic services since API version 13.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
-## preferredBufferDuration
-
-```TypeScript
-preferredBufferDuration?: number
-```
-
-Chooses a preferred buffer duration. <p>The preferred buffer duration in the playback policy, is used to set the buffer size. For details, see [Online Video Frame Freezing Optimization Practice](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-online-video-playback-lags-practice).</p>
-
-**Type:** number
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
 ## preferredBufferDurationForPlaying
 
 ```TypeScript
-preferredBufferDurationForPlaying?: number
+preferredBufferDurationForPlaying?: double
 ```
 
 Customize the buffering threshold for start or restart playing. The unit is second.
 
-**Type:** number
+**Type:** double
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -118,23 +86,103 @@ If true, the player should choose HDR stream if exist.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
-## preferredHeight
+## preferredBufferDuration
 
 ```TypeScript
-preferredHeight?: number
+preferredBufferDuration?: int
 ```
 
-Choose a stream with height close to it.
+Chooses a preferred buffer duration. <p>The preferred buffer duration in the playback policy, is used to set the buffer size. For details, see [Online Video Frame Freezing Optimization Practice]https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-online-video-playback-lags-practice.</p>
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+## preferredAudioLanguage
+
+```TypeScript
+preferredAudioLanguage?: string
+```
+
+Audio language.
+
+**Type:** string
+
+**Since:** 13
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+## enableCameraPostprocessing
+
+```TypeScript
+enableCameraPostprocessing?: boolean
+```
+
+Indicates whether to enable camera post-processing during video playback, which is used to apply image enhancements when playing back video content.
+
+**Type:** boolean
+
+**Since:** 20
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+**System API:** This is a system API.
+
+## showFirstFrameOnPrepare
+
+```TypeScript
+showFirstFrameOnPrepare?: boolean
+```
+
+Show first frame on prepare.
+
+**Type:** boolean
+
+**Since:** 17
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+## thresholdForAutoQuickPlay
+
+```TypeScript
+thresholdForAutoQuickPlay?: double
+```
+
+set max buffering threshold for liveStreaming or avplayer while change the speed, in s. It is recommended that the value be 2 seconds greater than the starting waterline.
+
+**Type:** double
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+## keepDecodingOnMute
+
+```TypeScript
+keepDecodingOnMute?: boolean
+```
+
+Indicates whether to keep the decoder working when closing the media, which is used to facilitate quick opening of the media. Currently only supports video
+
+**Type:** boolean
+
+**Since:** 20
+
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -150,55 +198,23 @@ Subtitle language.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 13.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
-## preferredWidth
+## preferredHeight
 
 ```TypeScript
-preferredWidth?: number
+preferredHeight?: int
 ```
 
-Choose a stream with width close to it.
+Choose a stream with height close to it.
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
-## showFirstFrameOnPrepare
-
-```TypeScript
-showFirstFrameOnPrepare?: boolean
-```
-
-Show first frame on prepare.
-
-**Type:** boolean
-
-**Since:** 17
-
-**Atomic service API:** This API can be used in atomic services since API version 17.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
-## thresholdForAutoQuickPlay
-
-```TypeScript
-thresholdForAutoQuickPlay?: number
-```
-
-set max buffering threshold for liveStreaming or avplayer while change the speed, in s. It is recommended that the value be 2 seconds greater than the starting waterline.
-
-**Type:** number
-
-**Since:** 18
-
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

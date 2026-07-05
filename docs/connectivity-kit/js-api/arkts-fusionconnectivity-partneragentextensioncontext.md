@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { PartnerAgentExtensionContext } from '@ohos.FusionConnectivity.PartnerAgentExtensionContext';
+import { PartnerAgentExtensionContext } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { PartnerAgentExtensionContext } from '@ohos.FusionConnectivity.PartnerAg
 
 | Name | Description |
 | --- | --- |
-| [PartnerAgentExtensionContext](arkts-connectivity-partneragentextensioncontext-c.md) | Class for the context of the PartnerAgentExtensionAbility. |
+| [PartnerAgentExtensionContext](arkts-partneragentextensioncontext-c.md) | Class for the context of the PartnerAgentExtensionAbility. |
 

@@ -9,24 +9,8 @@ Describes the camera profile.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
-
-## format
-
-```TypeScript
-readonly format: CameraFormat
-```
-
-Output format.
-
-**Type:** CameraFormat
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 19.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## size
 
@@ -40,7 +24,23 @@ Resolution. The size setting corresponds to the camera's resolution width and he
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## format
+
+```TypeScript
+readonly format: CameraFormat
+```
+
+Output format.
+
+**Type:** CameraFormat
+
+**Since:** 10
+
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

@@ -2,12 +2,10 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [SharedBundleInfo](arkts-ability-sharedbundleinfo-i-sys.md) | Defines the shared bundle information. |
-| [SharedModuleInfo](arkts-ability-sharedmoduleinfo-i-sys.md) | Defines the shared module information. |
-<!--DelEnd-->
+| <!--DelRow-->[SharedBundleInfo](arkts-sharedbundleinfo-i.md) | 共享包信息。 |
+| <!--DelRow-->[SharedModuleInfo](arkts-sharedmoduleinfo-i.md) | 共享模块信息。 |
 

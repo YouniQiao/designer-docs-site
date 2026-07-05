@@ -1,4 +1,8 @@
-# BeautyType (System API)
+# BeautyType
+
+```TypeScript
+enum BeautyType
+```
 
 Enumerates the beauty types.
 

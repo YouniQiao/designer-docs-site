@@ -9,40 +9,22 @@ Describes audio renderer information.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## content
-
-```TypeScript
-content?: ContentType
-```
-
-Audio content type.
-
-**Type:** ContentType
-
-**Since:** 8
-
-**Deprecated since:** 10
-
-**Substitutes:** usage
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
 
 ## rendererFlags
 
 ```TypeScript
-rendererFlags: number
+rendererFlags: int
 ```
 
 Flags that control the renderer behavior. Set this parameter to **0**.
 
-**Type:** number
+**Type:** int
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -58,7 +40,25 @@ Audio stream usage.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+## content
+
+```TypeScript
+content?: ContentType
+```
+
+Audio content type.
+
+**Type:** ContentType
+
+**Since:** 8
+
+**Deprecated since:** 10
+
+**Substitute:** ohos.multimedia.audio.AudioRendererInfo#usage
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

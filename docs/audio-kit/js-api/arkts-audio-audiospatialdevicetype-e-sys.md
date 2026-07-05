@@ -1,4 +1,8 @@
-# AudioSpatialDeviceType (System API)
+# AudioSpatialDeviceType
+
+```TypeScript
+enum AudioSpatialDeviceType
+```
 
 Describes a spatial device type group.
 

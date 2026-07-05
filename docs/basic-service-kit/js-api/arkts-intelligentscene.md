@@ -9,7 +9,7 @@ This module provides system focus modes and Do Not Disturb data access abilities
 ## Modules to Import
 
 ```TypeScript
-import { intelligentScene } from '@ohos.intelligentScene';
+import { intelligentScene } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -18,6 +18,6 @@ import { intelligentScene } from '@ohos.intelligentScene';
 
 | Name | Description |
 | --- | --- |
-| [isDoNotDisturbEnabled](arkts-basicservices-isdonotdisturbenabled-f.md#isdonotdisturbenabled-1) | Checks whether Do Not Disturb is enabled on this device. The Do Not Disturb state defines if notifications are allowed to interrupt the user (e.g. via sound & vibration) and is applied globally. |
-| [isNotifyAllowedInDoNotDisturb](arkts-basicservices-isnotifyallowedindonotdisturb-f.md#isnotifyallowedindonotdisturb-1) | Checks whether calling bundle is allow notify(e.g. sound & vibration) when system Do Not Disturb is on. |
+| [isDoNotDisturbEnabled](arkts-intelligentscene-isdonotdisturbenabled-f.md#isDoNotDisturbEnabled-1) | Checks whether Do Not Disturb is enabled on this device. The Do Not Disturb state defines if notifications are allowed to interrupt the user (e.g. via sound & vibration) and is applied globally. |
+| [isNotifyAllowedInDoNotDisturb](arkts-intelligentscene-isnotifyallowedindonotdisturb-f.md#isNotifyAllowedInDoNotDisturb-1) | Checks whether calling bundle is allow notify(e.g. sound & vibration) when system Do Not Disturb is on. |
 

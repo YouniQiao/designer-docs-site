@@ -3,16 +3,14 @@
 ## Modules to Import
 
 ```TypeScript
-import { StaticSubscriberExtensionAbility } from '@ohos.application.StaticSubscriberExtensionAbility';
+import { StaticSubscriberExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [StaticSubscriberExtensionAbility](arkts-basicservices-staticsubscriberextensionability-c-sys.md) | The **StaticSubscriberExtensionAbility** module provides Extension abilities for static subscribers. |
-<!--DelEnd-->
+| <!--DelRow-->[StaticSubscriberExtensionAbility](arkts-staticsubscriberextensionability-c.md) | StaticSubscriberExtensionAbility模块提供静态订阅者ExtensionAbility类别的能力。 |
 

@@ -1,5 +1,7 @@
 # @ohos.privacyManager
 
+本模块主要提供权限使用记录等隐私管理接口，支持系统应用记录、查询、监听和控制敏感权限的使用情况。 权限使用记录用于描述某项敏感权限何时被使用、以何种方式被使用、当前是否处于使用中，以及这些使用记录是否允许被记录或查询。 该模块主要用于以下场景： - 添加/查询指定应用的敏感权限访问记录。 - 订阅权限使用状态变化事件，感知权限从未使用到前台使用、后台使用的变化，与业务逻辑进行联动。 - 控制当前用户的权限访问记录开关。 - 查询某个权限当前是否正在被使用。
+
 **Since:** 9
 
 **System capability:** SystemCapability.Security.AccessToken
@@ -7,59 +9,55 @@
 ## Modules to Import
 
 ```TypeScript
-import { privacyManager } from '@ohos.privacyManager';
+import { privacyManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-1) | Adds an access record of a sensitive permission. |
-| [addPermissionUsedRecord](arkts-ability-addpermissionusedrecord-f-sys.md#addpermissionusedrecord-2) | Adds access record of sensitive permission. |
-| [checkPermissionInUse](arkts-ability-checkpermissioninuse-f-sys.md#checkpermissioninuse-1) | Checks whether the specified permission is in use. |
-| [getPermissionUsedRecord](arkts-ability-getpermissionusedrecord-f-sys.md#getpermissionusedrecord-1) | Queries the access records of sensitive permission. |
-| [getPermissionUsedRecord](arkts-ability-getpermissionusedrecord-f-sys.md#getpermissionusedrecord-2) | Queries the access records of sensitive permission. |
-| [getPermissionUsedRecordToggleStatus](arkts-ability-getpermissionusedrecordtogglestatus-f-sys.md#getpermissionusedrecordtogglestatus-1) | Obtains the toggle state of permission access records of the current user. |
-| [getPermissionUsedTypeInfos](arkts-ability-getpermissionusedtypeinfos-f-sys.md#getpermissionusedtypeinfos-1) | Obtains the used type of the permission accessed. |
-| [off](arkts-ability-off-f-sys.md#off-1) | Unsubscribes to the change of active state of the specified permission. |
-| [on](arkts-ability-on-f-sys.md#on-1) | Subscribes to the change of active state of the specified permission. |
-| [setPermissionUsedRecordToggleStatus](arkts-ability-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1) | Sets the toggle state of permission access records for the current user. |
-| [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-1) | Start using sensitive permission. |
-| [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-2) | Start using sensitive permission. |
-| [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-3) | Starts using a sensitive permission. |
-| [startUsingPermission](arkts-ability-startusingpermission-f-sys.md#startusingpermission-4) | Start using sensitive permission. |
-| [stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-1) | Stop using sensitive permission. |
-| [stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-2) | Stop using sensitive permission. |
-| [stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-3) | Stop using sensitive permission. |
-| [stopUsingPermission](arkts-ability-stopusingpermission-f-sys.md#stopusingpermission-4) | Stops using a sensitive permission. |
-<!--DelEnd-->
+| <!--DelRow-->[addPermissionUsedRecord](arkts-privacymanager-addpermissionusedrecord-f-sys.md#addPermissionUsedRecord-1) | 受权限保护的应用在被其他服务、应用调用时，可以使用该接口增加一条权限使用记录。 建议在访问敏感权限后调用此接口，以便系统记录对应的敏感权限访问事件。使用Promise异步回调。 权限使用记录包括：调用方的应用身份标识、使用的应用权限名称，以及调用方访问本应用成功和失败的次数。 权限使用记录受[setPermissionUsedRecordToggleStatus]{@link privacyManager.setPermissionUsedRecordToggleStatus}设置的开关状态控制。 开关关闭时，调用此接口不会产生权限使用记录。 |
+| <!--DelRow-->[addPermissionUsedRecord](arkts-privacymanager-addpermissionusedrecord-f-sys.md#addPermissionUsedRecord-2) | 受权限保护的应用在被其他服务、应用调用时，可以使用该接口增加一条权限使用记录。建议在访问敏感权限后调用此接口，以便系统记录对应的敏感权限访问事件。使用callback异步回调。 权限使用记录包括：调用方的应用身份标识、使用的应用权限名称，以及调用方访问本应用成功和失败的次数。 权限使用记录受[setPermissionUsedRecordToggleStatus]{@link privacyManager.setPermissionUsedRecordToggleStatus}设置的开关状态控制。开关关 闭时，调用此接口不会产生权限使用记录。 |
+| <!--DelRow-->[checkPermissionInUse](arkts-privacymanager-checkpermissioninuse-f-sys.md#checkPermissionInUse-1) | 查询指定敏感权限是否正在被使用，可用于权限管理界面展示权限实时使用状态场景。 判断依据为当前是否存在通过[startUsingPermission]{@link privacyManager.startUsingPermission} 标记开始使用且尚未通过[stopUsingPermission]{@link privacyManager.stopUsingPermission}标记停止使用的活跃调用。 |
+| <!--DelRow-->[getPermissionUsedRecord](arkts-privacymanager-getpermissionusedrecord-f-sys.md#getPermissionUsedRecord-1) | 获取历史权限使用记录，可用于权限审计或安全监控场景，例如检查某应用在指定时间段内对敏感权限的使用情况。使用Promise异步回调。 |
+| <!--DelRow-->[getPermissionUsedRecord](arkts-privacymanager-getpermissionusedrecord-f-sys.md#getPermissionUsedRecord-2) | 获取历史权限使用记录，可用于权限审计或安全监控场景，例如检查某应用在指定时间段内对敏感权限的使用情况。使用callback异步回调。 |
+| <!--DelRow-->[getPermissionUsedRecordToggleStatus](arkts-privacymanager-getpermissionusedrecordtogglestatus-f-sys.md#getPermissionUsedRecordToggleStatus-1) | 系统应用调用此接口，可以获取当前用户的权限使用记录开关状态，例如在权限管理界面展示当前开关设置状态。使用Promise异步回调。 |
+| <!--DelRow-->[getPermissionUsedTypeInfos](arkts-privacymanager-getpermissionusedtypeinfos-f-sys.md#getPermissionUsedTypeInfos-1) | 查询设备上指定应用访问敏感权限时的信息（包括敏感权限名称、敏感权限访问方式）。 |
+| <!--DelRow-->[off](arkts-privacymanager-off-f-sys.md#off-1) | 取消订阅指定权限列表的权限使用状态变更事件。取消订阅成功后，将不再接收指定权限列表的状态变更通知。 取消订阅时，若不传入回调函数，则批量删除permissionList下的所有回调函数。 > **说明** > 该接口通常与[on]{@link privacyManager.on}配套使用，用于取消通过on创建的监听关系。 |
+| <!--DelRow-->[offActiveStateChange](arkts-privacymanager-offactivestatechange-f-sys.md#offActiveStateChange-1) | 取消订阅指定权限列表的权限使用状态变更事件。取消订阅成功后，将不再接收指定权限列表的状态变更通知。 取消订阅时，若不传入回调函数，则批量删除permissionList下的所有回调函数。 > **说明** > 该接口通常与[on]{@link privacyManager.onActiveStateChange}配套使用，用于取消通过on创建的监听关系。 |
+| <!--DelRow-->[on](arkts-privacymanager-on-f-sys.md#on-1) | 订阅指定权限列表的权限使用状态变更事件。权限使用状态变更由[startUsingPermission]{@link privacyManager.startUsingPermission}和[stopUsingPermission]{@link privacyManager.stopUsingPermission}调用触发。订阅成功后，当权限使用状态变更时，回调函数会被触发，返回[ActiveChangeResponse]{@link privacyManager.ActiveChangeResponse}对象，包含权限使用状态变化的详情。使用callback异步回调。 允许相同permissionList订阅多个回调函数。 > **说明** > 不允许使用有交集的两个permissionList分别订阅同一个回调函数。即如果两个permissionList包含相同的权限名，则不能使用同一个回调函数进行订阅。该接口通常与[off]{@link privacyManager.off}配套使用，在不再需要监听时应调用off取消订阅。 |
+| <!--DelRow-->[onActiveStateChange](arkts-privacymanager-onactivestatechange-f-sys.md#onActiveStateChange-1) | 订阅指定权限列表的权限使用状态变更事件。权限使用状态变更由 [startUsingPermission]{@link privacyManager.startUsingPermission(tokenID: int, permissionName: Permissions)}和 [stopUsingPermission]{@link privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions)}调用触发。订阅成功 后，当权限使用状态变更时，回调函数会被触发，返回[ActiveChangeResponse]{@link privacyManager.ActiveChangeResponse}对象，包含权限使用状态变化的详情。使用 callback异步回调。 允许相同permissionList订阅多个回调函数。 > **说明** > 不允许使用有交集的两个permissionList分别订阅同一个回调函数。即如果两个permissionList包含相同的权限名，则不能使用同一个回调函数进行订阅。 > 该接口通常与[offActiveStateChange]{@link privacyManager.offActiveStateChange}配套使用，在不再需要监听时应调用offActiveStateChange取消订阅。 |
+| <!--DelRow-->[setPermissionUsedRecordToggleStatus](arkts-privacymanager-setpermissionusedrecordtogglestatus-f-sys.md#setPermissionUsedRecordToggleStatus-1) | 设置是否记录当前用户的权限使用情况。系统应用调用此接口，可以设置当前用户的权限使用记录开关状态。使用Promise异步回调。 status为true时，[addPermissionUsedRecord]{@link privacyManager.addPermissionUsedRecord}接口可以正常添加使用记录；status为false时， [addPermissionUsedRecord]{@link privacyManager.addPermissionUsedRecord}接口不产生权限使用记录，并且删除当前用户的历史记录。 |
+| <!--DelRow-->[startUsingPermission](arkts-privacymanager-startusingpermission-f-sys.md#startUsingPermission-1) | 系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考[on]{@link privacyManager.on}）。使用Promise异步回调。 开始使用权限后，需要在权限使用结束时调用[stopUsingPermission]{@link privacyManager.stopUsingPermission}停止使用权限。 |
+| <!--DelRow-->[startUsingPermission](arkts-privacymanager-startusingpermission-f-sys.md#startUsingPermission-2) | 系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考 [on]{@link privacyManager.on(type: 'activeStateChange', permissionList: Array<Permissions>, callback: Callback<ActiveChangeResponse>)}）。 使用Promise异步回调。 开始使用权限后，需要在权限使用结束时调用 [stopUsingPermission]{@link privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?: int)} 停止使用权限。 |
+| <!--DelRow-->[startUsingPermission](arkts-privacymanager-startusingpermission-f-sys.md#startUsingPermission-3) | 系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考 [on]{@link privacyManager.on(type: 'activeStateChange', permissionList: Array<Permissions>, callback: Callback<ActiveChangeResponse>)} ）。使用Promise异步回调。 开始使用权限后，需要在权限使用结束时调用 [stopUsingPermission]{@link privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?: int, options?: PermissionUsingOptions)} 停止使用权限。 当传入pid时，pid需要与 [stopUsingPermission]{@link privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions, pid?: int, options?: PermissionUsingOptions)} 传入的pid相同，不满足配套关系返回错误码12100004。 |
+| <!--DelRow-->[startUsingPermission](arkts-privacymanager-startusingpermission-f-sys.md#startUsingPermission-4) | 系统应用调用此接口，能够向系统上报应用在前后台的权限使用状态。隐私服务将此状态通知所有该权限使用状态变更事件的订阅者（订阅方法参考 [on]{@link privacyManager.on(type: 'activeStateChange', permissionList: Array<Permissions>, callback: Callback<ActiveChangeResponse>)} ）。使用callback异步回调。 开始使用权限后，需要在权限使用结束时调用 [stopUsingPermission]{@link privacyManager.stopUsingPermission(tokenID: int, permissionName: Permissions)} 停止使用权限。 |
+| <!--DelRow-->[stopUsingPermission](arkts-privacymanager-stopusingpermission-f-sys.md#stopUsingPermission-1) | 系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。 适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。 该接口需与[startUsingPermission]{@link privacyManager.startUsingPermission}配套使用。 |
+| <!--DelRow-->[stopUsingPermission](arkts-privacymanager-stopusingpermission-f-sys.md#stopUsingPermission-2) | 系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。 适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用callback异步回调。 该接口需与[startUsingPermission]{@link privacyManager.startUsingPermission}配套使用。 |
+| <!--DelRow-->[stopUsingPermission](arkts-privacymanager-stopusingpermission-f-sys.md#stopUsingPermission-3) | 系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。 适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。 pid需要与[startUsingPermission]{@link privacyManager.startUsingPermission}传入的pid相同。 |
+| <!--DelRow-->[stopUsingPermission](arkts-privacymanager-stopusingpermission-f-sys.md#stopUsingPermission-4) | 系统应用调用此接口，标记不再使用指定权限。调用成功后，隐私服务将此状态变化通知所有该权限使用状态变更事件的订阅者。适用于应用完成敏感操作后或退出前台时，通知系统权限使用结束。使用Promise异步回调。 pid需要与 [startUsingPermission]{@link privacyManager.startUsingPermission(tokenID: int, permissionName: Permissions, pid?: int, usedType?: PermissionUsedType)} 传入的pid相同。 |
 
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [ActiveChangeResponse](arkts-ability-activechangeresponse-i-sys.md) | Indicates the response of permission active status. |
-| [AddPermissionUsedRecordOptions](arkts-ability-addpermissionusedrecordoptions-i-sys.md) | Additional information to add. |
-| [BundleUsedRecord](arkts-ability-bundleusedrecord-i-sys.md) | BundleUsedRecord. |
-| [PermissionUsedRecord](arkts-ability-permissionusedrecord-i-sys.md) | PermissionUsedRecord. |
-| [PermissionUsedRequest](arkts-ability-permissionusedrequest-i-sys.md) | Provides request of querying permission used records. |
-| [PermissionUsedResponse](arkts-ability-permissionusedresponse-i-sys.md) | Provides response of querying permission used records. |
-| [PermissionUsedTypeInfo](arkts-ability-permissionusedtypeinfo-i-sys.md) | Information about the permission used type. |
-| [PermissionUsingOptions](arkts-ability-permissionusingoptions-i-sys.md) | Options for permission usage. |
-| [UsedRecordDetail](arkts-ability-usedrecorddetail-i-sys.md) | UsedRecordDetail. |
-<!--DelEnd-->
-
-<!--Del-->
-### Enums（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PermissionActiveStatus](arkts-ability-permissionactivestatus-e-sys.md) | Enum for permission for status. |
-| [PermissionUsageFlag](arkts-ability-permissionusageflag-e-sys.md) | PermissionUsageFlag. |
-| [PermissionUsedType](arkts-ability-permissionusedtype-e-sys.md) | Enumerates the means by which sensitive resources are accessed. |
-<!--DelEnd-->
+| <!--DelRow-->[ActiveChangeResponse](arkts-privacymanager-activechangeresponse-i-sys.md) | 表示某次权限使用状态变化的详情。 |
+| <!--DelRow-->[AddPermissionUsedRecordOptions](arkts-privacymanager-addpermissionusedrecordoptions-i-sys.md) | 添加权限使用记录可选参数集。 |
+| <!--DelRow-->[BundleUsedRecord](arkts-privacymanager-bundleusedrecord-i-sys.md) | 某个应用或设备的访问记录。 |
+| <!--DelRow-->[PermissionUsedRecord](arkts-privacymanager-permissionusedrecord-i-sys.md) | 某个权限的访问记录。 |
+| <!--DelRow-->[PermissionUsedRequest](arkts-privacymanager-permissionusedrequest-i-sys.md) | 表示使用记录的查询请求。 |
+| <!--DelRow-->[PermissionUsedResponse](arkts-privacymanager-permissionusedresponse-i-sys.md) | 表示所有应用或设备的访问记录。 |
+| <!--DelRow-->[PermissionUsedTypeInfo](arkts-privacymanager-permissionusedtypeinfo-i-sys.md) | 表示某次权限使用类型的详情。 |
+| <!--DelRow-->[PermissionUsingOptions](arkts-privacymanager-permissionusingoptions-i-sys.md) | 权限使用可选参数集。 |
+| <!--DelRow-->[UsedRecordDetail](arkts-privacymanager-usedrecorddetail-i-sys.md) | 单次访问记录详情。 |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| <!--DelRow-->[PermissionActiveStatus](arkts-privacymanager-permissionactivestatus-e-sys.md) | 表示权限使用状态变化类型的枚举。用于描述权限使用[on)]{@link privacyManager.on}）的回调中返回，帮助应用感知权限从未使用到前台使用、后台使用的状态切换。 |
+| <!--DelRow-->[PermissionUsageFlag](arkts-privacymanager-permissionusageflag-e-sys.md) | 表示使用记录的查询方式的枚举。 |
+| <!--DelRow-->[PermissionUsedType](arkts-privacymanager-permissionusedtype-e-sys.md) | 表示通过何种方式使用敏感权限的枚举。 | 名称 | 值 | 说明 | | ----------------------- | -- | ---------------- | | NORMAL_TYPE | 0 | 表示通过弹窗授权或设置授权来使用敏感权限。 | | PICKER_TYPE | 1 | 表示通过某个PICKER服务来使用敏感权限，但此方式不会授予权限。 | | SECURITY_COMPONENT_TYPE | 2 | 表示通过安全控件授权的方式来使用敏感权限。安全控件是系统提供的授权控件，用户点击后应用可临时获取对应权限。 | |
 

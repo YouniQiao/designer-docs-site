@@ -9,36 +9,30 @@ Provides methods to accessing bluetooth OPP(OBEX OBJECT PUSH Profile)-related ca
 ## Modules to Import
 
 ```TypeScript
-import { opp } from '@ohos.bluetooth.opp';
+import { opp } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [createOppServerProfile](arkts-connectivity-createoppserverprofile-f-sys.md#createoppserverprofile-1) | create the instance of OPP server profile. |
-<!--DelEnd-->
+| <!--DelRow-->[createOppServerProfile](arkts-opp-createoppserverprofile-f-sys.md#createOppServerProfile-1) | create the instance of OPP server profile. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [FileHolder](arkts-connectivity-fileholder-i-sys.md) | Describes the file info for transfer |
-| [OppServerProfile](arkts-connectivity-oppserverprofile-i-sys.md) | Manager OPP server profile. |
-| [OppTransferInformation](arkts-connectivity-opptransferinformation-i-sys.md) | Describes the transferred file information. |
-<!--DelEnd-->
+| <!--DelRow-->[FileHolder](arkts-opp-fileholder-i-sys.md) | Describes the file info for transfer |
+| [OppServerProfile](arkts-opp-oppserverprofile-i.md) | Manager OPP server profile. |
+| <!--DelRow-->[OppTransferInformation](arkts-opp-opptransferinformation-i-sys.md) | Describes the transferred file information. |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [DirectionType](arkts-connectivity-directiontype-e-sys.md) | Enum for file transfer direction. |
-| [TransferResult](arkts-connectivity-transferresult-e-sys.md) | Enum for the file transfer result. |
-| [TransferStatus](arkts-connectivity-transferstatus-e-sys.md) | Enum for the file transfer status. |
-<!--DelEnd-->
+| <!--DelRow-->[DirectionType](arkts-opp-directiontype-e-sys.md) | Enum for file transfer direction. |
+| <!--DelRow-->[TransferResult](arkts-opp-transferresult-e-sys.md) | Enum for the file transfer result. |
+| <!--DelRow-->[TransferStatus](arkts-opp-transferstatus-e-sys.md) | Enum for the file transfer status. |
 

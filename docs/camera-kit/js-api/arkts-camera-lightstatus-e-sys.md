@@ -1,6 +1,10 @@
-# LightStatus (System API)
+# LightStatus
 
-Enumerates the camera light statuses, which are obtained by calling VideoSessionForSys. [on('lightStatusChange')](arkts-camera-videosession-i-sys.md#on-10).
+```TypeScript
+enum LightStatus
+```
+
+Enumerates the camera light statuses, which are obtained by calling VideoSessionForSys. [on('lightStatusChange')]camera.VideoSession.on(type: 'lightStatusChange', callback: AsyncCallback<LightStatus>).
 
 **Since:** 18
 

@@ -2,12 +2,10 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PluginBundleInfo](arkts-ability-pluginbundleinfo-i-sys.md) | Defines the plugin information. |
-| [PluginModuleInfo](arkts-ability-pluginmoduleinfo-i-sys.md) | Defines the module information of a plugin. |
-<!--DelEnd-->
+| <!--DelRow-->[PluginBundleInfo](arkts-pluginbundleinfo-i.md) | 插件信息。 |
+| <!--DelRow-->[PluginModuleInfo](arkts-pluginmoduleinfo-i.md) | 插件的模块信息。 |
 

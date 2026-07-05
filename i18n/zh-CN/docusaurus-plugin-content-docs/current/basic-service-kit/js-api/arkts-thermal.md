@@ -6,22 +6,28 @@
 
 **系统能力：** SystemCapability.PowerManager.ThermalManager
 
+## 导入模块
+
+```TypeScript
+import { thermal } from '@kit.BasicServicesKit';
+```
+
 ## 汇总
 
 ### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [getLevel](arkts-basicservices-getlevel-f.md#getlevel-1) | 获取当前热档位信息。 |
-| [getThermalLevel](arkts-basicservices-getthermallevel-f.md#getthermallevel-1) | 获取当前热档位信息。 |
-| [registerThermalLevelCallback](arkts-basicservices-registerthermallevelcallback-f.md#registerthermallevelcallback-1) | 订阅热档位变化时的回调提醒。使用callback异步回调。 |
-| [subscribeThermalLevel](arkts-basicservices-subscribethermallevel-f.md#subscribethermallevel-1) | 订阅热档位变化时的回调提醒。使用callback异步回调。 |
-| [unregisterThermalLevelCallback](arkts-basicservices-unregisterthermallevelcallback-f.md#unregisterthermallevelcallback-1) | 取消订阅热档位变化时的回调提醒。使用callback异步回调。 |
-| [unsubscribeThermalLevel](arkts-basicservices-unsubscribethermallevel-f.md#unsubscribethermallevel-1) | 取消订阅热档位变化时的回调提醒。使用callback异步回调。 |
+| [getLevel](arkts-thermal-getlevel-f.md#getLevel-1) | 获取当前热档位信息。 |
+| [getThermalLevel](arkts-thermal-getthermallevel-f.md#getThermalLevel-1) | 获取当前热档位信息。 |
+| [registerThermalLevelCallback](arkts-thermal-registerthermallevelcallback-f.md#registerThermalLevelCallback-1) | 订阅热档位变化时的回调提醒。使用callback异步回调。 |
+| [subscribeThermalLevel](arkts-thermal-subscribethermallevel-f.md#subscribeThermalLevel-1) | 订阅热档位变化时的回调提醒。使用callback异步回调。 |
+| [unregisterThermalLevelCallback](arkts-thermal-unregisterthermallevelcallback-f.md#unregisterThermalLevelCallback-1) | 取消订阅热档位变化时的回调提醒。使用callback异步回调。 |
+| [unsubscribeThermalLevel](arkts-thermal-unsubscribethermallevel-f.md#unsubscribeThermalLevel-1) | 取消订阅热档位变化时的回调提醒。使用callback异步回调。 |
 
 ### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ThermalLevel](arkts-basicservices-thermallevel-e.md) | 热档位信息。 |
+| [ThermalLevel](arkts-thermal-thermallevel-e.md) | 热档位信息。 |
 

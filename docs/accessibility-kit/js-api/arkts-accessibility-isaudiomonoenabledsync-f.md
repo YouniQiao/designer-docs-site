@@ -1,11 +1,5 @@
 # isAudioMonoEnabledSync
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## isAudioMonoEnabledSync
 
 ```TypeScript
@@ -16,7 +10,7 @@ Checks whether mono audio mode is enabled with a synchronous mode.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,7 +18,7 @@ Checks whether mono audio mode is enabled with a synchronous mode.
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether mono audio mode is enabled. Returns **true** if mono audio mode is enabled; returns**false** otherwise. |
+| boolean | Whether mono audio mode is enabled. Returns true if mono audio mode is enabled; returns  false otherwise. |
 
 **Example**
 

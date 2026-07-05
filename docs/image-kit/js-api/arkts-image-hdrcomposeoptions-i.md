@@ -1,6 +1,6 @@
 # HdrComposeOptions
 
-Describes compose parameters.
+Picture合成HDR时可配置的参数选项。
 
 **Since:** 23
 
@@ -9,7 +9,7 @@ Describes compose parameters.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## desiredPixelFormat
@@ -18,13 +18,13 @@ import { image } from '@ohos.multimedia.image';
 desiredPixelFormat?: PixelMapFormat
 ```
 
-Pixel format used for composite image, RGBA_1010102\YCBCR_P010\YCRCB_P010 are supported.
+用于合成图像的像素格式，支持RGBA_1010102、YCBCR_P010和YCRCB_P010格式。
 
 **Type:** PixelMapFormat
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

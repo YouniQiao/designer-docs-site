@@ -1,18 +1,12 @@
 # createAuxiliaryPicture
 
-## Modules to Import
-
-```TypeScript
-import { image } from '@ohos.multimedia.image';
-```
-
 ## createAuxiliaryPicture
 
 ```TypeScript
 function createAuxiliaryPicture(buffer: ArrayBuffer, size: Size, type: AuxiliaryPictureType): AuxiliaryPicture
 ```
 
-Creates an AuxiliaryPicture instance based on the ArrayBuffer image data, auxiliary picture size, and auxiliary picture type. This API accepts only continuous pixel data in BGRA format and will create an auxiliary picture in RGBA format. Images occupy a large amount of memory. When you finish using an AuxiliaryPicture instance, call [release](arkts-image-auxiliarypicture-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+通过ArrayBuffer图片数据、辅助图尺寸、辅助图类型创建AuxiliaryPicture实例。该接口仅支持传入BGRA的连续像素数据，会创建出RGBA的辅助图。 由于图片占用内存较大，所以当AuxiliaryPicture实例使用完成后，应主动调用[release]image.AuxiliaryPicture.release方法及时释放内存。释放时应确保该实例的所有异步方法 均执行完成，且后续不再使用该实例。
 
 **Since:** 13
 
@@ -22,21 +16,21 @@ Creates an AuxiliaryPicture instance based on the ArrayBuffer image data, auxili
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| buffer | ArrayBuffer | Yes | Image data stored in the buffer. |
-| size | Size | Yes | Size of the auxiliary picture, in px. |
-| type | AuxiliaryPictureType | Yes | Type of the auxiliary picture. |
+| buffer | ArrayBuffer | Yes | 以buffer形式存放的图像数据。 |
+| size | Size | Yes | 辅助图的尺寸。单位：像素（px）。 |
+| type | AuxiliaryPictureType | Yes | 辅助图类型。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| AuxiliaryPicture | AuxiliaryPicture instance. |
+| AuxiliaryPicture | 如果操作成功，则返回AuxiliaryPicture实例。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types; 3.Parameter verification failed. |
+| 401 | Parameter error.Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types; 3.Parameter verification failed. |
 
 **Example**
 

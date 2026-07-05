@@ -1,4 +1,4 @@
-# AudioSpatialEnabledStateForDevice (System API)
+# AudioSpatialEnabledStateForDevice
 
 This interface is used to notify the listener of any device Spatialization or Head Tracking enable or Adaptive Spatial Rendering state change.
 
@@ -11,7 +11,7 @@ This interface is used to notify the listener of any device Spatialization or He
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## deviceDescriptor

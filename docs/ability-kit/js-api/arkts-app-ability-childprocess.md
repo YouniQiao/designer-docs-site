@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ChildProcess } from '@ohos.app.ability.ChildProcess';
+import { ChildProcess } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { ChildProcess } from '@ohos.app.ability.ChildProcess';
 
 | Name | Description |
 | --- | --- |
-| [ChildProcess](arkts-ability-childprocess-c.md) | ChildProcess is the base class for you to customize child processes. When starting a child process through [childProcessManager](arkts-app-ability-childprocessmanager.md#childprocessmanager), you must inherit this class and override the entrypoint method. |
+| [ChildProcess](arkts-childprocess-c.md) | 开发者自定义子进程的基类。通过[childProcessManager]{@link @ohos.app.ability.childProcessManager:childProcessManager}启动子进程时，需要继承此类并重写 入口方法。 |
 

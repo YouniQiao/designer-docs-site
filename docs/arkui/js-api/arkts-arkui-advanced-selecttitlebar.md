@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { SelectTitleBarMenuItem, SelectTitleBar } from '@ohos.arkui.advanced.SelectTitleBar';
+import { SelectTitleBarMenuItem,SelectTitleBar } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,11 +12,5 @@ import { SelectTitleBarMenuItem, SelectTitleBar } from '@ohos.arkui.advanced.Sel
 
 | Name | Description |
 | --- | --- |
-| [SelectTitleBarMenuItem](arkts-arkui-selecttitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [SelectTitleBar](arkts-arkui-selecttitlebar-s.md) | Declaration of the selectable title bar. |
+| [SelectTitleBarMenuItem](arkts-selecttitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
 

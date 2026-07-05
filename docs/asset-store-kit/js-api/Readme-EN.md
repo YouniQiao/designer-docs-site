@@ -1,41 +1,78 @@
-# ArkTS API<!--arkts-assetstorekit-->
+# AssetStoreKit
 
 - [@ohos.security.asset](arkts-security-asset.md)
-  - [add](arkts-assetstore-add-f.md)<!--Del-->
-  - [addAsUser(system api)](arkts-assetstore-addasuser-f-sys.md)<!--DelEnd-->
-  - [addSync](arkts-assetstore-addsync-f.md)
-  - [batchAdd](arkts-assetstore-batchadd-f.md)
-  - [batchRemove](arkts-assetstore-batchremove-f.md)
-  - [batchUpdate](arkts-assetstore-batchupdate-f.md)
-  - [postQuery](arkts-assetstore-postquery-f.md)<!--Del-->
-  - [postQueryAsUser(system api)](arkts-assetstore-postqueryasuser-f-sys.md)<!--DelEnd-->
-  - [postQuerySync](arkts-assetstore-postquerysync-f.md)
-  - [preQuery](arkts-assetstore-prequery-f.md)<!--Del-->
-  - [preQueryAsUser(system api)](arkts-assetstore-prequeryasuser-f-sys.md)<!--DelEnd-->
-  - [preQuerySync](arkts-assetstore-prequerysync-f.md)
-  - [query](arkts-assetstore-query-f.md)<!--Del-->
-  - [queryAsUser(system api)](arkts-assetstore-queryasuser-f-sys.md)<!--DelEnd-->
-  - [querySync](arkts-assetstore-querysync-f.md)
-  - [querySyncResult](arkts-assetstore-querysyncresult-f.md)
-  - [remove](arkts-assetstore-remove-f.md)<!--Del-->
-  - [removeAsUser(system api)](arkts-assetstore-removeasuser-f-sys.md)<!--DelEnd-->
-  - [removeSync](arkts-assetstore-removesync-f.md)
-  - [update](arkts-assetstore-update-f.md)<!--Del-->
-  - [updateAsUser(system api)](arkts-assetstore-updateasuser-f-sys.md)<!--DelEnd-->
-  - [updateSync](arkts-assetstore-updatesync-f.md)
-  - [BatchErrInfo](arkts-assetstore-batcherrinfo-i.md)
-  - [BatchResult](arkts-assetstore-batchresult-i.md)
-  - [SyncResult](arkts-assetstore-syncresult-i.md)
-  - [AssetMap](arkts-assetstore-assetmap-t.md)
-  - [Value](arkts-assetstore-value-t.md)
-  - [Accessibility](arkts-assetstore-accessibility-e.md)
-  - [AuthType](arkts-assetstore-authtype-e.md)<!--Del-->
-  - [AuthType(system api)](arkts-assetstore-authtype-e-sys.md)<!--DelEnd-->
-  - [ConflictResolution](arkts-assetstore-conflictresolution-e.md)
-  - [ErrorCode](arkts-assetstore-errorcode-e.md)
-  - [OperationType](arkts-assetstore-operationtype-e.md)
-  - [ReturnType](arkts-assetstore-returntype-e.md)
-  - [SyncType](arkts-assetstore-synctype-e.md)
-  - [Tag](arkts-assetstore-tag-e.md)
-  - [TagType](arkts-assetstore-tagtype-e.md)
-  - [WrapType](arkts-assetstore-wraptype-e.md)
+  - [add](arkts-asset-add-f.md)
+  - [querySyncResult](arkts-asset-querysyncresult-f.md)
+  - [batchAdd](arkts-asset-batchadd-f.md)<!--Del-->
+  - [updateAsUser(system api)](arkts-asset-updateasuser-f-sys.md)<!--DelEnd--><!--Del-->
+  - [addAsUser(system api)](arkts-asset-addasuser-f-sys.md)<!--DelEnd-->
+  - [removeSync](arkts-asset-removesync-f.md)<!--Del-->
+  - [queryAsUser(system api)](arkts-asset-queryasuser-f-sys.md)<!--DelEnd--><!--Del-->
+  - [preQueryAsUser(system api)](arkts-asset-prequeryasuser-f-sys.md)<!--DelEnd-->
+  - [query](arkts-asset-query-f.md)
+  - [batchUpdate](arkts-asset-batchupdate-f.md)
+  - [preQuerySync](arkts-asset-prequerysync-f.md)
+  - [update](arkts-asset-update-f.md)
+  - [preQuery](arkts-asset-prequery-f.md)
+  - [querySync](arkts-asset-querysync-f.md)<!--Del-->
+  - [removeAsUser(system api)](arkts-asset-removeasuser-f-sys.md)<!--DelEnd-->
+  - [remove](arkts-asset-remove-f.md)
+  - [batchRemove](arkts-asset-batchremove-f.md)<!--Del-->
+  - [postQueryAsUser(system api)](arkts-asset-postqueryasuser-f-sys.md)<!--DelEnd-->
+  - [postQuery](arkts-asset-postquery-f.md)
+  - [addSync](arkts-asset-addsync-f.md)
+  - [updateSync](arkts-asset-updatesync-f.md)
+  - [postQuerySync](arkts-asset-postquerysync-f.md)
+  - [BatchErrInfo](arkts-asset-batcherrinfo-i.md)
+  - [BatchResult](arkts-asset-batchresult-i.md)
+  - [SyncResult](arkts-asset-syncresult-i.md)
+  - [AssetMap](arkts-asset-assetmap-t.md)
+  - [Value](arkts-asset-value-t.md)
+  - [Accessibility](arkts-asset-accessibility-e.md)
+  - [AuthType](arkts-asset-authtype-e.md)
+  - [ConflictResolution](arkts-asset-conflictresolution-e.md)
+  - [ErrorCode](arkts-asset-errorcode-e.md)
+  - [OperationType](arkts-asset-operationtype-e.md)
+  - [ReturnType](arkts-asset-returntype-e.md)
+  - [SyncType](arkts-asset-synctype-e.md)
+  - [Tag](arkts-asset-tag-e.md)
+  - [TagType](arkts-asset-tagtype-e.md)
+  - [WrapType](arkts-asset-wraptype-e.md)
+- [@ohos.security.asset](arkts-security-asset.md)
+  - [add](arkts-asset-add-f.md)
+  - [querySyncResult](arkts-asset-querysyncresult-f.md)
+  - [batchAdd](arkts-asset-batchadd-f.md)<!--Del-->
+  - [updateAsUser(system api)](arkts-asset-updateasuser-f-sys.md)<!--DelEnd--><!--Del-->
+  - [addAsUser(system api)](arkts-asset-addasuser-f-sys.md)<!--DelEnd-->
+  - [removeSync](arkts-asset-removesync-f.md)<!--Del-->
+  - [queryAsUser(system api)](arkts-asset-queryasuser-f-sys.md)<!--DelEnd--><!--Del-->
+  - [preQueryAsUser(system api)](arkts-asset-prequeryasuser-f-sys.md)<!--DelEnd-->
+  - [query](arkts-asset-query-f.md)
+  - [batchUpdate](arkts-asset-batchupdate-f.md)
+  - [preQuerySync](arkts-asset-prequerysync-f.md)
+  - [update](arkts-asset-update-f.md)
+  - [preQuery](arkts-asset-prequery-f.md)
+  - [querySync](arkts-asset-querysync-f.md)<!--Del-->
+  - [removeAsUser(system api)](arkts-asset-removeasuser-f-sys.md)<!--DelEnd-->
+  - [remove](arkts-asset-remove-f.md)
+  - [batchRemove](arkts-asset-batchremove-f.md)<!--Del-->
+  - [postQueryAsUser(system api)](arkts-asset-postqueryasuser-f-sys.md)<!--DelEnd-->
+  - [postQuery](arkts-asset-postquery-f.md)
+  - [addSync](arkts-asset-addsync-f.md)
+  - [updateSync](arkts-asset-updatesync-f.md)
+  - [postQuerySync](arkts-asset-postquerysync-f.md)
+  - [BatchErrInfo](arkts-asset-batcherrinfo-i.md)
+  - [BatchResult](arkts-asset-batchresult-i.md)
+  - [SyncResult](arkts-asset-syncresult-i.md)
+  - [AssetMap](arkts-asset-assetmap-t.md)
+  - [Value](arkts-asset-value-t.md)
+  - [Accessibility](arkts-asset-accessibility-e.md)
+  - [AuthType](arkts-asset-authtype-e.md)
+  - [ConflictResolution](arkts-asset-conflictresolution-e.md)
+  - [ErrorCode](arkts-asset-errorcode-e.md)
+  - [OperationType](arkts-asset-operationtype-e.md)
+  - [ReturnType](arkts-asset-returntype-e.md)
+  - [SyncType](arkts-asset-synctype-e.md)
+  - [Tag](arkts-asset-tag-e.md)
+  - [TagType](arkts-asset-tagtype-e.md)
+  - [WrapType](arkts-asset-wraptype-e.md)

@@ -1,6 +1,10 @@
 # AVScreenCaptureRecordPreset
 
-进行屏幕录制时的编码、封装格式参数的枚举。
+```TypeScript
+enum AVScreenCaptureRecordPreset
+```
+
+Enumerates the encoding and container formats used during screen capture.
 
 **起始版本：** 12
 
@@ -12,7 +16,7 @@
 SCREEN_RECORD_PRESET_H264_AAC_MP4 = 0
 ```
 
-使用视频H264编码，音频AAC编码，MP4封装格式。
+The H.264 video encoding format, AAC audio encoding format, and MP4 container format are used.
 
 **起始版本：** 12
 
@@ -24,7 +28,7 @@ SCREEN_RECORD_PRESET_H264_AAC_MP4 = 0
 SCREEN_RECORD_PRESET_H265_AAC_MP4 = 1
 ```
 
-使用视频H265编码，音频AAC编码，MP4封装格式。
+The H.265 video encoding format, AAC audio encoding format, and MP4 container format are used.
 
 **起始版本：** 12
 

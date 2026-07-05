@@ -1,4 +1,4 @@
-# AudioEffectProperty (System API)
+# AudioEffectProperty
 
 Describes an audio effect property.
 
@@ -11,24 +11,8 @@ Describes an audio effect property.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## category
-
-```TypeScript
-category: string
-```
-
-Effect category this effect property belongs to.
-
-**Type:** string
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
 
 ## flag
 
@@ -53,6 +37,22 @@ name: string
 ```
 
 Name of effect property.
+
+**Type:** string
+
+**Since:** 18
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## category
+
+```TypeScript
+category: string
+```
+
+Effect category this effect property belongs to.
 
 **Type:** string
 

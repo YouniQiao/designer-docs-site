@@ -9,7 +9,7 @@ Provides networkSecurity related APIs.
 ## Modules to Import
 
 ```TypeScript
-import { networkSecurity } from '@ohos.net.networkSecurity';
+import { networkSecurity } from '@kit.NetworkKit';
 ```
 
 ## Summary
@@ -18,21 +18,21 @@ import { networkSecurity } from '@ohos.net.networkSecurity';
 
 | Name | Description |
 | --- | --- |
-| [certVerification](arkts-network-certverification-f.md#certverification-1) | Certificate verification to the server. |
-| [certVerificationSync](arkts-network-certverificationsync-f.md#certverificationsync-1) | Certificate verification to the server. |
-| [isCleartextPermitted](arkts-network-iscleartextpermitted-f.md#iscleartextpermitted-1) | Checks whether the Cleartext traffic is permitted. To invoke this method, you must have the {@code ohos.permission.INTERNET} permission. |
-| [isCleartextPermittedByHostName](arkts-network-iscleartextpermittedbyhostname-f.md#iscleartextpermittedbyhostname-1) | Checks whether the Cleartext traffic for a specified hostname is permitted. To invoke this method, you must have the {@code ohos.permission.INTERNET} permission. |
-| [verifyCertChain](arkts-network-verifycertchain-f.md#verifycertchain-1) | Verifies the server certificate chain and returns a sorted chain. |
+| [certVerification](arkts-networksecurity-certverification-f.md#certVerification-1) | Certificate verification to the server. |
+| [certVerificationSync](arkts-networksecurity-certverificationsync-f.md#certVerificationSync-1) | Certificate verification to the server. |
+| [isCleartextPermitted](arkts-networksecurity-iscleartextpermitted-f.md#isCleartextPermitted-1) | Checks whether the Cleartext traffic is permitted. To invoke this method, you must have the {@code ohos.permission.INTERNET} permission. |
+| [isCleartextPermittedByHostName](arkts-networksecurity-iscleartextpermittedbyhostname-f.md#isCleartextPermittedByHostName-1) | Checks whether the Cleartext traffic for a specified hostname is permitted. To invoke this method, you must have the {@code ohos.permission.INTERNET} permission. |
+| [verifyCertChain](arkts-networksecurity-verifycertchain-f.md#verifyCertChain-1) | Verifies the server certificate chain and returns a sorted chain. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CertBlob](arkts-network-certblob-i.md) | Define the certificate content. |
+| [CertBlob](arkts-networksecurity-certblob-i.md) | Define the certificate content. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [CertType](arkts-network-certtype-e.md) | Defines the certificate type. |
+| [CertType](arkts-networksecurity-certtype-e.md) | Defines the certificate type. |
 

@@ -1,4 +1,4 @@
-# Index-full
+# index-full
 
 ## Summary
 

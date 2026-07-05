@@ -1,0 +1,30 @@
+# exit
+
+## exit
+
+```TypeScript
+function exit(): Promise<void>
+```
+
+退出扫描服务。使用Promise异步回调。
+
+**起始版本：** 20
+
+**需要权限：** 
+
+ ohos.permission.PRINT
+
+**系统能力：** SystemCapability.Print.PrintFramework
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;void> | Promise对象，无返回结果。 |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+

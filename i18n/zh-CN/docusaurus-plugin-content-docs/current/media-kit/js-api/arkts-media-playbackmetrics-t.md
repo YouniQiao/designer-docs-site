@@ -4,7 +4,7 @@
 type PlaybackMetrics = Record<PlaybackMetricsKey, Object>
 ```
 
-提供播放器指标信息键值对的容器定义。
+Describes the container for the key-value pairs of playback metrics.
 
 **起始版本：** 23
 

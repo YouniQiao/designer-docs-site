@@ -9,7 +9,7 @@ The **FormBindingData** module provides APIs for widget data binding. You can us
 ## Modules to Import
 
 ```TypeScript
-import { formBindingData } from '@ohos.app.form.formBindingData';
+import { formBindingData } from '@kit.FormKit';
 ```
 
 ## Summary
@@ -18,12 +18,13 @@ import { formBindingData } from '@ohos.app.form.formBindingData';
 
 | Name | Description |
 | --- | --- |
-| [createFormBindingData](arkts-form-createformbindingdata-f.md#createformbindingdata-1) | Creates a **FormBindingData** object. |
+| [createFormBindingData](arkts-formbindingdata-createformbindingdata-f.md#createFormBindingData-1) | Creates a **FormBindingData** object. |
+| [createFormBindingData](arkts-formbindingdata-createformbindingdata-f.md#createFormBindingData-2) | Create an FormBindingData instance. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [FormBindingData](arkts-form-formbindingdata-i.md) | Defines the createFormBindingData result interface. |
-| [ProxyData](arkts-form-proxydata-i.md) | Defines the form proxy data. |
+| [FormBindingData](arkts-formbindingdata-formbindingdata-i.md) | Defines the createFormBindingData result interface. |
+| [ProxyData](arkts-formbindingdata-proxydata-i.md) | Defines the form proxy data. |
 

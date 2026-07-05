@@ -1,10 +1,4 @@
-# setDiscoverable (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# setDiscoverable
 
 ## setDiscoverable
 
@@ -25,14 +19,14 @@ Enable or disable device to be discoverable, used at sink side.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enable | boolean | Yes | true: can be discoverable, false: cannot be discoverable. |
-| callback | AsyncCallback&lt;void&gt; | Yes | a callback function |
+| callback | AsyncCallback&lt;void> | Yes | a callback function |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
 
 **Example**
 
@@ -43,7 +37,6 @@ avSession.setDiscoverable(true, () => {
 });
 
 ```
-
 
 ## setDiscoverable
 
@@ -69,14 +62,14 @@ Enable or disable device to be discoverable, used at sink side.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise for the result |
+| Promise&lt;void> | Promise for the result |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
 
 **Example**
 

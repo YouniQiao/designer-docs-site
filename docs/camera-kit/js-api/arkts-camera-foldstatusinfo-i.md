@@ -9,7 +9,7 @@ Describes the fold state information about a foldable device.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## foldStatus
@@ -24,7 +24,7 @@ Fold state.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -40,7 +40,7 @@ List of cameras supported in the current fold state.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

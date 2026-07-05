@@ -11,35 +11,29 @@ The **conversation** module leverages softbus capabilities to provide agents wit
 ## Modules to Import
 
 ```TypeScript
-import { conversation } from '@ohos.distributedSoftBus.conversation';
+import { conversation } from '@kit.DistributedServiceKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [getTrustedDevices](arkts-distributedservice-gettrusteddevices-f-sys.md#gettrusteddevices-1) | Obtains device information about all trusted devices. Trusted devices are devices that have been previously authenticated. This API returns a list of all such devices currently visible on the network. |
-| [postConversationData](arkts-distributedservice-postconversationdata-f-sys.md#postconversationdata-1) | Posts conversation data to a specified device. This API sends a message to the target device identified by its networkId or udid. The message will be delivered to the specified bundle and ability on the remote device. |
-| [registerConversationListener](arkts-distributedservice-registerconversationlistener-f-sys.md#registerconversationlistener-1) | Registers a conversation listener to receive messages from any trusted device. Once registered, the specified callback function will be invoked whenever a message is received by the specified bundle and ability combination. Only one listener can be registered for a given bundle/ability pair at a time; registering a new listener will replace any previously registered listener for the same bundle and ability. |
-| [unregisterConversationListener](arkts-distributedservice-unregisterconversationlistener-f-sys.md#unregisterconversationlistener-1) | Unregisters the conversation listener for the specified bundle and ability. After calling this API, the application will no longer receive messages. If no listener was previously registered for the given bundle and ability, this API returns success without any effect. |
-<!--DelEnd-->
+| <!--DelRow-->[getTrustedDevices](arkts-conversation-gettrusteddevices-f-sys.md#getTrustedDevices-1) | Obtains device information about all trusted devices. Trusted devices are devices that have been previously authenticated. This API returns a list of all such devices currently visible on the network. |
+| <!--DelRow-->[postConversationData](arkts-conversation-postconversationdata-f-sys.md#postConversationData-1) | Posts conversation data to a specified device. This API sends a message to the target device identified by its networkId or udid. The message will be delivered to the specified bundle and ability on the remote device. |
+| <!--DelRow-->[registerConversationListener](arkts-conversation-registerconversationlistener-f-sys.md#registerConversationListener-1) | Registers a conversation listener to receive messages from any trusted device. Once registered, the specified callback function will be invoked whenever a message is received by the specified bundle and ability combination. Only one listener can be registered for a given bundle/ability pair at a time; registering a new listener will replace any previously registered listener for the same bundle and ability. |
+| <!--DelRow-->[unregisterConversationListener](arkts-conversation-unregisterconversationlistener-f-sys.md#unregisterConversationListener-1) | Unregisters the conversation listener for the specified bundle and ability. After calling this API, the application will no longer receive messages. If no listener was previously registered for the given bundle and ability, this API returns success without any effect. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DeviceNodeInfo](arkts-distributedservice-devicenodeinfo-i-sys.md) | Represents the device node information, including the networkId, device name, device type, nearby status and udid. |
-<!--DelEnd-->
+| <!--DelRow-->[DeviceNodeInfo](arkts-conversation-devicenodeinfo-i-sys.md) | Represents the device node information, including the networkId, device name, device type, nearby status and udid. |
 
-<!--Del-->
-### Types（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [DataCallback](arkts-distributedservice-datacallback-t-sys.md) | Callback function invoked when a message is received. |
-<!--DelEnd-->
+| <!--DelRow-->[DataCallback](arkts-conversation-datacallback-t-sys.md) | Callback function invoked when a message is received. |
 

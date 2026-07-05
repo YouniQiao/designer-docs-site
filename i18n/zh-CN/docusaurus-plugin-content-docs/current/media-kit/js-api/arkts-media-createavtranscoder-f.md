@@ -10,7 +10,7 @@ function createAVTranscoder(): Promise<AVTranscoder>
 
 **起始版本：** 12
 
-**元服务API：** 从API版本22开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 22开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVTranscoder
 
@@ -18,14 +18,13 @@ function createAVTranscoder(): Promise<AVTranscoder>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AVTranscoder&gt; | Promise对象。异步返回AVTranscoder实例，失败时返回null。可用于视频转码。 |
+| Promise&lt;AVTranscoder> | Promise对象。异步返回AVTranscoder实例，失败时返回null。可用于视频转码。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Return by promise. |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Return by promise. |
+| 5400101 | No memory. Return by promise. |
 
 **示例：**
 

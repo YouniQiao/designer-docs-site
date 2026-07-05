@@ -2,19 +2,15 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CliToolEvent](arkts-ability-clitoolevent-i-sys.md) | The event data of cli execute. |
-<!--DelEnd-->
+| <!--DelRow-->[CliToolEvent](arkts-clitoolevent-i.md) | The event data of cli execute. |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [ToolEventType](arkts-ability-tooleventtype-e-sys.md) | Enum for query entity mode. |
-<!--DelEnd-->
+| <!--DelRow-->[ToolEventType](arkts-tooleventtype-e.md) | Enum for query entity mode. |
 

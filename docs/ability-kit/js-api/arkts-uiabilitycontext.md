@@ -6,13 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [UIAbilityContext](arkts-ability-uiabilitycontext-c.md) | UIAbilityContext provides the context environment for a [UIAbility](arkts-app-ability-uiability.md) that needs to store its status. It inherits from [Context](arkts-ability-context-depr-i.md#context) and provides UIAbility-related configuration and APIs for operating UIAbility and ServiceExtensionAbility components. For example, you can use the APIs to start a UIAbility, terminate a UIAbility to which the UIAbilityContext belongs, and start, terminate, connect to, or disconnect from a ServiceExtensionAbility. |
-
-<!--Del-->
-### Classes（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [UIAbilityContext](arkts-ability-uiabilitycontext-c-sys.md) | UIAbilityContext provides the context environment for a [UIAbility](arkts-app-ability-uiability.md) that needs to store its status. It inherits from [Context](arkts-ability-context-depr-i.md#context) and provides UIAbility-related configuration and APIs for operating UIAbility and ServiceExtensionAbility components. For example, you can use the APIs to start a UIAbility, terminate a UIAbility to which the UIAbilityContext belongs, and start, terminate, connect to, or disconnect from a ServiceExtensionAbility. |
-<!--DelEnd-->
+| [UIAbilityContext](arkts-uiabilitycontext-c.md) | UIAbilityContext是需要保存状态的[UIAbility]{@link ./../@ohos.app.ability.UIAbility}所对应的context，继承自[Context]{@link ./../app/context}，提供 UIAbility的相关配置信息以及操作UIAbility和ServiceExtensionAbility的方法，如启动UIAbility，停止当前UIAbilityContext所属的UIAbility，启动、停止、连接、断开连接 ServiceExtensionAbility等。 |
 

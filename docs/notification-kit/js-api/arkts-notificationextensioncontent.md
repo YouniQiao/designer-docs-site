@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [NotificationExtensionContent](arkts-notification-notificationextensioncontent-i.md) | The **NotificationExtensionContent** module describes the notification extension content. |
+| [NotificationExtensionContent](arkts-notificationextensioncontent-i.md) | 通知扩展内容。 |
 

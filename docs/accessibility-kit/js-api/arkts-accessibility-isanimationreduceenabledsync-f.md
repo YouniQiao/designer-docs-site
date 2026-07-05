@@ -1,11 +1,5 @@
 # isAnimationReduceEnabledSync
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## isAnimationReduceEnabledSync
 
 ```TypeScript
@@ -16,7 +10,7 @@ Checks whether animation reduction mode is enabled with a synchronous method.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,7 +18,7 @@ Checks whether animation reduction mode is enabled with a synchronous method.
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether animation reduction mode is enabled. Returns **true** if animation reduction mode isenabled; returns **false** otherwise. |
+| boolean | Whether animation reduction mode is enabled. Returns true if animation reduction mode is  enabled; returns false otherwise. |
 
 **Example**
 

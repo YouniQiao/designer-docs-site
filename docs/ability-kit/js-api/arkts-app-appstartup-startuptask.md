@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { StartupTask } from '@ohos.app.appstartup.StartupTask';
+import { StartupTask } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { StartupTask } from '@ohos.app.appstartup.StartupTask';
 
 | Name | Description |
 | --- | --- |
-| [StartupTask](arkts-ability-startuptask-c.md) | The module provides capabilities related to startup tasks in [AppStartup](../../../../application-models/app-startup.md). |
+| [StartupTask](arkts-startuptask-c.md) | The module provides capabilities related to startup tasks in [AppStartup](docroot://application-models/app-startup.md). |
 

@@ -1,6 +1,6 @@
 # XMPNamespace
 
-Describes XMP namespace parameters.
+表示XMP命名空间。
 
 **Since:** 26.0.0
 
@@ -9,7 +9,7 @@ Describes XMP namespace parameters.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## prefix
@@ -18,13 +18,13 @@ import { image } from '@ohos.multimedia.image';
 prefix: string
 ```
 
-The prefix of XMP namespace.
+XMP命名空间前缀。
 
 **Type:** string
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -34,13 +34,13 @@ The prefix of XMP namespace.
 uri: string
 ```
 
-The uri of XMP namespace.
+XMP命名空间URI。
 
 **Type:** string
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

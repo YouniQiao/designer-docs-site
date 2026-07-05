@@ -1,11 +1,5 @@
 # offSeniorModeStateChange
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## offSeniorModeStateChange
 
 ```TypeScript
@@ -16,7 +10,7 @@ Cancels listening for the senior mode change event. This API uses an asynchronou
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,7 +18,7 @@ Cancels listening for the senior mode change event. This API uses an asynchronou
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | No | Callback function. The value **true** indicates that the senior mode isenabled, and the value **false** indicates that the senior mode is disabled. Cancels the event response of aspecified callback object. It must be consistent with the callback used in[accessibility.onSeniorModeStateChange](arkts-accessibility-onseniormodestatechange-f.md#onseniormodestatechange-1). If this parameter is not specified, listening will be disabled for all callbacks corresponding to thespecified type. |
+| callback | Callback&lt;boolean> | No |  |
 
 **Example**
 

@@ -1,10 +1,10 @@
-# ManualFocus (System API)
+# ManualFocus
 
 ManualFocus object.
 
-**Inheritance/Implementation:** ManualFocus extends [ManualFocusQuery](arkts-camera-manualfocusquery-i.md#manualfocusquery)
+**Inheritance:** ManualFocusextends: ManualFocusQuery.
 
-**Since:** 24
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -13,20 +13,20 @@ ManualFocus object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getFocusDistance
 
 ```TypeScript
-getFocusDistance(): number
+getFocusDistance(): double
 ```
 
 Gets current focus distance, ranging from 0.0 to 1.0, with 0.0 being shortest distance at which the lens can focus and 1.0 the furthest. The default value is 1.0.
 
-**Since:** 24
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -36,27 +36,27 @@ Gets current focus distance, ranging from 0.0 to 1.0, with 0.0 being shortest di
 
 | Type | Description |
 | --- | --- |
-| number | The current focus distance. |
+| double | The current focus distance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 23 |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 |
+| 202 | Not System Application. [since 12 - 23] |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. [since 24] |
 
 ## setFocusDistance
 
 ```TypeScript
-setFocusDistance(distance: number): void
+setFocusDistance(distance: double): void
 ```
 
 Sets focus distance. Possible distance values range from 0.0 to 1.0, with 0.0 being shortest distance at which the lens can focus and 1.0 the furthest. The default value is 1.0.
 
-**Since:** 24
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -66,14 +66,14 @@ Sets focus distance. Possible distance values range from 0.0 to 1.0, with 0.0 be
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| distance | number | Yes | Focus distance. |
+| distance | double | Yes | Focus distance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 23 |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect.<br>**Applicable version:** 12 - 23 |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 |
+| 202 | Not System Application. [since 12 - 23] |
+| 7400101 | Parameter missing or parameter type incorrect. [since 12 - 23] |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. [since 24] |
 

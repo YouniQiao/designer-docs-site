@@ -4,8 +4,8 @@
 
 ### 类
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ComponentContent](arkts-arkui-componentcontent-c.md) | 继承自[Content](../../../../reference/apis-arkui/js-apis-arkui-Content.md#content-1)。 |
-| [ReactiveComponentContent](arkts-arkui-reactivecomponentcontent-c.md) | ReactiveComponentContent继承自[Content](../../../../reference/apis-arkui/js-apis-arkui-Content.md#content-1)，是一个用于动态承载和复用 UI内容的容器组件。它通过@Builder函数构建UI，并利用[ReactiveBuilderNode](arkts-arkui-reactivebuildernode-c.md#reactivebuildernode)生成和管理组件树。该组件的核心价值在于为动态内容提供 完整的生命周期管理，使其能够融入ArkUI的组件复用体系，特别适用于长列表等需要高性能渲染的场景。 |
+| [ComponentContent](arkts-componentcontent-c.md) | 继承自[Content](docroot://reference/apis-arkui/js-apis-arkui-Content.md#content-1)。 |
+| [ReactiveComponentContent](arkts-reactivecomponentcontent-c.md) | ReactiveComponentContent继承自[Content](docroot://reference/apis-arkui/js-apis-arkui-Content.md#content-1)，是一个用于动态承载和复用 UI内容的容器组件。它通过@Builder函数构建UI，并利用[ReactiveBuilderNode]{@link BuilderNode:ReactiveBuilderNode}生成和管理组件树。该组件的核心价值在于为动态内容提供 完整的生命周期管理，使其能够融入ArkUI的组件复用体系，特别适用于长列表等需要高性能渲染的场景。 |
 

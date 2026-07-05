@@ -1,4 +1,4 @@
-# AudioCapturerMicInConfig (System API)
+# AudioCapturerMicInConfig
 
 Describes audio capturer configuration that can capture microphone input (mic-in) audio data before any processing.
 
@@ -11,26 +11,8 @@ Describes audio capturer configuration that can capture microphone input (mic-in
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## capturerInfo
-
-```TypeScript
-capturerInfo: AudioCapturerInfo
-```
-
-Capturer attribute information.
-
-**Type:** AudioCapturerInfo
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Capturer
-
-**System API:** This is a system API.
 
 ## ecStreamInfo
 
@@ -44,7 +26,7 @@ Stream information that describes echo reference signal. If not set this attribu
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -62,7 +44,25 @@ Stream information that describes Mic-In audio stream.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**System API:** This is a system API.
+
+## capturerInfo
+
+```TypeScript
+capturerInfo: AudioCapturerInfo
+```
+
+Capturer attribute information.
+
+**Type:** AudioCapturerInfo
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -80,7 +80,7 @@ Stream information that describes the processed audio stream.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 

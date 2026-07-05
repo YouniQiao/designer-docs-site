@@ -1,8 +1,8 @@
-# ColorEffect (System API)
+# ColorEffect
 
-ColorEffect extends [ColorEffectQuery](arkts-camera-coloreffectquery-i-sys.md#coloreffectquery) Provides the APIs to obtain and set the lens color effect.
+ColorEffect extends [ColorEffectQuery]camera.ColorEffectQuery Provides the APIs to obtain and set the lens color effect.
 
-**Inheritance/Implementation:** ColorEffect extends [ColorEffectQuery](arkts-camera-coloreffectquery-i-sys.md#coloreffectquery)
+**Inheritance:** ColorEffectextends: ColorEffectQuery.
 
 **Since:** 11
 
@@ -13,7 +13,7 @@ ColorEffect extends [ColorEffectQuery](arkts-camera-coloreffectquery-i-sys.md#co
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getColorEffect
@@ -40,8 +40,8 @@ Obtains the color effect in use.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -59,7 +59,7 @@ function getColorEffect(session: camera.PhotoSessionForSys): camera.ColorEffectT
 setColorEffect(type: ColorEffectType): void
 ```
 
-Sets a color effect. Before the setting, call [getSupportedColorEffects](arkts-camera-coloreffectquery-i-sys.md#getsupportedcoloreffects-1) to obtain the supported color effects.
+Sets a color effect. Before the setting, call [getSupportedColorEffects]camera.ColorEffectQuery.getSupportedColorEffects to obtain the supported color effects.
 
 **Since:** 11
 
@@ -77,8 +77,8 @@ Sets a color effect. Before the setting, call [getSupportedColorEffects](arkts-c
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 

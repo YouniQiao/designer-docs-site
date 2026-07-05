@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { NotificationSubscriberExtensionAbility } from '@ohos.application.NotificationSubscriberExtensionAbility';
+import { NotificationSubscriberExtensionAbility } from '@kit.NotificationKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { NotificationSubscriberExtensionAbility } from '@ohos.application.Notifi
 
 | Name | Description |
 | --- | --- |
-| [NotificationSubscriberExtensionAbility](arkts-notification-notificationsubscriberextensionability-c.md) | NotificationSubscriberExtensionAbility is the base class for notification subscription extensions, providing the core functionality for subscribing to notifications. &gt; **NOTE** &gt; &gt; The APIs of this module can be used only in the stage model. |
+| [NotificationSubscriberExtensionAbility](arkts-notificationsubscriberextensionability-c.md) | NotificationSubscriberExtensionAbility 是通知订阅者扩展能力的基类，提供通知订阅的相关功能。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 |
 

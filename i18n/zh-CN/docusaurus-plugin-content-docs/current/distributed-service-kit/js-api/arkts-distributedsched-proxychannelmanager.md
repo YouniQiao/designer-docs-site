@@ -6,32 +6,42 @@
 
 **系统能力：** SystemCapability.DistributedSched.AppCollaboration
 
+## 导入模块
+
+```TypeScript
+import { proxyChannelManager } from '@kit.DistributedServiceKit';
+```
+
 ## 汇总
 
 ### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [closeProxyChannel](arkts-distributedservice-closeproxychannel-f.md#closeproxychannel-1) | 关闭已打开的代理通道。 |
-| [off](arkts-distributedservice-off-f.md#off-1) | 取消订阅数据接收事件，停止接收数据。 |
-| [off](arkts-distributedservice-off-f.md#off-2) | 取消订阅通道状态事件。 |
-| [on](arkts-distributedservice-on-f.md#on-1) | 订阅数据接收事件，使用异步回调。 |
-| [on](arkts-distributedservice-on-f.md#on-2) | 订阅通道状态事件，使用callback进行异步回调。 |
-| [openProxyChannel](arkts-distributedservice-openproxychannel-f.md#openproxychannel-1) | 打开代理通道，使用Promise异步回调返回结果。 |
-| [sendData](arkts-distributedservice-senddata-f.md#senddata-1) | 向对端发送数据，使用Promise异步回调。 |
+| [closeProxyChannel](arkts-proxychannelmanager-closeproxychannel-f.md#closeProxyChannel-1) | 关闭已打开的代理通道。 |
+| [off](arkts-proxychannelmanager-off-f.md#off-1) | 取消订阅数据接收事件，停止接收数据。 |
+| [off](arkts-proxychannelmanager-off-f.md#off-2) | 取消订阅通道状态事件。 |
+| [offChannelStateChange](arkts-proxychannelmanager-offchannelstatechange-f.md#offChannelStateChange-1) | 取消订阅通道状态事件。 |
+| [offReceiveData](arkts-proxychannelmanager-offreceivedata-f.md#offReceiveData-1) | 取消订阅数据接收事件，停止接收数据。 |
+| [on](arkts-proxychannelmanager-on-f.md#on-1) | 订阅数据接收事件，使用异步回调。 |
+| [on](arkts-proxychannelmanager-on-f.md#on-2) | 订阅通道状态事件，使用callback进行异步回调。 |
+| [onChannelStateChange](arkts-proxychannelmanager-onchannelstatechange-f.md#onChannelStateChange-1) | 订阅通道状态事件，使用callback进行异步回调。 |
+| [onReceiveData](arkts-proxychannelmanager-onreceivedata-f.md#onReceiveData-1) | 订阅数据接收事件，使用异步回调。 |
+| [openProxyChannel](arkts-proxychannelmanager-openproxychannel-f.md#openProxyChannel-1) | 打开代理通道，使用Promise异步回调返回结果。 |
+| [sendData](arkts-proxychannelmanager-senddata-f.md#sendData-1) | 向对端发送数据，使用Promise异步回调。 |
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ChannelInfo](arkts-distributedservice-channelinfo-i.md) | 打开代理通道函数的入参，包括对端设备的MAC地址和监听服务的UUID。 |
-| [ChannelStateInfo](arkts-distributedservice-channelstateinfo-i.md) | 当代理通道状态变化时，用于表示代理通道的连接状态。 |
-| [DataInfo](arkts-distributedservice-datainfo-i.md) | 存放接收的数据信息，包括通道Id和数据。 |
+| [ChannelInfo](arkts-proxychannelmanager-channelinfo-i.md) | 打开代理通道函数的入参，包括对端设备的MAC地址和监听服务的UUID。 |
+| [ChannelStateInfo](arkts-proxychannelmanager-channelstateinfo-i.md) | 当代理通道状态变化时，用于表示代理通道的连接状态。 |
+| [DataInfo](arkts-proxychannelmanager-datainfo-i.md) | 存放接收的数据信息，包括通道Id和数据。 |
 
 ### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ChannelState](arkts-distributedservice-channelstate-e.md) | 通道状态发生变化时，代理通道上报的通道连接状态。 |
-| [LinkType](arkts-distributedservice-linktype-e.md) | 链路类型。 |
+| [ChannelState](arkts-proxychannelmanager-channelstate-e.md) | 通道状态发生变化时，代理通道上报的通道连接状态。 |
+| [LinkType](arkts-proxychannelmanager-linktype-e.md) | 链路类型。 |
 

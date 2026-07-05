@@ -1,16 +1,10 @@
 # loadModelFromFd
 
-## Modules to Import
-
-```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
-```
-
 ## loadModelFromFd
 
 ```TypeScript
 function loadModelFromFd(
-    model: number,
+    model: int,
     context?: Context): Promise<Model>
 ```
 
@@ -18,7 +12,7 @@ Creates a Model instance file description
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -26,21 +20,21 @@ Creates a Model instance file description
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | number | Yes | model indicates model file description to be loaded |
-| context | Context | No | context indicates model context information |
+| model | int | Yes | model indicates model file description to be loaded |
+| context | Context | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Model&gt; | the promise returned by the function. |
+| Promise&lt;Model> | the promise returned by the function. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. Thefile descriptor (fd) is incorrect; 2. The model file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The  file descriptor (fd) is incorrect; 2. The model file is damaged. [staticonly] |
 
 **Example**
 
@@ -64,19 +58,18 @@ mindSporeLite.loadModelFromFd(file.fd).then((mindSporeLiteModel: mindSporeLite.M
 
 ```
 
-
 ## loadModelFromFd
 
 ```TypeScript
 function loadModelFromFd(
-    model: number, callback: Callback<Model>): void
+    model: int, callback: Callback<Model>): void
 ```
 
 Create a Model instance from file description
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -84,15 +77,15 @@ Create a Model instance from file description
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | number | Yes | model indicates model file description to be loaded |
-| callback | Callback&lt;Model&gt; | Yes | the callback of model |
+| model | int | Yes | model indicates model file description to be loaded |
+| callback | Callback&lt;Model> | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. Thefile descriptor (fd) is incorrect; 2. The model file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The  file descriptor (fd) is incorrect; 2. The model file is damaged. [staticonly] |
 
 **Example**
 
@@ -114,12 +107,11 @@ mindSporeLite.loadModelFromFd(file.fd, (mindSporeLiteModel: mindSporeLite.Model)
 
 ```
 
-
 ## loadModelFromFd
 
 ```TypeScript
 function loadModelFromFd(
-    model: number,
+    model: int,
     context: Context, callback: Callback<Model>): void
 ```
 
@@ -127,7 +119,7 @@ Create a Model instance from file description
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -135,16 +127,16 @@ Create a Model instance from file description
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | number | Yes | model indicates model file description to be loaded |
+| model | int | Yes | model indicates model file description to be loaded |
 | context | Context | Yes | context indicates model context information |
-| callback | Callback&lt;Model&gt; | Yes | the callback of model |
+| callback | Callback&lt;Model> | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. Thefile descriptor (fd) is incorrect; 2. The model file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000007 | Failed to create native model from file descriptor (fd). Possible causes: 1. The  file descriptor (fd) is incorrect; 2. The model file is damaged. [staticonly] |
 
 **Example**
 

@@ -1,4 +1,4 @@
-# DepthFusionQuery (System API)
+# DepthFusionQuery
 
 A class for querying depth fusion capabilities.
 
@@ -11,13 +11,13 @@ A class for querying depth fusion capabilities.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getDepthFusionThreshold
 
 ```TypeScript
-getDepthFusionThreshold(): Array<number>
+getDepthFusionThreshold(): Array<double>
 ```
 
 Obtains the depth fusion threshold.
@@ -32,14 +32,14 @@ Obtains the depth fusion threshold.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;number&gt; | Depth fusion threshold. |
+| Array&lt;double> | Depth fusion threshold. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 202 | Not System Application. |
+| 7400103 | Session not config, only throw in session usage. |
 
 **Example**
 
@@ -76,14 +76,14 @@ Checks whether depth fusion is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of depth fusion. **true** if supported, **false** otherwise. |
+| boolean | Check result for the support of depth fusion. true if supported, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 202 | Not System Application. |
+| 7400103 | Session not config, only throw in session usage. |
 
 **Example**
 

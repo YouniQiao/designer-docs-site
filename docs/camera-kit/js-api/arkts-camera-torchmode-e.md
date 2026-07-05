@@ -1,5 +1,9 @@
 # TorchMode
 
+```TypeScript
+enum TorchMode
+```
+
 Enumerates the flashlight modes.
 
 **Since:** 11
@@ -16,7 +20,7 @@ The flashlight is off.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +34,7 @@ The flashlight is on.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -44,7 +48,7 @@ The system automatically adjusts the flashlight brightness according to the envi
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

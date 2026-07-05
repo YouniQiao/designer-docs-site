@@ -8,9 +8,9 @@ Window update type.
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { TabBarPosition, TabBarOptions, AtomicServiceTabs, TabContentBuilder, OnContentWillChangeCallback } from '@ohos.atomicservice.AtomicServiceTabs';
+import { TabBarPosition,TabBarOptions,AtomicServiceTabs,TabContentBuilder,OnContentWillChangeCallback } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,24 +12,18 @@ import { TabBarPosition, TabBarOptions, AtomicServiceTabs, TabContentBuilder, On
 
 | Name | Description |
 | --- | --- |
-| [TabBarOptions](arkts-arkui-tabbaroptions-c.md) | the class for TabBarOption |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [AtomicServiceTabs](arkts-arkui-atomicservicetabs-s.md) | Defines AtomicServiceTabs. |
+| [TabBarOptions](arkts-tabbaroptions-c.md) | the class for TabBarOption |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [TabBarPosition](arkts-arkui-tabbarposition-e.md) | the enum for TabBarOption. |
+| [TabBarPosition](arkts-tabbarposition-e.md) | the enum for TabBarOption. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [OnContentWillChangeCallback](arkts-arkui-oncontentwillchangecallback-t.md) | Callback for OnContentWillChange |
-| [TabContentBuilder](arkts-arkui-tabcontentbuilder-t.md) | CustomBuilder for tabContent |
+| [OnContentWillChangeCallback](arkts-oncontentwillchangecallback-t.md) | Callback for OnContentWillChange |
+| [TabContentBuilder](arkts-tabcontentbuilder-t.md) | CustomBuilder for tabContent |
 

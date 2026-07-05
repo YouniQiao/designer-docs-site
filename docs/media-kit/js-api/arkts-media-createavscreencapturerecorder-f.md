@@ -1,18 +1,12 @@
 # createAVScreenCaptureRecorder
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createAVScreenCaptureRecorder
 
 ```TypeScript
 function createAVScreenCaptureRecorder(): Promise<AVScreenCaptureRecorder>
 ```
 
-Creates an AVScreenCaptureRecorder instance. This API uses a promise to return the result.
+创建屏幕录制实例，使用Promise异步回调。
 
 **Since:** 12
 
@@ -22,13 +16,13 @@ Creates an AVScreenCaptureRecorder instance. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVScreenCaptureRecorder&gt; | Promise used to return the result. If the operation is successful, anAVScreenCaptureRecorder instance is returned; otherwise, **null** is returned. The instance can be used forscreen capture. |
+| Promise&lt;AVScreenCaptureRecorder> | Promise对象，返回AVScreenCaptureRecorder实例，失败时返回null。可用于进行屏幕录制。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Return by promise. |
+| 5400101 | No memory. Return by promise. |
 
 **Example**
 

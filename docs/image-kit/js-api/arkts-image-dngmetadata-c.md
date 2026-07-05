@@ -1,6 +1,6 @@
 # DngMetadata
 
-DNG metadata.
+Dng图像元数据类，用于存储图像的元数据。
 
 **Since:** 24
 
@@ -9,358 +9,22 @@ DNG metadata.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
-## activeArea
+## profileHueSatMapEncoding
 
 ```TypeScript
-readonly activeArea?: number[]
+readonly profileHueSatMapEncoding?: int
 ```
 
-The active area.
+色调/饱和度映射表编码方式。
 
-**Type:** number[]
+**Type:** int
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## analogBalance
-
-```TypeScript
-readonly analogBalance?: number[]
-```
-
-The analog balance.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## antiAliasStrength
-
-```TypeScript
-readonly antiAliasStrength?: number
-```
-
-The anti-alias strength.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## asShotICCProfile
-
-```TypeScript
-readonly asShotICCProfile?: ArrayBuffer
-```
-
-An ICC profile.
-
-**Type:** ArrayBuffer
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## asShotNeutral
-
-```TypeScript
-readonly asShotNeutral?: number[]
-```
-
-The as-shot neutral.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## asShotPreProfileMatrix
-
-```TypeScript
-readonly asShotPreProfileMatrix?: number[]
-```
-
-The as-shot pre-profile matrix.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## asShotProfileName
-
-```TypeScript
-readonly asShotProfileName?: string
-```
-
-The as-shot camera profile.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## asShotWhiteXY
-
-```TypeScript
-readonly asShotWhiteXY?: number[]
-```
-
-The as-shot white, encoded as x-y chromaticity coordinates.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## baselineExposure
-
-```TypeScript
-readonly baselineExposure?: number
-```
-
-The baseline exposure.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## baselineExposureOffset
-
-```TypeScript
-readonly baselineExposureOffset?: number
-```
-
-The baseline exposure offset.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## baselineNoise
-
-```TypeScript
-readonly baselineNoise?: number
-```
-
-The baseline noise.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## baselineSharpness
-
-```TypeScript
-readonly baselineSharpness?: number
-```
-
-The baseline sharpness.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## bayerGreenSplit
-
-```TypeScript
-readonly bayerGreenSplit?: number
-```
-
-The Bayer green split.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## bestQualityScale
-
-```TypeScript
-readonly bestQualityScale?: number
-```
-
-The best quality scale.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## blackLevel
-
-```TypeScript
-readonly blackLevel?: number[]
-```
-
-The zero-light encoding level.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## blackLevelDeltaH
-
-```TypeScript
-readonly blackLevelDeltaH?: number[]
-```
-
-The black level delta H.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## blackLevelDeltaV
-
-```TypeScript
-readonly blackLevelDeltaV?: number[]
-```
-
-The black level delta V.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## blackLevelRepeatDim
-
-```TypeScript
-readonly blackLevelRepeatDim?: number[]
-```
-
-The black level repeat dimension.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## calibrationIlluminant1
-
-```TypeScript
-readonly calibrationIlluminant1?: number
-```
-
-The first calibration illuminant.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## calibrationIlluminant2
-
-```TypeScript
-readonly calibrationIlluminant2?: number
-```
-
-The second calibration illuminant.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## cameraCalibration1
-
-```TypeScript
-readonly cameraCalibration1?: number[]
-```
-
-A calibration matrix under the first calibration illuminant.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## cameraCalibration2
-
-```TypeScript
-readonly cameraCalibration2?: number[]
-```
-
-A calibration matrix under the second calibration illuminant.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -370,13 +34,61 @@ A calibration matrix under the second calibration illuminant.
 readonly cameraCalibrationSignature?: string
 ```
 
-The camera calibration signature.
+相机校准签名。
 
 **Type:** string
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## colorimetricReference
+
+```TypeScript
+readonly colorimetricReference?: int
+```
+
+色度参考标准。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## cfaLayout
+
+```TypeScript
+readonly cfaLayout?: int
+```
+
+CFA（Color Filter Array）布局类型。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## defaultScale
+
+```TypeScript
+readonly defaultScale?: double[]
+```
+
+默认缩放比例。格式为[水平缩放比例, 垂直缩放比例]。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -386,557 +98,125 @@ The camera calibration signature.
 readonly cameraSerialNumber?: string
 ```
 
-The serial number of the camera.
+相机序列号。
 
 **Type:** string
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## cfaLayout
-
-```TypeScript
-readonly cfaLayout?: number
-```
-
-The CFA (color filter array) layout.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## cfaPlaneColor
-
-```TypeScript
-readonly cfaPlaneColor?: number[]
-```
-
-The CFA (color filter array) plane color.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## chromaBlurRadius
-
-```TypeScript
-readonly chromaBlurRadius?: number
-```
-
-The chroma blur radius.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## colorMatrix1
 
 ```TypeScript
-readonly colorMatrix1?: number[]
+readonly colorMatrix1?: double[]
 ```
 
-A transformation matrix under the first calibration illuminant.
+第一校准光源下的色彩变换矩阵。
 
-**Type:** number[]
+**Type:** double[]
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## rawToPreviewGain
+
+```TypeScript
+readonly rawToPreviewGain?: double
+```
+
+主RAW图与预览图之间的增益比。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## asShotProfileName
+
+```TypeScript
+readonly asShotProfileName?: string
+```
+
+拍摄时使用的配置文件名称。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## colorMatrix2
 
 ```TypeScript
-readonly colorMatrix2?: number[]
+readonly colorMatrix2?: double[]
 ```
 
-A transformation matrix under the second calibration illuminant.
+第二校准光源下的色彩变换矩阵。
 
-**Type:** number[]
+**Type:** double[]
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## colorimetricReference
+## baselineExposureOffset
 
 ```TypeScript
-readonly colorimetricReference?: number
+readonly baselineExposureOffset?: double
 ```
 
-The colorimetric reference.
+基准曝光偏移量，单位：EV。
 
-**Type:** number
+**Type:** double
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## currentICCProfile
+## profileToneCurve
 
 ```TypeScript
-readonly currentICCProfile?: ArrayBuffer
+readonly profileToneCurve?: double[]
 ```
 
-The current ICC profile.
+配置文件色调曲线。
 
-**Type:** ArrayBuffer
+**Type:** double[]
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## currentPreProfileMatrix
+## blackLevel
 
 ```TypeScript
-readonly currentPreProfileMatrix?: number[]
+readonly blackLevel?: double[]
 ```
 
-The current pre-profile matrix.
+零光照下的编码电平。
 
-**Type:** number[]
+**Type:** double[]
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## defaultBlackRender
-
-```TypeScript
-readonly defaultBlackRender?: number
-```
-
-The default black render.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## defaultCropOrigin
-
-```TypeScript
-readonly defaultCropOrigin?: number[]
-```
-
-The default crop origin.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## defaultCropSize
-
-```TypeScript
-readonly defaultCropSize?: number[]
-```
-
-The default crop size.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## defaultScale
-
-```TypeScript
-readonly defaultScale?: number[]
-```
-
-The default scale.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## defaultUserCrop
-
-```TypeScript
-readonly defaultUserCrop?: number[]
-```
-
-The default user crop.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dngBackwardVersion
-
-```TypeScript
-readonly dngBackwardVersion?: number[]
-```
-
-The DNG backward compatibility version.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dngPrivateData
-
-```TypeScript
-readonly dngPrivateData?: ArrayBuffer
-```
-
-The private data.
-
-**Type:** ArrayBuffer
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dngVersion
-
-```TypeScript
-readonly dngVersion?: number[]
-```
-
-The DNG version.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## extraCameraProfiles
-
-```TypeScript
-readonly extraCameraProfiles?: number[]
-```
-
-The extra camera profiles.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## forwardMatrix1
-
-```TypeScript
-readonly forwardMatrix1?: number[]
-```
-
-The first forward matrix.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## forwardMatrix2
-
-```TypeScript
-readonly forwardMatrix2?: number[]
-```
-
-The second forward matrix.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## lensInfo
-
-```TypeScript
-readonly lensInfo?: number[]
-```
-
-Information about the lens.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## linearResponseLimit
-
-```TypeScript
-readonly linearResponseLimit?: number
-```
-
-The linear response limit.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## linearizationTable
-
-```TypeScript
-readonly linearizationTable?: number[]
-```
-
-The linearization table.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## localizedCameraModel
-
-```TypeScript
-readonly localizedCameraModel?: string
-```
-
-A localized camera model.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## makerNoteSafety
-
-```TypeScript
-readonly makerNoteSafety?: boolean
-```
-
-Whether the EXIF MakerNote tag is safe.
-
-**Type:** boolean
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## maskedAreas
-
-```TypeScript
-readonly maskedAreas?: number[]
-```
-
-The masked areas.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## newRawImageDigest
-
-```TypeScript
-readonly newRawImageDigest?: string
-```
-
-A modified MD5 digest of the raw image data.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## noiseProfile
-
-```TypeScript
-readonly noiseProfile?: number[]
-```
-
-The noise profile.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## noiseReductionApplied
-
-```TypeScript
-readonly noiseReductionApplied?: number
-```
-
-The applied noise reduction.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## opcodeList1
-
-```TypeScript
-readonly opcodeList1?: ArrayBuffer
-```
-
-The first opcode list.
-
-**Type:** ArrayBuffer
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## opcodeList2
-
-```TypeScript
-readonly opcodeList2?: ArrayBuffer
-```
-
-The second opcode list.
-
-**Type:** ArrayBuffer
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## opcodeList3
-
-```TypeScript
-readonly opcodeList3?: ArrayBuffer
-```
-
-The third opcode list.
-
-**Type:** ArrayBuffer
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## originalBestQualityFinalSize
-
-```TypeScript
-readonly originalBestQualityFinalSize?: number[]
-```
-
-The original best quality final size.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## originalDefaultCropSize
-
-```TypeScript
-readonly originalDefaultCropSize?: number[]
-```
-
-The original default crop size.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## originalDefaultFinalSize
-
-```TypeScript
-readonly originalDefaultFinalSize?: number[]
-```
-
-The original default final size.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -946,61 +226,61 @@ The original default final size.
 readonly originalRawFileData?: ArrayBuffer
 ```
 
-The original raw file data.
+原始RAW文件的完整数据。
 
 **Type:** ArrayBuffer
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## originalRawFileDigest
+## profileLookTableEncoding
 
 ```TypeScript
-readonly originalRawFileDigest?: string
+readonly profileLookTableEncoding?: int
 ```
 
-An MD5 digest of the data stored in the OriginalRawFileData.
+色彩表编码方式。
 
-**Type:** string
+**Type:** int
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## originalRawFileName
+## whiteLevel
 
 ```TypeScript
-readonly originalRawFileName?: string
+readonly whiteLevel?: double[]
 ```
 
-The original raw file name.
+白电平，表示传感器最大有效输出。
 
-**Type:** string
+**Type:** double[]
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## previewApplicationName
+## profileHueSatMapDims
 
 ```TypeScript
-readonly previewApplicationName?: string
+readonly profileHueSatMapDims?: int[]
 ```
 
-The preview application name.
+色调/饱和度映射表维度。
 
-**Type:** string
+**Type:** int[]
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1010,29 +290,77 @@ The preview application name.
 readonly previewApplicationVersion?: string
 ```
 
-The preview application version.
+预览图生成应用程序版本。
 
 **Type:** string
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## previewColorSpace
+## cfaPlaneColor
 
 ```TypeScript
-readonly previewColorSpace?: number
+readonly cfaPlaneColor?: int[]
 ```
 
-The preview color space.
+CFA（Color Filter Array）各平面的颜色通道定义。
 
-**Type:** number
+**Type:** int[]
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## shadowScale
+
+```TypeScript
+readonly shadowScale?: double
+```
+
+阴影区域缩放因子。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## asShotNeutral
+
+```TypeScript
+readonly asShotNeutral?: double[]
+```
+
+拍摄时的中性白点。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## bayerGreenSplit
+
+```TypeScript
+readonly bayerGreenSplit?: int
+```
+
+Bayer图像中两个绿色通道的分离程度。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1042,365 +370,13 @@ The preview color space.
 readonly previewDateTime?: string
 ```
 
-The preview date time.
+预览图生成时间。
 
 **Type:** string
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## previewSettingsDigest
-
-```TypeScript
-readonly previewSettingsDigest?: string
-```
-
-The preview settings digest.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## previewSettingsName
-
-```TypeScript
-readonly previewSettingsName?: string
-```
-
-The preview settings name.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileCalibrationSignature
-
-```TypeScript
-readonly profileCalibrationSignature?: string
-```
-
-The profile calibration signature.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileCopyright
-
-```TypeScript
-readonly profileCopyright?: string
-```
-
-The profile copyright.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileEmbedPolicy
-
-```TypeScript
-readonly profileEmbedPolicy?: number
-```
-
-The profile embed policy.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileHueSatMapData1
-
-```TypeScript
-readonly profileHueSatMapData1?: number[]
-```
-
-The first hue/saturation mapping table data.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileHueSatMapData2
-
-```TypeScript
-readonly profileHueSatMapData2?: number[]
-```
-
-The second hue/saturation mapping table data.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileHueSatMapDims
-
-```TypeScript
-readonly profileHueSatMapDims?: number[]
-```
-
-The profile hue/saturation map dims.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileHueSatMapEncoding
-
-```TypeScript
-readonly profileHueSatMapEncoding?: number
-```
-
-The profile hue/saturation map encoding.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileLookTableData
-
-```TypeScript
-readonly profileLookTableData?: number[]
-```
-
-The profile lookup table data.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileLookTableDims
-
-```TypeScript
-readonly profileLookTableDims?: number[]
-```
-
-The profile lookup table dimensions.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileLookTableEncoding
-
-```TypeScript
-readonly profileLookTableEncoding?: number
-```
-
-The profile lookup table encoding.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileName
-
-```TypeScript
-readonly profileName?: string
-```
-
-The profile name.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## profileToneCurve
-
-```TypeScript
-readonly profileToneCurve?: number[]
-```
-
-The profile tone curve.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## rawDataUniqueID
-
-```TypeScript
-readonly rawDataUniqueID?: string
-```
-
-The unique identifier of raw image data.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## rawImageDigest
-
-```TypeScript
-readonly rawImageDigest?: string
-```
-
-An MD5 digest of the raw image data.
-
-**Type:** string
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## rawToPreviewGain
-
-```TypeScript
-readonly rawToPreviewGain?: number
-```
-
-The gain between the main raw IFD and the preview IFD.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## reductionMatrix1
-
-```TypeScript
-readonly reductionMatrix1?: number[]
-```
-
-A dimensionality reduction matrix under the first calibration illuminant.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## reductionMatrix2
-
-```TypeScript
-readonly reductionMatrix2?: number[]
-```
-
-A dimensionality reduction matrix under the second calibration illuminant.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## rowInterleaveFactor
-
-```TypeScript
-readonly rowInterleaveFactor?: number
-```
-
-The row interleave factor.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## shadowScale
-
-```TypeScript
-readonly shadowScale?: number
-```
-
-The shadow scale.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## subTileBlockSize
-
-```TypeScript
-readonly subTileBlockSize?: number[]
-```
-
-The sub‑tile block size.
-
-**Type:** number[]
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1410,29 +386,1053 @@ The sub‑tile block size.
 readonly uniqueCameraModel?: string
 ```
 
-A unique camera model.
+相机的唯一型号标识，用于区分不同设备。
 
 **Type:** string
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## whiteLevel
+## originalRawFileName
 
 ```TypeScript
-readonly whiteLevel?: number[]
+readonly originalRawFileName?: string
 ```
 
-The white level.
+原始RAW文件名。
 
-**Type:** number[]
+**Type:** string
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## dngVersion
+
+```TypeScript
+readonly dngVersion?: int[]
+```
+
+DNG图片的版本号。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## extraCameraProfiles
+
+```TypeScript
+readonly extraCameraProfiles?: int[]
+```
+
+额外相机配置文件索引列表。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## opcodeList1
+
+```TypeScript
+readonly opcodeList1?: ArrayBuffer
+```
+
+第一操作码列表。
+
+**Type:** ArrayBuffer
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## analogBalance
+
+```TypeScript
+readonly analogBalance?: double[]
+```
+
+模拟增益平衡系数。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## cameraCalibration1
+
+```TypeScript
+readonly cameraCalibration1?: double[]
+```
+
+第一校准光源下的相机校准矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## asShotWhiteXY
+
+```TypeScript
+readonly asShotWhiteXY?: double[]
+```
+
+拍摄时白点的CIE（1931色彩空间） x-y色度坐标。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## cameraCalibration2
+
+```TypeScript
+readonly cameraCalibration2?: double[]
+```
+
+第二校准光源下的相机校准矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## opcodeList3
+
+```TypeScript
+readonly opcodeList3?: ArrayBuffer
+```
+
+第三操作码列表。
+
+**Type:** ArrayBuffer
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## opcodeList2
+
+```TypeScript
+readonly opcodeList2?: ArrayBuffer
+```
+
+第二操作码列表。
+
+**Type:** ArrayBuffer
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileEmbedPolicy
+
+```TypeScript
+readonly profileEmbedPolicy?: int
+```
+
+配置文件嵌入策略。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## defaultBlackRender
+
+```TypeScript
+readonly defaultBlackRender?: int
+```
+
+默认黑场渲染方式。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## noiseReductionApplied
+
+```TypeScript
+readonly noiseReductionApplied?: double
+```
+
+已应用的降噪强度级别。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## bestQualityScale
+
+```TypeScript
+readonly bestQualityScale?: double
+```
+
+最佳画质缩放比例。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## forwardMatrix1
+
+```TypeScript
+readonly forwardMatrix1?: double[]
+```
+
+第一前向变换矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileCalibrationSignature
+
+```TypeScript
+readonly profileCalibrationSignature?: string
+```
+
+配置文件校准签名。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## originalBestQualityFinalSize
+
+```TypeScript
+readonly originalBestQualityFinalSize?: int[]
+```
+
+原始最佳画质输出尺寸。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## forwardMatrix2
+
+```TypeScript
+readonly forwardMatrix2?: double[]
+```
+
+第二前向变换矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## currentICCProfile
+
+```TypeScript
+readonly currentICCProfile?: ArrayBuffer
+```
+
+当前使用的ICC色彩配置文件。
+
+**Type:** ArrayBuffer
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## subTileBlockSize
+
+```TypeScript
+readonly subTileBlockSize?: int[]
+```
+
+图像分块存储，定义块的长和宽。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## asShotPreProfileMatrix
+
+```TypeScript
+readonly asShotPreProfileMatrix?: double[]
+```
+
+应用ICC配置文件前的预变换矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## rowInterleaveFactor
+
+```TypeScript
+readonly rowInterleaveFactor?: int
+```
+
+行交织因子。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileLookTableData
+
+```TypeScript
+readonly profileLookTableData?: double[]
+```
+
+色彩表数据。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## rawDataUniqueID
+
+```TypeScript
+readonly rawDataUniqueID?: string
+```
+
+原始图像数据的唯一标识符。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## dngPrivateData
+
+```TypeScript
+readonly dngPrivateData?: ArrayBuffer
+```
+
+厂商私有数据块。
+
+**Type:** ArrayBuffer
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## blackLevelDeltaH
+
+```TypeScript
+readonly blackLevelDeltaH?: double[]
+```
+
+水平方向黑电平校正增量。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileName
+
+```TypeScript
+readonly profileName?: string
+```
+
+色彩配置文件名称。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## baselineExposure
+
+```TypeScript
+readonly baselineExposure?: double
+```
+
+基准曝光补偿值，单位：EV。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## blackLevelDeltaV
+
+```TypeScript
+readonly blackLevelDeltaV?: double[]
+```
+
+垂直方向黑电平校正增量。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## calibrationIlluminant1
+
+```TypeScript
+readonly calibrationIlluminant1?: int
+```
+
+第一校准光源类型。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## antiAliasStrength
+
+```TypeScript
+readonly antiAliasStrength?: double
+```
+
+抗锯齿滤波器强度。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## lensInfo
+
+```TypeScript
+readonly lensInfo?: double[]
+```
+
+镜头信息。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## calibrationIlluminant2
+
+```TypeScript
+readonly calibrationIlluminant2?: int
+```
+
+第二校准光源类型。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## originalRawFileDigest
+
+```TypeScript
+readonly originalRawFileDigest?: string
+```
+
+原始RAW文件数据的MD5摘要。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## newRawImageDigest
+
+```TypeScript
+readonly newRawImageDigest?: string
+```
+
+修改后原始图像数据的新MD5摘要。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## defaultCropOrigin
+
+```TypeScript
+readonly defaultCropOrigin?: double[]
+```
+
+默认裁剪区域的左上角坐标（x, y）。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## originalDefaultFinalSize
+
+```TypeScript
+readonly originalDefaultFinalSize?: int[]
+```
+
+原始默认最终输出尺寸。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## reductionMatrix1
+
+```TypeScript
+readonly reductionMatrix1?: double[]
+```
+
+第一校准光源下的降维矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## noiseProfile
+
+```TypeScript
+readonly noiseProfile?: double[]
+```
+
+噪声剖面参数。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## linearizationTable
+
+```TypeScript
+readonly linearizationTable?: int[]
+```
+
+线性化查找表，用于将原始传感器值映射为线性光强度。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## reductionMatrix2
+
+```TypeScript
+readonly reductionMatrix2?: double[]
+```
+
+第二校准光源下的降维矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileHueSatMapData1
+
+```TypeScript
+readonly profileHueSatMapData1?: double[]
+```
+
+第一组色调/饱和度映射表数据。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileHueSatMapData2
+
+```TypeScript
+readonly profileHueSatMapData2?: double[]
+```
+
+第二组色调/饱和度映射表数据。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## previewSettingsDigest
+
+```TypeScript
+readonly previewSettingsDigest?: string
+```
+
+预览图设置的MD5摘要。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## originalDefaultCropSize
+
+```TypeScript
+readonly originalDefaultCropSize?: double[]
+```
+
+原始默认裁剪尺寸。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## rawImageDigest
+
+```TypeScript
+readonly rawImageDigest?: string
+```
+
+原始图像数据的MD5摘要。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## dngBackwardVersion
+
+```TypeScript
+readonly dngBackwardVersion?: int[]
+```
+
+DNG文件向后兼容的最低版本号。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## maskedAreas
+
+```TypeScript
+readonly maskedAreas?: int[]
+```
+
+被遮蔽区域列表。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## blackLevelRepeatDim
+
+```TypeScript
+readonly blackLevelRepeatDim?: int[]
+```
+
+黑电平重复维度。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## localizedCameraModel
+
+```TypeScript
+readonly localizedCameraModel?: string
+```
+
+本地化后的相机型号名称。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileCopyright
+
+```TypeScript
+readonly profileCopyright?: string
+```
+
+配置文件版权信息。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## baselineSharpness
+
+```TypeScript
+readonly baselineSharpness?: double
+```
+
+基准锐度增益。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## previewColorSpace
+
+```TypeScript
+readonly previewColorSpace?: int
+```
+
+预览图色彩空间。
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## previewApplicationName
+
+```TypeScript
+readonly previewApplicationName?: string
+```
+
+预览图生成应用程序名称。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## defaultUserCrop
+
+```TypeScript
+readonly defaultUserCrop?: int[]
+```
+
+默认用户裁剪区域。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## makerNoteSafety
+
+```TypeScript
+readonly makerNoteSafety?: boolean
+```
+
+EXIF MakerNote是否安全可保留。true表示安全，false表示不安全。
+
+**Type:** boolean
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## linearResponseLimit
+
+```TypeScript
+readonly linearResponseLimit?: double
+```
+
+线性响应上限。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## chromaBlurRadius
+
+```TypeScript
+readonly chromaBlurRadius?: double
+```
+
+色度模糊半径。单位：像素（px）。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## activeArea
+
+```TypeScript
+readonly activeArea?: int[]
+```
+
+有效图像区域。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## currentPreProfileMatrix
+
+```TypeScript
+readonly currentPreProfileMatrix?: double[]
+```
+
+当前ICC配置文件前的预变换矩阵。
+
+**Type:** double[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## baselineNoise
+
+```TypeScript
+readonly baselineNoise?: double
+```
+
+基准噪声水平。
+
+**Type:** double
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## asShotICCProfile
+
+```TypeScript
+readonly asShotICCProfile?: ArrayBuffer
+```
+
+拍摄时使用的ICC色彩配置文件。
+
+**Type:** ArrayBuffer
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## defaultCropSize
+
+```TypeScript
+readonly defaultCropSize?: int[]
+```
+
+默认裁剪区域的宽度和高度。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## previewSettingsName
+
+```TypeScript
+readonly previewSettingsName?: string
+```
+
+预览图处理设置名称。
+
+**Type:** string
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## profileLookTableDims
+
+```TypeScript
+readonly profileLookTableDims?: int[]
+```
+
+ProfileLookTableData的维度。
+
+**Type:** int[]
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

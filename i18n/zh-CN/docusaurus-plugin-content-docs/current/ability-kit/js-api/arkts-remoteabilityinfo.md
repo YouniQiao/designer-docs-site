@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md) | remoteAbility信息。 @link remoteAbilityInfo:RemoteAbilityInfo}替代。 &gt; &gt; 本模块为系统接口。 |
-<!--DelEnd-->
+| <!--DelRow-->[RemoteAbilityInfo](arkts-remoteabilityinfo-i.md) | remoteAbility信息。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-RemoteAbilityInfo]{@link remoteAbilityInfo:RemoteAbilityInfo}替代。 > > 本模块为系统接口。 |
 

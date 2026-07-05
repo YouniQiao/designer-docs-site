@@ -1,4 +1,4 @@
-# HiPlayDeviceInfo (System API)
+# HiPlayDeviceInfo
 
 HiPlay Device Information Definition
 
@@ -11,24 +11,24 @@ HiPlay Device Information Definition
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
 
 ## castMode
 
 ```TypeScript
-castMode?: number
+castMode?: int
 ```
 
 HiPlay device cast mode. 1: DEVICE_LEVEL_CAST 2: APP_LEVEL_CAST
 
-**Type:** number
+**Type:** int
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -37,18 +37,18 @@ HiPlay device cast mode. 1: DEVICE_LEVEL_CAST 2: APP_LEVEL_CAST
 ## castUid
 
 ```TypeScript
-castUid?: number
+castUid?: int
 ```
 
 HiPlay device current cast uid.
 
-**Type:** number
+**Type:** int
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -57,18 +57,18 @@ HiPlay device current cast uid.
 ## supportCastMode
 
 ```TypeScript
-supportCastMode?: number
+supportCastMode?: int
 ```
 
 HiPlay device supports cast mode. when device both support device level cast and app level cast, support cast mode is DEVICE_LEVEL_CAST| APP_LEVEL_CAST 1: DEVICE_LEVEL_CAST 2: APP_LEVEL_CAST
 
-**Type:** number
+**Type:** int
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

@@ -1,5 +1,9 @@
 # PerformanceMode
 
+```TypeScript
+export enum PerformanceMode
+```
+
 Enum for performance mode
 
 **Since:** 12
@@ -16,7 +20,7 @@ No performance mode preference
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -30,7 +34,7 @@ Low power consumption mode
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -44,7 +48,7 @@ Medium performance mode
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -58,7 +62,7 @@ High performance mode
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -72,7 +76,7 @@ Ultimate performance mode
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

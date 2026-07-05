@@ -1,4 +1,8 @@
-# AudioSpatializationSceneType (System API)
+# AudioSpatializationSceneType
+
+```TypeScript
+enum AudioSpatializationSceneType
+```
 
 Describes a spatialization scene type group.
 

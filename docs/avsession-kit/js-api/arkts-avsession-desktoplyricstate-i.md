@@ -9,7 +9,7 @@ Desktop lyric state definition.
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
 
 ## isLocked
@@ -24,7 +24,7 @@ Desktop lyric lock state.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

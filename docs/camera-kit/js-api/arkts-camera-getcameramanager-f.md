@@ -1,11 +1,5 @@
 # getCameraManager
 
-## Modules to Import
-
-```TypeScript
-import { camera } from '@ohos.multimedia.camera';
-```
-
 ## getCameraManager
 
 ```TypeScript
@@ -16,7 +10,7 @@ Obtains a CameraManager instance. This API returns the result synchronously.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -36,8 +30,8 @@ Obtains a CameraManager instance. This API returns the result synchronously.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400201 | Camera service fatal error. |
 
 **Example**
 

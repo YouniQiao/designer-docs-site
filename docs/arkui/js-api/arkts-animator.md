@@ -1,10 +1,28 @@
-# @ohos.animator
+# animator
 
-## Modules to Import
+Defines Animator Component instance.
+
+## animator
 
 ```TypeScript
-import { AnimatorOptions, SimpleAnimatorOptions, AnimatorResult } from '@ohos.animator';
+animator(value: string)
 ```
+
+Constructor parameters
+
+**Since:** 7
+
+**Deprecated since:** 22
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | string | Yes |  |
 
 ## Summary
 
@@ -12,13 +30,22 @@ import { AnimatorOptions, SimpleAnimatorOptions, AnimatorResult } from '@ohos.an
 
 | Name | Description |
 | --- | --- |
-| [Animator](arkts-arkui-animator-c.md) | Creates an **Animator** object. |
-| [SimpleAnimatorOptions](arkts-arkui-simpleanimatoroptions-c.md) | Defines a simple animation parameter object. Unlike **AnimatorOptions**, this object comes with some default values for certain animation parameters, so you do not have to set them manually. |
+| <!--DelRow-->[AnimatorAttribute](arkts-animatorattribute-c.md) | Defines AnimatorAttribute. |
+| <!--DelRow-->[FrictionMotion](arkts-frictionmotion-c.md) | Friction animation model. You can build friction animation by friction force, initial position, and initial velocity. |
+| <!--DelRow-->[ScrollMotion](arkts-scrollmotion-c.md) | Rolling animation model: You can build rolling animation based on the initial position, initial speed, boundary position, and spring attributes. |
+| <!--DelRow-->[SpringMotion](arkts-springmotion-c.md) | Spring animation model. You can build a spring animation based on the start point, end point, initial speed, and spring attributes. |
+| <!--DelRow-->[SpringProp](arkts-springprop-c.md) | Customize spring properties. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AnimatorOptions](arkts-arkui-animatoroptions-i.md) | Animator options. |
-| [AnimatorResult](arkts-arkui-animatorresult-i.md) | Defines the animator result. |
+| <!--DelRow-->[AnimatorInterface](arkts-animatorinterface-i.md) | Defines Animator. |
+
+### Constants
+
+| Name | Description |
+| --- | --- |
+| <!--DelRow-->[Animator](arkts-animator-con-sys.md#Animator) | Defines Animator Component. |
+| <!--DelRow-->[AnimatorInstance](arkts-animator-con-sys.md#AnimatorInstance) | Defines Animator Component instance. |
 

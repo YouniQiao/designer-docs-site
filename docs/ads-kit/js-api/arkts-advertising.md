@@ -1,6 +1,6 @@
 # @ohos.advertising
 
-The advertising module provides APIs for requesting and displaying ads. > **NOTE** > The initial APIs of this module are supported since API version 11. > Newly added APIs will be marked with a superscript to indicate their earliest API version.
+本模块提供广告操作能力，包括请求广告、展示广告。 > **说明：** > > 本模块首批接口从API version 11开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。
 
 **Since:** 11
 
@@ -9,7 +9,7 @@ The advertising module provides APIs for requesting and displaying ads. > **NOTE
 ## Modules to Import
 
 ```TypeScript
-import { advertising } from '@ohos.advertising';
+import { advertising } from '@kit.AdsKit';
 ```
 
 ## Summary
@@ -18,33 +18,33 @@ import { advertising } from '@ohos.advertising';
 
 | Name | Description |
 | --- | --- |
-| [deleteWebAdInterface](arkts-ads-deletewebadinterface-f.md#deletewebadinterface-1) | Deletes the ad JavaScript object injected through **registerWebAdInterface** (this API is only open to some pre-installed system applications). |
-| [getAdRequestBody](arkts-ads-getadrequestbody-f.md#getadrequestbody-1) | Obtains the body of an ad request. This API uses a promise to return the result (this API is only open to some pre-installed system applications). |
-| [parseAdResponse](arkts-ads-parseadresponse-f.md#parseadresponse-1) | Parses and processes the body of an ad response (this API is only open to some pre-installed system applications). |
-| [registerWebAdInterface](arkts-ads-registerwebadinterface-f.md#registerwebadinterface-1) | Injects an ad JavaScript object to the **Web** component (this API is only open to some pre-installed system applications). |
-| [registerWebAdInterface](arkts-ads-registerwebadinterface-f.md#registerwebadinterface-2) | Injects an ad JavaScript object to the **Web** component (this API is only open to some pre-installed system applications). |
-| [showAd](arkts-ads-showad-f.md#showad-1) | Shows a full-screen ad. |
+| [deleteWebAdInterface](arkts-advertising-deletewebadinterface-f.md#deleteWebAdInterface-1) | 删除通过registerWebAdInterface注入的广告JavaScript对象（该接口仅对部分系统预置应用开放）。 |
+| [getAdRequestBody](arkts-advertising-getadrequestbody-f.md#getAdRequestBody-1) | 获取广告请求体，使用Promise异步回调（该接口仅对部分系统预置应用开放）。 |
+| [parseAdResponse](arkts-advertising-parseadresponse-f.md#parseAdResponse-1) | 解析并处理广告响应体（该接口仅对部分系统预置应用开放）。 |
+| [registerWebAdInterface](arkts-advertising-registerwebadinterface-f.md#registerWebAdInterface-1) | 注入广告JavaScript对象到Web组件中（该接口仅对部分系统预置应用开放）。 |
+| [registerWebAdInterface](arkts-advertising-registerwebadinterface-f.md#registerWebAdInterface-2) | 注入广告JavaScript对象到Web组件中（该接口仅对部分系统预置应用开放）。 |
+| [showAd](arkts-advertising-showad-f.md#showAd-1) | 展示全屏广告。 |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [AdLoader](arkts-ads-adloader-c.md) | Provides the APIs for loading ads. |
+| [AdLoader](arkts-advertising-adloader-c.md) | 提供加载广告的功能。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AdDisplayOptions](arkts-ads-addisplayoptions-i.md) | Defines the ad display parameters. |
-| [AdInteractionListener](arkts-ads-adinteractionlistener-i.md) | Defines the ad status change callback. |
-| [AdLoadListener](arkts-ads-adloadlistener-i.md) | Enumerates the callbacks used for the request for loading an ad. |
-| [AdOptions](arkts-ads-adoptions-i.md) | Defines the ad configuration. |
-| [AdRequestParams](arkts-ads-adrequestparams-i.md) | Defines the ad request parameters. |
-| [MultiSlotsAdLoadListener](arkts-ads-multislotsadloadlistener-i.md) | Enumerates the callbacks used for the request for loading multiple ads. |
+| [AdDisplayOptions](arkts-advertising-addisplayoptions-i.md) | 广告展示参数。 |
+| [AdInteractionListener](arkts-advertising-adinteractionlistener-i.md) | 广告状态变化回调。 |
+| [AdLoadListener](arkts-advertising-adloadlistener-i.md) | 单广告位广告请求回调。 |
+| [AdOptions](arkts-advertising-adoptions-i.md) | 广告配置参数。 |
+| [AdRequestParams](arkts-advertising-adrequestparams-i.md) | 广告请求参数。 |
+| [MultiSlotsAdLoadListener](arkts-advertising-multislotsadloadlistener-i.md) | 多广告位广告请求回调。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [Advertisement](arkts-ads-advertisement-t.md) | Defines the requested ad content. |
+| [Advertisement](arkts-advertising-advertisement-t.md) | 请求的广告内容。 |
 

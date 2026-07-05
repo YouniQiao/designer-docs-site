@@ -9,7 +9,7 @@ Provides MSTensor definition
 ## Modules to Import
 
 ```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
+import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
 ## getData
@@ -22,7 +22,7 @@ Get MSTensor data
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -92,7 +92,7 @@ Set MSTensor data
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -106,7 +106,7 @@ Set MSTensor data
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000013 | Failed to set MSTensor data. Possible causes: 1. The input array buffer sizeis incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000013 | Failed to set MSTensor data. Possible causes: 1. The input array buffer size  is incorrect. [staticonly] |
 
 **Example**
 
@@ -144,51 +144,19 @@ globalContext.getApplicationContext()
 
 ```
 
-## dataSize
+## shape
 
 ```TypeScript
-dataSize: number
+shape: int[]
 ```
 
-The data size of the tensor, the unit is byte.
+The shape of the tensor.
 
-**Type:** number
+**Type:** int[]
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.AI.MindSporeLite
-
-## dtype
-
-```TypeScript
-dtype: DataType
-```
-
-The data type of the tensor.
-
-**Type:** DataType
-
-**Since:** 10
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.AI.MindSporeLite
-
-## elementNum
-
-```TypeScript
-elementNum: number
-```
-
-The number of elements in the tensor.
-
-**Type:** number
-
-**Since:** 10
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -204,7 +172,7 @@ The format of the tensor.
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -220,23 +188,55 @@ The name of the tensor.
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
-## shape
+## dtype
 
 ```TypeScript
-shape: number[]
+dtype: DataType
 ```
 
-The shape of the tensor.
+The data type of the tensor.
 
-**Type:** number[]
+**Type:** DataType
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.AI.MindSporeLite
+
+## dataSize
+
+```TypeScript
+dataSize: int
+```
+
+The data size of the tensor, the unit is byte.
+
+**Type:** int
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.AI.MindSporeLite
+
+## elementNum
+
+```TypeScript
+elementNum: int
+```
+
+The number of elements in the tensor.
+
+**Type:** int
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

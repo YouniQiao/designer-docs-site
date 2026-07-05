@@ -1,6 +1,10 @@
 # AlphaType
 
-Enumerates the alpha types of images.
+```TypeScript
+enum AlphaType
+```
+
+表示图像的透明度类型的枚举。
 
 **Since:** 9
 
@@ -12,13 +16,13 @@ Enumerates the alpha types of images.
 UNKNOWN = 0
 ```
 
-Unknown alpha type.
+未知透明度类型。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -28,13 +32,13 @@ Unknown alpha type.
 OPAQUE = 1
 ```
 
-There is no alpha or the image is opaque.
+没有Alpha通道或图片不透明。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -44,13 +48,13 @@ There is no alpha or the image is opaque.
 PREMUL = 2
 ```
 
-Premultiplied alpha.
+RGB通道预乘Alpha值。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -60,13 +64,13 @@ Premultiplied alpha.
 UNPREMUL = 3
 ```
 
-RGB non-premultiplied alpha.
+RGB通道非预乘Alpha值。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

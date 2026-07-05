@@ -1,5 +1,9 @@
 # DataType
 
+```TypeScript
+export enum DataType
+```
+
 Enum for provides MSTensor data type
 
 **Since:** 10
@@ -16,7 +20,7 @@ data type is unknown
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -30,7 +34,7 @@ data type is int8
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -44,7 +48,7 @@ data type is int16
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -58,7 +62,7 @@ data type is int32
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -72,7 +76,7 @@ data type is int64
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -86,7 +90,7 @@ data type is uint8
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -100,7 +104,7 @@ data type is uint16
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -114,7 +118,7 @@ data type is uint32
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -128,7 +132,7 @@ data type is uint64
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -142,7 +146,7 @@ data type is float16
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -156,7 +160,7 @@ data type is float32
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -170,7 +174,7 @@ data type is float64
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

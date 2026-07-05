@@ -11,63 +11,55 @@ Module for AI-generated images using UI Component.
 ## Modules to Import
 
 ```TypeScript
-import { imageGeneration } from '@ohos.arkui.intelligence.imageGeneration';
+import { imageGeneration } from '@kit.ArkUI';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [closeGeneratorDialog](arkts-arkui-closegeneratordialog-f-sys.md#closegeneratordialog-1) | Close the AI image generation task popup. |
-| [closeGeneratorNodeGraph](arkts-arkui-closegeneratornodegraph-f-sys.md#closegeneratornodegraph-1) | Close the AI node graph Sheet. |
-| [hideGeneratorDialog](arkts-arkui-hidegeneratordialog-f-sys.md#hidegeneratordialog-1) | Hide the AI image generation task popup. |
-| [hideGeneratorNodeGraph](arkts-arkui-hidegeneratornodegraph-f-sys.md#hidegeneratornodegraph-1) | Hide the AI node graph Sheet. |
-| [openGeneratorNodeGraph](arkts-arkui-opengeneratornodegraph-f-sys.md#opengeneratornodegraph-1) | Open the AI node graph Sheet. |
-| [restoreGeneratorDialog](arkts-arkui-restoregeneratordialog-f-sys.md#restoregeneratordialog-1) | Restore the AI image generation task popup. |
-| [restoreGeneratorNodeGraph](arkts-arkui-restoregeneratornodegraph-f-sys.md#restoregeneratornodegraph-1) | Restore the AI node graph Sheet. |
-| [showGeneratorDialog](arkts-arkui-showgeneratordialog-f-sys.md#showgeneratordialog-1) | Open the AI image generation task popup and perform AI image generation operations. |
-<!--DelEnd-->
+| <!--DelRow-->[closeGeneratorDialog](arkts-imagegeneration-closegeneratordialog-f-sys.md#closeGeneratorDialog-1) | Close the AI image generation task popup. |
+| <!--DelRow-->[closeGeneratorNodeGraph](arkts-imagegeneration-closegeneratornodegraph-f-sys.md#closeGeneratorNodeGraph-1) | Close the AI node graph Sheet. |
+| <!--DelRow-->[hideGeneratorDialog](arkts-imagegeneration-hidegeneratordialog-f-sys.md#hideGeneratorDialog-1) | Hide the AI image generation task popup. |
+| <!--DelRow-->[hideGeneratorNodeGraph](arkts-imagegeneration-hidegeneratornodegraph-f-sys.md#hideGeneratorNodeGraph-1) | Hide the AI node graph Sheet. |
+| <!--DelRow-->[openGeneratorNodeGraph](arkts-imagegeneration-opengeneratornodegraph-f-sys.md#openGeneratorNodeGraph-1) | Open the AI node graph Sheet. |
+| <!--DelRow-->[restoreGeneratorDialog](arkts-imagegeneration-restoregeneratordialog-f-sys.md#restoreGeneratorDialog-1) | Restore the AI image generation task popup. |
+| <!--DelRow-->[restoreGeneratorNodeGraph](arkts-imagegeneration-restoregeneratornodegraph-f-sys.md#restoreGeneratorNodeGraph-1) | Restore the AI node graph Sheet. |
+| <!--DelRow-->[showGeneratorDialog](arkts-imagegeneration-showgeneratordialog-f-sys.md#showGeneratorDialog-1) | Open the AI image generation task popup and perform AI image generation operations. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CustomImportIcon](arkts-arkui-customimporticon-i-sys.md) | Customize the import icon, which is used to add images and text from the application side. |
-| [CustomImportResult](arkts-arkui-customimportresult-i-sys.md) | The result of import operation for custom import icon. |
-| [GenerateImageTaskParams](arkts-arkui-generateimagetaskparams-i-sys.md) | Configuration parameter options for AI-generated image tasks. |
-| [GenerateImageTaskPartialResult](arkts-arkui-generateimagetaskpartialresult-i-sys.md) | Configuration stream result for AI-generated image tasks. |
-| [GenerateImageTaskResult](arkts-arkui-generateimagetaskresult-i-sys.md) | Configuration result for AI-generated image tasks. |
-| [GenerateTextTaskPartialResult](arkts-arkui-generatetexttaskpartialresult-i-sys.md) | Configuration stream result for AI-generated text tasks. |
-| [GenerateTextTaskResult](arkts-arkui-generatetexttaskresult-i-sys.md) | Configuration result for AI-generated text tasks. |
-| [GeneratorDialogOptions](arkts-arkui-generatordialogoptions-i-sys.md) | Parameters used to open the ImageGeneratorDialog. |
-| [GeneratorNodeGraphOptions](arkts-arkui-generatornodegraphoptions-i-sys.md) | Parameters used to open the NodeGraphComponent. |
-| [GeneratorResult](arkts-arkui-generatorresult-i-sys.md) | The result of AI-generated images |
-| [GeneratorResultPageIcon](arkts-arkui-generatorresultpageicon-i-sys.md) | Custom icon object in the generation result page of ImageGeneratorDialog. |
-| [ImageGenerationModel](arkts-arkui-imagegenerationmodel-i-sys.md) | AI Image Model Abstract Interface. |
-| [ImageItem](arkts-arkui-imageitem-i-sys.md) | Image information for AI-generated images. |
-| [ImageStyle](arkts-arkui-imagestyle-i-sys.md) | Style types supported by AI image generation models, like Graffiti, Watercolor. |
-| [LiveViewInfo](arkts-arkui-liveviewinfo-i-sys.md) | Information for LiveView in AI image generation. |
-| [TaskStatistic](arkts-arkui-taskstatistic-i-sys.md) | Statistics Related to AI Image Generation Tasks. |
-| [TextGenerationModel](arkts-arkui-textgenerationmodel-i-sys.md) | AI Text Model Abstract Interface. |
-<!--DelEnd-->
+| <!--DelRow-->[CustomImportIcon](arkts-imagegeneration-customimporticon-i-sys.md) | Customize the import icon, which is used to add images and text from the application side. |
+| <!--DelRow-->[CustomImportResult](arkts-imagegeneration-customimportresult-i-sys.md) | The result of import operation for custom import icon. |
+| <!--DelRow-->[GenerateImageTaskParams](arkts-imagegeneration-generateimagetaskparams-i-sys.md) | Configuration parameter options for AI-generated image tasks. |
+| <!--DelRow-->[GenerateImageTaskPartialResult](arkts-imagegeneration-generateimagetaskpartialresult-i-sys.md) | Configuration stream result for AI-generated image tasks. |
+| <!--DelRow-->[GenerateImageTaskResult](arkts-imagegeneration-generateimagetaskresult-i-sys.md) | Configuration result for AI-generated image tasks. |
+| <!--DelRow-->[GenerateTextTaskPartialResult](arkts-imagegeneration-generatetexttaskpartialresult-i-sys.md) | Configuration stream result for AI-generated text tasks. |
+| <!--DelRow-->[GenerateTextTaskResult](arkts-imagegeneration-generatetexttaskresult-i-sys.md) | Configuration result for AI-generated text tasks. |
+| <!--DelRow-->[GeneratorDialogOptions](arkts-imagegeneration-generatordialogoptions-i-sys.md) | Parameters used to open the ImageGeneratorDialog. |
+| <!--DelRow-->[GeneratorNodeGraphOptions](arkts-imagegeneration-generatornodegraphoptions-i-sys.md) | Parameters used to open the NodeGraphComponent. |
+| <!--DelRow-->[GeneratorResult](arkts-imagegeneration-generatorresult-i-sys.md) | The result of AI-generated images |
+| <!--DelRow-->[GeneratorResultPageIcon](arkts-imagegeneration-generatorresultpageicon-i-sys.md) | Custom icon object in the generation result page of ImageGeneratorDialog. |
+| <!--DelRow-->[ImageGenerationModel](arkts-imagegeneration-imagegenerationmodel-i-sys.md) | AI Image Model Abstract Interface. |
+| <!--DelRow-->[ImageItem](arkts-imagegeneration-imageitem-i-sys.md) | Image information for AI-generated images. |
+| <!--DelRow-->[ImageStyle](arkts-imagegeneration-imagestyle-i-sys.md) | Style types supported by AI image generation models, like Graffiti, Watercolor. |
+| <!--DelRow-->[LiveViewInfo](arkts-imagegeneration-liveviewinfo-i-sys.md) | Information for LiveView in AI image generation. |
+| <!--DelRow-->[TaskStatistic](arkts-imagegeneration-taskstatistic-i-sys.md) | Statistics Related to AI Image Generation Tasks. |
+| <!--DelRow-->[TextGenerationModel](arkts-imagegeneration-textgenerationmodel-i-sys.md) | AI Text Model Abstract Interface. |
 
-<!--Del-->
-### Enums（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [PartialResultType](arkts-arkui-partialresulttype-e-sys.md) | Provides stream output result type definition. |
-<!--DelEnd-->
+| <!--DelRow-->[CustomImportCallback](arkts-imagegeneration-customimportcallback-t-sys.md) | Async callback type for custom import operation. |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [CustomImportCallback](arkts-arkui-customimportcallback-t-sys.md) | Async callback type for custom import operation. |
-<!--DelEnd-->
+| <!--DelRow-->[PartialResultType](arkts-imagegeneration-partialresulttype-e-sys.md) | Provides stream output result type definition. |
 

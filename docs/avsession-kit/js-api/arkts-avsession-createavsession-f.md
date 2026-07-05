@@ -1,11 +1,5 @@
 # createAVSession
 
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
-
 ## createAVSession
 
 ```TypeScript
@@ -25,14 +19,14 @@ Create an AVSession instance. An ability can only create one AVSession
 | context | Context | Yes | The context of application |
 | tag | string | Yes | A user-defined name for this session |
 | type | AVSessionType | Yes | The type of session {@link AVSessionType} |
-| callback | AsyncCallback&lt;AVSession&gt; | Yes | async callback for AVSession. |
+| callback | AsyncCallback&lt;AVSession> | Yes | async callback for AVSession. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -66,7 +60,6 @@ struct Index {
 
 ```
 
-
 ## createAVSession
 
 ```TypeScript
@@ -77,7 +70,7 @@ Create an AVSession instance. An ability can only create one AVSession
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -93,14 +86,14 @@ Create an AVSession instance. An ability can only create one AVSession
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVSession&gt; | Promise for AVSession |
+| Promise&lt;AVSession> | Promise for AVSession |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
 
 **Example**
 

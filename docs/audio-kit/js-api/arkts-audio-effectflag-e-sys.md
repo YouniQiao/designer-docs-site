@@ -1,4 +1,8 @@
-# EffectFlag (System API)
+# EffectFlag
+
+```TypeScript
+enum EffectFlag
+```
 
 Enumerates audio effect flags.
 

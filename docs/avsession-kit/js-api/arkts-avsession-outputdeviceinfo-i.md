@@ -9,7 +9,7 @@ Target Device Information Definition
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
 
 ## devices
@@ -24,7 +24,7 @@ Arrays of device information
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

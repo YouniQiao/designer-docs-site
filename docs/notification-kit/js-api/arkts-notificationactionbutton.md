@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [NotificationActionButton](arkts-notification-notificationactionbutton-i.md) | The **NotificationActionButton** module provides APIs for describing the button displayed in the notification. |
+| [NotificationActionButton](arkts-notificationactionbutton-i.md) | 描述通知中显示的操作按钮。 |
 

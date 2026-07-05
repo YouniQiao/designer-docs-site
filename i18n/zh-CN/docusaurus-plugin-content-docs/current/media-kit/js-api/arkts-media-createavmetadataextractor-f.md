@@ -16,13 +16,13 @@ function createAVMetadataExtractor(): Promise<AVMetadataExtractor>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AVMetadataExtractor&gt; | Promise对象。异步返回元数据获取类对象（AVMetadataExtractor）。 |
+| Promise&lt;AVMetadataExtractor> | Promise对象。异步返回元数据获取类对象（AVMetadataExtractor）。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Returned by promise. |
+| 5400101 | No memory. Returned by promise. |
 
 **示例：**
 
@@ -43,7 +43,6 @@ media.createAVMetadataExtractor().then((extractor: media.AVMetadataExtractor) =>
 
 ```
 
-
 ## createAVMetadataExtractor
 
 ```TypeScript
@@ -60,13 +59,13 @@ function createAVMetadataExtractor(callback: AsyncCallback<AVMetadataExtractor>)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVMetadataExtractor&gt; | 是 | 回调函数。当创建AVMetadataExtractor实例成功，err为undefined，data为获取到的AVMetadataExtractor实例，否则为错误对象。 |
+| callback | AsyncCallback&lt;AVMetadataExtractor> | 是 | 回调函数。当创建AVMetadataExtractor实例成功，err为undefined，data为获取到的  AVMetadataExtractor实例，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Returned by callback. |
+| 5400101 | No memory. Returned by callback. |
 
 **示例：**
 

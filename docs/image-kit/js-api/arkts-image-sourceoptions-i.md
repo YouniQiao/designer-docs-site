@@ -1,6 +1,6 @@
 # SourceOptions
 
-Defines image source initialization options.
+ImageSource的初始化选项。
 
 **Since:** 9
 
@@ -9,26 +9,8 @@ Defines image source initialization options.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
-
-## sourceDensity
-
-```TypeScript
-sourceDensity: number
-```
-
-Pixel density of the image resource, in ppi. If **desiredSize** is not set in [DecodingOptions](arkts-image-decodingoptions-i.md#decodingoptions) and **SourceOptions.sourceDensity** and **DecodingOptions.fitDensity** are not 0, the PixelMap output after decoding will be scaled. The formula for calculating the width after scaling is as follows (the same applies to the height): (width * fitDensity + (sourceDensity >> 1)) / sourceDensity.
-
-**Type:** number
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
 
 ## sourcePixelFormat
 
@@ -36,15 +18,33 @@ Pixel density of the image resource, in ppi. If **desiredSize** is not set in [D
 sourcePixelFormat?: PixelMapFormat
 ```
 
-Image pixel format. The default value is **UNKNOWN**.
+图片像素格式，默认值为UNKNOWN。
 
 **Type:** PixelMapFormat
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sourceDensity
+
+```TypeScript
+sourceDensity: int
+```
+
+图片资源像素密度。单位：ppi（像素/英寸）。 在解码参数[DecodingOptions]image.DecodingOptions未设置desiredSize的前提下，当前参数SourceOptions.sourceDensity与 DecodingOptions.fitDensity非零时将对解码输出的pixelmap进行缩放。 缩放后宽计算公式如下(高同理)：(width * fitDensity + (sourceDensity >> 1)) / sourceDensity。
+
+**Type:** int
+
+**Since:** 9
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,15 +54,15 @@ Image pixel format. The default value is **UNKNOWN**.
 sourceSize?: Size
 ```
 
-Image pixel size. The default value is null.
+图像像素大小，默认值为空。
 
 **Type:** Size
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

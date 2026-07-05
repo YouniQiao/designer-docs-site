@@ -1,6 +1,6 @@
 # ImageRawData
 
-Describes raw data in an image.
+图像的RAW数据。
 
 **Since:** 24
 
@@ -9,22 +9,22 @@ Describes raw data in an image.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## bitsPerPixel
 
 ```TypeScript
-bitsPerPixel: number
+bitsPerPixel: int
 ```
 
-Number of bits that each pixel actually occupies in the buffer data.
+每个像素在缓冲区数据中实际占用的位数。单位：比特（bit）。
 
-**Type:** number
+**Type:** int
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 
@@ -34,13 +34,13 @@ Number of bits that each pixel actually occupies in the buffer data.
 buffer: ArrayBuffer
 ```
 
-Binary data of the raw image.
+图像缓冲区。
 
 **Type:** ArrayBuffer
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 

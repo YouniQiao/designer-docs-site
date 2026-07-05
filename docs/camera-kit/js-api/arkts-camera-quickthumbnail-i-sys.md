@@ -1,4 +1,4 @@
-# QuickThumbnail (System API)
+# QuickThumbnail
 
 Quick thumbnail object
 
@@ -11,7 +11,7 @@ Quick thumbnail object
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## release
@@ -32,23 +32,23 @@ Release quick thumbnail object.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 ## captureId
 
 ```TypeScript
-readonly captureId: number
+readonly captureId: int
 ```
 
 capture id.
 
-**Type:** number
+**Type:** int
 
 **Since:** 19
 

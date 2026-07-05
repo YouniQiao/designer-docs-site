@@ -1,6 +1,10 @@
 # DngPropertyKey
 
-Enumerates the properties available for the metadata of a DNG image.
+```TypeScript
+enum DngPropertyKey
+```
+
+表示DNG图片信息的枚举。 > **说明：** > > - 关于字段的更详细描述请参考DNG协议文档DNG Specification 1.4.0.0。 > > - 返回字段类型具体参考[DngMetadata]image.DngMetadata。
 
 **Since:** 24
 
@@ -12,11 +16,11 @@ Enumerates the properties available for the metadata of a DNG image.
 DNG_VERSION = 'DNGVersion'
 ```
 
-The DNG version.
+DNG图片的版本号。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -26,11 +30,11 @@ The DNG version.
 DNG_BACKWARD_VERSION = 'DNGBackwardVersion'
 ```
 
-The DNG backward version.
+DNG文件向后兼容的最低版本号。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -40,11 +44,11 @@ The DNG backward version.
 UNIQUE_CAMERA_MODEL = 'UniqueCameraModel'
 ```
 
-A unique camera model.
+相机的唯一型号标识，用于区分不同设备。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,11 +58,11 @@ A unique camera model.
 LOCALIZED_CAMERA_MODEL = 'LocalizedCameraModel'
 ```
 
-A localized camera model.
+本地化后的相机型号名称。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -68,11 +72,11 @@ A localized camera model.
 CFA_PLANE_COLOR = 'CFAPlaneColor'
 ```
 
-The CFA (color filter array) plane color.
+CFA各平面的颜色通道定义。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -82,11 +86,11 @@ The CFA (color filter array) plane color.
 CFA_LAYOUT = 'CFALayout'
 ```
 
-The CFA (color filter array) layout.
+CFA布局类型，如RGGB、BGGR等。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -96,11 +100,11 @@ The CFA (color filter array) layout.
 LINEARIZATION_TABLE = 'LinearizationTable'
 ```
 
-The linearization table.
+线性化查找表，用于将原始传感器值映射为线性光强度。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -110,11 +114,11 @@ The linearization table.
 BLACK_LEVEL_REPEAT_DIM = 'BlackLevelRepeatDim'
 ```
 
-The black level repeat dimension.
+黑电平重复维度。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -124,11 +128,11 @@ The black level repeat dimension.
 BLACK_LEVEL = 'BlackLevel'
 ```
 
-The zero light encoding level.
+零光照下的编码电平，按CFA平面顺序排列。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -138,11 +142,11 @@ The zero light encoding level.
 BLACK_LEVEL_DELTA_H = 'BlackLevelDeltaH'
 ```
 
-The black level delta H.
+水平方向黑电平校正增量。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -152,11 +156,11 @@ The black level delta H.
 BLACK_LEVEL_DELTA_V = 'BlackLevelDeltaV'
 ```
 
-The black level delta V.
+垂直方向黑电平校正增量。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -166,11 +170,11 @@ The black level delta V.
 WHITE_LEVEL = 'WhiteLevel'
 ```
 
-The white level.
+白电平，表示传感器最大有效输出。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -180,11 +184,11 @@ The white level.
 DEFAULT_SCALE = 'DefaultScale'
 ```
 
-The default scale.
+默认缩放比例。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -194,11 +198,11 @@ The default scale.
 DEFAULT_CROP_ORIGIN = 'DefaultCropOrigin'
 ```
 
-The default crop origin.
+默认裁剪区域的左上角坐标（x, y）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -208,11 +212,11 @@ The default crop origin.
 DEFAULT_CROP_SIZE = 'DefaultCropSize'
 ```
 
-The default crop size.
+默认裁剪区域的宽度和高度。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -222,11 +226,11 @@ The default crop size.
 COLOR_MATRIX1 = 'ColorMatrix1'
 ```
 
-A transformation matrix under the first calibration illuminant.
+第一校准光源下的色彩变换矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -236,11 +240,11 @@ A transformation matrix under the first calibration illuminant.
 COLOR_MATRIX2 = 'ColorMatrix2'
 ```
 
-A transformation matrix under the second calibration illuminant.
+第二校准光源下的色彩变换矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -250,11 +254,11 @@ A transformation matrix under the second calibration illuminant.
 CAMERA_CALIBRATION1 = 'CameraCalibration1'
 ```
 
-A calibration matrix under the first calibration illuminant.
+第一校准光源下的相机校准矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -264,11 +268,11 @@ A calibration matrix under the first calibration illuminant.
 CAMERA_CALIBRATION2 = 'CameraCalibration2'
 ```
 
-A calibration matrix under the second calibration illuminant.
+第二校准光源下的相机校准矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -278,11 +282,11 @@ A calibration matrix under the second calibration illuminant.
 REDUCTION_MATRIX1 = 'ReductionMatrix1'
 ```
 
-A dimensionality reduction matrix under the first calibration illuminant.
+第一校准光源下的降维矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -292,11 +296,11 @@ A dimensionality reduction matrix under the first calibration illuminant.
 REDUCTION_MATRIX2 = 'ReductionMatrix2'
 ```
 
-A dimensionality reduction matrix under the second calibration illuminant.
+第二校准光源下的降维矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -306,11 +310,11 @@ A dimensionality reduction matrix under the second calibration illuminant.
 ANALOG_BALANCE = 'AnalogBalance'
 ```
 
-The analog balance.
+模拟增益平衡系数。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -320,11 +324,11 @@ The analog balance.
 AS_SHOT_NEUTRAL = 'AsShotNeutral'
 ```
 
-The as-shot neutral.
+拍摄时的中性白点。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -334,11 +338,11 @@ The as-shot neutral.
 AS_SHOT_WHITEXY = 'AsShotWhiteXY'
 ```
 
-The as-shot white, encoded as X‑Y chromaticity coordinates.
+拍摄时白点的CIE x-y色度坐标。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -348,11 +352,11 @@ The as-shot white, encoded as X‑Y chromaticity coordinates.
 BASELINE_EXPOSURE = 'BaselineExposure'
 ```
 
-The baseline exposure.
+基准曝光补偿值，单位：EV。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -362,11 +366,11 @@ The baseline exposure.
 BASELINE_NOISE = 'BaselineNoise'
 ```
 
-The baseline noise.
+基准噪声水平。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -376,11 +380,11 @@ The baseline noise.
 BASELINE_SHARPNESS = 'BaselineSharpness'
 ```
 
-The baseline sharpness.
+基准锐度增益。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -390,11 +394,11 @@ The baseline sharpness.
 BAYER_GREEN_SPLIT = 'BayerGreenSplit'
 ```
 
-The Bayer green split.
+Bayer图像中两个绿色通道的分离程度。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -404,11 +408,11 @@ The Bayer green split.
 LINEAR_RESPONSE_LIMIT = 'LinearResponseLimit'
 ```
 
-The linear response limit.
+线性响应上限，有效值范围为[0.0, 1.0]。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -418,11 +422,11 @@ The linear response limit.
 CAMERA_SERIAL_NUMBER = 'CameraSerialNumber'
 ```
 
-The serial number of the camera.
+相机序列号。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -432,11 +436,11 @@ The serial number of the camera.
 LENS_INFO = 'LensInfo'
 ```
 
-Information about the lens.
+镜头信息。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -446,11 +450,11 @@ Information about the lens.
 CHROMA_BLUR_RADIUS = 'ChromaBlurRadius'
 ```
 
-The chroma blur radius.
+色度模糊半径。单位：像素（px）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -460,11 +464,11 @@ The chroma blur radius.
 ANTI_ALIAS_STRENGTH = 'AntiAliasStrength'
 ```
 
-The anti-alias strength.
+抗锯齿滤波器强度。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -474,11 +478,11 @@ The anti-alias strength.
 SHADOW_SCALE = 'ShadowScale'
 ```
 
-The shadow scale.
+阴影区域缩放因子。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -488,11 +492,11 @@ The shadow scale.
 DNG_PRIVATE_DATA = 'DNGPrivateData'
 ```
 
-The private data.
+厂商私有数据块。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -502,11 +506,11 @@ The private data.
 MAKER_NOTE_SAFETY = 'MakerNoteSafety'
 ```
 
-Whether the EXIF MakerNote tag is safe.
+EXIF MakerNote 是否安全可保留。0：不安全，1：安全
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -516,11 +520,11 @@ Whether the EXIF MakerNote tag is safe.
 CALIBRATION_ILLUMINANT1 = 'CalibrationIlluminant1'
 ```
 
-The first calibration illuminant.
+第一校准光源类型。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -530,11 +534,11 @@ The first calibration illuminant.
 CALIBRATION_ILLUMINANT2 = 'CalibrationIlluminant2'
 ```
 
-The second calibration illuminant.
+第二校准光源类型。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -544,11 +548,11 @@ The second calibration illuminant.
 BEST_QUALITY_SCALE = 'BestQualityScale'
 ```
 
-The best quality scale.
+最佳画质缩放比例。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -558,11 +562,11 @@ The best quality scale.
 RAW_DATA_UNIQUE_ID = 'RawDataUniqueID'
 ```
 
-The unique identifier of raw image data.
+原始图像数据的唯一标识符。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -572,11 +576,11 @@ The unique identifier of raw image data.
 ORIGINAL_RAW_FILE_NAME = 'OriginalRawFileName'
 ```
 
-The original raw file name.
+原始RAW文件名。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -586,11 +590,11 @@ The original raw file name.
 ORIGINAL_RAW_FILE_DATA = 'OriginalRawFileData'
 ```
 
-The original raw file data.
+原始RAW文件的完整数据。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -600,11 +604,11 @@ The original raw file data.
 ACTIVE_AREA = 'ActiveArea'
 ```
 
-The active area.
+有效图像区域。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -614,11 +618,11 @@ The active area.
 MASKED_AREAS = 'MaskedAreas'
 ```
 
-The masked areas.
+被遮蔽区域列表。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -628,11 +632,11 @@ The masked areas.
 AS_SHOT_ICC_PROFILE = 'AsShotICCProfile'
 ```
 
-An ICC profile.
+拍摄时使用的ICC色彩配置文件。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -642,11 +646,11 @@ An ICC profile.
 AS_SHOT_PRE_PROFILE_MATRIX = 'AsShotPreProfileMatrix'
 ```
 
-The as-shot pre-profile matrix.
+应用ICC配置文件前的预变换矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -656,11 +660,11 @@ The as-shot pre-profile matrix.
 CURRENT_ICC_PROFILE = 'CurrentICCProfile'
 ```
 
-The current ICC profile.
+当前使用的ICC色彩配置文件。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -670,11 +674,11 @@ The current ICC profile.
 CURRENT_PRE_PROFILE_MATRIX = 'CurrentPreProfileMatrix'
 ```
 
-The current pre-profile matrix.
+当前ICC配置文件前的预变换矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -684,11 +688,11 @@ The current pre-profile matrix.
 COLORIMETRIC_REFERENCE = 'ColorimetricReference'
 ```
 
-The colorimetric reference.
+色度参考标准。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -698,11 +702,11 @@ The colorimetric reference.
 CAMERA_CALIBRATION_SIGNATURE = 'CameraCalibrationSignature'
 ```
 
-The camera calibration signature.
+相机校准签名。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -712,11 +716,11 @@ The camera calibration signature.
 PROFILE_CALIBRATION_SIGNATURE = 'ProfileCalibrationSignature'
 ```
 
-The profile calibration signature.
+配置文件校准签名。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -726,11 +730,11 @@ The profile calibration signature.
 EXTRA_CAMERA_PROFILES = 'ExtraCameraProfiles'
 ```
 
-The extra camera profiles.
+额外相机配置文件索引列表。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -740,11 +744,11 @@ The extra camera profiles.
 AS_SHOT_PROFILE_NAME = 'AsShotProfileName'
 ```
 
-The "as-shot" camera profile.
+拍摄时使用的配置文件名称。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -754,11 +758,11 @@ The "as-shot" camera profile.
 NOISE_REDUCTION_APPLIED = 'NoiseReductionApplied'
 ```
 
-The applied noise reduction.
+已应用的降噪强度级别。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -768,11 +772,11 @@ The applied noise reduction.
 PROFILE_NAME = 'ProfileName'
 ```
 
-The profile name.
+色彩配置文件名称。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -782,11 +786,11 @@ The profile name.
 PROFILE_HUE_SAT_MAP_DIMS = 'ProfileHueSatMapDims'
 ```
 
-The profile hue/saturation map dimensions.
+色调/饱和度映射表维度。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -796,11 +800,11 @@ The profile hue/saturation map dimensions.
 PROFILE_HUE_SAT_MAP_DATA1 = 'ProfileHueSatMapData1'
 ```
 
-The first hue/saturation mapping table data.
+第一组色调/饱和度映射表数据。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -810,11 +814,11 @@ The first hue/saturation mapping table data.
 PROFILE_HUE_SAT_MAP_DATA2 = 'ProfileHueSatMapData2'
 ```
 
-The second hue/saturation mapping table data.
+第二组色调/饱和度映射表数据。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -824,11 +828,11 @@ The second hue/saturation mapping table data.
 PROFILE_TONE_CURVE = 'ProfileToneCurve'
 ```
 
-The profile tone curve.
+配置文件色调曲线。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -838,11 +842,11 @@ The profile tone curve.
 PROFILE_EMBED_POLICY = 'ProfileEmbedPolicy'
 ```
 
-The profile embed policy.
+配置文件嵌入策略。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -852,11 +856,11 @@ The profile embed policy.
 PROFILE_COPYRIGHT = 'ProfileCopyright'
 ```
 
-The profile copyright.
+配置文件版权信息。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -866,11 +870,11 @@ The profile copyright.
 FORWARD_MATRIX1 = 'ForwardMatrix1'
 ```
 
-The first forward matrix.
+第一前向变换矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -880,11 +884,11 @@ The first forward matrix.
 FORWARD_MATRIX2 = 'ForwardMatrix2'
 ```
 
-The second forward matrix.
+第二前向变换矩阵。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -894,11 +898,11 @@ The second forward matrix.
 PREVIEW_APPLICATION_NAME = 'PreviewApplicationName'
 ```
 
-The preview application name.
+预览图生成应用程序名称。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -908,11 +912,11 @@ The preview application name.
 PREVIEW_APPLICATION_VERSION = 'PreviewApplicationVersion'
 ```
 
-The preview application version.
+预览图生成应用程序版本。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -922,11 +926,11 @@ The preview application version.
 PREVIEW_SETTINGS_NAME = 'PreviewSettingsName'
 ```
 
-The preview settings name.
+预览图处理设置名称。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -936,11 +940,11 @@ The preview settings name.
 PREVIEW_SETTINGS_DIGEST = 'PreviewSettingsDigest'
 ```
 
-The preview settings digest.
+预览图设置的MD5摘要。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -950,11 +954,11 @@ The preview settings digest.
 PREVIEW_COLOR_SPACE = 'PreviewColorSpace'
 ```
 
-The preview color space.
+预览图色彩空间。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -964,11 +968,11 @@ The preview color space.
 PREVIEW_DATE_TIME = 'PreviewDateTime'
 ```
 
-The preview date time.
+预览图生成时间。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -978,11 +982,11 @@ The preview date time.
 RAW_IMAGE_DIGEST = 'RawImageDigest'
 ```
 
-An MD5 digest of the raw image data.
+原始图像数据的MD5摘要。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -992,11 +996,11 @@ An MD5 digest of the raw image data.
 ORIGINAL_RAW_FILE_DIGEST = 'OriginalRawFileDigest'
 ```
 
-An MD5 digest of the data stored in the OriginalRawFileData.
+原始RAW文件数据的MD5摘要。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1006,11 +1010,11 @@ An MD5 digest of the data stored in the OriginalRawFileData.
 SUB_TILE_BLOCK_SIZE = 'SubTileBlockSize'
 ```
 
-The sub‑tile block size.
+图像分块存储，定义块的长和宽。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1020,11 +1024,11 @@ The sub‑tile block size.
 ROW_INTERLEAVE_FACTOR = 'RowInterleaveFactor'
 ```
 
-The row interleave factor.
+行交织因子。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1034,11 +1038,11 @@ The row interleave factor.
 PROFILE_LOOK_TABLE_DIMS = 'ProfileLookTableDims'
 ```
 
-The profile look table dimensions.
+ProfileLookTableData的维度。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1048,11 +1052,11 @@ The profile look table dimensions.
 PROFILE_LOOK_TABLE_DATA = 'ProfileLookTableData'
 ```
 
-The profile look table data.
+色彩表数据。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1062,11 +1066,11 @@ The profile look table data.
 OPCODE_LIST1 = 'OpcodeList1'
 ```
 
-The first opcode list.
+第一操作码列表。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1076,11 +1080,11 @@ The first opcode list.
 OPCODE_LIST2 = 'OpcodeList2'
 ```
 
-The second opcode list.
+第二操作码列表。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1090,11 +1094,11 @@ The second opcode list.
 OPCODE_LIST3 = 'OpcodeList3'
 ```
 
-The third opcode list.
+第三操作码列表。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1104,11 +1108,11 @@ The third opcode list.
 NOISE_PROFILE = 'NoiseProfile'
 ```
 
-The noise profile.
+噪声剖面参数。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1118,11 +1122,11 @@ The noise profile.
 ORIGINAL_DEFAULT_FINAL_SIZE = 'OriginalDefaultFinalSize'
 ```
 
-The original default final size.
+原始默认最终输出尺寸（宽, 高）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1132,11 +1136,11 @@ The original default final size.
 ORIGINAL_BEST_QUALITY_FINAL_SIZE = 'OriginalBestQualityFinalSize'
 ```
 
-The original best quality final size.
+原始最佳画质输出尺寸（宽, 高）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1146,11 +1150,11 @@ The original best quality final size.
 ORIGINAL_DEFAULT_CROP_SIZE = 'OriginalDefaultCropSize'
 ```
 
-The original default crop size.
+原始默认裁剪尺寸（宽, 高）。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1160,11 +1164,11 @@ The original default crop size.
 PROFILE_HUE_SAT_MAP_ENCODING = 'ProfileHueSatMapEncoding'
 ```
 
-The profile hue/saturation map encoding.
+色调/饱和度映射表编码方式。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1174,11 +1178,11 @@ The profile hue/saturation map encoding.
 PROFILE_LOOK_TABLE_ENCODING = 'ProfileLookTableEncoding'
 ```
 
-The profile look table encoding.
+色彩表编码方式。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1188,11 +1192,11 @@ The profile look table encoding.
 BASELINE_EXPOSURE_OFFSET = 'BaselineExposureOffset'
 ```
 
-The baseline exposure offset.
+基准曝光偏移量，单位：EV。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1202,11 +1206,11 @@ The baseline exposure offset.
 DEFAULT_BLACK_RENDER = 'DefaultBlackRender'
 ```
 
-The default black render.
+默认黑场渲染方式。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1216,11 +1220,11 @@ The default black render.
 NEW_RAW_IMAGE_DIGEST = 'NewRawImageDigest'
 ```
 
-A modified MD5 digest of the raw image data.
+修改后原始图像数据的新MD5摘要。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1230,11 +1234,11 @@ A modified MD5 digest of the raw image data.
 RAW_TO_PREVIEW_GAIN = 'RawToPreviewGain'
 ```
 
-The gain between the main raw IFD and the preview IFD.
+主RAW图与预览图之间的增益比。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -1244,11 +1248,11 @@ The gain between the main raw IFD and the preview IFD.
 DEFAULT_USER_CROP = 'DefaultUserCrop'
 ```
 
-The default user crop.
+默认用户裁剪区域。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

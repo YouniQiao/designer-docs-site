@@ -1,20 +1,22 @@
 # @ohos.application.WindowExtensionAbility
 
+## 导入模块
+
+```TypeScript
+import { WindowExtensionContext } from '@kit.ArkUI';
+```
+
 ## 汇总
 
-<!--Del-->
-### 类（系统接口）
+### 类
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [WindowExtensionAbility](arkts-arkui-windowextensionability-c-sys.md) | class of window extension ability. |
-<!--DelEnd-->
+| <!--DelRow-->[WindowExtensionAbility](arkts-windowextensionability-c.md) | class of window extension ability. |
 
-<!--Del-->
-### 类型（系统接口）
+### 类型
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [WindowExtensionContext](arkts-arkui-windowextensioncontext-t-sys.md) | The context of window extension. It allows access to windowExtension-specific resources. |
-<!--DelEnd-->
+| <!--DelRow-->[WindowExtensionContext](arkts-windowextensioncontext-t.md) | The context of window extension. It allows access to windowExtension-specific resources. |
 

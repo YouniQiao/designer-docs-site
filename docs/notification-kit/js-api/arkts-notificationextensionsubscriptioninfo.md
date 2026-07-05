@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [NotificationExtensionSubscriptionInfo](arkts-notification-notificationextensionsubscriptioninfo-i.md) | The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension subscription. |
+| [NotificationExtensionSubscriptionInfo](arkts-notificationextensionsubscriptioninfo-i.md) | 用于描述通知扩展订阅的信息。 |
 

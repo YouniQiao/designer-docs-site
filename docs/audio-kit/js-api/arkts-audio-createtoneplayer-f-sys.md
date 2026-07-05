@@ -1,10 +1,4 @@
-# createTonePlayer (System API)
-
-## Modules to Import
-
-```TypeScript
-import { audio } from '@ohos.multimedia.audio';
-```
+# createTonePlayer
 
 ## createTonePlayer
 
@@ -25,7 +19,7 @@ Obtains a {@link TonePlayer} instance. This method uses an asynchronous callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | AudioRendererInfo | Yes | Tone playing attribute. |
-| callback | AsyncCallback&lt;TonePlayer&gt; | Yes | Callback used to return the tonePlayer instance. |
+| callback | AsyncCallback&lt;TonePlayer> | Yes | Callback used to return the tonePlayer instance. |
 
 **Example**
 
@@ -49,7 +43,6 @@ audio.createTonePlayer(audioRendererInfo, (err, data) => {
 });
 
 ```
-
 
 ## createTonePlayer
 
@@ -75,7 +68,7 @@ Obtains a {@link TonePlayer} instance. This method uses a promise to return the 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;TonePlayer&gt; | Promise used to return the tonePlayer instance. |
+| Promise&lt;TonePlayer> | Promise used to return the tonePlayer instance. |
 
 **Example**
 

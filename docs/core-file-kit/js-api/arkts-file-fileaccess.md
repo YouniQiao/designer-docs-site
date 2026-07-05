@@ -1,64 +1,56 @@
 # @ohos.file.fileAccess
 
-The **fileAccess** module provides a framework for accessing and operating user files based on [extension](../../../../application-models/extensionability-overview.md). This module interacts with a variety of file management services, such as the storage management service, and provides a set of unified file access and management APIs for system applications. The storage management service manages both the directories of the built-in storage and resources on external devices, such as shared disks, USB flash drives, and SD cards. > **NOTE** > > - Currently, the APIs of this module can be called only by **FilePicker** and **FileManager**.
+fileAccess模块是基于[extension](docroot://application-models/extensionability-overview.md)机制实现的一个对公共文件访问和操作的框架。该模块一方面对接各类文 件管理服务，如存储管理服务等；另一方面为系统应用提供一套统一的文件访问管理接口。存储管理服务可以管理内置存储部分目录，以及共享盘、U盘、SD卡等设备上的资源。 > **说明：** > > - 当前只支持FilePicker、文件管理器调用。
 
 **Since:** 9
 
 **Deprecated since:** 23
 
-**Substitutes:** [fs:fileIo](arkts-corefile-fileio-n.md#fileio)
+**Substitute:** @ohos.file.fs:fileIo
 
 **System capability:** SystemCapability.FileManagement.UserFileService
 
 ## Modules to Import
 
 ```TypeScript
-import { fileAccess } from '@ohos.file.fileAccess';
+import { fileAccess } from '@kit.CoreFileKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [createFileAccessHelper](arkts-corefile-createfileaccesshelper-f-sys.md#createfileaccesshelper-1) | Creates a **Helper** object to bind with all file management services in the system. This API returns the result synchronously. |
-| [createFileAccessHelper](arkts-corefile-createfileaccesshelper-f-sys.md#createfileaccesshelper-2) | Creates a **Helper** object to bind with the specified Wants. This API returns the result synchronously. The **Helper** object provides file access and management capabilities. |
-| [getFileAccessAbilityInfo](arkts-corefile-getfileaccessabilityinfo-f-sys.md#getfileaccessabilityinfo-1) | Obtains information about all Wants with **extension** set to **fileAccess** in the system. A Want contains information for starting an ability. This API uses an asynchronous callback to return the result. |
-| [getFileAccessAbilityInfo](arkts-corefile-getfileaccessabilityinfo-f-sys.md#getfileaccessabilityinfo-2) | Obtains information about all Wants with **extension** set to **fileAccess** in the system. A Want contains information for starting an ability. This API uses a promise to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[createFileAccessHelper](arkts-fileaccess-createfileaccesshelper-f-sys.md#createFileAccessHelper-1) | 以同步方法创建连接当前系统内所有文件管理服务的helper对象。 |
+| <!--DelRow-->[createFileAccessHelper](arkts-fileaccess-createfileaccesshelper-f-sys.md#createFileAccessHelper-2) | 以同步方法创建连接指定wants的helper对象。 |
+| <!--DelRow-->[getFileAccessAbilityInfo](arkts-fileaccess-getfileaccessabilityinfo-f-sys.md#getFileAccessAbilityInfo-1) | 以异步方法获取系统内extension配置为fileAccess类型的所有Want信息。使用callback异步回调。 |
+| <!--DelRow-->[getFileAccessAbilityInfo](arkts-fileaccess-getfileaccessabilityinfo-f-sys.md#getFileAccessAbilityInfo-2) | 以异步方法获取系统内extension配置为fileAccess类型的所有Want信息。使用Promise异步回调。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CopyResult](arkts-corefile-copyresult-i-sys.md) | Defines the information returned when the file copy operation fails. If the copy operation is successful, no information is returned. |
-| [FileAccessHelper](arkts-corefile-fileaccesshelper-i-sys.md) | Provides a **FileAccessHelper** object. |
-| [FileInfo](arkts-corefile-fileinfo-i-sys.md) | Provides APIs for managing file or directory attribute information. |
-| [FileIterator](arkts-corefile-fileiterator-i-sys.md) | Provides the **FileIterator** object. |
-| [MoveResult](arkts-corefile-moveresult-i-sys.md) | Represents the information returned when the move operation fails. If the operation is successful, no information is returned. |
-| [NotifyMessage](arkts-corefile-notifymessage-i-sys.md) | Represents the notification message. |
-| [RootInfo](arkts-corefile-rootinfo-i-sys.md) | Provides APIs for managing the device's root attribute information. |
-| [RootIterator](arkts-corefile-rootiterator-i-sys.md) | Provides an iterator object of the device root directory. |
-<!--DelEnd-->
+| <!--DelRow-->[CopyResult](arkts-fileaccess-copyresult-i-sys.md) | 表示复制操作失败时的返回信息，复制成功时则没有返回信息。 |
+| <!--DelRow-->[FileAccessHelper](arkts-fileaccess-fileaccesshelper-i-sys.md) | FileAccessHelper对象。 |
+| <!--DelRow-->[FileInfo](arkts-fileaccess-fileinfo-i-sys.md) | 表示文件(夹)属性信息和接口能力。 |
+| <!--DelRow-->[FileIterator](arkts-fileaccess-fileiterator-i-sys.md) | 表示文件夹的迭代器对象。 |
+| <!--DelRow-->[MoveResult](arkts-fileaccess-moveresult-i-sys.md) | 表示移动操作失败时的返回信息，移动成功时则没有返回信息。 |
+| <!--DelRow-->[NotifyMessage](arkts-fileaccess-notifymessage-i-sys.md) | 通知回调函数的值。 |
+| <!--DelRow-->[RootInfo](arkts-fileaccess-rootinfo-i-sys.md) | 表示设备的根属性信息和接口能力。 |
+| <!--DelRow-->[RootIterator](arkts-fileaccess-rootiterator-i-sys.md) | 表示设备根目录的迭代器对象。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [FileKey](arkts-corefile-filekey-e-sys.md) | Property elements that support the file queries. |
-| [NotifyType](arkts-corefile-notifytype-e-sys.md) | Enumerates the notification types. |
-| [OPENFLAGS](arkts-corefile-openflags-e-sys.md) | Enumerates the file open modes. |
-<!--DelEnd-->
+| <!--DelRow-->[FileKey](arkts-fileaccess-filekey-e-sys.md) | Property elements that support the file queries. |
+| <!--DelRow-->[NotifyType](arkts-fileaccess-notifytype-e-sys.md) | 枚举，通知类型。 |
+| <!--DelRow-->[OPENFLAGS](arkts-fileaccess-openflags-e-sys.md) | 枚举，目前支持的文件打开的标志位。 |
 
-<!--Del-->
-### Constants（系统接口）
+### Constants
 
 | Name | Description |
 | --- | --- |
-| [DEVICES_URI](arkts-corefile-fileaccess-con-sys.md#devices_uri) | Indicates the root uri of the device |
-<!--DelEnd-->
+| <!--DelRow-->[DEVICES_URI](arkts-fileaccess-con-sys.md#DEVICES_URI) | 监听设备上线，下线通知，作为注册监听的URI。 |
 

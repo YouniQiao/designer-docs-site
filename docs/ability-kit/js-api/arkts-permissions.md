@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [Permissions](arkts-ability-permissions-t.md) | Indicates permissions. |
+| [Permissions](arkts-permissions-t.md) | Indicates permissions. |
 

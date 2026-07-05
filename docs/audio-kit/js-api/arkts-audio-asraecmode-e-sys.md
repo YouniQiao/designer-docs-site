@@ -1,4 +1,8 @@
-# AsrAecMode (System API)
+# AsrAecMode
+
+```TypeScript
+enum AsrAecMode
+```
 
 ASR AEC mode.
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { OperateCheck, OperateIcon, ComposeListItem, OperateItem, IconType, ContentItem, OperateButton } from '@ohos.arkui.advanced.ComposeListItem';
+import { OperateCheck,OperateIcon,ComposeListItem,OperateItem,IconType,ContentItem,OperateButton } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,21 +12,15 @@ import { OperateCheck, OperateIcon, ComposeListItem, OperateItem, IconType, Cont
 
 | Name | Description |
 | --- | --- |
-| [ContentItem](arkts-arkui-contentitem-c.md) | Declare ContentItem |
-| [OperateButton](arkts-arkui-operatebutton-c.md) | Declare type OperateButton |
-| [OperateCheck](arkts-arkui-operatecheck-c.md) | Declare type OperateCheck |
-| [OperateIcon](arkts-arkui-operateicon-c.md) | Declare type OperateIcon |
-| [OperateItem](arkts-arkui-operateitem-c.md) | Declare OperateItem |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [ComposeListItem](arkts-arkui-composelistitem-s.md) | Declare ComposeListItem |
+| [ContentItem](arkts-contentitem-c.md) | Declare ContentItem |
+| [OperateButton](arkts-operatebutton-c.md) | Declare type OperateButton |
+| [OperateCheck](arkts-operatecheck-c.md) | Declare type OperateCheck |
+| [OperateIcon](arkts-operateicon-c.md) | Declare type OperateIcon |
+| [OperateItem](arkts-operateitem-c.md) | Declare OperateItem |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [IconType](arkts-arkui-icontype-e.md) | Declare enum IconType |
+| [IconType](arkts-icontype-e.md) | Declare enum IconType |
 

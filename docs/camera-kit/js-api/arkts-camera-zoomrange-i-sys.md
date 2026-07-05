@@ -1,8 +1,8 @@
-# ZoomRange (System API)
+# ZoomRange
 
 Describes the zoom range.
 
-**Since:** 24
+**Since:** 11
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -11,40 +11,40 @@ Describes the zoom range.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
-## max
+## min
 
 ```TypeScript
-readonly max: number
+readonly min: double
 ```
 
-Maximum zoom value.
+Minimum zoom value.
 
-**Type:** number
+**Type:** double
 
-**Since:** 24
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 **System API:** This is a system API.
 
-## min
+## max
 
 ```TypeScript
-readonly min: number
+readonly max: double
 ```
 
-Minimum zoom value.
+Maximum zoom value.
 
-**Type:** number
+**Type:** double
 
-**Since:** 24
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

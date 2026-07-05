@@ -9,8 +9,54 @@ Describes the audio capturer change event.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
+
+## clientUid
+
+```TypeScript
+readonly clientUid: int
+```
+
+Uid for audio capturer client application.
+
+**Type:** int
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**System API:** This is a system API.
+
+## streamId
+
+```TypeScript
+readonly streamId: int
+```
+
+Unique ID of an audio stream.
+
+**Type:** int
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+## capturerState
+
+```TypeScript
+readonly capturerState: AudioState
+```
+
+Audio state.
+
+**Type:** AudioState
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**System API:** This is a system API.
 
 ## capturerInfo
 
@@ -51,20 +97,6 @@ Whether the audio capturer is muted. **true** if muted, **false** otherwise.
 **Type:** boolean
 
 **Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Audio.Capturer
-
-## streamId
-
-```TypeScript
-readonly streamId: number
-```
-
-Unique ID of an audio stream.
-
-**Type:** number
-
-**Since:** 9
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 

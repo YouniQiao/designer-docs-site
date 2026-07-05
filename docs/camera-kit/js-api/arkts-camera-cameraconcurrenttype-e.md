@@ -1,5 +1,9 @@
 # CameraConcurrentType
 
+```TypeScript
+enum CameraConcurrentType
+```
+
 Enumerates the camera concurrency types.
 
 **Since:** 18
@@ -16,7 +20,7 @@ Full camera concurrency.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +34,7 @@ Limited camera concurrency.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

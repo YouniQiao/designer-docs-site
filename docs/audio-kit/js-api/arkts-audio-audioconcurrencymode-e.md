@@ -1,5 +1,9 @@
 # AudioConcurrencyMode
 
+```TypeScript
+enum AudioConcurrencyMode
+```
+
 Enumerates the audio concurrency modes.
 
 **Since:** 12
@@ -16,7 +20,7 @@ Uses the system strategy by default.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -30,7 +34,7 @@ Concurrent with other audio streams, that is, audio mixing.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -44,7 +48,7 @@ Ducks other audio streams.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -58,7 +62,7 @@ Pauses other audio streams.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

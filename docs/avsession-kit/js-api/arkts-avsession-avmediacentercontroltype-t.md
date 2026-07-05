@@ -9,7 +9,7 @@ The type of media center control command, which can be used to determine the but
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

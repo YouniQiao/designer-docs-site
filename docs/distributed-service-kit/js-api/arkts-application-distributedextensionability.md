@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { DistributedExtensionAbility } from '@ohos.application.DistributedExtensionAbility';
+import { DistributedExtensionAbility } from '@kit.DistributedServiceKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { DistributedExtensionAbility } from '@ohos.application.DistributedExtens
 
 | Name | Description |
 | --- | --- |
-| [DistributedExtensionAbility](arkts-distributedservice-distributedextensionability-c.md) | The **DistributedExtensionAbility** module provides distributed extension capabilities and lifecycle callbacks for distributed ability creation, destruction, and connection. |
+| [DistributedExtensionAbility](arkts-distributedextensionability-c.md) | The **DistributedExtensionAbility** module provides distributed extension capabilities and lifecycle callbacks for distributed ability creation, destruction, and connection. |
 

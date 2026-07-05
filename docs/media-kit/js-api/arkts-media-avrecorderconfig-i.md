@@ -9,70 +9,8 @@ Describes the audio and video recording parameters. The **audioSourceType** and 
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
-
-## audioSourceType
-
-```TypeScript
-audioSourceType?: AudioSourceType
-```
-
-Type of the audio source to record. This parameter is mandatory for audio recording.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
-
-**Type:** AudioSourceType
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Media.AVRecorder
-
-## fileGenerationMode
-
-```TypeScript
-fileGenerationMode?: FileGenerationMode
-```
-
-Mode for creating the file, which is used together with on('photoAssetAvailable').
-
-**Type:** FileGenerationMode
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Media.AVRecorder
-
-## location
-
-```TypeScript
-location?: Location
-```
-
-Geographical location of the recorded video. By default, the geographical location information is not recorded. <br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use **AVMetadata.location** instead. If both parameters are set, **AVMetadata.location** is used.
-
-**Type:** Location
-
-**Since:** 9
-
-**Deprecated since:** 12
-
-**Substitutes:** location
-
-**System capability:** SystemCapability.Multimedia.Media.AVRecorder
-
-## maxDuration
-
-```TypeScript
-maxDuration?: number
-```
-
-Maximum recording duration, in seconds. The value range is [1, 2^31-1]. If an invalid value is provided, it is reset to the maximum allowed duration. Once the recording reaches the specified duration, it stops automatically and notifies via the **stateChange** callback that the recording has stopped: AVRecorderState = 'stopped', StateChangeReason = BACKGROUND.
-
-**Type:** number
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Media.AVRecorder
 
 ## metadata
 
@@ -88,19 +26,19 @@ Metadata. For details, see @AVMetadata.
 
 **System capability:** SystemCapability.Multimedia.Media.AVRecorder
 
-## profile
+## audioSourceType
 
 ```TypeScript
-profile: AVRecorderProfile
+audioSourceType?: AudioSourceType
 ```
 
-Recording profile. This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
+Type of the audio source to record. This parameter is mandatory for audio recording.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
 
-**Type:** AVRecorderProfile
+**Type:** AudioSourceType
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVRecorder
 
@@ -118,7 +56,99 @@ Rotation angle of the recorded video, in degrees. The value can be 0 (default), 
 
 **Deprecated since:** 12
 
-**Substitutes:** videoOrientation
+**Substitute:** ohos.multimedia.media/media.AVMetadata#videoOrientation
+
+**System capability:** SystemCapability.Multimedia.Media.AVRecorder
+
+## fileGenerationMode
+
+```TypeScript
+fileGenerationMode?: FileGenerationMode
+```
+
+Mode for creating the file, which is used together with on('photoAssetAvailable').
+
+**Type:** FileGenerationMode
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Media.AVRecorder
+
+## profile
+
+```TypeScript
+profile: AVRecorderProfile
+```
+
+Recording profile. This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
+
+**Type:** AVRecorderProfile
+
+**Since:** 9
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.AVRecorder
+
+## metaSourceTypes
+
+```TypeScript
+metaSourceTypes?: Array<MetaSourceType>
+```
+
+Meta source types, details see @MetaSourceType .
+
+**Type:** Array<MetaSourceType>
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Media.AVRecorder
+
+**System API:** This is a system API.
+
+## location
+
+```TypeScript
+location?: Location
+```
+
+Geographical location of the recorded video. By default, the geographical location information is not recorded. <br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use **AVMetadata.location** instead. If both parameters are set, **AVMetadata.location** is used.
+
+**Type:** Location
+
+**Since:** 9
+
+**Deprecated since:** 12
+
+**Substitute:** ohos.multimedia.media/media.AVMetadata#location
+
+**System capability:** SystemCapability.Multimedia.Media.AVRecorder
+
+## videoSourceType
+
+```TypeScript
+videoSourceType?: VideoSourceType
+```
+
+Type of the video source to record. This parameter is mandatory for video recording.
+
+**Type:** VideoSourceType
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Media.AVRecorder
+
+## maxDuration
+
+```TypeScript
+maxDuration?: int
+```
+
+Maximum recording duration, in seconds. The value range is [1, 2^31-1]. If an invalid value is provided, it is reset to the maximum allowed duration. Once the recording reaches the specified duration, it stops automatically and notifies via the **stateChange** callback that the recording has stopped: AVRecorderState = 'stopped', StateChangeReason = BACKGROUND.
+
+**Type:** int
+
+**Since:** 18
 
 **System capability:** SystemCapability.Multimedia.Media.AVRecorder
 
@@ -134,21 +164,7 @@ Recording output URL: fd://xx (fd number).<br>This parameter is mandatory.<br>**
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Media.AVRecorder
-
-## videoSourceType
-
-```TypeScript
-videoSourceType?: VideoSourceType
-```
-
-Type of the video source to record. This parameter is mandatory for video recording.
-
-**Type:** VideoSourceType
-
-**Since:** 9
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVRecorder
 

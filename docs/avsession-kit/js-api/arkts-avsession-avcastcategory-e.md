@@ -1,5 +1,9 @@
 # AVCastCategory
 
+```TypeScript
+enum AVCastCategory
+```
+
 cast category indicating different playback scenes
 
 **Since:** 10
@@ -16,7 +20,7 @@ The default cast type "local", media can be routed on the same device, including
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -30,7 +34,7 @@ The remote category indicating the media is presenting on a remote device, the a
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

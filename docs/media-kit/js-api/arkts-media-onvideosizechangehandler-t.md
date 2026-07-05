@@ -1,14 +1,14 @@
 # OnVideoSizeChangeHandler
 
 ```TypeScript
-type OnVideoSizeChangeHandler = (width: number, height: number) => void
+type OnVideoSizeChangeHandler = (width: int, height: int) => void
 ```
 
-Describes the callback invoked for the video size change event.
+视频播放宽高变化事件回调方法。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -16,6 +16,6 @@ Describes the callback invoked for the video size change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| width | int | Yes | Video width, in px. |
-| height | int | Yes | Video height, in px. |
+| width | int | Yes | 视频宽度，单位为像素（px）。 |
+| height | int | Yes | 视频高度，单位为像素（px）。 |
 

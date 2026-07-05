@@ -1,11 +1,5 @@
 # isSeniorModeEnabled
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## isSeniorModeEnabled
 
 ```TypeScript
@@ -16,7 +10,7 @@ Checks whether the senior mode is enabled. This API uses a promise to return the
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,13 +18,13 @@ Checks whether the senior mode is enabled. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return the result. The value **true** indicates that the senior modeis enabled, and the value **false** indicates that the senior mode is disabled. |
+| Promise&lt;boolean> | Promise used to return the result. The value true indicates that the senior mode  is enabled, and the value false indicates that the senior mode is disabled. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [9300000](../errorcode-accessibility.md#9300000-accessibility-service-abnormal) | System abnormality. |
+| 9300000 | System abnormality. |
 
 **Example**
 

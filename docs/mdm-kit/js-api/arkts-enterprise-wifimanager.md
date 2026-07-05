@@ -1,6 +1,6 @@
 # @ohos.enterprise.wifiManager
 
-The **wifiManager** module provides Wi-Fi management capabilities for enterprise devices, including obtaining the Wi- Fi status. > **NOTE** > > The APIs of this module can be used only in the stage model. > > The APIs of this module can be called only by a device administrator application that is enabled. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md). > > The global restriction policies are provided by **restrictions**. To disable Wi-Fi globally, see > [@ohos.enterprise.restrictions](arkts-enterprise-restrictions.md#restrictions).
+本模块提供企业设备Wi-Fi管理能力，包括查询Wi-Fi开启状态等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。 > > 全局通用限制类策略由restrictions统一提供，若要全局禁用Wi-Fi，请参考 > [@ohos.enterprise.restrictions（限制类策略）]{@link @ohos.enterprise.restrictions:restrictions}。
 
 **Since:** 10
 
@@ -9,7 +9,7 @@ The **wifiManager** module provides Wi-Fi management capabilities for enterprise
 ## Modules to Import
 
 ```TypeScript
-import { wifiManager } from '@ohos.enterprise.wifiManager';
+import { wifiManager } from '@kit.MDMKit';
 ```
 
 ## Summary
@@ -18,45 +18,38 @@ import { wifiManager } from '@ohos.enterprise.wifiManager';
 
 | Name | Description |
 | --- | --- |
-| [addAllowedWifiList](arkts-mdm-addallowedwifilist-f.md#addallowedwifilist-1) | Adds allowed Wi-Fi networks. The current device can only connect to the allowed Wi-Fi networks. A policy conflict is reported when this API is called in the following scenarios: 1. Wi-Fi networks have been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). You can resolve the conflict by enabling the Wi-Fi networks through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). 2. Disallowed Wi-Fi networks have been added by calling [addDisallowedWifiList](arkts-mdm-adddisallowedwifilist-f.md#adddisallowedwifilist-1). You can resolve the conflict by removing the disallowed Wi-Fi networks through [removeDisallowedWifiList](arkts-mdm-removedisallowedwifilist-f.md#removedisallowedwifilist-1). |
-| [addDisallowedWifiList](arkts-mdm-adddisallowedwifilist-f.md#adddisallowedwifilist-1) | Adds disallowed Wi-Fi networks. The current device cannot connect to the disallowed Wi-Fi networks. A policy conflict is reported when this API is called in the following scenarios: 1. Wi-Fi networks have been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). You can resolve the conflict by enabling the Wi-Fi networks through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). 2. Allowed Wi-Fi networks have been added by calling [addAllowedWifiList](arkts-mdm-addallowedwifilist-f.md#addallowedwifilist-1). You can resolve the conflict by removing the allowed Wi-Fi networks through [removeAllowedWifiList](arkts-mdm-removeallowedwifilist-f.md#removeallowedwifilist-1). |
-| [getAllowedWifiList](arkts-mdm-getallowedwifilist-f.md#getallowedwifilist-1) | Obtains Wi-Fi networks from the allowed list. |
-| [getDisallowedWifiList](arkts-mdm-getdisallowedwifilist-f.md#getdisallowedwifilist-1) | Obtains disallowed Wi-Fi networks. |
-| [isWifiActiveSync](arkts-mdm-iswifiactivesync-f.md#iswifiactivesync-1) | Queries the Wi-Fi status of the current device. |
-| [removeAllowedWifiList](arkts-mdm-removeallowedwifilist-f.md#removeallowedwifilist-1) | Removes Wi-Fi networks from the allowed list. If some Wi-Fi networks are removed from the allowed list, the current device can only connect to the remaining ones; if all Wi-Fi networks are removed from the allowed list, the current device can connect to any Wi-Fi network. |
-| [removeDisallowedWifiList](arkts-mdm-removedisallowedwifilist-f.md#removedisallowedwifilist-1) | Removes disallowed Wi-Fi networks. If some Wi-Fi networks are removed from the disallowed list, the current device cannot connect to the remaining ones; if all Wi-Fi networks are removed from the disallowed list, the current device can connect to any Wi-Fi network. |
-| [setWifiProfileSync](arkts-mdm-setwifiprofilesync-f.md#setwifiprofilesync-1) | Configures Wi-Fi for the current device to connect to a specified network. |
-| [turnOffWifi](arkts-mdm-turnoffwifi-f.md#turnoffwifi-1) | Disables Wi-Fi. In the following scenario, attempting to disable Wi-Fi using this API will fail, and a message indicating that the system function is disabled will be returned: ?Wi-Fi has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API. In this case, you must call [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) to enable Wi-Fi. |
-| [turnOnWifi](arkts-mdm-turnonwifi-f.md#turnonwifi-1) | Enables Wi-Fi. In the following scenario, attempting to enable Wi-Fi using this API will fail, and a message indicating that the system function is disabled will be returned: ?Wi-Fi has been disabled using the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API. In this case, you must call [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) to enable Wi-Fi. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [isWifiActive](arkts-mdm-iswifiactive-f-sys.md#iswifiactive-1) | Queries the Wi-Fi status of the current device. This API uses an asynchronous callback to return the result. |
-| [isWifiActive](arkts-mdm-iswifiactive-f-sys.md#iswifiactive-2) | Queries the Wi-Fi status of the current device. This API uses a promise to return the result. |
-| [isWifiDisabled](arkts-mdm-iswifidisabled-f-sys.md#iswifidisabled-1) | Queries whether Wi-Fi is disabled on the current device. |
-| [setWifiDisabled](arkts-mdm-setwifidisabled-f-sys.md#setwifidisabled-1) | Sets the Wi-Fi disabling policy. |
-| [setWifiProfile](arkts-mdm-setwifiprofile-f-sys.md#setwifiprofile-1) | Configures Wi-Fi for the current device to connect to a specified network. This API uses an asynchronous callback to return the result. |
-| [setWifiProfile](arkts-mdm-setwifiprofile-f-sys.md#setwifiprofile-2) | Configures Wi-Fi for the current device to connect to a specified network. This API uses a promise to return the result. |
-<!--DelEnd-->
+| [addAllowedWifiList](arkts-wifimanager-addallowedwifilist-f.md#addAllowedWifiList-1) | 添加Wi-Fi允许名单。添加允许名单后当前设备仅允许连接该名单下的Wi-Fi。 以下情况下，调用本接口会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}解除Wi-Fi禁用后，可解除冲突。 2. 已经通过[addDisallowedWifiList]{@link wifiManager.addDisallowedWifiList}接口添加了Wi-Fi禁用名单。通过[removeDisallowedWifiList]{@link wifiManager.removeDisallowedWifiList}移除Wi-Fi禁用名单后，可解除冲突。 |
+| [addDisallowedWifiList](arkts-wifimanager-adddisallowedwifilist-f.md#addDisallowedWifiList-1) | 添加Wi-Fi禁用名单。添加禁用名单后当前设备不允许连接该名单下的Wi-Fi。 以下情况下，调用本接口会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了设备Wi-Fi能力。通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}解除Wi-Fi禁用后，可解除冲突。 2. 已经通过[addAllowedWifiList]{@link wifiManager.addAllowedWifiList}接口添加了Wi-Fi允许名单。通过[removeAllowedWifiList]{@link wifiManager.removeAllowedWifiList}移除Wi-Fi允许名单后，可解除冲突。 |
+| [getAllowedWifiList](arkts-wifimanager-getallowedwifilist-f.md#getAllowedWifiList-1) | 获取Wi-Fi允许名单。 |
+| [getDisallowedWifiList](arkts-wifimanager-getdisallowedwifilist-f.md#getDisallowedWifiList-1) | 获取Wi-Fi禁用名单。 |
+| <!--DelRow-->[isWifiActive](arkts-wifimanager-iswifiactive-f-sys.md#isWifiActive-1) | 查询当前设备的Wi-Fi开启状态。使用callback异步回调。 |
+| <!--DelRow-->[isWifiActive](arkts-wifimanager-iswifiactive-f-sys.md#isWifiActive-2) | 查询当前设备的Wi-Fi开启状态。使用Promise异步回调。 |
+| [isWifiActiveSync](arkts-wifimanager-iswifiactivesync-f.md#isWifiActiveSync-1) | 查询当前设备Wi-Fi开启状态。 |
+| <!--DelRow-->[isWifiDisabled](arkts-wifimanager-iswifidisabled-f-sys.md#isWifiDisabled-1) | 查询当前设备Wi-Fi是否被禁用。 |
+| [removeAllowedWifiList](arkts-wifimanager-removeallowedwifilist-f.md#removeAllowedWifiList-1) | 移除Wi-Fi允许名单。若移除允许名单中的部分Wi-Fi，则当前设备仅允许连接剩下未移除的Wi-Fi。若移除允许名单中的所有Wi-Fi，则当前设备可以连接任意Wi-Fi。 |
+| [removeDisallowedWifiList](arkts-wifimanager-removedisallowedwifilist-f.md#removeDisallowedWifiList-1) | 移除Wi-Fi禁用名单。若移除禁用名单中的部分Wi-Fi，则当前设备不允许连接禁用名单内剩余的Wi-Fi。若移除禁用名单中的所有Wi-Fi，则当前设备可以连接任意的Wi-Fi。 |
+| <!--DelRow-->[setWifiDisabled](arkts-wifimanager-setwifidisabled-f-sys.md#setWifiDisabled-1) | 设置禁用Wi-Fi策略。 |
+| <!--DelRow-->[setWifiProfile](arkts-wifimanager-setwifiprofile-f-sys.md#setWifiProfile-1) | 为当前设备配置Wi-Fi，使连接到指定网络。使用callback异步回调。 |
+| <!--DelRow-->[setWifiProfile](arkts-wifimanager-setwifiprofile-f-sys.md#setWifiProfile-2) | 为当前设备配置Wi-Fi，使连接到指定网络。使用Promise异步回调。 |
+| [setWifiProfileSync](arkts-wifimanager-setwifiprofilesync-f.md#setWifiProfileSync-1) | 为当前设备配置Wi-Fi，连接到指定网络。 |
+| [turnOffWifi](arkts-wifimanager-turnoffwifi-f.md#turnOffWifi-1) | 关闭Wi-Fi开关。 以下情况下，通过本接口关闭Wi-Fi开关，会提示"系统功能被禁用"： ?已经通过 [setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)} 接口禁用了Wi-Fi。需通过 [setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)} 接口启用Wi-Fi，解决"系统功能被禁用"报错。 |
+| [turnOnWifi](arkts-wifimanager-turnonwifi-f.md#turnOnWifi-1) | 打开Wi-Fi开关。 以下情况下，通过本接口打开Wi-Fi开关，会打开失败并提示"系统功能被禁用"： ?已经通过 [setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)} 接口禁用了Wi-Fi。需通过 [setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)} 接口启用Wi-Fi，解决"系统功能被禁用"报错。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [IpProfile](arkts-mdm-ipprofile-i.md) | Represents IP configuration information. |
-| [WifiAccessInfo](arkts-mdm-wifiaccessinfo-i.md) | Represents Wi-Fi access information containing Service Set Identifier (SSID) and Basic Service Set Identifier ( BSSID). |
-| [WifiEapProfile](arkts-mdm-wifieapprofile-i.md) | Represents EAP profile (configuration) information. |
-| [WifiProfile](arkts-mdm-wifiprofile-i.md) | Represents the Wi-Fi configuration information. |
+| [IpProfile](arkts-wifimanager-ipprofile-i.md) | IP配置信息。 |
+| [WifiAccessInfo](arkts-wifimanager-wifiaccessinfo-i.md) | Wi-Fi的SSID和BSSID信息。 |
+| [WifiEapProfile](arkts-wifimanager-wifieapprofile-i.md) | 可扩展身份验证协议配置信息。 |
+| [WifiProfile](arkts-wifimanager-wifiprofile-i.md) | Wi-Fi配置信息。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [EapMethod](arkts-mdm-eapmethod-e.md) | Enumerates the EAP authentication methods. &gt; **NOTE** &gt; &gt; Currently, only the EAP_PEAP and EAP_TLS authentication methods are supported. |
-| [IpType](arkts-mdm-iptype-e.md) | Enumerates the IP address types. |
-| [Phase2Method](arkts-mdm-phase2method-e.md) | Enumerates the Phase 2 authentication methods. |
-| [WifiSecurityType](arkts-mdm-wifisecuritytype-e.md) | Enumerates the Wi-Fi security types. |
+| [EapMethod](arkts-wifimanager-eapmethod-e.md) | 表示EAP认证方式的枚举。 > **说明**： > > 当前仅支持使用EAP_PEAP、EAP_TLS两种认证方式，其他暂不支持。 |
+| [IpType](arkts-wifimanager-iptype-e.md) | 表示IP类型的枚举。 |
+| [Phase2Method](arkts-wifimanager-phase2method-e.md) | 表示第二阶段认证方式的枚举。 |
+| [WifiSecurityType](arkts-wifimanager-wifisecuritytype-e.md) | 表示加密类型的枚举。 |
 

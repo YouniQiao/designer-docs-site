@@ -1,0 +1,26 @@
+# ReusableOptions
+
+定义组件复用类装饰器的选项。
+
+**起始版本：** 26.0.0
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+## memoryOptimizationStrategy
+
+```TypeScript
+memoryOptimizationStrategy?: ReusableMemOptStrategy
+```
+
+CustomComponent重用的内存优化策略
+
+**类型：** ReusableMemOptStrategy
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**原子化服务API：** 该接口支持在原子化服务中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+

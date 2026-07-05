@@ -1,26 +1,48 @@
-# ArkTS API<!--arkts-driverdevelopmentkit-->
+# DriverDevelopmentKit
 
 - [@ohos.app.ability.DriverExtensionAbility](arkts-app-ability-driverextensionability.md)
-  - [DriverExtensionAbility](arkts-driverdevelopment-driverextensionability-c.md)
-  - [DriverExtensionContext](arkts-driverdevelopment-driverextensioncontext-t.md)
-- [@ohos.driver.deviceManager](arkts-driver-devicemanager.md)
-  - [bindDevice](arkts-driverdevelopment-binddevice-f.md)
-  - [bindDeviceDriver](arkts-driverdevelopment-binddevicedriver-f.md)
-  - [bindDriverWithDeviceId](arkts-driverdevelopment-binddriverwithdeviceid-f.md)<!--Del-->
-  - [queryDeviceInfo(system api)](arkts-driverdevelopment-querydeviceinfo-f-sys.md)<!--DelEnd-->
-  - [queryDevices](arkts-driverdevelopment-querydevices-f.md)<!--Del-->
-  - [queryDriverInfo(system api)](arkts-driverdevelopment-querydriverinfo-f-sys.md)<!--DelEnd-->
-  - [unbindDevice](arkts-driverdevelopment-unbinddevice-f.md)
-  - [unbindDriverWithDeviceId](arkts-driverdevelopment-unbinddriverwithdeviceid-f.md)
-  - [Device](arkts-driverdevelopment-device-i.md)<!--Del-->
-  - [DeviceInfo(system api)](arkts-driverdevelopment-deviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DriverInfo(system api)](arkts-driverdevelopment-driverinfo-i-sys.md)<!--DelEnd-->
-  - [RemoteDeviceDriver](arkts-driverdevelopment-remotedevicedriver-i.md)
-  - [USBDevice](arkts-driverdevelopment-usbdevice-i.md)<!--Del-->
-  - [USBDeviceInfo(system api)](arkts-driverdevelopment-usbdeviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [USBDriverInfo(system api)](arkts-driverdevelopment-usbdriverinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [USBInterfaceDesc(system api)](arkts-driverdevelopment-usbinterfacedesc-i-sys.md)<!--DelEnd-->
-  - [BusType](arkts-driverdevelopment-bustype-e.md)
-- application<!--arkts-driverdevelopmentkit-application-->
-  - [DriverExtensionContext](arkts-driverextensioncontext.md)
-    - [DriverExtensionContext](arkts-driverdevelopment-driverextensioncontext-c.md)
+  - [DriverExtensionAbility](arkts-driverextensionability-c.md)
+  - [DriverExtensionContext](arkts-driverextensioncontext-t.md)
+- [@ohos.app.ability.DriverExtensionAbility](arkts-app-ability-driverextensionability.md)
+  - [DriverExtensionAbility](arkts-driverextensionability-c.md)
+  - [DriverExtensionContext](arkts-driverextensioncontext-t.md)
+- [@ohos.driver.deviceManager](arkts-driver-devicemanager.md)<!--Del-->
+  - [queryDeviceInfo(system api)](arkts-devicemanager-querydeviceinfo-f-sys.md)<!--DelEnd-->
+  - [queryDevices](arkts-devicemanager-querydevices-f.md)
+  - [unbindDevice](arkts-devicemanager-unbinddevice-f.md)
+  - [bindDeviceDriver](arkts-devicemanager-binddevicedriver-f.md)<!--Del-->
+  - [queryDriverInfo(system api)](arkts-devicemanager-querydriverinfo-f-sys.md)<!--DelEnd-->
+  - [bindDevice](arkts-devicemanager-binddevice-f.md)
+  - [unbindDriverWithDeviceId](arkts-devicemanager-unbinddriverwithdeviceid-f.md)
+  - [bindDriverWithDeviceId](arkts-devicemanager-binddriverwithdeviceid-f.md)
+  - [Device](arkts-devicemanager-device-i.md)<!--Del-->
+  - [DeviceInfo(system api)](arkts-devicemanager-deviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DriverInfo(system api)](arkts-devicemanager-driverinfo-i-sys.md)<!--DelEnd-->
+  - [RemoteDeviceDriver](arkts-devicemanager-remotedevicedriver-i.md)
+  - [USBDevice](arkts-devicemanager-usbdevice-i.md)<!--Del-->
+  - [USBDeviceInfo(system api)](arkts-devicemanager-usbdeviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [USBDriverInfo(system api)](arkts-devicemanager-usbdriverinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [USBInterfaceDesc(system api)](arkts-devicemanager-usbinterfacedesc-i-sys.md)<!--DelEnd-->
+  - [BusType](arkts-devicemanager-bustype-e.md)
+- [@ohos.driver.deviceManager](arkts-driver-devicemanager.md)<!--Del-->
+  - [queryDeviceInfo(system api)](arkts-devicemanager-querydeviceinfo-f-sys.md)<!--DelEnd-->
+  - [queryDevices](arkts-devicemanager-querydevices-f.md)
+  - [unbindDevice](arkts-devicemanager-unbinddevice-f.md)
+  - [bindDeviceDriver](arkts-devicemanager-binddevicedriver-f.md)<!--Del-->
+  - [queryDriverInfo(system api)](arkts-devicemanager-querydriverinfo-f-sys.md)<!--DelEnd-->
+  - [bindDevice](arkts-devicemanager-binddevice-f.md)
+  - [unbindDriverWithDeviceId](arkts-devicemanager-unbinddriverwithdeviceid-f.md)
+  - [bindDriverWithDeviceId](arkts-devicemanager-binddriverwithdeviceid-f.md)
+  - [Device](arkts-devicemanager-device-i.md)<!--Del-->
+  - [DeviceInfo(system api)](arkts-devicemanager-deviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DriverInfo(system api)](arkts-devicemanager-driverinfo-i-sys.md)<!--DelEnd-->
+  - [RemoteDeviceDriver](arkts-devicemanager-remotedevicedriver-i.md)
+  - [USBDevice](arkts-devicemanager-usbdevice-i.md)<!--Del-->
+  - [USBDeviceInfo(system api)](arkts-devicemanager-usbdeviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [USBDriverInfo(system api)](arkts-devicemanager-usbdriverinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [USBInterfaceDesc(system api)](arkts-devicemanager-usbinterfacedesc-i-sys.md)<!--DelEnd-->
+  - [BusType](arkts-devicemanager-bustype-e.md)
+- [DriverExtensionContext](arkts-driverextensioncontext.md)
+  - [DriverExtensionContext](arkts-driverextensioncontext-c.md)
+- [DriverExtensionContext](arkts-driverextensioncontext.md)
+  - [DriverExtensionContext](arkts-driverextensioncontext-c.md)

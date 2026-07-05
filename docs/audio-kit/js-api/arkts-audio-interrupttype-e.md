@@ -1,5 +1,9 @@
 # InterruptType
 
+```TypeScript
+enum InterruptType
+```
+
 Enumerates the audio interruption types.
 
 **Since:** 7
@@ -16,7 +20,7 @@ Audio interruption started.
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -30,7 +34,7 @@ Audio interruption ended.
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

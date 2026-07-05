@@ -1,5 +1,9 @@
 # CallState
 
+```TypeScript
+enum CallState
+```
+
 Enumeration of current call state
 
 **Since:** 11
@@ -16,7 +20,7 @@ Idle state.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -30,7 +34,7 @@ Incoming state.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -44,7 +48,7 @@ Active state in calling.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -58,7 +62,7 @@ Dialing state.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -72,7 +76,7 @@ Waiting state.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -86,7 +90,7 @@ Holding state.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -100,7 +104,7 @@ Disconnecting state.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

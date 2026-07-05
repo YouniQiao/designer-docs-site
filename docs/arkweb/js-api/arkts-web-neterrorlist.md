@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { WebNetErrorList } from '@ohos.web.netErrorList';
+import { WebNetErrorList } from '@kit.ArkWeb';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { WebNetErrorList } from '@ohos.web.netErrorList';
 
 | Name | Description |
 | --- | --- |
-| [WebNetErrorList](arkts-arkweb-webneterrorlist-e.md) | Web net error list. |
+| [WebNetErrorList](arkts-webneterrorlist-e.md) | Web net error list. |
 

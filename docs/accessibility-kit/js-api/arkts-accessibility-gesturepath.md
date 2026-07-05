@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { GesturePath } from '@ohos.accessibility.GesturePath';
+import { GesturePath } from '@kit.AccessibilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { GesturePath } from '@ohos.accessibility.GesturePath';
 
 | Name | Description |
 | --- | --- |
-| [GesturePath](arkts-accessibility-gesturepath-c.md) | The **GesturePath** module provides APIs for creating gesture path information required for an accessibility application to inject gestures. |
+| [GesturePath](arkts-gesturepath-c.md) | The **GesturePath** module provides APIs for creating gesture path information required for an accessibility application to inject gestures. |
 

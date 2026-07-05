@@ -1,4 +1,8 @@
-# InterruptRequestType (System API)
+# InterruptRequestType
+
+```TypeScript
+enum InterruptRequestType
+```
 
 Enumerates the audio interrupt request type.
 

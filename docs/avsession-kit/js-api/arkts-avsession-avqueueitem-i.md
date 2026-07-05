@@ -9,8 +9,24 @@ The item in the playlist of the session
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
+
+## itemId
+
+```TypeScript
+itemId: int
+```
+
+Sequence number of the item in the playlist.
+
+**Type:** int
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
 
 ## description
 
@@ -24,23 +40,7 @@ The media description of the item in the playlist.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## itemId
-
-```TypeScript
-itemId: number
-```
-
-Sequence number of the item in the playlist.
-
-**Type:** number
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

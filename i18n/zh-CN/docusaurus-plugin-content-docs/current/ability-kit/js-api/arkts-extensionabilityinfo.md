@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ExtensionAbilityInfo](arkts-ability-extensionabilityinfo-i.md) | ExtensionAbility信息，可以通过 [bundleManager.getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1) 获取自身的ExtensionAbility信息，其中参数[bundleFlags](arkts-ability-bundleflag-e.md#bundleflag)至少包含 GET_BUNDLE_INFO_WITH_HAP_MODULE和GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY。 |
+| [ExtensionAbilityInfo](arkts-extensionabilityinfo-i.md) | ExtensionAbility信息，可以通过 [bundleManager.getBundleInfoForSelf]{@link ./../@ohos.bundle.bundleManager:bundleManager.getBundleInfoForSelf(bundleFlags: int)} 获取自身的ExtensionAbility信息，其中参数[bundleFlags]{@link ./../@ohos.bundle.bundleManager:bundleManager.BundleFlag}至少包含 GET_BUNDLE_INFO_WITH_HAP_MODULE和GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY。 |
 

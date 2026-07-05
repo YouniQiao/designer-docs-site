@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { UserAuthExtensionAbility } from '@ohos.app.ability.UserAuthExtensionAbility';
+import { UserAuthExtensionAbility } from '@kit.UserAuthenticationKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { UserAuthExtensionAbility } from '@ohos.app.ability.UserAuthExtensionAbi
 
 | Name | Description |
 | --- | --- |
-| [UserAuthExtensionAbility](arkts-userauthentication-userauthextensionability-c.md) | The class of user authentication extension ability. |
+| <!--DelRow-->[UserAuthExtensionAbility](arkts-userauthextensionability-c.md) | The class of user authentication extension ability. |
 

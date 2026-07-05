@@ -1,6 +1,10 @@
 # BufferingInfoType
 
-缓存事件类型枚举。
+```TypeScript
+enum BufferingInfoType
+```
+
+Enumerates the buffering event types.
 
 **起始版本：** 8
 
@@ -12,11 +16,11 @@
 BUFFERING_START = 1
 ```
 
-表示开始缓冲。当上报BUFFERING_START时，播放器会暂停播放。
+Buffering starts. When this event is triggered, the player pauses the playback.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -26,11 +30,11 @@ BUFFERING_START = 1
 BUFFERING_END = 2
 ```
 
-表示结束缓冲。当上报BUFFERING_END时，播放器会恢复播放。
+Buffering ends. When this event is triggered, the player resumes the playback.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -40,11 +44,11 @@ BUFFERING_END = 2
 BUFFERING_PERCENT = 3
 ```
 
-表示缓冲百分比。可参考该事件感知缓冲进度。
+Buffering percentage. You can use this event to monitor the buffering status, in %.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -54,11 +58,11 @@ BUFFERING_PERCENT = 3
 CACHED_DURATION = 4
 ```
 
-表示已缓冲数据预估可播放时长，单位为毫秒（ms）。缓冲区中的数据变化量大于500ms，上报一次。可参考该事件做进度条。
+Estimated duration, in ms, that the buffered data can be played. This event is triggered once the data change amount in the buffer exceeds 500 ms. You can use this event to develop a progress bar.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { InputMethodSubtype } from '@ohos.InputMethodSubtype';
+import { InputMethodSubtype } from '@kit.IMEKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { InputMethodSubtype } from '@ohos.InputMethodSubtype';
 
 | Name | Description |
 | --- | --- |
-| [InputMethodSubtype](arkts-ime-inputmethodsubtype-i.md) | The **InputMethodSubtype** module provides APIs for managing the attributes of input method subtypes. The input method subtype allows the input method to switch to a specific mode or language, for example, the Chinese or English keyboard. |
+| [InputMethodSubtype](arkts-inputmethodsubtype-i.md) | The **InputMethodSubtype** module provides APIs for managing the attributes of input method subtypes. The input method subtype allows the input method to switch to a specific mode or language, for example, the Chinese or English keyboard. |
 

@@ -1,6 +1,10 @@
 # InterruptHint
 
-Enumerates the hints provided along with audio interruption. The hint is obtained when an [InterruptEvent](arkts-audio-interruptevent-i.md#interruptevent) is received. The hint specifies the operation (such as audio pause or volume adjustment) to be performed on audio streams based on the focus strategy. You can determine whether the operation is forcibly performed by the system based on [InterruptForceType](arkts-audio-interruptforcetype-e.md#interruptforcetype) in **InterruptEvent**. For details, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
+```TypeScript
+enum InterruptHint
+```
+
+Enumerates the hints provided along with audio interruption. The hint is obtained when an [InterruptEvent](arkts-audio-interruptevent-i.md#InterruptEvent) is received. The hint specifies the operation (such as audio pause or volume adjustment) to be performed on audio streams based on the focus strategy. You can determine whether the operation is forcibly performed by the system based on [InterruptForceType]audio.InterruptForceType in **InterruptEvent**. For details, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md).
 
 **Since:** 7
 
@@ -16,7 +20,7 @@ None.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -26,11 +30,11 @@ None.
 INTERRUPT_HINT_RESUME = 1
 ```
 
-A hint is displayed, indicating that the audio stream is restored. The application can proactively trigger operations related to rendering or recording. This operation cannot be forcibly performed by the system, and the corresponding [InterruptForceType](arkts-audio-interruptforcetype-e.md#interruptforcetype) must be **INTERRUPT_SHARE**.
+A hint is displayed, indicating that the audio stream is restored. The application can proactively trigger operations related to rendering or recording. This operation cannot be forcibly performed by the system, and the corresponding [InterruptForceType]audio.InterruptForceType must be **INTERRUPT_SHARE**.
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -44,7 +48,7 @@ A hint is displayed, indicating that the audio stream is paused and the audio fo
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -58,7 +62,7 @@ A hint is displayed, indicating that the audio stream stops and the audio focus 
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -72,7 +76,7 @@ A hint is displayed, indicating that audio ducking starts and the audio is playe
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -86,7 +90,7 @@ A hint is displayed, indicating that audio ducking ends and the audio is played 
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

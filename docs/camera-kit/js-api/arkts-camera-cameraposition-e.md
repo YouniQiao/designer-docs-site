@@ -1,5 +1,9 @@
 # CameraPosition
 
+```TypeScript
+enum CameraPosition
+```
+
 Enumerates the camera positions.
 
 **Since:** 10
@@ -16,7 +20,7 @@ A camera that does not have a fixed orientation relative to the device screen.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +34,7 @@ Rear camera.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -44,7 +48,7 @@ Front camera.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -60,9 +64,9 @@ Folded camera. This API is supported since API version 11 and deprecated since A
 
 **Deprecated since:** 12
 
-**Substitutes:** [null]
+**Substitute:** null
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

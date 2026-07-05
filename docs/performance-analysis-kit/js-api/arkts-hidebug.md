@@ -1,11 +1,9 @@
 # @ohos.hidebug
 
-Provide interfaces related to debugger access and obtaining CPU, memory and other virtual machine information during runtime for JS programs
-
 ## Modules to Import
 
 ```TypeScript
-import { hidebug } from '@ohos.hidebug';
+import { hidebug } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## Summary
@@ -14,5 +12,5 @@ import { hidebug } from '@ohos.hidebug';
 
 | Name | Description |
 | --- | --- |
-| [hidebug](arkts-performanceanalysis-hidebug-n.md) | Provide interfaces related to debugger access and obtaining CPU, memory and other virtual machine information during runtime for JS programs |
+| [hidebug](arkts-hidebug-n.md) | Provide interfaces related to debugger access and obtaining CPU, memory and other virtual machine information during runtime for JS programs |
 

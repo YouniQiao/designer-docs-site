@@ -9,8 +9,22 @@ Describes the event indicating that the output device changes.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
+
+## recommendedAction
+
+```TypeScript
+recommendedAction: OutputDeviceChangeRecommendedAction
+```
+
+Recommend action when device change.
+
+**Type:** OutputDeviceChangeRecommendedAction
+
+**Since:** 20
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
 
 ## changeReason
 
@@ -52,21 +66,7 @@ Audio device descriptors before change.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-## recommendedAction
-
-```TypeScript
-recommendedAction: OutputDeviceChangeRecommendedAction
-```
-
-Recommend action when device change.
-
-**Type:** OutputDeviceChangeRecommendedAction
-
-**Since:** 20
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

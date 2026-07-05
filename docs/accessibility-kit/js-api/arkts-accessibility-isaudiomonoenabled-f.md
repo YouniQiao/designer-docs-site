@@ -1,11 +1,5 @@
 # isAudioMonoEnabled
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## isAudioMonoEnabled
 
 ```TypeScript
@@ -16,7 +10,7 @@ Checks whether mono audio mode is enabled. This API uses a promise to return the
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,7 +18,7 @@ Checks whether mono audio mode is enabled. This API uses a promise to return the
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if mono audio mode is enabled;returns **false** otherwise. |
+| Promise&lt;boolean> | Promise used to return the result. Returns true if mono audio mode is enabled;  returns false otherwise. |
 
 **Example**
 

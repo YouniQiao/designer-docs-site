@@ -1,11 +1,5 @@
 # isFlashReminderEnabledSync
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## isFlashReminderEnabledSync
 
 ```TypeScript
@@ -16,7 +10,7 @@ Checks whether flash alerts mode is enabled with a synchronous method.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,7 +18,7 @@ Checks whether flash alerts mode is enabled with a synchronous method.
 
 | Type | Description |
 | --- | --- |
-| boolean | Whether flash alerts mode is enabled. Returns **true** if flash alerts mode is enabled;returns **false** otherwise. |
+| boolean | Whether flash alerts mode is enabled. Returns true if flash alerts mode is enabled;  returns false otherwise. |
 
 **Example**
 

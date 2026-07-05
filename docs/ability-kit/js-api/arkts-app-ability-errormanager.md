@@ -1,6 +1,6 @@
 # @ohos.app.ability.errorManager
 
-The ErrorManager module provides capabilities for registering and unregistering error observers, which are primarily used to listen for errors such as JavaScript crashes and application freezes.
+ErrorManager模块提供对错误观测器的注册和注销的能力，主要是观测应用发生js crash和appfreeze等错误。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The ErrorManager module provides capabilities for registering and unregistering 
 ## Modules to Import
 
 ```TypeScript
-import { errorManager } from '@ohos.app.ability.errorManager';
+import { errorManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,45 +18,50 @@ import { errorManager } from '@ohos.app.ability.errorManager';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-ability-off-f.md#off-1) | Unregisters an error observer. This API uses an asynchronous callback to return the result. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. |
-| [off](arkts-ability-off-f.md#off-2) | Unregisters an error observer. This API uses a promise to return the result. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. |
-| [off](arkts-ability-off-f.md#off-3) | Unregisters an observer for the message processing duration of the main thread. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. |
-| [off](arkts-ability-off-f.md#off-4) | Unregisters an observer for the promise rejection. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. |
-| [off](arkts-ability-off-f.md#off-5) | Unregisters a rejected promise observer. After the deregistration, promise exceptions in the process cannot be listened for. If the observer passed in is not in the observer queue registered via the **on** API, error code 16300004 is thrown. Therefore, you are advised to handle this using **try-catch** logic. |
-| [off](arkts-ability-off-f.md#off-6) | Unregisters an observer for the main thread freeze event of the application. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. If the observer passed in does not match the observer registered via the **on** API, error code 16300004 is thrown. Therefore, you are advised to handle this using **try-catch** logic. |
-| [off](arkts-ability-off-f.md#off-7) | Unregisters a global error observer. Once unregistered, global listening cannot be implemented. If the observer passed in is not in the observer queue registered via the **on** API, error code 16300004 is thrown. Therefore, you are advised to handle this using **try-catch** logic. |
-| [on](arkts-ability-on-f.md#on-1) | Registers an error observer. Once registered, it can capture JavaScript crashes occurring within the application, which are a type of application crash. When the observer captures such an exception, the application will not exit automatically. You are advised to add a synchronous exit operation after the callback function completes. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. |
-| [on](arkts-ability-on-f.md#on-2) | Registers an observer for the message processing duration of the main thread. After the registration, the execution time of a message processed by the main thread of the application can be captured. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. |
-| [on](arkts-ability-on-f.md#on-3) | Registers an observer for the promise rejection. After the registration, a rejected promise that is not captured in the current thread of the application can be captured. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. |
-| [on](arkts-ability-on-f.md#on-4) | Registers a rejected promise observer with any thread in the process. Once registered, it can capture a rejected promise that is not captured in the current thread of the application. |
-| [on](arkts-ability-on-f.md#on-5) | Registers an observer for the main thread freeze event of the application. If the observer is registered multiple times, only the last one takes effect. This API can only be used in the main thread. If a thread error occurs, an error code is thrown. You are advised to handle it with try-catch logic. &gt; **NOTE** &gt; &gt; If the callback function runs for more than 1 second, the &gt; [AppRecovery](arkts-app-ability-apprecovery.md#apprecovery) feature may not work. The execution duration can &gt; be calculated by parsing the time difference between **begin** and **Freeze callback execution completed** in &gt; HiLogs. If the execution duration exceeds 1 second, you can optimize the callback logic by using methods such as &gt; asynchronous processing, reducing operations that block other tasks, and optimizing the data structures to reduce &gt; the execution duration. |
-| [on](arkts-ability-on-f.md#on-6) | Registers a global error observer via the **errorManager.on** API within any thread of a process. Once registered, it can capture exceptions occurring in any thread across the entire process. When the observer captures such an exception, the application will not exit automatically. You are advised to add a synchronous exit operation after the callback function completes. |
-| [setDefaultErrorHandler](arkts-ability-setdefaulterrorhandler-f.md#setdefaulterrorhandler-1) | Returns the previously registered handler when a JavaScript crash exception occurs. It can only be used in the main thread. If an invalid parameter is passed or the API is called from a child thread, an error code is thrown and **undefined** is returned. You are advised to handle it with try-catch logic. If the API parameter is empty, subsequently registered handlers are not able to establish a connection with previously registered handlers, thereby breaking the chain call mechanism. |
-| [setDefaultFreezeObserver](arkts-ability-setdefaultfreezeobserver-f.md#setdefaultfreezeobserver-1) | Set the default freeze observer, This function will be executed right after the callback function registered through errorManager.on is executed. You can use it to implement chain calls instead of errorManager.on. If an empty observer is set for a certain module, it will cause the call chain to be interrupted. This API must be called in the main thread. |
-| [setDefaultResourceUsageObserver](arkts-ability-setdefaultresourceusageobserver-f.md#setdefaultresourceusageobserver-1) | Set the default resource usage observer. You can use it to implement chain calls. If an empty observer is set for a certain module, it will cause the call chain to be interrupted. This API must be called on the main thread. |
+| [off](arkts-errormanager-off-f.md#off-1) | 注销错误观测器。使用callback异步返回。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 |
+| [off](arkts-errormanager-off-f.md#off-2) | 注销错误观测器。使用Promise异步返回。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 |
+| [off](arkts-errormanager-off-f.md#off-3) | 注销主线程消息处理监听器。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 |
+| [off](arkts-errormanager-off-f.md#off-4) | 注销被拒绝promise监听器。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 |
+| [off](arkts-errormanager-off-f.md#off-5) | 注销被拒绝promise监听器，注销后无法监听进程中的promise异常。 如果传入的回调不在通过on方法注册的回调队列中，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。 |
+| [off](arkts-errormanager-off-f.md#off-6) | 取消之前注册的应用主线程freeze监听。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 如果传入的回调与通过on方法注册回调不一致，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。 |
+| [off](arkts-errormanager-off-f.md#off-7) | 注销错误观测器，注销之前注册在同一线程的callback全局监听。 如果传入的回调不在通过on方法注册的回调队列中，将抛出16300004错误码，因此建议使用try-catch逻辑进行处理。 |
+| [offFreeze](arkts-errormanager-offfreeze-f.md#offFreeze-1) | 注销冻屏事件观测器。 此函数只能在主线程中调用。 |
+| [offUnhandledRejection](arkts-errormanager-offunhandledrejection-f.md#offUnhandledRejection-1) | Unregister unhandled rejection observer. |
+| [on](arkts-errormanager-on-f.md#on-1) | 注册错误观测器。注册后可以捕获到应用产生的js crash，属于应用崩溃的一种。观测器捕获到该异常时应用不退出，建议在回调函数执行完后，增加同步退出操作。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 |
+| [on](arkts-errormanager-on-f.md#on-2) | 注册主线程消息处理耗时监听器。注册后可以捕获到应用主线程处理消息的具体执行时间。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 |
+| [on](arkts-errormanager-on-f.md#on-3) | 注册被拒绝promise监听器。注册后可以捕获到当前线程中未被捕获到的promise rejection。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 |
+| [on](arkts-errormanager-on-f.md#on-4) | 在进程中任意线程注册被拒绝promise监听器，注册后可以捕获到当前进程中未被捕获到的promise rejection。 |
+| [on](arkts-errormanager-on-f.md#on-5) | 注册应用主线程freeze监听。多次注册情况下，取最后一次注册的结果。 仅在主线程中使用。使用线程出错时，将抛出错误码，因此建议使用try-catch逻辑进行处理。 > **注意**： > > 如果该回调函数执行时间超过1s，可能导致[AppRecovery]{@link @ohos.app.ability.appRecovery:appRecovery}功能不可用。通过解析hilog日志中的begin与Freeze > callback execution completed两者的时间差可以计算回调函数执行时长，如果超过1秒，可以尝试采用异步处理、减少阻塞操作、优化数据结构等方法优化回调逻辑，降低执行时长。 |
+| [on](arkts-errormanager-on-f.md#on-6) | 在进程中的任意线程中注册 `errormanager.on` 接口，监听整个进程中任意线程的异常。观测器捕获到该异常时应用不退出，建议在回调函数执行完后，增加同步退出操作。 |
+| [onFreeze](arkts-errormanager-onfreeze-f.md#onFreeze-1) | 注册冻屏事件观测器。 此函数只能在主线程中调用。 请注意，每个进程只支持注册一个观测器。 如果多次注册，后注册的将覆盖之前的。 |
+| [onUnhandledRejection](arkts-errormanager-onunhandledrejection-f.md#onUnhandledRejection-1) | Register unhandled rejection observer. |
+| [setDefaultErrorHandler](arkts-errormanager-setdefaulterrorhandler-f.md#setDefaultErrorHandler-1) | 发生JS_CRASH异常时，支持链式回调，返回上一次注册的处理器，仅限主线程调用。 如果传入非法参数或在子线程调用，将抛出错误码并返回undefined，因此建议使用try-catch逻辑进行处理。 若接口参数为空，后续注册的处理器将无法与前序已注册的处理器建立关联，从而中断链式调用。 |
+| [setDefaultFreezeObserver](arkts-errormanager-setdefaultfreezeobserver-f.md#setDefaultFreezeObserver-1) | 设置默认冻屏观测器。此函数将在通过errorManager.on注册的回调函数执行后立即执行。 可用于替代errorManager.on实现链式调用。 如果为某个模块设置空观测器，将导致调用链中断。 此API必须在主线程中调用。 |
+| [setDefaultResourceUsageObserver](arkts-errormanager-setdefaultresourceusageobserver-f.md#setDefaultResourceUsageObserver-1) | 设置资源占用观察者，应用资源超基线时，支持链式回调，返回上一次注册的资源占用观察者，仅限主线程调用。 如果传入非法参数或在子线程调用，将抛出错误码并返回undefined，因此建议使用try-catch逻辑进行处理。 若接口参数为空，后续注册的观察者将无法与前序已注册的观察者建立关联，从而中断链式调用。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [GlobalError](arkts-ability-globalerror-i.md) | Describes the object related to the exception event name, message, error stack information, exception thread name, and exception thread type. |
-
-### Enums
-
-| Name | Description |
-| --- | --- |
-| [InstanceType](arkts-ability-instancetype-e.md) | Enumerates the VM instance types. |
-| [ResourceType](arkts-ability-resourcetype-e.md) | Define the resource types of the application. |
+| [GlobalError](arkts-errormanager-globalerror-i.md) | 有关异常事件名字、消息、错误堆栈信息、异常线程名称和类型的对象。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ErrorHandler](arkts-ability-errorhandler-t.md) | The ErrorHandler will be called when the ArkTS runtime throws an exception that is not caught by the user. |
-| [ErrorObserver](arkts-ability-errorobserver-t.md) | Defines the ErrorObserver module. |
-| [FreezeObserver](arkts-ability-freezeobserver-t.md) | Defines an observer for the main thread freeze event of the application. It is used by the application to customize freeze information. |
-| [GlobalObserver](arkts-ability-globalobserver-t.md) | Defines an exception observer that can be used as an input parameter for [errorManager.on('globalErrorOccurred')](arkts-ability-on-f.md#on-6) and [errorManager.on('globalUnhandledRejectionDetected')](arkts-ability-on-f.md#on-4) to monitor event processing on the main thread of the current application. |
-| [LoopObserver](arkts-ability-loopobserver-t.md) | Defines the LoopObserver module. It can be used as a parameter of **errormanager.on** to listen for and handle main thread timeout events in the current application. |
-| [ResourceUsageObserver](arkts-ability-resourceusageobserver-t.md) | The observer will be called by the system when resource usage exceed threshold. |
-| [UnhandledRejectionObserver](arkts-ability-unhandledrejectionobserver-t.md) | Defines an observer to capture the cause of a rejected promise. |
+| [ErrorHandler](arkts-errormanager-errorhandler-t.md) | 当ArkTS运行时抛出用户未捕获异常时，将调用ErrorHandler。 |
+| [ErrorObserver](arkts-errormanager-errorobserver-t.md) | ErrorObserver模块。 |
+| [FreezeObserver](arkts-errormanager-freezeobserver-t.md) | 定义应用主线程freeze回调，用于应用自定义添加freeze信息。 |
+| [GlobalObserver](arkts-errormanager-globalobserver-t.md) | 定义异常监听，可以作为 [errorManager.on('globalErrorOccurred')]{@link errorManager.on(type: 'globalErrorOccurred', observer: GlobalObserver)} 和 [errorManager.on('globalUnhandledRejectionDetected')]{@link errorManager.on(type: 'globalUnhandledRejectionDetected', observer: GlobalObserver)} 的入参监听当前应用主线程事件处理事件。 |
+| [LoopObserver](arkts-errormanager-loopobserver-t.md) | LoopObserver模块。定义异常监听，可作为 `errormanager.on` 函数的参数，监听并处理当前应用主线程超时的事件。 |
+| [ResourceUsageObserver](arkts-errormanager-resourceusageobserver-t.md) | 定义应用资源使用情况的观察者回调函数，作为 [errorManager.setDefaultResourceUsageObserver]{@link errorManager.setDefaultResourceUsageObserver}的入参，用于监听各类资源占用变化， 并支持应用执行自定义资源处理逻辑。 |
+| [UnhandledRejectionObserver](arkts-errormanager-unhandledrejectionobserver-t.md) | 定义异常监听，用于捕获Promise异步操作失败的原因。 |
+| [UnhandledRejectionObserver](arkts-errormanager-unhandledrejectionobserver-t.md) | 当发生未处理的拒绝时，系统将调用此观测器。 |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [InstanceType](arkts-errormanager-instancetype-e.md) | 虚拟机的实例类型。 |
+| [ResourceType](arkts-errormanager-resourcetype-e.md) | 应用资源超基线的类型。 |
 

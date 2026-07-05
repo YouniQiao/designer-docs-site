@@ -1,20 +1,22 @@
 # @ohos.selectionInput.SelectionPanel
 
+## 导入模块
+
+```TypeScript
+import { PanelInfo,PanelType } from '@kit.BasicServicesKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [PanelInfo](arkts-basicservices-panelinfo-i-sys.md) | 划词面板属性信息。 |
-<!--DelEnd-->
+| <!--DelRow-->[PanelInfo](arkts-panelinfo-i.md) | 划词面板属性信息。 |
 
-<!--Del-->
-### 枚举（系统接口）
+### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [PanelType](arkts-basicservices-paneltype-e-sys.md) | 划词面板类型枚举。 |
-<!--DelEnd-->
+| <!--DelRow-->[PanelType](arkts-paneltype-e.md) | 划词面板类型枚举。 |
 

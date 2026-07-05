@@ -2,19 +2,17 @@
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [FeatureAbility](arkts-arkui-featureability-c-sys.md) |  |
-<!--DelEnd-->
+| <!--DelRow-->[FeatureAbility](arkts-featureability-c.md) |  |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [SendMessageOptions](arkts-arkui-sendmessageoptions-i.md) |  |
-| [SubscribeMessageOptions](arkts-arkui-subscribemessageoptions-i.md) |  |
-| [SubscribeMessageResponse](arkts-arkui-subscribemessageresponse-i.md) |  |
+| [SendMessageOptions](arkts-sendmessageoptions-i.md) |  |
+| [SubscribeMessageOptions](arkts-subscribemessageoptions-i.md) |  |
+| [SubscribeMessageResponse](arkts-subscribemessageresponse-i.md) |  |
 

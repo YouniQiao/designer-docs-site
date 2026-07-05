@@ -9,7 +9,7 @@ Session controller,used to control media playback and get media information
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
 
 ## destroy
@@ -28,14 +28,14 @@ Destroy the server controller
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## destroy
 
@@ -47,7 +47,7 @@ Destroy the server controller
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -55,14 +55,14 @@ Destroy the server controller
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVCallState
 
@@ -80,15 +80,15 @@ Get the call status of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVCallState&gt; | Yes | The triggered asyncCallback when (getAVCallState). |
+| callback | AsyncCallback&lt;AVCallState> | Yes | The triggered asyncCallback when (getAVCallState). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVCallState
 
@@ -106,15 +106,15 @@ Get the call status of the current session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVCallState&gt; | (AVCallState) returned through promise |
+| Promise&lt;AVCallState> | (AVCallState) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVMetadata
 
@@ -132,15 +132,15 @@ Get the metadata of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVMetadata&gt; | Yes | The triggered asyncCallback when (getAVMetadata). |
+| callback | AsyncCallback&lt;AVMetadata> | Yes | The triggered asyncCallback when (getAVMetadata). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVMetadata
 
@@ -152,7 +152,7 @@ Get the metadata of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -160,15 +160,15 @@ Get the metadata of the current session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVMetadata&gt; | (AVMetadata) returned through promise |
+| Promise&lt;AVMetadata> | (AVMetadata) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVMetadataSync
 
@@ -180,7 +180,7 @@ Get the metadata of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -194,9 +194,9 @@ Get the metadata of the current session
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVPlaybackState
 
@@ -214,15 +214,15 @@ Get the playback status of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVPlaybackState&gt; | Yes | The triggered asyncCallback when (getAVPlaybackState). |
+| callback | AsyncCallback&lt;AVPlaybackState> | Yes | The triggered asyncCallback when (getAVPlaybackState). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVPlaybackState
 
@@ -234,7 +234,7 @@ Get the playback status of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -242,15 +242,15 @@ Get the playback status of the current session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVPlaybackState&gt; | (AVPlaybackState) returned through promise |
+| Promise&lt;AVPlaybackState> | (AVPlaybackState) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVPlaybackStateSync
 
@@ -262,7 +262,7 @@ Get the playback status of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -276,9 +276,9 @@ Get the playback status of the current session
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVQueueItems
 
@@ -296,15 +296,15 @@ Get the playlist of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;AVQueueItem&gt;&gt; | Yes | The triggered asyncCallback when (getAVQueueItems). |
+| callback | AsyncCallback&lt;Array&lt;AVQueueItem>> | Yes | The triggered asyncCallback when (getAVQueueItems). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVQueueItems
 
@@ -316,7 +316,7 @@ Get the playlist of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -324,15 +324,15 @@ Get the playlist of the current session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;AVQueueItem&gt;&gt; | (Array&lt;AVQueueItem&gt;) returned through promise |
+| Promise&lt;Array&lt;AVQueueItem>> | (Array) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVQueueItemsSync
 
@@ -344,7 +344,7 @@ Get the playlist of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -352,15 +352,15 @@ Get the playlist of the current session
 
 | Type | Description |
 | --- | --- |
-| Array&lt;AVQueueItem&gt; | (Array&lt;AVQueueItem&gt;) returned |
+| Array&lt;AVQueueItem> | (Array) returned |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVQueueTitle
 
@@ -378,15 +378,15 @@ Get the name of the playlist of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;string&gt; | Yes | The triggered asyncCallback when (getAVQueueTitle). |
+| callback | AsyncCallback&lt;string> | Yes | The triggered asyncCallback when (getAVQueueTitle). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVQueueTitle
 
@@ -398,7 +398,7 @@ Get the name of the playlist of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -406,15 +406,15 @@ Get the name of the playlist of the current session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | (string) returned through promise |
+| Promise&lt;string> | (string) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getAVQueueTitleSync
 
@@ -426,7 +426,7 @@ Get the name of the playlist of the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -440,9 +440,9 @@ Get the name of the playlist of the current session
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getCallMetadata
 
@@ -460,15 +460,15 @@ Get the call metadata of the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;CallMetadata&gt; | Yes | The triggered asyncCallback when (getCallMetadata). |
+| callback | AsyncCallback&lt;CallMetadata> | Yes | The triggered asyncCallback when (getCallMetadata). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getCallMetadata
 
@@ -486,15 +486,15 @@ Get the call metadata of the current session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;CallMetadata&gt; | (CallMetadata) returned through promise |
+| Promise&lt;CallMetadata> | (CallMetadata) returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getDesktopLyricState
 
@@ -506,7 +506,7 @@ Get desktop lyric state such as lock state for this session.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -514,17 +514,17 @@ Get desktop lyric state such as lock state for this session.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;DesktopLyricState&gt; | void promise when executed successfully |
+| Promise&lt;DesktopLyricState> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
-| [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600110 | The desktop lyrics feature of this application is not enabled. |
+| 6600111 | The desktop lyrics feature is not supported. |
 
 ## getExtras
 
@@ -542,18 +542,46 @@ Get custom media packets provided by the corresponding session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;{[key: string]: Object}&gt; | Yes |  |
+| callback | AsyncCallback&lt;{[key: string]: Object}> | Yes | The triggered asyncCallback when (getExtras). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600107 | Too many commands or events. |
+
+## getExtras
+
+```TypeScript
+getExtras(callback: AsyncCallback<Record<string, Object>>): void
+```
+
+Get custom media packets provided by the corresponding session
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;Record&lt;string, Object>> | Yes | The triggered asyncCallback when (getExtras). |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600107 | Too many commands or events. |
 
 ## getExtras
 
@@ -565,7 +593,7 @@ Get custom media packets provided by the corresponding session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -573,18 +601,48 @@ Get custom media packets provided by the corresponding session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;{[key: string]: Object}&gt; |  |
+| Promise&lt;{[key: string]: Object}> | the parameters of extras |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600107 | Too many commands or events. |
+
+## getExtras
+
+```TypeScript
+getExtras(): Promise<Record<string, Object>>
+```
+
+Get custom media packets provided by the corresponding session
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Record&lt;string, Object>> | the parameters of extras |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600107 | Too many commands or events. |
 
 ## getExtrasWithEvent
 
@@ -608,16 +666,16 @@ Get extra information for remote device, such as volume level, connected devices
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ExtraInfo&gt; | the value returned for such event |
+| Promise&lt;ExtraInfo> | the value returned for such event |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
 
 ## getLaunchAbility
 
@@ -635,15 +693,15 @@ Get the {@link WantAgent} of this session that can launch the session ability
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;WantAgent&gt; | Yes | The asyncCallback triggered when getting the WantAgent. |
+| callback | AsyncCallback&lt;WantAgent> | Yes | The asyncCallback triggered when getting the WantAgent. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getLaunchAbility
 
@@ -655,7 +713,7 @@ Get the {@link WantAgent} of this session that can launch the session ability
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -663,15 +721,15 @@ Get the {@link WantAgent} of this session that can launch the session ability
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;WantAgent&gt; | WantAgent promise |
+| Promise&lt;WantAgent> | WantAgent promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getMediaCenterControlType
 
@@ -683,7 +741,7 @@ Get media control type that the can be displayed on the media center.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -691,14 +749,14 @@ Get media control type that the can be displayed on the media center.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;AVMediaCenterControlType&gt;&gt; | The control types that the app sets to be displayedon the media center. The default value is empty, indicating that the types of the customizeddisplay control is not set. |
+| Promise&lt;Array&lt;AVMediaCenterControlType>> | The control types that the app sets to be displayed  on the media center. The default value is empty, indicating that the types of the customized  display control is not set. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## getOutputDevice
 
@@ -716,7 +774,7 @@ Get output device information
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;OutputDeviceInfo&gt; | Yes | The triggered asyncCallback when (getOutputDevice). |
+| callback | AsyncCallback&lt;OutputDeviceInfo> | Yes | The triggered asyncCallback when (getOutputDevice). |
 
 **Error codes:**
 
@@ -735,7 +793,7 @@ Get output device information
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -743,7 +801,7 @@ Get output device information
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;OutputDeviceInfo&gt; | (OutputDeviceInfo) returned through promise |
+| Promise&lt;OutputDeviceInfo> | (OutputDeviceInfo) returned through promise |
 
 **Error codes:**
 
@@ -762,7 +820,7 @@ Get output device information
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -776,20 +834,20 @@ Get output device information
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## getRealPlaybackPositionSync
 
 ```TypeScript
-getRealPlaybackPositionSync(): number
+getRealPlaybackPositionSync(): long
 ```
 
 Get the adjusted playback position. The time automatically calculated by the system taking into account factors such as playback status, playback speed, and application update time.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -797,14 +855,14 @@ Get the adjusted playback position. The time automatically calculated by the sys
 
 | Type | Description |
 | --- | --- |
-| number | current playback position in ms.Note that the returns value of each call will be different. |
+| long | current playback position in ms.Note that the returns value of each call will be different. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## getSupportedLoopModes
 
@@ -816,9 +874,9 @@ Get supported loop modes supplied by application.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -826,28 +884,28 @@ Get supported loop modes supplied by application.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;LoopMode&gt;&gt; | supported loop modes returned through promise |
+| Promise&lt;Array&lt;LoopMode>> | supported loop modes returned through promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## getSupportedPlaySpeeds
 
 ```TypeScript
-getSupportedPlaySpeeds(): Promise<Array<number>>
+getSupportedPlaySpeeds(): Promise<Array<double>>
 ```
 
 Get supported speeds supplied by application.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -855,14 +913,14 @@ Get supported speeds supplied by application.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;number&gt;&gt; | Promise that returns no value. |
+| Promise&lt;Array&lt;double>> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## getValidCommands
 
@@ -880,15 +938,15 @@ Get commands supported by the current session
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;AVControlCommandType&gt;&gt; | Yes | The triggered asyncCallback when (getValidCommands). |
+| callback | AsyncCallback&lt;Array&lt;AVControlCommandType>> | Yes | The triggered asyncCallback when (  getValidCommands). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getValidCommands
 
@@ -900,7 +958,7 @@ Get commands supported by the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -908,15 +966,15 @@ Get commands supported by the current session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;AVControlCommandType&gt;&gt; | array of AVControlCommandType promise |
+| Promise&lt;Array&lt;AVControlCommandType>> | array of AVControlCommandType promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## getValidCommandsSync
 
@@ -928,7 +986,7 @@ Get commands supported by the current session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -936,15 +994,15 @@ Get commands supported by the current session
 
 | Type | Description |
 | --- | --- |
-| Array&lt;AVControlCommandType&gt; | array of AVControlCommandType |
+| Array&lt;AVControlCommandType> | array of AVControlCommandType |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## isActive
 
@@ -962,15 +1020,15 @@ Check if the current session is active
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;boolean&gt; | Yes | The triggered asyncCallback when (isActive). |
+| callback | AsyncCallback&lt;boolean> | Yes | The triggered asyncCallback when (isActive). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## isActive
 
@@ -982,7 +1040,7 @@ Check if the current session is active
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -990,15 +1048,15 @@ Check if the current session is active
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | boolean promise |
+| Promise&lt;boolean> | boolean promise |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## isActiveSync
 
@@ -1010,7 +1068,7 @@ Check if the current session is active
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1024,9 +1082,9 @@ Check if the current session is active
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## isDesktopLyricEnabled
 
@@ -1038,7 +1096,7 @@ Query desktop lyric enabled state for this session.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1046,16 +1104,16 @@ Query desktop lyric enabled state for this session.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | return the enabled status |
+| Promise&lt;boolean> | return the enabled status |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600111 | The desktop lyrics feature is not supported. |
 
 ## isDesktopLyricVisible
 
@@ -1067,7 +1125,7 @@ Query desktop lyric visible state for this session.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1075,17 +1133,17 @@ Query desktop lyric visible state for this session.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | return desktop lyric visible state |
+| Promise&lt;boolean> | return desktop lyric visible state |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
-| [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600110 | The desktop lyrics feature of this application is not enabled. |
+| 6600111 | The desktop lyrics feature is not supported. |
 
 ## off('metadataChange')
 
@@ -1097,7 +1155,7 @@ Unregister metadata changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1106,15 +1164,15 @@ Unregister metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'metadataChange' | Yes |  |
-| callback | (data: AVMetadata) =&gt; void | No | The callback used to handle metadata changed event.The callback function provides the {@link AVMetadata} parameter.It only contains the properties set in the filter. |
+| callback | (data: AVMetadata) => void | No | The callback used to handle metadata changed event.  The callback function provides the {@link AVMetadata} parameter.  It only contains the properties set in the filter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('playbackStateChange')
 
@@ -1126,7 +1184,7 @@ Unregister playback state changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1135,15 +1193,15 @@ Unregister playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playbackStateChange' | Yes |  |
-| callback | (state: AVPlaybackState) =&gt; void | No | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
+| callback | (state: AVPlaybackState) => void | No | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('callMetadataChange')
 
@@ -1155,7 +1213,7 @@ Unregister call metadata changed callback
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1164,15 +1222,15 @@ Unregister call metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callMetadataChange' | Yes | 'callMetadataChange' |
-| callback | Callback&lt;CallMetadata&gt; | No | The callback used to handle call metadata changed event.The callback function provides the {@link CallMetadata} parameter.It only contains the properties set in the filter. |
+| callback | Callback&lt;CallMetadata> | No | The callback used to handle call metadata changed event.  The callback function provides the {@link CallMetadata} parameter.  It only contains the properties set in the filter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('callStateChange')
 
@@ -1184,7 +1242,7 @@ Unregister playback state changed callback
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1193,15 +1251,15 @@ Unregister playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChange' | Yes | 'callStateChange' |
-| callback | Callback&lt;AVCallState&gt; | No | The callback used to handle call state changed event.The callback function provides the {@link AVCallState} parameter. |
+| callback | Callback&lt;AVCallState> | No | The callback used to handle call state changed event.  The callback function provides the {@link AVCallState} parameter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('sessionDestroy')
 
@@ -1213,7 +1271,7 @@ Unregister current session destroyed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1222,15 +1280,15 @@ Unregister current session destroyed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionDestroy' | Yes | 'sessionDestroy' |
-| callback | () =&gt; void | No | The callback used to handle current session destroyed event. |
+| callback | () => void | No | The callback used to handle current session destroyed event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('activeStateChange')
 
@@ -1242,7 +1300,7 @@ Unregister the active state of this session changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1251,15 +1309,15 @@ Unregister the active state of this session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'activeStateChange' | Yes | 'activeStateChange' |
-| callback | (isActive: boolean) =&gt; void | No | The callback used to handle the active state of this session changed event.The callback function provides the changed session state. |
+| callback | (isActive: boolean) => void | No | The callback used to handle the active state of this session changed event.  The callback function provides the changed session state. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('validCommandChange')
 
@@ -1271,7 +1329,7 @@ Unregister the valid commands of the session changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1280,15 +1338,15 @@ Unregister the valid commands of the session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'validCommandChange' | Yes | 'validCommandChange' |
-| callback | (commands: Array&lt;AVControlCommandType&gt;) =&gt; void | No | The callback used to handle the changes.The callback function provides an array of AVControlCommandType. |
+| callback | (commands: Array&lt;AVControlCommandType>) => void | No | The callback used to handle the changes.  The callback function provides an array of AVControlCommandType. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('outputDeviceChange')
 
@@ -1300,7 +1358,7 @@ Unregister session output device change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1309,15 +1367,15 @@ Unregister session output device change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'outputDeviceChange' | Yes | Registration Type 'outputDeviceChange' |
-| callback | (state: ConnectionState, device: OutputDeviceInfo) =&gt; void | No | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@linkConnectionState}. |
+| callback | (state: ConnectionState, device: OutputDeviceInfo) => void | No | Used to handle output device changed.  The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link  ConnectionState}. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist |
 
 ## off('sessionEvent')
 
@@ -1329,7 +1387,7 @@ Unregister session event callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1338,15 +1396,15 @@ Unregister session event callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionEvent' | Yes | 'sessionEvent' |
-| callback | (sessionEvent: string, args: {[key: string]: Object}) =&gt; void | No | Used to cancel a specific listenerThe callback function provides the event string and key-value pair parameters. |
+| callback | (sessionEvent: string, args: {[key: string]: Object}) => void | No | Used to cancel a specific listener  The callback function provides the event string and key-value pair parameters. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('queueItemsChange')
 
@@ -1358,7 +1416,7 @@ Unregister session playlist change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1367,15 +1425,15 @@ Unregister session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueItemsChange' | Yes | Registration Type 'queueItemsChange' |
-| callback | (items: Array&lt;AVQueueItem&gt;) =&gt; void | No | Used to handle playlist changed.The callback provides the new array of AVQueueItem {@link AVQueueItem} |
+| callback | (items: Array&lt;AVQueueItem>) => void | No | Used to handle playlist changed.  The callback provides the new array of AVQueueItem {@link AVQueueItem} |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('queueTitleChange')
 
@@ -1387,7 +1445,7 @@ Unregister the name of session playlist change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1396,15 +1454,15 @@ Unregister the name of session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueTitleChange' | Yes | Registration Type 'queueTitleChange' |
-| callback | (title: string) =&gt; void | No | Used to handle name of playlist changed.The callback provides the new name. |
+| callback | (title: string) => void | No | Used to handle name of playlist changed.  The callback provides the new name. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('extrasChange')
 
@@ -1416,7 +1474,7 @@ Unregister the custom media packets change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1425,15 +1483,15 @@ Unregister the custom media packets change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'extrasChange' | Yes | Registration Type 'extrasChange' |
-| callback | (extras: {[key: string]: Object}) =&gt; void | No | Used to handle custom media packets changed.The callback provides the new media packets. |
+| callback | (extras: {[key: string]: Object}) => void | No | Used to handle custom media packets changed.  The callback provides the new media packets. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## off('customDataChange')
 
@@ -1445,7 +1503,7 @@ Unregister listener for custom data.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -1454,14 +1512,114 @@ Unregister listener for custom data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Type of the 'customDataChange' to listen for. |
-| callback | Callback&lt;Record&lt;string, Object&gt;&gt; | No | Callback used to retrieve custom data. |
+| callback | Callback&lt;Record&lt;string, Object>> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
+
+## offActiveStateChange
+
+```TypeScript
+offActiveStateChange(callback?: Callback<boolean>): void
+```
+
+Unregister the active state of this session changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;boolean> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offCallMetadataChange
+
+```TypeScript
+offCallMetadataChange(callback?: Callback<CallMetadata>): void
+```
+
+Unregister call metadata changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;CallMetadata> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offCallStateChange
+
+```TypeScript
+offCallStateChange(callback?: Callback<AVCallState>): void
+```
+
+Unregister playback state changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVCallState> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offCustomDataChange
+
+```TypeScript
+offCustomDataChange(callback?: Callback<Record<string, Object>>): void
+```
+
+Unregister listener for custom data.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Record&lt;string, Object>> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
 
 ## offDesktopLyricEnabled
 
@@ -1473,7 +1631,7 @@ Unregister desktop lyric enable state change callback.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1481,14 +1639,14 @@ Unregister desktop lyric enable state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | No | a callback to receive desktop lyric enable state. |
+| callback | Callback&lt;boolean> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## offDesktopLyricStateChanged
 
@@ -1500,7 +1658,7 @@ Unregister desktop lyric state changed callback.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1508,14 +1666,14 @@ Unregister desktop lyric state changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;DesktopLyricState&gt; | No | a callback to receive desktop lyric state. |
+| callback | Callback&lt;DesktopLyricState> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## offDesktopLyricVisibilityChanged
 
@@ -1527,7 +1685,7 @@ Unregister desktop lyric visible state change callback.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1535,14 +1693,39 @@ Unregister desktop lyric visible state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | No | a callback to receive desktop lyric window visible state. |
+| callback | Callback&lt;boolean> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offExtrasChange
+
+```TypeScript
+offExtrasChange(callback?: Callback<Record<string, Object>>): void
+```
+
+Unregister the custom media packets change callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Record&lt;string, Object>> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## offMediaCenterControlTypeChanged
 
@@ -1554,7 +1737,7 @@ Unregister media center control type changed callback.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1562,14 +1745,191 @@ Unregister media center control type changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;AVMediaCenterControlType&gt;&gt; | No | Callback to receive the changed control types. |
+| callback | Callback&lt;Array&lt;AVMediaCenterControlType>> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offMetadataChange
+
+```TypeScript
+offMetadataChange(callback?: Callback<AVMetadata>): void
+```
+
+Unregister metadata changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVMetadata> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offOutputDeviceChange
+
+```TypeScript
+offOutputDeviceChange(callback?: ConnectionEvent): void
+```
+
+Unregister session output device change callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ConnectionEvent | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist |
+
+## offPlaybackStateChange
+
+```TypeScript
+offPlaybackStateChange(callback?: Callback<AVPlaybackState>): void
+```
+
+Unregister playback state changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVPlaybackState> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offQueueItemsChange
+
+```TypeScript
+offQueueItemsChange(callback?: Callback<Array<AVQueueItem>>): void
+```
+
+Unregister session playlist change callback
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Array&lt;AVQueueItem>> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offQueueTitleChange
+
+```TypeScript
+offQueueTitleChange(callback?: Callback<string>): void
+```
+
+Unregister the name of session playlist change callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;string> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offSessionDestroy
+
+```TypeScript
+offSessionDestroy(callback?: NoParamCallback): void
+```
+
+Unregister current session destroyed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | NoParamCallback | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## offSessionEvent
+
+```TypeScript
+offSessionEvent(callback?: EventProcess): void
+```
+
+Unregister session event callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | EventProcess | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## offSupportedLoopModesChange
 
@@ -1581,9 +1941,9 @@ Unregister listener for supported loop modes.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1591,28 +1951,28 @@ Unregister listener for supported loop modes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;LoopMode&gt;&gt; | No | Callback used to retrieve supported loop modes. |
+| callback | Callback&lt;Array&lt;LoopMode>> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
 
 ## offSupportedPlaySpeedsChange
 
 ```TypeScript
-offSupportedPlaySpeedsChange(callback?: Callback<Array<number>>): void
+offSupportedPlaySpeedsChange(callback?: Callback<Array<double>>): void
 ```
 
 Unregister listener for supported play speeds.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1620,14 +1980,39 @@ Unregister listener for supported play speeds.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;number&gt;&gt; | No | Callback used to retrieve supported play speeds. |
+| callback | Callback&lt;Array&lt;double>> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
+
+## offValidCommandChange
+
+```TypeScript
+offValidCommandChange(callback?: Callback<Array<AVControlCommandType>>): void
+```
+
+Unregister the valid commands of the session changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Array&lt;AVControlCommandType>> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('metadataChange')
 
@@ -1639,7 +2024,7 @@ Register metadata changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1648,16 +2033,16 @@ Register metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'metadataChange' | Yes |  |
-| filter | Array&lt;keyof AVMetadata&gt; \| 'all' | Yes | The properties of {@link AVMetadata} that you cared about |
-| callback | (data: AVMetadata) =&gt; void | Yes | The callback used to handle metadata changed event.The callback function provides the {@link AVMetadata} parameter.It only contains the properties set in the filter. |
+| filter | Array&lt;keyof AVMetadata> \| 'all' | Yes | The properties of {@link AVMetadata} that you cared about |
+| callback | (data: AVMetadata) => void | Yes | The callback used to handle metadata changed event.  The callback function provides the {@link AVMetadata} parameter.  It only contains the properties set in the filter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('playbackStateChange')
 
@@ -1669,7 +2054,7 @@ Register playback state changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1678,16 +2063,16 @@ Register playback state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'playbackStateChange' | Yes |  |
-| filter | Array&lt;keyof AVPlaybackState&gt; \| 'all' | Yes | The properties of {@link AVPlaybackState}that you cared about |
-| callback | (state: AVPlaybackState) =&gt; void | Yes | The callback used to handle playback state changed event.The callback function provides the {@link AVPlaybackState} parameter. |
+| filter | Array&lt;keyof AVPlaybackState> \| 'all' | Yes | The properties of {@link AVPlaybackState}  that you cared about |
+| callback | (state: AVPlaybackState) => void | Yes | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('callMetadataChange')
 
@@ -1699,7 +2084,7 @@ Register call metadata changed callback
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1708,16 +2093,16 @@ Register call metadata changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callMetadataChange' | Yes | 'callMetadataChange' |
-| filter | Array&lt;keyof CallMetadata&gt; \| 'all' | Yes | The properties of {@link CallMetadata} that you cared about |
-| callback | Callback&lt;CallMetadata&gt; | Yes | The callback used to handle call metadata changed event.The callback function provides the {@link CallMetadata} parameter.It only contains the properties set in the filter. |
+| filter | Array&lt;keyof CallMetadata> \| 'all' | Yes | The properties of {@link CallMetadata} that you cared about |
+| callback | Callback&lt;CallMetadata> | Yes | The callback used to handle call metadata changed event.  The callback function provides the {@link CallMetadata} parameter.  It only contains the properties set in the filter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('callStateChange')
 
@@ -1729,7 +2114,7 @@ Register call state changed callback
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1738,16 +2123,16 @@ Register call state changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'callStateChange' | Yes | 'callStateChange' |
-| filter | Array&lt;keyof AVCallState&gt; \| 'all' | Yes | The properties of {@link AVCallState} that you cared about |
-| callback | Callback&lt;AVCallState&gt; | Yes | The callback used to handle call state changed event.The callback function provides the {@link AVCallState} parameter. |
+| filter | Array&lt;keyof AVCallState> \| 'all' | Yes | The properties of {@link AVCallState} that you cared about |
+| callback | Callback&lt;AVCallState> | Yes | The callback used to handle call state changed event.  The callback function provides the {@link AVCallState} parameter. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('sessionDestroy')
 
@@ -1759,7 +2144,7 @@ Register current session destroyed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1768,15 +2153,15 @@ Register current session destroyed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionDestroy' | Yes |  |
-| callback | () =&gt; void | Yes | The callback used to handle current session destroyed event. |
+| callback | () => void | Yes | The callback used to handle current session destroyed event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('activeStateChange')
 
@@ -1788,7 +2173,7 @@ Register the active state of this session changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1797,15 +2182,15 @@ Register the active state of this session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'activeStateChange' | Yes | 'activeStateChange' |
-| callback | (isActive: boolean) =&gt; void | Yes | The callback used to handle the active state of this session changed event.The callback function provides the changed session state. |
+| callback | (isActive: boolean) => void | Yes | The callback used to handle the active state of this session changed event.  The callback function provides the changed session state. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('validCommandChange')
 
@@ -1817,7 +2202,7 @@ Register the valid commands of the session changed callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1826,15 +2211,15 @@ Register the valid commands of the session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'validCommandChange' | Yes | 'validCommandChange' |
-| callback | (commands: Array&lt;AVControlCommandType&gt;) =&gt; void | Yes | The callback used to handle the changes.The callback function provides an array of AVControlCommandType. |
+| callback | (commands: Array&lt;AVControlCommandType>) => void | Yes | The callback used to handle the changes.  The callback function provides an array of AVControlCommandType. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('outputDeviceChange')
 
@@ -1846,7 +2231,7 @@ Register session output device change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1855,15 +2240,15 @@ Register session output device change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'outputDeviceChange' | Yes | Registration Type 'outputDeviceChange' |
-| callback | (state: ConnectionState, device: OutputDeviceInfo) =&gt; void | Yes | Used to handle output device changed.The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@linkConnectionState}. |
+| callback | (state: ConnectionState, device: OutputDeviceInfo) => void | Yes | Used to handle output device changed.  The callback provide the new device info {@link OutputDeviceInfo} and related connection state {@link  ConnectionState}. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist |
 
 ## on('sessionEvent')
 
@@ -1875,7 +2260,7 @@ Register session event callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1884,15 +2269,15 @@ Register session event callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionEvent' | Yes | 'sessionEvent' |
-| callback | (sessionEvent: string, args: {[key: string]: Object}) =&gt; void | Yes | The callback used to handle session event changed event.The callback function provides the event string and key-value pair parameters. |
+| callback | (sessionEvent: string, args: {[key: string]: Object}) => void | Yes | The callback used to handle session event changed event.  The callback function provides the event string and key-value pair parameters. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('queueItemsChange')
 
@@ -1904,7 +2289,7 @@ Register session playlist change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1913,15 +2298,15 @@ Register session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueItemsChange' | Yes | Registration Type 'queueItemsChange' |
-| callback | (items: Array&lt;AVQueueItem&gt;) =&gt; void | Yes | Used to handle playlist changed.The callback provides the new array of AVQueueItem {@link AVQueueItem} |
+| callback | (items: Array&lt;AVQueueItem>) => void | Yes | Used to handle playlist changed.  The callback provides the new array of AVQueueItem {@link AVQueueItem} |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('queueTitleChange')
 
@@ -1933,7 +2318,7 @@ Register the name of session playlist change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1942,15 +2327,15 @@ Register the name of session playlist change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'queueTitleChange' | Yes | Registration Type 'queueTitleChange' |
-| callback | (title: string) =&gt; void | Yes | Used to handle name of playlist changed.The callback provides the new name. |
+| callback | (title: string) => void | Yes | Used to handle name of playlist changed.  The callback provides the new name. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('extrasChange')
 
@@ -1962,7 +2347,7 @@ Register the custom media packets change callback
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -1971,15 +2356,15 @@ Register the custom media packets change callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'extrasChange' | Yes | Registration Type 'extrasChange' |
-| callback | (extras: {[key: string]: Object}) =&gt; void | Yes | Used to handle custom media packets changed.The callback provides the new media packets. |
+| callback | (extras: {[key: string]: Object}) => void | Yes | Used to handle custom media packets changed.  The callback provides the new media packets. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## on('customDataChange')
 
@@ -1991,7 +2376,7 @@ Register listener for custom data.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2000,14 +2385,166 @@ Register listener for custom data.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'customDataChange' | Yes | Type of the 'customDataChange' to listen for. |
-| callback | Callback&lt;Record&lt;string, Object&gt;&gt; | Yes | Callback used to retrieve custom data. |
+| callback | Callback&lt;Record&lt;string, Object>> | Yes | Callback used to retrieve custom data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
+
+## onActiveStateChange
+
+```TypeScript
+onActiveStateChange(callback: Callback<boolean>): void
+```
+
+Register the active state of this session changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;boolean> | Yes | The callback used to handle the active state of this session changed  event.  The callback function provides the changed session state. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onCallMetadataChange
+
+```TypeScript
+onCallMetadataChange(filter: Array<string>, callback: Callback<CallMetadata>): void
+```
+
+Register call metadata changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| filter | Array&lt;string> | Yes | The properties of {@link CallMetadata} that you cared about |
+| callback | Callback&lt;CallMetadata> | Yes | The callback used to handle call metadata changed event.  The callback function provides the {@link CallMetadata} parameter.  It only contains the properties set in the filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onCallMetadataChangeAll
+
+```TypeScript
+onCallMetadataChangeAll(callback: Callback<CallMetadata>): void
+```
+
+Registers a callback for all call metadata changes
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;CallMetadata> | Yes | The callback used to handle call metadata changed event.  The callback function provides the {@link CallMetadata} parameter.  It only contains the properties set in the filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onCallStateChange
+
+```TypeScript
+onCallStateChange(filter: Array<string>, callback: Callback<AVCallState>): void
+```
+
+Register call state changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| filter | Array&lt;string> | Yes | The properties of {@link AVCallState} that you cared about |
+| callback | Callback&lt;AVCallState> | Yes | The callback used to handle call state changed event.  The callback function provides the {@link AVCallState} parameter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onCallStateChangeAll
+
+```TypeScript
+onCallStateChangeAll(callback: Callback<AVCallState>): void
+```
+
+Register a callback for all call attribute changes
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVCallState> | Yes | The callback used to handle call state changed event.  The callback function provides the {@link AVCallState} parameter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onCustomDataChange
+
+```TypeScript
+onCustomDataChange(callback: Callback<Record<string, Object>>): void
+```
+
+Register listener for custom data.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Record&lt;string, Object>> | Yes | Callback used to retrieve custom data. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
 
 ## onDesktopLyricEnabled
 
@@ -2019,7 +2556,7 @@ Register desktop lyric enable state change callback.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2027,14 +2564,14 @@ Register desktop lyric enable state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | Yes | a callback to receive desktop lyric enable state. |
+| callback | Callback&lt;boolean> | Yes | a callback to receive desktop lyric enable state. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## onDesktopLyricStateChanged
 
@@ -2046,7 +2583,7 @@ Register desktop lyric state changed callback.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2054,14 +2591,14 @@ Register desktop lyric state changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;DesktopLyricState&gt; | Yes | a callback to receive desktop lyric state. |
+| callback | Callback&lt;DesktopLyricState> | Yes | a callback to receive desktop lyric state. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## onDesktopLyricVisibilityChanged
 
@@ -2073,7 +2610,7 @@ Register desktop lyric visible state change callback.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2081,14 +2618,39 @@ Register desktop lyric visible state change callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | Yes | a callback to receive desktop lyric window visible state. |
+| callback | Callback&lt;boolean> | Yes | a callback to receive desktop lyric window visible state. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onExtrasChange
+
+```TypeScript
+onExtrasChange(callback: Callback<Record<string, Object>>): void
+```
+
+Register the custom media packets change callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Record&lt;string, Object>> | Yes | Used to handle custom media packets changed.  The callback provides the new media packets. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## onMediaCenterControlTypeChanged
 
@@ -2100,7 +2662,7 @@ Register media center control type changed callback.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2108,14 +2670,241 @@ Register media center control type changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;AVMediaCenterControlType&gt;&gt; | Yes | Callback to receive the changed control types. |
+| callback | Callback&lt;Array&lt;AVMediaCenterControlType>> | Yes | Callback to receive the changed control types. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onMetadataChange
+
+```TypeScript
+onMetadataChange(filter: Array<string>, callback: Callback<AVMetadata>): void
+```
+
+Register metadata changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| filter | Array&lt;string> | Yes | The properties of {@link AVMetadata} that you cared about |
+| callback | Callback&lt;AVMetadata> | Yes | The callback used to handle metadata changed event.  The callback function provides the {@link AVMetadata} parameter.  It only contains the properties set in the filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onMetadataChangeAll
+
+```TypeScript
+onMetadataChangeAll(callback: Callback<AVMetadata>): void
+```
+
+Registers a callback to be invoked whenever any metadata changes
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVMetadata> | Yes | The callback used to handle metadata changed event.  The callback function provides the {@link AVMetadata} parameter.  It only contains the properties set in the filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onOutputDeviceChange
+
+```TypeScript
+onOutputDeviceChange(callback: ConnectionEvent): void
+```
+
+Register session output device change callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ConnectionEvent | Yes | Used to handle output device changed.  The callback provide the new device info {@link OutputDeviceInfo}  and related connection state {@link ConnectionState}. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist |
+
+## onPlaybackStateChange
+
+```TypeScript
+onPlaybackStateChange(filter: Array<string>, callback: Callback<AVPlaybackState>): void
+```
+
+Register playback state changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| filter | Array&lt;string> | Yes | The properties of {@link AVPlaybackState}  that you cared about |
+| callback | Callback&lt;AVPlaybackState> | Yes | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onPlaybackStateChangeAll
+
+```TypeScript
+onPlaybackStateChangeAll(callback: Callback<AVPlaybackState>): void
+```
+
+Registers a callback to be invoked whenever the playback state changes
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVPlaybackState> | Yes | The callback used to handle playback state changed event.  The callback function provides the {@link AVPlaybackState} parameter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onQueueItemsChange
+
+```TypeScript
+onQueueItemsChange(callback: Callback<Array<AVQueueItem>>): void
+```
+
+Register session playlist change callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Array&lt;AVQueueItem>> | Yes | Used to handle playlist changed.  The callback provides the new array of AVQueueItem {@link AVQueueItem} |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onQueueTitleChange
+
+```TypeScript
+onQueueTitleChange(callback: Callback<string>): void
+```
+
+Register the name of session playlist change callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;string> | Yes | Used to handle name of playlist changed.  The callback provides the new name. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onSessionDestroy
+
+```TypeScript
+onSessionDestroy(callback: NoParamCallback): void
+```
+
+Register current session destroyed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | NoParamCallback | Yes | The callback used to handle current session destroyed event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
+
+## onSessionEvent
+
+```TypeScript
+onSessionEvent(callback: EventProcess): void
+```
+
+Register session event callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | EventProcess | Yes | The callback used to handle session event changed event.  The callback function provides the event string and key-value pair parameters. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## onSupportedLoopModesChange
 
@@ -2127,9 +2916,9 @@ Register listener for supported loop modes.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2137,28 +2926,28 @@ Register listener for supported loop modes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;LoopMode&gt;&gt; | Yes | Callback used to retrieve supported loop modes. |
+| callback | Callback&lt;Array&lt;LoopMode>> | Yes | Callback used to retrieve supported loop modes. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
 
 ## onSupportedPlaySpeedsChange
 
 ```TypeScript
-onSupportedPlaySpeedsChange(callback: Callback<Array<number>>): void
+onSupportedPlaySpeedsChange(callback: Callback<Array<double>>): void
 ```
 
 Register listener for supported play speeds.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2166,14 +2955,39 @@ Register listener for supported play speeds.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;number&gt;&gt; | Yes | Callback used to retrieve supported play speeds. |
+| callback | Callback&lt;Array&lt;double>> | Yes | Callback used to retrieve supported play speeds. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception |
+| 6600103 | The session controller does not exist. |
+
+## onValidCommandChange
+
+```TypeScript
+onValidCommandChange(callback: Callback<Array<AVControlCommandType>>): void
+```
+
+Register the valid commands of the session changed callback
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;Array&lt;AVControlCommandType>> | Yes | The callback used to handle the changes.  The callback function provides an array of AVControlCommandType. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600103 | The session controller does not exist. |
 
 ## sendAVKeyEvent
 
@@ -2192,13 +3006,13 @@ Send media key event to this session
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | KeyEvent | Yes | The KeyEvent |
-| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
 | 600101 | Session service exception. |
 | 600102 | The session does not exist. |
 | 600103 | The session controller does not exist. |
@@ -2215,7 +3029,7 @@ Send media key event to this session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2229,13 +3043,13 @@ Send media key event to this session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
 | 600101 | Session service exception. |
 | 600102 | The session does not exist. |
 | 600103 | The session controller does not exist. |
@@ -2260,19 +3074,52 @@ Send common commands to this session
 | --- | --- | --- | --- |
 | command | string | Yes | The command name to be sent. |
 | args | {[key: string]: Object} | Yes | The parameters of session event |
-| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600106 | The session is not activated. |
+| 6600107 | Too many commands or events. |
+
+## sendCommonCommand
+
+```TypeScript
+sendCommonCommand(command: string, args: Record<string, Object>, callback: AsyncCallback<void>): void
+```
+
+Send common commands to this session
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| command | string | Yes | The command name to be sent. |
+| args | Record&lt;string, Object> | Yes | The parameters of session event |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600106 | The session is not activated. |
+| 6600107 | Too many commands or events. |
 
 ## sendCommonCommand
 
@@ -2284,7 +3131,7 @@ Send common commands to this session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2299,19 +3146,57 @@ Send common commands to this session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600106 | The session is not activated. |
+| 6600107 | Too many commands or events. |
+
+## sendCommonCommand
+
+```TypeScript
+sendCommonCommand(command: string, args: Record<string, Object>): Promise<void>
+```
+
+Send common commands to this session
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| command | string | Yes | The command name to be sent. |
+| args | Record&lt;string, Object> | Yes | The parameters of session event |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void> | void promise when executed successfully |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600106 | The session is not activated. |
+| 6600107 | Too many commands or events. |
 
 ## sendControlCommand
 
@@ -2330,19 +3215,19 @@ Send control commands to this session
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | AVControlCommand | Yes | The command to be sent. See {@link AVControlCommand} |
-| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully. |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600106 | The session is not activated. |
+| 6600107 | Too many commands or events. |
 
 ## sendControlCommand
 
@@ -2354,7 +3239,7 @@ Send control commands to this session
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2368,19 +3253,19 @@ Send control commands to this session
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600106](../errorcode-avsession.md#6600106-session-not-activated) | The session is not activated. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600105 | Invalid session command. |
+| 6600106 | The session is not activated. |
+| 6600107 | Too many commands or events. |
 
 ## sendCustomData
 
@@ -2392,7 +3277,7 @@ Send custom data to this avsession.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -2400,21 +3285,21 @@ Send custom data to this avsession.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| data | Record&lt;string, Object&gt; | Yes | The custom data populated by application. |
+| data | Record&lt;string, Object> | Yes | The custom data populated by application. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void result promise when executed successfully |
+| Promise&lt;void> | void result promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception.You are advised to:1.Scheduled retry.2.Destroy the current session or session controller and re-create it. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 6600101 | Session service exception.  You are advised to:1.Scheduled retry.2.Destroy the current session or session controller and re-create it. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## setDesktopLyricState
 
@@ -2426,7 +3311,7 @@ Set desktop lyric state such as lock state for this session.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2440,17 +3325,17 @@ Set desktop lyric state such as lock state for this session.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
-| [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600110 | The desktop lyrics feature of this application is not enabled. |
+| 6600111 | The desktop lyrics feature is not supported. |
 
 ## setDesktopLyricVisible
 
@@ -2462,7 +3347,7 @@ Set desktop lyric visible state for this session.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2476,22 +3361,22 @@ Set desktop lyric visible state for this session.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
-| [6600110](../errorcode-avsession.md#6600110-desktop-lyrics-not-enabled-for-the-application) | The desktop lyrics feature of this application is not enabled. |
-| [6600111](../errorcode-avsession.md#6600111-desktop-lyrics-not-supported-for-the-current-device) | The desktop lyrics feature is not supported. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
+| 6600110 | The desktop lyrics feature of this application is not enabled. |
+| 6600111 | The desktop lyrics feature is not supported. |
 
 ## skipToQueueItem
 
 ```TypeScript
-skipToQueueItem(itemId: number, callback: AsyncCallback<void>): void
+skipToQueueItem(itemId: int, callback: AsyncCallback<void>): void
 ```
 
 Set the item in the playlist to be played
@@ -2504,29 +3389,29 @@ Set the item in the playlist to be played
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| itemId | number | Yes | The serial number of the item to be played |
-| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
+| itemId | int | Yes | The serial number of the item to be played |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## skipToQueueItem
 
 ```TypeScript
-skipToQueueItem(itemId: number): Promise<void>
+skipToQueueItem(itemId: int): Promise<void>
 ```
 
 Set the item in the playlist to be played
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -2534,22 +3419,22 @@ Set the item in the playlist to be played
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| itemId | number | Yes | The serial number of the item to be played |
+| itemId | int | Yes | The serial number of the item to be played |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600103](../errorcode-avsession.md#6600103-session-controller-does-not-exist) | The session controller does not exist. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600103 | The session controller does not exist. |
 
 ## sessionId
 
@@ -2563,7 +3448,7 @@ Unique session Id
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

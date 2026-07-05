@@ -2,21 +2,17 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MissionCallback](arkts-ability-missioncallback-i-sys.md) | MissionCallback registered by app. |
-<!--DelEnd-->
+| <!--DelRow-->[MissionCallback](arkts-missioncallback-i.md) | MissionCallback registered by app. |
 
-<!--Del-->
-### Types（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [NotifyMissionsChangedCallback](arkts-ability-notifymissionschangedcallback-t-sys.md) | Callback function on mission changed. |
-| [NotifyNetDisconnectCallback](arkts-ability-notifynetdisconnectcallback-t-sys.md) | Callback function on network disconnect. |
-| [NotifySnapshotCallback](arkts-ability-notifysnapshotcallback-t-sys.md) | Callback function on snapshot changed. |
-<!--DelEnd-->
+| <!--DelRow-->[NotifyMissionsChangedCallback](arkts-notifymissionschangedcallback-t.md) | Callback function on mission changed. |
+| <!--DelRow-->[NotifyNetDisconnectCallback](arkts-notifynetdisconnectcallback-t.md) | Callback function on network disconnect. |
+| <!--DelRow-->[NotifySnapshotCallback](arkts-notifysnapshotcallback-t.md) | Callback function on snapshot changed. |
 

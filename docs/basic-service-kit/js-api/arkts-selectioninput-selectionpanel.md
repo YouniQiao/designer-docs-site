@@ -3,24 +3,20 @@
 ## Modules to Import
 
 ```TypeScript
-import { PanelInfo, PanelType } from '@ohos.selectionInput.SelectionPanel';
+import { PanelInfo,PanelType } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PanelInfo](arkts-basicservices-panelinfo-i-sys.md) | Describes the properties of the word selection panel. |
-<!--DelEnd-->
+| <!--DelRow-->[PanelInfo](arkts-panelinfo-i.md) | 划词面板属性信息。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [PanelType](arkts-basicservices-paneltype-e-sys.md) | Enumerates the word selection panel types. |
-<!--DelEnd-->
+| <!--DelRow-->[PanelType](arkts-paneltype-e.md) | 划词面板类型枚举。 |
 

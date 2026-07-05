@@ -6,11 +6,17 @@
 
 **系统能力：** SystemCapability.Customization.CustomConfig
 
+## 导入模块
+
+```TypeScript
+import { customConfig } from '@kit.BasicServicesKit';
+```
+
 ## 汇总
 
 ### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [getChannelId](arkts-basicservices-getchannelid-f.md#getchannelid-1) | 获取应用的预装渠道号。 |
+| [getChannelId](arkts-customconfig-getchannelid-f.md#getChannelId-1) | 获取应用的预装渠道号。 |
 

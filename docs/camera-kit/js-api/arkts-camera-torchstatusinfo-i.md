@@ -9,22 +9,22 @@ Describes the flashlight status information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
-## isTorchActive
+## torchLevel
 
 ```TypeScript
-readonly isTorchActive: boolean
+readonly torchLevel: double
 ```
 
-Whether the flashlight is activated. **true** if activated, **false** otherwise.
+Flashlight brightness level. The value range is [0, 1]. A larger value indicates a greater luminance.
 
-**Type:** boolean
+**Type:** double
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -40,23 +40,23 @@ Whether the flashlight is available. **true** if available, **false** otherwise.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
-## torchLevel
+## isTorchActive
 
 ```TypeScript
-readonly torchLevel: number
+readonly isTorchActive: boolean
 ```
 
-Flashlight brightness level. The value range is [0, 1]. A larger value indicates a greater luminance.
+Whether the flashlight is activated. **true** if activated, **false** otherwise.
 
-**Type:** number
+**Type:** boolean
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

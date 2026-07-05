@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md) | The module provides information about a remote ability. &gt; **NOTE** &gt; &gt; The APIs of this module have been deprecated since API version 9. You are advised to use &gt; [bundleManager-RemoteAbilityInfo](arkts-ability-remoteabilityinfo-depr-i-sys.md#remoteabilityinfo) instead. &gt; &gt; The APIs provided by this module are system APIs. |
-<!--DelEnd-->
+| <!--DelRow-->[RemoteAbilityInfo](arkts-remoteabilityinfo-i.md) | remoteAbility信息。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-RemoteAbilityInfo]{@link remoteAbilityInfo:RemoteAbilityInfo}替代。 > > 本模块为系统接口。 |
 

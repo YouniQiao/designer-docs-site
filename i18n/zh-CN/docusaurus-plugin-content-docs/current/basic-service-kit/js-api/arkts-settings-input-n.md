@@ -1,0 +1,29 @@
+# input
+
+Provides methods for setting information about input methods, including automatic capitalization, automatic punctuation, autocorrect, password presentation, input method engine, and input method subtypes.
+
+**起始版本：** 7
+
+**系统能力：** SystemCapability.Applications.Settings.Core
+
+## 导入模块
+
+```TypeScript
+import { settings } from '@kit.BasicServicesKit';
+```
+
+## 汇总
+
+### 常量
+
+| 名称 | 描述 |
+| --- | --- |
+| [ACTIVATED_INPUT_METHOD_SUB_MODE](arkts-input-con.md#ACTIVATED_INPUT_METHOD_SUB_MODE) | Indicates the default input method keyboard type and its ID. |
+| [ACTIVATED_INPUT_METHODS](arkts-input-con.md#ACTIVATED_INPUT_METHODS) | Indicates the list of input methods that have been activated. <p>The list is a string that contains the IDs of activated input methods. The IDs are separated by colons (:), and keyboardTypes of an input method are separated by semicolons (;). An example format is {@code ima0:keyboardType0;keyboardType1;ima1:ima2:keyboardTypes0}. The type of <b>imaID</b> is ElementName, and the type of <b>keyboard</b> is int. |
+| [AUTO_CAPS_TEXT_INPUT](arkts-input-con.md#AUTO_CAPS_TEXT_INPUT) | Specifies whether automatic capitalization is enabled for the text editor. <p>If the value is {@code 0}, automatic capitalization is disabled. If the value {@code 1}, automatic capitalization is enabled. |
+| [AUTO_PUNCTUATE_TEXT_INPUT](arkts-input-con.md#AUTO_PUNCTUATE_TEXT_INPUT) | Specifies whether automatic punctuation is enabled for the text editor. Automatic punctuation enables the text editor to convert two spaces into a period (.) and a space. <p>If the value is {@code 0}, automatic punctuation is disabled. If the value {@code 1}, automatic punctuation is enabled. |
+| [AUTO_REPLACE_TEXT_INPUT](arkts-input-con.md#AUTO_REPLACE_TEXT_INPUT) | Specifies whether autocorrect is enabled for the text editor. Autocorrect enables the text editor to correct typos. <p>If the value is {@code 0}, autocorrect is disabled. If the value {@code 1}, autocorrect is enabled. |
+| [DEFAULT_INPUT_METHOD](arkts-input-con.md#DEFAULT_INPUT_METHOD) | Indicates the default input method and its ID. |
+| [SELECTOR_VISIBILITY_FOR_INPUT_METHOD](arkts-input-con.md#SELECTOR_VISIBILITY_FOR_INPUT_METHOD) | Specifies whether the input method selector is visible. <p>If the value is {@code 1}, the input method selector is visible. If the value is {@code 0}, the input method selector is invisible. |
+| [SHOW_PASSWORD_TEXT_INPUT](arkts-input-con.md#SHOW_PASSWORD_TEXT_INPUT) | Specifies whether password presentation is enabled in the text editor. Password presentation enables the text editor to show password characters when the user types them. <p>If the value is {@code 0}, password presentation is disabled. If the value {@code 1}, password presentation is enabled. |
+

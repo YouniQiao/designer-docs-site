@@ -1,19 +1,19 @@
 # VideoPlayer
 
-VideoPlayer is a class for video playback management. It provides APIs to manage and play videos. Before calling any API in VideoPlayer, you must use [createVideoPlayer()](arkts-media-createvideoplayer-f.md#createvideoplayer-1) to create a VideoPlayer instance.
+VideoPlayer is a class for video playback management. It provides APIs to manage and play videos. Before calling any API in VideoPlayer, you must use [createVideoPlayer()](arkts-media-createvideoplayer-f.md#createVideoPlayer-1) to create a VideoPlayer instance.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [media:media](arkts-multimedia-media.md#media)
+**Substitute:** @ohos.multimedia.media:media
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## getTrackDescription
@@ -28,7 +28,7 @@ Obtains the video track information. This API uses an asynchronous callback to r
 
 **Deprecated since:** 9
 
-**Substitutes:** getTrackDescription(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.getTrackDescription(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -36,7 +36,7 @@ Obtains the video track information. This API uses an asynchronous callback to r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;MediaDescription&gt;&gt; | Yes | Callback used to return the result. If the operationis successful, **err** is **undefined** and **data** is the MediaDescription array obtained; otherwise,**err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;MediaDescription>> | Yes | Callback used to return the result. If the operation  is successful, err is undefined and data is the MediaDescription array obtained; otherwise,  err is an error object. |
 
 ## getTrackDescription
 
@@ -50,7 +50,7 @@ Obtains the video track information. This API uses a promise to return the resul
 
 **Deprecated since:** 9
 
-**Substitutes:** [getTrackDescription()](arkts-media-avplayer-i.md#gettrackdescription-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.getTrackDescription()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -58,7 +58,7 @@ Obtains the video track information. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;MediaDescription&gt;&gt; | Promise used to return the MediaDescription array that holds thevideo track information. |
+| Promise&lt;Array&lt;MediaDescription>> | Promise used to return the MediaDescription array that holds the  video track information. |
 
 ## on('playbackCompleted')
 
@@ -72,7 +72,7 @@ Subscribes to the video playback completion event.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -80,8 +80,8 @@ Subscribes to the video playback completion event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'playbackCompleted' | Yes | Event type, which is **'playbackCompleted'** in this case. |
-| callback | Callback&lt;void&gt; | Yes | Callback invoked when the event is triggered. |
+| type | 'playbackCompleted' | Yes | Event type, which is 'playbackCompleted' in this case. |
+| callback | Callback&lt;void> | Yes | Callback invoked when the event is triggered. |
 
 ## on('bufferingUpdate')
 
@@ -95,7 +95,7 @@ Subscribes to the video buffering update event. This API works only under online
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -103,8 +103,8 @@ Subscribes to the video buffering update event. This API works only under online
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'bufferingUpdate' | Yes | Event type, which is **'bufferingUpdate'** in this case. |
-| callback | (infoType: BufferingInfoType, value: number) =&gt; void | Yes | Callback invoked when the event is triggered.<br>The value of[BufferingInfoType](arkts-media-bufferinginfotype-e.md#bufferinginfotype) is fixed at **0**. |
+| type | 'bufferingUpdate' | Yes | Event type, which is 'bufferingUpdate' in this case. |
+| callback | (infoType: BufferingInfoType, value: number) => void | Yes | Callback invoked when the event is triggered. The value of  [BufferingInfoType](arkts-media-bufferinginfotype-e.md#BufferingInfoType) is fixed at 0. |
 
 ## on('startRenderFrame')
 
@@ -118,7 +118,7 @@ Subscribes to the frame rendering start event.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -126,8 +126,8 @@ Subscribes to the frame rendering start event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'startRenderFrame' | Yes | Event type, which is **'startRenderFrame'** in this case. |
-| callback | Callback&lt;void&gt; | Yes | Callback invoked when the event is triggered. |
+| type | 'startRenderFrame' | Yes | Event type, which is 'startRenderFrame' in this case. |
+| callback | Callback&lt;void> | Yes | Callback invoked when the event is triggered. |
 
 ## on('videoSizeChanged')
 
@@ -141,7 +141,7 @@ Subscribes to the video width and height change event.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -149,8 +149,8 @@ Subscribes to the video width and height change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'videoSizeChanged' | Yes | Event type, which is **'videoSizeChanged'** in this case. |
-| callback | (width: number, height: number) =&gt; void | Yes | Callback invoked when the event is triggered. **width** indicates the video width,and **height** indicates the video height, in px. |
+| type | 'videoSizeChanged' | Yes | Event type, which is 'videoSizeChanged' in this case. |
+| callback | (width: number, height: number) => void | Yes | Callback invoked when the event is triggered. width indicates the video width,  and height indicates the video height, in px. |
 
 ## on('audioInterrupt')
 
@@ -158,13 +158,13 @@ Subscribes to the video width and height change event.
 on(type: 'audioInterrupt', callback: (info: audio.InterruptEvent) => void): void
 ```
 
-Subscribes to the audio interruption event. For details, see [audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md#interruptevent).
+Subscribes to the audio interruption event. For details, see [audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md#InterruptEvent).
 
 **Since:** 9
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -172,8 +172,8 @@ Subscribes to the audio interruption event. For details, see [audio.InterruptEve
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | Yes | Event type, which is **'audioInterrupt'** in this case. |
-| callback | (info: audio.InterruptEvent) =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'audioInterrupt' | Yes | Event type, which is 'audioInterrupt' in this case. |
+| callback | (info: audio.InterruptEvent) => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('error')
 
@@ -187,7 +187,7 @@ Subscribes to video playback error events. After an error event is reported, you
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -195,7 +195,7 @@ Subscribes to video playback error events. After an error event is reported, you
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type, which is **'error'** in this case.<br>This event is triggered when an erroroccurs during video playback. |
+| type | 'error' | Yes | Event type, which is 'error' in this case. This event is triggered when an error  occurs during video playback. |
 | callback | ErrorCallback | Yes | Callback invoked when the event is triggered. |
 
 ## pause
@@ -210,7 +210,7 @@ Pauses video playback. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 9
 
-**Substitutes:** pause(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.pause(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -218,7 +218,7 @@ Pauses video playback. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## pause
 
@@ -232,7 +232,7 @@ Pauses video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [pause()](arkts-media-avplayer-i.md#pause-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.pause()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -240,7 +240,7 @@ Pauses video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## play
 
@@ -254,7 +254,7 @@ Starts video playback. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 9
 
-**Substitutes:** play(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.play(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -262,7 +262,7 @@ Starts video playback. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## play
 
@@ -276,7 +276,7 @@ Starts video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [play()](arkts-media-avplayer-i.md#play-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.play()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -284,7 +284,7 @@ Starts video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## prepare
 
@@ -298,7 +298,7 @@ Prepares for video playback. This API uses an asynchronous callback to return th
 
 **Deprecated since:** 9
 
-**Substitutes:** prepare(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.prepare(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -306,7 +306,7 @@ Prepares for video playback. This API uses an asynchronous callback to return th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## prepare
 
@@ -320,7 +320,7 @@ Prepares for video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [prepare()](arkts-media-avplayer-i.md#prepare-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.prepare()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -328,7 +328,7 @@ Prepares for video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## release
 
@@ -342,7 +342,7 @@ Releases the video playback resources. This API uses an asynchronous callback to
 
 **Deprecated since:** 9
 
-**Substitutes:** release(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.release(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -350,7 +350,7 @@ Releases the video playback resources. This API uses an asynchronous callback to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## release
 
@@ -364,7 +364,7 @@ Releases the video playback resources. This API uses a promise to return the res
 
 **Deprecated since:** 9
 
-**Substitutes:** [release()](arkts-media-avplayer-i.md#release-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.release()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -372,7 +372,7 @@ Releases the video playback resources. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## reset
 
@@ -386,7 +386,7 @@ Resets video playback. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 9
 
-**Substitutes:** reset(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.reset(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -394,7 +394,7 @@ Resets video playback. This API uses an asynchronous callback to return the resu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## reset
 
@@ -408,7 +408,7 @@ Resets video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [reset()](arkts-media-avplayer-i.md#reset-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.reset()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -416,7 +416,7 @@ Resets video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## seek
 
@@ -430,7 +430,7 @@ Seeks to the specified playback position. The previous key frame at the specifie
 
 **Deprecated since:** 9
 
-**Substitutes:** [seek](arkts-media-avplayer-i.md#seek-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.seek
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -439,7 +439,7 @@ Seeks to the specified playback position. The previous key frame at the specifie
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | timeMs | number | Yes | Position to seek to, in ms. The value range is [0, duration]. |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the new playback position; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;number> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is the new playback position; otherwise, err is an error object. |
 
 ## seek
 
@@ -453,7 +453,7 @@ Seeks to the specified playback position. This API uses an asynchronous callback
 
 **Deprecated since:** 9
 
-**Substitutes:** [seek](arkts-media-avplayer-i.md#seek-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.seek
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -463,7 +463,7 @@ Seeks to the specified playback position. This API uses an asynchronous callback
 | --- | --- | --- | --- |
 | timeMs | number | Yes | Position to seek to, in ms. The value range is [0, duration]. |
 | mode | SeekMode | Yes | Seek mode. |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the new playback position; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;number> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is the new playback position; otherwise, err is an error object. |
 
 ## seek
 
@@ -477,7 +477,7 @@ Seeks to the specified playback position. If **mode** is not specified, the prev
 
 **Deprecated since:** 9
 
-**Substitutes:** [seek](arkts-media-avplayer-i.md#seek-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.seek
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -486,13 +486,13 @@ Seeks to the specified playback position. If **mode** is not specified, the prev
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | timeMs | number | Yes | Position to seek to, in ms. The value range is [0, duration]. |
-| mode | SeekMode | No | Seek mode based on the video I frame. The default value is **SEEK_PREV_SYNC**. |
+| mode | SeekMode | No | Seek mode based on the video I frame. The default value is SEEK_PREV_SYNC. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the playback position, in ms. |
+| Promise&lt;number> | Promise used to return the playback position, in ms. |
 
 ## setDisplaySurface
 
@@ -506,7 +506,7 @@ Sets a surface ID. This API uses an asynchronous callback to return the result. 
 
 **Deprecated since:** 9
 
-**Substitutes:** [null]
+**Substitute:** null
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -514,8 +514,8 @@ Sets a surface ID. This API uses an asynchronous callback to return the result. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| surfaceId | string | Yes | Surface ID, which is obtained from the **XComponent**. For details about how toobtain it, see [XComponent](./@internal/component/ets/xcomponent). |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the setting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| surfaceId | string | Yes | Surface ID, which is obtained from the XComponent. For details about how to  obtain it, see [XComponent]./@internal/component/ets/xcomponent. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the setting is successful,  err is undefined. Otherwise, err is an error object. |
 
 ## setDisplaySurface
 
@@ -529,7 +529,7 @@ Sets a surface ID. This API uses a promise to return the result. > **NOTE** > > 
 
 **Deprecated since:** 9
 
-**Substitutes:** [null]
+**Substitute:** null
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -537,13 +537,13 @@ Sets a surface ID. This API uses a promise to return the result. > **NOTE** > > 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| surfaceId | string | Yes | Surface ID, which is obtained from the **XComponent**. For details about how toobtain it, see [XComponent](./@internal/component/ets/xcomponent). |
+| surfaceId | string | Yes | Surface ID, which is obtained from the XComponent. For details about how to  obtain it, see [XComponent]./@internal/component/ets/xcomponent. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## setSpeed
 
@@ -557,7 +557,7 @@ Sets the playback speed. This API uses an asynchronous callback to return the re
 
 **Deprecated since:** 9
 
-**Substitutes:** [setSpeed](arkts-media-avplayer-i.md#setspeed-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.setSpeed
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -565,8 +565,8 @@ Sets the playback speed. This API uses an asynchronous callback to return the re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| speed | number | Yes | Video playback speed. For details, see[PlaybackSpeed](arkts-media-playbackspeed-e.md#playbackspeed). |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the playback speed; otherwise, **err** is an error object. |
+| speed | number | Yes | Video playback speed. For details, see  [PlaybackSpeed](arkts-media-playbackspeed-e.md#PlaybackSpeed). |
+| callback | AsyncCallback&lt;number> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is the playback speed; otherwise, err is an error object. |
 
 ## setSpeed
 
@@ -580,7 +580,7 @@ Sets the playback speed. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [setSpeed](arkts-media-avplayer-i.md#setspeed-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.setSpeed
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -588,13 +588,13 @@ Sets the playback speed. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| speed | number | Yes | Video playback speed. For details, see[PlaybackSpeed](arkts-media-playbackspeed-e.md#playbackspeed). |
+| speed | number | Yes | Video playback speed. For details, see  [PlaybackSpeed](arkts-media-playbackspeed-e.md#PlaybackSpeed). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the playback speed. For details, see[PlaybackSpeed](arkts-media-playbackspeed-e.md#playbackspeed). |
+| Promise&lt;number> | Promise used to return the playback speed. For details, see  [PlaybackSpeed](arkts-media-playbackspeed-e.md#PlaybackSpeed). |
 
 ## setVolume
 
@@ -608,7 +608,7 @@ Sets the volume. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [setVolume](arkts-media-avplayer-i.md#setvolume-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.setVolume
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -616,8 +616,8 @@ Sets the volume. This API uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| vol | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value **1.00** indicates themaximum volume (100%). |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the setting is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
+| vol | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value 1.00 indicates the  maximum volume (100%). |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the setting is successful,  err is undefined. Otherwise, err is an error object. |
 
 ## setVolume
 
@@ -631,7 +631,7 @@ Sets the volume. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [setVolume](arkts-media-avplayer-i.md#setvolume-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.setVolume
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -639,13 +639,13 @@ Sets the volume. This API uses a promise to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| vol | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value **1.00** indicates themaximum volume (100%). |
+| vol | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value 1.00 indicates the  maximum volume (100%). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## stop
 
@@ -659,7 +659,7 @@ Stops video playback. This API uses an asynchronous callback to return the resul
 
 **Deprecated since:** 9
 
-**Substitutes:** stop(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.stop(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -667,7 +667,7 @@ Stops video playback. This API uses an asynchronous callback to return the resul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## stop
 
@@ -681,7 +681,7 @@ Stops video playback. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [stop()](arkts-media-avplayer-i.md#stop-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.stop()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -689,23 +689,23 @@ Stops video playback. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
-## audioInterruptMode
+## duration
 
 ```TypeScript
-audioInterruptMode?: audio.InterruptMode
+readonly duration: number
 ```
 
-Audio interruption mode.
+Video duration, in ms. The value **-1** indicates the live mode.
 
-**Type:** audio.InterruptMode
+**Type:** number
 
-**Since:** 9
+**Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** audioInterruptMode
+**Substitute:** ohos.multimedia.media/media.AVPlayer#duration
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -723,61 +723,7 @@ Current video playback position, in ms.
 
 **Deprecated since:** 9
 
-**Substitutes:** currentTime
-
-**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
-
-## duration
-
-```TypeScript
-readonly duration: number
-```
-
-Video duration, in ms. The value **-1** indicates the live mode.
-
-**Type:** number
-
-**Since:** 8
-
-**Deprecated since:** 9
-
-**Substitutes:** duration
-
-**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
-
-## fdSrc
-
-```TypeScript
-fdSrc: AVFileDescriptor
-```
-
-Description of a video file. This property is required when video assets of an application are continuously stored in a file. Assume that a music file that stores continuous music assets consists of the following: Video 1 (address offset: 0, byte length: 100) Video 2 (address offset: 101; byte length: 50) Video 3 (address offset: 151, byte length: 150) 1. To play video 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play video 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play video 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent video file, use **src=fd://xx**.
-
-**Type:** AVFileDescriptor
-
-**Since:** 9
-
-**Deprecated since:** 9
-
-**Substitutes:** fdSrc
-
-**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
-
-## height
-
-```TypeScript
-readonly height: number
-```
-
-Video height, in px.
-
-**Type:** number
-
-**Since:** 8
-
-**Deprecated since:** 9
-
-**Substitutes:** height
+**Substitute:** ohos.multimedia.media/media.AVPlayer#currentTime
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -795,61 +741,25 @@ Whether to loop video playback. **true** to loop, **false** otherwise.
 
 **Deprecated since:** 9
 
-**Substitutes:** loop
+**Substitute:** ohos.multimedia.media/media.AVPlayer#loop
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
-## state
+## audioInterruptMode
 
 ```TypeScript
-readonly state: VideoPlayState
+audioInterruptMode?: audio.InterruptMode
 ```
 
-Video playback state.
+Audio interruption mode.
 
-**Type:** VideoPlayState
-
-**Since:** 8
-
-**Deprecated since:** 9
-
-**Substitutes:** state
-
-**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
-
-## url
-
-```TypeScript
-url: string
-```
-
-Video URL. The video formats MP4, MPEG-TS, and MKV are supported. **Example of supported URLs**: 1. FD: fd://xx ![](../../../../reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx 5. File type: file://xx **NOTE** WebM is no longer supported since API version 11.
-
-**Type:** string
-
-**Since:** 8
-
-**Deprecated since:** 9
-
-**Substitutes:** url
-
-**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
-
-## videoScaleType
-
-```TypeScript
-videoScaleType?: VideoScaleType
-```
-
-Video scale type. The default value is **VIDEO_SCALE_TYPE_FIT**.
-
-**Type:** VideoScaleType
+**Type:** audio.InterruptMode
 
 **Since:** 9
 
 **Deprecated since:** 9
 
-**Substitutes:** videoScaleType
+**Substitute:** ohos.multimedia.media/media.AVPlayer#audioInterruptMode
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -867,7 +777,97 @@ Video width, in px.
 
 **Deprecated since:** 9
 
-**Substitutes:** width
+**Substitute:** ohos.multimedia.media/media.AVPlayer#width
+
+**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
+
+## videoScaleType
+
+```TypeScript
+videoScaleType?: VideoScaleType
+```
+
+Video scale type. The default value is **VIDEO_SCALE_TYPE_FIT**.
+
+**Type:** VideoScaleType
+
+**Since:** 9
+
+**Deprecated since:** 9
+
+**Substitute:** ohos.multimedia.media/media.AVPlayer#videoScaleType
+
+**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
+
+## fdSrc
+
+```TypeScript
+fdSrc: AVFileDescriptor
+```
+
+Description of a video file. This property is required when video assets of an application are continuously stored in a file. Assume that a music file that stores continuous music assets consists of the following: Video 1 (address offset: 0, byte length: 100) Video 2 (address offset: 101; byte length: 50) Video 3 (address offset: 151, byte length: 150) 1. To play video 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play video 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play video 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent video file, use **src=fd://xx**.
+
+**Type:** AVFileDescriptor
+
+**Since:** 9
+
+**Deprecated since:** 9
+
+**Substitute:** ohos.multimedia.media/media.AVPlayer#fdSrc
+
+**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
+
+## state
+
+```TypeScript
+readonly state: VideoPlayState
+```
+
+Video playback state.
+
+**Type:** VideoPlayState
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** ohos.multimedia.media/media.AVPlayer#state
+
+**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
+
+## url
+
+```TypeScript
+url: string
+```
+
+Video URL. The video formats MP4, MPEG-TS, and MKV are supported. **Example of supported URLs**: 1. FD: fd://xx ![](docroot://reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx 5. File type: file://xx **NOTE** WebM is no longer supported since API version 11.
+
+**Type:** string
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** ohos.multimedia.media/media.AVPlayer#url
+
+**System capability:** SystemCapability.Multimedia.Media.VideoPlayer
+
+## height
+
+```TypeScript
+readonly height: number
+```
+
+Video height, in px.
+
+**Type:** number
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** ohos.multimedia.media/media.AVPlayer#height
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 

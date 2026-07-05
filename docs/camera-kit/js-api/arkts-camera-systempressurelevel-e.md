@@ -1,5 +1,9 @@
 # SystemPressureLevel
 
+```TypeScript
+enum SystemPressureLevel
+```
+
 Enumerates the system pressure levels.
 
 **Since:** 20
@@ -16,7 +20,7 @@ The system pressure is normal.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +34,7 @@ The system pressure is elevated but not actively managed by the system.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -44,7 +48,7 @@ The system pressure may affect the overall image quality and performance.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -58,7 +62,7 @@ The system pressure has a significant impact on the image quality and performanc
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -72,7 +76,7 @@ The system pressure is too high, causing the system to shut down.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

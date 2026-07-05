@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ContinueDeviceInfo](arkts-ability-continuedeviceinfo-i-sys.md) | The module defines the parameters required for initiating mission continuation. For details about mission continuation, see [continueMission](arkts-ability-continuemission-f-sys.md#continuemission-1) |
-<!--DelEnd-->
+| <!--DelRow-->[ContinueDeviceInfo](arkts-continuedeviceinfo-i.md) | The module defines the parameters required for initiating mission continuation. For details about mission continuation, see [continueMission]{@link @ohos.distributedMissionManager:distributedMissionManager.continueMission(parameter: ContinueDeviceInfo, options: ContinueCallback, callback: AsyncCallback<void>)} |
 

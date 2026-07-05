@@ -1,24 +1,18 @@
 # createVideoPlayer
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createVideoPlayer
 
 ```TypeScript
 function createVideoPlayer(callback: AsyncCallback<VideoPlayer>): void
 ```
 
-Creates a **VideoPlayer** instance. This API uses an asynchronous callback to return the result.
+异步方式创建视频播放实例，使用callback异步回调。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用 > [createAVPlayer]media.createAVPlayer(callback: AsyncCallback<AVPlayer>)替代。
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** createAVPlayer(callback:
+**Substitute:** media.createAVPlayer(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -26,7 +20,7 @@ Creates a **VideoPlayer** instance. This API uses an asynchronous callback to re
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;VideoPlayer&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **undefined** and **data** is the VideoPlayer instance created; otherwise, **err** is an errorobject. |
+| callback | AsyncCallback&lt;VideoPlayer> | Yes | 回调函数。创建VideoPlayer实例成功时，err为undefined，data为获取到的VideoPlayer实例，否则为错误  对象。 |
 
 **Example**
 
@@ -45,20 +39,19 @@ media.createVideoPlayer((error: BusinessError, video: media.VideoPlayer) => {
 
 ```
 
-
 ## createVideoPlayer
 
 ```TypeScript
 function createVideoPlayer(): Promise<VideoPlayer>
 ```
 
-Creates a VideoPlayer instance. This API uses a promise to return the result.
+异步方式创建视频播放实例，通过Promise获取返回值。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃，建议使用[createAVPlayer]media.createAVPlayer()替代。
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [createAVPlayer()](arkts-media-createavplayer-f.md#createavplayer-3)
+**Substitute:** media.createAVPlayer()
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -66,7 +59,7 @@ Creates a VideoPlayer instance. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;VideoPlayer&gt; | Promise used to return the result. If the operation is successful, a VideoPlayerinstance is returned; otherwise, **null** is returned. The instance can be used to manage and play video. |
+| Promise&lt;VideoPlayer> | Promise对象。异步返回VideoPlayer实例，失败时返回null。可用于管理和播放视频媒体。 |
 
 **Example**
 

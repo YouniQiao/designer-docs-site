@@ -3,16 +3,14 @@
 ## Modules to Import
 
 ```TypeScript
-import { FenceExtensionContext } from '@ohos.app.ability.FenceExtensionContext';
+import { FenceExtensionContext } from '@kit.LocationKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [FenceExtensionContext](arkts-location-fenceextensioncontext-c-sys.md) | class of static subscriber extension context. |
-<!--DelEnd-->
+| [FenceExtensionContext](arkts-fenceextensioncontext-c.md) | class of static subscriber extension context. |
 

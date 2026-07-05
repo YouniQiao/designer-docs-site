@@ -9,7 +9,7 @@ Describes the information about the automatic camera switch status.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## isDeviceCapabilityChanged
@@ -24,7 +24,7 @@ Whether the camera capability is changed after the camera is automatically switc
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -40,7 +40,7 @@ Whether the camera is automatically switched. **true** if auto-switched, **false
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

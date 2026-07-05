@@ -9,38 +9,38 @@ Describes the video transcoding parameters.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
-## audioBitrate
+## videoBitrate
 
 ```TypeScript
-audioBitrate?: number
+videoBitrate?: int
 ```
 
-Bitrate of the output audio, in bit/s. The value range is [1-500000]. The default value is 48 kbit/s.
+Bitrate of the output video, in bit/s. The default bitrate depends on the resolution of the output video. The default bitrate is 1 Mbit/s for the resolution in the range [240p, 480P], 2 Mbit/s for the range (480P,720P], 4 Mbit/s for the range (720P,1080P], and 8 Mbit/s for 1080p or higher.
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 
-## audioCodec
+## videoFrameWidth
 
 ```TypeScript
-audioCodec?: CodecMimeType
+videoFrameWidth?: int
 ```
 
-Encoding format of the output audio. Currently, only AAC is supported. The default value is **AAC**.
+Width of the output video frame, in px. The value range is [240 - 3840]. The default value is the width of the source video frame.
 
-**Type:** CodecMimeType
+**Type:** int
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 
@@ -56,9 +56,9 @@ Encoding format of the output audio. If the specified format is not supported, p
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 
@@ -74,7 +74,39 @@ Indicates whether to enable B Frame Encoding for reduce file size.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.AVTranscoder
+
+## audioCodec
+
+```TypeScript
+audioCodec?: CodecMimeType
+```
+
+Encoding format of the output audio. Currently, only AAC is supported. The default value is **AAC**.
+
+**Type:** CodecMimeType
+
+**Since:** 12
+
+**Atomic service API:** From API version 22 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.AVTranscoder
+
+## videoFrameHeight
+
+```TypeScript
+videoFrameHeight?: int
+```
+
+Height of the output video frame, in px. The value range is [240 - 2160]. The default value is the height of the source video frame.
+
+**Type:** int
+
+**Since:** 12
+
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 
@@ -90,23 +122,23 @@ Container format of the output video file. Currently, only MP4 is supported.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 
-## videoBitrate
+## audioBitrate
 
 ```TypeScript
-videoBitrate?: number
+audioBitrate?: int
 ```
 
-Bitrate of the output video, in bit/s. The default bitrate depends on the resolution of the output video. The default bitrate is 1 Mbit/s for the resolution in the range [240p, 480P], 2 Mbit/s for the range (480P,720P], 4 Mbit/s for the range (720P,1080P], and 8 Mbit/s for 1080p or higher.
+Bitrate of the output audio, in bit/s. The value range is [1-500000]. The default value is 48 kbit/s.
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 
@@ -122,39 +154,7 @@ Encoding format of the output video. Currently, only AVC and HEVC are supported.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
-
-**System capability:** SystemCapability.Multimedia.Media.AVTranscoder
-
-## videoFrameHeight
-
-```TypeScript
-videoFrameHeight?: number
-```
-
-Height of the output video frame, in px. The value range is [240 - 2160]. The default value is the height of the source video frame.
-
-**Type:** number
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 22.
-
-**System capability:** SystemCapability.Multimedia.Media.AVTranscoder
-
-## videoFrameWidth
-
-```TypeScript
-videoFrameWidth?: number
-```
-
-Width of the output video frame, in px. The value range is [240 - 3840]. The default value is the width of the source video frame.
-
-**Type:** number
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 

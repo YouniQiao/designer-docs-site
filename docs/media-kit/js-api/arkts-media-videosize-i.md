@@ -9,38 +9,38 @@ Describes the video Dimensions.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
-
-## height
-
-```TypeScript
-height?: number
-```
-
-height of the video resolution. The value should be an integer.Value constraint:The value must be a positive integer. <br>Unit:Pixel.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
 
 ## width
 
 ```TypeScript
-width?: number
+width?: int
 ```
 
 width of the video resolution. The value should be an integer.Value constraint:The value must be a positive integer. <br>Unit:Pixel.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+## height
+
+```TypeScript
+height?: int
+```
+
+height of the video resolution. The value should be an integer.Value constraint:The value must be a positive integer. <br>Unit:Pixel.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

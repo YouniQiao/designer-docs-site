@@ -2,19 +2,15 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ContinueCallback](arkts-ability-continuecallback-i-sys.md) | ContinueCallback registered for notify continue result. |
-<!--DelEnd-->
+| <!--DelRow-->[ContinueCallback](arkts-continuecallback-i.md) | ContinueCallback registered for notify continue result. |
 
-<!--Del-->
-### Types（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [OnContinueDoneCallback](arkts-ability-oncontinuedonecallback-t-sys.md) | Callback function on continue mission done. |
-<!--DelEnd-->
+| <!--DelRow-->[OnContinueDoneCallback](arkts-oncontinuedonecallback-t.md) | Callback function on continue mission done. |
 

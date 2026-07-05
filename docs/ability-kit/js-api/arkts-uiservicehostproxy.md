@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [UIServiceHostProxy](arkts-ability-uiservicehostproxy-i-sys.md) | UIServiceHostProxy functions as a proxy to send data from the [UIServiceExtensionAbility](arkts-ability-uiserviceextensionability-c-sys.md#uiserviceextensionability) server to the client. &gt; **NOTE** &gt; &gt; - The APIs of this module must be used in the main thread, but not in child threads such as Worker and TaskPool. |
-<!--DelEnd-->
+| <!--DelRow-->[UIServiceHostProxy](arkts-uiservicehostproxy-i.md) | UIServiceHostProxy提供代理能力，可以将数据从 [UIServiceExtension]{@link ./../@ohos.app.ability.UIServiceExtensionAbility:UIServiceExtensionAbility}服务端发送到客户端。 > **说明：** > > - 本模块接口需要在主线程中使用，不要在Worker、TaskPool等子线程中使用。 |
 

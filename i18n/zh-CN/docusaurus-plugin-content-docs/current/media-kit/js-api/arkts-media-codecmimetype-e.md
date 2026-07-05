@@ -1,6 +1,10 @@
 # CodecMimeType
 
-Codec MIME类型枚举。
+```TypeScript
+enum CodecMimeType
+```
+
+Enumerates the codec MIME types.
 
 **起始版本：** 8
 
@@ -12,7 +16,7 @@ Codec MIME类型枚举。
 VIDEO_H263 = 'video/h263'
 ```
 
-表示视频/h263类型。
+Video in H.263 format.
 
 **起始版本：** 8
 
@@ -24,11 +28,11 @@ VIDEO_H263 = 'video/h263'
 VIDEO_AVC = 'video/avc'
 ```
 
-表示视频/avc类型。
+Video in AVC format.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本22开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 22开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -38,7 +42,7 @@ VIDEO_AVC = 'video/avc'
 VIDEO_MPEG2 = 'video/mpeg2'
 ```
 
-表示视频/mpeg2类型。
+Video in MPEG-2 format.
 
 **起始版本：** 8
 
@@ -50,7 +54,7 @@ VIDEO_MPEG2 = 'video/mpeg2'
 VIDEO_MPEG4 = 'video/mp4v-es'
 ```
 
-表示视频/mpeg4类型。
+Video in MPEG-4 format.
 
 **起始版本：** 8
 
@@ -62,7 +66,7 @@ VIDEO_MPEG4 = 'video/mp4v-es'
 VIDEO_VP8 = 'video/x-vnd.on2.vp8'
 ```
 
-表示视频/vp8类型。
+Video in VP8 format.
 
 **起始版本：** 8
 
@@ -74,11 +78,11 @@ VIDEO_VP8 = 'video/x-vnd.on2.vp8'
 AUDIO_AAC = 'audio/mp4a-latm'
 ```
 
-表示音频/mp4a-latm类型。
+Audio in MP4A-LATM format.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -88,7 +92,7 @@ AUDIO_AAC = 'audio/mp4a-latm'
 AUDIO_VORBIS = 'audio/vorbis'
 ```
 
-表示音频/vorbis类型。
+Audio in Vorbis format.
 
 **起始版本：** 8
 
@@ -100,7 +104,7 @@ AUDIO_VORBIS = 'audio/vorbis'
 AUDIO_FLAC = 'audio/flac'
 ```
 
-表示音频/flac类型。
+Audio in FLAC format.
 
 **起始版本：** 8
 
@@ -112,11 +116,11 @@ AUDIO_FLAC = 'audio/flac'
 VIDEO_HEVC = 'video/hevc'
 ```
 
-表示视频/H265类型。
+Video in H.265 format.
 
 **起始版本：** 11
 
-**元服务API：** 从API版本22开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 22开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -126,7 +130,7 @@ VIDEO_HEVC = 'video/hevc'
 AUDIO_MP3 = 'audio/mpeg'
 ```
 
-表示音频/mpeg类型。
+Audio in MPEG format.
 
 **起始版本：** 12
 
@@ -138,7 +142,7 @@ AUDIO_MP3 = 'audio/mpeg'
 AUDIO_G711MU = 'audio/g711mu'
 ```
 
-表示音频/G711-mulaw类型。
+Audio in G.711 μ-law format.
 
 **起始版本：** 12
 
@@ -150,7 +154,7 @@ AUDIO_G711MU = 'audio/g711mu'
 AUDIO_AMR_NB = 'audio/3gpp'
 ```
 
-表示音频/amr-nb类型。
+Audio in AMR-NB format.
 
 **起始版本：** 18
 
@@ -162,9 +166,23 @@ AUDIO_AMR_NB = 'audio/3gpp'
 AUDIO_AMR_WB = 'audio/amr-wb'
 ```
 
-表示音频/amr-wb类型。
+Audio in AMR-WB format.
 
 **起始版本：** 18
+
+**系统能力：** SystemCapability.Multimedia.Media.Core
+
+## AUDIO_RAW
+
+```TypeScript
+AUDIO_RAW = 'audio/raw'
+```
+
+Audio in raw streams format.
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

@@ -9,24 +9,8 @@ Provides the device configurations
 ## Modules to Import
 
 ```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
+import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
-
-## cpu
-
-```TypeScript
-cpu?: CpuDevice
-```
-
-The cpu device information
-
-**Type:** CpuDevice
-
-**Since:** 10
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.AI.MindSporeLite
 
 ## nnrt
 
@@ -40,7 +24,23 @@ The NNRT device information
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.AI.MindSporeLite
+
+## cpu
+
+```TypeScript
+cpu?: CpuDevice
+```
+
+The cpu device information
+
+**Type:** CpuDevice
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -56,7 +56,7 @@ The target device
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

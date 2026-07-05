@@ -1,11 +1,5 @@
 # isOpenTouchGuide
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## isOpenTouchGuide
 
 ```TypeScript
@@ -18,7 +12,7 @@ Checks whether touch guide mode is enabled. This API uses an asynchronous callba
 
 **Deprecated since:** 10
 
-**Substitutes:** [isOpenTouchGuideSync](arkts-accessibility-isopentouchguidesync-f.md#isopentouchguidesync-1)
+**Substitute:** accessibility.isOpenTouchGuideSync
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Vision
 
@@ -26,7 +20,7 @@ Checks whether touch guide mode is enabled. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;boolean&gt; | Yes | Callback used to return the result. Returns **true** if touch guidemode is enabled; returns **false** otherwise. |
+| callback | AsyncCallback&lt;boolean> | Yes | Callback used to return the result. Returns true if touch guide  mode is enabled; returns false otherwise. |
 
 **Example**
 
@@ -44,7 +38,6 @@ accessibility.isOpenTouchGuide((err: BusinessError, data: boolean) => {
 
 ```
 
-
 ## isOpenTouchGuide
 
 ```TypeScript
@@ -57,7 +50,7 @@ Checks whether touch guide mode is enabled. This API uses a promise to return th
 
 **Deprecated since:** 10
 
-**Substitutes:** [isOpenTouchGuideSync](arkts-accessibility-isopentouchguidesync-f.md#isopentouchguidesync-1)
+**Substitute:** accessibility.isOpenTouchGuideSync
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Vision
 
@@ -65,7 +58,7 @@ Checks whether touch guide mode is enabled. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if touch guide mode is enabled;returns **false** otherwise. |
+| Promise&lt;boolean> | Promise used to return the result. Returns true if touch guide mode is enabled;  returns false otherwise. |
 
 **Example**
 

@@ -1,5 +1,9 @@
 # Priority
 
+```TypeScript
+export enum Priority
+```
+
 Enum for scheduling priority
 
 **Since:** 12
@@ -16,7 +20,7 @@ No priority preference
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -30,7 +34,7 @@ Low priority
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -44,7 +48,7 @@ Medium priority
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -58,7 +62,7 @@ High priority
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

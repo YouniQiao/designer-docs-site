@@ -1,24 +1,18 @@
 # createMediaSourceWithFd
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createMediaSourceWithFd
 
 ```TypeScript
 function createMediaSourceWithFd(fdSrc: AVFileDescriptor): MediaSource | undefined
 ```
 
-Creates a media source from file descriptor.
+通过文件描述符创建媒体源。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -26,13 +20,13 @@ Creates a media source from file descriptor.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fdSrc | AVFileDescriptor | Yes | file descriptor handler.<br>file descriptor handler. |
+| fdSrc | AVFileDescriptor | Yes | 媒体文件描述符。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MediaSource | MediaSource instance if the operation is successful; returns undefined otherwise. |
+| MediaSource | 返回MediaSource，用于媒体资源设置。 |
 
 **Example**
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { MediaControlExtensionAbility } from '@ohos.app.ability.MediaControlExtensionAbility';
+import { MediaControlExtensionAbility } from '@kit.AVSessionKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { MediaControlExtensionAbility } from '@ohos.app.ability.MediaControlExte
 
 | Name | Description |
 | --- | --- |
-| [MediaControlExtensionAbility](arkts-avsession-mediacontrolextensionability-c.md) | The class of media control extension ability. |
+| <!--DelRow-->[MediaControlExtensionAbility](arkts-mediacontrolextensionability-c.md) | The class of media control extension ability. |
 

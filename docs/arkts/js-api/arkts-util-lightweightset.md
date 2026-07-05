@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { LightWeightSet } from '@ohos.util.LightWeightSet';
+import { LightWeightSet } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -12,5 +12,11 @@ import { LightWeightSet } from '@ohos.util.LightWeightSet';
 
 | Name | Description |
 | --- | --- |
-| [LightWeightSet](arkts-arkts-lightweightset-c.md) | LightWeightSet stores a set of values, each of which must be unique. |
+| [LightWeightSet](arkts-lightweightset-c.md) | LightWeightSet可用于存储一系列值的集合，存储元素中value值唯一。 |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [LightWeightSetForEachCb](arkts-lightweightsetforeachcb-t.md) | LightWeightSet的回调函数类型。 |
 

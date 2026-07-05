@@ -9,38 +9,22 @@ TIFF metadata.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
-## artist
+## dateTime
 
 ```TypeScript
-readonly artist?: string
+readonly dateTime?: string
 ```
 
-Name of the image creator or artist.
+Date and time associated with the image (typically last modification).
 
 **Type:** string
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## compression
-
-```TypeScript
-readonly compression?: number
-```
-
-Compression scheme used for image data (e.g., None, LZW, JPEG, Deflate). The value should be an integer.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -56,103 +40,7 @@ Copyright notice for the image.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dateTime
-
-```TypeScript
-readonly dateTime?: string
-```
-
-Date and time associated with the image (typically last modification).
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## documentName
-
-```TypeScript
-readonly documentName?: string
-```
-
-Name of the document or image.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## hostComputer
-
-```TypeScript
-readonly hostComputer?: string
-```
-
-Host computer/system used for image processing.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## imageDescription
-
-```TypeScript
-readonly imageDescription?: string
-```
-
-Description of the image content.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## make
-
-```TypeScript
-readonly make?: string
-```
-
-Manufacturer of the capture device.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## model
-
-```TypeScript
-readonly model?: string
-```
-
-Model name/number of the capture device.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -168,55 +56,23 @@ Indicates image orientation for correct display rotation/flip.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## photometricInterpretation
+## xResolution
 
 ```TypeScript
-readonly photometricInterpretation?: number
+readonly xResolution?: double
 ```
 
-Defines how pixel colors are interpreted (e.g., RGB, grayscale). The value should be an integer.
+Horizontal resolution (pixels per resolution unit).
 
-**Type:** number
+**Type:** double
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## primaryChromaticities
-
-```TypeScript
-readonly primaryChromaticities?: number[]
-```
-
-Chromaticity coordinates of the RGB primaries.
-
-**Type:** number[]
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## resolutionUnit
-
-```TypeScript
-readonly resolutionUnit?: number
-```
-
-Unit for X/Y resolution. The value should be an integer.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -232,39 +88,87 @@ Software used to create or process the image.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## tileLength
+## artist
 
 ```TypeScript
-readonly tileLength?: number
+readonly artist?: string
 ```
 
-Height of each image tile in pixels. The value should be an integer.
+Name of the image creator or artist.
 
-**Type:** number
+**Type:** string
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## photometricInterpretation
+
+```TypeScript
+readonly photometricInterpretation?: int
+```
+
+Defines how pixel colors are interpreted (e.g., RGB, grayscale). The value should be an integer.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## documentName
+
+```TypeScript
+readonly documentName?: string
+```
+
+Name of the document or image.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## tileWidth
 
 ```TypeScript
-readonly tileWidth?: number
+readonly tileWidth?: int
 ```
 
 Width of each image tile in pixels. The value should be an integer.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## yResolution
+
+```TypeScript
+readonly yResolution?: double
+```
+
+Vertical resolution (pixels per resolution unit).
+
+**Type:** double
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -280,55 +184,151 @@ Tone transfer curve mapping pixel values to output intensity.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## primaryChromaticities
+
+```TypeScript
+readonly primaryChromaticities?: double[]
+```
+
+Chromaticity coordinates of the RGB primaries.
+
+**Type:** double[]
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## tileLength
+
+```TypeScript
+readonly tileLength?: int
+```
+
+Height of each image tile in pixels. The value should be an integer.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## whitePoint
 
 ```TypeScript
-readonly whitePoint?: number[]
+readonly whitePoint?: double[]
 ```
 
 Chromaticity coordinates of the reference white point.
 
-**Type:** number[]
+**Type:** double[]
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## xResolution
+## resolutionUnit
 
 ```TypeScript
-readonly xResolution?: number
+readonly resolutionUnit?: int
 ```
 
-Horizontal resolution (pixels per resolution unit).
+Unit for X/Y resolution. The value should be an integer.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## yResolution
+## imageDescription
 
 ```TypeScript
-readonly yResolution?: number
+readonly imageDescription?: string
 ```
 
-Vertical resolution (pixels per resolution unit).
+Description of the image content.
 
-**Type:** number
+**Type:** string
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## model
+
+```TypeScript
+readonly model?: string
+```
+
+Model name/number of the capture device.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## hostComputer
+
+```TypeScript
+readonly hostComputer?: string
+```
+
+Host computer/system used for image processing.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## compression
+
+```TypeScript
+readonly compression?: int
+```
+
+Compression scheme used for image data (e.g., None, LZW, JPEG, Deflate). The value should be an integer.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## make
+
+```TypeScript
+readonly make?: string
+```
+
+Manufacturer of the capture device.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

@@ -1,6 +1,10 @@
 # ContainerFormatType
 
-表示容器格式类型的枚举，缩写为CFT。
+```TypeScript
+enum ContainerFormatType
+```
+
+Enumerates the container format types (CFTs).
 
 **起始版本：** 8
 
@@ -12,11 +16,11 @@
 CFT_MPEG_4 = 'mp4'
 ```
 
-视频的容器格式，MP4。
+Video container format MP4.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本22开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 22开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -26,11 +30,11 @@ CFT_MPEG_4 = 'mp4'
 CFT_MPEG_4A = 'm4a'
 ```
 
-音频的容器格式，M4A。
+Audio container format M4A.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -40,7 +44,7 @@ CFT_MPEG_4A = 'm4a'
 CFT_MP3 = 'mp3'
 ```
 
-音频的容器格式，MP3。
+Audio container format MP3.
 
 **起始版本：** 12
 
@@ -52,7 +56,7 @@ CFT_MP3 = 'mp3'
 CFT_WAV = 'wav'
 ```
 
-音频的容器格式，WAV。
+Audio container format WAV.
 
 **起始版本：** 12
 
@@ -64,7 +68,7 @@ CFT_WAV = 'wav'
 CFT_AMR = 'amr'
 ```
 
-音频的容器格式，AMR。
+Audio container format AMR.
 
 **起始版本：** 18
 
@@ -76,7 +80,7 @@ CFT_AMR = 'amr'
 CFT_AAC = 'aac'
 ```
 
-音频的容器格式，AAC。默认为ADTS帧头格式。
+Audio container format AAC. The default format is ADTS frame header.
 
 **起始版本：** 20
 

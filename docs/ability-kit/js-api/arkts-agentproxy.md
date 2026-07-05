@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AgentProxy](arkts-ability-agentproxy-i-sys.md) | The proxy object of the AgentExtensionAbility, used to send messages to the AgentExtensionAbility, etc. |
-<!--DelEnd-->
+| <!--DelRow-->[AgentProxy](arkts-agentproxy-i.md) | The proxy object of the AgentExtensionAbility, used to send messages to the AgentExtensionAbility, etc. |
 

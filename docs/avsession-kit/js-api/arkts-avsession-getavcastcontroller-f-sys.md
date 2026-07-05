@@ -1,10 +1,4 @@
-# getAVCastController (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# getAVCastController
 
 ## getAVCastController
 
@@ -16,7 +10,9 @@ Register a callback to retrieve an avsession cast controller. This function can 
 
 **Since:** 10
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -27,17 +23,17 @@ Register a callback to retrieve an avsession cast controller. This function can 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sessionId | string | Yes | Specifies the sessionId to get controller. |
-| callback | AsyncCallback&lt;AVCastController&gt; | Yes | async callback for the AVCastController. |
+| callback | AsyncCallback&lt;AVCastController> | Yes | async callback for the AVCastController. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | session does not exist |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception |
+| 6600102 | session does not exist |
 
 **Example**
 
@@ -72,7 +68,6 @@ struct Index {
 
 ```
 
-
 ## getAVCastController
 
 ```TypeScript
@@ -83,7 +78,9 @@ Get the current session's remote controller client. If the avsession is not unde
 
 **Since:** 10
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -99,17 +96,17 @@ Get the current session's remote controller client. If the avsession is not unde
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVCastController&gt; | Promise for the AVCastController |
+| Promise&lt;AVCastController> | Promise for the AVCastController |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | server exception |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | session does not exist |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | server exception |
+| 6600102 | session does not exist |
 
 **Example**
 

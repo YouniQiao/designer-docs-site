@@ -1,5 +1,9 @@
 # ThreadAffinityMode
 
+```TypeScript
+export enum ThreadAffinityMode
+```
+
 Enum for provides CPU thread affinity mode
 
 **Since:** 10
@@ -16,7 +20,7 @@ Thread affinity mode is no bind.
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -30,7 +34,7 @@ Thread affinity mode is big cores first
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -44,7 +48,7 @@ Thread affinity mode is little cores first
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

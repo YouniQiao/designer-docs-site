@@ -1,11 +1,5 @@
 # loadModelFromBuffer
 
-## Modules to Import
-
-```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
-```
-
 ## loadModelFromBuffer
 
 ```TypeScript
@@ -18,7 +12,7 @@ Create a Model instance from buffer
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -27,22 +21,22 @@ Create a Model instance from buffer
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | model | ArrayBuffer | Yes | model indicates model buffer to be loaded |
-| context | Context | No | context indicates model context information |
+| context | Context | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Model&gt; | the promise returned by the function. |
+| Promise&lt;Model> | the promise returned by the function. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must bepath, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is anull pointer.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer sizeis incorrect; 2. The buffer file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be  path, buffer, or fd. [staticonly] |
+| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a  null pointer. [staticonly] |
+| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size  is incorrect; 2. The buffer file is damaged. [staticonly] |
 
 **Example**
 
@@ -75,7 +69,6 @@ globalContext.getApplicationContext()
 
 ```
 
-
 ## loadModelFromBuffer
 
 ```TypeScript
@@ -87,7 +80,7 @@ Create a Model instance from buffer
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -96,16 +89,16 @@ Create a Model instance from buffer
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | model | ArrayBuffer | Yes | model indicates model buffer to be loaded |
-| callback | Callback&lt;Model&gt; | Yes | the callback of model |
+| callback | Callback&lt;Model> | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must bepath, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is anull pointer.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer sizeis incorrect; 2. The buffer file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be  path, buffer, or fd. [staticonly] |
+| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a  null pointer. [staticonly] |
+| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size  is incorrect; 2. The buffer file is damaged. [staticonly] |
 
 **Example**
 
@@ -136,7 +129,6 @@ globalContext.getApplicationContext()
 
 ```
 
-
 ## loadModelFromBuffer
 
 ```TypeScript
@@ -149,7 +141,7 @@ Create a Model instance from buffer
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -159,16 +151,16 @@ Create a Model instance from buffer
 | --- | --- | --- | --- |
 | model | ArrayBuffer | Yes | model indicates model buffer to be loaded |
 | context | Context | Yes | context indicates model context information |
-| callback | Callback&lt;Model&gt; | Yes | the callback of model |
+| callback | Callback&lt;Model> | Yes | the callback of model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000003 | Error in model loading method. Possible causes: 1. The loading method must bepath, buffer, or fd.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is anull pointer.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer sizeis incorrect; 2. The buffer file is damaged.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000003 | Error in model loading method. Possible causes: 1. The loading method must be  path, buffer, or fd. [staticonly] |
+| 1000004 | Model buffer error. Possible causes: 1. The buffer size is 0; 2. The buffer is a  null pointer. [staticonly] |
+| 1000005 | Failed to create native model from buffer. Possible causes: 1. The buffer size  is incorrect; 2. The buffer file is damaged. [staticonly] |
 
 **Example**
 

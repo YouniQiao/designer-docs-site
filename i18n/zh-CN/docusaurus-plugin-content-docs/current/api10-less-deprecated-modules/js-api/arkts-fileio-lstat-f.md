@@ -1,0 +1,53 @@
+# lstat
+
+## lstat
+
+```TypeScript
+declare function lstat(path: string): Promise<Stat>
+```
+
+获取链接信息，使用Promise异步回调。
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** @ohos.file.fs:lstat
+
+**系统能力：** SystemCapability.FileManagement.File.FileIO
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| path | string | 是 | 目标文件的应用沙箱路径。 |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;Stat> | promise对象，返回文件对象，表示文件的具体信息，详情见stat。 |
+
+## lstat
+
+```TypeScript
+declare function lstat(path: string, callback: AsyncCallback<Stat>): void
+```
+
+获取链接信息，使用callback异步回调。
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** @ohos.file.fs:lstat
+
+**系统能力：** SystemCapability.FileManagement.File.FileIO
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| path | string | 是 | 目标文件的应用沙箱路径。 |
+| callback | AsyncCallback&lt;Stat> | 是 |  |
+

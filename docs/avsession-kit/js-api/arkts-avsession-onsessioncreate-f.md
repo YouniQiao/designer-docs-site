@@ -1,11 +1,5 @@
 # onSessionCreate
 
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
-
 ## onSessionCreate
 
 ```TypeScript
@@ -16,7 +10,9 @@ Register session create callback
 
 **Since:** 23
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES_FOR_PUBLIC
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES_FOR_PUBLIC
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -24,14 +20,14 @@ Register session create callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;AVSessionDescriptor&gt; | Yes | Used to handle ('sessionCreate' command) |
+| callback | Callback&lt;AVSessionDescriptor> | Yes | Used to handle ('sessionCreate' command) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 201 | permission denied. |
+| 6600101 | Session service exception. |
 
 **Example**
 

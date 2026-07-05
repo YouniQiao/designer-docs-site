@@ -9,7 +9,7 @@ ControlCenterQuery is used to check whether the camera controller is supported.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getSupportedEffectTypes
@@ -22,7 +22,7 @@ Obtains the effect types supported by the camera controller.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +30,7 @@ Obtains the effect types supported by the camera controller.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;ControlCenterEffectType&gt; | Array of effect types supported. |
+| Array&lt;ControlCenterEffectType> | Array of effect types supported. |
 
 ## isControlCenterSupported
 
@@ -42,7 +42,7 @@ Checks whether the camera controller is supported.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -50,5 +50,5 @@ Checks whether the camera controller is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the camera controller. **true** if supported, **false**otherwise. |
+| boolean | Check result for the support of the camera controller. true if supported, false  otherwise. |
 

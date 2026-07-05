@@ -2,31 +2,28 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [BadgeEnabledChangedCallback](arkts-notification-badgeenabledchangedcallback-i-sys.md) | 注册应用角标使能状态变化的回调函数类型。 type BadgeEnabledChangedCallback = (data: EnabledNotificationCallbackData) =&gt; void |
-| [BadgeNumberCallbackData](arkts-notification-badgenumbercallbackdata-i-sys.md) | 应用通知角标数量状态变化的回调函数类型。 |
-| [EnabledNotificationCallbackData](arkts-notification-enablednotificationcallbackdata-i-sys.md) | 应用角标使能状态变化。 |
-| [EnabledPriorityNotificationByBundleCallbackData](arkts-notification-enabledprioritynotificationbybundlecallbackdata-i-sys.md) | 应用通知优先级开关状态 |
-| [EnabledPriorityNotificationCallbackData](arkts-notification-enabledprioritynotificationcallbackdata-i-sys.md) | 通知优先级总开关状态。 |
-| [EnabledSilentReminderCallbackData](arkts-notification-enabledsilentremindercallbackdata-i-sys.md) | 应用通知静默提醒使能状态变化。 |
-| [NotificationClassification](arkts-notification-notificationclassification-i-sys.md) | 描述通知分类信息。 |
-| [NotificationSubscriber](arkts-notification-notificationsubscriber-i-sys.md) | 提供订阅者接收到新通知、取消通知等的回调方法。 |
-| [NotificationSwitchChangedCallbackData](arkts-notification-notificationswitchchangedcallbackdata-i-sys.md) | 描述通知开关状态变化的回调数据。 |
-| [SubscribeCallbackData](arkts-notification-subscribecallbackdata-i-sys.md) | 返回携带系统属性值的通知信息。 |
-| [VoiceContent](arkts-notification-voicecontent-i-sys.md) | 通知消息中语音播报内容定义 |
-<!--DelEnd-->
+| [BadgeEnabledChangedCallback](arkts-badgeenabledchangedcallback-i.md) | 注册应用角标使能状态变化的回调函数类型。 type BadgeEnabledChangedCallback = (data: EnabledNotificationCallbackData) => void |
+| <!--DelRow-->[BadgeNumberCallbackData](arkts-badgenumbercallbackdata-i.md) | 应用通知角标数量状态变化的回调函数类型。 |
+| <!--DelRow-->[EnabledNotificationCallbackData](arkts-enablednotificationcallbackdata-i.md) | 应用角标使能状态变化。 |
+| <!--DelRow-->[EnabledPriorityNotificationByBundleCallbackData](arkts-enabledprioritynotificationbybundlecallbackdata-i.md) | 应用通知优先级开关状态 |
+| <!--DelRow-->[EnabledPriorityNotificationCallbackData](arkts-enabledprioritynotificationcallbackdata-i.md) | 通知优先级总开关状态。 |
+| <!--DelRow-->[EnabledSilentReminderCallbackData](arkts-enabledsilentremindercallbackdata-i.md) | 应用通知静默提醒使能状态变化。 |
+| <!--DelRow-->[NotificationClassification](arkts-notificationclassification-i.md) | 描述通知分类信息。 |
+| <!--DelRow-->[NotificationSubscriber](arkts-notificationsubscriber-i.md) | 提供订阅者接收到新通知、取消通知等的回调方法。 |
+| <!--DelRow-->[NotificationSwitchChangedCallbackData](arkts-notificationswitchchangedcallbackdata-i.md) | 描述通知开关状态变化的回调数据。 |
+| <!--DelRow-->[SubscribeCallbackData](arkts-subscribecallbackdata-i.md) | 返回携带系统属性值的通知信息。 |
+| <!--DelRow-->[VoiceContent](arkts-voicecontent-i.md) | 通知消息中语音播报内容定义 |
 
-<!--Del-->
-### 类型（系统接口）
+### 类型
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [EnabledSilentReminderChangedCallback](arkts-notification-enabledsilentreminderchangedcallback-t-sys.md) | 注册应用通知静默提醒使能状态变化的回调函数类型。 type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) =&gt; void |
-| [NotificationSwitchChangedCallback](arkts-notification-notificationswitchchangedcallback-t-sys.md) | 注册由[notificationManager.setNotificationSwitch](arkts-notification-setnotificationswitch-f-sys.md#setnotificationswitch-1)接口设置的通知开关状态变化的回调函数类型。 |
-| [SystemUpdateCallback](arkts-notification-systemupdatecallback-t-sys.md) | type SystemUpdateCallback = (data: SubscribeCallbackData) =&gt; void |
-<!--DelEnd-->
+| <!--DelRow-->[BadgeEnabledChangedCallback](arkts-badgeenabledchangedcallback-t.md) | type BadgeEnabledChangedCallback = (data: EnabledNotificationCallbackData) => void 注册应用角标使能状态变化的回调函数类型。 |
+| <!--DelRow-->[EnabledSilentReminderChangedCallback](arkts-enabledsilentreminderchangedcallback-t.md) | 注册应用通知静默提醒使能状态变化的回调函数类型。 type EnabledSilentReminderChangedCallback = (callbackData: EnabledSilentReminderCallbackData) => void |
+| <!--DelRow-->[NotificationSwitchChangedCallback](arkts-notificationswitchchangedcallback-t.md) | 注册由[notificationManager.setNotificationSwitch]{@link ../@ohos.notificationManager:notificationManager.setNotificationSwitch}接口设置的通知开关状态变化的回调函数类型。 |
+| <!--DelRow-->[SystemUpdateCallback](arkts-systemupdatecallback-t.md) | type SystemUpdateCallback = (data: SubscribeCallbackData) => void |
 

@@ -1,8 +1,8 @@
 # @ohos.uiAppearance
 
-This module provides basic capabilities for obtaining system appearance configurations, including color mode (dark/ light) settings, font size scale factors, and font weight scale factors. > **NOTE**
+用户界面外观提供获取系统外观的一些基础能力，包括获取深浅色模式、字体大小缩放比例、字体粗细缩放比例。 > **说明：** > 从API version 20开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。
 
-**Since:** 20
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.UiAppearance
 
@@ -11,30 +11,26 @@ This module provides basic capabilities for obtaining system appearance configur
 ## Modules to Import
 
 ```TypeScript
-import { uiAppearance } from '@ohos.uiAppearance';
+import { uiAppearance } from '@kit.ArkUI';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [getDarkMode](arkts-arkui-getdarkmode-f-sys.md#getdarkmode-1) | Obtains the current system dark mode configuration. &lt;!--Del--&gt; &gt; **NOTE** &gt; This API is a system API in API version 19 and earlier. Using this API requires the &gt; [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) &gt; permission. &lt;!--DelEnd--&gt; |
-| [getFontScale](arkts-arkui-getfontscale-f-sys.md#getfontscale-1) | Obtains the current font size scale factor. &lt;!--Del--&gt; &gt; **NOTE** &gt; This API is a system API in API version 19 and earlier. Using this API requires the &gt; [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) &gt; permission. &lt;!--DelEnd--&gt; |
-| [getFontWeightScale](arkts-arkui-getfontweightscale-f-sys.md#getfontweightscale-1) | Obtains the current font weight scale factor. &lt;!--Del--&gt; &gt; **NOTE** &gt; This API is a system API in API version 19 and earlier. Using this API requires the &gt; [ohos.permission.UPDATE_CONFIGURATION](../../../../security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) &gt; permission. &lt;!--DelEnd--&gt; |
-| [setDarkMode](arkts-arkui-setdarkmode-f-sys.md#setdarkmode-1) | Sets the system color mode. This API uses an asynchronous callback to return the result. **Permission required**: ohos.permission.UPDATE_CONFIGURATION |
-| [setDarkMode](arkts-arkui-setdarkmode-f-sys.md#setdarkmode-2) | Sets the system color mode. This API uses a promise to return the result. **Permission required**: ohos.permission.UPDATE_CONFIGURATION |
-| [setFontScale](arkts-arkui-setfontscale-f-sys.md#setfontscale-1) | Sets the system font scale. **Permission required**: ohos.permission.UPDATE_CONFIGURATION |
-| [setFontWeightScale](arkts-arkui-setfontweightscale-f-sys.md#setfontweightscale-1) | Sets the system font weight scale. **Permission required**: ohos.permission.UPDATE_CONFIGURATION |
-<!--DelEnd-->
+| <!--DelRow-->[getDarkMode](arkts-uiappearance-getdarkmode-f-sys.md#getDarkMode-1) | 获取系统当前的深色模式配置。 <!--Del--> > **说明：** > 该接口在API version 19及之前版本中为系统接口。开发者使用该接口时需要申请 > [ohos.permission.UPDATE_CONFIGURATION](docroot://security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) > 权限。 <!--DelEnd--> |
+| <!--DelRow-->[getFontScale](arkts-uiappearance-getfontscale-f-sys.md#getFontScale-1) | 获取系统当前的字体大小缩放比例。 <!--Del--> > **说明：** > 该接口在API version 19及之前版本中为系统接口。开发者使用该接口时需要申请 > [ohos.permission.UPDATE_CONFIGURATION](docroot://security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) > 权限。 <!--DelEnd--> |
+| <!--DelRow-->[getFontWeightScale](arkts-uiappearance-getfontweightscale-f-sys.md#getFontWeightScale-1) | 获取系统当前的字体粗细缩放比例。 <!--Del--> > **说明：** > 该接口在API version 19及之前版本中为系统接口。开发者使用该接口时需要申请 > [ohos.permission.UPDATE_CONFIGURATION](docroot://security/AccessToken/permissions-for-system-apps.md#ohospermissionupdate_configuration) > 权限。 <!--DelEnd--> |
+| <!--DelRow-->[setDarkMode](arkts-uiappearance-setdarkmode-f-sys.md#setDarkMode-1) | 设置系统深色模式。使用callback异步回调。 |
+| <!--DelRow-->[setDarkMode](arkts-uiappearance-setdarkmode-f-sys.md#setDarkMode-2) | 设置系统深色模式。使用Promise异步回调。 |
+| <!--DelRow-->[setFontScale](arkts-uiappearance-setfontscale-f-sys.md#setFontScale-1) | 设置系统字体大小。 |
+| <!--DelRow-->[setFontWeightScale](arkts-uiappearance-setfontweightscale-f-sys.md#setFontWeightScale-1) | 设置系统字体粗细。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [DarkMode](arkts-arkui-darkmode-e-sys.md) | Enumerates the color modes. |
-<!--DelEnd-->
+| <!--DelRow-->[DarkMode](arkts-uiappearance-darkmode-e-sys.md) | 深色模式枚举。 | 名称 | 值 | 说明 | | -- | -- | -- | | ALWAYS_DARK | 0 | 系统始终为深色。 | | ALWAYS_LIGHT | 1 | 系统始终为浅色。 | |
 

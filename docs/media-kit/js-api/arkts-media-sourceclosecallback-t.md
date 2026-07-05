@@ -1,14 +1,14 @@
 # SourceCloseCallback
 
 ```TypeScript
-type SourceCloseCallback = (uuid: number) => void
+type SourceCloseCallback = (uuid: long) => void
 ```
 
 This callback function is implemented by applications to release related resources. > **NOTE** > > The client must return the handle immediately after processing the request.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

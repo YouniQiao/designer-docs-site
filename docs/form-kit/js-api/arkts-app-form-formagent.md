@@ -11,17 +11,15 @@ The **FormAgent** module provides APIs related to the widget agent. Currently, y
 ## Modules to Import
 
 ```TypeScript
-import { formAgent } from '@ohos.app.form.formAgent';
+import { formAgent } from '@kit.FormKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [requestPublishForm](arkts-form-requestpublishform-f-sys.md#requestpublishform-1) | Requests to publish a widget to the widget host. This API uses an asynchronous callback to return the result. The widget host is usually the home screen. |
-| [requestPublishForm](arkts-form-requestpublishform-f-sys.md#requestpublishform-2) | Requests to publish a widget to the widget host. This API uses a promise to return the result. The widget host is usually the home screen. |
-<!--DelEnd-->
+| <!--DelRow-->[requestPublishForm](arkts-formagent-requestpublishform-f-sys.md#requestPublishForm-1) | Requests to publish a widget to the widget host. This API uses an asynchronous callback to return the result. The widget host is usually the home screen. |
+| <!--DelRow-->[requestPublishForm](arkts-formagent-requestpublishform-f-sys.md#requestPublishForm-2) | Requests to publish a widget to the widget host. This API uses a promise to return the result. The widget host is usually the home screen. |
 

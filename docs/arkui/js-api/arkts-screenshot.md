@@ -1,6 +1,6 @@
 # @ohos.screenshot
 
-Provides the screen capture capability.
+本模块提供屏幕截图的能力。
 
 **Since:** 12
 
@@ -9,7 +9,7 @@ Provides the screen capture capability.
 ## Modules to Import
 
 ```TypeScript
-import { screenshot } from '@ohos.screenshot';
+import { screenshot } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -18,43 +18,27 @@ import { screenshot } from '@ohos.screenshot';
 
 | Name | Description |
 | --- | --- |
-| [capture](arkts-arkui-capture-f.md#capture-1) | Takes a screenshot of the entire screen. This API uses a promise to return the result. This API allows you to take screenshots of different screens by setting various **displayId** values, but only full -screen captures are supported. The [pick](arkts-arkui-pick-f.md#pick-1) API allows you to take screenshots of a specified region. |
-| [pick](arkts-arkui-pick-f.md#pick-1) | Obtains this screenshot. Currently, only the screenshot of the display whose ID is **0** can be obtained. (If a screenshot of the extended screen is needed, you can use the [capture](arkts-arkui-capture-f.md#capture-1) API.) This API uses a promise to return the result. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [save](arkts-arkui-save-f-sys.md#save-1) | Obtains a screenshot. This API uses an asynchronous callback to return the result. |
-| [save](arkts-arkui-save-f-sys.md#save-2) | Obtains a screenshot. This API uses an asynchronous callback to return the result. |
-| [save](arkts-arkui-save-f-sys.md#save-3) | Obtains a screenshot. This API uses a promise to return the result. |
-| [saveHdrPicture](arkts-arkui-savehdrpicture-f-sys.md#savehdrpicture-1) | Obtains a screenshot. This API uses a promise to return the result. SDR stands for Standard Dynamic Range, and HDR stands for High Dynamic Range. - If the screen contains HDR resources (even if they are partially obscured), this API returns an array with both SDR and HDR PixelMaps, regardless of whether HDR is enabled. - If there are no HDR resources, it returns an array with a single SDR PixelMap. Unlike the [save](arkts-arkui-save-f-sys.md#save-1) API, which returns a single SDR PixelMap, this API always returns an array. Additionally, this API does not support cropping, stretching, or rotating features available in the [save](arkts-arkui-save-f-sys.md#save-1) API. |
-<!--DelEnd-->
+| [capture](arkts-screenshot-capture-f.md#capture-1) | 获取屏幕全屏截图，使用Promise异步回调。 此接口可以通过设置不同的displayId截取不同屏幕的截图，且只能截取全屏；[pick]{@link screenshot.pick}接口可实现区域截屏。 |
+| [pick](arkts-screenshot-pick-f.md#pick-1) | 获取屏幕截图，当前仅支持获取displayId为0的屏幕截图（如果需要对扩展屏截图，可以通过[capture]{@link screenshot.capture}接口实现），使用Promise异步回调。 |
+| <!--DelRow-->[save](arkts-screenshot-save-f-sys.md#save-1) | 获取屏幕截图，使用callback异步回调。 |
+| <!--DelRow-->[save](arkts-screenshot-save-f-sys.md#save-2) | 获取屏幕截图，使用callback异步回调。 |
+| <!--DelRow-->[save](arkts-screenshot-save-f-sys.md#save-3) | 获取屏幕截图，使用Promise异步回调。 |
+| <!--DelRow-->[saveHdrPicture](arkts-screenshot-savehdrpicture-f-sys.md#saveHdrPicture-1) | 获取屏幕截图，使用Promise异步回调。SDR为标准动态范围图，HDR为高动态范围图。 - 当物理屏存在HDR资源（包括HDR资源被遮挡）时，无论HDR是否开启，该接口返回一个包含SDR和HDR的PixelMap数组。 - 当物理屏不存在HDR资源时，与[save]{@link screenshot.save(options: ScreenshotOptions, callback: AsyncCallback<image.PixelMap>)} 接口返回一个SDR的PixelMap不同，该接口返回包含一个SDR的PixelMap数组。同时该接口不具备 [save]{@link screenshot.save(options: ScreenshotOptions, callback: AsyncCallback<image.PixelMap>)}接口的裁剪、拉伸、旋转功能。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CaptureOption](arkts-arkui-captureoption-i.md) | Describes the capture options. |
-| [PickInfo](arkts-arkui-pickinfo-i.md) | Describes the screenshot options. |
-| [Rect](arkts-arkui-rect-i.md) | Describes the region of the screen to capture. |
+| [CaptureOption](arkts-screenshot-captureoption-i.md) | 设置截取图像的信息。 |
+| <!--DelRow-->[HdrScreenshotOptions](arkts-screenshot-hdrscreenshotoptions-i-sys.md) | 设置截取HDR图像的信息。 |
+| [PickInfo](arkts-screenshot-pickinfo-i.md) | 截取图像的信息。 |
+| [Rect](arkts-screenshot-rect-i.md) | 表示截取图像的区域。 |
+| <!--DelRow-->[ScreenshotOptions](arkts-screenshot-screenshotoptions-i-sys.md) | 设置截取图像的信息。 |
+| <!--DelRow-->[Size](arkts-screenshot-size-i-sys.md) | 表示截取图像的大小。 |
 
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [HdrScreenshotOptions](arkts-arkui-hdrscreenshotoptions-i-sys.md) | Describes the HDR screenshot options. |
-| [ScreenshotOptions](arkts-arkui-screenshotoptions-i-sys.md) | Describes the screenshot options. |
-| [Size](arkts-arkui-size-i-sys.md) | Describes the size of the screen region to capture. |
-<!--DelEnd-->
-
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [DisplayIntentType](arkts-arkui-displayintenttype-e-sys.md) | Enumerates the screenshot display intent type. |
-<!--DelEnd-->
+| <!--DelRow-->[DisplayIntentType](arkts-screenshot-displayintenttype-e-sys.md) | 枚举截图显示意图类型。 |
 

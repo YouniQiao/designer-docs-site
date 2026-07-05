@@ -1,6 +1,6 @@
 # @ohos.arkui.dragController
 
-This module provides APIs for initiating drag actions. When receiving a gesture event, such as a touch or long-press event, an application can initiate a drag action and carry drag information therein. > **NOTE** > > - The functionality of this module depends on UI context. This means that the APIs of this module cannot be used > where [the UI context is ambiguous](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). For details, see > [UIContext](arkts-arkui-uicontext.md). > > - You can preview how this component looks on a real device, but not in DevEco Studio Previewer.
+本模块提供发起主动拖拽的能力，当应用接收到触摸或长按等事件时可以主动发起拖拽的动作，并在其中携带拖拽信息。 > **说明：** > > - 本模块功能依赖UI的执行上下文，不可在[UI上下文不明确](docroot://ui/arkts-global-interface.md#ui上下文不明确)的地方使用，参见 > [UIContext]{@link @ohos.arkui.UIContext}说明。 > > - 示例效果请以真机运行为准，当前 DevEco Studio预览器不支持。
 
 **Since:** 10
 
@@ -9,7 +9,7 @@ This module provides APIs for initiating drag actions. When receiving a gesture 
 ## Modules to Import
 
 ```TypeScript
-import { dragController } from '@ohos.arkui.dragController';
+import { dragController } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -18,35 +18,35 @@ import { dragController } from '@ohos.arkui.dragController';
 
 | Name | Description |
 | --- | --- |
-| [createDragAction](arkts-arkui-createdragaction-f.md#createdragaction-1) | Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; - Since API version 11, you can use the &gt; [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in &gt; [UIContext](arkts-arkui-uicontext.md) to obtain the &gt; [DragController](arkts-arkui-dragcontroller-c.md#dragcontroller) object associated with the current UI context. &gt; &gt; - For optimal drag and drop performance, limit the number of drag previews. |
-| [executeDrag](arkts-arkui-executedrag-f.md#executedrag-1) | Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in &gt; [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md#dragcontroller) object &gt; associated with the current UI context. |
-| [executeDrag](arkts-arkui-executedrag-f.md#executedrag-2) | Initiates a drag action, with the object to be dragged and the drag information passed in. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in &gt; [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md#dragcontroller) object &gt; associated with the current UI context. |
-| [getDragPreview](arkts-arkui-getdragpreview-f.md#getdragpreview-1) | Obtains the **DragPreview** object, which represents the preview displayed during a drag operation. &gt; **NOTE** &gt; &gt; Since API version 11, you can use the [getDragController](arkts-arkui-uicontext-c.md#getdragcontroller-1) API in &gt; [UIContext](arkts-arkui-uicontext.md) to obtain the [DragController](arkts-arkui-dragcontroller-c.md#dragcontroller) object &gt; associated with the current UI context. |
+| [createDragAction](arkts-dragcontroller-createdragaction-f.md#createDragAction-1) | 创建拖拽的Action对象，需要显式指定拖拽背板图（可多个），以及拖拽的数据，跟手点等信息；当通过一个已创建的 Action 对象发起的拖拽未结束时，无法再次创建新的 Action 对象，接口会抛出异常； 当Action对象的生命周期结束后，注册在该对象上的回调函数会失效，因此需要在一个尽量长的作用域下持有该对象，并在每次发起拖拽前通过createDragAction返回新的对象覆盖旧值。 > **说明：** > > - 从API version 11开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getDragController]{@link @ohos.arkui.UIContext:UIContext#getDragController}方法获取当前UI > 上下文关联的[DragController]{@link @ohos.arkui.UIContext:DragController}对象。 > > - 建议控制传递的拖拽背板数量，传递过多容易导致拖起的效率问题。 |
+| [executeDrag](arkts-dragcontroller-executedrag-f.md#executeDrag-1) | Execute a drag event. |
+| [executeDrag](arkts-dragcontroller-executedrag-f.md#executeDrag-2) | 主动发起拖拽能力，传入拖拽发起后跟手效果所拖拽的对象以及携带拖拽信息。使用Promise异步回调。 > **说明：** > > 从API version 11开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getDragController]{@link @ohos.arkui.UIContext:UIContext#getDragController}方法获取当前UI > 上下文关联的[DragController]{@link @ohos.arkui.UIContext:DragController}对象。 |
+| [getDragPreview](arkts-dragcontroller-getdragpreview-f.md#getDragPreview-1) | 返回一个代表拖拽背板的对象。 > **说明：** > > 从API version 11开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getDragController]{@link @ohos.arkui.UIContext:UIContext#getDragController}方法获取当前UI > 上下文关联的[DragController]{@link @ohos.arkui.UIContext:DragController}对象。 |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [DragPreview](arkts-arkui-dragpreview-c.md) | Implements a **DragPreview** object. This API does not work in the **OnDrop** and **OnDragEnd** callbacks. |
-| [SpringLoadingContext](arkts-arkui-springloadingcontext-c.md) | Defines callback context information passed to applications during hover detection. It enables access to drag states, dynamic UI effect updates, and drag data for operation handling decisions. |
+| [DragPreview](arkts-dragcontroller-dragpreview-c.md) | 拖拽背板的对象，在OnDrop和OnDragEnd回调中使用不生效。 |
+| [SpringLoadingContext](arkts-dragcontroller-springloadingcontext-c.md) | 定义回调上下文信息的类，用于在悬停检测回调中传递给应用程序，使其能访问拖拽状态、动态刷新UI效果以及访问拖拽数据以确定是否处理拖拽操作。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AnimationOptions](arkts-arkui-animationoptions-i.md) | Defines parameters related to drag-and-drop animation effects. |
-| [DragAction](arkts-arkui-dragaction-i.md) | Implements a **DragAction** object to subscribe to drag state changes and start the drag service. |
-| [DragAndDropInfo](arkts-arkui-draganddropinfo-i.md) | Provides the data reported when the state changes during dragging. |
-| [DragEventParam](arkts-arkui-drageventparam-i.md) | Callback used to return the result. |
-| [DragInfo](arkts-arkui-draginfo-i.md) | Defines the attributes required for initiating a drag action and information carried in the dragging process. |
-| [DragSpringLoadingConfiguration](arkts-arkui-dragspringloadingconfiguration-i.md) | Defines the configuration parameters for drag hover detection. The default settings typically suffice. These settings can be customized through [onDragSpringLoading](../arkts-components/arkts-arkui-commonmethod-c.md#ondragspringloading-1) binding or dynamically updated during BEGIN state using [updateConfiguration](arkts-arkui-springloadingcontext-c.md#updateconfiguration-1). |
-| [SpringLoadingDragInfos](arkts-arkui-springloadingdraginfos-i.md) | Defines the drag event information when hover detection is triggered. This API provides drag data summaries and additional drag event information, allowing applications to decide whether to respond to hover detection callbacks. |
+| [AnimationOptions](arkts-dragcontroller-animationoptions-i.md) | 拖拽相关的动效参数。 |
+| [DragAction](arkts-dragcontroller-dragaction-i.md) | 监听状态改变，启动拖拽服务的对象。 |
+| [DragAndDropInfo](arkts-dragcontroller-draganddropinfo-i.md) | 拖拽过程中监听到status改变时上报的数据。 |
+| [DragEventParam](arkts-dragcontroller-drageventparam-i.md) | 拖拽结束返回结果的回调。 |
+| [DragInfo](arkts-dragcontroller-draginfo-i.md) | 发起拖拽所需要的属性和拖拽时携带的信息。 |
+| [DragSpringLoadingConfiguration](arkts-dragcontroller-dragspringloadingconfiguration-i.md) | 定义拖拽的悬停检测配置参数的接口。默认的配置参数通常已能满足需求。可以通过在绑定[onDragSpringLoading]{@link CommonMethod#onDragSpringLoading}时指定配置，或者通过在 BEGIN状态期间使用[updateConfiguration]{@link dragController.SpringLoadingContext#updateConfiguration}方法动态修改的方式以自定义该配置参数。 |
+| [SpringLoadingDragInfos](arkts-dragcontroller-springloadingdraginfos-i.md) | 定义触发悬停检测时拖拽事件信息的接口。该接口提供了拖拽数据摘要和拖拽事件额外信息，应用程序可以据此决定是否响应悬停检测回调。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [DragSpringLoadingState](arkts-arkui-dragspringloadingstate-e.md) | Enumerates hover detection states during drag operations. Under default system configuration, if no CANCEL occurs, the state reporting is as follows: Hover still--&gt;500ms--&gt;BEGIN--&gt;100ms--&gt;UPDATE--&gt;100ms--&gt;UPDATE--&gt;100ms--&gt;UPDATE--&gt;100ms--&gt;END |
-| [DragStartRequestStatus](arkts-arkui-dragstartrequeststatus-e.md) | Enumerates the states defining whether an application can initiate a drag operation. This API is effective only when [onDragStart](../arkts-components/arkts-arkui-commonmethod-c.md#ondragstart-1) is called. |
-| [DragStatus](arkts-arkui-dragstatus-e.md) | Describes the dragging start and end states. |
+| [DragSpringLoadingState](arkts-dragcontroller-dragspringloadingstate-e.md) | 定义拖拽的悬停检测状态的枚举类型。 默认系统配置下，如果没有触发CANCEL，状态报告如下： 保持Hover-->500ms-->BEGIN-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->END |
+| [DragStartRequestStatus](arkts-dragcontroller-dragstartrequeststatus-e.md) | 定义应用是否可以发起拖拽的枚举类型。仅在[onDragStart]{@link CommonMethod#onDragStart}调用时有效。 |
+| [DragStatus](arkts-dragcontroller-dragstatus-e.md) | 拖拽开始和结束状态。 |
 

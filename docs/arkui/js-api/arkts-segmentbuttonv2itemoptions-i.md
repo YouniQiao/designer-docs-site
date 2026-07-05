@@ -1,0 +1,194 @@
+# SegmentButtonV2ItemOptions
+
+配置分段按钮选项参数。 > **说明** > > 1. 当配置`symbol`和`icon`时，`symbol`的显示优先级更高。 > > 2. 当`symbol`和`symbolModifier`同时设置HM Symbol资源时，`symbolModifier`设置的资源具有更高的显示优先级。
+
+**Since:** 18
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { OnSelectedIndexesChange,TabSegmentButtonV2,SegmentButtonV2Items,MultiCapsuleSegmentButtonV2,OnSelectedIndexChange,SegmentButtonV2ItemOptions,SegmentButtonV2Item,CapsuleSegmentButtonV2 } from '@kit.ArkUI';
+```
+
+## symbol
+
+```TypeScript
+symbol?: Resource
+```
+
+分段按钮选项的HM Symbol类型图标。 默认值：undefined 装饰器类型：@Trace
+
+**Type:** Resource
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## textModifier
+
+```TypeScript
+textModifier?: TextModifier
+```
+
+分段按钮选项文本属性样式修改器。 默认值：undefined 装饰器类型：@Trace
+
+**Type:** TextModifier
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## iconModifier
+
+```TypeScript
+iconModifier?: ImageModifier
+```
+
+分段按钮选项图片类型图标属性的样式修改器。 默认值：undefined 装饰器类型：@Trace
+
+**Type:** ImageModifier
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## icon
+
+```TypeScript
+icon?: ResourceStr
+```
+
+分段按钮选项图片类型图标。 默认值：undefined 装饰器类型：@Trace
+
+**Type:** ResourceStr
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## accessibilityLevel
+
+```TypeScript
+accessibilityLevel?: string
+```
+
+分段按钮选项的无障碍重要性[accessibilityLevel]CommonMethod#accessibilityLevel。 默认值："auto" 值为undefined时，按默认值处理。 装饰器类型：@Trace
+
+**Type:** string
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## text
+
+```TypeScript
+text?: ResourceStr
+```
+
+分段按钮选项文本。 默认值：undefined 装饰器类型：@Trace
+
+**Type:** ResourceStr
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## accessibilityText
+
+```TypeScript
+accessibilityText?: ResourceStr
+```
+
+分段按钮选项的无障碍文本[accessibilityText]CommonMethod#accessibilityText(value: string)。 默认值："" 值为undefined时，按默认值处理。 装饰器类型：@Trace
+
+**Type:** ResourceStr
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## enabled
+
+```TypeScript
+enabled?: boolean
+```
+
+分段按钮选项是否可用。 默认值：true true：可用；false：不可用。 值为undefined时，按默认值处理。 装饰器类型：@Trace
+
+**Type:** boolean
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## accessibilityDescription
+
+```TypeScript
+accessibilityDescription?: ResourceStr
+```
+
+分段按钮选项的无障碍说明[accessibilityDescription]CommonMethod#accessibilityDescription(value: string)。 默认值："" 值为undefined时，按默认值处理。 装饰器类型：@Trace
+
+**Type:** ResourceStr
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## symbolModifier
+
+```TypeScript
+symbolModifier?: SymbolGlyphModifier
+```
+
+分段按钮选项HM Symbol类型图标属性样式修改器。 默认值：undefined 装饰器类型：@Trace
+
+**Type:** SymbolGlyphModifier
+
+**Since:** 18
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

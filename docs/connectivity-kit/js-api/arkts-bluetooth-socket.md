@@ -9,7 +9,7 @@ Provides methods to operate or manage bluetooth socket connection.
 ## Modules to Import
 
 ```TypeScript
-import { socket } from '@ohos.bluetooth.socket';
+import { socket } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -18,31 +18,33 @@ import { socket } from '@ohos.bluetooth.socket';
 
 | Name | Description |
 | --- | --- |
-| [getDeviceId](arkts-connectivity-getdeviceid-f.md#getdeviceid-1) | Obtain the device id in the client socket. |
-| [getL2capPsm](arkts-connectivity-getl2cappsm-f.md#getl2cappsm-1) | Get l2cap socket psm. |
-| [getMaxReceiveDataSize](arkts-connectivity-getmaxreceivedatasize-f.md#getmaxreceivedatasize-1) | Obtain the maximum data size that can be received through this socket channel. |
-| [getMaxTransmitDataSize](arkts-connectivity-getmaxtransmitdatasize-f.md#getmaxtransmitdatasize-1) | Obtain the maximum data size that can be transmitted through this socket channel. |
-| [isConnected](arkts-connectivity-isconnected-f.md#isconnected-1) | Check whether the current socket connection has been established. |
-| [off](arkts-connectivity-off-f.md#off-1) | Unsubscribe the event reported when data is read from the socket. |
-| [on](arkts-connectivity-on-f.md#on-1) | Subscribe the event reported when data is read from the socket. |
-| [sppAccept](arkts-connectivity-sppaccept-f.md#sppaccept-1) | Waits for a remote device to connect. |
-| [sppCloseClientSocket](arkts-connectivity-sppcloseclientsocket-f.md#sppcloseclientsocket-1) | Disables an spp client socket and releases related resources. |
-| [sppCloseServerSocket](arkts-connectivity-sppcloseserversocket-f.md#sppcloseserversocket-1) | Disables an spp server socket and releases related resources. |
-| [sppConnect](arkts-connectivity-sppconnect-f.md#sppconnect-1) | Connects to a remote device over the socket. |
-| [sppListen](arkts-connectivity-spplisten-f.md#spplisten-1) | Creates a Bluetooth server listening socket. |
-| [sppReadAsync](arkts-connectivity-sppreadasync-f.md#sppreadasync-1) | Asynchronous interface for reading data from the socket. |
-| [sppWrite](arkts-connectivity-sppwrite-f.md#sppwrite-1) | Write data through the socket. |
-| [sppWriteAsync](arkts-connectivity-sppwriteasync-f.md#sppwriteasync-1) | Asynchronous interface for writing data to the socket. |
+| [getDeviceId](arkts-socket-getdeviceid-f.md#getDeviceId-1) | Obtain the device id in the client socket. |
+| [getL2capPsm](arkts-socket-getl2cappsm-f.md#getL2capPsm-1) | Get l2cap socket psm. |
+| [getMaxReceiveDataSize](arkts-socket-getmaxreceivedatasize-f.md#getMaxReceiveDataSize-1) | Obtain the maximum data size that can be received through this socket channel. |
+| [getMaxTransmitDataSize](arkts-socket-getmaxtransmitdatasize-f.md#getMaxTransmitDataSize-1) | Obtain the maximum data size that can be transmitted through this socket channel. |
+| [isConnected](arkts-socket-isconnected-f.md#isConnected-1) | Check whether the current socket connection has been established. |
+| [off](arkts-socket-off-f.md#off-1) | Unsubscribe the event reported when data is read from the socket. |
+| [offSppRead](arkts-socket-offsppread-f.md#offSppRead-1) | Unsubscribe the event reported when data is read from the socket. |
+| [on](arkts-socket-on-f.md#on-1) | Subscribe the event reported when data is read from the socket. |
+| [onSppRead](arkts-socket-onsppread-f.md#onSppRead-1) | Subscribe the event reported when data is read from the socket. |
+| [sppAccept](arkts-socket-sppaccept-f.md#sppAccept-1) | Waits for a remote device to connect. |
+| [sppCloseClientSocket](arkts-socket-sppcloseclientsocket-f.md#sppCloseClientSocket-1) | Disables an spp client socket and releases related resources. |
+| [sppCloseServerSocket](arkts-socket-sppcloseserversocket-f.md#sppCloseServerSocket-1) | Disables an spp server socket and releases related resources. |
+| [sppConnect](arkts-socket-sppconnect-f.md#sppConnect-1) | Connects to a remote device over the socket. |
+| [sppListen](arkts-socket-spplisten-f.md#sppListen-1) | Creates a Bluetooth server listening socket. |
+| [sppReadAsync](arkts-socket-sppreadasync-f.md#sppReadAsync-1) | Asynchronous interface for reading data from the socket. |
+| [sppWrite](arkts-socket-sppwrite-f.md#sppWrite-1) | Write data through the socket. |
+| [sppWriteAsync](arkts-socket-sppwriteasync-f.md#sppWriteAsync-1) | Asynchronous interface for writing data to the socket. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [SppOptions](arkts-connectivity-sppoptions-i.md) | Describes the spp parameters. |
+| [SppOptions](arkts-socket-sppoptions-i.md) | Describes the spp parameters. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [SppType](arkts-connectivity-spptype-e.md) | The enum of SPP type. |
+| [SppType](arkts-socket-spptype-e.md) | The enum of SPP type. |
 

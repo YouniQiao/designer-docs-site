@@ -1,6 +1,6 @@
 # @ohos.userIAM.companionDeviceAuth
 
-The **companionDeviceAuth** module provides capabilities such as companion device query, subscription, and service scope management for system applications. A companion device is an identity authentication credential added by a user on the main device. If the conditions are met, the companion device can interact with the main device to authenticate the user identity. The companion device can be applied in such scenarios as a watch as a companion device to unlock a mobile phone or a headset as a companion device to execute voice commands without unlocking the mobile phone.
+companionDeviceAuth**模块是OpenHarmony用户身份认证体系（UserIAM）的重要组成部分，专门用于伴随设备认证管理。该模块为系统应用提供伴随设备查询、订阅和服务范围管理等能力。 该模块主要用于以下场景： - 管理伴随设备与主设备之间的认证关系。 - 查询和订阅伴随设备的状态变化。 - 管理伴随设备支持的业务范围。 - 实现持续认证功能。 - 处理设备选择和注册。
 
 **Since:** 23
 
@@ -11,53 +11,45 @@ The **companionDeviceAuth** module provides capabilities such as companion devic
 ## Modules to Import
 
 ```TypeScript
-import { companionDeviceAuth } from '@ohos.userIAM.companionDeviceAuth';
+import { companionDeviceAuth } from '@kit.UserAuthenticationKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [getStatusMonitor](arkts-userauthentication-getstatusmonitor-f-sys.md#getstatusmonitor-1) | Obtains the status listener, which is used to query and subscribe to companion template information. |
-| [registerDeviceSelectCallback](arkts-userauthentication-registerdeviceselectcallback-f-sys.md#registerdeviceselectcallback-1) | Registers the callback for companion device selection. |
-| [unregisterDeviceSelectCallback](arkts-userauthentication-unregisterdeviceselectcallback-f-sys.md#unregisterdeviceselectcallback-1) | Unregisters the callback for companion device selection. |
-| [updateEnabledBusinessIds](arkts-userauthentication-updateenabledbusinessids-f-sys.md#updateenabledbusinessids-1) | Updates the service scope supported by the specified companion device template. This API uses a promise to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[getStatusMonitor](arkts-companiondeviceauth-getstatusmonitor-f-sys.md#getStatusMonitor-1) | 获取状态监听器。用于获取指定用户的状态监听器对象，通过该对象可查询和订阅伴随设备的模板状态、持续认证状态、可添加设备状态等信息。 |
+| <!--DelRow-->[registerDeviceSelectCallback](arkts-companiondeviceauth-registerdeviceselectcallback-f-sys.md#registerDeviceSelectCallback-1) | 注册伴随设备选择回调。当系统需要用户选择伴随设备时，会调用此回调，应用需在回调中返回用户选择的设备信息。通过此回调，应用可以实现自定义的设备选择逻辑，如弹出设备选择界面让用户选择。 |
+| <!--DelRow-->[unregisterDeviceSelectCallback](arkts-companiondeviceauth-unregisterdeviceselectcallback-f-sys.md#unregisterDeviceSelectCallback-1) | 取消注册伴随设备选择回调。取消后，系统将不再调用应用注册的设备选择回调，设备选择将回退到系统默认行为。 |
+| <!--DelRow-->[updateEnabledBusinessIds](arkts-companiondeviceauth-updateenabledbusinessids-f-sys.md#updateEnabledBusinessIds-1) | 更新指定伴随设备模板支持的业务范围。用于修改已注册模板的启用业务ID列表，从而控制该模板可参与的业务场景。使用Promise异步回调。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ContinuousAuthParam](arkts-userauthentication-continuousauthparam-i-sys.md) | Defines the continuous authentication parameter. |
-| [DeviceKey](arkts-userauthentication-devicekey-i-sys.md) | Defines the device key. |
-| [DeviceSelectResult](arkts-userauthentication-deviceselectresult-i-sys.md) | Returns the result of companion device selection. |
-| [DeviceStatus](arkts-userauthentication-devicestatus-i-sys.md) | Defines the device status information. |
-| [StatusMonitor](arkts-userauthentication-statusmonitor-i-sys.md) | Defines the object for listening to or obtaining the template or continuous authentication status. |
-| [TemplateStatus](arkts-userauthentication-templatestatus-i-sys.md) | Provides the template status maintained by the **companionDeviceAuth** module. |
-<!--DelEnd-->
+| <!--DelRow-->[ContinuousAuthParam](arkts-companiondeviceauth-continuousauthparam-i-sys.md) | 持续认证参数。用于配置订阅持续认证状态时的相关参数，如指定订阅的目标模板。 |
+| <!--DelRow-->[DeviceKey](arkts-companiondeviceauth-devicekey-i-sys.md) | 设备业务标识。用于唯一标识一个设备及其用户，包含设备ID类型、设备ID和设备用户ID等信息。 |
+| <!--DelRow-->[DeviceSelectResult](arkts-companiondeviceauth-deviceselectresult-i-sys.md) | 伴随设备选择回调的返回结果。用于在设备选择回调中返回用户选择的设备信息和扩展上下文。 |
+| <!--DelRow-->[DeviceStatus](arkts-companiondeviceauth-devicestatus-i-sys.md) | 设备状态信息。用于描述伴随设备的当前状态，包括设备业务标识、用户名、型号信息、设备名、在线状态以及支持的业务ID列表等。 |
+| <!--DelRow-->[StatusMonitor](arkts-companiondeviceauth-statusmonitor-i-sys.md) | 状态监听器对象。用于监听或获取模板状态、持续认证状态、可添加设备状态等信息。通过[getStatusMonitor]{@link companionDeviceAuth.getStatusMonitor}获取此对象。 |
+| <!--DelRow-->[TemplateStatus](arkts-companiondeviceauth-templatestatus-i-sys.md) | 用于描述已注册的伴随设备认证模板的完整状态信息，包括模板ID、数据确认状态、有效性、用户ID、添加时间、支持的业务范围以及关联的设备状态等。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [BusinessId](arkts-userauthentication-businessid-e-sys.md) | A service ID uniquely identifies a service scenario supported by the companion device. The supported service scenarios vary with the authentication security of companion devices. For example, a smart watch as a companion device can unlock the screen, unlock the application, and execute voice commands on the lock screen, while a headset as a companion device can only execute voice commands on the lock screen. The companion device relationships of different service IDs are independent of each other and do not interfere with each other. They can be added, deleted, and authenticated independently. Currently, the services of the companion device module include the default services of OpenHarmony, screen unlocking, application unlocking, and identity authentication before voice commands are executed on the lock screen. Adding services has requirements on the scenarios supported by the server device. For example, the multi-screen collaboration service requires that the server device support the agency authentication scenario. |
-| [DeviceIdType](arkts-userauthentication-deviceidtype-e-sys.md) | Enumerates device ID types. |
-| [SelectPurpose](arkts-userauthentication-selectpurpose-e-sys.md) | Selects the purpose of the companion device. |
-<!--DelEnd-->
+| <!--DelRow-->[AvailableDeviceStatusCallback](arkts-companiondeviceauth-availabledevicestatuscallback-t-sys.md) | 回调函数，用于接收可添加的设备列表变化通知。当可添加的伴随设备列表发生变化（如新设备上线、设备离线等）时，系统会通过此回调通知应用。 |
+| <!--DelRow-->[ContinuousAuthStatusCallback](arkts-companiondeviceauth-continuousauthstatuscallback-t-sys.md) | 回调函数，用于接收持续认证状态变化通知。当伴随设备的认证状态发生变化时，系统会通过此回调通知应用当前的认证结果和认证可信等级。 |
+| <!--DelRow-->[DeviceSelectCallback](arkts-companiondeviceauth-deviceselectcallback-t-sys.md) | 伴随设备选择回调函数类型。当系统需要用户选择伴随设备时（如添加模板或执行认证），会调用此回调，应用需返回用户选择的设备信息。 |
+| <!--DelRow-->[TemplateStatusCallback](arkts-companiondeviceauth-templatestatuscallback-t-sys.md) | 回调函数，用于接收模板状态变化通知。当模板状态发生变化（如添加、删除、有效性变更等）时，系统会通过此回调通知应用。 |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [AvailableDeviceStatusCallback](arkts-userauthentication-availabledevicestatuscallback-t-sys.md) | Defines the callback used to receive the changes of the list of devices that can be added. |
-| [ContinuousAuthStatusCallback](arkts-userauthentication-continuousauthstatuscallback-t-sys.md) | Defines the callback used to receive the continuous authentication status. |
-| [DeviceSelectCallback](arkts-userauthentication-deviceselectcallback-t-sys.md) | Defines the callback of companion device selection. |
-| [TemplateStatusCallback](arkts-userauthentication-templatestatuscallback-t-sys.md) | Defines the callback used to receive the template status. |
-<!--DelEnd-->
+| <!--DelRow-->[BusinessId](arkts-companiondeviceauth-businessid-e-sys.md) | 业务ID枚举。业务ID是伴随设备支持的某个业务场景的唯一标识。不同的伴随设备由于认证安全性差异，支持的业务场景范围也不同，例如免解锁执行语音指令。 不同业务ID的伴随设备关系是独立的，互不干扰，可以独立添加、删除、认证。 当前伴随设备模块的业务有：OH默认业务、锁屏解锁、解锁应用锁以及语音指令在锁屏执行前的身份鉴权等。 业务的添加对于服务端设备支持的场景有要求，如多屏协同业务，要求服务端设备支持委托认证场景。 |
+| <!--DelRow-->[DeviceIdType](arkts-companiondeviceauth-deviceidtype-e-sys.md) | 设备ID类型枚举。用于定义设备业务标识的类型，支持系统预设类型和厂商自定义扩展类型。 |
+| <!--DelRow-->[SelectPurpose](arkts-companiondeviceauth-selectpurpose-e-sys.md) | 选择伴随设备的目的。 |
 

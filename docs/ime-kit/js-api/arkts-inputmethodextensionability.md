@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { InputMethodExtensionAbility } from '@ohos.InputMethodExtensionAbility';
+import { InputMethodExtensionAbility } from '@kit.IMEKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { InputMethodExtensionAbility } from '@ohos.InputMethodExtensionAbility';
 
 | Name | Description |
 | --- | --- |
-| [InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md) | The **InputMethodExtensionAbility** module provides APIs for developing input methods and managing the lifecycle of input method extensions. &gt; **NOTE** &gt; &gt; - The APIs of this module can be used only in the stage model. |
+| [InputMethodExtensionAbility](arkts-inputmethodextensionability-c.md) | The **InputMethodExtensionAbility** module provides APIs for developing input methods and managing the lifecycle of input method extensions. > **NOTE** > > - The APIs of this module can be used only in the stage model. |
 

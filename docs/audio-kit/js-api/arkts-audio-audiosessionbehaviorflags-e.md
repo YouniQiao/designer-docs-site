@@ -1,5 +1,9 @@
 # AudioSessionBehaviorFlags
 
+```TypeScript
+enum AudioSessionBehaviorFlags
+```
+
 Enumerates audio session behavior flags.
 
 **Since:** 24
@@ -16,7 +20,7 @@ Default behavior, used to clear behavior settings.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -30,7 +34,7 @@ When the system needs to stop or pause the audio stream, it performs a forced mu
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -44,7 +48,7 @@ When the system needs to stop the audio stream, it performs a pause instead. In 
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

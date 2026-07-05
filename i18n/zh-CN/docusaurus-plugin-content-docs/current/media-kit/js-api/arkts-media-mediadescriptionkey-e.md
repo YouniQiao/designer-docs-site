@@ -1,6 +1,10 @@
 # MediaDescriptionKey
 
-媒体信息描述枚举。
+```TypeScript
+enum MediaDescriptionKey
+```
+
+Enumerates the media description keys.
 
 **起始版本：** 8
 
@@ -12,11 +16,11 @@
 MD_KEY_TRACK_INDEX = 'track_index'
 ```
 
-表示轨道序号，其对应键值类型为number。
+Track index. The corresponding key value type is number.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -26,11 +30,11 @@ MD_KEY_TRACK_INDEX = 'track_index'
 MD_KEY_TRACK_TYPE = 'track_type'
 ```
 
-表示轨道类型，其对应键值类型为number，参考[MediaType](media.MediaType)。
+Track type. The corresponding key value type is number. For details, see [MediaType]media.MediaType.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -40,11 +44,11 @@ MD_KEY_TRACK_TYPE = 'track_type'
 MD_KEY_CODEC_MIME = 'codec_mime'
 ```
 
-表示codec_mime类型，其对应键值类型为string。
+Codec MIME type. The corresponding key value type is string.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -54,11 +58,11 @@ MD_KEY_CODEC_MIME = 'codec_mime'
 MD_KEY_DURATION = 'duration'
 ```
 
-表示媒体时长，其对应键值类型为number，单位为毫秒（ms）。
+Media duration. The corresponding key value type is number, measured in ms.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -68,11 +72,11 @@ MD_KEY_DURATION = 'duration'
 MD_KEY_BITRATE = 'bitrate'
 ```
 
-表示比特率，其对应键值类型为number，单位为比特率（bps），值为undefined或0表示异常。
+Bit rate. The corresponding key value type is number, measured in bit/s. If the value is **undefined** or **0**, the bit rate is abnormal.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -82,11 +86,11 @@ MD_KEY_BITRATE = 'bitrate'
 MD_KEY_WIDTH = 'width'
 ```
 
-表示视频宽度，其对应键值类型为number，单位为像素（px）。
+Video width. The corresponding key value type is number, measured in px.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -96,11 +100,11 @@ MD_KEY_WIDTH = 'width'
 MD_KEY_HEIGHT = 'height'
 ```
 
-表示视频高度，其对应键值类型为number，单位为像素（px）。
+Video height. The corresponding key value type is number, measured in px.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -110,11 +114,11 @@ MD_KEY_HEIGHT = 'height'
 MD_KEY_FRAME_RATE = 'frame_rate'
 ```
 
-表示视频帧率，其对应键值类型为number，单位为每100秒的帧数。
+Video frame rate. The corresponding key value type is number, measured in frames per 100 seconds.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -124,11 +128,11 @@ MD_KEY_FRAME_RATE = 'frame_rate'
 MD_KEY_AUD_CHANNEL_COUNT = 'channel_count'
 ```
 
-表示声道数，其对应键值类型为number。
+Audio channel count. The corresponding key value type is number.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -138,11 +142,11 @@ MD_KEY_AUD_CHANNEL_COUNT = 'channel_count'
 MD_KEY_AUD_SAMPLE_RATE = 'sample_rate'
 ```
 
-表示采样率，其对应键值类型为number，单位为赫兹（Hz）。
+Sample rate. The corresponding key value type is number, measured in Hz.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -152,11 +156,11 @@ MD_KEY_AUD_SAMPLE_RATE = 'sample_rate'
 MD_KEY_AUD_SAMPLE_DEPTH = 'sample_depth'
 ```
 
-表示位深，其对应键值类型为number，单位为位（bit）。
+Bit depth. The corresponding key value type is number, measured in bits.
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -166,11 +170,11 @@ MD_KEY_AUD_SAMPLE_DEPTH = 'sample_depth'
 MD_KEY_LANGUAGE = 'language'
 ```
 
-表示字幕语言，其对应键值类型为string。
+Subtitle language. The corresponding key value type is string.
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -180,11 +184,11 @@ MD_KEY_LANGUAGE = 'language'
 MD_KEY_TRACK_NAME = 'track_name'
 ```
 
-表示track名称，其对应键值类型为string。
+Track name. The corresponding key value type is string.
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -194,11 +198,11 @@ MD_KEY_TRACK_NAME = 'track_name'
 MD_KEY_HDR_TYPE = 'hdr_type'
 ```
 
-表示视频轨类型，其对应键值类型为string。
+Codec track type. The corresponding key value type is string.
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -208,11 +212,11 @@ MD_KEY_HDR_TYPE = 'hdr_type'
 MD_KEY_ORIGINAL_WIDTH = 'original_width'
 ```
 
-表示视频原始宽度，其对应键值类型为number，单位为像素（px）。
+Original video width. The corresponding key value type is number, measured in px.
 
 **起始版本：** 21
 
-**元服务API：** 从API版本21开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -222,11 +226,11 @@ MD_KEY_ORIGINAL_WIDTH = 'original_width'
 MD_KEY_ORIGINAL_HEIGHT = 'original_height'
 ```
 
-表示视频原始高度，其对应键值类型为number，单位为像素（px）。
+Original video height. The corresponding key value type is number, measured in px.
 
 **起始版本：** 21
 
-**元服务API：** 从API版本21开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -236,11 +240,11 @@ MD_KEY_ORIGINAL_HEIGHT = 'original_height'
 MD_KEY_MIME_TYPE = 'mime_type'
 ```
 
-表示轨道的mime_type类型，其对应键值类型为string。对于音视频轨道，该值与MD_KEY_CODEC_MIME相同。
+MIME type of the track. The corresponding key value type is string. For audio and video tracks, the value is the same as that of **MD_KEY_CODEC_MIME**.
 
 **起始版本：** 23
 
-**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -250,11 +254,11 @@ MD_KEY_MIME_TYPE = 'mime_type'
 MD_KEY_REFERENCE_TRACK_IDS = 'ref_track_ids'
 ```
 
-表示此轨道与其他轨道的引用关系，其对应键值类型为string，以逗号分隔。
+Reference relationships between this track and other tracks. The corresponding key value type is string, with values separated by commas (,).
 
 **起始版本：** 23
 
-**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -264,11 +268,11 @@ MD_KEY_REFERENCE_TRACK_IDS = 'ref_track_ids'
 MD_KEY_TRACK_REFERENCE_TYPE = 'track_ref_type'
 ```
 
-表示此轨道作为辅助轨的辅助类型，其对应键值类型为string。
+Auxiliary type of this track when it acts as a reference track. The corresponding key value type is string.
 
 **起始版本：** 23
 
-**元服务API：** 从API版本23开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

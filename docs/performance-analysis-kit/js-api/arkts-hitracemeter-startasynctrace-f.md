@@ -1,0 +1,41 @@
+# startAsyncTrace
+
+## startAsyncTrace
+
+```TypeScript
+function startAsyncTrace(level: HiTraceOutputLevel, name: string, taskId: int, customCategory: string,
+      customArgs?: string): void
+```
+
+Starts an asynchronous trace with the trace output level specified. If multiple trace tasks with the same name need to be performed at the same time or a trace needs to be performed multiple times concurrently, different task IDs must be specified in **startAsyncTrace**. If the trace tasks with the same name are not performed at the same time, the same taskId can be used. For details, see [finishAsyncTrace()]hiTraceMeter.finishAsyncTrace.
+
+**Since:** 19
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.HiviewDFX.HiTrace
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| level | HiTraceOutputLevel | Yes | Trace output level. |
+| name | string | Yes | Name of the trace to start. The maximum length of a trace record is 512 bytes. The  excess part will be truncated. It is recommended that the total length of name, customCategory, and  customArgs be less than or equal to 420 bytes. |
+| taskId | int | Yes | Task ID. It is used to distinguish multiple tasks with the same name. Ensure that the  task IDs of concurrently executed tasks with the same name are unique. |
+| customCategory | string | Yes | Custom category name, which is used to collect asynchronous trace data of the  same type. The maximum length of a trace record is 512 bytes. The excess part will be truncated. It is  recommended that the total length of name, customCategory, and customArgs be less than or equal to  420 bytes. |
+| customArgs | string | No |  |
+
+**Example**
+
+```TypeScript
+// If the customCategory parameter is not required, pass in an empty string.
+// If the customArgs parameter is not required, do not pass in this parameter or pass in an empty string.
+const COMMERCIAL = hiTraceMeter.HiTraceOutputLevel.COMMERCIAL;
+hiTraceMeter.startAsyncTrace(COMMERCIAL, "myTestFunc", 1, "", "");
+hiTraceMeter.startAsyncTrace(COMMERCIAL, "myTestFunc", 2, "");
+// Use commas (,) to separate multiple key-value pairs.
+hiTraceMeter.startAsyncTrace(COMMERCIAL, "myTestFunc", 3, "categoryTest", "key1=value");
+hiTraceMeter.startAsyncTrace(COMMERCIAL, "myTestFunc", 4, "categoryTest", "key1=value1,key2=value2");
+
+```
+

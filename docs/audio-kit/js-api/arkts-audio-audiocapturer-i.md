@@ -1,6 +1,6 @@
 # AudioCapturer
 
-This interface provides APIs for audio capture. Before calling any API in AudioCapturer, you must use [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createaudiocapturer-1) to create an AudioCapturer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8.
+This interface provides APIs for audio capture. Before calling any API in AudioCapturer, you must use [createAudioCapturer](arkts-audio-createaudiocapturer-f.md#createAudioCapturer-1) to create an AudioCapturer instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 8.
 
 **Since:** 8
 
@@ -9,13 +9,13 @@ This interface provides APIs for audio capture. Before calling any API in AudioC
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## getAudioStreamId
 
 ```TypeScript
-getAudioStreamId(callback: AsyncCallback<number>): void
+getAudioStreamId(callback: AsyncCallback<long>): void
 ```
 
 Obtains the stream ID of this audio capturer. This API uses an asynchronous callback to return the result.
@@ -28,12 +28,12 @@ Obtains the stream ID of this audio capturer. This API uses an asynchronous call
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the stream ID obtained; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;long> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is the stream ID obtained; otherwise, err is an error object. |
 
 ## getAudioStreamId
 
 ```TypeScript
-getAudioStreamId(): Promise<number>
+getAudioStreamId(): Promise<long>
 ```
 
 Obtains the stream ID of this audio capturer. This API uses a promise to return the result.
@@ -46,12 +46,12 @@ Obtains the stream ID of this audio capturer. This API uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the stream ID. |
+| Promise&lt;long> | Promise used to return the stream ID. |
 
 ## getAudioStreamIdSync
 
 ```TypeScript
-getAudioStreamIdSync(): number
+getAudioStreamIdSync(): long
 ```
 
 Obtains the stream ID of this audio capturer. This API returns the result synchronously.
@@ -64,12 +64,12 @@ Obtains the stream ID of this audio capturer. This API returns the result synchr
 
 | Type | Description |
 | --- | --- |
-| number | Stream ID. |
+| long | Stream ID. |
 
 ## getAudioTime
 
 ```TypeScript
-getAudioTime(callback: AsyncCallback<number>): void
+getAudioTime(callback: AsyncCallback<long>): void
 ```
 
 Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API uses an asynchronous callback to return the result.
@@ -82,12 +82,12 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the number of nanoseconds obtained; otherwise, **err** is an errorobject. |
+| callback | AsyncCallback&lt;long> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is the number of nanoseconds obtained; otherwise, err is an error  object. |
 
 ## getAudioTime
 
 ```TypeScript
-getAudioTime(): Promise<number>
+getAudioTime(): Promise<long>
 ```
 
 Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API uses a promise to return the result.
@@ -100,25 +100,7 @@ Obtains the timestamp of the current recording position, measured in nanoseconds
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return a timestamp representing the number of nanoseconds elapsedsince the Unix epoch (January 1, 1970).<br>The timestamp unit is nanoseconds. |
-
-## getAudioTimeSync
-
-```TypeScript
-getAudioTimeSync(): number
-```
-
-Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API returns the result synchronously.
-
-**Since:** 10
-
-**System capability:** SystemCapability.Multimedia.Audio.Capturer
-
-**Return value:**
-
-| Type | Description |
-| --- | --- |
-| number | Timestamp. |
+| Promise&lt;long> | Promise used to return a timestamp representing the number of nanoseconds elapsed  since the Unix epoch (January 1, 1970).  The timestamp unit is nanoseconds. |
 
 ## getAudioTimestampInfo
 
@@ -136,13 +118,13 @@ Obtains the timestamp and position information of an input audio stream. This AP
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioTimestampInfo&gt; | Promise used to return the timestamp and position information. |
+| Promise&lt;AudioTimestampInfo> | Promise used to return the timestamp and position information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800103](../errorcode-audio.md#6800103-unsupported-state) | Operation not permit at current state. |
+| 6800103 | Operation not permit at current state. |
 
 ## getAudioTimestampInfoSync
 
@@ -166,12 +148,30 @@ Obtains the timestamp and position information of an input audio stream. This AP
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800103](../errorcode-audio.md#6800103-unsupported-state) | Operation not permit at current state. |
+| 6800103 | Operation not permit at current state. |
+
+## getAudioTimeSync
+
+```TypeScript
+getAudioTimeSync(): long
+```
+
+Obtains the timestamp of the current recording position, measured in nanoseconds from the Unix epoch (January 1, 1970). This API returns the result synchronously.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| long | Timestamp. |
 
 ## getBufferSize
 
 ```TypeScript
-getBufferSize(callback: AsyncCallback<number>): void
+getBufferSize(callback: AsyncCallback<long>): void
 ```
 
 Obtains a reasonable minimum buffer size in bytes for capturing. This API uses an asynchronous callback to return the result.
@@ -184,12 +184,12 @@ Obtains a reasonable minimum buffer size in bytes for capturing. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;number&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is the minimum buffer size obtained; otherwise, **err** is an errorobject.<br>The unit is bytes. |
+| callback | AsyncCallback&lt;long> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is the minimum buffer size obtained; otherwise, err is an error  object. The unit is bytes. |
 
 ## getBufferSize
 
 ```TypeScript
-getBufferSize(): Promise<number>
+getBufferSize(): Promise<long>
 ```
 
 Obtains a reasonable minimum buffer size in bytes for capturing. This API uses a promise to return the result.
@@ -202,12 +202,12 @@ Obtains a reasonable minimum buffer size in bytes for capturing. This API uses a
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the buffer size.<br>The unit is bytes. |
+| Promise&lt;long> | Promise used to return the buffer size.  The unit is bytes. |
 
 ## getBufferSizeSync
 
 ```TypeScript
-getBufferSizeSync(): number
+getBufferSizeSync(): long
 ```
 
 Obtains a reasonable minimum buffer size in bytes for capturing. This API returns the result synchronously.
@@ -220,7 +220,7 @@ Obtains a reasonable minimum buffer size in bytes for capturing. This API return
 
 | Type | Description |
 | --- | --- |
-| number | Buffer size, in bytes. |
+| long | Buffer size, in bytes. |
 
 ## getCapturerInfo
 
@@ -238,7 +238,7 @@ Obtains the audio capturer information. This API uses an asynchronous callback t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioCapturerInfo&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the capturer information obtained; otherwise, **err** isan error object. |
+| callback | AsyncCallback&lt;AudioCapturerInfo> | Yes | Callback used to return the result. If the operation is  successful, err is undefined and data is the capturer information obtained; otherwise, err is  an error object. |
 
 ## getCapturerInfo
 
@@ -256,7 +256,7 @@ Obtains the audio capturer information. This API uses a promise to return the re
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioCapturerInfo&gt; | Promise used to return the audio capturer information. |
+| Promise&lt;AudioCapturerInfo> | Promise used to return the audio capturer information. |
 
 ## getCapturerInfoSync
 
@@ -312,10 +312,30 @@ Obtains the information of the current input devices. This API returns the resul
 | --- | --- |
 | AudioDeviceDescriptors | An array of the audio device descriptors. |
 
+## getNoiseReductionMode
+
+```TypeScript
+getNoiseReductionMode(): NoiseReductionMode
+```
+
+Gets the noise reduction mode for current audio capturer. The mode will only consider the default and setted status, audio input device and stream concurrency will not be considered.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| NoiseReductionMode | The noise reduction mode for current audio capturer,  the default value is {@link NoiseReductionMode#FIDELITY}. |
+
 ## getOverflowCount
 
 ```TypeScript
-getOverflowCount(): Promise<number>
+getOverflowCount(): Promise<long>
 ```
 
 Obtains the number of overflow audio frames in the audio stream that is being captured. This API uses a promise to return the result.
@@ -328,12 +348,12 @@ Obtains the number of overflow audio frames in the audio stream that is being ca
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise used to return the number of overflow audio frames. |
+| Promise&lt;long> | Promise used to return the number of overflow audio frames. |
 
 ## getOverflowCountSync
 
 ```TypeScript
-getOverflowCountSync(): number
+getOverflowCountSync(): long
 ```
 
 Obtains the number of overflow audio frames in the audio stream that is being captured. This API returns the result synchronously.
@@ -346,7 +366,7 @@ Obtains the number of overflow audio frames in the audio stream that is being ca
 
 | Type | Description |
 | --- | --- |
-| number | Number of overflow audio frames. |
+| long | Number of overflow audio frames. |
 
 ## getStreamInfo
 
@@ -364,7 +384,7 @@ Obtains the stream information of this audio capturer. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioStreamInfo&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the stream information obtained; otherwise, **err** isan error object. |
+| callback | AsyncCallback&lt;AudioStreamInfo> | Yes | Callback used to return the result. If the operation is  successful, err is undefined and data is the stream information obtained; otherwise, err is  an error object. |
 
 ## getStreamInfo
 
@@ -382,7 +402,7 @@ Obtains the stream information of this audio capturer. This API uses a promise t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioStreamInfo&gt; | Promise used to return the stream information. |
+| Promise&lt;AudioStreamInfo> | Promise used to return the stream information. |
 
 ## getStreamInfoSync
 
@@ -402,10 +422,36 @@ Obtains the stream information of this audio capturer. This API returns the resu
 | --- | --- |
 | AudioStreamInfo | Stream information. |
 
+## getSupportedNoiseReductionModes
+
+```TypeScript
+getSupportedNoiseReductionModes(): Array<NoiseReductionMode>
+```
+
+Gets all the supported noise reduction modes for current device platform. Currently the noise reduction effect is only supported when using {@link SourceType#SOURCE_TYPE_VOICE_MESSAGE}, other supported usage may be extened later. The supported modes will only consider the audio format and device platform, audio input device and stream concurrency will not be considered.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Array&lt;NoiseReductionMode> | The supported noise reduction mode array, at least  {@link NoiseReductionMode#FIDELITY} is supported. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800301 | Audio server process died. |
+
 ## off('markReach')
 
 ```TypeScript
-off(type: 'markReach', callback?: Callback<number>): void
+off(type: 'markReach', callback?: Callback<long>): void
 ```
 
 Unsubscribes from the mark reached event. This API uses an asynchronous callback to return the result.
@@ -418,13 +464,13 @@ Unsubscribes from the mark reached event. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'markReach' | Yes | Event type. The event **'markReach'** is triggered when the number of framescaptured reaches the value of the **frame** parameter. |
-| callback | Callback&lt;number&gt; | No | Callback used to return the value of the **frame** parameter.<br>**Since:** 18 |
+| type | 'markReach' | Yes | Event type. The event 'markReach' is triggered when the number of frames  captured reaches the value of the frame parameter. |
+| callback | Callback&lt;long> | No | Callback used to return the value of the frame parameter. [since 18] |
 
 ## off('periodReach')
 
 ```TypeScript
-off(type: 'periodReach', callback?: Callback<number>): void
+off(type: 'periodReach', callback?: Callback<long>): void
 ```
 
 Unsubscribes from the period reached event. This API uses an asynchronous callback to return the result.
@@ -437,8 +483,8 @@ Unsubscribes from the period reached event. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'periodReach' | Yes | Event type. The event **'periodReach'** is triggered each time the number offrames captured reaches the value of the **frame** parameter. |
-| callback | Callback&lt;number&gt; | No | Callback used to return the value of the **frame** parameter.<br>**Since:** 18 |
+| type | 'periodReach' | Yes | Event type. The event 'periodReach' is triggered each time the number of  frames captured reaches the value of the frame parameter. |
+| callback | Callback&lt;long> | No | Callback used to return the value of the frame parameter. [since 18] |
 
 ## off('stateChange')
 
@@ -456,14 +502,14 @@ Unsubscribes from the audio capturer state change event. This API uses an asynch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'stateChange' | Yes | Event type. The event **'stateChange'** is triggered when the listening for audiocapturer state change event is canceled. |
-| callback | Callback&lt;AudioState&gt; | No | Callback used to return the audio status. |
+| type | 'stateChange' | Yes | Event type. The event 'stateChange' is triggered when the listening for audio  capturer state change event is canceled. |
+| callback | Callback&lt;AudioState> | No | Callback used to return the audio status. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
 
 ## off
 
@@ -481,14 +527,14 @@ Unsubscribes from the audio interruption event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | Yes | Event type. The event **'audioInterrupt'** is triggered when the audio focusis changed. |
+| type | 'audioInterrupt' | Yes | Event type. The event 'audioInterrupt' is triggered when the audio focus  is changed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## off('inputDeviceChange')
 
@@ -506,15 +552,15 @@ Unsubscribes from the audio input device change event. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'inputDeviceChange' | Yes | Event type. The event **'inputDeviceChange'** is triggered when an audioinput device is changed. |
-| callback | Callback&lt;AudioDeviceDescriptors&gt; | No | Callback used to return the information about the audioinput device. |
+| type | 'inputDeviceChange' | Yes | Event type. The event 'inputDeviceChange' is triggered when an audio  input device is changed. |
+| callback | Callback&lt;AudioDeviceDescriptors> | No | Callback used to return the information about the audio  input device. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## off('audioCapturerChange')
 
@@ -532,15 +578,15 @@ Unsubscribes from the audio capturer configuration change event. This API uses a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | Yes | Event type. The event **'audioCapturerChange'** is triggered when theaudio capturer configuration is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfo&gt; | No | Callback used for unsubscription. |
+| type | 'audioCapturerChange' | Yes | Event type. The event 'audioCapturerChange' is triggered when the  audio capturer configuration is changed. |
+| callback | Callback&lt;AudioCapturerChangeInfo> | No | Callback used for unsubscription. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## off('readData')
 
@@ -558,20 +604,194 @@ Unsubscribes from the audio data read event. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'readData' | Yes | Event type. The event **'readData'** is triggered when audio stream data needs to beread. |
-| callback | Callback&lt;ArrayBuffer&gt; | No | Callback used to return the buffer from which the data is read. |
+| type | 'readData' | Yes | Event type. The event 'readData' is triggered when audio stream data needs to be  read. |
+| callback | Callback&lt;ArrayBuffer> | No | Callback used to return the buffer from which the data is read. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+
+## offAudioCapturerChange
+
+```TypeScript
+offAudioCapturerChange(callback?: Callback<AudioCapturerChangeInfo>): void
+```
+
+Unsubscribes audio capturer info change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioCapturerChangeInfo> | No | Callback used in subscribe. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## offAudioInterrupt
+
+```TypeScript
+offAudioInterrupt(): void
+```
+
+UnSubscribes to audio interrupt events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Interrupt
+
+## offInputDeviceChange
+
+```TypeScript
+offInputDeviceChange(callback?: Callback<AudioDeviceDescriptors>): void
+```
+
+Unsubscribes input device change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Device
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioDeviceDescriptors> | No | Callback used in subscribe. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## offMarkReach
+
+```TypeScript
+offMarkReach(callback?: Callback<long>): void
+```
+
+Unsubscribes from the mark reached events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;long> | No | Callback invoked when the event is triggered. |
+
+## offPeriodReach
+
+```TypeScript
+offPeriodReach(callback?: Callback<long>): void
+```
+
+Unsubscribes from period reached events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;long> | No | Callback invoked when the event is triggered. |
+
+## offReadData
+
+```TypeScript
+offReadData(callback?: Callback<ArrayBuffer>): void
+```
+
+Unsubscribes audio data callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;ArrayBuffer> | No | Callback used in subscribe. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## offReadMicInData
+
+```TypeScript
+offReadMicInData(callback?: Callback<AudioCapturerMicInData>): void
+```
+
+Unsubscribes from micIn audio data callback.
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioCapturerMicInData> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Caller is not a system application. |
+| 6800101 | Parameter verification failed. |
+| 6800103 | Operation not permitted at running state. |
+
+## offStateChange
+
+```TypeScript
+offStateChange(callback?: Callback<AudioState>): void
+```
+
+Unsubscribes audio state change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioState> | No | Callback used to listen for the audio state change event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
 
 ## on('markReach')
 
 ```TypeScript
-on(type: 'markReach', frame: number, callback: Callback<number>): void
+on(type: 'markReach', frame: long, callback: Callback<long>): void
 ```
 
 Subscribes to the mark reached event, which is triggered (only once) when the number of frames captured reaches the value of the **frame** parameter. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **100**, the callback is invoked when the number of captured frames reaches the 100th frame.
@@ -584,14 +804,14 @@ Subscribes to the mark reached event, which is triggered (only once) when the nu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'markReach' | Yes | Event type. The event **'markReach'** is triggered when the number of framescaptured reaches the value of the **frame** parameter. |
-| frame | number | Yes | Number of frames to trigger the event. The value must be greater than **0**. |
-| callback | Callback&lt;number&gt; | Yes | Callback used to return the value of the **frame** parameter. |
+| type | 'markReach' | Yes | Event type. The event 'markReach' is triggered when the number of frames  captured reaches the value of the frame parameter. |
+| frame | long | Yes | Number of frames to trigger the event. The value must be greater than 0. |
+| callback | Callback&lt;long> | Yes | Callback used to return the value of the frame parameter. |
 
 ## on('periodReach')
 
 ```TypeScript
-on(type: 'periodReach', frame: number, callback: Callback<number>): void
+on(type: 'periodReach', frame: long, callback: Callback<long>): void
 ```
 
 Subscribes to the period reached event, which is triggered each time the number of frames captured reaches the value of the **frame** parameter. In other words, the information is reported periodically. This API uses an asynchronous callback to return the result. For example, if **frame** is set to **10**, the callback is invoked each time 10 frames are captured, for example , when the number of frames captured reaches the 10th frame, 20th frame, and 30th frame.
@@ -604,9 +824,9 @@ Subscribes to the period reached event, which is triggered each time the number 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'periodReach' | Yes | Event type. The event **'periodReach'** is triggered each time the number offrames captured reaches the value of the **frame** parameter. |
-| frame | number | Yes | Number of frames to trigger the event. The value must be greater than **0**. |
-| callback | Callback&lt;number&gt; | Yes | Callback used to return the value of the **frame** parameter. |
+| type | 'periodReach' | Yes | Event type. The event 'periodReach' is triggered each time the number of  frames captured reaches the value of the frame parameter. |
+| frame | long | Yes | Number of frames to trigger the event. The value must be greater than 0. |
+| callback | Callback&lt;long> | Yes | Callback used to return the value of the frame parameter. |
 
 ## on('stateChange')
 
@@ -624,8 +844,8 @@ Subscribes to the audio capturer state change event, which is triggered when the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'stateChange' | Yes | Event type. The event **'stateChange'** is triggered when the state of the audiocapturer is changed. |
-| callback | Callback&lt;AudioState&gt; | Yes | Callback used to return the audio status. |
+| type | 'stateChange' | Yes | Event type. The event 'stateChange' is triggered when the state of the audio  capturer is changed. |
+| callback | Callback&lt;AudioState> | Yes | Callback used to return the audio status. |
 
 ## on('audioInterrupt')
 
@@ -633,7 +853,7 @@ Subscribes to the audio capturer state change event, which is triggered when the
 on(type: 'audioInterrupt', callback: Callback<InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result. The AudioCapturer instance proactively gains the focus when the **start** event occurs and releases the focus when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus. After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md#interruptevent) is received when the AudioCapturer instance fails to obtain the focus or an audio interruption event occurs (for example, the audio stream is interrupted by others). It is recommended that the application perform further processing based on the **InterruptEvent** information. For details, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
+Subscribes to the audio interruption event, which is triggered when the audio focus is changed. This API uses an asynchronous callback to return the result. The AudioCapturer instance proactively gains the focus when the **start** event occurs and releases the focus when the **pause** or **stop** event occurs. Therefore, you do not need to request to gain or release the focus. After this API is called, an [InterruptEvent](arkts-audio-interruptevent-i.md#InterruptEvent) is received when the AudioCapturer instance fails to obtain the focus or an audio interruption event occurs (for example, the audio stream is interrupted by others). It is recommended that the application perform further processing based on the **InterruptEvent** information. For details, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md).
 
 **Since:** 10
 
@@ -643,15 +863,15 @@ Subscribes to the audio interruption event, which is triggered when the audio fo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | Yes | Event type. The event **'audioInterrupt'** is triggered when the audio focusis changed. |
-| callback | Callback&lt;InterruptEvent&gt; | Yes | Callback used to return the event information. |
+| type | 'audioInterrupt' | Yes | Event type. The event 'audioInterrupt' is triggered when the audio focus  is changed. |
+| callback | Callback&lt;InterruptEvent> | Yes | Callback used to return the event information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## on('inputDeviceChange')
 
@@ -669,15 +889,15 @@ Subscribes to the audio input device change event, which is triggered when an au
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'inputDeviceChange' | Yes | Event type. The event **'inputDeviceChange'** is triggered when an audioinput device is changed. |
-| callback | Callback&lt;AudioDeviceDescriptors&gt; | Yes | Callback used to return the updated information about theaudio input device. |
+| type | 'inputDeviceChange' | Yes | Event type. The event 'inputDeviceChange' is triggered when an audio  input device is changed. |
+| callback | Callback&lt;AudioDeviceDescriptors> | Yes | Callback used to return the updated information about the  audio input device. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## on('audioCapturerChange')
 
@@ -695,15 +915,15 @@ Subscribes to the audio capturer configuration change event, which is triggered 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | Yes | Event type. The event **'audioCapturerChange'** is triggered when theaudio recording stream status or device is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfo&gt; | Yes | Callback used to return the current configuration andstatus information of the audio capturer. |
+| type | 'audioCapturerChange' | Yes | Event type. The event 'audioCapturerChange' is triggered when the  audio recording stream status or device is changed. |
+| callback | Callback&lt;AudioCapturerChangeInfo> | Yes | Callback used to return the current configuration and  status information of the audio capturer. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## on('readData')
 
@@ -721,15 +941,196 @@ Subscribes to the audio data read event, which is triggered when audio stream da
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'readData' | Yes | Event type. The event **'readData'** is triggered when audio stream data needs to beread. |
-| callback | Callback&lt;ArrayBuffer&gt; | Yes | Callback used to return the buffer from which the data is read. |
+| type | 'readData' | Yes | Event type. The event 'readData' is triggered when audio stream data needs to be  read. |
+| callback | Callback&lt;ArrayBuffer> | Yes | Callback used to return the buffer from which the data is read. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+
+## onAudioCapturerChange
+
+```TypeScript
+onAudioCapturerChange(callback: Callback<AudioCapturerChangeInfo>): void
+```
+
+Subscribes audio capturer info change event callback. The event is triggered when input device change for this stream.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioCapturerChangeInfo> | Yes | Callback used to listen device change event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## onAudioInterrupt
+
+```TypeScript
+onAudioInterrupt(callback: Callback<InterruptEvent>): void
+```
+
+Listens for audio interrupt events. This method uses a callback to get interrupt events. The interrupt event is triggered when audio recording is interrupted.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Interrupt
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;InterruptEvent> | Yes | Callback used to listen for interrupt callback. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## onInputDeviceChange
+
+```TypeScript
+onInputDeviceChange(callback: Callback<AudioDeviceDescriptors>): void
+```
+
+Subscribes input device change event callback. The event is triggered when input device change for this stream.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Device
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioDeviceDescriptors> | Yes | Callback used to listen device change event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## onMarkReach
+
+```TypeScript
+onMarkReach(frame: long, callback: Callback<long>): void
+```
+
+Subscribes to mark reached events. When the number of frames captured reaches the value of the frame parameter, the callback is invoked.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| frame | long | Yes | Number of frames to trigger the event. The value must be greater than 0. |
+| callback | Callback&lt;long> | Yes | Callback invoked when the event is triggered. |
+
+## onPeriodReach
+
+```TypeScript
+onPeriodReach(frame: long, callback: Callback<long>): void
+```
+
+Subscribes to period reached events. When the period of frame capturing reaches the value of frame parameter, the callback is invoked.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| frame | long | Yes | Period during which frame capturing is listened. The value must be greater than 0. |
+| callback | Callback&lt;long> | Yes | Callback invoked when the event is triggered. |
+
+## onReadData
+
+```TypeScript
+onReadData(callback: Callback<ArrayBuffer>): void
+```
+
+Subscribes audio data callback. The event is triggered when audio buffer is available for reading more data.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;ArrayBuffer> | Yes | Callback with the buffer to read. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## onReadMicInData
+
+```TypeScript
+onReadMicInData(callback: Callback<AudioCapturerMicInData>): void
+```
+
+Subscribes to micIn audio data callback. This callback has higher priority than 'readData' callback. If this callback and 'readData' callback are both subscribed, only this callback will be triggered. See {@link #onReadData} for more details. The event is triggered when an audio buffer is available for reading more data.
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioCapturerMicInData> | Yes | Callback for the buffers to read. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Caller is not a system application. |
+| 6800103 | Operation not permitted at running state. |
+
+## onStateChange
+
+```TypeScript
+onStateChange(callback: Callback<AudioState>): void
+```
+
+Subscribes audio state change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioState> | Yes | Callback used to listen for the audio state change event. |
 
 ## read
 
@@ -743,7 +1144,7 @@ Reads the buffer from the audio capturer. This method uses an asynchronous callb
 
 **Deprecated since:** 11
 
-**Substitutes:** event:readData
+**Substitute:** ohos.multimedia.audio.AudioCapturer#event:readData
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -752,8 +1153,8 @@ Reads the buffer from the audio capturer. This method uses an asynchronous callb
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | size | number | Yes | Number of bytes to read. |
-| isBlockingRead | boolean | Yes | Whether to block the read operation. **true** to block, **false** otherwise. |
-| callback | AsyncCallback&lt;ArrayBuffer&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the buffer read; otherwise, **err** is an error object. |
+| isBlockingRead | boolean | Yes | Whether to block the read operation. true to block, false otherwise. |
+| callback | AsyncCallback&lt;ArrayBuffer> | Yes | Callback used to return the result. If the operation is  successful, err is undefined and data is the buffer read; otherwise, err is an error object. |
 
 ## read
 
@@ -767,7 +1168,7 @@ Reads the buffer. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** event:readData
+**Substitute:** ohos.multimedia.audio.AudioCapturer#event:readData
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -776,13 +1177,13 @@ Reads the buffer. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | size | number | Yes | Number of bytes to read. |
-| isBlockingRead | boolean | Yes | Whether to block the read operation. **true** to block, **false** otherwise. |
+| isBlockingRead | boolean | Yes | Whether to block the read operation. true to block, false otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer&gt; | Promise used to return the data read from the buffer. |
+| Promise&lt;ArrayBuffer> | Promise used to return the data read from the buffer. |
 
 ## release
 
@@ -800,7 +1201,7 @@ Releases this audio capturer. This API uses an asynchronous callback to return t
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## release
 
@@ -818,7 +1219,7 @@ Releases this audio capturer. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## requestPlaybackCaptureStart
 
@@ -830,7 +1231,7 @@ Asynchronously request to start the playback capture stream. This function is no
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 
@@ -838,19 +1239,19 @@ Asynchronously request to start the playback capture stream. This function is no
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;PlaybackCaptureStartState&gt; | Yes | Callback function used to receive the finalresult of start request. |
+| callback | Callback&lt;PlaybackCaptureStartState> | Yes | Callback function used to receive the final  result of start request. |
 
 ## setIndependentAudioSessionStrategy
 
 ```TypeScript
-setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: number): void
+setIndependentAudioSessionStrategy(strategy: AudioSessionStrategy, behavior: int): void
 ```
 
-Sets the independent audio session strategy and behavior parameters. > **NOTE** > > If this API is called while an audio capturer is running, you must call the > [start](arkts-audio-audiocapturer-i.md#start-1) API again for > the settings to take effect.
+Sets the independent audio session strategy and behavior parameters. > **NOTE** > > If this API is called while an audio capturer is running, you must call the > [start](arkts-audio-audiocapturer-i.md#start) API again for > the settings to take effect.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -859,14 +1260,35 @@ Sets the independent audio session strategy and behavior parameters. > **NOTE** 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | strategy | AudioSessionStrategy | Yes | Audio session strategy. |
-| behavior | number | Yes | Specifies the audio session behavior.<br>This can be a single flag or a bitwise ORcombination of multiple flags.<br>For details about the supported audio session behaviors, see[AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md#audiosessionbehaviorflags). |
+| behavior | int | Yes | Specifies the audio session behavior. This can be a single flag or a bitwise OR  combination of multiple flags. For details about the supported audio session behaviors, see  [AudioSessionBehaviorFlags](arkts-audio-audiosessionbehaviorflags-e.md#AudioSessionBehaviorFlags). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800103](../errorcode-audio.md#6800103-unsupported-state) | Operation not permit at current state. |
+| 6800101 | Parameter verification failed. |
+| 6800103 | Operation not permit at current state. |
+
+## setInputDeviceToAccessory
+
+```TypeScript
+setInputDeviceToAccessory(): void
+```
+
+Sets default input device of this Capturer to DEVICE_TYPE_ACCESSORY. Other capturers' devices will not be affected by this method. This method can only be used before the capture stream starts. Besides, if audio accessory is not connected, this method will report fail. After calling this function, the input device of this capturer will not be affected by other interfaces.
+
+**Since:** 19
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**System API:** This is a system API.
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Caller is not a system application. |
+| 6800103 | Operation not permit at current state. |
 
 ## setMuteHint
 
@@ -878,7 +1300,7 @@ Set mute hint for this capturer, this method is used as a hint for power optimiz
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -892,13 +1314,42 @@ Set mute hint for this capturer, this method is used as a hint for power optimiz
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800103](../errorcode-audio.md#6800103-unsupported-state) | Operation not permitted at current state, stream is not running. |
+| 6800103 | Operation not permitted at current state, stream is not running. |
+
+## setNoiseReductionMode
+
+```TypeScript
+setNoiseReductionMode(noiseReductionMode: NoiseReductionMode): void
+```
+
+Sets noise reduction mode for current audio capturer. The supported mode should be obtained by {@link #getSupportedNoiseReductionModes}. The actual effect may vary from different audio devices, and will be invalid when there are multiple recording streams running simultaneously. The mode can only be changed in created and stopped state.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| noiseReductionMode | NoiseReductionMode | Yes | The noise reduction mode to set. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+| 6800103 | Illegal state, audio capturer is in running or released state. |
+| 6800104 | The setted mode is not supported. |
+| 6800301 | Audio server process died. |
 
 ## setWillMuteWhenInterrupted
 
@@ -906,7 +1357,7 @@ Set mute hint for this capturer, this method is used as a hint for power optimiz
 setWillMuteWhenInterrupted(muteWhenInterrupted: boolean): Promise<void>
 ```
 
-Sets whether to [mute the current audio recording stream when an audio interruption occurs](../../../../media/audio/using-audiocapturer-for-recording.md#setting-the-mute-interruption-mode) . This API uses a promise to return the result.
+Sets whether to [mute the current audio recording stream when an audio interruption occurs](docroot://media/audio/using-audiocapturer-for-recording.md#setting-the-mute-interruption-mode) . This API uses a promise to return the result.
 
 **Since:** 20
 
@@ -916,19 +1367,19 @@ Sets whether to [mute the current audio recording stream when an audio interrupt
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| muteWhenInterrupted | boolean | Yes | Whether to mute the current audio recording stream during an audiointerruption. **true** to mute, **false** otherwise. |
+| muteWhenInterrupted | boolean | Yes | Whether to mute the current audio recording stream during an audio  interruption. true to mute, false otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800103](../errorcode-audio.md#6800103-unsupported-state) | Operation not permitted at current state. |
+| 6800103 | Operation not permitted at current state. |
 
 ## start
 
@@ -946,7 +1397,7 @@ Starts this audio capturer to start capturing audio data. This API uses an async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. If the operation fails, an error object withthe following error code is returned:<br>Error code 6800301: indicates abnormal status, focus preemptionfailure, and abnormal system processing. For details, see system logs. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. If the operation fails, an error object with  the following error code is returned: Error code 6800301: indicates abnormal status, focus preemption  failure, and abnormal system processing. For details, see system logs. |
 
 ## start
 
@@ -964,7 +1415,7 @@ Starts this audio capturer to start capturing audio data. This API uses a promis
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise object, which indicates that the capturer is started successfully. If theoperation fails, an error object with the following error code is returned:<br>Error code 6800301: indicates abnormal status, focus preemption failure, and abnormal system processing. Fordetails, see system logs. |
+| Promise&lt;void> | Promise object, which indicates that the capturer is started successfully. If the  operation fails, an error object with the following error code is returned:  Error code 6800301: indicates abnormal status, focus preemption failure, and abnormal system processing. For  details, see system logs. |
 
 ## stop
 
@@ -982,7 +1433,7 @@ Stops this audio capturer, ceasing the input audio stream. This API uses an asyn
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined**; otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation is successful,  err is undefined; otherwise, err is an error object. |
 
 ## stop
 
@@ -1000,7 +1451,7 @@ Stops this audio capturer, ceasing the input audio stream. This API uses a promi
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## state
 

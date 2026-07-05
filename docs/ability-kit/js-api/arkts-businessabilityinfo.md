@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BusinessAbilityInfo](arkts-ability-businessabilityinfo-i-sys.md) | Contains basic business ability information. |
-<!--DelEnd-->
+| <!--DelRow-->[BusinessAbilityInfo](arkts-businessabilityinfo-i.md) | Contains basic business ability information. |
 

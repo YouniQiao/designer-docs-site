@@ -1,0 +1,169 @@
+# isApplicationEnabled
+
+## isApplicationEnabled
+
+```TypeScript
+function isApplicationEnabled(bundleName: string, appIndex: int): Promise<boolean>
+```
+
+获取指定应用或分身应用的禁用或使能状态。使用Promise异步回调。
+
+**Since:** 12
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | 表示应用程序的bundleName。 |
+| appIndex | int | Yes | 表示分身应用的索引。 appIndex为0时，表示获取主应用的禁用或使能状态。appIndex大于0时，表示获取指定分身应用的禁用或使能状态。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;boolean> | Promise对象，返回true表示当前应用为使能状态，返回false表示当前应用为禁用状态。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Permission denied, non-system app called system api. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.  Incorrect parameter types. |
+| 17700001 | The specified bundleName is not found. |
+| 17700061 | AppIndex not in valid range. |
+
+**Example**
+
+```TypeScript
+import { bundleManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+let bundleName = 'com.example.myapplication';
+
+try {
+  bundleManager.isApplicationEnabled(bundleName, 1).then((data) => {
+    hilog.info(0x0000, 'testTag', 'isApplicationEnabled successfully. Data: %{public}s', JSON.stringify(data));
+  }).catch((err: BusinessError) => {
+    hilog.error(0x0000, 'testTag', 'isApplicationEnabled failed. Cause: %{public}s', err.message);
+  });
+} catch (err) {
+  let message = (err as BusinessError).message;
+  hilog.error(0x0000, 'testTag', 'isApplicationEnabled failed. Cause: %{public}s', message);
+}
+
+```
+
+## isApplicationEnabled
+
+```TypeScript
+function isApplicationEnabled(bundleName: string, callback: AsyncCallback<boolean>): void
+```
+
+获取指定应用的禁用或使能状态。使用callback异步回调。
+
+**Since:** 9
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | 表示应用程序的bundleName。 |
+| callback | AsyncCallback&lt;boolean> | Yes | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-asynccallback-i.md#AsyncCallback)，返回true表示当前应用为使能状态，返回  false表示应用为禁用状态。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Permission denied, non-system app called system api. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.  Incorrect parameter types. |
+| 17700001 | The specified bundleName is not found. |
+
+**Example**
+
+```TypeScript
+import { bundleManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+let bundleName = 'com.example.myapplication';
+
+try {
+  bundleManager.isApplicationEnabled(bundleName, (err, data) => {
+    if (err) {
+      hilog.error(0x0000, 'testTag', 'isApplicationEnabled failed: %{public}s', err.message);
+    } else {
+      hilog.info(0x0000, 'testTag', 'isApplicationEnabled successfully: %{public}s', JSON.stringify(data));
+    }
+  });
+} catch (err) {
+  let message = (err as BusinessError).message;
+  hilog.error(0x0000, 'testTag', 'isApplicationEnabled failed: %{public}s', message);
+}
+
+```
+
+## isApplicationEnabled
+
+```TypeScript
+function isApplicationEnabled(bundleName: string): Promise<boolean>
+```
+
+获取指定应用的禁用或使能状态。使用Promise异步回调。
+
+**Since:** 9
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleName | string | Yes | 表示应用程序的bundleName。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;boolean> | Promise对象，返回true表示当前应用为使能状态，返回false表示当前应用为禁用状态。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Permission denied, non-system app called system api. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.  Incorrect parameter types. |
+| 17700001 | The specified bundleName is not found. |
+
+**Example**
+
+```TypeScript
+import { bundleManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+let bundleName = 'com.example.myapplication';
+
+try {
+  bundleManager.isApplicationEnabled(bundleName).then((data) => {
+    hilog.info(0x0000, 'testTag', 'isApplicationEnabled successfully. Data: %{public}s', JSON.stringify(data));
+  }).catch((err: BusinessError) => {
+    hilog.error(0x0000, 'testTag', 'isApplicationEnabled failed. Cause: %{public}s', err.message);
+  });
+} catch (err) {
+  let message = (err as BusinessError).message;
+  hilog.error(0x0000, 'testTag', 'isApplicationEnabled failed. Cause: %{public}s', message);
+}
+
+```
+

@@ -9,86 +9,8 @@ The metadata of the current media.Used to set the properties of the current medi
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
-
-## album
-
-```TypeScript
-album?: string
-```
-
-The album of this media
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## artist
-
-```TypeScript
-artist?: string
-```
-
-The artist of this media
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## assetId
-
-```TypeScript
-assetId: string
-```
-
-Unique ID used to represent this media.
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## author
-
-```TypeScript
-author?: string
-```
-
-The author of this media
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## avQueueId
-
-```TypeScript
-avQueueId?: string
-```
-
-The id of play list which current media belongs to, it should be an unique identifier in the application.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
 
 ## avQueueImage
 
@@ -118,61 +40,19 @@ The name of play list which current media belongs to
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## bundleIcon
+## artist
 
 ```TypeScript
-readonly bundleIcon?: image.PixelMap
+artist?: string
 ```
 
-The image of the bundle icon as a {@link PixelMap}, no need to be set by application.
-
-**Type:** image.PixelMap
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## composer
-
-```TypeScript
-composer?: string
-```
-
-The composer of this media
+The artist of this media
 
 **Type:** string
 
 **Since:** 10
 
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## description
-
-```TypeScript
-description?: string
-```
-
-The description of the media, used for display
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## displayTags
-
-```TypeScript
-displayTags?: number
-```
-
-The display tags supported by application to be displayed on media center
-
-**Type:** number
-
-**Since:** 11
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -190,19 +70,17 @@ The drm schemes supported by this session which are represented by uuid.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## duration
+## publishDate
 
 ```TypeScript
-duration?: number
+publishDate?: Date
 ```
 
-The duration of this media, used to automatically calculate playback position, described by milliseconds.
+The publishDate of the media
 
-**Type:** number
+**Type:** Date
 
 **Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -218,115 +96,83 @@ The supported skipIntervals when doing fast forward operation, the default is {@
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## filter
+## description
 
 ```TypeScript
-filter?: number
+description?: string
 ```
 
-The protocols supported by this session, if not set, the default is {@link TYPE_CAST_PLUS_STREAM}. See {@link ProtocolType}
+The description of the media, used for display
 
-**Type:** number
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## bundleIcon
+
+```TypeScript
+readonly bundleIcon?: image.PixelMap
+```
+
+The image of the bundle icon as a {@link PixelMap}, no need to be set by application.
+
+**Type:** image.PixelMap
+
+**Since:** 18
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## title
+
+```TypeScript
+title?: string
+```
+
+The title of this media, for display in media center.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## duration
+
+```TypeScript
+duration?: long
+```
+
+The duration of this media, used to automatically calculate playback position, described by milliseconds.
+
+**Type:** long
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## displayTags
+
+```TypeScript
+displayTags?: int
+```
+
+The display tags supported by application to be displayed on media center
+
+**Type:** int
 
 **Since:** 11
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## lyric
-
-```TypeScript
-lyric?: string
-```
-
-The lyric of the media, it should be in standard lyric format
-
-**Type:** string
-
-**Since:** 10
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## mediaImage
-
-```TypeScript
-mediaImage?: image.PixelMap | string
-```
-
-The image of the media as a {@link PixelMap} or an uri formatted String, used to display in media center.
-
-**Type:** image.PixelMap | string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## nextAssetId
-
-```TypeScript
-nextAssetId?: string
-```
-
-The next playable media id. Used to tell the controller if there is a next playable media
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## previousAssetId
-
-```TypeScript
-previousAssetId?: string
-```
-
-The previous playable media id. Used to tell the controller if there is a previous playable media
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## publishDate
-
-```TypeScript
-publishDate?: Date
-```
-
-The publishDate of the media
-
-**Type:** Date
-
-**Since:** 10
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## rewindSkipIntervals
-
-```TypeScript
-rewindSkipIntervals?: SkipIntervals
-```
-
-The supported skipIntervals when doing rewind operation, the default is {@link SECONDS_15}. The system will use this value for rewind skip intervals instead of {@link skipIntervals}. If not set, the rewind skip intervals still use {@link skipIntervals}. See {@link SkipIntervals}
-
-**Type:** SkipIntervals
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -342,7 +188,177 @@ The single lyric text of the media, not including time prefix
 
 **Since:** 17
 
-**Atomic service API:** This API can be used in atomic services since API version 17.
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## assetId
+
+```TypeScript
+assetId: string
+```
+
+Unique ID used to represent this media.
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## composer
+
+```TypeScript
+composer?: string
+```
+
+The composer of this media
+
+**Type:** string
+
+**Since:** 10
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## album
+
+```TypeScript
+album?: string
+```
+
+The album of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## author
+
+```TypeScript
+author?: string
+```
+
+The author of this media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## nextAssetId
+
+```TypeScript
+nextAssetId?: string
+```
+
+The next playable media id. Used to tell the controller if there is a next playable media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## avQueueId
+
+```TypeScript
+avQueueId?: string
+```
+
+The id of play list which current media belongs to, it should be an unique identifier in the application.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## previousAssetId
+
+```TypeScript
+previousAssetId?: string
+```
+
+The previous playable media id. Used to tell the controller if there is a previous playable media
+
+**Type:** string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## rewindSkipIntervals
+
+```TypeScript
+rewindSkipIntervals?: SkipIntervals
+```
+
+The supported skipIntervals when doing rewind operation, the default is {@link SECONDS_15}. The system will use this value for rewind skip intervals instead of {@link skipIntervals}. If not set, the rewind skip intervals still use {@link skipIntervals}. See {@link SkipIntervals}
+
+**Type:** SkipIntervals
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## filter
+
+```TypeScript
+filter?: int
+```
+
+The protocols supported by this session, if not set, the default is {@link TYPE_CAST_PLUS_STREAM}. See {@link ProtocolType}
+
+**Type:** int
+
+**Since:** 11
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## mediaImage
+
+```TypeScript
+mediaImage?: image.PixelMap | string
+```
+
+The image of the media as a {@link PixelMap} or an uri formatted String, used to display in media center.
+
+**Type:** image.PixelMap | string
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## lyric
+
+```TypeScript
+lyric?: string
+```
+
+The lyric of the media, it should be in standard lyric format
+
+**Type:** string
+
+**Since:** 10
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -372,23 +388,7 @@ The subtitle of the media, used for display
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## title
-
-```TypeScript
-title?: string
-```
-
-The title of this media, for display in media center.
-
-**Type:** string
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -404,7 +404,7 @@ The writer of this media
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

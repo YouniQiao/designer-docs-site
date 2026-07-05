@@ -1,10 +1,4 @@
-# onSystemCommonEvent (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# onSystemCommonEvent
 
 ## onSystemCommonEvent
 
@@ -16,7 +10,7 @@ Register system common event callback
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -32,6 +26,6 @@ Register system common event callback
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 202 | Not System App. |
+| 6600101 | Session service exception. |
 

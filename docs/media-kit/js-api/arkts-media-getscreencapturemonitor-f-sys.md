@@ -1,10 +1,4 @@
-# getScreenCaptureMonitor (System API)
-
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
+# getScreenCaptureMonitor
 
 ## getScreenCaptureMonitor
 
@@ -24,14 +18,14 @@ Obtains a **ScreenCaptureMonitor** instance. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ScreenCaptureMonitor&gt; | Promise used to return the result. The instance can be used to queryand monitor the status of the system screen recorder.<br>If the operation is successful,a **ScreenCaptureMonitor** instance is returned; otherwise, **null** is returned. |
+| Promise&lt;ScreenCaptureMonitor> | Promise used to return the result. The instance can be used to query  and monitor the status of the system screen recorder.  If the operation is successful,  a ScreenCaptureMonitor instance is returned; otherwise, null is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Return by promise. |
+| 202 | Not System App. |
+| 5400101 | No memory. Return by promise. |
 
 **Example**
 

@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [AbilityInfo](arkts-ability-abilityinfo-depr-i.md) | The module provides information about an ability. Unless otherwise specified, the information is obtained through [bundle.getAbilityInfo](arkts-ability-getabilityinfo-f.md#getabilityinfo-2). &gt; **NOTE** &gt; &gt; The APIs of this module have been deprecated since API version 9. You are advised to use &gt; [bundleManager-AbilityInfo](arkts-ability-abilityinfo-depr-i.md#abilityinfo) instead. |
+| [AbilityInfo](arkts-abilityinfo-i.md) | Ability信息，未做特殊说明的属性，均通过 [bundle.getAbilityInfo]{@link ./../@ohos.bundle:bundle.getAbilityInfo(bundleName: string, abilityName: string)}获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-AbilityInfo]{@link abilityInfo:AbilityInfo}替代。 |
 

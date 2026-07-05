@@ -1,29 +1,50 @@
-# ArkTS API<!--arkts-adskit-->
+# AdsKit
 
 - [@ohos.advertising](arkts-advertising.md)
-  - [deleteWebAdInterface](arkts-ads-deletewebadinterface-f.md)
-  - [getAdRequestBody](arkts-ads-getadrequestbody-f.md)
-  - [parseAdResponse](arkts-ads-parseadresponse-f.md)
-  - [registerWebAdInterface](arkts-ads-registerwebadinterface-f.md)
-  - [showAd](arkts-ads-showad-f.md)
-  - [AdLoader](arkts-ads-adloader-c.md)
-  - [AdDisplayOptions](arkts-ads-addisplayoptions-i.md)
-  - [AdInteractionListener](arkts-ads-adinteractionlistener-i.md)
-  - [AdLoadListener](arkts-ads-adloadlistener-i.md)
-  - [AdOptions](arkts-ads-adoptions-i.md)
-  - [AdRequestParams](arkts-ads-adrequestparams-i.md)
-  - [MultiSlotsAdLoadListener](arkts-ads-multislotsadloadlistener-i.md)
-  - [Advertisement](arkts-ads-advertisement-t.md)
+  - [getAdRequestBody](arkts-advertising-getadrequestbody-f.md)
+  - [registerWebAdInterface](arkts-advertising-registerwebadinterface-f.md)
+  - [deleteWebAdInterface](arkts-advertising-deletewebadinterface-f.md)
+  - [showAd](arkts-advertising-showad-f.md)
+  - [parseAdResponse](arkts-advertising-parseadresponse-f.md)
+  - [AdLoader](arkts-advertising-adloader-c.md)
+  - [AdDisplayOptions](arkts-advertising-addisplayoptions-i.md)
+  - [AdInteractionListener](arkts-advertising-adinteractionlistener-i.md)
+  - [AdLoadListener](arkts-advertising-adloadlistener-i.md)
+  - [AdOptions](arkts-advertising-adoptions-i.md)
+  - [AdRequestParams](arkts-advertising-adrequestparams-i.md)
+  - [MultiSlotsAdLoadListener](arkts-advertising-multislotsadloadlistener-i.md)
+  - [Advertisement](arkts-advertising-advertisement-t.md)
+- [@ohos.advertising](arkts-advertising.md)
+  - [getAdRequestBody](arkts-advertising-getadrequestbody-f.md)
+  - [registerWebAdInterface](arkts-advertising-registerwebadinterface-f.md)
+  - [deleteWebAdInterface](arkts-advertising-deletewebadinterface-f.md)
+  - [showAd](arkts-advertising-showad-f.md)
+  - [parseAdResponse](arkts-advertising-parseadresponse-f.md)
+  - [AdLoader](arkts-advertising-adloader-c.md)
+  - [AdDisplayOptions](arkts-advertising-addisplayoptions-i.md)
+  - [AdInteractionListener](arkts-advertising-adinteractionlistener-i.md)
+  - [AdLoadListener](arkts-advertising-adloadlistener-i.md)
+  - [AdOptions](arkts-advertising-adoptions-i.md)
+  - [AdRequestParams](arkts-advertising-adrequestparams-i.md)
+  - [MultiSlotsAdLoadListener](arkts-advertising-multislotsadloadlistener-i.md)
+  - [Advertisement](arkts-advertising-advertisement-t.md)
 - [@ohos.advertising.AdComponent](arkts-advertising-adcomponent.md)
-  - [AdComponent](arkts-ads-adcomponent-s.md)
+- [@ohos.advertising.AdComponent](arkts-advertising-adcomponent.md)
 - [@ohos.advertising.AdsServiceExtensionAbility](arkts-advertising-adsserviceextensionability.md)<!--Del-->
-  - [AdsServiceExtensionAbility(system api)](arkts-ads-adsserviceextensionability-c-sys.md)<!--DelEnd-->
-  - [RespCallback](arkts-ads-respcallback-i.md)
+  - [AdsServiceExtensionAbility(system api)](arkts-adsserviceextensionability-c-sys.md)<!--DelEnd-->
+  - [RespCallback](arkts-respcallback-i.md)
+- [@ohos.advertising.AdsServiceExtensionAbility](arkts-advertising-adsserviceextensionability.md)<!--Del-->
+  - [AdsServiceExtensionAbility(system api)](arkts-adsserviceextensionability-c-sys.md)<!--DelEnd-->
+  - [RespCallback](arkts-respcallback-i.md)
 - [@ohos.advertising.AutoAdComponent](arkts-advertising-autoadcomponent.md)
-  - [AutoAdComponent](arkts-ads-autoadcomponent-s.md)
-- [@ohos.identifier.oaid](arkts-identifier-oaid.md)
-  - [getOAID](arkts-ads-getoaid-f.md)<!--Del-->
-  - [resetOAID(system api)](arkts-ads-resetoaid-f-sys.md)<!--DelEnd-->
-- advertising<!--arkts-adskit-advertising-->
-  - [advertisement](arkts-advertisement.md)
-    - [Advertisement](arkts-ads-advertisement-i.md)
+- [@ohos.advertising.AutoAdComponent](arkts-advertising-autoadcomponent.md)
+- [@ohos.identifier.oaid](arkts-identifier-oaid.md)<!--Del-->
+  - [resetOAID(system api)](arkts-identifier-resetoaid-f-sys.md)<!--DelEnd-->
+  - [getOAID](arkts-identifier-getoaid-f.md)
+- [@ohos.identifier.oaid](arkts-identifier-oaid.md)<!--Del-->
+  - [resetOAID(system api)](arkts-identifier-resetoaid-f-sys.md)<!--DelEnd-->
+  - [getOAID](arkts-identifier-getoaid-f.md)
+- [advertisement](arkts-advertisement.md)
+  - [Advertisement](arkts-advertisement-i.md)
+- [advertisement](arkts-advertisement.md)
+  - [Advertisement](arkts-advertisement-i.md)

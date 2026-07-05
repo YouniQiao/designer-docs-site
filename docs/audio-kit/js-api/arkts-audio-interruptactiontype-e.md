@@ -1,12 +1,16 @@
 # InterruptActionType
 
+```TypeScript
+enum InterruptActionType
+```
+
 Enumerates the returned event types for audio interruption events.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** InterruptType
+**Substitute:** ohos.multimedia.audio.InterruptType
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -22,7 +26,7 @@ Focus gain event.
 
 **Deprecated since:** 9
 
-**Substitutes:** INTERRUPT_TYPE_BEGIN
+**Substitute:** ohos.multimedia.audio.InterruptType#INTERRUPT_TYPE_BEGIN
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -38,7 +42,7 @@ Audio interruption event.
 
 **Deprecated since:** 9
 
-**Substitutes:** INTERRUPT_TYPE_END
+**Substitute:** ohos.multimedia.audio.InterruptType#INTERRUPT_TYPE_END
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

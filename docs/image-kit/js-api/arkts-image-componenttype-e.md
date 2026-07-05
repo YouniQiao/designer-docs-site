@@ -1,6 +1,10 @@
 # ComponentType
 
-Enumerates the color component types of images.
+```TypeScript
+enum ComponentType
+```
+
+表示图像的组件类型的枚举。
 
 **Since:** 9
 
@@ -12,7 +16,7 @@ Enumerates the color component types of images.
 YUV_Y = 1
 ```
 
-Luminance component.
+亮度信息。
 
 **Since:** 9
 
@@ -24,7 +28,7 @@ Luminance component.
 YUV_U = 2
 ```
 
-Chrominance component.
+色度信息。
 
 **Since:** 9
 
@@ -36,7 +40,7 @@ Chrominance component.
 YUV_V = 3
 ```
 
-Chrominance component.
+色度信息。
 
 **Since:** 9
 
@@ -48,7 +52,7 @@ Chrominance component.
 JPEG = 4
 ```
 
-JPEG type.
+JPEG 类型。
 
 **Since:** 9
 

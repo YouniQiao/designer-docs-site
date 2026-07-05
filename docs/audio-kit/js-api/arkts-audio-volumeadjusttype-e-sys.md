@@ -1,4 +1,8 @@
-# VolumeAdjustType (System API)
+# VolumeAdjustType
+
+```TypeScript
+enum VolumeAdjustType
+```
 
 Enumerates volume adjustment types.
 

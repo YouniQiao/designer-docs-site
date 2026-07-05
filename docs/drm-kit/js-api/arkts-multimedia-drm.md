@@ -9,7 +9,7 @@ This module provides the DRM capability to multimedia player.
 ## Modules to Import
 
 ```TypeScript
-import { drm } from '@ohos.multimedia.drm';
+import { drm } from '@kit.DrmKit';
 ```
 
 ## Summary
@@ -18,12 +18,13 @@ import { drm } from '@ohos.multimedia.drm';
 
 | Name | Description |
 | --- | --- |
-| [createMediaKeySystem](arkts-drm-createmediakeysystem-f.md#createmediakeysystem-1) | Creates a MediaKeySystem instance. |
-| [getMediaKeySystemUuid](arkts-drm-getmediakeysystemuuid-f.md#getmediakeysystemuuid-1) | Get a MediaKeySystem's UUID. |
-| [getMediaKeySystems](arkts-drm-getmediakeysystems-f.md#getmediakeysystems-1) | Get all media key systems supported. |
-| [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md#ismediakeysystemsupported-1) | Judge whether a system that specifies name, mimetype and content protection level is supported. |
-| [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md#ismediakeysystemsupported-2) | Judge whether a system that specifies name, mimetype is supported. |
-| [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md#ismediakeysystemsupported-3) | Judge whether a system that specifies name is supported. |
+| [createMediaKeySystem](arkts-drm-createmediakeysystem-f.md#createMediaKeySystem-1) | Creates a MediaKeySystem instance. |
+| [createMediaKeySystem](arkts-drm-createmediakeysystem-f.md#createMediaKeySystem-2) | Creates a MediaKeySystem instance. |
+| [getMediaKeySystemUuid](arkts-drm-getmediakeysystemuuid-f.md#getMediaKeySystemUuid-1) | Get a MediaKeySystem's UUID. |
+| [getMediaKeySystems](arkts-drm-getmediakeysystems-f.md#getMediaKeySystems-1) | Get all media key systems supported. |
+| [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md#isMediaKeySystemSupported-1) | Judge whether a system that specifies name, mimetype and content protection level is supported. |
+| [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md#isMediaKeySystemSupported-2) | Judge whether a system that specifies name, mimetype is supported. |
+| [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md#isMediaKeySystemSupported-3) | Judge whether a system that specifies name is supported. |
 
 ### Interfaces
 

@@ -1,0 +1,50 @@
+# setLocationPrivacyConfirmStatus
+
+## setLocationPrivacyConfirmStatus
+
+```TypeScript
+function setLocationPrivacyConfirmStatus(type: LocationPrivacyType, isConfirmed: boolean): void
+```
+
+Set location privacy protocol confirmation status.
+
+**Since:** 9
+
+**Required permissions:** 
+
+ ohos.permission.MANAGE_SECURE_SETTINGS
+
+**System capability:** SystemCapability.Location.Location.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| type | LocationPrivacyType | Yes | Indicates location privacy protocol type. |
+| isConfirmed | boolean | Yes | Indicates whether the location privacy protocol has been confirmed. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 201 | Permission verification failed. The application does not have the permission required to call the API. |
+| 202 | Permission verification failed. A non-system application calls a system API. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2. Incorrect parameter types; 3. Parameter verification failed. |
+| 801 | Capability not supported. Failed to call ${geoLocationManager.setLocationPrivacyConfirmStatus} due to limited device capabilities. |
+| 3301000 | The location service is unavailable. |
+
+**Example**
+
+```TypeScript
+import { geoLocationManager } from '@kit.LocationKit';
+
+try {
+  geoLocationManager.setLocationPrivacyConfirmStatus(1, true);
+} catch (err) {
+  console.error("errCode:" + err.code + ", message:" + err.message);
+}
+
+```
+

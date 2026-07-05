@@ -1,10 +1,4 @@
-# castAudio (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# castAudio
 
 ## castAudio
 
@@ -16,7 +10,9 @@ Cast Audio to the remote devices or cast back local device
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -27,19 +23,19 @@ Cast Audio to the remote devices or cast back local device
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | session | SessionToken \| 'all' | Yes | Specifies the sessionId which to send to remote. |
-| audioDevices | Array&lt;audio.AudioDeviceDescriptor&gt; | Yes | Specifies the audio devices to cast. |
-| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully'all' means cast all the media audio of this device to remote. |
+| audioDevices | Array&lt;audio.AudioDeviceDescriptor> | Yes | Specifies the audio devices to cast. |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully  'all' means cast all the media audio of this device to remote. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600104](../errorcode-avsession.md#6600104-remote-session-connection-failure) | The remote session connection failed. |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600104 | The remote session connection failed. |
 
 **Example**
 
@@ -61,7 +57,6 @@ audioRoutingManager.getDevices(audio.DeviceFlag.OUTPUT_DEVICES_FLAG).then((data)
 
 ```
 
-
 ## castAudio
 
 ```TypeScript
@@ -72,7 +67,9 @@ Cast Audio to the remote devices or cast back local device
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -83,24 +80,24 @@ Cast Audio to the remote devices or cast back local device
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | session | SessionToken \| 'all' | Yes | Specifies the sessionId which to send to remote. |
-| audioDevices | Array&lt;audio.AudioDeviceDescriptor&gt; | Yes | Specifies the audio devices to cast. |
+| audioDevices | Array&lt;audio.AudioDeviceDescriptor> | Yes | Specifies the audio devices to cast. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully'all' means cast all the media audio of this device to remote. |
+| Promise&lt;void> | void promise when executed successfully  'all' means cast all the media audio of this device to remote. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
-| [6600104](../errorcode-avsession.md#6600104-remote-session-connection-failure) | The remote session connection failed. |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
+| 6600104 | The remote session connection failed. |
 
 **Example**
 

@@ -1,10 +1,4 @@
-# startCasting (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# startCasting
 
 ## startCasting
 
@@ -16,7 +10,9 @@ Cast resource to remote device.
 
 **Since:** 10
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -28,17 +24,17 @@ Cast resource to remote device.
 | --- | --- | --- | --- |
 | session | SessionToken | Yes | Specifies the sessionId which is to be casted. |
 | device | OutputDeviceInfo | Yes | Specifies the device to cast. |
-| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when start casting. |
+| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when start casting. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600108](../errorcode-avsession.md#6600108-device-connection-failure) | Device connecting failed |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 6600101 | Session service exception |
+| 6600108 | Device connecting failed |
 
 **Example**
 
@@ -60,7 +56,6 @@ avSession.on('deviceAvailable', (device: avSession.OutputDeviceInfo) => {
 
 ```
 
-
 ## startCasting
 
 ```TypeScript
@@ -71,7 +66,9 @@ Cast resource to remote device.
 
 **Since:** 10
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -88,17 +85,17 @@ Cast resource to remote device.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise for the result |
+| Promise&lt;void> | Promise for the result |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception |
-| [6600108](../errorcode-avsession.md#6600108-device-connection-failure) | Device connecting failed |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 6600101 | Session service exception |
+| 6600108 | Device connecting failed |
 
 **Example**
 

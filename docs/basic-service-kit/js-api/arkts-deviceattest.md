@@ -9,26 +9,22 @@ xts_device_attest authResult information
 ## Modules to Import
 
 ```TypeScript
-import { deviceAttest } from '@ohos.deviceAttest';
+import { deviceAttest } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [getAttestStatus](arkts-basicservices-getatteststatus-f-sys.md#getatteststatus-1) | Obtains the AttestResultInfo object. |
-| [getAttestStatus](arkts-basicservices-getatteststatus-f-sys.md#getatteststatus-2) | Obtains the AttestResultInfo object. |
-| [getAttestStatusSync](arkts-basicservices-getatteststatussync-f-sys.md#getatteststatussync-1) | Obtains the AttestResultInfo object. |
-<!--DelEnd-->
+| <!--DelRow-->[getAttestStatus](arkts-deviceattest-getatteststatus-f-sys.md#getAttestStatus-1) | Obtains the AttestResultInfo object. |
+| <!--DelRow-->[getAttestStatus](arkts-deviceattest-getatteststatus-f-sys.md#getAttestStatus-2) | Obtains the AttestResultInfo object. |
+| <!--DelRow-->[getAttestStatusSync](arkts-deviceattest-getatteststatussync-f-sys.md#getAttestStatusSync-1) | Obtains the AttestResultInfo object. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AttestResultInfo](arkts-basicservices-attestresultinfo-i-sys.md) | Device attest result information. |
-<!--DelEnd-->
+| <!--DelRow-->[AttestResultInfo](arkts-deviceattest-attestresultinfo-i-sys.md) | Device attest result information. |
 

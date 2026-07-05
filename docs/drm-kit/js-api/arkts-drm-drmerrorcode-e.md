@@ -1,5 +1,9 @@
 # DrmErrorCode
 
+```TypeScript
+enum DrmErrorCode
+```
+
 Enumerates DRM error codes.
 
 **Since:** 14
@@ -16,7 +20,7 @@ All unknown errors.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -30,7 +34,7 @@ Meet max MediaKeySystem num limit.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -44,7 +48,7 @@ Meet max MediaKeySession num limit.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -58,7 +62,7 @@ Fatal service error, for example, service died.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 

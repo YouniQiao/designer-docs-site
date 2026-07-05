@@ -1,4 +1,8 @@
-# SessionCategory (System API)
+# SessionCategory
+
+```TypeScript
+enum SessionCategory
+```
 
 Session category for different scenes.
 
@@ -60,7 +64,7 @@ The session category for HiPlay casting AVSession.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 

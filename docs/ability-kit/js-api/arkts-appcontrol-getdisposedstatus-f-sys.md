@@ -1,0 +1,124 @@
+# getDisposedStatus
+
+## getDisposedStatus
+
+```TypeScript
+function getDisposedStatus(appId: string, callback: AsyncCallback<Want>): void
+```
+
+获取指定应用的处置状态。使用callback异步回调，成功返回应用的处置状态，失败返回对应错误信息。
+
+**Since:** 9
+
+**Required permissions:** 
+
+ ohos.permission.MANAGE_DISPOSED_APP_STATUS or ohos.permission.GET_DISPOSED_APP_STATUS
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.AppControl
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| appId | string | Yes | 要查询的应用的appId。 appId是应用的唯一标识，由应用Bundle名称和签名信息决定，获取方法参见  [获取应用的appId](docroot://quick-start/common-problem-of-application.md#如何获取应用信息中的appid)。 |
+| callback | AsyncCallback&lt;Want> | Yes | 回调函数。当获取应用的处置状态成功时，err为null，data为获取到的处置状态；否则为错误对象。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 201 | Permission denied. |
+| 202 | Permission denied, non-system app called system api. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.  Incorrect parameter types. |
+| 801 | Capability not supported. |
+| 17700005 | The specified app ID is empty string. |
+
+**Example**
+
+```TypeScript
+import { appControl } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let appId = "com.example.myapplication_xxxxx";
+
+try {
+  appControl.getDisposedStatus(appId, (error, data) => {
+    if (error) {
+      let message = (error as BusinessError).message;
+      console.error('getDisposedStatus failed ' + message);
+      return;
+    }
+    console.info('getDisposedStatus success. DisposedStatus: ' + JSON.stringify(data));
+  });
+} catch (error) {
+  let message = (error as BusinessError).message;
+  console.error('getDisposedStatus failed ' + message);
+}
+
+```
+
+## getDisposedStatus
+
+```TypeScript
+function getDisposedStatus(appId: string): Promise<Want>
+```
+
+获取指定应用已设置的处置状态。使用Promise异步回调，成功返回应用的处置状态，失败返回对应错误信息。
+
+**Since:** 9
+
+**Required permissions:** 
+
+ ohos.permission.MANAGE_DISPOSED_APP_STATUS or ohos.permission.GET_DISPOSED_APP_STATUS
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.AppControl
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| appId | string | Yes | 要查询的应用的appId。 appId是应用的唯一标识，由应用Bundle名称和签名信息决定，获取方法参见  [获取应用的appId](docroot://quick-start/common-problem-of-application.md#如何获取应用信息中的appid)。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Want> | Promise对象，返回应用的处置状态。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 201 | Permission denied. |
+| 202 | Permission denied, non-system app called system api. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified; 2.  Incorrect parameter types. |
+| 801 | Capability not supported. |
+| 17700005 | The specified app ID is empty string. |
+
+**Example**
+
+```TypeScript
+import { appControl } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+let appId = "com.example.myapplication_xxxxx";
+
+try {
+  appControl.getDisposedStatus(appId)
+    .then((data) => {
+      console.info('getDisposedStatus success. DisposedStatus: ' + JSON.stringify(data));
+    }).catch((error: BusinessError) => {
+    let message = (error as BusinessError).message;
+    console.error('getDisposedStatus failed ' + message);
+  });
+} catch (error) {
+  let message = (error as BusinessError).message;
+  console.error('getDisposedStatus failed ' + message);
+}
+
+```
+

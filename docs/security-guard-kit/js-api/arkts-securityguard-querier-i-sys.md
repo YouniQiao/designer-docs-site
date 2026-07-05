@@ -1,4 +1,4 @@
-# Querier (System API)
+# Querier
 
 Definition callback of receiving the query data.
 
@@ -11,24 +11,8 @@ Definition callback of receiving the query data.
 ## Modules to Import
 
 ```TypeScript
-import { securityGuard } from '@ohos.security.securityGuard';
+import { securityGuard } from '@kit.SecurityGuardKit';
 ```
-
-## onComplete
-
-```TypeScript
-onComplete: () => void
-```
-
-Triggered when data is complete.
-
-**Type:** () => void
-
-**Since:** 12
-
-**System capability:** SystemCapability.Security.SecurityGuard
-
-**System API:** This is a system API.
 
 ## onError
 
@@ -39,6 +23,22 @@ onError: (message: string) => void
 Triggered when error.
 
 **Type:** (message: string) => void
+
+**Since:** 12
+
+**System capability:** SystemCapability.Security.SecurityGuard
+
+**System API:** This is a system API.
+
+## onComplete
+
+```TypeScript
+onComplete: () => void
+```
+
+Triggered when data is complete.
+
+**Type:** () => void
 
 **Since:** 12
 

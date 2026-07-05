@@ -1,6 +1,6 @@
 # @ohos.distributedsched.proxyChannelManager
 
-DSoftBus provides stable and reliable underlying channels for cross-device communication. This module is developed based on DSoftBus. It supports efficient data exchange between phones and wearables, providing users with a seamless device interconnection experience. During collaboration between the phone application and watch application, if the phone application is not running in the foreground, its downlink messages are forwarded to the notification server and then sent to the watch through the proxy module. The core functions of this module include proxy channel management, data route management, application state awareness and wakeup, and link state monitoring. - Proxy channel management: Manages bidirectional data channels established between phones and wearables via the Bluetooth Basic Rate (BR) protocol. - Data route management: Accurately forwards data of wearables based on the specified service UUID. - Application state awareness and wakeup: After a proxy channel is enabled, dynamically analyzes and wakes up the corresponding application process on the phone after receiving data sent by the wearable. - Link state monitoring: Monitors the channel connection state in real time through callback.
+软总线具备常驻运行能力，可为跨设备通信提供稳定可靠的底层通道。本模块基于软总线进程开发，支持手机与穿戴设备间高效的数据互通， 可为用户提供无缝的设备互联体验。使用场景：手机侧APP与手表侧APP协同时，当手机APP不在前台被使用，手机应 用的下行消息经由通知服务器，通过代理模块发送给手表侧。模块核心功能包括：代理通道管理、数据路由管理、 应用状态感知和唤醒、 链路状态监听。 - 代理通道管理：通过蓝牙 BR 协议建立手机与穿戴设备的双向数据通道，支持的数据通道 ID 范围是[1,2147483647] 。 - 数据路由管理：基于 UUID 服务识别机制，精准转发穿戴设备数据。 - 应用状态感知和唤醒：代理通道使能后，收到穿戴设备发送的数据后，动态分析和唤醒手机端对应应用进程。 - 全链路状态监控：通过回调实时感知通道连接状态。
 
 **Since:** 20
 
@@ -9,7 +9,7 @@ DSoftBus provides stable and reliable underlying channels for cross-device commu
 ## Modules to Import
 
 ```TypeScript
-import { proxyChannelManager } from '@ohos.distributedsched.proxyChannelManager';
+import { proxyChannelManager } from '@kit.DistributedServiceKit';
 ```
 
 ## Summary
@@ -18,26 +18,30 @@ import { proxyChannelManager } from '@ohos.distributedsched.proxyChannelManager'
 
 | Name | Description |
 | --- | --- |
-| [closeProxyChannel](arkts-distributedservice-closeproxychannel-f.md#closeproxychannel-1) | Closes a proxy channel that has been opened. |
-| [off](arkts-distributedservice-off-f.md#off-1) | Unsubscribes from data receiving events. |
-| [off](arkts-distributedservice-off-f.md#off-2) | Unsubscribes from channel state change events. |
-| [on](arkts-distributedservice-on-f.md#on-1) | Subscribes to data receiving events. This API returns the result asynchronously through a callback. |
-| [on](arkts-distributedservice-on-f.md#on-2) | Subscribes to channel state change events. This API returns the result asynchronously through a callback. |
-| [openProxyChannel](arkts-distributedservice-openproxychannel-f.md#openproxychannel-1) | Opens a proxy channel. This API uses a promise to return the result. |
-| [sendData](arkts-distributedservice-senddata-f.md#senddata-1) | Sends data to the peer end. This API uses a promise to return the result. |
+| [closeProxyChannel](arkts-proxychannelmanager-closeproxychannel-f.md#closeProxyChannel-1) | 关闭已打开的代理通道。 |
+| [off](arkts-proxychannelmanager-off-f.md#off-1) | 取消订阅数据接收事件，停止接收数据。 |
+| [off](arkts-proxychannelmanager-off-f.md#off-2) | 取消订阅通道状态事件。 |
+| [offChannelStateChange](arkts-proxychannelmanager-offchannelstatechange-f.md#offChannelStateChange-1) | 取消订阅通道状态事件。 |
+| [offReceiveData](arkts-proxychannelmanager-offreceivedata-f.md#offReceiveData-1) | 取消订阅数据接收事件，停止接收数据。 |
+| [on](arkts-proxychannelmanager-on-f.md#on-1) | 订阅数据接收事件，使用异步回调。 |
+| [on](arkts-proxychannelmanager-on-f.md#on-2) | 订阅通道状态事件，使用callback进行异步回调。 |
+| [onChannelStateChange](arkts-proxychannelmanager-onchannelstatechange-f.md#onChannelStateChange-1) | 订阅通道状态事件，使用callback进行异步回调。 |
+| [onReceiveData](arkts-proxychannelmanager-onreceivedata-f.md#onReceiveData-1) | 订阅数据接收事件，使用异步回调。 |
+| [openProxyChannel](arkts-proxychannelmanager-openproxychannel-f.md#openProxyChannel-1) | 打开代理通道，使用Promise异步回调返回结果。 |
+| [sendData](arkts-proxychannelmanager-senddata-f.md#sendData-1) | 向对端发送数据，使用Promise异步回调。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ChannelInfo](arkts-distributedservice-channelinfo-i.md) | Represents the proxy channel information, including the MAC address and service UUID of the peer device. |
-| [ChannelStateInfo](arkts-distributedservice-channelstateinfo-i.md) | Represents the connection state information of the proxy channel. |
-| [DataInfo](arkts-distributedservice-datainfo-i.md) | Represents the received data, including the channel ID and data. |
+| [ChannelInfo](arkts-proxychannelmanager-channelinfo-i.md) | 打开代理通道函数的入参，包括对端设备的MAC地址和监听服务的UUID。 |
+| [ChannelStateInfo](arkts-proxychannelmanager-channelstateinfo-i.md) | 当代理通道状态变化时，用于表示代理通道的连接状态。 |
+| [DataInfo](arkts-proxychannelmanager-datainfo-i.md) | 存放接收的数据信息，包括通道Id和数据。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ChannelState](arkts-distributedservice-channelstate-e.md) | Enumerates the connection states of the proxy channel. |
-| [LinkType](arkts-distributedservice-linktype-e.md) | Enumerates the link types. |
+| [ChannelState](arkts-proxychannelmanager-channelstate-e.md) | 通道状态发生变化时，代理通道上报的通道连接状态。 |
+| [LinkType](arkts-proxychannelmanager-linktype-e.md) | 链路类型。 |
 

@@ -1,0 +1,142 @@
+# ExecCmdOptions
+
+Options for executing a command.
+
+**Since:** 26.1.0
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## Modules to Import
+
+```TypeScript
+import { cliManager } from '@kit.AbilityKit';
+```
+
+## yieldMs
+
+```TypeScript
+yieldMs?: long
+```
+
+Indicates the foreground waiting timeout in milliseconds. Default value is 0.
+
+**Type:** long
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## background
+
+```TypeScript
+background?: boolean
+```
+
+Indicates whether the command is executed in the background. Default value is false.
+
+**Type:** boolean
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## callback
+
+```TypeScript
+callback?: ToolEventCallback
+```
+
+Indicates the event callback for receiving tool events. If provided, auto-subscribe is performed.
+
+**Type:** ToolEventCallback
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## workDir
+
+```TypeScript
+workDir?: string
+```
+
+Indicates the working directory for the command.
+
+**Type:** string
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## env
+
+```TypeScript
+env?: Record<string, string>
+```
+
+Indicates the environment variables for the command.
+
+**Type:** Record<string, string>
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## timeout
+
+```TypeScript
+timeout?: long
+```
+
+Indicates the maximum execution time of the command, in seconds. Default value is 1800.
+
+**Type:** long
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+
+## policy
+
+```TypeScript
+policy?: string
+```
+
+Indicates the security policy.
+
+**Type:** string
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Ability.AgentRuntime.Core
+
+**System API:** This is a system API.
+

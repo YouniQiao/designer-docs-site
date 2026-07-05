@@ -1,4 +1,4 @@
-# LuminationInfo (System API)
+# LuminationInfo
 
 Describes the illumination information.
 
@@ -11,18 +11,18 @@ Describes the illumination information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## lumination
 
 ```TypeScript
-readonly lumination?: number
+readonly lumination?: double
 ```
 
 Illumination. The value range is [0, 1].
 
-**Type:** number
+**Type:** double
 
 **Since:** 12
 

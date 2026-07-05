@@ -1,5 +1,9 @@
 # CallerType
 
+```TypeScript
+enum CallerType
+```
+
 Enumerates CallerType including caller source type.
 
 **Since:** 22
@@ -40,7 +44,7 @@ The control command comes from nearlink device.
 
 **Since:** 22
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

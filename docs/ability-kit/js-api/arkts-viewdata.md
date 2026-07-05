@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ViewData](arkts-ability-viewdata-i-sys.md) | The module defines the view data used for auto-fill. |
-<!--DelEnd-->
+| <!--DelRow-->[ViewData](arkts-viewdata-i.md) | 查看自动填充的数据。 |
 

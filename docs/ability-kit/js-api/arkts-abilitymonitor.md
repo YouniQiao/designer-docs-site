@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [AbilityMonitor](arkts-ability-abilitymonitor-i.md) | The module provides the capability of listening for lifecycle state changes of a specified [UIAbility](arkts-app-ability-uiability.md). You can use AbilityMonitor as an input parameter of [abilityDelegator.addAbilityMonitor](arkts-ability-abilitydelegator-i.md#addabilitymonitor-1) to register a listener. |
+| [AbilityMonitor](arkts-abilitymonitor-i.md) | 本模块提供监听指定[UIAbility]{@link @ohos.app.ability.UIAbility}生命周期状态变化的能力。开发者可以将AbilityMonitor作为 [abilityDelegator.addAbilityMonitor]{@link ./application/AbilityDelegator:AbilityDelegator.addAbilityMonitor(monitor: AbilityMonitor, callback: AsyncCallback<void>)} 的入参来注册监听。 |
 

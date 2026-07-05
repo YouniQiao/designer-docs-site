@@ -1,6 +1,6 @@
 # @ohos.arkui.componentUtils
 
-The **componentUtils** module provides API for obtaining the coordinates and size of the drawing area of a component.
+提供获取组件绘制区域坐标和大小的能力。
 
 **Since:** 10
 
@@ -9,7 +9,7 @@ The **componentUtils** module provides API for obtaining the coordinates and siz
 ## Modules to Import
 
 ```TypeScript
-import { componentUtils } from '@ohos.arkui.componentUtils';
+import { componentUtils } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -18,40 +18,26 @@ import { componentUtils } from '@ohos.arkui.componentUtils';
 
 | Name | Description |
 | --- | --- |
-| [getRectangleById](arkts-arkui-getrectanglebyid-f.md#getrectanglebyid-1) | Obtains a **ComponentInfo** object based on the component ID and synchronously returns the geometric properties of the component. &gt; **NOTE** &gt; &gt; - Since API version 10, you can use the &gt; [getComponentUtils](arkts-arkui-uicontext-c.md#getcomponentutils-1) API in &gt; [UIContext](arkts-arkui-uicontext.md) to obtain the [ComponentUtils](arkts-arkui-uicontext.md) object &gt; associated with the current UI context. This API provides access to component coordinates and size information &gt; after the target component completes layout. It is recommended that you invoke this API within &gt; [layout completion callbacks](arkts-arkui-inspector.md#inspector). Note that dynamically created components &gt; must be mounted to the component tree before this API can obtain their information, as unmounted components are &gt; not measured or laid out by the UI framework. Always ensure that component mounting precedes information &gt; retrieval attempts. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [getItemsInShapePath](arkts-arkui-getitemsinshapepath-f-sys.md#getitemsinshapepath-1) | Get the image objects located within the selected area. |
-<!--DelEnd-->
+| <!--DelRow-->[getItemsInShapePath](arkts-componentutils-getitemsinshapepath-f-sys.md#getItemsInShapePath-1) | 获取位于选定区域内的图像对象。 |
+| [getRectangleById](arkts-componentutils-getrectanglebyid-f.md#getRectangleById-1) | 根据组件ID获取组件实例对象，通过组件实例对象将获取的坐标位置和大小同步返回给开发者。 > **说明：** > > - 从API version 10开始，可以通过使用[UIContext]{@link @ohos.arkui.UIContext}中的 > [getComponentUtils]{@link @ohos.arkui.UIContext:UIContext#getComponentUtils}方法获取当前UI上下 > 文关联的[ComponentUtils]{@link @ohos.arkui.UIContext:ComponentUtils}对象。在目标组件布局完成后，通过该接口能够获取组件坐标和尺寸信息。建议在 > [布局回调]{@link @ohos.arkui.inspector:inspector}中使用该接口。如果组件动态创建但未挂载组件树，则无法通过该接口获取正常的组件信息。因为组件在未挂载组件树的情况下，一般未经过UI框架正常 > 的测量与布局，此时请确保组件正常挂载组件树后再尝试获取组件信息。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ComponentInfo](arkts-arkui-componentinfo-i.md) | Implements a **ComponentInfo** object, which provides the size, position, translation, scaling, rotation, and affine matrix information of the component. |
-| [Offset](arkts-arkui-offset-i.md) | Defines the offset property. |
-| [RotateResult](arkts-arkui-rotateresult-i.md) | Rotation Result. |
-| [ScaleResult](arkts-arkui-scaleresult-i.md) | Scale Result |
-| [Size](arkts-arkui-size-i.md) | Defines the size property. |
-| [TranslateResult](arkts-arkui-translateresult-i.md) | Translation Result |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [GetItemsInShapePathParams](arkts-arkui-getitemsinshapepathparams-i-sys.md) | Image options setted when need to get the image objects. |
-| [ImageItem](arkts-arkui-imageitem-i-sys.md) | Image object with layout information. |
-| [Rotation2D](arkts-arkui-rotation2d-i-sys.md) | Describes a rotation in 2D, which can be defined by rotation angle and rotation center. |
-<!--DelEnd-->
+| [ComponentInfo](arkts-componentutils-componentinfo-i.md) | 组件大小、位置、平移缩放旋转及仿射矩阵属性信息。 |
+| <!--DelRow-->[GetItemsInShapePathParams](arkts-componentutils-getitemsinshapepathparams-i-sys.md) | 需要获取图像对象时设置的图像选项。 |
+| <!--DelRow-->[ImageItem](arkts-componentutils-imageitem-i-sys.md) | 带有布局信息的图像对象。 |
+| [Offset](arkts-componentutils-offset-i.md) | 定义坐标属性。 |
+| [RotateResult](arkts-componentutils-rotateresult-i.md) | 旋转信息。 |
+| <!--DelRow-->[Rotation2D](arkts-componentutils-rotation2d-i-sys.md) | 描述二维空间中的旋转，可以通过旋转角度和旋转中心来定义。 |
+| [ScaleResult](arkts-componentutils-scaleresult-i.md) | 缩放信息。 |
+| [Size](arkts-componentutils-size-i.md) | 定义尺寸属性。 |
+| [TranslateResult](arkts-componentutils-translateresult-i.md) | 平移信息。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [Matrix4Result](arkts-arkui-matrix4result-t.md) | The matrix is column-first fourth-order matrix. |
+| [Matrix4Result](arkts-componentutils-matrix4result-t.md) | 列优先四阶矩阵。 |
 

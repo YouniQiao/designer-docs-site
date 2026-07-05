@@ -1,11 +1,5 @@
 # loadTrainModelFromBuffer
 
-## Modules to Import
-
-```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
-```
-
 ## loadTrainModelFromBuffer
 
 ```TypeScript
@@ -19,7 +13,7 @@ Load train model from buffer
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -28,22 +22,22 @@ Load train model from buffer
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | model | ArrayBuffer | Yes | model buffer |
-| trainCfg | TrainCfg | No | model train configuration |
-| context | Context | No | model build context |
+| trainCfg | TrainCfg | No |  |
+| context | Context | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Model&gt; | the promise of the built model |
+| Promise&lt;Model> | the promise of the built model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000010 | Invalid model buffer in training. Possible causes: 1. The model buffer size isincorrect; 2. The model buffer is null.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000011 | Failed to create native training model from buffer. Possible causes: 1. Themodel buffer is incorrect; 2. The training configuration is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000010 | Invalid model buffer in training. Possible causes: 1. The model buffer size is  incorrect; 2. The model buffer is null. [staticonly] |
+| 1000011 | Failed to create native training model from buffer. Possible causes: 1. The  model buffer is incorrect; 2. The training configuration is incorrect. [staticonly] |
 
 **Example**
 

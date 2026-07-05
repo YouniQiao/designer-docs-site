@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { TabTitleBar, TabTitleBarTabItem, TabTitleBarMenuItem } from '@ohos.arkui.advanced.TabTitleBar';
+import { TabTitleBar,TabTitleBarTabItem,TabTitleBarMenuItem } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,12 +12,6 @@ import { TabTitleBar, TabTitleBarTabItem, TabTitleBarMenuItem } from '@ohos.arku
 
 | Name | Description |
 | --- | --- |
-| [TabTitleBarMenuItem](arkts-arkui-tabtitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
-| [TabTitleBarTabItem](arkts-arkui-tabtitlebartabitem-c.md) | Declaration of the tab item. |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [TabTitleBar](arkts-arkui-tabtitlebar-s.md) | Declaration of the tabbed title bar. |
+| [TabTitleBarMenuItem](arkts-tabtitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
+| [TabTitleBarTabItem](arkts-tabtitlebartabitem-c.md) | Declaration of the tab item. |
 

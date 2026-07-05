@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [Resource](arkts-localization-resource-i.md) | 本模块提供资源相关信息，包括应用包名、应用模块名、资源id等。 |
+| [Resource](arkts-resource-i.md) | 本模块提供资源相关信息，包括应用包名、应用模块名、资源id等。 |
 

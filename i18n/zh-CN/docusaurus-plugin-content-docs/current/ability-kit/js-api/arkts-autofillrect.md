@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [AutoFillRect](arkts-ability-autofillrect-i-sys.md) | 用于自动填充的矩形区域。 |
-<!--DelEnd-->
+| <!--DelRow-->[AutoFillRect](arkts-autofillrect-i.md) | 用于自动填充的矩形区域。 |
 

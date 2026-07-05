@@ -1,6 +1,6 @@
 # Metadata
 
-The **Metadata** class provides APIs for storing image metadata. For details about the supported metadata types, see [MetadataType](arkts-image-metadatatype-e.md#metadatatype).
+Metadata类，用于存储图像的元数据。目前支持的元数据类型可参考[MetadataType]image.MetadataType。 > **说明：** > > - 本Interface首批接口从API version 13开始支持。
 
 **Since:** 13
 
@@ -9,7 +9,7 @@ The **Metadata** class provides APIs for storing image metadata. For details abo
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## clone
@@ -18,7 +18,7 @@ import { image } from '@ohos.multimedia.image';
 clone(): Promise<Metadata>
 ```
 
-Clones the metadata. This API uses a promise to return the result.
+对元数据进行克隆。使用Promise异步回调。
 
 **Since:** 13
 
@@ -28,7 +28,25 @@ Clones the metadata. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Metadata&gt; | Promise used to return the metadata instance. |
+| Promise&lt;Metadata> | Promise对象，成功返回元数据实例。 |
+
+## clone
+
+```TypeScript
+clone(): Promise<Metadata | undefined>
+```
+
+Obtains a clone of metadata. This method uses a promise to return the metadata.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Metadata \| undefined> | A Promise instance used to return the metadata. |
 
 ## getAllProperties
 
@@ -36,7 +54,7 @@ Clones the metadata. This API uses a promise to return the result.
 getAllProperties(): Promise<Record<string, string | null>>
 ```
 
-Obtains all properties and values from the image's metadata. This API uses a promise to return the result. For details about how to query the property values, see [PropertyKey](arkts-image-propertykey-e.md#propertykey), [FragmentMapPropertyKey](arkts-image-fragmentmappropertykey-e.md#fragmentmappropertykey), [GifPropertyKey](arkts-image-gifpropertykey-e.md#gifpropertykey), and [HeifsPropertyKey](arkts-image-heifspropertykey-e.md#heifspropertykey).
+获取图片中所有元数据的属性和值。使用Promise异步回调。 如要查询属性值信息请参考[PropertyKey]image.PropertyKey、[FragmentMapPropertyKey]image.FragmentMapPropertyKey、 [GifPropertyKey]image.GifPropertyKey和[HeifsPropertyKey]image.HeifsPropertyKey。
 
 **Since:** 13
 
@@ -46,7 +64,25 @@ Obtains all properties and values from the image's metadata. This API uses a pro
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the values of all properties. |
+| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回元数据拥有的所有属性的值。 |
+
+## getAllProperties
+
+```TypeScript
+getAllProperties(): Promise<Record<string, string|null> | undefined>
+```
+
+Obtains the value of all properties in an image. This method uses a promise to return the property values in array of records.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Record&lt;string, string\|null> \| undefined> | Array of Records instance used to  return the property values. |
 
 ## getBlob
 
@@ -54,11 +90,11 @@ Obtains all properties and values from the image's metadata. This API uses a pro
 getBlob(): Promise<ArrayBuffer>
 ```
 
-Obtains the metadata in binary format. This API uses a promise to return the result.
+以二进制数据的形式获取元数据。使用Promise异步回调。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -66,7 +102,7 @@ Obtains the metadata in binary format. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer&gt; | Promise that returns the binary data of the metadata. |
+| Promise&lt;ArrayBuffer> | Promise对象，返回元数据的二进制数据。 |
 
 ## getProperties
 
@@ -74,7 +110,7 @@ Obtains the metadata in binary format. This API uses a promise to return the res
 getProperties(key: Array<string>): Promise<Record<string, string | null>>
 ```
 
-Obtains the values of properties from the image's metadata. This API uses a promise to return the result. For details about how to query the property values, see [PropertyKey](arkts-image-propertykey-e.md#propertykey), [FragmentMapPropertyKey](arkts-image-fragmentmappropertykey-e.md#fragmentmappropertykey), [GifPropertyKey](arkts-image-gifpropertykey-e.md#gifpropertykey), and [HeifsPropertyKey](arkts-image-heifspropertykey-e.md#heifspropertykey).
+获取图像中属性的值。使用Promise异步回调。 如要查询属性值信息请参考[PropertyKey]image.PropertyKey、[FragmentMapPropertyKey]image.FragmentMapPropertyKey、 [GifPropertyKey]image.GifPropertyKey和[HeifsPropertyKey]image.HeifsPropertyKey。
 
 **Since:** 13
 
@@ -84,20 +120,20 @@ Obtains the values of properties from the image's metadata. This API uses a prom
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | Array&lt;string&gt; | Yes | Names of the properties. |
+| key | Array&lt;string> | Yes | 要获取其值的属性的名称。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the property values. If the operationfails, an error code is returned. |
+| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回元数据要获取的属性的值，如获取失败则返回错误码。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. Themetadata type does not match the auxiliary picture type. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 7600202 | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The  metadata type does not match the auxiliary picture type. |
 
 ## setBlob
 
@@ -105,11 +141,11 @@ Obtains the values of properties from the image's metadata. This API uses a prom
 setBlob(blob: ArrayBuffer): Promise<void>
 ```
 
-Replaces the current metadata with binary data. This API uses a promise to return the result.
+使用二进制数据替换当前元数据。使用Promise异步回调。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -117,19 +153,19 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blob | ArrayBuffer | Yes | Binary data used to replace the metadata. |
+| blob | ArrayBuffer | Yes | 要替换的二进制数据。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
+| 7600206 | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
 
 ## setProperties
 
@@ -137,7 +173,7 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 setProperties(records: Record<string, string | null>): Promise<void>
 ```
 
-Sets the values of properties for the image's metadata. This API uses a promise to return the result. For details about how to query the property values, see [PropertyKey](arkts-image-propertykey-e.md#propertykey), [FragmentMapPropertyKey](arkts-image-fragmentmappropertykey-e.md#fragmentmappropertykey), [GifPropertyKey](arkts-image-gifpropertykey-e.md#gifpropertykey), and [HeifsPropertyKey](arkts-image-heifspropertykey-e.md#heifspropertykey).
+批量设置图片元数据中的指定属性的值。使用Promise异步回调。 如要查询属性值信息请参考[PropertyKey]image.PropertyKey、[FragmentMapPropertyKey]image.FragmentMapPropertyKey、 [GifPropertyKey]image.GifPropertyKey和[HeifsPropertyKey]image.HeifsPropertyKey。
 
 **Since:** 13
 
@@ -147,18 +183,18 @@ Sets the values of properties for the image's metadata. This API uses a promise 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| records | Record&lt;string, string \| null&gt; | Yes | Array of properties and their values. |
+| records | Record&lt;string, string \| null> | Yes | 要修改的属性和值的数组。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. If the operation fails, an error code is returned. |
+| Promise&lt;void> | Promise对象，如获取失败则返回错误码。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. Themetadata type does not match the auxiliary picture type. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 7600202 | Unsupported metadata. Possible causes: 1. Unsupported metadata type. 2. The  metadata type does not match the auxiliary picture type. |
 

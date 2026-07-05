@@ -1,6 +1,6 @@
 # @ohos.cooperate
 
-The **cooperate** module implements screen hopping for two or more networked devices to share the keyboard and mouse for collaborative operations.
+键鼠穿越功能模块，提供两台或多台设备组网协同后键鼠共享能力，实现键鼠输入设备的跨设备协同操作。 > **说明** > > - 本模块接口均为系统接口。
 
 **Since:** 10
 
@@ -11,61 +11,59 @@ The **cooperate** module implements screen hopping for two or more networked dev
 ## Modules to Import
 
 ```TypeScript
-import { cooperate } from '@ohos.cooperate';
+import { cooperate } from '@kit.DistributedServiceKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [activate](arkts-distributedservice-activate-f-sys.md#activate-1) | Starts screen hopping. This API uses an asynchronous callback to return the result. |
-| [activate](arkts-distributedservice-activate-f-sys.md#activate-2) | Starts screen hopping. This API uses a promise to return the result. |
-| [activateCooperate](arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-1) | Starts screen hopping. This API uses an asynchronous callback to return the result. |
-| [activateCooperate](arkts-distributedservice-activatecooperate-f-sys.md#activatecooperate-2) | Starts screen hopping. This API uses a promise to return the result. |
-| [activateCooperateWithOptions](arkts-distributedservice-activatecooperatewithoptions-f-sys.md#activatecooperatewithoptions-1) | Starts screen hopping based on the specified options. This API uses a promise to return the result. |
-| [deactivate](arkts-distributedservice-deactivate-f-sys.md#deactivate-1) | Stops screen hopping. This API uses an asynchronous callback to return the result. |
-| [deactivate](arkts-distributedservice-deactivate-f-sys.md#deactivate-2) | Stops screen hopping. This API uses a promise to return the result. |
-| [deactivateCooperate](arkts-distributedservice-deactivatecooperate-f-sys.md#deactivatecooperate-1) | Stops screen hopping. This API uses an asynchronous callback to return the result. |
-| [deactivateCooperate](arkts-distributedservice-deactivatecooperate-f-sys.md#deactivatecooperate-2) | Stops screen hopping. This API uses a promise to return the result. |
-| [getCooperateSwitchState](arkts-distributedservice-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-1) | Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result. |
-| [getCooperateSwitchState](arkts-distributedservice-getcooperateswitchstate-f-sys.md#getcooperateswitchstate-2) | Obtains the screen hopping status of the target device. This API uses a promise to return the result. |
-| [getCrossingSwitchState](arkts-distributedservice-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-1) | Obtains the screen hopping status of the target device. This API uses an asynchronous callback to return the result. |
-| [getCrossingSwitchState](arkts-distributedservice-getcrossingswitchstate-f-sys.md#getcrossingswitchstate-2) | Obtains the screen hopping status of the target device. This API uses a promise to return the result. |
-| [off](arkts-distributedservice-off-f-sys.md#off-1) | Disables listening for screen hopping status change events. |
-| [off](arkts-distributedservice-off-f-sys.md#off-2) | Disables listening for screen hopping status change events. |
-| [off](arkts-distributedservice-off-f-sys.md#off-3) | Unregisters the listener for the mouse cursor position of a device. |
-| [on](arkts-distributedservice-on-f-sys.md#on-1) | Enables listening for screen hopping status change events. |
-| [on](arkts-distributedservice-on-f-sys.md#on-2) | Enables listening for screen hopping status change events. |
-| [on](arkts-distributedservice-on-f-sys.md#on-3) | Registers a listener for the mouse cursor position of a device. |
-| [prepare](arkts-distributedservice-prepare-f-sys.md#prepare-1) | Prepares for screen hopping. This API uses an asynchronous callback to return the result. |
-| [prepare](arkts-distributedservice-prepare-f-sys.md#prepare-2) | Prepares for screen hopping. This API uses a promise to return the result. |
-| [prepareCooperate](arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-1) | Prepares for screen hopping. This API uses an asynchronous callback to return the result. |
-| [prepareCooperate](arkts-distributedservice-preparecooperate-f-sys.md#preparecooperate-2) | Prepares for screen hopping. This API uses a promise to return the result. |
-| [unprepare](arkts-distributedservice-unprepare-f-sys.md#unprepare-1) | Cancels the preparation for screen hopping. This API uses an asynchronous callback to return the result. |
-| [unprepare](arkts-distributedservice-unprepare-f-sys.md#unprepare-2) | Cancels the preparation for screen hopping. This API uses a promise to return the result. |
-| [unprepareCooperate](arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-1) | Cancels the preparation for screen hopping. This API uses an asynchronous callback to return the result. |
-| [unprepareCooperate](arkts-distributedservice-unpreparecooperate-f-sys.md#unpreparecooperate-2) | Cancels the preparation for screen hopping. This API uses a promise to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[activate](arkts-cooperate-activate-f-sys.md#activate-1) | 启动键鼠穿越，使用Callback异步回调。 |
+| <!--DelRow-->[activate](arkts-cooperate-activate-f-sys.md#activate-2) | 启动键鼠穿越，使用Promise异步回调。 |
+| <!--DelRow-->[activateCooperate](arkts-cooperate-activatecooperate-f-sys.md#activateCooperate-1) | 启动键鼠穿越，使用Callback异步回调。 |
+| <!--DelRow-->[activateCooperate](arkts-cooperate-activatecooperate-f-sys.md#activateCooperate-2) | 启动键鼠穿越，使用Promise异步回调。 |
+| <!--DelRow-->[activateCooperateWithOptions](arkts-cooperate-activatecooperatewithoptions-f-sys.md#activateCooperateWithOptions-1) | 启动键鼠穿越，使用选项开始屏幕跳转。 |
+| <!--DelRow-->[deactivate](arkts-cooperate-deactivate-f-sys.md#deactivate-1) | 停止键鼠穿越，使用Callback异步回调。 |
+| <!--DelRow-->[deactivate](arkts-cooperate-deactivate-f-sys.md#deactivate-2) | 停止键鼠穿越，使用Promise异步回调。 |
+| <!--DelRow-->[deactivateCooperate](arkts-cooperate-deactivatecooperate-f-sys.md#deactivateCooperate-1) | 停止键鼠穿越，使用Callback异步回调。 |
+| <!--DelRow-->[deactivateCooperate](arkts-cooperate-deactivatecooperate-f-sys.md#deactivateCooperate-2) | 停止键鼠穿越，使用Promise异步回调。 |
+| <!--DelRow-->[getCooperateSwitchState](arkts-cooperate-getcooperateswitchstate-f-sys.md#getCooperateSwitchState-1) | 获取目标设备键鼠穿越开关的状态，使用Callback异步回调。 |
+| <!--DelRow-->[getCooperateSwitchState](arkts-cooperate-getcooperateswitchstate-f-sys.md#getCooperateSwitchState-2) | 获取目标设备键鼠穿越开关的状态，使用Promise异步方式返回结果。 |
+| <!--DelRow-->[getCrossingSwitchState](arkts-cooperate-getcrossingswitchstate-f-sys.md#getCrossingSwitchState-1) | 获取目标设备键鼠穿越开关的状态，使用Callback异步回调。 |
+| <!--DelRow-->[getCrossingSwitchState](arkts-cooperate-getcrossingswitchstate-f-sys.md#getCrossingSwitchState-2) | 获取目标设备键鼠穿越开关的状态，使用Promise异步方式返回结果。 |
+| <!--DelRow-->[off](arkts-cooperate-off-f-sys.md#off-1) | 取消监听键鼠穿越状态。 |
+| <!--DelRow-->[off](arkts-cooperate-off-f-sys.md#off-2) | 取消监听键鼠穿越状态。 |
+| <!--DelRow-->[off](arkts-cooperate-off-f-sys.md#off-3) | 取消监听指定设备鼠标光标位置。 |
+| <!--DelRow-->[offCooperateMessage](arkts-cooperate-offcooperatemessage-f-sys.md#offCooperateMessage-1) | Disables listening for screen hopping status change events. |
+| <!--DelRow-->[offCooperateMouseEvent](arkts-cooperate-offcooperatemouseevent-f-sys.md#offCooperateMouseEvent-1) | Disables listening for mouse pointer position information on the specified device for cooperation. |
+| <!--DelRow-->[on](arkts-cooperate-on-f-sys.md#on-1) | 注册监听键鼠穿越状态。 |
+| <!--DelRow-->[on](arkts-cooperate-on-f-sys.md#on-2) | 注册监听键鼠穿越状态。 |
+| <!--DelRow-->[on](arkts-cooperate-on-f-sys.md#on-3) | 注册监听指定设备鼠标光标位置。 |
+| <!--DelRow-->[onCooperateMessage](arkts-cooperate-oncooperatemessage-f-sys.md#onCooperateMessage-1) | Enables listening for screen hopping status change events. |
+| <!--DelRow-->[onCooperateMouseEvent](arkts-cooperate-oncooperatemouseevent-f-sys.md#onCooperateMouseEvent-1) | Enables listening for mouse pointer position information on the specified device for cooperation. |
+| <!--DelRow-->[prepare](arkts-cooperate-prepare-f-sys.md#prepare-1) | 准备键鼠穿越，使用Callback异步回调。 |
+| <!--DelRow-->[prepare](arkts-cooperate-prepare-f-sys.md#prepare-2) | 准备键鼠穿越，使用Promise异步方式返回结果。 |
+| <!--DelRow-->[prepareCooperate](arkts-cooperate-preparecooperate-f-sys.md#prepareCooperate-1) | 准备键鼠穿越，使用Callback异步回调。 |
+| <!--DelRow-->[prepareCooperate](arkts-cooperate-preparecooperate-f-sys.md#prepareCooperate-2) | 准备键鼠穿越，使用Promise异步方式返回结果。 |
+| <!--DelRow-->[unprepare](arkts-cooperate-unprepare-f-sys.md#unprepare-1) | 取消键鼠穿越准备，使用Callback异步回调。 |
+| <!--DelRow-->[unprepare](arkts-cooperate-unprepare-f-sys.md#unprepare-2) | 取消键鼠穿越准备，使用Promise异步回调。 |
+| <!--DelRow-->[unprepareCooperate](arkts-cooperate-unpreparecooperate-f-sys.md#unprepareCooperate-1) | 取消键鼠穿越准备，使用Callback异步回调。 |
+| <!--DelRow-->[unprepareCooperate](arkts-cooperate-unpreparecooperate-f-sys.md#unprepareCooperate-2) | 取消键鼠穿越准备，使用Promise异步回调。 |
 
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [CooperateMessage](arkts-distributedservice-cooperatemessage-i-sys.md) | Defines a screen hopping status change event. |
-| [CooperateOptions](arkts-distributedservice-cooperateoptions-i-sys.md) | Screen hopping options, such as the exit position. |
-| [MouseLocation](arkts-distributedservice-mouselocation-i-sys.md) | Defines the mouse pointer position for screen hopping. |
-<!--DelEnd-->
-
-<!--Del-->
-### Enums（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CooperateMsg](arkts-distributedservice-cooperatemsg-e-sys.md) | Represents a screen hopping message notification. |
-| [CooperateState](arkts-distributedservice-cooperatestate-e-sys.md) | Enumerates the screen hopping states. |
-<!--DelEnd-->
+| <!--DelRow-->[CooperateMessage](arkts-cooperate-cooperatemessage-i-sys.md) | 键鼠穿越的消息。 |
+| <!--DelRow-->[CooperateOptions](arkts-cooperate-cooperateoptions-i-sys.md) | 键鼠穿越可选控制参数，控制穿出点位置。 |
+| <!--DelRow-->[MouseLocation](arkts-cooperate-mouselocation-i-sys.md) | 键鼠穿越的位置。 |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| <!--DelRow-->[CooperateMsg](arkts-cooperate-cooperatemsg-e-sys.md) | 键鼠穿越的消息通知。 |
+| <!--DelRow-->[CooperateState](arkts-cooperate-cooperatestate-e-sys.md) | 键鼠穿越状态的枚举。 |
 

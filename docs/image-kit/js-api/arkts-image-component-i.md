@@ -1,6 +1,6 @@
 # Component
 
-Describes the color components of an image.
+描述图像颜色分量。
 
 **Since:** 9
 
@@ -9,22 +9,8 @@ Describes the color components of an image.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
-
-## byteBuffer
-
-```TypeScript
-readonly byteBuffer: ArrayBuffer
-```
-
-Component buffer.
-
-**Type:** ArrayBuffer
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Image.Core
 
 ## componentType
 
@@ -32,23 +18,9 @@ Component buffer.
 readonly componentType: ComponentType
 ```
 
-Color component type.
+组件类型。
 
 **Type:** ComponentType
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## pixelStride
-
-```TypeScript
-readonly pixelStride: number
-```
-
-Pixel stride.
-
-**Type:** number
 
 **Since:** 9
 
@@ -57,12 +29,40 @@ Pixel stride.
 ## rowStride
 
 ```TypeScript
-readonly rowStride: number
+readonly rowStride: int
 ```
 
-Row stride. The camera preview stream data needs to be read by stride. For details, see [Solution to Screen Artifacts During Camera Preview](https://developer.huawei.com/consumer/en/doc/best-practices/bpta-deal-stride-solution) .
+行距。单位：字节（Byte）。读取相机预览流数据时，需要按stride进行读取，使用详情请参考 [相机预览花屏解决方案](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-deal-stride-solution)。
 
-**Type:** number
+**Type:** int
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## byteBuffer
+
+```TypeScript
+readonly byteBuffer: ArrayBuffer
+```
+
+组件缓冲区。
+
+**Type:** ArrayBuffer
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## pixelStride
+
+```TypeScript
+readonly pixelStride: int
+```
+
+像素间距。单位：字节（Byte）。
+
+**Type:** int
 
 **Since:** 9
 

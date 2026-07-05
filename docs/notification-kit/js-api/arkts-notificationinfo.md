@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [NotificationInfo](arkts-notification-notificationinfo-i.md) | The **NotificationInfo** module describes the notification information delivered to the [onReceiveMessage](arkts-notification-notificationsubscriberextensionability-c.md#onreceivemessage-1) callback of ExtensionAbility for notification subscriptions. |
+| [NotificationInfo](arkts-notificationinfo-i.md) | 通知订阅扩展能力中 [onReceiveMessage]{@link @ohos.application.NotificationSubscriberExtensionAbility:NotificationSubscriberExtensionAbility#onReceiveMessage} 回调的通知信息。 |
 

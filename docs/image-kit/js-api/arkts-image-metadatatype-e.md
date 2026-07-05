@@ -1,6 +1,10 @@
 # MetadataType
 
-Enumerates image metadata types.
+```TypeScript
+enum MetadataType
+```
+
+表示图片元数据类型的枚举。
 
 **Since:** 13
 
@@ -12,7 +16,7 @@ Enumerates image metadata types.
 EXIF_METADATA = 1
 ```
 
-Exif data.
+exif数据。
 
 **Since:** 13
 
@@ -24,7 +28,7 @@ Exif data.
 FRAGMENT_METADATA = 2
 ```
 
-Fragment map metadata.
+水印裁剪图元数据。
 
 **Since:** 13
 
@@ -36,7 +40,7 @@ Fragment map metadata.
 GIF_METADATA = 5
 ```
 
-GIF image metadata.
+GIF图片元数据。
 
 **Since:** 20
 
@@ -48,11 +52,11 @@ GIF image metadata.
 HEIFS_METADATA = 15
 ```
 
-Metadata of a HEIFS image.
+HEIF序列图片元数据。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -62,11 +66,11 @@ Metadata of a HEIFS image.
 DNG_METADATA = 16
 ```
 
-Metadata of a DNG image.
+DNG图片元数据。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -76,11 +80,11 @@ Metadata of a DNG image.
 WEBP_METADATA = 17
 ```
 
-Metadata of a WebP image.
+WebP图片元数据。
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -90,11 +94,11 @@ Metadata of a WebP image.
 PNG_METADATA = 19
 ```
 
-Metadata of a PNG image.
+PNG图片元数据。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -104,11 +108,11 @@ Metadata of a PNG image.
 JFIF_METADATA = 20
 ```
 
-Metadata of a JFIF image.
+JFIF图片元数据。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -118,11 +122,11 @@ Metadata of a JFIF image.
 TIFF_METADATA = 21
 ```
 
-Metadata of a TIFF image.
+TIFF图片元数据。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -132,11 +136,11 @@ Metadata of a TIFF image.
 XMP_METADATA = 22
 ```
 
-XMP metadata.
+XMP图片元数据。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -146,11 +150,11 @@ XMP metadata.
 AVIS_METADATA = 23
 ```
 
-Metadata of a Avis image.
+AVIS图片元数据。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

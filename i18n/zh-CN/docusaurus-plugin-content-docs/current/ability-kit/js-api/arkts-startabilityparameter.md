@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [StartAbilityParameter](arkts-ability-startabilityparameter-i.md) | 定义启动Ability参数，可以作为入参，调用 [startAbility](./../@ohos.ability.featureAbility:featureAbility.startAbility(parameter: StartAbilityParameter, callback: AsyncCallback&lt;number&gt;)) 启动指定的Ability。 |
+| [StartAbilityParameter](arkts-startabilityparameter-i.md) | 定义启动Ability参数，可以作为入参，调用 [startAbility]{@link ./../@ohos.ability.featureAbility:featureAbility.startAbility(parameter: StartAbilityParameter, callback: AsyncCallback<number>)} 启动指定的Ability。 |
 

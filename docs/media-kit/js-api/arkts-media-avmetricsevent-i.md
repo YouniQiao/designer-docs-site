@@ -9,8 +9,36 @@ Describes the information of an Metrics Event.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
+
+## timeStamp
+
+```TypeScript
+timeStamp: long
+```
+
+Absolute timestamp when the event occurred.
+
+**Type:** long
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Media.AVPlayer
+
+## playbackPosition
+
+```TypeScript
+playbackPosition: int
+```
+
+The playback progress position when the event occurs.
+
+**Type:** int
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
 ## details
 
@@ -24,7 +52,7 @@ The detailed information of the event.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -40,35 +68,7 @@ Type of the metrics event.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Media.AVPlayer
-
-## playbackPosition
-
-```TypeScript
-playbackPosition: number
-```
-
-The playback progress position when the event occurs, in ms.
-
-**Type:** number
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Media.AVPlayer
-
-## timeStamp
-
-```TypeScript
-timeStamp: number
-```
-
-Absolute timestamp when the event occurred, in ms.
-
-**Type:** number
-
-**Since:** 23
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 

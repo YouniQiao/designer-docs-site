@@ -1,5 +1,9 @@
 # ContentProtectionLevel
 
+```TypeScript
+enum ContentProtectionLevel
+```
+
 Enumerates content protection level.
 
 **Since:** 12
@@ -16,7 +20,7 @@ Device decrypt and decode type unknown.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -30,7 +34,7 @@ Device using software level.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -44,7 +48,7 @@ Device using hardware level.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -58,7 +62,7 @@ Device using enhanced hardware level.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -72,7 +76,7 @@ Max mode.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 

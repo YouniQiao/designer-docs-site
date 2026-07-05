@@ -1,11 +1,5 @@
 # getAudioManager
 
-## Modules to Import
-
-```TypeScript
-import { audio } from '@ohos.multimedia.audio';
-```
-
 ## getAudioManager
 
 ```TypeScript
@@ -16,7 +10,7 @@ Obtains an AudioManager instance.
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

@@ -1,5 +1,9 @@
 # PlaybackSpeed
 
+```TypeScript
+enum PlaybackSpeed
+```
+
 Enumerates the video playback speeds, which can be passed in the **setSpeed** API.
 
 **Since:** 8
@@ -16,7 +20,7 @@ Plays the video at 0.75 times the normal speed.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -30,7 +34,7 @@ Plays the video at the normal speed.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -44,7 +48,7 @@ Plays the video at 1.25 times the normal speed.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -58,7 +62,7 @@ Plays the video at 1.75 times the normal speed.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -72,7 +76,7 @@ Plays the video at 2.00 times the normal speed.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -86,7 +90,7 @@ Plays the video at 0.50 times the normal speed.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -100,7 +104,7 @@ Plays the video at 1.50 times the normal speed.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -114,7 +118,7 @@ Plays the video at 3.00 times the normal speed.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 13.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -128,7 +132,7 @@ Plays the video at 0.25 times the normal speed.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -142,7 +146,7 @@ Plays the video at 0.125 times the normal speed.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 

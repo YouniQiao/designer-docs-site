@@ -1,4 +1,4 @@
-# InterruptResult (System API)
+# InterruptResult
 
 Describes audio interrupt operation results.
 
@@ -11,24 +11,8 @@ Describes audio interrupt operation results.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## interruptNode
-
-```TypeScript
-interruptNode: number
-```
-
-Interrupt node as a unit to receive interrupt change event.
-
-**Type:** number
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Audio.Interrupt
-
-**System API:** This is a system API.
 
 ## requestResult
 
@@ -39,6 +23,22 @@ requestResult: InterruptRequestResultType
 Interrupt request or abandon result.
 
 **Type:** InterruptRequestResultType
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Audio.Interrupt
+
+**System API:** This is a system API.
+
+## interruptNode
+
+```TypeScript
+interruptNode: int
+```
+
+Interrupt node as a unit to receive interrupt change event.
+
+**Type:** int
 
 **Since:** 9
 

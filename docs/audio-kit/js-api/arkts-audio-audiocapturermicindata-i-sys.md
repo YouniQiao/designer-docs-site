@@ -1,4 +1,4 @@
-# AudioCapturerMicInData (System API)
+# AudioCapturerMicInData
 
 Describes audio capturer data that contains processed audio data and microphone input (mic-in) audio data before any processing.
 
@@ -11,22 +11,22 @@ Describes audio capturer data that contains processed audio data and microphone 
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
-## data
+## micInData
 
 ```TypeScript
-data: ArrayBuffer
+micInData: ArrayBuffer
 ```
 
-Processed audio data buffer.
+Microphone input audio data buffer.
 
 **Type:** ArrayBuffer
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -44,25 +44,25 @@ Echo reference audio data buffer. If capturer config does not set ecStreamInfo, 
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
 **System API:** This is a system API.
 
-## micInData
+## data
 
 ```TypeScript
-micInData: ArrayBuffer
+data: ArrayBuffer
 ```
 
-Microphone input audio data buffer.
+Processed audio data buffer.
 
 **Type:** ArrayBuffer
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 

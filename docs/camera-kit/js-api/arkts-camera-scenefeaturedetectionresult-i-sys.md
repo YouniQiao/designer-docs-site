@@ -1,4 +1,4 @@
-# SceneFeatureDetectionResult (System API)
+# SceneFeatureDetectionResult
 
 Describes the scene feature detection result.
 
@@ -11,24 +11,8 @@ Describes the scene feature detection result.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
-
-## detected
-
-```TypeScript
-readonly detected: boolean
-```
-
-Whether the specified scene feature is detected. **true** if detected, **false** otherwise.
-
-**Type:** boolean
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
 
 ## featureType
 
@@ -39,6 +23,22 @@ readonly featureType: SceneFeatureType
 Scene feature type.
 
 **Type:** SceneFeatureType
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## detected
+
+```TypeScript
+readonly detected: boolean
+```
+
+Whether the specified scene feature is detected. **true** if detected, **false** otherwise.
+
+**Type:** boolean
 
 **Since:** 12
 

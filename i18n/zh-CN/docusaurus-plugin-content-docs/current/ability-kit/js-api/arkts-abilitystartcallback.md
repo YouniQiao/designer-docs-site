@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [AbilityStartCallback](arkts-ability-abilitystartcallback-i.md) | 定义拉起UIExtensionAbility执行结果的回调。 |
+| [AbilityStartCallback](arkts-abilitystartcallback-i.md) | 定义拉起UIExtensionAbility执行结果的回调。 |
 

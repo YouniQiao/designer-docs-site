@@ -1,12 +1,16 @@
 # ActiveDeviceType
 
+```TypeScript
+enum ActiveDeviceType
+```
+
 Enumerates the active device types.
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** CommunicationDeviceType
+**Substitute:** ohos.multimedia.audio.CommunicationDeviceType
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -22,7 +26,7 @@ Speaker.
 
 **Deprecated since:** 9
 
-**Substitutes:** SPEAKER
+**Substitute:** ohos.multimedia.audio.CommunicationDeviceType.SPEAKER
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -38,7 +42,7 @@ Bluetooth device using Synchronous Connection Oriented (SCO) links.
 
 **Deprecated since:** 9
 
-**Substitutes:** BLUETOOTH_SCO
+**Substitute:** ohos.multimedia.audio.DeviceType#BLUETOOTH_SCO
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 

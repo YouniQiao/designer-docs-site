@@ -1,6 +1,6 @@
 # CapturePhoto
 
-**CapturePhoto** provides APIs for obtaining the objects of the full-quality image and the uncompressed image.
+CapturePhoto** provides APIs for obtaining the objects of the full-quality image and the uncompressed image.
 
 **Since:** 23
 
@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## release
@@ -22,9 +22,9 @@ Releases output resources. This API uses a promise to return the result. Model c
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,7 +32,7 @@ Releases output resources. This API uses a promise to return the result. Model c
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 ## main
 
@@ -46,9 +46,9 @@ Object of the full-quality image and the uncompressed image.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

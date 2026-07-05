@@ -9,7 +9,7 @@ Provides basic profile methods.
 ## Modules to Import
 
 ```TypeScript
-import { baseProfile } from '@ohos.bluetooth.baseProfile';
+import { baseProfile } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -18,35 +18,20 @@ import { baseProfile } from '@ohos.bluetooth.baseProfile';
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-connectivity-baseprofile-i.md) | Base interface of profile. |
-| [StateChangeParam](arkts-connectivity-statechangeparam-i.md) | Profile state change parameters. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [BaseProfile](arkts-connectivity-baseprofile-i-sys.md) | Base interface of profile. |
-<!--DelEnd-->
-
-### Enums
-
-| Name | Description |
-| --- | --- |
-| [DisconnectCause](arkts-connectivity-disconnectcause-e.md) | Enum for cause of disconnect. |
-| [PanRole](arkts-connectivity-panrole-e.md) | Enum for PAN profile role. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [ConnectionStrategy](arkts-connectivity-connectionstrategy-e-sys.md) | Enum for connection strategy of the profile |
-<!--DelEnd-->
+| [BaseProfile](arkts-baseprofile-baseprofile-i.md) | Base interface of profile. |
+| [StateChangeParam](arkts-baseprofile-statechangeparam-i.md) | Profile state change parameters. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ProfileConnectionState](arkts-connectivity-profileconnectionstate-t.md) | Indicate the profile connection state. |
+| [ProfileConnectionState](arkts-baseprofile-profileconnectionstate-t.md) | Indicate the profile connection state. |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| <!--DelRow-->[ConnectionStrategy](arkts-baseprofile-connectionstrategy-e-sys.md) | Enum for connection strategy of the profile |
+| [DisconnectCause](arkts-baseprofile-disconnectcause-e.md) | Enum for cause of disconnect. |
+| [PanRole](arkts-baseprofile-panrole-e.md) | Enum for PAN profile role. |
 

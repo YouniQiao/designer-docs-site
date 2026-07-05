@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { BackupExtensionContext } from '@ohos.file.BackupExtensionContext';
+import { BackupExtensionContext } from '@kit.CoreFileKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { BackupExtensionContext } from '@ohos.file.BackupExtensionContext';
 
 | Name | Description |
 | --- | --- |
-| [BackupExtensionContext](arkts-corefile-backupextensioncontext-c.md) | The context of an ability or an application. It allows access to application-specific resources. Can only be obtained through the ability. |
+| [BackupExtensionContext](arkts-backupextensioncontext-c.md) | The context of an ability or an application. It allows access to application-specific resources. Can only be obtained through the ability. |
 

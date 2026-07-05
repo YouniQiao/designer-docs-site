@@ -1,4 +1,8 @@
-# RenderTarget (System API)
+# RenderTarget
+
+```TypeScript
+enum RenderTarget
+```
 
 Audio render target.
 

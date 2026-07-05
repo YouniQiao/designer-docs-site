@@ -1,6 +1,6 @@
 # @ohos.data.cloudExtension
 
-The cloudExtension module provides APIs for third-party vendors to implement the device-cloud sharing service. You can use these APIs to share the device data to the server and implement device-cloud data sharing, including sharing and unsharing data, exiting a share,changing the privilege (operation permissions) on the shared data, querying participants by data identifier or invitation code, and confirming or changing a sharing invitation.
+端云共享Extension，提供第三方厂商适配共享云服务的能力。 通过实现端云共享Extension提供的接口，将端侧的数据共享到服务端，实现端云共享的发起、取消或退出，更改共享数据的操作权限、查询共享参与者、根据共享邀请码查询共享参与者、确认或更改共享邀请，并支持返回共享云服务的相关结果。 其中，端云共享资源标识是指：对于应用发起共享的每一条数据记录，该条数据在进行端云同步时会生成唯一的共享资源标识（字符串类型的值），此标识作为该条数据记录共享时的识别标识。 端云共享参与者是指：共享发起者根据好友列表选中的参与当前数据共享的所有人员。 端云共享邀请码是指：共享发起后，在共享的服务端会生成当前共享操作的邀请码，并将该邀请码附加到当前共享邀请中，通过推送消息推送到被邀请者的设备端，被邀请者可以通过该邀请码进行邀请的确认。 同步云是指：端云同步的服务端，即同应用同账号跨设备的同步。 共享云是指：端云共享的服务端，即同应用跨账号跨设备的共享。
 
 **Since:** 11
 
@@ -9,63 +9,55 @@ The cloudExtension module provides APIs for third-party vendors to implement the
 ## Modules to Import
 
 ```TypeScript
-import { cloudExtension } from '@ohos.data.cloudExtension';
+import { cloudExtension } from '@kit.ArkData';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [createAssetLoaderStub](arkts-arkdata-createassetloaderstub-f-sys.md#createassetloaderstub-1) | Creates a RemoteObject instance based on an AssetLoader instance. The system uses this object to call the APIs of the AssetLoader instance. This API uses a promise to return the result. |
-| [createCloudDBStub](arkts-arkdata-createclouddbstub-f-sys.md#createclouddbstub-1) | Creates a RemoteObject instance based on a CloudDB instance. The system uses this object to call the APIs of the CloudDB instance. This API uses a promise to return the result. |
-| [createCloudServiceStub](arkts-arkdata-createcloudservicestub-f-sys.md#createcloudservicestub-1) | Creates a RemoteObject instance based on a CloudService instance. The system uses this object to call the APIs of the CloudService instance. This API uses a promise to return the result. |
-| [createShareServiceStub](arkts-arkdata-createshareservicestub-f-sys.md#createshareservicestub-1) | Creates a RemoteObject instance based on a ShareCenter instance. The system uses this object to call the APIs of the ShareCenter instance. This API uses a promise to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[createAssetLoaderStub](arkts-cloudextension-createassetloaderstub-f-sys.md#createAssetLoaderStub-1) | 根据AssetLoader类的实例创建对应的RemoteObject对象，系统内部通过该对象调用AssetLoader的实现接口，使用Promise异步回调。 |
+| <!--DelRow-->[createCloudDBStub](arkts-cloudextension-createclouddbstub-f-sys.md#createCloudDBStub-1) | 根据CloudDB类的实例创建对应的RemoteObject对象，系统内部通过该对象调用CloudDB的实现接口，使用Promise异步回调。 |
+| <!--DelRow-->[createCloudServiceStub](arkts-cloudextension-createcloudservicestub-f-sys.md#createCloudServiceStub-1) | 根据CloudService类的实例创建对应的RemoteObject对象，系统内部通过该对象调用CloudService的实现接口。使用Promise异步回调。 |
+| <!--DelRow-->[createShareServiceStub](arkts-cloudextension-createshareservicestub-f-sys.md#createShareServiceStub-1) | 根据ShareCenter类的实例创建对应的RemoteObject对象，系统内部通过该对象调用ShareCenter的实现接口，使用Promise异步回调。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AppBriefInfo](arkts-arkdata-appbriefinfo-i-sys.md) | Represents the brief application information. |
-| [AppSchema](arkts-arkdata-appschema-i-sys.md) | Represents the application database schema. |
-| [AssetLoader](arkts-arkdata-assetloader-i-sys.md) | Provides APIs for uploading and downloading assets. |
-| [CloudAsset](arkts-arkdata-cloudasset-i-sys.md) | Represents the cloud asset information. |
-| [CloudDB](arkts-arkdata-clouddb-i-sys.md) | Provides APIs for performing cloud database operations. |
-| [CloudData](arkts-arkdata-clouddata-i-sys.md) | Represents the cloud data. |
-| [CloudInfo](arkts-arkdata-cloudinfo-i-sys.md) | Represents the cloud information. |
-| [CloudService](arkts-arkdata-cloudservice-i-sys.md) | Provides APIs for interacting with the cloud sync service. You need to inherit this class and implement APIs of this class. The system calls these APIs to connect to the cloud and use the cloud sync service. |
-| [Database](arkts-arkdata-database-i-sys.md) | Represents the database information. |
-| [ExtensionValue](arkts-arkdata-extensionvalue-i-sys.md) | Represents additional information about a data record. |
-| [Field](arkts-arkdata-field-i-sys.md) | Represents a field in the database. |
-| [LockInfo](arkts-arkdata-lockinfo-i-sys.md) | Represents the cloud database lock information. |
-| [Result](arkts-arkdata-result-i-sys.md) | Represents the data sharing result. |
-| [ServiceInfo](arkts-arkdata-serviceinfo-i-sys.md) | Represents the cloud service information. |
-| [ShareCenter](arkts-arkdata-sharecenter-i-sys.md) | Provides APIs for interacting with the sharedCenter service. You need to inherit this class and implement APIs of this class. The system calls these APIs to initiate, cancel, or exit a device-cloud share. |
-| [SubscribeId](arkts-arkdata-subscribeid-i-sys.md) | Represents the subscription ID information. |
-| [SubscribeInfo](arkts-arkdata-subscribeinfo-i-sys.md) | Represents the subscription information. |
-| [Table](arkts-arkdata-table-i-sys.md) | Represents the table information. |
-<!--DelEnd-->
+| <!--DelRow-->[AppBriefInfo](arkts-cloudextension-appbriefinfo-i-sys.md) | 简要应用信息。 |
+| <!--DelRow-->[AppSchema](arkts-cloudextension-appschema-i-sys.md) | 应用数据库模式。 |
+| <!--DelRow-->[AssetLoader](arkts-cloudextension-assetloader-i-sys.md) | 提供资产上传下载接口的类。 |
+| <!--DelRow-->[CloudAsset](arkts-cloudextension-cloudasset-i-sys.md) | 云资产的信息。 |
+| <!--DelRow-->[CloudData](arkts-cloudextension-clouddata-i-sys.md) | 云数据。 |
+| <!--DelRow-->[CloudDB](arkts-cloudextension-clouddb-i-sys.md) | 提供云数据库操作接口的类。 |
+| <!--DelRow-->[CloudInfo](arkts-cloudextension-cloudinfo-i-sys.md) | 云信息。 |
+| <!--DelRow-->[CloudService](arkts-cloudextension-cloudservice-i-sys.md) | 提供对接同步云服务的类。开发者需要继承此类并实现类的接口，系统内部通过该类的接口连接并使用同步云服务。 |
+| <!--DelRow-->[Database](arkts-cloudextension-database-i-sys.md) | 数据库结构信息。 |
+| <!--DelRow-->[ExtensionValue](arkts-cloudextension-extensionvalue-i-sys.md) | 当前数据记录的扩展信息。 |
+| <!--DelRow-->[Field](arkts-cloudextension-field-i-sys.md) | 数据库中的字段结构。 |
+| <!--DelRow-->[LockInfo](arkts-cloudextension-lockinfo-i-sys.md) | 云数据库锁信息。 |
+| <!--DelRow-->[Result](arkts-cloudextension-result-i-sys.md) | 端云共享结果的返回值。 |
+| <!--DelRow-->[ServiceInfo](arkts-cloudextension-serviceinfo-i-sys.md) | 云服务信息 |
+| <!--DelRow-->[ShareCenter](arkts-cloudextension-sharecenter-i-sys.md) | 提供对接共享云服务的类。开发者需要继承此类并实现类的接口，系统内部通过该类的接口连接并使用共享云服务，实现端云共享的发起、取消或退出等能力。 |
+| <!--DelRow-->[SubscribeId](arkts-cloudextension-subscribeid-i-sys.md) | 订阅ID。 |
+| <!--DelRow-->[SubscribeInfo](arkts-cloudextension-subscribeinfo-i-sys.md) | 订阅信息 |
+| <!--DelRow-->[Table](arkts-cloudextension-table-i-sys.md) | 表结构信息。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [ErrorCode](arkts-arkdata-errorcode-e-sys.md) | Enumerates the device-cloud sync states. Use the enum name rather than the enum value. |
-| [FieldType](arkts-arkdata-fieldtype-e-sys.md) | Enumerates the types of the fields in a database table. Use the enum name rather than the enum value. |
-| [Flag](arkts-arkdata-flag-e-sys.md) | Enumerates the operations that can be performed on a database. Use the enum name rather than the enum value. |
-<!--DelEnd-->
+| <!--DelRow-->[CloudAssets](arkts-cloudextension-cloudassets-t-sys.md) | 表示CloudAsset类型的数组。 |
+| <!--DelRow-->[CloudType](arkts-cloudextension-cloudtype-t-sys.md) | 表示云数据字段可使用的类型。各接口参数的实际类型视其功能而定。 |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [CloudAssets](arkts-arkdata-cloudassets-t-sys.md) | Represents an array of CloudAsset. |
-| [CloudType](arkts-arkdata-cloudtype-t-sys.md) | Enumerates the types of the cloud data field. The specific type is determined by the parameter function. |
-<!--DelEnd-->
+| <!--DelRow-->[ErrorCode](arkts-cloudextension-errorcode-e-sys.md) | 表示端云同步过程的状态。请使用枚举名而非枚举值。 |
+| <!--DelRow-->[FieldType](arkts-cloudextension-fieldtype-e-sys.md) | 描述数据库表中字段类型的枚举。请使用枚举名而非枚举值。 |
+| <!--DelRow-->[Flag](arkts-cloudextension-flag-e-sys.md) | 描述数据库上执行操作的枚举。请使用枚举名而非枚举值。 |
 

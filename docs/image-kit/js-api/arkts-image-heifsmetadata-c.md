@@ -1,8 +1,8 @@
 # HeifsMetadata
 
-HeifsMetadata implements Metadata HEIF image sequence metadata.
+HeifsMetadata implements Metadata HEIF序列图像元数据类，用于存储图像的元数据。
 
-**Inheritance/Implementation:** HeifsMetadata implements [Metadata](arkts-image-metadata-i.md#metadata)
+**Inheritance:** HeifsMetadataimplements: Metadata.
 
 **Since:** 23
 
@@ -11,7 +11,7 @@ HeifsMetadata implements Metadata HEIF image sequence metadata.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## clone
@@ -20,11 +20,11 @@ import { image } from '@ohos.multimedia.image';
 clone(): Promise<HeifsMetadata>
 ```
 
-Clones the HEIFS metadata. This API returns the result asynchronously through a promise.
+对Heifs元数据进行克隆。使用Promise异步回调。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -32,7 +32,7 @@ Clones the HEIFS metadata. This API returns the result asynchronously through a 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;HeifsMetadata&gt; | Promise used to return the HEIFS metadata instance. |
+| Promise&lt;HeifsMetadata> | Promise对象，成功返回Heifs元数据实例。 |
 
 ## createInstance
 
@@ -40,11 +40,11 @@ Clones the HEIFS metadata. This API returns the result asynchronously through a 
 static createInstance(): HeifsMetadata
 ```
 
-Creates an empty [HeifsMetadata](arkts-image-heifsmetadata-c.md#heifsmetadata) instance.
+创建一个空的[HeifsMetadata]image.HeifsMetadata实例。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -52,7 +52,7 @@ Creates an empty [HeifsMetadata](arkts-image-heifsmetadata-c.md#heifsmetadata) i
 
 | Type | Description |
 | --- | --- |
-| HeifsMetadata | Empty **HeifsMetadata** instance. |
+| HeifsMetadata | 返回HeifsMetadata的空实例。 |
 
 ## getAllProperties
 
@@ -60,11 +60,11 @@ Creates an empty [HeifsMetadata](arkts-image-heifsmetadata-c.md#heifsmetadata) i
 getAllProperties(): Promise<Record<string, string | null>>
 ```
 
-Obtains all properties and their values from the image metadata. This API returns the result asynchronously through a promise. For details about the properties, see [HeifsPropertyKey](arkts-image-heifspropertykey-e.md#heifspropertykey).
+获取图片中所有元数据的属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[HeifsPropertyKey]image.HeifsPropertyKey。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -72,7 +72,7 @@ Obtains all properties and their values from the image metadata. This API return
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the values of all properties. |
+| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回元数据拥有的所有属性的值。 |
 
 ## getBlob
 
@@ -80,11 +80,11 @@ Obtains all properties and their values from the image metadata. This API return
 getBlob(): Promise<ArrayBuffer>
 ```
 
-Obtains the metadata in binary format. This API uses a promise to return the result.
+以二进制数据的形式获取元数据。使用Promise异步回调。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -92,7 +92,7 @@ Obtains the metadata in binary format. This API uses a promise to return the res
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer&gt; | Promise that returns the binary data of the metadata. |
+| Promise&lt;ArrayBuffer> | Promise对象，返回元数据的二进制数据。 |
 
 ## getProperties
 
@@ -100,11 +100,11 @@ Obtains the metadata in binary format. This API uses a promise to return the res
 getProperties(key: Array<string>): Promise<Record<string, string | null>>
 ```
 
-Obtains the property values of image metadata. This API returns the result asynchronously through a promise.
+获取图像元数据的属性值。使用Promise异步回调。 要查询的属性的具体信息请参考[HeifsPropertyKey]image.HeifsPropertyKey。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -112,19 +112,19 @@ Obtains the property values of image metadata. This API returns the result async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| key | Array&lt;string&gt; | Yes | Names of the properties to query. |
+| key | Array&lt;string> | Yes | 要获取的值的属性名称。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, string \| null&gt;&gt; | Promise used to return the property values. If the operationfails, an error code is returned. |
+| Promise&lt;Record&lt;string, string \| null>> | Promise对象，返回元数据要获取的属性的值，如果获取失败则返回错误码。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: unsupported metadata type |
+| 7600202 | Unsupported metadata. Possible causes: unsupported metadata type |
 
 ## setBlob
 
@@ -132,11 +132,11 @@ Obtains the property values of image metadata. This API returns the result async
 setBlob(blob: ArrayBuffer): Promise<void>
 ```
 
-Replaces the current metadata with binary data. This API uses a promise to return the result.
+使用二进制数据替换当前元数据。使用Promise异步回调。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -144,19 +144,19 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| blob | ArrayBuffer | Yes | Binary data used to replace the metadata. |
+| blob | ArrayBuffer | Yes | 要替换的二进制数据。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
+| 7600206 | Invalid parameter. Possible causes: The blob is empty or has a length of 0. |
 
 ## setProperties
 
@@ -164,11 +164,11 @@ Replaces the current metadata with binary data. This API uses a promise to retur
 setProperties(records: Record<string, string | null>): Promise<void>
 ```
 
-Sets the values of specified properties in image metadata in batches. This API returns the result asynchronously through a promise. For details about the properties, see [HeifsPropertyKey](arkts-image-heifspropertykey-e.md#heifspropertykey).
+批量设置图片元数据中的指定属性的值。使用Promise异步回调。 要查询的属性的具体信息请参考[HeifsPropertyKey]image.HeifsPropertyKey。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -176,81 +176,81 @@ Sets the values of specified properties in image metadata in batches. This API r
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| records | Record&lt;string, string \| null&gt; | Yes | Set of key-value pairs representing the **HeifsMetadata**properties and corresponding values. |
+| records | Record&lt;string, string \| null> | Yes | 用户要修改HeifsMetadata对象的属性和值的键值对集合。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600202](../errorcode-image.md#7600202-unsupported-metadata-readwrite-operation) | Unsupported metadata. Possible causes: unsupported metadata type. |
+| 7600202 | Unsupported metadata. Possible causes: unsupported metadata type. |
 
-## heifsCanvasHeight
+## heifsDelayTime
 
 ```TypeScript
-readonly heifsCanvasHeight?: number
+readonly heifsDelayTime?: int
 ```
 
-Canvas height.
+HEIF序列图片的每帧播放时长。单位为毫秒（ms）。
 
-**Type:** number
+**Type:** int
 
-**Since:** 26.0.0
+**Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## heifsCanvasWidth
 
 ```TypeScript
-readonly heifsCanvasWidth?: number
+readonly heifsCanvasWidth?: int
 ```
 
-Canvas width.
+HEIF序列图片的画布宽度。 单位为像素（px）。 该值为正整数。
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## heifsDelayTime
+## heifsCanvasHeight
 
 ```TypeScript
-readonly heifsDelayTime?: number
+readonly heifsCanvasHeight?: int
 ```
 
-Playback duration of each frame in an HEIF image sequence, in ms.
+HEIF序列图片的画布高度。 单位为像素（px）。 该值为正整数。
 
-**Type:** number
+**Type:** int
 
-**Since:** 23
+**Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## heifsUnclampedDelayTime
 
 ```TypeScript
-readonly heifsUnclampedDelayTime?: number
+readonly heifsUnclampedDelayTime?: int
 ```
 
-Unclamped delay of each frame in ms.
+HEIF序列图片每帧未钳制的延迟时长。 单位为毫秒（ms）。 该值为正整数。
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

@@ -1,24 +1,18 @@
 # createMediaSourceWithDataSource
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createMediaSourceWithDataSource
 
 ```TypeScript
 function createMediaSourceWithDataSource(dataSrc: AVDataSrcDescriptor): MediaSource | undefined
 ```
 
-Creates a media source from a custom data source.
+通过自定义数据源创建媒体源。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -26,13 +20,13 @@ Creates a media source from a custom data source.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| dataSrc | AVDataSrcDescriptor | Yes | Interface definition for obtaining media data. |
+| dataSrc | AVDataSrcDescriptor | Yes | 流式媒体资源描述符。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| MediaSource | MediaSource instance if the operation is successful; returns undefined otherwise. |
+| MediaSource | 返回MediaSource，用于媒体资源设置。 |
 
 **Example**
 

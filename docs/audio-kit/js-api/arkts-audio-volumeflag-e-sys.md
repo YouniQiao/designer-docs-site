@@ -1,4 +1,8 @@
-# VolumeFlag (System API)
+# VolumeFlag
+
+```TypeScript
+enum VolumeFlag
+```
 
 Enumerates volume related operations. Flags should be powers of 2!
 

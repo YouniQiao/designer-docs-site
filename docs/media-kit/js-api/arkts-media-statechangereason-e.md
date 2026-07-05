@@ -1,6 +1,10 @@
 # StateChangeReason
 
-Enumerates the reasons for the state transition of the AVPlayer or AVRecorder instance. The enum value is reported together with **state**.
+```TypeScript
+enum StateChangeReason
+```
+
+表示播放或录制实例状态机切换原因的枚举，伴随state一起上报。
 
 **Since:** 9
 
@@ -12,11 +16,11 @@ Enumerates the reasons for the state transition of the AVPlayer or AVRecorder in
 USER = 1
 ```
 
-State transition triggered by user behavior. It happens when a user or the client calls an API.
+表示用户行为造成的状态切换，由用户或客户端主动调用接口产生。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -26,11 +30,11 @@ State transition triggered by user behavior. It happens when a user or the clien
 BACKGROUND = 2
 ```
 
-State transition caused by background system behavior. For example, if an application does not have the permission of Media Controller, the application is forcibly suspended or stopped by the system when it switches to the background.
+表示后台系统行为造成的状态切换，比如应用未注册播控中心权限，退到后台时被系统强制暂停或停止。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

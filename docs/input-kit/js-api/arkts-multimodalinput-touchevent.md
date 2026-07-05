@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@ohos.multimodalInput.touchEvent';
+import { SourceType,ToolType,TouchEvent,FixedMode,KeyAction,Touch } from '@kit.InputKit';
 ```
 
 ## Summary
@@ -12,31 +12,15 @@ import { SourceType, ToolType, TouchEvent, FixedMode, KeyAction, Touch } from '@
 
 | Name | Description |
 | --- | --- |
-| [Touch](arkts-input-touch-i.md) | Defines the touch point information. |
-| [TouchEvent](arkts-input-touchevent-i.md) | Defines a touch event. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [Touch](arkts-input-touch-i-sys.md) | Defines the touch point information. |
-| [TouchEvent](arkts-input-touchevent-i-sys.md) | Defines a touch event. |
-<!--DelEnd-->
+| [Touch](arkts-touch-i.md) | 触屏点信息。 |
+| [TouchEvent](arkts-touchevent-i.md) | 触屏输入事件。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Action](arkts-input-action-e.md) | Enumerates the touch event types. |
-| [SourceType](arkts-input-sourcetype-e.md) | Enumerates touch sources. Currently, only the touchscreen and touchpad are supported. |
-| [ToolType](arkts-input-tooltype-e.md) | Enumerates touch tool types. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [FixedMode](arkts-input-fixedmode-e-sys.md) | Enumerates coordinate correction modes. |
-<!--DelEnd-->
+| [Action](arkts-action-e.md) | 触屏输入事件类型。 |
+| <!--DelRow-->[FixedMode](arkts-fixedmode-e.md) | 修正坐标的模式。 **系统API**: 此接口为系统接口。 |
+| [SourceType](arkts-sourcetype-e.md) | 触屏来源的设备类型，当前仅支持触摸屏、触控板类型上报。 |
+| [ToolType](arkts-tooltype-e.md) | 操作触屏的工具类型。 |
 

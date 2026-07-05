@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [AbilityRunningInfo](arkts-ability-abilityrunninginfo-i.md) | AbilityRunningInfo是记录Ability运行信息和状态的数据结构，通过 [getAbilityRunningInfos](arkts-ability-getabilityrunninginfos-f.md#getabilityrunninginfos-1)方法获取。 |
+| [AbilityRunningInfo](arkts-abilityrunninginfo-i.md) | AbilityRunningInfo是记录Ability运行信息和状态的数据结构，通过 [getAbilityRunningInfos]{@link @ohos.app.ability.abilityManager:abilityManager.getAbilityRunningInfos()}方法获取。 |
 

@@ -1,6 +1,6 @@
 # PackingOption
 
-Describes the options for image encoding.
+表示图片编码选项。
 
 **Since:** 6
 
@@ -9,40 +9,8 @@ Describes the options for image encoding.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
-
-## backgroundColor
-
-```TypeScript
-backgroundColor?: number
-```
-
-The background color used when the image pixels are in RGBA format but the target encoding format does not support transparency, such as "image/jpeg" or "image/heif". The value must be a 24‑bit RGB integer expressed in hexadecimal notation (e.g., 0xRRGGBB). The alpha channel is ignored. Valid range: 0x000000 – 0xFFFFFF.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-## bufferSize
-
-```TypeScript
-bufferSize?: number
-```
-
-Size of the buffer for receiving the encoded data, in bytes. If this parameter is not set, the default value 25 MB is used. If the size of an image exceeds 25 MB, you must specify the size. The value of **bufferSize** must be greater than the size of the encoded image. The use of [packToFile](arkts-image-imagepacker-i.md#packtofile-1) is not restricted by this parameter.
-
-**Type:** number
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
 ## desiredDynamicRange
 
@@ -50,9 +18,71 @@ Size of the buffer for receiving the encoded data, in bytes. If this parameter i
 desiredDynamicRange?: PackingDynamicRange
 ```
 
-Desired dynamic range. The default value is **SDR**.
+目标动态范围。默认值为SDR。
 
 **Type:** PackingDynamicRange
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+## sizeLimit
+
+```TypeScript
+sizeLimit?: PackingSizeLimit
+```
+
+用于指定编码输出图像的最大尺寸限制。 当原图宽度或高度超过最大尺寸maxSize的限制时，保持宽高比不变进行等比例缩小，确保输出图像尺寸不超过指定边界。缩放过程由level参数控制采用的缩放算法。 若未指定此参数，或根据最大尺寸计算的输出图宽/高为0，则按原图尺寸编码。 单位：像素（px）。 参数规则： - maxSize = {0, 0}：不限制最大编码尺寸，按原图尺寸编码 - maxSize.width > 0而maxSize.height <= 0：限制最大宽度，高度不限（使用原图高度） - maxSize.width <= 0而maxSize.height > 0：限制最大高度，宽度不限（使用原图宽度） - maxSize.width > 0且maxSize.height > 0：宽高同时限制，选择较小的缩放比例 默认值：{maxSize: {width: 0, height: 0}, level: AntiAliasingLevel.NONE}
+
+**Type:** PackingSizeLimit
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+## backgroundColor
+
+```TypeScript
+backgroundColor?: int
+```
+
+用于指定编码过程中透明区域填充的背景颜色。 当图片像素为RGBA_8888，且编码的目标格式不支持透明度（如"image/jpeg"或"image/heif"）时，透明区域将填充为指定背景颜色（格式：0xRRGGBB），默认值为 0（黑色）。 PNG、WebP等支持透明度的格式会忽略此参数。 颜色范围：0x000000 - 0xFFFFFF
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+## tiffPackingOptions
+
+```TypeScript
+tiffPackingOptions?: PackingOptionsForTiff
+```
+
+TIFF图像编码选项。
+
+**Type:** PackingOptionsForTiff
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+## needsPackProperties
+
+```TypeScript
+needsPackProperties?: boolean
+```
+
+是否需要编码图片属性信息，例如EXIF。true表示需要，false表示不需要。默认值为false。
+
+**Type:** boolean
 
 **Since:** 12
 
@@ -64,29 +94,29 @@ Desired dynamic range. The default value is **SDR**.
 format: string
 ```
 
-Format of the packed image. Currently, only the following formats are supported: image/jpeg, image/webp, image/png, image/heic (or image/heif )<sup>12+</sup>, image/sdr_astc_4x4<sup>18+</sup>, image/sdr_sut_superfast_4x4<sup>18+</sup> (depending on the hardware), and image/hdr_astc_4x4<sup>20+</sup>. **NOTE**: The JPEG format does not support the alpha channel. If the JPEG format with the alpha channel is used for data encoding, the transparent color turns black.
+目标格式。</br>- 当[输入为ImageSource或PixelMap](docroot://media/image/image-encoding.md)时，支持"image/jpeg"、"image/webp"、" image/png"和"image/heic（或者image/heif）"<sup>12+</sup>、"image/sdr_astc_4x4"<sup>18+</sup>、"image/sdr_sut_superfast_4 x4"<sup>18+</sup>（不同硬件设备支持情况不同）、"image/hdr_astc_4x4"<sup>20+</sup>。 - 当[输入为Picture](docroot://media/image/image-picture-encoding.md)时，仅支持"image/jpeg"和"image/heic（或者image/heif）"<sup> 12+</sup>。 - gif图片编码需要输入多个PixelMap，并指定format为"image/gif"，使用 [packToDataFromPixelmapSequence]image.ImagePacker.packToDataFromPixelmapSequence或 [packToFileFromPixelmapSequence]image.ImagePacker.packToFileFromPixelmapSequence接口进行编码。 **说明：** 因为jpeg不支持透明通道，若使用带透明通道的数据编码jpeg格式，透明色将变为黑色。
 
 **Type:** string
 
 **Since:** 6
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
 ## maxEmbedThumbnailDimension
 
 ```TypeScript
-maxEmbedThumbnailDimension?: number
+maxEmbedThumbnailDimension?: int
 ```
 
-This parameter is valid only when needsPackProperties is set to true. It specifies the maximum width and height of the thumbnail generated during encoding. If this parameter is not specified, no thumbnail will be generated during encoding. The value should be an integer. <br>Unit:px.
+用于指定编码过程中生成缩略图的最大边长（宽和高中较大的那一边），较短的一边会根据长边的缩放比例进行缩放。此参数仅在needsPackProperties设置为true时有效。 该值应为整数，默认值为0。 若未指定此参数，或根据该尺寸计算出生成的缩略图宽/高为0，则编码过程中不会生成缩略图。 单位：像素（px）。
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
@@ -96,75 +126,45 @@ This parameter is valid only when needsPackProperties is set to true. It specifi
 needsPackGPS?: boolean
 ```
 
-Indicates whether to carry GPS information when encoding the EXIF metadata. Default value: true.
+是否在编码过程中保留GPS隐私信息。 true表示保留GPS信息，不进行隐私处理。false表示移除GPS信息（仅在源图像包含EXIF且needsPackProperties设置为true时生效）。默认值为true。
 
 **Type:** boolean
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
-## needsPackProperties
+## bufferSize
 
 ```TypeScript
-needsPackProperties?: boolean
+bufferSize?: int
 ```
 
-Whether encoding image property information, for example, Exif, is required. **true** if required, **false** otherwise. The default value is **false**.
+接收编码数据的缓冲区大小，单位：字节（Byte）。如果不设置大小，默认为25MB。如果编码图片超过25MB，需要指定大小。bufferSize需大于编码后图片大小。使用 [packToFile]image.ImagePacker.packToFile(source: ImageSource, fd: int, options: PackingOption, callback: AsyncCallback<void>) 不受此参数限制。
 
-**Type:** boolean
+**Type:** int
 
-**Since:** 12
+**Since:** 9
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
 ## quality
 
 ```TypeScript
-quality: number
+quality: int
 ```
 
-Quality of the output image set. This parameter takes effect only for JPEG and HEIF images. The value range is [0, 100]. The value **0** means the lowest quality, and **100** means the highest quality. The higher the quality , the larger the space occupied by the generated image. WebP and PNG images are lossless. In the case of sdr_astc_4x4 encoding, the parameter can be set to **92** and **85**. In the case of sut encoding, the parameter can be set to **92**. (Available since API version 20) In the case of hdr_astc_4x4 encoding, the parameter can be set to **85**.
+1. 编码中设定输出图片质量的参数，该参数仅对JPEG图片和HEIF图片生效。取值范围：[0, 100]。0质量最低，100质量最高，质量越高生成图片所占空间越大。WebP、PNG等图片均为无损编码。 2.sdr_astc_4x4编码中，可以设定输出图片质量的参数，可选参数：92、85。 3. sut编码中，设定输出图片质量可选参数：92。 4. （API version 20支持）hdr_astc_4x4编码中，可以设定输出图片质量的参数，可选参数：85。
 
-**Type:** number
+**Type:** int
 
 **Since:** 6
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-## sizeLimit
-
-```TypeScript
-sizeLimit?: PackingSizeLimit
-```
-
-Packing image size limit.
-
-**Type:** PackingSizeLimit
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
-
-## tiffPackingOptions
-
-```TypeScript
-tiffPackingOptions?: PackingOptionsForTiff
-```
-
-Options for tiff image packing.
-
-**Type:** PackingOptionsForTiff
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 

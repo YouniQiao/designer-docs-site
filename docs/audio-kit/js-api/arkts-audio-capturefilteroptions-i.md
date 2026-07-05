@@ -6,14 +6,14 @@ Defines the options for filtering the played audio streams to be recorded.
 
 **Deprecated since:** 12
 
-**Substitutes:** OH_AVScreenCapture
+**Substitute:** OH_AVScreenCapture
 
 **System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## usages
@@ -30,7 +30,7 @@ Filter by stream usages. But not allow to capture voice streams.
 
 **Deprecated since:** 12
 
-**Substitutes:** OH_AVScreenCapture
+**Substitute:** OH_AVScreenCapture
 
 **System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 

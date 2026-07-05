@@ -1,14 +1,14 @@
 # OnPlaybackRateDone
 
 ```TypeScript
-type OnPlaybackRateDone = (rate: number) => void
+type OnPlaybackRateDone = (rate: double) => void
 ```
 
-Describes the callback invoked for the event indicating that the playback rate setting is complete.
+播放速率设置完成事件回调方法。
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -16,5 +16,5 @@ Describes the callback invoked for the event indicating that the playback rate s
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rate | double | Yes | Playback rate. |
+| rate | double | Yes | 播放速率。 |
 

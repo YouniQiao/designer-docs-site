@@ -9,7 +9,7 @@ Describes the event indicating that the input device changes.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## changeReason

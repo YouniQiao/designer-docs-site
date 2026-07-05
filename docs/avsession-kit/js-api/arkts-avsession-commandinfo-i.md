@@ -9,36 +9,8 @@ The definition of command information to be sent to the session
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
-
-## callerBundleName
-
-```TypeScript
-callerBundleName?: string
-```
-
-Caller bundle name.
-
-**Type:** string
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## callerDeviceId
-
-```TypeScript
-callerDeviceId?: string
-```
-
-Caller device id.
-
-**Type:** string
-
-**Since:** 22
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
 
 ## callerModuleName
 
@@ -63,6 +35,34 @@ callerType?: CallerType
 Caller type.
 
 **Type:** CallerType
+
+**Since:** 22
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## callerDeviceId
+
+```TypeScript
+callerDeviceId?: string
+```
+
+Caller device id.
+
+**Type:** string
+
+**Since:** 22
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## callerBundleName
+
+```TypeScript
+callerBundleName?: string
+```
+
+Caller bundle name.
+
+**Type:** string
 
 **Since:** 22
 

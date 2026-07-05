@@ -9,22 +9,22 @@ Describes the smooth zoom information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## duration
 
 ```TypeScript
-duration: number
+duration: int
 ```
 
 Total duration of smooth zoom, in ms.
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

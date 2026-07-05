@@ -1,6 +1,6 @@
 # @ohos.resourceschedule.workScheduler
 
-The **workScheduler** module provides the APIs for registering, canceling, and querying deferred tasks. You can use the APIs to register tasks that do not have high requirements on real-time performance as deferred tasks. The system schedules and executes the deferred tasks at an appropriate time, subject to the storage space, power consumption, and more. For details, see [Deferred Task Scheduling](../../../../task-management/work-scheduler.md).
+本模块提供延迟任务注册、取消、查询的能力。在开发过程中，对于实时性要求不高的任务，可以调用本模块接口注册延迟任务，在系统空闲时根据性能、功耗、热等情况进行调度执行。开发指导请参考 [延迟任务开发指南](docroot://task-management/work-scheduler.md)。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The **workScheduler** module provides the APIs for registering, canceling, and q
 ## Modules to Import
 
 ```TypeScript
-import { workScheduler } from '@ohos.resourceschedule.workScheduler';
+import { workScheduler } from '@kit.BackgroundTasksKit';
 ```
 
 ## Summary
@@ -18,39 +18,37 @@ import { workScheduler } from '@ohos.resourceschedule.workScheduler';
 
 | Name | Description |
 | --- | --- |
-| [getWorkStatus](arkts-backgroundtasks-getworkstatus-f.md#getworkstatus-1) | Obtains the information a deferred task. This API uses an asynchronous callback to return the result. |
-| [getWorkStatus](arkts-backgroundtasks-getworkstatus-f.md#getworkstatus-2) | Obtains the information a deferred task. This API uses a promise to return the result. |
-| [isLastWorkTimeOut](arkts-backgroundtasks-islastworktimeout-f.md#islastworktimeout-1) | Checks whether the last execution of a task timed out. This API uses an asynchronous callback to return the result. |
-| [isLastWorkTimeOut](arkts-backgroundtasks-islastworktimeout-f.md#islastworktimeout-2) | Checks whether the last execution of a task timed out. This API uses an asynchronous callback to return the result. |
-| [isLastWorkTimeOut](arkts-backgroundtasks-islastworktimeout-f.md#islastworktimeout-3) | Checks whether the last execution of a task timed out. This API uses a promise to return the result. |
-| [obtainAllWorks](arkts-backgroundtasks-obtainallworks-f.md#obtainallworks-1) | Obtains all the deferred tasks. This API uses an asynchronous callback to return the result. |
-| [obtainAllWorks](arkts-backgroundtasks-obtainallworks-f.md#obtainallworks-2) | Obtains all the deferred tasks. This API uses an asynchronous callback to return the result. |
-| [obtainAllWorks](arkts-backgroundtasks-obtainallworks-f.md#obtainallworks-3) | Obtains all the deferred tasks. This API uses a promise to return the result. |
-| [startWork](arkts-backgroundtasks-startwork-f.md#startwork-1) | Requests a deferred task. Upon successful request, the deferred task is added to the execution queue and will be executed by the system once the trigger conditions are met. |
-| [stopAndClearWorks](arkts-backgroundtasks-stopandclearworks-f.md#stopandclearworks-1) | Stops and clears all the deferred tasks. |
-| [stopWork](arkts-backgroundtasks-stopwork-f.md#stopwork-1) | Stops a deferred task. |
+| [getWorkStatus](arkts-workscheduler-getworkstatus-f.md#getWorkStatus-1) | 通过workId获取延迟任务，使用Callback异步回调。 |
+| [getWorkStatus](arkts-workscheduler-getworkstatus-f.md#getWorkStatus-2) | 通过workId获取延迟任务，使用Promise异步回调。 |
+| [isLastWorkTimeOut](arkts-workscheduler-islastworktimeout-f.md#isLastWorkTimeOut-1) | 检查延迟任务的最后一次执行是否超时，使用Callback异步回调。 |
+| [isLastWorkTimeOut](arkts-workscheduler-islastworktimeout-f.md#isLastWorkTimeOut-2) | 检查延迟任务的最后一次执行是否超时，使用Callback异步回调。 |
+| [isLastWorkTimeOut](arkts-workscheduler-islastworktimeout-f.md#isLastWorkTimeOut-3) | 检查延迟任务的最后一次执行是否超时，使用Promise异步回调。 |
+| [obtainAllWorks](arkts-workscheduler-obtainallworks-f.md#obtainAllWorks-1) | 获取当前应用所有的延迟任务，使用Callback异步回调。 |
+| [obtainAllWorks](arkts-workscheduler-obtainallworks-f.md#obtainAllWorks-2) | 获取当前应用所有的延迟任务，使用Callback异步回调。 |
+| [obtainAllWorks](arkts-workscheduler-obtainallworks-f.md#obtainAllWorks-3) | 获取当前应用所有的延迟任务，使用Promise异步回调。 |
+| [startWork](arkts-workscheduler-startwork-f.md#startWork-1) | 申请延迟任务，成功后会把任务添加到执行队列，满足触发条件后由系统调度执行。 |
+| [stopAndClearWorks](arkts-workscheduler-stopandclearworks-f.md#stopAndClearWorks-1) | 停止和取消当前应用所有的延迟任务。 |
+| [stopWork](arkts-workscheduler-stopwork-f.md#stopWork-1) | 取消延迟任务。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [WorkInfo](arkts-backgroundtasks-workinfo-i.md) | Represents the deferred task information, which is used to set the trigger condition. |
+| [WorkInfo](arkts-workscheduler-workinfo-i.md) | 延迟任务的具体信息, 用于设置延迟任务的触发条件等。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [BatteryStatus](arkts-backgroundtasks-batterystatus-e.md) | Enumerates the battery status that triggers the deferred task callback. |
-| [ChargingType](arkts-backgroundtasks-chargingtype-e.md) | Enumerates the charging types that trigger deferred task callback. |
-| [NetworkType](arkts-backgroundtasks-networktype-e.md) | Enumerates the network types that trigger deferred task callback. |
-| [StorageRequest](arkts-backgroundtasks-storagerequest-e.md) | Enumerates the storage status that triggers the deferred task callback. |
+| [BatteryStatus](arkts-workscheduler-batterystatus-e.md) | 触发延迟任务回调的电池状态。 |
+| [ChargingType](arkts-workscheduler-chargingtype-e.md) | 触发延迟任务回调的充电类型。 |
+| [NetworkType](arkts-workscheduler-networktype-e.md) | 触发延迟任务回调的网络类型。 |
+| [StorageRequest](arkts-workscheduler-storagerequest-e.md) | 触发延迟任务回调的存储状态。 |
 
-<!--Del-->
-### Constants（系统接口）
+### Constants
 
 | Name | Description |
 | --- | --- |
-| [EXECUTE_IMMEDIATE](arkts-backgroundtasks-workscheduler-con-sys.md#execute_immediate) | Whether the requested task is executed immediately. |
-| [WORK_SCHEDULER_CONDITION](arkts-backgroundtasks-workscheduler-con-sys.md#work_scheduler_condition) | The last condition met when the current task is triggered. |
-<!--DelEnd-->
+| <!--DelRow-->[EXECUTE_IMMEDIATE](arkts-workscheduler-con-sys.md#EXECUTE_IMMEDIATE) | 请求的任务是否立即执行。 |
+| <!--DelRow-->[WORK_SCHEDULER_CONDITION](arkts-workscheduler-con-sys.md#WORK_SCHEDULER_CONDITION) | 当前任务触发时满足的最后一个条件。 |
 

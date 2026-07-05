@@ -1,10 +1,4 @@
-# off (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# off
 
 ## off('sessionCreate')
 
@@ -25,15 +19,15 @@ Unregister session create callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionCreate' | Yes | Registration Type, session creation, 'sessionCreate' |
-| callback | (session: AVSessionDescriptor) =&gt; void | No | Used to unregister listener for ('sessionCreate') command |
+| callback | (session: AVSessionDescriptor) => void | No | Used to unregister listener for ('sessionCreate') command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -61,7 +55,6 @@ struct Index {
 
 ```
 
-
 ## off('sessionDestroy')
 
 ```TypeScript
@@ -81,15 +74,15 @@ Unregister session destroy callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionDestroy' | Yes | Registration Type, session deletion, 'sessionDestroy' |
-| callback | (session: AVSessionDescriptor) =&gt; void | No | Used to unregister listener for ('sessionDestroy') command |
+| callback | (session: AVSessionDescriptor) => void | No | Used to unregister listener for ('sessionDestroy') command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -117,7 +110,6 @@ struct Index {
 
 ```
 
-
 ## off('topSessionChange')
 
 ```TypeScript
@@ -137,15 +129,15 @@ Unregister top session changed callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'topSessionChange' | Yes | Registration Type, top priority session change, 'topSessionChange' |
-| callback | (session: AVSessionDescriptor) =&gt; void | No | Used to unregister listener for ('topSessionChange') command |
+| callback | (session: AVSessionDescriptor) => void | No | Used to unregister listener for ('topSessionChange') command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -173,7 +165,6 @@ struct Index {
 
 ```
 
-
 ## off('sessionServiceDie')
 
 ```TypeScript
@@ -193,15 +184,15 @@ Unregister Session service death callback, notifying the application to clean up
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'sessionServiceDie' | Yes | Registration Type, 'sessionServiceDie' |
-| callback | () =&gt; void | No | Used to unregister listener for ('sessionServiceDie') command. |
+| callback | () => void | No | Used to unregister listener for ('sessionServiceDie') command. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -209,7 +200,6 @@ Unregister Session service death callback, notifying the application to clean up
 avSession.off('sessionServiceDie');
 
 ```
-
 
 ## off('distributedSessionChange')
 
@@ -231,14 +221,14 @@ Unregister distributed session changed callback
 | --- | --- | --- | --- |
 | type | 'distributedSessionChange' | Yes | Registration Type, distributed session change |
 | distributedSessionType | DistributedSessionType | Yes | Indicates the distributed session type |
-| callback | Callback&lt;Array&lt;AVSessionController&gt;&gt; | No | The callback will return remote changedAVSessionController. |
+| callback | Callback&lt;Array&lt;AVSessionController>> | No | The callback will return remote changed  AVSessionController. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 202 | Not System App. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -246,7 +236,6 @@ Unregister distributed session changed callback
 avSession.off('distributedSessionChange', avSession.DistributedSessionType.TYPE_SESSION_REMOTE);
 
 ```
-
 
 ## off('deviceAvailable')
 
@@ -267,14 +256,14 @@ Unregister device discovery callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceAvailable' | Yes | Registration Type |
-| callback | (device: OutputDeviceInfo) =&gt; void | No | Used to returns the device info |
+| callback | (device: OutputDeviceInfo) => void | No | Used to returns the device info |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
 
 **Example**
 
@@ -282,7 +271,6 @@ Unregister device discovery callback
 avSession.off('deviceAvailable');
 
 ```
-
 
 ## off('deviceOffline')
 
@@ -303,14 +291,14 @@ Unregister device offline callback
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceOffline' | Yes | Registration Type |
-| callback | (deviceId: string) =&gt; void | No | Used to returns the device info |
+| callback | (deviceId: string) => void | No | Used to returns the device info |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. |
 
 **Example**
 
@@ -318,7 +306,6 @@ Unregister device offline callback
 avSession.off('deviceOffline');
 
 ```
-
 
 ## off('deviceLogEvent')
 
@@ -339,16 +326,16 @@ UnRegister log event callback.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceLogEvent' | Yes | Command to register 'deviceLogEvent'. |
-| callback | Callback&lt;DeviceLogEventCode&gt; | No | Used to handle ('deviceLogEvent') command |
+| callback | Callback&lt;DeviceLogEventCode> | No | Used to handle ('deviceLogEvent') command |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter check failed. 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
+| 202 | Not System App. |
+| 401 | Parameter check failed. 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
 
 **Example**
 
@@ -356,7 +343,6 @@ UnRegister log event callback.
 avSession.off('deviceLogEvent');
 
 ```
-
 
 ## off('deviceStateChanged')
 
@@ -368,7 +354,9 @@ Unregisters a system callback for the device connection phase.
 
 **Since:** 20
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -379,14 +367,14 @@ Unregisters a system callback for the device connection phase.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'deviceStateChanged' | Yes | Event type. |
-| callback | Callback&lt;DeviceState&gt; | No | Callback used to return the device information. |
+| callback | Callback&lt;DeviceState> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
+| 201 | Permission denied. |
+| 202 | Not System App. |
 
 **Example**
 

@@ -1,5 +1,9 @@
 # StreamUsage
 
+```TypeScript
+enum StreamUsage
+```
+
 Enumerates the types of audio streams played.
 
 **Since:** 7
@@ -16,7 +20,7 @@ Unknown content.
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -32,7 +36,7 @@ Media.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_MUSIC
+**Substitute:** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_MUSIC
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -46,7 +50,7 @@ Music.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -60,7 +64,7 @@ VoIP voice call. (The 3A algorithm is enabled when this stream starts.)
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -74,7 +78,7 @@ Voice assistant.
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -88,7 +92,7 @@ Audio stream for alarming.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -102,7 +106,7 @@ Voice message.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -118,7 +122,7 @@ Notification or ringtone usage.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_RINGTONE
+**Substitute:** ohos.multimedia.audio.StreamUsage#STREAM_USAGE_RINGTONE
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -132,7 +136,7 @@ Ringtone.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -146,7 +150,7 @@ Notification.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -160,9 +164,23 @@ Accessibility.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
+
+## STREAM_USAGE_SYSTEM
+
+```TypeScript
+STREAM_USAGE_SYSTEM = 9
+```
+
+System usage, such as screen lock or key click.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
 
 ## STREAM_USAGE_MOVIE
 
@@ -174,7 +192,7 @@ Movie or video.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -188,7 +206,7 @@ Gaming.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -202,7 +220,7 @@ Audiobooks (including crosstalks and storytelling), news radio, and podcasts.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -216,9 +234,51 @@ Navigation.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
+
+## STREAM_USAGE_DTMF
+
+```TypeScript
+STREAM_USAGE_DTMF = 14
+```
+
+DTMF dial tone usage.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## STREAM_USAGE_ENFORCED_TONE
+
+```TypeScript
+STREAM_USAGE_ENFORCED_TONE = 15
+```
+
+Enforced tone usage, such as camera shutter.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## STREAM_USAGE_ULTRASONIC
+
+```TypeScript
+STREAM_USAGE_ULTRASONIC = 16
+```
+
+Ultrasonic playing usage. This type is only used for msdp condition.
+
+**Since:** 10
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
 
 ## STREAM_USAGE_VIDEO_COMMUNICATION
 
@@ -230,7 +290,53 @@ VoIP video call. (The 3A algorithm is enabled when this stream starts.)
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
+
+## STREAM_USAGE_VOICE_CALL_ASSISTANT
+
+```TypeScript
+STREAM_USAGE_VOICE_CALL_ASSISTANT = 21
+```
+
+Voice call assistant type. This type is only used for call assistant functionalities.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## STREAM_USAGE_ANNOUNCEMENT
+
+```TypeScript
+STREAM_USAGE_ANNOUNCEMENT = 22
+```
+
+Announcement usage.
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## STREAM_USAGE_EMERGENCY
+
+```TypeScript
+STREAM_USAGE_EMERGENCY = 23
+```
+
+Emergency usage.
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
 

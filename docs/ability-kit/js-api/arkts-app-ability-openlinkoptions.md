@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { OpenLinkOptions } from '@ohos.app.ability.OpenLinkOptions';
+import { OpenLinkOptions } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { OpenLinkOptions } from '@ohos.app.ability.OpenLinkOptions';
 
 | Name | Description |
 | --- | --- |
-| [OpenLinkOptions](arkts-ability-openlinkoptions-i.md) | **OpenLinkOptions** can be used as an input parameter of [openLink()](arkts-ability-uiabilitycontext-c.md#openlink-1) to indicate whether to enable only App Linking and pass in optional parameters in the form of key-value pairs. |
+| [OpenLinkOptions](arkts-openlinkoptions-i.md) | OpenLinkOptions可以作为[openLink()]{@link ./application/UIAbilityContext:UIAbilityContext.openLink}的入参，用于标识是否仅打开 AppLinking和传递键值对可选参数。 |
 

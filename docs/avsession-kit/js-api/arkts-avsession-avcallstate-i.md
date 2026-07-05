@@ -9,24 +9,8 @@ Used to indicate the call state of the current call.
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
-
-## muted
-
-```TypeScript
-muted: boolean
-```
-
-Current muted status.
-
-**Type:** boolean
-
-**Since:** 11
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
 
 ## state
 
@@ -40,7 +24,23 @@ Current call state. See {@link CallState}
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## muted
+
+```TypeScript
+muted: boolean
+```
+
+Current muted status.
+
+**Type:** boolean
+
+**Since:** 11
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

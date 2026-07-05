@@ -1,6 +1,6 @@
 # GainmapChannel
 
-Describes the data content of a single channel of the gain map. For details, see ISO 21496-1.
+Gainmap图单个通道的数据内容，参考ISO 21496-1。
 
 **Since:** 12
 
@@ -9,32 +9,18 @@ Describes the data content of a single channel of the gain map. For details, see
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
-
-## alternateOffset
-
-```TypeScript
-alternateOffset: number
-```
-
-The per-component alternate offset.
-
-**Type:** number
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
 
 ## baseOffset
 
 ```TypeScript
-baseOffset: number
+baseOffset: double
 ```
 
 The per-component baseline offset.
 
-**Type:** number
+**Type:** double
 
 **Since:** 12
 
@@ -43,12 +29,26 @@ The per-component baseline offset.
 ## gainmapMax
 
 ```TypeScript
-gainmapMax: number
+gainmapMax: double
 ```
 
 The per-component max gain map values.
 
-**Type:** number
+**Type:** double
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## alternateOffset
+
+```TypeScript
+alternateOffset: double
+```
+
+The per-component alternate offset.
+
+**Type:** double
 
 **Since:** 12
 
@@ -57,12 +57,12 @@ The per-component max gain map values.
 ## gainmapMin
 
 ```TypeScript
-gainmapMin: number
+gainmapMin: double
 ```
 
 The per-component min gain map values.
 
-**Type:** number
+**Type:** double
 
 **Since:** 12
 
@@ -71,12 +71,12 @@ The per-component min gain map values.
 ## gamma
 
 ```TypeScript
-gamma: number
+gamma: double
 ```
 
 The per-component gamma values.
 
-**Type:** number
+**Type:** double
 
 **Since:** 12
 

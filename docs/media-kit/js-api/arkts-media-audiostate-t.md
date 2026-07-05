@@ -10,15 +10,15 @@ Describes the audio playback state. You can obtain the state through the **state
 
 **Deprecated since:** 9
 
-**Substitutes:** [AVPlayerState](arkts-media-avplayerstate-t.md#avplayerstate)
+**Substitute:** media.AVPlayerState
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
 | Type | Description |
 | --- | --- |
-| 'idle' | No audio playback is in progress. The audio player is in this state after the**'dataload'** or **'reset'** event is triggered. |
-| 'playing' | Audio playback is in progress. The audio player is in this state after the **'play'**event is triggered. |
-| 'paused' | Audio playback is paused. The audio player is in this state after the **'pause'** eventis triggered. |
-| 'stopped' | Audio playback is stopped. The audio player is in this state after the **'stop'** eventis triggered. |
+| 'idle' | No audio playback is in progress. The audio player is in this state after the  'dataload' or 'reset' event is triggered. |
+| 'playing' | Audio playback is in progress. The audio player is in this state after the 'play'  event is triggered. |
+| 'paused' | Audio playback is paused. The audio player is in this state after the 'pause' event  is triggered. |
+| 'stopped' | Audio playback is stopped. The audio player is in this state after the 'stop' event  is triggered. |
 | 'error' | Audio playback is in the error state. |
 

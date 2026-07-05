@@ -1,8 +1,8 @@
 # AutoExposure
 
-AutoExposure inherits from [AutoExposureQuery](arkts-camera-autoexposurequery-i.md#autoexposurequery). It provides APIs related to auto exposure.
+AutoExposure inherits from [AutoExposureQuery]camera.AutoExposureQuery. It provides APIs related to auto exposure.
 
-**Inheritance/Implementation:** AutoExposure extends [AutoExposureQuery](arkts-camera-autoexposurequery-i.md#autoexposurequery)
+**Inheritance:** AutoExposureextends: AutoExposureQuery.
 
 **Since:** 11
 
@@ -11,8 +11,38 @@ AutoExposure inherits from [AutoExposureQuery](arkts-camera-autoexposurequery-i.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
+
+## getExposureMeteringMode
+
+```TypeScript
+getExposureMeteringMode(): ExposureMeteringMode
+```
+
+Gets current exposure metering mode.
+
+**Since:** 12
+
+**Atomic service API:** From API version 24 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| ExposureMeteringMode | The current exposure metering mode. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. [since 12 - 23] |
+| 7400103 | Session not config, only throw in session usage. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. [since 24] |
 
 ## getExposureMode
 
@@ -20,11 +50,11 @@ import { camera } from '@ohos.multimedia.camera';
 getExposureMode(): ExposureMode
 ```
 
-Obtains the exposure mode in use. > **NOTE** > > This API directly returns an invalid value if you have not set the exposure mode using > [setExposureMode](arkts-camera-autoexposure-i.md#setexposuremode-1).
+Obtains the exposure mode in use. > **NOTE** > > This API directly returns an invalid value if you have not set the exposure mode using > [setExposureMode]camera.AutoExposure.setExposureMode.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,25 +62,25 @@ Obtains the exposure mode in use. > **NOTE** > > This API directly returns an in
 
 | Type | Description |
 | --- | --- |
-| ExposureMode | Exposure mode obtained. If the operation fails, undefined is returned and an error codedefined in [CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is thrown. |
+| ExposureMode | Exposure mode obtained. If the operation fails, undefined is returned and an error code  defined in [CameraErrorCode]camera.CameraErrorCode is thrown. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400103 | Session not config. |
 
 ## getExposureValue
 
 ```TypeScript
-getExposureValue(): number
+getExposureValue(): double
 ```
 
 Obtains the exposure value in use.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -58,13 +88,13 @@ Obtains the exposure value in use.
 
 | Type | Description |
 | --- | --- |
-| number | Exposure value obtained. There is a step for EV. For example, if the step is 0.5 and thisparameter is set to 1.2, the EV that takes effect is 1.0.<br>If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) isreturned. |
+| double | Exposure value obtained. There is a step for EV. For example, if the step is 0.5 and this  parameter is set to 1.2, the EV that takes effect is 1.0.  If the operation fails, an error code defined in [CameraErrorCode]camera.CameraErrorCode is  returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400103 | Session not config. |
 
 ## getMeteringPoint
 
@@ -76,7 +106,7 @@ Obtains the metering point of the camera device.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -84,13 +114,13 @@ Obtains the metering point of the camera device.
 
 | Type | Description |
 | --- | --- |
-| Point | Metering point obtained. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is returned. |
+| Point | Metering point obtained. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400103 | Session not config. |
 
 ## offExposureStateChange
 
@@ -102,9 +132,9 @@ Unregisters the callback used to listen for exposure state changes.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -112,7 +142,7 @@ Unregisters the callback used to listen for exposure state changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;ExposureState&gt; | No | Callback used to get the exposure state change. |
+| callback | Callback&lt;ExposureState> | No |  |
 
 ## onExposureStateChange
 
@@ -124,9 +154,9 @@ Registers a callback to listen for exposure state changes.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -134,19 +164,19 @@ Registers a callback to listen for exposure state changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;ExposureState&gt; | Yes | Callback used to get the exposure state change. |
+| callback | Callback&lt;ExposureState> | Yes | Callback used to get the exposure state change. |
 
 ## setExposureBias
 
 ```TypeScript
-setExposureBias(exposureBias: number): void
+setExposureBias(exposureBias: double): void
 ```
 
-Sets an exposure compensation value (EV). Before the setting, you are advised to use [getExposureBiasRange](arkts-camera-autoexposurequery-i.md#getexposurebiasrange-1) to obtain the supported values.
+Sets an exposure compensation value (EV). Before the setting, you are advised to use [getExposureBiasRange]camera.AutoExposureQuery.getExposureBiasRange to obtain the supported values.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -154,14 +184,45 @@ Sets an exposure compensation value (EV). Before the setting, you are advised to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| exposureBias | number | Yes | EV. The supported EV range can be obtained by calling[getExposureBiasRange](arkts-camera-autoexposurequery-i.md#getexposurebiasrange-1). If thevalue passed is not within the supported range, the nearest critical point is used.<br>Exposure compensationis adjusted in steps, and the step size may vary across devices due to hardware differences. For example, ifthe step size is 0.5, setting a value of 1.2 would result in an actual effective exposure compensation valueof 1.0.<br>If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is returned. |
+| exposureBias | double | Yes | EV. The supported EV range can be obtained by calling  [getExposureBiasRange]camera.AutoExposureQuery.getExposureBiasRange. If the  value passed is not within the supported range, the nearest critical point is used. Exposure compensation  is adjusted in steps, and the step size may vary across devices due to hardware differences. For example, if  the step size is 0.5, setting a value of 1.2 would result in an actual effective exposure compensation value  of 1.0. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 12 |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed. [since 12] |
+
+## setExposureMeteringMode
+
+```TypeScript
+setExposureMeteringMode(aeMeteringMode: ExposureMeteringMode): void
+```
+
+Sets exposure metering mode.
+
+**Since:** 12
+
+**Atomic service API:** From API version 24 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| aeMeteringMode | ExposureMeteringMode | Yes | Exposure metering mode. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. [since 12 - 23] |
+| 7400101 | Parameter missing or parameter type incorrect. [since 12 - 23] |
+| 7400103 | Session not config, only throw in session usage. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. [since 24] |
 
 ## setExposureMode
 
@@ -169,11 +230,11 @@ Sets an exposure compensation value (EV). Before the setting, you are advised to
 setExposureMode(aeMode: ExposureMode): void
 ```
 
-Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-camera-autoexposurequery-i.md#isexposuremodesupported-1) to check whether the exposure mode is supported.
+Sets an exposure mode. Before the setting, call [isExposureModeSupported]camera.AutoExposureQuery.isExposureModeSupported to check whether the exposure mode is supported.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -181,14 +242,14 @@ Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| aeMode | ExposureMode | Yes | Exposure mode. If the input parameter is null or undefined, it is treated as 0and exposure is locked. |
+| aeMode | ExposureMode | Yes | Exposure mode. If the input parameter is null or undefined, it is treated as 0  and exposure is locked. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 19 |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed. [since 19] |
 
 ## setMeteringPoint
 
@@ -200,7 +261,7 @@ Sets the metering point, which is the center point of the metering rectangle. Th
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -208,11 +269,11 @@ Sets the metering point, which is the center point of the metering rectangle. Th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| point | Point | Yes | Metering point. The value range of x and y must be within [0, 1]. If a value less than 0is passed, the value **0** is used. If a value greater than **1** is passed, the value **1** is used. |
+| point | Point | Yes | Metering point. The value range of x and y must be within [0, 1]. If a value less than 0  is passed, the value 0 is used. If a value greater than 1 is passed, the value 1 is used. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400103 | Session not config. |
 

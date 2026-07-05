@@ -1,10 +1,4 @@
-# stopCastDeviceDiscovery (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# stopCastDeviceDiscovery
 
 ## stopCastDeviceDiscovery
 
@@ -24,13 +18,13 @@ Stop device discovery.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | a callback function |
+| callback | AsyncCallback&lt;void> | Yes | a callback function |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
+| 202 | Not System App. |
 
 **Example**
 
@@ -41,7 +35,6 @@ avSession.stopCastDeviceDiscovery(() => {
 });
 
 ```
-
 
 ## stopCastDeviceDiscovery
 
@@ -61,13 +54,13 @@ Stop device discovery.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise for the result |
+| Promise&lt;void> | Promise for the result |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
+| 202 | Not System App. |
 
 **Example**
 

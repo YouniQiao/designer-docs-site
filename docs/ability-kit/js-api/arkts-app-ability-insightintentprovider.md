@@ -9,7 +9,7 @@ Insight intent Provider.
 ## Modules to Import
 
 ```TypeScript
-import { insightIntentProvider } from '@ohos.app.ability.insightIntentProvider';
+import { insightIntentProvider } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,6 +18,7 @@ import { insightIntentProvider } from '@ohos.app.ability.insightIntentProvider';
 
 | Name | Description |
 | --- | --- |
-| [sendExecuteResult](arkts-ability-sendexecuteresult-f.md#sendexecuteresult-1) | Send execute result. |
-| [sendIntentResult](arkts-ability-sendintentresult-f.md#sendintentresult-1) | Send intent result. |
+| [sendExecuteResult](arkts-insightintentprovider-sendexecuteresult-f.md#sendExecuteResult-1) | Send execute result. |
+| [sendIntentResult](arkts-insightintentprovider-sendintentresult-f.md#sendIntentResult-1) | Send intent result. |
+| [sendIntentResult](arkts-insightintentprovider-sendintentresult-f.md#sendIntentResult-2) | Send intent result. |
 

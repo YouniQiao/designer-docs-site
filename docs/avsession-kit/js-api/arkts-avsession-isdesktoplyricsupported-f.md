@@ -1,11 +1,5 @@
 # isDesktopLyricSupported
 
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
-
 ## isDesktopLyricSupported
 
 ```TypeScript
@@ -16,7 +10,7 @@ Whether desktop lyric feature is supported.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -24,13 +18,13 @@ Whether desktop lyric feature is supported.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | - result returned to indicate desktop lyric is supported. |
+| Promise&lt;boolean> | - result returned to indicate desktop lyric is supported. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 6600101 | Session service exception. |
 
 **Example**
 

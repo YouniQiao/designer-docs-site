@@ -1,5 +1,9 @@
 # PreconfigRatio
 
+```TypeScript
+enum PreconfigRatio
+```
+
 Enumerates the preconfigured aspect ratios.
 
 **Since:** 12
@@ -16,7 +20,7 @@ PRECONFIG_RATIO_1_1 = 0
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +34,7 @@ PRECONFIG_RATIO_4_3 = 1
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -44,7 +48,7 @@ PRECONFIG_RATIO_16_9 = 2
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

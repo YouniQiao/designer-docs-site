@@ -1,10 +1,4 @@
-# createGlobalAudioLoopback (System API)
-
-## Modules to Import
-
-```TypeScript
-import { audio } from '@ohos.multimedia.audio';
-```
+# createGlobalAudioLoopback
 
 ## createGlobalAudioLoopback
 
@@ -16,7 +10,7 @@ Creates a global audio loopback instance, which provides low-latency in-ear moni
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -33,13 +27,13 @@ Creates a global audio loopback instance, which provides low-latency in-ear moni
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioLoopback \| null&gt; | Promise used to return the audio loopback instance,or null when an error happens. |
+| Promise&lt;AudioLoopback \| null> | Promise used to return the audio loopback instance,  or null when an error happens. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Loopback mode is unsupported. |
+| 202 | Caller is not a system application. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Loopback mode is unsupported. |
 

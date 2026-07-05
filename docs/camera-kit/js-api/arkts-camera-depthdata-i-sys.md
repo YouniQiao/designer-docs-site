@@ -1,4 +1,4 @@
-# DepthData (System API)
+# DepthData
 
 Describes a depth data object.
 
@@ -11,7 +11,7 @@ Describes a depth data object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## release
@@ -32,13 +32,13 @@ Releases depth data output resources. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -48,22 +48,6 @@ async function releaseDepthData(depthData: camera.DepthData): Promise<void> {
 }
 
 ```
-
-## dataAccuracy
-
-```TypeScript
-readonly dataAccuracy: DepthDataAccuracy
-```
-
-Accuracy of the depth data, which can be either relative accuracy or absolute accuracy.
-
-**Type:** DepthDataAccuracy
-
-**Since:** 13
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
 
 ## depthMap
 
@@ -106,6 +90,22 @@ readonly qualityLevel: DepthDataQualityLevel
 Quality level of the depth map.
 
 **Type:** DepthDataQualityLevel
+
+**Since:** 13
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## dataAccuracy
+
+```TypeScript
+readonly dataAccuracy: DepthDataAccuracy
+```
+
+Accuracy of the depth data, which can be either relative accuracy or absolute accuracy.
+
+**Type:** DepthDataAccuracy
 
 **Since:** 13
 

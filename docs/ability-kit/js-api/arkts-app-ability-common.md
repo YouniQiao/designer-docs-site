@@ -1,6 +1,6 @@
 # @ohos.app.ability.common
 
-You can use this module to reference the ability public module class.
+本模块提供Ability Kit中常用公共能力的纯类型定义，包含各类上下文对象、回调接口和数据结构。本模块仅导出类型声明，不包含具体实现逻辑或可执行代码。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ You can use this module to reference the ability public module class.
 ## Modules to Import
 
 ```TypeScript
-import { common } from '@ohos.app.ability.common';
+import { common } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,51 +18,59 @@ import { common } from '@ohos.app.ability.common';
 
 | Name | Description |
 | --- | --- |
-| [AbilityResult](arkts-ability-abilityresult-t.md) | Defines the result code and data returned when a started ability is terminated. |
-| [AbilityStageContext](arkts-ability-abilitystagecontext-t.md) | Defines the context environment for the [AbilityStage](arkts-ability-abilitystage-c.md#abilitystage). It inherits from Context. |
-| [AbilityStartCallback](arkts-ability-abilitystartcallback-t.md) | Defines the callback invoked to return the UIExtensionAbility startup result. It is usually used as an input parameter in [UIAbilityContext.startAbilityByType](arkts-ability-uiabilitycontext-c.md#startabilitybytype-1) or [UIExtensionContext.startAbilityByType](arkts-ability-uiextensioncontentsession-c.md#startabilitybytype-1) . |
-| [AgentAppInfo](arkts-ability-agentappinfo-t.md) | Application-related information for the agent. |
-| [AgentCapabilities](arkts-ability-agentcapabilities-t.md) | Capabilities in an AgentCard represent the specific skills, services, and functions that an agent can perform or provide within the system. |
-| [AgentCard](arkts-ability-agentcard-t.md) | The AgentCard information describes the basic information and capabilities provided by an Agent. |
-| [AgentExtensionContext](arkts-ability-agentextensioncontext-t.md) | The context of the agent service ability. |
-| [AgentHostProxy](arkts-ability-agenthostproxy-t.md) | The AgentHostProxy is a proxy object for the client connected to the Agent, through which it can communicate with the Agent's connection counterpart. |
-| [AgentProvider](arkts-ability-agentprovider-t.md) | The Provider in an AgentCard refers to the organization or platform that issues and manages the agent's credentials. |
-| [AgentSkill](arkts-ability-agentskill-t.md) | Skills in an AgentCard represent the specific abilities, expertise, and proficiencies that an agent possesses for performing tasks or solving problems. |
-| [AppServiceExtensionContext](arkts-ability-appserviceextensioncontext-t.md) | Defines the context environment for the [AppServiceExtensionAbility](../../../../reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) . It inherits from Context. |
-| [ApplicationContext](arkts-ability-applicationcontext-t.md) | Defines the application context. It inherits from Context. |
-| [BaseContext](arkts-ability-basecontext-t.md) | Defines the parent class of all context types. |
-| [ConnectOptions](arkts-ability-connectoptions-t.md) | Defines the connection options. It is used as an input parameter for connection to a background service, to receive the connection status with the background service. |
-| [Context](arkts-ability-context-t.md) | Defines the context base class for the [stage model](../../../../application-models/ability-terminology.md#stage-model). |
-| [EmbeddableUIAbilityContext](arkts-ability-embeddableuiabilitycontext-t.md) | Defines the context environment for the [EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md#embeddableuiability). It inherits from Context. |
-| [EventHub](arkts-ability-eventhub-t.md) | Defines EventHub, which is an event communication mechanism based on the publish-subscribe pattern. |
-| [ExtensionContext](arkts-ability-extensioncontext-t.md) | Defines the context environment for the [ExtensionAbility](arkts-ability-extensionability-c.md#extensionability). It inherits from Context. |
-| [FormEditExtensionContext](arkts-ability-formeditextensioncontext-t.md) | The context of form edit extension. It allows access to formEditExtension-specific resources. |
-| [FormExtensionContext](arkts-ability-formextensioncontext-t.md) | The context of form extension. It allows access to formExtension-specific resources. |
-| [LiveFormExtensionContext](arkts-ability-liveformextensioncontext-t.md) | The context of live form extension. It allows access to liveFormExtension-specific resources. |
-| [PacMap](arkts-ability-pacmap-t.md) | Defines the container of basic data types. |
-| [PhotoEditorExtensionContext](arkts-ability-photoeditorextensioncontext-t.md) | The context of an photo editor extension ability. |
-| [UIAbilityContext](arkts-ability-uiabilitycontext-t.md) | Defines the context environment for the [UIAbility](arkts-app-ability-uiability.md). It inherits from Context. |
-| [UIExtensionContext](arkts-ability-uiextensioncontext-t.md) | Defines the context environment for the [UIExtensionAbility](arkts-ability-uiextensionability-c.md#uiextensionability). It inherits from Context. |
-| [UIServiceExtensionConnectCallback](arkts-ability-uiserviceextensionconnectcallback-t.md) | Defines the connection callback. It is used as an input parameter for connection to a UIServiceExtensionAbility, to provide the callback for the connection. |
-| [UIServiceProxy](arkts-ability-uiserviceproxy-t.md) | Defines the capability for data communication with the UIServiceExtensionAbility. UIServiceExtensionAbility is a special type of ExtensionAbility provided by the system and is used to provide extended capabilities related to floating windows. |
-| [VpnExtensionContext](arkts-ability-vpnextensioncontext-t.md) | The context of vpn extension. It allows access to vpnExtension-specific resources. The class of auto startup info. |
-
-<!--Del-->
-### Types（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [AgentExtensionConnectCallback](arkts-ability-agentextensionconnectcallback-t-sys.md) | Represents the AgentExtensionConnectCallback type. |
-| [AgentProxy](arkts-ability-agentproxy-t-sys.md) | Represents the AgentProxy type. |
-| [AutoFillExtensionContext](arkts-ability-autofillextensioncontext-t-sys.md) | Level-2 module AutoFillExtensionContext. |
-| [AutoStartupCallback](arkts-ability-autostartupcallback-t-sys.md) | Level-2 module AutoStartupCallback. |
-| [AutoStartupInfo](arkts-ability-autostartupinfo-t-sys.md) | Level-2 module AutoStartupInfo. |
-| [CliToolEvent](arkts-ability-clitoolevent-t-sys.md) | The event data of cli execute. |
-| [ServiceExtensionContext](arkts-ability-serviceextensioncontext-t-sys.md) | Level-2 module ServiceExtensionContext. |
-| [ToolEventCallback](arkts-ability-tooleventcallback-t-sys.md) | Define the cli event callback function. |
-| [ToolInfo](arkts-ability-toolinfo-t-sys.md) | Define basic information about the CLI tool. |
-| [ToolSummary](arkts-ability-toolsummary-t-sys.md) | Define basic summary information about the CLI tool. |
-| [UIServiceExtensionContext](arkts-ability-uiserviceextensioncontext-t-sys.md) | Level-2 module UIServiceExtensionContext. |
-| [UIServiceHostProxy](arkts-ability-uiservicehostproxy-t-sys.md) | Level-2 module UIServiceHostProxy. |
-<!--DelEnd-->
+| [AbilityResult](arkts-common-abilityresult-t.md) | 定义Ability被拉起并退出后返回的结果码和数据。 |
+| [AbilityStageContext](arkts-common-abilitystagecontext-t.md) | [AbilityStage]{@link @ohos.app.ability.AbilityStage:AbilityStage}组件上下文，继承自Context。 |
+| [AbilityStageContext](arkts-common-abilitystagecontext-t.md) | [AbilityStage]{@link @ohos.app.ability.AbilityStage:AbilityStage}组件上下文，继承自Context。 |
+| [AbilityStartCallback](arkts-common-abilitystartcallback-t.md) | 定义了拉起UIExtensionAbility的回调结果，通常作为 [UIAbilityContext.startAbilityByType]{@link ./application/UIAbilityContext:UIAbilityContext.startAbilityByType(type: string, wantParam: Record<string, Object>, abilityStartCallback: AbilityStartCallback, callback: AsyncCallback<void>)} / [UIExtensionContext.startAbilityByType]{@link @ohos.app.ability.UIExtensionContentSession:UIExtensionContentSession.startAbilityByType(type: string, wantParam: Record<string, Object>, abilityStartCallback: AbilityStartCallback, callback: AsyncCallback<void>)} 的入参传入。 |
+| [AgentAppInfo](arkts-common-agentappinfo-t.md) | agent的应用程序相关信息。 |
+| [AgentCapabilities](arkts-common-agentcapabilities-t.md) | AgentCard中的功能表示特定的skills、服务和功能 agent可以在系统内执行或提供。 |
+| [AgentCard](arkts-common-agentcard-t.md) | AgentCard在系统中显示agent的配置文件和联系信息。 |
+| <!--DelRow-->[AgentExtensionConnectCallback](arkts-common-agentextensionconnectcallback-t-sys.md) | 表示AgentExtensionConnectCallback类型。 |
+| [AgentExtensionContext](arkts-common-agentextensioncontext-t.md) | agent service ability的上下文。 |
+| [AgentHostProxy](arkts-common-agenthostproxy-t.md) | AgentHostProxy是连接到Agent的客户端的代理对象，通过它可以与agent.的连接对应方通信。 |
+| [AgentProvider](arkts-common-agentprovider-t.md) | AgentCard中的Provider是指发行和的组织或平台。 管理代理的凭据。 |
+| <!--DelRow-->[AgentProxy](arkts-common-agentproxy-t-sys.md) | 表示AgentProxy类型。 |
+| [AgentSkill](arkts-common-agentskill-t.md) | AgentCard中的技能表示特定的 skills、专业知识和熟练程度 用于执行任务或解决问题的代理。 |
+| [ApplicationContext](arkts-common-applicationcontext-t.md) | 应用上下文，继承自Context。 |
+| [ApplicationContext](arkts-common-applicationcontext-t.md) | 应用上下文，继承自Context。 |
+| [AppServiceExtensionContext](arkts-common-appserviceextensioncontext-t.md) | [AppServiceExtensionAbility](docroot://reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) 组件上下文，继承自Context。 |
+| [AppServiceExtensionContext](arkts-common-appserviceextensioncontext-t.md) | [AppServiceExtensionAbility](docroot://reference/apis-ability-kit/js-apis-app-ability-appServiceExtensionAbility.md) 组件上下文，继承自Context。 |
+| <!--DelRow-->[AutoFillExtensionContext](arkts-common-autofillextensioncontext-t-sys.md) | AutoFillExtensionContext二级模块。 |
+| <!--DelRow-->[AutoFillExtensionContext](arkts-common-autofillextensioncontext-t-sys.md) | AutoFillExtensionContext二级模块。 |
+| <!--DelRow-->[AutoStartupCallback](arkts-common-autostartupcallback-t-sys.md) | AutoStartupCallback二级模块。 |
+| <!--DelRow-->[AutoStartupInfo](arkts-common-autostartupinfo-t-sys.md) | AutoStartupInfo二级模块。 |
+| [BaseContext](arkts-common-basecontext-t.md) | 所有Context类型的父类。 |
+| [BaseContext](arkts-common-basecontext-t.md) | 所有Context类型的父类。 |
+| [ConnectOptions](arkts-common-connectoptions-t.md) | 在连接指定的后台服务时作为入参，用于接收与后台服务的连接状态。 |
+| [Context](arkts-common-context-t.md) | [Stage模型](docroot://application-models/ability-terminology.md#stage模型)的上下文基类。 |
+| [Context](arkts-common-context-t.md) | [Stage模型](docroot://application-models/ability-terminology.md#stage模型)的上下文基类。 |
+| [EmbeddableUIAbilityContext](arkts-common-embeddableuiabilitycontext-t.md) | [EmbeddableUIAbility]{@link @ohos.app.ability.EmbeddableUIAbility:EmbeddableUIAbility}组件上下文，继承自Context。 |
+| [EventHub](arkts-common-eventhub-t.md) | EventHub是系统提供的基于发布-订阅模式实现的事件通信机制。 |
+| [EventHub](arkts-common-eventhub-t.md) | EventHub是系统提供的基于发布-订阅模式实现的事件通信机制。 |
+| [ExtensionContext](arkts-common-extensioncontext-t.md) | [ExtensionAbility]{@link @ohos.app.ability.ExtensionAbility:ExtensionAbility}组件上下文，继承自Context。 |
+| [ExtensionContext](arkts-common-extensioncontext-t.md) | [ExtensionAbility]{@link @ohos.app.ability.ExtensionAbility:ExtensionAbility}组件上下文，继承自Context。 |
+| [FormEditExtensionContext](arkts-common-formeditextensioncontext-t.md) | The context of form edit extension. It allows access to formEditExtension-specific resources. |
+| [FormEditExtensionContext](arkts-common-formeditextensioncontext-t.md) | The context of form edit extension. It allows access to formEditExtension-specific resources. |
+| [FormExtensionContext](arkts-common-formextensioncontext-t.md) | The context of form extension. It allows access to formExtension-specific resources. |
+| [FormExtensionContext](arkts-common-formextensioncontext-t.md) | The context of form extension. It allows access to formExtension-specific resources. |
+| [LiveFormExtensionContext](arkts-common-liveformextensioncontext-t.md) | The context of live form extension. It allows access to liveFormExtension-specific resources. |
+| [LiveFormExtensionContext](arkts-common-liveformextensioncontext-t.md) | The context of live form extension. It allows access to liveFormExtension-specific resources. |
+| [PacMap](arkts-common-pacmap-t.md) | 存储基础数据类型的容器。 |
+| [PhotoEditorExtensionContext](arkts-common-photoeditorextensioncontext-t.md) | The context of an photo editor extension ability. |
+| [PhotoEditorExtensionContext](arkts-common-photoeditorextensioncontext-t.md) | The context of an photo editor extension ability. |
+| <!--DelRow-->[ServiceExtensionContext](arkts-common-serviceextensioncontext-t-sys.md) | ServiceExtensionContext二级模块。 |
+| <!--DelRow-->[ServiceExtensionContext](arkts-common-serviceextensioncontext-t-sys.md) | ServiceExtensionContext二级模块。 |
+| [UIAbilityContext](arkts-common-uiabilitycontext-t.md) | [UIAbility]{@link @ohos.app.ability.UIAbility}组件上下文，继承自Context。 |
+| [UIAbilityContext](arkts-common-uiabilitycontext-t.md) | [UIAbility]{@link @ohos.app.ability.UIAbility}组件上下文，继承自Context。 |
+| [UIExtensionContext](arkts-common-uiextensioncontext-t.md) | [UIExtensionAbility]{@link @ohos.app.ability.UIExtensionAbility:UIExtensionAbility}组件上下文，继承自Context。 |
+| [UIExtensionContext](arkts-common-uiextensioncontext-t.md) | [UIExtensionAbility]{@link @ohos.app.ability.UIExtensionAbility:UIExtensionAbility}组件上下文，继承自Context。 |
+| [UIServiceExtensionConnectCallback](arkts-common-uiserviceextensionconnectcallback-t.md) | 在连接指定的UIServiceExtensionAbility服务时作为入参，用于提供UIServiceExtensionAbility连接回调数据能力。 |
+| [UIServiceExtensionConnectCallback](arkts-common-uiserviceextensionconnectcallback-t.md) | 在连接指定的UIServiceExtensionAbility服务时作为入参，用于提供UIServiceExtensionAbility连接回调数据能力。 |
+| <!--DelRow-->[UIServiceExtensionContext](arkts-common-uiserviceextensioncontext-t-sys.md) | UIServiceExtensionContext二级模块。 |
+| <!--DelRow-->[UIServiceExtensionContext](arkts-common-uiserviceextensioncontext-t-sys.md) | UIServiceExtensionContext二级模块。 |
+| <!--DelRow-->[UIServiceHostProxy](arkts-common-uiservicehostproxy-t-sys.md) | UIServiceHostProxy二级模块。 |
+| <!--DelRow-->[UIServiceHostProxy](arkts-common-uiservicehostproxy-t-sys.md) | UIServiceHostProxy二级模块。 |
+| [UIServiceProxy](arkts-common-uiserviceproxy-t.md) | UIServiceProxy提供了与UIServiceExtensionAbility服务端数据通信的能力。UIServiceExtensionAbility是一类特殊的ExtensionAbility组件，这类组件由系统提供，通 常用于提供浮窗组件相关扩展能力。 |
+| [UIServiceProxy](arkts-common-uiserviceproxy-t.md) | UIServiceProxy提供了与UIServiceExtensionAbility服务端数据通信的能力。UIServiceExtensionAbility是一类特殊的ExtensionAbility组件，这类组件由系统提供，通 常用于提供浮窗组件相关扩展能力。 |
+| [VpnExtensionContext](arkts-common-vpnextensioncontext-t.md) | The context of vpn extension. It allows access to vpnExtension-specific resources. The class of auto startup info. |
 

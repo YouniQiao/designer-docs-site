@@ -1,6 +1,6 @@
 # AudioStreamManager
 
-This interface implements audio stream management. Before calling any API in AudioStreamManager, you must use [getStreamManager](arkts-audio-audiomanager-i.md#getstreammanager-1) to obtain an AudioStreamManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
+This interface implements audio stream management. Before calling any API in AudioStreamManager, you must use [getStreamManager](arkts-audio-audiomanager-i.md#getStreamManager) to obtain an AudioStreamManager instance. > **NOTE** > > - The initial APIs of this interface are supported since API version 9.
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ This interface implements audio stream management. Before calling any API in Aud
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## getAudioEffectInfoArray
@@ -29,14 +29,14 @@ Obtains information about the audio effect mode in use. This API uses an asynchr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | usage | StreamUsage | Yes | Audio stream usage. |
-| callback | AsyncCallback&lt;AudioEffectInfoArray&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the information about the audio effect mode obtained;otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;AudioEffectInfoArray> | Yes | Callback used to return the result. If the operation is  successful, err is undefined and data is the information about the audio effect mode obtained;  otherwise, err is an error object. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by callback. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. Return by callback. |
 
 ## getAudioEffectInfoArray
 
@@ -60,14 +60,14 @@ Obtains information about the audio effect mode in use. This API uses a promise 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioEffectInfoArray&gt; | Promise used to return the information about the audio effect modeobtained. |
+| Promise&lt;AudioEffectInfoArray> | Promise used to return the information about the audio effect mode  obtained. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Return by promise. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. Return by promise. |
 
 ## getAudioEffectInfoArraySync
 
@@ -97,8 +97,8 @@ Obtains information about the audio effect mode in use. This API returns the res
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## getCurrentAudioCapturerInfoArray
 
@@ -116,7 +116,7 @@ Obtains the information about this audio capturer. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioCapturerChangeInfoArray&gt; | Yes | Callback used to return the result. If theoperation is successful, **err** is **undefined** and **data** is the audio capturer information obtained;otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;AudioCapturerChangeInfoArray> | Yes | Callback used to return the result. If the  operation is successful, err is undefined and data is the audio capturer information obtained;  otherwise, err is an error object. |
 
 ## getCurrentAudioCapturerInfoArray
 
@@ -134,7 +134,7 @@ Obtains the information about this audio capturer. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioCapturerChangeInfoArray&gt; | Promise used to return the audio capturer information. |
+| Promise&lt;AudioCapturerChangeInfoArray> | Promise used to return the audio capturer information. |
 
 ## getCurrentAudioCapturerInfoArraySync
 
@@ -170,7 +170,7 @@ Obtains the information about this audio renderer. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AudioRendererChangeInfoArray&gt; | Yes | Callback used to return the result. If theoperation is successful, **err** is **undefined** and **data** is the audio renderer information obtained;otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;AudioRendererChangeInfoArray> | Yes | Callback used to return the result. If the  operation is successful, err is undefined and data is the audio renderer information obtained;  otherwise, err is an error object. |
 
 ## getCurrentAudioRendererInfoArray
 
@@ -188,7 +188,7 @@ Obtains the information about this audio renderer. This API uses a promise to re
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioRendererChangeInfoArray&gt; | Promise used to return the audio renderer information. |
+| Promise&lt;AudioRendererChangeInfoArray> | Promise used to return the audio renderer information. |
 
 ## getCurrentAudioRendererInfoArraySync
 
@@ -230,13 +230,13 @@ Checks whether the specified audio source type supports echo cancellation.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether echo cancellation is supported. **true** if supported, **false**otherwise. |
+| boolean | Check result for whether echo cancellation is supported. true if supported, false  otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
 
 ## isActive
 
@@ -250,7 +250,7 @@ Checks whether a stream is active. This API uses an asynchronous callback to ret
 
 **Deprecated since:** 20
 
-**Substitutes:** isStreamActive
+**Substitute:** ohos.multimedia.audio.AudioStreamManager#isStreamActive
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -259,7 +259,7 @@ Checks whether a stream is active. This API uses an asynchronous callback to ret
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | volumeType | AudioVolumeType | Yes | Audio stream types. |
-| callback | AsyncCallback&lt;boolean&gt; | Yes | Callback used to return the result. If the operation is successful,**err** is **undefined** and **data** is **true** if the stream is active or **false** if not active;otherwise, **err** is an error object. |
+| callback | AsyncCallback&lt;boolean> | Yes | Callback used to return the result. If the operation is successful,  err is undefined and data is true if the stream is active or false if not active;  otherwise, err is an error object. |
 
 ## isActive
 
@@ -273,7 +273,7 @@ Checks whether a stream is active. This API uses a promise to return the result.
 
 **Deprecated since:** 20
 
-**Substitutes:** isStreamActive
+**Substitute:** ohos.multimedia.audio.AudioStreamManager#isStreamActive
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -287,7 +287,7 @@ Checks whether a stream is active. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return the result, indicating whether the stream is active.**true** if active, **false** otherwise. |
+| Promise&lt;boolean> | Promise used to return the result, indicating whether the stream is active.  true if active, false otherwise. |
 
 ## isActiveSync
 
@@ -301,7 +301,7 @@ Checks whether a stream is active. This API returns the result synchronously.
 
 **Deprecated since:** 20
 
-**Substitutes:** isStreamActive
+**Substitute:** ohos.multimedia.audio.AudioStreamManager#isStreamActive
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -315,14 +315,14 @@ Checks whether a stream is active. This API returns the result synchronously.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether the stream is active. **true** if active, **false** otherwise. |
+| boolean | Check result for whether the stream is active. true if active, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## isAudioLoopbackSupported
 
@@ -346,13 +346,13 @@ Checks whether the current system supports the specified audio loopback mode.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether the audio loopback mode is supported. **true** if supported,**false** otherwise. |
+| boolean | Check result for whether the audio loopback mode is supported. true if supported,  false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
 
 ## isDirectPlaybackSupported
 
@@ -364,7 +364,7 @@ Return if direct playback is supported for the specific audio stream info and us
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -391,7 +391,7 @@ Return if fast playback is supported for the specific audio stream info and usag
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -418,7 +418,7 @@ Return if fast recording is supported for the specific audio stream info and usa
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -457,13 +457,13 @@ Checks whether the intelligent noise reduction feature is enabled for the audio 
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether the intelligent noise reduction feature is enabled. **true** ifenabled, **false** otherwise. |
+| boolean | Check result for whether the intelligent noise reduction feature is enabled. true if  enabled, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
 
 ## isMultichannelPlaybackSupported
 
@@ -475,7 +475,7 @@ Return if multichannel playback is supported for the specific audio stream info 
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -502,7 +502,7 @@ Return if offload playback is supported for the specific audio stream info and u
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -541,13 +541,13 @@ Checks whether recording can be started based on the audio source type in the au
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether recording can be started. **true** if recording can be started,**false** otherwise.<br>This API checks whether the specified audio source type in the capturer information can acquire focus. It shouldbe called before starting audio recording to avoid conflicts with existing recording streams. |
+| boolean | Check result for whether recording can be started. true if recording can be started,  false otherwise.  This API checks whether the specified audio source type in the capturer information can acquire focus. It should  be called before starting audio recording to avoid conflicts with existing recording streams. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
 
 ## isStreamActive
 
@@ -571,13 +571,13 @@ Checks whether a stream is active. This API returns the result synchronously.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether the stream is active. **true** if active, **false** otherwise. |
+| boolean | Check result for whether the stream is active. true if active, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
 
 ## off('audioRendererChange')
 
@@ -595,14 +595,14 @@ Unsubscribes from the audio renderer change event. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioRendererChange' | Yes | Event type. The event **'audioRendererChange'** is triggered when theaudio playback stream status or device is changed. |
-| callback | Callback&lt;AudioRendererChangeInfoArray&gt; | No | Callback used to return the audio rendererinformation.<br>**Since:** 18 |
+| type | 'audioRendererChange' | Yes | Event type. The event 'audioRendererChange' is triggered when the  audio playback stream status or device is changed. |
+| callback | Callback&lt;AudioRendererChangeInfoArray> | No | Callback used to return the audio renderer  information. [since 18] |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
 
 ## off('audioCapturerChange')
 
@@ -620,14 +620,62 @@ Unsubscribes from the audio capturer change event. This API uses an asynchronous
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | Yes | Event type. The event **'audioCapturerChange'** is triggered when theaudio capturer is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfoArray&gt; | No | Callback used to return the audio capturerinformation.<br>**Since:** 18 |
+| type | 'audioCapturerChange' | Yes | Event type. The event 'audioCapturerChange' is triggered when the  audio capturer is changed. |
+| callback | Callback&lt;AudioCapturerChangeInfoArray> | No | Callback used to return the audio capturer  information. [since 18] |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 6800101 | Parameter verification failed. |
+
+## offAudioCapturerChange
+
+```TypeScript
+offAudioCapturerChange(callback?: Callback<AudioCapturerChangeInfoArray>): void
+```
+
+Unsubscribes to audio capturer change events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioCapturerChangeInfoArray> | No | Callback invoked for the audio capturer change  event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## offAudioRendererChange
+
+```TypeScript
+offAudioRendererChange(callback?: Callback<AudioRendererChangeInfoArray>): void
+```
+
+Unsubscribes to audio renderer change events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioRendererChangeInfoArray> | No | Callback invoked for the audio renderer change  event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
 
 ## on('audioRendererChange')
 
@@ -645,15 +693,15 @@ Subscribes to the audio renderer change event, which is triggered when the audio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioRendererChange' | Yes | Event type. The event **'audioRendererChange'** is triggered when theaudio playback stream status or device is changed. |
-| callback | Callback&lt;AudioRendererChangeInfoArray&gt; | Yes | Callback used to return the audio rendererinformation. |
+| type | 'audioRendererChange' | Yes | Event type. The event 'audioRendererChange' is triggered when the  audio playback stream status or device is changed. |
+| callback | Callback&lt;AudioRendererChangeInfoArray> | Yes | Callback used to return the audio renderer  information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
 
 ## on('audioCapturerChange')
 
@@ -671,13 +719,61 @@ Subscribes to the audio capturer change event, which is triggered when the audio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioCapturerChange' | Yes | Event type. The event **'audioCapturerChange'** is triggered when theaudio recording stream status or device is changed. |
-| callback | Callback&lt;AudioCapturerChangeInfoArray&gt; | Yes | Callback used to return the audio capturerinformation. |
+| type | 'audioCapturerChange' | Yes | Event type. The event 'audioCapturerChange' is triggered when the  audio recording stream status or device is changed. |
+| callback | Callback&lt;AudioCapturerChangeInfoArray> | Yes | Callback used to return the audio capturer  information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+
+## onAudioCapturerChange
+
+```TypeScript
+onAudioCapturerChange(callback: Callback<AudioCapturerChangeInfoArray>): void
+```
+
+Listens for audio capturer change events. When there is any audio capturer change, registered clients will receive the callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Capturer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioCapturerChangeInfoArray> | Yes | Callback invoked for the audio capturer change  event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
+
+## onAudioRendererChange
+
+```TypeScript
+onAudioRendererChange(callback: Callback<AudioRendererChangeInfoArray>): void
+```
+
+Listens for audio renderer change events. When there is any audio renderer change, registered clients will receive the callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AudioRendererChangeInfoArray> | Yes | Callback invoked for the audio renderer change  event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 6800101 | Parameter verification failed. |
 

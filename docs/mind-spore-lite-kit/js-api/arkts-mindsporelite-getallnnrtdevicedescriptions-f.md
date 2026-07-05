@@ -1,11 +1,5 @@
 # getAllNNRTDeviceDescriptions
 
-## Modules to Import
-
-```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
-```
-
 ## getAllNNRTDeviceDescriptions
 
 ```TypeScript
@@ -16,7 +10,7 @@ Obtain the all device descriptions in NNRT.
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

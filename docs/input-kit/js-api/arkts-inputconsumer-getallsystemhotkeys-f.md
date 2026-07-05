@@ -1,0 +1,52 @@
+# getAllSystemHotkeys
+
+## getAllSystemHotkeys
+
+```TypeScript
+function getAllSystemHotkeys(): Promise<Array<HotkeyOptions>>
+```
+
+获取所有系统快捷键，使用Promise异步回调。
+
+**Since:** 14
+
+**System capability:** SystemCapability.MultimodalInput.Input.InputConsumer
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Array&lt;HotkeyOptions>> | Promise对象，返回所有系统快捷键的列表。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 801 | Capability not supported. |
+
+**Example**
+
+```TypeScript
+import { inputConsumer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          // Obtains all system shortcut keys.
+          inputConsumer.getAllSystemHotkeys().then((data: Array<inputConsumer.HotkeyOptions>) => {
+            console.info(`Succeeded in getting list of system hotkeys: ${JSON.stringify(data)}.`);
+          }).catch((error: BusinessError) => {
+            console.error(`Failed to get all system hotkeys, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+          })
+        })
+    }
+  }
+}
+
+```
+

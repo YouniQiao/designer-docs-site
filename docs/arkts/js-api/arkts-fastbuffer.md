@@ -1,6 +1,6 @@
 # @ohos.fastbuffer
 
-The FastBuffer class is a container type for dealing with binary data directly. It can be constructed in a variety of ways.
+FastBuffer对象是更高效的Buffer容器，用于表示固定长度的字节序列，是专门存放二进制数据的缓存区。
 
 **Since:** 20
 
@@ -9,7 +9,7 @@ The FastBuffer class is a container type for dealing with binary data directly. 
 ## Modules to Import
 
 ```TypeScript
-import { fastbuffer } from '@ohos.fastbuffer';
+import { fastbuffer } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -18,35 +18,35 @@ import { fastbuffer } from '@ohos.fastbuffer';
 
 | Name | Description |
 | --- | --- |
-| [alloc](arkts-arkts-alloc-f.md#alloc-1) | Allocates a new FastBuffer for a fixed size bytes. If fill is undefined, the FastBuffer will be zero-filled. |
-| [allocUninitialized](arkts-arkts-allocuninitialized-f.md#allocuninitialized-1) | Allocates a new un-pooled FastBuffer for a fixed size bytes. The FastBuffer will not be initially filled. |
-| [allocUninitializedFromPool](arkts-arkts-allocuninitializedfrompool-f.md#allocuninitializedfrompool-1) | Allocates a new FastBuffer for a fixed size bytes. The FastBuffer will not be initially filled. |
-| [byteLength](arkts-arkts-bytelength-f.md#bytelength-1) | Returns the byte length of a string when encoded using `encoding`. This is not the same as [`String.prototype.length`], which does not account for the encoding that is used to convert the string into bytes. |
-| [compare](arkts-arkts-compare-f.md#compare-1) | Compares buf1 to buf2 |
-| [concat](arkts-arkts-concat-f.md#concat-1) | Returns a new `FastBuffer` which is the result of concatenating all the `FastBuffer`instances in the `list` together. |
-| [from](arkts-arkts-from-f.md#from-1) | Allocates a new FastBuffer using an array of bytes in the range 0 – 255. Array entries outside that range will be truncated to fit into it. |
-| [from](arkts-arkts-from-f.md#from-2) | This creates a view of the ArrayBuffer without copying the underlying memory. |
-| [from](arkts-arkts-from-f.md#from-3) | Copies the passed buffer data onto a new FastBuffer instance. |
-| [from](arkts-arkts-from-f.md#from-4) | Creates a new FastBuffer containing string. The encoding parameter identifies the character encoding to be used when converting string into bytes. |
-| [isBuffer](arkts-arkts-isbuffer-f.md#isbuffer-1) | Returns true if obj is a FastBuffer, false otherwise |
-| [isEncoding](arkts-arkts-isencoding-f.md#isencoding-1) | Returns true if encoding is the name of a supported character encoding, or false otherwise. |
-| [transcode](arkts-arkts-transcode-f.md#transcode-1) | Re-encodes the given FastBuffer or Uint8Array instance from one character encoding to another. |
+| [alloc](arkts-fastbuffer-alloc-f.md#alloc-1) | 创建指定字节长度的FastBuffer对象并初始化。 |
+| [allocUninitialized](arkts-fastbuffer-allocuninitialized-f.md#allocUninitialized-1) | 创建指定大小未初始化的FastBuffer对象，需要使用fill函数来初始化FastBuffer对象。 |
+| [allocUninitializedFromPool](arkts-fastbuffer-allocuninitializedfrompool-f.md#allocUninitializedFromPool-1) | 从缓冲池中创建指定大小未初始化的FastBuffer对象，需要使用fill函数来初始化FastBuffer对象。 |
+| [byteLength](arkts-fastbuffer-bytelength-f.md#byteLength-1) | 根据不同的编码格式，返回指定字符串的字节数。 |
+| [compare](arkts-fastbuffer-compare-f.md#compare-1) | 返回两个FastBuffer对象的比较结果，通常用于对FastBuffer对象数组进行排序。 |
+| [concat](arkts-fastbuffer-concat-f.md#concat-1) | 将数组中指定字节长度的内容复制到新的FastBuffer对象中并返回拼接后的FastBuffer对象。 |
+| [from](arkts-fastbuffer-from-f.md#from-1) | 根据指定数组创建新的FastBuffer对象。 |
+| [from](arkts-fastbuffer-from-f.md#from-2) | 创建与`arrayBuffer`共享内存的指定长度的FastBuffer对象。 |
+| [from](arkts-fastbuffer-from-f.md#from-3) | 当入参为FastBuffer对象时，创建新的FastBuffer对象并复制入参FastBuffer对象的数据，然后返回新对象。 当入参为Uint8Array对象时，基于Uint8Array对象的内存创建新的FastBuffer对象并返回，保持数据的内存关联。 |
+| [from](arkts-fastbuffer-from-f.md#from-4) | 根据指定编码格式的字符串，创建新的FastBuffer对象。 |
+| [isBuffer](arkts-fastbuffer-isbuffer-f.md#isBuffer-1) | 判断`obj`是否为FastBuffer。 |
+| [isEncoding](arkts-fastbuffer-isencoding-f.md#isEncoding-1) | 判断`encoding`是否为支持的编码格式。 |
+| [transcode](arkts-fastbuffer-transcode-f.md#transcode-1) | 将FastBuffer或Uint8Array对象从fromEnc编码转换为toEnc编码。 |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [FastBuffer](arkts-arkts-fastbuffer-c.md) | The FastBuffer object is a method of handling buffers dedicated to binary data. |
+| [FastBuffer](arkts-fastbuffer-fastbuffer-c.md) | FastBuffer对象是更高效的Buffer容器，用于表示固定长度的字节序列，是专门存放二进制数据的缓存区。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [TypedArray](arkts-arkts-typedarray-i.md) | TypedArray inherits the features and methods of Int8Array |
+| [TypedArray](arkts-fastbuffer-typedarray-i.md) | TypedArray 继承 Int8Array 的特性与方法。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BufferEncoding](arkts-arkts-bufferencoding-t.md) | This parameter specifies the type of a common encoding format. |
+| [BufferEncoding](arkts-fastbuffer-bufferencoding-t.md) | 表示支持的编码格式类型。 |
 

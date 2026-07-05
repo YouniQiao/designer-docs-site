@@ -1,8 +1,8 @@
-# ProfessionalVideoSession (System API)
+# ProfessionalVideoSession
 
-ProfessionalVideoSession extends Session, AutoExposure, ManualExposure, Focus, ManualFocus, WhiteBalance, ManualIso , Flash, Zoom, ColorEffect, Aperture Implements a professional video session, which sets the parameters of the professional video mode and saves all [CameraInput](arkts-camera-camerainput-i.md#camerainput) and [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md#session).
+ProfessionalVideoSession extends Session, AutoExposure, ManualExposure, Focus, ManualFocus, WhiteBalance, ManualIso , Flash, Zoom, ColorEffect, Aperture Implements a professional video session, which sets the parameters of the professional video mode and saves all [CameraInput]camera.CameraInput and [CameraOutput]camera.CameraOutput instances required to run the camera. It inherits from [Session]camera.Session.
 
-**Inheritance/Implementation:** ProfessionalVideoSession extends [Session](arkts-camera-session-i.md#session), [AutoExposure](arkts-camera-autoexposure-i.md#autoexposure), [ManualExposure](arkts-camera-manualexposure-i.md#manualexposure), [Focus](arkts-camera-focus-i.md#focus), [ManualFocus](arkts-camera-manualfocus-i-sys.md#manualfocus), [WhiteBalance](arkts-camera-whitebalance-i.md#whitebalance), [ManualIso](arkts-camera-manualiso-i-sys.md#manualiso), [Flash](arkts-camera-flash-i.md#flash), [Zoom](arkts-camera-zoom-i.md#zoom), [ColorEffect](arkts-camera-coloreffect-i-sys.md#coloreffect), [Aperture](arkts-camera-aperture-i-sys.md#aperture)
+**Inheritance:** ProfessionalVideoSessionextends: Session, AutoExposure, ManualExposure, Focus, ManualFocus, WhiteBalance, ManualIso, Flash, Zoom, ColorEffect, Aperture.
 
 **Since:** 12
 
@@ -13,7 +13,7 @@ ProfessionalVideoSession extends Session, AutoExposure, ManualExposure, Focus, M
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## off('error')
@@ -34,14 +34,14 @@ Unsubscribes from HighResolutionPhotoSession error events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when asession is created. |
-| callback | ErrorCallback | No | Callback used to return the result. This parameter is optional. If thisparameter is specified, the subscription to the specified event **on('error')** with the specified callbackis canceled. (The callback object cannot be an anonymous function.) |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  session is created. |
+| callback | ErrorCallback | No | Callback used to return the result. This parameter is optional. If this  parameter is specified, the subscription to the specified event on('error') with the specified callback  is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -70,14 +70,14 @@ Unsubscribes from focus state change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can belistened for when a session is created. |
-| callback | AsyncCallback&lt;FocusState&gt; | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with thespecified callback is canceled. (The callback object cannot be an anonymous function.) |
+| type | 'focusStateChange' | Yes | Event type. The value is fixed at 'focusStateChange'. The event can be  listened for when a session is created. |
+| callback | AsyncCallback&lt;FocusState> | No | Callback used to return the result. This parameter is optional.  If this parameter is specified, the subscription to the specified event on('focusStateChange') with the  specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -106,14 +106,14 @@ Unsubscribes from smooth zoom state change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. Theevent can be listened for when a session is created. |
-| callback | AsyncCallback&lt;SmoothZoomInfo&gt; | No | Callback used to return the result. This parameter isoptional. If this parameter is specified, the subscription to the specified event**on('smoothZoomInfoAvailable')** with the specified callback is canceled. (The callback object cannot be ananonymous function.) |
+| type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at 'smoothZoomInfoAvailable'. The  event can be listened for when a session is created. |
+| callback | AsyncCallback&lt;SmoothZoomInfo> | No | Callback used to return the result. This parameter is  optional. If this parameter is specified, the subscription to the specified event  on('smoothZoomInfoAvailable') with the specified callback is canceled. (The callback object cannot be an  anonymous function.) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -142,14 +142,14 @@ Unsubscribes from automatic ISO change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'isoInfoChange' | Yes | Event type. The value is fixed at **'isoInfoChange'**. |
-| callback | AsyncCallback&lt;IsoInfo&gt; | No | Callback, which is optional and is used to match **callback** in**on('isoInfoChange')**. |
+| type | 'isoInfoChange' | Yes | Event type. The value is fixed at 'isoInfoChange'. |
+| callback | AsyncCallback&lt;IsoInfo> | No | Callback, which is optional and is used to match callback in  on('isoInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -178,14 +178,14 @@ Unsubscribes from exposure information change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at **'exposureInfoChange'**. |
-| callback | AsyncCallback&lt;ExposureInfo&gt; | No | Callback, which is optional and is used to match **callback**in **on('exposureInfoChange')**. |
+| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at 'exposureInfoChange'. |
+| callback | AsyncCallback&lt;ExposureInfo> | No | Callback, which is optional and is used to match callback  in on('exposureInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -214,14 +214,14 @@ Unsubscribes from aperture change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'apertureInfoChange' | Yes | Event type. The value is fixed at **'apertureInfoChange'**. |
-| callback | AsyncCallback&lt;ApertureInfo&gt; | No | Callback, which is optional and is used to match **callback**in **on('apertureInfoChange')**. |
+| type | 'apertureInfoChange' | Yes | Event type. The value is fixed at 'apertureInfoChange'. |
+| callback | AsyncCallback&lt;ApertureInfo> | No | Callback, which is optional and is used to match callback  in on('apertureInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -250,14 +250,14 @@ Unsubscribes from illumination change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at **'luminationInfoChange'**. |
-| callback | AsyncCallback&lt;LuminationInfo&gt; | No | Callback, which is optional and is used to match **callback**in **on('luminationInfoChange')**. |
+| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at 'luminationInfoChange'. |
+| callback | AsyncCallback&lt;LuminationInfo> | No | Callback, which is optional and is used to match callback  in on('luminationInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -267,6 +267,188 @@ function unregisterLuminationInfoEvent(professionalVideoSession: camera.Professi
 }
 
 ```
+
+## offApertureInfoChange
+
+```TypeScript
+offApertureInfoChange(callback?: AsyncCallback<ApertureInfo>): void
+```
+
+Unsubscribes from aperture info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;ApertureInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offError
+
+```TypeScript
+offError(callback?: ErrorCallback): void
+```
+
+Unsubscribes from error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offExposureInfoChange
+
+```TypeScript
+offExposureInfoChange(callback?: AsyncCallback<ExposureInfo>): void
+```
+
+Unsubscribes from exposure info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;ExposureInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offFocusStateChange
+
+```TypeScript
+offFocusStateChange(callback?: AsyncCallback<FocusState>): void
+```
+
+Unsubscribes from focus state change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;FocusState> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offIsoInfoChange
+
+```TypeScript
+offIsoInfoChange(callback?: AsyncCallback<IsoInfo>): void
+```
+
+Unsubscribes from ISO info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;IsoInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offLuminationInfoChange
+
+```TypeScript
+offLuminationInfoChange(callback?: AsyncCallback<LuminationInfo>): void
+```
+
+Unsubscribes from lumination info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;LuminationInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offSmoothZoomInfoAvailable
+
+```TypeScript
+offSmoothZoomInfoAvailable(callback?: AsyncCallback<SmoothZoomInfo>): void
+```
+
+Unsubscribes from zoom info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;SmoothZoomInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
 
 ## on('error')
 
@@ -286,14 +468,14 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when asession is created. This event is triggered and the error message is returned when an error occurs during thecalling of a session-related API such as[beginConfig](arkts-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-session-i.md#commitconfig-2), and[addInput](arkts-camera-session-i.md#addinput-1). |
-| callback | ErrorCallback | Yes | Callback used to return an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode). |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  session is created. This event is triggered and the error message is returned when an error occurs during the  calling of a session-related API such as  [beginConfig]camera.Session.beginConfig,  [commitConfig]camera.Session.commitConfig(), and  [addInput]camera.Session.addInput. |
+| callback | ErrorCallback | Yes | Callback used to return an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -328,14 +510,14 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can belistened for when a session is created. This event is triggered only when the camera focus state changes inauto focus mode. |
-| callback | AsyncCallback&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
+| type | 'focusStateChange' | Yes | Event type. The value is fixed at 'focusStateChange'. The event can be  listened for when a session is created. This event is triggered only when the camera focus state changes in  auto focus mode. |
+| callback | AsyncCallback&lt;FocusState> | Yes | Callback used to return the focus state change. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -374,14 +556,14 @@ Subscribes to smooth zoom state change events. This API uses an asynchronous cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. Theevent can be listened for when a session is created. |
-| callback | AsyncCallback&lt;SmoothZoomInfo&gt; | Yes | Callback used to return the smooth zoom state change. |
+| type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at 'smoothZoomInfoAvailable'. The  event can be listened for when a session is created. |
+| callback | AsyncCallback&lt;SmoothZoomInfo> | Yes | Callback used to return the smooth zoom state change. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -420,14 +602,14 @@ Subscribes to automatic ISO change events to obtain real-time ISO information. T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'isoInfoChange' | Yes | Event type. The value is fixed at **'isoInfoChange'**. |
-| callback | AsyncCallback&lt;IsoInfo&gt; | Yes | Callback used to return the ISO information. |
+| type | 'isoInfoChange' | Yes | Event type. The value is fixed at 'isoInfoChange'. |
+| callback | AsyncCallback&lt;IsoInfo> | Yes | Callback used to return the ISO information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -466,14 +648,14 @@ Subscribes to exposure information change events to obtain the exposure informat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at **'exposureInfoChange'**. |
-| callback | AsyncCallback&lt;ExposureInfo&gt; | Yes | Callback used to return the exposure information. |
+| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at 'exposureInfoChange'. |
+| callback | AsyncCallback&lt;ExposureInfo> | Yes | Callback used to return the exposure information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -512,14 +694,14 @@ Subscribes to aperture change events to obtain the real-time aperture informatio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'apertureInfoChange' | Yes | Event type. The value is fixed at **'apertureInfoChange'**. |
-| callback | AsyncCallback&lt;ApertureInfo&gt; | Yes | Callback used to return the aperture information. |
+| type | 'apertureInfoChange' | Yes | Event type. The value is fixed at 'apertureInfoChange'. |
+| callback | AsyncCallback&lt;ApertureInfo> | Yes | Callback used to return the aperture information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -558,14 +740,14 @@ Subscribes to illumination change events to obtain real-time illumination inform
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at **'luminationInfoChange'**. |
-| callback | AsyncCallback&lt;LuminationInfo&gt; | Yes | Callback used to return the illumination information. |
+| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at 'luminationInfoChange'. |
+| callback | AsyncCallback&lt;LuminationInfo> | Yes | Callback used to return the illumination information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -585,4 +767,186 @@ function registerLuminationInfoEvent(professionalVideoSession: camera.Profession
 }
 
 ```
+
+## onApertureInfoChange
+
+```TypeScript
+onApertureInfoChange(callback: AsyncCallback<ApertureInfo>): void
+```
+
+Subscribes aperture info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;ApertureInfo> | Yes | Callback used to get the aperture info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onError
+
+```TypeScript
+onError(callback: ErrorCallback): void
+```
+
+Subscribes to error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | Yes | Callback used to get the capture session errors. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onExposureInfoChange
+
+```TypeScript
+onExposureInfoChange(callback: AsyncCallback<ExposureInfo>): void
+```
+
+Subscribes exposure info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;ExposureInfo> | Yes | Callback used to get the exposure info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onFocusStateChange
+
+```TypeScript
+onFocusStateChange(callback: AsyncCallback<FocusState>): void
+```
+
+Subscribes focus state change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;FocusState> | Yes | Callback used to get the focus state change. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onIsoInfoChange
+
+```TypeScript
+onIsoInfoChange(callback: AsyncCallback<IsoInfo>): void
+```
+
+Subscribes ISO info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;IsoInfo> | Yes | Callback used to get the ISO info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onLuminationInfoChange
+
+```TypeScript
+onLuminationInfoChange(callback: AsyncCallback<LuminationInfo>): void
+```
+
+Subscribes lumination info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;LuminationInfo> | Yes | Callback used to get the lumination info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onSmoothZoomInfoAvailable
+
+```TypeScript
+onSmoothZoomInfoAvailable(callback: AsyncCallback<SmoothZoomInfo>): void
+```
+
+Subscribes zoom info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;SmoothZoomInfo> | Yes | Callback used to get the zoom info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
 

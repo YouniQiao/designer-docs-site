@@ -1,10 +1,10 @@
-# MetadataBasicFaceObject (System API)
+# MetadataBasicFaceObject
 
 Metadata object for basic face.
 
-**Inheritance/Implementation:** MetadataBasicFaceObject extends [MetadataObject](arkts-camera-metadataobject-i.md#metadataobject)
+**Inheritance:** MetadataBasicFaceObjectextends: MetadataObject.
 
-**Since:** 26.0.0
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -13,40 +13,22 @@ Metadata object for basic face.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
-
-## leftEyeBoundingBox
-
-```TypeScript
-readonly leftEyeBoundingBox?: Rect
-```
-
-Bounding box for left eye.
-
-**Type:** Rect
-
-**Since:** 26.0.0
-
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
 
 ## pitchAngle
 
 ```TypeScript
-readonly pitchAngle?: number
+readonly pitchAngle?: int
 ```
 
 Pitch angle for face.
 
-**Type:** number
+**Type:** int
 
-**Since:** 26.0.0
+**Since:** 23
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -62,27 +44,9 @@ Bounding box for right eye.
 
 **Type:** Rect
 
-**Since:** 26.0.0
+**Since:** 23
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
-## rollAngle
-
-```TypeScript
-readonly rollAngle?: number
-```
-
-Roll angle for face.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -91,16 +55,52 @@ Roll angle for face.
 ## yawAngle
 
 ```TypeScript
-readonly yawAngle?: number
+readonly yawAngle?: int
 ```
 
 Yaw angle for face.
 
-**Type:** number
+**Type:** int
 
-**Since:** 26.0.0
+**Since:** 23
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## rollAngle
+
+```TypeScript
+readonly rollAngle?: int
+```
+
+Roll angle for face.
+
+**Type:** int
+
+**Since:** 23
+
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## leftEyeBoundingBox
+
+```TypeScript
+readonly leftEyeBoundingBox?: Rect
+```
+
+Bounding box for left eye.
+
+**Type:** Rect
+
+**Since:** 23
+
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

@@ -1,63 +1,30 @@
-# Shape
+# @ohos.arkui.shape
 
-Provides interfaces for drawing components.
-
-## Shape
+## Modules to Import
 
 ```TypeScript
-Shape(value?: PixelMap)
+import { RectShape,CircleShape,EllipseShape,PathShape } from '@kit.ArkUI';
 ```
-
-Use the new function to create Shape.
-
-**Since:** 7
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| value | PixelMap | No |  |
-
-## Shape
-
-```TypeScript
-Shape(value: PixelMap)
-```
-
-Since API version 9, this API is supported in ArkTS widgets, except that **PixelMap** objects are not supported.
-
-**Since:** 7
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| value | PixelMap | Yes | Drawing target. You can draw a shape in a specified **PixelMap** object. If thisparameter is not set, the shape is drawn in the current drawing target by default.<br>The **undefined** and**null** values are treated as invalid and will not take effect. |
-
-## Shape
-
-```TypeScript
-Shape()
-```
-
-Called when a component is drawn.
-
-**Since:** 7
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**Widget capability:** This API can be used in ArkTS widgets since API version 9.
-
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## Summary
 
-- [ViewportRect](arkts-arkui-shape-viewportrect-i.md)
+### Classes
+
+| Name | Description |
+| --- | --- |
+| [BaseShape](arkts-baseshape-c.md) | 继承自[CommonShapeMethod]{@link CommonShapeMethod}。 |
+| [CircleShape](arkts-circleshape-c.md) | 用于clipShape和maskShape接口的圆形形状。 继承自[BaseShape]{@link BaseShape}。 |
+| [CommonShapeMethod](arkts-commonshapemethod-c.md) | 常见的形状方法。 |
+| [EllipseShape](arkts-ellipseshape-c.md) | 用于clipShape和maskShape接口的椭圆形状。 继承自[BaseShape]{@link BaseShape}。 |
+| [PathShape](arkts-pathshape-c.md) | 用于clipShape和maskShape接口的路径。 继承自[CommonShapeMethod]{@link CommonShapeMethod}。 |
+| [RectShape](arkts-rectshape-c.md) | 用于clipShape和maskShape接口的矩形形状。 继承自[BaseShape]{@link BaseShape}。 |
+
+### Interfaces
+
+| Name | Description |
+| --- | --- |
+| [PathShapeOptions](arkts-pathshapeoptions-i.md) | PathShape的构造函数参数。 |
+| [RectShapeOptions](arkts-rectshapeoptions-i.md) | RectShape 的构造函数参数。 继承自[ShapeSize]{@link ShapeSize}。 |
+| [RoundRectShapeOptions](arkts-roundrectshapeoptions-i.md) | RectShape 带有半径的构造函数参数。 继承自[ShapeSize]{@link ShapeSize}。 |
+| [ShapeSize](arkts-shapesize-i.md) | 形状的尺寸参数。 |
+

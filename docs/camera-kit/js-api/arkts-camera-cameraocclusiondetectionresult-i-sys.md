@@ -1,8 +1,8 @@
-# CameraOcclusionDetectionResult (System API)
+# CameraOcclusionDetectionResult
 
 Describes the instance returned by the occlusion status callback, which indicates whether the camera lens is blocked or dirty.
 
-**Since:** 23
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -11,7 +11,7 @@ Describes the instance returned by the occlusion status callback, which indicate
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## isCameraLensDirty
@@ -24,9 +24,9 @@ Whether the camera lens is dirty. **true** if dirty, false otherwise.
 
 **Type:** boolean
 
-**Since:** 23
+**Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -42,9 +42,9 @@ Whether the camera lens is blocked. **true** if blocked, **false** otherwise.
 
 **Type:** boolean
 
-**Since:** 23
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

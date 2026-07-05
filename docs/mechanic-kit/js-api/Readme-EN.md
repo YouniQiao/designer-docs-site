@@ -1,60 +1,65 @@
-# ArkTS API<!--arkts-mechanickit-->
+# MechanicKit
 
 - [@ohos.distributedHardware.mechanicManager](arkts-distributedhardware-mechanicmanager.md)<!--Del-->
-  - [doAction(system api)](arkts-mechanic-doaction-f-sys.md)<!--DelEnd-->
-  - [getAttachedMechDevices](arkts-mechanic-getattachedmechdevices-f.md)
-  - [getCameraTrackingEnabled](arkts-mechanic-getcameratrackingenabled-f.md)
-  - [getCameraTrackingLayout](arkts-mechanic-getcameratrackinglayout-f.md)<!--Del-->
-  - [getCurrentAngles(system api)](arkts-mechanic-getcurrentangles-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getMaxRotationSpeed(system api)](arkts-mechanic-getmaxrotationspeed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getMaxRotationTime(system api)](arkts-mechanic-getmaxrotationtime-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getRotationAxesStatus(system api)](arkts-mechanic-getrotationaxesstatus-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getRotationLimits(system api)](arkts-mechanic-getrotationlimits-f-sys.md)<!--DelEnd-->
-  - [isControlSupported](arkts-mechanic-iscontrolsupported-f.md)<!--Del-->
-  - [isSupportAction(system api)](arkts-mechanic-issupportaction-f-sys.md)<!--DelEnd--><!--Del-->
-  - [move(system api)](arkts-mechanic-move-f-sys.md)<!--DelEnd--><!--Del-->
-  - [moveBySpeed(system api)](arkts-mechanic-movebyspeed-f-sys.md)<!--DelEnd-->
-  - [off](arkts-mechanic-off-f.md)<!--Del-->
-  - [off(system api)](arkts-mechanic-off-f-sys.md)<!--DelEnd-->
-  - [on](arkts-mechanic-on-f.md)<!--Del-->
-  - [on(system api)](arkts-mechanic-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [rotate(system api)](arkts-mechanic-rotate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [rotateBySpeed(system api)](arkts-mechanic-rotatebyspeed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [rotateToEulerAngles(system api)](arkts-mechanic-rotatetoeulerangles-f-sys.md)<!--DelEnd--><!--Del-->
-  - [searchTarget(system api)](arkts-mechanic-searchtarget-f-sys.md)<!--DelEnd-->
-  - [setCameraTrackingEnabled](arkts-mechanic-setcameratrackingenabled-f.md)<!--Del-->
-  - [setCameraTrackingLayout(system api)](arkts-mechanic-setcameratrackinglayout-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setUserOperation(system api)](arkts-mechanic-setuseroperation-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopMoving(system api)](arkts-mechanic-stopmoving-f-sys.md)<!--DelEnd--><!--Del-->
-  - [subscribe(system api)](arkts-mechanic-subscribe-f-sys.md)<!--DelEnd--><!--Del-->
-  - [turnBySpeed(system api)](arkts-mechanic-turnbyspeed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unSubscribe(system api)](arkts-mechanic-unsubscribe-f-sys.md)<!--DelEnd-->
-  - [AttachStateChangeInfo](arkts-mechanic-attachstatechangeinfo-i.md)<!--Del-->
-  - [EulerAngles(system api)](arkts-mechanic-eulerangles-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MechEvent(system api)](arkts-mechanic-mechevent-i-sys.md)<!--DelEnd-->
-  - [MechInfo](arkts-mechanic-mechinfo-i.md)<!--Del-->
-  - [MoveParams(system api)](arkts-mechanic-moveparams-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RotationAngles(system api)](arkts-mechanic-rotationangles-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RotationAxesStateChangeInfo(system api)](arkts-mechanic-rotationaxesstatechangeinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RotationAxesStatus(system api)](arkts-mechanic-rotationaxesstatus-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RotationLimits(system api)](arkts-mechanic-rotationlimits-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RotationSpeed(system api)](arkts-mechanic-rotationspeed-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SearchParams(system api)](arkts-mechanic-searchparams-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SearchResult(system api)](arkts-mechanic-searchresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SpeedParams(system api)](arkts-mechanic-speedparams-i-sys.md)<!--DelEnd--><!--Del-->
-  - [TargetInfo(system api)](arkts-mechanic-targetinfo-i-sys.md)<!--DelEnd-->
-  - [TrackingEventInfo](arkts-mechanic-trackingeventinfo-i.md)<!--Del-->
-  - [ActionType(system api)](arkts-mechanic-actiontype-e-sys.md)<!--DelEnd-->
-  - [AttachState](arkts-mechanic-attachstate-e.md)
-  - [CameraTrackingLayout](arkts-mechanic-cameratrackinglayout-e.md)<!--Del-->
-  - [MarchingMode(system api)](arkts-mechanic-marchingmode-e-sys.md)<!--DelEnd-->
-  - [MechDeviceType](arkts-mechanic-mechdevicetype-e.md)<!--Del-->
-  - [MechDeviceType(system api)](arkts-mechanic-mechdevicetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [MechEventType(system api)](arkts-mechanic-mecheventtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [Operation(system api)](arkts-mechanic-operation-e-sys.md)<!--DelEnd--><!--Del-->
-  - [Result(system api)](arkts-mechanic-result-e-sys.md)<!--DelEnd--><!--Del-->
-  - [RotationAxisLimited(system api)](arkts-mechanic-rotationaxislimited-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SearchDirection(system api)](arkts-mechanic-searchdirection-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SpeedGear(system api)](arkts-mechanic-speedgear-e-sys.md)<!--DelEnd--><!--Del-->
-  - [TargetType(system api)](arkts-mechanic-targettype-e-sys.md)<!--DelEnd-->
-  - [TrackingEvent](arkts-mechanic-trackingevent-e.md)
+  - [rotate(system api)](arkts-mechanicmanager-rotate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onRotationAxesStatusChange(system api)](arkts-mechanicmanager-onrotationaxesstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unSubscribe(system api)](arkts-mechanicmanager-unsubscribe-f-sys.md)<!--DelEnd-->
+  - [offAttachStateChange](arkts-mechanicmanager-offattachstatechange-f.md)<!--Del-->
+  - [getRotationLimits(system api)](arkts-mechanicmanager-getrotationlimits-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCameraTrackingLayout(system api)](arkts-mechanicmanager-setcameratrackinglayout-f-sys.md)<!--DelEnd--><!--Del-->
+  - [searchTarget(system api)](arkts-mechanicmanager-searchtarget-f-sys.md)<!--DelEnd-->
+  - [getCameraTrackingLayout](arkts-mechanicmanager-getcameratrackinglayout-f.md)
+  - [offTrackingStateChange](arkts-mechanicmanager-offtrackingstatechange-f.md)<!--Del-->
+  - [isSupportAction(system api)](arkts-mechanicmanager-issupportaction-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offRotationAxesStatusChange(system api)](arkts-mechanicmanager-offrotationaxesstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [rotateToEulerAngles(system api)](arkts-mechanicmanager-rotatetoeulerangles-f-sys.md)<!--DelEnd--><!--Del-->
+  - [rotateBySpeed(system api)](arkts-mechanicmanager-rotatebyspeed-f-sys.md)<!--DelEnd-->
+  - [on](arkts-mechanicmanager-on-f.md)<!--Del-->
+  - [on(system api)](arkts-mechanicmanager-on-f-sys.md)<!--DelEnd-->
+  - [getAttachedMechDevices](arkts-mechanicmanager-getattachedmechdevices-f.md)<!--Del-->
+  - [move(system api)](arkts-mechanicmanager-move-f-sys.md)<!--DelEnd-->
+  - [onTrackingStateChange](arkts-mechanicmanager-ontrackingstatechange-f.md)<!--Del-->
+  - [subscribe(system api)](arkts-mechanicmanager-subscribe-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getRotationAxesStatus(system api)](arkts-mechanicmanager-getrotationaxesstatus-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopMoving(system api)](arkts-mechanicmanager-stopmoving-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCurrentAngles(system api)](arkts-mechanicmanager-getcurrentangles-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMaxRotationTime(system api)](arkts-mechanicmanager-getmaxrotationtime-f-sys.md)<!--DelEnd--><!--Del-->
+  - [moveBySpeed(system api)](arkts-mechanicmanager-movebyspeed-f-sys.md)<!--DelEnd-->
+  - [getCameraTrackingEnabled](arkts-mechanicmanager-getcameratrackingenabled-f.md)
+  - [off](arkts-mechanicmanager-off-f.md)<!--Del-->
+  - [off(system api)](arkts-mechanicmanager-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMaxRotationSpeed(system api)](arkts-mechanicmanager-getmaxrotationspeed-f-sys.md)<!--DelEnd-->
+  - [setCameraTrackingEnabled](arkts-mechanicmanager-setcameratrackingenabled-f.md)
+  - [onAttachStateChange](arkts-mechanicmanager-onattachstatechange-f.md)<!--Del-->
+  - [turnBySpeed(system api)](arkts-mechanicmanager-turnbyspeed-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setUserOperation(system api)](arkts-mechanicmanager-setuseroperation-f-sys.md)<!--DelEnd--><!--Del-->
+  - [doAction(system api)](arkts-mechanicmanager-doaction-f-sys.md)<!--DelEnd-->
+  - [isControlSupported](arkts-mechanicmanager-iscontrolsupported-f.md)
+  - [AttachStateChangeInfo](arkts-mechanicmanager-attachstatechangeinfo-i.md)<!--Del-->
+  - [EulerAngles(system api)](arkts-mechanicmanager-eulerangles-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MechEvent(system api)](arkts-mechanicmanager-mechevent-i-sys.md)<!--DelEnd-->
+  - [MechInfo](arkts-mechanicmanager-mechinfo-i.md)<!--Del-->
+  - [MoveParams(system api)](arkts-mechanicmanager-moveparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RotationAngles(system api)](arkts-mechanicmanager-rotationangles-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RotationAxesStateChangeInfo(system api)](arkts-mechanicmanager-rotationaxesstatechangeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RotationAxesStatus(system api)](arkts-mechanicmanager-rotationaxesstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RotationLimits(system api)](arkts-mechanicmanager-rotationlimits-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RotationSpeed(system api)](arkts-mechanicmanager-rotationspeed-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SearchParams(system api)](arkts-mechanicmanager-searchparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SearchResult(system api)](arkts-mechanicmanager-searchresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SpeedParams(system api)](arkts-mechanicmanager-speedparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TargetInfo(system api)](arkts-mechanicmanager-targetinfo-i-sys.md)<!--DelEnd-->
+  - [TrackingEventInfo](arkts-mechanicmanager-trackingeventinfo-i.md)<!--Del-->
+  - [ActionType(system api)](arkts-mechanicmanager-actiontype-e-sys.md)<!--DelEnd-->
+  - [AttachState](arkts-mechanicmanager-attachstate-e.md)
+  - [CameraTrackingLayout](arkts-mechanicmanager-cameratrackinglayout-e.md)<!--Del-->
+  - [MarchingMode(system api)](arkts-mechanicmanager-marchingmode-e-sys.md)<!--DelEnd-->
+  - [MechDeviceType](arkts-mechanicmanager-mechdevicetype-e.md)<!--Del-->
+  - [MechEventType(system api)](arkts-mechanicmanager-mecheventtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Operation(system api)](arkts-mechanicmanager-operation-e-sys.md)<!--DelEnd--><!--Del-->
+  - [Result(system api)](arkts-mechanicmanager-result-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RotationAxisLimited(system api)](arkts-mechanicmanager-rotationaxislimited-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SearchDirection(system api)](arkts-mechanicmanager-searchdirection-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SpeedGear(system api)](arkts-mechanicmanager-speedgear-e-sys.md)<!--DelEnd--><!--Del-->
+  - [TargetType(system api)](arkts-mechanicmanager-targettype-e-sys.md)<!--DelEnd-->
+  - [TrackingEvent](arkts-mechanicmanager-trackingevent-e.md)

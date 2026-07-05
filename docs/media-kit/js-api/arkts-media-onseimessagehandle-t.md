@@ -1,14 +1,14 @@
 # OnSeiMessageHandle
 
 ```TypeScript
-type OnSeiMessageHandle = (messages: Array<SeiMessage>, playbackPosition?: number) => void
+type OnSeiMessageHandle = (messages: Array<SeiMessage>, playbackPosition?: int) => void
 ```
 
-Describes the handle used to obtain SEI messages. This is used when in subscriptions to SEI message events, and the callback returns detailed SEI information.
+获取SEI信息，使用场景：订阅SEI信息事件，回调返回SEI详细信息。
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -16,6 +16,6 @@ Describes the handle used to obtain SEI messages. This is used when in subscript
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| messages | Array&lt;SeiMessage&gt; | Yes | Array of SEI messages. |
-| playbackPosition | int | No | Current playback position, in milliseconds. |
+| messages | Array&lt;SeiMessage> | Yes | SEI信息。 |
+| playbackPosition | int | no |  |
 

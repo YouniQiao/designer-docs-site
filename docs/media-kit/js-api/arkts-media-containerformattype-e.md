@@ -1,5 +1,9 @@
 # ContainerFormatType
 
+```TypeScript
+enum ContainerFormatType
+```
+
 Enumerates the container format types (CFTs).
 
 **Since:** 8
@@ -16,7 +20,7 @@ Video container format MP4.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -30,7 +34,7 @@ Audio container format M4A.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

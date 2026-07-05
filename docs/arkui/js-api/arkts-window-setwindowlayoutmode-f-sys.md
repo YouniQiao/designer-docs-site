@@ -1,0 +1,107 @@
+# setWindowLayoutMode
+
+## setWindowLayoutMode
+
+```TypeScript
+function setWindowLayoutMode(mode: WindowLayoutMode, callback: AsyncCallback<void>): void
+```
+
+设置窗口布局模式，使用callback异步回调。
+
+**Since:** 9
+
+**Deprecated since:** 26.0.0
+
+**System capability:** SystemCapability.WindowManager.WindowManager.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| mode | WindowLayoutMode | Yes | 设置的窗口布局模式。 |
+| callback | AsyncCallback&lt;void> | Yes | 回调信息。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Permission verification failed. A non-system application calls a system  API. [since 12] |
+| 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
+| 1300003 | This window manager service works abnormally. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  window.setWindowLayoutMode(window.WindowLayoutMode.WINDOW_LAYOUT_MODE_CASCADE, (err: BusinessError) => {
+    const errCode: number = err.code;
+    if (errCode) {
+      console.error(`Failed to set window layout mode. Cause code: ${err.code}, message: ${err.message}`);
+      return;
+    }
+    console.info('Succeeded in setting window layout mode.');
+  });
+} catch (exception) {
+  console.error(`Failed to set window layout mode. Cause code: ${exception.code}, message: ${exception.message}`);
+}
+
+```
+
+## setWindowLayoutMode
+
+```TypeScript
+function setWindowLayoutMode(mode: WindowLayoutMode): Promise<void>
+```
+
+设置窗口布局模式，使用Promise异步回调。
+
+**Since:** 9
+
+**Deprecated since:** 26.0.0
+
+**System capability:** SystemCapability.WindowManager.WindowManager.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| mode | WindowLayoutMode | Yes | 设置的窗口布局模式。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void> | 无返回结果的Promise对象。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Permission verification failed. A non-system application calls a system  API. [since 12] |
+| 401 | Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
+| 1300003 | This window manager service works abnormally. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  let promise = window.setWindowLayoutMode(window.WindowLayoutMode.WINDOW_LAYOUT_MODE_CASCADE);
+  promise.then(() => {
+    console.info('Succeeded in setting window layout mode.');
+  }).catch((err: BusinessError) => {
+    console.error(`Failed to set window layout mode. Cause code: ${err.code}, message: ${err.message}`);
+  });
+} catch (exception) {
+  console.error(`Failed to set window layout mode. Cause code: ${exception.code}, message: ${exception.message}`);
+}
+
+```
+

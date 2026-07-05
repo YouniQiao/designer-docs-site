@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [RunningAppClone](arkts-ability-runningappclone-i-sys.md) | The RunningAppClone module defines the information of an application clone in the running state. |
-<!--DelEnd-->
+| <!--DelRow-->[RunningAppClone](arkts-runningappclone-i.md) | 定义分身应用在运行态的结构信息。 |
 

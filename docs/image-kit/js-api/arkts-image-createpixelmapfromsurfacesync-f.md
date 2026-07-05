@@ -1,11 +1,5 @@
 # createPixelMapFromSurfaceSync
 
-## Modules to Import
-
-```TypeScript
-import { image } from '@ohos.multimedia.image';
-```
-
 ## createPixelMapFromSurfaceSync
 
 ```TypeScript
@@ -35,9 +29,9 @@ Creates a PixelMap object from surface id.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [62980105](../errorcode-image.md#62980105-failure-in-obtaining-image-data) | Failed to get the data. |
-| [62980178](../errorcode-image.md#62980178-failure-in-creating-a-pixelmap) | Failed to create the PixelMap. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 62980105 | Failed to get the data. |
+| 62980178 | Failed to create the PixelMap. |
 
 **Example**
 
@@ -49,7 +43,6 @@ async function Demo(surfaceId: string) {
 }
 
 ```
-
 
 ## createPixelMapFromSurfaceSync
 
@@ -79,9 +72,9 @@ Creates a PixelMap object from surface id.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [62980105](../errorcode-image.md#62980105-failure-in-obtaining-image-data) | Failed to get the data. |
-| [62980178](../errorcode-image.md#62980178-failure-in-creating-a-pixelmap) | Failed to create the PixelMap. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 62980105 | Failed to get the data. |
+| 62980178 | Failed to create the PixelMap. |
 
 **Example**
 

@@ -1,4 +1,4 @@
-# SoundCardInfo (System API)
+# SoundCardInfo
 
 Describes sound card information.
 
@@ -11,26 +11,8 @@ Describes sound card information.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## busAddress
-
-```TypeScript
-busAddress: string
-```
-
-Sound card bus address.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
 
 ## driver
 
@@ -44,43 +26,7 @@ Sound card driver.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
-
-## model
-
-```TypeScript
-model: string
-```
-
-Sound card model.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
-
-## name
-
-```TypeScript
-name: string
-```
-
-Sound card name.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -98,7 +44,61 @@ Sound card vendor.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## name
+
+```TypeScript
+name: string
+```
+
+Sound card name.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## model
+
+```TypeScript
+model: string
+```
+
+Sound card model.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## busAddress
+
+```TypeScript
+busAddress: string
+```
+
+Sound card bus address.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

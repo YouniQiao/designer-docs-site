@@ -9,24 +9,8 @@ Provides the NNRT device info
 ## Modules to Import
 
 ```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
+import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
-
-## deviceID
-
-```TypeScript
-deviceID?: bigint
-```
-
-NNRT device id.
-
-**Type:** bigint
-
-**Since:** 12
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.AI.MindSporeLite
 
 ## extensions
 
@@ -40,7 +24,7 @@ NNRT device extension array.
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -56,7 +40,7 @@ NNRT device performance mode.
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -72,7 +56,23 @@ NNRT device priority.
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.AI.MindSporeLite
+
+## deviceID
+
+```TypeScript
+deviceID?: bigint
+```
+
+NNRT device id.
+
+**Type:** bigint
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

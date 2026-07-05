@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { InputEvent } from '@ohos.multimodalInput.inputEvent';
+import { InputEvent } from '@kit.InputKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { InputEvent } from '@ohos.multimodalInput.inputEvent';
 
 | Name | Description |
 | --- | --- |
-| [InputEvent](arkts-input-inputevent-i.md) | The **inputEvent** module provides the basic events reported by the device. |
+| [InputEvent](arkts-inputevent-i.md) | 设备上报的基本事件。 |
 

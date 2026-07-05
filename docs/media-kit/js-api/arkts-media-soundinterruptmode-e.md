@@ -1,6 +1,10 @@
 # SoundInterruptMode
 
-Enumerates the interruption modes of the audio files with the same ID in SoundPool.
+```TypeScript
+enum SoundInterruptMode
+```
+
+表示在SoundPool中，同一ID的音频在播放时的打断模式的枚举。
 
 **Since:** 23
 
@@ -12,11 +16,11 @@ Enumerates the interruption modes of the audio files with the same ID in SoundPo
 NO_INTERRUPT = 0
 ```
 
-If the former audio file is not completely played, the latter audio file with the same ID does not interrupt the former audio file. Two audio files are played concurrently.
+表示同一ID的音频，如果前者尚未播放完成，后者不会打断前者的播放，二者并行播放。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.SoundPool
 
@@ -26,11 +30,11 @@ If the former audio file is not completely played, the latter audio file with th
 SAME_SOUND_INTERRUPT = 1
 ```
 
-If the former audio file is not completely played, the latter audio file with the same ID interrupts the former audio file.
+表示同一ID的音频，如果前者尚未播放完成，后者在播放前会先打断前者的播放。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.SoundPool
 

@@ -9,38 +9,38 @@ Describes the capture start information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## captureId
 
 ```TypeScript
-captureId: number
+captureId: int
 ```
 
 ID of this capture action.
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## time
 
 ```TypeScript
-time: number
+time: long
 ```
 
 Estimated duration when the sensor captures frames at the bottom layer in a single capture. If **–1** is reported , there is no estimated duration.
 
-**Type:** number
+**Type:** long
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

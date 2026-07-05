@@ -1,5 +1,9 @@
 # PickerMode
 
+```TypeScript
+enum PickerMode
+```
+
 Enumerates the display mode for the screen capture picker.
 
 **Since:** 22
@@ -52,7 +56,7 @@ Show application options only.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -66,7 +70,7 @@ Show both window and application options.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -80,7 +84,7 @@ Show both screen and application options.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -94,7 +98,7 @@ Show screen, window, and application options.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ComposeTitleBar, ComposeTitleBarMenuItem } from '@ohos.arkui.advanced.ComposeTitleBar';
+import { ComposeTitleBar,ComposeTitleBarMenuItem } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,11 +12,5 @@ import { ComposeTitleBar, ComposeTitleBarMenuItem } from '@ohos.arkui.advanced.C
 
 | Name | Description |
 | --- | --- |
-| [ComposeTitleBarMenuItem](arkts-arkui-composetitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [ComposeTitleBar](arkts-arkui-composetitlebar-s.md) | Declaration of the composable title bar. |
+| [ComposeTitleBarMenuItem](arkts-composetitlebarmenuitem-c.md) | Declaration of the menu item on the right side. |
 

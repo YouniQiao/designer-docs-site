@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { StartupConfigEntry } from '@ohos.app.appstartup.StartupConfigEntry';
+import { StartupConfigEntry } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { StartupConfigEntry } from '@ohos.app.appstartup.StartupConfigEntry';
 
 | Name | Description |
 | --- | --- |
-| [StartupConfigEntry](arkts-ability-startupconfigentry-c.md) | The module provides the capability to configure [AppStartup](../../../../application-models/app-startup.md). |
+| [StartupConfigEntry](arkts-startupconfigentry-c.md) | 本模块提供[应用启动框架](docroot://application-models/app-startup.md)配置的能力。 |
 

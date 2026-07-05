@@ -1,4 +1,4 @@
-# AudioPersonalizedSpatialEnabledChangeForAnyDevice (System API)
+# AudioPersonalizedSpatialEnabledChangeForAnyDevice
 
 This interface is used to notify the listener of personalized spatialization enabled state change of any device.
 
@@ -11,7 +11,7 @@ This interface is used to notify the listener of personalized spatialization ena
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## deviceDescriptor
@@ -26,7 +26,7 @@ Audio device description.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 
@@ -44,7 +44,7 @@ Personalized spatialization enable state.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 

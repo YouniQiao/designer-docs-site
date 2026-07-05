@@ -1,0 +1,30 @@
+# Constants
+
+## FlowItem
+
+```TypeScript
+declare const FlowItem: FlowItemInterface
+```
+
+瀑布流组件[WaterFlow]water_flow的子组件，用来展示瀑布流具体item。 > **说明：** > > * > > * 仅支持作为[WaterFlow]water_flow组件的子组件使用。 > > * 在滑动场景中，由于FlowItem及其子组件的频繁创建与销毁，建议将FlowItem中的组件封装为自定义组件，并使用@Reusable装饰器进行修饰，以增强组件的复用能力，从而减少ArkUI框架内部重复创建和销毁节点的开销。最 > 佳实践请参考 > [优化瀑布流加载慢丢帧问题-组件复用](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-waterflow-performance-optimization#section189041489339)。 ###### 子组件 支持单个子组件。
+
+**Since:** 9
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## FlowItemInstance
+
+```TypeScript
+declare const FlowItemInstance: FlowItemAttribute
+```
+
+定义FlowItem组件实例。
+
+**Since:** 9
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

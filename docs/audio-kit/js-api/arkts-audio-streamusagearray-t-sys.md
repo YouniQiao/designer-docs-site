@@ -1,4 +1,4 @@
-# StreamUsageArray (System API)
+# StreamUsageArray
 
 ```TypeScript
 type StreamUsageArray = Array<StreamUsage>

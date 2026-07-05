@@ -1,5 +1,9 @@
 # ProximityStateForFocus
 
+```TypeScript
+enum ProximityStateForFocus
+```
+
 Enumer proximity states for focus.
 
 **Since:** 26.0.0
@@ -16,9 +20,9 @@ The device is within a reasonable range, and no raising action is required.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,9 +36,9 @@ The device is out of the reasonable range, and the device needs to be raised.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

@@ -9,56 +9,8 @@ Png metadata.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
-
-## author
-
-```TypeScript
-readonly author?: string
-```
-
-PNG author.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## chromaticities
-
-```TypeScript
-readonly chromaticities?: number[]
-```
-
-PNG color primary/white-point coordinates.
-
-**Type:** number[]
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## comment
-
-```TypeScript
-readonly comment?: string
-```
-
-PNG comment.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
 
 ## copyright
 
@@ -72,119 +24,7 @@ PNG copyright.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## creationTime
-
-```TypeScript
-readonly creationTime?: string
-```
-
-PNG creation time.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## description
-
-```TypeScript
-readonly description?: string
-```
-
-PNG description.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## disclaimer
-
-```TypeScript
-readonly disclaimer?: string
-```
-
-PNG disclaimer.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gamma
-
-```TypeScript
-readonly gamma?: number
-```
-
-PNG gamma.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## interlaceType
-
-```TypeScript
-readonly interlaceType?: number
-```
-
-PNG interlacing mode. The value should be an integer.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## modificationTime
-
-```TypeScript
-readonly modificationTime?: string
-```
-
-PNG modification time.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## sRGBIntent
-
-```TypeScript
-readonly sRGBIntent?: number
-```
-
-PNG sRGB rendering intent. The value should be an integer.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -200,7 +40,87 @@ PNG software.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## creationTime
+
+```TypeScript
+readonly creationTime?: string
+```
+
+PNG creation time.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## interlaceType
+
+```TypeScript
+readonly interlaceType?: int
+```
+
+PNG interlacing mode. The value should be an integer.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## author
+
+```TypeScript
+readonly author?: string
+```
+
+PNG author.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## chromaticities
+
+```TypeScript
+readonly chromaticities?: double[]
+```
+
+PNG color primary/white-point coordinates.
+
+**Type:** double[]
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## description
+
+```TypeScript
+readonly description?: string
+```
+
+PNG description.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -216,7 +136,55 @@ PNG title.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## modificationTime
+
+```TypeScript
+readonly modificationTime?: string
+```
+
+PNG modification time.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## yPixelsPerMeter
+
+```TypeScript
+readonly yPixelsPerMeter?: int
+```
+
+PNG y pixels per meter. The value should be an integer.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## sRGBIntent
+
+```TypeScript
+readonly sRGBIntent?: int
+```
+
+PNG sRGB rendering intent. The value should be an integer.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -232,39 +200,71 @@ PNG warning.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## xPixelsPerMeter
 
 ```TypeScript
-readonly xPixelsPerMeter?: number
+readonly xPixelsPerMeter?: int
 ```
 
 PNG x pixels per meter. The value should be an integer.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## yPixelsPerMeter
+## comment
 
 ```TypeScript
-readonly yPixelsPerMeter?: number
+readonly comment?: string
 ```
 
-PNG y pixels per meter. The value should be an integer.
+PNG comment.
 
-**Type:** number
+**Type:** string
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## disclaimer
+
+```TypeScript
+readonly disclaimer?: string
+```
+
+PNG disclaimer.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gamma
+
+```TypeScript
+readonly gamma?: double
+```
+
+PNG gamma.
+
+**Type:** double
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

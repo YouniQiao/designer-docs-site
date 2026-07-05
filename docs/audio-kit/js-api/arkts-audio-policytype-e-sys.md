@@ -1,4 +1,8 @@
-# PolicyType (System API)
+# PolicyType
+
+```TypeScript
+enum PolicyType
+```
 
 Enumerates type.
 

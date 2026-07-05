@@ -1,8 +1,8 @@
-# ZoomPointInfo (System API)
+# ZoomPointInfo
 
 Describes the equivalent focal length information.
 
-**Since:** 26.0.0
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -11,22 +11,22 @@ Describes the equivalent focal length information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## equivalentFocalLength
 
 ```TypeScript
-readonly equivalentFocalLength: number
+readonly equivalentFocalLength: int
 ```
 
 Equivalent focal length corresponding to the current focal length ratio.
 
-**Type:** number
+**Type:** int
 
-**Since:** 26.0.0
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -35,16 +35,16 @@ Equivalent focal length corresponding to the current focal length ratio.
 ## zoomRatio
 
 ```TypeScript
-readonly zoomRatio: number
+readonly zoomRatio: double
 ```
 
 Zoom ratio.
 
-**Type:** number
+**Type:** double
 
-**Since:** 26.0.0
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

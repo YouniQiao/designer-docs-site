@@ -1,0 +1,60 @@
+# getInstalledBundleList
+
+## getInstalledBundleList
+
+```TypeScript
+function getInstalledBundleList(bundleFlags: int): Promise<Array<BundleInfo>>
+```
+
+根据给定的bundleFlags获取系统中所有的BundleInfo。使用Promise异步回调。
+
+**Since:** 26.0.0
+
+**Required permissions:** 
+
+ ohos.permission.ENTERPRISE_GET_INSTALLED_BUNDLE_LIST
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.BundleManager.BundleFramework.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| bundleFlags | int | Yes | 指定返回的BundleInfo所包含的信息，详情请参考  [BundleFlag](arkts-bundlemanager-bundleflag-e.md#BundleFlag)。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Array&lt;BundleInfo>> | Promise对象，返回当前已安装应用的信息列表。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 201 | Permission denied. |
+
+**Example**
+
+```TypeScript
+import { bundleManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
+
+let bundleFlags = bundleManager.BundleFlag.GET_BUNDLE_INFO_DEFAULT;
+
+try {
+  bundleManager.getInstalledBundleList(bundleFlags).then((data) => {
+    hilog.info(0x0000, 'testTag', 'getInstalledBundleList successfully. Data: %{public}s', JSON.stringify(data));
+  }).catch((err: BusinessError) => {
+    hilog.error(0x0000, 'testTag', 'getInstalledBundleList failed. Cause: %{public}s', err.message);
+  });
+} catch (err) {
+  let message = (err as BusinessError).message;
+  hilog.error(0x0000, 'testTag', 'getInstalledBundleList failed. Cause: %{public}s', message);
+}
+
+```
+

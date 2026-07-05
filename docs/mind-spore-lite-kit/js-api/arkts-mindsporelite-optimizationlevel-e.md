@@ -1,5 +1,9 @@
 # OptimizationLevel
 
+```TypeScript
+export enum OptimizationLevel
+```
+
 Enum for optimization level
 
 **Since:** 12
@@ -16,7 +20,7 @@ Do not change
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -30,7 +34,7 @@ Cast network to float16, keep batch norm and loss in float32
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -44,7 +48,7 @@ Cast network to float16, including batch norm
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -58,7 +62,7 @@ Choose optimization based on device
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { FenceExtensionAbility } from '@ohos.app.ability.FenceExtensionAbility';
+import { FenceExtensionAbility } from '@kit.LocationKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { FenceExtensionAbility } from '@ohos.app.ability.FenceExtensionAbility';
 
 | Name | Description |
 | --- | --- |
-| [FenceExtensionAbility](arkts-location-fenceextensionability-c.md) | Class of fence extension ability. |
+| [FenceExtensionAbility](arkts-fenceextensionability-c.md) | Class of fence extension ability. |
 

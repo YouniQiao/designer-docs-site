@@ -1,6 +1,10 @@
 # AVScreenCaptureFillMode
 
-进行屏幕录制时视频填充模式的枚举。
+```TypeScript
+enum AVScreenCaptureFillMode
+```
+
+Enumerates the video fill modes during screen capture.
 
 **起始版本：** 18
 
@@ -12,7 +16,7 @@
 PRESERVE_ASPECT_RATIO = 0
 ```
 
-保持与原始图像相同的宽高比例，即与物理屏幕宽高比例一致。
+Keeps the original aspect ratio, matching the aspect ratio of the physical screen.
 
 **起始版本：** 18
 
@@ -24,7 +28,7 @@ PRESERVE_ASPECT_RATIO = 0
 SCALE_TO_FILL = 1
 ```
 
-进行图像拉伸填充，适配设置的宽度和高度。
+Stretches the image to fit the specified dimensions.
 
 **起始版本：** 18
 

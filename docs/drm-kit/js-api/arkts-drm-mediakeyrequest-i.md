@@ -9,7 +9,7 @@ Provides the drm media key request definitions.
 ## Modules to Import
 
 ```TypeScript
-import { drm } from '@ohos.multimedia.drm';
+import { drm } from '@kit.DrmKit';
 ```
 
 ## data
@@ -24,23 +24,7 @@ Media key request data sent to media key server.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Drm.Core
-
-## defaultURL
-
-```TypeScript
-defaultURL: string
-```
-
-Media key server URL.
-
-**Type:** string
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -56,7 +40,23 @@ Media key request type.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Drm.Core
+
+## defaultURL
+
+```TypeScript
+defaultURL: string
+```
+
+Media key server URL.
+
+**Type:** string
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 

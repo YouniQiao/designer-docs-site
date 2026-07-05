@@ -1,6 +1,6 @@
 # @ohos.arkui.observer
 
-Provides APIs for listening for UI component behavior changes. > **NOTE** > > - UIObserver can only listen for relevant information within the current process and does not support obtaining > information in cross-process scenarios<!--Del--> such as [UIExtensionComponent](../arkts-components/arkts-arkui-uiextensioncomponent.md)<!-- > DelEnd-->.
+提供UI组件行为变化的无感监听能力。 > **说明：** > - 以下API需先使用UIContext中的{@link getUIObserver()}方法获取到UIObserver对象，再通过该对象调用对应方法。 > - UIObserver仅能监听到本进程内的相关信息，不支持获取<!--Del-->[UIExtensionComponent]{@link ui_extension_component}等<!--DelEnd-->跨进程场景的信 > 息。
 
 **Since:** 11
 
@@ -9,7 +9,7 @@ Provides APIs for listening for UI component behavior changes. > **NOTE** > > - 
 ## Modules to Import
 
 ```TypeScript
-import { uiObserver } from '@ohos.arkui.observer';
+import { uiObserver } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -18,58 +18,58 @@ import { uiObserver } from '@ohos.arkui.observer';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-arkui-off-f.md#off-1) | Unsubscribes from status changes of the **NavDestination** component. Compared with [uiObserver.off](arkts-arkui-off-f.md#off-2), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe. |
-| [off](arkts-arkui-off-f.md#off-2) | Unsubscribes from status changes of the **NavDestination** component. |
-| [off](arkts-arkui-off-f.md#off-3) | Removes a callback function that was previously registered with `on()`. |
-| [off](arkts-arkui-off-f.md#off-4) | Removes a callback function that was previously registered with `on()`. |
-| [off](arkts-arkui-off-f.md#off-5) | Unsubscribes from state changes of the page during routing. |
-| [off](arkts-arkui-off-f.md#off-6) | Unregisters the listener for screen pixel density changes. |
-| [off](arkts-arkui-off-f.md#off-7) | Unregisters the listener for drawing instruction dispatch in each frame. |
-| [off](arkts-arkui-off-f.md#off-8) | Unregisters the listener for layout completion status in each frame. |
-| [off](arkts-arkui-off-f.md#off-9) | Unsubscribes from **TabContent** page switching events for the specified **Tabs** component identified by its ID. |
-| [off](arkts-arkui-off-f.md#off-10) | Unsubscribes from the **TabContent** switching event. |
-| [off](arkts-arkui-off-f.md#off-11) | Unsubscribes from **Navigation** component page switching events. |
-| [off](arkts-arkui-off-f.md#off-12) | Unsubscribes from **Navigation** component page switching events. Compared with [uiObserver.off](uiObserver.off( type: 'navDestinationSwitch', context: UIAbilityContext \| UIContext, callback?: Callback&lt;NavDestinationSwitchInfo&gt; )), this API supports the **observerOptions** parameter, which enables you to configure observation options. |
-| [on](arkts-arkui-on-f.md#on-1) | Subscribes to status changes of the **NavDestination** component. Compared with [uiObserver.on](arkts-arkui-on-f.md#on-2), this API supports the **options** parameter, which enables you to specify the ID of the target **Navigation** component to observe. |
-| [on](arkts-arkui-on-f.md#on-2) | Subscribes to status changes of the **NavDestination** component. |
-| [on](arkts-arkui-on-f.md#on-3) | Registers a callback function to be called when the scroll event start or stop. |
-| [on](arkts-arkui-on-f.md#on-4) | Registers a callback function to be called when the scroll event start or stop. |
-| [on](arkts-arkui-on-f.md#on-5) | Subscribes to state changes of the page during routing. |
-| [on](arkts-arkui-on-f.md#on-6) | Listens for screen pixel density changes. |
-| [on](arkts-arkui-on-f.md#on-7) | Listens for drawing instruction dispatch in each frame. |
-| [on](arkts-arkui-on-f.md#on-8) | Listens for layout completion status in each frame. |
-| [on](arkts-arkui-on-f.md#on-9) | Subscribes to **TabContent** page switching events for the specified **Tabs** component identified by its ID. Unlike [on('tabChange')](arkts-arkui-uiobserver-c.md#on-23), this API does not support listening for the initial tab display event when the **Tabs** component is initialized. |
-| [on](arkts-arkui-on-f.md#on-10) | Subscribes to **TabContent** switch events. Unlike [on('tabChange')](arkts-arkui-uiobserver-c.md#on-23), this API does not support listening for the initial tab display event when the **Tabs** component is initialized. |
-| [on](arkts-arkui-on-f.md#on-11) | Subscribes to **Navigation** component page switching events. |
-| [on](arkts-arkui-on-f.md#on-12) | Subscribes to **Navigation** component page switching events. Compared with [uiObserver.on](uiObserver.on( type: 'navDestinationSwitch', context: UIAbilityContext \| UIContext, callback: Callback&lt;NavDestinationSwitchInfo&gt; )), this API supports the **observerOptions** parameter, which enables you to configure observation options. |
+| [off](arkts-uiobserver-off-f.md#off-1) | 取消监听NavDestination组件的状态变化。与[uiObserver.off]{@link uiObserver.off(type: 'navDestinationUpdate', callback?: Callback<NavDestinationInfo>)}相比，新增了options参数，即支持指定监听的Navigation的id。 |
+| [off](arkts-uiobserver-off-f.md#off-2) | 取消监听NavDestination组件的状态变化。 |
+| [off](arkts-uiobserver-off-f.md#off-3) | Removes a callback function that was previously registered with `on()`. |
+| [off](arkts-uiobserver-off-f.md#off-4) | Removes a callback function that was previously registered with `on()`. |
+| [off](arkts-uiobserver-off-f.md#off-5) | 取消监听router中page页面的状态变化。 |
+| [off](arkts-uiobserver-off-f.md#off-6) | 取消监听屏幕像素密度的变化。 |
+| [off](arkts-uiobserver-off-f.md#off-7) | 取消监听每一帧绘制指令下发情况。 |
+| [off](arkts-uiobserver-off-f.md#off-8) | 取消监听每一帧布局完成情况。 |
+| [off](arkts-uiobserver-off-f.md#off-9) | 取消监听指定Tabs组件id的TabContent页面切换事件。 |
+| [off](arkts-uiobserver-off-f.md#off-10) | 取消监听TabContent页面的切换事件。 |
+| [off](arkts-uiobserver-off-f.md#off-11) | 取消监听Navigation的页面切换事件。 |
+| [off](arkts-uiobserver-off-f.md#off-12) | 取消监听Navigation的页面切换事件。与[uiObserver.off]{@link uiObserver.off( type: 'navDestinationSwitch', context: UIAbilityContext | UIContext, callback?: Callback<NavDestinationSwitchInfo> )}相比，新增了observerOptions参数，即支持设置监听选项。 |
+| [on](arkts-uiobserver-on-f.md#on-1) | 监听NavDestination组件的状态变化。与 * [uiObserver.on]{@link uiObserver.on(type: 'navDestinationUpdate', callback: Callback<NavDestinationInfo>)}相比，新增了options参数，即支持指定监听的Navigation的id。 |
+| [on](arkts-uiobserver-on-f.md#on-2) | 监听NavDestination组件的状态变化。 |
+| [on](arkts-uiobserver-on-f.md#on-3) | Registers a callback function to be called when the scroll event start or stop. |
+| [on](arkts-uiobserver-on-f.md#on-4) | Registers a callback function to be called when the scroll event start or stop. |
+| [on](arkts-uiobserver-on-f.md#on-5) | 监听router中page页面的状态变化。 |
+| [on](arkts-uiobserver-on-f.md#on-6) | 监听屏幕像素密度变化。 |
+| [on](arkts-uiobserver-on-f.md#on-7) | 监听每一帧绘制指令下发情况。 |
+| [on](arkts-uiobserver-on-f.md#on-8) | 监听每一帧布局完成情况。 |
+| [on](arkts-uiobserver-on-f.md#on-9) | 监听指定Tabs组件id的TabContent页面切换事件。相比[on('tabChange')]{@link @ohos.arkui.UIContext:UIObserver#on(type: 'tabChange', callback: Callback<observer.TabContentInfo>)}，本接口不支持监听Tabs组件初始化时，显示首个页签的事件。 |
+| [on](arkts-uiobserver-on-f.md#on-10) | 监听TabContent页面的切换事件。相比[on('tabChange')]{@link @ohos.arkui.UIContext:UIObserver#on(type: 'tabChange', callback: Callback<observer.TabContentInfo>)}，本接口不支持监听Tabs组件初始化时，显示首个页签的事件。 |
+| [on](arkts-uiobserver-on-f.md#on-11) | 监听Navigation的页面切换事件。 |
+| [on](arkts-uiobserver-on-f.md#on-12) | 监听Navigation的页面切换事件。与[uiObserver.on]{@link uiObserver.on( type: 'navDestinationSwitch', context: UIAbilityContext | UIContext, callback: Callback<NavDestinationSwitchInfo> )}相比，新增了observerOptions参数，即支持设置监听选项。 |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [DensityInfo](arkts-arkui-densityinfo-c.md) | Provides the information contained in the callback when the screen pixel density changes. |
-| [RouterPageInfo](arkts-arkui-routerpageinfo-c.md) | Provides the information contained in **RouterPageInfo**, returned by the system to developers. |
-| [WindowSizeLayoutBreakpointInfo](arkts-arkui-windowsizelayoutbreakpointinfo-c.md) | Provides information about window size layout breakpoint changes. |
+| [DensityInfo](arkts-uiobserver-densityinfo-c.md) | 屏幕像素密度变化回调包含的信息。 |
+| [RouterPageInfo](arkts-uiobserver-routerpageinfo-c.md) | RouterPageInfo包含的信息，由系统返回给开发者。 |
+| [WindowSizeLayoutBreakpointInfo](arkts-uiobserver-windowsizelayoutbreakpointinfo-c.md) | 窗口尺寸布局断点变化回调的信息。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [NavDestinationInfo](arkts-arkui-navdestinationinfo-i.md) | Information about the **NavDestination** component, returned by the system to developers. |
-| [NavDestinationSwitchInfo](arkts-arkui-navdestinationswitchinfo-i.md) | Provides the information about page switching of the **Navigation** component. |
-| [NavDestinationSwitchObserverOptions](arkts-arkui-navdestinationswitchobserveroptions-i.md) | Provides the observer options for the page switching event of the **Navigation** component. |
-| [NavigationInfo](arkts-arkui-navigationinfo-i.md) | Provides information about the **Navigation** component. |
-| [ObserverOptions](arkts-arkui-observeroptions-i.md) | Describes the observer options. |
-| [ScrollEventInfo](arkts-arkui-scrolleventinfo-i.md) | ScrollEvent info. |
-| [TabContentInfo](arkts-arkui-tabcontentinfo-i.md) | Provides the **TabContent** switching information. |
-| [TextChangeEventInfo](arkts-arkui-textchangeeventinfo-i.md) | Text change event info |
+| [NavDestinationInfo](arkts-uiobserver-navdestinationinfo-i.md) | NavDestination组件信息，由系统返回给开发者。 |
+| [NavDestinationSwitchInfo](arkts-uiobserver-navdestinationswitchinfo-i.md) | Navigation组件页面切换的信息。 |
+| [NavDestinationSwitchObserverOptions](arkts-uiobserver-navdestinationswitchobserveroptions-i.md) | Navigation组件页面切换事件的监听选项。 |
+| [NavigationInfo](arkts-uiobserver-navigationinfo-i.md) | Navigation组件信息。 |
+| [ObserverOptions](arkts-uiobserver-observeroptions-i.md) | Observer选项。 |
+| [ScrollEventInfo](arkts-uiobserver-scrolleventinfo-i.md) | ScrollEvent info. |
+| [TabContentInfo](arkts-uiobserver-tabcontentinfo-i.md) | TabContent页面的切换信息。 |
+| [TextChangeEventInfo](arkts-uiobserver-textchangeeventinfo-i.md) | Text change event info |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [NavDestinationState](arkts-arkui-navdestinationstate-e.md) | Describes the state of the **NavDestination** component. |
-| [RouterPageState](arkts-arkui-routerpagestate-e.md) | Enumerates the states of a page during routing. **RouterPageState** is used in [RouterPageInfo](arkts-arkui-routerpageinfo-c.md#routerpageinfo) as the callback parameter for passive observation via [routerPageUpdate](uiObserver.on(type: 'routerPageUpdate', context: UIAbilityContext \| UIContext, callback: Callback&lt;RouterPageInfo&gt;)). |
-| [ScrollEventType](arkts-arkui-scrolleventtype-e.md) | ScrollEvent type. |
-| [TabContentState](arkts-arkui-tabcontentstate-e.md) | TabContent state. |
+| [NavDestinationState](arkts-uiobserver-navdestinationstate-e.md) | NavDestination组件状态。 |
+| [RouterPageState](arkts-uiobserver-routerpagestate-e.md) | routerPage生命周期触发时对应的状态。RouterPageState用于[RouterPageInfo]{@link uiObserver.RouterPageInfo}中，作为 [routerPageUpdate]{@link uiObserver.on(type: 'routerPageUpdate', context: UIAbilityContext | UIContext, callback: Callback<RouterPageInfo>)}无感监听的返回值。 |
+| [ScrollEventType](arkts-uiobserver-scrolleventtype-e.md) | ScrollEvent type. |
+| [TabContentState](arkts-uiobserver-tabcontentstate-e.md) | TabContent组件的状态。 |
 

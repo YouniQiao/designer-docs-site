@@ -1,8 +1,8 @@
-# TimeLapsePhotoSession (System API)
+# TimeLapsePhotoSession
 
-TimeLapsePhotoSession extends Session, Focus, ManualFocus, AutoExposure, ManualExposure, ManualIso, WhiteBalance, Zoom, ColorEffect Implements a time-lapse photo session, which sets the parameters of the time-lapse photo mode and saves all [CameraInput](arkts-camera-camerainput-i.md#camerainput) and [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput) instances required to run the camera. It inherits from [Session](arkts-camera-session-i.md#session).
+TimeLapsePhotoSession extends Session, Focus, ManualFocus, AutoExposure, ManualExposure, ManualIso, WhiteBalance, Zoom, ColorEffect Implements a time-lapse photo session, which sets the parameters of the time-lapse photo mode and saves all [CameraInput]camera.CameraInput and [CameraOutput]camera.CameraOutput instances required to run the camera. It inherits from [Session]camera.Session.
 
-**Inheritance/Implementation:** TimeLapsePhotoSession extends [Session](arkts-camera-session-i.md#session), [Focus](arkts-camera-focus-i.md#focus), [ManualFocus](arkts-camera-manualfocus-i-sys.md#manualfocus), [AutoExposure](arkts-camera-autoexposure-i.md#autoexposure), [ManualExposure](arkts-camera-manualexposure-i.md#manualexposure), [ManualIso](arkts-camera-manualiso-i-sys.md#manualiso), [WhiteBalance](arkts-camera-whitebalance-i.md#whitebalance), [Zoom](arkts-camera-zoom-i.md#zoom), [ColorEffect](arkts-camera-coloreffect-i-sys.md#coloreffect)
+**Inheritance:** TimeLapsePhotoSessionextends: Session, Focus, ManualFocus, AutoExposure, ManualExposure, ManualIso, WhiteBalance, Zoom, ColorEffect.
 
 **Since:** 12
 
@@ -13,13 +13,13 @@ TimeLapsePhotoSession extends Session, Focus, ManualFocus, AutoExposure, ManualE
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getSupportedTimeLapseIntervalRange
 
 ```TypeScript
-getSupportedTimeLapseIntervalRange(): Array<number>
+getSupportedTimeLapseIntervalRange(): Array<int>
 ```
 
 Obtains the supported time-lapse shooting interval range.
@@ -34,14 +34,14 @@ Obtains the supported time-lapse shooting interval range.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;number&gt; | Interval range, in ms. The value depends on the underlying capability. If the operationfails, an error code defined in [CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) isreturned. |
+| Array&lt;int> | Interval range, in ms. The value depends on the underlying capability. If the operation  fails, an error code defined in [CameraErrorCode]camera.CameraErrorCode is  returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 202 | Not System Application. |
+| 7400103 | Session not config, only throw in session usage. |
 
 **Example**
 
@@ -65,7 +65,7 @@ function getSupportedTimeLapseIntervalRange(timeLapsePhotoSession: camera.TimeLa
 ## getTimeLapseInterval
 
 ```TypeScript
-getTimeLapseInterval(): number
+getTimeLapseInterval(): int
 ```
 
 Obtains the current time-lapse shooting interval.
@@ -80,14 +80,14 @@ Obtains the current time-lapse shooting interval.
 
 | Type | Description |
 | --- | --- |
-| number | Shooting interval, in ms. |
+| int | Shooting interval, in ms. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -126,14 +126,14 @@ Obtains the time-lapse preview type.
 
 | Type | Description |
 | --- | --- |
-| TimeLapsePreviewType | Preview type. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is returned. |
+| TimeLapsePreviewType | Preview type. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -172,14 +172,14 @@ Obtains the time-lapse shooting state.
 
 | Type | Description |
 | --- | --- |
-| TimeLapseRecordState | Shooting state. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is returned. |
+| TimeLapseRecordState | Shooting state. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -218,14 +218,14 @@ Checks whether Try AE is required.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether Try AE is required. **true** if required, **false** otherwise. Theerror code type is defined in [CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode). |
+| boolean | Check result for whether Try AE is required. true if required, false otherwise. The  error code type is defined in [CameraErrorCode]camera.CameraErrorCode. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 202 | Not System Application. |
+| 7400103 | Session not config, only throw in session usage. |
 
 **Example**
 
@@ -264,14 +264,14 @@ Unsubscribes from HighResolutionPhotoSession error events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when asession is created. |
-| callback | ErrorCallback | No | Callback used to return the result. This parameter is optional. If thisparameter is specified, the subscription to the specified event **on('error')** with the specified callbackis canceled. (The callback object cannot be an anonymous function.) |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  session is created. |
+| callback | ErrorCallback | No | Callback used to return the result. This parameter is optional. If this  parameter is specified, the subscription to the specified event on('error') with the specified callback  is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -300,14 +300,14 @@ Unsubscribes from focus state change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can belistened for when a session is created. |
-| callback | AsyncCallback&lt;FocusState&gt; | No | Callback used to return the result. This parameter is optional.If this parameter is specified, the subscription to the specified event **on('focusStateChange')** with thespecified callback is canceled. (The callback object cannot be an anonymous function.) |
+| type | 'focusStateChange' | Yes | Event type. The value is fixed at 'focusStateChange'. The event can be  listened for when a session is created. |
+| callback | AsyncCallback&lt;FocusState> | No | Callback used to return the result. This parameter is optional.  If this parameter is specified, the subscription to the specified event on('focusStateChange') with the  specified callback is canceled. (The callback object cannot be an anonymous function.) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -336,14 +336,14 @@ Unsubscribes from automatic ISO change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'isoInfoChange' | Yes | Event type. The value is fixed at **'isoInfoChange'**. |
-| callback | AsyncCallback&lt;IsoInfo&gt; | No | Callback, which is optional and is used to match **callback** in**on('isoInfoChange')**. |
+| type | 'isoInfoChange' | Yes | Event type. The value is fixed at 'isoInfoChange'. |
+| callback | AsyncCallback&lt;IsoInfo> | No | Callback, which is optional and is used to match callback in  on('isoInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -372,14 +372,14 @@ Unsubscribes from exposure information change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at **'exposureInfoChange'**. |
-| callback | AsyncCallback&lt;ExposureInfo&gt; | No | Callback, which is optional and is used to match **callback**in **on('exposureInfoChange')**. |
+| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at 'exposureInfoChange'. |
+| callback | AsyncCallback&lt;ExposureInfo> | No | Callback, which is optional and is used to match callback  in on('exposureInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -408,14 +408,14 @@ Unsubscribes from illumination change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at **'luminationInfoChange'**. |
-| callback | AsyncCallback&lt;LuminationInfo&gt; | No | Callback, which is optional and is used to match **callback**in **on('luminationInfoChange')**. |
+| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at 'luminationInfoChange'. |
+| callback | AsyncCallback&lt;LuminationInfo> | No | Callback, which is optional and is used to match callback  in on('luminationInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -444,14 +444,14 @@ Unsubscribes from Try AE change events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'tryAEInfoChange' | Yes | Event type. The value is fixed at **'tryAEInfoChange'**. |
-| callback | AsyncCallback&lt;TryAEInfo&gt; | No | Callback, which is optional and is used to match **callback** in**on('tryAEInfoChange')**. |
+| type | 'tryAEInfoChange' | Yes | Event type. The value is fixed at 'tryAEInfoChange'. |
+| callback | AsyncCallback&lt;TryAEInfo> | No | Callback, which is optional and is used to match callback in  on('tryAEInfoChange'). |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -461,6 +461,162 @@ function unregisterTryAEInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhotoSe
 }
 
 ```
+
+## offError
+
+```TypeScript
+offError(callback?: ErrorCallback): void
+```
+
+Unsubscribes from error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offExposureInfoChange
+
+```TypeScript
+offExposureInfoChange(callback?: AsyncCallback<ExposureInfo>): void
+```
+
+Unsubscribes from exposure info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;ExposureInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offFocusStateChange
+
+```TypeScript
+offFocusStateChange(callback?: AsyncCallback<FocusState>): void
+```
+
+Unsubscribes from focus state change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;FocusState> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offIsoInfoChange
+
+```TypeScript
+offIsoInfoChange(callback?: AsyncCallback<IsoInfo>): void
+```
+
+Unsubscribes from ISO info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;IsoInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offLuminationInfoChange
+
+```TypeScript
+offLuminationInfoChange(callback?: AsyncCallback<LuminationInfo>): void
+```
+
+Unsubscribes from lumination info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;LuminationInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offTryAEInfoChange
+
+```TypeScript
+offTryAEInfoChange(callback?: AsyncCallback<TryAEInfo>): void
+```
+
+Unsubscribes from try AE info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;TryAEInfo> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
 
 ## on('error')
 
@@ -480,14 +636,14 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when asession is created. This event is triggered and the error message is returned when an error occurs during thecalling of a session-related API such as[beginConfig](arkts-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-session-i.md#commitconfig-2), and[addInput](arkts-camera-session-i.md#addinput-1). |
-| callback | ErrorCallback | Yes | Callback used to return an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode). |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  session is created. This event is triggered and the error message is returned when an error occurs during the  calling of a session-related API such as  [beginConfig]camera.Session.beginConfig,  [commitConfig]camera.Session.commitConfig(), and  [addInput]camera.Session.addInput. |
+| callback | ErrorCallback | Yes | Callback used to return an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -522,14 +678,14 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can belistened for when a session is created. This event is triggered only when the camera focus state changes inauto focus mode. |
-| callback | AsyncCallback&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
+| type | 'focusStateChange' | Yes | Event type. The value is fixed at 'focusStateChange'. The event can be  listened for when a session is created. This event is triggered only when the camera focus state changes in  auto focus mode. |
+| callback | AsyncCallback&lt;FocusState> | Yes | Callback used to return the focus state change. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -568,14 +724,14 @@ Subscribes to automatic ISO change events to obtain real-time ISO information. T
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'isoInfoChange' | Yes | Event type. The value is fixed at **'isoInfoChange'**. |
-| callback | AsyncCallback&lt;IsoInfo&gt; | Yes | Callback used to return the ISO information. |
+| type | 'isoInfoChange' | Yes | Event type. The value is fixed at 'isoInfoChange'. |
+| callback | AsyncCallback&lt;IsoInfo> | Yes | Callback used to return the ISO information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -614,14 +770,14 @@ Subscribes to exposure information change events to obtain the exposure informat
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at **'exposureInfoChange'**. |
-| callback | AsyncCallback&lt;ExposureInfo&gt; | Yes | Callback used to return the exposure information. |
+| type | 'exposureInfoChange' | Yes | Event type. The value is fixed at 'exposureInfoChange'. |
+| callback | AsyncCallback&lt;ExposureInfo> | Yes | Callback used to return the exposure information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -660,14 +816,14 @@ Subscribes to illumination change events to obtain real-time illumination inform
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at **'luminationInfoChange'**. |
-| callback | AsyncCallback&lt;LuminationInfo&gt; | Yes | Callback used to return the illumination information. |
+| type | 'luminationInfoChange' | Yes | Event type. The value is fixed at 'luminationInfoChange'. |
+| callback | AsyncCallback&lt;LuminationInfo> | Yes | Callback used to return the illumination information. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -706,14 +862,14 @@ Subscribes to Try AE change events to obtain real-time Try AE parameters. This A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'tryAEInfoChange' | Yes | Event type. The value is fixed at **'tryAEInfoChange'**. |
-| callback | AsyncCallback&lt;TryAEInfo&gt; | Yes | Callback used to return the Try AE parameters. |
+| type | 'tryAEInfoChange' | Yes | Event type. The value is fixed at 'tryAEInfoChange'. |
+| callback | AsyncCallback&lt;TryAEInfo> | Yes | Callback used to return the Try AE parameters. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -734,10 +890,166 @@ function registerTryAEInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhotoSess
 
 ```
 
+## onError
+
+```TypeScript
+onError(callback: ErrorCallback): void
+```
+
+Subscribes to error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | Yes | Callback used to get the capture session errors. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onExposureInfoChange
+
+```TypeScript
+onExposureInfoChange(callback: AsyncCallback<ExposureInfo>): void
+```
+
+Subscribes exposure info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;ExposureInfo> | Yes | Callback used to get the exposure info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onFocusStateChange
+
+```TypeScript
+onFocusStateChange(callback: AsyncCallback<FocusState>): void
+```
+
+Subscribes focus state change event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;FocusState> | Yes | Callback used to get the focus state change. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onIsoInfoChange
+
+```TypeScript
+onIsoInfoChange(callback: AsyncCallback<IsoInfo>): void
+```
+
+Subscribes ISO info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;IsoInfo> | Yes | Callback used to get the ISO info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onLuminationInfoChange
+
+```TypeScript
+onLuminationInfoChange(callback: AsyncCallback<LuminationInfo>): void
+```
+
+Subscribes lumination info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;LuminationInfo> | Yes | Callback used to get the lumination info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onTryAEInfoChange
+
+```TypeScript
+onTryAEInfoChange(callback: AsyncCallback<TryAEInfo>): void
+```
+
+Subscribes try AE info event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;TryAEInfo> | Yes | Callback used to get the try AE info. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
 ## setTimeLapseInterval
 
 ```TypeScript
-setTimeLapseInterval(interval: number): void
+setTimeLapseInterval(interval: int): void
 ```
 
 Sets a time-lapse shooting interval.
@@ -752,15 +1064,15 @@ Sets a time-lapse shooting interval.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| interval | number | Yes | Shooting interval, in units of ms, the supported range can be obtained by calling[getSupportedTimeLapseIntervalRange](arkts-camera-timelapsephotosession-i-sys.md#getsupportedtimelapseintervalrange-1) |
+| interval | int | Yes | Shooting interval, in units of ms, the supported range can be obtained by calling  [getSupportedTimeLapseIntervalRange]camera.TimeLapsePhotoSession.getSupportedTimeLapseIntervalRange |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -804,9 +1116,9 @@ Sets the time-lapse preview type.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -849,9 +1161,9 @@ Sets the time-lapse shooting state.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -888,9 +1200,9 @@ Starts to execute Try AE.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400201 | Camera service fatal error. |
 
 **Example**
 
@@ -927,9 +1239,9 @@ Stops the execution of Try AE.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400201 | Camera service fatal error. |
 
 **Example**
 

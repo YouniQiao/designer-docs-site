@@ -1,11 +1,5 @@
 # createPixelMapUsingAllocatorSync
 
-## Modules to Import
-
-```TypeScript
-import { image } from '@ohos.multimedia.image';
-```
-
 ## createPixelMapUsingAllocatorSync
 
 ```TypeScript
@@ -25,7 +19,7 @@ Create pixelmap by data buffer based on opts, the memory type used by the PixelM
 | --- | --- | --- | --- |
 | colors | ArrayBuffer | Yes | The image color buffer. |
 | param | InitializationOptions | Yes | Initialization options for pixelmap. |
-| allocatorType | AllocatorType | No | Indicate which memory type will be used by the returned PixelMap. |
+| allocatorType | AllocatorType | No |  |
 
 **Return value:**
 
@@ -37,9 +31,9 @@ Create pixelmap by data buffer based on opts, the memory type used by the PixelM
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. |
-| [7600301](../errorcode-image.md#7600301-memory-allocation-failure) | Memory alloc failed. |
-| [7600302](../errorcode-image.md#7600302-memory-copy-failure) | Memory copy failed. |
+| 7600201 | Unsupported operation. |
+| 7600301 | Memory alloc failed. |
+| 7600302 | Memory copy failed. |
 
 **Example**
 
@@ -58,7 +52,6 @@ function CreatePixelMapSync() {
 
 ```
 
-
 ## createPixelMapUsingAllocatorSync
 
 ```TypeScript
@@ -76,7 +69,7 @@ Create an empty pixelmap by data buffer based on opts, the memory type used by t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | param | InitializationOptions | Yes | Initialization options for pixelmap. |
-| allocatorType | AllocatorType | No | Indicate which memory type will be used by the returned PixelMap. |
+| allocatorType | AllocatorType | No |  |
 
 **Return value:**
 
@@ -88,8 +81,8 @@ Create an empty pixelmap by data buffer based on opts, the memory type used by t
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600201](../errorcode-image.md#7600201-unsupported-operation) | Unsupported operation. |
-| [7600301](../errorcode-image.md#7600301-memory-allocation-failure) | Memory alloc failed. |
+| 7600201 | Unsupported operation. |
+| 7600301 | Memory alloc failed. |
 
 **Example**
 

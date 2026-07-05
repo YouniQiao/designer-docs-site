@@ -1,8 +1,12 @@
-# HostDeviceType (System API)
+# HostDeviceType
+
+```TypeScript
+enum HostDeviceType
+```
 
 Enumerates the remote camera types.
 
-**Since:** 15
+**Since:** 10
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -16,9 +20,9 @@ UNKNOWN_TYPE = 0
 
 Unknown type.
 
-**Since:** 15
+**Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,9 +36,9 @@ PHONE = 0x0E
 
 Mobile phone.
 
-**Since:** 15
+**Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -48,9 +52,9 @@ TABLET = 0x11
 
 Tablet.
 
-**Since:** 15
+**Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

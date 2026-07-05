@@ -1,6 +1,6 @@
 # @ohos.ability.particleAbility
 
-A Particle Ability represents an ability with service.
+particleAbility模块提供了操作Data和Service类型的Ability的能力，包括启动、停止指定的particleAbility，获取dataAbilityHelper，连接、断连指定的ServiceAbility等 。
 
 **Since:** 7
 
@@ -9,7 +9,7 @@ A Particle Ability represents an ability with service.
 ## Modules to Import
 
 ```TypeScript
-import { particleAbility } from '@ohos.ability.particleAbility';
+import { particleAbility } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,22 +18,22 @@ import { particleAbility } from '@ohos.ability.particleAbility';
 
 | Name | Description |
 | --- | --- |
-| [acquireDataAbilityHelper](arkts-ability-acquiredataabilityhelper-f.md#acquiredataabilityhelper-1) | Obtains the dataAbilityHelper. |
-| [cancelBackgroundRunning](arkts-ability-cancelbackgroundrunning-f.md#cancelbackgroundrunning-1) | Cancel background running of this ability to free up system memory. |
-| [cancelBackgroundRunning](arkts-ability-cancelbackgroundrunning-f.md#cancelbackgroundrunning-2) | Cancel background running of this ability to free up system memory. |
-| [connectAbility](arkts-ability-connectability-f.md#connectability-1) | Connects an ability to a Service ability. |
-| [disconnectAbility](arkts-ability-disconnectability-f.md#disconnectability-1) | Disconnects ability to a Service ability. |
-| [disconnectAbility](arkts-ability-disconnectability-f.md#disconnectability-2) | Disconnects ability to a Service ability. |
-| [startAbility](arkts-ability-startability-f.md#startability-1) | Service ability uses this method to start a specific ability. |
-| [startAbility](arkts-ability-startability-f.md#startability-2) | Service ability uses this method to start a specific ability. |
-| [startBackgroundRunning](arkts-ability-startbackgroundrunning-f.md#startbackgroundrunning-1) | Keep this Service ability in the background and display a notification bar. |
-| [startBackgroundRunning](arkts-ability-startbackgroundrunning-f.md#startbackgroundrunning-2) | Keep this Service ability in the background and display a notification bar. |
-| [terminateSelf](arkts-ability-terminateself-f.md#terminateself-1) | Destroys this service ability. |
-| [terminateSelf](arkts-ability-terminateself-f.md#terminateself-2) | Destroys this service ability. |
+| [acquireDataAbilityHelper](arkts-particleability-acquiredataabilityhelper-f.md#acquireDataAbilityHelper-1) | 获取dataAbilityHelper对象。 > **说明：** > > 组件启动规则详见：[组件启动规则（FA模型）](docroot://application-models/component-startup-rules-fa.md)。 > 跨应用访问dataAbility，对端应用需配置关联启动。 |
+| [cancelBackgroundRunning](arkts-particleability-cancelbackgroundrunning-f.md#cancelBackgroundRunning-1) | 向系统申请取消长时任务。使用callback异步回调。 |
+| [cancelBackgroundRunning](arkts-particleability-cancelbackgroundrunning-f.md#cancelBackgroundRunning-2) | 向系统申请取消长时任务。使用Promise异步回调。 |
+| [connectAbility](arkts-particleability-connectability-f.md#connectAbility-1) | 将当前ability与指定的ServiceAbility进行连接。 > **说明：** > > 组件启动规则详见：[组件启动规则（FA模型）](docroot://application-models/component-startup-rules-fa.md)。 > > 跨应用连接serviceAbility，对端应用需配置关联启动。 |
+| [disconnectAbility](arkts-particleability-disconnectability-f.md#disconnectAbility-1) | 断开当前ability与指定ServiceAbility的连接。使用callback异步回调。 |
+| [disconnectAbility](arkts-particleability-disconnectability-f.md#disconnectAbility-2) | 断开当前ability与指定ServiceAbility的连接。使用Promise异步回调。 |
+| [startAbility](arkts-particleability-startability-f.md#startAbility-1) | 启动指定的particleAbility。使用callback异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（FA模型）](docroot://application-models/component-startup-rules-fa.md)。 |
+| [startAbility](arkts-particleability-startability-f.md#startAbility-2) | 启动指定的particleAbility。使用Promise异步回调。 > **说明：** > > 组件启动规则详见：[组件启动规则（FA模型）](docroot://application-models/component-startup-rules-fa.md)。 |
+| [startBackgroundRunning](arkts-particleability-startbackgroundrunning-f.md#startBackgroundRunning-1) | 向系统申请长时任务。使用callback异步回调。 |
+| [startBackgroundRunning](arkts-particleability-startbackgroundrunning-f.md#startBackgroundRunning-2) | 向系统申请长时任务。使用Promise异步回调。 |
+| [terminateSelf](arkts-particleability-terminateself-f.md#terminateSelf-1) | 销毁当前particleAbility。使用callback异步回调。 |
+| [terminateSelf](arkts-particleability-terminateself-f.md#terminateSelf-2) | 销毁当前particleAbility。使用Promise异步回调。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ErrorCode](arkts-ability-errorcode-e.md) | Obtain the errorCode. |
+| [ErrorCode](arkts-particleability-errorcode-e.md) | 定义启动Ability时返回的错误码。 |
 

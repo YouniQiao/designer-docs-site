@@ -1,0 +1,42 @@
+# LockState
+
+```TypeScript
+export enum LockState
+```
+
+Indicates the lock states.
+
+**起始版本：** 8
+
+**系统能力：** SystemCapability.Telephony.CoreService
+
+**系统接口：** 此接口为系统接口。
+
+## LOCK_OFF
+
+```TypeScript
+LOCK_OFF = 0
+```
+
+Indicates that the lock state card is in the <b>off</b> state.
+
+**起始版本：** 8
+
+**系统能力：** SystemCapability.Telephony.CoreService
+
+**系统接口：** 此接口为系统接口。
+
+## LOCK_ON
+
+```TypeScript
+LOCK_ON = 1
+```
+
+Indicates that the lock state card is in the <b>on</b> state.
+
+**起始版本：** 8
+
+**系统能力：** SystemCapability.Telephony.CoreService
+
+**系统接口：** 此接口为系统接口。
+

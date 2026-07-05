@@ -4,13 +4,13 @@
 export type PacMap = _PacMap
 ```
 
-Defines the container of basic data types.
+PacMap二级模块。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Model restriction:** This API can be used only in the FA model.
 
-**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+**System capability:** SystemCapability.Ability.AbilityRuntime.FAModel
 
 **Property type:** _PacMap
 

@@ -6,13 +6,17 @@
 
 **系统能力：** SystemCapability.FileManagement.StorageService.Encryption
 
+## 导入模块
+
+```TypeScript
+import { keyManager } from '@kit.CoreFileKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 函数（系统接口）
+### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [deactivateUserKey](arkts-corefile-deactivateuserkey-f-sys.md#deactivateuserkey-1) | 用户锁屏时，同步卸载指定用户对应密钥。**（该接口目前仅开放给锁屏应用）** |
-<!--DelEnd-->
+| <!--DelRow-->[deactivateUserKey](arkts-keymanager-deactivateuserkey-f-sys.md#deactivateUserKey-1) | 用户锁屏时，同步卸载指定用户对应密钥。**（该接口目前仅开放给锁屏应用） |
 

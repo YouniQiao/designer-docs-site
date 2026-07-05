@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Popup, PopupOptions, PopupButtonOptions, PopupIconOptions, PopupTextOptions } from '@ohos.arkui.advanced.Popup';
+import { Popup,PopupOptions,PopupButtonOptions,PopupIconOptions,PopupTextOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,14 +12,14 @@ import { Popup, PopupOptions, PopupButtonOptions, PopupIconOptions, PopupTextOpt
 
 | Name | Description |
 | --- | --- |
-| [Popup](arkts-arkui-arkui-advanced-popup-popup-f.md#popup-1) |  |
+| [Popup](arkts-arkui-advanced-popup-popup-f.md#Popup-1) |  |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PopupButtonOptions](arkts-arkui-popupbuttonoptions-i.md) | Defines the button attributes and events. |
-| [PopupIconOptions](arkts-arkui-popupiconoptions-i.md) | Defines the icon options. |
-| [PopupOptions](arkts-arkui-popupoptions-i.md) | Defines the style parameters of the popup. |
-| [PopupTextOptions](arkts-arkui-popuptextoptions-i.md) | Provides text style settings. |
+| [PopupButtonOptions](arkts-popupbuttonoptions-i.md) | PopupButtonOptions定义按钮的相关属性和事件。 |
+| [PopupIconOptions](arkts-popupiconoptions-i.md) | PopupIconOptions定义图标的属性。 |
+| [PopupOptions](arkts-popupoptions-i.md) | PopupOptions定义Popup的具体样式参数。 |
+| [PopupTextOptions](arkts-popuptextoptions-i.md) | 设置文本样式。 |
 

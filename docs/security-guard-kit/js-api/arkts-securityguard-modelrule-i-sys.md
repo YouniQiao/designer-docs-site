@@ -1,4 +1,4 @@
-# ModelRule (System API)
+# ModelRule
 
 Provides the ModelRule type.
 
@@ -11,7 +11,7 @@ Provides the ModelRule type.
 ## Modules to Import
 
 ```TypeScript
-import { securityGuard } from '@ohos.security.securityGuard';
+import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
 ## modelName

@@ -1,85 +1,160 @@
-# ArkTS API<!--arkts-userauthenticationkit-->
+# UserAuthenticationKit
 
-- [@ohos.app.ability.UserAuthExtensionAbility](arkts-app-ability-userauthextensionability.md)
-  - [UserAuthExtensionAbility](arkts-userauthentication-userauthextensionability-c.md)
+- [@ohos.app.ability.UserAuthExtensionAbility](arkts-app-ability-userauthextensionability.md)<!--Del-->
+  - [UserAuthExtensionAbility(system api)](arkts-userauthextensionability-c-sys.md)<!--DelEnd-->
 - [@ohos.userIAM.companionDeviceAuth](arkts-useriam-companiondeviceauth.md)<!--Del-->
-  - [getStatusMonitor(system api)](arkts-userauthentication-getstatusmonitor-f-sys.md)<!--DelEnd--><!--Del-->
-  - [registerDeviceSelectCallback(system api)](arkts-userauthentication-registerdeviceselectcallback-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unregisterDeviceSelectCallback(system api)](arkts-userauthentication-unregisterdeviceselectcallback-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateEnabledBusinessIds(system api)](arkts-userauthentication-updateenabledbusinessids-f-sys.md)<!--DelEnd--><!--Del-->
-  - [ContinuousAuthParam(system api)](arkts-userauthentication-continuousauthparam-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceKey(system api)](arkts-userauthentication-devicekey-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceSelectResult(system api)](arkts-userauthentication-deviceselectresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceStatus(system api)](arkts-userauthentication-devicestatus-i-sys.md)<!--DelEnd--><!--Del-->
-  - [StatusMonitor(system api)](arkts-userauthentication-statusmonitor-i-sys.md)<!--DelEnd--><!--Del-->
-  - [TemplateStatus(system api)](arkts-userauthentication-templatestatus-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AvailableDeviceStatusCallback(system api)](arkts-userauthentication-availabledevicestatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
-  - [ContinuousAuthStatusCallback(system api)](arkts-userauthentication-continuousauthstatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceSelectCallback(system api)](arkts-userauthentication-deviceselectcallback-t-sys.md)<!--DelEnd--><!--Del-->
-  - [TemplateStatusCallback(system api)](arkts-userauthentication-templatestatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
-  - [BusinessId(system api)](arkts-userauthentication-businessid-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceIdType(system api)](arkts-userauthentication-deviceidtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SelectPurpose(system api)](arkts-userauthentication-selectpurpose-e-sys.md)<!--DelEnd-->
+  - [getStatusMonitor(system api)](arkts-companiondeviceauth-getstatusmonitor-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateEnabledBusinessIds(system api)](arkts-companiondeviceauth-updateenabledbusinessids-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerDeviceSelectCallback(system api)](arkts-companiondeviceauth-registerdeviceselectcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterDeviceSelectCallback(system api)](arkts-companiondeviceauth-unregisterdeviceselectcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinuousAuthParam(system api)](arkts-companiondeviceauth-continuousauthparam-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceKey(system api)](arkts-companiondeviceauth-devicekey-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceSelectResult(system api)](arkts-companiondeviceauth-deviceselectresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceStatus(system api)](arkts-companiondeviceauth-devicestatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [StatusMonitor(system api)](arkts-companiondeviceauth-statusmonitor-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TemplateStatus(system api)](arkts-companiondeviceauth-templatestatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AvailableDeviceStatusCallback(system api)](arkts-companiondeviceauth-availabledevicestatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinuousAuthStatusCallback(system api)](arkts-companiondeviceauth-continuousauthstatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceSelectCallback(system api)](arkts-companiondeviceauth-deviceselectcallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [TemplateStatusCallback(system api)](arkts-companiondeviceauth-templatestatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [BusinessId(system api)](arkts-companiondeviceauth-businessid-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceIdType(system api)](arkts-companiondeviceauth-deviceidtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SelectPurpose(system api)](arkts-companiondeviceauth-selectpurpose-e-sys.md)<!--DelEnd-->
+- [@ohos.userIAM.companionDeviceAuth](arkts-useriam-companiondeviceauth.md)<!--Del-->
+  - [getStatusMonitor(system api)](arkts-companiondeviceauth-getstatusmonitor-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateEnabledBusinessIds(system api)](arkts-companiondeviceauth-updateenabledbusinessids-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerDeviceSelectCallback(system api)](arkts-companiondeviceauth-registerdeviceselectcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterDeviceSelectCallback(system api)](arkts-companiondeviceauth-unregisterdeviceselectcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinuousAuthParam(system api)](arkts-companiondeviceauth-continuousauthparam-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceKey(system api)](arkts-companiondeviceauth-devicekey-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceSelectResult(system api)](arkts-companiondeviceauth-deviceselectresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceStatus(system api)](arkts-companiondeviceauth-devicestatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [StatusMonitor(system api)](arkts-companiondeviceauth-statusmonitor-i-sys.md)<!--DelEnd--><!--Del-->
+  - [TemplateStatus(system api)](arkts-companiondeviceauth-templatestatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AvailableDeviceStatusCallback(system api)](arkts-companiondeviceauth-availabledevicestatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [ContinuousAuthStatusCallback(system api)](arkts-companiondeviceauth-continuousauthstatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceSelectCallback(system api)](arkts-companiondeviceauth-deviceselectcallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [TemplateStatusCallback(system api)](arkts-companiondeviceauth-templatestatuscallback-t-sys.md)<!--DelEnd--><!--Del-->
+  - [BusinessId(system api)](arkts-companiondeviceauth-businessid-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceIdType(system api)](arkts-companiondeviceauth-deviceidtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SelectPurpose(system api)](arkts-companiondeviceauth-selectpurpose-e-sys.md)<!--DelEnd-->
 - [@ohos.userIAM.faceAuth](arkts-useriam-faceauth.md)<!--Del-->
-  - [FaceAuthManager(system api)](arkts-userauthentication-faceauthmanager-c-sys.md)<!--DelEnd-->
+  - [FaceAuthManager(system api)](arkts-faceauth-faceauthmanager-c-sys.md)<!--DelEnd-->
+- [@ohos.userIAM.faceAuth](arkts-useriam-faceauth.md)<!--Del-->
+  - [FaceAuthManager(system api)](arkts-faceauth-faceauthmanager-c-sys.md)<!--DelEnd-->
 - [@ohos.userIAM.userAccessCtrl](arkts-useriam-useraccessctrl.md)<!--Del-->
-  - [verifyAuthToken(system api)](arkts-userauthentication-verifyauthtoken-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthToken(system api)](arkts-userauthentication-authtoken-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AuthTokenType(system api)](arkts-userauthentication-authtokentype-e-sys.md)<!--DelEnd-->
+  - [verifyAuthToken(system api)](arkts-useraccessctrl-verifyauthtoken-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthToken(system api)](arkts-useraccessctrl-authtoken-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthTokenType(system api)](arkts-useraccessctrl-authtokentype-e-sys.md)<!--DelEnd-->
+- [@ohos.userIAM.userAccessCtrl](arkts-useriam-useraccessctrl.md)<!--Del-->
+  - [verifyAuthToken(system api)](arkts-useraccessctrl-verifyauthtoken-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthToken(system api)](arkts-useraccessctrl-authtoken-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AuthTokenType(system api)](arkts-useraccessctrl-authtokentype-e-sys.md)<!--DelEnd-->
 - [@ohos.userIAM.userAuth](arkts-useriam-userauth.md)
-  - [getAuthenticator](arkts-userauthentication-getauthenticator-f.md)
-  - [getAuthInstance](arkts-userauthentication-getauthinstance-f.md)
-  - [getAuthLockState](arkts-userauthentication-getauthlockstate-f.md)
-  - [getAvailableStatus](arkts-userauthentication-getavailablestatus-f.md)
-  - [getEnrolledState](arkts-userauthentication-getenrolledstate-f.md)
-  - [getUserAuthInstance](arkts-userauthentication-getuserauthinstance-f.md)<!--Del-->
-  - [getUserAuthWidgetMgr(system api)](arkts-userauthentication-getuserauthwidgetmgr-f-sys.md)<!--DelEnd--><!--Del-->
-  - [queryReusableAuthResult(system api)](arkts-userauthentication-queryreusableauthresult-f-sys.md)<!--DelEnd--><!--Del-->
-  - [registerRemoteAuthCallback(system api)](arkts-userauthentication-registerremoteauthcallback-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendNotice(system api)](arkts-userauthentication-sendnotice-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unregisterRemoteAuthCallback(system api)](arkts-userauthentication-unregisterremoteauthcallback-f-sys.md)<!--DelEnd-->
-  - [UserAuth](arkts-userauthentication-userauth-c.md)
-  - [Authenticator](arkts-userauthentication-authenticator-i.md)
-  - [AuthEvent](arkts-userauthentication-authevent-i.md)
-  - [AuthInstance](arkts-userauthentication-authinstance-i.md)
-  - [AuthLockState](arkts-userauthentication-authlockstate-i.md)
-  - [AuthParam](arkts-userauthentication-authparam-i.md)<!--Del-->
-  - [AuthParam(system api)](arkts-userauthentication-authparam-i-sys.md)<!--DelEnd-->
-  - [AuthResult](arkts-userauthentication-authresult-i.md)
-  - [AuthResultInfo](arkts-userauthentication-authresultinfo-i.md)
-  - [AuthTipInfo](arkts-userauthentication-authtipinfo-i.md)
-  - [EnrolledState](arkts-userauthentication-enrolledstate-i.md)
-  - [IAuthCallback](arkts-userauthentication-iauthcallback-i.md)<!--Del-->
-  - [IAuthWidgetCallback(system api)](arkts-userauthentication-iauthwidgetcallback-i-sys.md)<!--DelEnd--><!--Del-->
-  - [IRemoteAuthCallback(system api)](arkts-userauthentication-iremoteauthcallback-i-sys.md)<!--DelEnd-->
-  - [IUserAuthCallback](arkts-userauthentication-iuserauthcallback-i.md)
-  - [ReuseUnlockResult](arkts-userauthentication-reuseunlockresult-i.md)
-  - [TipInfo](arkts-userauthentication-tipinfo-i.md)
-  - [UserAuthInstance](arkts-userauthentication-userauthinstance-i.md)
-  - [UserAuthResult](arkts-userauthentication-userauthresult-i.md)<!--Del-->
-  - [UserAuthWidgetMgr(system api)](arkts-userauthentication-userauthwidgetmgr-i-sys.md)<!--DelEnd-->
-  - [WidgetParam](arkts-userauthentication-widgetparam-i.md)<!--Del-->
-  - [WidgetParam(system api)](arkts-userauthentication-widgetparam-i-sys.md)<!--DelEnd-->
-  - [AuthEventKey](arkts-userauthentication-autheventkey-t.md)
-  - [AuthTipCallback](arkts-userauthentication-authtipcallback-t.md)
-  - [AuthType](arkts-userauthentication-authtype-t.md)
-  - [EventInfo](arkts-userauthentication-eventinfo-t.md)<!--Del-->
-  - [ResultCallback(system api)](arkts-userauthentication-resultcallback-t-sys.md)<!--DelEnd-->
-  - [SecureLevel](arkts-userauthentication-securelevel-t.md)<!--Del-->
-  - [WidgetParamCallback(system api)](arkts-userauthentication-widgetparamcallback-t-sys.md)<!--DelEnd-->
-  - [AuthenticationResult](arkts-userauthentication-authenticationresult-e.md)
-  - [AuthTrustLevel](arkts-userauthentication-authtrustlevel-e.md)
-  - [FaceTips](arkts-userauthentication-facetips-e.md)
-  - [FingerprintTips](arkts-userauthentication-fingerprinttips-e.md)<!--Del-->
-  - [NoticeType(system api)](arkts-userauthentication-noticetype-e-sys.md)<!--DelEnd-->
-  - [ResultCode](arkts-userauthentication-resultcode-e.md)
-  - [ReuseMode](arkts-userauthentication-reusemode-e.md)
-  - [UserAuthResultCode](arkts-userauthentication-userauthresultcode-e.md)<!--Del-->
-  - [UserAuthResultCode(system api)](arkts-userauthentication-userauthresultcode-e-sys.md)<!--DelEnd-->
-  - [UserAuthTipCode](arkts-userauthentication-userauthtipcode-e.md)
-  - [UserAuthType](arkts-userauthentication-userauthtype-e.md)<!--Del-->
-  - [UserAuthType(system api)](arkts-userauthentication-userauthtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [WindowModeType(system api)](arkts-userauthentication-windowmodetype-e-sys.md)<!--DelEnd-->
-  - [Constants](arkts-userauthentication-userauth-con.md)
+  - [getEnrolledState](arkts-userauth-getenrolledstate-f.md)
+  - [getAuthenticator](arkts-userauth-getauthenticator-f.md)<!--Del-->
+  - [registerRemoteAuthCallback(system api)](arkts-userauth-registerremoteauthcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryReusableAuthResult(system api)](arkts-userauth-queryreusableauthresult-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getUserAuthWidgetMgr(system api)](arkts-userauth-getuserauthwidgetmgr-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendNotice(system api)](arkts-userauth-sendnotice-f-sys.md)<!--DelEnd-->
+  - [getUserAuthInstance](arkts-userauth-getuserauthinstance-f.md)
+  - [getAuthInstance](arkts-userauth-getauthinstance-f.md)
+  - [getAvailableStatus](arkts-userauth-getavailablestatus-f.md)<!--Del-->
+  - [unregisterRemoteAuthCallback(system api)](arkts-userauth-unregisterremoteauthcallback-f-sys.md)<!--DelEnd-->
+  - [getAuthLockState](arkts-userauth-getauthlockstate-f.md)
+  - [UserAuth](arkts-userauth-userauth-c.md)
+  - [Authenticator](arkts-userauth-authenticator-i.md)
+  - [AuthEvent](arkts-userauth-authevent-i.md)
+  - [AuthInstance](arkts-userauth-authinstance-i.md)
+  - [AuthLockState](arkts-userauth-authlockstate-i.md)
+  - [AuthParam](arkts-userauth-authparam-i.md)
+  - [AuthResult](arkts-userauth-authresult-i.md)
+  - [AuthResultInfo](arkts-userauth-authresultinfo-i.md)
+  - [AuthTipInfo](arkts-userauth-authtipinfo-i.md)
+  - [EnrolledState](arkts-userauth-enrolledstate-i.md)
+  - [IAuthCallback](arkts-userauth-iauthcallback-i.md)<!--Del-->
+  - [IAuthWidgetCallback(system api)](arkts-userauth-iauthwidgetcallback-i-sys.md)<!--DelEnd--><!--Del-->
+  - [IRemoteAuthCallback(system api)](arkts-userauth-iremoteauthcallback-i-sys.md)<!--DelEnd-->
+  - [IUserAuthCallback](arkts-userauth-iuserauthcallback-i.md)
+  - [ReuseUnlockResult](arkts-userauth-reuseunlockresult-i.md)
+  - [TipInfo](arkts-userauth-tipinfo-i.md)
+  - [UserAuthInstance](arkts-userauth-userauthinstance-i.md)
+  - [UserAuthResult](arkts-userauth-userauthresult-i.md)<!--Del-->
+  - [UserAuthWidgetMgr(system api)](arkts-userauth-userauthwidgetmgr-i-sys.md)<!--DelEnd-->
+  - [WidgetParam](arkts-userauth-widgetparam-i.md)
+  - [AuthCallbackOnResultFunc](arkts-userauth-authcallbackonresultfunc-t.md)
+  - [AuthEventKey](arkts-userauth-autheventkey-t.md)
+  - [AuthTipCallback](arkts-userauth-authtipcallback-t.md)
+  - [AuthType](arkts-userauth-authtype-t.md)<!--Del-->
+  - [AuthWidgetCallbackSendCommandFunc(system api)](arkts-userauth-authwidgetcallbacksendcommandfunc-t-sys.md)<!--DelEnd-->
+  - [EventInfo](arkts-userauth-eventinfo-t.md)<!--Del-->
+  - [ResultCallback(system api)](arkts-userauth-resultcallback-t-sys.md)<!--DelEnd-->
+  - [SecureLevel](arkts-userauth-securelevel-t.md)<!--Del-->
+  - [WidgetParamCallback(system api)](arkts-userauth-widgetparamcallback-t-sys.md)<!--DelEnd-->
+  - [AuthenticationResult](arkts-userauth-authenticationresult-e.md)
+  - [AuthTrustLevel](arkts-userauth-authtrustlevel-e.md)
+  - [FaceTips](arkts-userauth-facetips-e.md)
+  - [FingerprintTips](arkts-userauth-fingerprinttips-e.md)<!--Del-->
+  - [NoticeType(system api)](arkts-userauth-noticetype-e-sys.md)<!--DelEnd-->
+  - [ResultCode](arkts-userauth-resultcode-e.md)
+  - [ReuseMode](arkts-userauth-reusemode-e.md)
+  - [UserAuthResultCode](arkts-userauth-userauthresultcode-e.md)
+  - [UserAuthTipCode](arkts-userauth-userauthtipcode-e.md)
+  - [UserAuthType](arkts-userauth-userauthtype-e.md)<!--Del-->
+  - [WindowModeType(system api)](arkts-userauth-windowmodetype-e-sys.md)<!--DelEnd-->
+  - [Constants](arkts-userauth-con.md)
+- [@ohos.userIAM.userAuth](arkts-useriam-userauth.md)
+  - [getEnrolledState](arkts-userauth-getenrolledstate-f.md)
+  - [getAuthenticator](arkts-userauth-getauthenticator-f.md)<!--Del-->
+  - [registerRemoteAuthCallback(system api)](arkts-userauth-registerremoteauthcallback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryReusableAuthResult(system api)](arkts-userauth-queryreusableauthresult-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getUserAuthWidgetMgr(system api)](arkts-userauth-getuserauthwidgetmgr-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendNotice(system api)](arkts-userauth-sendnotice-f-sys.md)<!--DelEnd-->
+  - [getUserAuthInstance](arkts-userauth-getuserauthinstance-f.md)
+  - [getAuthInstance](arkts-userauth-getauthinstance-f.md)
+  - [getAvailableStatus](arkts-userauth-getavailablestatus-f.md)<!--Del-->
+  - [unregisterRemoteAuthCallback(system api)](arkts-userauth-unregisterremoteauthcallback-f-sys.md)<!--DelEnd-->
+  - [getAuthLockState](arkts-userauth-getauthlockstate-f.md)
+  - [UserAuth](arkts-userauth-userauth-c.md)
+  - [Authenticator](arkts-userauth-authenticator-i.md)
+  - [AuthEvent](arkts-userauth-authevent-i.md)
+  - [AuthInstance](arkts-userauth-authinstance-i.md)
+  - [AuthLockState](arkts-userauth-authlockstate-i.md)
+  - [AuthParam](arkts-userauth-authparam-i.md)
+  - [AuthResult](arkts-userauth-authresult-i.md)
+  - [AuthResultInfo](arkts-userauth-authresultinfo-i.md)
+  - [AuthTipInfo](arkts-userauth-authtipinfo-i.md)
+  - [EnrolledState](arkts-userauth-enrolledstate-i.md)
+  - [IAuthCallback](arkts-userauth-iauthcallback-i.md)<!--Del-->
+  - [IAuthWidgetCallback(system api)](arkts-userauth-iauthwidgetcallback-i-sys.md)<!--DelEnd--><!--Del-->
+  - [IRemoteAuthCallback(system api)](arkts-userauth-iremoteauthcallback-i-sys.md)<!--DelEnd-->
+  - [IUserAuthCallback](arkts-userauth-iuserauthcallback-i.md)
+  - [ReuseUnlockResult](arkts-userauth-reuseunlockresult-i.md)
+  - [TipInfo](arkts-userauth-tipinfo-i.md)
+  - [UserAuthInstance](arkts-userauth-userauthinstance-i.md)
+  - [UserAuthResult](arkts-userauth-userauthresult-i.md)<!--Del-->
+  - [UserAuthWidgetMgr(system api)](arkts-userauth-userauthwidgetmgr-i-sys.md)<!--DelEnd-->
+  - [WidgetParam](arkts-userauth-widgetparam-i.md)
+  - [AuthCallbackOnResultFunc](arkts-userauth-authcallbackonresultfunc-t.md)
+  - [AuthEventKey](arkts-userauth-autheventkey-t.md)
+  - [AuthTipCallback](arkts-userauth-authtipcallback-t.md)
+  - [AuthType](arkts-userauth-authtype-t.md)<!--Del-->
+  - [AuthWidgetCallbackSendCommandFunc(system api)](arkts-userauth-authwidgetcallbacksendcommandfunc-t-sys.md)<!--DelEnd-->
+  - [EventInfo](arkts-userauth-eventinfo-t.md)<!--Del-->
+  - [ResultCallback(system api)](arkts-userauth-resultcallback-t-sys.md)<!--DelEnd-->
+  - [SecureLevel](arkts-userauth-securelevel-t.md)<!--Del-->
+  - [WidgetParamCallback(system api)](arkts-userauth-widgetparamcallback-t-sys.md)<!--DelEnd-->
+  - [AuthenticationResult](arkts-userauth-authenticationresult-e.md)
+  - [AuthTrustLevel](arkts-userauth-authtrustlevel-e.md)
+  - [FaceTips](arkts-userauth-facetips-e.md)
+  - [FingerprintTips](arkts-userauth-fingerprinttips-e.md)<!--Del-->
+  - [NoticeType(system api)](arkts-userauth-noticetype-e-sys.md)<!--DelEnd-->
+  - [ResultCode](arkts-userauth-resultcode-e.md)
+  - [ReuseMode](arkts-userauth-reusemode-e.md)
+  - [UserAuthResultCode](arkts-userauth-userauthresultcode-e.md)
+  - [UserAuthTipCode](arkts-userauth-userauthtipcode-e.md)
+  - [UserAuthType](arkts-userauth-userauthtype-e.md)<!--Del-->
+  - [WindowModeType(system api)](arkts-userauth-windowmodetype-e-sys.md)<!--DelEnd-->
+  - [Constants](arkts-userauth-con.md)
 - [@ohos.userIAM.userAuthIcon](arkts-useriam-userauthicon.md)
-  - [UserAuthIcon](arkts-userauthentication-userauthicon-s.md)
+- [@ohos.userIAM.userAuthIcon](arkts-useriam-userauthicon.md)

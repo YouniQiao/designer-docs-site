@@ -1,6 +1,6 @@
 # @ohos.sendableResourceManager
 
-The **sendableResourceManager** module provides the [resourceToSendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) and [sendableResourceToResource](arkts-localization-sendableresourcetoresource-f.md#sendableresourcetoresource-1) APIs to implement conversion between [Resource](arkts-localization-resource-t.md#resource) and [SendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) objects. A **Resource** object can be held by the [Sendable](../../../../arkts-utils/arkts-sendable.md) class after being converted into a **SendableResource** object. After cross-thread transmission, the **Sendable** class converts the **SendableResource** object into a **Resource** object and uses it as an input parameter for the API used to obtain resources.
+资源管理导入sendableResourceManager模块，通过调用 [resourceToSendableResource]{@link sendableResourceManager.resourceToSendableResource}和 [sendableResourceToResource]{@link sendableResourceManager.sendableResourceToResource}方法可以将 [Resource]{@link sendableResourceManager.Resource}对象和 [SendableResource]{@link sendableResourceManager.resourceToSendableResource}对象进行互转。 Resource对象通过转换为SendableResource对象后，可以被[Sendable类](docroot://arkts-utils/arkts-sendable.md)持有。Sendable类在跨线程传输后，取出持有的 SendableResource对象转为Resource对象，作为参数获取资源。
 
 **Since:** 12
 
@@ -9,7 +9,7 @@ The **sendableResourceManager** module provides the [resourceToSendableResource]
 ## Modules to Import
 
 ```TypeScript
-import { sendableResourceManager } from '@ohos.sendableResourceManager';
+import { sendableResourceManager } from '@kit.LocalizationKit';
 ```
 
 ## Summary
@@ -18,13 +18,13 @@ import { sendableResourceManager } from '@ohos.sendableResourceManager';
 
 | Name | Description |
 | --- | --- |
-| [resourceToSendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) | Converts a **Resource** object to a **SendableResource** object. |
-| [sendableResourceToResource](arkts-localization-sendableresourcetoresource-f.md#sendableresourcetoresource-1) | Converts a **SendableResource** object to a **Resource** object. |
+| [resourceToSendableResource](arkts-sendableresourcemanager-resourcetosendableresource-f.md#resourceToSendableResource-1) | 将Resource对象转换为SendableResource对象。 |
+| [sendableResourceToResource](arkts-sendableresourcemanager-sendableresourcetoresource-f.md#sendableResourceToResource-1) | 将SendableResource对象转换为Resource对象。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [Resource](arkts-localization-resource-t.md) | Defines a Resource object. |
-| [SendableResource](arkts-localization-sendableresource-t.md) | Defines a SendableResource object. |
+| [Resource](arkts-sendableresourcemanager-resource-t.md) | 表示Resource资源信息。 |
+| [SendableResource](arkts-sendableresourcemanager-sendableresource-t.md) | 表示SendableResource资源信息。 |
 

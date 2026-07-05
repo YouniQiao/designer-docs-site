@@ -1,4 +1,8 @@
-# PixelFormat (System API)
+# PixelFormat
+
+```TypeScript
+enum PixelFormat
+```
 
 Enumerates the color formats supported by the video thumbnail.
 

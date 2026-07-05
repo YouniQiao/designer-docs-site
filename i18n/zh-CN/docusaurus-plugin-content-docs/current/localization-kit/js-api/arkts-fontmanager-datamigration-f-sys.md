@@ -1,0 +1,41 @@
+# dataMigration
+
+## dataMigration
+
+```TypeScript
+function dataMigration(callback: DataMigrationCallback): int
+```
+
+设备升级时使用的数据迁移接口，用于拉起迁移任务。
+
+**起始版本：** 23
+
+**需要权限：** 
+
+ ohos.permission.UPDATE_FONT
+
+**系统能力：** SystemCapability.Global.FontManager
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| callback | DataMigrationCallback | 是 | 数据迁移的回调函数。 |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| int | 返回拉起数据迁移任务结果。返回为0表示拉起成功，否则拉起失败。 |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 202 | Non-system application. |
+| 31100110 |  |
+| 31100111 |  |
+

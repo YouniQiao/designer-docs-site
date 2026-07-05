@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { HuksCryptoExtensionCertInfo, HuksCryptoExtensionResultCode, HuksCryptoExtensionParams, HuksCryptoExtensionParam, HuksCryptoExtensionResult } from '@ohos.security.CryptoExtensionAbility';
+import { HuksCryptoExtensionCertInfo,HuksCryptoExtensionResultCode,HuksCryptoExtensionParams,HuksCryptoExtensionParam,HuksCryptoExtensionResult } from '@kit.UniversalKeystoreKit';
 ```
 
 ## Summary
@@ -12,20 +12,20 @@ import { HuksCryptoExtensionCertInfo, HuksCryptoExtensionResultCode, HuksCryptoE
 
 | Name | Description |
 | --- | --- |
-| [CryptoExtensionAbility](arkts-universalkeystore-cryptoextensionability-c.md) | Class to be override for external crypto extension ability. |
+| [CryptoExtensionAbility](arkts-cryptoextensionability-c.md) | Class to be override for external crypto extension ability. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [HuksCryptoExtensionCertInfo](arkts-universalkeystore-hukscryptoextensioncertinfo-i.md) | Represents the information of certificate. |
-| [HuksCryptoExtensionParam](arkts-universalkeystore-hukscryptoextensionparam-i.md) | Defines the type of the param used for calling the API. |
-| [HuksCryptoExtensionParams](arkts-universalkeystore-hukscryptoextensionparams-i.md) | Defines options used in the APIs. |
-| [HuksCryptoExtensionResult](arkts-universalkeystore-hukscryptoextensionresult-i.md) | Represents the operation result of crypto extension. |
+| [HuksCryptoExtensionCertInfo](arkts-hukscryptoextensioncertinfo-i.md) | [HuksCryptoExtensionResult]{@link HuksCryptoExtensionResultCode}中的certs数组中的元素。 |
+| [HuksCryptoExtensionParam](arkts-hukscryptoextensionparam-i.md) | 定义调用接口的param类型。 |
+| [HuksCryptoExtensionParams](arkts-hukscryptoextensionparams-i.md) | 定义API中使用的选项。 |
+| [HuksCryptoExtensionResult](arkts-hukscryptoextensionresult-i.md) | 接口返回值的通用类型。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [HuksCryptoExtensionResultCode](arkts-universalkeystore-hukscryptoextensionresultcode-e.md) | Enum for crypto extension ability result code, used by HuksCryptoExtensionResult.resultCode. |
+| [HuksCryptoExtensionResultCode](arkts-hukscryptoextensionresultcode-e.md) | [HuksCryptoExtensionResult]{@link HuksCryptoExtensionResultCode}中的resultCode枚举值。 |
 

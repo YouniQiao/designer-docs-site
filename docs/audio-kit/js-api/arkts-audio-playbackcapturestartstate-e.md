@@ -1,5 +1,9 @@
 # PlaybackCaptureStartState
 
+```TypeScript
+enum PlaybackCaptureStartState
+```
+
 Defines the playback capture start state, which is returned asynchronously after calling {@link AudioCapturer.requestPlaybackCaptureStart} function.
 
 **Since:** 26.0.0
@@ -16,7 +20,7 @@ Start playback capture success state.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 
@@ -30,7 +34,7 @@ Start playback capture failed state, because the request for interrupt is denied
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 
@@ -44,7 +48,7 @@ Start playback capture but user not authorized state.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 

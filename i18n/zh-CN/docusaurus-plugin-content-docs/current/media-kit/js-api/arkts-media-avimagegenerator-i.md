@@ -1,10 +1,16 @@
 # AVImageGenerator
 
-视频缩略图获取类，用于从视频资源中获取缩略图。在调用AVImageGenerator的方法前，需要先通过 [createAVImageGenerator()](arkts-media-createavimagegenerator-f.md#createavimagegenerator-3) 构建一个AVImageGenerator实例。 获取视频缩略图的demo可参考：[获取视频缩略图开发指导](../../../../media/media/avimagegenerator.md)。 > **说明：** > > - 本Interface首批接口从API version 12开始支持。
+视频缩略图获取类，用于从视频资源中获取缩略图。在调用AVImageGenerator的方法前，需要先通过 [createAVImageGenerator()](arkts-media-createavimagegenerator-f.md#createAVImageGenerator-3) 构建一个AVImageGenerator实例。 获取视频缩略图的demo可参考：[获取视频缩略图开发指导](docroot://media/media/avimagegenerator.md)。 > **说明：** > > - 本Interface首批接口从API version 12开始支持。
 
 **起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Media.AVImageGenerator
+
+## 导入模块
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
 
 ## fetchFrameByTime
 
@@ -26,14 +32,43 @@ fetchFrameByTime(timeUs: number, options: AVImageQueryOptions, param: PixelMapPa
 | timeUs | number | 是 | 需要获取的缩略图在视频中的时间点，单位为微秒（μs）。 |
 | options | AVImageQueryOptions | 是 | 需要获取的缩略图时间点与视频帧的对应关系。 |
 | param | PixelMapParams | 是 | 需要获取的缩略图的格式参数。 |
-| callback | AsyncCallback&lt;image.PixelMap&gt; | 是 | 回调函数。获取缩略图成功时，err为undefined，data为PixelMap实例，否则为错误对象。 |
+| callback | AsyncCallback&lt;image.PixelMap> | 是 | 回调函数。获取缩略图成功时，err为undefined，data为PixelMap实例，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Returned by callback. |
-| [5400106](../errorcode-media.md#5400106-不支持的规格) | Unsupported format. Returned by callback. |
+| 5400102 | Operation not allowed. Returned by callback. |
+| 5400106 | Unsupported format. Returned by callback. |
+
+## fetchFrameByTime
+
+```TypeScript
+fetchFrameByTime(timeUs: long, options: AVImageQueryOptions, param: PixelMapParams,
+      callback: AsyncCallback<image.PixelMap | undefined>): void
+```
+
+Obtains a video thumbnail. This API uses an asynchronous callback to return the result.
+
+**起始版本：** 23
+
+**系统能力：** SystemCapability.Multimedia.Media.AVImageGenerator
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| timeUs | long | 是 | Time of the video for which a thumbnail is to be obtained, in μs. |
+| options | AVImageQueryOptions | 是 | Relationship between the time passed in and the video frame. |
+| param | PixelMapParams | 是 | Format parameters of the thumbnail to be obtained. |
+| callback | AsyncCallback&lt;image.PixelMap \| undefined> | 是 | Callback used to return the result.  If the operation is successful, err is undefined and data is the PixelMap instance obtained;  otherwise, err is an error object. |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 5400102 | Operation not allowed. Returned by callback. |
+| 5400106 | Unsupported format. Returned by callback. |
 
 ## fetchFrameByTime
 
@@ -59,14 +94,47 @@ fetchFrameByTime(timeUs: number, options: AVImageQueryOptions, param: PixelMapPa
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;image.PixelMap&gt; | Promise对象，返回视频缩略图对象。 |
+| Promise&lt;image.PixelMap> | Promise对象，返回视频缩略图对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Returned by promise. |
-| [5400106](../errorcode-media.md#5400106-不支持的规格) | Unsupported format. Returned by promise. |
+| 5400102 | Operation not allowed. Returned by promise. |
+| 5400106 | Unsupported format. Returned by promise. |
+
+## fetchFrameByTime
+
+```TypeScript
+fetchFrameByTime(timeUs: long, options: AVImageQueryOptions, param: PixelMapParams): Promise<image.PixelMap | undefined>
+```
+
+Obtains a video thumbnail. This API uses a promise to return the result.
+
+**起始版本：** 23
+
+**系统能力：** SystemCapability.Multimedia.Media.AVImageGenerator
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| timeUs | long | 是 | Time of the video for which a thumbnail is to be obtained, in μs. |
+| options | AVImageQueryOptions | 是 | Relationship between the time passed in and the video frame. |
+| param | PixelMapParams | 是 | Format parameters of the thumbnail to be obtained. |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;image.PixelMap \| undefined> | Promise used to return the video thumbnail. |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 5400102 | Operation not allowed. Returned by promise. |
+| 5400106 | Unsupported format. Returned by promise. |
 
 ## fetchScaledFrameByTime
 
@@ -93,14 +161,48 @@ fetchScaledFrameByTime(timeUs: number, queryMode: AVImageQueryOptions, outputSiz
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;image.PixelMap&gt; | Promise对象。返回视频缩略图对象。 |
+| Promise&lt;image.PixelMap> | Promise对象。返回视频缩略图对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) |  |
-| [5400106](../errorcode-media.md#5400106-不支持的规格) |  |
+| 5400102 |  |
+| 5400106 |  |
+
+## fetchScaledFrameByTime
+
+```TypeScript
+fetchScaledFrameByTime(timeUs: long, queryMode: AVImageQueryOptions, outputSize?: OutputSize):
+      Promise<image.PixelMap | undefined>
+```
+
+Supports extracting video thumbnails by proportional scaling
+
+**起始版本：** 23
+
+**系统能力：** SystemCapability.Multimedia.Media.AVImageGenerator
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| timeUs | long | 是 | The time expected to fetch picture from the video resource.  The unit is microsecond(us). |
+| queryMode | AVImageQueryOptions | 是 | Specify how to position the video frame |
+| outputSize | OutputSize | 否 |  |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;image.PixelMap \| undefined> | Returns the output image object |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 5400102 |  |
+| 5400106 |  |
 
 ## release
 
@@ -118,13 +220,13 @@ release(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | 是 | 回调函数。当释放资源成功，err为undefined，否则为错误对象。 |
+| callback | AsyncCallback&lt;void> | 是 | 回调函数。当释放资源成功，err为undefined，否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Returned by callback. |
+| 5400102 | Operation not allowed. Returned by callback. |
 
 ## release
 
@@ -142,13 +244,13 @@ release(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | 异步方式释放资源release方法的Promise返回值。 |
+| Promise&lt;void> | 异步方式释放资源release方法的Promise返回值。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Returned by promise. |
+| 5400102 | Operation not allowed. Returned by promise. |
 
 ## fdSrc
 

@@ -6,6 +6,40 @@ Describes the information of an Metrics Event.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
+## 导入模块
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
+
+## timeStamp
+
+```TypeScript
+timeStamp: long
+```
+
+Absolute timestamp when the event occurred.
+
+**类型：** long
+
+**起始版本：** 23
+
+**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
+
+## playbackPosition
+
+```TypeScript
+playbackPosition: int
+```
+
+The playback progress position when the event occurs.
+
+**类型：** int
+
+**起始版本：** 23
+
+**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
+
 ## details
 
 ```TypeScript
@@ -35,34 +69,6 @@ Type of the metrics event.
 **起始版本：** 23
 
 **模型约束：** 此接口仅可在Stage模型下使用。
-
-**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
-
-## playbackPosition
-
-```TypeScript
-playbackPosition: number
-```
-
-The playback progress position when the event occurs.
-
-**类型：** number
-
-**起始版本：** 23
-
-**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
-
-## timeStamp
-
-```TypeScript
-timeStamp: number
-```
-
-Absolute timestamp when the event occurred.
-
-**类型：** number
-
-**起始版本：** 23
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 

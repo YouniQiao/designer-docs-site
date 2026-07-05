@@ -9,7 +9,7 @@ Describes an audio session strategy.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## concurrencyMode
@@ -24,7 +24,7 @@ Audio concurrency mode.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

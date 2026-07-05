@@ -1,4 +1,8 @@
-# DeviceLogEventCode (System API)
+# DeviceLogEventCode
+
+```TypeScript
+enum DeviceLogEventCode
+```
 
 Enumerates device log event code.
 

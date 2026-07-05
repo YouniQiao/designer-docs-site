@@ -1,4 +1,8 @@
-# AudioSeparationVolumeType (System API)
+# AudioSeparationVolumeType
+
+```TypeScript
+enum AudioSeparationVolumeType
+```
 
 Volume type for audio separation effect.
 
@@ -18,7 +22,7 @@ Vocal type.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

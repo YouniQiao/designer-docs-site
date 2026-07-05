@@ -8,13 +8,17 @@
 
 **系统接口：** 此接口为系统接口。
 
+## 导入模块
+
+```TypeScript
+import { charger } from '@kit.BasicServicesKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 枚举（系统接口）
+### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ChargeType](arkts-basicservices-chargetype-e-sys.md) | 表示充电类型的枚举。 |
-<!--DelEnd-->
+| <!--DelRow-->[ChargeType](arkts-charger-chargetype-e-sys.md) | 表示充电类型的枚举。 |
 

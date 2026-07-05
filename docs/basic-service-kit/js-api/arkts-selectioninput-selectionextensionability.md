@@ -3,16 +3,14 @@
 ## Modules to Import
 
 ```TypeScript
-import { SelectionExtensionAbility } from '@ohos.selectionInput.SelectionExtensionAbility';
+import { SelectionExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [SelectionExtensionAbility](arkts-basicservices-selectionextensionability-c-sys.md) | This module provides ExtensionAbility for word selection, allowing users to search or translate text selected using a mouse or touchpad. &gt; **NOTE** &gt; - This module is supported only on PCs/2-in-1 devices. |
-<!--DelEnd-->
+| <!--DelRow-->[SelectionExtensionAbility](arkts-selectionextensionability-c.md) | 本模块提供划词扩展功能，用于用户通过鼠标、触控板等方式选择文本后的搜索、翻译等场景。 > **说明：** > - 本模块仅支持PC/2in1设备。 |
 

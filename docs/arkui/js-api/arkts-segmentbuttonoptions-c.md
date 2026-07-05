@@ -1,0 +1,490 @@
+# SegmentButtonOptions
+
+> **说明：** > > 不支持设置字体类型。 分段按钮选项类用于提供初始数据和自定义属性。
+
+**Since:** 11
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { CommonSegmentButtonOptions,SegmentButtonItemOptionsConstructorOptions,SegmentButtonIconTextItem,SegmentButtonItemOptions,SegmentButtonTextItem,CapsuleSegmentButtonOptions,SegmentButtonOptions,CapsuleSegmentButtonConstructionOptions,SegmentButtonItemTuple,SegmentButton,SegmentButtonItemArray,SegmentButtonItemOptionsArray,SegmentButtonIconItem,BorderRadiusMode,TabSegmentButtonConstructionOptions,TabSegmentButtonOptions,ItemRestriction,DimensionNoPercentage } from '@kit.ArkUI';
+```
+
+## capsule
+
+```TypeScript
+static capsule(options: CapsuleSegmentButtonConstructionOptions): SegmentButtonOptions
+```
+
+创建胶囊类的SegmentButtonOptions。
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | CapsuleSegmentButtonConstructionOptions | Yes | 胶囊类分段按钮信息。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| SegmentButtonOptions | 分段按钮选项。 |
+
+## constructor
+
+```TypeScript
+constructor(options: TabSegmentButtonOptions | CapsuleSegmentButtonOptions)
+```
+
+构造函数。
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | TabSegmentButtonOptions \| CapsuleSegmentButtonOptions | Yes | 页签类或者胶囊类分段按钮信息。 |
+
+## tab
+
+```TypeScript
+static tab(options: TabSegmentButtonConstructionOptions): SegmentButtonOptions
+```
+
+创建SegmentButtonOptions类，用于定义页签。
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | TabSegmentButtonConstructionOptions | Yes | 页签类分段按钮信息。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| SegmentButtonOptions | 分段按钮选项。 |
+
+## localizedTextPadding
+
+```TypeScript
+localizedTextPadding?: LocalizedPadding
+```
+
+文本内边距。 默认值：0 值为undefined时，按默认值处理。
+
+**Type:** LocalizedPadding
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## selectedFontWeight
+
+```TypeScript
+selectedFontWeight: FontWeight
+```
+
+分段按钮组件的按钮选中态的字体粗细。 值为undefined时，字体粗细为FontWeight.Medium。
+
+**Type:** FontWeight
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## backgroundColor
+
+```TypeScript
+backgroundColor: ResourceColor
+```
+
+分段按钮组件的背景板颜色。 值为undefined时，背景板颜色为$r('sys.color.ohos_id_color_button_normal')。
+
+**Type:** ResourceColor
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## localizedButtonPadding
+
+```TypeScript
+localizedButtonPadding?: LocalizedPadding
+```
+
+分段按钮组件的按钮内边距。 默认值： 仅图标按钮和仅文字按钮默认值： `{ top: LengthMetrics.vp(4), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(4), start: LengthMetrics.vp(8) }` 图标+文本按钮默认值： `{ top: LengthMetrics.vp(6), end: LengthMetrics.vp(8), bottom: LengthMetrics.vp(6), start: LengthMetrics.vp(8) }` 值为undefined时，按默认值处理。
+
+**Type:** LocalizedPadding
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## selectedFontSize
+
+```TypeScript
+selectedFontSize: DimensionNoPercentage
+```
+
+分段按钮组件的按钮选中态的字体大小，不支持百分比设置。 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。
+
+**Type:** DimensionNoPercentage
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## buttons
+
+```TypeScript
+buttons: SegmentButtonItemOptionsArray
+```
+
+分段按钮组件的按钮信息，包括图标和文本信息。
+
+**Type:** SegmentButtonItemOptionsArray
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## selectedFontColor
+
+```TypeScript
+selectedFontColor: ResourceColor
+```
+
+分段按钮组件的按钮选中态的文本颜色。 值为undefined时，type为"tab"时，颜色为`$r('sys.color.ohos_id_color_text_primary')`。 type为"capsule"时，颜色为`$r('sys.color.ohos_id_color_foreground_contrary')`。
+
+**Type:** ResourceColor
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## buttonPadding
+
+```TypeScript
+buttonPadding: Padding | Dimension
+```
+
+分段按钮组件的按钮内边距。 值为undefined时，仅图标按钮和仅文字按钮内边距：`{ top: 4, right: 8, bottom: 4, left: 8 }` 图标+文本按钮内边距：`{ top: 6, right: 8, bottom: 6, left: 8 }` 单位：vp
+
+**Type:** Padding | Dimension
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## selectedBackgroundColor
+
+```TypeScript
+selectedBackgroundColor: ResourceColor
+```
+
+分段按钮组件的按钮选中态背景板颜色。 值为undefined时，type为"tab"时，背景板颜色为`$r('sys.color.segment_button_checked_foreground_color')`。 type为"capsule"时，背景板颜色为`$r('sys.color.ohos_id_color_emphasize')`。
+
+**Type:** ResourceColor
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## backgroundBlurStyle
+
+```TypeScript
+backgroundBlurStyle: BlurStyle
+```
+
+分段按钮组件的背景模糊材质。 值为undefined时，背景模糊材质为BlurStyle.NONE。
+
+**Type:** BlurStyle
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## type
+
+```TypeScript
+type: "tab" | "capsule"
+```
+
+分段按钮组件的类型。 **说明：** "tab"：页签类分段按钮，适用于页面或内容区域的切换场景。 "capsule"：胶囊类分段按钮，适用于单选或多选的选择场景。
+
+**Type:** "tab" | "capsule"
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## backgroundBorderRadius
+
+```TypeScript
+backgroundBorderRadius?: LengthMetrics
+```
+
+分段按钮整体容器的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选按钮(type为"capsule"且multiply为true)，此属性不生效，需要用itemBorderRadius配置圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。 默认值：`$r('sys.float.segmentbutton_container_shape')` 值为undefined时，按默认值处理。
+
+**Type:** LengthMetrics
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## itemBorderRadius
+
+```TypeScript
+itemBorderRadius?: LengthMetrics
+```
+
+分段按钮中按钮项的边框圆角半径。 **说明：** 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。 对于胶囊类多选按钮(type为"capsule"且multiply为true)，只能控制两端的选项圆角。 圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。 默认值：`$r('sys.float.segmentbutton_selected_background_shape')` 值为undefined时，按默认值处理。
+
+**Type:** LengthMetrics
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## borderRadiusMode
+
+```TypeScript
+borderRadiusMode?: BorderRadiusMode
+```
+
+边框圆角模式，用于控制圆角计算方式。 默认值：BorderRadiusMode.DEFAULT 值为undefined时，按默认值处理。
+
+**Type:** BorderRadiusMode
+
+**Since:** 20
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## backgroundSystemMaterial
+
+```TypeScript
+backgroundSystemMaterial?: uiMaterial.Material
+```
+
+分段按钮组件的背景板的系统材质。不同系统材质包含不同的属性影响效果。传入材质后，SegmentButton的动效发生改变。 对于胶囊类多选按钮（即type为"capsule"且multiply为true），该属性不生效。 默认值：无材质效果。
+
+**Type:** uiMaterial.Material
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**System API:** This is a system API.
+
+## fontSize
+
+```TypeScript
+fontSize: DimensionNoPercentage
+```
+
+分段按钮组件的按钮未选中态的字体大小，不支持百分比设置。 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。
+
+**Type:** DimensionNoPercentage
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## textPadding
+
+```TypeScript
+textPadding: Padding | Dimension
+```
+
+分段按钮组件的文本内边距。 值为undefined时，文本内边距为0。 单位：vp
+
+**Type:** Padding | Dimension
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## imageSize
+
+```TypeScript
+imageSize: SizeOptions
+```
+
+分段按钮组件的图片尺寸。 值为undefined时，图片尺寸为{ width: 24, height: 24 }。 单位：vp **说明：** `imageSize`属性对仅图标按钮和图标+文本按钮生效，对仅文字按钮无效果。
+
+**Type:** SizeOptions
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## multiply
+
+```TypeScript
+multiply: boolean
+```
+
+分段按钮组件是否可以多选。 true: 可多选；false: 不可多选。页签类分段按钮只支持单选，设置`multiply`为`true`不生效。 值为undefined时，分段按钮不支持多选。
+
+**Type:** boolean
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## fontWeight
+
+```TypeScript
+fontWeight: FontWeight
+```
+
+分段按钮组件的按钮未选中态的字体粗细。 值为undefined时，字体粗细为FontWeight.Regular。
+
+**Type:** FontWeight
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## fontColor
+
+```TypeScript
+fontColor: ResourceColor
+```
+
+分段按钮组件的按钮未选中态的文本颜色。 值为undefined时，颜色为$r('sys.color.ohos_id_color_text_secondary')。
+
+**Type:** ResourceColor
+
+**Since:** 11
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## direction
+
+```TypeScript
+direction?: Direction
+```
+
+分段按钮组件的布局方向。 默认值：Direction.Auto 值为undefined时，按默认值处理。
+
+**Type:** Direction
+
+**Since:** 12
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

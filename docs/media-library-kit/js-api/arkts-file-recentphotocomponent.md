@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { RecentPhotoComponent, RecentPhotoCheckResultCallback, RecentPhotoCheckInfoCallback, PhotoSource, RecentPhotoClickCallback, RecentPhotoOptions, RecentPhotoInfo } from '@ohos.file.RecentPhotoComponent';
+import { RecentPhotoComponent,RecentPhotoCheckResultCallback,RecentPhotoCheckInfoCallback,PhotoSource,RecentPhotoClickCallback,RecentPhotoOptions,RecentPhotoInfo } from '@kit.MediaLibraryKit';
 ```
 
 ## Summary
@@ -12,26 +12,20 @@ import { RecentPhotoComponent, RecentPhotoCheckResultCallback, RecentPhotoCheckI
 
 | Name | Description |
 | --- | --- |
-| [RecentPhotoInfo](arkts-medialibrary-recentphotoinfo-c.md) | Recent photo info |
-| [RecentPhotoOptions](arkts-medialibrary-recentphotooptions-c.md) | RecentPhotoOptions Object |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [RecentPhotoComponent](arkts-medialibrary-recentphotocomponent-s.md) | Declare struct RecentPhotoComponent |
+| [RecentPhotoInfo](arkts-recentphotoinfo-c.md) | Recent photo info |
+| [RecentPhotoOptions](arkts-recentphotooptions-c.md) | RecentPhotoOptions Object |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [PhotoSource](arkts-medialibrary-photosource-e.md) | Enumeration of PhotoSource type |
+| [PhotoSource](arkts-photosource-e.md) | Enumeration of PhotoSource type |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [RecentPhotoCheckInfoCallback](arkts-medialibrary-recentphotocheckinfocallback-t.md) | The callback of onRecentPhotoCheckInfo event |
-| [RecentPhotoCheckResultCallback](arkts-medialibrary-recentphotocheckresultcallback-t.md) | The callback of onRecentPhotoCheckResult event |
-| [RecentPhotoClickCallback](arkts-medialibrary-recentphotoclickcallback-t.md) | The callback of onRecentPhotoClick event |
+| [RecentPhotoCheckInfoCallback](arkts-recentphotocheckinfocallback-t.md) | The callback of onRecentPhotoCheckInfo event |
+| [RecentPhotoCheckResultCallback](arkts-recentphotocheckresultcallback-t.md) | The callback of onRecentPhotoCheckResult event |
+| [RecentPhotoClickCallback](arkts-recentphotoclickcallback-t.md) | The callback of onRecentPhotoClick event |
 

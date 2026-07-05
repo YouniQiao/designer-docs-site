@@ -9,32 +9,64 @@ Defines the format parameters of the video thumbnail to be obtained.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
-## height
+## autoFlip
 
 ```TypeScript
-height?: number
+autoFlip?: boolean
 ```
 
-Height of the thumbnail. Unit: px. The value must be greater than 0 and less than or equal to the height of the original video. Otherwise, the returned thumbnail will not be scaled.
+Auto flip the thumbnail when video has mirror attribute (Vertical Flip or Horizontal Flip). If the value is false, the returned thumbnail will not be flipped. **System API**: This is a system API.
 
-**Type:** number
+**Type:** boolean
+
+**Since:** 21
+
+**System capability:** SystemCapability.Multimedia.Media.AVImageGenerator
+
+**System API:** This is a system API.
+
+## width
+
+```TypeScript
+width?: int
+```
+
+Width of the thumbnail. Unit: px. The value must be greater than 0 and less than or equal to the width of the original video. Otherwise, the returned thumbnail will not be scaled.
+
+**Type:** int
 
 **Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Media.AVImageGenerator
 
-## width
+## colorFormat
 
 ```TypeScript
-width?: number
+colorFormat?: PixelFormat
 ```
 
-Width of the thumbnail. Unit: px. The value must be greater than 0 and less than or equal to the width of the original video. Otherwise, the returned thumbnail will not be scaled.
+Color format of the thumbnail. **System API**: This is a system API.
 
-**Type:** number
+**Type:** PixelFormat
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVImageGenerator
+
+**System API:** This is a system API.
+
+## height
+
+```TypeScript
+height?: int
+```
+
+Height of the thumbnail. Unit: px. The value must be greater than 0 and less than or equal to the height of the original video. Otherwise, the returned thumbnail will not be scaled.
+
+**Type:** int
 
 **Since:** 12
 

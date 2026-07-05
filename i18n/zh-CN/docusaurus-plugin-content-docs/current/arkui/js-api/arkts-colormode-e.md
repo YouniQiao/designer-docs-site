@@ -1,0 +1,40 @@
+# ColorMode
+
+```TypeScript
+declare enum ColorMode
+```
+
+系统当前深浅色模式。
+
+**起始版本：** 7
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+## LIGHT
+
+```TypeScript
+LIGHT = 0
+```
+
+浅色模式。
+
+**起始版本：** 7
+
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+## DARK
+
+```TypeScript
+DARK
+```
+
+深色模式。
+
+**起始版本：** 7
+
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+

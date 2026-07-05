@@ -1,6 +1,10 @@
 # SeekMode
 
-视频播放的Seek模式枚举，可通过seek方法作为参数传递下去。
+```TypeScript
+enum SeekMode
+```
+
+Enumerates the video playback seek modes, which can be passed in the **seek** API.
 
 **起始版本：** 8
 
@@ -12,11 +16,11 @@
 SEEK_NEXT_SYNC = 0
 ```
 
-表示跳转到指定时间点的下一个关键帧，建议向后快进的时候用这个枚举值。
+Seeks to the next key frame at the specified position. You are advised to use this value for the rewind operation.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -26,11 +30,11 @@ SEEK_NEXT_SYNC = 0
 SEEK_PREV_SYNC = 1
 ```
 
-表示跳转到指定时间点的上一个关键帧，建议向前快进的时候用这个枚举值。
+Seeks to the previous key frame at the specified position. You are advised to use this value for the fast-forward operation.
 
 **起始版本：** 8
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -40,11 +44,11 @@ SEEK_PREV_SYNC = 1
 SEEK_CLOSEST = 2
 ```
 
-表示跳转到距离指定时间点最近的帧，建议精准跳转进度的时候用这个枚举值。
+Seeks to the frame closest to the specified position. You are advised to use this value for accurate seek.
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -54,11 +58,11 @@ SEEK_CLOSEST = 2
 SEEK_CONTINUOUS = 3
 ```
 
-该模式提供了一种画面平滑流畅变化的Seek体验，应用可以结合进度条控件持续调用Seek方法，AVPlayer根据Seek调用持续流畅地更新画面。 应用可以调用[isSeekContinuousSupported](@ohos.multimedia.media:media.AVPlayer.isSeekContinuousSupported)方法根据返回结果感 知视频源是否支持该模式Seek。 对于不支持该Seek模式的视频源调用该模式Seek时，会上报AVERR_SEEK_CONTINUOUS_UNSUPPORTED错误(参考[AVErrorCode](arkts-media-averrorcode-e.md#averrorcode))，同时画面更 新的流畅性会降低。 该Seek模式不会触发 [on('seekDone')](@ohos.multimedia.media:media.AVPlayer.on(type: 'seekDone', callback: Callback<int>))事件。 当应用需要退出该模式下的Seek时，需要调用`seek(-1, SeekMode.SEEK_CONTINUOUS)`来结束该模式下的Seek。
+Offers a smooth and fluid visual experience for seeking. Applications can use a progress bar component to continuously invoke the **seek** method, and the AVPlayer will update the video frames smoothly in response to these calls. Applications can call [isSeekContinuousSupported](arkts-media-avplayer-i.md#isSeekContinuousSupported) to check whether the video source supports this seeking mode. If the video source does not support this mode, calling **seek** will result in an **AVERR_SEEK_CONTINUOUS_UNSUPPORTED** error (see [AVErrorCode]media.AVErrorCode), and the smoothness of frame updates will be compromised. This seek mode does not trigger the [on('seekDone')](arkts-media-avplayer-i.md#on) event. To exit this seeking mode, applications must call **seek(-1, SeekMode.SEEK_CONTINUOUS)** to end the seeking process.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

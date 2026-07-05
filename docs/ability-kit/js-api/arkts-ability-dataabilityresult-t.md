@@ -4,7 +4,7 @@
 export type DataAbilityResult = _DataAbilityResult
 ```
 
-Defines the level-2 module DataAbilityResult.
+DataAbilityResult二级模块。
 
 **Since:** 9
 

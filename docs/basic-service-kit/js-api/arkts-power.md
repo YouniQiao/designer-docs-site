@@ -1,6 +1,6 @@
 # @ohos.power
 
-The **power** module provides APIs for rebooting and shutting down the system, as well as querying the screen status. You can use these APIs to obtain the device activity status, power mode, and screen on/off status.
+该模块主要提供重启、关机、查询屏幕状态等接口。开发者可以使用该模块的接口获取设备的活动状态、电源模式、亮灭屏状态等。
 
 **Since:** 7
 
@@ -9,7 +9,7 @@ The **power** module provides APIs for rebooting and shutting down the system, a
 ## Modules to Import
 
 ```TypeScript
-import { power } from '@ohos.power';
+import { power } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -18,38 +18,31 @@ import { power } from '@ohos.power';
 
 | Name | Description |
 | --- | --- |
-| [getPowerMode](arkts-basicservices-getpowermode-f.md#getpowermode-1) | Obtains the power mode of this device. |
-| [isActive](arkts-basicservices-isactive-f.md#isactive-1) | Checks whether the current device is active. - A device with a screen is active when the screen is on and inactive when the screen is off. - A device without a screen is active when it exits the sleep mode and inactive when it enters the sleep mode. |
-| [isScreenOn](arkts-basicservices-isscreenon-f.md#isscreenon-1) | Checks the screen status of the current device. This API uses an asynchronous callback to return the result. |
-| [isScreenOn](arkts-basicservices-isscreenon-f.md#isscreenon-2) | Checks the screen status of the current device. This API uses a promise to return the result. |
-| [isStandby](arkts-basicservices-isstandby-f.md#isstandby-1) | Checks whether the device is in standby mode. |
-| [rebootDevice](arkts-basicservices-rebootdevice-f.md#rebootdevice-1) | Restarts the system. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [getPowerConfig](arkts-basicservices-getpowerconfig-f-sys.md#getpowerconfig-1) | Query the power configuration value for a given scene name. |
-| [hibernate](arkts-basicservices-hibernate-f-sys.md#hibernate-1) | Hibernates a device. |
-| [reboot](arkts-basicservices-reboot-f-sys.md#reboot-1) | Reboots a device. |
-| [refreshActivity](arkts-basicservices-refreshactivity-f-sys.md#refreshactivity-1) | Refreshes the device activity status (for example, resetting the screen-off time). This API takes effect only when the device is active. For details about the device activity status, see [power.isActive](arkts-basicservices-isactive-f.md#isactive-1). |
-| [registerShutdownCallback](arkts-basicservices-registershutdowncallback-f-sys.md#registershutdowncallback-1) | Registers a callback to be invoked when the device is shut down or rebooted. This API uses an asynchronous callback to return the result. |
-| [setPowerConfig](arkts-basicservices-setpowerconfig-f-sys.md#setpowerconfig-1) | Update the power configuration value for a given scene name. |
-| [setPowerKeyFilteringStrategy](arkts-basicservices-setpowerkeyfilteringstrategy-f-sys.md#setpowerkeyfilteringstrategy-1) | Sets the power key filtering strategy. After the power service subscribes to the power key event, this API is used to configure the processing mode of this event. For details about the power key filtering strategy, see [power.PowerKeyFilteringStrategy](arkts-basicservices-powerkeyfilteringstrategy-e.md#powerkeyfilteringstrategy). |
-| [setPowerMode](arkts-basicservices-setpowermode-f-sys.md#setpowermode-1) | Sets the power mode of a device. This API uses an asynchronous callback to return the result. |
-| [setPowerMode](arkts-basicservices-setpowermode-f-sys.md#setpowermode-2) | Sets the power mode of a device. This API uses a promise to return the result. |
-| [setScreenOffTime](arkts-basicservices-setscreenofftime-f-sys.md#setscreenofftime-1) | Sets the screen-off timeout duration, in unit of ms. |
-| [shutdown](arkts-basicservices-shutdown-f-sys.md#shutdown-1) | Shuts down the system. |
-| [suspend](arkts-basicservices-suspend-f-sys.md#suspend-1) | Enables a device to enter the sleep state. |
-| [unregisterShutdownCallback](arkts-basicservices-unregistershutdowncallback-f-sys.md#unregistershutdowncallback-1) | Unregisters the callback to be invoked when the device is shut down or rebooted. This API uses a callback to return the result. |
-| [wakeup](arkts-basicservices-wakeup-f-sys.md#wakeup-1) | Wakes up a device. |
-<!--DelEnd-->
+| <!--DelRow-->[getPowerConfig](arkts-power-getpowerconfig-f-sys.md#getPowerConfig-1) | 按场景名称查询电源配置值。 |
+| [getPowerMode](arkts-power-getpowermode-f.md#getPowerMode-1) | 获取当前设备的电源模式。 |
+| <!--DelRow-->[hibernate](arkts-power-hibernate-f-sys.md#hibernate-1) | 休眠设备。 |
+| [isActive](arkts-power-isactive-f.md#isActive-1) | 检测当前设备是否处于活动状态。 - 有屏的设备亮屏时为活动状态，熄屏时为非活动状态。 - 无屏的设备非休眠时为活动状态，休眠时为非活动状态。 |
+| [isScreenOn](arkts-power-isscreenon-f.md#isScreenOn-1) | 检测当前设备的亮灭屏状态。使用callback异步回调。 |
+| [isScreenOn](arkts-power-isscreenon-f.md#isScreenOn-2) | 检测当前设备的亮灭屏状态。使用Promise异步回调。 |
+| [isStandby](arkts-power-isstandby-f.md#isStandby-1) | 检测当前设备是否进入待机低功耗续航模式。 |
+| <!--DelRow-->[reboot](arkts-power-reboot-f-sys.md#reboot-1) | 重启设备。 |
+| [rebootDevice](arkts-power-rebootdevice-f.md#rebootDevice-1) | 重启系统。 |
+| <!--DelRow-->[refreshActivity](arkts-power-refreshactivity-f-sys.md#refreshActivity-1) | 刷新设备活动状态（如：重设屏幕超时息屏时间等）。 只有设备在活动状态下生效，设备活动状态见[power.isActive]{@link @ohos.power:power.isActive}接口。 |
+| <!--DelRow-->[registerShutdownCallback](arkts-power-registershutdowncallback-f-sys.md#registerShutdownCallback-1) | 订阅电源关机或重启的回调提醒。使用callback异步回调。 |
+| <!--DelRow-->[setPowerConfig](arkts-power-setpowerconfig-f-sys.md#setPowerConfig-1) | 根据场景名称设置电源配置值。 |
+| <!--DelRow-->[setPowerKeyFilteringStrategy](arkts-power-setpowerkeyfilteringstrategy-f-sys.md#setPowerKeyFilteringStrategy-1) | 设置电源键过滤策略，在电源服务订阅电源键事件后，用于配置电源键事件的处理方式。 电源键过滤策略见[power.PowerKeyFilteringStrategy]{@link @ohos.power:power.PowerKeyFilteringStrategy}接口。 |
+| <!--DelRow-->[setPowerMode](arkts-power-setpowermode-f-sys.md#setPowerMode-1) | 设置当前设备的电源模式。使用callback异步回调。 |
+| <!--DelRow-->[setPowerMode](arkts-power-setpowermode-f-sys.md#setPowerMode-2) | 设置当前设备的电源模式。使用Promise异步回调。 |
+| <!--DelRow-->[setScreenOffTime](arkts-power-setscreenofftime-f-sys.md#setScreenOffTime-1) | 设置熄屏超时时间。 |
+| <!--DelRow-->[shutdown](arkts-power-shutdown-f-sys.md#shutdown-1) | 系统关机。 |
+| <!--DelRow-->[suspend](arkts-power-suspend-f-sys.md#suspend-1) | 使设备进入睡眠状态。 |
+| <!--DelRow-->[unregisterShutdownCallback](arkts-power-unregistershutdowncallback-f-sys.md#unregisterShutdownCallback-1) | 取消订阅电源关机或重启的回调提醒。使用callback同步回调。 |
+| <!--DelRow-->[wakeup](arkts-power-wakeup-f-sys.md#wakeup-1) | 唤醒设备。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [DevicePowerMode](arkts-basicservices-devicepowermode-e.md) | Enumerates power modes. |
-| [PowerKeyFilteringStrategy](arkts-basicservices-powerkeyfilteringstrategy-e.md) | Enumerates the power key filtering strategies. |
+| [DevicePowerMode](arkts-power-devicepowermode-e.md) | 表示电源模式的枚举值。 |
+| [PowerKeyFilteringStrategy](arkts-power-powerkeyfilteringstrategy-e.md) | 表示电源键过滤策略。 |
 

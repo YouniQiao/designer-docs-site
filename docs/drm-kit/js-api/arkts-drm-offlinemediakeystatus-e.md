@@ -1,5 +1,9 @@
 # OfflineMediaKeyStatus
 
+```TypeScript
+enum OfflineMediaKeyStatus
+```
+
 Enumerates offline media key status.
 
 **Since:** 14
@@ -16,7 +20,7 @@ Offline media key status unknown.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -30,7 +34,7 @@ Offline media key status usable.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -44,7 +48,7 @@ Offline media key status inactive.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 

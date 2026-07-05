@@ -4,15 +4,13 @@
 export type AbilityResult = _AbilityResult
 ```
 
-定义Ability被拉起并退出后返回的结果码和数据。
+AbilityResult二级模块。
 
 **起始版本：** 9
 
-**模型约束：** 此接口仅可在Stage模型下使用。
+**模型约束：** 此接口仅可在FA模型下使用。
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
-
-**系统能力：** SystemCapability.Ability.AbilityRuntime.Core
+**系统能力：** SystemCapability.Ability.AbilityBase
 
 **属性类型：** _AbilityResult
 

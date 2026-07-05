@@ -1,4 +1,4 @@
-# AsrProcessingController (System API)
+# AsrProcessingController
 
 ASR processing controller.
 
@@ -11,7 +11,7 @@ ASR processing controller.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## getAsrAecMode
@@ -38,8 +38,8 @@ Get ASR AEC mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -72,8 +72,8 @@ Get ASR noise suppression mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -106,8 +106,8 @@ Get ASR whisper detection mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -140,8 +140,8 @@ Query whether user is whispering.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -180,10 +180,10 @@ Set ASR AEC mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -222,10 +222,10 @@ Set ASR noise suppression mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters are left unspecified;2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters are left unspecified;  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -265,10 +265,10 @@ Set ASR voice control mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters unspecified.2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters unspecified.  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -308,10 +308,10 @@ Set ASR voice mute mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters unspecified.2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters unspecified.  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 
@@ -350,10 +350,10 @@ Set ASR whisper detection mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.Mandatory parameters unspecified.2.Incorrect parameter types. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Operation not allowed. |
+| 202 | Caller is not a system application. |
+| 401 | Parameter error. Possible causes:  1.Mandatory parameters unspecified.  2.Incorrect parameter types. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Operation not allowed. |
 
 **Example**
 

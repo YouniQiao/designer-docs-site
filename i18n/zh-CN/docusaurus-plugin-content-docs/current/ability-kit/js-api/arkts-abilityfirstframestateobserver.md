@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [AbilityFirstFrameStateObserver](arkts-ability-abilityfirstframestateobserver-i-sys.md) | 定义了Ability首帧绘制完成事件监听对象，可以作为 [on](arkts-ability-on-f-sys.md#on-5) 的入参，用于监听Ability首帧绘制完成事件。 |
-<!--DelEnd-->
+| <!--DelRow-->[AbilityFirstFrameStateObserver](arkts-abilityfirstframestateobserver-i.md) | 定义了Ability首帧绘制完成事件监听对象，可以作为 [on]{@link ./../@ohos.app.ability.appManager:appManager.on(type: 'abilityFirstFrameState', observer: AbilityFirstFrameStateObserver, bundleName?: string)} 的入参，用于监听Ability首帧绘制完成事件。 |
 

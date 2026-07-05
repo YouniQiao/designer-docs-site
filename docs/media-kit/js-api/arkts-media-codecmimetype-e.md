@@ -1,5 +1,9 @@
 # CodecMimeType
 
+```TypeScript
+enum CodecMimeType
+```
+
 Enumerates the codec MIME types.
 
 **Since:** 8
@@ -28,7 +32,7 @@ Video in AVC format.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -78,7 +82,7 @@ Audio in MP4A-LATM format.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -116,7 +120,7 @@ Video in H.265 format.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -165,6 +169,20 @@ AUDIO_AMR_WB = 'audio/amr-wb'
 Audio in AMR-WB format.
 
 **Since:** 18
+
+**System capability:** SystemCapability.Multimedia.Media.Core
+
+## AUDIO_RAW
+
+```TypeScript
+AUDIO_RAW = 'audio/raw'
+```
+
+Audio in raw streams format.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

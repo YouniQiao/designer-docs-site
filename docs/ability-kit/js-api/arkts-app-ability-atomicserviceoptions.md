@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { AtomicServiceOptions } from '@ohos.app.ability.AtomicServiceOptions';
+import { AtomicServiceOptions } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { AtomicServiceOptions } from '@ohos.app.ability.AtomicServiceOptions';
 
 | Name | Description |
 | --- | --- |
-| [AtomicServiceOptions](arkts-ability-atomicserviceoptions-c.md) | **AtomicServiceOptions** is used as an input parameter of [openAtomicService()](arkts-ability-uiabilitycontext-c.md#openatomicservice-1) to carry arguments. It inherits from [StartOptions](arkts-ability-startoptions-c.md#startoptions). |
+| [AtomicServiceOptions](arkts-atomicserviceoptions-c.md) | AtomicServiceOptions** is used as an input parameter of [openAtomicService()]{@link ./application/UIAbilityContext:UIAbilityContext.openAtomicService} to carry arguments. It inherits from [StartOptions]{@link @ohos.app.ability.StartOptions:StartOptions}. |
 

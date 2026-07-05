@@ -1,6 +1,6 @@
 # @ohos.enterprise.locationManager
 
-The **locationManager** module provides location service management capabilities for devices, including setting and obtaining the location service policy. > **NOTE** > > The APIs of this module can be used only in the stage model. > > The APIs of this module can be called only by a device administrator application that is enabled. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
+本模块提供设备位置服务策略管理的能力，包括设置和查询位置服务开关策略等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。
 
 **Since:** 11
 
@@ -9,7 +9,7 @@ The **locationManager** module provides location service management capabilities
 ## Modules to Import
 
 ```TypeScript
-import { locationManager } from '@ohos.enterprise.locationManager';
+import { locationManager } from '@kit.MDMKit';
 ```
 
 ## Summary
@@ -18,12 +18,12 @@ import { locationManager } from '@ohos.enterprise.locationManager';
 
 | Name | Description |
 | --- | --- |
-| [getLocationPolicy](arkts-mdm-getlocationpolicy-f.md#getlocationpolicy-1) | Queries the location service policy. |
-| [setLocationPolicy](arkts-mdm-setlocationpolicy-f.md#setlocationpolicy-1) | Sets a location service policy. |
+| [getLocationPolicy](arkts-locationmanager-getlocationpolicy-f.md#getLocationPolicy-1) | 查询位置服务管理策略。 |
+| [setLocationPolicy](arkts-locationmanager-setlocationpolicy-f.md#setLocationPolicy-1) | 设置位置服务管理策略。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [LocationPolicy](arkts-mdm-locationpolicy-e.md) | Enumerates the location service policies. |
+| [LocationPolicy](arkts-locationmanager-locationpolicy-e.md) | 位置服务策略值。 |
 

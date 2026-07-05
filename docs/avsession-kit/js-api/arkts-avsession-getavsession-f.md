@@ -1,11 +1,5 @@
 # getAVSession
 
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
-
 ## getAVSession
 
 ```TypeScript
@@ -16,7 +10,7 @@ Get an AVSession instance if already created.
 
 **Since:** 22
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -30,14 +24,14 @@ Get an AVSession instance if already created.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVSession&gt; | Promise for AVSession |
+| Promise&lt;AVSession> | Promise for AVSession |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
 
 **Example**
 

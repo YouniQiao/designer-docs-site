@@ -9,22 +9,22 @@ OIS (Optical Image Stabilization) query interface.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getCurrentCustomOISBias
 
 ```TypeScript
-getCurrentCustomOISBias(oisAxis: OISAxes): number
+getCurrentCustomOISBias(oisAxis: OISAxes): double
 ```
 
 Gets the current custom bias value for the specified OIS axis.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -38,14 +38,14 @@ Gets the current custom bias value for the specified OIS axis.
 
 | Type | Description |
 | --- | --- |
-| number | The current bias value. |
+| double | The current bias value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
+| 7400103 | Session not config. |
 
 ## getCurrentOISMode
 
@@ -57,9 +57,9 @@ Gets the current OIS mode.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -73,22 +73,22 @@ Gets the current OIS mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
+| 7400103 | Session not config. |
 
 ## getSupportedOISBiasRange
 
 ```TypeScript
-getSupportedOISBiasRange(oisAxis: OISAxes): Array<number>
+getSupportedOISBiasRange(oisAxis: OISAxes): Array<double>
 ```
 
 Gets the supported bias range for the specified OIS axis.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -102,28 +102,28 @@ Gets the supported bias range for the specified OIS axis.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;number&gt; | The bias range. |
+| Array&lt;double> | The bias range. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
+| 7400103 | Session not config. |
 
 ## getSupportedOISBiasStep
 
 ```TypeScript
-getSupportedOISBiasStep(oisAxis: OISAxes): number
+getSupportedOISBiasStep(oisAxis: OISAxes): double
 ```
 
 Gets the bias step for the specified OIS axis.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -137,14 +137,14 @@ Gets the bias step for the specified OIS axis.
 
 | Type | Description |
 | --- | --- |
-| number | The bias step value. |
+| double | The bias step value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
+| 7400103 | Session not config. |
 
 ## isOISModeSupported
 
@@ -156,9 +156,9 @@ Checks if the specified OIS mode is supported.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -178,6 +178,6 @@ Checks if the specified OIS mode is supported.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
+| 7400103 | Session not config. |
 

@@ -10,23 +10,25 @@
 
 **系统接口：** 此接口为系统接口。
 
+## 导入模块
+
+```TypeScript
+import { recent } from '@kit.CoreFileKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 函数（系统接口）
+### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [add](arkts-corefile-add-f-sys.md#add-1) | 将uri对应的文件加入最近访问列表。 |
-| [listFile](arkts-corefile-listfile-f-sys.md#listfile-1) | 查询最近访问列表中文件信息。 |
-| [remove](arkts-corefile-remove-f-sys.md#remove-1) | 将uri对应的文件从最近访问列表中移除。 |
-<!--DelEnd-->
+| <!--DelRow-->[add](arkts-recent-add-f-sys.md#add-1) | 将uri对应的文件加入最近访问列表。 |
+| <!--DelRow-->[listFile](arkts-recent-listfile-f-sys.md#listFile-1) | 查询最近访问列表中文件信息。 |
+| <!--DelRow-->[remove](arkts-recent-remove-f-sys.md#remove-1) | 将uri对应的文件从最近访问列表中移除。 |
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [FileInfo](arkts-corefile-fileinfo-i-sys.md) | 最近访问列表文件信息。 |
-<!--DelEnd-->
+| <!--DelRow-->[FileInfo](arkts-recent-fileinfo-i-sys.md) | 最近访问列表文件信息。 |
 

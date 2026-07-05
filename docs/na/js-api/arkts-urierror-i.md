@@ -1,0 +1,4 @@
+# URIError
+
+**Inheritance:** URIErrorextends: Error.
+

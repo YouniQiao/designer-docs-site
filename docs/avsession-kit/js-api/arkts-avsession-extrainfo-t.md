@@ -1,14 +1,14 @@
 # ExtraInfo
 
 ```TypeScript
-type ExtraInfo = {[key: string]: Object; }
+type ExtraInfo = Record<string, Object>
 ```
 
 The extra info object.
 
-**Since:** 18
+**Since:** 23
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-**Property type:** {[key: string]: Object; }
+**Property type:** Record<string, Object>
 

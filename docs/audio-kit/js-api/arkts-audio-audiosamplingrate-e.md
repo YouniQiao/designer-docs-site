@@ -1,5 +1,9 @@
 # AudioSamplingRate
 
+```TypeScript
+enum AudioSamplingRate
+```
+
 Enumerates the audio sampling rates. The sampling rates supported vary according to the device in use.
 
 **Since:** 8
@@ -184,7 +188,7 @@ The sampling rate is 384000.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

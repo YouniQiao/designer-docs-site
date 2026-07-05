@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ArkTSUtils } from '@arkts.utils';
+import { ArkTSUtils } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { ArkTSUtils } from '@arkts.utils';
 
 | Name | Description |
 | --- | --- |
-| [utils](arkts-arkts-utils-n.md) |  |
+| [utils](arkts-utils-n.md) |  |
 

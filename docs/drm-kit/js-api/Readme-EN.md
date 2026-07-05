@@ -1,10 +1,10 @@
-# ArkTS API<!--arkts-drmkit-->
+# DrmKit
 
 - [@ohos.multimedia.drm](arkts-multimedia-drm.md)
+  - [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md)
   - [createMediaKeySystem](arkts-drm-createmediakeysystem-f.md)
   - [getMediaKeySystems](arkts-drm-getmediakeysystems-f.md)
   - [getMediaKeySystemUuid](arkts-drm-getmediakeysystemuuid-f.md)
-  - [isMediaKeySystemSupported](arkts-drm-ismediakeysystemsupported-f.md)
   - [EventInfo](arkts-drm-eventinfo-i.md)
   - [KeysInfo](arkts-drm-keysinfo-i.md)
   - [MediaKeyRequest](arkts-drm-mediakeyrequest-i.md)

@@ -1,4 +1,8 @@
-# TimeLapsePreviewType (System API)
+# TimeLapsePreviewType
+
+```TypeScript
+enum TimeLapsePreviewType
+```
 
 Enumerates the time-lapse preview types, which affect the shooting algorithm.
 

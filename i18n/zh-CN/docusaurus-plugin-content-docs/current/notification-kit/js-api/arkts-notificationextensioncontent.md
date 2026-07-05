@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [NotificationExtensionContent](arkts-notification-notificationextensioncontent-i.md) | 通知扩展内容。 |
+| [NotificationExtensionContent](arkts-notificationextensioncontent-i.md) | 通知扩展内容。 |
 

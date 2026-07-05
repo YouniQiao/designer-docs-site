@@ -1,6 +1,6 @@
 # @ohos.hilog
 
-The HiLog subsystem allows your applications or services to output logs based on the specified type, level, and format string. Such logs help you learn the running status of applications and better debug programs.
+hilog日志系统，使应用/服务可以按照指定级别、标识和格式字符串输出日志内容，帮助开发者了解应用/服务的运行状态，更好地调试程序。
 
 **Since:** 7
 
@@ -9,7 +9,7 @@ The HiLog subsystem allows your applications or services to output logs based on
 ## Modules to Import
 
 ```TypeScript
-import { hilog } from '@ohos.hilog';
+import { hilog } from '@kit.PerformanceAnalysisKit';
 ```
 
 ## Summary
@@ -18,27 +18,24 @@ import { hilog } from '@ohos.hilog';
 
 | Name | Description |
 | --- | --- |
-| [clean](arkts-performanceanalysis-clean-f.md#clean-1) | Delete all hilog logs in the sandbox. |
-| [debug](arkts-performanceanalysis-debug-f.md#debug-1) | Prints DEBUG logs. DEBUG logs are not recorded in official versions by default. They are available in debug versions or in official versions with the debug function enabled. |
-| [error](arkts-performanceanalysis-error-f.md#error-1) | Prints ERROR logs. |
-| [fatal](arkts-performanceanalysis-fatal-f.md#fatal-1) | Prints FATAL logs. |
-| [flush](arkts-performanceanalysis-flush-f.md#flush-1) | Flush hilog logs in the sandbox. |
-| [getLogFile](arkts-performanceanalysis-getlogfile-f.md#getlogfile-1) | Returns the list of hilog log file paths in the sandbox for the specified recent time period. |
-| [getOutputDir](arkts-performanceanalysis-getoutputdir-f.md#getoutputdir-1) | Returns the directory path of hilog logs in the sandbox. If the output type of hilog is DEFAULT, an empty string is returned. |
-| [getOutputType](arkts-performanceanalysis-getoutputtype-f.md#getoutputtype-1) | Returns the current output type of hilog. |
-| [info](arkts-performanceanalysis-info-f.md#info-1) | Prints INFO logs. |
-| [isLoggable](arkts-performanceanalysis-isloggable-f.md#isloggable-1) | Checks whether logs are printable based on the specified service domain, log tag, and log level. |
-| [setLogLevel](arkts-performanceanalysis-setloglevel-f.md#setloglevel-1) | Sets the minimum log level of the current application process. You can configure different preference strategies using the **prefer** parameter. The **PREFER_CLOSE_LOG** strategy has the same effect as the **setMinLogLevel()** function. &gt; **NOTE** &gt; &gt; This function does not take effect for debug applications. |
-| [setMinLogLevel](arkts-performanceanalysis-setminloglevel-f.md#setminloglevel-1) | Sets the minimum log level. &gt; **NOTE** &gt; &gt; If the set log level is lower than the &gt; [global log level](../../../../dfx/hilog.md#displaying-and-setting-log-levels), the setting does not take effect. &gt; &gt; This function does not take effect for debug applications. |
-| [setOutputType](arkts-performanceanalysis-setoutputtype-f.md#setoutputtype-1) | Sets the output type of hilog. |
-| [setOutputTypeByDomainID](arkts-performanceanalysis-setoutputtypebydomainid-f.md#setoutputtypebydomainid-1) | Sets the output type for hilog for the domainID list. |
-| [warn](arkts-performanceanalysis-warn-f.md#warn-1) | Prints WARN logs. |
+| [debug](arkts-hilog-debug-f.md#debug-1) | 打印DEBUG级别的日志。 DEBUG级别的日志在正式发布版本中默认不被打印，只有在调试版本或打开调试开关的情况下才会打印。 |
+| [debug](arkts-hilog-debug-f.md#debug-2) | 打印DEBUG级别的日志。 |
+| [error](arkts-hilog-error-f.md#error-1) | 打印ERROR级别的日志。 |
+| [error](arkts-hilog-error-f.md#error-2) | 打印ERROR级别的日志。 |
+| [fatal](arkts-hilog-fatal-f.md#fatal-1) | 打印FATAL级别的日志。 |
+| [fatal](arkts-hilog-fatal-f.md#fatal-2) | 打印FATAL级别的日志。 |
+| [info](arkts-hilog-info-f.md#info-1) | 打印INFO级别的日志。 |
+| [info](arkts-hilog-info-f.md#info-2) | 打印INFO级别的日志。 |
+| [isLoggable](arkts-hilog-isloggable-f.md#isLoggable-1) | 在打印日志前调用该接口，用于检查指定领域标识、日志标识和级别的日志是否可以打印。 |
+| [setLogLevel](arkts-hilog-setloglevel-f.md#setLogLevel-1) | 设置当前应用程序进程的最低日志级别。 可通过prefer参数配置不同的偏好策略。如果选择策略PREFER_CLOSE_LOG，等同于调用setMinLogLevel函数。 > **注意：** > > debug版本应用下，此函数不生效。 |
+| [setMinLogLevel](arkts-hilog-setminloglevel-f.md#setMinLogLevel-1) | 设置应用日志打印的最低日志级别，用于拦截低级别日志打印。 > **注意：** > > 如果设置的日志级别低于[全局日志级别](docroot://dfx/hilog.md#查看和设置日志级别)，设置不生效。 > > debug版本应用下，此函数不生效。 |
+| [warn](arkts-hilog-warn-f.md#warn-1) | 打印WARN级别的日志。 |
+| [warn](arkts-hilog-warn-f.md#warn-2) | 打印WARN级别的日志。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [LogLevel](arkts-performanceanalysis-loglevel-e.md) | Enumerates the log levels. |
-| [OutputType](arkts-performanceanalysis-outputtype-e.md) | Enumerates output type of hilog. |
-| [PreferStrategy](arkts-performanceanalysis-preferstrategy-e.md) | Enumerates the preference strategies. |
+| [LogLevel](arkts-hilog-loglevel-e.md) | 日志级别。 |
+| [PreferStrategy](arkts-hilog-preferstrategy-e.md) | 偏好策略。 |
 

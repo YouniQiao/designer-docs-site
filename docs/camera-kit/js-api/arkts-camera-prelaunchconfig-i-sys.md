@@ -1,4 +1,4 @@
-# PrelaunchConfig (System API)
+# PrelaunchConfig
 
 Defines the camera prelaunch configuration. Currently, the configuration is used for sensor-level prelaunch. It will be used for stream-level prelaunch in a later version.
 
@@ -11,18 +11,18 @@ Defines the camera prelaunch configuration. Currently, the configuration is used
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## activeTime
 
 ```TypeScript
-activeTime?: number
+activeTime?: int
 ```
 
 Activation time, in minutes.
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 

@@ -1,4 +1,4 @@
-# SecurityEventInfo (System API)
+# SecurityEventInfo
 
 Provides the conditions of on/off.
 
@@ -11,7 +11,7 @@ Provides the conditions of on/off.
 ## Modules to Import
 
 ```TypeScript
-import { securityGuard } from '@ohos.security.securityGuard';
+import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
 ## eventId

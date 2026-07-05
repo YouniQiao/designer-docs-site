@@ -1,0 +1,125 @@
+# setTouchpadRightClickType
+
+## setTouchpadRightClickType
+
+```TypeScript
+function setTouchpadRightClickType(type: RightClickType, callback: AsyncCallback<void>): void
+```
+
+设置触控板右键菜单类型，使用callback异步回调。
+
+**起始版本：** 10
+
+**系统能力：** SystemCapability.MultimodalInput.Input.Pointer
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| type | RightClickType | 是 | type代表触控板右键菜单类型。 - TOUCHPAD_RIGHT_BUTTON：按压触控板右键区域。 - TOUCHPAD_LEFT_BUTTON：按  压触控板左键区域。 - TOUCHPAD_TWO_FINGER_TAP：双指轻击或双指按压触控板。 - TOUCHPAD_TWO_FINGER_TAP_OR_RIGHT_BUTTON20+  ：双指轻击或双指按压触控板、或按压触控板右键区域。 - TOUCHPAD_TWO_FINGER_TAP_OR_LEFT_BUTTON20+：双指轻击或双指按压触控板、或按压触控板左键区域。  默认值为TOUCHPAD_TWO_FINGER_TAP_OR_RIGHT_BUTTON。 |
+| callback | AsyncCallback&lt;void> | 是 | 回调函数。当设置触控板右键菜单类型成功，err为undefined，否则为错误对象。 |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 202 | SystemAPI permission error. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;  2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**示例：**
+
+```TypeScript
+import { pointer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          try {
+            // 设置触摸板右键点击类型
+            pointer.setTouchpadRightClickType(pointer.RightClickType.TOUCHPAD_RIGHT_BUTTON , (error: BusinessError) => {
+              if (error) {
+                console.error(`Failed to set touchpad right click type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+                return;
+              }
+              console.info(`Succeeded in setting touchpad right click type.`);
+            });
+          } catch (error) {
+            console.error(`Failed to set touchpad right click type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+          }
+        })
+    }
+  }
+}
+
+```
+
+## setTouchpadRightClickType
+
+```TypeScript
+function setTouchpadRightClickType(type: RightClickType): Promise<void>
+```
+
+设置触控板右键菜单类型，使用Promise异步回调。
+
+**起始版本：** 10
+
+**系统能力：** SystemCapability.MultimodalInput.Input.Pointer
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| type | RightClickType | 是 | type代表触控板右键菜单类型。 - TOUCHPAD_RIGHT_BUTTON：按压触控板右键区域。 - TOUCHPAD_LEFT_BUTTON：按  压触控板左键区域。 - TOUCHPAD_TWO_FINGER_TAP：双指轻击或双指按压触控板。 - TOUCHPAD_TWO_FINGER_TAP_OR_RIGHT_BUTTON20+  ：双指轻击或双指按压触控板、或按压触控板右键区域。 - TOUCHPAD_TWO_FINGER_TAP_OR_LEFT_BUTTON20+：双指轻击或双指按压触控板、或按压触控板左键区域。  默认值为TOUCHPAD_TWO_FINGER_TAP_OR_RIGHT_BUTTON。 |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;void> | Promise对象，无返回结果。 |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 202 | SystemAPI permission error. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;  2. Incorrect parameter types; 3. Parameter verification failed. |
+
+**示例：**
+
+```TypeScript
+import { pointer } from '@kit.InputKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    RelativeContainer() {
+      Text()
+        .onClick(() => {
+          try {
+            // 设置触摸板右键点击类型
+            pointer.setTouchpadRightClickType(pointer.RightClickType.TOUCHPAD_RIGHT_BUTTON).then(() => {
+              console.info(`Succeeded in setting touchpad right click type.`);
+            }).catch((error: BusinessError) => {
+              console.error(`Failed to set touchpad right click type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+            })
+          } catch (error) {
+            console.error(`Failed to set touchpad right click type, Code: ${(error as BusinessError).code}, message: ${(error as BusinessError).message}.`);
+          }
+        })
+    }
+  }
+}
+
+```
+

@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [dom](arkts-arkui-dom-c.md) | global dom |
+| [dom](arkts-dom-c.md) | global dom |
 

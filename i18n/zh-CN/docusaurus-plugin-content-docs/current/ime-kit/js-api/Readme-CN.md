@@ -1,0 +1,122 @@
+# IMEKit(输入法开发服务)
+
+- [@ohos.InputMethodExtensionAbility](arkts-inputmethodextensionability.md)
+  - [InputMethodExtensionAbility](arkts-inputmethodextensionability-c.md)
+- [@ohos.InputMethodExtensionContext](arkts-inputmethodextensioncontext.md)
+  - [InputMethodExtensionContext](arkts-inputmethodextensioncontext-c.md)
+- [@ohos.InputMethodSubtype](arkts-inputmethodsubtype.md)
+  - [InputMethodSubtype](arkts-inputmethodsubtype-i.md)
+- [@ohos.inputMethod](arkts-inputmethod.md)
+  - [getCurrentInputMethodSubtype](arkts-inputmethod-getcurrentinputmethodsubtype-f.md)<!--Del-->
+  - [getCurrentInputMethodSubtype(系统接口)](arkts-inputmethod-getcurrentinputmethodsubtype-f-sys.md)<!--DelEnd-->
+  - [switchCurrentInputMethodAndSubtype](arkts-inputmethod-switchcurrentinputmethodandsubtype-f.md)
+  - [getInputMethodController](arkts-inputmethod-getinputmethodcontroller-f.md)
+  - [switchCurrentInputMethodSubtype](arkts-inputmethod-switchcurrentinputmethodsubtype-f.md)
+  - [onAttachmentDidFail](arkts-inputmethod-onattachmentdidfail-f.md)
+  - [getController](arkts-inputmethod-getcontroller-f.md)
+  - [getInputMethodSetting](arkts-inputmethod-getinputmethodsetting-f.md)
+  - [setSimpleKeyboardEnabled](arkts-inputmethod-setsimplekeyboardenabled-f.md)
+  - [getCurrentInputMethod](arkts-inputmethod-getcurrentinputmethod-f.md)<!--Del-->
+  - [getCurrentInputMethod(系统接口)](arkts-inputmethod-getcurrentinputmethod-f-sys.md)<!--DelEnd-->
+  - [getSetting](arkts-inputmethod-getsetting-f.md)
+  - [switchInputMethod](arkts-inputmethod-switchinputmethod-f.md)<!--Del-->
+  - [switchInputMethod(系统接口)](arkts-inputmethod-switchinputmethod-f-sys.md)<!--DelEnd-->
+  - [offAttachmentDidFail](arkts-inputmethod-offattachmentdidfail-f.md)<!--Del-->
+  - [switchInputMethodWithUserId(系统接口)](arkts-inputmethod-switchinputmethodwithuserid-f-sys.md)<!--DelEnd-->
+  - [getSystemInputMethodConfigAbility](arkts-inputmethod-getsysteminputmethodconfigability-f.md)<!--Del-->
+  - [getSystemInputMethodConfigAbility(系统接口)](arkts-inputmethod-getsysteminputmethodconfigability-f-sys.md)<!--DelEnd-->
+  - [getDefaultInputMethod](arkts-inputmethod-getdefaultinputmethod-f.md)<!--Del-->
+  - [getDefaultInputMethod(系统接口)](arkts-inputmethod-getdefaultinputmethod-f-sys.md)<!--DelEnd-->
+  - [AttachOptions](arkts-inputmethod-attachoptions-i.md)
+  - [CursorInfo](arkts-inputmethod-cursorinfo-i.md)
+  - [FunctionKey](arkts-inputmethod-functionkey-i.md)
+  - [InputAttribute](arkts-inputmethod-inputattribute-i.md)
+  - [InputMethodController](arkts-inputmethod-inputmethodcontroller-i.md)
+  - [InputMethodProperty](arkts-inputmethod-inputmethodproperty-i.md)
+  - [InputMethodSetting](arkts-inputmethod-inputmethodsetting-i.md)
+  - [InputWindowInfo](arkts-inputmethod-inputwindowinfo-i.md)
+  - [MessageHandler](arkts-inputmethod-messagehandler-i.md)
+  - [Movement](arkts-inputmethod-movement-i.md)
+  - [Range](arkts-inputmethod-range-i.md)
+  - [TextConfig](arkts-inputmethod-textconfig-i.md)
+  - [GetTextCallback](arkts-inputmethod-gettextcallback-t.md)
+  - [GetTextIndexAtCursorCallback](arkts-inputmethod-gettextindexatcursorcallback-t.md)
+  - [ImeChangeCallback](arkts-inputmethod-imechangecallback-t.md)<!--Del-->
+  - [ImeChangeWithUserIdCallback(系统接口)](arkts-inputmethod-imechangewithuseridcallback-t-sys.md)<!--DelEnd-->
+  - [OnMessageCallback](arkts-inputmethod-onmessagecallback-t.md)
+  - [SetPreviewTextCallback](arkts-inputmethod-setpreviewtextcallback-t.md)
+  - [AttachFailureReason](arkts-inputmethod-attachfailurereason-e.md)
+  - [CapitalizeMode](arkts-inputmethod-capitalizemode-e.md)
+  - [Direction](arkts-inputmethod-direction-e.md)
+  - [EnabledState](arkts-inputmethod-enabledstate-e.md)
+  - [EnterKeyType](arkts-inputmethod-enterkeytype-e.md)
+  - [ExtendAction](arkts-inputmethod-extendaction-e.md)
+  - [KeyboardStatus](arkts-inputmethod-keyboardstatus-e.md)
+  - [RequestKeyboardReason](arkts-inputmethod-requestkeyboardreason-e.md)
+  - [TextInputType](arkts-inputmethod-textinputtype-e.md)
+  - [Constants](arkts-inputmethod-con.md)
+- [@ohos.inputMethod.ExtraConfig](arkts-inputmethod-extraconfig.md)
+  - [InputMethodExtraConfig](arkts-inputmethodextraconfig-i.md)
+  - [CustomValueType](arkts-customvaluetype-t.md)
+- [@ohos.inputMethod.Panel](arkts-inputmethod-panel.md)
+  - [PanelInfo](arkts-panelinfo-i.md)
+  - [PanelFlag](arkts-panelflag-e.md)
+  - [PanelType](arkts-paneltype-e.md)
+- [@ohos.inputMethodEngine](arkts-inputmethodengine.md)
+  - [getInputMethodEngine](arkts-inputmethodengine-getinputmethodengine-f.md)
+  - [createKeyboardDelegate](arkts-inputmethodengine-createkeyboarddelegate-f.md)
+  - [getInputMethodAbility](arkts-inputmethodengine-getinputmethodability-f.md)
+  - [getKeyboardDelegate](arkts-inputmethodengine-getkeyboarddelegate-f.md)
+  - [AttachOptions](arkts-inputmethodengine-attachoptions-i.md)
+  - [EditorAttribute](arkts-inputmethodengine-editorattribute-i.md)
+  - [EnhancedPanelRect](arkts-inputmethodengine-enhancedpanelrect-i.md)
+  - [ImmersiveEffect](arkts-inputmethodengine-immersiveeffect-i.md)
+  - [InputClient](arkts-inputmethodengine-inputclient-i.md)
+  - [InputMethodAbility](arkts-inputmethodengine-inputmethodability-i.md)
+  - [InputMethodEngine](arkts-inputmethodengine-inputmethodengine-i.md)
+  - [KeyboardArea](arkts-inputmethodengine-keyboardarea-i.md)
+  - [KeyboardController](arkts-inputmethodengine-keyboardcontroller-i.md)
+  - [KeyboardDelegate](arkts-inputmethodengine-keyboarddelegate-i.md)
+  - [KeyEvent](arkts-inputmethodengine-keyevent-i.md)
+  - [MessageHandler](arkts-inputmethodengine-messagehandler-i.md)
+  - [Movement](arkts-inputmethodengine-movement-i.md)
+  - [Panel](arkts-inputmethodengine-panel-i.md)
+  - [PanelInfo](arkts-inputmethodengine-panelinfo-i.md)
+  - [PanelRect](arkts-inputmethodengine-panelrect-i.md)
+  - [Range](arkts-inputmethodengine-range-i.md)
+  - [SystemPanelInsets](arkts-inputmethodengine-systempanelinsets-i.md)
+  - [TextInputClient](arkts-inputmethodengine-textinputclient-i.md)
+  - [WindowInfo](arkts-inputmethodengine-windowinfo-i.md)
+  - [CommandDataType](arkts-inputmethodengine-commanddatatype-t.md)
+  - [CursorContextChangeCallback](arkts-inputmethodengine-cursorcontextchangecallback-t.md)
+  - [IMAInputStartCallback](arkts-inputmethodengine-imainputstartcallback-t.md)
+  - [InputKeyEventCallback](arkts-inputmethodengine-inputkeyeventcallback-t.md)
+  - [KeyEventCallback](arkts-inputmethodengine-keyeventcallback-t.md)
+  - [OnMessageCallback](arkts-inputmethodengine-onmessagecallback-t.md)
+  - [SelectionChangeCallback](arkts-inputmethodengine-selectionchangecallback-t.md)
+  - [SizeChangeCallback](arkts-inputmethodengine-sizechangecallback-t.md)<!--Del-->
+  - [SizeUpdateCallback(系统接口)](arkts-inputmethodengine-sizeupdatecallback-t-sys.md)<!--DelEnd-->
+  - [CapitalizeMode](arkts-inputmethodengine-capitalizemode-e.md)
+  - [Direction](arkts-inputmethodengine-direction-e.md)
+  - [ExtendAction](arkts-inputmethodengine-extendaction-e.md)<!--Del-->
+  - [FluidLightMode(系统接口)](arkts-inputmethodengine-fluidlightmode-e-sys.md)<!--DelEnd-->
+  - [GradientMode](arkts-inputmethodengine-gradientmode-e.md)
+  - [ImmersiveMode](arkts-inputmethodengine-immersivemode-e.md)
+  - [PanelFlag](arkts-inputmethodengine-panelflag-e.md)
+  - [PanelType](arkts-inputmethodengine-paneltype-e.md)
+  - [RequestKeyboardReason](arkts-inputmethodengine-requestkeyboardreason-e.md)
+  - [SecurityMode](arkts-inputmethodengine-securitymode-e.md)
+  - [Constants](arkts-inputmethodengine-con.md)
+- [@ohos.inputMethodList](arkts-inputmethodlist.md)
+  - [Pattern](arkts-pattern-i.md)
+  - [PatternOptions](arkts-patternoptions-i.md)
+- [@ohos.inputMethodSystemPanelManager](arkts-inputmethodsystempanelmanager.md)<!--Del-->
+  - [offSystemPrivateCommand(系统接口)](arkts-inputmethodsystempanelmanager-offsystemprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSystemPanelStatusChange(系统接口)](arkts-inputmethodsystempanelmanager-offsystempanelstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [connectSystemChannel(系统接口)](arkts-inputmethodsystempanelmanager-connectsystemchannel-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendPrivateCommand(系统接口)](arkts-inputmethodsystempanelmanager-sendprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemPanelStatusChange(系统接口)](arkts-inputmethodsystempanelmanager-onsystempanelstatuschange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemPrivateCommand(系统接口)](arkts-inputmethodsystempanelmanager-onsystemprivatecommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [SystemPanelStatus(系统接口)](arkts-inputmethodsystempanelmanager-systempanelstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CommandDataType(系统接口)](arkts-inputmethodsystempanelmanager-commanddatatype-t-sys.md)<!--DelEnd--><!--Del-->
+  - [InputMethodInputType(系统接口)](arkts-inputmethodsystempanelmanager-inputmethodinputtype-e-sys.md)<!--DelEnd-->

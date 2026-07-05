@@ -11,45 +11,37 @@ Input method system panel manager.
 ## Modules to Import
 
 ```TypeScript
-import { inputMethodSystemPanelManager } from '@ohos.inputMethodSystemPanelManager';
+import { inputMethodSystemPanelManager } from '@kit.IMEKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [connectSystemChannel](arkts-ime-connectsystemchannel-f-sys.md#connectsystemchannel-1) | Connect system channel for the panel and input method. |
-| [offSystemPanelStatusChange](arkts-ime-offsystempanelstatuschange-f-sys.md#offsystempanelstatuschange-1) | Unsubscribe from the system panel status change event. |
-| [offSystemPrivateCommand](arkts-ime-offsystemprivatecommand-f-sys.md#offsystemprivatecommand-1) | Unsubscribe from the event when the input method application sends private data commands. |
-| [onSystemPanelStatusChange](arkts-ime-onsystempanelstatuschange-f-sys.md#onsystempanelstatuschange-1) | Subscribe to the system panel status change event. |
-| [onSystemPrivateCommand](arkts-ime-onsystemprivatecommand-f-sys.md#onsystemprivatecommand-1) | Subscribe to the event when the input method application sends private data commands. |
-| [sendPrivateCommand](arkts-ime-sendprivatecommand-f-sys.md#sendprivatecommand-1) | Send private command. |
-<!--DelEnd-->
+| <!--DelRow-->[connectSystemChannel](arkts-inputmethodsystempanelmanager-connectsystemchannel-f-sys.md#connectSystemChannel-1) | Connect system channel for the panel and input method. |
+| <!--DelRow-->[offSystemPanelStatusChange](arkts-inputmethodsystempanelmanager-offsystempanelstatuschange-f-sys.md#offSystemPanelStatusChange-1) | Unsubscribe from the system panel status change event. |
+| <!--DelRow-->[offSystemPrivateCommand](arkts-inputmethodsystempanelmanager-offsystemprivatecommand-f-sys.md#offSystemPrivateCommand-1) | Unsubscribe from the event when the input method application sends private data commands. |
+| <!--DelRow-->[onSystemPanelStatusChange](arkts-inputmethodsystempanelmanager-onsystempanelstatuschange-f-sys.md#onSystemPanelStatusChange-1) | Subscribe to the system panel status change event. |
+| <!--DelRow-->[onSystemPrivateCommand](arkts-inputmethodsystempanelmanager-onsystemprivatecommand-f-sys.md#onSystemPrivateCommand-1) | Subscribe to the event when the input method application sends private data commands. |
+| <!--DelRow-->[sendPrivateCommand](arkts-inputmethodsystempanelmanager-sendprivatecommand-f-sys.md#sendPrivateCommand-1) | Send private command. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [SystemPanelStatus](arkts-ime-systempanelstatus-i-sys.md) | System panel status. |
-<!--DelEnd-->
+| <!--DelRow-->[SystemPanelStatus](arkts-inputmethodsystempanelmanager-systempanelstatus-i-sys.md) | System panel status. |
 
-<!--Del-->
-### Enums（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [InputMethodInputType](arkts-ime-inputmethodinputtype-e-sys.md) | Defines the input type. |
-<!--DelEnd-->
+| <!--DelRow-->[CommandDataType](arkts-inputmethodsystempanelmanager-commanddatatype-t-sys.md) | Indicates the possible data types of the command. |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [CommandDataType](arkts-ime-commanddatatype-t-sys.md) | Indicates the possible data types of the command. |
-<!--DelEnd-->
+| <!--DelRow-->[InputMethodInputType](arkts-inputmethodsystempanelmanager-inputmethodinputtype-e-sys.md) | Defines the input type. |
 

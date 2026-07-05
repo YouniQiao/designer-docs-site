@@ -1,11 +1,5 @@
 # off
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## off('accessibilityStateChange')
 
 ```TypeScript
@@ -16,9 +10,9 @@ Unsubscribes from the state changes of the accessibility application. This API u
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -26,14 +20,14 @@ Unsubscribes from the state changes of the accessibility application. This API u
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'accessibilityStateChange' | Yes | Event type, which is set to **'accessibilityStateChange'** in thisAPI. |
-| callback | Callback&lt;boolean&gt; | No | Callback used to unregister. It must be consistent with the callback usedin[accessibility.on('accessibilityStateChange')](arkts-accessibility-on-f.md#on-1). If this parameter is not specified, listening will be disabled for all callbacks corresponding to thespecified type.<br>**Since:** 20 |
+| type | 'accessibilityStateChange' | Yes | Event type, which is set to 'accessibilityStateChange' in this  API. |
+| callback | Callback&lt;boolean> | No | Callback used to unregister. It must be consistent with the callback used  in  [accessibility.on('accessibilityStateChange')]accessibility.on(type: 'accessibilityStateChange', callback: Callback)  . If this parameter is not specified, listening will be disabled for all callbacks corresponding to the  specified type. [since 7 - 19] |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
 
 **Example**
 
@@ -46,7 +40,6 @@ accessibility.off('accessibilityStateChange', (data: boolean) => {
 
 ```
 
-
 ## off('touchGuideStateChange')
 
 ```TypeScript
@@ -57,9 +50,9 @@ Unsubscribes from the state changes in touch guide mode. This API uses an asynch
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -67,14 +60,14 @@ Unsubscribes from the state changes in touch guide mode. This API uses an asynch
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'touchGuideStateChange' | Yes | Event type, which is set to **'touchGuideStateChange'** in this API. |
-| callback | Callback&lt;boolean&gt; | No | Callback used to unregister. It must be consistent with the callback usedin[accessibility.on('touchGuideStateChange')](arkts-accessibility-on-f.md#on-2). If this parameter is not specified, listening will be disabled for all callbacks corresponding to thespecified type. |
+| type | 'touchGuideStateChange' | Yes | Event type, which is set to 'touchGuideStateChange' in this API. |
+| callback | Callback&lt;boolean> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
 
 **Example**
 
@@ -87,7 +80,6 @@ accessibility.off('touchGuideStateChange', (data: boolean) => {
 
 ```
 
-
 ## off('screenReaderStateChange')
 
 ```TypeScript
@@ -98,9 +90,9 @@ Unsubscribes from the state changes of the screen reader. This API uses an async
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -108,14 +100,14 @@ Unsubscribes from the state changes of the screen reader. This API uses an async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'screenReaderStateChange' | Yes | Event type, which is set to **'screenReaderStateChange'** in this API. |
-| callback | Callback&lt;boolean&gt; | No | Callback used to unregister. It must be consistent with the callback usedin[accessibility.on('screenReaderStateChange')](arkts-accessibility-on-f.md#on-3). If this parameter is not specified, listening will be disabled for all callbacks corresponding to thespecified type. |
+| type | 'screenReaderStateChange' | Yes | Event type, which is set to 'screenReaderStateChange' in this API. |
+| callback | Callback&lt;boolean> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
 
 **Example**
 
@@ -128,7 +120,6 @@ accessibility.off('screenReaderStateChange', (data: boolean) => {
 
 ```
 
-
 ## off('touchModeChange')
 
 ```TypeScript
@@ -139,9 +130,9 @@ Unsubscribes from the single- or double-touch event changes in touch guide mode.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -149,14 +140,14 @@ Unsubscribes from the single- or double-touch event changes in touch guide mode.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'touchModeChange' | Yes | Event type, which is set to **'touchModeChange'** in this API. |
-| callback | Callback&lt;string&gt; | No | Callback used to unregister. The value must be the same as the value ofcallback in[accessibility.on('touchModeChange')](arkts-accessibility-on-f.md#on-4). If this parameter is not specified, listening will be disabled for all callbacks corresponding to thespecified type. |
+| type | 'touchModeChange' | Yes | Event type, which is set to 'touchModeChange' in this API. |
+| callback | Callback&lt;string> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2.Incorrect parameter types. 3.Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2.  Incorrect parameter types. 3.Parameter verification failed. |
 
 **Example**
 

@@ -1,8 +1,8 @@
-# IsoInfo (System API)
+# IsoInfo
 
 Describes the ISO information.
 
-**Since:** 22
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -11,22 +11,22 @@ Describes the ISO information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## iso
 
 ```TypeScript
-readonly iso?: number
+readonly iso?: int
 ```
 
 ISO value.
 
-**Type:** number
+**Type:** int
 
-**Since:** 22
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

@@ -1,11 +1,5 @@
 # getTouchModeSync
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## getTouchModeSync
 
 ```TypeScript
@@ -16,9 +10,9 @@ Queries single- or double-touch mode.
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -26,5 +20,5 @@ Queries single- or double-touch mode.
 
 | Type | Description |
 | --- | --- |
-| string | Touch mode.<br>- **singleTouchMode**: Single-touch mode.<br>- **doubleTouchMode**: Double-touch mode.<br>- **none**: Touch guide mode is disabled. |
+| string | Touch mode.  - singleTouchMode: Single-touch mode.  - doubleTouchMode: Double-touch mode.  - none: Touch guide mode is disabled. |
 

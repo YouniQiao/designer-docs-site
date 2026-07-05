@@ -1,12 +1,16 @@
 # @ohos.application.StaticSubscriberExtensionAbility
 
+## 导入模块
+
+```TypeScript
+import { StaticSubscriberExtensionAbility } from '@kit.BasicServicesKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 类（系统接口）
+### 类
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [StaticSubscriberExtensionAbility](arkts-basicservices-staticsubscriberextensionability-c-sys.md) | StaticSubscriberExtensionAbility模块提供静态订阅者ExtensionAbility类别的能力。 |
-<!--DelEnd-->
+| <!--DelRow-->[StaticSubscriberExtensionAbility](arkts-staticsubscriberextensionability-c.md) | StaticSubscriberExtensionAbility模块提供静态订阅者ExtensionAbility类别的能力。 |
 

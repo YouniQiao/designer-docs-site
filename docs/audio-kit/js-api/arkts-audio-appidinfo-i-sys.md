@@ -1,4 +1,4 @@
-# AppIdInfo (System API)
+# AppIdInfo
 
 Describes app ID information.
 
@@ -11,40 +11,22 @@ Describes app ID information.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## appFullTokenId
 
 ```TypeScript
-appFullTokenId: number
+appFullTokenId: long
 ```
 
 App full token ID.
 
-**Type:** number
+**Type:** long
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
-**System API:** This is a system API.
-
-## appPid
-
-```TypeScript
-appPid: number
-```
-
-App PID.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -53,16 +35,16 @@ App PID.
 ## appTokenId
 
 ```TypeScript
-appTokenId: number
+appTokenId: int
 ```
 
 App token ID.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -71,16 +53,34 @@ App token ID.
 ## appUid
 
 ```TypeScript
-appUid: number
+appUid: int
 ```
 
 App UID.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## appPid
+
+```TypeScript
+appPid: int
+```
+
+App PID.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

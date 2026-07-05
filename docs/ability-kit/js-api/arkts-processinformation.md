@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [ProcessInformation](arkts-ability-processinformation-i.md) | The module defines the process information. The information can be obtained through [getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1) of appManager. |
+| [ProcessInformation](arkts-processinformation-i.md) | 运行进程信息，可以通过appManager的 [getRunningProcessInformation]{@link @ohos.app.ability.appManager:appManager.getRunningProcessInformation()}来获取运行进程信息 。 |
 

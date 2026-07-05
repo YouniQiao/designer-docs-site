@@ -8,7 +8,7 @@ Describes the callback function for the ad media resource loading error event.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 

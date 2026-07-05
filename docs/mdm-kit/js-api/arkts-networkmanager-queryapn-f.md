@@ -1,0 +1,128 @@
+# queryApn
+
+## queryApn
+
+```TypeScript
+function queryApn(admin: Want, apnInfo: Record<string, string>): Array<string>
+```
+
+查询符合特定APN信息的APN ID。
+
+**Since:** 20
+
+**Required permissions:** 
+
+ ohos.permission.ENTERPRISE_MANAGE_APN
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| admin | Want | Yes | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| apnInfo | Record&lt;string, string> | Yes | APN的查询条件。 - apnName：APN配置的名称标识符，可选。 - mcc：3位数字的移动国家代码，可选。 -  mnc：2-3位数字的移动网络代码，可选。 - apn：接入点名称，可选。 - type：APN的服务类型，可选。 - user：APN身份验证的用户名，可选。 - proxy：普通数据连接  的代理服务器地址，可选。 - mmsproxy：彩信服务的专用代理地址，可选。 - authType：APN的认证协议类型，可选。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Array&lt;string> | 满足要求的APN ID。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission  required to call the API. |
+
+**Example**
+
+```TypeScript
+import { Want } from '@kit.AbilityKit';
+import { networkManager } from '@kit.MDMKit';
+
+let wantTemp: Want = {
+  // Replace with actual values.
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility',
+};
+let apnInfo: Record<string, string> = {
+  // Replace with actual values.
+  "apnName": "CTNET",
+  "apn": "CTNET",
+  "mnc": "11",
+  "mcc": "460",
+};
+try {
+  let queryResult: Array<string> = networkManager.queryApn(wantTemp, apnInfo);
+  console.info(`Succeeded in querying apn, result : ${JSON.stringify(queryResult)}`);
+} catch (err) {
+  console.error(`Failed to query apn. Code: ${err.code}, message: ${err.message}`);
+}
+
+```
+
+## queryApn
+
+```TypeScript
+function queryApn(admin: Want, apnId: string): Record<string, string>
+```
+
+查询特定APN的APN参数信息。
+
+**Since:** 20
+
+**Required permissions:** 
+
+ ohos.permission.ENTERPRISE_MANAGE_APN
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| admin | Want | Yes | 企业设备管理扩展组件。Want中必须包含企业设备管理扩展能力的abilityName和所在应用的bundleName。 |
+| apnId | string | Yes | 指定的APN ID。可以通过  [networkManager.queryApn]networkManager.queryApn(admin: Want, apnInfo: Record)获取设备信息。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Record&lt;string, string> | APN parameter information of the specified APN ID.  - apnName: APN identifier.  - mcc: 3-digit mobile country code (MCC).  - mnc: 2-digit or 3-digit mobile network code (MNC).  - apn: access point name.  - type: APN service type.  - user: user name for APN authentication.  - proxy: address of the proxy server for a common data connection.  - mmsproxy: dedicated proxy address of the MMS service.  - authType: authentication protocol type of the APN. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 9200001 | The application is not an administrator application of the device. |
+| 9200002 | The administrator application does not have permission to manage the device. |
+| 201 | Permission verification failed. The application does not have the permission  required to call the API. |
+
+**Example**
+
+```TypeScript
+import { Want } from '@kit.AbilityKit';
+import { networkManager } from '@kit.MDMKit';
+
+let wantTemp: Want = {
+  // Replace with actual values.
+  bundleName: 'com.example.myapplication',
+  abilityName: 'EnterpriseAdminAbility',
+};
+let apnId: string = "1"; // Replace it as required.
+try {
+  let queryResult: Record<string, string> = networkManager.queryApn(wantTemp, apnId);
+  console.info(`Succeeded in querying apn, result : ${JSON.stringify(queryResult)}`);
+} catch (err) {
+  console.error(`Failed to query apn. Code: ${err.code}, message: ${err.message}`);
+}
+
+```
+

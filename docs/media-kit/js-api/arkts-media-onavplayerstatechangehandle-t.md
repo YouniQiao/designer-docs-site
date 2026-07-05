@@ -4,11 +4,11 @@
 type OnAVPlayerStateChangeHandle = (state: AVPlayerState, reason: StateChangeReason) => void
 ```
 
-Describes the callback invoked for the AVPlayer state change event.
+播放状态机切换事件回调方法。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -16,6 +16,6 @@ Describes the callback invoked for the AVPlayer state change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| state | AVPlayerState | Yes | State of the AVPlayer. |
-| reason | StateChangeReason | Yes | Reason for the state change. |
+| state | AVPlayerState | Yes | 当前播放状态。 |
+| reason | StateChangeReason | Yes | 当前播放状态的切换原因。 |
 

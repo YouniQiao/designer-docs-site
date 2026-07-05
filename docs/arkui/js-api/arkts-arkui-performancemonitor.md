@@ -1,6 +1,6 @@
 # @ohos.arkui.performanceMonitor
 
-The **performanceMonitor** module provides APIs for monitoring performance metrics related to user scenes. By calling the **begin** and **end** APIs at the start and end of a scene respectively, you can obtain relevant performance metrics such as response latency, completion latency, and frame drops. > **NOTE** > > The APIs of this module are supported since API version 10. Updates will be marked with a superscript to indicate > their > > The APIs provided by this module are system APIs.
+提供用户操作场景性能相关指标监测能力，在场景开始和结束时分别调用begin和end接口，即可获得该场景相关性能指标，目前仅包含响应时延、完成时延、丢帧。 > **说明：** > > - 从API Version 10开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。 > - 本模块接口为系统接口。
 
 **Since:** 10
 
@@ -11,27 +11,23 @@ The **performanceMonitor** module provides APIs for monitoring performance metri
 ## Modules to Import
 
 ```TypeScript
-import { performanceMonitor } from '@ohos.arkui.performanceMonitor';
+import { performanceMonitor } from '@kit.ArkUI';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [begin](arkts-arkui-begin-f-sys.md#begin-1) | Marks the start of a user scene. Call this API when the scene begins. |
-| [end](arkts-arkui-end-f-sys.md#end-1) | Marks the end of a user scene. Call this API when the scene ends. |
-| [recordInputEventTime](arkts-arkui-recordinputeventtime-f-sys.md#recordinputeventtime-1) | Records the trigger event type and time before the start of the animation scene. |
-<!--DelEnd-->
+| <!--DelRow-->[begin](arkts-performancemonitor-begin-f-sys.md#begin-1) | 用于标记用户场景开始，用户场景开始时调用此接口。 |
+| <!--DelRow-->[end](arkts-performancemonitor-end-f-sys.md#end-1) | 用于标记用户场景结束，用户场景结束时调用此接口。 |
+| <!--DelRow-->[recordInputEventTime](arkts-performancemonitor-recordinputeventtime-f-sys.md#recordInputEventTime-1) | 记录动效场景开始前，用户输入触发事件类型与时间。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [ActionType](arkts-arkui-actiontype-e-sys.md) | Enumerates the trigger modes for user scenes (typically scenes involving animations). |
-| [SourceType](arkts-arkui-sourcetype-e-sys.md) | Enumerates the trigger source types of user scenes. |
-<!--DelEnd-->
+| <!--DelRow-->[ActionType](arkts-performancemonitor-actiontype-e-sys.md) | 用户场景（通常为具有动效的场景）触发模式枚举。 |
+| <!--DelRow-->[SourceType](arkts-performancemonitor-sourcetype-e-sys.md) | 用户场景触发源类型枚举。 |
 

@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AutoStartupInfo](arkts-ability-autostartupinfo-i-sys.md) | The module defines information about the application component that automatically starts upon system boot. |
-<!--DelEnd-->
+| <!--DelRow-->[AutoStartupInfo](arkts-autostartupinfo-i.md) | 定义开机自启动应用组件信息。 |
 

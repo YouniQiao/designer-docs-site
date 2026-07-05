@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { AppServiceExtensionAbility } from '@ohos.app.ability.AppServiceExtensionAbility';
+import { AppServiceExtensionAbility } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { AppServiceExtensionAbility } from '@ohos.app.ability.AppServiceExtensio
 
 | Name | Description |
 | --- | --- |
-| [AppServiceExtensionAbility](arkts-ability-appserviceextensionability-c.md) | class of app service extension ability. |
+| [AppServiceExtensionAbility](arkts-appserviceextensionability-c.md) | AppServiceExtensionAbility模块提供后台服务相关扩展能力，包括后台服务的创建、销毁、连接、断开等生命周期回调。 |
 

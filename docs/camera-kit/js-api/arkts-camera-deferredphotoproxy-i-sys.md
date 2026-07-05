@@ -1,4 +1,4 @@
-# DeferredPhotoProxy (System API)
+# DeferredPhotoProxy
 
 A class object that functions as a thumbnail proxy.
 
@@ -11,7 +11,7 @@ A class object that functions as a thumbnail proxy.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getThumbnail
@@ -32,13 +32,13 @@ Obtains the PixelMap of a thumbnail. This API uses a promise to return the resul
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;image.PixelMap&gt; | PixelMap of the thumbnail. |
+| Promise&lt;image.PixelMap> | PixelMap of the thumbnail. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -71,13 +71,13 @@ Releases depth data output resources. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 

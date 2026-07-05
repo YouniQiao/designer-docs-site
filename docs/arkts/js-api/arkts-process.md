@@ -1,6 +1,6 @@
 # @ohos.process
 
-The **process** module provides process management APIs, for example, APIs for obtaining process information.
+process** 模块提供进程管理相关接口，例如获取进程信息的接口。
 
 **Since:** 7
 
@@ -9,7 +9,7 @@ The **process** module provides process management APIs, for example, APIs for o
 ## Modules to Import
 
 ```TypeScript
-import { process } from '@ohos.process';
+import { process } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -18,70 +18,54 @@ import { process } from '@ohos.process';
 
 | Name | Description |
 | --- | --- |
-| [abort](arkts-arkts-abort-f.md#abort-1) | Aborts a process and generates a core file. This method will cause a process to exit immediately. Exercise caution when using this method. |
-| [exit](arkts-arkts-exit-f.md#exit-1) | Terminates this process. Exercise caution when using this API. After this API is called, the application exits. If the input parameter is not 0, data loss or exceptions may occur. |
-| [getEnvironmentVar](arkts-arkts-getenvironmentvar-f.md#getenvironmentvar-1) | Obtains the value of an environment variable. |
-| [getPastCpuTime](arkts-arkts-getpastcputime-f.md#getpastcputime-1) | Obtains the CPU time (in milliseconds) from the time the process starts to the current time. |
-| [getStartRealtime](arkts-arkts-getstartrealtime-f.md#getstartrealtime-1) | Obtains the duration (excluding the system sleep time), in milliseconds, from the time the system starts to the time the process starts. |
-| [getSystemConfig](arkts-arkts-getsystemconfig-f.md#getsystemconfig-1) | Obtains the system configuration. |
-| [getThreadPriority](arkts-arkts-getthreadpriority-f.md#getthreadpriority-1) | Obtains the thread priority based on the specified TID. |
-| [getUidForName](arkts-arkts-getuidforname-f.md#getuidforname-1) | Obtains the UID of a user from the user database of the system based on the specified user name. |
-| [is64Bit](arkts-arkts-is64bit-f.md#is64bit-1) | Checks whether this process is running in a 64-bit environment. |
-| [isAppUid](arkts-arkts-isappuid-f.md#isappuid-1) | Checks whether a UID belongs to this application. |
-| [isIsolatedProcess](arkts-arkts-isisolatedprocess-f.md#isisolatedprocess-1) | Checks whether this process is isolated. |
-| [kill](arkts-arkts-kill-f.md#kill-1) | Sends a signal to a specified process to terminate it. |
-| [uptime](arkts-arkts-uptime-f.md#uptime-1) | Obtains the running time of the current system, in seconds. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [chdir](arkts-arkts-chdir-f-sys.md#chdir-1) | Change current directory |
-| [cwd](arkts-arkts-cwd-f-sys.md#cwd-1) | Return the current work directory; |
-| [off](arkts-arkts-off-f-sys.md#off-1) | Remove registered event |
-| [on](arkts-arkts-on-f-sys.md#on-1) | Register for an event |
-| [runCmd](arkts-arkts-runcmd-f-sys.md#runcmd-1) | Returns a child process object and spawns a new ChildProcess to run the command. |
-<!--DelEnd-->
+| [abort](arkts-process-abort-f.md#abort-1) | 中止进程并生成核心文件。该方法会导致进程立即退出，请谨慎使用。 |
+| <!--DelRow-->[chdir](arkts-process-chdir-f-sys.md#chdir-1) | 修改当前目录。 |
+| <!--DelRow-->[cwd](arkts-process-cwd-f-sys.md#cwd-1) | 返回当前工作目录。 |
+| [exit](arkts-process-exit-f.md#exit-1) | 终止程序。 请谨慎使用此接口。调用此接口后应用将退出。如果输入参数非 0，可能会导致数据丢失或出现异常。 |
+| [getEnvironmentVar](arkts-process-getenvironmentvar-f.md#getEnvironmentVar-1) | 获取环境变量名对应的值。 |
+| [getPastCpuTime](arkts-process-getpastcputime-f.md#getPastCpuTime-1) | 获取进程启动到当前时间的 CPU 时间（以毫秒为单位）。 |
+| [getStartRealtime](arkts-process-getstartrealtime-f.md#getStartRealtime-1) | 获取系统启动到进程启动的实时时间（以毫秒为单位，不包含系统休眠时间）。 |
+| [getSystemConfig](arkts-process-getsystemconfig-f.md#getSystemConfig-1) | 获取系统配置信息。 |
+| [getThreadPriority](arkts-process-getthreadpriority-f.md#getThreadPriority-1) | 根据指定的 tid 获取线程优先级，优先级顺序取决于当前操作系统。 |
+| [getUidForName](arkts-process-getuidforname-f.md#getUidForName-1) | 根据指定的用户名，从系统的用户数据库中获取该用户的 uid。 |
+| [is64Bit](arkts-process-is64bit-f.md#is64Bit-1) | 检查运行环境是否为 64 位。 |
+| [isAppUid](arkts-process-isappuid-f.md#isAppUid-1) | 判断 uid 是否属于应用程序。 |
+| [isIsolatedProcess](arkts-process-isisolatedprocess-f.md#isIsolatedProcess-1) | 检查进程是否已被隔离。 |
+| [kill](arkts-process-kill-f.md#kill-1) | 发送信号到指定进程，结束该进程。 |
+| <!--DelRow-->[off](arkts-process-off-f-sys.md#off-1) | 移除已注册的事件。 |
+| <!--DelRow-->[on](arkts-process-on-f-sys.md#on-1) | 注册事件。 |
+| <!--DelRow-->[runCmd](arkts-process-runcmd-f-sys.md#runCmd-1) | 返回一个子进程对象，并 spawn 一个新的 ChildProcess 来运行命令。 |
+| [uptime](arkts-process-uptime-f.md#uptime-1) | 获取当前系统已运行的时间（以秒为单位）。 |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [ProcessManager](arkts-arkts-processmanager-c.md) | Provides APIs for throwing exceptions during the addition of a process. Construct a **ProcessManager** object. |
+| [ProcessManager](arkts-process-processmanager-c.md) | 提供进程管理相关接口，包括进程 UID 判断、用户信息查询、线程优先级获取、环境变量获取、进程退出和信号发送等功能。 通过 `new process.ProcessManager()` 构造 ProcessManager 对象。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ChildProcess](arkts-arkts-childprocess-i-sys.md) | The childprocess object can be used to create a new process. |
-| [ConditionType](arkts-arkts-conditiontype-i-sys.md) | Provides the ConditionType type,including timeout, killSignal, maxBuffer. |
-<!--DelEnd-->
+| <!--DelRow-->[ChildProcess](arkts-process-childprocess-i-sys.md) | childprocess 对象可用于创建新的进程。 |
+| <!--DelRow-->[ConditionType](arkts-process-conditiontype-i-sys.md) | 提供 ConditionType 类型，包括 timeout、killSignal、maxBuffer。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [EventListener](arkts-arkts-eventlistener-t.md) | Event to store. |
+| [EventListener](arkts-process-eventlistener-t.md) | 用户存储的事件信息。 |
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [pid](arkts-arkts-process-con.md#pid) | Process ID (PID) of the process. |
-| [tid](arkts-arkts-process-con.md#tid) | Thread ID (TID) of the thread. |
-| [uid](arkts-arkts-process-con.md#uid) | User identifier (UID) of the process. |
-
-<!--Del-->
-### Constants（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [egid](arkts-arkts-process-con-sys.md#egid) | Returns the numeric valid group ID of the process |
-| [euid](arkts-arkts-process-con-sys.md#euid) | Return the numeric valid user identity of the process |
-| [gid](arkts-arkts-process-con-sys.md#gid) | Returns the numeric group id of the process |
-| [groups](arkts-arkts-process-con-sys.md#groups) | Return an array with supplementary group id |
-| [ppid](arkts-arkts-process-con-sys.md#ppid) | Return ppid is The pid of the current child process |
-<!--DelEnd-->
+| <!--DelRow-->[egid](arkts-process-con-sys.md#egid) | 返回进程的有效组 ID（数值形式）。 |
+| <!--DelRow-->[euid](arkts-process-con-sys.md#euid) | 返回进程的有效用户标识（数值形式）。 |
+| <!--DelRow-->[gid](arkts-process-con-sys.md#gid) | 返回进程的组 ID（数值形式）。 |
+| <!--DelRow-->[groups](arkts-process-con-sys.md#groups) | 返回包含补充组 ID 的数组。 |
+| [pid](arkts-process-con.md#pid) | 进程的 ID（PID）。 |
+| <!--DelRow-->[ppid](arkts-process-con-sys.md#ppid) | 返回 ppid 表示当前子进程的 pid。 |
+| [tid](arkts-process-con.md#tid) | 线程的 ID（TID）。 |
+| [uid](arkts-process-con.md#uid) | 进程的用户标识（UID）。 |
 

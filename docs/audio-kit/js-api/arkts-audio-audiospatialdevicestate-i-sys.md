@@ -1,4 +1,4 @@
-# AudioSpatialDeviceState (System API)
+# AudioSpatialDeviceState
 
 Describes spatial device state.
 
@@ -11,7 +11,7 @@ Describes spatial device state.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## address
@@ -23,6 +23,22 @@ address: string
 Spatial device address.
 
 **Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Audio.Spatialization
+
+**System API:** This is a system API.
+
+## spatialDeviceType
+
+```TypeScript
+spatialDeviceType: AudioSpatialDeviceType
+```
+
+Spatial device type.
+
+**Type:** AudioSpatialDeviceType
 
 **Since:** 11
 
@@ -55,22 +71,6 @@ isSpatializationSupported: boolean
 Whether the spatial device supports spatial rendering.
 
 **Type:** boolean
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Audio.Spatialization
-
-**System API:** This is a system API.
-
-## spatialDeviceType
-
-```TypeScript
-spatialDeviceType: AudioSpatialDeviceType
-```
-
-Spatial device type.
-
-**Type:** AudioSpatialDeviceType
 
 **Since:** 11
 

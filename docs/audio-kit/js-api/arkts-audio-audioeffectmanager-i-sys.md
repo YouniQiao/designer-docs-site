@@ -1,4 +1,4 @@
-# AudioEffectManager (System API)
+# AudioEffectManager
 
 Implements audio effect management.
 
@@ -11,7 +11,7 @@ Implements audio effect management.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## getAudioEffectProperty
@@ -24,7 +24,9 @@ Gets current audio effect properties.
 
 **Since:** 18
 
-**Required permissions:** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**Required permissions:** 
+
+ ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -34,15 +36,15 @@ Gets current audio effect properties.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;AudioEffectProperty&gt; | Array of current audio effect properties. |
+| Array&lt;AudioEffectProperty> | Array of current audio effect properties. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | System error. |
+| 201 | Permission denied. |
+| 202 | Caller is not a system application. |
+| 6800301 | System error. |
 
 **Example**
 
@@ -69,7 +71,9 @@ Gets supported audio effect properties based on current devices.
 
 **Since:** 18
 
-**Required permissions:** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**Required permissions:** 
+
+ ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -79,15 +83,15 @@ Gets supported audio effect properties based on current devices.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;AudioEffectProperty&gt; | Array of supported audio effect properties. |
+| Array&lt;AudioEffectProperty> | Array of supported audio effect properties. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | System error. |
+| 201 | Permission denied. |
+| 202 | Caller is not a system application. |
+| 6800301 | System error. |
 
 **Example**
 
@@ -114,7 +118,7 @@ Checks whether the current device supports audio separation effect in system.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -130,7 +134,7 @@ Checks whether the current device supports audio separation effect in system.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
+| 202 | Caller is not a system application. |
 
 ## offAudioSeparationEffectEnabledChange
 
@@ -142,7 +146,7 @@ Unsubscribes from the system audio separation effect enabled state change event.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -152,14 +156,14 @@ Unsubscribes from the system audio separation effect enabled state change event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | No | The callback used in subscription function for unsubscribing.If not using this parameter, all callbacks subscribed in current process before will be unsubscribed. |
+| callback | Callback&lt;boolean> | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
+| 202 | Caller is not a system application. |
+| 6800101 | Parameter verification failed. |
 
 ## onAudioSeparationEffectEnabledChange
 
@@ -171,7 +175,7 @@ Subscribes to system audio separation effect enabled state change event. The aud
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -181,13 +185,13 @@ Subscribes to system audio separation effect enabled state change event. The aud
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | Yes | Callback used to listen the system audio separation effectenabled state change event. |
+| callback | Callback&lt;boolean> | Yes | Callback used to listen the system audio separation effect  enabled state change event. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
+| 202 | Caller is not a system application. |
 
 ## setAudioEffectProperty
 
@@ -199,7 +203,9 @@ Sets current audio effect properties.
 
 **Since:** 18
 
-**Required permissions:** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**Required permissions:** 
+
+ ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -209,16 +215,16 @@ Sets current audio effect properties.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| propertyArray | Array&lt;AudioEffectProperty&gt; | Yes | array of audio effect property to be set.Notice that only one effect property name in each effect property category should be set. |
+| propertyArray | Array&lt;AudioEffectProperty> | Yes | array of audio effect property to be set.  Notice that only one effect property name in each effect property category should be set. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. Possible causes:1. More than one effect property name of the same effect property category are in the input array.2. The input audioEffectProperties are not supported by the current device.3. The name or category of the input audioEffectProperties is incorrect. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | System error. |
+| 201 | Permission denied. |
+| 202 | Caller is not a system application. |
+| 6800101 | Parameter verification failed. Possible causes:  1. More than one effect property name of the same effect property category are in the input array.  2. The input audioEffectProperties are not supported by the current device.  3. The name or category of the input audioEffectProperties is incorrect. |
+| 6800301 | System error. |
 
 **Example**
 
@@ -239,16 +245,18 @@ try {
 ## setAudioSeparationEffectEnabled
 
 ```TypeScript
-setAudioSeparationEffectEnabled(enabled: boolean, uid: number, streamId?: number): Promise<void>
+setAudioSeparationEffectEnabled(enabled: boolean, uid: int, streamId?: long): Promise<void>
 ```
 
 Sets audio separation effect enable or disable for specific application process, or for specific audio playback stream. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**Required permissions:** 
 
-**Model restriction:** This API can be used only in the stage model.
+ ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -259,38 +267,40 @@ Sets audio separation effect enable or disable for specific application process,
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | The required effect state, true for enabled, false for disabled. |
-| uid | number | Yes | The uid of target application process to add effect.<br>The value should be an integer. |
-| streamId | number | No | The id of target audio playback stream to add effect, the playback applicationcan use {@link AudioRenderer#getAudioStreamId} to obtain it. |
+| uid | int | Yes | The uid of target application process to add effect.  The value should be an integer. |
+| streamId | long | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Effect is not supported in this device. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs like service died. |
+| 201 | Permission denied. |
+| 202 | Caller is not a system application. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Effect is not supported in this device. |
+| 6800301 | Audio service error occurs like service died. |
 
 ## setAudioSeparationEffectVolume
 
 ```TypeScript
-setAudioSeparationEffectVolume(type: AudioSeparationVolumeType, volume: number): Promise<void>
+setAudioSeparationEffectVolume(type: AudioSeparationVolumeType, volume: double): Promise<void>
 ```
 
 Sets audio separation effect volume for specific volume type. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
-**Required permissions:** ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+**Required permissions:** 
 
-**Model restriction:** This API can be used only in the stage model.
+ ohos.permission.MANAGE_SYSTEM_AUDIO_EFFECTS
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -301,21 +311,21 @@ Sets audio separation effect volume for specific volume type. This API uses a pr
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | AudioSeparationVolumeType | Yes | The type to set volume. |
-| volume | number | Yes | The target volume value.<br>Value range: [0,1]. |
+| volume | double | Yes | The target volume value.  Value range: [0,1]. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Caller is not a system application. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Effect is not supported in this device. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs like service died. |
+| 201 | Permission denied. |
+| 202 | Caller is not a system application. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Effect is not supported in this device. |
+| 6800301 | Audio service error occurs like service died. |
 

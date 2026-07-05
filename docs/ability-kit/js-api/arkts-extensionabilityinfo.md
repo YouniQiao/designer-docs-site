@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [ExtensionAbilityInfo](arkts-ability-extensionabilityinfo-i.md) | The module defines the ExtensionAbility information. An application can obtain its own ExtensionAbility information through [bundleManager.getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1) , with **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY** passed in to [bundleFlags](arkts-ability-bundleflag-e.md#bundleflag). |
+| [ExtensionAbilityInfo](arkts-extensionabilityinfo-i.md) | ExtensionAbility信息，可以通过 [bundleManager.getBundleInfoForSelf]{@link ./../@ohos.bundle.bundleManager:bundleManager.getBundleInfoForSelf(bundleFlags: int)} 获取自身的ExtensionAbility信息，其中参数[bundleFlags]{@link ./../@ohos.bundle.bundleManager:bundleManager.BundleFlag}至少包含 GET_BUNDLE_INFO_WITH_HAP_MODULE和GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY。 |
 

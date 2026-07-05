@@ -9,7 +9,7 @@ Describes audio stream information.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## channelLayout
@@ -23,6 +23,20 @@ Audio channel layout. The default value is **0x0**.
 **Type:** AudioChannelLayout
 
 **Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+## sampleFormat
+
+```TypeScript
+sampleFormat: AudioSampleFormat
+```
+
+Audio sample format.
+
+**Type:** AudioSampleFormat
+
+**Since:** 8
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -54,34 +68,17 @@ Audio encoding type.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
-## sampleFormat
-
-```TypeScript
-sampleFormat: AudioSampleFormat
-```
-
-Audio sample format.
-
-**Type:** AudioSampleFormat
-
-**Since:** 8
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
-
 ## samplingRate
 
 ```TypeScript
-samplingRate: AudioSamplingRate | number
+samplingRate: AudioSamplingRate | int
 ```
 
 Audio sampling rate.
 
-**Type:** AudioSamplingRate | number
+**Type:** AudioSamplingRate | int
 
 **Since:** 8
-
-**Model restriction:** 
-- API version 26.0.0 and later: This API can be used in both the stage model and FA model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

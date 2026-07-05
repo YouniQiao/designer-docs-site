@@ -9,18 +9,18 @@ Describes the information about the audio stream timestamp and the current data 
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## framePos
 
 ```TypeScript
-readonly framePos: number
+readonly framePos: long
 ```
 
 Position of the current data frame for playback or recording.
 
-**Type:** number
+**Type:** long
 
 **Since:** 19
 
@@ -29,12 +29,12 @@ Position of the current data frame for playback or recording.
 ## timestamp
 
 ```TypeScript
-readonly timestamp: number
+readonly timestamp: long
 ```
 
 Timestamp corresponding to the current data frame position during playback or recording, in nanoseconds.
 
-**Type:** number
+**Type:** long
 
 **Since:** 19
 

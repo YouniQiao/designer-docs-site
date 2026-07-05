@@ -9,18 +9,18 @@ Describes audio capturer information.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## capturerFlags
 
 ```TypeScript
-capturerFlags: number
+capturerFlags: int
 ```
 
 Flags that control the capturer behavior. Set this parameter to **0**.
 
-**Type:** number
+**Type:** int
 
 **Since:** 8
 

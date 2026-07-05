@@ -1,0 +1,14 @@
+# AppCloneIdentity
+
+```TypeScript
+export type AppCloneIdentity = _AppCloneIdentity
+```
+
+描述应用包的身份信息。
+
+**起始版本：** 23
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework.Core
+
+**属性类型：** _AppCloneIdentity
+

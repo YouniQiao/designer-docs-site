@@ -1,6 +1,6 @@
 # @ohos.userIAM.userAccessCtrl
 
-The **userAccessCtrl** module provides APIs for setting and obtaining user identity authentication policies and verifying user identity authentication results.
+userAccessCtrl**模块是OpenHarmony用户身份认证体系（UserIAM）的核心组件，专门用于认证令牌的验证和管理。该模块提供了验证认证令牌（AuthToken）的API，能够解析和验证用户身份认证结果，并返回 详细的认证信息。 该模块主要用于以下场景： - 系统级应用需要验证用户身份认证令牌的有效性。 - 需要获取认证令牌的详细信息（如认证类型、信任级别、用户ID等）。 - 需要基于认证结果进行访问控制决策的场景。
 
 **Since:** 18
 
@@ -9,32 +9,26 @@ The **userAccessCtrl** module provides APIs for setting and obtaining user ident
 ## Modules to Import
 
 ```TypeScript
-import { userAccessCtrl } from '@ohos.userIAM.userAccessCtrl';
+import { userAccessCtrl } from '@kit.UserAuthenticationKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [verifyAuthToken](arkts-userauthentication-verifyauthtoken-f-sys.md#verifyauthtoken-1) | Verifies an authentication token. This API uses a promise to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[verifyAuthToken](arkts-useraccessctrl-verifyauthtoken-f-sys.md#verifyAuthToken-1) | 验证认证令牌。该接口用于校验AuthToken的有效性，包括完整性校验和时效性校验，校验通过后返回解析后的AuthToken详细信息。使用Promise异步回调。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AuthToken](arkts-userauthentication-authtoken-i-sys.md) | Represents the AuthToken data returned after a successful verification. |
-<!--DelEnd-->
+| <!--DelRow-->[AuthToken](arkts-useraccessctrl-authtoken-i-sys.md) | 认证令牌数据。表示校验通过后返回解析的AuthToken数据结果，包含认证的详细信息，如挑战值、认证信任等级、认证类型、用户ID等。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [AuthTokenType](arkts-userauthentication-authtokentype-e-sys.md) | Enumerates the authentication token types. |
-<!--DelEnd-->
+| <!--DelRow-->[AuthTokenType](arkts-useraccessctrl-authtokentype-e-sys.md) | 认证令牌类型枚举。该枚举定义了认证令牌的类型，用于标识令牌的签发来源。 |
 

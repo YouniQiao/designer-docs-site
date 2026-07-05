@@ -1,8 +1,8 @@
 # @ohos.bundle.shortcutManager
 
-The module provides APIs to manage [shortcuts](../../../../quick-start/typical-scenario-configuration.md), including whether to display shortcuts.
+本模块提供应用对于[快捷方式](docroot://quick-start/typical-scenario-configuration.md)的管理能力，包括设置快捷方式是否显示等。
 
-**Since:** 20
+**Since:** 12
 
 **System capability:** SystemCapability.BundleManager.BundleFramework.Launcher
 
@@ -11,7 +11,7 @@ The module provides APIs to manage [shortcuts](../../../../quick-start/typical-s
 ## Modules to Import
 
 ```TypeScript
-import { shortcutManager } from '@ohos.bundle.shortcutManager';
+import { shortcutManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -20,31 +20,22 @@ import { shortcutManager } from '@ohos.bundle.shortcutManager';
 
 | Name | Description |
 | --- | --- |
-| [getAllShortcutInfoForSelf](arkts-ability-getallshortcutinfoforself-f.md#getallshortcutinfoforself-1) | Obtains all the shortcut information defined in the [configuration](../../../../quick-start/module-configuration-file.md#shortcuts) file of the current application. This API uses a promise to return the result. |
-| [isShortcutSupported](arkts-ability-isshortcutsupported-f.md#isshortcutsupported-1) | Checks whether the shortcut capability is supported. |
-| [setShortcutVisibleForSelf](arkts-ability-setshortcutvisibleforself-f.md#setshortcutvisibleforself-1) | Sets whether to display the specified shortcut for the current application. This API uses a promise to return the result. |
+| <!--DelRow-->[addDesktopShortcutInfo](arkts-shortcutmanager-adddesktopshortcutinfo-f-sys.md#addDesktopShortcutInfo-1) | 增加指定用户的快捷方式信息。使用Promise异步回调。 |
+| <!--DelRow-->[addDynamicShortcutInfos](arkts-shortcutmanager-adddynamicshortcutinfos-f-sys.md#addDynamicShortcutInfos-1) | 添加指定用户的动态快捷方式。 |
+| <!--DelRow-->[deleteDesktopShortcutInfo](arkts-shortcutmanager-deletedesktopshortcutinfo-f-sys.md#deleteDesktopShortcutInfo-1) | 删除指定用户的快捷方式信息。使用Promise异步回调。 |
+| <!--DelRow-->[deleteDynamicShortcutInfos](arkts-shortcutmanager-deletedynamicshortcutinfos-f-sys.md#deleteDynamicShortcutInfos-1) | 删除指定的动态快捷方式。 |
+| <!--DelRow-->[getAllDesktopShortcutInfo](arkts-shortcutmanager-getalldesktopshortcutinfo-f-sys.md#getAllDesktopShortcutInfo-1) | 查询指定用户的所有快捷方式信息。 |
+| [getAllShortcutInfoForSelf](arkts-shortcutmanager-getallshortcutinfoforself-f.md#getAllShortcutInfoForSelf-1) | 查询当前应用[配置文件](docroot://quick-start/module-configuration-file.md#shortcuts标签)中定义的所有快捷方式信息。使用Promise异步回调。 |
+| <!--DelRow-->[getShortcutInfoByAbility](arkts-shortcutmanager-getshortcutinfobyability-f-sys.md#getShortcutInfoByAbility-1) | 查询指定用户下指定UIAbility的快捷方式信息。 |
+| [isShortcutSupported](arkts-shortcutmanager-isshortcutsupported-f.md#isShortcutSupported-1) | 查询当前设备是否支持快捷方式。 |
+| [setShortcutVisibleForSelf](arkts-shortcutmanager-setshortcutvisibleforself-f.md#setShortcutVisibleForSelf-1) | 设置当前应用指定的快捷方式是否显示。使用Promise异步回调。 |
+| <!--DelRow-->[setShortcutsEnabled](arkts-shortcutmanager-setshortcutsenabled-f-sys.md#setShortcutsEnabled-1) | 设置启用或禁用传入的静态快捷方式。使用Promise异步回调。 |
 
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [addDesktopShortcutInfo](arkts-ability-adddesktopshortcutinfo-f-sys.md#adddesktopshortcutinfo-1) | Adds a shortcut for the given user. This API uses a promise to return the result. |
-| [addDynamicShortcutInfos](arkts-ability-adddynamicshortcutinfos-f-sys.md#adddynamicshortcutinfos-1) | Adds dynamic shortcuts for the given user. |
-| [deleteDesktopShortcutInfo](arkts-ability-deletedesktopshortcutinfo-f-sys.md#deletedesktopshortcutinfo-1) | Deletes a shortcut for the given user. This API uses a promise to return the result. |
-| [deleteDynamicShortcutInfos](arkts-ability-deletedynamicshortcutinfos-f-sys.md#deletedynamicshortcutinfos-1) | Deletes dynamic shortcuts. |
-| [getAllDesktopShortcutInfo](arkts-ability-getalldesktopshortcutinfo-f-sys.md#getalldesktopshortcutinfo-1) | Obtains the information about all shortcuts of the given user. |
-| [getShortcutInfoByAbility](arkts-ability-getshortcutinfobyability-f-sys.md#getshortcutinfobyability-1) | Obtains shortcut info by bundleName, moduleName, abilityName, userId and appIndex. If you need to obtains shortcut info under the current user, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED needs to be applied for. If you need to obtains shortcut info under other users, ohos.permission.GET_BUNDLE_INFO_PRIVILEGED and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS need to be applied for. |
-| [setShortcutsEnabled](arkts-ability-setshortcutsenabled-f-sys.md#setshortcutsenabled-1) | Enables or disables the specified static shortcuts. This API uses a promise to return the result. |
-<!--DelEnd-->
-
-<!--Del-->
-### Types（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [ParameterItem](arkts-ability-parameteritem-t-sys.md) | Defines the custom data in the shortcut configuration. |
-| [ShortcutInfo](arkts-ability-shortcutinfo-t-sys.md) | Defines the shortcut information defined in the [module.json5](../../../../quick-start/module-configuration-file.md#shortcuts) file of the application. |
-| [ShortcutWant](arkts-ability-shortcutwant-t-sys.md) | Defines the target [wants](../../../../quick-start/module-configuration-file.md#wants) defined in the shortcut configuration. |
-<!--DelEnd-->
+| <!--DelRow-->[ParameterItem](arkts-shortcutmanager-parameteritem-t-sys.md) | 快捷方式配置信息中的自定义数据。 |
+| <!--DelRow-->[ShortcutInfo](arkts-shortcutmanager-shortcutinfo-t-sys.md) | 应用[module.json5配置文件](docroot://quick-start/module-configuration-file.md#shortcuts标签)中定义的快捷方式信息。 |
+| <!--DelRow-->[ShortcutWant](arkts-shortcutmanager-shortcutwant-t-sys.md) | 快捷方式内定义的目标[wants](docroot://quick-start/module-configuration-file.md#wants标签)信息集合。 |
 

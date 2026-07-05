@@ -4,11 +4,11 @@
 type OnFrameFetched = (frameInfo: FrameInfo, err?: BusinessError<void>) => void
 ```
 
-Describes the callback invoked when thumbnails are obtained in batches.
+批量获取缩略图回调函数。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
@@ -16,6 +16,6 @@ Describes the callback invoked when thumbnails are obtained in batches.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| frameInfo | FrameInfo | Yes | Thumbnail information. |
-| err | BusinessError&lt;void&gt; | No | Error that occurs when the thumbnail is obtained. The default value is**null**. |
+| frameInfo | FrameInfo | Yes | 返回的缩略图信息。 |
+| err | BusinessError&lt;void> | no |  |
 

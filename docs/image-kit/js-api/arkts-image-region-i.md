@@ -1,17 +1,15 @@
 # Region
 
-Describes the region information. It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).
+表示区域信息。
 
-**Inheritance/Implementation:** Region extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md#isendable)
-
-**Since:** 12
+**Since:** 8
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## Modules to Import
 
 ```TypeScript
-import { sendableImage } from '@ohos.multimedia.sendableImage';
+import { image } from '@kit.ImageKit';
 ```
 
 ## size
@@ -20,51 +18,51 @@ import { sendableImage } from '@ohos.multimedia.sendableImage';
 size: Size
 ```
 
-Region size.
+区域大小。
 
 **Type:** Size
 
-**Since:** 12
+**Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## x
 
 ```TypeScript
-x: number
+x: int
 ```
 
-X coordinate, in px.
+区域左上角横坐标。单位：像素（px）。
 
-**Type:** number
+**Type:** int
 
-**Since:** 12
+**Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## y
 
 ```TypeScript
-y: number
+y: int
 ```
 
-Y coordinate, in px.
+区域左上角纵坐标。单位：像素（px）。
 
-**Type:** number
+**Type:** int
 
-**Since:** 12
+**Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

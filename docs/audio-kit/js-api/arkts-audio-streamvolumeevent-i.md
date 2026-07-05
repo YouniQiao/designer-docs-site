@@ -9,18 +9,32 @@ Describes the event received by the application when the audio stream volume is 
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
+
+## volume
+
+```TypeScript
+volume: int
+```
+
+Volume.
+
+**Type:** int
+
+**Since:** 20
+
+**System capability:** SystemCapability.Multimedia.Audio.Volume
 
 ## previousVolume
 
 ```TypeScript
-previousVolume?: number
+previousVolume?: int
 ```
 
 Volume level before change.
 
-**Type:** number
+**Type:** int
 
 **Since:** 23
 
@@ -49,20 +63,6 @@ updateUi: boolean
 Whether to show the volume change in UI. **true** to show, **false** otherwise.
 
 **Type:** boolean
-
-**Since:** 20
-
-**System capability:** SystemCapability.Multimedia.Audio.Volume
-
-## volume
-
-```TypeScript
-volume: number
-```
-
-Volume.
-
-**Type:** number
 
 **Since:** 20
 

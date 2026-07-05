@@ -1,6 +1,10 @@
 # FileGenerationMode
 
-表示创建媒体文件模式的枚举。
+```TypeScript
+enum FileGenerationMode
+```
+
+Enumerates the modes for creating media files.
 
 **起始版本：** 12
 
@@ -12,7 +16,7 @@
 APP_CREATE = 0
 ```
 
-由应用自行在沙箱创建媒体文件。
+The application creates a media file in the sandbox.
 
 **起始版本：** 12
 
@@ -24,7 +28,7 @@ APP_CREATE = 0
 AUTO_CREATE_CAMERA_SCENE = 1
 ```
 
-由系统创建媒体文件，当前仅在相机录制场景下生效，会忽略应用设置的url。
+The system creates a media file. Currently, this mode takes effect only in camera recording scenarios. The URL set by the application is ignored.
 
 **起始版本：** 12
 

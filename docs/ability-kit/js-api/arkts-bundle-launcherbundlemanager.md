@@ -1,6 +1,6 @@
 # @ohos.bundle.launcherBundleManager
 
-The module providers APIs for launcher applications (applications with icons on the home screen) to obtain the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo).
+本模块支持launcher应用（桌面有图标的应用）所需的查询能力，支持 [LauncherAbilityInfo]{@link ./bundleManager/LauncherAbilityInfo:LauncherAbilityInfo}信息的查询。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The module providers APIs for launcher applications (applications with icons on 
 ## Modules to Import
 
 ```TypeScript
-import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
+import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,39 +18,25 @@ import { launcherBundleManager } from '@ohos.bundle.launcherBundleManager';
 
 | Name | Description |
 | --- | --- |
-| [getLauncherAbilityInfoSync](arkts-ability-getlauncherabilityinfosync-f.md#getlauncherabilityinfosync-1) | Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) based on the given bundle name and user ID. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [getAllLauncherAbilityInfo](arkts-ability-getalllauncherabilityinfo-f-sys.md#getalllauncherabilityinfo-1) | Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) of all applications based on the given user ID. This API uses an asynchronous callback to return the result. |
-| [getAllLauncherAbilityInfo](arkts-ability-getalllauncherabilityinfo-f-sys.md#getalllauncherabilityinfo-2) | Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) of all applications based on the given user ID. This API uses a promise to return the result. |
-| [getLauncherAbilityInfo](arkts-ability-getlauncherabilityinfo-f-sys.md#getlauncherabilityinfo-1) | Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) based on the given bundle name and user ID. This API uses an asynchronous callback to return the result. |
-| [getLauncherAbilityInfo](arkts-ability-getlauncherabilityinfo-f-sys.md#getlauncherabilityinfo-2) | Obtains the [launcher ability information](arkts-ability-launcherabilityinfo-i.md#launcherabilityinfo) based on the given bundle name and user ID. This API uses a promise to return the result. |
-| [getShortcutInfo](arkts-ability-getshortcutinfo-f-sys.md#getshortcutinfo-1) | Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the current user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). This API uses an asynchronous callback to return the result. No permission is required for obtaining the caller's own information. |
-| [getShortcutInfo](arkts-ability-getshortcutinfo-f-sys.md#getshortcutinfo-2) | Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the current user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). This API uses a promise to return the result. No permission is required for obtaining the caller's own information. |
-| [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1) | Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the current user based on the index of an application clone. No permission is required for obtaining the caller's own information. |
-| [getShortcutInfoSync](arkts-ability-getshortcutinfosync-f-sys.md#getshortcutinfosync-1) | Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the current user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). No permission is required for obtaining the caller's own information. |
-| [getShortcutInfoSync](arkts-ability-getshortcutinfosync-f-sys.md#getshortcutinfosync-2) | Obtains the [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo) of the specified user based on the given bundle name of a main application. To obtain shortcut information about an application clone, use [getShortcutInfoByAppIndex](arkts-ability-getshortcutinfobyappindex-f-sys.md#getshortcutinfobyappindex-1). No permission is required for obtaining the caller's own information. |
-| [startShortcut](arkts-ability-startshortcut-f-sys.md#startshortcut-1) | Starts an ability based on the specified [shortcut information](arkts-ability-shortcutinfo-i.md#shortcutinfo). This API uses a promise to return the result. |
-| [startShortcutWithReason](arkts-ability-startshortcutwithreason-f-sys.md#startshortcutwithreason-1) | Starts an ability based on the specified shortcut information, and carries the reason for the shortcut launch. This API uses a promise to return the result. The launched ability can obtain the launch reason through the **launchReasonMessage** field of [LaunchParam](arkts-ability-launchparam-i.md#launchparam) and handle service logic accordingly. |
-<!--DelEnd-->
+| <!--DelRow-->[getAllLauncherAbilityInfo](arkts-launcherbundlemanager-getalllauncherabilityinfo-f-sys.md#getAllLauncherAbilityInfo-1) | 查询指定用户下所有应用的[LauncherAbilityInfo]{@link ./bundleManager/LauncherAbilityInfo:LauncherAbilityInfo}。使用callback异步回调。 |
+| <!--DelRow-->[getAllLauncherAbilityInfo](arkts-launcherbundlemanager-getalllauncherabilityinfo-f-sys.md#getAllLauncherAbilityInfo-2) | 查询指定用户下所有应用的[LauncherAbilityInfo]{@link ./bundleManager/LauncherAbilityInfo:LauncherAbilityInfo}。使用Promise异步回调。 |
+| <!--DelRow-->[getLauncherAbilityInfo](arkts-launcherbundlemanager-getlauncherabilityinfo-f-sys.md#getLauncherAbilityInfo-1) | 查询指定bundleName及用户的[LauncherAbilityInfo]{@link ./bundleManager/LauncherAbilityInfo:LauncherAbilityInfo}。使用callback异步 回调。 |
+| <!--DelRow-->[getLauncherAbilityInfo](arkts-launcherbundlemanager-getlauncherabilityinfo-f-sys.md#getLauncherAbilityInfo-2) | 查询指定bundleName及用户的[LauncherAbilityInfo]{@link ./bundleManager/LauncherAbilityInfo:LauncherAbilityInfo}。使用Promise异步回 调。 |
+| [getLauncherAbilityInfoSync](arkts-launcherbundlemanager-getlauncherabilityinfosync-f.md#getLauncherAbilityInfoSync-1) | 查询指定bundleName及用户的[LauncherAbilityInfo]{@link ./bundleManager/LauncherAbilityInfo:LauncherAbilityInfo}。 |
+| <!--DelRow-->[getShortcutInfo](arkts-launcherbundlemanager-getshortcutinfo-f-sys.md#getShortcutInfo-1) | 查询当前用户下指定应用的快捷方式信息[ShortcutInfo]{@link ./bundleManager/ShortcutInfo}，只支持查询主应用的ShortcutInfo，查询分身应用请使用 [getShortcutInfoByAppIndex]{@link launcherBundleManager.getShortcutInfoByAppIndex}。使用callback异步回调。 获取调用方自身的信息时不需要权限。 |
+| <!--DelRow-->[getShortcutInfo](arkts-launcherbundlemanager-getshortcutinfo-f-sys.md#getShortcutInfo-2) | 查询当前用户下指定应用的快捷方式信息[ShortcutInfo]{@link ./bundleManager/ShortcutInfo}，只支持查询主应用的ShortcutInfo，查询分身应用请使用 [getShortcutInfoByAppIndex]{@link launcherBundleManager.getShortcutInfoByAppIndex}。使用Promise异步回调。 获取调用方自身的信息时不需要权限。 |
+| <!--DelRow-->[getShortcutInfoByAppIndex](arkts-launcherbundlemanager-getshortcutinfobyappindex-f-sys.md#getShortcutInfoByAppIndex-1) | 查询当前用户下指定分身应用的快捷方式信息[ShortcutInfo]{@link ./bundleManager/ShortcutInfo}。 调用方获取自己的信息时不需要权限。 |
+| <!--DelRow-->[getShortcutInfoSync](arkts-launcherbundlemanager-getshortcutinfosync-f-sys.md#getShortcutInfoSync-1) | 查询当前用户下指定应用的快捷方式信息[ShortcutInfo]{@link ./bundleManager/ShortcutInfo}，只支持查询主应用的ShortcutInfo，查询分身应用请使用 [getShortcutInfoByAppIndex]{@link launcherBundleManager.getShortcutInfoByAppIndex}。 获取调用方自身的信息时不需要权限。 |
+| <!--DelRow-->[getShortcutInfoSync](arkts-launcherbundlemanager-getshortcutinfosync-f-sys.md#getShortcutInfoSync-2) | 查询指定用户下指定应用的快捷方式信息[ShortcutInfo]{@link ./bundleManager/ShortcutInfo}，只支持查询主应用的ShortcutInfo，查询分身应用请使用 [getShortcutInfoByAppIndex]{@link launcherBundleManager.getShortcutInfoByAppIndex}。 获取调用方自身的信息时不需要权限。 |
+| <!--DelRow-->[startShortcut](arkts-launcherbundlemanager-startshortcut-f-sys.md#startShortcut-1) | 拉起指定[ShortcutInfo]{@link ./bundleManager/ShortcutInfo}中的ability。使用Promise异步回调。 |
+| <!--DelRow-->[startShortcutWithReason](arkts-launcherbundlemanager-startshortcutwithreason-f-sys.md#startShortcutWithReason-1) | 根据指定的快捷方式信息，拉起对应的Ability，并携带快捷方式的启动原因。使用Promise异步回调。 被拉起方可以通过[LaunchParam]{@link @ohos.app.ability.AbilityConstant:AbilityConstant.LaunchParam}的launchReasonMessage字段获取到 启动原因，并根据启动原因进行业务逻辑处理。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [LauncherAbilityInfo](arkts-ability-launcherabilityinfo-t.md) | Defines the information about the launcher ability. |
-
-<!--Del-->
-### Types（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [ParameterItem](arkts-ability-parameteritem-t-sys.md) | Defines the custom data in the shortcut configuration. |
-| [ShortcutInfo](arkts-ability-shortcutinfo-t-sys.md) | Defines the shortcut information defined in the [module.json5](../../../../quick-start/module-configuration-file.md#shortcuts) file of the application. |
-| [ShortcutWant](arkts-ability-shortcutwant-t-sys.md) | Defines the target [wants](../../../../quick-start/module-configuration-file.md#wants) defined in the shortcut configuration. |
-<!--DelEnd-->
+| [LauncherAbilityInfo](arkts-launcherbundlemanager-launcherabilityinfo-t.md) | LauncherAbilityInfo信息。 |
+| <!--DelRow-->[ParameterItem](arkts-launcherbundlemanager-parameteritem-t-sys.md) | 快捷方式配置信息中的自定义数据。 |
+| <!--DelRow-->[ShortcutInfo](arkts-launcherbundlemanager-shortcutinfo-t-sys.md) | 应用[module.json5配置文件](docroot://quick-start/module-configuration-file.md#shortcuts标签)中定义的快捷方式信息。 |
+| <!--DelRow-->[ShortcutWant](arkts-launcherbundlemanager-shortcutwant-t-sys.md) | 快捷方式内定义的目标[wants](docroot://quick-start/module-configuration-file.md#wants标签)信息集合。 |
 

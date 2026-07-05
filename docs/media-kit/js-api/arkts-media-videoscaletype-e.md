@@ -1,5 +1,9 @@
 # VideoScaleType
 
+```TypeScript
+enum VideoScaleType
+```
+
 Enumerates the video scale modes.
 
 **Since:** 9
@@ -16,7 +20,7 @@ Default mode. The video will be stretched to fit the window.
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -30,7 +34,7 @@ Maintains the video's aspect ratio, and scales to fill the shortest side of the 
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 
@@ -44,7 +48,7 @@ Maintains the video's aspect ratio, and scales to fill the longer side of the wi
 
 **Since:** 20
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 

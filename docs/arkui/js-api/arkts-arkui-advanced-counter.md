@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { CounterType, DateData, CounterComponent, CounterOptions } from '@ohos.arkui.advanced.Counter';
+import { CounterType,DateData,CounterComponent,CounterOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,22 +12,16 @@ import { CounterType, DateData, CounterComponent, CounterOptions } from '@ohos.a
 
 | Name | Description |
 | --- | --- |
-| [CommonOptions](arkts-arkui-commonoptions-c.md) | Defines the common options. |
-| [CounterOptions](arkts-arkui-counteroptions-c.md) | Defines the counter options. |
-| [DateData](arkts-arkui-datedata-c.md) | Defines the date data. |
-| [DateStyleOptions](arkts-arkui-datestyleoptions-c.md) | Defines the date style options. |
-| [InlineStyleOptions](arkts-arkui-inlinestyleoptions-c.md) | Defines the inline style options. |
-| [NumberStyleOptions](arkts-arkui-numberstyleoptions-c.md) | Defines the number style options. |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [CounterComponent](arkts-arkui-countercomponent-s.md) | Defines Counter Component. |
+| [CommonOptions](arkts-commonoptions-c.md) | CommonOptions定义了Counter的共通属性和事件。 |
+| [CounterOptions](arkts-counteroptions-c.md) | CounterOptions定义Counter类型及样式。 |
+| [DateData](arkts-datedata-c.md) | DateData定义了日期通用属性和方法，包括年、月、日。 |
+| [DateStyleOptions](arkts-datestyleoptions-c.md) | DateStyleOptions定义日期内联型Counter的属性和事件。 继承于[CommonOptions]{@link CommonOptions}。 |
+| [InlineStyleOptions](arkts-inlinestyleoptions-c.md) | InlineStyleOptions定义了数值内联型Counter的属性和事件。 继承于[CommonOptions]{@link CommonOptions}。 |
+| [NumberStyleOptions](arkts-numberstyleoptions-c.md) | NumberStyleOptions定义了列表型和紧凑型Counter的属性和事件。 继承于[InlineStyleOptions]{@link InlineStyleOptions}。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [CounterType](arkts-arkui-countertype-e.md) | Enum for the counter type. |
+| [CounterType](arkts-countertype-e.md) | CounterType指定Counter类型。 |
 

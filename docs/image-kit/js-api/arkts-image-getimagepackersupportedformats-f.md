@@ -1,18 +1,12 @@
 # getImagePackerSupportedFormats
 
-## Modules to Import
-
-```TypeScript
-import { image } from '@ohos.multimedia.image';
-```
-
 ## getImagePackerSupportedFormats
 
 ```TypeScript
 function getImagePackerSupportedFormats(): string[]
 ```
 
-Obtains the supported encoding formats, represented by MIME types.
+获取支持编码的图片格式，图片格式以mime type表示。
 
 **Since:** 20
 
@@ -22,7 +16,7 @@ Obtains the supported encoding formats, represented by MIME types.
 
 | Type | Description |
 | --- | --- |
-| string[] | List of supported encoding formats (MIME types). |
+| string[] | 支持编码的图片格式（mime type）列表。 |
 
 **Example**
 

@@ -1,5 +1,9 @@
 # AudioSourceType
 
+```TypeScript
+enum AudioSourceType
+```
+
 Enumerates the audio source types for video recording.
 
 **Since:** 9
@@ -28,7 +32,7 @@ Microphone audio input source.
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVRecorder
 

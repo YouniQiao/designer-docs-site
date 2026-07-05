@@ -9,22 +9,22 @@ Avis metadata.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## delayTime
 
 ```TypeScript
-readonly delayTime?: number
+readonly delayTime?: int
 ```
 
 Delay of each frame. Unit: ms, The value should be an integer. <br>Unit:ms.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

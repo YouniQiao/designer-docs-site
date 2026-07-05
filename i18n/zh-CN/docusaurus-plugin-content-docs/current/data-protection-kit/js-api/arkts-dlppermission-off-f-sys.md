@@ -1,0 +1,48 @@
+# off
+
+## off('uninstallDLPSandbox')
+
+```TypeScript
+function off(type: 'uninstallDLPSandbox', listener?: Callback<DLPSandboxState>): void
+```
+
+取消监听DLP沙箱卸载事件。调用成功后，应用不再接收DLP沙箱卸载事件的回调通知。 必须在调用[on]dlpPermission.on(type: 'uninstallDLPSandbox', listener: Callback<DLPSandboxState>)注册监听后才能调用此方法取消 监听。 DLP管理应用退出或不再需要追踪沙箱状态变化时，取消事件订阅以释放监听资源。
+
+**起始版本：** 10
+
+**需要权限：** 
+
+ ohos.permission.ACCESS_DLP_FILE
+
+**系统能力：** SystemCapability.Security.DataLossPrevention
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| type | 'uninstallDLPSandbox' | 是 | 监听事件类型。固定值为'uninstallDLPSandbox'：DLP沙箱卸载事件。 |
+| listener | Callback&lt;DLPSandboxState> | 否 |  |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | Permission denied. |
+| 202 | Non-system applications use system APIs. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. 3. Parameter verification failed. |
+| 19100001 | Invalid parameter value. |
+| 19100011 | The system ability works abnormally. |
+
+**示例：**
+
+```TypeScript
+import { dlpPermission } from '@kit.DataProtectionKit';
+
+dlpPermission.off('uninstallDLPSandbox', (info: dlpPermission.DLPSandboxState) => {
+  console.info('uninstallDLPSandbox event', info.appIndex, info.bundleName)
+}); // 取消订阅。
+
+```
+

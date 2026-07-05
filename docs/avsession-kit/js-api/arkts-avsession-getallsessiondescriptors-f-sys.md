@@ -1,10 +1,4 @@
-# getAllSessionDescriptors (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# getAllSessionDescriptors
 
 ## getAllSessionDescriptors
 
@@ -16,7 +10,9 @@ Get all avsession descriptors of the system
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -26,15 +22,15 @@ Get all avsession descriptors of the system
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;Readonly&lt;AVSessionDescriptor&gt;&gt;&gt; | Yes | async callback for an array ofAVSessionDescriptors. |
+| callback | AsyncCallback&lt;Array&lt;Readonly&lt;AVSessionDescriptor>>> | Yes | async callback for an array of  AVSessionDescriptors. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -67,7 +63,6 @@ struct Index {
 
 ```
 
-
 ## getAllSessionDescriptors
 
 ```TypeScript
@@ -76,11 +71,13 @@ function getAllSessionDescriptors(): Promise<Array<Readonly<AVSessionDescriptor>
 
 Get all avsession descriptors which can be shown on system entrance.
 
-**Since:** 23
+**Since:** 9
 
 **Required permissions:** 
-- API version 23+: ohos.permission.MANAGE_MEDIA_RESOURCES or ohos.permission.MANAGE_MEDIA_RESOURCES_FOR_PUBLIC
-- API version 9 - 22: ohos.permission.MANAGE_MEDIA_RESOURCES
+
+- API version9  to  22: ohos.permission.MANAGE_MEDIA_RESOURCES
+
+- API version23 and later: ohos.permission.MANAGE_MEDIA_RESOURCES or ohos.permission.MANAGE_MEDIA_RESOURCES_FOR_PUBLIC
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -90,15 +87,15 @@ Get all avsession descriptors which can be shown on system entrance.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;Readonly&lt;AVSessionDescriptor&gt;&gt;&gt; | Promise for an array of AVSessionDescriptors |
+| Promise&lt;Array&lt;Readonly&lt;AVSessionDescriptor>>> | Promise for an array of AVSessionDescriptors |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 9 - 22 |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 201 | permission denied |
+| 202 | Not System App. [since 9 - 22] |
+| 6600101 | Session service exception. |
 
 **Example**
 

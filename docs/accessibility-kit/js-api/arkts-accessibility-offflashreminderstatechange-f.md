@@ -1,11 +1,5 @@
 # offFlashReminderStateChange
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## offFlashReminderStateChange
 
 ```TypeScript
@@ -16,7 +10,7 @@ Unsubscribes from the state changes in flash alerts mode. This API uses an async
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,7 +18,7 @@ Unsubscribes from the state changes in flash alerts mode. This API uses an async
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;boolean&gt; | No | Callback function. Cancels the event response of a specified callbackobject. The value must be the same as the value of callback in[accessibility.onFlashReminderStateChange](arkts-accessibility-onflashreminderstatechange-f.md#onflashreminderstatechange-1). If this parameter is not specified, listening will be disabled for all callbacks corresponding to thespecified type. |
+| callback | Callback&lt;boolean> | No |  |
 
 **Example**
 

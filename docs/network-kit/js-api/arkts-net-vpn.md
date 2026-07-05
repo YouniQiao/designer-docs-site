@@ -9,55 +9,49 @@ Provides VPN related interfaces.
 ## Modules to Import
 
 ```TypeScript
-import { vpn } from '@ohos.net.vpn';
+import { vpn } from '@kit.NetworkKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [addSysVpnConfig](arkts-network-addsysvpnconfig-f-sys.md#addsysvpnconfig-1) | Add a system VPN network configuration. |
-| [createVpnConnection](arkts-network-createvpnconnection-f-sys.md#createvpnconnection-1) | Create a VPN connection using the AbilityContext. |
-| [deleteSysVpnConfig](arkts-network-deletesysvpnconfig-f-sys.md#deletesysvpnconfig-1) | Delete the configuration of system VPN network by the specified vpnId. |
-| [getConnectedSysVpnConfig](arkts-network-getconnectedsysvpnconfig-f-sys.md#getconnectedsysvpnconfig-1) | Get the connected VPN network configuration. |
-| [getConnectedVpnAppInfo](arkts-network-getconnectedvpnappinfo-f-sys.md#getconnectedvpnappinfo-1) | Get the connected VPN App Info. |
-| [getSysVpnConfig](arkts-network-getsysvpnconfig-f-sys.md#getsysvpnconfig-1) | Get the configuration of system VPN network by the specified vpnId. |
-| [getSysVpnConfigList](arkts-network-getsysvpnconfiglist-f-sys.md#getsysvpnconfiglist-1) | Get all system VPN network configuration. |
-| [off](arkts-network-off-f-sys.md#off-1) | Unsubscribes from vpn connect state changes. |
-| [off](arkts-network-off-f-sys.md#off-2) | Unsubscribes from vpn connect state changes. |
-| [on](arkts-network-on-f-sys.md#on-1) | Subscribes to vpn connect state changes. |
-| [on](arkts-network-on-f-sys.md#on-2) | Subscribes to vpn connect state changes. |
-<!--DelEnd-->
+| <!--DelRow-->[addSysVpnConfig](arkts-vpn-addsysvpnconfig-f-sys.md#addSysVpnConfig-1) | Add a system VPN network configuration. |
+| <!--DelRow-->[createVpnConnection](arkts-vpn-createvpnconnection-f-sys.md#createVpnConnection-1) | Create a VPN connection using the AbilityContext. |
+| <!--DelRow-->[deleteSysVpnConfig](arkts-vpn-deletesysvpnconfig-f-sys.md#deleteSysVpnConfig-1) | Delete the configuration of system VPN network by the specified vpnId. |
+| <!--DelRow-->[getConnectedSysVpnConfig](arkts-vpn-getconnectedsysvpnconfig-f-sys.md#getConnectedSysVpnConfig-1) | Get the connected VPN network configuration. |
+| <!--DelRow-->[getConnectedVpnAppInfo](arkts-vpn-getconnectedvpnappinfo-f-sys.md#getConnectedVpnAppInfo-1) | Get the connected VPN App Info. |
+| <!--DelRow-->[getSysVpnConfig](arkts-vpn-getsysvpnconfig-f-sys.md#getSysVpnConfig-1) | Get the configuration of system VPN network by the specified vpnId. |
+| <!--DelRow-->[getSysVpnConfigList](arkts-vpn-getsysvpnconfiglist-f-sys.md#getSysVpnConfigList-1) | Get all system VPN network configuration. |
+| <!--DelRow-->[off](arkts-vpn-off-f-sys.md#off-1) | Unsubscribes from vpn connect state changes. |
+| <!--DelRow-->[off](arkts-vpn-off-f-sys.md#off-2) | Unsubscribes from vpn connect state changes. |
+| <!--DelRow-->[on](arkts-vpn-on-f-sys.md#on-1) | Subscribes to vpn connect state changes. |
+| <!--DelRow-->[on](arkts-vpn-on-f-sys.md#on-2) | Subscribes to vpn connect state changes. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [IpsecVpnConfig](arkts-network-ipsecvpnconfig-i-sys.md) | Define configuration of the ipsec VPN network. |
-| [L2tpVpnConfig](arkts-network-l2tpvpnconfig-i-sys.md) | Define configuration of the l2tp VPN network. |
-| [OpenVpnConfig](arkts-network-openvpnconfig-i-sys.md) | Define configuration of the open VPN network. |
-| [SysVpnConfig](arkts-network-sysvpnconfig-i-sys.md) | Define configuration of the system VPN network. |
-| [VpnConfig](arkts-network-vpnconfig-i-sys.md) | Define configuration of the VPN network. |
-| [VpnConnection](arkts-network-vpnconnection-i-sys.md) | Defines a VPN connection. |
-<!--DelEnd-->
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [SysVpnType](arkts-network-sysvpntype-e-sys.md) | Defines the type for the VPN network. |
-<!--DelEnd-->
+| <!--DelRow-->[IpsecVpnConfig](arkts-vpn-ipsecvpnconfig-i-sys.md) | Define configuration of the ipsec VPN network. |
+| <!--DelRow-->[L2tpVpnConfig](arkts-vpn-l2tpvpnconfig-i-sys.md) | Define configuration of the l2tp VPN network. |
+| <!--DelRow-->[OpenVpnConfig](arkts-vpn-openvpnconfig-i-sys.md) | Define configuration of the open VPN network. |
+| <!--DelRow-->[SysVpnConfig](arkts-vpn-sysvpnconfig-i-sys.md) | Define configuration of the system VPN network. |
+| <!--DelRow-->[VpnConfig](arkts-vpn-vpnconfig-i-sys.md) | Define configuration of the VPN network. |
+| <!--DelRow-->[VpnConnection](arkts-vpn-vpnconnection-i-sys.md) | Defines a VPN connection. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [AbilityContext](arkts-network-abilitycontext-t.md) | The context of an ability. It allows access to ability-specific resources. |
-| [LinkAddress](arkts-network-linkaddress-t.md) | Get network link information. |
-| [RouteInfo](arkts-network-routeinfo-t.md) | Get network route information. |
+| [AbilityContext](arkts-vpn-abilitycontext-t.md) | The context of an ability. It allows access to ability-specific resources. |
+| [LinkAddress](arkts-vpn-linkaddress-t.md) | Get network link information. |
+| [RouteInfo](arkts-vpn-routeinfo-t.md) | Get network route information. |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| <!--DelRow-->[SysVpnType](arkts-vpn-sysvpntype-e-sys.md) | Defines the type for the VPN network. |
 

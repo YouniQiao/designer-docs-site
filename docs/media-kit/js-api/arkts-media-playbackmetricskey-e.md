@@ -1,5 +1,9 @@
 # PlaybackMetricsKey
 
+```TypeScript
+enum PlaybackMetricsKey
+```
+
 Enumerates the playback metric keys.
 
 **Since:** 23
@@ -64,7 +68,7 @@ Total number of requests.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -90,7 +94,7 @@ Total loading size, in bytes.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -128,7 +132,7 @@ Cumulative lip async count.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -142,7 +146,7 @@ Total lip async duration during the playback, in milliseconds.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 

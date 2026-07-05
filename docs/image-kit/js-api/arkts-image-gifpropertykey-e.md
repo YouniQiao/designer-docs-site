@@ -1,6 +1,10 @@
 # GifPropertyKey
 
-Enumerates the GIF image information.
+```TypeScript
+enum GifPropertyKey
+```
+
+表示GIF图片信息的枚举。
 
 **Since:** 20
 
@@ -12,7 +16,7 @@ Enumerates the GIF image information.
 GIF_DELAY_TIME = 'GifDelayTime'
 ```
 
-Duration for playing each frame of a GIF image, in milliseconds.
+GIF图片钳制后的帧延迟时长。钳制范围为[100, 65535]。 单位：毫秒（ms）。
 
 **Since:** 20
 
@@ -24,7 +28,7 @@ Duration for playing each frame of a GIF image, in milliseconds.
 GIF_DISPOSAL_TYPE = 'GifDisposalType'
 ```
 
-Disposal type of each frame in a GIF image.
+GIF图片的每帧处置方式。 - 0表示未指定。 - 1表示不处置。 - 2表示还原为背景色。 - 3表示还原为前一帧。 该值为正整数。
 
 **Since:** 20
 
@@ -36,11 +40,11 @@ Disposal type of each frame in a GIF image.
 GIF_HAS_GLOBAL_COLOR_MAP = 'GifHasGlobalColorMap'
 ```
 
-Whether the GIF image has a global color map.
+GIF图像是否包含全局调色板。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -50,11 +54,11 @@ Whether the GIF image has a global color map.
 GIF_CANVAS_WIDTH = 'GifCanvasWidth'
 ```
 
-Canvas width.
+GIF图像的画布宽度。 单位：像素（px）。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -64,11 +68,11 @@ Canvas width.
 GIF_CANVAS_HEIGHT = 'GifCanvasHeight'
 ```
 
-Canvas height.
+GIF图像的画布高度。 单位：像素（px）。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -78,11 +82,11 @@ Canvas height.
 GIF_LOOP_COUNT = 'GifLoopCount'
 ```
 
-Loop count.
+GIF图片循环次数。 取值为0或正整数。0表示无限循环，其他值表示实际循环次数。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -92,11 +96,11 @@ Loop count.
 GIF_UNCLAMPED_DELAY_TIME = 'GifUnclampedDelayTime'
 ```
 
-Unclamped delay of each frame in milliseconds.
+GIF图片未钳制的帧延迟时间。 单位：毫秒（ms）。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

@@ -1,4 +1,4 @@
-# AudioHRTFAnonymousDescriptor (System API)
+# AudioHRTFAnonymousDescriptor
 
 Anonymous personalzied HRTF file descriptor for cross-process transfer.
 
@@ -11,40 +11,40 @@ Anonymous personalzied HRTF file descriptor for cross-process transfer.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
-## fd
+## length
 
 ```TypeScript
-fd: number
+length: long
 ```
 
-The file descriptor of personalzied HRTF.
+Total size of personalzied HRTF data in bytes.
 
-**Type:** number
+**Type:** long
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 
 **System API:** This is a system API.
 
-## length
+## fd
 
 ```TypeScript
-length: number
+fd: int
 ```
 
-Total size of personalzied HRTF data in bytes.
+The file descriptor of personalzied HRTF.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 

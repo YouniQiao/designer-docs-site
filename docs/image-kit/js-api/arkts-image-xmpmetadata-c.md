@@ -9,7 +9,7 @@ XMPMetadata instance.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## enumerateTags
@@ -26,7 +26,7 @@ Enumerate the XMP tags from specified path and uses a callback to return the res
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -34,15 +34,15 @@ Enumerate the XMP tags from specified path and uses a callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | (path: string, tag: XMPTag) =&gt; boolean | Yes | Callback used to return the XMP node and the corresponding XMPTag.The callback receives a path argument that follows the XMP namespace:path format. |
-| rootPath | string | No | Enumerate root path. If this parameter is not specified, the default value is rootpath. |
-| options | XMPEnumerateOptions | No | XMP enumerate option. |
+| callback | (path: string, tag: XMPTag) => boolean | Yes | Callback used to return the XMP node and the corresponding XMPTag.  The callback receives a path argument that follows the XMP namespace:path format. |
+| rootPath | string | No |  |
+| options | XMPEnumerateOptions | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The rootPath syntax is invalid. |
+| 7600206 | Invalid argument. Possible causes: 1. Namespace is not registered.  2. The rootPath syntax is invalid. |
 
 ## getBlob
 
@@ -54,7 +54,7 @@ Obtains the XMP metadata as a blob.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -62,14 +62,14 @@ Obtains the XMP metadata as a blob.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;ArrayBuffer&gt; | A Promise instance used to return the ArrayBuffer of blob. |
+| Promise&lt;ArrayBuffer> | A Promise instance used to return the ArrayBuffer of blob. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600301](../errorcode-image.md#7600301-memory-allocation-failure) | Memory alloc failed. |
-| [7600302](../errorcode-image.md#7600302-memory-copy-failure) | Memory copy failed. |
+| 7600301 | Memory alloc failed. |
+| 7600302 | Memory copy failed. |
 
 ## getTag
 
@@ -81,7 +81,7 @@ Get a single XMP tag from specified path.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -95,13 +95,13 @@ Get a single XMP tag from specified path.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;XMPTag \| null&gt; | Promise used to return the XMP tag. |
+| Promise&lt;XMPTag \| null> | Promise used to return the XMP tag. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The path syntax is invalid. |
+| 7600206 | Invalid argument. Possible causes: 1. Namespace is not registered.  2. The path syntax is invalid. |
 
 ## getTags
 
@@ -113,7 +113,7 @@ Get all XMP tags from specified path.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -121,20 +121,20 @@ Get all XMP tags from specified path.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| rootPath | string | No | The specified path. If this parameter is not specified, the default value is rootpath. |
-| options | XMPEnumerateOptions | No | XMP enumerate option. |
+| rootPath | string | No |  |
+| options | XMPEnumerateOptions | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Record&lt;string, XMPTag&gt;&gt; | A Promise instance used to return all XMP tags. |
+| Promise&lt;Record&lt;string, XMPTag>> | A Promise instance used to return all XMP tags. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The rootPath syntax is invalid. |
+| 7600206 | Invalid argument. Possible causes: 1. Namespace is not registered.  2. The rootPath syntax is invalid. |
 
 ## registerXMPNamespace
 
@@ -146,7 +146,7 @@ Register a new namespace according to the xml namespace and prefix.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -160,13 +160,13 @@ Register a new namespace according to the xml namespace and prefix.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, anerror message is returned. |
+| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an  error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Invalid namespace format.2. The uri is already registered. 3. The prefix is already registered. |
+| 7600206 | Invalid argument. Possible causes: 1. Invalid namespace format.  2. The uri is already registered. 3. The prefix is already registered. |
 
 ## removeTag
 
@@ -178,7 +178,7 @@ Remove the XMP tag from specified path.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -192,13 +192,13 @@ Remove the XMP tag from specified path.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, anerror message is returned. |
+| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an  error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The path syntax is invalid. |
+| 7600206 | Invalid argument. Possible causes: 1. Namespace is not registered.  2. The path syntax is invalid. |
 
 ## setBlob
 
@@ -210,7 +210,7 @@ Set a blob into the XMP metadata.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -224,13 +224,13 @@ Set a blob into the XMP metadata.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, anerror message is returned. |
+| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an  error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. The buffer is empty or invalid. |
+| 7600206 | Invalid argument. Possible causes: 1. The buffer is empty or invalid. |
 
 ## setValue
 
@@ -242,7 +242,7 @@ Set the XMP type and value of the XMP tag in the specified path.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -252,17 +252,17 @@ Set the XMP type and value of the XMP tag in the specified path.
 | --- | --- | --- | --- |
 | path | string | Yes | The specified path of the target XMP tag.(e.g., "dc:title"). |
 | type | XMPTagType | Yes | The specified XMP tag type. |
-| value | string | No | The specified value. If this parameter is not specified, the default value is empty. |
+| value | string | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance used to return the operation result. If the operation fails, anerror message is returned. |
+| Promise&lt;void> | A Promise instance used to return the operation result. If the operation fails, an  error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7600206](../errorcode-image.md#7600206-invalid-parameter) | Invalid argument. Possible causes: 1. Namespace is not registered.2. The path syntax is invalid. 3. The path does not match the type. 4. The value is invalid for the type. |
+| 7600206 | Invalid argument. Possible causes: 1. Namespace is not registered.  2. The path syntax is invalid. 3. The path does not match the type. 4. The value is invalid for the type. |
 

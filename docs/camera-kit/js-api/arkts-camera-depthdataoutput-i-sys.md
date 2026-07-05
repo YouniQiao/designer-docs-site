@@ -1,8 +1,8 @@
-# DepthDataOutput (System API)
+# DepthDataOutput
 
-Implements depth data output. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput).
+Implements depth data output. It inherits from [CameraOutput]camera.CameraOutput.
 
-**Inheritance/Implementation:** DepthDataOutput extends [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput)
+**Inheritance:** DepthDataOutputextends: CameraOutput.
 
 **Since:** 13
 
@@ -13,7 +13,7 @@ Implements depth data output. It inherits from [CameraOutput](arkts-camera-camer
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## off('depthDataAvailable')
@@ -34,14 +34,14 @@ Unsubscribes from depth data availability events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'depthDataAvailable' | Yes | Event type. The value is fixed at **'depthDataAvailable'**. The event canbe listened for when a depthDataOutput instance is created. |
-| callback | AsyncCallback&lt;DepthData&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback objectcannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacksare canceled. |
+| type | 'depthDataAvailable' | Yes | Event type. The value is fixed at 'depthDataAvailable'. The event can  be listened for when a depthDataOutput instance is created. |
+| callback | AsyncCallback&lt;DepthData> | No | Callback used to return the result. If this parameter is specified  , the subscription to the specified event with the specified callback is canceled. (The callback object  cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks  are canceled. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -79,14 +79,14 @@ Unsubscribes from DepthDataOutput error events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when adepthDataOutput instance is created. |
-| callback | ErrorCallback | No | Callback used to return the result. If this parameter is specified, thesubscription to the specified event with the specified callback is canceled. (The callback object cannot bean anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks arecanceled. |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  depthDataOutput instance is created. |
+| callback | ErrorCallback | No | Callback used to return the result. If this parameter is specified, the  subscription to the specified event with the specified callback is canceled. (The callback object cannot be  an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are  canceled. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -96,6 +96,58 @@ function unregisterDepthDataOutputError(depthDataOutput: camera.DepthDataOutput)
 }
 
 ```
+
+## offDepthDataAvailable
+
+```TypeScript
+offDepthDataAvailable(callback?: AsyncCallback<DepthData>): void
+```
+
+Unsubscribes from depth data objects available event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;DepthData> | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## offError
+
+```TypeScript
+offError(callback?: ErrorCallback): void
+```
+
+Unsubscribes from error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
 
 ## on('depthDataAvailable')
 
@@ -115,14 +167,14 @@ Subscribes to depth data availability events. This API uses an asynchronous call
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'depthDataAvailable' | Yes | Event type. The value is fixed at **'depthDataAvailable'**. The event canbe listened for when a depthDataOutput instance is created. |
-| callback | AsyncCallback&lt;DepthData&gt; | Yes | Callback used to listen for depth data. |
+| type | 'depthDataAvailable' | Yes | Event type. The value is fixed at 'depthDataAvailable'. The event can  be listened for when a depthDataOutput instance is created. |
+| callback | AsyncCallback&lt;DepthData> | Yes | Callback used to listen for depth data. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -160,14 +212,14 @@ Subscribes to DepthDataOutput error events. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when adepthDataOutput instance is created. |
-| callback | ErrorCallback | Yes | Callback used to return an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode). |
+| type | 'error' | Yes | Event type. The value is fixed at 'error'. The event can be listened for when a  depthDataOutput instance is created. |
+| callback | ErrorCallback | Yes | Callback used to return an error code defined in  [CameraErrorCode]camera.CameraErrorCode. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 **Example**
 
@@ -183,6 +235,58 @@ function registerDepthDataOutputError(depthDataOutput: camera.DepthDataOutput): 
 }
 
 ```
+
+## onDepthDataAvailable
+
+```TypeScript
+onDepthDataAvailable(callback: AsyncCallback<DepthData>): void
+```
+
+Subscribes to depth data objects available event callback.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;DepthData> | Yes | Callback used to get the available DepthData objects. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+
+## onError
+
+```TypeScript
+onError(callback: ErrorCallback): void
+```
+
+Subscribes to error events.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | Yes | Callback used to get the depth data output errors. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
 
 ## start
 
@@ -202,15 +306,15 @@ Starts depth data output. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400201 | Camera service fatal error. |
 
 **Example**
 
@@ -245,15 +349,15 @@ Stops depth data output. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400201 | Camera service fatal error. |
 
 **Example**
 

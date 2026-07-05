@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MissionInfo](arkts-ability-missioninfo-i-sys.md) | The module defines detailed information about a mission. The information can be obtained through [getMissionInfo](arkts-ability-getmissioninfo-f-sys.md#getmissioninfo-1) . |
-<!--DelEnd-->
+| <!--DelRow-->[MissionInfo](arkts-missioninfo-i.md) | 表示任务的详细信息，可以通过 [getMissionInfo]{@link ./../@ohos.app.ability.missionManager:missionManager.getMissionInfo(deviceId: string, missionId: int, callback: AsyncCallback<MissionInfo>)} 获取。 |
 

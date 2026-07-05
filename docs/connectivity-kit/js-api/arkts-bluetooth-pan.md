@@ -9,7 +9,7 @@ Provides methods to accessing bluetooth PAN(Personal Area Networking Profile)-re
 ## Modules to Import
 
 ```TypeScript
-import { pan } from '@ohos.bluetooth.pan';
+import { pan } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -18,25 +18,17 @@ import { pan } from '@ohos.bluetooth.pan';
 
 | Name | Description |
 | --- | --- |
-| [createPanProfile](arkts-connectivity-createpanprofile-f.md#createpanprofile-1) | create the instance of pan profile. |
+| [createPanProfile](arkts-pan-createpanprofile-f.md#createPanProfile-1) | create the instance of pan profile. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PanProfile](arkts-connectivity-panprofile-i.md) | Manager pan host profile. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [PanProfile](arkts-connectivity-panprofile-i-sys.md) | Manager pan host profile. |
-<!--DelEnd-->
+| [PanProfile](arkts-pan-panprofile-i.md) | Manager pan host profile. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
+| [BaseProfile](arkts-pan-baseprofile-t.md) | Base interface of profile. |
 

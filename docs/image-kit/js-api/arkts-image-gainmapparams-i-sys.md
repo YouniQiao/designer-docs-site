@@ -1,6 +1,6 @@
-# GainmapParams (System API)
+# GainmapParams
 
-Describes gainmap generation parameters.
+Gainmap（增益图）参数设置选项。
 
 **Since:** 26.0.0
 
@@ -11,7 +11,7 @@ Describes gainmap generation parameters.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## isFullSizeGainmap
@@ -20,13 +20,13 @@ import { image } from '@ohos.multimedia.image';
 isFullSizeGainmap: boolean
 ```
 
-Indicates generating a full-size gainmap or a 1/2 downscaled gainmap.
+返回Picture中的Gainmap（增益图）是否使用全尺寸图。 true表示使用全尺寸图，宽高和主图一致；false表示不使用全尺寸图，宽高均为主图的一半。默认值为false。
 
 **Type:** boolean
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

@@ -1,0 +1,64 @@
+# DeviceInfo
+
+设备详细信息。
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Driver.ExternalDevice
+
+**系统接口：** 此接口为系统接口。
+
+## 导入模块
+
+```TypeScript
+import { deviceManager } from '@kit.DriverDevelopmentKit';
+```
+
+## driverUid
+
+```TypeScript
+driverUid?: string
+```
+
+设备匹配的驱动UID。
+
+**类型：** string
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Driver.ExternalDevice
+
+**系统接口：** 此接口为系统接口。
+
+## deviceId
+
+```TypeScript
+deviceId: long
+```
+
+设备ID。
+
+**类型：** long
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Driver.ExternalDevice
+
+**系统接口：** 此接口为系统接口。
+
+## isDriverMatched
+
+```TypeScript
+isDriverMatched: boolean
+```
+
+设备是否匹配到驱动。`true`：匹配到驱动；`false`：未匹配到驱动。
+
+**类型：** boolean
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Driver.ExternalDevice
+
+**系统接口：** 此接口为系统接口。
+

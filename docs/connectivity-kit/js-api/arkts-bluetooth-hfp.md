@@ -9,7 +9,7 @@ Provides methods to accessing bluetooth call-related capabilities.
 ## Modules to Import
 
 ```TypeScript
-import { hfp } from '@ohos.bluetooth.hfp';
+import { hfp } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -18,21 +18,19 @@ import { hfp } from '@ohos.bluetooth.hfp';
 
 | Name | Description |
 | --- | --- |
-| [createHfpAgProfile](arkts-connectivity-createhfpagprofile-f.md#createhfpagprofile-1) | create the instance of hfp profile. |
-| [createHfpHfProfile](arkts-connectivity-createhfphfprofile-f.md#createhfphfprofile-1) | create the instance of HF(Hands-Free Unit) for HFP(Hands-Free Profile). |
+| [createHfpAgProfile](arkts-hfp-createhfpagprofile-f.md#createHfpAgProfile-1) | create the instance of hfp profile. |
+| [createHfpHfProfile](arkts-hfp-createhfphfprofile-f.md#createHfpHfProfile-1) | create the instance of HF(Hands-Free Unit) for HFP(Hands-Free Profile). |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [HandsFreeAudioGatewayProfile](arkts-connectivity-handsfreeaudiogatewayprofile-i-sys.md) | Manager hfp source profile. |
-| [HandsFreeHfProfile](arkts-connectivity-handsfreehfprofile-i-sys.md) | Manage hfp sink profile. |
-<!--DelEnd-->
+| [HandsFreeAudioGatewayProfile](arkts-hfp-handsfreeaudiogatewayprofile-i.md) | Manager hfp source profile. |
+| [HandsFreeHfProfile](arkts-hfp-handsfreehfprofile-i.md) | Manage hfp sink profile. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
+| [BaseProfile](arkts-hfp-baseprofile-t.md) | Base interface of profile. |
 

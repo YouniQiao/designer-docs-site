@@ -1,6 +1,6 @@
 # @ohos.app.ability.sendableContextManager
 
-The sendableContextManager module provides APIs for converting between Context and [SendableContext](arkts-ability-sendablecontext-i.md#sendablecontext) objects.
+sendableContextManager模块提供Context与[SendableContext]{@link ./application/SendableContext:SendableContext}相互转换的能力。
 
 **Since:** 12
 
@@ -9,7 +9,7 @@ The sendableContextManager module provides APIs for converting between Context a
 ## Modules to Import
 
 ```TypeScript
-import { sendableContextManager } from '@ohos.app.ability.sendableContextManager';
+import { sendableContextManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,16 +18,16 @@ import { sendableContextManager } from '@ohos.app.ability.sendableContextManager
 
 | Name | Description |
 | --- | --- |
-| [convertFromContext](arkts-ability-convertfromcontext-f.md#convertfromcontext-1) | Converts a Context object to a SendableContext object. |
-| [convertToAbilityStageContext](arkts-ability-converttoabilitystagecontext-f.md#converttoabilitystagecontext-1) | Converts a SendableContext object to an AbilityStageContext object. |
-| [convertToApplicationContext](arkts-ability-converttoapplicationcontext-f.md#converttoapplicationcontext-1) | Converts a SendableContext object to an ApplicationContext object. |
-| [convertToContext](arkts-ability-converttocontext-f.md#converttocontext-1) | Converts a SendableContext object to a Context object. |
-| [convertToUIAbilityContext](arkts-ability-converttouiabilitycontext-f.md#converttouiabilitycontext-1) | Converts a SendableContext object to a UIAbilityContext object. |
-| [setEventHubMultithreadingEnabled](arkts-ability-seteventhubmultithreadingenabled-f.md#seteventhubmultithreadingenabled-1) | Enables the cross-thread data transfer feature of [EventHub](arkts-ability-eventhub-c.md#eventhub) in [Context](arkts-ability-context-depr-i.md#context). &gt; **NOTE** &gt; &gt; - When multiple Context objects communicate, you need to call this API to set each Context object to support &gt; EventHub cross-thread data transfer. |
+| [convertFromContext](arkts-sendablecontextmanager-convertfromcontext-f.md#convertFromContext-1) | 将Context转换为SendableContext对象。 |
+| [convertToAbilityStageContext](arkts-sendablecontextmanager-converttoabilitystagecontext-f.md#convertToAbilityStageContext-1) | 将SendableContext对象转换为AbilityStageContext。 |
+| [convertToApplicationContext](arkts-sendablecontextmanager-converttoapplicationcontext-f.md#convertToApplicationContext-1) | 将SendableContext对象转换为ApplicationContext。 |
+| [convertToContext](arkts-sendablecontextmanager-converttocontext-f.md#convertToContext-1) | 将SendableContext对象转换为Context。 |
+| [convertToUIAbilityContext](arkts-sendablecontextmanager-converttouiabilitycontext-f.md#convertToUIAbilityContext-1) | 将SendableContext对象转换为UIAbilityContext。 |
+| [setEventHubMultithreadingEnabled](arkts-sendablecontextmanager-seteventhubmultithreadingenabled-f.md#setEventHubMultithreadingEnabled-1) | 设置[Context]{@link ./app/context}中的[EventHub]{@link ./application/EventHub:EventHub}是否启用跨线程通信能力。 > **说明：** > > - 当多个Context进行通信时，需要调用该接口设置每个Context都支持EventHub跨线程数据传递功能。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [SendableContext](arkts-ability-sendablecontext-t.md) | Level-2 module SendableContext. |
+| [SendableContext](arkts-sendablecontextmanager-sendablecontext-t.md) | SendableContext二级模块 |
 

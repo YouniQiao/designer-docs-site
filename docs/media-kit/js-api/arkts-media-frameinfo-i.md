@@ -9,22 +9,22 @@ Defines the frame info when fetch picture form a video.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
-## actualTimeUs
+## result
 
 ```TypeScript
-actualTimeUs?: number
+result: FetchResult
 ```
 
-The actual frame time.
+The fetch result code - succeed, failed or cancelled.
 
-**Type:** number
+**Type:** FetchResult
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
@@ -40,39 +40,39 @@ The image extracted from video.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
 ## requestedTimeUs
 
 ```TypeScript
-requestedTimeUs: number
+requestedTimeUs: long
 ```
 
 The requested frame time.
 
-**Type:** number
+**Type:** long
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## result
+## actualTimeUs
 
 ```TypeScript
-result: FetchResult
+actualTimeUs?: long
 ```
 
-The fetch result code - succeed, failed or cancelled.
+The actual frame time.
 
-**Type:** FetchResult
+**Type:** long
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 

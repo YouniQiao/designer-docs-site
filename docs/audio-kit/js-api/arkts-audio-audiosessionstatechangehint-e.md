@@ -1,6 +1,10 @@
 # AudioSessionStateChangeHint
 
-Enumerates the hints for audio session state changes. The hint is obtained when an [AudioSessionStateChangedEvent](arkts-audio-audiosessionstatechangedevent-i.md#audiosessionstatechangedevent) is received. The hint specifies the action (such as audio pause or volume adjustment) to take on the audio session based on the focus strategy. For details, see [Audio Session Management](../../../../media/audio/audio-session-management.md).
+```TypeScript
+enum AudioSessionStateChangeHint
+```
+
+Enumerates the hints for audio session state changes. The hint is obtained when an [AudioSessionStateChangedEvent](arkts-audio-audiosessionstatechangedevent-i.md#AudioSessionStateChangedEvent) is received. The hint specifies the action (such as audio pause or volume adjustment) to take on the audio session based on the focus strategy. For details, see [Audio Session Management](docroot://media/audio/audio-session-management.md).
 
 **Since:** 20
 
@@ -60,7 +64,7 @@ A hint is displayed, indicating that the audio session is stopped by the system 
 AUDIO_SESSION_STATE_CHANGE_HINT_DUCK = 4
 ```
 
-A hint is displayed, indicating that audio ducking starts and the audio is played at a lower volume. If [enableMuteSuggestionWhenMixWithOthers](arkts-audio-audiosessionmanager-i.md#enablemutesuggestionwhenmixwithothers-1) is enabled, you can choose to mute the audio.
+A hint is displayed, indicating that audio ducking starts and the audio is played at a lower volume. If [enableMuteSuggestionWhenMixWithOthers](arkts-audio-audiosessionmanager-i.md#enableMuteSuggestionWhenMixWithOthers) is enabled, you can choose to mute the audio.
 
 **Since:** 20
 
@@ -72,7 +76,7 @@ A hint is displayed, indicating that audio ducking starts and the audio is playe
 AUDIO_SESSION_STATE_CHANGE_HINT_UNDUCK = 5
 ```
 
-A hint is displayed, indicating that audio ducking ends and the audio is played at the normal volume. If [enableMuteSuggestionWhenMixWithOthers](arkts-audio-audiosessionmanager-i.md#enablemutesuggestionwhenmixwithothers-1) is enabled, you can unmute the audio.
+A hint is displayed, indicating that audio ducking ends and the audio is played at the normal volume. If [enableMuteSuggestionWhenMixWithOthers](arkts-audio-audiosessionmanager-i.md#enableMuteSuggestionWhenMixWithOthers) is enabled, you can unmute the audio.
 
 **Since:** 20
 
@@ -88,7 +92,7 @@ Suggests to mute the playback because there is another application begin to play
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -102,7 +106,7 @@ Suggest to unmute the playback because another application's nonmixable audio en
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -116,7 +120,7 @@ The hint can be received only after the parameter {@link #AudioSessionBehaviorFl
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -130,7 +134,7 @@ The hint can be received only after the parameter {@link #AudioSessionBehaviorFl
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

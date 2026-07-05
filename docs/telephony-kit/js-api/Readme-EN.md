@@ -1,441 +1,461 @@
-# ArkTS API<!--arkts-telephonykit-->
+# TelephonyKit
 
 - [@ohos.telephony.call](arkts-telephony-call.md)<!--Del-->
-  - [answerCall(system api)](arkts-telephony-answercall-f-sys.md)<!--DelEnd--><!--Del-->
-  - [cancelCallUpgrade(system api)](arkts-telephony-cancelcallupgrade-f-sys.md)<!--DelEnd--><!--Del-->
-  - [cancelMuted(system api)](arkts-telephony-cancelmuted-f-sys.md)<!--DelEnd--><!--Del-->
-  - [canSetCallTransferTime(system api)](arkts-telephony-cansetcalltransfertime-f-sys.md)<!--DelEnd--><!--Del-->
-  - [closeUnfinishedUssd(system api)](arkts-telephony-closeunfinishedussd-f-sys.md)<!--DelEnd--><!--Del-->
-  - [combineConference(system api)](arkts-telephony-combineconference-f-sys.md)<!--DelEnd--><!--Del-->
-  - [controlCamera(system api)](arkts-telephony-controlcamera-f-sys.md)<!--DelEnd-->
-  - [dial](arkts-telephony-dial-f.md)<!--Del-->
-  - [dialCall(system api)](arkts-telephony-dialcall-f-sys.md)<!--DelEnd--><!--Del-->
-  - [disableImsSwitch(system api)](arkts-telephony-disableimsswitch-f-sys.md)<!--DelEnd--><!--Del-->
-  - [enableImsSwitch(system api)](arkts-telephony-enableimsswitch-f-sys.md)<!--DelEnd-->
-  - [formatPhoneNumber](arkts-telephony-formatphonenumber-f.md)
-  - [formatPhoneNumberToE164](arkts-telephony-formatphonenumbertoe164-f.md)<!--Del-->
-  - [getCallIdListForConference(system api)](arkts-telephony-getcallidlistforconference-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCallRestrictionStatus(system api)](arkts-telephony-getcallrestrictionstatus-f-sys.md)<!--DelEnd-->
-  - [getCallState](arkts-telephony-getcallstate-f.md)
-  - [getCallStateSync](arkts-telephony-getcallstatesync-f.md)
-  - [getCallTransferInfo](arkts-telephony-getcalltransferinfo-f.md)<!--Del-->
-  - [getCallTransferInfo(system api)](arkts-telephony-getcalltransferinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCallWaitingStatus(system api)](arkts-telephony-getcallwaitingstatus-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getMainCallId(system api)](arkts-telephony-getmaincallid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSubCallIdList(system api)](arkts-telephony-getsubcallidlist-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getVoNRState(system api)](arkts-telephony-getvonrstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [hangUpCall(system api)](arkts-telephony-hangupcall-f-sys.md)<!--DelEnd-->
-  - [hasCall](arkts-telephony-hascall-f.md)
-  - [hasCallSync](arkts-telephony-hascallsync-f.md)
-  - [hasVoiceCapability](arkts-telephony-hasvoicecapability-f.md)<!--Del-->
-  - [holdCall(system api)](arkts-telephony-holdcall-f-sys.md)<!--DelEnd--><!--Del-->
-  - [inputDialerSpecialCode(system api)](arkts-telephony-inputdialerspecialcode-f-sys.md)<!--DelEnd-->
-  - [isEmergencyPhoneNumber](arkts-telephony-isemergencyphonenumber-f.md)<!--Del-->
-  - [isImsSwitchEnabled(system api)](arkts-telephony-isimsswitchenabled-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isImsSwitchEnabledSync(system api)](arkts-telephony-isimsswitchenabledsync-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isInEmergencyCall(system api)](arkts-telephony-isinemergencycall-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isNewCallAllowed(system api)](arkts-telephony-isnewcallallowed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isRinging(system api)](arkts-telephony-isringing-f-sys.md)<!--DelEnd--><!--Del-->
-  - [joinConference(system api)](arkts-telephony-joinconference-f-sys.md)<!--DelEnd--><!--Del-->
-  - [kickOutFromConference(system api)](arkts-telephony-kickoutfromconference-f-sys.md)<!--DelEnd-->
-  - [makeCall](arkts-telephony-makecall-f.md)
-  - [makeCallWithToken](arkts-telephony-makecallwithtoken-f.md)<!--Del-->
-  - [muteRinger(system api)](arkts-telephony-muteringer-f-sys.md)<!--DelEnd--><!--Del-->
-  - [off(system api)](arkts-telephony-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offReceiveRttMessage(system api)](arkts-telephony-offreceiverttmessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offRttErrCause(system api)](arkts-telephony-offrtterrcause-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offRttModifyInd(system api)](arkts-telephony-offrttmodifyind-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-telephony-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onReceiveRttMessage(system api)](arkts-telephony-onreceiverttmessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onRttErrCause(system api)](arkts-telephony-onrtterrcause-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onRttModifyInd(system api)](arkts-telephony-onrttmodifyind-f-sys.md)<!--DelEnd--><!--Del-->
-  - [postDialProceed(system api)](arkts-telephony-postdialproceed-f-sys.md)<!--DelEnd--><!--Del-->
-  - [preloadCallUI(system api)](arkts-telephony-preloadcallui-f-sys.md)<!--DelEnd--><!--Del-->
-  - [rejectCall(system api)](arkts-telephony-rejectcall-f-sys.md)<!--DelEnd--><!--Del-->
-  - [removeMissedIncomingCallNotification(system api)](arkts-telephony-removemissedincomingcallnotification-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendCallUiEvent(system api)](arkts-telephony-sendcalluievent-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendRttMessage(system api)](arkts-telephony-sendrttmessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendUssdResponse(system api)](arkts-telephony-sendussdresponse-f-sys.md)<!--DelEnd--><!--Del-->
-  - [separateConference(system api)](arkts-telephony-separateconference-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setAudioDevice(system api)](arkts-telephony-setaudiodevice-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setCallRestriction(system api)](arkts-telephony-setcallrestriction-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setCallRestrictionPassword(system api)](arkts-telephony-setcallrestrictionpassword-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setCallTransfer(system api)](arkts-telephony-setcalltransfer-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setCallWaiting(system api)](arkts-telephony-setcallwaiting-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setDeviceDirection(system api)](arkts-telephony-setdevicedirection-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setDisplaySurface(system api)](arkts-telephony-setdisplaysurface-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setMuted(system api)](arkts-telephony-setmuted-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setPreviewSurface(system api)](arkts-telephony-setpreviewsurface-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setRttCapability(system api)](arkts-telephony-setrttcapability-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setVoNRState(system api)](arkts-telephony-setvonrstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startDTMF(system api)](arkts-telephony-startdtmf-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startRtt(system api)](arkts-telephony-startrtt-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopDTMF(system api)](arkts-telephony-stopdtmf-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopRtt(system api)](arkts-telephony-stoprtt-f-sys.md)<!--DelEnd--><!--Del-->
-  - [switchCall(system api)](arkts-telephony-switchcall-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unHoldCall(system api)](arkts-telephony-unholdcall-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unloadCallUI(system api)](arkts-telephony-unloadcallui-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateImsCallMode(system api)](arkts-telephony-updateimscallmode-f-sys.md)<!--DelEnd--><!--Del-->
-  - [AudioDevice(system api)](arkts-telephony-audiodevice-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AudioDeviceCallbackInfo(system api)](arkts-telephony-audiodevicecallbackinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CallAttributeOptions(system api)](arkts-telephony-callattributeoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CallEventOptions(system api)](arkts-telephony-calleventoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CallRestrictionInfo(system api)](arkts-telephony-callrestrictioninfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CallSessionEvent(system api)](arkts-telephony-callsessionevent-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CallTransferInfo(system api)](arkts-telephony-calltransferinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CallTransferResult(system api)](arkts-telephony-calltransferresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CameraCapabilities(system api)](arkts-telephony-cameracapabilities-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DialCallOptions(system api)](arkts-telephony-dialcalloptions-i-sys.md)<!--DelEnd-->
-  - [DialOptions](arkts-telephony-dialoptions-i.md)<!--Del-->
-  - [DialOptions(system api)](arkts-telephony-dialoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DisconnectedDetails(system api)](arkts-telephony-disconnecteddetails-i-sys.md)<!--DelEnd-->
-  - [EmergencyNumberOptions](arkts-telephony-emergencynumberoptions-i.md)<!--Del-->
-  - [ImsCallModeInfo(system api)](arkts-telephony-imscallmodeinfo-i-sys.md)<!--DelEnd-->
-  - [MakeCallOptions](arkts-telephony-makecalloptions-i.md)<!--Del-->
-  - [MmiCodeResults(system api)](arkts-telephony-mmicoderesults-i-sys.md)<!--DelEnd-->
-  - [NumberFormatOptions](arkts-telephony-numberformatoptions-i.md)<!--Del-->
-  - [NumberMarkInfo(system api)](arkts-telephony-numbermarkinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PeerDimensionsDetail(system api)](arkts-telephony-peerdimensionsdetail-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RejectMessageOptions(system api)](arkts-telephony-rejectmessageoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RttErrorInfo(system api)](arkts-telephony-rtterrorinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RttEventInfo(system api)](arkts-telephony-rtteventinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [RttMessageInfo(system api)](arkts-telephony-rttmessageinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [VoipCallAttribute(system api)](arkts-telephony-voipcallattribute-i-sys.md)<!--DelEnd--><!--Del-->
-  - [AudioDeviceType(system api)](arkts-telephony-audiodevicetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CallAbilityEventId(system api)](arkts-telephony-callabilityeventid-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CallRestrictionMode(system api)](arkts-telephony-callrestrictionmode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CallRestrictionType(system api)](arkts-telephony-callrestrictiontype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CallSessionEventId(system api)](arkts-telephony-callsessioneventid-e-sys.md)<!--DelEnd-->
-  - [CallState](arkts-telephony-callstate-e.md)<!--Del-->
-  - [CallTransferSettingType(system api)](arkts-telephony-calltransfersettingtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CallTransferType(system api)](arkts-telephony-calltransfertype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CallType(system api)](arkts-telephony-calltype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [CallWaitingStatus(system api)](arkts-telephony-callwaitingstatus-e-sys.md)<!--DelEnd-->
-  - [CCallState](arkts-telephony-ccallstate-e.md)<!--Del-->
-  - [ConferenceState(system api)](arkts-telephony-conferencestate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DetailedCallState(system api)](arkts-telephony-detailedcallstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DeviceDirection(system api)](arkts-telephony-devicedirection-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DialScene(system api)](arkts-telephony-dialscene-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DialType(system api)](arkts-telephony-dialtype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DisconnectedReason(system api)](arkts-telephony-disconnectedreason-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ImsCallMode(system api)](arkts-telephony-imscallmode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ImsRttMode(system api)](arkts-telephony-imsrttmode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [MarkType(system api)](arkts-telephony-marktype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [MmiCodeResult(system api)](arkts-telephony-mmicoderesult-e-sys.md)<!--DelEnd--><!--Del-->
-  - [RestrictionStatus(system api)](arkts-telephony-restrictionstatus-e-sys.md)<!--DelEnd--><!--Del-->
-  - [RttState(system api)](arkts-telephony-rttstate-e-sys.md)<!--DelEnd-->
-  - [TelCallState](arkts-telephony-telcallstate-e.md)<!--Del-->
-  - [TransferStatus(system api)](arkts-telephony-transferstatus-e-sys.md)<!--DelEnd--><!--Del-->
-  - [VideoRequestResultType(system api)](arkts-telephony-videorequestresulttype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [VideoStateType(system api)](arkts-telephony-videostatetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [VoNRState(system api)](arkts-telephony-vonrstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [XCallType(system api)](arkts-telephony-xcalltype-e-sys.md)<!--DelEnd-->
-- [@ohos.telephony.data](arkts-telephony-data.md)<!--Del-->
-  - [disableCellularData(system api)](arkts-telephony-disablecellulardata-f-sys.md)<!--DelEnd--><!--Del-->
-  - [disableCellularDataRoaming(system api)](arkts-telephony-disablecellulardataroaming-f-sys.md)<!--DelEnd--><!--Del-->
-  - [enableCellularData(system api)](arkts-telephony-enablecellulardata-f-sys.md)<!--DelEnd--><!--Del-->
-  - [enableCellularDataRoaming(system api)](arkts-telephony-enablecellulardataroaming-f-sys.md)<!--DelEnd-->
-  - [getActiveApnName](arkts-telephony-getactiveapnname-f.md)
-  - [getCellularDataFlowType](arkts-telephony-getcellulardataflowtype-f.md)
-  - [getCellularDataState](arkts-telephony-getcellulardatastate-f.md)
-  - [getDefaultCellularDataSimId](arkts-telephony-getdefaultcellulardatasimid-f.md)
-  - [getDefaultCellularDataSlotId](arkts-telephony-getdefaultcellulardataslotid-f.md)
-  - [getDefaultCellularDataSlotIdSync](arkts-telephony-getdefaultcellulardataslotidsync-f.md)
-  - [isCellularDataEnabled](arkts-telephony-iscellulardataenabled-f.md)
-  - [isCellularDataEnabledSync](arkts-telephony-iscellulardataenabledsync-f.md)
-  - [isCellularDataRoamingEnabled](arkts-telephony-iscellulardataroamingenabled-f.md)
-  - [isCellularDataRoamingEnabledSync](arkts-telephony-iscellulardataroamingenabledsync-f.md)
-  - [queryAllApns](arkts-telephony-queryallapns-f.md)
-  - [queryApnIds](arkts-telephony-queryapnids-f.md)<!--Del-->
-  - [setDefaultCellularDataSlotId(system api)](arkts-telephony-setdefaultcellulardataslotid-f-sys.md)<!--DelEnd-->
-  - [setPreferredApn](arkts-telephony-setpreferredapn-f.md)
-  - [showSystemApnSettings](arkts-telephony-showsystemapnsettings-f.md)
-  - [ApnInfo](arkts-telephony-apninfo-i.md)
-  - [DataConnectState](arkts-telephony-dataconnectstate-e.md)
-  - [DataFlowType](arkts-telephony-dataflowtype-e.md)
-- [@ohos.telephony.esim](arkts-telephony-esim.md)
-  - [addProfile](arkts-telephony-addprofile-f.md)<!--Del-->
-  - [cancelSession(system api)](arkts-telephony-cancelsession-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deleteProfile(system api)](arkts-telephony-deleteprofile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [downloadProfile(system api)](arkts-telephony-downloadprofile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getContractInfo(system api)](arkts-telephony-getcontractinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getDefaultSmdpAddress(system api)](arkts-telephony-getdefaultsmdpaddress-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getDownloadableProfileMetadata(system api)](arkts-telephony-getdownloadableprofilemetadata-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getDownloadableProfiles(system api)](arkts-telephony-getdownloadableprofiles-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getEid(system api)](arkts-telephony-geteid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getEsimFreeStorage(system api)](arkts-telephony-getesimfreestorage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getEuiccInfo(system api)](arkts-telephony-geteuiccinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getEuiccProfileInfoList(system api)](arkts-telephony-geteuiccprofileinfolist-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getOsuStatus(system api)](arkts-telephony-getosustatus-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSupportedPkids(system api)](arkts-telephony-getsupportedpkids-f-sys.md)<!--DelEnd-->
-  - [isSupported](arkts-telephony-issupported-f.md)<!--Del-->
-  - [reserveProfilesForFactoryRestore(system api)](arkts-telephony-reserveprofilesforfactoryrestore-f-sys.md)<!--DelEnd--><!--Del-->
-  - [resetMemory(system api)](arkts-telephony-resetmemory-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setDefaultSmdpAddress(system api)](arkts-telephony-setdefaultsmdpaddress-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setProfileNickname(system api)](arkts-telephony-setprofilenickname-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startOsu(system api)](arkts-telephony-startosu-f-sys.md)<!--DelEnd--><!--Del-->
-  - [switchToProfile(system api)](arkts-telephony-switchtoprofile-f-sys.md)<!--DelEnd-->
-  - [AccessRule](arkts-telephony-accessrule-i.md)<!--Del-->
-  - [ContractRequestData(system api)](arkts-telephony-contractrequestdata-i-sys.md)<!--DelEnd-->
-  - [DownloadableProfile](arkts-telephony-downloadableprofile-i.md)<!--Del-->
-  - [DownloadConfiguration(system api)](arkts-telephony-downloadconfiguration-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DownloadProfileResult(system api)](arkts-telephony-downloadprofileresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [EuiccInfo(system api)](arkts-telephony-euiccinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [EuiccProfile(system api)](arkts-telephony-euiccprofile-i-sys.md)<!--DelEnd--><!--Del-->
-  - [GetDownloadableProfileMetadataResult(system api)](arkts-telephony-getdownloadableprofilemetadataresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [GetDownloadableProfilesResult(system api)](arkts-telephony-getdownloadableprofilesresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [GetEuiccProfileInfoListResult(system api)](arkts-telephony-geteuiccprofileinfolistresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [OperatorId(system api)](arkts-telephony-operatorid-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CancelReason(system api)](arkts-telephony-cancelreason-e-sys.md)<!--DelEnd--><!--Del-->
-  - [OsuStatus(system api)](arkts-telephony-osustatus-e-sys.md)<!--DelEnd--><!--Del-->
-  - [PolicyRules(system api)](arkts-telephony-policyrules-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ProfileClass(system api)](arkts-telephony-profileclass-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ProfileState(system api)](arkts-telephony-profilestate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ResetOption(system api)](arkts-telephony-resetoption-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ResultCode(system api)](arkts-telephony-resultcode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SolvableErrors(system api)](arkts-telephony-solvableerrors-e-sys.md)<!--DelEnd-->
+  - [muteRinger(system api)](arkts-call-muteringer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopDTMF(system api)](arkts-call-stopdtmf-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startDTMF(system api)](arkts-call-startdtmf-f-sys.md)<!--DelEnd--><!--Del-->
+  - [holdCall(system api)](arkts-call-holdcall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableImsSwitch(system api)](arkts-call-enableimsswitch-f-sys.md)<!--DelEnd-->
+  - [makeCall](arkts-call-makecall-f.md)<!--Del-->
+  - [inputDialerSpecialCode(system api)](arkts-call-inputdialerspecialcode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isImsSwitchEnabled(system api)](arkts-call-isimsswitchenabled-f-sys.md)<!--DelEnd-->
+  - [getCallTransferInfo](arkts-call-getcalltransferinfo-f.md)<!--Del-->
+  - [getCallTransferInfo(system api)](arkts-call-getcalltransferinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isImsSwitchEnabledSync(system api)](arkts-call-isimsswitchenabledsync-f-sys.md)<!--DelEnd--><!--Del-->
+  - [answerCall(system api)](arkts-call-answercall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [dialCall(system api)](arkts-call-dialcall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCallIdListForConference(system api)](arkts-call-getcallidlistforconference-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isInEmergencyCall(system api)](arkts-call-isinemergencycall-f-sys.md)<!--DelEnd-->
+  - [hasCall](arkts-call-hascall-f.md)<!--Del-->
+  - [onRttModifyInd(system api)](arkts-call-onrttmodifyind-f-sys.md)<!--DelEnd--><!--Del-->
+  - [joinConference(system api)](arkts-call-joinconference-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setRttCapability(system api)](arkts-call-setrttcapability-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setAudioDevice(system api)](arkts-call-setaudiodevice-f-sys.md)<!--DelEnd--><!--Del-->
+  - [rejectCall(system api)](arkts-call-rejectcall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [cancelCallUpgrade(system api)](arkts-call-cancelcallupgrade-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDeviceDirection(system api)](arkts-call-setdevicedirection-f-sys.md)<!--DelEnd--><!--Del-->
+  - [preloadCallUI(system api)](arkts-call-preloadcallui-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offRttModifyInd(system api)](arkts-call-offrttmodifyind-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCallRestrictionPassword(system api)](arkts-call-setcallrestrictionpassword-f-sys.md)<!--DelEnd-->
+  - [formatPhoneNumberToE164](arkts-call-formatphonenumbertoe164-f.md)<!--Del-->
+  - [getCallRestrictionStatus(system api)](arkts-call-getcallrestrictionstatus-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMainCallId(system api)](arkts-call-getmaincallid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [closeUnfinishedUssd(system api)](arkts-call-closeunfinishedussd-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onReceiveRttMessage(system api)](arkts-call-onreceiverttmessage-f-sys.md)<!--DelEnd-->
+  - [getCallStateSync](arkts-call-getcallstatesync-f.md)<!--Del-->
+  - [setPreviewSurface(system api)](arkts-call-setpreviewsurface-f-sys.md)<!--DelEnd--><!--Del-->
+  - [controlCamera(system api)](arkts-call-controlcamera-f-sys.md)<!--DelEnd--><!--Del-->
+  - [disableImsSwitch(system api)](arkts-call-disableimsswitch-f-sys.md)<!--DelEnd-->
+  - [isEmergencyPhoneNumber](arkts-call-isemergencyphonenumber-f.md)
+  - [hasVoiceCapability](arkts-call-hasvoicecapability-f.md)<!--Del-->
+  - [stopRtt(system api)](arkts-call-stoprtt-f-sys.md)<!--DelEnd--><!--Del-->
+  - [canSetCallTransferTime(system api)](arkts-call-cansetcalltransfertime-f-sys.md)<!--DelEnd--><!--Del-->
+  - [cancelMuted(system api)](arkts-call-cancelmuted-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isNewCallAllowed(system api)](arkts-call-isnewcallallowed-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offReceiveRttMessage(system api)](arkts-call-offreceiverttmessage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCallTransfer(system api)](arkts-call-setcalltransfer-f-sys.md)<!--DelEnd--><!--Del-->
+  - [separateConference(system api)](arkts-call-separateconference-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setMuted(system api)](arkts-call-setmuted-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isRinging(system api)](arkts-call-isringing-f-sys.md)<!--DelEnd--><!--Del-->
+  - [postDialProceed(system api)](arkts-call-postdialproceed-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startRtt(system api)](arkts-call-startrtt-f-sys.md)<!--DelEnd--><!--Del-->
+  - [hangUpCall(system api)](arkts-call-hangupcall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setVoNRState(system api)](arkts-call-setvonrstate-f-sys.md)<!--DelEnd-->
+  - [hasCallSync](arkts-call-hascallsync-f.md)
+  - [makeCallWithToken](arkts-call-makecallwithtoken-f.md)<!--Del-->
+  - [on(system api)](arkts-call-on-f-sys.md)<!--DelEnd-->
+  - [dial](arkts-call-dial-f.md)
+  - [formatPhoneNumber](arkts-call-formatphonenumber-f.md)<!--Del-->
+  - [getVoNRState(system api)](arkts-call-getvonrstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offRttErrCause(system api)](arkts-call-offrtterrcause-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDisplaySurface(system api)](arkts-call-setdisplaysurface-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateImsCallMode(system api)](arkts-call-updateimscallmode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [kickOutFromConference(system api)](arkts-call-kickoutfromconference-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendUssdResponse(system api)](arkts-call-sendussdresponse-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unloadCallUI(system api)](arkts-call-unloadcallui-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCallWaiting(system api)](arkts-call-setcallwaiting-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-call-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendRttMessage(system api)](arkts-call-sendrttmessage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendCallUiEvent(system api)](arkts-call-sendcalluievent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [removeMissedIncomingCallNotification(system api)](arkts-call-removemissedincomingcallnotification-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCallWaitingStatus(system api)](arkts-call-getcallwaitingstatus-f-sys.md)<!--DelEnd--><!--Del-->
+  - [switchCall(system api)](arkts-call-switchcall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSubCallIdList(system api)](arkts-call-getsubcallidlist-f-sys.md)<!--DelEnd-->
+  - [getCallState](arkts-call-getcallstate-f.md)<!--Del-->
+  - [onRttErrCause(system api)](arkts-call-onrtterrcause-f-sys.md)<!--DelEnd--><!--Del-->
+  - [combineConference(system api)](arkts-call-combineconference-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unHoldCall(system api)](arkts-call-unholdcall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCallRestriction(system api)](arkts-call-setcallrestriction-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioDevice(system api)](arkts-call-audiodevice-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioDeviceCallbackInfo(system api)](arkts-call-audiodevicecallbackinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CallAttributeOptions(system api)](arkts-call-callattributeoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CallEventOptions(system api)](arkts-call-calleventoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CallRestrictionInfo(system api)](arkts-call-callrestrictioninfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CallSessionEvent(system api)](arkts-call-callsessionevent-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CallTransferInfo(system api)](arkts-call-calltransferinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CallTransferResult(system api)](arkts-call-calltransferresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CameraCapabilities(system api)](arkts-call-cameracapabilities-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DialCallOptions(system api)](arkts-call-dialcalloptions-i-sys.md)<!--DelEnd-->
+  - [DialOptions](arkts-call-dialoptions-i.md)<!--Del-->
+  - [DisconnectedDetails(system api)](arkts-call-disconnecteddetails-i-sys.md)<!--DelEnd-->
+  - [EmergencyNumberOptions](arkts-call-emergencynumberoptions-i.md)<!--Del-->
+  - [ImsCallModeInfo(system api)](arkts-call-imscallmodeinfo-i-sys.md)<!--DelEnd-->
+  - [MakeCallOptions](arkts-call-makecalloptions-i.md)<!--Del-->
+  - [MmiCodeResults(system api)](arkts-call-mmicoderesults-i-sys.md)<!--DelEnd-->
+  - [NumberFormatOptions](arkts-call-numberformatoptions-i.md)<!--Del-->
+  - [NumberMarkInfo(system api)](arkts-call-numbermarkinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PeerDimensionsDetail(system api)](arkts-call-peerdimensionsdetail-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RejectMessageOptions(system api)](arkts-call-rejectmessageoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RttErrorInfo(system api)](arkts-call-rtterrorinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RttEventInfo(system api)](arkts-call-rtteventinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [RttMessageInfo(system api)](arkts-call-rttmessageinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VoipCallAttribute(system api)](arkts-call-voipcallattribute-i-sys.md)<!--DelEnd--><!--Del-->
+  - [AudioDeviceType(system api)](arkts-call-audiodevicetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CallAbilityEventId(system api)](arkts-call-callabilityeventid-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CallRestrictionMode(system api)](arkts-call-callrestrictionmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CallRestrictionType(system api)](arkts-call-callrestrictiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CallSessionEventId(system api)](arkts-call-callsessioneventid-e-sys.md)<!--DelEnd-->
+  - [CallState](arkts-call-callstate-e.md)<!--Del-->
+  - [CallTransferSettingType(system api)](arkts-call-calltransfersettingtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CallTransferType(system api)](arkts-call-calltransfertype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CallType(system api)](arkts-call-calltype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [CallWaitingStatus(system api)](arkts-call-callwaitingstatus-e-sys.md)<!--DelEnd-->
+  - [CCallState](arkts-call-ccallstate-e.md)<!--Del-->
+  - [ConferenceState(system api)](arkts-call-conferencestate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DetailedCallState(system api)](arkts-call-detailedcallstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceDirection(system api)](arkts-call-devicedirection-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DialScene(system api)](arkts-call-dialscene-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DialType(system api)](arkts-call-dialtype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DisconnectedReason(system api)](arkts-call-disconnectedreason-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ImsCallMode(system api)](arkts-call-imscallmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ImsRttMode(system api)](arkts-call-imsrttmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [MarkType(system api)](arkts-call-marktype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [MmiCodeResult(system api)](arkts-call-mmicoderesult-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RestrictionStatus(system api)](arkts-call-restrictionstatus-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RttState(system api)](arkts-call-rttstate-e-sys.md)<!--DelEnd-->
+  - [TelCallState](arkts-call-telcallstate-e.md)<!--Del-->
+  - [TransferStatus(system api)](arkts-call-transferstatus-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoRequestResultType(system api)](arkts-call-videorequestresulttype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoStateType(system api)](arkts-call-videostatetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [VoNRState(system api)](arkts-call-vonrstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [XCallType(system api)](arkts-call-xcalltype-e-sys.md)<!--DelEnd-->
+- [@ohos.telephony.data](arkts-telephony-data.md)
+  - [queryApnIds](arkts-data-queryapnids-f.md)
+  - [getCellularDataState](arkts-data-getcellulardatastate-f.md)<!--Del-->
+  - [enableCellularDataRoaming(system api)](arkts-data-enablecellulardataroaming-f-sys.md)<!--DelEnd-->
+  - [getDefaultCellularDataSimId](arkts-data-getdefaultcellulardatasimid-f.md)
+  - [isCellularDataRoamingEnabled](arkts-data-iscellulardataroamingenabled-f.md)<!--Del-->
+  - [enableCellularData(system api)](arkts-data-enablecellulardata-f-sys.md)<!--DelEnd-->
+  - [setPreferredApn](arkts-data-setpreferredapn-f.md)
+  - [getActiveApnName](arkts-data-getactiveapnname-f.md)
+  - [queryAllApns](arkts-data-queryallapns-f.md)<!--Del-->
+  - [disableCellularDataRoaming(system api)](arkts-data-disablecellulardataroaming-f-sys.md)<!--DelEnd-->
+  - [getDefaultCellularDataSlotId](arkts-data-getdefaultcellulardataslotid-f.md)
+  - [showSystemApnSettings](arkts-data-showsystemapnsettings-f.md)
+  - [isCellularDataEnabled](arkts-data-iscellulardataenabled-f.md)<!--Del-->
+  - [setDefaultCellularDataSlotId(system api)](arkts-data-setdefaultcellulardataslotid-f-sys.md)<!--DelEnd-->
+  - [getCellularDataFlowType](arkts-data-getcellulardataflowtype-f.md)
+  - [isCellularDataRoamingEnabledSync](arkts-data-iscellulardataroamingenabledsync-f.md)
+  - [getDefaultCellularDataSlotIdSync](arkts-data-getdefaultcellulardataslotidsync-f.md)<!--Del-->
+  - [disableCellularData(system api)](arkts-data-disablecellulardata-f-sys.md)<!--DelEnd-->
+  - [isCellularDataEnabledSync](arkts-data-iscellulardataenabledsync-f.md)
+  - [ApnInfo](arkts-data-apninfo-i.md)
+  - [DataConnectState](arkts-data-dataconnectstate-e.md)
+  - [DataFlowType](arkts-data-dataflowtype-e.md)
+- [@ohos.telephony.esim](arkts-telephony-esim.md)<!--Del-->
+  - [getContractInfo(system api)](arkts-esim-getcontractinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getOsuStatus(system api)](arkts-esim-getosustatus-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getEid(system api)](arkts-esim-geteid-f-sys.md)<!--DelEnd-->
+  - [addProfile](arkts-esim-addprofile-f.md)<!--Del-->
+  - [deleteProfile(system api)](arkts-esim-deleteprofile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDefaultSmdpAddress(system api)](arkts-esim-setdefaultsmdpaddress-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getEuiccProfileInfoList(system api)](arkts-esim-geteuiccprofileinfolist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDownloadableProfiles(system api)](arkts-esim-getdownloadableprofiles-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDownloadableProfileMetadata(system api)](arkts-esim-getdownloadableprofilemetadata-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSupportedPkids(system api)](arkts-esim-getsupportedpkids-f-sys.md)<!--DelEnd-->
+  - [isSupported](arkts-esim-issupported-f.md)<!--Del-->
+  - [resetMemory(system api)](arkts-esim-resetmemory-f-sys.md)<!--DelEnd--><!--Del-->
+  - [switchToProfile(system api)](arkts-esim-switchtoprofile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [cancelSession(system api)](arkts-esim-cancelsession-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startOsu(system api)](arkts-esim-startosu-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getEsimFreeStorage(system api)](arkts-esim-getesimfreestorage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setProfileNickname(system api)](arkts-esim-setprofilenickname-f-sys.md)<!--DelEnd--><!--Del-->
+  - [downloadProfile(system api)](arkts-esim-downloadprofile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getEuiccInfo(system api)](arkts-esim-geteuiccinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [reserveProfilesForFactoryRestore(system api)](arkts-esim-reserveprofilesforfactoryrestore-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDefaultSmdpAddress(system api)](arkts-esim-getdefaultsmdpaddress-f-sys.md)<!--DelEnd-->
+  - [AccessRule](arkts-esim-accessrule-i.md)<!--Del-->
+  - [ContractRequestData(system api)](arkts-esim-contractrequestdata-i-sys.md)<!--DelEnd-->
+  - [DownloadableProfile](arkts-esim-downloadableprofile-i.md)<!--Del-->
+  - [DownloadConfiguration(system api)](arkts-esim-downloadconfiguration-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DownloadProfileResult(system api)](arkts-esim-downloadprofileresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EuiccInfo(system api)](arkts-esim-euiccinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EuiccProfile(system api)](arkts-esim-euiccprofile-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetDownloadableProfileMetadataResult(system api)](arkts-esim-getdownloadableprofilemetadataresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetDownloadableProfilesResult(system api)](arkts-esim-getdownloadableprofilesresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [GetEuiccProfileInfoListResult(system api)](arkts-esim-geteuiccprofileinfolistresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OperatorId(system api)](arkts-esim-operatorid-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CancelReason(system api)](arkts-esim-cancelreason-e-sys.md)<!--DelEnd--><!--Del-->
+  - [OsuStatus(system api)](arkts-esim-osustatus-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PolicyRules(system api)](arkts-esim-policyrules-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ProfileClass(system api)](arkts-esim-profileclass-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ProfileState(system api)](arkts-esim-profilestate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ResetOption(system api)](arkts-esim-resetoption-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ResultCode(system api)](arkts-esim-resultcode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SolvableErrors(system api)](arkts-esim-solvableerrors-e-sys.md)<!--DelEnd-->
 - [@ohos.telephony.observer](arkts-telephony-observer.md)
-  - [off](arkts-telephony-off-f.md)<!--Del-->
-  - [off(system api)](arkts-telephony-off-f-sys.md)<!--DelEnd-->
-  - [offCCallStateChange](arkts-telephony-offccallstatechange-f.md)
-  - [offGetSimActiveState](arkts-telephony-offgetsimactivestate-f.md)
-  - [on](arkts-telephony-on-f.md)<!--Del-->
-  - [on(system api)](arkts-telephony-on-f-sys.md)<!--DelEnd-->
-  - [onCCallStateChange](arkts-telephony-onccallstatechange-f.md)
-  - [onGetSimActiveState](arkts-telephony-ongetsimactivestate-f.md)
-  - [CallStateInfo](arkts-telephony-callstateinfo-i.md)
-  - [CCallStateInfo](arkts-telephony-ccallstateinfo-i.md)
-  - [DataConnectionStateInfo](arkts-telephony-dataconnectionstateinfo-i.md)
-  - [ObserverOptions](arkts-telephony-observeroptions-i.md)
-  - [SimStateData](arkts-telephony-simstatedata-i.md)
-  - [CallState](arkts-telephony-callstate-t.md)
-  - [CardType](arkts-telephony-cardtype-t.md)
-  - [CCallState](arkts-telephony-ccallstate-t.md)<!--Del-->
-  - [CellInformation(system api)](arkts-telephony-cellinformation-t-sys.md)<!--DelEnd-->
-  - [DataConnectState](arkts-telephony-dataconnectstate-t.md)
-  - [DataFlowType](arkts-telephony-dataflowtype-t.md)<!--Del-->
-  - [NetworkSearchRealTimeResult(system api)](arkts-telephony-networksearchrealtimeresult-t-sys.md)<!--DelEnd-->
-  - [NetworkState](arkts-telephony-networkstate-t.md)
-  - [RatType](arkts-telephony-rattype-t.md)
-  - [SignalInformation](arkts-telephony-signalinformation-t.md)
-  - [SimState](arkts-telephony-simstate-t.md)
-  - [TelCallState](arkts-telephony-telcallstate-t.md)
-  - [LockReason](arkts-telephony-lockreason-e.md)
-- [@ohos.telephony.radio](arkts-telephony-radio.md)<!--Del-->
-  - [factoryReset(system api)](arkts-telephony-factoryreset-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getBasebandVersion(system api)](arkts-telephony-getbasebandversion-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getCellInformation(system api)](arkts-telephony-getcellinformation-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getIMEI(system api)](arkts-telephony-getimei-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getIMEISV(system api)](arkts-telephony-getimeisv-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getImsRegInfo(system api)](arkts-telephony-getimsreginfo-f-sys.md)<!--DelEnd-->
-  - [getISOCountryCodeForNetwork](arkts-telephony-getisocountrycodefornetwork-f.md)
-  - [getISOCountryCodeForNetworkSync](arkts-telephony-getisocountrycodefornetworksync-f.md)<!--Del-->
-  - [getMEID(system api)](arkts-telephony-getmeid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getNetworkCapability(system api)](arkts-telephony-getnetworkcapability-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getNetworkSearchInformation(system api)](arkts-telephony-getnetworksearchinformation-f-sys.md)<!--DelEnd-->
-  - [getNetworkSelectionMode](arkts-telephony-getnetworkselectionmode-f.md)
-  - [getNetworkState](arkts-telephony-getnetworkstate-f.md)<!--Del-->
-  - [getNrOptionMode(system api)](arkts-telephony-getnroptionmode-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getNROptionMode(system api)](arkts-telephony-getnroptionmode-f-sys.md)<!--DelEnd-->
-  - [getOperatorName](arkts-telephony-getoperatorname-f.md)
-  - [getOperatorNameSync](arkts-telephony-getoperatornamesync-f.md)<!--Del-->
-  - [getPreferredNetwork(system api)](arkts-telephony-getpreferrednetwork-f-sys.md)<!--DelEnd-->
-  - [getPrimarySlotId](arkts-telephony-getprimaryslotid-f.md)
-  - [getRadioTech](arkts-telephony-getradiotech-f.md)
-  - [getRadioTechSync](arkts-telephony-getradiotechsync-f.md)
-  - [getSignalInformation](arkts-telephony-getsignalinformation-f.md)
-  - [getSignalInformationSync](arkts-telephony-getsignalinformationsync-f.md)<!--Del-->
-  - [getUniqueDeviceId(system api)](arkts-telephony-getuniquedeviceid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [isManualNetworkScanning(system api)](arkts-telephony-ismanualnetworkscanning-f-sys.md)<!--DelEnd-->
-  - [isNrSupported](arkts-telephony-isnrsupported-f.md)
-  - [isNRSupported](arkts-telephony-isnrsupported-f.md)
-  - [isRadioOn](arkts-telephony-isradioon-f.md)<!--Del-->
-  - [off(system api)](arkts-telephony-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [on(system api)](arkts-telephony-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendUpdateCellLocationRequest(system api)](arkts-telephony-sendupdatecelllocationrequest-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setNetworkCapability(system api)](arkts-telephony-setnetworkcapability-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setNetworkSelectionMode(system api)](arkts-telephony-setnetworkselectionmode-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setNROptionMode(system api)](arkts-telephony-setnroptionmode-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setPreferredNetwork(system api)](arkts-telephony-setpreferrednetwork-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setPrimarySlotId(system api)](arkts-telephony-setprimaryslotid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startManualNetworkScan(system api)](arkts-telephony-startmanualnetworkscan-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopManualNetworkScan(system api)](arkts-telephony-stopmanualnetworkscan-f-sys.md)<!--DelEnd--><!--Del-->
-  - [turnOffRadio(system api)](arkts-telephony-turnoffradio-f-sys.md)<!--DelEnd--><!--Del-->
-  - [turnOnRadio(system api)](arkts-telephony-turnonradio-f-sys.md)<!--DelEnd--><!--Del-->
-  - [CdmaCellInformation(system api)](arkts-telephony-cdmacellinformation-i-sys.md)<!--DelEnd-->
-  - [CellInformation](arkts-telephony-cellinformation-i.md)<!--Del-->
-  - [CellInformation(system api)](arkts-telephony-cellinformation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [GsmCellInformation(system api)](arkts-telephony-gsmcellinformation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ImsRegInfo(system api)](arkts-telephony-imsreginfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [LteCellInformation(system api)](arkts-telephony-ltecellinformation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkInformation(system api)](arkts-telephony-networkinformation-i-sys.md)<!--DelEnd-->
-  - [NetworkRadioTech](arkts-telephony-networkradiotech-i.md)<!--Del-->
-  - [NetworkSearchRealTimeResult(system api)](arkts-telephony-networksearchrealtimeresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkSearchResult(system api)](arkts-telephony-networksearchresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkSelectionModeOptions(system api)](arkts-telephony-networkselectionmodeoptions-i-sys.md)<!--DelEnd-->
-  - [NetworkState](arkts-telephony-networkstate-i.md)<!--Del-->
-  - [NrCellInformation(system api)](arkts-telephony-nrcellinformation-i-sys.md)<!--DelEnd-->
-  - [SignalInformation](arkts-telephony-signalinformation-i.md)<!--Del-->
-  - [TdscdmaCellInformation(system api)](arkts-telephony-tdscdmacellinformation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [WcdmaCellInformation(system api)](arkts-telephony-wcdmacellinformation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [ImsRegState(system api)](arkts-telephony-imsregstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ImsRegTech(system api)](arkts-telephony-imsregtech-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ImsServiceType(system api)](arkts-telephony-imsservicetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkCapabilityState(system api)](arkts-telephony-networkcapabilitystate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkCapabilityType(system api)](arkts-telephony-networkcapabilitytype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NetworkInformationState(system api)](arkts-telephony-networkinformationstate-e-sys.md)<!--DelEnd-->
-  - [NetworkSelectionMode](arkts-telephony-networkselectionmode-e.md)
-  - [NetworkType](arkts-telephony-networktype-e.md)<!--Del-->
-  - [NrOptionMode(system api)](arkts-telephony-nroptionmode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [NROptionMode(system api)](arkts-telephony-nroptionmode-e-sys.md)<!--DelEnd-->
-  - [NsaState](arkts-telephony-nsastate-e.md)<!--Del-->
-  - [PreferredNetworkMode(system api)](arkts-telephony-preferrednetworkmode-e-sys.md)<!--DelEnd-->
-  - [RadioTechnology](arkts-telephony-radiotechnology-e.md)
-  - [RegState](arkts-telephony-regstate-e.md)
-- [@ohos.telephony.sim](arkts-telephony-sim.md)<!--Del-->
-  - [activateSim(system api)](arkts-telephony-activatesim-f-sys.md)<!--DelEnd--><!--Del-->
-  - [addIccDiallingNumbers(system api)](arkts-telephony-addiccdiallingnumbers-f-sys.md)<!--DelEnd--><!--Del-->
-  - [alterPin(system api)](arkts-telephony-alterpin-f-sys.md)<!--DelEnd--><!--Del-->
-  - [alterPin2(system api)](arkts-telephony-alterpin2-f-sys.md)<!--DelEnd--><!--Del-->
-  - [deactivateSim(system api)](arkts-telephony-deactivatesim-f-sys.md)<!--DelEnd--><!--Del-->
-  - [delIccDiallingNumbers(system api)](arkts-telephony-deliccdiallingnumbers-f-sys.md)<!--DelEnd-->
-  - [getActiveSimAccountInfoList](arkts-telephony-getactivesimaccountinfolist-f.md)<!--Del-->
-  - [getAllSimAccountInfoList(system api)](arkts-telephony-getallsimaccountinfolist-f-sys.md)<!--DelEnd-->
-  - [getCardType](arkts-telephony-getcardtype-f.md)
-  - [getCardTypeSync](arkts-telephony-getcardtypesync-f.md)
-  - [getDefaultVoiceSimId](arkts-telephony-getdefaultvoicesimid-f.md)
-  - [getDefaultVoiceSlotId](arkts-telephony-getdefaultvoiceslotid-f.md)<!--Del-->
-  - [getDsdsMode(system api)](arkts-telephony-getdsdsmode-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getIMSI(system api)](arkts-telephony-getimsi-f-sys.md)<!--DelEnd-->
-  - [getISOCountryCodeForSim](arkts-telephony-getisocountrycodeforsim-f.md)
-  - [getISOCountryCodeForSimSync](arkts-telephony-getisocountrycodeforsimsync-f.md)<!--Del-->
-  - [getLockState(system api)](arkts-telephony-getlockstate-f-sys.md)<!--DelEnd-->
-  - [getMaxSimCount](arkts-telephony-getmaxsimcount-f.md)<!--Del-->
-  - [getOperatorConfigs(system api)](arkts-telephony-getoperatorconfigs-f-sys.md)<!--DelEnd-->
-  - [getOpKey](arkts-telephony-getopkey-f.md)
-  - [getOpKeySync](arkts-telephony-getopkeysync-f.md)
-  - [getOpName](arkts-telephony-getopname-f.md)
-  - [getOpNameSync](arkts-telephony-getopnamesync-f.md)<!--Del-->
-  - [getShowName(system api)](arkts-telephony-getshowname-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getShowNumber(system api)](arkts-telephony-getshownumber-f-sys.md)<!--DelEnd-->
-  - [getSimAccountInfo](arkts-telephony-getsimaccountinfo-f.md)<!--Del-->
-  - [getSimAuthentication(system api)](arkts-telephony-getsimauthentication-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSimGid1(system api)](arkts-telephony-getsimgid1-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSimIccId(system api)](arkts-telephony-getsimiccid-f-sys.md)<!--DelEnd-->
-  - [getSimLabel](arkts-telephony-getsimlabel-f.md)
-  - [getSimLabelSync](arkts-telephony-getsimlabelsync-f.md)
-  - [getSimOperatorNumeric](arkts-telephony-getsimoperatornumeric-f.md)
-  - [getSimOperatorNumericSync](arkts-telephony-getsimoperatornumericsync-f.md)
-  - [getSimSpn](arkts-telephony-getsimspn-f.md)
-  - [getSimSpnSync](arkts-telephony-getsimspnsync-f.md)
-  - [getSimState](arkts-telephony-getsimstate-f.md)
-  - [getSimStateSync](arkts-telephony-getsimstatesync-f.md)<!--Del-->
-  - [getSimTelephoneNumber(system api)](arkts-telephony-getsimtelephonenumber-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getVoiceMailIdentifier(system api)](arkts-telephony-getvoicemailidentifier-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getVoiceMailNumber(system api)](arkts-telephony-getvoicemailnumber-f-sys.md)<!--DelEnd-->
-  - [hasOperatorPrivileges](arkts-telephony-hasoperatorprivileges-f.md)
-  - [hasSimCard](arkts-telephony-hassimcard-f.md)
-  - [hasSimCardSync](arkts-telephony-hassimcardsync-f.md)<!--Del-->
-  - [isOperatorSimCard(system api)](arkts-telephony-isoperatorsimcard-f-sys.md)<!--DelEnd-->
-  - [isSimActive](arkts-telephony-issimactive-f.md)
-  - [isSimActiveSync](arkts-telephony-issimactivesync-f.md)<!--Del-->
-  - [queryIccDiallingNumbers(system api)](arkts-telephony-queryiccdiallingnumbers-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendEnvelopeCmd(system api)](arkts-telephony-sendenvelopecmd-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendTerminalResponseCmd(system api)](arkts-telephony-sendterminalresponsecmd-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setDefaultVoiceSlotId(system api)](arkts-telephony-setdefaultvoiceslotid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setLockState(system api)](arkts-telephony-setlockstate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setShowName(system api)](arkts-telephony-setshowname-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setShowNumber(system api)](arkts-telephony-setshownumber-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setSimLabelIndex(system api)](arkts-telephony-setsimlabelindex-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setVoiceMailInfo(system api)](arkts-telephony-setvoicemailinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unlockPin(system api)](arkts-telephony-unlockpin-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unlockPin2(system api)](arkts-telephony-unlockpin2-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unlockPuk(system api)](arkts-telephony-unlockpuk-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unlockPuk2(system api)](arkts-telephony-unlockpuk2-f-sys.md)<!--DelEnd--><!--Del-->
-  - [unlockSimLock(system api)](arkts-telephony-unlocksimlock-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateIccDiallingNumbers(system api)](arkts-telephony-updateiccdiallingnumbers-f-sys.md)<!--DelEnd--><!--Del-->
-  - [DiallingNumbersInfo(system api)](arkts-telephony-diallingnumbersinfo-i-sys.md)<!--DelEnd-->
-  - [IccAccountInfo](arkts-telephony-iccaccountinfo-i.md)<!--Del-->
-  - [LockInfo(system api)](arkts-telephony-lockinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [LockStatusResponse(system api)](arkts-telephony-lockstatusresponse-i-sys.md)<!--DelEnd--><!--Del-->
-  - [OperatorConfig(system api)](arkts-telephony-operatorconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [PersoLockInfo(system api)](arkts-telephony-persolockinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SimAuthenticationResponse(system api)](arkts-telephony-simauthenticationresponse-i-sys.md)<!--DelEnd-->
-  - [SimLabel](arkts-telephony-simlabel-i.md)<!--Del-->
-  - [AuthType(system api)](arkts-telephony-authtype-e-sys.md)<!--DelEnd-->
-  - [CardType](arkts-telephony-cardtype-e.md)<!--Del-->
-  - [ContactType(system api)](arkts-telephony-contacttype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [DsdsMode(system api)](arkts-telephony-dsdsmode-e-sys.md)<!--DelEnd--><!--Del-->
-  - [LockState(system api)](arkts-telephony-lockstate-e-sys.md)<!--DelEnd--><!--Del-->
-  - [LockType(system api)](arkts-telephony-locktype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [OperatorConfigKey(system api)](arkts-telephony-operatorconfigkey-e-sys.md)<!--DelEnd--><!--Del-->
-  - [OperatorSimCard(system api)](arkts-telephony-operatorsimcard-e-sys.md)<!--DelEnd--><!--Del-->
-  - [PersoLockType(system api)](arkts-telephony-persolocktype-e-sys.md)<!--DelEnd-->
-  - [SimState](arkts-telephony-simstate-e.md)
-  - [SimType](arkts-telephony-simtype-e.md)
-- [@ohos.telephony.sms](arkts-telephony-sms.md)<!--Del-->
-  - [addSimMessage(system api)](arkts-telephony-addsimmessage-f-sys.md)<!--DelEnd-->
-  - [createMessage](arkts-telephony-createmessage-f.md)<!--Del-->
-  - [decodeMms(system api)](arkts-telephony-decodemms-f-sys.md)<!--DelEnd--><!--Del-->
-  - [delSimMessage(system api)](arkts-telephony-delsimmessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [downloadMms(system api)](arkts-telephony-downloadmms-f-sys.md)<!--DelEnd--><!--Del-->
-  - [encodeMms(system api)](arkts-telephony-encodemms-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllSimMessages(system api)](arkts-telephony-getallsimmessages-f-sys.md)<!--DelEnd-->
-  - [getDefaultSmsSimId](arkts-telephony-getdefaultsmssimid-f.md)
-  - [getDefaultSmsSlotId](arkts-telephony-getdefaultsmsslotid-f.md)<!--Del-->
-  - [getImsShortMessageFormat(system api)](arkts-telephony-getimsshortmessageformat-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSmscAddr(system api)](arkts-telephony-getsmscaddr-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSmsSegmentsInfo(system api)](arkts-telephony-getsmssegmentsinfo-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSmsShortCodeType(system api)](arkts-telephony-getsmsshortcodetype-f-sys.md)<!--DelEnd-->
-  - [hasSmsCapability](arkts-telephony-hassmscapability-f.md)<!--Del-->
-  - [isImsSmsSupported(system api)](arkts-telephony-isimssmssupported-f-sys.md)<!--DelEnd-->
-  - [sendMessage](arkts-telephony-sendmessage-f.md)<!--Del-->
-  - [sendMms(system api)](arkts-telephony-sendmms-f-sys.md)<!--DelEnd-->
-  - [sendShortMessage](arkts-telephony-sendshortmessage-f.md)<!--Del-->
-  - [setCBConfig(system api)](arkts-telephony-setcbconfig-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setCBConfigList(system api)](arkts-telephony-setcbconfiglist-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setDefaultSmsSlotId(system api)](arkts-telephony-setdefaultsmsslotid-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setSmscAddr(system api)](arkts-telephony-setsmscaddr-f-sys.md)<!--DelEnd--><!--Del-->
-  - [splitMessage(system api)](arkts-telephony-splitmessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [updateSimMessage(system api)](arkts-telephony-updatesimmessage-f-sys.md)<!--DelEnd--><!--Del-->
-  - [CBConfigListConfigs(system api)](arkts-telephony-cbconfiglistconfigs-i-sys.md)<!--DelEnd--><!--Del-->
-  - [CBConfigOptions(system api)](arkts-telephony-cbconfigoptions-i-sys.md)<!--DelEnd-->
-  - [IDeliveryShortMessageCallback](arkts-telephony-ideliveryshortmessagecallback-i.md)
-  - [ISendShortMessageCallback](arkts-telephony-isendshortmessagecallback-i.md)<!--Del-->
-  - [MmsAcknowledgeInd(system api)](arkts-telephony-mmsacknowledgeind-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsAddress(system api)](arkts-telephony-mmsaddress-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsAttachment(system api)](arkts-telephony-mmsattachment-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsConfig(system api)](arkts-telephony-mmsconfig-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsDeliveryInd(system api)](arkts-telephony-mmsdeliveryind-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsInformation(system api)](arkts-telephony-mmsinformation-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsNotificationInd(system api)](arkts-telephony-mmsnotificationind-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsParams(system api)](arkts-telephony-mmsparams-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsReadOrigInd(system api)](arkts-telephony-mmsreadorigind-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsReadRecInd(system api)](arkts-telephony-mmsreadrecind-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsRespInd(system api)](arkts-telephony-mmsrespind-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsRetrieveConf(system api)](arkts-telephony-mmsretrieveconf-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsSendConf(system api)](arkts-telephony-mmssendconf-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsSendReq(system api)](arkts-telephony-mmssendreq-i-sys.md)<!--DelEnd-->
-  - [SendMessageOptions](arkts-telephony-sendmessageoptions-i.md)
-  - [ShortMessage](arkts-telephony-shortmessage-i.md)<!--Del-->
-  - [SimMessageOptions(system api)](arkts-telephony-simmessageoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SimShortMessage(system api)](arkts-telephony-simshortmessage-i-sys.md)<!--DelEnd--><!--Del-->
-  - [SmsSegmentsInfo(system api)](arkts-telephony-smssegmentsinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [UpdateSimMessageOptions(system api)](arkts-telephony-updatesimmessageoptions-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DispositionType(system api)](arkts-telephony-dispositiontype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [MessageType(system api)](arkts-telephony-messagetype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsCharSets(system api)](arkts-telephony-mmscharsets-e-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsPriorityType(system api)](arkts-telephony-mmsprioritytype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [MmsVersionType(system api)](arkts-telephony-mmsversiontype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [RanType(system api)](arkts-telephony-rantype-e-sys.md)<!--DelEnd--><!--Del-->
-  - [ReportType(system api)](arkts-telephony-reporttype-e-sys.md)<!--DelEnd-->
-  - [SendSmsResult](arkts-telephony-sendsmsresult-e.md)
-  - [ShortMessageClass](arkts-telephony-shortmessageclass-e.md)<!--Del-->
-  - [SimMessageStatus(system api)](arkts-telephony-simmessagestatus-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SmsEncodingScheme(system api)](arkts-telephony-smsencodingscheme-e-sys.md)<!--DelEnd--><!--Del-->
-  - [SmsShortCodeType(system api)](arkts-telephony-smsshortcodetype-e-sys.md)<!--DelEnd-->
+  - [onCellularDataConnectionStateChange](arkts-observer-oncellulardataconnectionstatechange-f.md)
+  - [offCallStateChange](arkts-observer-offcallstatechange-f.md)
+  - [onCommunicationStateChange](arkts-observer-oncommunicationstatechange-f.md)
+  - [onCellularDataFlowChange](arkts-observer-oncellulardataflowchange-f.md)
+  - [onSimStateChange](arkts-observer-onsimstatechange-f.md)
+  - [offCellularDataFlowChange](arkts-observer-offcellulardataflowchange-f.md)
+  - [offNetworkStateChange](arkts-observer-offnetworkstatechange-f.md)
+  - [offCommunicationStateChange](arkts-observer-offcommunicationstatechange-f.md)
+  - [onCallStateChangeEx](arkts-observer-oncallstatechangeex-f.md)
+  - [on](arkts-observer-on-f.md)<!--Del-->
+  - [on(system api)](arkts-observer-on-f-sys.md)<!--DelEnd-->
+  - [offCellularDataConnectionStateChange](arkts-observer-offcellulardataconnectionstatechange-f.md)
+  - [offIccAccountInfoChange](arkts-observer-officcaccountinfochange-f.md)
+  - [offCallStateChangeEx](arkts-observer-offcallstatechangeex-f.md)
+  - [offSimStateChange](arkts-observer-offsimstatechange-f.md)<!--Del-->
+  - [onCellInfoChange(system api)](arkts-observer-oncellinfochange-f-sys.md)<!--DelEnd-->
+  - [off](arkts-observer-off-f.md)<!--Del-->
+  - [off(system api)](arkts-observer-off-f-sys.md)<!--DelEnd-->
+  - [onGetSimActiveState](arkts-observer-ongetsimactivestate-f.md)
+  - [onIccAccountInfoChange](arkts-observer-oniccaccountinfochange-f.md)
+  - [offCCallStateChange](arkts-observer-offccallstatechange-f.md)
+  - [onCCallStateChange](arkts-observer-onccallstatechange-f.md)<!--Del-->
+  - [offCellInfoChange(system api)](arkts-observer-offcellinfochange-f-sys.md)<!--DelEnd-->
+  - [offSignalInfoChange](arkts-observer-offsignalinfochange-f.md)
+  - [onSignalInfoChange](arkts-observer-onsignalinfochange-f.md)
+  - [onNetworkStateChange](arkts-observer-onnetworkstatechange-f.md)
+  - [onCallStateChange](arkts-observer-oncallstatechange-f.md)
+  - [offGetSimActiveState](arkts-observer-offgetsimactivestate-f.md)
+  - [CallStateInfo](arkts-observer-callstateinfo-i.md)
+  - [CCallStateInfo](arkts-observer-ccallstateinfo-i.md)
+  - [DataConnectionStateInfo](arkts-observer-dataconnectionstateinfo-i.md)
+  - [ObserverOptions](arkts-observer-observeroptions-i.md)
+  - [SimStateData](arkts-observer-simstatedata-i.md)
+  - [CallState](arkts-observer-callstate-t.md)
+  - [CardType](arkts-observer-cardtype-t.md)
+  - [CCallState](arkts-observer-ccallstate-t.md)<!--Del-->
+  - [CellInformation(system api)](arkts-observer-cellinformation-t-sys.md)<!--DelEnd-->
+  - [DataConnectState](arkts-observer-dataconnectstate-t.md)
+  - [DataFlowType](arkts-observer-dataflowtype-t.md)<!--Del-->
+  - [NetworkSearchRealTimeResult(system api)](arkts-observer-networksearchrealtimeresult-t-sys.md)<!--DelEnd-->
+  - [NetworkState](arkts-observer-networkstate-t.md)
+  - [RatType](arkts-observer-rattype-t.md)
+  - [SignalInformation](arkts-observer-signalinformation-t.md)
+  - [SimState](arkts-observer-simstate-t.md)
+  - [TelCallState](arkts-observer-telcallstate-t.md)
+  - [LockReason](arkts-observer-lockreason-e.md)
+- [@ohos.telephony.radio](arkts-telephony-radio.md)
+  - [getOperatorNameSync](arkts-radio-getoperatornamesync-f.md)
+  - [isRadioOn](arkts-radio-isradioon-f.md)<!--Del-->
+  - [setNROptionMode(system api)](arkts-radio-setnroptionmode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [turnOnRadio(system api)](arkts-radio-turnonradio-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getCellInformation(system api)](arkts-radio-getcellinformation-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getNROptionMode(system api)](arkts-radio-getnroptionmode-f-sys.md)<!--DelEnd-->
+  - [getRadioTechSync](arkts-radio-getradiotechsync-f.md)
+  - [getSignalInformationSync](arkts-radio-getsignalinformationsync-f.md)<!--Del-->
+  - [factoryReset(system api)](arkts-radio-factoryreset-f-sys.md)<!--DelEnd-->
+  - [getPrimarySlotId](arkts-radio-getprimaryslotid-f.md)<!--Del-->
+  - [getMEID(system api)](arkts-radio-getmeid-f-sys.md)<!--DelEnd-->
+  - [getISOCountryCodeForNetwork](arkts-radio-getisocountrycodefornetwork-f.md)<!--Del-->
+  - [getNetworkCapability(system api)](arkts-radio-getnetworkcapability-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getNetworkSearchInformation(system api)](arkts-radio-getnetworksearchinformation-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setNetworkCapability(system api)](arkts-radio-setnetworkcapability-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopManualNetworkScan(system api)](arkts-radio-stopmanualnetworkscan-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getImsRegInfo(system api)](arkts-radio-getimsreginfo-f-sys.md)<!--DelEnd-->
+  - [getNetworkState](arkts-radio-getnetworkstate-f.md)<!--Del-->
+  - [offImsRegStateChange(system api)](arkts-radio-offimsregstatechange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPrimarySlotId(system api)](arkts-radio-setprimaryslotid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getIMEI(system api)](arkts-radio-getimei-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-radio-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getNrOptionMode(system api)](arkts-radio-getnroptionmode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getIMEISV(system api)](arkts-radio-getimeisv-f-sys.md)<!--DelEnd-->
+  - [getNetworkSelectionMode](arkts-radio-getnetworkselectionmode-f.md)<!--Del-->
+  - [getUniqueDeviceId(system api)](arkts-radio-getuniquedeviceid-f-sys.md)<!--DelEnd-->
+  - [isNRSupported](arkts-radio-isnrsupported-f.md)
+  - [getRadioTech](arkts-radio-getradiotech-f.md)<!--Del-->
+  - [getPreferredNetwork(system api)](arkts-radio-getpreferrednetwork-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startManualNetworkScan(system api)](arkts-radio-startmanualnetworkscan-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setNetworkSelectionMode(system api)](arkts-radio-setnetworkselectionmode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onImsRegStateChange(system api)](arkts-radio-onimsregstatechange-f-sys.md)<!--DelEnd-->
+  - [getSignalInformation](arkts-radio-getsignalinformation-f.md)<!--Del-->
+  - [off(system api)](arkts-radio-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setPreferredNetwork(system api)](arkts-radio-setpreferrednetwork-f-sys.md)<!--DelEnd-->
+  - [getISOCountryCodeForNetworkSync](arkts-radio-getisocountrycodefornetworksync-f.md)<!--Del-->
+  - [isManualNetworkScanning(system api)](arkts-radio-ismanualnetworkscanning-f-sys.md)<!--DelEnd-->
+  - [getOperatorName](arkts-radio-getoperatorname-f.md)<!--Del-->
+  - [turnOffRadio(system api)](arkts-radio-turnoffradio-f-sys.md)<!--DelEnd-->
+  - [isNrSupported](arkts-radio-isnrsupported-f.md)<!--Del-->
+  - [getBasebandVersion(system api)](arkts-radio-getbasebandversion-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendUpdateCellLocationRequest(system api)](arkts-radio-sendupdatecelllocationrequest-f-sys.md)<!--DelEnd--><!--Del-->
+  - [CdmaCellInformation(system api)](arkts-radio-cdmacellinformation-i-sys.md)<!--DelEnd-->
+  - [CellInformation](arkts-radio-cellinformation-i.md)<!--Del-->
+  - [GsmCellInformation(system api)](arkts-radio-gsmcellinformation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ImsRegInfo(system api)](arkts-radio-imsreginfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [LteCellInformation(system api)](arkts-radio-ltecellinformation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkInformation(system api)](arkts-radio-networkinformation-i-sys.md)<!--DelEnd-->
+  - [NetworkRadioTech](arkts-radio-networkradiotech-i.md)<!--Del-->
+  - [NetworkSearchRealTimeResult(system api)](arkts-radio-networksearchrealtimeresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkSearchResult(system api)](arkts-radio-networksearchresult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkSelectionModeOptions(system api)](arkts-radio-networkselectionmodeoptions-i-sys.md)<!--DelEnd-->
+  - [NetworkState](arkts-radio-networkstate-i.md)<!--Del-->
+  - [NrCellInformation(system api)](arkts-radio-nrcellinformation-i-sys.md)<!--DelEnd-->
+  - [SignalInformation](arkts-radio-signalinformation-i.md)<!--Del-->
+  - [TdscdmaCellInformation(system api)](arkts-radio-tdscdmacellinformation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WcdmaCellInformation(system api)](arkts-radio-wcdmacellinformation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ImsRegState(system api)](arkts-radio-imsregstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ImsRegTech(system api)](arkts-radio-imsregtech-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ImsServiceType(system api)](arkts-radio-imsservicetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkCapabilityState(system api)](arkts-radio-networkcapabilitystate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkCapabilityType(system api)](arkts-radio-networkcapabilitytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NetworkInformationState(system api)](arkts-radio-networkinformationstate-e-sys.md)<!--DelEnd-->
+  - [NetworkSelectionMode](arkts-radio-networkselectionmode-e.md)
+  - [NetworkType](arkts-radio-networktype-e.md)<!--Del-->
+  - [NrOptionMode(system api)](arkts-radio-nroptionmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [NROptionMode(system api)](arkts-radio-nroptionmode-e-sys.md)<!--DelEnd-->
+  - [NsaState](arkts-radio-nsastate-e.md)<!--Del-->
+  - [PreferredNetworkMode(system api)](arkts-radio-preferrednetworkmode-e-sys.md)<!--DelEnd-->
+  - [RadioTechnology](arkts-radio-radiotechnology-e.md)
+  - [RegState](arkts-radio-regstate-e.md)
+- [@ohos.telephony.sim](arkts-telephony-sim.md)
+  - [getSimLabelSync](arkts-sim-getsimlabelsync-f.md)
+  - [getSimAccountInfo](arkts-sim-getsimaccountinfo-f.md)<!--Del-->
+  - [unlockPin(system api)](arkts-sim-unlockpin-f-sys.md)<!--DelEnd-->
+  - [isSimActiveSync](arkts-sim-issimactivesync-f.md)<!--Del-->
+  - [unlockPuk2(system api)](arkts-sim-unlockpuk2-f-sys.md)<!--DelEnd-->
+  - [getISOCountryCodeForSimSync](arkts-sim-getisocountrycodeforsimsync-f.md)<!--Del-->
+  - [unlockPuk(system api)](arkts-sim-unlockpuk-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendEnvelopeCmd(system api)](arkts-sim-sendenvelopecmd-f-sys.md)<!--DelEnd-->
+  - [hasSimCardSync](arkts-sim-hassimcardsync-f.md)<!--Del-->
+  - [setVoiceMailInfo(system api)](arkts-sim-setvoicemailinfo-f-sys.md)<!--DelEnd-->
+  - [getSimSpn](arkts-sim-getsimspn-f.md)
+  - [getSimLabel](arkts-sim-getsimlabel-f.md)
+  - [getSimSpnSync](arkts-sim-getsimspnsync-f.md)<!--Del-->
+  - [setSimLabelIndex(system api)](arkts-sim-setsimlabelindex-f-sys.md)<!--DelEnd-->
+  - [getOpNameSync](arkts-sim-getopnamesync-f.md)<!--Del-->
+  - [getLockState(system api)](arkts-sim-getlockstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isOperatorSimCard(system api)](arkts-sim-isoperatorsimcard-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unlockSimLock(system api)](arkts-sim-unlocksimlock-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deactivateSim(system api)](arkts-sim-deactivatesim-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateIccDiallingNumbers(system api)](arkts-sim-updateiccdiallingnumbers-f-sys.md)<!--DelEnd-->
+  - [getDefaultVoiceSlotId](arkts-sim-getdefaultvoiceslotid-f.md)
+  - [getMaxSimCount](arkts-sim-getmaxsimcount-f.md)<!--Del-->
+  - [queryIccDiallingNumbers(system api)](arkts-sim-queryiccdiallingnumbers-f-sys.md)<!--DelEnd--><!--Del-->
+  - [alterPin(system api)](arkts-sim-alterpin-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getShowName(system api)](arkts-sim-getshowname-f-sys.md)<!--DelEnd-->
+  - [getActiveSimAccountInfoList](arkts-sim-getactivesimaccountinfolist-f.md)
+  - [getCardType](arkts-sim-getcardtype-f.md)<!--Del-->
+  - [delIccDiallingNumbers(system api)](arkts-sim-deliccdiallingnumbers-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setShowNumber(system api)](arkts-sim-setshownumber-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllSimAccountInfoList(system api)](arkts-sim-getallsimaccountinfolist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSimIccId(system api)](arkts-sim-getsimiccid-f-sys.md)<!--DelEnd-->
+  - [isSimActive](arkts-sim-issimactive-f.md)<!--Del-->
+  - [activateSim(system api)](arkts-sim-activatesim-f-sys.md)<!--DelEnd-->
+  - [getSimState](arkts-sim-getsimstate-f.md)<!--Del-->
+  - [getSimAuthentication(system api)](arkts-sim-getsimauthentication-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDsdsMode(system api)](arkts-sim-getdsdsmode-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setLockState(system api)](arkts-sim-setlockstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDefaultVoiceSlotId(system api)](arkts-sim-setdefaultvoiceslotid-f-sys.md)<!--DelEnd-->
+  - [hasSimCard](arkts-sim-hassimcard-f.md)<!--Del-->
+  - [getIMSI(system api)](arkts-sim-getimsi-f-sys.md)<!--DelEnd-->
+  - [getOpName](arkts-sim-getopname-f.md)<!--Del-->
+  - [getOperatorConfigs(system api)](arkts-sim-getoperatorconfigs-f-sys.md)<!--DelEnd-->
+  - [getSimOperatorNumericSync](arkts-sim-getsimoperatornumericsync-f.md)
+  - [getSimStateSync](arkts-sim-getsimstatesync-f.md)
+  - [getCardTypeSync](arkts-sim-getcardtypesync-f.md)<!--Del-->
+  - [getSimTelephoneNumber(system api)](arkts-sim-getsimtelephonenumber-f-sys.md)<!--DelEnd-->
+  - [getOpKey](arkts-sim-getopkey-f.md)<!--Del-->
+  - [unlockPin2(system api)](arkts-sim-unlockpin2-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getVoiceMailNumber(system api)](arkts-sim-getvoicemailnumber-f-sys.md)<!--DelEnd--><!--Del-->
+  - [addIccDiallingNumbers(system api)](arkts-sim-addiccdiallingnumbers-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendTerminalResponseCmd(system api)](arkts-sim-sendterminalresponsecmd-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getShowNumber(system api)](arkts-sim-getshownumber-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getVoiceMailIdentifier(system api)](arkts-sim-getvoicemailidentifier-f-sys.md)<!--DelEnd-->
+  - [getDefaultVoiceSimId](arkts-sim-getdefaultvoicesimid-f.md)
+  - [hasOperatorPrivileges](arkts-sim-hasoperatorprivileges-f.md)<!--Del-->
+  - [alterPin2(system api)](arkts-sim-alterpin2-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setShowName(system api)](arkts-sim-setshowname-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSimGid1(system api)](arkts-sim-getsimgid1-f-sys.md)<!--DelEnd-->
+  - [getOpKeySync](arkts-sim-getopkeysync-f.md)
+  - [getISOCountryCodeForSim](arkts-sim-getisocountrycodeforsim-f.md)
+  - [getSimOperatorNumeric](arkts-sim-getsimoperatornumeric-f.md)<!--Del-->
+  - [DiallingNumbersInfo(system api)](arkts-sim-diallingnumbersinfo-i-sys.md)<!--DelEnd-->
+  - [IccAccountInfo](arkts-sim-iccaccountinfo-i.md)<!--Del-->
+  - [LockInfo(system api)](arkts-sim-lockinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [LockStatusResponse(system api)](arkts-sim-lockstatusresponse-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OperatorConfig(system api)](arkts-sim-operatorconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PersoLockInfo(system api)](arkts-sim-persolockinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SimAuthenticationResponse(system api)](arkts-sim-simauthenticationresponse-i-sys.md)<!--DelEnd-->
+  - [SimLabel](arkts-sim-simlabel-i.md)<!--Del-->
+  - [AuthType(system api)](arkts-sim-authtype-e-sys.md)<!--DelEnd-->
+  - [CardType](arkts-sim-cardtype-e.md)<!--Del-->
+  - [ContactType(system api)](arkts-sim-contacttype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [DsdsMode(system api)](arkts-sim-dsdsmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [LockState(system api)](arkts-sim-lockstate-e-sys.md)<!--DelEnd--><!--Del-->
+  - [LockType(system api)](arkts-sim-locktype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [OperatorConfigKey(system api)](arkts-sim-operatorconfigkey-e-sys.md)<!--DelEnd--><!--Del-->
+  - [OperatorSimCard(system api)](arkts-sim-operatorsimcard-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PersoLockType(system api)](arkts-sim-persolocktype-e-sys.md)<!--DelEnd-->
+  - [SimState](arkts-sim-simstate-e.md)
+  - [SimType](arkts-sim-simtype-e.md)
+- [@ohos.telephony.sms](arkts-telephony-sms.md)
+  - [sendShortMessage](arkts-sms-sendshortmessage-f.md)<!--Del-->
+  - [setCBConfigList(system api)](arkts-sms-setcbconfiglist-f-sys.md)<!--DelEnd--><!--Del-->
+  - [downloadMms(system api)](arkts-sms-downloadmms-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setCBConfig(system api)](arkts-sms-setcbconfig-f-sys.md)<!--DelEnd-->
+  - [getDefaultSmsSlotId](arkts-sms-getdefaultsmsslotid-f.md)<!--Del-->
+  - [sendMms(system api)](arkts-sms-sendmms-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllSimMessages(system api)](arkts-sms-getallsimmessages-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSmscAddr(system api)](arkts-sms-getsmscaddr-f-sys.md)<!--DelEnd-->
+  - [sendMessage](arkts-sms-sendmessage-f.md)
+  - [hasSmsCapability](arkts-sms-hassmscapability-f.md)
+  - [getDefaultSmsSimId](arkts-sms-getdefaultsmssimid-f.md)<!--Del-->
+  - [getImsShortMessageFormat(system api)](arkts-sms-getimsshortmessageformat-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setSmscAddr(system api)](arkts-sms-setsmscaddr-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDefaultSmsSlotId(system api)](arkts-sms-setdefaultsmsslotid-f-sys.md)<!--DelEnd--><!--Del-->
+  - [decodeMms(system api)](arkts-sms-decodemms-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSmsShortCodeType(system api)](arkts-sms-getsmsshortcodetype-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isImsSmsSupported(system api)](arkts-sms-isimssmssupported-f-sys.md)<!--DelEnd--><!--Del-->
+  - [addSimMessage(system api)](arkts-sms-addsimmessage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateSimMessage(system api)](arkts-sms-updatesimmessage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [encodeMms(system api)](arkts-sms-encodemms-f-sys.md)<!--DelEnd-->
+  - [createMessage](arkts-sms-createmessage-f.md)<!--Del-->
+  - [splitMessage(system api)](arkts-sms-splitmessage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSmsSegmentsInfo(system api)](arkts-sms-getsmssegmentsinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [delSimMessage(system api)](arkts-sms-delsimmessage-f-sys.md)<!--DelEnd--><!--Del-->
+  - [CBConfigListConfigs(system api)](arkts-sms-cbconfiglistconfigs-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CBConfigOptions(system api)](arkts-sms-cbconfigoptions-i-sys.md)<!--DelEnd-->
+  - [IDeliveryShortMessageCallback](arkts-sms-ideliveryshortmessagecallback-i.md)
+  - [ISendShortMessageCallback](arkts-sms-isendshortmessagecallback-i.md)<!--Del-->
+  - [MmsAcknowledgeInd(system api)](arkts-sms-mmsacknowledgeind-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsAddress(system api)](arkts-sms-mmsaddress-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsAttachment(system api)](arkts-sms-mmsattachment-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsConfig(system api)](arkts-sms-mmsconfig-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsDeliveryInd(system api)](arkts-sms-mmsdeliveryind-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsInformation(system api)](arkts-sms-mmsinformation-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsNotificationInd(system api)](arkts-sms-mmsnotificationind-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsParams(system api)](arkts-sms-mmsparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsReadOrigInd(system api)](arkts-sms-mmsreadorigind-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsReadRecInd(system api)](arkts-sms-mmsreadrecind-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsRespInd(system api)](arkts-sms-mmsrespind-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsRetrieveConf(system api)](arkts-sms-mmsretrieveconf-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsSendConf(system api)](arkts-sms-mmssendconf-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsSendReq(system api)](arkts-sms-mmssendreq-i-sys.md)<!--DelEnd-->
+  - [SendMessageOptions](arkts-sms-sendmessageoptions-i.md)
+  - [ShortMessage](arkts-sms-shortmessage-i.md)<!--Del-->
+  - [SimMessageOptions(system api)](arkts-sms-simmessageoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SimShortMessage(system api)](arkts-sms-simshortmessage-i-sys.md)<!--DelEnd--><!--Del-->
+  - [SmsSegmentsInfo(system api)](arkts-sms-smssegmentsinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UpdateSimMessageOptions(system api)](arkts-sms-updatesimmessageoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DispositionType(system api)](arkts-sms-dispositiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [MessageType(system api)](arkts-sms-messagetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsCharSets(system api)](arkts-sms-mmscharsets-e-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsPriorityType(system api)](arkts-sms-mmsprioritytype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [MmsVersionType(system api)](arkts-sms-mmsversiontype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RanType(system api)](arkts-sms-rantype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ReportType(system api)](arkts-sms-reporttype-e-sys.md)<!--DelEnd-->
+  - [SendSmsResult](arkts-sms-sendsmsresult-e.md)
+  - [ShortMessageClass](arkts-sms-shortmessageclass-e.md)<!--Del-->
+  - [SimMessageStatus(system api)](arkts-sms-simmessagestatus-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SmsEncodingScheme(system api)](arkts-sms-smsencodingscheme-e-sys.md)<!--DelEnd--><!--Del-->
+  - [SmsShortCodeType(system api)](arkts-sms-smsshortcodetype-e-sys.md)<!--DelEnd-->
 - [@ohos.telephony.vcard](arkts-telephony-vcard.md)
-  - [exportVCard](arkts-telephony-exportvcard-f.md)
-  - [importVCard](arkts-telephony-importvcard-f.md)
-  - [VCardBuilderOptions](arkts-telephony-vcardbuilderoptions-i.md)
-  - [VCardType](arkts-telephony-vcardtype-e.md)
+  - [importVCard](arkts-vcard-importvcard-f.md)
+  - [exportVCard](arkts-vcard-exportvcard-f.md)
+  - [VCardBuilderOptions](arkts-vcard-vcardbuilderoptions-i.md)
+  - [VCardType](arkts-vcard-vcardtype-e.md)

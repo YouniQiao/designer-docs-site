@@ -2,9 +2,9 @@
 
 ## Summary
 
-### Classes
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AbilityStartCallback](arkts-ability-abilitystartcallback-c.md) | The module describes the callback invoked to return the UIExtensionAbility startup result. |
+| [AbilityStartCallback](arkts-abilitystartcallback-i.md) | 定义拉起UIExtensionAbility执行结果的回调。 |
 

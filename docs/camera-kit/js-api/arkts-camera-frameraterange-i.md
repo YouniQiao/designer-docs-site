@@ -9,38 +9,38 @@ Describes the frame rate range.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
-
-## max
-
-```TypeScript
-readonly max: number
-```
-
-Maximum frame rate, in fps.
-
-**Type:** number
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 19.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## min
 
 ```TypeScript
-readonly min: number
+readonly min: int
 ```
 
 Minimum frame rate, in fps.
 
-**Type:** number
+**Type:** int
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## max
+
+```TypeScript
+readonly max: int
+```
+
+Maximum frame rate, in fps.
+
+**Type:** int
+
+**Since:** 10
+
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

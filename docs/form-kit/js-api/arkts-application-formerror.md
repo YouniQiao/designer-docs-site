@@ -9,7 +9,7 @@ interface of formError.
 ## Modules to Import
 
 ```TypeScript
-import { formError } from '@ohos.application.formError';
+import { formError } from '@kit.FormKit';
 ```
 
 ## Summary
@@ -18,13 +18,5 @@ import { formError } from '@ohos.application.formError';
 
 | Name | Description |
 | --- | --- |
-| [FormError](arkts-form-formerror-e.md) | Error of form. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [FormError](arkts-form-formerror-e-sys.md) | Error of form. |
-<!--DelEnd-->
+| [FormError](arkts-formerror-formerror-e.md) | Error of form. |
 

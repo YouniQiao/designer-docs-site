@@ -9,57 +9,51 @@
 ## Modules to Import
 
 ```TypeScript
-import { intelligentVoice } from '@ohos.ai.intelligentVoice';
+import { intelligentVoice } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [createEnrollIntelligentVoiceEngine](arkts-basicservices-createenrollintelligentvoiceengine-f-sys.md#createenrollintelligentvoiceengine-1) | Obtains an {@link EnrollIntelligentVoiceEngine} instance. This method uses an asynchronous callback to return the EnrollIntelligentVoiceEngine instance. |
-| [createEnrollIntelligentVoiceEngine](arkts-basicservices-createenrollintelligentvoiceengine-f-sys.md#createenrollintelligentvoiceengine-2) | Obtains an {@link EnrollIntelligentVoiceEngine} instance. This method uses a promise to return the EnrollIntelligentVoiceEngine instance. |
-| [createWakeupIntelligentVoiceEngine](arkts-basicservices-createwakeupintelligentvoiceengine-f-sys.md#createwakeupintelligentvoiceengine-1) | Obtains an {@link WakeupIntelligentVoiceEngine} instance. This method uses an asynchronous callback to return the WakeupIntelligentVoiceEngine instance. |
-| [createWakeupIntelligentVoiceEngine](arkts-basicservices-createwakeupintelligentvoiceengine-f-sys.md#createwakeupintelligentvoiceengine-2) | Obtains an {@link WakeupIntelligentVoiceEngine} instance. This method uses a promise to return the WakeupIntelligentVoiceEngine instance. |
-| [getIntelligentVoiceManager](arkts-basicservices-getintelligentvoicemanager-f-sys.md#getintelligentvoicemanager-1) | Obtains an {@link IntelligentVoiceManager} instance. |
-| [getWakeupManager](arkts-basicservices-getwakeupmanager-f-sys.md#getwakeupmanager-1) | Obtains an {@link WakeupManager} instance. |
-<!--DelEnd-->
+| <!--DelRow-->[createEnrollIntelligentVoiceEngine](arkts-intelligentvoice-createenrollintelligentvoiceengine-f-sys.md#createEnrollIntelligentVoiceEngine-1) | Obtains an {@link EnrollIntelligentVoiceEngine} instance. This method uses an asynchronous callback to return the EnrollIntelligentVoiceEngine instance. |
+| <!--DelRow-->[createEnrollIntelligentVoiceEngine](arkts-intelligentvoice-createenrollintelligentvoiceengine-f-sys.md#createEnrollIntelligentVoiceEngine-2) | Obtains an {@link EnrollIntelligentVoiceEngine} instance. This method uses a promise to return the EnrollIntelligentVoiceEngine instance. |
+| <!--DelRow-->[createWakeupIntelligentVoiceEngine](arkts-intelligentvoice-createwakeupintelligentvoiceengine-f-sys.md#createWakeupIntelligentVoiceEngine-1) | Obtains an {@link WakeupIntelligentVoiceEngine} instance. This method uses an asynchronous callback to return the WakeupIntelligentVoiceEngine instance. |
+| <!--DelRow-->[createWakeupIntelligentVoiceEngine](arkts-intelligentvoice-createwakeupintelligentvoiceengine-f-sys.md#createWakeupIntelligentVoiceEngine-2) | Obtains an {@link WakeupIntelligentVoiceEngine} instance. This method uses a promise to return the WakeupIntelligentVoiceEngine instance. |
+| <!--DelRow-->[getIntelligentVoiceManager](arkts-intelligentvoice-getintelligentvoicemanager-f-sys.md#getIntelligentVoiceManager-1) | Obtains an {@link IntelligentVoiceManager} instance. |
+| <!--DelRow-->[getWakeupManager](arkts-intelligentvoice-getwakeupmanager-f-sys.md#getWakeupManager-1) | Obtains an {@link WakeupManager} instance. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [EnrollCallbackInfo](arkts-basicservices-enrollcallbackinfo-i-sys.md) | Describes enroll callback information. |
-| [EnrollEngineConfig](arkts-basicservices-enrollengineconfig-i-sys.md) | Describes enroll engine config. |
-| [EnrollIntelligentVoiceEngine](arkts-basicservices-enrollintelligentvoiceengine-i-sys.md) | Implements enroll intelligent voice engine. |
-| [EnrollIntelligentVoiceEngineDescriptor](arkts-basicservices-enrollintelligentvoiceenginedescriptor-i-sys.md) | Describes enroll intelligent voice engine. |
-| [EvaluationResult](arkts-basicservices-evaluationresult-i-sys.md) | Describes evaluation result. |
-| [IntelligentVoiceManager](arkts-basicservices-intelligentvoicemanager-i-sys.md) | Implements intelligent voice management. |
-| [UploadFile](arkts-basicservices-uploadfile-i-sys.md) | Describes upload file information. |
-| [WakeupHapInfo](arkts-basicservices-wakeuphapinfo-i-sys.md) | Describes wakeup hap information. |
-| [WakeupIntelligentVoiceEngine](arkts-basicservices-wakeupintelligentvoiceengine-i-sys.md) | Implements wakeup intelligent voice engine. |
-| [WakeupIntelligentVoiceEngineCallbackInfo](arkts-basicservices-wakeupintelligentvoiceenginecallbackinfo-i-sys.md) | Describes wakeup intelligent voice engine callback information. |
-| [WakeupIntelligentVoiceEngineDescriptor](arkts-basicservices-wakeupintelligentvoiceenginedescriptor-i-sys.md) | Describes wakeup intelligent voice engine. |
-| [WakeupManager](arkts-basicservices-wakeupmanager-i-sys.md) | Implements wakeup management. |
-| [WakeupSourceFile](arkts-basicservices-wakeupsourcefile-i-sys.md) | Describes wakeup source file information. |
-<!--DelEnd-->
+| <!--DelRow-->[EnrollCallbackInfo](arkts-intelligentvoice-enrollcallbackinfo-i-sys.md) | Describes enroll callback information. |
+| <!--DelRow-->[EnrollEngineConfig](arkts-intelligentvoice-enrollengineconfig-i-sys.md) | Describes enroll engine config. |
+| <!--DelRow-->[EnrollIntelligentVoiceEngine](arkts-intelligentvoice-enrollintelligentvoiceengine-i-sys.md) | Implements enroll intelligent voice engine. |
+| <!--DelRow-->[EnrollIntelligentVoiceEngineDescriptor](arkts-intelligentvoice-enrollintelligentvoiceenginedescriptor-i-sys.md) | Describes enroll intelligent voice engine. |
+| <!--DelRow-->[EvaluationResult](arkts-intelligentvoice-evaluationresult-i-sys.md) | Describes evaluation result. |
+| <!--DelRow-->[IntelligentVoiceManager](arkts-intelligentvoice-intelligentvoicemanager-i-sys.md) | Implements intelligent voice management. |
+| <!--DelRow-->[UploadFile](arkts-intelligentvoice-uploadfile-i-sys.md) | Describes upload file information. |
+| <!--DelRow-->[WakeupHapInfo](arkts-intelligentvoice-wakeuphapinfo-i-sys.md) | Describes wakeup hap information. |
+| <!--DelRow-->[WakeupIntelligentVoiceEngine](arkts-intelligentvoice-wakeupintelligentvoiceengine-i-sys.md) | Implements wakeup intelligent voice engine. |
+| <!--DelRow-->[WakeupIntelligentVoiceEngineCallbackInfo](arkts-intelligentvoice-wakeupintelligentvoiceenginecallbackinfo-i-sys.md) | Describes wakeup intelligent voice engine callback information. |
+| <!--DelRow-->[WakeupIntelligentVoiceEngineDescriptor](arkts-intelligentvoice-wakeupintelligentvoiceenginedescriptor-i-sys.md) | Describes wakeup intelligent voice engine. |
+| <!--DelRow-->[WakeupManager](arkts-intelligentvoice-wakeupmanager-i-sys.md) | Implements wakeup management. |
+| <!--DelRow-->[WakeupSourceFile](arkts-intelligentvoice-wakeupsourcefile-i-sys.md) | Describes wakeup source file information. |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [CapturerChannel](arkts-basicservices-capturerchannel-e-sys.md) | Enumerates capturer channel. |
-| [EnrollResult](arkts-basicservices-enrollresult-e-sys.md) | Enumerates enroll result. |
-| [EvaluationResultCode](arkts-basicservices-evaluationresultcode-e-sys.md) | Enumerates evaluation result code. |
-| [IntelligentVoiceEngineType](arkts-basicservices-intelligentvoiceenginetype-e-sys.md) | Enumerates intelligent voice engine type. |
-| [IntelligentVoiceErrorCode](arkts-basicservices-intelligentvoiceerrorcode-e-sys.md) | Enumerates intelligent voice error code. |
-| [SensibilityType](arkts-basicservices-sensibilitytype-e-sys.md) | Enumerates sensibility type. |
-| [ServiceChangeType](arkts-basicservices-servicechangetype-e-sys.md) | Enumerates service change type. |
-| [UploadFileType](arkts-basicservices-uploadfiletype-e-sys.md) | Enumerates upload file type. |
-| [WakeupIntelligentVoiceEventType](arkts-basicservices-wakeupintelligentvoiceeventtype-e-sys.md) | Enumerates wakeup intelligent voice event type. |
-<!--DelEnd-->
+| <!--DelRow-->[CapturerChannel](arkts-intelligentvoice-capturerchannel-e-sys.md) | Enumerates capturer channel. |
+| <!--DelRow-->[EnrollResult](arkts-intelligentvoice-enrollresult-e-sys.md) | Enumerates enroll result. |
+| <!--DelRow-->[EvaluationResultCode](arkts-intelligentvoice-evaluationresultcode-e-sys.md) | Enumerates evaluation result code. |
+| <!--DelRow-->[IntelligentVoiceEngineType](arkts-intelligentvoice-intelligentvoiceenginetype-e-sys.md) | Enumerates intelligent voice engine type. |
+| <!--DelRow-->[IntelligentVoiceErrorCode](arkts-intelligentvoice-intelligentvoiceerrorcode-e-sys.md) | Enumerates intelligent voice error code. |
+| <!--DelRow-->[SensibilityType](arkts-intelligentvoice-sensibilitytype-e-sys.md) | Enumerates sensibility type. |
+| <!--DelRow-->[ServiceChangeType](arkts-intelligentvoice-servicechangetype-e-sys.md) | Enumerates service change type. |
+| <!--DelRow-->[UploadFileType](arkts-intelligentvoice-uploadfiletype-e-sys.md) | Enumerates upload file type. |
+| <!--DelRow-->[WakeupIntelligentVoiceEventType](arkts-intelligentvoice-wakeupintelligentvoiceeventtype-e-sys.md) | Enumerates wakeup intelligent voice event type. |
 

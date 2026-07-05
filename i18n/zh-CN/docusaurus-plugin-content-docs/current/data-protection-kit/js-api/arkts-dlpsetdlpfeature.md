@@ -8,30 +8,30 @@
 
 **系统接口：** 此接口为系统接口。
 
+## 导入模块
+
+```TypeScript
+import { dlpSetDlpFeature } from '@kit.DataProtectionKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 函数（系统接口）
+### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [setDlpFeature](arkts-dataprotection-setdlpfeature-f-sys.md#setdlpfeature-1) | 设置DLP特性开关状态。使用Promise异步回调。调用成功后，DLP特性开关将设置为指定状态，系统将根据该状态启用或禁用DLP保护功能。 当特性开关处于开启状态时，右键单击支持加密的文件，右键菜单中会显示“加密保护”选项。可加密类型包括：.txt，.pdf，.xls，.xlsx，.ppt，.pptx，.doc，.docx。 企业策略开启或关闭数据防泄漏功能时使用此接口。 |
-<!--DelEnd-->
+| <!--DelRow-->[setDlpFeature](arkts-dlpsetdlpfeature-setdlpfeature-f-sys.md#setDlpFeature-1) | 设置DLP特性开关状态。使用Promise异步回调。调用成功后，DLP特性开关将设置为指定状态，系统将根据该状态启用或禁用DLP保护功能。 当特性开关处于开启状态时，右键单击支持加密的文件，右键菜单中会显示“加密保护”选项。可加密类型包括：.txt，.pdf，.xls，.xlsx，.ppt，.pptx，.doc，.docx。 企业策略开启或关闭数据防泄漏功能时使用此接口。 |
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [DLPFeatureInfo](arkts-dataprotection-dlpfeatureinfo-i-sys.md) | DLP特性开关的状态信息。 |
-| [StatusInfoResult](arkts-dataprotection-statusinforesult-i-sys.md) | DLP特性开关状态设置的结果信息。 |
-<!--DelEnd-->
+| <!--DelRow-->[DLPFeatureInfo](arkts-dlpsetdlpfeature-dlpfeatureinfo-i-sys.md) | DLP特性开关的状态信息。 |
+| <!--DelRow-->[StatusInfoResult](arkts-dlpsetdlpfeature-statusinforesult-i-sys.md) | DLP特性开关状态设置的结果信息。 |
 
-<!--Del-->
-### 枚举（系统接口）
+### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [DlpFeatureStatus](arkts-dataprotection-dlpfeaturestatus-e-sys.md) | DLP特性开关状态的枚举。 |
-<!--DelEnd-->
+| <!--DelRow-->[DlpFeatureStatus](arkts-dlpsetdlpfeature-dlpfeaturestatus-e-sys.md) | DLP特性开关状态的枚举。 |
 

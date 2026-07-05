@@ -9,24 +9,8 @@ Describes an audio device pair including both input and output devices.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## inputDevice
-
-```TypeScript
-inputDevice: AudioDeviceDescriptor
-```
-
-Input audio device descriptor.
-
-**Type:** AudioDeviceDescriptor
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
 
 ## outputDevice
 
@@ -40,7 +24,23 @@ Output audio device descriptor.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Device
+
+## inputDevice
+
+```TypeScript
+inputDevice: AudioDeviceDescriptor
+```
+
+Input audio device descriptor.
+
+**Type:** AudioDeviceDescriptor
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 

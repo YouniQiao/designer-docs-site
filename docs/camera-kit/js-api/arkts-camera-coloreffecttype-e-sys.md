@@ -1,4 +1,8 @@
-# ColorEffectType (System API)
+# ColorEffectType
+
+```TypeScript
+enum ColorEffectType
+```
 
 Enumerates the color effect types.
 

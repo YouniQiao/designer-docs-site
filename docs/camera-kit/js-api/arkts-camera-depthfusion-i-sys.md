@@ -1,8 +1,8 @@
-# DepthFusion (System API)
+# DepthFusion
 
-Depth fusion class. It inherits from [DepthFusionQuery](arkts-camera-depthfusionquery-i-sys.md#depthfusionquery).
+Depth fusion class. It inherits from [DepthFusionQuery]camera.DepthFusionQuery.
 
-**Inheritance/Implementation:** DepthFusion extends [DepthFusionQuery](arkts-camera-depthfusionquery-i-sys.md#depthfusionquery)
+**Inheritance:** DepthFusionextends: DepthFusionQuery.
 
 **Since:** 14
 
@@ -13,7 +13,7 @@ Depth fusion class. It inherits from [DepthFusionQuery](arkts-camera-depthfusion
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## enableDepthFusion
@@ -34,16 +34,16 @@ Enables depth fusion.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | boolean | Yes | Whether to enable depth fusion. **true** to enable, **false** otherwise. |
+| enabled | boolean | Yes | Whether to enable depth fusion. true to enable, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
+| 7400201 | Camera service fatal error. |
 
 **Example**
 
@@ -81,14 +81,14 @@ Checks whether depth fusion is enabled.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether depth fusion is enabled. **true** if enabled, **false** otherwise. |
+| boolean | Check result for whether depth fusion is enabled. true if enabled, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 

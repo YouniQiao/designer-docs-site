@@ -1,4 +1,4 @@
-# EffectSuggestionStatus (System API)
+# EffectSuggestionStatus
 
 Effect suggestion status
 
@@ -11,24 +11,8 @@ Effect suggestion status
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
-
-## status
-
-```TypeScript
-status: boolean
-```
-
-Effect Suggestion type status.
-
-**Type:** boolean
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
 
 ## type
 
@@ -39,6 +23,22 @@ type: EffectSuggestionType
 Effect Suggestion type.
 
 **Type:** EffectSuggestionType
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## status
+
+```TypeScript
+status: boolean
+```
+
+Effect Suggestion type status.
+
+**Type:** boolean
 
 **Since:** 12
 

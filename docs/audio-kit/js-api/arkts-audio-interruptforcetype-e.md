@@ -1,6 +1,10 @@
 # InterruptForceType
 
-Enumerates the types of force that causes audio interruption. The force type is obtained when an [InterruptEvent](arkts-audio-interruptevent-i.md#interruptevent) is received. This type specifies whether audio interruption is forcibly performed by the system. The operation information (such as audio pause or stop) can be obtained through [InterruptHint](arkts-audio-interrupthint-e.md#interrupthint). For details about the audio interruption policy, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).
+```TypeScript
+enum InterruptForceType
+```
+
+Enumerates the types of force that causes audio interruption. The force type is obtained when an [InterruptEvent](arkts-audio-interruptevent-i.md#InterruptEvent) is received. This type specifies whether audio interruption is forcibly performed by the system. The operation information (such as audio pause or stop) can be obtained through [InterruptHint]audio.InterruptHint. For details about the audio interruption policy, see [Introduction to Audio Focus](docroot://media/audio/audio-playback-concurrency.md).
 
 **Since:** 9
 
@@ -16,7 +20,7 @@ The operation is forcibly performed by the system.
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -26,11 +30,11 @@ The operation is forcibly performed by the system.
 INTERRUPT_SHARE = 1
 ```
 
-The operation will not be performed by the system. [InterruptHint](arkts-audio-interrupthint-e.md#interrupthint) is used to provide recommended operations for the application, and the application can determine the next processing mode.
+The operation will not be performed by the system. [InterruptHint]audio.InterruptHint is used to provide recommended operations for the application, and the application can determine the next processing mode.
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

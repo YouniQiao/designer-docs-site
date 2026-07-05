@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [console](arkts-arkui-console-c.md) | Provide console |
+| [console](arkts-console-c.md) | Provide console |
 

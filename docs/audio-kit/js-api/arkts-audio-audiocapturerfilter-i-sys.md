@@ -1,4 +1,4 @@
-# AudioCapturerFilter (System API)
+# AudioCapturerFilter
 
 Describe audio capturer filter.
 
@@ -11,8 +11,24 @@ Describe audio capturer filter.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
+
+## uid
+
+```TypeScript
+uid?: int
+```
+
+Application uid.
+
+**Type:** int
+
+**Since:** 18
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
 
 ## capturerInfo
 
@@ -27,22 +43,6 @@ Capturer information.
 **Since:** 18
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
-
-**System API:** This is a system API.
-
-## uid
-
-```TypeScript
-uid?: number
-```
-
-Application uid.
-
-**Type:** number
-
-**Since:** 18
-
-**System capability:** SystemCapability.Multimedia.Audio.Core
 
 **System API:** This is a system API.
 

@@ -1,10 +1,10 @@
-# ManualIso (System API)
+# ManualIso
 
 ManualIso object.
 
-**Inheritance/Implementation:** ManualIso extends [ManualIsoQuery](arkts-camera-manualisoquery-i.md#manualisoquery)
+**Inheritance:** ManualIsoextends: ManualIsoQuery.
 
-**Since:** 24
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -13,20 +13,20 @@ ManualIso object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getIso
 
 ```TypeScript
-getIso(): number
+getIso(): int
 ```
 
 Gets current ISO.
 
-**Since:** 24
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -36,27 +36,27 @@ Gets current ISO.
 
 | Type | Description |
 | --- | --- |
-| number | The current ISO. |
+| int | The current ISO. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 23 |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 |
+| 202 | Not System Application. [since 12 - 23] |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. [since 24] |
 
 ## setIso
 
 ```TypeScript
-setIso(iso: number): void
+setIso(iso: int): void
 ```
 
 Sets ISO sensitivity value, within the range of getSupportedIsoRange. This control is only effective if ExposureMode is set to EXPOSURE_MODE_LOCKED.
 
-**Since:** 24
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -66,14 +66,14 @@ Sets ISO sensitivity value, within the range of getSupportedIsoRange. This contr
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| iso | number | Yes | ISO |
+| iso | int | Yes | ISO |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 23 |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect.<br>**Applicable version:** 12 - 23 |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 |
+| 202 | Not System Application. [since 12 - 23] |
+| 7400101 | Parameter missing or parameter type incorrect. [since 12 - 23] |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. [since 24] |
 

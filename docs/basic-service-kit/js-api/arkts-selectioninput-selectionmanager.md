@@ -1,8 +1,8 @@
 # @ohos.selectionInput.selectionManager
 
-This module provides word selection management capabilities, including creating, displaying, moving, hiding, and destroying windows, listening for word selection events, and retrieving the selected text. > **NOTE** > - This module is supported only on PCs/2-in-1 devices. > - APIs of this module can be called only by applications that integrate the ExtensionAbility for word selection.
+本模块提供划词管理能力，包括创建窗口、显示窗口、移动窗口、隐藏窗口、销毁窗口、监听鼠标划词事件、获取选中文本等。 > **说明：** > - 本模块仅支持PC/2in1设备。 > - 仅支持集成了划词扩展的应用调用。
 
-**Since:** 24
+**Since:** 20
 
 **System capability:** SystemCapability.SelectionInput.Selection
 
@@ -11,43 +11,33 @@ This module provides word selection management capabilities, including creating,
 ## Modules to Import
 
 ```TypeScript
-import { selectionManager } from '@ohos.selectionInput.selectionManager';
+import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [createPanel](arkts-basicservices-createpanel-f-sys.md#createpanel-1) | Creates a word selection panel. This API uses a promise to return the result. Only one [MENU_PANEL](arkts-selectioninput-selectionpanel.md) and one [MAIN_PANEL](arkts-selectioninput-selectionpanel.md) can be created for one word selection application. |
-| [destroyPanel](arkts-basicservices-destroypanel-f-sys.md#destroypanel-1) | Destroys the word selection panel. This API uses a promise to return the result. |
-| [getSelectionContent](arkts-basicservices-getselectioncontent-f-sys.md#getselectioncontent-1) | Obtains this selected text content. This API uses a promise to return the result. |
-| [off](arkts-basicservices-off-f-sys.md#off-1) | Unregisters the callback used to listen for the word selection completion event. This API uses an asynchronous callback to return the result. |
-| [on](arkts-basicservices-on-f-sys.md#on-1) | Registers a callback to listen for the word selection completion event. This API uses an asynchronous callback to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[createPanel](arkts-selectionmanager-createpanel-f-sys.md#createPanel-1) | 创建划词面板。使用Promise异步回调。 单个划词应用仅允许创建一个[MENU_PANEL]{@link @ohos.selectionInput.SelectionPanel}和一个 [MAIN_PANEL]{@link @ohos.selectionInput.SelectionPanel}。 |
+| <!--DelRow-->[destroyPanel](arkts-selectionmanager-destroypanel-f-sys.md#destroyPanel-1) | 销毁划词面板。使用Promise异步回调。 |
+| <!--DelRow-->[getSelectionContent](arkts-selectionmanager-getselectioncontent-f-sys.md#getSelectionContent-1) | 获取选中文本的内容。使用Promise异步回调。 |
+| <!--DelRow-->[off](arkts-selectionmanager-off-f-sys.md#off-1) | 取消订阅划词完成事件。使用callback异步回调。 |
+| [offSelectionComplete](arkts-selectionmanager-offselectioncomplete-f.md#offSelectionComplete-1) | 取消订阅划词完成事件。使用callback异步回调。 |
+| <!--DelRow-->[on](arkts-selectionmanager-on-f-sys.md#on-1) | 订阅划词完成事件。使用callback异步回调。 |
+| [onSelectionComplete](arkts-selectionmanager-onselectioncomplete-f.md#onSelectionComplete-1) | 订阅划词完成事件。使用callback异步回调。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [Panel](arkts-basicservices-panel-i.md) | Represents the word selection panel. |
+| <!--DelRow-->[Panel](arkts-selectionmanager-panel-i-sys.md) | 划词面板。 |
+| <!--DelRow-->[SelectionInfo](arkts-selectionmanager-selectioninfo-i-sys.md) | 划词事件信息。 |
 
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [Panel](arkts-basicservices-panel-i-sys.md) | Represents the word selection panel. |
-| [SelectionInfo](arkts-basicservices-selectioninfo-i-sys.md) | Defines the information of a word selection event. |
-<!--DelEnd-->
-
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [SelectionType](arkts-basicservices-selectiontype-e-sys.md) | Enumerates the operations for selecting words. |
-<!--DelEnd-->
+| <!--DelRow-->[SelectionType](arkts-selectionmanager-selectiontype-e-sys.md) | 定义触发划词的类型枚举。 |
 

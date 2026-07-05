@@ -1,0 +1,141 @@
+# moveMissionsToBackground
+
+## moveMissionsToBackground
+
+```TypeScript
+function moveMissionsToBackground(missionIds: Array<int>, callback: AsyncCallback<Array<int>>): void
+```
+
+将指定任务批量切到后台，返回的结果任务ID按被隐藏时的任务层级排序。使用callback异步回调。
+
+**Since:** 10
+
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MISSIONS
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Mission
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| missionIds | Array&lt;int> | Yes | 任务ID数组。 |
+| callback | AsyncCallback&lt;Array&lt;int>> | Yes | 执行结果回调函数。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 201 | Permission denied. |
+| 202 | Not system application. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;  2. Incorrect parameter types; 3. Parameter verification failed. |
+| 16000050 | Internal error. |
+
+**Example**
+
+```TypeScript
+import { abilityManager, missionManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  missionManager.getMissionInfos("", 10, (error: BusinessError, missionInfos: Array<missionManager.MissionInfo>) => {
+    if (error.code) {
+      console.error(`getMissionInfos failed, error code: ${error.code}, error msg: ${error.message}`);
+      return;
+    }
+
+    let toHides = new Array<number>();
+    for (let missionInfo of missionInfos) {
+      if (missionInfo.abilityState == abilityManager.AbilityState.FOREGROUND) {
+        toHides.push(missionInfo.missionId);
+      }
+    }
+    missionManager.moveMissionsToBackground(toHides, (err: BusinessError, data: Array<number>) => {
+      if (err) {
+        console.error(`moveMissionsToBackground failed: ${err.message}`);
+      } else {
+        console.info(`moveMissionsToBackground successfully: ${JSON.stringify(data)}`);
+      }
+    });
+  });
+} catch (paramError) {
+  let code = (paramError as BusinessError).code;
+  let message = (paramError as BusinessError).message;
+  console.error(`error: ${code}, ${message} `);
+}
+
+```
+
+## moveMissionsToBackground
+
+```TypeScript
+function moveMissionsToBackground(missionIds: Array<int>): Promise<Array<int>>
+```
+
+将指定任务批量切到后台，返回的结果按被隐藏时的任务层级排序。使用Promise异步回调。
+
+**Since:** 10
+
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MISSIONS
+
+**System capability:** SystemCapability.Ability.AbilityRuntime.Mission
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| missionIds | Array&lt;int> | Yes | 任务ID数组。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Array&lt;int>> | Promise对象，返回任务ID。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 201 | Permission denied. |
+| 202 | Not system application. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;  2. Incorrect parameter types; 3. Parameter verification failed. |
+| 16000050 | Internal error. |
+
+**Example**
+
+```TypeScript
+import { abilityManager, missionManager } from '@kit.AbilityKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  missionManager.getMissionInfos("", 10, (error: BusinessError, missionInfos: Array<missionManager.MissionInfo>) => {
+    if (error.code) {
+      console.error(`getMissionInfos failed, error code: ${error.code}, error msg: ${error.message}`);
+      return;
+    }
+
+    let toHides = new Array<number>();
+    for (let missionInfo of missionInfos) {
+      if (missionInfo.abilityState == abilityManager.AbilityState.FOREGROUND) {
+        toHides.push(missionInfo.missionId);
+      }
+    }
+    missionManager.moveMissionsToBackground(toHides).then((hideRes: Array<number>) => {
+      console.info(`moveMissionsToBackground is called, res: ${JSON.stringify(hideRes)}`);
+    });
+  });
+} catch (paramError) {
+  let code = (paramError as BusinessError).code;
+  let message = (paramError as BusinessError).message;
+  console.error(`error: ${code}, ${message} `);
+}
+
+```
+

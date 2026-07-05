@@ -1,5 +1,9 @@
 # SmoothZoomMode
 
+```TypeScript
+enum SmoothZoomMode
+```
+
 Enumerates the smooth zoom modes.
 
 **Since:** 11
@@ -16,7 +20,7 @@ Bessel curve mode.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

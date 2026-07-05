@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { MeasureOptions } from '@ohos.measure';
+import { MeasureOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,11 +12,11 @@ import { MeasureOptions } from '@ohos.measure';
 
 | Name | Description |
 | --- | --- |
-| [MeasureText](arkts-arkui-measuretext-c.md) | Defines the Measure interface. |
+| [MeasureText](arkts-measuretext-c.md) | 定义测算文本相关接口。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MeasureOptions](arkts-arkui-measureoptions-i.md) | Provides attributes of the measured text. |
+| [MeasureOptions](arkts-measureoptions-i.md) | 被计算文本属性。 |
 

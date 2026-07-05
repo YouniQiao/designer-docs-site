@@ -1,4 +1,8 @@
-# PixelFormat（系统接口）
+# PixelFormat
+
+```TypeScript
+enum PixelFormat
+```
 
 Enumerates the color formats supported by the video thumbnail.
 

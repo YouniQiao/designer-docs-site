@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [DataAbilityOperation](arkts-ability-dataabilityoperation-i.md) | The module defines the operation on DataAbilities. It can be used as an input parameter of [executeBatch](../../../../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch) to specify the database operation information. |
+| [DataAbilityOperation](arkts-dataabilityoperation-i.md) | 定义DataAbility数据操作方式，可以作为 [executeBatch](docroot://reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch) 的入参，操作数据库的信息。 |
 

@@ -1,5 +1,9 @@
 # MediaKeyType
 
+```TypeScript
+enum MediaKeyType
+```
+
 Enumerates media key type.
 
 **Since:** 14
@@ -16,7 +20,7 @@ Offline media key type.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -30,7 +34,7 @@ Online media key type.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 

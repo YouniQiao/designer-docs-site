@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { AbilityStage } from '@ohos.app.ability.AbilityStage';
+import { AbilityStage } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { AbilityStage } from '@ohos.app.ability.AbilityStage';
 
 | Name | Description |
 | --- | --- |
-| [AbilityStage](arkts-ability-abilitystage-c.md) | AbilityStage is a [module](../../../../quick-start/application-package-overview.md#multi-module-design-mechanism)-level component manager. It is used for initializing operations such as resource preloading and thread creation at the module level, as well as maintaining the application state under the module. An AbilityStage instance corresponds to a module. When the [HAP](../../../../quick-start/hap-package.md) or [HSP](../../../../quick-start/in-app-hsp.md) of an application is first loaded, an AbilityStage instance is created. If a module contains both AbilityStage and other components ( like UIAbility or ExtensionAbility), the AbilityStage instance is created before the other component instances. An AbilityStage has the lifecycle callbacks [onCreate()](arkts-ability-abilitystage-c.md#oncreate-1) and [onDestroy()](arkts-ability-abilitystage-c.md#ondestroy-1), and the event callbacks [onAcceptWant()](arkts-ability-abilitystage-c.md#onacceptwant-1), [onConfigurationUpdate()](arkts-ability-abilitystage-c.md#onconfigurationupdate-1), and [onMemoryLevel()](arkts-ability-abilitystage-c.md#onmemorylevel-1). |
+| [AbilityStage](arkts-abilitystage-c.md) | AbilityStage是一个[Module](docroot://quick-start/application-package-overview.md#应用的多module设计机制)级别的组件管理器，用于进行Module级别的资源 预加载、线程创建等初始化操作，以及维护Module下的应用状态。AbilityStage与Module一一对应，即一个Module拥有一个AbilityStage。 应用的[HAP](docroot://quick-start/hap-package.md)/[HSP](docroot://quick-start/in-app-hsp.md)在首次加载时会创建一个AbilityStage实例。当一 个Module中存在AbilityStage和其他组件（UIAbility/ExtensionAbility组件），AbilityStage实例会早于其他组件实例创建。 AbilityStage拥有[onCreate()]{@link AbilityStage.onCreate}、[onDestroy()]{@link AbilityStage.onDestroy}生命周期回调和 [onAcceptWant()]{@link AbilityStage.onAcceptWant}、[onConfigurationUpdate()]{@link AbilityStage.onConfigurationUpdate} 、[onMemoryLevel()]{@link AbilityStage.onMemoryLevel}事件回调等。 |
 

@@ -1,4 +1,8 @@
-# AsrVoiceControlMode (System API)
+# AsrVoiceControlMode
+
+```TypeScript
+enum AsrVoiceControlMode
+```
 
 ASR voice control mode.
 

@@ -4,8 +4,14 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [DataAbilityHelper](arkts-ability-dataabilityhelper-i.md) | 可以通过[acquireDataAbilityHelper](./../@ohos.ability.featureAbility:featureAbility.acquireDataAbilityHelper)接口获取 DataAbilityHelper对象。 |
-| [PacMap](arkts-ability-pacmap-i.md) | 用于存储数据的PacMap类型。 |
+| [DataAbilityHelper](arkts-dataabilityhelper-i.md) | 可以通过[acquireDataAbilityHelper]{@link ./../@ohos.ability.featureAbility:featureAbility.acquireDataAbilityHelper}接口获取 DataAbilityHelper对象。 |
+| [PacMap](arkts-pacmap-i.md) | 用于存储数据的PacMap类型。 |
+
+### 类型
+
+| 名称 | 描述 |
+| --- | --- |
+| [PacMap](arkts-pacmap-t.md) | 用于存储数据的PacMap类型。 |
 

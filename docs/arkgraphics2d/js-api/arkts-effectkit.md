@@ -1,6 +1,6 @@
 # @ohos.effectKit
 
-This module provides basic image processing capabilities, including brightness adjustment, blurring, grayscale adjustment, and color picker. The effectKit module processes images (such as PixelMap, PNG, and JPEG) offline to obtain visual effects.
+图像效果模块提供了处理图像的基础能力，包括亮度调节、模糊化、灰度调节和智能取色等。effectKit用于离线处理图像（如pixelmap、png、jpeg）以获得视觉效果，而uiEffect则实时接入渲染服务，针对屏幕帧缓存进行处理以 获得动态视觉效果。 该模块提供以下图像效果相关的常用功能： - [Filter]{@link effectKit.Filter}：效果类，用于添加指定效果到图像源。 - [Color]{@link effectKit.Color}：颜色类，用于保存取色的结果。 - [ColorPicker]{@link effectKit.ColorPicker}：智能取色器。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ This module provides basic image processing capabilities, including brightness a
 ## Modules to Import
 
 ```TypeScript
-import { effectKit } from '@ohos.effectKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
 ## Summary
@@ -18,51 +18,33 @@ import { effectKit } from '@ohos.effectKit';
 
 | Name | Description |
 | --- | --- |
-| [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-1) | Creates a ColorPicker instance based on a pixel map. This API uses a promise to return the result. |
-| [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-2) | Creates a ColorPicker instance for the selected region based on a pixel map. This API uses a promise to return the result. |
-| [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-3) | Creates a ColorPicker instance based on a pixel map. This API uses an asynchronous callback to return the result. |
-| [createColorPicker](arkts-arkgraphics2d-createcolorpicker-f.md#createcolorpicker-4) | Creates a ColorPicker instance for the selected region based on a pixel map. This API uses an asynchronous callback to return the result. |
-| [createEffect](arkts-arkgraphics2d-createeffect-f.md#createeffect-1) | Creates a Filter instance based on a pixel map. |
+| [createColorPicker](arkts-effectkit-createcolorpicker-f.md#createColorPicker-1) | 通过传入的PixelMap创建ColorPicker实例，使用Promise异步回调。 |
+| [createColorPicker](arkts-effectkit-createcolorpicker-f.md#createColorPicker-2) | 通过传入的PixelMap创建选定取色区域的ColorPicker实例，使用Promise异步回调。 |
+| [createColorPicker](arkts-effectkit-createcolorpicker-f.md#createColorPicker-3) | 通过传入的PixelMap创建ColorPicker实例，使用callback异步回调。 |
+| [createColorPicker](arkts-effectkit-createcolorpicker-f.md#createColorPicker-4) | 通过传入的PixelMap创建选定取色区域的ColorPicker实例，使用callback异步回调。 |
+| [createEffect](arkts-effectkit-createeffect-f.md#createEffect-1) | 通过传入的PixelMap创建Filter实例。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [Color](arkts-arkgraphics2d-color-i.md) | A class that stores the color picked. |
-| [ColorPicker](arkts-arkgraphics2d-colorpicker-i.md) | A class used to obtain the color from an image. Before calling any method of ColorPicker, use createColorPicker to create a ColorPicker instance. |
-| [Filter](arkts-arkgraphics2d-filter-i.md) | A class used to add a specified effect to an image. Before calling any method of Filter, use createEffect to create a Filter instance. |
+| [Color](arkts-effectkit-color-i.md) | 颜色类，用于保存取色的结果。 |
+| [ColorPicker](arkts-effectkit-colorpicker-i.md) | 取色类，用于从一张图像数据中获取它的主要颜色。在调用ColorPicker的方法前，需要先通过 [createColorPicker]{@link effectKit.createColorPicker(source: image.PixelMap)}创建一个ColorPicker实例。 |
+| [Filter](arkts-effectkit-filter-i.md) | 图像效果类，用于将指定的效果添加到输入图像中。在调用Filter的方法前，需要先通过[createEffect]{@link effectKit.createEffect}创建一个Filter实例。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [ColorPicker](arkts-arkgraphics2d-colorpicker-i-sys.md) | A class used to obtain the color from an image. Before calling any method of ColorPicker, use createColorPicker to create a ColorPicker instance. |
-| [Filter](arkts-arkgraphics2d-filter-i-sys.md) | A class used to add a specified effect to an image. Before calling any method of Filter, use createEffect to create a Filter instance. |
-<!--DelEnd-->
+| <!--DelRow-->[EllipticalMaskCenter](arkts-effectkit-ellipticalmaskcenter-t-sys.md) | 定义椭圆形遮罩的中心点。 |
+| <!--DelRow-->[EllipticalMaskRadius](arkts-effectkit-ellipticalmaskradius-t-sys.md) | 定义椭圆形遮罩的半径。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [TileMode](arkts-arkgraphics2d-tilemode-e.md) | Enumerates the tile modes of the shader effect. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [PictureComplexityDegree](arkts-arkgraphics2d-picturecomplexitydegree-e-sys.md) | Enumerates the complexity degree of an image. |
-| [PictureLightDegree](arkts-arkgraphics2d-picturelightdegree-e-sys.md) | The picture light color degree. |
-| [PictureShadeDegree](arkts-arkgraphics2d-pictureshadedegree-e-sys.md) | Enumerates the shade degree of an image. |
-<!--DelEnd-->
-
-<!--Del-->
-### Types（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [EllipticalMaskCenter](arkts-arkgraphics2d-ellipticalmaskcenter-t-sys.md) | The center of the elliptical mask, specifying where the ellipse mask is anchored in function 'ellipticalGradientBlur'. |
-| [EllipticalMaskRadius](arkts-arkgraphics2d-ellipticalmaskradius-t-sys.md) | The major axis and minor axis of the elliptical mask used in function 'ellipticalGradientBlur'. |
-<!--DelEnd-->
+| <!--DelRow-->[PictureComplexityDegree](arkts-effectkit-picturecomplexitydegree-e-sys.md) | 图片内容复杂度的枚举。 |
+| <!--DelRow-->[PictureLightDegree](arkts-effectkit-picturelightdegree-e-sys.md) | 图片颜色明亮度的枚举。 |
+| <!--DelRow-->[PictureShadeDegree](arkts-effectkit-pictureshadedegree-e-sys.md) | 图片颜色深浅度的枚举。 |
+| [TileMode](arkts-effectkit-tilemode-e.md) | 着色器效果平铺模式的枚举。 |
 

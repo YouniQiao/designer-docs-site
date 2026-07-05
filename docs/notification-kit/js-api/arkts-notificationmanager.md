@@ -1,6 +1,6 @@
 # @ohos.notificationManager
 
-The **NotificationManager** module provides notification management capabilities, covering notifications, notification slots, notification enabled status, and notification badge status.
+本模块提供通知管理的能力，包括发布、更新、取消通知，创建、获取、移除通知渠道，获取发布通知应用的使能状态，获取通知的相关信息等。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The **NotificationManager** module provides notification management capabilities
 ## Modules to Import
 
 ```TypeScript
-import { notificationManager } from '@ohos.notificationManager';
+import { notificationManager } from '@kit.NotificationKit';
 ```
 
 ## Summary
@@ -18,269 +18,248 @@ import { notificationManager } from '@ohos.notificationManager';
 
 | Name | Description |
 | --- | --- |
-| [addSlot](arkts-notification-addslot-f.md#addslot-3) | Adds a notification slot of a specified type. This API uses an asynchronous callback to return the result. |
-| [addSlot](arkts-notification-addslot-f.md#addslot-4) | Adds a notification slot of a specified type. This API uses a promise to return the result. |
-| [cancel](arkts-notification-cancel-f.md#cancel-1) | Cancels a notification with the specified ID. This API uses an asynchronous callback to return the result. |
-| [cancel](arkts-notification-cancel-f.md#cancel-2) | Cancels a notification with the specified ID and label. This API uses an asynchronous callback to return the result. |
-| [cancel](arkts-notification-cancel-f.md#cancel-3) | Cancels a notification with the specified ID and optional label. This API uses a promise to return the result. |
-| [cancelAll](arkts-notification-cancelall-f.md#cancelall-1) | Cancels all notifications of this application. This API uses an asynchronous callback to return the result. |
-| [cancelAll](arkts-notification-cancelall-f.md#cancelall-2) | Cancels all notifications of this application. This API uses a promise to return the result. |
-| [cancelGroup](arkts-notification-cancelgroup-f.md#cancelgroup-1) | Cancels notifications under a notification group of this application. This API uses an asynchronous callback to return the result. |
-| [cancelGroup](arkts-notification-cancelgroup-f.md#cancelgroup-2) | Cancels notifications under a notification group of this application. This API uses a promise to return the result. |
-| [getActiveNotificationCount](arkts-notification-getactivenotificationcount-f.md#getactivenotificationcount-1) | Obtains the number of active notifications of this application. This API uses an asynchronous callback to return the result. |
-| [getActiveNotificationCount](arkts-notification-getactivenotificationcount-f.md#getactivenotificationcount-2) | Obtains the number of active notifications of this application. This API uses a promise to return the result. |
-| [getActiveNotifications](arkts-notification-getactivenotifications-f.md#getactivenotifications-1) | Obtains the active notifications of this application. This API uses an asynchronous callback to return the result. |
-| [getActiveNotifications](arkts-notification-getactivenotifications-f.md#getactivenotifications-2) | Obtains the active notifications of this application. This API uses a promise to return the result. |
-| [getBadgeNumber](arkts-notification-getbadgenumber-f.md#getbadgenumber-1) | Obtains the badge number of this application. This API uses a promise to return the result. |
-| [getNotificationParameters](arkts-notification-getnotificationparameters-f.md#getnotificationparameters-1) | Obtains some information about the **wantAgent** field in [NotificationRequest](arkts-notification-notificationrequest-i.md#notificationrequest). This API uses a promise to return the result. |
-| [getNotificationSetting](arkts-notification-getnotificationsetting-f.md#getnotificationsetting-1) | Obtains the notification settings of an application. This API uses a promise to return the result. |
-| [getSlot](arkts-notification-getslot-f.md#getslot-1) | Obtains a notification slot of a specified type. This API uses an asynchronous callback to return the result. |
-| [getSlot](arkts-notification-getslot-f.md#getslot-2) | Obtains a notification slot of a specified type. This API uses a promise to return the result. |
-| [getSlots](arkts-notification-getslots-f.md#getslots-1) | Obtains all notification slots of this application. This API uses an asynchronous callback to return the result. |
-| [getSlots](arkts-notification-getslots-f.md#getslots-2) | Obtains all notification slots of this application. This API uses a promise to return the result. |
-| [isDistributedEnabled](arkts-notification-isdistributedenabled-f.md#isdistributedenabled-1) | Checks whether the device supports cross-device notifications. This API uses an asynchronous callback to return the result. |
-| [isDistributedEnabled](arkts-notification-isdistributedenabled-f.md#isdistributedenabled-2) | Checks whether the device supports cross-device notifications. This API uses a promise to return the result. |
-| [isGeofenceEnabled](arkts-notification-isgeofenceenabled-f.md#isgeofenceenabled-1) | Checks whether geofencing is enabled. This API uses a promise to return the result. |
-| [isNotificationEnabledSync](arkts-notification-isnotificationenabledsync-f.md#isnotificationenabledsync-1) | Checks whether notification is enabled for the specified application. This API returns the result synchronously. |
-| [isSupportTemplate](arkts-notification-issupporttemplate-f.md#issupporttemplate-1) | Checks whether a specified template is supported before using [NotificationTemplate](arkts-notification-notificationtemplate-i.md#notificationtemplate) to publish a notification. This API uses an asynchronous callback to return the result. |
-| [isSupportTemplate](arkts-notification-issupporttemplate-f.md#issupporttemplate-2) | Checks whether a specified template is supported before using [NotificationTemplate](arkts-notification-notificationtemplate-i.md#notificationtemplate) to publish a notification. This API uses a promise to return the result. |
-| [openNotificationSettings](arkts-notification-opennotificationsettings-f.md#opennotificationsettings-1) | Opens the notification settings page of the application, which is displayed in semi-modal mode and can be used to set the notification enabling and notification mode. This API uses a promise to return the result. |
-| [openNotificationSettingsWithResult](arkts-notification-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1) | Opens the notification settings page of the application, which is displayed in semi-modal mode and can be used to set the notification enabling and notification mode. This API uses a promise to return the result. When the semi- modal window is closed, the user-defined status is returned. |
-| [publish](arkts-notification-publish-f.md#publish-1) | Publishes a notification. This API uses an asynchronous callback to return the result. If the ID and label of the new notification are the same as that of the previous notification, the new one replaces the previous one. |
-| [publish](arkts-notification-publish-f.md#publish-2) | Publishes a notification. This API uses a promise to return the result. If the ID and label of the new notification are the same as that of the previous notification, the new one replaces the previous one. |
-| [removeAllSlots](arkts-notification-removeallslots-f.md#removeallslots-1) | Removes all notification slots for this application. This API uses an asynchronous callback to return the result. |
-| [removeAllSlots](arkts-notification-removeallslots-f.md#removeallslots-2) | Removes all notification slots for this application. This API uses a promise to return the result. |
-| [removeSlot](arkts-notification-removeslot-f.md#removeslot-1) | Removes a notification slot of a specified type for this application. This API uses an asynchronous callback to return the result. |
-| [removeSlot](arkts-notification-removeslot-f.md#removeslot-2) | Removes a notification slot of a specified type for this application. This API uses a promise to return the result. |
-| [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-1) | Requests notification to be enabled for this application. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-2) with context instead. |
-| [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-2) | Requests notification to be enabled for this application. You can call this API to display a dialog box prompting the user to enable notification for your application before publishing a notification. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; - This API can be called only after the application UI is loaded (that is, &gt; [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontentsession-c.md#loadcontent-1) is &gt; successfully called). &gt; &gt; - When an application uses **requestEnableNotification()** to display a dialog box for notification authorization &gt; and the user rejects the authorization, the application cannot use this API to open the dialog box again. However &gt; , it can call [openNotificationSettingsWithResult](arkts-notification-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1) &gt; to open the notification management dialog box. |
-| [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-3) | Requests notification to be enabled for this application. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-4) with context instead. |
-| [requestEnableNotification](arkts-notification-requestenablenotification-f.md#requestenablenotification-4) | Requests notification to be enabled for this application. You can call this API to display a dialog box prompting the user to enable notification for your application before publishing a notification. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; - This API can be called only after the application UI is loaded (that is, &gt; [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensioncontentsession-c.md#loadcontent-1) is &gt; successfully called). &gt; &gt; - When an application uses **requestEnableNotification()** to display a dialog box for notification authorization &gt; and the user rejects the authorization, the application cannot use this API to open the dialog box again. However &gt; , it can call [openNotificationSettingsWithResult](arkts-notification-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1) &gt; to open the notification management dialog box. |
-| [setBadgeNumber](arkts-notification-setbadgenumber-f.md#setbadgenumber-1) | Sets the notification badge number. This API uses an asynchronous callback to return the result. |
-| [setBadgeNumber](arkts-notification-setbadgenumber-f.md#setbadgenumber-2) | Sets the notification badge number. This API uses a promise to return the result. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [addDoNotDisturbProfile](arkts-notification-adddonotdisturbprofile-f-sys.md#adddonotdisturbprofile-1) | Adds the Do Not Disturb profile. This API uses a promise to return the result. |
-| [addDoNotDisturbProfile](arkts-notification-adddonotdisturbprofile-f-sys.md#adddonotdisturbprofile-2) | Adds the Do Not Disturb profile for a specified user. This API uses a promise to return the result. |
-| [addSlot](arkts-notification-addslot-f-sys.md#addslot-1) | Adds a notification slot. This API uses an asynchronous callback to return the result. |
-| [addSlot](arkts-notification-addslot-f-sys.md#addslot-2) | Adds a notification slot. This API uses a promise to return the result. |
-| [addSlots](arkts-notification-addslots-f-sys.md#addslots-1) | Adds an array of notification slots. This API uses an asynchronous callback to return the result. |
-| [addSlots](arkts-notification-addslots-f-sys.md#addslots-2) | Adds an array of notification slots. This API uses a promise to return the result. |
-| [cancel](arkts-notification-cancel-f-sys.md#cancel-4) | Cancels the notification of other applications of the user. This API uses a promise to return the result. The current application must have a proxy relationship with another application, or the **ohos.permission.NOTIFICATION_AGENT_CONTROLLER** permission is granted to the current application. |
-| [cancelAsBundle](arkts-notification-cancelasbundle-f-sys.md#cancelasbundle-1) | Cancels a notification published through the reminder agent. This API uses an asynchronous callback to return the result. |
-| [cancelAsBundle](arkts-notification-cancelasbundle-f-sys.md#cancelasbundle-2) | Cancels a notification published through the reminder agent. This API uses a promise to return the result. |
-| [cancelAsBundle](arkts-notification-cancelasbundle-f-sys.md#cancelasbundle-3) | Cancels a notification published through the reminder agent. This API uses a promise to return the result. |
-| [disableNotificationFeature](arkts-notification-disablenotificationfeature-f-sys.md#disablenotificationfeature-1) | Disables the application from publishing notifications by adding the application bundle name to the permission control list. This function can be disabled as required. |
-| [disableNotificationFeature](arkts-notification-disablenotificationfeature-f-sys.md#disablenotificationfeature-2) | Disables the application from publishing notifications by adding the application bundle name to the permission control list. This API uses a promise to return the result. |
-| [displayBadge](arkts-notification-displaybadge-f-sys.md#displaybadge-1) | Sets whether to enable the notification badge for a specified application. This API uses an asynchronous callback to return the result. |
-| [displayBadge](arkts-notification-displaybadge-f-sys.md#displaybadge-2) | Sets whether to enable the notification badge for a specified application. This API uses a promise to return the result. |
-| [getActiveNotificationByFilter](arkts-notification-getactivenotificationbyfilter-f-sys.md#getactivenotificationbyfilter-1) | Obtains information about the common live view that matches the specified filter criteria. This API uses an asynchronous callback to return the result. |
-| [getActiveNotificationByFilter](arkts-notification-getactivenotificationbyfilter-f-sys.md#getactivenotificationbyfilter-2) | Obtains information about the common live view that matches the specified filter criteria. This API uses a promise to return the result. |
-| [getAllActiveNotifications](arkts-notification-getallactivenotifications-f-sys.md#getallactivenotifications-1) | Obtains all active notifications. This API uses an asynchronous callback to return the result. |
-| [getAllActiveNotifications](arkts-notification-getallactivenotifications-f-sys.md#getallactivenotifications-2) | Obtains all active notifications. This API uses a promise to return the result. |
-| [getAllNotificationEnabledBundles](arkts-notification-getallnotificationenabledbundles-f-sys.md#getallnotificationenabledbundles-1) | Obtains a list of applications that allow notifications. This API uses a promise to return the result. |
-| [getAllNotificationEnabledBundles](arkts-notification-getallnotificationenabledbundles-f-sys.md#getallnotificationenabledbundles-2) | Obtains the list of applications that are allowed to publish notifications by a specified user. This API uses a promise to return the result. |
-| [getBadgeDisplayStatusByBundles](arkts-notification-getbadgedisplaystatusbybundles-f-sys.md#getbadgedisplaystatusbybundles-1) | Batch obtains the display statuses of application badges. This API uses a promise to return the result. |
-| [getBundlePriorityConfig](arkts-notification-getbundlepriorityconfig-f-sys.md#getbundlepriorityconfig-1) | Obtains the priority configuration of an application. |
-| [getDeviceRemindType](arkts-notification-getdeviceremindtype-f-sys.md#getdeviceremindtype-1) | Obtains the notification reminder type. This API uses an asynchronous callback to return the result. |
-| [getDeviceRemindType](arkts-notification-getdeviceremindtype-f-sys.md#getdeviceremindtype-2) | Obtains the notification reminder type. This API uses a promise to return the result. |
-| [getDistributedDeviceList](arkts-notification-getdistributeddevicelist-f-sys.md#getdistributeddevicelist-1) | Obtains the device types that enable cross-device notification. This API uses a promise to return the result. |
-| [getDoNotDisturbDate](arkts-notification-getdonotdisturbdate-f-sys.md#getdonotdisturbdate-1) | Obtains the DND time. This API uses an asynchronous callback to return the result. |
-| [getDoNotDisturbDate](arkts-notification-getdonotdisturbdate-f-sys.md#getdonotdisturbdate-2) | Obtains the DND time. This API uses a promise to return the result. |
-| [getDoNotDisturbDate](arkts-notification-getdonotdisturbdate-f-sys.md#getdonotdisturbdate-3) | Obtains the DND time of a specified user. This API uses an asynchronous callback to return the result. |
-| [getDoNotDisturbDate](arkts-notification-getdonotdisturbdate-f-sys.md#getdonotdisturbdate-4) | Obtains the DND time of a specified user. This API uses a promise to return the result. |
-| [getDoNotDisturbProfile](arkts-notification-getdonotdisturbprofile-f-sys.md#getdonotdisturbprofile-1) | Queries the Do Not Disturb profile. This API uses a promise to return the result. |
-| [getDoNotDisturbProfile](arkts-notification-getdonotdisturbprofile-f-sys.md#getdonotdisturbprofile-2) | Queries the Do Not Disturb profile of a specified user. This API uses a promise to return the result. |
-| [getNotificationStatisticsByBundle](arkts-notification-getnotificationstatisticsbybundle-f-sys.md#getnotificationstatisticsbybundle-1) | Obtains notification statistics of a specified list of applications in batches. This API uses a promise to return the result. |
-| [getNotificationSwitch](arkts-notification-getnotificationswitch-f-sys.md#getnotificationswitch-1) | Obtains the status of the notification switch. Use Promise asynchronous callbacks. |
-| [getPriorityEnabledByBundles](arkts-notification-getpriorityenabledbybundles-f-sys.md#getpriorityenabledbybundles-1) | Obtains whether priority notifications are enabled for applications in batches. This API uses a promise to return the result. |
-| [getPriorityStrategyByBundles](arkts-notification-getprioritystrategybybundles-f-sys.md#getprioritystrategybybundles-1) | Obtains the application priority notification strategies in batches. This API uses a promise to return the result. |
-| [getReminderInfoByBundles](arkts-notification-getreminderinfobybundles-f-sys.md#getreminderinfobybundles-1) | Batch obtains reminders of specified applications. This API uses a promise to return the result. |
-| [getRingtoneInfoByBundle](arkts-notification-getringtoneinfobybundle-f-sys.md#getringtoneinfobybundle-1) | Obtains the custom ringtone information of an application. This API uses a promise to return the result. |
-| [getSlotByBundle](arkts-notification-getslotbybundle-f-sys.md#getslotbybundle-1) | Obtains a notification slot of a specified application. This API uses a promise to return the result. Before obtaining the notification slot, create a slot through [addSlot](arkts-notification-addslot-f-sys.md#addslot-1). |
-| [getSlotFlagsByBundle](arkts-notification-getslotflagsbybundle-f-sys.md#getslotflagsbybundle-1) | Obtains the notification slot flag of a specified application. This API uses a promise to return the result. |
-| [getSlotNumByBundle](arkts-notification-getslotnumbybundle-f-sys.md#getslotnumbybundle-1) | Obtains the number of notification slots of a specified application. This API uses an asynchronous callback to return the result. |
-| [getSlotNumByBundle](arkts-notification-getslotnumbybundle-f-sys.md#getslotnumbybundle-2) | Obtains the number of notification slots of a specified application. This API uses a promise to return the result. |
-| [getSlotsByBundle](arkts-notification-getslotsbybundle-f-sys.md#getslotsbybundle-1) | Obtains the notification slots of a specified application. This API uses an asynchronous callback to return the result. |
-| [getSlotsByBundle](arkts-notification-getslotsbybundle-f-sys.md#getslotsbybundle-2) | Obtains the notification slots of a specified application. This API uses a promise to return the result. |
-| [getSyncNotificationEnabledWithoutApp](arkts-notification-getsyncnotificationenabledwithoutapp-f-sys.md#getsyncnotificationenabledwithoutapp-1) | Obtains whether the notification sync feature is enabled for devices where the application is not installed. This API uses an asynchronous callback to return the result. |
-| [getSyncNotificationEnabledWithoutApp](arkts-notification-getsyncnotificationenabledwithoutapp-f-sys.md#getsyncnotificationenabledwithoutapp-2) | Obtains whether the notification sync feature is enabled for devices where the application is not installed. This API uses a promise to return the result. |
-| [isBadgeDisplayed](arkts-notification-isbadgedisplayed-f-sys.md#isbadgedisplayed-1) | Checks whether the notification badge is enabled for a specified application. This API uses an asynchronous callback to return the result. |
-| [isBadgeDisplayed](arkts-notification-isbadgedisplayed-f-sys.md#isbadgedisplayed-2) | Checks whether the notification badge is enabled for a specified application. This API uses a promise to return the result. |
-| [isDistributedEnabled](arkts-notification-isdistributedenabled-f-sys.md#isdistributedenabled-3) | Checks whether a device enables cross-device notification. This API uses a promise to return the result. |
-| [isDistributedEnabledByBundle](arkts-notification-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle-1) | Checks whether distributed notification is enabled for a specified application. This API uses an asynchronous callback to return the result. |
-| [isDistributedEnabledByBundle](arkts-notification-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle-2) | Checks whether distributed notification is enabled for a specified application. This API uses a promise to return the result. |
-| [isDistributedEnabledByBundle](arkts-notification-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle-3) | Obtains whether a specified application enables cross-device collaboration. This API uses a promise to return the result. |
-| [isDistributedEnabledBySlot](arkts-notification-isdistributedenabledbyslot-f-sys.md#isdistributedenabledbyslot-1) | Queries whether notifications of a specified slot can be sent to devices of a specified type. This API uses a promise to return the result. |
-| [isNotificationEnabled](arkts-notification-isnotificationenabled-f-sys.md#isnotificationenabled-1) | Checks whether notification is enabled for the specified application. This API uses an asynchronous callback to return the result. |
-| [isNotificationEnabled](arkts-notification-isnotificationenabled-f-sys.md#isnotificationenabled-2) | Checks whether notification is enabled for the specified application. This API uses a promise to return the result. |
-| [isNotificationEnabled](arkts-notification-isnotificationenabled-f-sys.md#isnotificationenabled-3) | Checks whether notification is enabled for the specified application. This API uses an asynchronous callback to return the result. |
-| [isNotificationEnabled](arkts-notification-isnotificationenabled-f-sys.md#isnotificationenabled-4) | Checks whether notification is enabled for the specified application. This API uses a promise to return the result. |
-| [isNotificationEnabled](arkts-notification-isnotificationenabled-f-sys.md#isnotificationenabled-5) | Checks whether notification is enabled for a specified user. This API uses an asynchronous callback to return the result. |
-| [isNotificationEnabled](arkts-notification-isnotificationenabled-f-sys.md#isnotificationenabled-6) | Checks whether notification is enabled for a specified user. This API uses a promise to return the result. |
-| [isNotificationSlotEnabled](arkts-notification-isnotificationslotenabled-f-sys.md#isnotificationslotenabled-1) | Checks whether a notification slot type is enabled for the specified application. This API uses an asynchronous callback to return the result. |
-| [isNotificationSlotEnabled](arkts-notification-isnotificationslotenabled-f-sys.md#isnotificationslotenabled-2) | Checks whether a notification slot type is enabled for the specified application. This API uses a promise to return the result. |
-| [isNotificationSlotEnabledByBundles](arkts-notification-isnotificationslotenabledbybundles-f-sys.md#isnotificationslotenabledbybundles-1) | Checks whether a notification slot type is enabled for the specified applications in batch. This API uses a promise to return the result. |
-| [isPriorityEnabled](arkts-notification-ispriorityenabled-f-sys.md#ispriorityenabled-1) | Checks whether the priority notification is enabled. |
-| [isPriorityEnabledByBundle](arkts-notification-ispriorityenabledbybundle-f-sys.md#ispriorityenabledbybundle-1) | Checks whether the priority notification for a specified application is enabled. |
-| [isPriorityIntelligentEnabled](arkts-notification-ispriorityintelligentenabled-f-sys.md#ispriorityintelligentenabled-1) | Obtains whether the intelligent priority notification service is enabled. This API uses a promise to return the result. |
-| [isSilentReminderEnabled](arkts-notification-issilentreminderenabled-f-sys.md#issilentreminderenabled-1) | Checks whether the silent reminder is enabled. This API uses a promise to return the result. |
-| [isSmartReminderEnabled](arkts-notification-issmartreminderenabled-f-sys.md#issmartreminderenabled-1) | Obtains a smart reminder for cross-device collaboration. This API uses a promise to return the result. |
-| [isSupportDoNotDisturbMode](arkts-notification-issupportdonotdisturbmode-f-sys.md#issupportdonotdisturbmode-1) | Checks whether DND mode is supported. This API uses an asynchronous callback to return the result. |
-| [isSupportDoNotDisturbMode](arkts-notification-issupportdonotdisturbmode-f-sys.md#issupportdonotdisturbmode-2) | Checks whether DND mode is supported. This API uses a promise to return the result. |
-| [off](arkts-notification-off-f-sys.md#off-1) | Unsubscribes from notification events. |
-| [offBadgeNumberQuery](arkts-notification-offbadgenumberquery-f-sys.md#offbadgenumberquery-1) | Unregisters the callback for querying the number of application badges. |
-| [on](arkts-notification-on-f-sys.md#on-1) | Subscribes to notification events. The notification service sends the notification information in the callback to the verification program. The verification program returns the verification result to determine whether to publish the notification, for example, controlling the publication frequency of marketing notifications. Each [SlotType](arkts-notification-slottype-e.md#slottype) in the system can have only one registrant. |
-| [on](arkts-notification-on-f-sys.md#on-2) | Subscribes to notification events. The notification service sends the notification information in the callback to the verification program. The verification program returns the verification result to determine whether to publish the notification, for example, controlling the publication frequency of marketing notifications. This API uses a promise to return the result. Each [SlotType](arkts-notification-slottype-e.md#slottype) in the system can have only one registrant. |
-| [onBadgeNumberQuery](arkts-notification-onbadgenumberquery-f-sys.md#onbadgenumberquery-1) | Registers a callback for querying the number of application badges. |
-| [publish](arkts-notification-publish-f-sys.md#publish-3) | Publishes a notification to a specified user. This API uses an asynchronous callback to return the result. |
-| [publish](arkts-notification-publish-f-sys.md#publish-4) | Publishes a notification to a specified user. This API uses a promise to return the result. |
-| [publishAsBundle](arkts-notification-publishasbundle-f-sys.md#publishasbundle-1) | Publishes a notification through the reminder agent. This API uses an asynchronous callback to return the result. |
-| [publishAsBundle](arkts-notification-publishasbundle-f-sys.md#publishasbundle-2) | Publishes a notification through the reminder agent. This API uses a promise to return the result. |
-| [publishAsBundle](arkts-notification-publishasbundle-f-sys.md#publishasbundle-3) | Publishes a notification through the reminder agent. This API uses a promise to return the result. |
-| [removeDoNotDisturbProfile](arkts-notification-removedonotdisturbprofile-f-sys.md#removedonotdisturbprofile-1) | Deletes the Do Not Disturb profile. This API uses a promise to return the result. |
-| [removeDoNotDisturbProfile](arkts-notification-removedonotdisturbprofile-f-sys.md#removedonotdisturbprofile-2) | Deletes the Do Not Disturb profile of a specified user. This API uses a promise to return the result. |
-| [removeGroupByBundle](arkts-notification-removegroupbybundle-f-sys.md#removegroupbybundle-1) | Removes notifications under a notification group of the specified application. This API uses an asynchronous callback to return the result. |
-| [removeGroupByBundle](arkts-notification-removegroupbybundle-f-sys.md#removegroupbybundle-2) | Removes notifications under a notification group of the specified application. This API uses a promise to return the result. |
-| [setAdditionalConfig](arkts-notification-setadditionalconfig-f-sys.md#setadditionalconfig-1) | Sets the additional system configuration information of the notification. This API uses a promise to return the result. |
-| [setBadgeDisplayStatusByBundles](arkts-notification-setbadgedisplaystatusbybundles-f-sys.md#setbadgedisplaystatusbybundles-1) | Batch sets whether to display badges for specified applications. This API uses a promise to return the result. |
-| [setBadgeNumberByBundle](arkts-notification-setbadgenumberbybundle-f-sys.md#setbadgenumberbybundle-1) | Sets the badge count for other applications. This API uses a promise to return the result. |
-| [setBundlePriorityConfig](arkts-notification-setbundlepriorityconfig-f-sys.md#setbundlepriorityconfig-1) | Sets the priority configuration of an application. |
-| [setDistributedEnable](arkts-notification-setdistributedenable-f-sys.md#setdistributedenable-1) | Sets whether to enable distributed notification on this device. This API uses an asynchronous callback to return the result. |
-| [setDistributedEnable](arkts-notification-setdistributedenable-f-sys.md#setdistributedenable-2) | Sets whether to enable distributed notification on this device. This API uses a promise to return the result. |
-| [setDistributedEnableByBundle](arkts-notification-setdistributedenablebybundle-f-sys.md#setdistributedenablebybundle-1) | Sets whether to enable distributed notification for a specified application. This API uses an asynchronous callback to return the result. |
-| [setDistributedEnableByBundle](arkts-notification-setdistributedenablebybundle-f-sys.md#setdistributedenablebybundle-2) | Sets whether to enable distributed notification for a specified application. This API uses a promise to return the result. |
-| [setDistributedEnableByBundles](arkts-notification-setdistributedenablebybundles-f-sys.md#setdistributedenablebybundles-1) | Sets whether applications enable cross-device collaboration. This API uses a promise to return the result. |
-| [setDistributedEnabled](arkts-notification-setdistributedenabled-f-sys.md#setdistributedenabled-1) | Sets whether the device of a specified type enables cross-device notification. This API uses a promise to return the result. |
-| [setDistributedEnabledByBundle](arkts-notification-setdistributedenabledbybundle-f-sys.md#setdistributedenabledbybundle-1) | Sets whether a specified application enables cross-device collaboration. This API uses a promise to return the result. |
-| [setDistributedEnabledBySlot](arkts-notification-setdistributedenabledbyslot-f-sys.md#setdistributedenabledbyslot-1) | Sets whether notifications of a specified slot can be sent to devices of a specified type through cross-device collaboration. This API uses a promise to return the result. |
-| [setDoNotDisturbDate](arkts-notification-setdonotdisturbdate-f-sys.md#setdonotdisturbdate-1) | Sets the DND time. This API uses an asynchronous callback to return the result. |
-| [setDoNotDisturbDate](arkts-notification-setdonotdisturbdate-f-sys.md#setdonotdisturbdate-2) | Sets the DND time. This API uses a promise to return the result. |
-| [setDoNotDisturbDate](arkts-notification-setdonotdisturbdate-f-sys.md#setdonotdisturbdate-3) | Sets the DND time for a specified user. This API uses an asynchronous callback to return the result. |
-| [setDoNotDisturbDate](arkts-notification-setdonotdisturbdate-f-sys.md#setdonotdisturbdate-4) | Sets the DND time for a specified user. This API uses a promise to return the result. |
-| [setGeofenceEnabled](arkts-notification-setgeofenceenabled-f-sys.md#setgeofenceenabled-1) | Sets the enabling state of geofencing. This API uses a promise to return the result. |
-| [setNotificationEnable](arkts-notification-setnotificationenable-f-sys.md#setnotificationenable-1) | Sets whether to enable notification for a specified application. This API uses an asynchronous callback to return the result. |
-| [setNotificationEnable](arkts-notification-setnotificationenable-f-sys.md#setnotificationenable-2) | Sets whether to enable notification for a specified application. This API uses a promise to return the result. |
-| [setNotificationEnableSlot](arkts-notification-setnotificationenableslot-f-sys.md#setnotificationenableslot-1) | Sets the enabled status of a slot type for the specified application. This API uses an asynchronous callback to return the result. |
-| [setNotificationEnableSlot](arkts-notification-setnotificationenableslot-f-sys.md#setnotificationenableslot-2) | Sets the enabled status of a slot type for the specified application. This API uses an asynchronous callback to return the result. |
-| [setNotificationEnableSlot](arkts-notification-setnotificationenableslot-f-sys.md#setnotificationenableslot-3) | Sets the enabled status of a slot type for the specified application. This API uses a promise to return the result. |
-| [setNotificationSwitch](arkts-notification-setnotificationswitch-f-sys.md#setnotificationswitch-1) | Sets the status of the notification switch. Use Promise asynchronous callback. |
-| [setPriorityEnabled](arkts-notification-setpriorityenabled-f-sys.md#setpriorityenabled-1) | Sets the enabling status of the priority notification. |
-| [setPriorityEnabledByBundle](arkts-notification-setpriorityenabledbybundle-f-sys.md#setpriorityenabledbybundle-1) | Sets the enabling status of the priority notification for an application. |
-| [setPriorityEnabledByBundles](arkts-notification-setpriorityenabledbybundles-f-sys.md#setpriorityenabledbybundles-1) | Sets whether priority notifications are enabled for applications in batches. This API uses a promise to return the result. |
-| [setPriorityIntelligentEnabled](arkts-notification-setpriorityintelligentenabled-f-sys.md#setpriorityintelligentenabled-1) | Sets the enabling status of the intelligent priority notification service. This API uses a promise to return the result. |
-| [setPriorityStrategyByBundles](arkts-notification-setprioritystrategybybundles-f-sys.md#setprioritystrategybybundles-1) | Sets the application priority notification strategies in batches. This API uses a promise to return the result. |
-| [setReminderInfoByBundles](arkts-notification-setreminderinfobybundles-f-sys.md#setreminderinfobybundles-1) | Batch sets reminders for specified applications. This API uses a promise to return the result. |
-| [setRingtoneInfoByBundle](arkts-notification-setringtoneinfobybundle-f-sys.md#setringtoneinfobybundle-1) | Sets the custom ringtone information for an application. This API uses a promise to return the result. |
-| [setSilentReminderEnabled](arkts-notification-setsilentreminderenabled-f-sys.md#setsilentreminderenabled-1) | Sets the enabling status of the silent reminder. This API uses a promise to return the result. |
-| [setSlotByBundle](arkts-notification-setslotbybundle-f-sys.md#setslotbybundle-1) | Sets the notification slot for a specified application. This API uses an asynchronous callback to return the result. Before setting a notification slot, create a slot through [addSlot](arkts-notification-addslot-f-sys.md#addslot-1). |
-| [setSlotByBundle](arkts-notification-setslotbybundle-f-sys.md#setslotbybundle-2) | Sets the notification slot for a specified application. This API uses a promise to return the result. Before setting a notification slot, create a slot through [addSlot](arkts-notification-addslot-f-sys.md#addslot-1). |
-| [setSlotFlagsByBundle](arkts-notification-setslotflagsbybundle-f-sys.md#setslotflagsbybundle-1) | Sets the slot flags for a specified application. This API uses a promise to return the result. |
-| [setSmartReminderEnabled](arkts-notification-setsmartreminderenabled-f-sys.md#setsmartreminderenabled-1) | Sets a smart reminder for cross-device collaboration. This API uses a promise to return the result. |
-| [setSyncNotificationEnabledWithoutApp](arkts-notification-setsyncnotificationenabledwithoutapp-f-sys.md#setsyncnotificationenabledwithoutapp-1) | Sets whether to enable the notification sync feature for devices where the application is not installed. This API uses an asynchronous callback to return the result. |
-| [setSyncNotificationEnabledWithoutApp](arkts-notification-setsyncnotificationenabledwithoutapp-f-sys.md#setsyncnotificationenabledwithoutapp-2) | Sets whether to enable the notification sync feature for devices where the application is not installed. This API uses a promise to return the result. |
-| [setTargetDeviceStatus](arkts-notification-settargetdevicestatus-f-sys.md#settargetdevicestatus-1) | Sets the status of a device after it is successfully connected. Device status determines the notification mode of the current device when a notification is published. |
-| [snoozeNotification](arkts-notification-snoozenotification-f-sys.md#snoozenotification-1) | Sets a notification snooze reminder. The notification reminds the user again after the specified time. Each setting triggers only one reminder, using the same reminder mode as the original notification. After the snooze reminder is set, the original notification is deleted. |
-| [subscribeSystemLiveView](arkts-notification-subscribesystemliveview-f-sys.md#subscribesystemliveview-1) | Subscribes to the system live view notification. This API uses a promise to return the result. |
-| [triggerSystemLiveView](arkts-notification-triggersystemliveview-f-sys.md#triggersystemliveview-1) | Triggers a system live view notification. This API uses a promise to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[addDoNotDisturbProfile](arkts-notificationmanager-adddonotdisturbprofile-f-sys.md#addDoNotDisturbProfile-1) | 添加勿扰模式配置信息。使用Promise异步回调。 |
+| <!--DelRow-->[addDoNotDisturbProfile](arkts-notificationmanager-adddonotdisturbprofile-f-sys.md#addDoNotDisturbProfile-2) | 向指定用户添加勿扰模式配置信息。使用Promise异步回调。 |
+| [addSlot](arkts-notificationmanager-addslot-f.md#addSlot-1) | 创建指定类型的通知渠道。使用callback异步回调。 |
+| [addSlot](arkts-notificationmanager-addslot-f.md#addSlot-2) | 创建指定类型的通知渠道。使用Promise异步回调。 |
+| <!--DelRow-->[addSlot](arkts-notificationmanager-addslot-f-sys.md#addSlot-1) | 创建通知渠道。使用callback异步回调。 |
+| <!--DelRow-->[addSlot](arkts-notificationmanager-addslot-f-sys.md#addSlot-2) | 创建通知渠道。使用Promise异步回调。 |
+| <!--DelRow-->[addSlots](arkts-notificationmanager-addslots-f-sys.md#addSlots-1) | 创建多个通知渠道。使用callback异步回调。 |
+| <!--DelRow-->[addSlots](arkts-notificationmanager-addslots-f-sys.md#addSlots-2) | 创建多个通知渠道。使用Promise异步回调。 |
+| [cancel](arkts-notificationmanager-cancel-f.md#cancel-1) | 根据指定的通知ID取消已发布的通知。使用callback异步回调。 |
+| [cancel](arkts-notificationmanager-cancel-f.md#cancel-2) | 根据通知ID和标签取消已发布的通知。使用callback异步回调。 |
+| [cancel](arkts-notificationmanager-cancel-f.md#cancel-3) | 根据通知ID和标签取消已发布的通知，若标签为空，则取消与指定通知ID匹配的已发布通知。使用Promise异步回调。 |
+| <!--DelRow-->[cancel](arkts-notificationmanager-cancel-f-sys.md#cancel-1) | 代理取消当前用户其他应用的通知。使用Promise异步回调。 需要当前应用与其他应用存在代理关系，或者当前应用有ohos.permission.NOTIFICATION_AGENT_CONTROLLER权限。 |
+| [cancelAll](arkts-notificationmanager-cancelall-f.md#cancelAll-1) | 取消当前应用所有已发布的通知。使用callback异步回调。 |
+| [cancelAll](arkts-notificationmanager-cancelall-f.md#cancelAll-2) | 取消当前应用所有已发布的通知。使用Promise异步回调。 |
+| <!--DelRow-->[cancelAsBundle](arkts-notificationmanager-cancelasbundle-f-sys.md#cancelAsBundle-1) | 取消代理通知。使用callback异步回调。 |
+| <!--DelRow-->[cancelAsBundle](arkts-notificationmanager-cancelasbundle-f-sys.md#cancelAsBundle-2) | 取消代理通知。使用Promise异步回调。 |
+| <!--DelRow-->[cancelAsBundle](arkts-notificationmanager-cancelasbundle-f-sys.md#cancelAsBundle-3) | 取消代理通知。使用Promise异步回调。 |
+| [cancelGroup](arkts-notificationmanager-cancelgroup-f.md#cancelGroup-1) | 取消当前应用指定组下的通知。使用callback异步回调。 |
+| [cancelGroup](arkts-notificationmanager-cancelgroup-f.md#cancelGroup-2) | 取消当前应用指定组下的通知。使用Promise异步回调。 |
+| <!--DelRow-->[disableNotificationFeature](arkts-notificationmanager-disablenotificationfeature-f-sys.md#disableNotificationFeature-1) | 将应用包名添加到通知发布权限管控名单，以阻止应用发布通知。支持启用或关闭该功能。 |
+| <!--DelRow-->[disableNotificationFeature](arkts-notificationmanager-disablenotificationfeature-f-sys.md#disableNotificationFeature-2) | 将应用包名添加到通知发布权限管控名单，以阻止应用发布通知。使用Promise异步回调。 |
+| <!--DelRow-->[displayBadge](arkts-notificationmanager-displaybadge-f-sys.md#displayBadge-1) | 设定指定应用的角标使能状态。使用callback异步回调。 |
+| <!--DelRow-->[displayBadge](arkts-notificationmanager-displaybadge-f-sys.md#displayBadge-2) | 设定指定应用的角标使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[getActiveNotificationByFilter](arkts-notificationmanager-getactivenotificationbyfilter-f-sys.md#getActiveNotificationByFilter-1) | 获取满足条件的普通实况通知信息。使用callback异步回调。 |
+| <!--DelRow-->[getActiveNotificationByFilter](arkts-notificationmanager-getactivenotificationbyfilter-f-sys.md#getActiveNotificationByFilter-2) | 获取满足条件的普通实况通知信息。使用callback异步回调。 |
+| <!--DelRow-->[getActiveNotificationByFilter](arkts-notificationmanager-getactivenotificationbyfilter-f-sys.md#getActiveNotificationByFilter-3) | 获取满足条件的普通实况通知信息。使用Promise异步回调。 |
+| <!--DelRow-->[getActiveNotificationByFilter](arkts-notificationmanager-getactivenotificationbyfilter-f-sys.md#getActiveNotificationByFilter-4) | 获取满足条件的普通实况通知信息。使用Promise异步回调。 |
+| [getActiveNotificationCount](arkts-notificationmanager-getactivenotificationcount-f.md#getActiveNotificationCount-1) | 获取当前应用未删除的通知数。使用callback异步回调。 |
+| [getActiveNotificationCount](arkts-notificationmanager-getactivenotificationcount-f.md#getActiveNotificationCount-2) | 获取当前应用未删除的通知数。使用Promise异步回调。 |
+| [getActiveNotifications](arkts-notificationmanager-getactivenotifications-f.md#getActiveNotifications-1) | 获取当前应用未删除的通知列表。使用callback异步回调。 |
+| [getActiveNotifications](arkts-notificationmanager-getactivenotifications-f.md#getActiveNotifications-2) | 获取当前应用未删除的通知列表。使用Promise异步回调。 |
+| <!--DelRow-->[getAllActiveNotifications](arkts-notificationmanager-getallactivenotifications-f-sys.md#getAllActiveNotifications-1) | 获取当前未删除的所有通知。使用callback异步回调。 |
+| <!--DelRow-->[getAllActiveNotifications](arkts-notificationmanager-getallactivenotifications-f-sys.md#getAllActiveNotifications-2) | 获取当前未删除的所有通知。使用Promise异步回调。 |
+| <!--DelRow-->[getAllNotificationEnabledBundles](arkts-notificationmanager-getallnotificationenabledbundles-f-sys.md#getAllNotificationEnabledBundles-1) | 获取允许通知的应用程序列表。使用Promise异步回调。 |
+| <!--DelRow-->[getAllNotificationEnabledBundles](arkts-notificationmanager-getallnotificationenabledbundles-f-sys.md#getAllNotificationEnabledBundles-2) | 获取指定用户下允许通知的应用程序列表。使用Promise异步回调。 |
+| <!--DelRow-->[getBadgeDisplayStatusByBundles](arkts-notificationmanager-getbadgedisplaystatusbybundles-f-sys.md#getBadgeDisplayStatusByBundles-1) | 批量获取应用角标显示状态。使用Promise异步回调。 |
+| [getBadgeNumber](arkts-notificationmanager-getbadgenumber-f.md#getBadgeNumber-1) | 获取当前应用角标数量。使用Promise异步回调。 |
+| <!--DelRow-->[getBundlePriorityConfig](arkts-notificationmanager-getbundlepriorityconfig-f-sys.md#getBundlePriorityConfig-1) | 获取应用的优先功能配置。 |
+| <!--DelRow-->[getDeviceRemindType](arkts-notificationmanager-getdeviceremindtype-f-sys.md#getDeviceRemindType-1) | 获取通知的提醒方式。使用callback异步回调。 |
+| <!--DelRow-->[getDeviceRemindType](arkts-notificationmanager-getdeviceremindtype-f-sys.md#getDeviceRemindType-2) | 获取通知的提醒方式。使用Promise异步回调。 |
+| <!--DelRow-->[getDistributedDeviceList](arkts-notificationmanager-getdistributeddevicelist-f-sys.md#getDistributedDeviceList-1) | 查询支持跨设备协同通知的设备类型。使用Promise异步回调。 |
+| <!--DelRow-->[getDoNotDisturbDate](arkts-notificationmanager-getdonotdisturbdate-f-sys.md#getDoNotDisturbDate-1) | 查询免打扰时间。使用callback异步回调。 |
+| <!--DelRow-->[getDoNotDisturbDate](arkts-notificationmanager-getdonotdisturbdate-f-sys.md#getDoNotDisturbDate-2) | 查询免打扰时间。使用Promise异步回调。 |
+| <!--DelRow-->[getDoNotDisturbDate](arkts-notificationmanager-getdonotdisturbdate-f-sys.md#getDoNotDisturbDate-3) | 查询指定用户的免打扰时间。使用callback异步回调。 |
+| <!--DelRow-->[getDoNotDisturbDate](arkts-notificationmanager-getdonotdisturbdate-f-sys.md#getDoNotDisturbDate-4) | 查询指定用户的免打扰时间。使用Promise异步回调。 |
+| <!--DelRow-->[getDoNotDisturbProfile](arkts-notificationmanager-getdonotdisturbprofile-f-sys.md#getDoNotDisturbProfile-1) | 查询勿扰模式配置信息。使用Promise异步回调。 |
+| <!--DelRow-->[getDoNotDisturbProfile](arkts-notificationmanager-getdonotdisturbprofile-f-sys.md#getDoNotDisturbProfile-2) | 查询指定用户的勿扰模式配置信息。使用Promise异步回调。 |
+| [getNotificationParameters](arkts-notificationmanager-getnotificationparameters-f.md#getNotificationParameters-1) | 获取通知[NotificationRequest]{@link ./notification/notificationRequest:NotificationRequest}中wantAgent字段的部分信息。使用Promise异 步回调。 |
+| [getNotificationParameters](arkts-notificationmanager-getnotificationparameters-f.md#getNotificationParameters-2) | 获取通知[NotificationRequest]{@link ./notification/notificationRequest:NotificationRequest}中wantAgent字段的部分信息。使用Promise异 步回调。 |
+| [getNotificationSetting](arkts-notificationmanager-getnotificationsetting-f.md#getNotificationSetting-1) | 获取应用程序的通知设置。使用Promise异步回调。 |
+| <!--DelRow-->[getNotificationStatisticsByBundle](arkts-notificationmanager-getnotificationstatisticsbybundle-f-sys.md#getNotificationStatisticsByBundle-1) | 批量获取指定应用列表的通知统计信息，使用Promise异步回调。 |
+| <!--DelRow-->[getNotificationSwitch](arkts-notificationmanager-getnotificationswitch-f-sys.md#getNotificationSwitch-1) | 获取通知开关状态。使用Promise异步回调。 |
+| <!--DelRow-->[getPriorityEnabledByBundles](arkts-notificationmanager-getpriorityenabledbybundles-f-sys.md#getPriorityEnabledByBundles-1) | 批量获取应用通知优先级开关状态。使用Promise异步回调。 |
+| <!--DelRow-->[getPriorityStrategyByBundles](arkts-notificationmanager-getprioritystrategybybundles-f-sys.md#getPriorityStrategyByBundles-1) | 批量获取应用通知优先策略。使用Promise异步回调。 |
+| <!--DelRow-->[getReminderInfoByBundles](arkts-notificationmanager-getreminderinfobybundles-f-sys.md#getReminderInfoByBundles-1) | 批量获取指定应用提醒信息。使用Promise异步回调。 |
+| <!--DelRow-->[getRingtoneInfoByBundle](arkts-notificationmanager-getringtoneinfobybundle-f-sys.md#getRingtoneInfoByBundle-1) | 获取应用自定义铃声信息。使用Promise异步回调。 |
+| [getSlot](arkts-notificationmanager-getslot-f.md#getSlot-1) | 获取指定类型的通知渠道。使用callback异步回调。 |
+| [getSlot](arkts-notificationmanager-getslot-f.md#getSlot-2) | 获取指定类型的通知渠道。使用callback异步回调。 |
+| [getSlot](arkts-notificationmanager-getslot-f.md#getSlot-3) | 获取指定类型的通知渠道。使用Promise异步回调。 |
+| [getSlot](arkts-notificationmanager-getslot-f.md#getSlot-4) | 获取指定类型的通知渠道。使用Promise异步回调。 |
+| <!--DelRow-->[getSlotByBundle](arkts-notificationmanager-getslotbybundle-f-sys.md#getSlotByBundle-1) | 获取指定应用指定类型的通知渠道。使用Promise异步回调。 获取前需要先通过[addSlot]{@link notificationManager.addSlot(slot: NotificationSlot, callback: AsyncCallback<void>)}创建通知渠道。 |
+| <!--DelRow-->[getSlotByBundle](arkts-notificationmanager-getslotbybundle-f-sys.md#getSlotByBundle-2) | 获取指定应用指定类型的通知渠道。使用Promise异步回调。 获取前需要先通过[addSlot]{@link notificationManager.addSlot(slot: NotificationSlot, callback: AsyncCallback<void>)}创建通知渠道。 |
+| <!--DelRow-->[getSlotFlagsByBundle](arkts-notificationmanager-getslotflagsbybundle-f-sys.md#getSlotFlagsByBundle-1) | 获取指定应用的通知渠道标识位。使用Promise异步回调。 |
+| <!--DelRow-->[getSlotNumByBundle](arkts-notificationmanager-getslotnumbybundle-f-sys.md#getSlotNumByBundle-1) | 获取指定应用的通知渠道数量。使用callback异步回调。 |
+| <!--DelRow-->[getSlotNumByBundle](arkts-notificationmanager-getslotnumbybundle-f-sys.md#getSlotNumByBundle-2) | 获取指定应用的通知渠道数量。使用Promise异步回调。 |
+| [getSlots](arkts-notificationmanager-getslots-f.md#getSlots-1) | 获取当前应用的所有通知渠道。使用callback异步回调。 |
+| [getSlots](arkts-notificationmanager-getslots-f.md#getSlots-2) | 获取当前应用的所有通知渠道。使用Promise异步回调。 |
+| <!--DelRow-->[getSlotsByBundle](arkts-notificationmanager-getslotsbybundle-f-sys.md#getSlotsByBundle-1) | 获取指定应用的所有通知渠道。使用callback异步回调。 |
+| <!--DelRow-->[getSlotsByBundle](arkts-notificationmanager-getslotsbybundle-f-sys.md#getSlotsByBundle-2) | 获取指定应用的所有通知渠道。使用Promise异步回调。 |
+| <!--DelRow-->[getSyncNotificationEnabledWithoutApp](arkts-notificationmanager-getsyncnotificationenabledwithoutapp-f-sys.md#getSyncNotificationEnabledWithoutApp-1) | 获取同步通知到未安装应用程序设备的开关是否开启(callback形式)。 |
+| <!--DelRow-->[getSyncNotificationEnabledWithoutApp](arkts-notificationmanager-getsyncnotificationenabledwithoutapp-f-sys.md#getSyncNotificationEnabledWithoutApp-2) | 获取同步通知到未安装应用程序设备的开关是否开启(Promise形式)。 |
+| <!--DelRow-->[isBadgeDisplayed](arkts-notificationmanager-isbadgedisplayed-f-sys.md#isBadgeDisplayed-1) | 获取指定应用的角标使能状态。使用callback异步回调。 |
+| <!--DelRow-->[isBadgeDisplayed](arkts-notificationmanager-isbadgedisplayed-f-sys.md#isBadgeDisplayed-2) | 获取指定应用的角标使能状态。使用Promise异步回调。 |
+| [isDistributedEnabled](arkts-notificationmanager-isdistributedenabled-f.md#isDistributedEnabled-1) | 查询设备是否支持跨设备协同通知。使用callback异步回调。 |
+| [isDistributedEnabled](arkts-notificationmanager-isdistributedenabled-f.md#isDistributedEnabled-2) | 查询设备是否支持跨设备协同通知。使用Promise异步回调。 |
+| <!--DelRow-->[isDistributedEnabled](arkts-notificationmanager-isdistributedenabled-f-sys.md#isDistributedEnabled-1) | 查询设备是否支持跨设备协同通知。使用Promise异步回调。 |
+| <!--DelRow-->[isDistributedEnabledByBundle](arkts-notificationmanager-isdistributedenabledbybundle-f-sys.md#isDistributedEnabledByBundle-1) | 根据应用的包获取应用程序是否支持分布式通知。使用callback异步回调。 |
+| <!--DelRow-->[isDistributedEnabledByBundle](arkts-notificationmanager-isdistributedenabledbybundle-f-sys.md#isDistributedEnabledByBundle-2) | 查询指定应用是否支持分布式通知。使用Promise异步回调。 |
+| <!--DelRow-->[isDistributedEnabledByBundle](arkts-notificationmanager-isdistributedenabledbybundle-f-sys.md#isDistributedEnabledByBundle-3) | 获取指定应用是否支持跨设备协同。使用Promise异步回调。 |
+| <!--DelRow-->[isDistributedEnabledBySlot](arkts-notificationmanager-isdistributedenabledbyslot-f-sys.md#isDistributedEnabledBySlot-1) | 查询指定渠道的通知是否支持通知跨设备协同至指定类型设备。使用Promise异步回调。 |
+| [isGeofenceEnabled](arkts-notificationmanager-isgeofenceenabled-f.md#isGeofenceEnabled-1) | 检查地理围栏功能是否已启用。使用Promise异步回调。 |
+| <!--DelRow-->[isNotificationEnabled](arkts-notificationmanager-isnotificationenabled-f-sys.md#isNotificationEnabled-1) | 获取指定应用的通知使能状态。使用callback异步回调。 |
+| <!--DelRow-->[isNotificationEnabled](arkts-notificationmanager-isnotificationenabled-f-sys.md#isNotificationEnabled-2) | 获取指定应用的通知使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[isNotificationEnabled](arkts-notificationmanager-isnotificationenabled-f-sys.md#isNotificationEnabled-3) | 查询当前应用通知使能状态。使用callback异步回调。 |
+| <!--DelRow-->[isNotificationEnabled](arkts-notificationmanager-isnotificationenabled-f-sys.md#isNotificationEnabled-4) | 查询当前应用通知使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[isNotificationEnabled](arkts-notificationmanager-isnotificationenabled-f-sys.md#isNotificationEnabled-5) | 获取指定用户ID下的通知使能状态。使用callback异步回调。 |
+| <!--DelRow-->[isNotificationEnabled](arkts-notificationmanager-isnotificationenabled-f-sys.md#isNotificationEnabled-6) | 获取指定用户下的通知使能状态。使用Promise异步回调。 |
+| [isNotificationEnabledSync](arkts-notificationmanager-isnotificationenabledsync-f.md#isNotificationEnabledSync-1) | 同步查询当前应用通知使能状态。 |
+| <!--DelRow-->[isNotificationSlotEnabled](arkts-notificationmanager-isnotificationslotenabled-f-sys.md#isNotificationSlotEnabled-1) | 获取指定应用的指定渠道类型的使能状态。使用callback异步回调。 |
+| <!--DelRow-->[isNotificationSlotEnabled](arkts-notificationmanager-isnotificationslotenabled-f-sys.md#isNotificationSlotEnabled-2) | 获取指定应用的指定渠道类型的使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[isNotificationSlotEnabledByBundles](arkts-notificationmanager-isnotificationslotenabledbybundles-f-sys.md#isNotificationSlotEnabledByBundles-1) | 批量获取多个应用的指定渠道类型的使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[isPriorityEnabled](arkts-notificationmanager-ispriorityenabled-f-sys.md#isPriorityEnabled-1) | 获取通知优先级总开关状态。 |
+| <!--DelRow-->[isPriorityEnabledByBundle](arkts-notificationmanager-ispriorityenabledbybundle-f-sys.md#isPriorityEnabledByBundle-1) | 获取应用通知优先级开关状态。 |
+| <!--DelRow-->[isPriorityIntelligentEnabled](arkts-notificationmanager-ispriorityintelligentenabled-f-sys.md#isPriorityIntelligentEnabled-1) | 获取优先通知智能服务使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[isSilentReminderEnabled](arkts-notificationmanager-issilentreminderenabled-f-sys.md#isSilentReminderEnabled-1) | 查询静默提醒的开关状态。使用Promise进行异步回调。 |
+| <!--DelRow-->[isSmartReminderEnabled](arkts-notificationmanager-issmartreminderenabled-f-sys.md#isSmartReminderEnabled-1) | 获取设备是否与其他设备协同智能提醒。使用Promise异步回调。 |
+| <!--DelRow-->[isSupportDoNotDisturbMode](arkts-notificationmanager-issupportdonotdisturbmode-f-sys.md#isSupportDoNotDisturbMode-1) | 查询是否支持免打扰功能。使用callback异步回调。 |
+| <!--DelRow-->[isSupportDoNotDisturbMode](arkts-notificationmanager-issupportdonotdisturbmode-f-sys.md#isSupportDoNotDisturbMode-2) | 查询是否支持免打扰功能。使用Promise异步回调。 |
+| [isSupportTemplate](arkts-notificationmanager-issupporttemplate-f.md#isSupportTemplate-1) | 在使用[通知模板]{@link ./notification/notificationTemplate:NotificationTemplate}发布通知前， 可以通过该接口查询是否支持对应的通知模板。使用callback异步回调。 |
+| [isSupportTemplate](arkts-notificationmanager-issupporttemplate-f.md#isSupportTemplate-2) | 在使用[通知模板]{@link ./notification/notificationTemplate:NotificationTemplate}发布通知前， 可以通过该接口查询是否支持对应的通知模板。使用Promise异步回调。 |
+| <!--DelRow-->[off](arkts-notificationmanager-off-f-sys.md#off-1) | 取消通知监听回调。 |
+| <!--DelRow-->[offBadgeNumberQuery](arkts-notificationmanager-offbadgenumberquery-f-sys.md#offBadgeNumberQuery-1) | 取消应用角标数量查询回调。 |
+| <!--DelRow-->[offCheckNotification](arkts-notificationmanager-offchecknotification-f-sys.md#offCheckNotification-1) | 通知监听回调。 |
+| <!--DelRow-->[on](arkts-notificationmanager-on-f-sys.md#on-1) | 注册通知监听回调。通知服务将通知信息回调给校验程序，校验程序返回校验结果决定该通知是否发布，如营销类通知发布频率控制等。 系统中每个[SlotType]{@link @ohos.notificationManager:notificationManager.SlotType}只允许存在一个注册者。 |
+| <!--DelRow-->[on](arkts-notificationmanager-on-f-sys.md#on-2) | 注册通知监听回调。通知服务将通知信息回调给校验程序，校验程序返回校验结果决定该通知是否发布，如营销类通知发布频率控制等。使用Promise异步回调。 系统中每个[SlotType]{@link @ohos.notificationManager:notificationManager.SlotType}只允许存在一个注册者。 |
+| <!--DelRow-->[onBadgeNumberQuery](arkts-notificationmanager-onbadgenumberquery-f-sys.md#onBadgeNumberQuery-1) | 注册应用角标数量查询回调。 |
+| <!--DelRow-->[onCheckNotification](arkts-notificationmanager-onchecknotification-f-sys.md#onCheckNotification-1) | 通知监听回调。 |
+| <!--DelRow-->[onCheckNotification](arkts-notificationmanager-onchecknotification-f-sys.md#onCheckNotification-2) | 通知监听回调。 |
+| [openNotificationSettings](arkts-notificationmanager-opennotificationsettings-f.md#openNotificationSettings-1) | 拉起应用的通知设置界面，该页面以半模态形式呈现，可用于设置通知开关、通知提醒方式等。使用Promise异步回调。 |
+| [openNotificationSettingsWithResult](arkts-notificationmanager-opennotificationsettingswithresult-f.md#openNotificationSettingsWithResult-1) | 拉起应用的通知设置界面，该页面以半模态形式呈现，可用于设置通知开关、通知提醒方式等。使用Promise异步回调, 当半模态窗口关闭时返回用户设置的状态。 |
+| [publish](arkts-notificationmanager-publish-f.md#publish-1) | 发布通知。使用callback异步回调。 如果新发布通知与已发布通知的ID和标签都相同，则新通知将取代原有通知。 |
+| [publish](arkts-notificationmanager-publish-f.md#publish-2) | 发布通知。使用Promise异步回调。 如果新发布通知与已发布通知的ID和标签都相同，则新通知将取代原有通知。 |
+| <!--DelRow-->[publish](arkts-notificationmanager-publish-f-sys.md#publish-1) | 发布通知给指定的用户。使用callback异步回调。 |
+| <!--DelRow-->[publish](arkts-notificationmanager-publish-f-sys.md#publish-2) | 发布通知给指定的用户。使用Promise异步回调。 |
+| <!--DelRow-->[publishAsBundle](arkts-notificationmanager-publishasbundle-f-sys.md#publishAsBundle-1) | 发布代理通知。使用callback异步回调。 |
+| <!--DelRow-->[publishAsBundle](arkts-notificationmanager-publishasbundle-f-sys.md#publishAsBundle-2) | 发布代理通知。使用Promise异步回调。 |
+| <!--DelRow-->[publishAsBundle](arkts-notificationmanager-publishasbundle-f-sys.md#publishAsBundle-3) | 发布代理通知。使用Promise异步回调。 |
+| [removeAllSlots](arkts-notificationmanager-removeallslots-f.md#removeAllSlots-1) | 删除当前应用所有通知渠道。使用callback异步回调。 |
+| [removeAllSlots](arkts-notificationmanager-removeallslots-f.md#removeAllSlots-2) | 删除当前应用所有通知渠道。使用Promise异步回调。 |
+| <!--DelRow-->[removeDoNotDisturbProfile](arkts-notificationmanager-removedonotdisturbprofile-f-sys.md#removeDoNotDisturbProfile-1) | 删除勿扰模式配置。使用Promise异步回调。 |
+| <!--DelRow-->[removeDoNotDisturbProfile](arkts-notificationmanager-removedonotdisturbprofile-f-sys.md#removeDoNotDisturbProfile-2) | 删除指定用户的勿扰模式配置。使用Promise异步回调。 |
+| <!--DelRow-->[removeGroupByBundle](arkts-notificationmanager-removegroupbybundle-f-sys.md#removeGroupByBundle-1) | 删除指定应用的指定组下的通知。使用callback异步回调。 |
+| <!--DelRow-->[removeGroupByBundle](arkts-notificationmanager-removegroupbybundle-f-sys.md#removeGroupByBundle-2) | 删除指定应用的指定组下的通知。使用Promise异步回调。 |
+| [removeSlot](arkts-notificationmanager-removeslot-f.md#removeSlot-1) | 删除当前应用指定类型的通知渠道。使用callback异步回调。 |
+| [removeSlot](arkts-notificationmanager-removeslot-f.md#removeSlot-2) | 删除当前应用指定类型的通知渠道。使用Promise异步回调。 |
+| [requestEnableNotification](arkts-notificationmanager-requestenablenotification-f.md#requestEnableNotification-1) | 当前应用请求通知使能。使用callback异步回调。 > **说明：** > > 从API version 9开始支持，从API version 12开始废弃，建议使用有context入参的 > [requestEnableNotification]{@link notificationManager.requestEnableNotification(context: UIAbilityContext, callback: AsyncCallback<void>)} > 替代。 |
+| [requestEnableNotification](arkts-notificationmanager-requestenablenotification-f.md#requestEnableNotification-2) | 应用需要获取用户授权才能发送通知。在通知发布前调用该接口，可以拉起通知授权弹窗，让用户选择是否允许发送通知。使用callback异步回调。 > **说明：** > > - 仅当应用界面加载完成后（即调用 > [loadContent]{@link @ohos.app.ability.UIExtensionContentSession:UIExtensionContentSession.loadContent}成功），方可使用该接口 > 。 > > - 在使用该接口拉起通知授权弹窗后，如果用户拒绝授权，将无法使用该接口再次拉起弹窗。开发者可以调用 > [openNotificationSettingsWithResult]{@link notificationManager.openNotificationSettingsWithResult}二次申请授权，拉起通知管理弹窗 > 。 |
+| [requestEnableNotification](arkts-notificationmanager-requestenablenotification-f.md#requestEnableNotification-3) | 当前应用请求通知使能。使用Promise异步回调。 > **说明：** > > 从API version 9开始支持，从API version 12开始废弃，建议使用有context入参的 > [requestEnableNotification]{@link notificationManager.requestEnableNotification(context: UIAbilityContext)}替代。 |
+| [requestEnableNotification](arkts-notificationmanager-requestenablenotification-f.md#requestEnableNotification-4) | 应用需要获取用户授权才能发送通知。在通知发布前调用该接口，可以拉起通知授权弹窗，让用户选择是否允许发送通知。使用Promise异步回调。 > **说明：** > > - 仅当应用界面加载完成后（即调用 > [loadContent]{@link @ohos.app.ability.UIExtensionContentSession:UIExtensionContentSession.loadContent}成功），方可使用该接口 > 。 > > - 在使用该接口拉起通知授权弹窗后，如果用户拒绝授权，将无法使用该接口再次拉起弹窗。开发者可以调用 > [openNotificationSettingsWithResult]{@link notificationManager.openNotificationSettingsWithResult}二次申请授权，拉起通知管理弹窗 > 。 |
+| <!--DelRow-->[setAdditionalConfig](arkts-notificationmanager-setadditionalconfig-f-sys.md#setAdditionalConfig-1) | 设置通知的系统附加配置信息。使用Promise异步回调。 |
+| <!--DelRow-->[setBadgeDisplayStatusByBundles](arkts-notificationmanager-setbadgedisplaystatusbybundles-f-sys.md#setBadgeDisplayStatusByBundles-1) | 批量设置指定应用是否显示角标。使用Promise异步回调。 |
+| [setBadgeNumber](arkts-notificationmanager-setbadgenumber-f.md#setBadgeNumber-1) | 设定角标个数，在应用的桌面图标上呈现。使用callback异步回调。 |
+| [setBadgeNumber](arkts-notificationmanager-setbadgenumber-f.md#setBadgeNumber-2) | 设定角标个数，在应用的桌面图标上呈现。使用Promise异步回调。 |
+| <!--DelRow-->[setBadgeNumberByBundle](arkts-notificationmanager-setbadgenumberbybundle-f-sys.md#setBadgeNumberByBundle-1) | 代理其他应用设定角标个数。使用Promise异步回调。 |
+| <!--DelRow-->[setBundlePriorityConfig](arkts-notificationmanager-setbundlepriorityconfig-f-sys.md#setBundlePriorityConfig-1) | 设置应用的优先功能配置。 |
+| <!--DelRow-->[setDistributedEnable](arkts-notificationmanager-setdistributedenable-f-sys.md#setDistributedEnable-1) | 设置设备是否支持分布式通知。使用callback异步回调。 |
+| <!--DelRow-->[setDistributedEnable](arkts-notificationmanager-setdistributedenable-f-sys.md#setDistributedEnable-2) | 设置设备是否支持分布式通知。使用Promise异步回调。 |
+| <!--DelRow-->[setDistributedEnableByBundle](arkts-notificationmanager-setdistributedenablebybundle-f-sys.md#setDistributedEnableByBundle-1) | 设置指定应用是否支持分布式通知。使用callback异步回调。 |
+| <!--DelRow-->[setDistributedEnableByBundle](arkts-notificationmanager-setdistributedenablebybundle-f-sys.md#setDistributedEnableByBundle-2) | 设置指定应用是否支持分布式通知。使用Promise异步回调。 |
+| <!--DelRow-->[setDistributedEnableByBundles](arkts-notificationmanager-setdistributedenablebybundles-f-sys.md#setDistributedEnableByBundles-1) | 批量设置应用是否支持跨设备协同。使用Promise异步回调。 |
+| <!--DelRow-->[setDistributedEnabled](arkts-notificationmanager-setdistributedenabled-f-sys.md#setDistributedEnabled-1) | 设置设备是否支持跨设备协同通知。使用Promise异步回调。 |
+| <!--DelRow-->[setDistributedEnabledByBundle](arkts-notificationmanager-setdistributedenabledbybundle-f-sys.md#setDistributedEnabledByBundle-1) | 设置指定应用是否支持跨设备协同。使用Promise异步回调。 |
+| <!--DelRow-->[setDistributedEnabledBySlot](arkts-notificationmanager-setdistributedenabledbyslot-f-sys.md#setDistributedEnabledBySlot-1) | 设置指定渠道的通知是否支持通知跨设备协同至指定类型设备。使用Promise异步回调。 |
+| <!--DelRow-->[setDoNotDisturbDate](arkts-notificationmanager-setdonotdisturbdate-f-sys.md#setDoNotDisturbDate-1) | 设置免打扰时间。使用callback异步回调。 |
+| <!--DelRow-->[setDoNotDisturbDate](arkts-notificationmanager-setdonotdisturbdate-f-sys.md#setDoNotDisturbDate-2) | 设置免打扰时间。使用Promise异步回调。 |
+| <!--DelRow-->[setDoNotDisturbDate](arkts-notificationmanager-setdonotdisturbdate-f-sys.md#setDoNotDisturbDate-3) | 指定用户设置免打扰时间。使用callback异步回调。 |
+| <!--DelRow-->[setDoNotDisturbDate](arkts-notificationmanager-setdonotdisturbdate-f-sys.md#setDoNotDisturbDate-4) | 指定用户设置免打扰时间。使用Promise异步回调。 |
+| <!--DelRow-->[setGeofenceEnabled](arkts-notificationmanager-setgeofenceenabled-f-sys.md#setGeofenceEnabled-1) | 设置地理围栏的启用状态。使用Promise异步回调。 |
+| <!--DelRow-->[setNotificationEnable](arkts-notificationmanager-setnotificationenable-f-sys.md#setNotificationEnable-1) | 设定指定应用的通知使能状态。使用callback异步回调。 |
+| <!--DelRow-->[setNotificationEnable](arkts-notificationmanager-setnotificationenable-f-sys.md#setNotificationEnable-2) | 设定指定应用的通知使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[setNotificationEnableSlot](arkts-notificationmanager-setnotificationenableslot-f-sys.md#setNotificationEnableSlot-1) | 设置指定应用的指定渠道类型的使能状态。使用callback异步回调。 |
+| <!--DelRow-->[setNotificationEnableSlot](arkts-notificationmanager-setnotificationenableslot-f-sys.md#setNotificationEnableSlot-2) | 设置指定应用的指定渠道类型的使能状态。使用callback异步回调。 |
+| <!--DelRow-->[setNotificationEnableSlot](arkts-notificationmanager-setnotificationenableslot-f-sys.md#setNotificationEnableSlot-3) | 设置指定应用的指定渠道类型的使能状态。使用promise异步回调。 |
+| <!--DelRow-->[setNotificationSwitch](arkts-notificationmanager-setnotificationswitch-f-sys.md#setNotificationSwitch-1) | 设置通知开关状态。使用Promise异步回调。 |
+| <!--DelRow-->[setPriorityEnabled](arkts-notificationmanager-setpriorityenabled-f-sys.md#setPriorityEnabled-1) | 设置通知优先级总开关。 |
+| <!--DelRow-->[setPriorityEnabledByBundle](arkts-notificationmanager-setpriorityenabledbybundle-f-sys.md#setPriorityEnabledByBundle-1) | 设置应用通知优先级开关。 |
+| <!--DelRow-->[setPriorityEnabledByBundles](arkts-notificationmanager-setpriorityenabledbybundles-f-sys.md#setPriorityEnabledByBundles-1) | 批量设置应用通知优先级开关状态。使用Promise异步回调。 |
+| <!--DelRow-->[setPriorityIntelligentEnabled](arkts-notificationmanager-setpriorityintelligentenabled-f-sys.md#setPriorityIntelligentEnabled-1) | 设置优先通知智能服务使能状态。使用Promise异步回调。 |
+| <!--DelRow-->[setPriorityStrategyByBundles](arkts-notificationmanager-setprioritystrategybybundles-f-sys.md#setPriorityStrategyByBundles-1) | 批量设置应用通知优先策略。使用Promise异步回调。 |
+| <!--DelRow-->[setReminderInfoByBundles](arkts-notificationmanager-setreminderinfobybundles-f-sys.md#setReminderInfoByBundles-1) | 批量设置指定应用提醒信息。使用Promise异步回调。 |
+| <!--DelRow-->[setRingtoneInfoByBundle](arkts-notificationmanager-setringtoneinfobybundle-f-sys.md#setRingtoneInfoByBundle-1) | 设置应用自定义铃声信息。使用Promise异步回调。 |
+| <!--DelRow-->[setSilentReminderEnabled](arkts-notificationmanager-setsilentreminderenabled-f-sys.md#setSilentReminderEnabled-1) | 设置静默提醒的开关状态。使用Promise进行异步回调。 |
+| <!--DelRow-->[setSlotByBundle](arkts-notificationmanager-setslotbybundle-f-sys.md#setSlotByBundle-1) | 设置指定应用的通知渠道。使用callback异步回调。 设置前需要先通过[addSlot]{@link notificationManager.addSlot(slot: NotificationSlot, callback: AsyncCallback<void>)}创建通知渠道。 |
+| <!--DelRow-->[setSlotByBundle](arkts-notificationmanager-setslotbybundle-f-sys.md#setSlotByBundle-2) | 设置指定应用的通知渠道。使用Promise异步回调。 设置前需要先通过[addSlot]{@link notificationManager.addSlot(slot: NotificationSlot, callback: AsyncCallback<void>)}创建通知渠道。 |
+| <!--DelRow-->[setSlotFlagsByBundle](arkts-notificationmanager-setslotflagsbybundle-f-sys.md#setSlotFlagsByBundle-1) | 设定指定应用的通知提醒方式开关。使用Promise异步回调。 |
+| <!--DelRow-->[setSmartReminderEnabled](arkts-notificationmanager-setsmartreminderenabled-f-sys.md#setSmartReminderEnabled-1) | 设置设备是否与其他设备协同智能提醒。使用Promise异步回调。 |
+| <!--DelRow-->[setSyncNotificationEnabledWithoutApp](arkts-notificationmanager-setsyncnotificationenabledwithoutapp-f-sys.md#setSyncNotificationEnabledWithoutApp-1) | 设置是否将通知同步到未安装应用程序的设备(callback形式)。 |
+| <!--DelRow-->[setSyncNotificationEnabledWithoutApp](arkts-notificationmanager-setsyncnotificationenabledwithoutapp-f-sys.md#setSyncNotificationEnabledWithoutApp-2) | 设置是否将通知同步到未安装应用程序的设备(Promise形式)。 |
+| <!--DelRow-->[setTargetDeviceStatus](arkts-notificationmanager-settargetdevicestatus-f-sys.md#setTargetDeviceStatus-1) | 设置设备配对成功后的状态。当发布通知时，会根据各个设备的状态来确定当前设备的通知提醒方式。 |
+| <!--DelRow-->[snoozeNotification](arkts-notificationmanager-snoozenotification-f-sys.md#snoozeNotification-1) | 设置通知稍后提醒。该通知在指定时间后再次提醒，每次设置只会提醒一次，提醒方式与该通知相同。 设置后该通知被删除。 |
+| <!--DelRow-->[subscribeSystemLiveView](arkts-notificationmanager-subscribesystemliveview-f-sys.md#subscribeSystemLiveView-1) | 订阅系统实况窗。使用Promise异步回调。 |
+| <!--DelRow-->[triggerSystemLiveView](arkts-notificationmanager-triggersystemliveview-f-sys.md#triggerSystemLiveView-1) | 触发系统实况窗。使用Promise异步回调。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [NotificationSetting](arkts-notification-notificationsetting-i.md) | Describes the setting status of the notification mode switch. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [BundleNotificationStatistics](arkts-notification-bundlenotificationstatistics-i-sys.md) | Describes the notification statistics of a specified application. |
-| [ButtonOptions](arkts-notification-buttonoptions-i-sys.md) | Provides the button information of the notification. |
-| [DistributedBundleEnableInfo](arkts-notification-distributedbundleenableinfo-i-sys.md) | Describes the bundle information of an application that enables cross-device collaboration. |
-| [DoNotDisturbDate](arkts-notification-donotdisturbdate-i-sys.md) | DND time to set. |
-| [DoNotDisturbProfile](arkts-notification-donotdisturbprofile-i-sys.md) | Do Not Disturb profile. |
-| [NotificationCheckInfo](arkts-notification-notificationcheckinfo-i-sys.md) | Describes the parameters of check notifications. |
-| [NotificationCheckResult](arkts-notification-notificationcheckresult-i-sys.md) | Describes the result of check notifications. |
-| [NotificationReminderInfo](arkts-notification-notificationreminderinfo-i-sys.md) | Describes the information about the application reminder. |
-| [RingtoneInfo](arkts-notification-ringtoneinfo-i-sys.md) | Describes the custom ringtone information. |
-| [SystemLiveViewSubscriber](arkts-notification-systemliveviewsubscriber-i-sys.md) | Subscriber of the system live view notification. |
-<!--DelEnd-->
-
-### Enums
-
-| Name | Description |
-| --- | --- |
-| [ContentType](arkts-notification-contenttype-e.md) | Enumerates the notification content types. |
-| [PriorityNotificationType](arkts-notification-prioritynotificationtype-e.md) | Enumerates the priority notification types. |
-| [SlotLevel](arkts-notification-slotlevel-e.md) | Enumerates the notification level. |
-| [SlotType](arkts-notification-slottype-e.md) | Enumerates the notification slot types. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [DeviceRemindType](arkts-notification-deviceremindtype-e-sys.md) | The notification reminder type. |
-| [DoNotDisturbType](arkts-notification-donotdisturbtype-e-sys.md) | DND time type. |
-| [NotificationControlFlagStatus](arkts-notification-notificationcontrolflagstatus-e-sys.md) | Each bit can control the notification mode. When the bitwise OR operation is performed on **notificationControlFlags** and the enumerated values in the following table, the notification mode is disabled. |
-| [PriorityEnableStatus](arkts-notification-priorityenablestatus-e-sys.md) | Describes the enabling status of the priority notification for an application. |
-| [PriorityNotificationType](arkts-notification-prioritynotificationtype-e-sys.md) | Enumerates the priority notification types. |
-| [PriorityStrategyStatus](arkts-notification-prioritystrategystatus-e-sys.md) | Describes the application notification strategy. |
-| [RingtoneType](arkts-notification-ringtonetype-e-sys.md) | Enumerates the custom ringtone types. |
-| [SlotType](arkts-notification-slottype-e-sys.md) | Enumerates the notification slot types. |
-| [SourceType](arkts-notification-sourcetype-e-sys.md) | Notification source type. |
-| [SwitchState](arkts-notification-switchstate-e-sys.md) | Describes the switch state of notifications. |
-<!--DelEnd-->
+| <!--DelRow-->[BundleNotificationStatistics](arkts-notificationmanager-bundlenotificationstatistics-i-sys.md) | 描述指定应用通知统计信息。 |
+| <!--DelRow-->[ButtonOptions](arkts-notificationmanager-buttonoptions-i-sys.md) | 描述触发按钮信息。 |
+| <!--DelRow-->[DistributedBundleEnableInfo](arkts-notificationmanager-distributedbundleenableinfo-i-sys.md) | 描述多设备协同的包信息。 |
+| <!--DelRow-->[DoNotDisturbDate](arkts-notificationmanager-donotdisturbdate-i-sys.md) | 免打扰时间选项。 |
+| <!--DelRow-->[DoNotDisturbProfile](arkts-notificationmanager-donotdisturbprofile-i-sys.md) | 勿扰模式的配置信息。 |
+| <!--DelRow-->[NotificationCheckInfo](arkts-notificationmanager-notificationcheckinfo-i-sys.md) | 通知校验参数。 |
+| <!--DelRow-->[NotificationCheckResult](arkts-notificationmanager-notificationcheckresult-i-sys.md) | 通知校验结果。 |
+| <!--DelRow-->[NotificationReminderInfo](arkts-notificationmanager-notificationreminderinfo-i-sys.md) | 描述指定应用提醒方式信息。 |
+| [NotificationSetting](arkts-notificationmanager-notificationsetting-i.md) | 通知提醒方式开关的设置状态。 |
+| <!--DelRow-->[RingtoneInfo](arkts-notificationmanager-ringtoneinfo-i-sys.md) | 描述自定义铃声信息。 |
+| <!--DelRow-->[SystemLiveViewSubscriber](arkts-notificationmanager-systemliveviewsubscriber-i-sys.md) | 系统实况窗订阅者。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BundleOption](arkts-notification-bundleoption-t.md) | Describes the bundle information of an application. |
-| [DistributedOptions](arkts-notification-distributedoptions-t.md) | Describes distributed notification options. |
-| [NotificationActionButton](arkts-notification-notificationactionbutton-t.md) | Describes the operation button displayed in the notification. |
-| [NotificationBasicContent](arkts-notification-notificationbasiccontent-t.md) | Describes the normal text notification. |
-| [NotificationButton](arkts-notification-notificationbutton-t.md) | Describes the notification button. |
-| [NotificationCapsule](arkts-notification-notificationcapsule-t.md) | Describes the notification capsule. |
-| [NotificationContent](arkts-notification-notificationcontent-t.md) | Describes the notification content. |
-| [NotificationLongTextContent](arkts-notification-notificationlongtextcontent-t.md) | Describes the long text notification. |
-| [NotificationMultiLineContent](arkts-notification-notificationmultilinecontent-t.md) | Describes the multi-line text notification. |
-| [NotificationParameters](arkts-notification-notificationparameters-t.md) | Defines Notification Parameters to describe the key information of wantAgent in the notification. |
-| [NotificationPictureContent](arkts-notification-notificationpicturecontent-t.md) | Describes the picture-attached notification. |
-| [NotificationProgress](arkts-notification-notificationprogress-t.md) | Describes the notification progress. |
-| [NotificationRequest](arkts-notification-notificationrequest-t.md) | Describes the notification request. |
-| [NotificationSlot](arkts-notification-notificationslot-t.md) | Describes the notification slot. |
-| [NotificationSystemLiveViewContent](arkts-notification-notificationsystemliveviewcontent-t.md) | Describes the system live view notification. |
-| [NotificationTemplate](arkts-notification-notificationtemplate-t.md) | Describes the notification template. |
-| [NotificationTime](arkts-notification-notificationtime-t.md) | Describes the notification timing information. |
-| [NotificationUserInput](arkts-notification-notificationuserinput-t.md) | Describes the user input for the notification. |
+| [BundleOption](arkts-notificationmanager-bundleoption-t.md) | 指定应用的包信息。 |
+| <!--DelRow-->[CoordinateSystemType](arkts-notificationmanager-coordinatesystemtype-t-sys.md) | 表示地理围栏坐标系类型的枚举。 |
+| [DistributedOptions](arkts-notificationmanager-distributedoptions-t.md) | 分布式选项。 |
+| <!--DelRow-->[Geofence](arkts-notificationmanager-geofence-t-sys.md) | 地理围栏的配置信息。 |
+| <!--DelRow-->[GroupInfo](arkts-notificationmanager-groupinfo-t-sys.md) | 组通知定制信息。 |
+| <!--DelRow-->[LiveViewStatus](arkts-notificationmanager-liveviewstatus-t-sys.md) | 描述普通实况通知的状态。 |
+| <!--DelRow-->[LiveViewTypes](arkts-notificationmanager-liveviewtypes-t-sys.md) | 描述实况通知的类型。 |
+| <!--DelRow-->[MonitorEvent](arkts-notificationmanager-monitorevent-t-sys.md) | 表示地理围栏的监控事件类型的枚举。 |
+| [NotificationActionButton](arkts-notificationmanager-notificationactionbutton-t.md) | 通知中显示的操作按钮。 |
+| [NotificationBasicContent](arkts-notificationmanager-notificationbasiccontent-t.md) | 普通文本通知。 |
+| [NotificationButton](arkts-notificationmanager-notificationbutton-t.md) | 通知按钮。 |
+| [NotificationCapsule](arkts-notificationmanager-notificationcapsule-t.md) | 通知胶囊。 |
+| <!--DelRow-->[NotificationCheckRequest](arkts-notificationmanager-notificationcheckrequest-t-sys.md) | 描述通知的鉴权信息。 |
+| [NotificationContent](arkts-notificationmanager-notificationcontent-t.md) | 通知内容。 |
+| <!--DelRow-->[NotificationFilter](arkts-notificationmanager-notificationfilter-t-sys.md) | 描述查询普通实况窗时的筛选条件。 |
+| <!--DelRow-->[NotificationFlags](arkts-notificationmanager-notificationflags-t-sys.md) | 描述通知标志位。 |
+| <!--DelRow-->[NotificationFlagStatus](arkts-notificationmanager-notificationflagstatus-t-sys.md) | 描述通知标志状态。 |
+| <!--DelRow-->[NotificationIconButton](arkts-notificationmanager-notificationiconbutton-t-sys.md) | 系统通知按钮。 |
+| <!--DelRow-->[NotificationLiveViewContent](arkts-notificationmanager-notificationliveviewcontent-t-sys.md) | 描述普通实况通知。 |
+| [NotificationLongTextContent](arkts-notificationmanager-notificationlongtextcontent-t.md) | 长文本通知。 |
+| [NotificationMultiLineContent](arkts-notificationmanager-notificationmultilinecontent-t.md) | 多行文本通知。 |
+| [NotificationParameters](arkts-notificationmanager-notificationparameters-t.md) | 描述NotificationRequest中wantAgent的部分信息。 |
+| [NotificationPictureContent](arkts-notificationmanager-notificationpicturecontent-t.md) | 附有图片的通知。 |
+| [NotificationProgress](arkts-notificationmanager-notificationprogress-t.md) | 通知进度。 |
+| [NotificationRequest](arkts-notificationmanager-notificationrequest-t.md) | 通知请求。 |
+| [NotificationSlot](arkts-notificationmanager-notificationslot-t.md) | 通知渠道。 |
+| <!--DelRow-->[NotificationSorting](arkts-notificationmanager-notificationsorting-t-sys.md) | 提供有关活动通知的排序信息。 |
+| [NotificationSystemLiveViewContent](arkts-notificationmanager-notificationsystemliveviewcontent-t.md) | 系统实况窗通知内容。 |
+| [NotificationTemplate](arkts-notificationmanager-notificationtemplate-t.md) | 通知模板。 |
+| [NotificationTime](arkts-notificationmanager-notificationtime-t.md) | 通知计时信息。 |
+| [NotificationUserInput](arkts-notificationmanager-notificationuserinput-t.md) | 保存用户输入的通知消息。 |
+| <!--DelRow-->[Trigger](arkts-notificationmanager-trigger-t-sys.md) | 触发条件的具体信息。 |
+| <!--DelRow-->[TriggerType](arkts-notificationmanager-triggertype-t-sys.md) | 触发条件的事件类型的枚举。 |
+| <!--DelRow-->[UnifiedGroupInfo](arkts-notificationmanager-unifiedgroupinfo-t-sys.md) | 描述通知智能聚合信息字段。 |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [CoordinateSystemType](arkts-notification-coordinatesystemtype-t-sys.md) | Enumerates the coordinate systems of a geofence. |
-| [Geofence](arkts-notification-geofence-t-sys.md) | Defines the configuration of a geofence. |
-| [GroupInfo](arkts-notification-groupinfo-t-sys.md) | Defines the custom group notification information. |
-| [LiveViewStatus](arkts-notification-liveviewstatus-t-sys.md) | Enumerates the statuses of the common live view. |
-| [LiveViewTypes](arkts-notification-liveviewtypes-t-sys.md) | Enumerates live view types. |
-| [MonitorEvent](arkts-notification-monitorevent-t-sys.md) | Enumerates the event types of monitoring a geofence. |
-| [NotificationCheckRequest](arkts-notification-notificationcheckrequest-t-sys.md) | Describes the notification authentication information. |
-| [NotificationFilter](arkts-notification-notificationfilter-t-sys.md) | Describes the filter criteria for querying the live view. |
-| [NotificationFlagStatus](arkts-notification-notificationflagstatus-t-sys.md) | Enumerates the notification flag states. |
-| [NotificationFlags](arkts-notification-notificationflags-t-sys.md) | Defines the notification flags. |
-| [NotificationIconButton](arkts-notification-notificationiconbutton-t-sys.md) | System notification button. |
-| [NotificationLiveViewContent](arkts-notification-notificationliveviewcontent-t-sys.md) | Describes the common live view. |
-| [NotificationSorting](arkts-notification-notificationsorting-t-sys.md) | The **NotificationSorting** module provides APIs for defining the sorting information of active notifications. |
-| [Trigger](arkts-notification-trigger-t-sys.md) | Defines the details for triggering a geofence. |
-| [TriggerType](arkts-notification-triggertype-t-sys.md) | Enumerates the trigger types. |
-| [UnifiedGroupInfo](arkts-notification-unifiedgroupinfo-t-sys.md) | Describes the fields of notification intelligent unification information. |
-<!--DelEnd-->
+| [ContentType](arkts-notificationmanager-contenttype-e.md) | 通知内容类型。 |
+| <!--DelRow-->[DeviceRemindType](arkts-notificationmanager-deviceremindtype-e-sys.md) | 通知提醒方式。 |
+| <!--DelRow-->[DoNotDisturbType](arkts-notificationmanager-donotdisturbtype-e-sys.md) | 免打扰设置的时间类型。 |
+| <!--DelRow-->[NotificationControlFlagStatus](arkts-notificationmanager-notificationcontrolflagstatus-e-sys.md) | 每个bit位都可以控制通知的提示方式。当notificationControlFlags和下表中枚举值进行按位或操作，则表示关闭其提示方式。 |
+| <!--DelRow-->[PriorityEnableStatus](arkts-notificationmanager-priorityenablestatus-e-sys.md) | 描述应用通知的优先级开关状态。 |
+| [PriorityNotificationType](arkts-notificationmanager-prioritynotificationtype-e.md) | 描述通知的优先级类型。 |
+| <!--DelRow-->[PriorityStrategyStatus](arkts-notificationmanager-prioritystrategystatus-e-sys.md) | 描述应用通知的优先策略。 |
+| <!--DelRow-->[RingtoneType](arkts-notificationmanager-ringtonetype-e-sys.md) | 描述自定义铃声类型。 |
+| [SlotLevel](arkts-notificationmanager-slotlevel-e.md) | 通知级别。 |
+| [SlotType](arkts-notificationmanager-slottype-e.md) | 通知渠道类型。 |
+| <!--DelRow-->[SourceType](arkts-notificationmanager-sourcetype-e-sys.md) | 通知来源类型。 |
+| <!--DelRow-->[SwitchState](arkts-notificationmanager-switchstate-e-sys.md) | 描述通知相关开关的设置状态。 |
 

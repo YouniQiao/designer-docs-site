@@ -1,10 +1,10 @@
-# WhiteBalance (System API)
+# WhiteBalance
 
-**WhiteBalance** inherits from [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md#whitebalancequery). It provides APIs to process white balance, including obtaining and setting the white balance mode and white balance value.
+WhiteBalance** inherits from [WhiteBalanceQuery]camera.WhiteBalanceQuery. It provides APIs to process white balance, including obtaining and setting the white balance mode and white balance value.
 
-**Inheritance/Implementation:** WhiteBalance extends [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md#whitebalancequery)
+**Inheritance:** WhiteBalanceextends: WhiteBalanceQuery.
 
-**Since:** 20
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -13,20 +13,48 @@
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
+
+## getColorTint
+
+```TypeScript
+getColorTint(): int
+```
+
+Gets current color tint.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| int | The current color tint. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 7400103 | Session not config. |
 
 ## getWhiteBalance
 
 ```TypeScript
-getWhiteBalance(): number
+getWhiteBalance(): int
 ```
 
 Obtains the current white balance value.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -36,14 +64,14 @@ Obtains the current white balance value.
 
 | Type | Description |
 | --- | --- |
-| number | White balance value, in units of K (Kelvin) |
+| int | White balance value, in units of K (Kelvin) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. [since 12 - 19] |
+| 7400103 | Session not config. |
 
 ## getWhiteBalanceMode
 
@@ -53,9 +81,9 @@ getWhiteBalanceMode(): WhiteBalanceMode
 
 Obtains the white balance mode in use.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -71,20 +99,48 @@ Obtains the white balance mode in use.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. [since 12 - 19] |
+| 7400103 | Session not config. |
+
+## setColorTint
+
+```TypeScript
+setColorTint(colorTint: int): void
+```
+
+Sets color tint.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| colorTint | int | Yes | Color tint, the supported range can be obtained by calling  [getColorTintRange]camera.WhiteBalanceQuery.getColorTintRange. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 7400103 | Session not config. |
 
 ## setWhiteBalance
 
 ```TypeScript
-setWhiteBalance(whiteBalance: number): void
+setWhiteBalance(whiteBalance: int): void
 ```
 
-Sets a white balance value. Before the setting, run [getWhiteBalanceRange](arkts-camera-whitebalancequery-i-sys.md#getwhitebalancerange-1) to check the white balance value range supported by the device.
+Sets a white balance value. Before the setting, run [getWhiteBalanceRange]camera.WhiteBalanceQuery.getWhiteBalanceRange to check the white balance value range supported by the device.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -94,15 +150,15 @@ Sets a white balance value. Before the setting, run [getWhiteBalanceRange](arkts
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| whiteBalance | number | Yes | White balance value, in units of K (Kelvin) |
+| whiteBalance | int | Yes | White balance value, in units of K (Kelvin) |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. [since 12 - 19] |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 
 ## setWhiteBalanceMode
 
@@ -110,11 +166,11 @@ Sets a white balance value. Before the setting, run [getWhiteBalanceRange](arkts
 setWhiteBalanceMode(mode: WhiteBalanceMode): void
 ```
 
-Sets a white balance mode. Before the setting, run [isWhiteBalanceModeSupported](arkts-camera-whitebalancequery-i-sys.md#iswhitebalancemodesupported-1) to check whether the device supports the specified white balance mode.
+Sets a white balance mode. Before the setting, run [isWhiteBalanceModeSupported]camera.WhiteBalanceQuery.isWhiteBalanceModeSupported to check whether the device supports the specified white balance mode.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -130,7 +186,7 @@ Sets a white balance mode. Before the setting, run [isWhiteBalanceModeSupported]
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. [since 12 - 19] |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 

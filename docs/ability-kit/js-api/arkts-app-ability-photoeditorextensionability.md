@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { PhotoEditorExtensionAbility } from '@ohos.app.ability.PhotoEditorExtensionAbility';
+import { PhotoEditorExtensionAbility } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { PhotoEditorExtensionAbility } from '@ohos.app.ability.PhotoEditorExtens
 
 | Name | Description |
 | --- | --- |
-| [PhotoEditorExtensionAbility](arkts-ability-photoeditorextensionability-c.md) | Class of the photo editor ExtensionAbility, which provides APIs for you to edit photos. |
+| [PhotoEditorExtensionAbility](arkts-photoeditorextensionability-c.md) | Class of the photo editor ExtensionAbility, which provides APIs for you to edit photos. |
 

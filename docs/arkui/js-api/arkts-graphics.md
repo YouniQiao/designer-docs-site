@@ -6,69 +6,61 @@
 
 | Name | Description |
 | --- | --- |
-| [borderRadiuses](arkts-arkui-graphics-borderradiuses-f.md#borderradiuses-1) | Generates a **borderRadiuses** object with the specified radius for all border corners. |
-| [borderStyles](arkts-arkui-graphics-borderstyles-f.md#borderstyles-1) | Generates a border style object with the specified border style color for all borders. |
-| [edgeColors](arkts-arkui-graphics-edgecolors-f.md#edgecolors-1) | Generates an **edgeColors** object with the specified edge color for all edges. |
-| [edgeWidths](arkts-arkui-graphics-edgewidths-f.md#edgewidths-1) | Generates an **edgeWidths** object with the specified edge width for all edges. |
+| [borderRadiuses](arkts-graphics-borderradiuses-f.md#borderRadiuses-1) | 用于生成边框圆角均设置为传入值的边框圆角对象。 |
+| [borderStyles](arkts-graphics-borderstyles-f.md#borderStyles-1) | 用于生成边框样式均设置为传入值的边框样式对象。 |
+| [edgeColors](arkts-graphics-edgecolors-f.md#edgeColors-1) | 用于生成边框颜色均设置为传入值的边框颜色对象。 |
+| [edgeWidths](arkts-graphics-edgewidths-f.md#edgeWidths-1) | 用于生成边框宽度均设置为传入值的边框宽度对象。 |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [ColorMetrics](arkts-arkui-colormetrics-c.md) | Used to mix colors. |
-| [DrawContext](arkts-arkui-drawcontext-c.md) | Graphics drawing context, which provides the canvas width and height required for drawing. |
-| [LengthMetrics](arkts-arkui-lengthmetrics-c.md) | Defines the length attribute. When the length unit is PERCENT, the value **1** indicates 100%. |
-| [ShapeClip](arkts-arkui-shapeclip-c.md) | Sets the clipping shape. |
-| [ShapeMask](arkts-arkui-shapemask-c.md) | Describes the shape mask. |
-
-<!--Del-->
-### Classes（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [ColorMetrics](arkts-arkui-colormetrics-c-sys.md) | Used to mix colors. |
-<!--DelEnd-->
+| [ColorMetrics](arkts-colormetrics-c.md) | 用于混合颜色。 |
+| [DrawContext](arkts-drawcontext-c.md) | 图形绘制上下文，提供绘制所需的画布宽度和高度。 |
+| [LengthMetrics](arkts-lengthmetrics-c.md) | 用于设置长度属性，当长度单位为PERCENT时，值为1表示100%。 |
+| [ShapeClip](arkts-shapeclip-c.md) | 用于设置图形裁剪。 |
+| [ShapeMask](arkts-shapemask-c.md) | 用于设置图形遮罩。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BackgroundBlur](arkts-arkui-backgroundblur-i.md) | Defines the background blur effect. |
-| [Circle](arkts-arkui-circle-i.md) | Describes a circle. |
-| [CommandPath](arkts-arkui-commandpath-i.md) | Describes the command for drawing a path. |
-| [ContentBlur](arkts-arkui-contentblur-i.md) | Defines the content blur effect. |
-| [Corners](arkts-arkui-corners-i.md) | Describes the four corners. |
-| [Edges](arkts-arkui-edges-i.md) | Describes the edges. |
-| [ForegroundBlur](arkts-arkui-foregroundblur-i.md) | Defines the foreground blur effect. |
-| [Frame](arkts-arkui-frame-i.md) | Sets or returns the layout size and position of the component. |
-| [RoundRect](arkts-arkui-roundrect-i.md) | Describes a rectangle with rounded corners. |
-| [Size](arkts-arkui-size-i.md) | Returns the width and height of the component. The default unit is vp, but APIs that use the Size type may specify a different unit, in which case the unit specified by the API takes precedence. |
-| [SizeT](arkts-arkui-sizet-i.md) | Sets the width and height attributes. |
-| [Vector2](arkts-arkui-vector2-i.md) | Defines a vector that contains the x and y coordinate values. |
-| [Vector2T](arkts-arkui-vector2t-i.md) | Represents a vector of the T type that contains two values: x and y. |
-| [Vector3](arkts-arkui-vector3-i.md) | Represents a vector including three values: x, y, and z. |
-| [Vector4](arkts-arkui-vector4-i.md) | Defines a vector that contains the x, y, z, and w coordinate values. |
+| [BackgroundBlur](arkts-backgroundblur-i.md) | 设置背景模糊效果。 |
+| [Circle](arkts-circle-i.md) | 用于设置圆形的属性。 |
+| [CommandPath](arkts-commandpath-i.md) | 用于设置路径绘制的指令。 |
+| [ContentBlur](arkts-contentblur-i.md) | 设置内容模糊效果。 |
+| [Corners](arkts-corners-i.md) | 用于设置四个角的圆角属性。 |
+| [Edges](arkts-edges-i.md) | 用于设置边框的属性。 |
+| [ForegroundBlur](arkts-foregroundblur-i.md) | 设置前景模糊效果。 |
+| [Frame](arkts-frame-i.md) | 用于设置或返回组件的布局大小和位置。 |
+| [RoundRect](arkts-roundrect-i.md) | 用于设置带有圆角的矩形。 |
+| [Size](arkts-size-i.md) | 用于返回组件布局大小的宽和高。默认单位为vp，不同的接口使用Size类型时会再定义单位，以接口定义的单位为准。 |
+| [SizeT](arkts-sizet-i.md) | 用于设置宽高的属性。 |
+| [Vector2](arkts-vector2-i.md) | 用于表示包含x和y两个值的向量。 |
+| [Vector2T](arkts-vector2t-i.md) | 用于表示T类型的包含x和y两个值的向量。 |
+| [Vector3](arkts-vector3-i.md) | 用于表示包含x、y、z三个值的向量。 |
+| [Vector4](arkts-vector4-i.md) | 用于表示包含x、y、z、w四个值的向量。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [LengthMetricsUnit](arkts-arkui-lengthmetricsunit-e.md) | Enumerates length units. |
-| [LengthUnit](arkts-arkui-lengthunit-e.md) | Enumerates length units. |
+| [LengthMetricsUnit](arkts-lengthmetricsunit-e.md) | 长度属性单位枚举。 |
+| [LengthUnit](arkts-lengthunit-e.md) | 长度属性单位枚举。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BorderRadiuses](arkts-arkui-borderradiuses-t.md) | Sets the uniform radius of the four corners. |
-| [CornerRadius](arkts-arkui-cornerradius-t.md) | Sets the semi-axis lengths for the x-axis and y-axis of the rounded corners. |
-| [Matrix4](arkts-arkui-matrix4-t.md) | Sets a 4x4 matrix. The **Matrix4** type is used to set transformation information for components.Value range of each number: (-∞, +∞). The following is an example: ``` const transform: Matrix4 = [ 1, 0, 45, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ] ```. |
-| [Offset](arkts-arkui-offset-t.md) | Sets the offset of the component or effect. |
-| [Pivot](arkts-arkui-pivot-t.md) | Sets the pivot of the component. As the rotation or scaling center of the component, the pivot affects the rotation and scaling effects. X and Y coordinates of the pivot is a floating point number in the range [0.0, 1.0], and the default value is **0.5**. |
-| [Position](arkts-arkui-position-t.md) | Sets or returns the position of the component. |
-| [PositionT](arkts-arkui-positiont-t.md) | Sets or returns the position of the component. |
-| [Rect](arkts-arkui-rect-t.md) | Describes a rectangle. |
-| [Rotation](arkts-arkui-rotation-t.md) | Sets the rotation angle of the component. |
-| [Scale](arkts-arkui-scale-t.md) | Sets the scale factor of the component. |
-| [Translation](arkts-arkui-translation-t.md) | Sets the translation amount of the component. |
+| [BorderRadiuses](arkts-borderradiuses-t.md) | 设置四个角的圆角半径。 |
+| [CornerRadius](arkts-cornerradius-t.md) | 设置四个角的圆角x轴与y轴的半轴长。 |
+| [Matrix4](arkts-matrix4-t.md) | 设置四阶矩阵。 用于设置组件的变换信息，该类型为一个 4x4 矩阵，使用一个长度为16的`number[]`进行表示，各number取值范围：(-∞, +∞)。例如： ``` const transform: Matrix4 = [ 1, 0, 45, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ] ```。 |
+| [Offset](arkts-offset-t.md) | 用于设置组件或效果的偏移。 |
+| [Pivot](arkts-pivot-t.md) | 用于设置组件的轴心坐标，轴心会作为组件的旋转/缩放中心点，影响旋转和缩放效果。轴心的x和y轴坐标为浮点数，默认值为0.5， 取值范围为[0.0, 1.0]。 |
+| [Position](arkts-position-t.md) | 用于设置或返回组件的位置。 |
+| [PositionT](arkts-positiont-t.md) | 用于设置或返回组件的位置。 |
+| [Rect](arkts-rect-t.md) | 用于设置矩形的形状。 |
+| [Rotation](arkts-rotation-t.md) | 用于设置组件的旋转角度。 |
+| [Scale](arkts-scale-t.md) | 用于设置组件的缩放比例。 |
+| [Translation](arkts-translation-t.md) | 用于设置组件的平移量。 |
 

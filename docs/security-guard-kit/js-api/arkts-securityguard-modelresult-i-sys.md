@@ -1,4 +1,4 @@
-# ModelResult (System API)
+# ModelResult
 
 Provides the ModelResult type.
 
@@ -11,7 +11,7 @@ Provides the ModelResult type.
 ## Modules to Import
 
 ```TypeScript
-import { securityGuard } from '@ohos.security.securityGuard';
+import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
 ## result

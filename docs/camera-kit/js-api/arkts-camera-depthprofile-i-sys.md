@@ -1,6 +1,6 @@
-# DepthProfile (System API)
+# DepthProfile
 
-Describes the profile of depth data. It inherits from [Profile](arkts-camera-profile-i.md#profile).
+Describes the profile of depth data. It inherits from [Profile]camera.Profile.
 
 **Since:** 13
 
@@ -11,18 +11,18 @@ Describes the profile of depth data. It inherits from [Profile](arkts-camera-pro
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
-## dataAccuracy
+## size
 
 ```TypeScript
-readonly dataAccuracy: DepthDataAccuracy
+readonly size: Size
 ```
 
-Accuracy of the depth data, which can be either relative accuracy or absolute accuracy.
+Depth data resolution.
 
-**Type:** DepthDataAccuracy
+**Type:** Size
 
 **Since:** 13
 
@@ -46,15 +46,15 @@ Camera output format.
 
 **System API:** This is a system API.
 
-## size
+## dataAccuracy
 
 ```TypeScript
-readonly size: Size
+readonly dataAccuracy: DepthDataAccuracy
 ```
 
-Depth data resolution.
+Accuracy of the depth data, which can be either relative accuracy or absolute accuracy.
 
-**Type:** Size
+**Type:** DepthDataAccuracy
 
 **Since:** 13
 

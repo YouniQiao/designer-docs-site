@@ -1,6 +1,6 @@
 # @ohos.enterprise.bluetoothManager
 
-The **bluetoothManager** module provides Bluetooth management capabilities, including setting and obtaining Bluetooth information. > **NOTE** > > The APIs of this module can be used only in the stage model. > > The APIs of this module can be called only by a device administrator application that is enabled. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md). > > The global restriction policies are provided by **restrictions**. To disable Bluetooth globally, see > [@ohos.enterprise.restrictions](arkts-enterprise-restrictions.md#restrictions).
+本模块提供设备蓝牙管理的能力，包括设置和查询蓝牙信息等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。 > > 全局通用限制类策略由restrictions统一提供，若要全局禁用蓝牙，请参考 > [@ohos.enterprise.restrictions （限制类策略）]{@link @ohos.enterprise.restrictions:restrictions}。
 
 **Since:** 11
 
@@ -9,7 +9,7 @@ The **bluetoothManager** module provides Bluetooth management capabilities, incl
 ## Modules to Import
 
 ```TypeScript
-import { bluetoothManager } from '@ohos.enterprise.bluetoothManager';
+import { bluetoothManager } from '@kit.MDMKit';
 ```
 
 ## Summary
@@ -18,41 +18,34 @@ import { bluetoothManager } from '@ohos.enterprise.bluetoothManager';
 
 | Name | Description |
 | --- | --- |
-| [addAllowedBluetoothDevices](arkts-mdm-addallowedbluetoothdevices-f.md#addallowedbluetoothdevices-1) | Adds Bluetooth devices to the trustlist. After adding devices to this list, the current device will only be allowed to connect to Bluetooth devices in the list. Since API version 22, the MAC addresses in the array must comply with the Bluetooth MAC address specifications (for example, 00:1A:2B:3C:4D:5E). Invalid MAC addresses will be removed and only valid MAC addresses will be added. A policy conflict is reported when this API is called in the following scenarios: 1. Bluetooth has been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). You can resolve the conflict by enabling the Bluetooth through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). 2. Disallowed Bluetooth devices have been added by calling [addDisallowedBluetoothDevices](arkts-mdm-adddisallowedbluetoothdevices-f.md#adddisallowedbluetoothdevices-1). You can resolve the conflict by removing disallowed Bluetooth devices through [removeDisallowedBluetoothDevices](arkts-mdm-removedisallowedbluetoothdevices-f.md#removedisallowedbluetoothdevices-1). |
-| [addDisallowedBluetoothDevices](arkts-mdm-adddisallowedbluetoothdevices-f.md#adddisallowedbluetoothdevices-1) | Adds Bluetooth devices to the blocklist. The current device cannot connect to the disallowed Bluetooth devices. Since API version 22, the MAC addresses in the array must comply with the Bluetooth MAC address specifications (for example, 00:1A:2B:3C:4D:5E). Invalid MAC addresses will be removed and only valid MAC addresses will be added. A policy conflict is reported when this API is called in the following scenarios: 1. Bluetooth has been disabled by calling [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). You can resolve the conflict by enabling the Bluetooth through [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1). 2. Allowed Bluetooth devices have been added by calling [addAllowedBluetoothDevices](arkts-mdm-addallowedbluetoothdevices-f.md#addallowedbluetoothdevices-1). You can resolve the conflict by removing allowed Bluetooth devices through [removeAllowedBluetoothDevices](arkts-mdm-removeallowedbluetoothdevices-f.md#removeallowedbluetoothdevices-1). |
-| [addDisallowedBluetoothProtocols](arkts-mdm-adddisallowedbluetoothprotocols-f.md#adddisallowedbluetoothprotocols-1) | Adds disallowed Bluetooth protocols. Specified users cannot use the disallowed Bluetooth protocols to send files to other devices. This API is used to disable the GATT or SPP protocol, which does not take effect for system services and system applications. |
-| [addDisallowedBluetoothProtocols](arkts-mdm-adddisallowedbluetoothprotocols-f.md#adddisallowedbluetoothprotocols-2) | Adds protocols to the list of bluetooth server that are disallowed to use. |
-| [getAllowedBluetoothDevices](arkts-mdm-getallowedbluetoothdevices-f.md#getallowedbluetoothdevices-1) | Obtains allowed Bluetooth devices. |
-| [getBluetoothInfo](arkts-mdm-getbluetoothinfo-f.md#getbluetoothinfo-1) | Obtains device Bluetooth information. |
-| [getDisallowedBluetoothDevices](arkts-mdm-getdisallowedbluetoothdevices-f.md#getdisallowedbluetoothdevices-1) | Obtains disallowed Bluetooth devices. |
-| [getDisallowedBluetoothProtocols](arkts-mdm-getdisallowedbluetoothprotocols-f.md#getdisallowedbluetoothprotocols-1) | Obtains the disallowed Bluetooth protocols of a specified user. |
-| [getDisallowedBluetoothProtocols](arkts-mdm-getdisallowedbluetoothprotocols-f.md#getdisallowedbluetoothprotocols-2) | Gets protocols from the list of bluetooth server that are disallowed to use. |
-| [removeAllowedBluetoothDevices](arkts-mdm-removeallowedbluetoothdevices-f.md#removeallowedbluetoothdevices-1) | Removes allowed Bluetooth devices. |
-| [removeDisallowedBluetoothDevices](arkts-mdm-removedisallowedbluetoothdevices-f.md#removedisallowedbluetoothdevices-1) | Removes disallowed Bluetooth devices. If some Bluetooth devices are removed from the disallowed list, the current device cannot connect to the remaining ones; if all Bluetooth devices are removed, the current device can connect to any Bluetooth device. |
-| [removeDisallowedBluetoothProtocols](arkts-mdm-removedisallowedbluetoothprotocols-f.md#removedisallowedbluetoothprotocols-1) | Removes disallowed Bluetooth protocols. After removing some protocols, the user is still restricted by the remaining disallowed protocols; after removing all protocols, the user can use any protocol; removing non-existent protocols results in a successful API call but no actual change. |
-| [removeDisallowedBluetoothProtocols](arkts-mdm-removedisallowedbluetoothprotocols-f.md#removedisallowedbluetoothprotocols-2) | Removes protocol from the list of bluetooth server that are disallowed to use. |
-| [turnOffBluetooth](arkts-mdm-turnoffbluetooth-f.md#turnoffbluetooth-1) | Disables Bluetooth. After Bluetooth is disabled, the user can manually enable it. |
-| [turnOnBluetooth](arkts-mdm-turnonbluetooth-f.md#turnonbluetooth-1) | Enables Bluetooth. After Bluetooth is enabled, the user can manually disable it. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [isBluetoothDisabled](arkts-mdm-isbluetoothdisabled-f-sys.md#isbluetoothdisabled-1) | Queries whether Bluetooth is disabled. |
-| [setBluetoothDisabled](arkts-mdm-setbluetoothdisabled-f-sys.md#setbluetoothdisabled-1) | Sets the policy for disabling Bluetooth. |
-<!--DelEnd-->
+| [addAllowedBluetoothDevices](arkts-bluetoothmanager-addallowedbluetoothdevices-f.md#addAllowedBluetoothDevices-1) | 添加蓝牙设备可用名单。添加蓝牙设备可用名单后当前设备仅允许连接该名单下的蓝牙设备。从API version 22开始，数组中的MAC地址必须符合蓝牙MAC规范（例如：00:1A:2B:3C:4D:5E），添加时会移除不合法的MAC 地址，仅添加合法的MAC地址。 以下情况下，通过本接口添加蓝牙设备可用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了蓝牙。通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口启用蓝牙后，可解除冲突。 2. 已经通过[addDisallowedBluetoothDevices]{@link bluetoothManager.addDisallowedBluetoothDevices}接口添加了蓝牙设备禁用名单。通过[removeDisallowedBluetoothDevices]{@link bluetoothManager.removeDisallowedBluetoothDevices}移除蓝牙设备禁用名单后，可解除冲突。 |
+| [addDisallowedBluetoothDevices](arkts-bluetoothmanager-adddisallowedbluetoothdevices-f.md#addDisallowedBluetoothDevices-1) | 添加蓝牙设备禁用名单。添加禁用名单后当前设备不允许连接该名单下的蓝牙设备。从API version 22开始，数组中的MAC地址必须符合蓝牙MAC规范（例如：00:1A:2B:3C:4D:5E），添加时会移除不合法的MAC地址，仅 添加合法的MAC地址。 以下情况下，通过本接口添加蓝牙设备禁用名单，会报策略冲突： 1. 已经通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口禁用了蓝牙。通过[setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)}接口启用蓝牙后，可解除冲突。 2. 已经通过[addAllowedBluetoothDevices]{@link bluetoothManager.addAllowedBluetoothDevices}接口添加了蓝牙设备可用名单。通过[removeAllowedBluetoothDevices]{@link bluetoothManager.removeAllowedBluetoothDevices}移除蓝牙设备可用名单后，可解除冲突。 |
+| [addDisallowedBluetoothProtocols](arkts-bluetoothmanager-adddisallowedbluetoothprotocols-f.md#addDisallowedBluetoothProtocols-1) | 添加蓝牙协议禁用名单。添加后，指定用户将无法使用该禁用名单中的蓝牙协议向其他设备外发文件。通过该接口禁用GATT或SPP协议，对系统服务和系统应用不生效。当传入SPP协议时，会同时禁用接收和发送功能。 |
+| [addDisallowedBluetoothProtocols](arkts-bluetoothmanager-adddisallowedbluetoothprotocols-f.md#addDisallowedBluetoothProtocols-2) | 添加蓝牙协议至禁用名单。添加后，指定用户将无法根据指定的传输策略使用该禁用名单中的蓝牙协议。 > **说明：** > |
+| [getAllowedBluetoothDevices](arkts-bluetoothmanager-getallowedbluetoothdevices-f.md#getAllowedBluetoothDevices-1) | 获取蓝牙设备可用名单。 |
+| [getBluetoothInfo](arkts-bluetoothmanager-getbluetoothinfo-f.md#getBluetoothInfo-1) | 查询设备蓝牙信息。 |
+| [getDisallowedBluetoothDevices](arkts-bluetoothmanager-getdisallowedbluetoothdevices-f.md#getDisallowedBluetoothDevices-1) | 获取蓝牙设备禁用名单。 |
+| [getDisallowedBluetoothProtocols](arkts-bluetoothmanager-getdisallowedbluetoothprotocols-f.md#getDisallowedBluetoothProtocols-1) | 获取指定用户的蓝牙协议禁用名单。 |
+| [getDisallowedBluetoothProtocols](arkts-bluetoothmanager-getdisallowedbluetoothprotocols-f.md#getDisallowedBluetoothProtocols-2) | 获取指定用户指定传输策略下已禁用的蓝牙协议列表。 > **说明：** > |
+| <!--DelRow-->[isBluetoothDisabled](arkts-bluetoothmanager-isbluetoothdisabled-f-sys.md#isBluetoothDisabled-1) | 查询蓝牙是否被禁用。 |
+| [removeAllowedBluetoothDevices](arkts-bluetoothmanager-removeallowedbluetoothdevices-f.md#removeAllowedBluetoothDevices-1) | 移除蓝牙设备可用名单。 |
+| [removeDisallowedBluetoothDevices](arkts-bluetoothmanager-removedisallowedbluetoothdevices-f.md#removeDisallowedBluetoothDevices-1) | 移除蓝牙设备禁用名单。若移除禁用名单中的部分蓝牙设备，则当前设备不允许连接禁用名单内剩余的蓝牙设备。若移除禁用名单中的所有蓝牙设备，则当前设备可以连接任意的蓝牙设备。 |
+| [removeDisallowedBluetoothProtocols](arkts-bluetoothmanager-removedisallowedbluetoothprotocols-f.md#removeDisallowedBluetoothProtocols-1) | 移除蓝牙协议禁用名单。若移除禁用名单中某个用户的部分蓝牙协议，则该用户不能使用禁用名单内剩余的蓝牙协议向其他设备外发文件。若移除禁用名单中某个用户的所有蓝牙协议，则该用户可以使用任意蓝牙协议向其他设备外发文件。若移除禁用名单中不存 在的蓝牙协议，接口可调用成功，但不会移除禁用名单中不存在的蓝牙协议。 |
+| [removeDisallowedBluetoothProtocols](arkts-bluetoothmanager-removedisallowedbluetoothprotocols-f.md#removeDisallowedBluetoothProtocols-2) | 从禁用名单中移除蓝牙协议。移除后，指定用户将不再受该传输策略的限制，可以正常使用这些蓝牙协议。 > **说明：** > |
+| <!--DelRow-->[setBluetoothDisabled](arkts-bluetoothmanager-setbluetoothdisabled-f-sys.md#setBluetoothDisabled-1) | 设置禁用蓝牙策略。 |
+| [turnOffBluetooth](arkts-bluetoothmanager-turnoffbluetooth-f.md#turnOffBluetooth-1) | 关闭蓝牙。蓝牙关闭后用户可以手动打开。 |
+| [turnOnBluetooth](arkts-bluetoothmanager-turnonbluetooth-f.md#turnOnBluetooth-1) | 开启蓝牙。蓝牙开启后用户可以手动关闭。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BluetoothInfo](arkts-mdm-bluetoothinfo-i.md) | Represents the device Bluetooth information. |
+| [BluetoothInfo](arkts-bluetoothmanager-bluetoothinfo-i.md) | 设备的蓝牙信息。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Protocol](arkts-mdm-protocol-e.md) | Represents the Bluetooth protocol type. |
-| [TransferPolicy](arkts-mdm-transferpolicy-e.md) | The transfer policy. |
+| [Protocol](arkts-bluetoothmanager-protocol-e.md) | 蓝牙协议类型。 |
+| [TransferPolicy](arkts-bluetoothmanager-transferpolicy-e.md) | 传输策略。 |
 

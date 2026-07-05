@@ -1,4 +1,4 @@
-# LcdFlashStatus (System API)
+# LcdFlashStatus
 
 Describes the LCD flash information.
 
@@ -11,7 +11,7 @@ Describes the LCD flash information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## isLcdFlashNeeded
@@ -33,12 +33,12 @@ Whether the LCD flash is required. **true** if required, **false** otherwise.
 ## lcdCompensation
 
 ```TypeScript
-readonly lcdCompensation: number
+readonly lcdCompensation: int
 ```
 
 LCD flash compensation.
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 

@@ -1,4 +1,4 @@
-# DeferredVideoEnhancementInfo (System API)
+# DeferredVideoEnhancementInfo
 
 Deferred video enhancement info.
 
@@ -11,7 +11,7 @@ Deferred video enhancement info.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## isDeferredVideoEnhancementAvailable

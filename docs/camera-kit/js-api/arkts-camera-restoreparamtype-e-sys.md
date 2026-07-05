@@ -1,4 +1,8 @@
-# RestoreParamType (System API)
+# RestoreParamType
+
+```TypeScript
+enum RestoreParamType
+```
 
 Enumerates the types of the parameters used for prelaunch.
 

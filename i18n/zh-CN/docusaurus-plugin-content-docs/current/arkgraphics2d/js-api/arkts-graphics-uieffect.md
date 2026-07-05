@@ -1,18 +1,22 @@
 # @ohos.graphics.uiEffect
 
+## 导入模块
+
+```TypeScript
+import { uiEffect } from '@kit.ArkGraphics2D';
+```
+
 ## 汇总
 
 ### 命名空间
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [uiEffect](arkts-arkgraphics2d-uieffect-n.md) |  |
+| [uiEffect](arkts-uieffect-n.md) |  |
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [BrightnessBlenderParam](arkts-arkgraphics2d-brightnessblenderparam-i-sys.md) | BrightnessBlender参数列表。 |
-<!--DelEnd-->
+| <!--DelRow-->[BrightnessBlenderParam](arkts-brightnessblenderparam-i.md) | BrightnessBlender参数列表。 |
 

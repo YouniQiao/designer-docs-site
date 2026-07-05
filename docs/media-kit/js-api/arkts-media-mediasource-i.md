@@ -1,6 +1,6 @@
 # MediaSource
 
-The MediaSource class defines the media data information, which is from [createMediaSourceWithUrl](arkts-media-createmediasourcewithurl-f.md#createmediasourcewithurl-1).
+The MediaSource class defines the media data information, which is from [createMediaSourceWithUrl](arkts-media-createmediasourcewithurl-f.md#createMediaSourceWithUrl-1).
 
 **Since:** 12
 
@@ -9,7 +9,7 @@ The MediaSource class defines the media data information, which is from [createM
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## enableOfflineCache
@@ -28,7 +28,7 @@ Sets whether to enable offline caching during video playback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | boolean | Yes | Whether to enable offline caching during video playback. **true** to enable, **false**otherwise. |
+| enable | boolean | Yes | Whether to enable offline caching during video playback. true to enable, false  otherwise. |
 
 ## getID
 
@@ -40,9 +40,9 @@ Gets the identifier of the media source.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -62,7 +62,7 @@ Sets a MediaSourceLoader object, which is used to help the player request media 
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -70,7 +70,7 @@ Sets a MediaSourceLoader object, which is used to help the player request media 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| resourceLoader | MediaSourceLoader | Yes | **MediaSourceLoader** object used to obtain media data for theplayer. |
+| resourceLoader | MediaSourceLoader | Yes | MediaSourceLoader object used to obtain media data for the  player. |
 
 ## setMimeType
 
@@ -82,7 +82,7 @@ Sets the MIME type to help the player process extended media sources.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

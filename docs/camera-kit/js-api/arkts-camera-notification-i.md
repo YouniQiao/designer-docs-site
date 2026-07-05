@@ -9,7 +9,7 @@ Provides APIs for managing notifications.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## offNotificationReceive
@@ -22,9 +22,9 @@ Unregisters the callback for receiving notifications.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,7 +32,7 @@ Unregisters the callback for receiving notifications.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;NotificationInfo&gt; | No | Callback to unregister.If this parameter is not specified, all callbacks are unregistered. |
+| callback | Callback&lt;NotificationInfo> | No |  |
 
 ## onNotificationReceive
 
@@ -44,9 +44,9 @@ Registers a callback to receive notifications.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -54,5 +54,5 @@ Registers a callback to receive notifications.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;NotificationInfo&gt; | Yes | Callback for receiving notifications. |
+| callback | Callback&lt;NotificationInfo> | Yes | Callback for receiving notifications. |
 

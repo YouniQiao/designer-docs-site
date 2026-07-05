@@ -6,15 +6,21 @@ Defines the frame info when fetch picture form a video.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## actualTimeUs
+## 导入模块
 
 ```TypeScript
-actualTimeUs?: number
+import { media } from '@kit.MediaKit';
 ```
 
-The actual frame time.
+## result
 
-**类型：** number
+```TypeScript
+result: FetchResult
+```
+
+The fetch result code - succeed, failed or cancelled.
+
+**类型：** FetchResult
 
 **起始版本：** 23
 
@@ -41,12 +47,12 @@ The image extracted from video.
 ## requestedTimeUs
 
 ```TypeScript
-requestedTimeUs: number
+requestedTimeUs: long
 ```
 
 The requested frame time.
 
-**类型：** number
+**类型：** long
 
 **起始版本：** 23
 
@@ -54,15 +60,15 @@ The requested frame time.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## result
+## actualTimeUs
 
 ```TypeScript
-result: FetchResult
+actualTimeUs?: long
 ```
 
-The fetch result code - succeed, failed or cancelled.
+The actual frame time.
 
-**类型：** FetchResult
+**类型：** long
 
 **起始版本：** 23
 

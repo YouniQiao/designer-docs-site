@@ -1,6 +1,10 @@
 # Orientation
 
-Enumerates image orientation.
+```TypeScript
+enum Orientation
+```
+
+表示图像方向类型的枚举。
 
 **Since:** 23
 
@@ -12,11 +16,11 @@ Enumerates image orientation.
 TOP_LEFT = 1
 ```
 
-The image is not rotated.
+图像未旋转。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -26,11 +30,11 @@ The image is not rotated.
 TOP_RIGHT = 2
 ```
 
-The image is mirrored horizontally.
+图像是水平镜像的。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -40,11 +44,11 @@ The image is mirrored horizontally.
 BOTTOM_RIGHT = 3
 ```
 
-The image is rotated 180 degrees.
+图像旋转180度。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,11 +58,11 @@ The image is rotated 180 degrees.
 BOTTOM_LEFT = 4
 ```
 
-The image is mirrored vertically.
+图像垂直镜像。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -68,11 +72,11 @@ The image is mirrored vertically.
 LEFT_TOP = 5
 ```
 
-The image is mirrored horizontally, then rotated 270 degrees clockwise.
+图像水平镜像，然后顺时针旋转270度。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -82,11 +86,11 @@ The image is mirrored horizontally, then rotated 270 degrees clockwise.
 RIGHT_TOP = 6
 ```
 
-The image is rotated 90 degrees clockwise.
+图像顺时针旋转90度。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -96,11 +100,11 @@ The image is rotated 90 degrees clockwise.
 RIGHT_BOTTOM = 7
 ```
 
-The image is mirrored horizontally, then rotated 90 degrees clockwise.
+图像水平镜像，然后顺时针旋转90度。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -110,11 +114,11 @@ The image is mirrored horizontally, then rotated 90 degrees clockwise.
 LEFT_BOTTOM = 8
 ```
 
-The image is rotated 270 degrees clockwise.
+图像顺时针旋转270度。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

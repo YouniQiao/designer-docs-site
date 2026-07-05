@@ -1,11 +1,5 @@
 # getCaptionsManager
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## getCaptionsManager
 
 ```TypeScript

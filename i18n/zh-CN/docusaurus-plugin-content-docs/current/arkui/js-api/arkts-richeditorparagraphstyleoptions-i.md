@@ -1,0 +1,28 @@
+# RichEditorParagraphStyleOptions
+
+段落样式选项。 继承自[RichEditorRange](arkts-richeditorrange-i.md#RichEditorRange)。 > **说明：** > > 接口作用的范围：设定的区间所涉及的段落。
+
+**继承实现关系：** RichEditorParagraphStyleOptions继承自：RichEditorRange。
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+## style
+
+```TypeScript
+style: RichEditorParagraphStyle
+```
+
+段落样式。
+
+**类型：** RichEditorParagraphStyle
+
+**起始版本：** 11
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+

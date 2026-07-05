@@ -1,6 +1,10 @@
 # PixelMapFormat
 
-Enumerates the pixel formats of images.
+```TypeScript
+enum PixelMapFormat
+```
+
+表示图片像素格式的枚举。
 
 **Since:** 7
 
@@ -12,13 +16,13 @@ Enumerates the pixel formats of images.
 UNKNOWN = 0
 ```
 
-Unknown format.
+未知格式。
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -28,7 +32,7 @@ Unknown format.
 ARGB_8888 = 1
 ```
 
-Indicates that each pixel is stored on 32 bits. Each pixel contains 4 components：R(8bits), G(8bits), B(8bits), A(8bits) and are stored from the higher-order to the lower-order bits.
+颜色信息由透明度（Alpha）与R（Red）、G（Green）、B（Blue）四部分组成，每个部分占8位，总共占32位，按照从高位到低位的顺序储存。该格式当前仅支持PixelMap的接口。
 
 **Since:** 18
 
@@ -40,13 +44,13 @@ Indicates that each pixel is stored on 32 bits. Each pixel contains 4 components
 RGB_565 = 2
 ```
 
-The color information consists of three components: R (Red), G (Green), and B (Blue), which occupies five bits, six bits, and five bits, respectively. The total length is 16 bits.
+颜色信息由R（Red）、G（Green）、B（Blue）三部分组成，R占5位，G占6位，B占5位，总共占16位，按照从高位到低位的顺序储存。
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -56,13 +60,13 @@ The color information consists of three components: R (Red), G (Green), and B (B
 RGBA_8888 = 3
 ```
 
-The color information consists of four components: R (Red), G (Green), B (Blue), and alpha. Each component occupies 8 bits, and the total length is 32 bits. It corresponds to [CAMERA_FORMAT_RGBA_8888 in CameraFormat](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#cameraformat).
+颜色信息由R（Red）、G（Green）、B（Blue）与透明度（Alpha）四部分组成，每个部分占8位，总共占32位，按照从高位到低位的顺序储存。对应 [相机服务CameraFormat中的CAMERA_FORMAT_RGBA_8888](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#CameraFormat)。
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -72,13 +76,13 @@ The color information consists of four components: R (Red), G (Green), B (Blue),
 BGRA_8888 = 4
 ```
 
-The color information consists of four components: B (Blue), G (Green), R (Red), and alpha. Each component occupies 8 bits, and the total length is 32 bits.
+颜色信息由B（Blue）、G（Green）、R（Red）与透明度（Alpha）四部分组成，每个部分占8位，总共占32位，按照从高位到低位的顺序储存。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -88,13 +92,13 @@ The color information consists of four components: B (Blue), G (Green), R (Red),
 RGB_888 = 5
 ```
 
-The color information consists of three components: R (Red), G (Green), and B (Blue). Each component occupies 8 bits, and the total length is 24 bits.
+颜色信息由R（Red）、G（Green）、B（Blue）三部分组成，每个部分占8位，总共占24位，按照从高位到低位的顺序储存。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -104,13 +108,13 @@ The color information consists of three components: R (Red), G (Green), and B (B
 ALPHA_8 = 6
 ```
 
-The color information consists of only the alpha component, which occupies eight bits. Each row of pixels is composed of one or more pixels, and the data for each row is aligned to 4 bytes. If the byte count of a row is not a multiple of 4, blank bytes are padded at the end to ensure proper alignment.
+颜色信息仅包含透明度（Alpha），每个像素占8位，按照从高位到低位的顺序储存。一个或多个像素组成一行像素，每行像素数据按4字节对齐，如果一行像素所占的字节数不是4的整数倍，则在行末填充空白字节以满足对齐要求。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -120,13 +124,13 @@ The color information consists of only the alpha component, which occupies eight
 RGBA_F16 = 7
 ```
 
-The color information consists of four components: R (Red), G (Green), B (Blue), and alpha. Each component occupies 16 bits, and the total length is 64 bits.
+颜色信息由R（Red）、G（Green）、B（Blue）与透明度（Alpha）四部分组成，每个部分占16位，总共占64位，按照从高位到低位的顺序以FP16半精度浮点数的形式储存。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -136,13 +140,13 @@ The color information consists of four components: R (Red), G (Green), B (Blue),
 NV21 = 8
 ```
 
-YVU pixel arrangement, where the V component precedes the U component. The color information consists of the luminance component Y and the interleaved chrominance components V and U. The Y component occupies 8 bits, and the UV components occupy 4 bits on average due to 4:2:0 sampling. The total length is 12 bits on average. It corresponds to [CAMERA_FORMAT_YUV_420_SP in CameraFormat](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#cameraformat).
+YVU像素排列，V分量在U分量之前。颜色信息由亮度分量Y和交错排列的色度分量V和U组成，其中Y分量占8位，UV分量因4:2:0采样平均占4位，总共平均占12位，按照从高位到低位的顺序储存。对应 [相机服务CameraFormat中的CAMERA_FORMAT_YUV_420_SP](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#CameraFormat)。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -152,13 +156,13 @@ YVU pixel arrangement, where the V component precedes the U component. The color
 NV12 = 9
 ```
 
-YUV pixel arrangement, where the U component precedes the V component. The color information consists of the luminance component Y and the interleaved chrominance components U and V. The Y component occupies 8 bits, and the UV components occupy 4 bits on average due to 4:2:0 sampling. The total length is 12 bits on average.
+YUV像素排列，U分量在V分量之前。颜色信息由亮度分量Y和交错排列的色度分量U和V组成，其中Y分量占8位，UV分量因4:2:0采样平均占4位，总共平均占12位，按照从高位到低位的顺序储存。
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -168,7 +172,7 @@ YUV pixel arrangement, where the U component precedes the V component. The color
 RGBA_1010102 = 10
 ```
 
-The color information consists of four components: R (Red), G (Green), B (Blue), and alpha. R, G, and B each occupy 10 bits, and alpha occupies 2 bits. The total length is 32 bits.
+颜色信息由R（Red）、G（Green）、B（Blue）与透明度（Alpha）四部分组成，其中R、G、B分别占10位，透明度占2位，总共占32位，按照从高位到低位的顺序储存。
 
 **Since:** 12
 
@@ -180,7 +184,7 @@ The color information consists of four components: R (Red), G (Green), B (Blue),
 YCBCR_P010 = 11
 ```
 
-The color information consists of the luminance component Y and the chrominance components Cb and Cr. Each component has effective 10 bits. In storage, the Y plane uses 16 bits per pixel (10 of which are effective). The UV plane is interleaved, with every four pixels taking up 32 bits of data (each chrominance component having 10 effective bits), resulting in an average of 15 effective bits overall. It corresponds to [CAMERA_FORMAT_YCBCR_P010 in CameraFormat](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#cameraformat).
+颜色信息由亮度分量Y和色度分量Cb与Cr组成，每个分量有效10位，实际存储时，Y平面每个像素占16位数据（10位有效），UV平面交错排列，每4个像素占32位数据（每色度分量10位有效），平均有效占15位，按照从高位到低位的顺序 储存。对应[相机服务CameraFormat中的CAMERA_FORMAT_YCBCR_P010](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#CameraFormat)。
 
 **Since:** 12
 
@@ -192,7 +196,7 @@ The color information consists of the luminance component Y and the chrominance 
 YCRCB_P010 = 12
 ```
 
-The color information consists of the luminance component Y and the chrominance components Cr and Cb. Each component has effective 10 bits. In storage, the Y plane uses 16 bits per pixel (10 of which are effective). The UV plane is interleaved, with every four pixels taking up 32 bits of data (each chrominance component having 10 effective bits), resulting in an average of 15 effective bits overall. It corresponds to [CAMERA_FORMAT_YCRCB_P010 in CameraFormat](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#cameraformat).
+颜色信息由亮度分量Y和色度分量Cr与Cb组成，每个分量有效10位，实际存储时，Y平面每个像素占16位数据（10位有效），UV平面交错排列，每4个像素占32位数据（每色度分量10位有效），平均有效占15位，按照从高位到低位的顺序 储存。对应[相机服务CameraFormat中的CAMERA_FORMAT_YCRCB_P010](../../apis-camera-kit/arkts-apis/arkts-camera-cameraformat-e.md#CameraFormat)。
 
 **Since:** 12
 
@@ -204,11 +208,11 @@ The color information consists of the luminance component Y and the chrominance 
 Y8 = 14
 ```
 
-Indicates that each pixel is stored on 8 bits, a YUV planar format comprised of Y plane only.
+仅包含Y平面（亮度）的单通道灰度格式，每个像素占8位，按照从高位到低位的顺序储存。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -222,9 +226,9 @@ Indicates that each pixel is stored on 8 bits, without 4-byte stride alignment. 
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 26.0.0.
+**Widget capability:** This API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -238,9 +242,9 @@ Indicates that each pixel is stored on 16 bits. Each pixel contains 1 component:
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 26.0.0.
+**Widget capability:** This API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

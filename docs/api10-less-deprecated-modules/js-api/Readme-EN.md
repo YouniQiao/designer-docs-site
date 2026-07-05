@@ -1,0 +1,242 @@
+# API10LessDeprecatedModules
+
+- [@ohos.ability.wantConstant](arkts-ability-wantconstant.md)
+  - [Action](arkts-wantconstant-action-e.md)
+  - [Entity](arkts-wantconstant-entity-e.md)
+  - [Flags](arkts-wantconstant-flags-e.md)
+- [@ohos.ability.wantConstant](arkts-ability-wantconstant.md)
+  - [Action](arkts-wantconstant-action-e.md)
+  - [Entity](arkts-wantconstant-entity-e.md)
+  - [Flags](arkts-wantconstant-flags-e.md)
+- [@ohos.application.Configuration](arkts-application-configuration.md)
+  - [Configuration](arkts-configuration-i.md)
+- [@ohos.application.Configuration](arkts-application-configuration.md)
+  - [Configuration](arkts-configuration-i.md)
+- [@ohos.application.ConfigurationConstant](arkts-application-configurationconstant.md)
+  - [ColorMode](arkts-configurationconstant-colormode-e.md)
+- [@ohos.application.ConfigurationConstant](arkts-application-configurationconstant.md)
+  - [ColorMode](arkts-configurationconstant-colormode-e.md)
+- [@ohos.application.Want](arkts-application-want.md)
+  - [Want](arkts-want-c.md)
+- [@ohos.application.Want](arkts-application-want.md)
+  - [Want](arkts-want-c.md)
+- [@ohos.application.abilityDelegatorRegistry](arkts-application-abilitydelegatorregistry.md)
+  - [getArguments](arkts-abilitydelegatorregistry-getarguments-f.md)
+  - [getAbilityDelegator](arkts-abilitydelegatorregistry-getabilitydelegator-f.md)
+  - [AbilityLifecycleState](arkts-abilitydelegatorregistry-abilitylifecyclestate-e.md)
+- [@ohos.application.abilityDelegatorRegistry](arkts-application-abilitydelegatorregistry.md)
+  - [getArguments](arkts-abilitydelegatorregistry-getarguments-f.md)
+  - [getAbilityDelegator](arkts-abilitydelegatorregistry-getabilitydelegator-f.md)
+  - [AbilityLifecycleState](arkts-abilitydelegatorregistry-abilitylifecyclestate-e.md)
+- [@ohos.application.abilityManager](arkts-application-abilitymanager.md)<!--Del-->
+  - [getAbilityRunningInfos(system api)](arkts-abilitymanager-getabilityrunninginfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateConfiguration(system api)](arkts-abilitymanager-updateconfiguration-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AbilityState(system api)](arkts-abilitymanager-abilitystate-e-sys.md)<!--DelEnd-->
+- [@ohos.application.abilityManager](arkts-application-abilitymanager.md)<!--Del-->
+  - [getAbilityRunningInfos(system api)](arkts-abilitymanager-getabilityrunninginfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [updateConfiguration(system api)](arkts-abilitymanager-updateconfiguration-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AbilityState(system api)](arkts-abilitymanager-abilitystate-e-sys.md)<!--DelEnd-->
+- [@ohos.application.appManager](arkts-application-appmanager.md)<!--Del-->
+  - [getProcessRunningInformation(system api)](arkts-appmanager-getprocessrunninginformation-f-sys.md)<!--DelEnd-->
+  - [getAppMemorySize](arkts-appmanager-getappmemorysize-f.md)<!--Del-->
+  - [killProcessesByBundleName(system api)](arkts-appmanager-killprocessesbybundlename-f-sys.md)<!--DelEnd-->
+  - [isRamConstrainedDevice](arkts-appmanager-isramconstraineddevice-f.md)
+  - [getProcessRunningInfos](arkts-appmanager-getprocessrunninginfos-f.md)<!--Del-->
+  - [getForegroundApplications(system api)](arkts-appmanager-getforegroundapplications-f-sys.md)<!--DelEnd-->
+  - [isRunningInStabilityTest](arkts-appmanager-isrunninginstabilitytest-f.md)<!--Del-->
+  - [clearUpApplicationData(system api)](arkts-appmanager-clearupapplicationdata-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterApplicationStateObserver(system api)](arkts-appmanager-unregisterapplicationstateobserver-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerApplicationStateObserver(system api)](arkts-appmanager-registerapplicationstateobserver-f-sys.md)<!--DelEnd--><!--Del-->
+  - [killProcessWithAccount(system api)](arkts-appmanager-killprocesswithaccount-f-sys.md)<!--DelEnd-->
+- [@ohos.application.appManager](arkts-application-appmanager.md)
+  - [getAppMemorySize](arkts-appmanager-getappmemorysize-f.md)<!--Del-->
+  - [killProcessesByBundleName(system api)](arkts-appmanager-killprocessesbybundlename-f-sys.md)<!--DelEnd-->
+  - [isRamConstrainedDevice](arkts-appmanager-isramconstraineddevice-f.md)
+  - [getProcessRunningInfos](arkts-appmanager-getprocessrunninginfos-f.md)<!--Del-->
+  - [getForegroundApplications(system api)](arkts-appmanager-getforegroundapplications-f-sys.md)<!--DelEnd-->
+  - [isRunningInStabilityTest](arkts-appmanager-isrunninginstabilitytest-f.md)<!--Del-->
+  - [clearUpApplicationData(system api)](arkts-appmanager-clearupapplicationdata-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unregisterApplicationStateObserver(system api)](arkts-appmanager-unregisterapplicationstateobserver-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerApplicationStateObserver(system api)](arkts-appmanager-registerapplicationstateobserver-f-sys.md)<!--DelEnd--><!--Del-->
+  - [killProcessWithAccount(system api)](arkts-appmanager-killprocesswithaccount-f-sys.md)<!--DelEnd-->
+- [@ohos.application.formBindingData](arkts-application-formbindingdata.md)
+  - [createFormBindingData](arkts-formbindingdata-createformbindingdata-f.md)
+  - [FormBindingData](arkts-formbindingdata-formbindingdata-i.md)
+- [@ohos.application.formHost](arkts-application-formhost.md)<!--Del-->
+  - [notifyInvisibleForms(system api)](arkts-formhost-notifyinvisibleforms-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deleteInvalidForms(system api)](arkts-formhost-deleteinvalidforms-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllFormsInfo(system api)](arkts-formhost-getallformsinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [notifyVisibleForms(system api)](arkts-formhost-notifyvisibleforms-f-sys.md)<!--DelEnd--><!--Del-->
+  - [deleteForm(system api)](arkts-formhost-deleteform-f-sys.md)<!--DelEnd--><!--Del-->
+  - [castTempForm(system api)](arkts-formhost-casttempform-f-sys.md)<!--DelEnd--><!--Del-->
+  - [acquireFormState(system api)](arkts-formhost-acquireformstate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [off(system api)](arkts-formhost-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [enableFormsUpdate(system api)](arkts-formhost-enableformsupdate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [disableFormsUpdate(system api)](arkts-formhost-disableformsupdate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [notifyFormsVisible(system api)](arkts-formhost-notifyformsvisible-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getFormsInfo(system api)](arkts-formhost-getformsinfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [requestForm(system api)](arkts-formhost-requestform-f-sys.md)<!--DelEnd--><!--Del-->
+  - [notifyFormsEnableUpdate(system api)](arkts-formhost-notifyformsenableupdate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [releaseForm(system api)](arkts-formhost-releaseform-f-sys.md)<!--DelEnd--><!--Del-->
+  - [isSystemReady(system api)](arkts-formhost-issystemready-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-formhost-on-f-sys.md)<!--DelEnd-->
+- [@ohos.application.formInfo](arkts-application-forminfo.md)
+  - [FormInfo](arkts-forminfo-forminfo-i.md)
+  - [FormStateInfo](arkts-forminfo-formstateinfo-i.md)
+  - [ColorMode](arkts-forminfo-colormode-e.md)
+  - [FormParam](arkts-forminfo-formparam-e.md)
+  - [FormState](arkts-forminfo-formstate-e.md)
+  - [FormType](arkts-forminfo-formtype-e.md)
+- [@ohos.application.formProvider](arkts-application-formprovider.md)
+  - [setFormNextRefreshTime](arkts-formprovider-setformnextrefreshtime-f.md)
+  - [updateForm](arkts-formprovider-updateform-f.md)
+- [@ohos.application.missionManager](arkts-application-missionmanager.md)<!--Del-->
+  - [unregisterMissionListener(system api)](arkts-missionmanager-unregistermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [moveMissionToFront(system api)](arkts-missionmanager-movemissiontofront-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMissionInfos(system api)](arkts-missionmanager-getmissioninfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMissionInfo(system api)](arkts-missionmanager-getmissioninfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [clearAllMissions(system api)](arkts-missionmanager-clearallmissions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMissionSnapShot(system api)](arkts-missionmanager-getmissionsnapshot-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerMissionListener(system api)](arkts-missionmanager-registermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [clearMission(system api)](arkts-missionmanager-clearmission-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unlockMission(system api)](arkts-missionmanager-unlockmission-f-sys.md)<!--DelEnd--><!--Del-->
+  - [lockMission(system api)](arkts-missionmanager-lockmission-f-sys.md)<!--DelEnd-->
+- [@ohos.application.missionManager](arkts-application-missionmanager.md)<!--Del-->
+  - [unregisterMissionListener(system api)](arkts-missionmanager-unregistermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [moveMissionToFront(system api)](arkts-missionmanager-movemissiontofront-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMissionInfos(system api)](arkts-missionmanager-getmissioninfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMissionInfo(system api)](arkts-missionmanager-getmissioninfo-f-sys.md)<!--DelEnd--><!--Del-->
+  - [clearAllMissions(system api)](arkts-missionmanager-clearallmissions-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getMissionSnapShot(system api)](arkts-missionmanager-getmissionsnapshot-f-sys.md)<!--DelEnd--><!--Del-->
+  - [registerMissionListener(system api)](arkts-missionmanager-registermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [clearMission(system api)](arkts-missionmanager-clearmission-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unlockMission(system api)](arkts-missionmanager-unlockmission-f-sys.md)<!--DelEnd--><!--Del-->
+  - [lockMission(system api)](arkts-missionmanager-lockmission-f-sys.md)<!--DelEnd-->
+- [@ohos.backgroundTaskManager](arkts-backgroundtaskmanager.md)
+  - [stopBackgroundRunning](arkts-backgroundtaskmanager-stopbackgroundrunning-f.md)
+  - [startBackgroundRunning](arkts-backgroundtaskmanager-startbackgroundrunning-f.md)
+  - [requestSuspendDelay](arkts-backgroundtaskmanager-requestsuspenddelay-f.md)
+  - [getRemainingDelayTime](arkts-backgroundtaskmanager-getremainingdelaytime-f.md)
+  - [cancelSuspendDelay](arkts-backgroundtaskmanager-cancelsuspenddelay-f.md)
+  - [DelaySuspendInfo](arkts-backgroundtaskmanager-delaysuspendinfo-i.md)
+  - [BackgroundMode](arkts-backgroundtaskmanager-backgroundmode-e.md)
+- [@ohos.backgroundTaskManager](arkts-backgroundtaskmanager.md)
+  - [stopBackgroundRunning](arkts-backgroundtaskmanager-stopbackgroundrunning-f.md)
+  - [startBackgroundRunning](arkts-backgroundtaskmanager-startbackgroundrunning-f.md)
+  - [requestSuspendDelay](arkts-backgroundtaskmanager-requestsuspenddelay-f.md)
+  - [getRemainingDelayTime](arkts-backgroundtaskmanager-getremainingdelaytime-f.md)
+  - [cancelSuspendDelay](arkts-backgroundtaskmanager-cancelsuspenddelay-f.md)
+  - [DelaySuspendInfo](arkts-backgroundtaskmanager-delaysuspendinfo-i.md)
+  - [BackgroundMode](arkts-backgroundtaskmanager-backgroundmode-e.md)
+- [@ohos.commonEvent](arkts-commonevent.md)
+  - [unsubscribe](arkts-commonevent-unsubscribe-f.md)
+  - [subscribe](arkts-commonevent-subscribe-f.md)
+  - [publish](arkts-commonevent-publish-f.md)<!--Del-->
+  - [publishAsUser(system api)](arkts-commonevent-publishasuser-f-sys.md)<!--DelEnd-->
+  - [createSubscriber](arkts-commonevent-createsubscriber-f.md)
+  - [Support](arkts-commonevent-support-e.md)
+- [@ohos.commonEvent](arkts-commonevent.md)
+  - [unsubscribe](arkts-commonevent-unsubscribe-f.md)
+  - [subscribe](arkts-commonevent-subscribe-f.md)
+  - [publish](arkts-commonevent-publish-f.md)<!--Del-->
+  - [publishAsUser(system api)](arkts-commonevent-publishasuser-f-sys.md)<!--DelEnd-->
+  - [createSubscriber](arkts-commonevent-createsubscriber-f.md)
+  - [Support](arkts-commonevent-support-e.md)
+- [@ohos.document](arkts-document.md)
+  - [document](arkts-document-n.md)  - [show](arkts-document-show-f.md)  - [choose](arkts-document-choose-f.md)
+- [@ohos.document](arkts-document.md)
+  - [document](arkts-document-n.md)  - [show](arkts-document-show-f.md)  - [choose](arkts-document-choose-f.md)
+- [@ohos.fileio](arkts-fileio.md)
+  - [fileIO](arkts-fileio-n.md)  - [statSync](arkts-fileio-statsync-f.md)  - [rmdir](arkts-fileio-rmdir-f.md)  - [closeSync](arkts-fileio-closesync-f.md)  - [mkdtemp](arkts-fileio-mkdtemp-f.md)  - [renameSync](arkts-fileio-renamesync-f.md)  - [lstatSync](arkts-fileio-lstatsync-f.md)  - [truncate](arkts-fileio-truncate-f.md)  - [copyFileSync](arkts-fileio-copyfilesync-f.md)  - [createStream](arkts-fileio-createstream-f.md)  - [readSync](arkts-fileio-readsync-f.md)  - [write](arkts-fileio-write-f.md)  - [mkdir](arkts-fileio-mkdir-f.md)  - [mkdirSync](arkts-fileio-mkdirsync-f.md)  - [createWatcher](arkts-fileio-createwatcher-f.md)  - [read](arkts-fileio-read-f.md)  - [fdopenStreamSync](arkts-fileio-fdopenstreamsync-f.md)  - [chown](arkts-fileio-chown-f.md)  - [opendirSync](arkts-fileio-opendirsync-f.md)  - [readText](arkts-fileio-readtext-f.md)  - [fsyncSync](arkts-fileio-fsyncsync-f.md)  - [chmodSync](arkts-fileio-chmodsync-f.md)  - [writeSync](arkts-fileio-writesync-f.md)  - [opendir](arkts-fileio-opendir-f.md)  - [chownSync](arkts-fileio-chownsync-f.md)  - [fstatSync](arkts-fileio-fstatsync-f.md)  - [hash](arkts-fileio-hash-f.md)  - [symlinkSync](arkts-fileio-symlinksync-f.md)  - [copyFile](arkts-fileio-copyfile-f.md)  - [access](arkts-fileio-access-f.md)  - [fdopenStream](arkts-fileio-fdopenstream-f.md)  - [rmdirSync](arkts-fileio-rmdirsync-f.md)  - [createStreamSync](arkts-fileio-createstreamsync-f.md)  - [fsync](arkts-fileio-fsync-f.md)  - [lchownSync](arkts-fileio-lchownsync-f.md)  - [symlink](arkts-fileio-symlink-f.md)  - [fchownSync](arkts-fileio-fchownsync-f.md)  - [fdatasyncSync](arkts-fileio-fdatasyncsync-f.md)  - [chmod](arkts-fileio-chmod-f.md)  - [fchmodSync](arkts-fileio-fchmodsync-f.md)  - [close](arkts-fileio-close-f.md)  - [fdatasync](arkts-fileio-fdatasync-f.md)  - [stat](arkts-fileio-stat-f.md)  - [fchmod](arkts-fileio-fchmod-f.md)  - [lstat](arkts-fileio-lstat-f.md)  - [unlinkSync](arkts-fileio-unlinksync-f.md)  - [mkdtempSync](arkts-fileio-mkdtempsync-f.md)  - [truncateSync](arkts-fileio-truncatesync-f.md)  - [fchown](arkts-fileio-fchown-f.md)  - [fstat](arkts-fileio-fstat-f.md)  - [openSync](arkts-fileio-opensync-f.md)  - [accessSync](arkts-fileio-accesssync-f.md)  - [readTextSync](arkts-fileio-readtextsync-f.md)  - [unlink](arkts-fileio-unlink-f.md)  - [rename](arkts-fileio-rename-f.md)  - [lchown](arkts-fileio-lchown-f.md)  - [ftruncateSync](arkts-fileio-ftruncatesync-f.md)  - [ftruncate](arkts-fileio-ftruncate-f.md)  - [open](arkts-fileio-open-f.md)
+  - [Dir](arkts-dir-i.md)
+  - [Dirent](arkts-dirent-i.md)
+  - [ReadOut](arkts-readout-i.md)
+  - [Stat](arkts-stat-i.md)
+  - [Stream](arkts-stream-i.md)
+  - [Watcher](arkts-watcher-i.md)
+- [@ohos.fileio](arkts-fileio.md)
+  - [fileIO](arkts-fileio-n.md)  - [statSync](arkts-fileio-statsync-f.md)  - [rmdir](arkts-fileio-rmdir-f.md)  - [closeSync](arkts-fileio-closesync-f.md)  - [mkdtemp](arkts-fileio-mkdtemp-f.md)  - [renameSync](arkts-fileio-renamesync-f.md)  - [lstatSync](arkts-fileio-lstatsync-f.md)  - [truncate](arkts-fileio-truncate-f.md)  - [copyFileSync](arkts-fileio-copyfilesync-f.md)  - [createStream](arkts-fileio-createstream-f.md)  - [readSync](arkts-fileio-readsync-f.md)  - [write](arkts-fileio-write-f.md)  - [mkdir](arkts-fileio-mkdir-f.md)  - [mkdirSync](arkts-fileio-mkdirsync-f.md)  - [createWatcher](arkts-fileio-createwatcher-f.md)  - [read](arkts-fileio-read-f.md)  - [fdopenStreamSync](arkts-fileio-fdopenstreamsync-f.md)  - [chown](arkts-fileio-chown-f.md)  - [opendirSync](arkts-fileio-opendirsync-f.md)  - [readText](arkts-fileio-readtext-f.md)  - [fsyncSync](arkts-fileio-fsyncsync-f.md)  - [chmodSync](arkts-fileio-chmodsync-f.md)  - [writeSync](arkts-fileio-writesync-f.md)  - [opendir](arkts-fileio-opendir-f.md)  - [chownSync](arkts-fileio-chownsync-f.md)  - [fstatSync](arkts-fileio-fstatsync-f.md)  - [hash](arkts-fileio-hash-f.md)  - [symlinkSync](arkts-fileio-symlinksync-f.md)  - [copyFile](arkts-fileio-copyfile-f.md)  - [access](arkts-fileio-access-f.md)  - [fdopenStream](arkts-fileio-fdopenstream-f.md)  - [rmdirSync](arkts-fileio-rmdirsync-f.md)  - [createStreamSync](arkts-fileio-createstreamsync-f.md)  - [fsync](arkts-fileio-fsync-f.md)  - [lchownSync](arkts-fileio-lchownsync-f.md)  - [symlink](arkts-fileio-symlink-f.md)  - [fchownSync](arkts-fileio-fchownsync-f.md)  - [fdatasyncSync](arkts-fileio-fdatasyncsync-f.md)  - [chmod](arkts-fileio-chmod-f.md)  - [fchmodSync](arkts-fileio-fchmodsync-f.md)  - [close](arkts-fileio-close-f.md)  - [fdatasync](arkts-fileio-fdatasync-f.md)  - [stat](arkts-fileio-stat-f.md)  - [fchmod](arkts-fileio-fchmod-f.md)  - [lstat](arkts-fileio-lstat-f.md)  - [unlinkSync](arkts-fileio-unlinksync-f.md)  - [mkdtempSync](arkts-fileio-mkdtempsync-f.md)  - [truncateSync](arkts-fileio-truncatesync-f.md)  - [fchown](arkts-fileio-fchown-f.md)  - [fstat](arkts-fileio-fstat-f.md)  - [openSync](arkts-fileio-opensync-f.md)  - [accessSync](arkts-fileio-accesssync-f.md)  - [readTextSync](arkts-fileio-readtextsync-f.md)  - [unlink](arkts-fileio-unlink-f.md)  - [rename](arkts-fileio-rename-f.md)  - [lchown](arkts-fileio-lchown-f.md)  - [ftruncateSync](arkts-fileio-ftruncatesync-f.md)  - [ftruncate](arkts-fileio-ftruncate-f.md)  - [open](arkts-fileio-open-f.md)
+  - [Dir](arkts-dir-i.md)
+  - [Dirent](arkts-dirent-i.md)
+  - [ReadOut](arkts-readout-i.md)
+  - [Stat](arkts-stat-i.md)
+  - [Stream](arkts-stream-i.md)
+  - [Watcher](arkts-watcher-i.md)
+- [@ohos.hiAppEvent](arkts-hiappevent.md)
+  - [Event](arkts-event-n.md)   - [Constants](arkts-event-con.md)
+  - [hiAppEvent](arkts-hiappevent-n.md)
+   - [configure](arkts-hiappevent-configure-f.md)
+   - [write](arkts-hiappevent-write-f.md)
+   - [ConfigOption](arkts-configoption-i.md)
+   - [EventType](arkts-eventtype-e.md)
+  - [Param](arkts-param-n.md)   - [Constants](arkts-param-con.md)
+- [@ohos.statfs](arkts-statfs.md)
+  - [getTotalBytes](arkts-statfs-gettotalbytes-f.md)
+  - [getFreeBytes](arkts-statfs-getfreebytes-f.md)
+- [@ohos.statfs](arkts-statfs.md)
+  - [getTotalBytes](arkts-statfs-gettotalbytes-f.md)
+  - [getFreeBytes](arkts-statfs-getfreebytes-f.md)
+- [@ohos.wantAgent](arkts-wantagent.md)
+  - [wantAgent](arkts-wantagent-n.md)
+   - [equal](arkts-wantagent-equal-f.md)
+   - [cancel](arkts-wantagent-cancel-f.md)<!--Del-->
+   - [getWant(system api)](arkts-wantagent-getwant-f-sys.md)<!--DelEnd-->
+   - [getUid](arkts-wantagent-getuid-f.md)
+   - [getBundleName](arkts-wantagent-getbundlename-f.md)
+   - [trigger](arkts-wantagent-trigger-f.md)
+   - [getWantAgent](arkts-wantagent-getwantagent-f.md)
+   - [CompleteData](arkts-completedata-i.md)
+   - [OperationType](arkts-operationtype-e.md)
+   - [WantAgentFlags](arkts-wantagentflags-e.md)
+  - [WantAgent](arkts-wantagent-t.md)
+- [@ohos.wantAgent](arkts-wantagent.md)
+  - [wantAgent](arkts-wantagent-n.md)
+   - [equal](arkts-wantagent-equal-f.md)
+   - [cancel](arkts-wantagent-cancel-f.md)<!--Del-->
+   - [getWant(system api)](arkts-wantagent-getwant-f-sys.md)<!--DelEnd-->
+   - [getUid](arkts-wantagent-getuid-f.md)
+   - [getBundleName](arkts-wantagent-getbundlename-f.md)
+   - [trigger](arkts-wantagent-trigger-f.md)
+   - [getWantAgent](arkts-wantagent-getwantagent-f.md)
+   - [CompleteData](arkts-completedata-i.md)
+   - [OperationType](arkts-operationtype-e.md)
+   - [WantAgentFlags](arkts-wantagentflags-e.md)
+  - [WantAgent](arkts-wantagent-t.md)
+- [@system.file](arkts-file.md)
+  - [File](arkts-file-c.md)
+  - [FileAccessOption](arkts-fileaccessoption-i.md)
+  - [FileCopyOption](arkts-filecopyoption-i.md)
+  - [FileDeleteOption](arkts-filedeleteoption-i.md)
+  - [FileGetOption](arkts-filegetoption-i.md)
+  - [FileListOption](arkts-filelistoption-i.md)
+  - [FileListResponse](arkts-filelistresponse-i.md)
+  - [FileMkdirOption](arkts-filemkdiroption-i.md)
+  - [FileMoveOption](arkts-filemoveoption-i.md)
+  - [FileReadArrayBufferOption](arkts-filereadarraybufferoption-i.md)
+  - [FileReadArrayBufferResponse](arkts-filereadarraybufferresponse-i.md)
+  - [FileReadTextOption](arkts-filereadtextoption-i.md)
+  - [FileReadTextResponse](arkts-filereadtextresponse-i.md)
+  - [FileResponse](arkts-fileresponse-i.md)
+  - [FileRmdirOption](arkts-filermdiroption-i.md)
+  - [FileWriteArrayBufferOption](arkts-filewritearraybufferoption-i.md)
+  - [FileWriteTextOption](arkts-filewritetextoption-i.md)
+- [@system.file](arkts-file.md)
+  - [File](arkts-file-c.md)
+  - [FileAccessOption](arkts-fileaccessoption-i.md)
+  - [FileCopyOption](arkts-filecopyoption-i.md)
+  - [FileDeleteOption](arkts-filedeleteoption-i.md)
+  - [FileGetOption](arkts-filegetoption-i.md)
+  - [FileListOption](arkts-filelistoption-i.md)
+  - [FileListResponse](arkts-filelistresponse-i.md)
+  - [FileMkdirOption](arkts-filemkdiroption-i.md)
+  - [FileMoveOption](arkts-filemoveoption-i.md)
+  - [FileReadArrayBufferOption](arkts-filereadarraybufferoption-i.md)
+  - [FileReadArrayBufferResponse](arkts-filereadarraybufferresponse-i.md)
+  - [FileReadTextOption](arkts-filereadtextoption-i.md)
+  - [FileReadTextResponse](arkts-filereadtextresponse-i.md)
+  - [FileResponse](arkts-fileresponse-i.md)
+  - [FileRmdirOption](arkts-filermdiroption-i.md)
+  - [FileWriteArrayBufferOption](arkts-filewritearraybufferoption-i.md)
+  - [FileWriteTextOption](arkts-filewritetextoption-i.md)
+- [resultSet](arkts-resultset.md)
+  - [ResultSet](arkts-resultset-i.md)

@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AutoStartupCallback](arkts-ability-autostartupcallback-i-sys.md) | The module defines the callback to be invoked when auto-startup is set or canceled for an application component. |
-<!--DelEnd-->
+| <!--DelRow-->[AutoStartupCallback](arkts-autostartupcallback-i.md) | 应用设置为开机自启动时的回调函数。 |
 

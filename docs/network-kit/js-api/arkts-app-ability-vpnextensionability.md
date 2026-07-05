@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { VpnExtensionContext } from '@ohos.app.ability.VpnExtensionAbility';
+import { VpnExtensionContext } from '@kit.NetworkKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { VpnExtensionContext } from '@ohos.app.ability.VpnExtensionAbility';
 
 | Name | Description |
 | --- | --- |
-| [VpnExtensionAbility](arkts-network-vpnextensionability-c.md) | class of vpn extension ability. |
+| [VpnExtensionAbility](arkts-vpnextensionability-c.md) | class of vpn extension ability. |
 

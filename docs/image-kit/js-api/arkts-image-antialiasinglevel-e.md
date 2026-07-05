@@ -1,6 +1,10 @@
 # AntiAliasingLevel
 
-Enumerates the anti-aliasing levels.
+```TypeScript
+enum AntiAliasingLevel
+```
+
+缩放时的插值算法。可根据缩放质量和性能需求选择合适的级别。
 
 **Since:** 12
 
@@ -12,11 +16,11 @@ Enumerates the anti-aliasing levels.
 NONE = 0
 ```
 
-Nearest neighbor interpolation.
+最近邻插值算法。 速度最快，放大时会有明显的马赛克/锯齿感，适合对性能要求高、对画质要求低的快速缩放场景。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** From API version 14 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -26,11 +30,11 @@ Nearest neighbor interpolation.
 LOW = 1
 ```
 
-Bilinear interpolation.
+双线性插值算法。 适合一般缩放场景。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** From API version 14 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -40,11 +44,11 @@ Bilinear interpolation.
 MEDIUM = 2
 ```
 
-Bilinear interpolation with mipmap enabled. You are advised to use this value when zooming out an image.
+双线性插值算法，同时开启Mipmap。 适合缩小图片的场景，能极好地消除大幅缩小时的混叠与纹理闪烁。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** From API version 14 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,11 +58,11 @@ Bilinear interpolation with mipmap enabled. You are advised to use this value wh
 HIGH = 3
 ```
 
-Cubic interpolation.
+三次卷积插值算法。 适合对画质要求较高的放大场景。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** From API version 14 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

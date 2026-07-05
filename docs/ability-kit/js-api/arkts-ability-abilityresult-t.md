@@ -4,15 +4,13 @@
 export type AbilityResult = _AbilityResult
 ```
 
-Defines the result code and data returned when a started ability is terminated.
+AbilityResult二级模块。
 
 **Since:** 9
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the FA model.
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+**System capability:** SystemCapability.Ability.AbilityBase
 
 **Property type:** _AbilityResult
 

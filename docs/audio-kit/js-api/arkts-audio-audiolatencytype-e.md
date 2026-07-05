@@ -1,5 +1,9 @@
 # AudioLatencyType
 
+```TypeScript
+enum AudioLatencyType
+```
+
 Enumerates the audio latency types.
 
 **Since:** 23
@@ -16,7 +20,7 @@ Type to get latency of all audio processing units, including software and hardwa
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -30,7 +34,7 @@ Type to get latency of software part, including audio effects in software.
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -44,7 +48,7 @@ Type to get latency of hardware part, including audio effects in hal, driver and
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { PixelMapFormat, MovingPhotoViewAttribute, MovingPhotoView, MovingPhotoViewController, DynamicRangeMode } from '@ohos.multimedia.movingphotoview';
+import { PixelMapFormat,MovingPhotoViewAttribute,MovingPhotoView,MovingPhotoViewController,DynamicRangeMode } from '@kit.MediaLibraryKit';
 ```
 
 ## Summary
@@ -12,58 +12,33 @@ import { PixelMapFormat, MovingPhotoViewAttribute, MovingPhotoView, MovingPhotoV
 
 | Name | Description |
 | --- | --- |
-| [MovingPhotoViewAttribute](arkts-medialibrary-movingphotoviewattribute-c.md) | Defines the moving photo view attribute functions. |
-| [MovingPhotoViewController](arkts-medialibrary-movingphotoviewcontroller-c.md) | Defines the MovingPhotoView controller. |
-
-<!--Del-->
-### Classes（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [MovingPhotoViewAttribute](arkts-medialibrary-movingphotoviewattribute-c-sys.md) | Defines the moving photo view attribute functions. |
-| [MovingPhotoViewController](arkts-medialibrary-movingphotoviewcontroller-c-sys.md) | Defines the MovingPhotoView controller. |
-<!--DelEnd-->
+| [MovingPhotoViewAttribute](arkts-movingphotoviewattribute-c.md) | Defines the moving photo view attribute functions. |
+| [MovingPhotoViewController](arkts-movingphotoviewcontroller-c.md) | Defines the MovingPhotoView controller. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MovingPhotoViewInterface](arkts-medialibrary-movingphotoviewinterface-i.md) | Defines the moving photo view interface. |
-| [MovingPhotoViewOptions](arkts-medialibrary-movingphotoviewoptions-i.md) | Defines the moving photo view options. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [MovingPhotoViewOptions](arkts-medialibrary-movingphotoviewoptions-i-sys.md) | Defines the moving photo view options. |
-<!--DelEnd-->
+| [MovingPhotoViewInterface](arkts-movingphotoviewinterface-i.md) | Defines the moving photo view interface. |
+| [MovingPhotoViewOptions](arkts-movingphotoviewoptions-i.md) | Defines the moving photo view options. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [PixelMapFormat](arkts-medialibrary-pixelmapformat-e.md) | Enumerates pixel map formats. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [DynamicRangeMode](arkts-medialibrary-dynamicrangemode-e-sys.md) | Dynamic range mode of moving photo. |
-| [PixelMapFormat](arkts-medialibrary-pixelmapformat-e-sys.md) | Enumerates pixel map formats. |
-<!--DelEnd-->
+| <!--DelRow-->[DynamicRangeMode](arkts-dynamicrangemode-e.md) | Dynamic range mode of moving photo. |
+| <!--DelRow-->[PixelMapFormat](arkts-pixelmapformat-e.md) | Enumerates pixel map formats. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [MovingPhotoViewEventCallback](arkts-medialibrary-movingphotovieweventcallback-t.md) | function that moving photo view media events callback. |
+| [MovingPhotoViewEventCallback](arkts-movingphotovieweventcallback-t.md) | function that moving photo view media events callback. |
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [MovingPhotoView](arkts-medialibrary-multimedia-movingphotoview-con.md#movingphotoview) | Defines MovingPhotoView Component. |
-| [MovingPhotoViewInstance](arkts-medialibrary-multimedia-movingphotoview-con.md#movingphotoviewinstance) | Defines MovingPhotoView Component instance. |
+| [MovingPhotoView](arkts-multimedia-movingphotoview-con.md#MovingPhotoView) | Defines MovingPhotoView Component. |
+| [MovingPhotoViewInstance](arkts-multimedia-movingphotoview-con.md#MovingPhotoViewInstance) | Defines MovingPhotoView Component instance. |
 

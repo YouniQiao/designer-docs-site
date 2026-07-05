@@ -1,6 +1,6 @@
 # AutoDeviceSwitchQuery
 
-**AutoDeviceSwitchQuery** is used to check whether a device supports automatic camera switch. [Automatic Camera Switching](../../../../media/camera/camera-auto-switch.md) is supported only on foldable devices. For details about how to enable this capability, see [enableAutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md#enableautodeviceswitch-1).
+AutoDeviceSwitchQuery** is used to check whether a device supports automatic camera switch. [Automatic Camera Switching](docroot://media/camera/camera-auto-switch.md) is supported only on foldable devices. For details about how to enable this capability, see [enableAutoDeviceSwitch]camera.AutoDeviceSwitch.enableAutoDeviceSwitch.
 
 **Since:** 13
 
@@ -9,7 +9,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## isAutoDeviceSwitchSupported
@@ -22,7 +22,7 @@ Checks whether the device supports automatic camera switch.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,11 +30,11 @@ Checks whether the device supports automatic camera switch.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of automatic camera switch. **true** if supported, **false**otherwise. |
+| boolean | Check result for the support of automatic camera switch. true if supported, false  otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage.<br>**Applicable version:** 13 - 17 |
+| 7400103 | Session not config, only throw in session usage. [since 13 - 17] |
 

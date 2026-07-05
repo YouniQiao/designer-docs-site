@@ -1,5 +1,9 @@
 # AudioStreamDeviceChangeReason
 
+```TypeScript
+enum AudioStreamDeviceChangeReason
+```
+
 Enumerates the reasons for audio stream device changes.
 
 **Since:** 11
@@ -16,7 +20,7 @@ Unknown reason.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -30,7 +34,7 @@ A new device is available.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -44,7 +48,7 @@ The old device is unavailable. When this reason is reported, consider pausing au
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 
@@ -58,7 +62,7 @@ Forcibly selected.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Device
 

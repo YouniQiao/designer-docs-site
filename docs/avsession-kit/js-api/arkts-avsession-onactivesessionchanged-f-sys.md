@@ -1,10 +1,4 @@
-# onActiveSessionChanged (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# onActiveSessionChanged
 
 ## onActiveSessionChanged
 
@@ -16,7 +10,9 @@ Register active session changed callback.
 
 **Since:** 23
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -26,15 +22,15 @@ Register active session changed callback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | Callback&lt;Array&lt;AVSessionDescriptor&gt;&gt; | Yes | Used to handle activeSessionChange event |
+| callback | Callback&lt;Array&lt;AVSessionDescriptor>> | Yes | Used to handle activeSessionChange event |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 6600101 | Session service exception. |
 
 **Example**
 

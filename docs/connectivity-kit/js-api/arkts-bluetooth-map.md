@@ -9,7 +9,7 @@ Provides methods to accessing bluetooth MAP(Message Access Profile)-related capa
 ## Modules to Import
 
 ```TypeScript
-import { map } from '@ohos.bluetooth.map';
+import { map } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -18,27 +18,18 @@ import { map } from '@ohos.bluetooth.map';
 
 | Name | Description |
 | --- | --- |
-| [createMapMseProfile](arkts-connectivity-createmapmseprofile-f.md#createmapmseprofile-1) | create the instance of MAP MSE profile. |
+| [createMapMseProfile](arkts-map-createmapmseprofile-f.md#createMapMseProfile-1) | create the instance of MAP MSE profile. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MapMseProfile](arkts-connectivity-mapmseprofile-i-sys.md) | Manager MAP MSE profile. |
-<!--DelEnd-->
+| [MapMseProfile](arkts-map-mapmseprofile-i.md) | Manager MAP MSE profile. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [BaseProfile](arkts-connectivity-baseprofile-t.md) | Base interface of profile. |
-
-<!--Del-->
-### Types（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [AccessAuthorization](arkts-connectivity-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
-<!--DelEnd-->
+| <!--DelRow-->[AccessAuthorization](arkts-map-accessauthorization-t-sys.md) | Indicate the phone book access authorization. |
+| [BaseProfile](arkts-map-baseprofile-t.md) | Base interface of profile. |
 

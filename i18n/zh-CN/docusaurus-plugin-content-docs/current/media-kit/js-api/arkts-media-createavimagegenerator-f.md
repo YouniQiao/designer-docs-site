@@ -16,13 +16,13 @@ function createAVImageGenerator(): Promise<AVImageGenerator>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AVImageGenerator&gt; | Promise对象。异步返回AVImageGenerator实例，失败时返回null。可用于获取视频缩略图。 |
+| Promise&lt;AVImageGenerator> | Promise对象。异步返回AVImageGenerator实例，失败时返回null。可用于获取视频缩略图。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Returned by promise. |
+| 5400101 | No memory. Returned by promise. |
 
 **示例：**
 
@@ -43,7 +43,6 @@ media.createAVImageGenerator().then((generator: media.AVImageGenerator) => {
 
 ```
 
-
 ## createAVImageGenerator
 
 ```TypeScript
@@ -60,13 +59,13 @@ function createAVImageGenerator(callback: AsyncCallback<AVImageGenerator>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVImageGenerator&gt; | 是 | 回调函数。异步返回AVImageGenerator实例，失败时返回null。可用于获取视频缩略图。 |
+| callback | AsyncCallback&lt;AVImageGenerator> | 是 | 回调函数。异步返回AVImageGenerator实例，失败时返回null。可用于获取视频缩略图。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Returned by callback. |
+| 5400101 | No memory. Returned by callback. |
 
 **示例：**
 

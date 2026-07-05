@@ -1,4 +1,8 @@
-# SlowMotionStatus (System API)
+# SlowMotionStatus
+
+```TypeScript
+enum SlowMotionStatus
+```
 
 Enumerates the slow-motion states.
 

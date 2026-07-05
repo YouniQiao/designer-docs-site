@@ -1,6 +1,6 @@
 # @ohos.enterprise.networkManager
 
-The **networkManager** module provides APIs for network management of enterprise devices, including obtaining the device IP address and MAC address. > **NOTE** > > The APIs of this module can be used only in the stage model. > > The APIs of this module can be called only by a device administrator application that is enabled. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
+本模块提供设备网络管理能力，包括查询设备IP地址、MAC地址信息等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。
 
 **Since:** 10
 
@@ -9,7 +9,7 @@ The **networkManager** module provides APIs for network management of enterprise
 ## Modules to Import
 
 ```TypeScript
-import { networkManager } from '@ohos.enterprise.networkManager';
+import { networkManager } from '@kit.MDMKit';
 ```
 
 ## Summary
@@ -18,90 +18,69 @@ import { networkManager } from '@ohos.enterprise.networkManager';
 
 | Name | Description |
 | --- | --- |
-| [addApn](arkts-mdm-addapn-f.md#addapn-1) | Adds an access point name (APN). |
-| [addDomainFilterRule](arkts-mdm-adddomainfilterrule-f.md#adddomainfilterrule-1) | Adds domain name filtering rules for the device. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. After a rule with [Action](arkts-mdm-action-e.md#action) set to **ALLOW** is added, a rule with **Action** set to **DENY** is added by default to discard or intercept all packets for domain name resolution that do not meet the **ALLOW** rule. After the device is restarted, the domain name filtering rules are cleared. &gt; **NOTE** &gt; &gt; To prevent interception rules from becoming ineffective due to DNS caching, it is recommended that you configure &gt; domain name filtering rules immediately after the system starts up. If interception fails because of DNS caching, &gt; restart the system to clear the cache and restore the interception function. |
-| [addFirewallRule](arkts-mdm-addfirewallrule-f.md#addfirewallrule-1) | Adds firewall rules for the device. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. After a rule with [Action](arkts-mdm-action-e.md#action) set to **ALLOW** is added, a rule with **Action** set to **DENY** is added by default to discard or intercept all network data packets that do not meet the **ALLOW** rule. After the device is restarted, the firewall rules are cleared. |
-| [deleteApn](arkts-mdm-deleteapn-f.md#deleteapn-1) | Deletes the APN. |
-| [getAllNetworkInterfacesSync](arkts-mdm-getallnetworkinterfacessync-f.md#getallnetworkinterfacessync-1) | Obtains all activated wired network interfaces. |
-| [getDomainFilterRules](arkts-mdm-getdomainfilterrules-f.md#getdomainfilterrules-1) | Obtains domain name filtering rules. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. |
-| [getFirewallRules](arkts-mdm-getfirewallrules-f.md#getfirewallrules-1) | Queries firewall rules of a device. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. |
-| [getGlobalProxyForAccount](arkts-mdm-getglobalproxyforaccount-f.md#getglobalproxyforaccount-1) | Obtains the network proxy for a specified user. |
-| [getGlobalProxySync](arkts-mdm-getglobalproxysync-f.md#getglobalproxysync-1) | Obtains the global network proxy. |
-| [getIpAddressSync](arkts-mdm-getipaddresssync-f.md#getipaddresssync-1) | Obtains the device IP address based on the network interface. |
-| [getMacSync](arkts-mdm-getmacsync-f.md#getmacsync-1) | Obtains the MAC address of a device based on the network interface. |
-| [isNetworkInterfaceDisabledSync](arkts-mdm-isnetworkinterfacedisabledsync-f.md#isnetworkinterfacedisabledsync-1) | Queries whether a specified network interface is disabled. |
-| [queryApn](arkts-mdm-queryapn-f.md#queryapn-1) | Queries the APN ID. |
-| [queryApn](arkts-mdm-queryapn-f.md#queryapn-2) | Queries the APN parameter information. |
-| [removeDomainFilterRule](arkts-mdm-removedomainfilterrule-f.md#removedomainfilterrule-1) | Removes the domain name filtering rules. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. If there is no rule with [Action](arkts-mdm-action-e.md#action) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addDomainFilterRule](arkts-mdm-adddomainfilterrule-f.md#adddomainfilterrule-1) will be removed. |
-| [removeFirewallRule](arkts-mdm-removefirewallrule-f.md#removefirewallrule-1) | Removes a firewall rule. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. If there is no rule with [Action](arkts-mdm-action-e.md#action) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addFirewallRule](arkts-mdm-addfirewallrule-f.md#addfirewallrule-1) will be removed. |
-| [setEthernetConfig](arkts-mdm-setethernetconfig-f.md#setethernetconfig-1) | Sets the IP address of a specific Ethernet interface. |
-| [setGlobalProxyForAccount](arkts-mdm-setglobalproxyforaccount-f.md#setglobalproxyforaccount-1) | Sets the network proxy for a specified user. |
-| [setGlobalProxySync](arkts-mdm-setglobalproxysync-f.md#setglobalproxysync-1) | Sets the global network proxy. |
-| [setNetworkInterfaceDisabledSync](arkts-mdm-setnetworkinterfacedisabledsync-f.md#setnetworkinterfacedisabledsync-1) | Disables the device from using the specified network interface. |
-| [setPreferredApn](arkts-mdm-setpreferredapn-f.md#setpreferredapn-1) | Sets the preferred APN. |
-| [turnOffMobileData](arkts-mdm-turnoffmobiledata-f.md#turnoffmobiledata-1) | Turns off mobile data. |
-| [turnOnMobileData](arkts-mdm-turnonmobiledata-f.md#turnonmobiledata-1) | Turns on mobile data. |
-| [updateApn](arkts-mdm-updateapn-f.md#updateapn-1) | Updates the APN. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [addIptablesFilterRule](arkts-mdm-addiptablesfilterrule-f-sys.md#addiptablesfilterrule-1) | Adds a network packet filtering rule for the device. Only IPv4 is supported. This API uses an asynchronous callback to return the result. |
-| [addIptablesFilterRule](arkts-mdm-addiptablesfilterrule-f-sys.md#addiptablesfilterrule-2) | Adds a network packet filtering rule for the device. Only IPv4 is supported. This API uses a promise to return the result. |
-| [getAllNetworkInterfaces](arkts-mdm-getallnetworkinterfaces-f-sys.md#getallnetworkinterfaces-1) | Obtains all activated wired network interfaces. This API uses an asynchronous callback to return the result. |
-| [getAllNetworkInterfaces](arkts-mdm-getallnetworkinterfaces-f-sys.md#getallnetworkinterfaces-2) | Obtains all activated wired network interfaces. This API uses a promise to return the result. |
-| [getGlobalProxy](arkts-mdm-getglobalproxy-f-sys.md#getglobalproxy-1) | Obtains the global network proxy. This API uses an asynchronous callback to return the result. |
-| [getGlobalProxy](arkts-mdm-getglobalproxy-f-sys.md#getglobalproxy-2) | Obtains the global network proxy. This API uses a promise to return the result. |
-| [getIpAddress](arkts-mdm-getipaddress-f-sys.md#getipaddress-1) | Obtains the device IP address based on the network interface. This API uses an asynchronous callback to return the result. |
-| [getIpAddress](arkts-mdm-getipaddress-f-sys.md#getipaddress-2) | Obtains the device IP address based on the network interface. This API uses a promise to return the result. |
-| [getMac](arkts-mdm-getmac-f-sys.md#getmac-1) | Obtains the MAC address of a device based on the network interface. This API uses an asynchronous callback to return the result. |
-| [getMac](arkts-mdm-getmac-f-sys.md#getmac-2) | Obtains the MAC address of a device based on the network interface. This API uses a promise to return the result. |
-| [isNetworkInterfaceDisabled](arkts-mdm-isnetworkinterfacedisabled-f-sys.md#isnetworkinterfacedisabled-1) | Queries whether a specified network interface is disabled. This API uses an asynchronous callback to return the result. |
-| [isNetworkInterfaceDisabled](arkts-mdm-isnetworkinterfacedisabled-f-sys.md#isnetworkinterfacedisabled-2) | Queries whether a specified network interface is disabled. This API uses a promise to return the result. |
-| [listIptablesFilterRules](arkts-mdm-listiptablesfilterrules-f-sys.md#listiptablesfilterrules-1) | Obtains the network packet filtering rule. Only IPv4 is supported. This API uses an asynchronous callback to return the result. |
-| [listIptablesFilterRules](arkts-mdm-listiptablesfilterrules-f-sys.md#listiptablesfilterrules-2) | Obtains the network packet filtering rule. Only IPv4 is supported. This API uses a promise to return the result. |
-| [removeIptablesFilterRule](arkts-mdm-removeiptablesfilterrule-f-sys.md#removeiptablesfilterrule-1) | Removes the network packet filtering rule. Only IPv4 is supported. This API uses an asynchronous callback to return the result. |
-| [removeIptablesFilterRule](arkts-mdm-removeiptablesfilterrule-f-sys.md#removeiptablesfilterrule-2) | Removes the network packet filtering rule. Only IPv4 is supported. This API uses a promise to return the result. |
-| [setGlobalProxy](arkts-mdm-setglobalproxy-f-sys.md#setglobalproxy-1) | Sets the global network proxy. This API uses an asynchronous callback to return the result. |
-| [setGlobalProxy](arkts-mdm-setglobalproxy-f-sys.md#setglobalproxy-2) | Sets the global network proxy. This API uses a promise to return the result. |
-| [setNetworkInterfaceDisabled](arkts-mdm-setnetworkinterfacedisabled-f-sys.md#setnetworkinterfacedisabled-1) | Disables a network interface. This API uses an asynchronous callback to return the result. |
-| [setNetworkInterfaceDisabled](arkts-mdm-setnetworkinterfacedisabled-f-sys.md#setnetworkinterfacedisabled-2) | Disables a network interface. This API uses a promise to return the result. |
-<!--DelEnd-->
+| [addApn](arkts-networkmanager-addapn-f.md#addApn-1) | 添加APN（Access Point Name，接入点名称）。 |
+| [addDomainFilterRule](arkts-networkmanager-adddomainfilterrule-f.md#addDomainFilterRule-1) | 为设备添加域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 添加了[Action]{@link networkManager.Action}为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的域名解析数据包将会被丢弃或拦截。 设备重启，将会清空域名过滤规则。 > **说明：** > > 为避免DNS缓存导致拦截规则失效，建议系统启动后立即配置域名过滤规则。若已因DNS缓存导致拦截失效，重启系统可清除缓存，恢复拦截功能。 |
+| [addFirewallRule](arkts-networkmanager-addfirewallrule-f.md#addFirewallRule-1) | 为设备添加防火墙过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 添加了[Action]{@link networkManager.Action}为ALLOW规则后，将会默认添加DENY规则，不在ALLOW规则之内的网络数据包将会被丢弃或拦截。 设备重启，将会清空防火墙过滤规则。 |
+| <!--DelRow-->[addIptablesFilterRule](arkts-networkmanager-addiptablesfilterrule-f-sys.md#addIptablesFilterRule-1) | 为设备添加网络包过滤规则，仅支持IPv4。使用callback异步回调。 |
+| <!--DelRow-->[addIptablesFilterRule](arkts-networkmanager-addiptablesfilterrule-f-sys.md#addIptablesFilterRule-2) | 为设备添加网络包过滤规则，仅支持IPv4。使用Promise异步回调。 |
+| [deleteApn](arkts-networkmanager-deleteapn-f.md#deleteApn-1) | 删除APN。 |
+| <!--DelRow-->[getAllNetworkInterfaces](arkts-networkmanager-getallnetworkinterfaces-f-sys.md#getAllNetworkInterfaces-1) | 获取所有激活的有线网络接口。使用callback异步回调。 |
+| <!--DelRow-->[getAllNetworkInterfaces](arkts-networkmanager-getallnetworkinterfaces-f-sys.md#getAllNetworkInterfaces-2) | 获取所有激活的有线网络接口。使用Promise异步回调。 |
+| [getAllNetworkInterfacesSync](arkts-networkmanager-getallnetworkinterfacessync-f.md#getAllNetworkInterfacesSync-1) | 获取所有激活的有线网络接口。 |
+| [getDomainFilterRules](arkts-networkmanager-getdomainfilterrules-f.md#getDomainFilterRules-1) | 查询设备域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 |
+| [getFirewallRules](arkts-networkmanager-getfirewallrules-f.md#getFirewallRules-1) | 查询设备防火墙过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 |
+| <!--DelRow-->[getGlobalProxy](arkts-networkmanager-getglobalproxy-f-sys.md#getGlobalProxy-1) | 获取网络全局代理，使用callback异步回调。 |
+| <!--DelRow-->[getGlobalProxy](arkts-networkmanager-getglobalproxy-f-sys.md#getGlobalProxy-2) | 获取网络全局代理，使用Promise异步回调。 |
+| [getGlobalProxyForAccount](arkts-networkmanager-getglobalproxyforaccount-f.md#getGlobalProxyForAccount-1) | 获取指定用户下的网络代理。 |
+| [getGlobalProxySync](arkts-networkmanager-getglobalproxysync-f.md#getGlobalProxySync-1) | 获取网络全局代理。 |
+| <!--DelRow-->[getIpAddress](arkts-networkmanager-getipaddress-f-sys.md#getIpAddress-1) | 根据网络接口获取设备IP地址。使用callback异步回调。 |
+| <!--DelRow-->[getIpAddress](arkts-networkmanager-getipaddress-f-sys.md#getIpAddress-2) | 根据网络接口获取设备IP地址。使用Promise异步回调。 |
+| [getIpAddressSync](arkts-networkmanager-getipaddresssync-f.md#getIpAddressSync-1) | 根据网络接口获取设备IP地址。 |
+| <!--DelRow-->[getMac](arkts-networkmanager-getmac-f-sys.md#getMac-1) | 根据网络接口获取设备MAC地址。使用callback异步回调。 |
+| <!--DelRow-->[getMac](arkts-networkmanager-getmac-f-sys.md#getMac-2) | 根据网络接口获取设备MAC地址。使用Promise异步回调。 |
+| [getMacSync](arkts-networkmanager-getmacsync-f.md#getMacSync-1) | 根据网络接口获取设备MAC地址。 |
+| <!--DelRow-->[isNetworkInterfaceDisabled](arkts-networkmanager-isnetworkinterfacedisabled-f-sys.md#isNetworkInterfaceDisabled-1) | 查询指定网络接口是否被禁用。使用callback异步回调。 |
+| <!--DelRow-->[isNetworkInterfaceDisabled](arkts-networkmanager-isnetworkinterfacedisabled-f-sys.md#isNetworkInterfaceDisabled-2) | 查询指定网络接口是否被禁用。使用Promise异步回调。 |
+| [isNetworkInterfaceDisabledSync](arkts-networkmanager-isnetworkinterfacedisabledsync-f.md#isNetworkInterfaceDisabledSync-1) | 查询指定网络接口是否被禁用。 |
+| <!--DelRow-->[listIptablesFilterRules](arkts-networkmanager-listiptablesfilterrules-f-sys.md#listIptablesFilterRules-1) | 获取网络包过滤规则，仅支持IPv4。使用callback异步回调。 |
+| <!--DelRow-->[listIptablesFilterRules](arkts-networkmanager-listiptablesfilterrules-f-sys.md#listIptablesFilterRules-2) | 获取网络包过滤规则，仅支持IPv4。使用Promise异步回调。 |
+| [queryApn](arkts-networkmanager-queryapn-f.md#queryApn-1) | 查询符合特定APN信息的APN ID。 |
+| [queryApn](arkts-networkmanager-queryapn-f.md#queryApn-2) | 查询特定APN的APN参数信息。 |
+| [removeDomainFilterRule](arkts-networkmanager-removedomainfilterrule-f.md#removeDomainFilterRule-1) | 移除设备域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 移除规则后如果不存在[Action]{@link networkManager.Action}为ALLOW规则后，会将 [addDomainFilterRule]{@link networkManager.addDomainFilterRule}添加的默认DENY规则清空。 |
+| [removeFirewallRule](arkts-networkmanager-removefirewallrule-f.md#removeFirewallRule-1) | 移除设备防火墙过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 移除规则后如果不存在[Action]{@link networkManager.Action}为ALLOW规则后，会将[addFirewallRule]{@link networkManager.addFirewallRule}添 加的默认DENY规则清空。 |
+| <!--DelRow-->[removeIptablesFilterRule](arkts-networkmanager-removeiptablesfilterrule-f-sys.md#removeIptablesFilterRule-1) | 移除网络包过滤规则，仅支持IPv4。使用callback异步回调。 |
+| <!--DelRow-->[removeIptablesFilterRule](arkts-networkmanager-removeiptablesfilterrule-f-sys.md#removeIptablesFilterRule-2) | 移除网络包过滤规则，仅支持IPv4。使用Promise异步回调。 |
+| [setEthernetConfig](arkts-networkmanager-setethernetconfig-f.md#setEthernetConfig-1) | 设置特定以太网网络接口的IP地址。 |
+| <!--DelRow-->[setGlobalProxy](arkts-networkmanager-setglobalproxy-f-sys.md#setGlobalProxy-1) | 设置网络全局代理，使用callback异步回调。 |
+| <!--DelRow-->[setGlobalProxy](arkts-networkmanager-setglobalproxy-f-sys.md#setGlobalProxy-2) | 设置网络全局代理，使用Promise异步回调。 |
+| [setGlobalProxyForAccount](arkts-networkmanager-setglobalproxyforaccount-f.md#setGlobalProxyForAccount-1) | 设置指定用户下的网络代理。 |
+| [setGlobalProxySync](arkts-networkmanager-setglobalproxysync-f.md#setGlobalProxySync-1) | 设置网络全局代理。 |
+| <!--DelRow-->[setNetworkInterfaceDisabled](arkts-networkmanager-setnetworkinterfacedisabled-f-sys.md#setNetworkInterfaceDisabled-1) | 禁止设备使用指定网络。使用callback异步回调。 |
+| <!--DelRow-->[setNetworkInterfaceDisabled](arkts-networkmanager-setnetworkinterfacedisabled-f-sys.md#setNetworkInterfaceDisabled-2) | 禁止设备使用指定网络。使用Promise异步回调。 |
+| [setNetworkInterfaceDisabledSync](arkts-networkmanager-setnetworkinterfacedisabledsync-f.md#setNetworkInterfaceDisabledSync-1) | 禁止设备使用指定网络接口。 |
+| [setPreferredApn](arkts-networkmanager-setpreferredapn-f.md#setPreferredApn-1) | 设置优选APN。 |
+| [turnOffMobileData](arkts-networkmanager-turnoffmobiledata-f.md#turnOffMobileData-1) | 关闭移动数据网络。 |
+| [turnOnMobileData](arkts-networkmanager-turnonmobiledata-f.md#turnOnMobileData-1) | 开启移动数据网络。 |
+| [updateApn](arkts-networkmanager-updateapn-f.md#updateApn-1) | 更新APN。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DomainFilterRule](arkts-mdm-domainfilterrule-i.md) | Represents a domain name filtering rule. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. |
-| [FirewallRule](arkts-mdm-firewallrule-i.md) | Represents a firewall rule. In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22. [LogType](arkts-mdm-logtype-e.md#logtype) is supported since API version 23. |
-| [InterfaceConfig](arkts-mdm-interfaceconfig-i.md) | Enumerates Ethernet network interface configurations. Only IPv4 is supported. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [AddFilterRule](arkts-mdm-addfilterrule-i-sys.md) | Defines the network packet filtering rule to add. |
-| [RemoveFilterRule](arkts-mdm-removefilterrule-i-sys.md) | Defines the network packet filtering rule to remove. |
-<!--DelEnd-->
+| <!--DelRow-->[AddFilterRule](arkts-networkmanager-addfilterrule-i-sys.md) | 添加网络包过滤规则。 |
+| [DomainFilterRule](arkts-networkmanager-domainfilterrule-i.md) | 域名过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 |
+| [FirewallRule](arkts-networkmanager-firewallrule-i.md) | 防火墙过滤规则。 API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。 从API version 23开始，支持[LogType]{@link networkManager.LogType}。 |
+| [InterfaceConfig](arkts-networkmanager-interfaceconfig-i.md) | 以太网的网络接口配置。仅支持IPv4。 |
+| <!--DelRow-->[RemoveFilterRule](arkts-networkmanager-removefilterrule-i-sys.md) | 移除网络包过滤规则。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [Action](arkts-mdm-action-e.md) | Enumerates the actions that can be taken for data packets. |
-| [Direction](arkts-mdm-direction-e.md) | Enumerates the direction chains to which the rule applies. |
-| [IpSetMode](arkts-mdm-ipsetmode-e.md) | Enumerates Ethernet connection configuration modes. |
-| [LogType](arkts-mdm-logtype-e.md) | Enumerates the log types. |
-| [Protocol](arkts-mdm-protocol-e.md) | Enumerates network protocols. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [AddMethod](arkts-mdm-addmethod-e-sys.md) | Enumerates the methods used to add the network packets. |
-<!--DelEnd-->
+| [Action](arkts-networkmanager-action-e.md) | 数据包的行为。 |
+| <!--DelRow-->[AddMethod](arkts-networkmanager-addmethod-e-sys.md) | 添加网络包方法。 |
+| [Direction](arkts-networkmanager-direction-e.md) | 规则链。 |
+| [IpSetMode](arkts-networkmanager-ipsetmode-e.md) | 以太网连接模式。 |
+| [LogType](arkts-networkmanager-logtype-e.md) | 日志类型。 |
+| [Protocol](arkts-networkmanager-protocol-e.md) | 网络协议。 |
 

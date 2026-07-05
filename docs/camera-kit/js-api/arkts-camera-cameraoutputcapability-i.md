@@ -9,8 +9,40 @@ Describes the camera output capability.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
+
+## supportedMetadataObjectTypes
+
+```TypeScript
+readonly supportedMetadataObjectTypes: Array<MetadataObjectType>
+```
+
+Supported metadata object types.
+
+**Type:** Array<MetadataObjectType>
+
+**Since:** 10
+
+**Atomic service API:** From API version 19 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## depthProfiles
+
+```TypeScript
+readonly depthProfiles: Array<DepthProfile>
+```
+
+Supported depth stream profiles.
+
+**Type:** Array<DepthProfile>
+
+**Since:** 13
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
 
 ## photoProfiles
 
@@ -24,7 +56,7 @@ Supported photo profiles.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -40,23 +72,7 @@ Supported preview profiles.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## supportedMetadataObjectTypes
-
-```TypeScript
-readonly supportedMetadataObjectTypes: Array<MetadataObjectType>
-```
-
-Supported metadata object types.
-
-**Type:** Array<MetadataObjectType>
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -72,7 +88,7 @@ Supported video profiles.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

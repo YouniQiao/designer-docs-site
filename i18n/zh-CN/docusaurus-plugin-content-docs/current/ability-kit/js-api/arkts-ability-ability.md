@@ -6,11 +6,17 @@ Ability模块将二级模块API组织在一起方便开发者进行导出。
 
 **系统能力：** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
+## 导入模块
+
+```TypeScript
+import { ability } from '@kit.AbilityKit';
+```
+
 ## 汇总
 
 ### 类型
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
 | [AbilityResult](arkts-ability-abilityresult-t.md) | AbilityResult二级模块。 |
 | [ConnectOptions](arkts-ability-connectoptions-t.md) | ConnectOptions二级模块。 |

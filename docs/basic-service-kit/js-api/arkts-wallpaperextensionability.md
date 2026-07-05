@@ -3,16 +3,14 @@
 ## Modules to Import
 
 ```TypeScript
-import { WallpaperExtensionAbility } from '@ohos.WallpaperExtensionAbility';
+import { WallpaperExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [WallpaperExtensionAbility](arkts-basicservices-wallpaperextensionability-c-sys.md) | class of wallpaper extension ability. |
-<!--DelEnd-->
+| <!--DelRow-->[WallpaperExtensionAbility](arkts-wallpaperextensionability-c.md) | class of wallpaper extension ability. |
 

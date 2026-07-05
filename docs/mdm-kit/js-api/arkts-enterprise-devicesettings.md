@@ -1,6 +1,6 @@
 # @ohos.enterprise.deviceSettings
 
-The **deviceSettings** module provides APIs for setting enterprise devices, including setting and obtaining the screen-off time of a device. > **NOTE** > > The APIs of this module can be used only in the stage model. > > The APIs of this module can be called only by a device administrator application that is enabled. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).
+本模块提供企业设备设置能力，包括设置、获取设备息屏时间等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](docroot://mdm/mdm-kit-guide.md)。
 
 **Since:** 10
 
@@ -9,7 +9,7 @@ The **deviceSettings** module provides APIs for setting enterprise devices, incl
 ## Modules to Import
 
 ```TypeScript
-import { deviceSettings } from '@ohos.enterprise.deviceSettings';
+import { deviceSettings } from '@kit.MDMKit';
 ```
 
 ## Summary
@@ -18,57 +18,42 @@ import { deviceSettings } from '@ohos.enterprise.deviceSettings';
 
 | Name | Description |
 | --- | --- |
-| [addHiddenSettingsMenu](arkts-mdm-addhiddensettingsmenu-f.md#addhiddensettingsmenu-1) | Adds a setting item to the hidden setting item list of the current user. Then the setting item is hidden in the current user's settings menu and cannot be found in settings search. Even if the setting item is located through some means, it cannot be opened when tapped. The settings take effect immediately after the API is called. The Settings application does not need to be restarted. |
-| [getHiddenSettingsMenu](arkts-mdm-gethiddensettingsmenu-f.md#gethiddensettingsmenu-1) | Obtains the hidden setting item list of the current user. |
-| [getValue](arkts-mdm-getvalue-f.md#getvalue-1) | Obtains a device setting policy. |
-| [getValueForAccount](arkts-mdm-getvalueforaccount-f.md#getvalueforaccount-1) | Obtains the device policy of a specified user. This API allows you to obtain a specific parameter of a given user, such as obtaining the device name of user 100. |
-| [removeHiddenSettingsMenu](arkts-mdm-removehiddensettingsmenu-f.md#removehiddensettingsmenu-1) | Removes a setting item from the hidden setting item list of the current user. Setting items in the hidden setting item list are hidden in the current user's settings menu and cannot be found in settings search. Even if a setting item is located through some means, it cannot be opened when tapped. If the remaining hidden setting item list is empty after the removal, all setting items are displayed. The settings take effect immediately after the API is called. The Settings application does not need to be restarted. |
-| [setHomeWallpaper](arkts-mdm-sethomewallpaper-f.md#sethomewallpaper-1) | Sets the home screen wallpaper. This API uses a promise to return the result. |
-| [setSwitchStatus](arkts-mdm-setswitchstatus-f.md#setswitchstatus-1) | Sets the state of a switch. This API can enable or disable NearLink, Bluetooth, and Wi-Fi. After the setting is applied, users can manually enable or disable them. If a switch has been disabled through the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API, error code 203 will be thrown when you attempt to set the state of the switch through this API. In this case, you need to use the [setDisallowedPolicy](arkts-mdm-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API to enable the switch. |
-| [setUnlockWallpaper](arkts-mdm-setunlockwallpaper-f.md#setunlockwallpaper-1) | Sets the lock screen wallpaper. This API uses a promise to return the result. |
-| [setValue](arkts-mdm-setvalue-f.md#setvalue-1) | Sets the device policy. |
-| [setValueForAccount](arkts-mdm-setvalueforaccount-f.md#setvalueforaccount-1) | Sets the device policy for a specified user. This API allows you to set a specific parameter for a given user, such as setting the device name for user 100. |
+| [addHiddenSettingsMenu](arkts-devicesettings-addhiddensettingsmenu-f.md#addHiddenSettingsMenu-1) | 添加设置项至当前用户下的隐藏设置项列表。添加至隐藏设置项列表的设置项在当前用户的设置菜单中会被隐藏，隐藏后不可以在设置的搜索中搜索到。如果通过某种方式搜索到该设置项，点击后也无法打开。调用接口后即刻生效，无需重启设置应用。 |
+| [getHiddenSettingsMenu](arkts-devicesettings-gethiddensettingsmenu-f.md#getHiddenSettingsMenu-1) | 获取配置在当前用户下被隐藏的设置项列表。 |
+| <!--DelRow-->[getPowerPolicy](arkts-devicesettings-getpowerpolicy-f-sys.md#getPowerPolicy-1) | 获取电源策略。 |
+| <!--DelRow-->[getScreenOffTime](arkts-devicesettings-getscreenofftime-f-sys.md#getScreenOffTime-1) | 获取设备息屏时间，使用callback异步回调。 |
+| <!--DelRow-->[getScreenOffTime](arkts-devicesettings-getscreenofftime-f-sys.md#getScreenOffTime-2) | 获取设备息屏时间，使用Promise异步回调。 |
+| [getSwitchStatus](arkts-devicesettings-getswitchstatus-f.md#getSwitchStatus-1) | 查询开关的状态。 |
+| [getValue](arkts-devicesettings-getvalue-f.md#getValue-1) | 获取设备设置策略。 |
+| [getValueForAccount](arkts-devicesettings-getvalueforaccount-f.md#getValueForAccount-1) | 获取指定用户的设备设置策略。该接口可以获取指定用户在设置应用中的某个参数，比如获取用户100的设备名称等。 |
+| <!--DelRow-->[installUserCertificate](arkts-devicesettings-installusercertificate-f-sys.md#installUserCertificate-1) | 安装用户证书，使用callback异步回调。 |
+| <!--DelRow-->[installUserCertificate](arkts-devicesettings-installusercertificate-f-sys.md#installUserCertificate-2) | 安装用户证书，使用Promise异步回调。 |
+| [removeHiddenSettingsMenu](arkts-devicesettings-removehiddensettingsmenu-f.md#removeHiddenSettingsMenu-1) | 将设置项从当前用户下的隐藏设置项列表中移除。隐藏设置项列表中的设置项在当前用户的设置菜单中会被隐藏，隐藏后不可以在设置的搜索中搜索到，如果通过某种方式搜索到该设置项，点击后也无法打开。若移除后剩余的隐藏设置项列表为空，则设置项会全 部显示。调用接口后即刻生效，无需重启设置应用。 |
+| [setHomeWallpaper](arkts-devicesettings-sethomewallpaper-f.md#setHomeWallpaper-1) | 设置桌面壁纸，使用Promise异步回调。 |
+| <!--DelRow-->[setPowerPolicy](arkts-devicesettings-setpowerpolicy-f-sys.md#setPowerPolicy-1) | 设置电源策略。 |
+| <!--DelRow-->[setScreenOffTime](arkts-devicesettings-setscreenofftime-f-sys.md#setScreenOffTime-1) | 设置设备息屏时间。 |
+| [setSwitchStatus](arkts-devicesettings-setswitchstatus-f.md#setSwitchStatus-1) | 设置开关的状态。支持设置星闪、蓝牙、Wi-Fi的状态为开启或关闭，设置完毕后，用户可以手动开关。支持设置蓝牙的状态为强制开启，设置完毕后，用户不可以手动开关。若已经通过 [setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)} 接口禁用了某个开关，则通过本接口设置这个开关的状态会抛出错误码203，需通过 [setDisallowedPolicy]{@link @ohos.enterprise.restrictions:restrictions.setDisallowedPolicy(admin: Want, feature: string, disallow: boolean)} 接口解除该开关禁用策略。当设备有多个MDM应用时，各MDM应用设置开关状态不存在冲突，最后设置的策略生效。开启(用户可手动开启、关闭)、关闭(用户可手动开启、关闭)、强制开启(用户不可手动关闭)三个状态可以随意切换，也不存在冲突。 |
+| [setUnlockWallpaper](arkts-devicesettings-setunlockwallpaper-f.md#setUnlockWallpaper-1) | 设置锁屏壁纸，使用Promise异步回调。 |
+| [setValue](arkts-devicesettings-setvalue-f.md#setValue-1) | 设置设备策略。 |
+| [setValueForAccount](arkts-devicesettings-setvalueforaccount-f.md#setValueForAccount-1) | 设置指定用户的设备设置策略。该接口可以设置指定用户在设置应用中的某个参数，比如设置用户100的设备名称等。 |
+| <!--DelRow-->[uninstallUserCertificate](arkts-devicesettings-uninstallusercertificate-f-sys.md#uninstallUserCertificate-1) | 卸载用户证书，使用callback异步回调。 |
+| <!--DelRow-->[uninstallUserCertificate](arkts-devicesettings-uninstallusercertificate-f-sys.md#uninstallUserCertificate-2) | 卸载用户证书，使用Promise异步回调。 |
 
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [getPowerPolicy](arkts-mdm-getpowerpolicy-f-sys.md#getpowerpolicy-1) | Obtains the power policy. |
-| [getScreenOffTime](arkts-mdm-getscreenofftime-f-sys.md#getscreenofftime-1) | Obtains the device screen-off time. This API uses an asynchronous callback to return the result. |
-| [getScreenOffTime](arkts-mdm-getscreenofftime-f-sys.md#getscreenofftime-2) | Obtains the device screen-off time. This API uses an asynchronous promise to return the result. |
-| [installUserCertificate](arkts-mdm-installusercertificate-f-sys.md#installusercertificate-1) | Installs a user certificate. This API uses a callback to return the result. |
-| [installUserCertificate](arkts-mdm-installusercertificate-f-sys.md#installusercertificate-2) | Installs a user certificate. This API uses a promise to return the result. |
-| [setPowerPolicy](arkts-mdm-setpowerpolicy-f-sys.md#setpowerpolicy-1) | Sets the power policy. |
-| [setScreenOffTime](arkts-mdm-setscreenofftime-f-sys.md#setscreenofftime-1) | Sets the device screen-off time. |
-| [uninstallUserCertificate](arkts-mdm-uninstallusercertificate-f-sys.md#uninstallusercertificate-1) | Uninstalls a user certificate. This API uses a callback to return the result. |
-| [uninstallUserCertificate](arkts-mdm-uninstallusercertificate-f-sys.md#uninstallusercertificate-2) | Uninstalls a user certificate. This API uses a promise to return the result. |
-<!--DelEnd-->
-
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CertBlob](arkts-mdm-certblob-i-sys.md) | Represents the certificate information. |
-| [PowerPolicy](arkts-mdm-powerpolicy-i-sys.md) | Represents the power policy. |
-<!--DelEnd-->
+| <!--DelRow-->[CertBlob](arkts-devicesettings-certblob-i-sys.md) | 证书信息。 |
+| <!--DelRow-->[PowerPolicy](arkts-devicesettings-powerpolicy-i-sys.md) | 电源策略。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [SettingsItem](arkts-mdm-settingsitem-e.md) | Policy type. |
-| [SettingsMenu](arkts-mdm-settingsmenu-e.md) | Describes the setting item list. |
-| [SwitchKey](arkts-mdm-switchkey-e.md) | Enumerates switch names. |
-| [SwitchStatus](arkts-mdm-switchstatus-e.md) | Enumerates switch states. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [PowerPolicyAction](arkts-mdm-powerpolicyaction-e-sys.md) | Enumerates the actions that can be performed to apply the power policy. &lt;!--no_check--&gt; |
-| [PowerScene](arkts-mdm-powerscene-e-sys.md) | Defines the scenario to which the power policy applies. |
-<!--DelEnd-->
+| <!--DelRow-->[PowerPolicyAction](arkts-devicesettings-powerpolicyaction-e-sys.md) | 执行电源策略的动作。 |
+| <!--DelRow-->[PowerScene](arkts-devicesettings-powerscene-e-sys.md) | 执行电源策略的场景。 |
+| [SettingsItem](arkts-devicesettings-settingsitem-e.md) | 设置的策略类型。 |
+| [SettingsMenu](arkts-devicesettings-settingsmenu-e.md) | 设置项列表。 |
+| [SwitchKey](arkts-devicesettings-switchkey-e.md) | 开关名称的枚举。 |
+| [SwitchStatus](arkts-devicesettings-switchstatus-e.md) | 开关状态的枚举。 |
 

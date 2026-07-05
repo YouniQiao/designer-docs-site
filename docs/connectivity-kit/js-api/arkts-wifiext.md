@@ -9,7 +9,7 @@ Provides extended methods to operate or manage Wi-Fi. <p>The APIs involved in th
 ## Modules to Import
 
 ```TypeScript
-import { wifiext } from '@ohos.wifiext';
+import { wifiext } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -18,17 +18,17 @@ import { wifiext } from '@ohos.wifiext';
 
 | Name | Description |
 | --- | --- |
-| [disableHotspot](arkts-connectivity-disablehotspot-f.md#disablehotspot-1) | Disables a Wi-Fi hotspot. |
-| [enableHotspot](arkts-connectivity-enablehotspot-f.md#enablehotspot-1) | Enables a Wi-Fi hotspot. |
-| [getPowerModel](arkts-connectivity-getpowermodel-f.md#getpowermodel-1) | Obtains the current Wi-Fi power mode. |
-| [getPowerModel](arkts-connectivity-getpowermodel-f.md#getpowermodel-2) | Obtains the current Wi-Fi power mode. |
-| [getSupportedPowerModel](arkts-connectivity-getsupportedpowermodel-f.md#getsupportedpowermodel-1) | Obtains the supported power model. |
-| [getSupportedPowerModel](arkts-connectivity-getsupportedpowermodel-f.md#getsupportedpowermodel-2) | Obtains the supported power model. |
-| [setPowerModel](arkts-connectivity-setpowermodel-f.md#setpowermodel-1) | Set the current Wi-Fi power mode. |
+| [disableHotspot](arkts-wifiext-disablehotspot-f.md#disableHotspot-1) | Disables a Wi-Fi hotspot. |
+| [enableHotspot](arkts-wifiext-enablehotspot-f.md#enableHotspot-1) | Enables a Wi-Fi hotspot. |
+| [getPowerModel](arkts-wifiext-getpowermodel-f.md#getPowerModel-1) | Obtains the current Wi-Fi power mode. |
+| [getPowerModel](arkts-wifiext-getpowermodel-f.md#getPowerModel-2) | Obtains the current Wi-Fi power mode. |
+| [getSupportedPowerModel](arkts-wifiext-getsupportedpowermodel-f.md#getSupportedPowerModel-1) | Obtains the supported power model. |
+| [getSupportedPowerModel](arkts-wifiext-getsupportedpowermodel-f.md#getSupportedPowerModel-2) | Obtains the supported power model. |
+| [setPowerModel](arkts-wifiext-setpowermodel-f.md#setPowerModel-1) | Set the current Wi-Fi power mode. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [PowerModel](arkts-connectivity-powermodel-e.md) | The power model enumeration. |
+| [PowerModel](arkts-wifiext-powermodel-e.md) | The power model enumeration. |
 

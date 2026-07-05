@@ -1,8 +1,8 @@
-# SceneDetection (System API)
+# SceneDetection
 
-Provides the scene detection capability. It inherits from [SceneDetectionQuery](arkts-camera-scenedetectionquery-i-sys.md#scenedetectionquery).
+Provides the scene detection capability. It inherits from [SceneDetectionQuery]camera.SceneDetectionQuery.
 
-**Inheritance/Implementation:** SceneDetection extends [SceneDetectionQuery](arkts-camera-scenedetectionquery-i-sys.md#scenedetectionquery)
+**Inheritance:** SceneDetectionextends: SceneDetectionQuery.
 
 **Since:** 12
 
@@ -13,7 +13,7 @@ Provides the scene detection capability. It inherits from [SceneDetectionQuery](
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## enableSceneFeature
@@ -22,7 +22,7 @@ import { camera } from '@ohos.multimedia.camera';
 enableSceneFeature(type: SceneFeatureType, enabled: boolean): void
 ```
 
-Enables or disables a scene feature. This API must be called after [SceneFeatureDetectionResult](arkts-camera-scenefeaturedetectionresult-i-sys.md#scenefeaturedetectionresult) of the corresponding scene feature is received.
+Enables or disables a scene feature. This API must be called after [SceneFeatureDetectionResult]camera.SceneFeatureDetectionResult of the corresponding scene feature is received.
 
 **Since:** 12
 
@@ -35,14 +35,14 @@ Enables or disables a scene feature. This API must be called after [SceneFeature
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | SceneFeatureType | Yes | Scene feature. |
-| enabled | boolean | Yes | Whether to enable the scene feature. **true** to enable, **false** otherwise. |
+| enabled | boolean | Yes | Whether to enable the scene feature. true to enable, false otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
 
 **Example**
 

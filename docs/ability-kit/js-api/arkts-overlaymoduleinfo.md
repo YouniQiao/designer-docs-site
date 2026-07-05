@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [OverlayModuleInfo](arkts-ability-overlaymoduleinfo-i.md) | The module provides information about a module with the overlay feature. An application can obtain such information through [overlay.getOverlayModuleInfo](arkts-ability-getoverlaymoduleinfo-f.md#getoverlaymoduleinfo-2). |
+| [OverlayModuleInfo](arkts-overlaymoduleinfo-i.md) | OverlayModuleInfo信息，可以通过 [overlay.getOverlayModuleInfo]{@link ./../@ohos.bundle.overlay:overlay.getOverlayModuleInfo(moduleName: string)}接口获取当 前应用中具有overlay特征模块的OverlayModuleInfo信息。 |
 

@@ -1,6 +1,6 @@
 # @ohos.file.securityLabel
 
-The **securityLabel** module provides APIs for managing data security levels of files, including obtaining and setting file security levels.
+该模块提供文件数据安全等级的相关功能：向应用程序提供查询、设置文件数据安全等级的JS接口。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The **securityLabel** module provides APIs for managing data security levels of 
 ## Modules to Import
 
 ```TypeScript
-import { securityLabel } from '@ohos.file.securityLabel';
+import { securityLabel } from '@kit.CoreFileKit';
 ```
 
 ## Summary
@@ -18,16 +18,16 @@ import { securityLabel } from '@ohos.file.securityLabel';
 
 | Name | Description |
 | --- | --- |
-| [getSecurityLabel](arkts-corefile-getsecuritylabel-f.md#getsecuritylabel-1) | Obtains the data security level of a file or directory. If no data security level has been set, **s3** is returned by default. This API uses a promise to return the result. |
-| [getSecurityLabel](arkts-corefile-getsecuritylabel-f.md#getsecuritylabel-2) | Obtains the data security level of a file or directory. If no data security level has been set, **s3** is returned by default. This API uses an asynchronous callback to return the result. |
-| [getSecurityLabelSync](arkts-corefile-getsecuritylabelsync-f.md#getsecuritylabelsync-1) | Obtains the data security level of a file or directory in synchronous mode. If no data security level has been set, **s3** is returned by default. |
-| [setSecurityLabel](arkts-corefile-setsecuritylabel-f.md#setsecuritylabel-1) | Sets the data security level for a file or directory. The level can only be adjusted from low to high, or set to the same level. This API uses a promise to return the result. |
-| [setSecurityLabel](arkts-corefile-setsecuritylabel-f.md#setsecuritylabel-2) | Sets the data security level for a file or directory. The level can only be adjusted from low to high, or set to the same level. This API uses an asynchronous callback to return the result. |
-| [setSecurityLabelSync](arkts-corefile-setsecuritylabelsync-f.md#setsecuritylabelsync-1) | Sets the data security level for a file or directory in synchronous mode. The level can only be adjusted from low to high, or set to the same level. |
+| [getSecurityLabel](arkts-securitylabel-getsecuritylabel-f.md#getSecurityLabel-1) | 获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。使用Promise异步回调。 |
+| [getSecurityLabel](arkts-securitylabel-getsecuritylabel-f.md#getSecurityLabel-2) | 获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。使用callback异步回调。 |
+| [getSecurityLabelSync](arkts-securitylabel-getsecuritylabelsync-f.md#getSecurityLabelSync-1) | 以同步方法获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。 |
+| [setSecurityLabel](arkts-securitylabel-setsecuritylabel-f.md#setSecurityLabel-1) | 设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用Promise异步回调。 |
+| [setSecurityLabel](arkts-securitylabel-setsecuritylabel-f.md#setSecurityLabel-2) | 设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用callback异步回调。 |
+| [setSecurityLabelSync](arkts-securitylabel-setsecuritylabelsync-f.md#setSecurityLabelSync-1) | 以同步方法设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [DataLevel](arkts-corefile-datalevel-t.md) | Represents the data security level. |
+| [DataLevel](arkts-securitylabel-datalevel-t.md) | 数据安全等级。 |
 

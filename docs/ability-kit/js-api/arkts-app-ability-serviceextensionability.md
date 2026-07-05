@@ -3,16 +3,14 @@
 ## Modules to Import
 
 ```TypeScript
-import { ServiceExtensionAbility } from '@ohos.app.ability.ServiceExtensionAbility';
+import { ServiceExtensionAbility } from '@kit.AbilityKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [ServiceExtensionAbility](arkts-ability-serviceextensionability-c-sys.md) | The ServiceExtensionAbility module provides extended capabilities for background services, including lifecycle callbacks for creating, destroying, connecting, and disconnecting background services. |
-<!--DelEnd-->
+| <!--DelRow-->[ServiceExtensionAbility](arkts-serviceextensionability-c.md) | ServiceExtensionAbility模块提供后台服务相关扩展能力，提供后台服务创建、销毁、连接、断开等生命周期回调。 |
 

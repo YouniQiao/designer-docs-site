@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ArcScrollBarAttribute, ArcScrollBar } from '@ohos.arkui.ArcScrollBar';
+import { ArcScrollBarAttribute,ArcScrollBar } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,19 +12,19 @@ import { ArcScrollBarAttribute, ArcScrollBar } from '@ohos.arkui.ArcScrollBar';
 
 | Name | Description |
 | --- | --- |
-| [ArcScrollBarAttribute](arkts-arkui-arcscrollbarattribute-c.md) | Defines the arc scroll bar attribute functions. |
+| [ArcScrollBarAttribute](arkts-arcscrollbarattribute-c.md) |  |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ArcScrollBarInterface](arkts-arkui-arcscrollbarinterface-i.md) | The **ArcScrollBar** component is designed to be used together with scrollable components such as [ArcList](arkts-arkui-arclist.md), [List](../arkts-components/arkts-arkui-list.md), [Grid](../arkts-components/arkts-arkui-grid.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), and [WaterFlow](../arkts-components/arkts-arkui-waterflow.md). &gt; **NOTE** &gt; &gt; - This component is supported since API version 18. Updates will be marked with a superscript to indicate their &gt; earliest API version. &gt; &gt; - When the width and height of the **ArcScrollBar** component are not set, the **maxSize** value specified in its &gt; parent component [LayoutConstraint](arkts-arkui-layoutconstraint-i.md#layoutconstraint) is used as the width and height. If &gt; the parent component of the **ArcScrollBar** component contains scrollable components, such as &gt; [ArcList](arkts-arkui-arclist.md), [List](../arkts-components/arkts-arkui-list.md), &gt; [Grid](../arkts-components/arkts-arkui-grid.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), or &gt; [WaterFlow](../arkts-components/arkts-arkui-waterflow.md), you are advised to set the width and height of the &gt; **ArcScrollBar** component. Otherwise, the width and height of the component may be infinite. &gt; &gt; - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and &gt; earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1 devices &gt; , tablets, and TVs, but the component can still run properly. |
-| [ArcScrollBarOptions](arkts-arkui-arcscrollbaroptions-i.md) | Represents the parameters used to construct an **ArcScrollBar** component. &gt; **NOTE** &gt; &gt; **ArcScrollBar** must be bound to a scrollable component through **scroller** to achieve synchronization. Only a &gt; one-to-one binding is allowed between **ArcScrollBar** and a scrollable component. |
+| [ArcScrollBarInterface](arkts-arcscrollbarinterface-i.md) | 弧形滚动条组件ArcScrollBar，用于配合可滚动组件使用，如[ArcList]{@link @ohos.arkui.ArcList}、[List]{@link list}、 [Grid]{@link grid}、[Scroll]{@link scroll}、 [WaterFlow]{@link water_flow}。 > **说明：** > - 该组件从API version 18开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。 > > - ArcScrollBar不设置宽高时，采用父组件[LayoutConstraint]{@link FrameNode:LayoutConstraint}中的maxSize作为宽高。如果ArcScrollBar的 > 父组件存在可滚动组件，如[ArcList]{@link @ohos.arkui.ArcList}、[List]{@link list}、 > [Grid]{@link grid}、[Scroll]{@link scroll}、 > [WaterFlow]{@link water_flow}，建议设置ArcScrollBar宽高，否则ArcScrollBar的宽高可能为无穷大。 > > - 该组件支持在Phone、PC/2in1、Tablet、TV、Wearable设备上使用。API version 22及以前版本，在Phone、PC/2in1、Tablet、TV上使用会编译告警，但可以正常运行。 |
+| [ArcScrollBarOptions](arkts-arcscrollbaroptions-i.md) | ArcScrollBar的构造函数参数。 > **说明：** > > ArcScrollBar与可滚动组件需通过scroller进行绑定后方能实现联动，且ArcScrollBar与可滚动组件仅限于一对一的绑定方式。 |
 
 ### Constants
 
 | Name | Description |
 | --- | --- |
-| [ArcScrollBar](arkts-arkui-arkui-arcscrollbar-con.md#arcscrollbar) | The **ArcScrollBar** component is designed to be used together with scrollable components such as [ArcList](arkts-arkui-arclist.md), [List](../arkts-components/arkts-arkui-list.md), [Grid](../arkts-components/arkts-arkui-grid.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), and [WaterFlow](../arkts-components/arkts-arkui-waterflow.md). &gt; **NOTE** &gt; &gt; - This component is supported since API version 18. Updates will be marked with a superscript to indicate their &gt; earliest API version. &gt; &gt; - When the width and height of the **ArcScrollBar** component are not set, the **maxSize** value specified in its &gt; parent component [LayoutConstraint](arkts-arkui-layoutconstraint-i.md#layoutconstraint) is used as the width and height. If &gt; the parent component of the **ArcScrollBar** component contains scrollable components, such as &gt; [ArcList](arkts-arkui-arclist.md), [List](../arkts-components/arkts-arkui-list.md), &gt; [Grid](../arkts-components/arkts-arkui-grid.md), [Scroll](../arkts-components/arkts-arkui-scroll.md), or &gt; [WaterFlow](../arkts-components/arkts-arkui-waterflow.md), you are advised to set the width and height of the &gt; **ArcScrollBar** component. Otherwise, the width and height of the component may be infinite. &gt; &gt; - This component can be used on phones, PCs, 2-in-1 devices, tablets, TVs, and wearables. In API version 22 and &gt; earlier versions, a compilation warning will be reported when this component is used on phones, PCs, 2-in-1 devices &gt; , tablets, and TVs, but the component can still run properly. ###### Child Components Not supported |
-| [ArcScrollBarInstance](arkts-arkui-arkui-arcscrollbar-con.md#arcscrollbarinstance) | Defines ArcScrollBar Component instance. |
+| [ArcScrollBar](arkts-arkui-arcscrollbar-con.md#ArcScrollBar) | 弧形滚动条组件ArcScrollBar，用于配合可滚动组件使用，如[ArcList]{@link @ohos.arkui.ArcList}、[List]{@link list}、 [Grid]{@link grid}、[Scroll]{@link scroll}、 [WaterFlow]{@link water_flow}。 > **说明：** > - 该组件从API version 18开始支持。后续版本如有新增内容，则采用上角标单独标记该内容的起始版本。 > > - ArcScrollBar不设置宽高时，采用父组件[LayoutConstraint]{@link FrameNode:LayoutConstraint}中的maxSize作为宽高。如果ArcScrollBar的 > 父组件存在可滚动组件，如[ArcList]{@link @ohos.arkui.ArcList}、[List]{@link list}、 > [Grid]{@link grid}、[Scroll]{@link scroll}、 > [WaterFlow]{@link water_flow}，建议设置ArcScrollBar宽高，否则ArcScrollBar的宽高可能为无穷大。 > > - 该组件支持在Phone、PC/2in1、Tablet、TV、Wearable设备上使用。API version 22及以前版本，在Phone、PC/2in1、Tablet、TV上使用会编译告警，但可以正常运行。 ###### 子组件 不包含子组件。 |
+| [ArcScrollBarInstance](arkts-arkui-arcscrollbar-con.md#ArcScrollBarInstance) | 定义ArcScrollBar组件实例。 |
 

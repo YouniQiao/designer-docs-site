@@ -1,4 +1,4 @@
-# SecurityEvent (System API)
+# SecurityEvent
 
 Provides the SecurityEvent type, including the event id, version info, report content.
 
@@ -11,24 +11,8 @@ Provides the SecurityEvent type, including the event id, version info, report co
 ## Modules to Import
 
 ```TypeScript
-import { securityGuard } from '@ohos.security.securityGuard';
+import { securityGuard } from '@kit.SecurityGuardKit';
 ```
-
-## content
-
-```TypeScript
-content: string
-```
-
-The report content
-
-**Type:** string
-
-**Since:** 12
-
-**System capability:** SystemCapability.Security.SecurityGuard
-
-**System API:** This is a system API.
 
 ## eventId
 
@@ -46,13 +30,13 @@ The event id
 
 **System API:** This is a system API.
 
-## timestamp
+## version
 
 ```TypeScript
-timestamp?: string
+version: string
 ```
 
-The event timestamp, format is YYYYMMDDHHMMSS.
+The version of a security event. Different versions indicate different data formats.
 
 **Type:** string
 
@@ -62,13 +46,29 @@ The event timestamp, format is YYYYMMDDHHMMSS.
 
 **System API:** This is a system API.
 
-## version
+## content
 
 ```TypeScript
-version: string
+content: string
 ```
 
-The version of a security event. Different versions indicate different data formats.
+The report content
+
+**Type:** string
+
+**Since:** 12
+
+**System capability:** SystemCapability.Security.SecurityGuard
+
+**System API:** This is a system API.
+
+## timestamp
+
+```TypeScript
+timestamp?: string
+```
+
+The event timestamp, format is YYYYMMDDHHMMSS.
 
 **Type:** string
 

@@ -1,11 +1,5 @@
 # createUnpremultipliedPixelMap
 
-## Modules to Import
-
-```TypeScript
-import { image } from '@ohos.multimedia.image';
-```
-
 ## createUnpremultipliedPixelMap
 
 ```TypeScript
@@ -24,16 +18,16 @@ Transforms pixelmap from premultiplied alpha format to unpremultiplied alpha for
 | --- | --- | --- | --- |
 | src | PixelMap | Yes | The source pixelmap. |
 | dst | PixelMap | Yes | The destination pixelmap. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the operation result. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the operation result.  If the operation fails, an error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [62980103](../errorcode-image.md#62980103-unsupported-image-type) | The image data is not supported. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [62980246](../errorcode-image.md#62980246-failure-in-reading-the-pixelmap) | Failed to read the pixelMap. |
-| [62980248](../errorcode-image.md#62980248-no-modification-to-the-pixelmap) | Pixelmap not allow modify. |
+| 62980103 | The image data is not supported. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 62980246 | Failed to read the pixelMap. |
+| 62980248 | Pixelmap not allow modify. |
 
 **Example**
 
@@ -65,7 +59,6 @@ async function CreateUnpremultipliedPixelMap() {
 
 ```
 
-
 ## createUnpremultipliedPixelMap
 
 ```TypeScript
@@ -89,16 +82,16 @@ Transforms pixelmap from premultiplied alpha format to unpremultiplied alpha for
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | A Promise instance used to return the operation result.If the operation fails, an error message is returned. |
+| Promise&lt;void> | A Promise instance used to return the operation result.  If the operation fails, an error message is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [62980103](../errorcode-image.md#62980103-unsupported-image-type) | The image data is not supported. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [62980246](../errorcode-image.md#62980246-failure-in-reading-the-pixelmap) | Failed to read the pixelMap. |
-| [62980248](../errorcode-image.md#62980248-no-modification-to-the-pixelmap) | Pixelmap not allow modify. |
+| 62980103 | The image data is not supported. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 62980246 | Failed to read the pixelMap. |
+| 62980248 | Pixelmap not allow modify. |
 
 **Example**
 

@@ -1,4 +1,8 @@
-# DepthDataQualityLevel (System API)
+# DepthDataQualityLevel
+
+```TypeScript
+enum DepthDataQualityLevel
+```
 
 Enumerates the quality levels of depth data.
 

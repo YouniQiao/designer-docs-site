@@ -1,0 +1,33 @@
+# queryAllActivePrintJobs
+
+## queryAllActivePrintJobs
+
+```TypeScript
+function queryAllActivePrintJobs(): Promise<PrintJob[]>
+```
+
+查询所有活跃中的打印任务，使用Promise进行异步回调。
+
+**起始版本：** 20
+
+**需要权限：** 
+
+ ohos.permission.MANAGE_PRINT_JOB
+
+**系统能力：** SystemCapability.Print.PrintFramework
+
+**系统接口：** 此接口为系统接口。
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;PrintJob[]> | Promise used to return a list of all active print jobs. |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 201 | the application does not have permission to call this function. |
+| 202 | not system application |
+

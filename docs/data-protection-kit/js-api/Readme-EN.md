@@ -1,66 +1,122 @@
-# ArkTS API<!--arkts-dataprotectionkit-->
+# DataProtectionKit
 
-- [@ohos.dlpPermission](arkts-dlppermission.md)
-  - [cancelRetentionState](arkts-dataprotection-cancelretentionstate-f.md)
-  - [cleanSandboxAppConfig](arkts-dataprotection-cleansandboxappconfig-f.md)
-  - [closeOpenedEnterpriseDlpFiles](arkts-dataprotection-closeopenedenterprisedlpfiles-f.md)<!--Del-->
-  - [decryptDlpFile(system api)](arkts-dataprotection-decryptdlpfile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [generateDLPFile(system api)](arkts-dataprotection-generatedlpfile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [generateDlpFileForEnterprise(system api)](arkts-dataprotection-generatedlpfileforenterprise-f-sys.md)<!--DelEnd-->
-  - [getControlledAppLists](arkts-dataprotection-getcontrolledapplists-f.md)
-  - [getDLPFileAccessRecords](arkts-dataprotection-getdlpfileaccessrecords-f.md)<!--Del-->
-  - [getDLPGatheringPolicy(system api)](arkts-dataprotection-getdlpgatheringpolicy-f-sys.md)<!--DelEnd-->
-  - [getDLPPermissionInfo](arkts-dataprotection-getdlppermissioninfo-f.md)
-  - [getDLPSuffix](arkts-dataprotection-getdlpsuffix-f.md)
-  - [getDLPSupportedFileTypes](arkts-dataprotection-getdlpsupportedfiletypes-f.md)
-  - [getOriginalFileName](arkts-dataprotection-getoriginalfilename-f.md)
-  - [getRetentionSandboxList](arkts-dataprotection-getretentionsandboxlist-f.md)
-  - [getSandboxAppConfig](arkts-dataprotection-getsandboxappconfig-f.md)<!--Del-->
-  - [installDLPSandbox(system api)](arkts-dataprotection-installdlpsandbox-f-sys.md)<!--DelEnd-->
-  - [isDLPFeatureProvided](arkts-dataprotection-isdlpfeatureprovided-f.md)
-  - [isDLPFile](arkts-dataprotection-isdlpfile-f.md)
-  - [isInSandbox](arkts-dataprotection-isinsandbox-f.md)
-  - [off](arkts-dataprotection-off-f.md)<!--Del-->
-  - [off(system api)](arkts-dataprotection-off-f-sys.md)<!--DelEnd-->
-  - [on](arkts-dataprotection-on-f.md)<!--Del-->
-  - [on(system api)](arkts-dataprotection-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [openDLPFile(system api)](arkts-dataprotection-opendlpfile-f-sys.md)<!--DelEnd--><!--Del-->
-  - [queryDlpPolicy(system api)](arkts-dataprotection-querydlppolicy-f-sys.md)<!--DelEnd-->
-  - [queryOpenedEnterpriseDlpFiles](arkts-dataprotection-queryopenedenterprisedlpfiles-f.md)
-  - [setControlledAppLists](arkts-dataprotection-setcontrolledapplists-f.md)
-  - [setEnterprisePolicy](arkts-dataprotection-setenterprisepolicy-f.md)
-  - [setRetentionState](arkts-dataprotection-setretentionstate-f.md)
-  - [setSandboxAppConfig](arkts-dataprotection-setsandboxappconfig-f.md)
-  - [startDLPManagerForResult](arkts-dataprotection-startdlpmanagerforresult-f.md)<!--Del-->
-  - [uninstallDLPSandbox(system api)](arkts-dataprotection-uninstalldlpsandbox-f-sys.md)<!--DelEnd-->
-  - [DlpConnManager](arkts-dataprotection-dlpconnmanager-c.md)
-  - [AccessedDLPFileInfo](arkts-dataprotection-accesseddlpfileinfo-i.md)<!--Del-->
-  - [AuthUser(system api)](arkts-dataprotection-authuser-i-sys.md)<!--DelEnd-->
-  - [CustomProperty](arkts-dataprotection-customproperty-i.md)<!--Del-->
-  - [CustomProperty(system api)](arkts-dataprotection-customproperty-i-sys.md)<!--DelEnd-->
-  - [DlpConnPlugin](arkts-dataprotection-dlpconnplugin-i.md)<!--Del-->
-  - [DLPFile(system api)](arkts-dataprotection-dlpfile-i-sys.md)<!--DelEnd-->
-  - [DlpFileQueryOptions](arkts-dataprotection-dlpfilequeryoptions-i.md)
-  - [DLPManagerResult](arkts-dataprotection-dlpmanagerresult-i.md)
-  - [DLPPermissionInfo](arkts-dataprotection-dlppermissioninfo-i.md)
-  - [DLPProperty](arkts-dataprotection-dlpproperty-i.md)<!--Del-->
-  - [DLPProperty(system api)](arkts-dataprotection-dlpproperty-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DLPSandboxInfo(system api)](arkts-dataprotection-dlpsandboxinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DLPSandboxState(system api)](arkts-dataprotection-dlpsandboxstate-i-sys.md)<!--DelEnd-->
-  - [EnterprisePolicy](arkts-dataprotection-enterprisepolicy-i.md)
-  - [RetentionSandboxInfo](arkts-dataprotection-retentionsandboxinfo-i.md)
-  - [AccountType](arkts-dataprotection-accounttype-e.md)<!--Del-->
-  - [AccountType(system api)](arkts-dataprotection-accounttype-e-sys.md)<!--DelEnd-->
-  - [ActionFlagType](arkts-dataprotection-actionflagtype-e.md)<!--Del-->
-  - [ActionType(system api)](arkts-dataprotection-actiontype-e-sys.md)<!--DelEnd-->
-  - [DLPFileAccess](arkts-dataprotection-dlpfileaccess-e.md)<!--Del-->
-  - [GatheringPolicyType(system api)](arkts-dataprotection-gatheringpolicytype-e-sys.md)<!--DelEnd-->
+- [@ohos.dlpPermission](arkts-dlppermission.md)<!--Del-->
+  - [getDLPGatheringPolicy(system api)](arkts-dlppermission-getdlpgatheringpolicy-f-sys.md)<!--DelEnd-->
+  - [cleanSandboxAppConfig](arkts-dlppermission-cleansandboxappconfig-f.md)<!--Del-->
+  - [generateDlpFileForEnterprise(system api)](arkts-dlppermission-generatedlpfileforenterprise-f-sys.md)<!--DelEnd-->
+  - [getDLPSuffix](arkts-dlppermission-getdlpsuffix-f.md)
+  - [getDLPPermissionInfo](arkts-dlppermission-getdlppermissioninfo-f.md)
+  - [closeOpenedEnterpriseDlpFiles](arkts-dlppermission-closeopenedenterprisedlpfiles-f.md)
+  - [getDLPFileAccessRecords](arkts-dlppermission-getdlpfileaccessrecords-f.md)
+  - [getOriginalFileName](arkts-dlppermission-getoriginalfilename-f.md)<!--Del-->
+  - [generateDLPFile(system api)](arkts-dlppermission-generatedlpfile-f-sys.md)<!--DelEnd-->
+  - [on](arkts-dlppermission-on-f.md)<!--Del-->
+  - [on(system api)](arkts-dlppermission-on-f-sys.md)<!--DelEnd-->
+  - [isInSandbox](arkts-dlppermission-isinsandbox-f.md)<!--Del-->
+  - [uninstallDLPSandbox(system api)](arkts-dlppermission-uninstalldlpsandbox-f-sys.md)<!--DelEnd-->
+  - [isDLPFile](arkts-dlppermission-isdlpfile-f.md)
+  - [getDLPSupportedFileTypes](arkts-dlppermission-getdlpsupportedfiletypes-f.md)
+  - [getSandboxAppConfig](arkts-dlppermission-getsandboxappconfig-f.md)
+  - [queryOpenedEnterpriseDlpFiles](arkts-dlppermission-queryopenedenterprisedlpfiles-f.md)
+  - [setControlledAppLists](arkts-dlppermission-setcontrolledapplists-f.md)
+  - [setSandboxAppConfig](arkts-dlppermission-setsandboxappconfig-f.md)
+  - [setRetentionState](arkts-dlppermission-setretentionstate-f.md)
+  - [setEnterprisePolicy](arkts-dlppermission-setenterprisepolicy-f.md)
+  - [off](arkts-dlppermission-off-f.md)<!--Del-->
+  - [off(system api)](arkts-dlppermission-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [installDLPSandbox(system api)](arkts-dlppermission-installdlpsandbox-f-sys.md)<!--DelEnd-->
+  - [getRetentionSandboxList](arkts-dlppermission-getretentionsandboxlist-f.md)
+  - [isDLPFeatureProvided](arkts-dlppermission-isdlpfeatureprovided-f.md)<!--Del-->
+  - [openDLPFile(system api)](arkts-dlppermission-opendlpfile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryDlpPolicy(system api)](arkts-dlppermission-querydlppolicy-f-sys.md)<!--DelEnd-->
+  - [cancelRetentionState](arkts-dlppermission-cancelretentionstate-f.md)
+  - [getControlledAppLists](arkts-dlppermission-getcontrolledapplists-f.md)<!--Del-->
+  - [decryptDlpFile(system api)](arkts-dlppermission-decryptdlpfile-f-sys.md)<!--DelEnd-->
+  - [startDLPManagerForResult](arkts-dlppermission-startdlpmanagerforresult-f.md)
+  - [DlpConnManager](arkts-dlppermission-dlpconnmanager-c.md)
+  - [AccessedDLPFileInfo](arkts-dlppermission-accesseddlpfileinfo-i.md)<!--Del-->
+  - [AuthUser(system api)](arkts-dlppermission-authuser-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CustomProperty(system api)](arkts-dlppermission-customproperty-i-sys.md)<!--DelEnd-->
+  - [DlpConnPlugin](arkts-dlppermission-dlpconnplugin-i.md)<!--Del-->
+  - [DLPFile(system api)](arkts-dlppermission-dlpfile-i-sys.md)<!--DelEnd-->
+  - [DlpFileQueryOptions](arkts-dlppermission-dlpfilequeryoptions-i.md)
+  - [DLPManagerResult](arkts-dlppermission-dlpmanagerresult-i.md)
+  - [DLPPermissionInfo](arkts-dlppermission-dlppermissioninfo-i.md)<!--Del-->
+  - [DLPProperty(system api)](arkts-dlppermission-dlpproperty-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DLPSandboxInfo(system api)](arkts-dlppermission-dlpsandboxinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DLPSandboxState(system api)](arkts-dlppermission-dlpsandboxstate-i-sys.md)<!--DelEnd-->
+  - [EnterprisePolicy](arkts-dlppermission-enterprisepolicy-i.md)
+  - [RetentionSandboxInfo](arkts-dlppermission-retentionsandboxinfo-i.md)<!--Del-->
+  - [AccountType(system api)](arkts-dlppermission-accounttype-e-sys.md)<!--DelEnd-->
+  - [ActionFlagType](arkts-dlppermission-actionflagtype-e.md)<!--Del-->
+  - [ActionType(system api)](arkts-dlppermission-actiontype-e-sys.md)<!--DelEnd-->
+  - [DLPFileAccess](arkts-dlppermission-dlpfileaccess-e.md)<!--Del-->
+  - [GatheringPolicyType(system api)](arkts-dlppermission-gatheringpolicytype-e-sys.md)<!--DelEnd-->
+- [@ohos.dlpPermission](arkts-dlppermission.md)<!--Del-->
+  - [getDLPGatheringPolicy(system api)](arkts-dlppermission-getdlpgatheringpolicy-f-sys.md)<!--DelEnd-->
+  - [cleanSandboxAppConfig](arkts-dlppermission-cleansandboxappconfig-f.md)<!--Del-->
+  - [generateDlpFileForEnterprise(system api)](arkts-dlppermission-generatedlpfileforenterprise-f-sys.md)<!--DelEnd-->
+  - [getDLPSuffix](arkts-dlppermission-getdlpsuffix-f.md)
+  - [getDLPPermissionInfo](arkts-dlppermission-getdlppermissioninfo-f.md)
+  - [closeOpenedEnterpriseDlpFiles](arkts-dlppermission-closeopenedenterprisedlpfiles-f.md)
+  - [getDLPFileAccessRecords](arkts-dlppermission-getdlpfileaccessrecords-f.md)
+  - [getOriginalFileName](arkts-dlppermission-getoriginalfilename-f.md)<!--Del-->
+  - [generateDLPFile(system api)](arkts-dlppermission-generatedlpfile-f-sys.md)<!--DelEnd-->
+  - [on](arkts-dlppermission-on-f.md)<!--Del-->
+  - [on(system api)](arkts-dlppermission-on-f-sys.md)<!--DelEnd-->
+  - [isInSandbox](arkts-dlppermission-isinsandbox-f.md)<!--Del-->
+  - [uninstallDLPSandbox(system api)](arkts-dlppermission-uninstalldlpsandbox-f-sys.md)<!--DelEnd-->
+  - [isDLPFile](arkts-dlppermission-isdlpfile-f.md)
+  - [getDLPSupportedFileTypes](arkts-dlppermission-getdlpsupportedfiletypes-f.md)
+  - [getSandboxAppConfig](arkts-dlppermission-getsandboxappconfig-f.md)
+  - [queryOpenedEnterpriseDlpFiles](arkts-dlppermission-queryopenedenterprisedlpfiles-f.md)
+  - [setSandboxAppConfig](arkts-dlppermission-setsandboxappconfig-f.md)
+  - [setRetentionState](arkts-dlppermission-setretentionstate-f.md)
+  - [setEnterprisePolicy](arkts-dlppermission-setenterprisepolicy-f.md)
+  - [off](arkts-dlppermission-off-f.md)<!--Del-->
+  - [off(system api)](arkts-dlppermission-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [installDLPSandbox(system api)](arkts-dlppermission-installdlpsandbox-f-sys.md)<!--DelEnd-->
+  - [getRetentionSandboxList](arkts-dlppermission-getretentionsandboxlist-f.md)
+  - [isDLPFeatureProvided](arkts-dlppermission-isdlpfeatureprovided-f.md)<!--Del-->
+  - [openDLPFile(system api)](arkts-dlppermission-opendlpfile-f-sys.md)<!--DelEnd--><!--Del-->
+  - [queryDlpPolicy(system api)](arkts-dlppermission-querydlppolicy-f-sys.md)<!--DelEnd-->
+  - [cancelRetentionState](arkts-dlppermission-cancelretentionstate-f.md)<!--Del-->
+  - [decryptDlpFile(system api)](arkts-dlppermission-decryptdlpfile-f-sys.md)<!--DelEnd-->
+  - [startDLPManagerForResult](arkts-dlppermission-startdlpmanagerforresult-f.md)
+  - [DlpConnManager](arkts-dlppermission-dlpconnmanager-c.md)
+  - [AccessedDLPFileInfo](arkts-dlppermission-accesseddlpfileinfo-i.md)<!--Del-->
+  - [AuthUser(system api)](arkts-dlppermission-authuser-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CustomProperty(system api)](arkts-dlppermission-customproperty-i-sys.md)<!--DelEnd-->
+  - [DlpConnPlugin](arkts-dlppermission-dlpconnplugin-i.md)<!--Del-->
+  - [DLPFile(system api)](arkts-dlppermission-dlpfile-i-sys.md)<!--DelEnd-->
+  - [DlpFileQueryOptions](arkts-dlppermission-dlpfilequeryoptions-i.md)
+  - [DLPManagerResult](arkts-dlppermission-dlpmanagerresult-i.md)
+  - [DLPPermissionInfo](arkts-dlppermission-dlppermissioninfo-i.md)<!--Del-->
+  - [DLPProperty(system api)](arkts-dlppermission-dlpproperty-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DLPSandboxInfo(system api)](arkts-dlppermission-dlpsandboxinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DLPSandboxState(system api)](arkts-dlppermission-dlpsandboxstate-i-sys.md)<!--DelEnd-->
+  - [EnterprisePolicy](arkts-dlppermission-enterprisepolicy-i.md)
+  - [RetentionSandboxInfo](arkts-dlppermission-retentionsandboxinfo-i.md)<!--Del-->
+  - [AccountType(system api)](arkts-dlppermission-accounttype-e-sys.md)<!--DelEnd-->
+  - [ActionFlagType](arkts-dlppermission-actionflagtype-e.md)<!--Del-->
+  - [ActionType(system api)](arkts-dlppermission-actiontype-e-sys.md)<!--DelEnd-->
+  - [DLPFileAccess](arkts-dlppermission-dlpfileaccess-e.md)<!--Del-->
+  - [GatheringPolicyType(system api)](arkts-dlppermission-gatheringpolicytype-e-sys.md)<!--DelEnd-->
 - [@ohos.dlpSetDlpFeature](arkts-dlpsetdlpfeature.md)<!--Del-->
-  - [setDlpFeature(system api)](arkts-dataprotection-setdlpfeature-f-sys.md)<!--DelEnd--><!--Del-->
-  - [DLPFeatureInfo(system api)](arkts-dataprotection-dlpfeatureinfo-i-sys.md)<!--DelEnd--><!--Del-->
-  - [StatusInfoResult(system api)](arkts-dataprotection-statusinforesult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [DlpFeatureStatus(system api)](arkts-dataprotection-dlpfeaturestatus-e-sys.md)<!--DelEnd-->
+  - [setDlpFeature(system api)](arkts-dlpsetdlpfeature-setdlpfeature-f-sys.md)<!--DelEnd--><!--Del-->
+  - [DLPFeatureInfo(system api)](arkts-dlpsetdlpfeature-dlpfeatureinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [StatusInfoResult(system api)](arkts-dlpsetdlpfeature-statusinforesult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DlpFeatureStatus(system api)](arkts-dlpsetdlpfeature-dlpfeaturestatus-e-sys.md)<!--DelEnd-->
+- [@ohos.dlpSetDlpFeature](arkts-dlpsetdlpfeature.md)<!--Del-->
+  - [setDlpFeature(system api)](arkts-dlpsetdlpfeature-setdlpfeature-f-sys.md)<!--DelEnd--><!--Del-->
+  - [DLPFeatureInfo(system api)](arkts-dlpsetdlpfeature-dlpfeatureinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [StatusInfoResult(system api)](arkts-dlpsetdlpfeature-statusinforesult-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DlpFeatureStatus(system api)](arkts-dlpsetdlpfeature-dlpfeaturestatus-e-sys.md)<!--DelEnd-->
 - [@ohos.security.identifySensitiveContent](arkts-security-identifysensitivecontent.md)
-  - [scanFile](arkts-dataprotection-scanfile-f.md)
-  - [MatchResult](arkts-dataprotection-matchresult-i.md)
-  - [Policy](arkts-dataprotection-policy-i.md)
+  - [scanFile](arkts-identifysensitivecontent-scanfile-f.md)
+  - [MatchResult](arkts-identifysensitivecontent-matchresult-i.md)
+  - [Policy](arkts-identifysensitivecontent-policy-i.md)
+- [@ohos.security.identifySensitiveContent](arkts-security-identifysensitivecontent.md)
+  - [scanFile](arkts-identifysensitivecontent-scanfile-f.md)
+  - [MatchResult](arkts-identifysensitivecontent-matchresult-i.md)
+  - [Policy](arkts-identifysensitivecontent-policy-i.md)

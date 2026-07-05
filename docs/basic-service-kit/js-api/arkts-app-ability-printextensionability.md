@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { PrintExtensionAbility } from '@ohos.app.ability.PrintExtensionAbility';
+import { PrintExtensionAbility } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -12,13 +12,5 @@ import { PrintExtensionAbility } from '@ohos.app.ability.PrintExtensionAbility';
 
 | Name | Description |
 | --- | --- |
-| [PrintExtensionAbility](arkts-basicservices-printextensionability-c.md) | class of print extensionAbility. |
-
-<!--Del-->
-### Classes（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [PrintExtensionAbility](arkts-basicservices-printextensionability-c-sys.md) | class of print extensionAbility. |
-<!--DelEnd-->
+| [PrintExtensionAbility](arkts-printextensionability-c.md) | class of print extensionAbility. |
 

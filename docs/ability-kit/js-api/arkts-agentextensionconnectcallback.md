@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AgentExtensionConnectCallback](arkts-ability-agentextensionconnectcallback-i-sys.md) | Agent extension connect callback. |
-<!--DelEnd-->
+| <!--DelRow-->[AgentExtensionConnectCallback](arkts-agentextensionconnectcallback-i.md) | Agent extension connect callback. |
 

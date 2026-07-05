@@ -1,4 +1,8 @@
-# ColorReservationType (System API)
+# ColorReservationType
+
+```TypeScript
+enum ColorReservationType
+```
 
 Enumerates the color reservation types.
 

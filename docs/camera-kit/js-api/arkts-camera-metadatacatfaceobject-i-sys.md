@@ -1,10 +1,10 @@
-# MetadataCatFaceObject (System API)
+# MetadataCatFaceObject
 
-Implements the cat face metadata object used for camera detection. It inherits from [MetadataObject](arkts-camera-metadataobjecttype-e.md#metadataobjecttype) and is the data source of the camera information in [CameraInput](arkts-camera-camerainput-i.md#camerainput). It is obtained by calling metadataOutput. [on('metadataObjectsAvailable')](arkts-camera-metadataoutput-i.md#on-1).
+Implements the cat face metadata object used for camera detection. It inherits from [MetadataObject]camera.MetadataObjectType and is the data source of the camera information in [CameraInput]camera.CameraInput. It is obtained by calling metadataOutput. [on('metadataObjectsAvailable')]camera.MetadataOutput.on(type: 'metadataObjectsAvailable', callback: AsyncCallback<Array<MetadataObject>>).
 
-**Inheritance/Implementation:** MetadataCatFaceObject extends [MetadataObject](arkts-camera-metadataobject-i.md#metadataobject)
+**Inheritance:** MetadataCatFaceObjectextends: MetadataObject.
 
-**Since:** 26.0.0
+**Since:** 13
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -13,26 +13,8 @@ Implements the cat face metadata object used for camera detection. It inherits f
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
-
-## leftEyeBoundingBox
-
-```TypeScript
-readonly leftEyeBoundingBox: Rect
-```
-
-Left eye area.
-
-**Type:** Rect
-
-**Since:** 26.0.0
-
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
 
 ## rightEyeBoundingBox
 
@@ -44,9 +26,27 @@ Right eye area.
 
 **Type:** Rect
 
-**Since:** 26.0.0
+**Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## leftEyeBoundingBox
+
+```TypeScript
+readonly leftEyeBoundingBox: Rect
+```
+
+Left eye area.
+
+**Type:** Rect
+
+**Since:** 13
+
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

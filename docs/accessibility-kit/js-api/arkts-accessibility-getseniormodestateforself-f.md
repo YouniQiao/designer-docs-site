@@ -1,11 +1,5 @@
 # getSeniorModeStateForSelf
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## getSeniorModeStateForSelf
 
 ```TypeScript
@@ -16,7 +10,7 @@ Check if this application's senior mode is enabled.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,11 +18,11 @@ Check if this application's senior mode is enabled.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Returns {@code true} if senior mode is enabled; returns {@code false} otherwise. |
+| Promise&lt;boolean> | Returns {@code true} if senior mode is enabled; returns {@code false} otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [9300000](../errorcode-accessibility.md#9300000-accessibility-service-abnormal) | System abnormality. |
+| 9300000 | System abnormality. |
 

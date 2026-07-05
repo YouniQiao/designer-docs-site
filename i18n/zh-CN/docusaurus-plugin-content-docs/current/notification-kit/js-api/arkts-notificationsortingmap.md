@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [NotificationSortingMap](arkts-notification-notificationsortingmap-i-sys.md) | 提供有关已订阅的所有通知中的活动通知的排序信息。 |
-<!--DelEnd-->
+| <!--DelRow-->[NotificationSortingMap](arkts-notificationsortingmap-i.md) | 提供有关已订阅的所有通知中的活动通知的排序信息。 > **说明：** > > 本模块为系统接口。 |
 

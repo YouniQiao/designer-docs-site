@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { AppResponse, ScreenOnVisibleOptions, RequestFullWindowOptions } from '@system.app';
+import { AppResponse,ScreenOnVisibleOptions,RequestFullWindowOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,13 +12,13 @@ import { AppResponse, ScreenOnVisibleOptions, RequestFullWindowOptions } from '@
 
 | Name | Description |
 | --- | --- |
-| [App](arkts-arkui-app-c.md) | Defines static functions of App class |
+| [App](arkts-app-c.md) | 定义App类的静态函数 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AppResponse](arkts-arkui-appresponse-i.md) | Defines the application response information. |
-| [RequestFullWindowOptions](arkts-arkui-requestfullwindowoptions-i.md) | Defines the option of RequestFullWindow interface. |
-| [ScreenOnVisibleOptions](arkts-arkui-screenonvisibleoptions-i.md) | Defines the options of the visible interface on the screen. |
+| [AppResponse](arkts-appresponse-i.md) | 定义AppResponse信息。 |
+| [RequestFullWindowOptions](arkts-requestfullwindowoptions-i.md) | 定义RequestFullWindow接口的选项。 |
+| [ScreenOnVisibleOptions](arkts-screenonvisibleoptions-i.md) | 定义屏幕上可见接口的选项。 |
 

@@ -9,54 +9,54 @@ Describes the geolocation information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## altitude
 
 ```TypeScript
-altitude: number
+altitude: double
 ```
 
 Altitude, in meters.
 
-**Type:** number
+**Type:** double
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## latitude
 
 ```TypeScript
-latitude: number
+latitude: double
 ```
 
 Latitude, in degrees, within the range [-90, 90].
 
-**Type:** number
+**Type:** double
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## longitude
 
 ```TypeScript
-longitude: number
+longitude: double
 ```
 
 Longitude, in degrees, within the range [-180, 180].
 
-**Type:** number
+**Type:** double
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

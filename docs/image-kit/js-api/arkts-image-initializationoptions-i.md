@@ -1,6 +1,6 @@
 # InitializationOptions
 
-Defines PixelMap initialization options.
+PixelMap的初始化选项。
 
 **Since:** 8
 
@@ -9,42 +9,24 @@ Defines PixelMap initialization options.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
-## alphaType
+## scaleMode
 
 ```TypeScript
-alphaType?: AlphaType
+scaleMode?: ScaleMode
 ```
 
-Alpha type. The default value is **IMAGE_ALPHA_TYPE_PREMUL**.
+缩放模式。默认值为FIT_TARGET_SIZE。
 
-**Type:** AlphaType
+**Type:** ScaleMode
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## editable
-
-```TypeScript
-editable?: boolean
-```
-
-Whether the image pixels are editable. **true** if editable, **false** otherwise. The value **false** provides better image rendering and transmission performance. The default value is **false**.
-
-**Type:** boolean
-
-**Since:** 8
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,33 +36,15 @@ Whether the image pixels are editable. **true** if editable, **false** otherwise
 pixelFormat?: PixelMapFormat
 ```
 
-Pixel format of the generated PixelMap. The default value is **RGBA_8888**.
+生成的PixelMap的像素格式。默认值为RGBA_8888。
 
 **Type:** PixelMapFormat
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## scaleMode
-
-```TypeScript
-scaleMode?: ScaleMode
-```
-
-Scale mode. The default value is **0**.
-
-**Type:** ScaleMode
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -90,15 +54,51 @@ Scale mode. The default value is **0**.
 size: Size
 ```
 
-Image size.
+创建的图片尺寸，宽高值必须为正整数。
 
 **Type:** Size
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## alphaType
+
+```TypeScript
+alphaType?: AlphaType
+```
+
+透明度。默认值为IMAGE_ALPHA_TYPE_PREMUL。
+
+**Type:** AlphaType
+
+**Since:** 9
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## editable
+
+```TypeScript
+editable?: boolean
+```
+
+图像像素是否可被编辑。true表示可被编辑，false表示不可被编辑。设为false时，可提升图像的渲染和传输性能，但是图像不可被二次编辑。例如，writePixels操作将失败。默认值为false。
+
+**Type:** boolean
+
+**Since:** 8
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -108,7 +108,7 @@ Image size.
 srcPixelFormat?: PixelMapFormat
 ```
 
-Pixel format of the passed-in buffer data. The default value is **BGRA_8888**.
+传入的缓冲区数据的像素格式。默认值为BGRA_8888。
 
 **Type:** PixelMapFormat
 

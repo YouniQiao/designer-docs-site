@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { EmptyAreaClickCallback, AlbumPickerComponent, AlbumInfo, AlbumPickerOptions, AlbumPickerController } from '@ohos.file.AlbumPickerComponent';
+import { EmptyAreaClickCallback,AlbumPickerComponent,AlbumInfo,AlbumPickerOptions,AlbumPickerController } from '@kit.MediaLibraryKit';
 ```
 
 ## Summary
@@ -12,19 +12,13 @@ import { EmptyAreaClickCallback, AlbumPickerComponent, AlbumInfo, AlbumPickerOpt
 
 | Name | Description |
 | --- | --- |
-| [AlbumInfo](arkts-medialibrary-albuminfo-c.md) | AlbumInfo: include album uri |
-| [AlbumPickerController](arkts-medialibrary-albumpickercontroller-c.md) | The class for AlbumPickerController |
-| [AlbumPickerOptions](arkts-medialibrary-albumpickeroptions-c.md) | AlbumPickerOptions Object |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [AlbumPickerComponent](arkts-medialibrary-albumpickercomponent-s.md) | AlbumPickerComponent: can select a certain album and display the images in that album through PhotoPickerComponent |
+| [AlbumInfo](arkts-albuminfo-c.md) | AlbumInfo: include album uri |
+| [AlbumPickerController](arkts-albumpickercontroller-c.md) | The class for AlbumPickerController |
+| [AlbumPickerOptions](arkts-albumpickeroptions-c.md) | AlbumPickerOptions Object |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [EmptyAreaClickCallback](arkts-medialibrary-emptyareaclickcallback-t.md) | The callback of onEmptyAreaClick event |
+| [EmptyAreaClickCallback](arkts-emptyareaclickcallback-t.md) | The callback of onEmptyAreaClick event |
 

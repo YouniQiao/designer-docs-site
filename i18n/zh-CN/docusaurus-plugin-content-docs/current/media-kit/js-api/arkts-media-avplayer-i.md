@@ -1,22 +1,28 @@
 # AVPlayer
 
-播放管理类，用于管理和播放媒体资源。在调用AVPlayer的方法前，需要先通过 [createAVPlayer()](arkts-media-createavplayer-f.md#createavplayer-1)构建一个 AVPlayer实例。 在使用AVPlayer实例的方法时，建议开发者注册相关回调，主动获取当前状态变化。 [on('stateChange')](media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle))：监听播放状态机 AVPlayerState切换。[on('error')](media.AVPlayer.on(type: 'error', callback: ErrorCallback))：监听错误事件。 应用需要按照实际业务需求合理使用AVPlayer对象，按需创建并及时释放，避免持有过多AVPlayer实例导致内存消耗过大，否则在一定情况下可能导致系统终止应用。 Audio/Video播放demo可参考：[音频播放开发指导](../../../../media/media/using-avplayer-for-playback.md)、 [视频播放开发指导](../../../../media/media/video-playback.md)。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
+播放管理类，用于管理和播放媒体资源。在调用AVPlayer的方法前，需要先通过 [createAVPlayer()](arkts-media-createavplayer-f.md#createAVPlayer-1)构建一个 AVPlayer实例。 在使用AVPlayer实例的方法时，建议开发者注册相关回调，主动获取当前状态变化。 [on('stateChange')]media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle)：监听播放状态机 AVPlayerState切换。[on('error')]media.AVPlayer.on(type: 'error', callback: ErrorCallback)：监听错误事件。 应用需要按照实际业务需求合理使用AVPlayer对象，按需创建并及时释放，避免持有过多AVPlayer实例导致内存消耗过大，否则在一定情况下可能导致系统终止应用。 Audio/Video播放demo可参考：[音频播放开发指导](docroot://media/media/using-avplayer-for-playback.md)、 [视频播放开发指导](docroot://media/media/video-playback.md)。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
 **起始版本：** 9
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
+## 导入模块
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
+
 ## addSubtitleFromFd
 
 ```TypeScript
-addSubtitleFromFd(fd: number, offset?: number, length?: number): Promise<void>
+addSubtitleFromFd(fd: int, offset?: long, length?: long): Promise<void>
 ```
 
 依据fd为视频添加外挂字幕，当前仅支持与视频资源同时设置（在avplayer设置fdSrc视频资源后设置外挂字幕）。使用Promise异步回调。
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -24,22 +30,22 @@ addSubtitleFromFd(fd: number, offset?: number, length?: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| fd | number | 是 | 资源句柄，通过[resourceManager.getRawFd](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-i.md#getrawfd-1)获取。 |
-| offset | number | 否 | 资源偏移量，需要基于预置资源的信息输入，非法值会造成字幕频资源解析错误，默认值:0。 |
-| length | number | 否 | 资源长度，默认值为文件中从偏移量开始的剩余字节，需要基于预置资源的信息输入，非法值会造成字幕频资源解析错误，默认值:0。 |
+| fd | int | 是 | 资源句柄，通过  [resourceManager.getRawFd]@ohos.resourceManager:resourceManager.ResourceManager.getRawFd(path: string, callback: _AsyncCallback)  获取。 |
+| offset | long | 否 | 资源偏移量，需要基于预置资源的信息输入，非法值会造成字幕频资源解析错误，默认值:0。 |
+| length | long | 否 | 资源长度，默认值为文件中从偏移量开始的剩余字节，需要基于预置资源的信息输入，非法值会造成字幕频资源解析错误，默认值:0。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. Return by promise. |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 401 | The parameter check failed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## addSubtitleFromUrl
 
@@ -51,7 +57,7 @@ addSubtitleFromUrl(url: string): Promise<void>
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -65,26 +71,26 @@ addSubtitleFromUrl(url: string): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. Return by promise. |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 401 | The parameter check failed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## deselectTrack
 
 ```TypeScript
-deselectTrack(index: number): Promise<void>
+deselectTrack(index: int): Promise<void>
 ```
 
 使用AVPlayer播放多音轨视频时取消指定音视频轨道播放，使用Promise异步回调。
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -92,20 +98,103 @@ deselectTrack(index: number): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 多音视频资源的轨道索引，来自[getTrackDescription](arkts-media-avplayer-i.md#gettrackdescription-2)接口所获取的轨道信息[MediaDescription](@ohos.multimedia.media:media.MediaDescription)。 |
+| index | int | 是 | 多音视频资源的轨道索引，来自[getTrackDescription]media.AVPlayer.getTrackDescription()接口所获取的轨道信息  [MediaDescription](arkts-media-mediadescription-i.md#MediaDescription)。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. Return by promise. |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 401 | The parameter check failed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
+
+## forceLoadVideo
+
+```TypeScript
+forceLoadVideo(force: boolean): Promise<void>
+```
+
+Specifies whether to forcibly load the video. This API can be called only when the AVPlayer is in the prepared, playing, or paused state. This API uses a promise to return the result.
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| force | boolean | 是 | specified whether to forcibly load the video. |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;void> | A Promise instance used to return when forceLoadVideo completed. |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 202 | Called from Non-System applications. Return by promise. |
+
+**示例：**
+
+```TypeScript
+async function test(){
+  let avPlayer = await media.createAVPlayer();
+  // 此处仅为示意，实际开发中需要在stateChange事件成功触发至prepared/playing/paused状态后才能调用。
+  avPlayer.forceLoadVideo(true);
+}
+
+```
+
+## getCurrentTrack
+
+```TypeScript
+getCurrentTrack(trackType: MediaType): Promise<int>
+```
+
+Obtains the selected track by the specified media type. This API can be called only when the AVPlayer is in the prepared, playing, or paused state. This API uses a promise to return the result.
+
+**起始版本：** 26.0.0
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.Multimedia.Media.AVPlayer
+
+**系统接口：** 此接口为系统接口。
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| trackType | MediaType | 是 | specified media Type, see [MediaType]#MediaType. |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| Promise&lt;int> | A Promise instance used to return selected track index. |
+
+**错误码：**
+
+| 错误码ID | 错误信息 |
+| --- | --- |
+| 202 | Called from Non-System applications. Return by promise. |
+| 5400101 | No memory. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
+| 5400103 | I/O error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## getLoadedTimeRanges
 
@@ -125,7 +214,7 @@ getLoadedTimeRanges(): Promise<Array<Range>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;Range&gt;&gt; | Promise对象，返回播放器当前已加载的时间区间段的列表。<br>时间区间段以播放时间轴上的[start, end]位置表示，单位为毫秒。 |
+| Promise&lt;Array&lt;Range>> | Promise对象，返回播放器当前已加载的时间区间段的列表。  时间区间段以播放时间轴上的[start, end]位置表示，单位为毫秒。 |
 
 ## getPlaybackInfo
 
@@ -143,12 +232,12 @@ getPlaybackInfo(): Promise<PlaybackInfo>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;PlaybackInfo&gt; | Promise对象，返回播放器信息PlaybackInfo。 |
+| Promise&lt;PlaybackInfo> | Promise对象，返回播放器信息PlaybackInfo。 |
 
 ## getPlaybackRate
 
 ```TypeScript
-getPlaybackRate(): Promise<number>
+getPlaybackRate(): Promise<double>
 ```
 
 获取当前播放器的播放速率。使用Promise异步回调。
@@ -161,7 +250,7 @@ getPlaybackRate(): Promise<number>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number&gt; | Promise对象，返回播放倍速速率。 |
+| Promise&lt;double> | Promise对象，返回播放倍速速率。 |
 
 ## getPlaybackStatisticMetrics
 
@@ -179,7 +268,7 @@ getPlaybackStatisticMetrics(): Promise<PlaybackMetrics>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;PlaybackMetrics&gt; | Promise对象，返回当前播放器的指标信息PlaybackMetrics。 |
+| Promise&lt;PlaybackMetrics> | Promise对象，返回当前播放器的指标信息PlaybackMetrics。 |
 
 ## getSeekableTimeRanges
 
@@ -199,19 +288,19 @@ getSeekableTimeRanges(): Promise<Array<Range>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;Range&gt;&gt; | Promise对象，返回播放器当前可跳转的时间区间段的列表。<br>时间区间段以播放时间轴上的[start, end]位置表示，单位为毫秒。 |
+| Promise&lt;Array&lt;Range>> | Promise对象，返回播放器当前可跳转的时间区间段的列表。  时间区间段以播放时间轴上的[start, end]位置表示，单位为毫秒。 |
 
 ## getSelectedTracks
 
 ```TypeScript
-getSelectedTracks(): Promise<Array<number>>
+getSelectedTracks(): Promise<Array<int>>
 ```
 
 获取已选择的音视频轨道索引，可以在prepared/playing/paused状态调用。使用Promise异步回调。
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -219,13 +308,13 @@ getSelectedTracks(): Promise<Array<number>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;number&gt;&gt; | Promise对象，返回已选择音视频轨道索引数组。 |
+| Promise&lt;Array&lt;int>> | Promise对象，返回已选择音视频轨道索引数组。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. |
+| 5400102 | Operation not allowed. |
 
 ## getTrackDescription
 
@@ -237,7 +326,7 @@ getTrackDescription(callback: AsyncCallback<Array<MediaDescription>>): void
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -245,13 +334,13 @@ getTrackDescription(callback: AsyncCallback<Array<MediaDescription>>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;MediaDescription&gt;&gt; | 是 | 回调函数，当获取音视频轨道信息成功，err为undefined，data为获取到的MediaDescription数组；否则为错误对象。 |
+| callback | AsyncCallback&lt;Array&lt;MediaDescription>> | 是 | 回调函数，当获取音视频轨道信息成功，err为undefined，data为获取到的  MediaDescription数组；否则为错误对象。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
 
 ## getTrackDescription
 
@@ -263,7 +352,7 @@ getTrackDescription(): Promise<Array<MediaDescription>>
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -271,13 +360,13 @@ getTrackDescription(): Promise<Array<MediaDescription>>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;Array&lt;MediaDescription&gt;&gt; | Promise对象，返回音视频轨道信息MediaDescription数组。 |
+| Promise&lt;Array&lt;MediaDescription>> | Promise对象，返回音视频轨道信息MediaDescription数组。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## getTrackSelectionFilter
 
@@ -297,13 +386,13 @@ getTrackSelectionFilter(): Promise<TrackSelectionFilter>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;TrackSelectionFilter&gt; | Promise对象，返回当前配置的轨道选择过滤器。 |
+| Promise&lt;TrackSelectionFilter> | Promise对象，返回当前配置的轨道选择过滤器。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. |
+| 5400102 | Operation not allowed. |
 
 ## pause
 
@@ -315,7 +404,7 @@ pause(callback: AsyncCallback<void>): void
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -323,13 +412,13 @@ pause(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | 是 | 暂停播放的回调方法。 |
+| callback | AsyncCallback&lt;void> | 是 | 暂停播放的回调方法。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
 
 ## pause
 
@@ -341,7 +430,7 @@ pause(): Promise<void>
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -349,13 +438,13 @@ pause(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## play
 
@@ -367,7 +456,7 @@ play(callback: AsyncCallback<void>): void
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -375,13 +464,13 @@ play(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | 是 | 开始播放的回调方法。 |
+| callback | AsyncCallback&lt;void> | 是 | 开始播放的回调方法。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
 
 ## play
 
@@ -393,7 +482,7 @@ play(): Promise<void>
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -401,13 +490,13 @@ play(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## prepare
 
@@ -415,11 +504,11 @@ play(): Promise<void>
 prepare(callback: AsyncCallback<void>): void
 ```
 
-准备播放音频/视频，需在[stateChange](media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle))事件成 功触发至initialized状态后，才能调用。使用callback方式异步获取返回值。
+准备播放音频/视频，需在[stateChange]media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle)事件成 功触发至initialized状态后，才能调用。使用callback方式异步获取返回值。
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -427,14 +516,14 @@ prepare(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | 是 | 准备播放的回调方法。 |
+| callback | AsyncCallback&lt;void> | 是 | 准备播放的回调方法。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
-| [5400106](../errorcode-media.md#5400106-不支持的规格) | Unsupported format. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
+| 5400106 | Unsupported format. Return by callback. |
 
 ## prepare
 
@@ -442,11 +531,11 @@ prepare(callback: AsyncCallback<void>): void
 prepare(): Promise<void>
 ```
 
-准备播放音频/视频，需在[stateChange](media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle))事件成 功触发至initialized状态后，才能调用。使用Promise异步回调。 如果应用使用到多个短视频频繁切换的场景，为了提升切换性能，可以考虑创建多个AVPlayer对象，提前准备下一个视频，详情参见 [在线短视频流畅切换](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smooth-switching)。
+准备播放音频/视频，需在[stateChange]media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle)事件成 功触发至initialized状态后，才能调用。使用Promise异步回调。 如果应用使用到多个短视频频繁切换的场景，为了提升切换性能，可以考虑创建多个AVPlayer对象，提前准备下一个视频，详情参见 [在线短视频流畅切换](https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-smooth-switching)。
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -454,14 +543,14 @@ prepare(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
-| [5400106](../errorcode-media.md#5400106-不支持的规格) | Unsupported format. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
+| 5400106 | Unsupported format. Return by promise. |
 
 ## release
 
@@ -473,7 +562,7 @@ release(callback: AsyncCallback<void>): void
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -481,13 +570,13 @@ release(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | 是 | 销毁播放的回调方法。 |
+| callback | AsyncCallback&lt;void> | 是 | 销毁播放的回调方法。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
 
 ## release
 
@@ -499,7 +588,7 @@ release(): Promise<void>
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -507,13 +596,13 @@ release(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## reset
 
@@ -525,7 +614,7 @@ reset(callback: AsyncCallback<void>): void
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -533,13 +622,13 @@ reset(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | 是 | 重置播放的回调方法。 |
+| callback | AsyncCallback&lt;void> | 是 | 重置播放的回调方法。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
 
 ## reset
 
@@ -551,7 +640,7 @@ reset(): Promise<void>
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -559,27 +648,27 @@ reset(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## seek
 
 ```TypeScript
-seek(timeMs: number, mode?: SeekMode): void
+seek(timeMs: int, mode?: SeekMode): void
 ```
 
-跳转到指定播放位置，只能在prepared/playing/paused/completed状态调用，可以通过 [on('seekDone')](media.AVPlayer.on(type: 'seekDone', callback: Callback<int>))事件确认是否生效。 > **注意：** > > 从API版本26.0.0开始，直播场景支持seek。
+跳转到指定播放位置，只能在prepared/playing/paused/completed状态调用，可以通过 [on('seekDone')]media.AVPlayer.on(type: 'seekDone', callback: Callback<int>)事件确认是否生效。 > **注意：** > > 从API版本26.0.0开始，直播场景支持seek。
 
 **起始版本：** 9
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -587,8 +676,8 @@ seek(timeMs: number, mode?: SeekMode): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| timeMs | number | 是 | 指定的跳转时间节点，单位毫秒（ms），取值范围为[0, [duration](../../../../reference/apis-media-kit/arkts-apis-media-AVPlayer.md#属性)]。<br>当模式为[SEEK_CONTINUOUS](@ohos.multimedia.media:media.SeekMode)时，可以取值-1，表示SEEK_CONTINUOUS模式结束。该值必须为整数。 |
-| mode | SeekMode | 否 | 基于视频I帧的跳转模式，默认为SEEK_PREV_SYNC模式，**仅在视频资源播放时设置**。 |
+| timeMs | int | 是 | 指定的跳转时间节点，单位毫秒（ms），取值范围为  [0, [duration](docroot://reference/apis-media-kit/arkts-apis-media-AVPlayer.md#属性)]。 当模式为  [SEEK_CONTINUOUS](arkts-media-seekmode-e.md#SeekMode)时，可以取值-1，表示SEEK_CONTINUOUS模式结束。该值必须为整数。 |
+| mode | SeekMode | 否 | 基于视频I帧的跳转模式，默认为SEEK_PREV_SYNC模式，仅在视频资源播放时设置。 |
 
 ## seekToDefaultPosition
 
@@ -608,12 +697,12 @@ seekToDefaultPosition(): void
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
 
 ## selectTrack
 
 ```TypeScript
-selectTrack(index: number, mode?: SwitchMode): Promise<void>
+selectTrack(index: int, mode?: SwitchMode): Promise<void>
 ```
 
 使用AVPlayer播放多音视频轨资源时，允许用户以指定模式切换到指定轨道以继续播放。使用Promise异步回调。
@@ -622,7 +711,7 @@ selectTrack(index: number, mode?: SwitchMode): Promise<void>
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -630,21 +719,21 @@ selectTrack(index: number, mode?: SwitchMode): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| index | number | 是 | 多音视频资源的轨道索引。该值必须为整数。<br>取值约束：可通过[getTrackDescription](arkts-media-avplayer-i.md#gettrackdescription-2)接口返回的音视频轨道信息[MediaDescription](@ohos.multimedia.media:media.MediaDescription)中读取的key为MD_KEY_TRACK_INDEX所对应的值。<br>每个key值的Object类型和范围，请参考[MediaDescriptionKey](@ohos.multimedia.media:media.MediaDescriptionKey)对应Key值的说明。 |
-| mode | SwitchMode | 否 | 切换轨道的模式。<br>取值约束：该模式仅适用于视频轨道的切换。<br>默认值：SMOOTH模式，在片段末尾进行切换，以确保视频播放的连续性。**仅在DASH/HLS协议网络流视频轨切换时生效。**<br>从API版本26.0.0开始支持HLS协议网络流视频。<br>**起始版本：** 26.0.0 |
+| index | int | 是 | 多音视频资源的轨道索引。该值必须为整数。 取值约束：可通过  [getTrackDescription]media.AVPlayer.getTrackDescription()接口返回的音视频轨道信息  [MediaDescription](arkts-media-mediadescription-i.md#MediaDescription)中读取的key为MD_KEY_TRACK_INDEX所对应的值。 每个  key值的Object类型和范围，请参考[MediaDescriptionKey](arkts-media-mediadescriptionkey-e.md#MediaDescriptionKey)对应Key值的说明。 |
+| mode | SwitchMode | 否 | 切换轨道的模式。 取值约束：该模式仅适用于视频轨道的切换。 默认值：SMOOTH模式，在片段末尾进行切换，以确保视频播放的连续性。  仅在DASH/HLS协议网络流视频轨切换时生效。 从API版本26.0.0开始支持HLS协议网络流视频。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. Return by promise. |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 401 | The parameter check failed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## setMediaMuted
 
@@ -656,7 +745,7 @@ setMediaMuted(mediaType: MediaType, muted: boolean): Promise<void>
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -664,21 +753,21 @@ setMediaMuted(mediaType: MediaType, muted: boolean): Promise<void>
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| mediaType | MediaType | 是 | 媒体类型枚举。<br>**API version 12-19**：仅支持设置MEDIA_TYPE_AUD。<br>**API version 20及以后**：增加支持设置MEDIA_TYPE_VID。 |
-| muted | boolean | 是 | **API version 12-19**：仅支持设置音频播放策略，表示音频是否静音播放。true为静音播放，false为取消静音播放。<br>**API version 20及以后**：增加支持设置视频播放策略，表示视频画面是否关闭。true为关闭画面，false为恢复画面。 |
+| mediaType | MediaType | 是 | 媒体类型枚举。 API version 12-19：仅支持设置MEDIA_TYPE_AUD。 API version 20及以后：增  加支持设置MEDIA_TYPE_VID。 |
+| muted | boolean | 是 | API version 12-19：仅支持设置音频播放策略，表示音频是否静音播放。true为静音播放，false为取消静音播放。  API version 20及以后：增加支持设置视频播放策略，表示视频画面是否关闭。true为关闭画面，false为恢复画面。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | The parameter check failed. Return by promise. |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 401 | The parameter check failed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## setMediaSource
 
@@ -690,7 +779,7 @@ setMediaSource(src: MediaSource, strategy?: PlaybackStrategy): Promise<void>
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -705,14 +794,14 @@ setMediaSource(src: MediaSource, strategy?: PlaybackStrategy): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. 3.Parameter verification failed. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## setPlaybackStrategy
 
@@ -724,7 +813,7 @@ setPlaybackStrategy(strategy: PlaybackStrategy): Promise<void>
 
 **起始版本：** 12
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -738,14 +827,14 @@ setPlaybackStrategy(strategy: PlaybackStrategy): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象。无返回结果。 |
+| Promise&lt;void> | Promise对象。无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-请求广告参数错误) | Parameter error. Possible causes: 1. Incorrect parameter types. 2. Parameterverification failed. |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 401 | Parameter error. Possible causes: 1. Incorrect parameter types. 2. Parameter  verification failed. |
+| 5400102 | Operation not allowed. Return by promise. |
 
 ## setTrackSelectionFilter
 
@@ -771,25 +860,25 @@ setTrackSelectionFilter(filter : TrackSelectionFilter): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. |
+| 5400102 | Operation not allowed. |
 
 ## setVolume
 
 ```TypeScript
-setVolume(volume: number): void
+setVolume(volume: double): void
 ```
 
-设置媒体播放音量，只能在prepared/playing/paused/completed状态调用，可以通过 [on('volumeChange')](media.AVPlayer.on(type: 'volumeChange', callback: Callback<double>))事件确认是否生效。
+设置媒体播放音量，只能在prepared/playing/paused/completed状态调用，可以通过 [on('volumeChange')]media.AVPlayer.on(type: 'volumeChange', callback: Callback<double>)事件确认是否生效。
 
 **起始版本：** 9
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -797,7 +886,7 @@ setVolume(volume: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| volume | number | 是 | 指定的相对音量大小，取值范围为[0.00-1.00]，1表示最大音量，即100%。 |
+| volume | double | 是 | 指定的相对音量大小，取值范围为[0.00-1.00]，1表示最大音量，即100%。 |
 
 ## stop
 
@@ -809,7 +898,7 @@ stop(callback: AsyncCallback<void>): void
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -817,13 +906,13 @@ stop(callback: AsyncCallback<void>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | 是 | 停止播放的回调方法。 |
+| callback | AsyncCallback&lt;void> | 是 | 停止播放的回调方法。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by callback. |
+| 5400102 | Operation not allowed. Return by callback. |
 
 ## stop
 
@@ -835,7 +924,7 @@ stop(): Promise<void>
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -843,11 +932,11 @@ stop(): Promise<void>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise对象，无返回结果。 |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-当前状态不支持此操作) | Operation not allowed. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
 

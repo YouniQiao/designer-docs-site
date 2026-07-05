@@ -1,6 +1,6 @@
 # @ohos.graphics.colorSpaceManager
 
-The **colorSpaceManager** module provides APIs for creating and managing color space objects and obtaining basic color space attributes.
+本模块提供管理抽象化色域对象的一些基础能力，包括色域对象的创建与色域基础属性的获取等。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The **colorSpaceManager** module provides APIs for creating and managing color s
 ## Modules to Import
 
 ```TypeScript
-import { colorSpaceManager } from '@ohos.graphics.colorSpaceManager';
+import { colorSpaceManager } from '@kit.ArkGraphics2D';
 ```
 
 ## Summary
@@ -18,19 +18,19 @@ import { colorSpaceManager } from '@ohos.graphics.colorSpaceManager';
 
 | Name | Description |
 | --- | --- |
-| [create](arkts-arkgraphics2d-create-f.md#create-1) | Creates a standard color space object. |
-| [create](arkts-arkgraphics2d-create-f.md#create-2) | Creates a custom color space object. |
+| [create](arkts-colorspacemanager-create-f.md#create-1) | 创建标准色域对象。 |
+| [create](arkts-colorspacemanager-create-f.md#create-2) | 创建用户自定义色域对象。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ColorSpaceManager](arkts-arkgraphics2d-colorspacemanager-i.md) | Implements management of color space objects. Before calling any of the following APIs, you must use [create()](arkts-arkgraphics2d-create-f.md#create-1) to create a color space manager. |
-| [ColorSpacePrimaries](arkts-arkgraphics2d-colorspaceprimaries-i.md) | The three primary colors (red, green, blue) and white as defined by the gamut standard, whose positions in the color space are represented by (x, y) coordinates based on real-world chromaticity. |
+| [ColorSpaceManager](arkts-colorspacemanager-colorspacemanager-i.md) | 当前色域对象实例。 下列API示例中都需先使用[create()]{@link colorSpaceManager.create(colorSpaceName: ColorSpace)}获取到ColorSpaceManager实例，再通过此实例调用对 应方法。 |
+| [ColorSpacePrimaries](arkts-colorspacemanager-colorspaceprimaries-i.md) | 色域标准三原色（红、绿、蓝）和白色，基于现实世界的色度，使用(x, y)表示其在色彩空间中的位置。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ColorSpace](arkts-arkgraphics2d-colorspace-e.md) | Enumerates the color space types. |
+| [ColorSpace](arkts-colorspacemanager-colorspace-e.md) | 色域类型枚举。 |
 

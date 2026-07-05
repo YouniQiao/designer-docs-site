@@ -1,11 +1,5 @@
 # sendAccessibilityEvent
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## sendAccessibilityEvent
 
 ```TypeScript
@@ -16,9 +10,9 @@ Sends an accessibility event. This API uses an asynchronous callback to return t
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -27,13 +21,13 @@ Sends an accessibility event. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | EventInfo | Yes | Accessibility event. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation fails, **err** thatcontains data is returned. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation fails, err that  contains data is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
 
 **Example**
 
@@ -55,11 +49,7 @@ accessibility.sendAccessibilityEvent(eventInfo, (err: BusinessError) => {
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
 });
 
-```
 
-Example of auto-focusing:
-
-```TypeScript
 @Entry
 @Component
 struct Index {
@@ -72,9 +62,7 @@ struct Index {
   }
 }
 
-```
 
-```TypeScript
 import { accessibility } from '@kit.AccessibilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
@@ -93,11 +81,7 @@ accessibility.sendAccessibilityEvent(eventInfo, (err: BusinessError) => {
   console.info(`succeeded in sending event, eventInfo is ${eventInfo}`);
 });
 
-```
 
-Example of resource-supported auto-broadcasting18+:
-
-```TypeScript
 import { accessibility } from '@kit.AccessibilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
@@ -118,7 +102,6 @@ accessibility.sendAccessibilityEvent(eventInfo, (err: BusinessError) => {
 
 ```
 
-
 ## sendAccessibilityEvent
 
 ```TypeScript
@@ -129,9 +112,9 @@ Sends an accessibility event. This API uses a promise to return the result.
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 23.
+**Atomic service API:** From API version 23 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 23.
+**Widget capability:** From API version 23 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -145,13 +128,13 @@ Sends an accessibility event. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
+| 401 | Parameter error. Possible causes:  1. Mandatory parameters are left unspecified;  2. Incorrect parameter types;  3. Parameter verification failed. |
 
 **Example**
 

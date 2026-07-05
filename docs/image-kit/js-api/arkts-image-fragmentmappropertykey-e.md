@@ -1,6 +1,10 @@
 # FragmentMapPropertyKey
 
-Enumerates the fragment map information.
+```TypeScript
+enum FragmentMapPropertyKey
+```
+
+表示水印裁剪图图片信息的枚举。
 
 **Since:** 13
 
@@ -12,7 +16,7 @@ Enumerates the fragment map information.
 X_IN_ORIGINAL = 'XInOriginal'
 ```
 
-X coordinate of the top-left corner of the fragment map in the original image.
+水印裁剪图左上角在原始图中的X坐标。
 
 **Since:** 13
 
@@ -24,7 +28,7 @@ X coordinate of the top-left corner of the fragment map in the original image.
 Y_IN_ORIGINAL = 'YInOriginal'
 ```
 
-Y coordinate of the top-left corner of the fragment map in the original image.
+水印裁剪图左上角在原始图中的Y坐标。
 
 **Since:** 13
 
@@ -36,7 +40,7 @@ Y coordinate of the top-left corner of the fragment map in the original image.
 WIDTH = 'FragmentImageWidth'
 ```
 
-Width of the fragment map.
+水印裁剪图的宽。单位：像素（px）。
 
 **Since:** 13
 
@@ -48,7 +52,7 @@ Width of the fragment map.
 HEIGHT = 'FragmentImageHeight'
 ```
 
-Height of the fragment map.
+水印裁剪图的高。单位：像素（px）。
 
 **Since:** 13
 

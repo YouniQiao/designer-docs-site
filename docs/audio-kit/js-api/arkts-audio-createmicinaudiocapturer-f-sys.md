@@ -1,10 +1,4 @@
-# createMicInAudioCapturer (System API)
-
-## Modules to Import
-
-```TypeScript
-import { audio } from '@ohos.multimedia.audio';
-```
+# createMicInAudioCapturer
 
 ## createMicInAudioCapturer
 
@@ -16,9 +10,11 @@ Obtains a special {@link #AudioCapturer} instance. This method uses a promise to
 
 **Since:** 23
 
-**Required permissions:** ohos.permission.MICROPHONE
+**Required permissions:** 
 
-**Model restriction:** This API can be used only in the stage model.
+ ohos.permission.MICROPHONE
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Capturer
 
@@ -28,23 +24,23 @@ Obtains a special {@link #AudioCapturer} instance. This method uses a promise to
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| config | AudioCapturerMicInConfig | Yes | Capturer configuration, see {@link #AudioCapturerMicInConfig}for details. |
+| config | AudioCapturerMicInConfig | Yes | Capturer configuration, see {@link #AudioCapturerMicInConfig}  for details. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioCapturer \| null&gt; | Promise used to return the audio capturer instance,or null if any error occurs. |
+| Promise&lt;AudioCapturer \| null> | Promise used to return the audio capturer instance,  or null if any error occurs. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied, including background recording. |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not system App. |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Capturer creation is not supported, may caused by following problems:<br> 1. Source type is unsupported for this capturer, only {@link #SOURCE_TYPE_UNPROCESSED_VOICE_ASSISTANT} issupported currently.<br> 2. Echo reference signal's config is unsupported, echo reference's sampling rate and format must be thesame as MicIn audio data currently. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | Audio system internal error, such as system process crash. |
+| 201 | Permission denied, including background recording. |
+| 202 | Not system App. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Capturer creation is not supported, may caused by following problems:  1. Source type is unsupported for this capturer, only {@link #SOURCE_TYPE_UNPROCESSED_VOICE_ASSISTANT} is  supported currently.  2. Echo reference signal's config is unsupported, echo reference's sampling rate and format must be the  same as MicIn audio data currently. |
+| 6800301 | Audio system internal error, such as system process crash. |
 
 **Example**
 

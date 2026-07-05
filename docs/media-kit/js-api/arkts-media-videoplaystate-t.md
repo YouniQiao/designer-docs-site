@@ -10,7 +10,7 @@ Describes the video playback state. You can obtain the state through the **state
 
 **Deprecated since:** 9
 
-**Substitutes:** [AVPlayerState](arkts-media-avplayerstate-t.md#avplayerstate)
+**Substitute:** media.AVPlayerState
 
 **System capability:** SystemCapability.Multimedia.Media.VideoPlayer
 

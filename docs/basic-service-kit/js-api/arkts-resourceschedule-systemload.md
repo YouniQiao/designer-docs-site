@@ -9,7 +9,7 @@ This module provides the capability to get systemLoad.
 ## Modules to Import
 
 ```TypeScript
-import { systemLoad } from '@ohos.resourceschedule.systemload';
+import { systemLoad } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -18,15 +18,15 @@ import { systemLoad } from '@ohos.resourceschedule.systemload';
 
 | Name | Description |
 | --- | --- |
-| [getLevel](arkts-basicservices-getlevel-f.md#getlevel-1) |  |
-| [off](arkts-basicservices-off-f.md#off-1) | Unregister system load callback for perception system load change |
-| [on](arkts-basicservices-on-f.md#on-1) | Register system load callback for perception system load change |
+| [getLevel](arkts-systemload-getlevel-f.md#getLevel-1) |  |
+| [off](arkts-systemload-off-f.md#off-1) | Unregister system load callback for perception system load change |
+| [offSystemLoadChange](arkts-systemload-offsystemloadchange-f.md#offSystemLoadChange-1) | Unregister system load callback for perception system load change |
+| [on](arkts-systemload-on-f.md#on-1) | Register system load callback for perception system load change |
+| [onSystemLoadChange](arkts-systemload-onsystemloadchange-f.md#onSystemLoadChange-1) | Register system load callback for perception system load change |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [SystemLoadLevel](arkts-basicservices-systemloadlevel-e.md) | Enumerates the {@link SystemLoadLevel} types. |
-<!--DelEnd-->
+| [SystemLoadLevel](arkts-systemload-systemloadlevel-e.md) | Enumerates the {@link SystemLoadLevel} types. |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { List } from '@ohos.util.List';
+import { List } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -12,11 +12,13 @@ import { List } from '@ohos.util.List';
 
 | Name | Description |
 | --- | --- |
-| [List](arkts-arkts-list-c.md) | List is implemented based on the singly linked list. Each node has a reference pointing to the next element. When querying an element, the system traverses the list from the beginning. |
+| [List](arkts-list-c.md) | List底层基于单向链表实现。每个节点都有一个引用指向下一个元素。查询时需要从头开始遍历。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ListComparatorFn](arkts-arkts-listcomparatorfn-t.md) | This type specifies the comparator of sort in comparation. |
+| [ListComparatorFn](arkts-listcomparatorfn-t.md) | List排序比较器的类型。 |
+| [ListForEachCb](arkts-listforeachcb-t.md) | List的回调函数类型。 |
+| [ListReplaceCb](arkts-listreplacecb-t.md) | List的回调函数类型。 |
 

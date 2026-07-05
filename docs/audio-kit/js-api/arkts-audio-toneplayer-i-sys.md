@@ -1,4 +1,4 @@
-# TonePlayer (System API)
+# TonePlayer
 
 Provides APIs for tone playing.
 
@@ -11,7 +11,7 @@ Provides APIs for tone playing.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## load
@@ -33,7 +33,7 @@ Loads tone. This method uses an asynchronous callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | ToneType | Yes | Tone type to play. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -75,7 +75,7 @@ Loads tone. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Example**
 
@@ -106,7 +106,7 @@ Releases the player. This method uses an asynchronous callback to return the res
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -142,7 +142,7 @@ Releases the player. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Example**
 
@@ -173,7 +173,7 @@ Starts player. This method uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -209,7 +209,7 @@ Starts player. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; |  |
+| Promise&lt;void> |  |
 
 **Example**
 
@@ -240,7 +240,7 @@ Stops player. This method uses an asynchronous callback to return the result.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. |
 
 **Example**
 
@@ -276,7 +276,7 @@ Stops player. This method uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Example**
 

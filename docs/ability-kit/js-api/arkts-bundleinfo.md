@@ -6,7 +6,7 @@
 
 | Name | Description |
 | --- | --- |
-| [BundleInfo](arkts-ability-bundleinfo-depr-i.md) | &gt; **NOTE** &gt; &gt; This API has been supported since API version 7 and deprecated since API version 9. You are advised to use &gt; [bundleManager-BundleInfo](arkts-ability-bundleinfo-depr-i.md#bundleinfo) instead. |
-| [ReqPermissionDetail](arkts-ability-reqpermissiondetail-depr-i.md) | &gt; **NOTE** &gt; &gt; This API has been supported since API version 7 and deprecated since API version 9. You are advised to use &gt; [ReqPermissionDetail](arkts-bundleinfo.md) instead. Provides the detailed information of the permissions to request from the system. |
-| [UsedScene](arkts-ability-usedscene-depr-i.md) | &gt; **NOTE** &gt; &gt; This API has been supported since API version 7 and deprecated since API version 9. You are advised to use &gt; [UsedScene](arkts-ability-usedscene-depr-i.md#usedscene) instead. Describes the application scenario and timing for using the permission. |
+| [BundleInfo](arkts-bundleinfo-i.md) | > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[bundleManager-BundleInfo]{@link bundleInfo:BundleInfo}替代。 |
+| [ReqPermissionDetail](arkts-reqpermissiondetail-i.md) | > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[ReqPermissionDetail]{@link bundleInfo:ReqPermissionDetail}替代。 应用运行时需向系统申请的权限集合的详细信息。 |
+| [UsedScene](arkts-usedscene-i.md) | > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[UsedScene]{@link bundleInfo:UsedScene}替代。 描述权限使用的场景和时机。 |
 

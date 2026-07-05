@@ -9,7 +9,7 @@ Provides methods for enabling/disabling bluetooth or monitoring bluetooth state.
 ## Modules to Import
 
 ```TypeScript
-import { access } from '@ohos.bluetooth.access';
+import { access } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -18,51 +18,37 @@ import { access } from '@ohos.bluetooth.access';
 
 | Name | Description |
 | --- | --- |
-| [addPersistentDeviceId](arkts-connectivity-addpersistentdeviceid-f.md#addpersistentdeviceid-1) | Add a persistent random device address. Once the randomized address is successfully added, the application can save it for an extended period of time. |
-| [convertUuid](arkts-connectivity-convertuuid-f.md#convertuuid-1) | Convert 2-byte and 4-byte UUID strings to the 16-byte UUID string standard used in Bluetooth. |
-| [deletePersistentDeviceId](arkts-connectivity-deletepersistentdeviceid-f.md#deletepersistentdeviceid-1) | Delete a persistent random device address. |
-| [disableBluetooth](arkts-connectivity-disablebluetooth-f.md#disablebluetooth-1) | Disables Bluetooth on a device. |
-| [disableBluetoothAsync](arkts-connectivity-disablebluetoothasync-f.md#disablebluetoothasync-1) | Asynchronous interface for disables Bluetooth on a device. |
-| [enableBluetooth](arkts-connectivity-enablebluetooth-f.md#enablebluetooth-1) | Enables Bluetooth on a device. |
-| [enableBluetoothAsync](arkts-connectivity-enablebluetoothasync-f.md#enablebluetoothasync-1) | Asynchronous interface for enables Bluetooth on a device. |
-| [getPersistentDeviceIds](arkts-connectivity-getpersistentdeviceids-f.md#getpersistentdeviceids-1) | Obtains the persistent randomized device address of the application. |
-| [getState](arkts-connectivity-getstate-f.md#getstate-1) | Obtains the Bluetooth status of a device. |
-| [isBluetoothSupported](arkts-connectivity-isbluetoothsupported-f.md#isbluetoothsupported-1) | Check whether Bluetooth is available. |
-| [isValidRandomDeviceId](arkts-connectivity-isvalidrandomdeviceid-f.md#isvalidrandomdeviceid-1) | Determine whether the randomized device address application can still be used. |
-| [off](arkts-connectivity-off-f.md#off-1) | Unsubscribe the event reported when the Bluetooth state changes. |
-| [on](arkts-connectivity-on-f.md#on-1) | Subscribe the event reported when the Bluetooth state changes. |
+| [addPersistentDeviceId](arkts-access-addpersistentdeviceid-f.md#addPersistentDeviceId-1) | Add a persistent random device address. Once the randomized address is successfully added, the application can save it for an extended period of time. |
+| [convertUuid](arkts-access-convertuuid-f.md#convertUuid-1) | Convert 2-byte and 4-byte UUID strings to the 16-byte UUID string standard used in Bluetooth. |
+| [deletePersistentDeviceId](arkts-access-deletepersistentdeviceid-f.md#deletePersistentDeviceId-1) | Delete a persistent random device address. |
+| [disableBluetooth](arkts-access-disablebluetooth-f.md#disableBluetooth-1) | Disables Bluetooth on a device. |
+| [disableBluetoothAsync](arkts-access-disablebluetoothasync-f.md#disableBluetoothAsync-1) | Asynchronous interface for disables Bluetooth on a device. |
+| [enableBluetooth](arkts-access-enablebluetooth-f.md#enableBluetooth-1) | Enables Bluetooth on a device. |
+| [enableBluetoothAsync](arkts-access-enablebluetoothasync-f.md#enableBluetoothAsync-1) | Asynchronous interface for enables Bluetooth on a device. |
+| <!--DelRow-->[factoryReset](arkts-access-factoryreset-f-sys.md#factoryReset-1) | Restoring bluetooth settings. |
+| <!--DelRow-->[factoryReset](arkts-access-factoryreset-f-sys.md#factoryReset-2) | Restoring bluetooth settings. |
+| <!--DelRow-->[getLocalAddress](arkts-access-getlocaladdress-f-sys.md#getLocalAddress-1) | Obtaining the MAC address of the local device. |
+| [getPersistentDeviceIds](arkts-access-getpersistentdeviceids-f.md#getPersistentDeviceIds-1) | Obtains the persistent randomized device address of the application. |
+| [getState](arkts-access-getstate-f.md#getState-1) | Obtains the Bluetooth status of a device. |
+| [isBluetoothSupported](arkts-access-isbluetoothsupported-f.md#isBluetoothSupported-1) | Check whether Bluetooth is available. |
+| [isValidRandomDeviceId](arkts-access-isvalidrandomdeviceid-f.md#isValidRandomDeviceId-1) | Determine whether the randomized device address application can still be used. |
+| <!--DelRow-->[notifyDialogResult](arkts-access-notifydialogresult-f-sys.md#notifyDialogResult-1) | Notify bluetooth the result of bluetooth dialog. |
+| [off](arkts-access-off-f.md#off-1) | Unsubscribe the event reported when the Bluetooth state changes. |
+| [offStateChange](arkts-access-offstatechange-f.md#offStateChange-1) | Unsubscribe the event reported when the Bluetooth state changes. |
+| [on](arkts-access-on-f.md#on-1) | Subscribe the event reported when the Bluetooth state changes. |
+| [onStateChange](arkts-access-onstatechange-f.md#onStateChange-1) | Subscribe the event reported when the Bluetooth state changes. |
+| <!--DelRow-->[restrictBluetooth](arkts-access-restrictbluetooth-f-sys.md#restrictBluetooth-1) | Restrict Bluetooth BR/EDR ability on a device. |
 
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [factoryReset](arkts-connectivity-factoryreset-f-sys.md#factoryreset-1) | Restoring bluetooth settings. |
-| [factoryReset](arkts-connectivity-factoryreset-f-sys.md#factoryreset-2) | Restoring bluetooth settings. |
-| [getLocalAddress](arkts-connectivity-getlocaladdress-f-sys.md#getlocaladdress-1) | Obtaining the MAC address of the local device. |
-| [notifyDialogResult](arkts-connectivity-notifydialogresult-f-sys.md#notifydialogresult-1) | Notify bluetooth the result of bluetooth dialog. |
-| [restrictBluetooth](arkts-connectivity-restrictbluetooth-f-sys.md#restrictbluetooth-1) | Restrict Bluetooth BR/EDR ability on a device. |
-<!--DelEnd-->
-
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [NotifyDialogResultParams](arkts-connectivity-notifydialogresultparams-i-sys.md) | Describes the result of bluetooth dialog. |
-<!--DelEnd-->
+| <!--DelRow-->[NotifyDialogResultParams](arkts-access-notifydialogresultparams-i-sys.md) | Describes the result of bluetooth dialog. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [BluetoothState](arkts-connectivity-bluetoothstate-e.md) | The enum of bluetooth state. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [DialogType](arkts-connectivity-dialogtype-e-sys.md) | The enum of bluetooth dialog type. |
-<!--DelEnd-->
+| [BluetoothState](arkts-access-bluetoothstate-e.md) | The enum of bluetooth state. |
+| <!--DelRow-->[DialogType](arkts-access-dialogtype-e-sys.md) | The enum of bluetooth dialog type. |
 

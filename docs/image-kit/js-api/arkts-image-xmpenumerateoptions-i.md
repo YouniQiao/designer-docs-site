@@ -1,6 +1,6 @@
 # XMPEnumerateOptions
 
-Describes XMP enumerate option parameters.
+表示XMP枚举选项。
 
 **Since:** 26.0.0
 
@@ -9,7 +9,7 @@ Describes XMP enumerate option parameters.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## isRecursive
@@ -18,13 +18,13 @@ import { image } from '@ohos.multimedia.image';
 isRecursive?: boolean
 ```
 
-The option that controls recursive enabling.
+表示是否进行递归遍历。 true表示进行递归遍历。false表示仅遍历直接子节点。默认为false。
 
 **Type:** boolean
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -34,13 +34,13 @@ The option that controls recursive enabling.
 onlyQualifier?: boolean
 ```
 
-Whether to return only qualifier data. <br>Default value:false.
+表示是否仅遍历限定符节点。 true表示仅遍历限定符节点。false表示遍历所有节点。默认为false。
 
 **Type:** boolean
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

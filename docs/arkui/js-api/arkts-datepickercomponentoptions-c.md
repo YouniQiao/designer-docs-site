@@ -1,0 +1,68 @@
+# DatePickerComponentOptions
+
+Defines options for DatePickerComponent.
+
+**Since:** 26.0.0
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { DisplayMode,TimeFormat,DatePickerComponent,DateMode,DatePickerComponentOptions,DatePickerComponentResult } from '@kit.ArkUI';
+```
+
+## dateOptions
+
+```TypeScript
+dateOptions?: DateOptions
+```
+
+Date options.
+
+**Type:** DateOptions
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## timeOptions
+
+```TypeScript
+timeOptions?: TimeOptions
+```
+
+Time options.
+
+**Type:** TimeOptions
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## displayMode
+
+```TypeScript
+displayMode?: DisplayMode
+```
+
+Display mode of picker.
+
+**Type:** DisplayMode
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

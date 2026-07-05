@@ -1,6 +1,6 @@
 # @ohos.bundle.installer
 
-The module provides APIs for you to install, uninstall, and recover bundles on devices. > **NOTE** > > The APIs provided by this module are system APIs.
+在设备上安装、升级和卸载应用。 > **说明：** > > 本模块为系统接口。
 
 **Since:** 9
 
@@ -11,35 +11,31 @@ The module provides APIs for you to install, uninstall, and recover bundles on d
 ## Modules to Import
 
 ```TypeScript
-import { installer } from '@ohos.bundle.installer';
+import { installer } from '@kit.AbilityKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [getBundleInstaller](arkts-ability-getbundleinstaller-f-sys.md#getbundleinstaller-1) | Obtains a BundleInstaller object. This API uses an asynchronous callback to return the result. |
-| [getBundleInstaller](arkts-ability-getbundleinstaller-f-sys.md#getbundleinstaller-2) | Obtains a BundleInstaller object. This API uses a promise to return the result. |
-| [getBundleInstallerSync](arkts-ability-getbundleinstallersync-f-sys.md#getbundleinstallersync-1) | Obtains a BundleInstaller object. This API is a synchronous API. |
-<!--DelEnd-->
+| <!--DelRow-->[getBundleInstaller](arkts-installer-getbundleinstaller-f-sys.md#getBundleInstaller-1) | 获取BundleInstaller对象。使用callback异步回调。 |
+| <!--DelRow-->[getBundleInstaller](arkts-installer-getbundleinstaller-f-sys.md#getBundleInstaller-2) | 获取BundleInstaller对象。使用Promise异步回调。 |
+| <!--DelRow-->[getBundleInstallerSync](arkts-installer-getbundleinstallersync-f-sys.md#getBundleInstallerSync-1) | 获取并返回BundleInstaller对象。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BundleInstaller](arkts-ability-bundleinstaller-i-sys.md) | Bundle installer interface, include install uninstall recover. |
-| [CreateAppCloneParam](arkts-ability-createappcloneparam-i-sys.md) | Describes the parameters used for creating an application clone. |
-| [DestroyAppCloneParam](arkts-ability-destroyappcloneparam-i-sys.md) | Describes the parameters used for destroying an application clone. |
-| [HashParam](arkts-ability-hashparam-i-sys.md) | Defines the hash parameters for bundle installation and uninstall. |
-| [InstallParam](arkts-ability-installparam-i-sys.md) | Defines the parameters that need to be specified for bundle installation, uninstall, or recovering. |
-| [PGOParam](arkts-ability-pgoparam-i-sys.md) | Defines the parameters of the PGO configuration file. |
-| [Parameters](arkts-ability-parameters-i-sys.md) | Describes the extended parameter information. |
-| [PluginParam](arkts-ability-pluginparam-i-sys.md) | Defines the parameters for installing or uninstalling a plugin. |
-| [UninstallParam](arkts-ability-uninstallparam-i-sys.md) | Defines the parameters required for the uninstall of a shared bundle. |
-| [VerifyCodeParam](arkts-ability-verifycodeparam-i-sys.md) | Defines the information about the code signature file. |
-<!--DelEnd-->
+| <!--DelRow-->[BundleInstaller](arkts-installer-bundleinstaller-i-sys.md) | Bundle installer interface, include install uninstall recover. |
+| <!--DelRow-->[CreateAppCloneParam](arkts-installer-createappcloneparam-i-sys.md) | 创建分身应用可指定的参数信息。 |
+| <!--DelRow-->[DestroyAppCloneParam](arkts-installer-destroyappcloneparam-i-sys.md) | 删除分身应用可指定的参数信息。 |
+| <!--DelRow-->[HashParam](arkts-installer-hashparam-i-sys.md) | 应用程序安装卸载哈希参数信息。 |
+| <!--DelRow-->[InstallParam](arkts-installer-installparam-i-sys.md) | 应用程序安装、卸载或恢复需指定的参数信息。 |
+| <!--DelRow-->[Parameters](arkts-installer-parameters-i-sys.md) | 扩展参数信息。 |
+| <!--DelRow-->[PGOParam](arkts-installer-pgoparam-i-sys.md) | PGO（Profile-guided Optimization）配置文件参数信息。 |
+| <!--DelRow-->[PluginParam](arkts-installer-pluginparam-i-sys.md) | 插件应用安装、卸载的参数信息。 |
+| <!--DelRow-->[UninstallParam](arkts-installer-uninstallparam-i-sys.md) | 共享包卸载需指定的参数信息。 |
+| <!--DelRow-->[VerifyCodeParam](arkts-installer-verifycodeparam-i-sys.md) | 应用程序代码签名文件信息。 |
 

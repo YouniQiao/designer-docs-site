@@ -4,15 +4,8 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ShortcutInfo](arkts-ability-shortcutinfo-depr-i.md) | @link shortcutInfo:ShortcutInfo}替代。 |
-
-<!--Del-->
-### 接口（系统接口）
-
-| 名称 | 说明 |
-| --- | --- |
-| [ShortcutWant](arkts-ability-shortcutwant-depr-i-sys.md) | @link shortcutInfo:ShortcutWant}替代。 |
-<!--DelEnd-->
+| [ShortcutInfo](arkts-shortcutinfo-i.md) | > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[bundleManager-ShortcutInfo]{@link shortcutInfo:ShortcutInfo}替代。 |
+| <!--DelRow-->[ShortcutWant](arkts-shortcutwant-i.md) | > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[bundleManager-ShortcutWant]{@link shortcutInfo:ShortcutWant}替代。 |
 

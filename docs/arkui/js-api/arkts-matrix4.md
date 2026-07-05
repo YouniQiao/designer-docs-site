@@ -1,6 +1,6 @@
 # @ohos.matrix4
 
-Provides matrix transformation capabilities for components, including translation, rotation, and scaling. For details, see [Transformation](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common). **Matrix4** can be used in the following scenarios: In [Transformation](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), the [transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform-2) API uses the **Matrix4** object to display the matrix transformation in two-dimensional transformation, and the [transform3D](../arkts-components/arkts-arkui-commonmethod-c.md#transform3d-1) API uses the **Matrix4** object to set the three-dimensional transformation matrix for a component.
+用于对组件进行[图形变换]{@link common}的各种操作，为组件提供矩阵变换能力，支持对图形进行平移、旋转和缩放等。 Matrix4的使用场景包括： [图形变换]{@link common}中的[transform]{@link CommonMethod#transform(transform: Optional<object>)}接口通过使用图形变换矩阵Matrix4对象显示二维 变换时的矩阵变换，[transform3D]{@link CommonMethod#transform3D}接口通过使用图形变换矩阵Matrix4对象设置组件的三维变换矩阵。
 
 **Since:** 7
 
@@ -9,7 +9,7 @@ Provides matrix transformation capabilities for components, including translatio
 ## Modules to Import
 
 ```TypeScript
-import { matrix4 } from '@ohos.matrix4';
+import { matrix4 } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -18,24 +18,24 @@ import { matrix4 } from '@ohos.matrix4';
 
 | Name | Description |
 | --- | --- |
-| [combine](arkts-arkui-combine-f.md#combine-1) | Combines the effects of two matrices to generate a new matrix object. |
-| [copy](arkts-arkui-copy-f.md#copy-1) | Copies this matrix object. |
-| [identity](arkts-arkui-identity-f.md#identity-1) | Constructs an identity matrix. |
-| [init](arkts-arkui-init-f.md#init-1) | Matrix constructor, which is used to create a 4 x 4 matrix with the input parameters. Column-major order is used. |
-| [invert](arkts-arkui-invert-f.md#invert-1) | Inverts this matrix object. |
-| [rotate](arkts-arkui-rotate-f.md#rotate-1) | Rotates this matrix object along the x, y, and z axes. |
-| [scale](arkts-arkui-scale-f.md#scale-1) | Scales this matrix object along the x, y, and z axes. |
-| [transformPoint](arkts-arkui-transformpoint-f.md#transformpoint-1) | Applies the current transformation effect to a coordinate point. |
-| [translate](arkts-arkui-translate-f.md#translate-1) | Translates this matrix object along the x, y, and z axes. |
+| [combine](arkts-matrix4-combine-f.md#combine-1) | Matrix的叠加函数，可以将两个矩阵的效果叠加起来生成一个新的矩阵对象。 > **说明： |
+| [copy](arkts-matrix4-copy-f.md#copy-1) | Matrix的拷贝函数，可以拷贝一份当前的矩阵对象。 > **说明： |
+| [identity](arkts-matrix4-identity-f.md#identity-1) | Matrix的初始化函数，可以返回一个单位矩阵对象。 |
+| [init](arkts-matrix4-init-f.md#init-1) | Matrix的构造函数，可以通过传入的参数创建一个四阶矩阵，矩阵为列优先。 |
+| [invert](arkts-matrix4-invert-f.md#invert-1) | Matrix的逆函数，可以返回一个当前矩阵对象的逆矩阵，即效果正好相反。 > **说明： |
+| [rotate](arkts-matrix4-rotate-f.md#rotate-1) | Matrix的旋转函数，可以为当前矩阵增加x轴/y轴/z轴旋转效果。 > **说明： |
+| [scale](arkts-matrix4-scale-f.md#scale-1) | Matrix的缩放函数，可以为当前矩阵增加x轴/y轴/z轴缩放效果。 > **说明： |
+| [transformPoint](arkts-matrix4-transformpoint-f.md#transformPoint-1) | Matrix的坐标点转换函数，可以将当前的变换效果作用到一个坐标点上。 > **说明： |
+| [translate](arkts-matrix4-translate-f.md#translate-1) | Matrix的平移函数，可以为当前矩阵增加x轴/y轴/z轴平移效果。 > **说明： |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [Matrix4Transit](arkts-arkui-matrix4transit-i.md) | Implements a **Matrix4Transit** object. |
-| [Point](arkts-arkui-point-i.md) | Defines the data structure of a coordinate point. |
-| [PolyToPolyOptions](arkts-arkui-polytopolyoptions-i.md) | Describes the configuration options for polygon-to-polygon transformation mapping. |
-| [RotateOption](arkts-arkui-rotateoption-i.md) | Describes the rotation parameters. |
-| [ScaleOption](arkts-arkui-scaleoption-i.md) | Describes the scale parameters. |
-| [TranslateOption](arkts-arkui-translateoption-i.md) | Describes the translation parameters. |
+| [Matrix4Transit](arkts-matrix4-matrix4transit-i.md) | 矩阵对象。 |
+| [Point](arkts-matrix4-point-i.md) | 坐标点的数据结构。 |
+| [PolyToPolyOptions](arkts-matrix4-polytopolyoptions-i.md) | 多边形到多边形的映射选项。 |
+| [RotateOption](arkts-matrix4-rotateoption-i.md) | 旋转参数。 |
+| [ScaleOption](arkts-matrix4-scaleoption-i.md) | 缩放参数。 |
+| [TranslateOption](arkts-matrix4-translateoption-i.md) | 平移参数。 |
 

@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 枚举（系统接口）
+### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [MultiAppMode](arkts-ability-multiappmode-e-sys.md) | 定义应用是否支持多开模式。 |
-<!--DelEnd-->
+| <!--DelRow-->[MultiAppMode](arkts-multiappmode-e.md) | 定义应用是否支持多开模式。 |
 

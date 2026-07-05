@@ -1,0 +1,22 @@
+# ImageSmoothingQuality
+
+```TypeScript
+declare type ImageSmoothingQuality = "high" | "low" | "medium"
+```
+
+定义图片平滑度类型。取值类型为下表类型中的并集。
+
+**起始版本：** 8
+
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
+
+**卡片能力：** 从API version 9开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+| 类型 | 说明 |
+| --- | --- |
+| "high" | 高画质 |
+| "low" | 低画质 |
+| "medium" | 中画质 |
+

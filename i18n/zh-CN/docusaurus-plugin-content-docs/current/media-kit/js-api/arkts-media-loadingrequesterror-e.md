@@ -1,6 +1,10 @@
 # LoadingRequestError
 
-枚举，数据加载过程中状态变化的原因。
+```TypeScript
+enum LoadingRequestError
+```
+
+Enumerates the reasons for data loading status changes.
 
 **起始版本：** 18
 
@@ -12,11 +16,11 @@
 LOADING_ERROR_SUCCESS = 0
 ```
 
-由客户端返回，表示已经推送到资源末尾。
+Returned by the client to indicate that the end of the resource.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -26,11 +30,11 @@ LOADING_ERROR_SUCCESS = 0
 LOADING_ERROR_NOT_READY = 1
 ```
 
-由客户端返回，表示资源尚未准备好可供访问。
+Returned by the client to indicate that the resource is not ready for access.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -40,11 +44,11 @@ LOADING_ERROR_NOT_READY = 1
 LOADING_ERROR_NO_RESOURCE = 2
 ```
 
-由客户端返回，表示请求的资源URL不存在。
+Returned by the client to indicate that the requested resource URL does not exist.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -54,11 +58,11 @@ LOADING_ERROR_NO_RESOURCE = 2
 LOADING_ERROR_INVAID_HANDLE = 3
 ```
 
-由客户端返回，表示请求的资源句柄uuid无效。
+Returned by the client to indicate that the ID of the requested resource handle (specified by **uuid**) is invalid.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -68,11 +72,11 @@ LOADING_ERROR_INVAID_HANDLE = 3
 LOADING_ERROR_ACCESS_DENIED = 4
 ```
 
-由客户端返回，表示客户端没有权限请求该资源。
+Returned by the client to indicate that the client does not have permission to request the resource.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -82,11 +86,11 @@ LOADING_ERROR_ACCESS_DENIED = 4
 LOADING_ERROR_ACCESS_TIMEOUT = 5
 ```
 
-由客户端返回，表示访问资源过程超时。
+Returned by the client to indicate that the access to the resource times out.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -96,11 +100,11 @@ LOADING_ERROR_ACCESS_TIMEOUT = 5
 LOADING_ERROR_AUTHORIZE_FAILED = 6
 ```
 
-由客户端返回，表示授权失败。
+Returned by the client to indicate that authorization fails.
 
 **起始版本：** 18
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

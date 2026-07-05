@@ -4,7 +4,7 @@
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ModuleInfo](arkts-ability-moduleinfo-depr-i.md) | 应用程序的模块信息。 @link hapModuleInfo:HapModuleInfo}替代。 |
+| [ModuleInfo](arkts-moduleinfo-i.md) | 应用程序的模块信息。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-HapModuleInfo]{@link hapModuleInfo:HapModuleInfo}替代。 |
 

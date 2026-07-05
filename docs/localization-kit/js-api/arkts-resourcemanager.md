@@ -1,6 +1,6 @@
 # @ohos.resourceManager
 
-The **resourceManager** module provides the resource management functionality. It allows an application to obtain the best matched application resources or system resources based on the specified [configuration](arkts-localization-configuration-c.md#configuration). For details about the matching rules, see [Matching Resources](../../../../quick-start/resource-categories-and-access.md#matching-resources). The configuration includes language, region, screen orientation, color mode, mobile country code (MCC), mobile network code (MNC) , device capability, and density.
+本模块提供资源获取能力。根据当前的[Configuration]{@link resourceManager.Configuration}配置，获取最匹配的应用资源或系统资源。 具体匹配规则参考[资源匹配](docroot://quick-start/resource-categories-and-access.md#资源匹配)。 Configuration配置包括语言、区域、横竖屏、颜色模式、Mcc（移动国家码）和Mnc（移动网络码）、Device capability（设备类型）、Density（分辨率）。
 
 **Since:** 6
 
@@ -9,7 +9,7 @@ The **resourceManager** module provides the resource management functionality. I
 ## Modules to Import
 
 ```TypeScript
-import { resourceManager } from '@ohos.resourceManager';
+import { resourceManager } from '@kit.LocalizationKit';
 ```
 
 ## Summary
@@ -18,40 +18,40 @@ import { resourceManager } from '@ohos.resourceManager';
 
 | Name | Description |
 | --- | --- |
-| [getResourceManager](arkts-localization-getresourcemanager-f.md#getresourcemanager-1) | Obtains the **ResourceManager** object of this application. This API uses an asynchronous callback to return the result. |
-| [getResourceManager](arkts-localization-getresourcemanager-f.md#getresourcemanager-2) | Obtains the **ResourceManager** object of the specified application. This API uses an asynchronous callback to return the result. |
-| [getResourceManager](arkts-localization-getresourcemanager-f.md#getresourcemanager-3) | Obtains the **ResourceManager** object of this application. This API uses a promise to return the result. |
-| [getResourceManager](arkts-localization-getresourcemanager-f.md#getresourcemanager-4) | Obtains the **ResourceManager** object of the specified application. This API uses a promise to return the result. |
-| [getSysResourceManager](arkts-localization-getsysresourcemanager-f.md#getsysresourcemanager-1) | Obtains a system **ResourceManager** object. |
-| [getSystemResourceManager](arkts-localization-getsystemresourcemanager-f.md#getsystemresourcemanager-1) | Obtains a system **ResourceManager** object. &gt; **NOTE** &gt; &gt; The **Configuration** field in the **ResourceManager** object obtained via this API uses the default value, &gt; which is as follows: &gt; {"locale": "", "direction": -1, "deviceType": -1, "screenDensity": 0, "colorMode": 1, "mcc": 0, "mnc": 0}. |
+| [getResourceManager](arkts-resourcemanager-getresourcemanager-f.md#getResourceManager-1) | 获取当前应用的资源管理对象，使用callback异步回调。 |
+| [getResourceManager](arkts-resourcemanager-getresourcemanager-f.md#getResourceManager-2) | 获取指定应用的资源管理对象，使用callback异步回调。 |
+| [getResourceManager](arkts-resourcemanager-getresourcemanager-f.md#getResourceManager-3) | 获取当前应用的资源管理对象，使用Promise异步回调。 |
+| [getResourceManager](arkts-resourcemanager-getresourcemanager-f.md#getResourceManager-4) | 获取指定应用的资源管理对象，使用Promise异步回调。 |
+| [getSysResourceManager](arkts-resourcemanager-getsysresourcemanager-f.md#getSysResourceManager-1) | 获取系统资源管理对象。 |
+| [getSystemResourceManager](arkts-resourcemanager-getsystemresourcemanager-f.md#getSystemResourceManager-1) | 获取系统资源管理ResourceManager对象。 > **说明** > > 当前接口获取到的系统资源管理ResourceManager对象中的Configuration为默认值。默认值如下： > {"locale": "", "direction": -1, "deviceType": -1, "screenDensity": 0, "colorMode": 1, "mcc": 0, "mnc": 0}。 |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [Configuration](arkts-localization-configuration-c.md) | Defines the device configuration. |
-| [DeviceCapability](arkts-localization-devicecapability-c.md) | Defines the device capability. |
+| [Configuration](arkts-resourcemanager-configuration-c.md) | 表示当前设备的状态。 |
+| [DeviceCapability](arkts-resourcemanager-devicecapability-c.md) | 表示设备支持的能力。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AsyncCallback](arkts-localization-asynccallback-i.md) | The ResourceManager callback. |
-| [ResourceManager](arkts-localization-resourcemanager-i.md) | Provides APIs for accessing application resources and system resources. &gt; **NOTE** &gt; &gt; - The methods involved in **ResourceManager** are applicable only to the TypeScript-based declarative development &gt; paradigm. &gt; &gt; - Resource files are defined in the **resources** directory of the project. You can obtain resource values such &gt; as strings, string arrays, and colors based on the specified **resName**, **resId**, or **Resource** object. &gt; **resName** indicates the resource name, **resId** indicates the resource ID, which can be obtained through `$r( &gt; *resource-address*).id`, for example, `$r('app.string.test').id`. &gt; &gt; - No matter whether resources are in the same HAP or different HAPs or HSPs, you are advised to use the API with &gt; **resName** or **resId** specified. Using the **Resource** object will take a longer time. If the resources are &gt; in different HAPs or HSPs, you first need to use &gt; [createModuleContext](../../apis-ability-kit/arkts-apis/arkts-ability-createmodulecontext-f.md#createmodulecontext-1) &gt; to create the context of the corresponding module and then call the API with **resName** or **resId** specified. &gt; For details, see &gt; [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources). &gt; &gt; - In API version 22 and earlier versions, an exception is thrown due to an invalid ID when the intermediate-code &gt; HAR or bytecode HAR accesses resources through resource ID-related APIs. From API version 23, the &gt; intermediate-code HAR or bytecode HAR can properly access resources through resource ID-related APIs. &gt; For details, see [Accessing Resources](../../../../quick-start/resource-categories-and-access.md#accessing-resources). &gt; &gt; - For details about the content of the test files used in the sample code, see &gt; [Appendix](../../../../reference/apis-localization-kit/js-apis-resource-manager.md#appendix). |
-
-### Enums
-
-| Name | Description |
-| --- | --- |
-| [ColorMode](arkts-localization-colormode-e.md) | Defines the color mode of the current device. |
-| [DeviceType](arkts-localization-devicetype-e.md) | Enumerates the device types. |
-| [Direction](arkts-localization-direction-e.md) | Enumerates the screen directions. |
-| [ScreenDensity](arkts-localization-screendensity-e.md) | Enumerates the screen density types. |
+| [AsyncCallback](arkts-resourcemanager-asynccallback-i.md) | The ResourceManager callback. |
+| [ResourceManager](arkts-resourcemanager-resourcemanager-i.md) | 提供访问应用资源和系统资源的能力。 > **说明：** > > - ResourceManager涉及到的方法，仅限基于TS扩展的声明式开发范式使用。 > > - 资源文件在工程的resources目录中定义，通过resName、resId、Resource对象等可以获取对应的字符串、字符串数组、颜色等资源值，resName为资源名称，resId可通过`$r(资源地址).id`的方式 > 获取，例如`$r('app.string.test').id`。 > > - 单HAP包获取自身资源、跨HAP/HSP包获取资源，由于入参为Resource的接口相比于入参为resName、resId的接口耗时更长，因此更推荐使用参数为resName或resId的接口。跨HAP/HSP包获取资源， > **需要先使用[createModuleContext]{@link @ohos.app.ability.application:application.createModuleContext(context: Context, moduleName: string)}创建对应module的context** > ，再调用参数为resName或resId的接口。更多请参考[资源访问](docroot://quick-start/resource-categories-and-access.md#资源访问)。 > > - 在API version 22及之前版本，中间码HAR、字节码HAR通过资源ID相关接口访问资源时，因ID无效会抛出异常；从API version 23开始，中间码HAR、字节码HAR通过资源ID相关接口可以正常访问资源， > 更多请参考[资源访问](docroot://quick-start/resource-categories-and-access.md#资源访问)。 > > - 示例代码中test文件的具体内容请参考[附录](docroot://reference/apis-localization-kit/js-apis-resource-manager.md#附录)。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [RawFileDescriptor](arkts-localization-rawfiledescriptor-t.md) | File descriptor (fd) of the HAP where the rawfile is located. |
-| [Resource](arkts-localization-resource-t.md) | Resource information, including the resource ID, application package name, and module name. Generally, you can use $r to obtain the resource information. |
+| [RawFileDescriptor](arkts-resourcemanager-rawfiledescriptor-t.md) | 表示rawfile文件所在HAP的文件描述符（fd）。 |
+| [Resource](arkts-resourcemanager-resource-t.md) | 表示资源信息，包含资源ID值、应用包名、模块名称等信息，一般可使用$r方式获取。 |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [ColorMode](arkts-resourcemanager-colormode-e.md) | 用于表示当前设备颜色模式。 |
+| [DeviceType](arkts-resourcemanager-devicetype-e.md) | 用于表示当前设备类型。 |
+| [Direction](arkts-resourcemanager-direction-e.md) | 用于表示设备屏幕方向。 |
+| [ScreenDensity](arkts-resourcemanager-screendensity-e.md) | 用于表示当前设备屏幕密度。 |
 

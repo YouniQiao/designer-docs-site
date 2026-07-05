@@ -4,7 +4,7 @@
 export type StartAbilityParameter = _StartAbilityParameter
 ```
 
-Defines the level-2 module StartAbilityParameter.
+StartAbilityParameter二级模块。
 
 **Since:** 9
 

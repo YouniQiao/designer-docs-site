@@ -9,7 +9,7 @@ The **DataAbility** module provides APIs to create predicates for querying data 
 ## Modules to Import
 
 ```TypeScript
-import { dataAbility } from '@ohos.data.dataAbility';
+import { dataAbility } from '@kit.ArkData';
 ```
 
 ## Summary
@@ -18,17 +18,17 @@ import { dataAbility } from '@ohos.data.dataAbility';
 
 | Name | Description |
 | --- | --- |
-| [createRdbPredicates](arkts-arkdata-createrdbpredicates-f.md#createrdbpredicates-1) | Creates an **RdbPredicates** object with a table name and **DataAbilityPredicates** object. |
+| [createRdbPredicates](arkts-dataability-createrdbpredicates-f.md#createRdbPredicates-1) | Creates an **RdbPredicates** object with a table name and **DataAbilityPredicates** object. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [DataAbilityPredicates](arkts-arkdata-dataabilitypredicates-c.md) | Provides APIs for creating diverse query conditions. |
+| [DataAbilityPredicates](arkts-dataability-dataabilitypredicates-c.md) | Provides APIs for creating diverse query conditions. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ValueType](arkts-arkdata-valuetype-t.md) | Defines the value types. |
+| [ValueType](arkts-dataability-valuetype-t.md) | Defines the value types. |
 

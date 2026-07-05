@@ -2,7 +2,7 @@
 
 OIS (Optical Image Stabilization) interface.
 
-**Inheritance/Implementation:** OIS extends [OISQuery](arkts-camera-oisquery-i.md#oisquery)
+**Inheritance:** OISextends: OISQuery.
 
 **Since:** 24
 
@@ -11,7 +11,7 @@ OIS (Optical Image Stabilization) interface.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## setOISMode
@@ -24,9 +24,9 @@ Sets the OIS mode.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -40,22 +40,22 @@ Sets the OIS mode.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
+| 7400103 | Session not config. |
 
 ## setOISModeCustom
 
 ```TypeScript
-setOISModeCustom(pitch: number, yaw: number): void
+setOISModeCustom(pitch: double, yaw: double): void
 ```
 
 Sets custom OIS bias values for each axis.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -63,13 +63,13 @@ Sets custom OIS bias values for each axis.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pitch | number | Yes | Bias value for pitch axis. |
-| yaw | number | Yes | Bias value for yaw axis. |
+| pitch | double | Yes | Bias value for pitch axis. |
+| yaw | double | Yes | Bias value for yaw axis. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 7400102 | Operation not allowed, the inputDevice or the session is abnormal. |
+| 7400103 | Session not config. |
 

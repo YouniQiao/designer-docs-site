@@ -1,0 +1,151 @@
+# getRealActiveTime
+
+## getRealActiveTime
+
+```TypeScript
+function getRealActiveTime(isNano: boolean, callback: AsyncCallback<number>): void
+```
+
+获取自系统启动以来经过的时间，不包括深度睡眠时间，使用callback异步回调。
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** @ohos.systemDateTime:systemDateTime.getUptime
+
+**System capability:** SystemCapability.MiscServices.Time
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| isNano | boolean | Yes | 返回结果是否为纳秒数。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
+| callback | AsyncCallback&lt;number> | Yes | 回调函数，返回自系统启动以来经过的时间，不包括深度睡眠时间。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| -1 |  |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  systemTime.getRealActiveTime(true, (error: BusinessError, time: number) => {
+    if (error) {
+      console.info(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+      return;
+    }
+    console.info(`Succeeded in getting real active time : ${time}`);
+  });
+} catch(e) {
+  let error = e as BusinessError;
+  console.info(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+}
+
+```
+
+## getRealActiveTime
+
+```TypeScript
+function getRealActiveTime(callback: AsyncCallback<number>): void
+```
+
+获取自系统启动以来经过的时间，不包括深度睡眠时间，使用callback异步回调。
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** @ohos.systemDateTime:systemDateTime.getUptime
+
+**System capability:** SystemCapability.MiscServices.Time
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;number> | Yes | 回调函数，返回自系统启动以来经过的时间（ms），不包括深度睡眠时间。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| -1 |  |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  systemTime.getRealActiveTime((error: BusinessError, time: number) => {
+    if (error) {
+      console.info(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+      return;
+    }
+    console.info(`Succeeded in getting real active time : ${time}`);
+  });
+} catch(e) {
+  let error = e as BusinessError;
+  console.info(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+}
+
+```
+
+## getRealActiveTime
+
+```TypeScript
+function getRealActiveTime(isNano?: boolean): Promise<number>
+```
+
+获取自系统启动以来经过的时间，不包括深度睡眠时间，使用Promise异步回调。
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** @ohos.systemDateTime:systemDateTime.getUptime
+
+**System capability:** SystemCapability.MiscServices.Time
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| isNano | boolean | No | 返回结果是否为纳秒数，默认值为false。 - true：表示返回结果为纳秒数（ns）。 - false：表示返回结果为毫秒数（ms）。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;number> | Promise对象，返回自系统启动以来经过的时间，但不包括深度睡眠时间。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| -1 |  |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+try {
+  systemTime.getRealActiveTime().then((time: number) => {
+    console.info(`Succeeded in getting real active time : ${time}`);
+  }).catch((error: BusinessError) => {
+    console.info(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+  });
+} catch(e) {
+  let error = e as BusinessError;
+  console.info(`Failed to get real active time. message: ${error.message}, code: ${error.code}`);
+}
+
+```
+

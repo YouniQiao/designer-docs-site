@@ -9,7 +9,7 @@ Defines a higher-resolution image object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## release
@@ -22,7 +22,7 @@ Releases output resources. This API uses a promise to return the result.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +30,39 @@ Releases output resources. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
+
+## depthData
+
+```TypeScript
+depthData?: DepthData
+```
+
+Depth data.
+
+**Type:** DepthData
+
+**Since:** 13
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+## raw
+
+```TypeScript
+raw?: image.Image
+```
+
+Raw image.
+
+**Type:** image.Image
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
 
 ## main
 
@@ -44,7 +76,7 @@ Full-quality image.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

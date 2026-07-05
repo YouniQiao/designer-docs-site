@@ -1,15 +1,9 @@
-# getAVScreenCaptureConfigurableParameters (System API)
-
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
+# getAVScreenCaptureConfigurableParameters
 
 ## getAVScreenCaptureConfigurableParameters
 
 ```TypeScript
-function getAVScreenCaptureConfigurableParameters(sessionId: number): Promise<string>
+function getAVScreenCaptureConfigurableParameters(sessionId: int): Promise<string>
 ```
 
 get Configurations which user can changes from AVScreenCapture server
@@ -24,20 +18,20 @@ get Configurations which user can changes from AVScreenCapture server
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sessionId | number | Yes | The AVScreenCapture server session ID. |
+| sessionId | int | Yes | The AVScreenCapture server session ID. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;string&gt; | Returns a configurable configuration item string. |
+| Promise&lt;string> | Returns a configurable configuration item string. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) |  |
-| [5400109](../errorcode-media.md#5400109-session-id-does-not-exist) | Sessions not exist. Return by promise. |
+| 202 |  |
+| 5400109 | Sessions not exist. Return by promise. |
 
 **Example**
 

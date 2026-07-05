@@ -1,11 +1,5 @@
 # isFlashReminderEnabled
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## isFlashReminderEnabled
 
 ```TypeScript
@@ -16,7 +10,7 @@ Checks whether flash alerts mode is enabled. This API uses a promise to return t
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -24,7 +18,7 @@ Checks whether flash alerts mode is enabled. This API uses a promise to return t
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;boolean&gt; | Promise used to return the result. Returns **true** if flash alerts mode is enabled;returns **false** otherwise. |
+| Promise&lt;boolean> | Promise used to return the result. Returns true if flash alerts mode is enabled;  returns false otherwise. |
 
 **Example**
 

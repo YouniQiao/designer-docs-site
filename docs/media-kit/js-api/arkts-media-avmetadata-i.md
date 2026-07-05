@@ -1,6 +1,6 @@
 # AVMetadata
 
-Defines the audio and video metadata. Parameters that are not declared as read-only in [AVRecorderConfig](#AVRecorderConfig) can be used as input parameters for recording of [AVRecorder](#AVRecorder).
+Defines the audio and video metadata. Parameters that are not declared as read-only in [AVRecorderConfig]#AVRecorderConfig can be used as input parameters for recording of [AVRecorder]#AVRecorder.
 
 **Since:** 11
 
@@ -9,90 +9,20 @@ Defines the audio and video metadata. Parameters that are not declared as read-o
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
-## album
+## hasVideo
 
 ```TypeScript
-album?: string
+hasVideo?: string
 ```
 
-Title of the album. This parameter is not supported in AVRecorder settings.
+Whether the media asset contains a video. This parameter is not supported in AVRecorder settings.
 
 **Type:** string
 
 **Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## albumArtist
-
-```TypeScript
-albumArtist?: string
-```
-
-Artist of the album. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## artist
-
-```TypeScript
-artist?: string
-```
-
-Artist of the media asset. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## author
-
-```TypeScript
-author?: string
-```
-
-Author of the media asset. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## composer
-
-```TypeScript
-composer?: string
-```
-
-Composer of the media asset. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## customInfo
-
-```TypeScript
-customInfo?: Record<string, string>
-```
-
-Custom key-value mappings obtained from **moov.meta.list**.
-
-**Type:** Record<string, string>
-
-**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
@@ -103,78 +33,6 @@ dateTime?: string
 ```
 
 Time when the media asset is created. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## dateTimeFormat
-
-```TypeScript
-dateTimeFormat?: string
-```
-
-Time when the media asset is created. The value is in the YYYY-MM-DD HH:mm:ss format. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## description
-
-```TypeScript
-description?: string
-```
-
-Description of the media asset. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 23
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## duration
-
-```TypeScript
-duration?: string
-```
-
-Duration of the media asset. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## encoder
-
-```TypeScript
-encoder?: string
-```
-
-The identifier that represents the software or hardware and settings used for encoding. This parameter is not supported in AVRecorder settings.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## genre
-
-```TypeScript
-genre?: string
-```
-
-Type or genre of the media asset.
 
 **Type:** string
 
@@ -196,17 +54,101 @@ Whether the media asset contains audio. This parameter is not supported in AVRec
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## hasVideo
+## artist
 
 ```TypeScript
-hasVideo?: string
+artist?: string
 ```
 
-Whether the media asset contains a video. This parameter is not supported in AVRecorder settings.
+Artist of the media asset. This parameter is not supported in AVRecorder settings.
 
 **Type:** string
 
 **Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## composer
+
+```TypeScript
+composer?: string
+```
+
+Composer of the media asset. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## author
+
+```TypeScript
+author?: string
+```
+
+Author of the media asset. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## album
+
+```TypeScript
+album?: string
+```
+
+Title of the album. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## videoOrientation
+
+```TypeScript
+videoOrientation?: string
+```
+
+Video rotation direction, in degrees.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## description
+
+```TypeScript
+description?: string
+```
+
+Description of the media asset. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## customInfo
+
+```TypeScript
+customInfo?: Record<string, string>
+```
+
+Custom key-value mappings obtained from **moov.meta.list**.
+
+**Type:** Record<string, string>
+
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
@@ -224,20 +166,6 @@ HDR type of the media asset. This parameter is not supported in AVRecorder setti
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## location
-
-```TypeScript
-location?: Location
-```
-
-Geographical location of the media asset.
-
-**Type:** Location
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
 ## mimeType
 
 ```TypeScript
@@ -245,20 +173,6 @@ mimeType?: string
 ```
 
 MIME type of the media asset. This parameter is not supported in AVRecorder settings. Some example mime types include: "video/mp4", "audio/mp4", "audio/amr-wb".
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## sampleRate
-
-```TypeScript
-sampleRate?: string
-```
-
-Audio sampling rate, in Hz. This parameter is not supported in AVRecorder settings.
 
 **Type:** string
 
@@ -280,13 +194,29 @@ Title of the media asset. This parameter is not supported in AVRecorder settings
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## trackCount
+## encoder
 
 ```TypeScript
-trackCount?: string
+encoder?: string
 ```
 
-Number of tracks of the media asset. This parameter is not supported in AVRecorder settings.
+The identifier that represents the software or hardware and settings used for encoding. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## sampleRate
+
+```TypeScript
+sampleRate?: string
+```
+
+Audio sampling rate, in Hz. This parameter is not supported in AVRecorder settings.
 
 **Type:** string
 
@@ -322,20 +252,6 @@ Video height, in px. This parameter is not supported in AVRecorder settings.
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## videoOrientation
-
-```TypeScript
-videoOrientation?: string
-```
-
-Video rotation direction, in degrees.
-
-**Type:** string
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
 ## videoWidth
 
 ```TypeScript
@@ -347,6 +263,106 @@ Video width, in px. This parameter is not supported in AVRecorder settings.
 **Type:** string
 
 **Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## duration
+
+```TypeScript
+duration?: string
+```
+
+Duration of the media asset. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## trackCount
+
+```TypeScript
+trackCount?: string
+```
+
+Number of tracks of the media asset. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## dateTimeFormat
+
+```TypeScript
+dateTimeFormat?: string
+```
+
+Time when the media asset is created. The value is in the YYYY-MM-DD HH:mm:ss format. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## genre
+
+```TypeScript
+genre?: string
+```
+
+Type or genre of the media asset.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## albumArtist
+
+```TypeScript
+albumArtist?: string
+```
+
+Artist of the album. This parameter is not supported in AVRecorder settings.
+
+**Type:** string
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## gltf_offset
+
+```TypeScript
+gltf_offset?: string
+```
+
+The offset value of GLTF 3D model in media file. This parameter is not supported in AVRecorder settings. If the media file has no GLTF 3D model, gltf_offset is undefined.
+
+**Type:** string
+
+**Since:** 21
+
+**System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+**System API:** This is a system API.
+
+## location
+
+```TypeScript
+location?: Location
+```
+
+Geographical location of the media asset.
+
+**Type:** Location
+
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Media.AVMetadataExtractor
 

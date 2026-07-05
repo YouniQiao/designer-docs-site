@@ -1,4 +1,4 @@
-# ApertureInfo (System API)
+# ApertureInfo
 
 Describes the aperture information.
 
@@ -11,18 +11,18 @@ Describes the aperture information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## aperture
 
 ```TypeScript
-readonly aperture?: number
+readonly aperture?: double
 ```
 
 Aperture.
 
-**Type:** number
+**Type:** double
 
 **Since:** 12
 

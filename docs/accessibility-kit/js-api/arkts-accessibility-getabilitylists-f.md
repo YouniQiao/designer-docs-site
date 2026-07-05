@@ -1,11 +1,5 @@
 # getAbilityLists
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## getAbilityLists
 
 ```TypeScript
@@ -22,7 +16,7 @@ Obtains the accessibility application list. This API uses an asynchronous callba
 
 **Deprecated since:** 9
 
-**Substitutes:** getAccessibilityExtensionList(abilityType:
+**Substitute:** accessibility.getAccessibilityExtensionList(abilityType:
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -32,7 +26,7 @@ Obtains the accessibility application list. This API uses an asynchronous callba
 | --- | --- | --- | --- |
 | abilityType | AbilityType | Yes | Accessibility application type. |
 | stateType | AbilityState | Yes | Accessibility application status. |
-| callback | AsyncCallback&lt;Array&lt;AccessibilityAbilityInfo&gt;&gt; | Yes | Callback used to return the accessibilityapplication list. If the operation is successful, **err** is **undefined** and **data** is the accessibilityapplication list. Otherwise, it is an error object. |
+| callback | AsyncCallback&lt;Array&lt;AccessibilityAbilityInfo>> | Yes | Callback used to return the accessibility  application list. If the operation is successful, err is undefined and data is the accessibility  application list. Otherwise, it is an error object. |
 
 **Example**
 
@@ -53,7 +47,6 @@ accessibility.getAbilityLists(abilityType, abilityState, (err: BusinessError, da
 
 ```
 
-
 ## getAbilityLists
 
 ```TypeScript
@@ -66,7 +59,7 @@ Obtains the accessibility application list. This API uses a promise to return th
 
 **Deprecated since:** 9
 
-**Substitutes:** getAccessibilityExtensionList(abilityType:
+**Substitute:** accessibility.getAccessibilityExtensionList(abilityType:
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -81,7 +74,7 @@ Obtains the accessibility application list. This API uses a promise to return th
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;AccessibilityAbilityInfo&gt;&gt; | Promise used to return the accessibility application list. |
+| Promise&lt;Array&lt;AccessibilityAbilityInfo>> | Promise used to return the accessibility application list. |
 
 **Example**
 

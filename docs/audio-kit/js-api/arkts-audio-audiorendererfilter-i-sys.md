@@ -1,4 +1,4 @@
-# AudioRendererFilter (System API)
+# AudioRendererFilter
 
 Describes audio renderer filter.
 
@@ -11,24 +11,8 @@ Describes audio renderer filter.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## rendererId
-
-```TypeScript
-rendererId?: number
-```
-
-AudioRenderer id.
-
-**Type:** number
-
-**Since:** 9
-
-**System capability:** SystemCapability.Multimedia.Audio.Renderer
-
-**System API:** This is a system API.
 
 ## rendererInfo
 
@@ -49,16 +33,32 @@ Renderer information.
 ## uid
 
 ```TypeScript
-uid?: number
+uid?: int
 ```
 
 Application uid.
 
-**Type:** number
+**Type:** int
 
 **Since:** 9
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
+## rendererId
+
+```TypeScript
+rendererId?: int
+```
+
+AudioRenderer id.
+
+**Type:** int
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
 
 **System API:** This is a system API.
 

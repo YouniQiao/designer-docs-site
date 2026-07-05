@@ -1,4 +1,8 @@
-# EffectSuggestionType (System API)
+# EffectSuggestionType
+
+```TypeScript
+enum EffectSuggestionType
+```
 
 Enum for effect suggestion.
 

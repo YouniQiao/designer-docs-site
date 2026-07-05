@@ -1,12 +1,16 @@
 # MediaErrorCode
 
-媒体服务错误类型枚举。 > **说明：** > > 从API version 8开始支持，从API version 11开始废弃，建议使用[AVErrorCode](arkts-media-averrorcode-e.md#averrorcode)替代。
+```TypeScript
+enum MediaErrorCode
+```
+
+Enumerates the media error codes.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** [AVErrorCode](arkts-media-averrorcode-e.md#averrorcode)
+**替代接口：** media.AVErrorCode
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -16,13 +20,13 @@
 MSERR_OK = 0
 ```
 
-表示操作成功。
+The operation is successful.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_OK
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_OK
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -32,13 +36,13 @@ MSERR_OK = 0
 MSERR_NO_MEMORY = 1
 ```
 
-表示申请内存失败，系统可能无可用内存。
+Failed to allocate memory. The system may have no available memory.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_NO_MEMORY
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_NO_MEMORY
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -48,13 +52,13 @@ MSERR_NO_MEMORY = 1
 MSERR_OPERATION_NOT_PERMIT = 2
 ```
 
-表示无权限执行此操作。
+No permission to perform the operation.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_OPERATE_NOT_PERMIT
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_OPERATE_NOT_PERMIT
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -64,13 +68,13 @@ MSERR_OPERATION_NOT_PERMIT = 2
 MSERR_INVALID_VAL = 3
 ```
 
-表示传入入参无效。
+Invalid input parameter.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_INVALID_PARAMETER
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_INVALID_PARAMETER
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -80,13 +84,13 @@ MSERR_INVALID_VAL = 3
 MSERR_IO = 4
 ```
 
-表示发生IO错误。
+An I/O error occurs.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_IO
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_IO
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -96,13 +100,13 @@ MSERR_IO = 4
 MSERR_TIMEOUT = 5
 ```
 
-表示操作超时。
+The operation times out.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_TIMEOUT
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_TIMEOUT
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -112,13 +116,13 @@ MSERR_TIMEOUT = 5
 MSERR_UNKNOWN = 6
 ```
 
-表示未知错误。
+An unknown error occurs.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_INVALID_PARAMETER
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_INVALID_PARAMETER
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -128,13 +132,13 @@ MSERR_UNKNOWN = 6
 MSERR_SERVICE_DIED = 7
 ```
 
-表示服务端失效。
+Invalid server.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_SERVICE_DIED
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_SERVICE_DIED
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -144,13 +148,13 @@ MSERR_SERVICE_DIED = 7
 MSERR_INVALID_STATE = 8
 ```
 
-表示在当前状态下，不允许执行此操作。
+The operation is not allowed in the current state.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_INVALID_PARAMETER
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_INVALID_PARAMETER
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -160,13 +164,13 @@ MSERR_INVALID_STATE = 8
 MSERR_UNSUPPORTED = 9
 ```
 
-表示在当前版本下，不支持此操作。
+The operation is not supported in the current version.
 
 **起始版本：** 8
 
 **废弃版本：** 11
 
-**替代接口：** AVERR_UNSUPPORT_CAPABILITY
+**替代接口：** ohos.multimedia.media/media.AVErrorCode#AVERR_UNSUPPORT_CAPABILITY
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

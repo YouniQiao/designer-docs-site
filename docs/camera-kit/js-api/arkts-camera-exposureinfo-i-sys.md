@@ -1,8 +1,8 @@
-# ExposureInfo (System API)
+# ExposureInfo
 
 Describes the exposure information object.
 
-**Since:** 24
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -11,22 +11,22 @@ Describes the exposure information object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## exposureTime
 
 ```TypeScript
-readonly exposureTime?: number
+readonly exposureTime?: int
 ```
 
 Exposure time, in microseconds.
 
-**Type:** number
+**Type:** int
 
-**Since:** 24
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

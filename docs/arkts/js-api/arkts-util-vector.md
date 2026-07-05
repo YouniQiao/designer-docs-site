@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { Vector } from '@ohos.util.Vector';
+import { Vector } from '@kit.ArkTS';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { Vector } from '@ohos.util.Vector';
 
 | Name | Description |
 | --- | --- |
-| [Vector](arkts-arkts-vector-c.md) | Vector is a linear data structure that is implemented based on arrays. When the memory of a vector is used up, a larger contiguous memory area is automatically allocated, all the elements are copied to the new memory area, and the current memory area is reclaimed. Vector can be used to efficiently access elements. Both Vector and [ArrayList](arkts-util-arraylist.md) are implemented based on arrays, but Vector provides more interfaces for operating the arrays. Both of them can dynamically adjust the capacity. Vector doubles the capacity each time, whereas ArrayList increases the capacity by 50%. **Recommended use case**: Use Vector when the data volume is large. This topic uses the following to identify the use of generics: - T: Type &gt; **NOTE** &gt; &gt; - The APIs provided by this module are deprecated since API version 9. You are advised to use &gt; [@ohos.util.ArrayList](arkts-util-arraylist.md). |
+| [Vector](arkts-vector-c.md) | Vector是基于数组实现的线性数据结构。当Vector的内存用完时，会自动分配一块更大的连续内存区域，并将所有元素复制到新内存区域，回收当前内存区域。Vector可用于高效访问元素。 Vector和[ArrayList]{@link @ohos.util.ArrayList}都是基于数组实现，但Vector提供了更多的数组操作接口。两者都可以动态调整容量，Vector每次扩容为原来的两倍，ArrayList每次扩容为原来的1.5倍。 **推荐使用场景：** 当数据量较大时，推荐使用Vector。 文档中使用了泛型，涉及以下泛型标记符： - T：Type，类 > **说明** > > - 此模块提供的接口从API version 9开始废弃。建议使用 > [@ohos.util.ArrayList]{@link @ohos.util.ArrayList}。 |
 

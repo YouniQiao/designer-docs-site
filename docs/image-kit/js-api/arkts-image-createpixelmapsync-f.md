@@ -1,18 +1,12 @@
 # createPixelMapSync
 
-## Modules to Import
-
-```TypeScript
-import { sendableImage } from '@ohos.multimedia.sendableImage';
-```
-
 ## createPixelMapSync
 
 ```TypeScript
-function createPixelMapSync(colors: ArrayBuffer, options: image.InitializationOptions): PixelMap
+function createPixelMapSync(colors: ArrayBuffer, options: InitializationOptions): PixelMap
 ```
 
-Create PixelMap by data buffer.
+Create pixelmap by data buffer. Starting from API 26.0.0, it is recommended to use {@link createPixelMapFromPixelsSync} instead for better exception handling capabilities.
 
 **Since:** 12
 
@@ -23,7 +17,7 @@ Create PixelMap by data buffer.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | colors | ArrayBuffer | Yes | The image color buffer. |
-| options | image.InitializationOptions | Yes | Initialization options for PixelMap. |
+| options | InitializationOptions | Yes | Initialization options for pixelmap. |
 
 **Return value:**
 
@@ -35,20 +29,62 @@ Create PixelMap by data buffer.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
 
 **Example**
 
 ```TypeScript
-import { sendableImage } from '@kit.ImageKit';
-import { image } from '@kit.ImageKit';
-import { BusinessError } from '@kit.BasicServicesKit';
+function CreatePixelMapSync() {
+  const color: ArrayBuffer = new ArrayBuffer(96); // 96 is the size of the pixel buffer to create. The value is calculated as follows: height * width *4.
+  let opts: image.InitializationOptions = {
+    size: { height: 4, width: 6 },
+    srcPixelFormat: image.PixelMapFormat.RGBA_8888, // Pixel format of the source pixel data in the buffer.
+    pixelFormat: image.PixelMapFormat.RGBA_8888, // Pixel format of the new PixelMap.
+    editable: true
+  };
+  let pixelMap : image.PixelMap = image.createPixelMapSync(color, opts);
+  return pixelMap;
+}
 
-async function Demo() {
-    const color: ArrayBuffer = new ArrayBuffer(96); // 96 is the size of the pixel buffer to create. The value is calculated as follows: height * width *4.
-    let opts: image.InitializationOptions = { editable: true, pixelFormat: 3, size: { height: 4, width: 6 } }
-    let pixelMap : sendableImage.PixelMap = sendableImage.createPixelMapSync(color, opts);
-    return pixelMap;
+```
+
+## createPixelMapSync
+
+```TypeScript
+function createPixelMapSync(options: InitializationOptions): PixelMap
+```
+
+Create an empty pixelmap. Starting from API 26.0.0, it is recommended to use {@link createEmptyPixelMap} instead for better exception handling capabilities.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| options | InitializationOptions | Yes | Initialization options for pixelmap. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| PixelMap | Returns the instance if the operation is successful;Otherwise, return undefined. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+
+**Example**
+
+```TypeScript
+function CreatePixelMapSync() {
+  let opts: image.InitializationOptions = { editable: true, pixelFormat: image.PixelMapFormat.RGBA_8888, size: { height: 4, width: 6 } }
+  let pixelMap : image.PixelMap = image.createPixelMapSync(opts);
+  return pixelMap;
 }
 
 ```

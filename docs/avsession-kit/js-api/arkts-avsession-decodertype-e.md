@@ -1,5 +1,9 @@
 # DecoderType
 
+```TypeScript
+enum DecoderType
+```
+
 The defination of decoder type.
 
 **Since:** 19
@@ -16,7 +20,7 @@ Defination of avc codec type.
 
 **Since:** 19
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -30,7 +34,7 @@ Defination of hevc codec type.
 
 **Since:** 19
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -44,7 +48,7 @@ Defination of audio vivid codec type.
 
 **Since:** 19
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

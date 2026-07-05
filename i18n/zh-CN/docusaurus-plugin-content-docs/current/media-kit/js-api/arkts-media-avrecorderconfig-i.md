@@ -6,6 +6,26 @@ Describes the audio and video recording parameters. The **audioSourceType** and 
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
+## 导入模块
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
+
+## metadata
+
+```TypeScript
+metadata?: AVMetadata
+```
+
+Metadata. For details, see @AVMetadata.
+
+**类型：** AVMetadata
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
 ## audioSourceType
 
 ```TypeScript
@@ -18,7 +38,25 @@ Type of the audio source to record. This parameter is mandatory for audio record
 
 **起始版本：** 9
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
+## rotation
+
+```TypeScript
+rotation?: number
+```
+
+Rotation angle of the recorded video, in degrees. The value can be 0 (default), 90, 180, or 270 for MP4 videos. <br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use. **AVMetadata.videoOrientation** instead. If both parameters are set, **AVMetadata.videoOrientation** is used.
+
+**类型：** number
+
+**起始版本：** 9
+
+**废弃版本：** 12
+
+**替代接口：** ohos.multimedia.media/media.AVMetadata#videoOrientation
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
@@ -36,6 +74,38 @@ Mode for creating the file, which is used together with on('photoAssetAvailable'
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
+## profile
+
+```TypeScript
+profile: AVRecorderProfile
+```
+
+Recording profile. This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
+
+**类型：** AVRecorderProfile
+
+**起始版本：** 9
+
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
+## metaSourceTypes
+
+```TypeScript
+metaSourceTypes?: Array<MetaSourceType>
+```
+
+Meta source types, details see @MetaSourceType .
+
+**类型：** Array<MetaSourceType>
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
+**系统接口：** 此接口为系统接口。
+
 ## location
 
 ```TypeScript
@@ -50,69 +120,35 @@ Geographical location of the recorded video. By default, the geographical locati
 
 **废弃版本：** 12
 
-**替代接口：** location
+**替代接口：** ohos.multimedia.media/media.AVMetadata#location
+
+**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
+
+## videoSourceType
+
+```TypeScript
+videoSourceType?: VideoSourceType
+```
+
+Type of the video source to record. This parameter is mandatory for video recording.
+
+**类型：** VideoSourceType
+
+**起始版本：** 9
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
 ## maxDuration
 
 ```TypeScript
-maxDuration?: number
+maxDuration?: int
 ```
 
 Maximum recording duration, in seconds. The value range is [1, 2^31-1]. If an invalid value is provided, it is reset to the maximum allowed duration. Once the recording reaches the specified duration, it stops automatically and notifies via the **stateChange** callback that the recording has stopped: AVRecorderState = 'stopped', StateChangeReason = BACKGROUND.
 
-**类型：** number
+**类型：** int
 
 **起始版本：** 18
-
-**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
-
-## metadata
-
-```TypeScript
-metadata?: AVMetadata
-```
-
-Metadata. For details, see @AVMetadata.
-
-**类型：** AVMetadata
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
-
-## profile
-
-```TypeScript
-profile: AVRecorderProfile
-```
-
-Recording profile. This parameter is mandatory.<br>**Atomic service API**: This API can be used in atomic services since API version 12.
-
-**类型：** AVRecorderProfile
-
-**起始版本：** 9
-
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
-
-**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
-
-## rotation
-
-```TypeScript
-rotation?: number
-```
-
-Rotation angle of the recorded video. The value can be 0 (default), 90, 180, or 270 for MP4 videos.<br>This API is supported since API version 6 and deprecated since API version 12. You are advised to use **AVMetadata.videoOrientation** instead. If both parameters are set, **AVMetadata.videoOrientation** is used.
-
-**类型：** number
-
-**起始版本：** 9
-
-**废弃版本：** 12
-
-**替代接口：** videoOrientation
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 
@@ -128,21 +164,7 @@ Recording output URL: fd://xx (fd number).<br>This parameter is mandatory.<br>**
 
 **起始版本：** 9
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
-
-**系统能力：** SystemCapability.Multimedia.Media.AVRecorder
-
-## videoSourceType
-
-```TypeScript
-videoSourceType?: VideoSourceType
-```
-
-Type of the video source to record. This parameter is mandatory for video recording.
-
-**类型：** VideoSourceType
-
-**起始版本：** 9
+**原子化服务API：** 从API version 12开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVRecorder
 

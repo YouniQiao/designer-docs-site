@@ -1,4 +1,8 @@
-# DistributedSessionType (System API)
+# DistributedSessionType
+
+```TypeScript
+enum DistributedSessionType
+```
 
 Define different distributed session type
 

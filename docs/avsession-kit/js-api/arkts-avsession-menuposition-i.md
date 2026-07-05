@@ -9,70 +9,70 @@ Position definition of one component on which the menu will bind and popup.
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
-
-## height
-
-```TypeScript
-height: number
-```
-
-Component height, uint is vp.
-
-**Type:** number
-
-**Since:** 22
-
-**Atomic service API:** This API can be used in atomic services since API version 22.
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
 ## width
 
 ```TypeScript
-width: number
+width: int
 ```
 
 Component width, uint is vp.
 
-**Type:** number
+**Type:** int
 
 **Since:** 22
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
 ## x
 
 ```TypeScript
-x: number
+x: int
 ```
 
 Coordinate x of the position of the component, uint is vp.
 
-**Type:** number
+**Type:** int
 
 **Since:** 22
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
 ## y
 
 ```TypeScript
-y: number
+y: int
 ```
 
 Coordinate y of the position of the component, uint is vp.
 
-**Type:** number
+**Type:** int
 
 **Since:** 22
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+## height
+
+```TypeScript
+height: int
+```
+
+Component height, uint is vp.
+
+**Type:** int
+
+**Since:** 22
+
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

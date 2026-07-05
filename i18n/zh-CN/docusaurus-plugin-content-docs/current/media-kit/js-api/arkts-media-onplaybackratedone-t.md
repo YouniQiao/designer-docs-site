@@ -1,14 +1,14 @@
 # OnPlaybackRateDone
 
 ```TypeScript
-type OnPlaybackRateDone = (rate: number) => void
+type OnPlaybackRateDone = (rate: double) => void
 ```
 
 播放速率设置完成事件回调方法。
 
 **起始版本：** 20
 
-**元服务API：** 从API版本20开始，该接口支持在元服务API中使用。
+**原子化服务API：** 该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 

@@ -1,11 +1,5 @@
 # createAVAdsController
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createAVAdsController
 
 ```TypeScript
@@ -16,7 +10,7 @@ Create an ad playback controller associated with the player instance.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -30,11 +24,11 @@ Create an ad playback controller associated with the player instance.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVAdsController \| undefined&gt; | If success, an Controller is returned. Otherwise returns null. |
+| Promise&lt;AVAdsController \| undefined> | If success, an Controller is returned. Otherwise returns null. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The player object corresponding to player does not exist or is invalid. |
+| 5400108 | The player object corresponding to player does not exist or is invalid. |
 

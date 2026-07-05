@@ -1,14 +1,14 @@
 # OnBufferingUpdateHandler
 
 ```TypeScript
-type OnBufferingUpdateHandler = (infoType: BufferingInfoType, value: number) => void
+type OnBufferingUpdateHandler = (infoType: BufferingInfoType, value: int) => void
 ```
 
-Describes the callback invoked for the buffering update event.
+播放缓存事件回调方法。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -16,6 +16,6 @@ Describes the callback invoked for the buffering update event.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| infoType | BufferingInfoType | Yes | Buffering information type. |
-| value | int | Yes | Value of the buffering information type. |
+| infoType | BufferingInfoType | Yes | 缓存时间类型。 |
+| value | int | Yes | 缓存时间类型的值。 |
 

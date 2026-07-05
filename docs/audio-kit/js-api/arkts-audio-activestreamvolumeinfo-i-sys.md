@@ -1,4 +1,4 @@
-# ActiveStreamVolumeInfo (System API)
+# ActiveStreamVolumeInfo
 
 Volume information for active audio streams.
 
@@ -11,40 +11,22 @@ Volume information for active audio streams.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## appVolume
 
 ```TypeScript
-appVolume: number
+appVolume: int
 ```
 
 Volume of the application.
 
-**Type:** number
+**Type:** int
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Audio.Volume
-
-**System API:** This is a system API.
-
-## clientUid
-
-```TypeScript
-clientUid: number
-```
-
-UID of the application.
-
-**Type:** number
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Volume
 
@@ -62,7 +44,25 @@ Volume type of the current stream.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Volume
+
+**System API:** This is a system API.
+
+## clientUid
+
+```TypeScript
+clientUid: int
+```
+
+UID of the application.
+
+**Type:** int
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Volume
 

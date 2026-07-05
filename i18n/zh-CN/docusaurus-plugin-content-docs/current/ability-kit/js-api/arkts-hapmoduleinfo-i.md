@@ -1,0 +1,274 @@
+# HapModuleInfo
+
+Hap模块信息，未做特殊说明的属性，均通过 [bundle.getBundleInfo]./../@ohos.bundle:bundle.getBundleInfo(bundleName: string, bundleFlags: number, options?: BundleOptions) 获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-HapModuleInfo](arkts-hapmoduleinfo-i.md#HapModuleInfo)替代。
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** hapModuleInfo:HapModuleInfo
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## iconId
+
+```TypeScript
+readonly iconId: number
+```
+
+模块图标ID。
+
+**类型：** number
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#iconId
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## installationFree
+
+```TypeScript
+readonly installationFree: boolean
+```
+
+是否支持免安装，取值为true表示支持免安装，取值为false表示不支持免安装。
+
+**类型：** boolean
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#installationFree
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## moduleName
+
+```TypeScript
+readonly moduleName: string
+```
+
+模块名。
+
+**类型：** string
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#name
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## icon
+
+```TypeScript
+readonly icon: string
+```
+
+模块图标。
+
+**类型：** string
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#icon
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## description
+
+```TypeScript
+readonly description: string
+```
+
+模块描述信息。
+
+**类型：** string
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#description
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## mainAbilityName
+
+```TypeScript
+readonly mainAbilityName: string
+```
+
+入口Ability名称。
+
+**类型：** string
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## label
+
+```TypeScript
+readonly label: string
+```
+
+模块标签。
+
+**类型：** string
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#label
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## supportedModes
+
+```TypeScript
+readonly supportedModes: number
+```
+
+模块支持的模式。
+
+**类型：** number
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## deviceTypes
+
+```TypeScript
+readonly deviceTypes: Array<string>
+```
+
+支持运行的设备类型。
+
+**类型：** Array<string>
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#deviceTypes
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## descriptionId
+
+```TypeScript
+readonly descriptionId: number
+```
+
+描述信息ID。
+
+**类型：** number
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#descriptionId
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## backgroundImg
+
+```TypeScript
+readonly backgroundImg: string
+```
+
+模块背景图片。
+
+**类型：** string
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## labelId
+
+```TypeScript
+readonly labelId: number
+```
+
+模块标签ID。
+
+**类型：** number
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#labelId
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## reqCapabilities
+
+```TypeScript
+readonly reqCapabilities: Array<string>
+```
+
+模块运行需要的能力。
+
+**类型：** Array<string>
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## name
+
+```TypeScript
+readonly name: string
+```
+
+模块名称。
+
+**类型：** string
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#name
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+
+## abilityInfo
+
+```TypeScript
+readonly abilityInfo: Array<AbilityInfo>
+```
+
+Ability信息。
+
+**类型：** Array<AbilityInfo>
+
+**起始版本：** 7
+
+**废弃版本：** 9
+
+**替代接口：** ohos.bundle.bundleManager/bundleManager.HapModuleInfo#abilitiesInfo
+
+**系统能力：** SystemCapability.BundleManager.BundleFramework
+

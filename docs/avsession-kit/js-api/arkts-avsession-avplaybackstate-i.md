@@ -9,52 +9,22 @@ Used to indicate the playback state of the current media. If the playback state 
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
-
-## activeItemId
-
-```TypeScript
-activeItemId?: number
-```
-
-Current active item id
-
-**Type:** number
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
 
 ## bufferedTime
 
 ```TypeScript
-bufferedTime?: number
+bufferedTime?: long
 ```
 
 The current buffered time, the maximum playable position, described by milliseconds.
 
-**Type:** number
+**Type:** long
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## duration
-
-```TypeScript
-duration?: number
-```
-
-The duration of this media asset, described by milliseconds.
-
-**Type:** number
-
-**Since:** 11
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -70,23 +40,37 @@ Current custom media packets
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## isFavorite
-
 ```TypeScript
-isFavorite?: boolean
+extras?: Record<string, Object>
 ```
 
-Current Favorite Status
+Current custom media packets
 
-**Type:** boolean
+**Type:** Record<string, Object>
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## activeItemId
+
+```TypeScript
+activeItemId?: int
+```
+
+Current active item id
+
+**Type:** int
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -102,39 +86,101 @@ Current playback loop mode. See {@link LoopMode}
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
 ## maxVolume
 
 ```TypeScript
-maxVolume?: number
+maxVolume?: int
 ```
 
 maximum volume
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## muted
+## speed
 
 ```TypeScript
-muted?: boolean
+speed?: double
 ```
 
-Current muted status
+Current playback speed
 
-**Type:** boolean
+**Type:** double
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## videoHeight
+
+```TypeScript
+videoHeight?: int
+```
+
+The video height of this media asset.
+
+**Type:** int
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## videoWidth
+
+```TypeScript
+videoWidth?: int
+```
+
+The video width of this media asset.
+
+**Type:** int
+
+**Since:** 11
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## duration
+
+```TypeScript
+duration?: int
+```
+
+The duration of this media asset, described by milliseconds.
+
+**Type:** int
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+## volume
+
+```TypeScript
+volume?: int
+```
+
+Current player volume
+
+**Type:** int
+
+**Since:** 10
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -150,23 +196,7 @@ Current playback position of this media. See {@link PlaybackPosition}
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## speed
-
-```TypeScript
-speed?: number
-```
-
-Current playback speed
-
-**Type:** number
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -182,55 +212,39 @@ Current playback state. See {@link PlaybackState}
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## videoHeight
+## muted
 
 ```TypeScript
-videoHeight?: number
+muted?: boolean
 ```
 
-The video height of this media asset.
+Current muted status
 
-**Type:** number
+**Type:** boolean
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## videoWidth
+## isFavorite
 
 ```TypeScript
-videoWidth?: number
+isFavorite?: boolean
 ```
 
-The video width of this media asset.
+Current Favorite Status
 
-**Type:** number
-
-**Since:** 11
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.Core
-
-## volume
-
-```TypeScript
-volume?: number
-```
-
-Current player volume
-
-**Type:** number
+**Type:** boolean
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

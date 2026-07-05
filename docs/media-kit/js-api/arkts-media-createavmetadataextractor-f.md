@@ -1,18 +1,12 @@
 # createAVMetadataExtractor
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createAVMetadataExtractor
 
 ```TypeScript
 function createAVMetadataExtractor(): Promise<AVMetadataExtractor>
 ```
 
-Creates an AVMetadataExtractor instance. This API uses a promise to return the result.
+创建AVMetadataExtractor实例。使用Promise异步回调。
 
 **Since:** 11
 
@@ -22,13 +16,13 @@ Creates an AVMetadataExtractor instance. This API uses a promise to return the r
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVMetadataExtractor&gt; | Promise used to return the AVMetadataExtractor instance. |
+| Promise&lt;AVMetadataExtractor> | Promise对象。异步返回元数据获取类对象（AVMetadataExtractor）。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Returned by promise. |
+| 5400101 | No memory. Returned by promise. |
 
 **Example**
 
@@ -49,14 +43,13 @@ media.createAVMetadataExtractor().then((extractor: media.AVMetadataExtractor) =>
 
 ```
 
-
 ## createAVMetadataExtractor
 
 ```TypeScript
 function createAVMetadataExtractor(callback: AsyncCallback<AVMetadataExtractor>): void
 ```
 
-Creates an AVMetadataExtractor instance. This API uses an asynchronous callback to return the result.
+创建AVMetadataExtractor实例。使用callback异步回调。
 
 **Since:** 11
 
@@ -66,13 +59,13 @@ Creates an AVMetadataExtractor instance. This API uses an asynchronous callback 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVMetadataExtractor&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the AVMetadataExtractor instance created; otherwise,**err** is an error object. |
+| callback | AsyncCallback&lt;AVMetadataExtractor> | Yes | 回调函数。当创建AVMetadataExtractor实例成功，err为undefined，data为获取到的  AVMetadataExtractor实例，否则为错误对象。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Returned by callback. |
+| 5400101 | No memory. Returned by callback. |
 
 **Example**
 

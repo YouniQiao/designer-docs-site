@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ActionResult, ShowNotificationOptions } from '@system.notification';
+import { ActionResult,ShowNotificationOptions } from '@kit.NotificationKit';
 ```
 
 ## Summary
@@ -12,12 +12,12 @@ import { ActionResult, ShowNotificationOptions } from '@system.notification';
 
 | Name | Description |
 | --- | --- |
-| [Notification](arkts-notification-notification-c.md) | Manages notifications. |
+| [Notification](arkts-notification-c.md) | 提供通知管理的能力。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ActionResult](arkts-notification-actionresult-i.md) |  |
-| [ShowNotificationOptions](arkts-notification-shownotificationoptions-i.md) |  |
+| [ActionResult](arkts-actionresult-i.md) |  |
+| [ShowNotificationOptions](arkts-shownotificationoptions-i.md) |  |
 

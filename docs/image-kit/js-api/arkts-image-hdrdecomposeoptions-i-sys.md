@@ -1,6 +1,6 @@
-# HdrDecomposeOptions (System API)
+# HdrDecomposeOptions
 
-Describes the options for decomposing an HDR Pixelmap to a Picture containing an SDR PixelMap and a gainmap.
+HDR PixelMap分解为Picture的配置选项，分解后的Picture包含一张SDR主图和一张增益图（GainMap）。
 
 **Since:** 26.0.0
 
@@ -11,7 +11,7 @@ Describes the options for decomposing an HDR Pixelmap to a Picture containing an
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## desiredPixelFormat
@@ -20,13 +20,13 @@ import { image } from '@ohos.multimedia.image';
 desiredPixelFormat?: PixelMapFormat
 ```
 
-Indicates the pixel format of the decomposed SDR Pixelmap and the gainmap. The formats of RGBA_8888\NV12\NV21 are supported. Default value: RGBA_8888.
+分解后SDR PixelMap和增益图的像素格式。支持RGBA_8888、NV12、NV21。默认值为RGBA_8888。
 
 **Type:** PixelMapFormat
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -38,13 +38,13 @@ Indicates the pixel format of the decomposed SDR Pixelmap and the gainmap. The f
 isFullSizeGainmap?: boolean
 ```
 
-Indicates generating a full-size gainmap or a 1/2 downscaled gainmap. Default value: false.
+是否生成全尺寸增益图。 true表示生成全尺寸增益图，增益图尺寸和主图一致；false表示不生成全尺寸增益图，增益图尺寸是主图的一半。默认值为false。
 
 **Type:** boolean
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

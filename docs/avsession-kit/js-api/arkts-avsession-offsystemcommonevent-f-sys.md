@@ -1,10 +1,4 @@
-# offSystemCommonEvent (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# offSystemCommonEvent
 
 ## offSystemCommonEvent
 
@@ -16,7 +10,7 @@ Unregister system common event callback
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -26,12 +20,12 @@ Unregister system common event callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | EventProcess | No | Used to handle event when the common command is received |
+| callback | EventProcess | No |  |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 202 | Not System App. |
+| 6600101 | Session service exception. |
 

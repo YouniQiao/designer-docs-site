@@ -1,18 +1,24 @@
 # AVMetadata
 
-Defines the audio and video metadata. Parameters that are not declared as read-only in [AVRecorderConfig](#AVRecorderConfig) can be used as input parameters for recording of [AVRecorder](#AVRecorder).
+Defines the audio and video metadata. Parameters that are not declared as read-only in [AVRecorderConfig]#AVRecorderConfig can be used as input parameters for recording of [AVRecorder]#AVRecorder.
 
 **起始版本：** 11
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## album
+## 导入模块
 
 ```TypeScript
-album?: string
+import { media } from '@kit.MediaKit';
 ```
 
-Title of the album. This parameter is not supported in AVRecorder settings.
+## hasVideo
+
+```TypeScript
+hasVideo?: string
+```
+
+Whether the media asset contains a video. This parameter is not supported in AVRecorder settings.
 
 **类型：** string
 
@@ -20,13 +26,27 @@ Title of the album. This parameter is not supported in AVRecorder settings.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## albumArtist
+## dateTime
 
 ```TypeScript
-albumArtist?: string
+dateTime?: string
 ```
 
-Artist of the album. This parameter is not supported in AVRecorder settings.
+Time when the media asset is created. This parameter is not supported in AVRecorder settings.
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## hasAudio
+
+```TypeScript
+hasAudio?: string
+```
+
+Whether the media asset contains audio. This parameter is not supported in AVRecorder settings.
 
 **类型：** string
 
@@ -48,20 +68,6 @@ Artist of the media asset. This parameter is not supported in AVRecorder setting
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## author
-
-```TypeScript
-author?: string
-```
-
-Author of the media asset. This parameter is not supported in AVRecorder settings.
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
 ## composer
 
 ```TypeScript
@@ -76,27 +82,13 @@ Composer of the media asset. This parameter is not supported in AVRecorder setti
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## customInfo
+## author
 
 ```TypeScript
-customInfo?: Record<string, string>
+author?: string
 ```
 
-Custom key-value mappings obtained from **moov.meta.list**.
-
-**类型：** Record<string, string>
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## dateTime
-
-```TypeScript
-dateTime?: string
-```
-
-Time when the media asset is created. This parameter is not supported in AVRecorder settings.
+Author of the media asset. This parameter is not supported in AVRecorder settings.
 
 **类型：** string
 
@@ -104,13 +96,27 @@ Time when the media asset is created. This parameter is not supported in AVRecor
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## dateTimeFormat
+## album
 
 ```TypeScript
-dateTimeFormat?: string
+album?: string
 ```
 
-Time when the media asset is created. The value is in the YYYY-MM-DD HH:mm:ss format. This parameter is not supported in AVRecorder settings.
+Title of the album. This parameter is not supported in AVRecorder settings.
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## videoOrientation
+
+```TypeScript
+videoOrientation?: string
+```
+
+Video rotation direction, in degrees.
 
 **类型：** string
 
@@ -132,13 +138,55 @@ Description of the media asset. This parameter is not supported in AVRecorder se
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## duration
+## customInfo
 
 ```TypeScript
-duration?: string
+customInfo?: Record<string, string>
 ```
 
-Duration of the media asset. This parameter is not supported in AVRecorder settings.
+Custom key-value mappings obtained from **moov.meta.list**.
+
+**类型：** Record<string, string>
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## hdrType
+
+```TypeScript
+hdrType?: HdrType
+```
+
+HDR type of the media asset. This parameter is not supported in AVRecorder settings.
+
+**类型：** HdrType
+
+**起始版本：** 12
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## mimeType
+
+```TypeScript
+mimeType?: string
+```
+
+MIME type of the media asset. This parameter is not supported in AVRecorder settings. Some example mime types include: "video/mp4", "audio/mp4", "audio/amr-wb".
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## title
+
+```TypeScript
+title?: string
+```
+
+Title of the media asset. This parameter is not supported in AVRecorder settings. This parameter is read-only in the current version.
 
 **类型：** string
 
@@ -162,90 +210,6 @@ The identifier that represents the software or hardware and settings used for en
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## genre
-
-```TypeScript
-genre?: string
-```
-
-Type or genre of the media asset.
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## hasAudio
-
-```TypeScript
-hasAudio?: string
-```
-
-Whether the media asset contains audio. This parameter is not supported in AVRecorder settings.
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## hasVideo
-
-```TypeScript
-hasVideo?: string
-```
-
-Whether the media asset contains a video. This parameter is not supported in AVRecorder settings.
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## hdrType
-
-```TypeScript
-hdrType?: HdrType
-```
-
-HDR type of the media asset. This parameter is not supported in AVRecorder settings.
-
-**类型：** HdrType
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## location
-
-```TypeScript
-location?: Location
-```
-
-Geographical location of the media asset.
-
-**类型：** Location
-
-**起始版本：** 12
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## mimeType
-
-```TypeScript
-mimeType?: string
-```
-
-MIME type of the media asset. This parameter is not supported in AVRecorder settings. Some example mime types include: "video/mp4", "audio/mp4", "audio/amr-wb".
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
 ## sampleRate
 
 ```TypeScript
@@ -253,34 +217,6 @@ sampleRate?: string
 ```
 
 Audio sampling rate, in Hz. This parameter is not supported in AVRecorder settings.
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## title
-
-```TypeScript
-title?: string
-```
-
-Title of the media asset. This parameter is not supported in AVRecorder settings. This parameter is read-only in the current version.
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
-## trackCount
-
-```TypeScript
-trackCount?: string
-```
-
-Number of tracks of the media asset. This parameter is not supported in AVRecorder settings.
 
 **类型：** string
 
@@ -316,20 +252,6 @@ Video height, in px. This parameter is not supported in AVRecorder settings.
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 
-## videoOrientation
-
-```TypeScript
-videoOrientation?: string
-```
-
-Video rotation direction, in degrees.
-
-**类型：** string
-
-**起始版本：** 11
-
-**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
-
 ## videoWidth
 
 ```TypeScript
@@ -341,6 +263,106 @@ Video width, in px. This parameter is not supported in AVRecorder settings.
 **类型：** string
 
 **起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## duration
+
+```TypeScript
+duration?: string
+```
+
+Duration of the media asset. This parameter is not supported in AVRecorder settings.
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## trackCount
+
+```TypeScript
+trackCount?: string
+```
+
+Number of tracks of the media asset. This parameter is not supported in AVRecorder settings.
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## dateTimeFormat
+
+```TypeScript
+dateTimeFormat?: string
+```
+
+Time when the media asset is created. The value is in the YYYY-MM-DD HH:mm:ss format. This parameter is not supported in AVRecorder settings.
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## genre
+
+```TypeScript
+genre?: string
+```
+
+Type or genre of the media asset.
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## albumArtist
+
+```TypeScript
+albumArtist?: string
+```
+
+Artist of the album. This parameter is not supported in AVRecorder settings.
+
+**类型：** string
+
+**起始版本：** 11
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+## gltf_offset
+
+```TypeScript
+gltf_offset?: string
+```
+
+The offset value of GLTF 3D model in media file. This parameter is not supported in AVRecorder settings. If the media file has no GLTF 3D model, gltf_offset is undefined.
+
+**类型：** string
+
+**起始版本：** 21
+
+**系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
+
+**系统接口：** 此接口为系统接口。
+
+## location
+
+```TypeScript
+location?: Location
+```
+
+Geographical location of the media asset.
+
+**类型：** Location
+
+**起始版本：** 12
 
 **系统能力：** SystemCapability.Multimedia.Media.AVMetadataExtractor
 

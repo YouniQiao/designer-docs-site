@@ -9,22 +9,22 @@ Describes the camera's concurrency information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
-## device
+## outputCapabilities
 
 ```TypeScript
-readonly device: CameraDevice
+readonly outputCapabilities: Array<CameraOutputCapability>
 ```
 
-Concurrent camera device.
+Output capabilities of the camera.
 
-**Type:** CameraDevice
+**Type:** Array<CameraOutputCapability>
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -40,23 +40,7 @@ Scene mode.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-## outputCapabilities
-
-```TypeScript
-readonly outputCapabilities: Array<CameraOutputCapability>
-```
-
-Output capabilities of the camera.
-
-**Type:** Array<CameraOutputCapability>
-
-**Since:** 18
-
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -72,7 +56,23 @@ Concurrency type.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## device
+
+```TypeScript
+readonly device: CameraDevice
+```
+
+Concurrent camera device.
+
+**Type:** CameraDevice
+
+**Since:** 18
+
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

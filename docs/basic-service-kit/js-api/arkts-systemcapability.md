@@ -11,17 +11,15 @@ Provides interfaces to get system capability.
 ## Modules to Import
 
 ```TypeScript
-import { systemCapability } from '@ohos.systemCapability';
+import { systemCapability } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [querySystemCapabilities](arkts-basicservices-querysystemcapabilities-f-sys.md#querysystemcapabilities-1) | Get System Capability. |
-| [querySystemCapabilities](arkts-basicservices-querysystemcapabilities-f-sys.md#querysystemcapabilities-2) | Get System Capability. |
-<!--DelEnd-->
+| <!--DelRow-->[querySystemCapabilities](arkts-systemcapability-querysystemcapabilities-f-sys.md#querySystemCapabilities-1) | Get System Capability. |
+| <!--DelRow-->[querySystemCapabilities](arkts-systemcapability-querysystemcapabilities-f-sys.md#querySystemCapabilities-2) | Get System Capability. |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { NotificationSubscriberExtensionContext } from '@ohos.application.NotificationSubscriberExtensionContext';
+import { NotificationSubscriberExtensionContext } from '@kit.NotificationKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { NotificationSubscriberExtensionContext } from '@ohos.application.Notifi
 
 | Name | Description |
 | --- | --- |
-| [NotificationSubscriberExtensionContext](arkts-notification-notificationsubscriberextensioncontext-c.md) | The **NotificationSubscriberExtensionContext** module provides the context for the **NotificationSubscriberExtensionAbility**. &gt; **NOTE** &gt; &gt; The APIs of this module can be used only in the stage model. |
+| [NotificationSubscriberExtensionContext](arkts-notificationsubscriberextensioncontext-c.md) | NotificationSubscriberExtensionContext模块提供通知订阅者扩展能力。 > **说明** > > 本模块接口仅可在Stage模型下使用。 |
 

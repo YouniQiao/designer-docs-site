@@ -4,11 +4,11 @@
 type OnSuperResolutionChanged = (enabled: boolean) => void
 ```
 
-Describes the callback used to listen for video super resolution status changes. If super resolution is enabled by using [PlaybackStrategy](arkts-media-playbackstrategy-i.md#playbackstrategy), this callback is invoked to report the super resolution status changes. It is also invoked to report the initial status when the video starts. However, this callback is not invoked when super resolution is not enabled. Super resolution is automatically disabled in either of the following cases: * The current super resolution algorithm only works with videos that have a frame rate of 30 fps or lower. If the video frame rate exceeds 30 fps, or if the input frame rate exceeds the processing capability of the super resolution algorithm in scenarios such as fast playback, super resolution is automatically disabled. * The current super resolution algorithm supports input resolutions from 320 × 320 to 1920 × 1080, in px. If the input video resolution exceeds the range during playback, super resolution is automatically disabled.
+视频超分开关事件回调方法。若通过[PlaybackStrategy](arkts-media-playbackstrategy-i.md#PlaybackStrategy)正确使能超分，超分算法状态变化时会通过此回调上报，视频起 播时也会上报超分初始开启/关闭状态。若未使能超分，不会触发该回调。 出现以下两种情况，超分算法会自动关闭。 * 目前超分算法最高仅支持30帧及以下的视频。若视频帧率超过30帧，或者在倍速播放等场景下导致输入帧率超出超分算法处理能力，超分会自动关闭。 * 目前超分算法支持输入分辨率范围为[320x320, 1920x1080]，单位为像素。若播放过程中输入视频分辨率超出此范围，超分算法会自动关闭。
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -16,5 +16,5 @@ Describes the callback used to listen for video super resolution status changes.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enabled | boolean | Yes | Whether super resolution is enabled. **true** if enabled, **false** otherwise. |
+| enabled | boolean | Yes | 表示当前超分是否开启。true表示超分开启，false表示超分关闭。 |
 

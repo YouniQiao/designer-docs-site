@@ -9,7 +9,7 @@ The module provides APIs for an application to use the system camera to take pho
 ## Modules to Import
 
 ```TypeScript
-import { cameraPicker } from '@ohos.multimedia.cameraPicker';
+import { cameraPicker } from '@kit.CameraKit';
 ```
 
 ## Summary
@@ -18,18 +18,18 @@ import { cameraPicker } from '@ohos.multimedia.cameraPicker';
 
 | Name | Description |
 | --- | --- |
-| [pick](arkts-camera-pick-f.md#pick-1) | Starts the camera picker and enters the corresponding mode based on the media type. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; When an application is running on a widescreen foldable device and the camera picker is launched while the device &gt; is unfolded, switching the device from unfolded to folded will automatically move the camera picker to the &gt; background. |
+| [pick](arkts-camerapicker-pick-f.md#pick-1) | Starts the camera picker and enters the corresponding mode based on the media type. This API uses a promise to return the result. > **NOTE** > > When an application is running on a widescreen foldable device and the camera picker is launched while the device > is unfolded, switching the device from unfolded to folded will automatically move the camera picker to the > background. |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [PickerProfile](arkts-camera-pickerprofile-c.md) | Defines the configuration information about the camera picker. |
-| [PickerResult](arkts-camera-pickerresult-c.md) | Defines the processing result of the camera picker. |
+| [PickerProfile](arkts-camerapicker-pickerprofile-c.md) | Defines the configuration information about the camera picker. |
+| [PickerResult](arkts-camerapicker-pickerresult-c.md) | Defines the processing result of the camera picker. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [PickerMediaType](arkts-camera-pickermediatype-e.md) | Enumerates the media types displayed in the camera picker. |
+| [PickerMediaType](arkts-camerapicker-pickermediatype-e.md) | Enumerates the media types displayed in the camera picker. |
 

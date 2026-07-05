@@ -1,6 +1,6 @@
 # @ohos.dlpSetDlpFeature
 
-This module controls the Data Loss Prevention (DLP) feature, including enabling or disabling DLP and returning the DLP status. **Use scenarios** - Data security compliance requirements must be met. - Access control and encryption protection are provided for confidential files. > **NOTE** > - The initial APIs of this module are supported since API version 26.0.0. Newly added APIs will be marked with a > - superscript to indicate their earliest API version. > - The APIs provided by this module are system APIs.
+本模块提供数据防泄漏（Data Loss Prevention，简称为DLP）特性开关的控制能力，包括开启和关闭DLP特性开关、返回特性开关设置结果等。 **使用场景**： - 需要满足数据安全合规要求的场景。 - 对机密文件进行访问控制和加密保护。 > **说明：** > > - 本模块首批接口从API version 26.0.0开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。 > - 本模块接口为系统接口。
 
 **Since:** 26.0.0
 
@@ -11,33 +11,27 @@ This module controls the Data Loss Prevention (DLP) feature, including enabling 
 ## Modules to Import
 
 ```TypeScript
-import { dlpSetDlpFeature } from '@ohos.dlpSetDlpFeature';
+import { dlpSetDlpFeature } from '@kit.DataProtectionKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [setDlpFeature](arkts-dataprotection-setdlpfeature-f-sys.md#setdlpfeature-1) | Sets the DLP status. This API uses a promise to return the result. The system enables or disables the DLP protection function based on the DLP status specified using this API. When this feature is enabled, right-click the file to be encrypted, and the encryption option is displayed in the shortcut menu. Files in .txt, .pdf, .xls, .xlsx, .ppt, .pptx, .doc, and .docx formats can be encrypted. This API is used to enable or disable the DLP function in enterprise policies. |
-<!--DelEnd-->
+| <!--DelRow-->[setDlpFeature](arkts-dlpsetdlpfeature-setdlpfeature-f-sys.md#setDlpFeature-1) | 设置DLP特性开关状态。使用Promise异步回调。调用成功后，DLP特性开关将设置为指定状态，系统将根据该状态启用或禁用DLP保护功能。 当特性开关处于开启状态时，右键单击支持加密的文件，右键菜单中会显示“加密保护”选项。可加密类型包括：.txt，.pdf，.xls，.xlsx，.ppt，.pptx，.doc，.docx。 企业策略开启或关闭数据防泄漏功能时使用此接口。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [DLPFeatureInfo](arkts-dataprotection-dlpfeatureinfo-i-sys.md) | Sets the DLP status. |
-| [StatusInfoResult](arkts-dataprotection-statusinforesult-i-sys.md) | Describes the DLP settings. |
-<!--DelEnd-->
+| <!--DelRow-->[DLPFeatureInfo](arkts-dlpsetdlpfeature-dlpfeatureinfo-i-sys.md) | DLP特性开关的状态信息。 |
+| <!--DelRow-->[StatusInfoResult](arkts-dlpsetdlpfeature-statusinforesult-i-sys.md) | DLP特性开关状态设置的结果信息。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [DlpFeatureStatus](arkts-dataprotection-dlpfeaturestatus-e-sys.md) | Enumerates DLP statuses. |
-<!--DelEnd-->
+| <!--DelRow-->[DlpFeatureStatus](arkts-dlpsetdlpfeature-dlpfeaturestatus-e-sys.md) | DLP特性开关状态的枚举。 |
 

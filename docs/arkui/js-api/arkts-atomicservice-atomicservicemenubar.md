@@ -3,16 +3,14 @@
 ## Modules to Import
 
 ```TypeScript
-import { AtomicServiceMenuBar } from '@ohos.atomicservice.AtomicServiceMenuBar';
+import { AtomicServiceMenuBar } from '@kit.ArkUI';
 ```
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [AtomicServiceMenuBar](arkts-arkui-atomicservicemenubar-c-sys.md) | Provide configuration capabilities for the menuBar of atomicservice |
-<!--DelEnd-->
+| <!--DelRow-->[AtomicServiceMenuBar](arkts-atomicservicemenubar-c.md) | Provide configuration capabilities for the menuBar of atomicservice |
 

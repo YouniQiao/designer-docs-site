@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 类（系统接口）
+### 类
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [AbilityForegroundStateObserver](arkts-ability-abilityforegroundstateobserver-c-sys.md) | 定义应用前后台状态监听。 |
-<!--DelEnd-->
+| <!--DelRow-->[AbilityForegroundStateObserver](arkts-abilityforegroundstateobserver-c.md) | 定义应用前后台状态监听。 |
 

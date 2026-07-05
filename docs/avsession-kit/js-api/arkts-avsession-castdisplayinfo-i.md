@@ -9,38 +9,22 @@ Define the information for extended display screen.
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
 
-## height
+## width
 
 ```TypeScript
-height: number
+width: int
 ```
 
-Display height, in pixels.
+Display width, in pixels.
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
-
-## id
-
-```TypeScript
-id: number
-```
-
-Display ID. The application can get more display information based on the same id from display interface.
-
-**Type:** number
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 
@@ -56,7 +40,7 @@ Display name.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 
@@ -72,23 +56,39 @@ The state of display.
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 
-## width
+## id
 
 ```TypeScript
-width: number
+id: long
 ```
 
-Display width, in pixels.
+Display ID. The application can get more display information based on the same id from display interface.
 
-**Type:** number
+**Type:** long
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
+
+## height
+
+```TypeScript
+height: int
+```
+
+Display height, in pixels.
+
+**Type:** int
+
+**Since:** 12
+
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.ExtendedDisplayCast
 

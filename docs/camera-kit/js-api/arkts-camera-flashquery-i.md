@@ -9,7 +9,7 @@ Provides APIs to obtain the flash information of a camera device, including whet
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## hasFlash
@@ -22,7 +22,7 @@ Checks whether the camera device has flash.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,13 +30,13 @@ Checks whether the camera device has flash.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for whether the camera device has flash. **true** if it has flash, **false**otherwise. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is returned. |
+| boolean | Check result for whether the camera device has flash. true if it has flash, false  otherwise. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 7400103 | Session not config, only throw in session usage. |
 
 ## isFlashModeSupported
 
@@ -48,7 +48,7 @@ Checks whether a flash mode is supported.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -56,17 +56,53 @@ Checks whether a flash mode is supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| flashMode | FlashMode | Yes | Flash mode. If the input parameter is null or undefined, it is treated as 0 andthe flash is turned off. |
+| flashMode | FlashMode | Yes | Flash mode. If the input parameter is null or undefined, it is treated as 0 and  the flash is turned off. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the flash mode. **true** if supported, **false** otherwise.If the operation fails, undefined is returned and an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is thrown. |
+| boolean | Check result for the support of the flash mode. true if supported, false otherwise.  If the operation fails, undefined is returned and an error code defined in  [CameraErrorCode]camera.CameraErrorCode is thrown. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 7400103 | Session not config, only throw in session usage. |
+
+## isLcdFlashSupported
+
+```TypeScript
+isLcdFlashSupported(): boolean
+```
+
+Checks whether the LCD flash is supported.
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Check result for the support of the LCD flash. true if supported, false otherwise. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. |
+| 7400103 | Session not config, only throw in session usage. |
+
+**Example**
+
+```TypeScript
+function isLcdFlashSupported(nightPhotoSession: camera.NightPhotoSession): boolean {
+  return nightPhotoSession.isLcdFlashSupported();
+}
+
+```
 

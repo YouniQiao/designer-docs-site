@@ -1,0 +1,110 @@
+# RotateOption
+
+旋转参数。
+
+**Since:** 7
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Modules to Import
+
+```TypeScript
+import { matrix4 } from '@kit.ArkUI';
+```
+
+## centerY
+
+```TypeScript
+centerY?: number
+```
+
+单次矩阵变换中心点相对于组件变换中心点（锚点）的额外y轴偏移值。 单位：px 默认值：0 **说明：** 为0时表示y方向的矩阵变换中心恰好为组件y方向锚点，取值表示相对组件y方向锚点的额外偏移量。具体实现可参考 [示例3（按中心点旋转）](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#示例3按中心点旋转)。
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## centerX
+
+```TypeScript
+centerX?: number
+```
+
+单次矩阵变换中心点相对于组件变换中心点（锚点）的额外x轴偏移值。 单位：px 默认值：0 **说明：** 为0时表示x方向的矩阵变换中心恰好为组件x方向锚点，取值表示相对组件x方向锚点的额外偏移量。具体实现可参考 [示例3（按中心点旋转）](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#示例3按中心点旋转)。
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## x
+
+```TypeScript
+x?: number
+```
+
+旋转轴向量x坐标。 默认值：0。 取值范围 (-∞, +∞)
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## angle
+
+```TypeScript
+angle?: number
+```
+
+旋转角度。 默认值：0
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## y
+
+```TypeScript
+y?: number
+```
+
+旋转轴向量y坐标。 默认值：0。 取值范围 (-∞, +∞)
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## z
+
+```TypeScript
+z?: number
+```
+
+旋转轴向量z坐标。 默认值：0。 取值范围 (-∞, +∞)。 **说明：** 旋转向量中x、y、z至少有一个不为0才有意义。
+
+**Type:** number
+
+**Since:** 7
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+

@@ -9,38 +9,38 @@ Describes the capture end information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
-
-## captureId
-
-```TypeScript
-captureId: number
-```
-
-ID of this capture action.
-
-**Type:** number
-
-**Since:** 10
-
-**Atomic service API:** This API can be used in atomic services since API version 19.
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## frameCount
 
 ```TypeScript
-frameCount: number
+frameCount: int
 ```
 
 Number of frames captured.
 
-**Type:** number
+**Type:** int
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+## captureId
+
+```TypeScript
+captureId: int
+```
+
+ID of this capture action.
+
+**Type:** int
+
+**Since:** 10
+
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

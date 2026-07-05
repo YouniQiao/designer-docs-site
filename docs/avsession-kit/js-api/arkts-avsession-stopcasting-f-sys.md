@@ -1,10 +1,4 @@
-# stopCasting (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# stopCasting
 
 ## stopCasting
 
@@ -25,15 +19,15 @@ Stop current cast and disconnect device connection.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | session | SessionToken | Yes | Specifies the sessionId which is to be stopped. |
-| callback | AsyncCallback&lt;void&gt; | Yes | A callback instance used to return when cast stopped completed. |
+| callback | AsyncCallback&lt;void> | Yes | A callback instance used to return when cast stopped completed. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 6600109 | The remote connection is not established |
 
 **Example**
 
@@ -47,7 +41,6 @@ avSession.stopCasting(myToken, () => {
 });
 
 ```
-
 
 ## stopCasting
 
@@ -73,15 +66,15 @@ Stop current cast and disconnect device connection.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise for the result |
+| Promise&lt;void> | Promise for the result |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [6600109](../errorcode-avsession.md#6600109-remote-session-does-not-exist) | The remote connection is not established |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 6600109 | The remote connection is not established |
 
 **Example**
 

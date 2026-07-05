@@ -1,6 +1,10 @@
 # XMPTagType
 
-Enumerates XMP tag type.
+```TypeScript
+enum XMPTagType
+```
+
+表示XMP标签类型的枚举。
 
 **Since:** 26.0.0
 
@@ -12,11 +16,11 @@ Enumerates XMP tag type.
 UNKNOWN = 0
 ```
 
-Unknown XMP tag type.
+未知类型。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -26,11 +30,11 @@ Unknown XMP tag type.
 STRING = 1
 ```
 
-String XMP tag type.
+字符串类型。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -40,11 +44,11 @@ String XMP tag type.
 UNORDERED_ARRAY = 2
 ```
 
-Unordered array XMP tag type.
+无序数组类型。序列化时，此类型在XMP元数据中的格式为<rdf:Bag>。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,11 +58,11 @@ Unordered array XMP tag type.
 ORDERED_ARRAY = 3
 ```
 
-Ordered array XMP tag type.
+有序数组类型。序列化时，此类型在XMP元数据中的格式为<rdf:Seq>。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -68,11 +72,11 @@ Ordered array XMP tag type.
 ALTERNATE_ARRAY = 4
 ```
 
-Alternate array XMP tag type.
+备选数组类型。序列化时，此类型在XMP元数据中的格式为<rdf:Alt>。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -82,11 +86,11 @@ Alternate array XMP tag type.
 ALTERNATE_TEXT = 5
 ```
 
-Alternate text XMP tag type.
+多语言文本类型。序列化时，此类型为XMP格式的xml:lang限定符组成的备选数组。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -96,11 +100,11 @@ Alternate text XMP tag type.
 STRUCTURE = 6
 ```
 
-Structure XMP tag type.
+结构体类型。不同于数组元素，结构体字段可以属于不同的命名空间。
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

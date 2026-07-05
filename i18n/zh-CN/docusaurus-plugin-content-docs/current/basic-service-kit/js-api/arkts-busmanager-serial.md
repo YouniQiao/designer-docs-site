@@ -6,35 +6,34 @@
 
 **系统能力：** SystemCapability.BusManager.Serial
 
+## 导入模块
+
+```TypeScript
+import { serial } from '@kit.BasicServicesKit';
+```
+
 ## 汇总
 
 ### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [getSerialPortList](arkts-basicservices-getserialportlist-f.md#getserialportlist-1) | 获取串口列表。使用Promise异步回调。 |
-
-<!--Del-->
-### 函数（系统接口）
-
-| 名称 | 说明 |
-| --- | --- |
-| [addPortAuthorization](arkts-basicservices-addportauthorization-f-sys.md#addportauthorization-1) | 添加应用访问串口端口的权限 仅面向串口授权弹窗系统应用开放 |
-<!--DelEnd-->
+| <!--DelRow-->[addPortAuthorization](arkts-serial-addportauthorization-f-sys.md#addPortAuthorization-1) | 添加应用访问串口端口的权限 仅面向串口授权弹窗系统应用开放 |
+| [getSerialPortList](arkts-serial-getserialportlist-f.md#getSerialPortList-1) | 获取串口列表。使用Promise异步回调。 |
 
 ### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [SerialConfigs](arkts-basicservices-serialconfigs-i.md) | 串口通信配置 |
-| [SerialPort](arkts-basicservices-serialport-i.md) | 串口对象，提供串口设备信息和通信相关能力 |
-| [SerialPortInfo](arkts-basicservices-serialportinfo-i.md) | 串口设备信息 |
+| [SerialConfigs](arkts-serial-serialconfigs-i.md) | 串口通信配置 |
+| [SerialPort](arkts-serial-serialport-i.md) | 串口对象，提供串口设备信息和通信相关能力 |
+| [SerialPortInfo](arkts-serial-serialportinfo-i.md) | 串口设备信息 |
 
 ### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [DataBits](arkts-basicservices-databits-e.md) | 串口通信中的数据位 |
-| [Parity](arkts-basicservices-parity-e.md) | 串口通信中的校验位 |
-| [StopBits](arkts-basicservices-stopbits-e.md) | 串口通信中的停止位 |
+| [DataBits](arkts-serial-databits-e.md) | 串口通信中的数据位 |
+| [Parity](arkts-serial-parity-e.md) | 串口通信中的校验位 |
+| [StopBits](arkts-serial-stopbits-e.md) | 串口通信中的停止位 |
 

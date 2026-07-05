@@ -9,22 +9,22 @@ JFIF metadata.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
-## densityUnit
+## xDensity
 
 ```TypeScript
-readonly densityUnit?: number
+readonly xDensity?: int
 ```
 
-JFIF density unit. The value should be an integer.
+JFIF x density. The value should be an integer.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -40,55 +40,55 @@ whether the JFIF image is progressive.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## version
+## densityUnit
 
 ```TypeScript
-readonly version?: number[]
+readonly densityUnit?: int
 ```
 
-JFIF version.
+JFIF density unit. The value should be an integer.
 
-**Type:** number[]
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## xDensity
-
-```TypeScript
-readonly xDensity?: number
-```
-
-JFIF x density. The value should be an integer.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## yDensity
 
 ```TypeScript
-readonly yDensity?: number
+readonly yDensity?: int
 ```
 
 JFIF y density. The value should be an integer.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## version
+
+```TypeScript
+readonly version?: int[]
+```
+
+JFIF version.
+
+**Type:** int[]
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

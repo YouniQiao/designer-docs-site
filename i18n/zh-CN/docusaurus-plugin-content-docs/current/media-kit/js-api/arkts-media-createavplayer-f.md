@@ -10,7 +10,7 @@ function createAVPlayer(callback: AsyncCallback<AVPlayer>): void
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -18,13 +18,13 @@ function createAVPlayer(callback: AsyncCallback<AVPlayer>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVPlayer&gt; | 是 | 回调函数。异步返回AVPlayer实例，失败时返回null。可用于音视频播放。 |
+| callback | AsyncCallback&lt;AVPlayer> | 是 | 回调函数。异步返回AVPlayer实例，失败时返回null。可用于音视频播放。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Return by callback. |
+| 5400101 | No memory. Return by callback. |
 
 **示例：**
 
@@ -43,7 +43,6 @@ media.createAVPlayer((error: BusinessError, video: media.AVPlayer) => {
 
 ```
 
-
 ## createAVPlayer
 
 ```TypeScript
@@ -54,7 +53,7 @@ function createAVPlayer(): Promise<AVPlayer>
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.AVPlayer
 
@@ -62,13 +61,13 @@ function createAVPlayer(): Promise<AVPlayer>
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;AVPlayer&gt; | Promise对象。成功时异步返回AVPlayer实例，可用于音视频播放。失败时返回null。 |
+| Promise&lt;AVPlayer> | Promise对象。成功时异步返回AVPlayer实例，可用于音视频播放。失败时返回null。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Return by promise. |
+| 5400101 | No memory. Return by promise. |
 
 **示例：**
 

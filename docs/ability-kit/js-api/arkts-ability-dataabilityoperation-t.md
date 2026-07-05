@@ -4,7 +4,7 @@
 export type DataAbilityOperation = _DataAbilityOperation
 ```
 
-Defines the level-2 module DataAbilityOperation.
+DataAbilityOperation二级模块。
 
 **Since:** 9
 

@@ -1,6 +1,10 @@
 # XmageColorMode
 
-Enumerates the XMAGE color modes.
+```TypeScript
+enum XmageColorMode
+```
+
+表示XMAGE颜色模式类型的枚举。
 
 **Since:** 23
 
@@ -12,11 +16,11 @@ Enumerates the XMAGE color modes.
 NORMAL = 0
 ```
 
-Original.
+标准模式。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -26,11 +30,11 @@ Original.
 BRIGHT = 1
 ```
 
-Bright.
+明亮模式。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -40,11 +44,11 @@ Bright.
 SOFT = 2
 ```
 
-Vivid.
+柔焦模式。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,11 +58,11 @@ Vivid.
 MONO = 3
 ```
 
-Mono.
+黑白模式。
 
 **Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

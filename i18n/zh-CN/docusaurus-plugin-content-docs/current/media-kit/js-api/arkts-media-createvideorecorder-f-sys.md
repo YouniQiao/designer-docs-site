@@ -1,4 +1,4 @@
-# createVideoRecorder（系统接口）
+# createVideoRecorder
 
 ## createVideoRecorder
 
@@ -18,14 +18,14 @@ The maintenance of this interface has been stopped since version api 9. Please u
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;VideoRecorder&gt; | 是 | used to return AudioPlayer instance if the operation issuccessful; returns null otherwise. |
+| callback | AsyncCallback&lt;VideoRecorder> | 是 | used to return AudioPlayer instance if the operation is  successful; returns null otherwise. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Return by callback. |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12 |
+| 5400101 | No memory. Return by callback. |
+| 202 | Not System App. [since 12] |
 
 **示例：**
 
@@ -43,7 +43,6 @@ media.createVideoRecorder((error: BusinessError, video: media.VideoRecorder) => 
 });
 
 ```
-
 
 ## createVideoRecorder
 
@@ -63,14 +62,14 @@ The maintenance of this interface has been stopped since version api 9. Please u
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;VideoRecorder&gt; | A Promise instance used to return VideoRecorder instance if the operation issuccessful; returns null otherwise. |
+| Promise&lt;VideoRecorder> | A Promise instance used to return VideoRecorder instance if the operation is  successful; returns null otherwise. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-内存分配失败) | No memory. Return by promise. |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App.<br>**适用版本：** 12 |
+| 5400101 | No memory. Return by promise. |
+| 202 | Not System App. [since 12] |
 
 **示例：**
 

@@ -1,4 +1,4 @@
-# DeviceState (System API)
+# DeviceState
 
 Device state used to describe states including discovery, authentication and other scenes.
 
@@ -11,50 +11,18 @@ Device state used to describe states including discovery, authentication and oth
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
-
-## deviceId
-
-```TypeScript
-readonly deviceId: string
-```
-
-Unique device descriptor.
-
-**Type:** string
-
-**Since:** 20
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**System API:** This is a system API.
-
-## deviceState
-
-```TypeScript
-readonly deviceState: number
-```
-
-Device connection state.
-
-**Type:** number
-
-**Since:** 20
-
-**System capability:** SystemCapability.Multimedia.AVSession.AVCast
-
-**System API:** This is a system API.
 
 ## radarErrorCode
 
 ```TypeScript
-readonly radarErrorCode: number
+readonly radarErrorCode: int
 ```
 
 System radar error code returned by cast+services.
 
-**Type:** number
+**Type:** int
 
 **Since:** 20
 
@@ -65,12 +33,44 @@ System radar error code returned by cast+services.
 ## reasonCode
 
 ```TypeScript
-readonly reasonCode: number
+readonly reasonCode: int
 ```
 
 Reason for connection failure, for example, user cancellation and timeout.
 
-**Type:** number
+**Type:** int
+
+**Since:** 20
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+**System API:** This is a system API.
+
+## deviceState
+
+```TypeScript
+readonly deviceState: int
+```
+
+Device connection state.
+
+**Type:** int
+
+**Since:** 20
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+**System API:** This is a system API.
+
+## deviceId
+
+```TypeScript
+readonly deviceId: string
+```
+
+Unique device descriptor.
+
+**Type:** string
 
 **Since:** 20
 

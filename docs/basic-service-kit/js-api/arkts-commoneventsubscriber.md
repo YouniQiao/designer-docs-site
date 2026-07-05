@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [CommonEventSubscriber](arkts-basicservices-commoneventsubscriber-i.md) | The **CommonEventSubscriber** module provides APIs for describing the common event subscriber. |
+| [CommonEventSubscriber](arkts-commoneventsubscriber-i.md) | 表示公共事件的订阅者。 |
 

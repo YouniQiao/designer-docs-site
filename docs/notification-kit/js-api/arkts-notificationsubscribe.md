@@ -1,6 +1,6 @@
 # @ohos.notificationSubscribe
 
-The **notificationSubscribe** module provides APIs for notification subscription, notification unsubscription, subscription removal, and more. In general cases, only system applications can call these APIs. > **NOTE** > > The APIs provided by this module are system APIs.
+本模块提供通知订阅、取消订阅、通知移除等，一般情况下，只有系统应用具有这些操作权限。 > **说明：** > > 本模块接口均为系统接口。
 
 **Since:** 9
 
@@ -11,74 +11,66 @@ The **notificationSubscribe** module provides APIs for notification subscription
 ## Modules to Import
 
 ```TypeScript
-import { notificationSubscribe } from '@ohos.notificationSubscribe';
+import { notificationSubscribe } from '@kit.NotificationKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [distributeOperation](arkts-notification-distributeoperation-f-sys.md#distributeoperation-1) | Triggers a notification for cross-device operations, such as tap-to-redirect and quick reply. This API uses a promise to return the result. |
-| [remove](arkts-notification-remove-f-sys.md#remove-1) | Removes a notification based on the bundle information and notification key. This API uses an asynchronous callback to return the result. |
-| [remove](arkts-notification-remove-f-sys.md#remove-2) | Removes a notification based on the bundle information and notification key. This API uses a promise to return the result. |
-| [remove](arkts-notification-remove-f-sys.md#remove-3) | Removes a notification based on the specified unique notification ID. This API uses an asynchronous callback to return the result. |
-| [remove](arkts-notification-remove-f-sys.md#remove-4) | Removes specified notifications. This API uses an asynchronous callback to return the result. |
-| [remove](arkts-notification-remove-f-sys.md#remove-5) | Removes a notification based on the specified unique notification ID. This API uses a promise to return the result. |
-| [remove](arkts-notification-remove-f-sys.md#remove-6) | Removes specified notifications. This API uses a promise to return the result. |
-| [removeAll](arkts-notification-removeall-f-sys.md#removeall-1) | Removes all notifications for a specified application. This API uses an asynchronous callback to return the result. |
-| [removeAll](arkts-notification-removeall-f-sys.md#removeall-2) | Removes all notifications. This API uses an asynchronous callback to return the result. |
-| [removeAll](arkts-notification-removeall-f-sys.md#removeall-3) | Removes all notifications for a specified user. This API uses an asynchronous callback to return the result. |
-| [removeAll](arkts-notification-removeall-f-sys.md#removeall-4) | Removes all notifications for a specified user. This API uses a promise to return the result. |
-| [removeAll](arkts-notification-removeall-f-sys.md#removeall-5) | Removes all notifications for a specified application. This API uses a promise to return the result. |
-| [subscribe](arkts-notification-subscribe-f-sys.md#subscribe-1) | Subscribes to notifications of all applications under this user. This API uses an asynchronous callback to return the result. |
-| [subscribe](arkts-notification-subscribe-f-sys.md#subscribe-2) | Subscribes to a notification with the subscription information specified. This API uses an asynchronous callback to return the result. |
-| [subscribe](arkts-notification-subscribe-f-sys.md#subscribe-3) | Subscribes to a notification with the subscription information specified. This API uses a promise to return the result. |
-| [subscribeNotification](arkts-notification-subscribenotification-f-sys.md#subscribenotification-1) | Subscribes to notifications. After the subscription, the new message is received through the callback in the subscriber. This API uses a promise to return the result. |
-| [subscribeNotification](arkts-notification-subscribenotification-f-sys.md#subscribenotification-2) | Subscribes to notifications. After the subscription, the new message is received through the callback in the subscriber. This API uses a promise to return the result. |
-| [subscribeSelf](arkts-notification-subscribeself-f-sys.md#subscribeself-1) | Subscribes to notifications of the application and specifies subscription information. This API uses a promise to return the result. |
-| [unsubscribe](arkts-notification-unsubscribe-f-sys.md#unsubscribe-1) | Unsubscribes from a notification. This API uses an asynchronous callback to return the result. |
-| [unsubscribe](arkts-notification-unsubscribe-f-sys.md#unsubscribe-2) | Unsubscribes from a notification. This API uses a promise to return the result. |
-<!--DelEnd-->
+| <!--DelRow-->[distributeOperation](arkts-notificationsubscribe-distributeoperation-f-sys.md#distributeOperation-1) | 触发指定通知的跨设备协同操作（例如通知跨设备点击跳转、通知跨设备快捷回复等）。使用Promise异步回调。 |
+| <!--DelRow-->[remove](arkts-notificationsubscribe-remove-f-sys.md#remove-1) | 根据应用的包信息和通知键值，删除指定通知。使用callback异步回调。 |
+| <!--DelRow-->[remove](arkts-notificationsubscribe-remove-f-sys.md#remove-2) | 根据应用的包信息和通知键值，删除指定通知。使用Promise异步回调。 |
+| <!--DelRow-->[remove](arkts-notificationsubscribe-remove-f-sys.md#remove-3) | 通过通知的唯一ID，删除指定通知。使用callback异步回调。 |
+| <!--DelRow-->[remove](arkts-notificationsubscribe-remove-f-sys.md#remove-4) | 批量删除指定通知。使用callback异步回调。 |
+| <!--DelRow-->[remove](arkts-notificationsubscribe-remove-f-sys.md#remove-5) | 通过通知的唯一ID，删除指定通知。使用Promise异步回调。 |
+| <!--DelRow-->[remove](arkts-notificationsubscribe-remove-f-sys.md#remove-6) | 批量删除指定通知。使用Promise异步回调。 |
+| <!--DelRow-->[removeAll](arkts-notificationsubscribe-removeall-f-sys.md#removeAll-1) | 删除指定应用的所有通知。使用callback异步回调。 |
+| <!--DelRow-->[removeAll](arkts-notificationsubscribe-removeall-f-sys.md#removeAll-2) | 删除所有通知。使用callback异步回调。 |
+| <!--DelRow-->[removeAll](arkts-notificationsubscribe-removeall-f-sys.md#removeAll-3) | 删除指定用户下的所有通知。使用callback异步回调。 |
+| <!--DelRow-->[removeAll](arkts-notificationsubscribe-removeall-f-sys.md#removeAll-4) | 删除指定用户下的所有通知。使用Promise异步回调。 |
+| <!--DelRow-->[removeAll](arkts-notificationsubscribe-removeall-f-sys.md#removeAll-5) | 删除指定应用的所有通知。使用Promise异步回调。 |
+| <!--DelRow-->[subscribe](arkts-notificationsubscribe-subscribe-f-sys.md#subscribe-1) | 订阅当前用户下所有应用的通知。使用callback异步回调。 |
+| <!--DelRow-->[subscribe](arkts-notificationsubscribe-subscribe-f-sys.md#subscribe-2) | 订阅通知并指定订阅信息。使用callback异步回调。 |
+| <!--DelRow-->[subscribe](arkts-notificationsubscribe-subscribe-f-sys.md#subscribe-3) | 订阅通知并指定订阅信息。使用Promise异步回调。 |
+| <!--DelRow-->[subscribeNotification](arkts-notificationsubscribe-subscribenotification-f-sys.md#subscribeNotification-1) | 订阅通知；订阅后，通过订阅者中的回调函数接收新消息。使用Promise异步回调。 |
+| <!--DelRow-->[subscribeNotification](arkts-notificationsubscribe-subscribenotification-f-sys.md#subscribeNotification-2) | 订阅通知；订阅后，通过订阅者中的回调函数接收新消息。使用Promise异步回调。 |
+| <!--DelRow-->[subscribeSelf](arkts-notificationsubscribe-subscribeself-f-sys.md#subscribeSelf-1) | 订阅本应用的通知并指定订阅信息。使用Promise异步回调。 |
+| <!--DelRow-->[unsubscribe](arkts-notificationsubscribe-unsubscribe-f-sys.md#unsubscribe-1) | 取消订阅。使用callback异步回调。 |
+| <!--DelRow-->[unsubscribe](arkts-notificationsubscribe-unsubscribe-f-sys.md#unsubscribe-2) | 取消订阅。使用Promise异步回调。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [NotificationKey](arkts-notification-notificationkey-i-sys.md) | Notification key. |
-| [OperationInfo](arkts-notification-operationinfo-i-sys.md) | Cross-device operation information. |
-<!--DelEnd-->
+| <!--DelRow-->[NotificationKey](arkts-notificationsubscribe-notificationkey-i-sys.md) | 通知键值。 |
+| <!--DelRow-->[OperationInfo](arkts-notificationsubscribe-operationinfo-i-sys.md) | 跨设备协同操作信息。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [RemoveReason](arkts-notification-removereason-e-sys.md) | Reason for removing the notification. |
-<!--DelEnd-->
+| <!--DelRow-->[BadgeNumberCallbackData](arkts-notificationsubscribe-badgenumbercallbackdata-t-sys.md) | 回调返回监听到的应用信息。 |
+| <!--DelRow-->[BundleOption](arkts-notificationsubscribe-bundleoption-t-sys.md) | 描述BundleOption信息，即应用的包信息。 |
+| <!--DelRow-->[EnabledNotificationCallbackData](arkts-notificationsubscribe-enablednotificationcallbackdata-t-sys.md) | 回调返回监听到的应用信息。 |
+| <!--DelRow-->[EnabledPriorityNotificationByBundleCallbackData](arkts-notificationsubscribe-enabledprioritynotificationbybundlecallbackdata-t-sys.md) | 返回应用通知优先级开关状态。 |
+| <!--DelRow-->[EnabledPriorityNotificationCallbackData](arkts-notificationsubscribe-enabledprioritynotificationcallbackdata-t-sys.md) | 返回通知优先级总开关状态。 |
+| <!--DelRow-->[EnabledSilentReminderCallbackData](arkts-notificationsubscribe-enabledsilentremindercallbackdata-t-sys.md) | 回调返回监听到的静默提醒使能状态信息。 |
+| <!--DelRow-->[EnabledSilentReminderChangedCallback](arkts-notificationsubscribe-enabledsilentreminderchangedcallback-t-sys.md) | 注册应用通知静默提醒使能状态变化的回调函数类型。 |
+| <!--DelRow-->[NotificationClassification](arkts-notificationsubscribe-notificationclassification-t-sys.md) | 描述通知分类信息。 |
+| <!--DelRow-->[NotificationSubscribeInfo](arkts-notificationsubscribe-notificationsubscribeinfo-t-sys.md) | 通知发布者的信息。 |
+| <!--DelRow-->[NotificationSubscriber](arkts-notificationsubscribe-notificationsubscriber-t-sys.md) | 作为订阅通知接口subscribe的入参，提供订阅者接收到新通知、取消通知等的回调方法。 |
+| <!--DelRow-->[NotificationSwitchChangedCallback](arkts-notificationsubscribe-notificationswitchchangedcallback-t-sys.md) | 注册由[notificationManager.setNotificationSwitch]{@link ./@ohos.notificationManager:notificationManager.setNotificationSwitch}接口设置的通知开关状态变化的回调函数类型。 |
+| <!--DelRow-->[NotificationSwitchChangedCallbackData](arkts-notificationsubscribe-notificationswitchchangedcallbackdata-t-sys.md) | 描述通知开关状态变化的回调数据。 |
+| <!--DelRow-->[SubscribeCallbackData](arkts-notificationsubscribe-subscribecallbackdata-t-sys.md) | 携带系统属性值的通知信息。 |
+| <!--DelRow-->[VoiceContent](arkts-notificationsubscribe-voicecontent-t-sys.md) | 通知消息中语音播报内容定义。 |
+| <!--DelRow-->[VoiceContentOptions](arkts-notificationsubscribe-voicecontentoptions-t-sys.md) | 实况通知语音播报内容配置项。 |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [BadgeNumberCallbackData](arkts-notification-badgenumbercallbackdata-t-sys.md) | Describes the badge number of the application has changed. |
-| [BundleOption](arkts-notification-bundleoption-t-sys.md) | Describes the **BundleOption** information, that is, the bundle information of an application. |
-| [EnabledNotificationCallbackData](arkts-notification-enablednotificationcallbackdata-t-sys.md) | Describes the properties of the application that the permission to send notifications has changed. |
-| [EnabledPriorityNotificationByBundleCallbackData](arkts-notification-enabledprioritynotificationbybundlecallbackdata-t-sys.md) | Describes the bundle switch state for priority notification. |
-| [EnabledPriorityNotificationCallbackData](arkts-notification-enabledprioritynotificationcallbackdata-t-sys.md) | Describes the main switch state for priority notification. |
-| [EnabledSilentReminderCallbackData](arkts-notification-enabledsilentremindercallbackdata-t-sys.md) | Describes the switch state for silent reminder notification. |
-| [EnabledSilentReminderChangedCallback](arkts-notification-enabledsilentreminderchangedcallback-t-sys.md) | Defines a callback function to listen for the enabling state changes of the application's silent reminder. |
-| [NotificationClassification](arkts-notification-notificationclassification-t-sys.md) | Describes the notification classification information. |
-| [NotificationSubscribeInfo](arkts-notification-notificationsubscribeinfo-t-sys.md) | The **NotificationSubscribeInfo** module provides APIs for defining the information about the publisher for notification subscription. |
-| [NotificationSubscriber](arkts-notification-notificationsubscriber-t-sys.md) | Provides callback methods for subscribers to receive and cancel notifications. |
-| [NotificationSwitchChangedCallback](arkts-notification-notificationswitchchangedcallback-t-sys.md) | Register the callback function type for notification switch state changes set by the interface of [notificationManager.setNotificationSwitch](arkts-notification-setnotificationswitch-f-sys.md#setnotificationswitch-1). |
-| [NotificationSwitchChangedCallbackData](arkts-notification-notificationswitchchangedcallbackdata-t-sys.md) | Describes the notification switch state changes callback data. |
-| [SubscribeCallbackData](arkts-notification-subscribecallbackdata-t-sys.md) | Provides methods that will be called back when the subscriber receives a new notification or a notification is canceled. |
-| [VoiceContent](arkts-notification-voicecontent-t-sys.md) | Describes the properties of the voice content of the received notification. |
-| [VoiceContentOptions](arkts-notification-voicecontentoptions-t-sys.md) | Describes the properties of the voice content options for notification subscription. |
-<!--DelEnd-->
+| <!--DelRow-->[RemoveReason](arkts-notificationsubscribe-removereason-e-sys.md) | 通知删除原因。 |
 

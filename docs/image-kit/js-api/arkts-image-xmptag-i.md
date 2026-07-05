@@ -1,6 +1,6 @@
 # XMPTag
 
-Describes XMP Tag parameters.
+表示XMP标签信息。
 
 **Since:** 26.0.0
 
@@ -9,7 +9,7 @@ Describes XMP Tag parameters.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## name
@@ -18,13 +18,13 @@ import { image } from '@ohos.multimedia.image';
 name: string
 ```
 
-The name of XMP tag.
+XMP标签名称。
 
 **Type:** string
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -34,29 +34,13 @@ The name of XMP tag.
 type: XMPTagType
 ```
 
-The type of XMP tag.
+XMP标签类型。
 
 **Type:** XMPTagType
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## value
-
-```TypeScript
-value?: string
-```
-
-The value of XMP tag.
-
-**Type:** string
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -66,13 +50,29 @@ The value of XMP tag.
 xmpNamespace: XMPNamespace
 ```
 
-The namespace of XMP tag.
+XMP命名空间。
 
 **Type:** XMPNamespace
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## value
+
+```TypeScript
+value?: string
+```
+
+XMP标签值。
+
+**Type:** string
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

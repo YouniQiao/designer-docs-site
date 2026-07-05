@@ -9,8 +9,24 @@ Interface for defining time base metadata
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
+
+## duration
+
+```TypeScript
+duration: int
+```
+
+Duration of the time primitive information The value should be an integer. <br>Unit:milliseconds.
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
 
 ## classify
 
@@ -24,7 +40,7 @@ The classification label of the time base metadata.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -40,23 +56,23 @@ Key-value pair set corresponding to time primitive information
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
-## duration
+## start
 
 ```TypeScript
-duration: number
+start: int
 ```
 
-Duration of the time primitive information The value should be an integer. <br>Unit:milliseconds.
+Defines the offset value of the time primitive information relative to the start time of the entire media. The value should be an integer. <br>Unit:milliseconds.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -72,23 +88,7 @@ Defines the unique token of the time base metadata, The tag must be unique in ot
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
-## start
-
-```TypeScript
-start: number
-```
-
-Defines the offset value of the time primitive information relative to the start time of the entire media. The value should be an integer. <br>Unit:milliseconds.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

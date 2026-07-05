@@ -1,5 +1,9 @@
 # ExtraKey
 
+```TypeScript
+enum ExtraKey
+```
+
 Define some common extra keys used in different scenarios.
 
 **Since:** 26.0.0
@@ -16,9 +20,9 @@ Set required abilities to the system.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -32,11 +36,29 @@ Informs the system that the app supports URL casting.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
+
+## LIVE_VIEW_HIDDEN_WHEN_KEYGUARD
+
+```TypeScript
+LIVE_VIEW_HIDDEN_WHEN_KEYGUARD = 'hw_live_view_hidden_when_keyguard'
+```
+
+Inform the system that the live view card should be hidden on the keyguard.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.AVSession.Core
+
+**System API:** This is a system API.
 
 ## DLNA_CURRENT_URI_METADATA
 
@@ -48,9 +70,9 @@ Key for DLNA CurrentURIMetadata extra parameter.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 
@@ -64,9 +86,9 @@ Key for DLNA DIDL-Lite extra parameter.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVCast
 

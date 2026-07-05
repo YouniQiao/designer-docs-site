@@ -4,7 +4,7 @@
 type SoundPool = _SoundPool
 ```
 
-SoundPool, which provides APIs for loading, unloading, playing, and stopping playing system sounds, setting the volume, and setting the number of loops.
+音频池，提供了系统声音的加载、播放、音量设置、循环设置、停止播放、资源卸载等功能。
 
 **Since:** 10
 

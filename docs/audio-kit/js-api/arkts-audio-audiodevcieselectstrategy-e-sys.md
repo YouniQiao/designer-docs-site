@@ -1,4 +1,8 @@
-# AudioDevcieSelectStrategy (System API)
+# AudioDevcieSelectStrategy
+
+```TypeScript
+enum AudioDevcieSelectStrategy
+```
 
 Enumerates the device select strategy.
 

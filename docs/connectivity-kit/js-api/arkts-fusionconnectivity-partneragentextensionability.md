@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { PartnerAgentExtensionAbility } from '@ohos.FusionConnectivity.PartnerAgentExtensionAbility';
+import { PartnerAgentExtensionAbility } from '@kit.ConnectivityKit';
 ```
 
 ## Summary
@@ -12,12 +12,12 @@ import { PartnerAgentExtensionAbility } from '@ohos.FusionConnectivity.PartnerAg
 
 | Name | Description |
 | --- | --- |
-| [PartnerAgentExtensionAbility](arkts-connectivity-partneragentextensionability-c.md) | Class for the PartnerAgentExtensionAbility. Applications can use this ability to discover devices. |
+| [PartnerAgentExtensionAbility](arkts-partneragentextensionability-c.md) | Class for the PartnerAgentExtensionAbility. Applications can use this ability to discover devices. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [PartnerAgentExtensionAbilityDestroyReason](arkts-connectivity-partneragentextensionabilitydestroyreason-t.md) | The reasons for destroying partner agent extension ability. |
-| [PartnerDeviceAddress](arkts-connectivity-partnerdeviceaddress-t.md) | Partner device address. |
+| [PartnerAgentExtensionAbilityDestroyReason](arkts-partneragentextensionabilitydestroyreason-t.md) | The reasons for destroying partner agent extension ability. |
+| [PartnerDeviceAddress](arkts-partnerdeviceaddress-t.md) | Partner device address. |
 

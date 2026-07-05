@@ -1,8 +1,12 @@
-# Emotion (System API)
+# Emotion
+
+```TypeScript
+enum Emotion
+```
 
 Enumerates the types of emotions in the detected human face information.
 
-**Since:** 26.0.0
+**Since:** 13
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -16,9 +20,9 @@ NEUTRAL = 0
 
 Quiet and calm.
 
-**Since:** 26.0.0
+**Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,9 +36,9 @@ SADNESS = 1
 
 Sad.
 
-**Since:** 26.0.0
+**Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -48,9 +52,9 @@ SMILE = 2
 
 Smile.
 
-**Since:** 26.0.0
+**Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -64,9 +68,9 @@ SURPRISE = 3
 
 Surprise.
 
-**Since:** 26.0.0
+**Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** From API version 26.0.0 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

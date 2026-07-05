@@ -9,7 +9,7 @@ Provides fileUri APIS
 ## Modules to Import
 
 ```TypeScript
-import { fileUri } from '@ohos.file.fileuri';
+import { fileUri } from '@kit.CoreFileKit';
 ```
 
 ## Summary
@@ -18,11 +18,11 @@ import { fileUri } from '@ohos.file.fileuri';
 
 | Name | Description |
 | --- | --- |
-| [getUriFromPath](arkts-corefile-geturifrompath-f.md#geturifrompath-1) | Get the uri from the path of file in app sandbox |
+| [getUriFromPath](arkts-fileuri-geturifrompath-f.md#getUriFromPath-1) | Get the uri from the path of file in app sandbox |
 
 ### Classes
 
 | Name | Description |
 | --- | --- |
-| [FileUri](arkts-corefile-fileuri-c.md) | FileUri represents the uri of the file. |
+| [FileUri](arkts-fileuri-fileuri-c.md) | FileUri represents the uri of the file. |
 

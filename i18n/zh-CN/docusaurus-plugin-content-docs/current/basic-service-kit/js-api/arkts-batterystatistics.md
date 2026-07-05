@@ -8,34 +8,34 @@
 
 **系统接口：** 此接口为系统接口。
 
+## 导入模块
+
+```TypeScript
+import { batteryStats } from '@kit.BasicServicesKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 函数（系统接口）
+### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [getAppPowerPercent](arkts-basicservices-getapppowerpercent-f-sys.md#getapppowerpercent-1) | 获取应用的耗电百分比。 |
-| [getAppPowerValue](arkts-basicservices-getapppowervalue-f-sys.md#getapppowervalue-1) | 获取应用的耗电量，单位毫安时。 |
-| [getBatteryStats](arkts-basicservices-getbatterystats-f-sys.md#getbatterystats-1) | 获取耗电信息列表。使用Promise异步回调。 |
-| [getBatteryStats](arkts-basicservices-getbatterystats-f-sys.md#getbatterystats-2) | 获取耗电信息列表。使用callback异步回调。 |
-| [getHardwareUnitPowerPercent](arkts-basicservices-gethardwareunitpowerpercent-f-sys.md#gethardwareunitpowerpercent-1) | 根据耗电类型获取硬件单元的耗电百分比。 |
-| [getHardwareUnitPowerValue](arkts-basicservices-gethardwareunitpowervalue-f-sys.md#gethardwareunitpowervalue-1) | 根据耗电类型获取硬件单元的耗电量，单位毫安时。 |
-<!--DelEnd-->
+| <!--DelRow-->[getAppPowerPercent](arkts-batterystats-getapppowerpercent-f-sys.md#getAppPowerPercent-1) | 获取应用的耗电百分比。 |
+| <!--DelRow-->[getAppPowerValue](arkts-batterystats-getapppowervalue-f-sys.md#getAppPowerValue-1) | 获取应用的耗电量，单位毫安时。 |
+| <!--DelRow-->[getBatteryStats](arkts-batterystats-getbatterystats-f-sys.md#getBatteryStats-1) | 获取耗电信息列表。使用Promise异步回调。 |
+| <!--DelRow-->[getBatteryStats](arkts-batterystats-getbatterystats-f-sys.md#getBatteryStats-2) | 获取耗电信息列表。使用callback异步回调。 |
+| <!--DelRow-->[getHardwareUnitPowerPercent](arkts-batterystats-gethardwareunitpowerpercent-f-sys.md#getHardwareUnitPowerPercent-1) | 根据耗电类型获取硬件单元的耗电百分比。 |
+| <!--DelRow-->[getHardwareUnitPowerValue](arkts-batterystats-gethardwareunitpowervalue-f-sys.md#getHardwareUnitPowerValue-1) | 根据耗电类型获取硬件单元的耗电量，单位毫安时。 |
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [BatteryStatsInfo](arkts-basicservices-batterystatsinfo-i-sys.md) | 设备的耗电信息。 |
-<!--DelEnd-->
+| <!--DelRow-->[BatteryStatsInfo](arkts-batterystats-batterystatsinfo-i-sys.md) | 设备的耗电信息。 |
 
-<!--Del-->
-### 枚举（系统接口）
+### 枚举
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [ConsumptionType](arkts-basicservices-consumptiontype-e-sys.md) | 表示电量消耗类型的枚举值。 |
-<!--DelEnd-->
+| <!--DelRow-->[ConsumptionType](arkts-batterystats-consumptiontype-e-sys.md) | 表示电量消耗类型的枚举值。 |
 

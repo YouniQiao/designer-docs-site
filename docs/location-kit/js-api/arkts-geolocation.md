@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, GetLocationTypeResponse, GetLocationOption } from '@system.geolocation';
+import { GetLocationTypeOption,SubscribeLocationOption,GeolocationResponse,GetLocationTypeResponse,GetLocationOption } from '@kit.LocationKit';
 ```
 
 ## Summary
@@ -12,15 +12,15 @@ import { GetLocationTypeOption, SubscribeLocationOption, GeolocationResponse, Ge
 
 | Name | Description |
 | --- | --- |
-| [Geolocation](arkts-location-geolocation-c.md) |  |
+| [Geolocation](arkts-geolocation-c.md) |  |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [GeolocationResponse](arkts-location-geolocationresponse-i.md) |  |
-| [GetLocationOption](arkts-location-getlocationoption-i.md) |  |
-| [GetLocationTypeOption](arkts-location-getlocationtypeoption-i.md) |  |
-| [GetLocationTypeResponse](arkts-location-getlocationtyperesponse-i.md) |  |
-| [SubscribeLocationOption](arkts-location-subscribelocationoption-i.md) |  |
+| [GeolocationResponse](arkts-geolocationresponse-i.md) |  |
+| [GetLocationOption](arkts-getlocationoption-i.md) |  |
+| [GetLocationTypeOption](arkts-getlocationtypeoption-i.md) |  |
+| [GetLocationTypeResponse](arkts-getlocationtyperesponse-i.md) |  |
+| [SubscribeLocationOption](arkts-subscribelocationoption-i.md) |  |
 

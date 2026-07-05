@@ -1,4 +1,4 @@
-# SystemVolumeFilter (System API)
+# SystemVolumeFilter
 
 Describes the system volume filter.
 
@@ -11,22 +11,22 @@ Describes the system volume filter.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## uid
 
 ```TypeScript
-uid: number
+uid: int
 ```
 
 Application UID.
 
-**Type:** number
+**Type:** int
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Volume
 

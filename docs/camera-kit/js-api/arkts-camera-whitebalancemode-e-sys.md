@@ -1,8 +1,12 @@
-# WhiteBalanceMode (System API)
+# WhiteBalanceMode
+
+```TypeScript
+enum WhiteBalanceMode
+```
 
 Enumerates the white balance modes.
 
-**Since:** 20
+**Since:** 12
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -16,9 +20,9 @@ AUTO = 0
 
 Automatic.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -32,9 +36,9 @@ CLOUDY = 1
 
 Cloudy.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -48,9 +52,9 @@ INCANDESCENT =2
 
 Incandescent light.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -64,9 +68,9 @@ FLUORESCENT =3
 
 Fluorescence light.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -80,9 +84,9 @@ DAYLIGHT = 4
 
 Daylight.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -96,9 +100,9 @@ MANUAL = 5
 
 Manual.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -112,9 +116,9 @@ LOCKED = 6
 
 Locked.
 
-**Since:** 20
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 20.
+**Atomic service API:** From API version 20 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

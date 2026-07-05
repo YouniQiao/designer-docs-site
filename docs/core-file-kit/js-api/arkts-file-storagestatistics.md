@@ -1,6 +1,6 @@
 # @ohos.file.storageStatistics
 
-The **storageStatistics** module provides APIs for obtaining storage space information, including the space of built-in and plug-in memory cards, space occupied by different types of data, and space of application data.
+该模块提供空间查询相关的常用功能：包括对内外卡的空间查询、对应用分类数据统计的查询、对应用数据的查询等。
 
 **Since:** 8
 
@@ -9,7 +9,7 @@ The **storageStatistics** module provides APIs for obtaining storage space infor
 ## Modules to Import
 
 ```TypeScript
-import { storageStatistics } from '@ohos.file.storageStatistics';
+import { storageStatistics } from '@kit.CoreFileKit';
 ```
 
 ## Summary
@@ -18,55 +18,41 @@ import { storageStatistics } from '@ohos.file.storageStatistics';
 
 | Name | Description |
 | --- | --- |
-| [getCurrentBundleInodes](arkts-corefile-getcurrentbundleinodes-f.md#getcurrentbundleinodes-1) | Get the current bundle inodes. |
-| [getCurrentBundleStats](arkts-corefile-getcurrentbundlestats-f.md#getcurrentbundlestats-1) | Obtains the storage space (in bytes) of this application. This API uses an asynchronous callback to return the result. |
-| [getCurrentBundleStats](arkts-corefile-getcurrentbundlestats-f.md#getcurrentbundlestats-2) | Obtains the storage space (in bytes) of this application. This API uses a promise to return the result. |
-| [getFreeInodes](arkts-corefile-getfreeinodes-f.md#getfreeinodes-1) | Get the free inodes. |
-| [getFreeSize](arkts-corefile-getfreesize-f.md#getfreesize-2) | Get the free size. |
-| [getTotalInodes](arkts-corefile-gettotalinodes-f.md#gettotalinodes-1) | Get the total inodes. |
-| [getTotalSize](arkts-corefile-gettotalsize-f.md#gettotalsize-2) | Get the total size. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [getAllExtBundleStats](arkts-corefile-getallextbundlestats-f-sys.md#getallextbundlestats-1) | Obtains the space usage of all system applications or system services of a specified user. This API uses a promise to return the result. |
-| [getBundleStats](arkts-corefile-getbundlestats-f-sys.md#getbundlestats-1) | Obtains the storage space of an application, in bytes. This API uses an asynchronous callback to return the result. |
-| [getBundleStats](arkts-corefile-getbundlestats-f-sys.md#getbundlestats-2) | Obtains the storage space of an application, in bytes. This API uses a promise to return the result. |
-| [getExtBundleStats](arkts-corefile-getextbundlestats-f-sys.md#getextbundlestats-1) | Obtains the space usage of a specified user, system application bundle name, or system service name. This API uses a promise to return the result. |
-| [getFreeSize](arkts-corefile-getfreesize-f-sys.md#getfreesize-1) | Obtains the available space (in bytes) of the built-in storage. This API uses an asynchronous callback to return the result. |
-| [getFreeSizeOfVolume](arkts-corefile-getfreesizeofvolume-f-sys.md#getfreesizeofvolume-1) | Get the free size of volume. |
-| [getFreeSizeOfVolume](arkts-corefile-getfreesizeofvolume-f-sys.md#getfreesizeofvolume-2) | Get the free size of volume. |
-| [getFreeSizeSync](arkts-corefile-getfreesizesync-f-sys.md#getfreesizesync-1) | Obtains the available space of the built-in storage, in bytes. This API returns the result synchronously. |
-| [getSystemDataSize](arkts-corefile-getsystemdatasize-f-sys.md#getsystemdatasize-1) | Get the system data size. |
-| [getSystemSize](arkts-corefile-getsystemsize-f-sys.md#getsystemsize-1) | Get the system size. |
-| [getSystemSize](arkts-corefile-getsystemsize-f-sys.md#getsystemsize-2) | Get the system size. |
-| [getTotalSize](arkts-corefile-gettotalsize-f-sys.md#gettotalsize-1) | Obtains the total size (in bytes) of the built-in storage. This API uses an asynchronous callback to return the result. |
-| [getTotalSizeOfVolume](arkts-corefile-gettotalsizeofvolume-f-sys.md#gettotalsizeofvolume-1) | Get the total size of volume. |
-| [getTotalSizeOfVolume](arkts-corefile-gettotalsizeofvolume-f-sys.md#gettotalsizeofvolume-2) | Get the total size of volume. |
-| [getTotalSizeSync](arkts-corefile-gettotalsizesync-f-sys.md#gettotalsizesync-1) | Obtains the total space of the built-in storage, in bytes. This API returns the result synchronously. |
-| [getUserStorageStats](arkts-corefile-getuserstoragestats-f-sys.md#getuserstoragestats-1) | Obtains the storage statistics of this user, in bytes. This API uses a promise to return the result. |
-| [getUserStorageStats](arkts-corefile-getuserstoragestats-f-sys.md#getuserstoragestats-2) | Obtains the storage statistics of this user, in bytes. This API uses an asynchronous callback to return the result. |
-| [getUserStorageStats](arkts-corefile-getuserstoragestats-f-sys.md#getuserstoragestats-3) | Obtains the storage statistics of the specified user, in bytes. This API uses a promise to return the result. |
-| [getUserStorageStats](arkts-corefile-getuserstoragestats-f-sys.md#getuserstoragestats-4) | Obtains the storage statistics of the specified user, in bytes. This API uses an asynchronous callback to return the result. |
-| [listUserdataDirInfo](arkts-corefile-listuserdatadirinfo-f-sys.md#listuserdatadirinfo-1) | Queries the space usage of the **\/data** directory on the user device. This API uses a promise to return the result. |
-| [setExtBundleStats](arkts-corefile-setextbundlestats-f-sys.md#setextbundlestats-1) | Reports the space usage of system applications or system services. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; If the value of **flag** in **stats** is **false**, the value of **businessName** must be the bundle name of an &gt; application. |
-<!--DelEnd-->
+| <!--DelRow-->[getAllExtBundleStats](arkts-storagestatistics-getallextbundlestats-f-sys.md#getAllExtBundleStats-1) | 获取指定用户下所有系统应用或系统服务的空间占用详情。使用Promise异步回调。 |
+| <!--DelRow-->[getBundleStats](arkts-storagestatistics-getbundlestats-f-sys.md#getBundleStats-1) | 异步获取应用存储数据的空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[getBundleStats](arkts-storagestatistics-getbundlestats-f-sys.md#getBundleStats-2) | 异步获取应用存储数据的空间大小（单位为Byte），以Promise方式返回。 |
+| [getCurrentBundleInodes](arkts-storagestatistics-getcurrentbundleinodes-f.md#getCurrentBundleInodes-1) | 获取当前应用的inode占用量，使用Promise异步回调。 |
+| [getCurrentBundleStats](arkts-storagestatistics-getcurrentbundlestats-f.md#getCurrentBundleStats-1) | 应用异步获取当前应用存储空间大小（单位为Byte），使用callback异步回调。 |
+| [getCurrentBundleStats](arkts-storagestatistics-getcurrentbundlestats-f.md#getCurrentBundleStats-2) | 应用异步获取当前应用存储空间大小（单位为Byte），以Promise方式返回。 |
+| <!--DelRow-->[getExtBundleStats](arkts-storagestatistics-getextbundlestats-f-sys.md#getExtBundleStats-1) | 获取指定用户、指定系统应用包名或系统服务名称的空间占用详情。使用Promise异步回调。 |
+| [getFreeInodes](arkts-storagestatistics-getfreeinodes-f.md#getFreeInodes-1) | 获取文件系统的inode资源剩余量，仅支持查询系统数据分区。使用Promise异步回调。 |
+| [getFreeSize](arkts-storagestatistics-getfreesize-f.md#getFreeSize-1) | 获取内置存储的可用空间大小（单位为Byte），以Promise方式返回。 |
+| <!--DelRow-->[getFreeSize](arkts-storagestatistics-getfreesize-f-sys.md#getFreeSize-1) | 获取内置存储的可用空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[getFreeSizeOfVolume](arkts-storagestatistics-getfreesizeofvolume-f-sys.md#getFreeSizeOfVolume-1) | 异步获取外置存储设备中指定卷设备的可用空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[getFreeSizeOfVolume](arkts-storagestatistics-getfreesizeofvolume-f-sys.md#getFreeSizeOfVolume-2) | 异步获取外置存储设备中指定卷设备的可用空间大小（单位为Byte），以Promise方式返回。 |
+| <!--DelRow-->[getFreeSizeSync](arkts-storagestatistics-getfreesizesync-f-sys.md#getFreeSizeSync-1) | 同步获取内置存储的可用空间大小（单位为Byte）。 |
+| <!--DelRow-->[getSystemDataSize](arkts-storagestatistics-getsystemdatasize-f-sys.md#getSystemDataSize-1) | 获取系统数据的总空间大小，使用Promise异步回调。 |
+| <!--DelRow-->[getSystemSize](arkts-storagestatistics-getsystemsize-f-sys.md#getSystemSize-1) | 异步获取系统数据的空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[getSystemSize](arkts-storagestatistics-getsystemsize-f-sys.md#getSystemSize-2) | 异步获取系统数据的空间大小（单位为Byte），以Promise方式返回。 |
+| [getTotalInodes](arkts-storagestatistics-gettotalinodes-f.md#getTotalInodes-1) | 获取文件系统的inode资源总量，仅支持查询系统数据分区。使用Promise异步回调。 |
+| [getTotalSize](arkts-storagestatistics-gettotalsize-f.md#getTotalSize-1) | 获取内置存储的总空间大小（单位为Byte），以Promise方式返回。 |
+| <!--DelRow-->[getTotalSize](arkts-storagestatistics-gettotalsize-f-sys.md#getTotalSize-1) | 获取内置存储的总空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[getTotalSizeOfVolume](arkts-storagestatistics-gettotalsizeofvolume-f-sys.md#getTotalSizeOfVolume-1) | 异步获取外置存储设备中指定卷设备的总空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[getTotalSizeOfVolume](arkts-storagestatistics-gettotalsizeofvolume-f-sys.md#getTotalSizeOfVolume-2) | 异步获取外置存储设备中指定卷设备的总空间大小（单位为Byte），以Promise方式返回。 |
+| <!--DelRow-->[getTotalSizeSync](arkts-storagestatistics-gettotalsizesync-f-sys.md#getTotalSizeSync-1) | 同步获取内置存储的总空间大小（单位为Byte）。 |
+| <!--DelRow-->[getUserStorageStats](arkts-storagestatistics-getuserstoragestats-f-sys.md#getUserStorageStats-1) | 异步获取当前用户各类别存储空间大小（单位为Byte），以Promise方式返回。 |
+| <!--DelRow-->[getUserStorageStats](arkts-storagestatistics-getuserstoragestats-f-sys.md#getUserStorageStats-2) | 异步获取当前用户各类别存储空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[getUserStorageStats](arkts-storagestatistics-getuserstoragestats-f-sys.md#getUserStorageStats-3) | 异步获取指定用户各类别存储空间大小（单位为Byte），以Promise方式返回。 |
+| <!--DelRow-->[getUserStorageStats](arkts-storagestatistics-getuserstoragestats-f-sys.md#getUserStorageStats-4) | 异步获取指定用户各类别存储空间大小（单位为Byte），以callback方式返回。 |
+| <!--DelRow-->[listUserdataDirInfo](arkts-storagestatistics-listuserdatadirinfo-f-sys.md#listUserdataDirInfo-1) | 查询用户设备中/data目录下的空间占用详情，使用Promise异步回调。 |
+| <!--DelRow-->[setExtBundleStats](arkts-storagestatistics-setextbundlestats-f-sys.md#setExtBundleStats-1) | 系统应用或系统服务上报自身的空间占用信息。使用Promise异步回调。 > **说明**： > > 入参stats中的flag为false时，businessName必须为某个应用的包名。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BundleStats](arkts-corefile-bundlestats-i.md) | Get the bundle statistics. |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [ExtBundleStats](arkts-corefile-extbundlestats-i-sys.md) | Details the space usage of system applications or system services. |
-| [StorageStats](arkts-corefile-storagestats-i-sys.md) | Get the user storage statistics. |
-| [UserdataDirInfo](arkts-corefile-userdatadirinfo-i-sys.md) | Details the space usage of the **\/data** directory on the user device. |
-<!--DelEnd-->
+| [BundleStats](arkts-storagestatistics-bundlestats-i.md) | 获取捆绑包统计信息。 |
+| <!--DelRow-->[ExtBundleStats](arkts-storagestatistics-extbundlestats-i-sys.md) | 系统应用或系统服务的空间占用详情。 |
+| <!--DelRow-->[StorageStats](arkts-storagestatistics-storagestats-i-sys.md) |  |
+| <!--DelRow-->[UserdataDirInfo](arkts-storagestatistics-userdatadirinfo-i-sys.md) | 用户设备中/data目录下的空间占用详情。 |
 

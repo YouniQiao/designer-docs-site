@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [PermissionDef](arkts-ability-permissiondef-i-sys.md) | [module.json5配置文件](../../../../quick-start/module-configuration-file.md)中定义的权限详细信息，通过接口 [bundleManager.getPermissionDef](arkts-ability-getpermissiondef-f-sys.md#getpermissiondef-1) 获取。 |
-<!--DelEnd-->
+| <!--DelRow-->[PermissionDef](arkts-permissiondef-i.md) | [module.json5配置文件](docroot://quick-start/module-configuration-file.md)中定义的权限详细信息，通过接口 [bundleManager.getPermissionDef]{@link ./../@ohos.bundle.bundleManager:bundleManager.getPermissionDef(permissionName: string, callback: AsyncCallback<PermissionDef>)} 获取。 > **说明：** > > 本模块为系统接口。 |
 

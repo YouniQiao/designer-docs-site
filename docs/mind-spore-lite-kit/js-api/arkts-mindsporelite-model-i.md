@@ -9,7 +9,7 @@ Provides manages model function. Including get inputs, predict ,resize.
 ## Modules to Import
 
 ```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
+import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
 ## exportModel
@@ -26,7 +26,7 @@ Export train model to file
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -35,9 +35,9 @@ Export train model to file
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | modelFile | string | Yes | model file path. |
-| quantizationType | QuantizationType | No | the quantization type, default NO_QUANT. |
-| exportInferenceOnly | boolean | No | whether to export a inference only model, default true. |
-| outputTensorName | string[] | No | the set of name of output tensor the exported inference model, |
+| quantizationType | QuantizationType | No |  |
+| exportInferenceOnly | boolean | No |  |
+| outputTensorName | string[] | No |  |
 
 **Return value:**
 
@@ -81,7 +81,7 @@ Export model's weights, which can be used in micro only. Only valid for Lite Tra
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -90,9 +90,9 @@ Export model's weights, which can be used in micro only. Only valid for Lite Tra
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | weightFile | string | Yes | weight file path |
-| isInference | boolean | No | whether to export weights from inference model, only support this is `true`for now, default true |
-| enableFp16 | boolean | No | float-weight is whether to be saved in float16 format, default false |
-| changeableWeightsName | string[] | No | changeable weights name |
+| isInference | boolean | No |  |
+| enableFp16 | boolean | No |  |
+| changeableWeightsName | string[] | No |  |
 
 **Return value:**
 
@@ -128,7 +128,7 @@ Get model input tensors.
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -167,7 +167,7 @@ Obtain all weights of the model
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -225,7 +225,7 @@ Infer model
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -234,7 +234,7 @@ Infer model
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inputs | MSTensor[] | Yes | indicates the MSTensor array of the inputs. |
-| callback | Callback&lt;MSTensor[]&gt; | Yes | the callback of MSTensor array. |
+| callback | Callback&lt;MSTensor[]> | Yes | the callback of MSTensor array. |
 
 **Example**
 
@@ -294,7 +294,7 @@ Infer model
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -308,7 +308,7 @@ Infer model
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;MSTensor[]&gt; | the promise returned by the function. |
+| Promise&lt;MSTensor[]> | the promise returned by the function. |
 
 **Example**
 
@@ -363,14 +363,14 @@ globalContext.getApplicationContext()
 ## resize
 
 ```TypeScript
-resize(inputs: MSTensor[], dims: Array<Array<number>>): boolean
+resize(inputs: MSTensor[], dims: Array<Array<int>>): boolean
 ```
 
 resize model input
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -379,7 +379,7 @@ resize model input
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | inputs | MSTensor[] | Yes | indicates the MSTensor array of the inputs. |
-| dims | Array&lt;Array&lt;number&gt;&gt; | Yes | indicates the target new shape array |
+| dims | Array&lt;Array&lt;int>> | Yes | indicates the target new shape array |
 
 **Return value:**
 
@@ -420,7 +420,7 @@ Train model by step
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -465,14 +465,14 @@ mindSporeLite.loadTrainModelFromFile(modelFile).then((mindSporeLiteModel: mindSp
 ## setupVirtualBatch
 
 ```TypeScript
-setupVirtualBatch(virtualBatchMultiplier: number, lr: number, momentum: number): boolean
+setupVirtualBatch(virtualBatchMultiplier: int, lr: double, momentum: double): boolean
 ```
 
 Setup training with virtual batches
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -480,9 +480,9 @@ Setup training with virtual batches
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| virtualBatchMultiplier | number | Yes | virtual batch multiplier, use any number &lt; 1 to disable |
-| lr | number | Yes | learning rate to use for virtual batch, -1 for internal configuration |
-| momentum | number | Yes | batch norm momentum to use for virtual batch, -1 for internal configuration |
+| virtualBatchMultiplier | int | Yes | virtual batch multiplier, use any number &lt; 1 to disable |
+| lr | double | Yes | learning rate to use for virtual batch, -1 for internal configuration |
+| momentum | double | Yes | batch norm momentum to use for virtual batch, -1 for internal configuration |
 
 **Return value:**
 
@@ -539,7 +539,7 @@ Update weights of the model
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -599,16 +599,16 @@ globalContext.getApplicationContext()
 ## learningRate
 
 ```TypeScript
-learningRate?: number
+learningRate?: double
 ```
 
 The learning rate of the training model
 
-**Type:** number
+**Type:** double
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -624,7 +624,7 @@ The running mode of the model
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

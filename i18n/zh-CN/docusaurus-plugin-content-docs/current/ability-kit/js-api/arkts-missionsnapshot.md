@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [MissionSnapshot](arkts-ability-missionsnapshot-i-sys.md) | 一个任务的任务快照对象，可以通过 [missionManager.getMissionSnapShot](arkts-ability-getmissionsnapshot-f-sys.md#getmissionsnapshot-1) 获取。 |
-<!--DelEnd-->
+| <!--DelRow-->[MissionSnapshot](arkts-missionsnapshot-i.md) | 一个任务的任务快照对象，可以通过 [missionManager.getMissionSnapShot]{@link @ohos.app.ability.missionManager:missionManager.getMissionSnapShot(deviceId: string, missionId: int, callback: AsyncCallback<MissionSnapshot>)} 获取。 |
 

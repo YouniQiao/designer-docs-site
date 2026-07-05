@@ -1,8 +1,8 @@
-# PhysicalAperture (System API)
+# PhysicalAperture
 
 Describes the physical aperture object.
 
-**Since:** 24
+**Since:** 11
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -11,22 +11,22 @@ Describes the physical aperture object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## apertures
 
 ```TypeScript
-apertures: Array<number>
+apertures: Array<double>
 ```
 
 Supported physical aperture.
 
-**Type:** Array<number>
+**Type:** Array<double>
 
-**Since:** 24
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -42,9 +42,9 @@ Zoom range of a given physical aperture.
 
 **Type:** ZoomRange
 
-**Since:** 24
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 24.
+**Atomic service API:** From API version 24 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

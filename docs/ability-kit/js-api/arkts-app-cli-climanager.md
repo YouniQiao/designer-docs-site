@@ -11,43 +11,37 @@ The module provides the capability to interact with cli tools in the system.
 ## Modules to Import
 
 ```TypeScript
-import { cliManager } from '@ohos.app.cli.cliManager';
+import { cliManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [clearSession](arkts-ability-clearsession-f-sys.md#clearsession-1) | Close session and force kill tool process. |
-| [execCmd](arkts-ability-execcmd-f-sys.md#execcmd-1) | Execute a command. This API uses a promise to return the result. |
-| [execTool](arkts-ability-exectool-f-sys.md#exectool-1) | Execute a CLI command |
-| [getToolInfoByName](arkts-ability-gettoolinfobyname-f-sys.md#gettoolinfobyname-1) | Get detailed information of a single tool by its name |
-| [querySession](arkts-ability-querysession-f-sys.md#querysession-1) | Query session status. |
-| [queryToolSummaries](arkts-ability-querytoolsummaries-f-sys.md#querytoolsummaries-1) | Query all tool summary information. The summary information only contains the fields: name, description, version. |
-| [queryTools](arkts-ability-querytools-f-sys.md#querytools-1) | Query all detailed information of tools |
-| [sendMessage](arkts-ability-sendmessage-f-sys.md#sendmessage-1) | Send event to target process. |
-| [subscribeSession](arkts-ability-subscribesession-f-sys.md#subscribesession-1) | Subscribe session event. |
-<!--DelEnd-->
+| <!--DelRow-->[clearSession](arkts-climanager-clearsession-f-sys.md#clearSession-1) | Close session and force kill tool process. |
+| <!--DelRow-->[execCmd](arkts-climanager-execcmd-f-sys.md#execCmd-1) | Execute a command. This API uses a promise to return the result. |
+| <!--DelRow-->[execTool](arkts-climanager-exectool-f-sys.md#execTool-1) | Execute a CLI command |
+| <!--DelRow-->[getToolInfoByName](arkts-climanager-gettoolinfobyname-f-sys.md#getToolInfoByName-1) | Get detailed information of a single tool by its name |
+| <!--DelRow-->[querySession](arkts-climanager-querysession-f-sys.md#querySession-1) | Query session status. |
+| <!--DelRow-->[queryToolSummaries](arkts-climanager-querytoolsummaries-f-sys.md#queryToolSummaries-1) | Query all tool summary information. The summary information only contains the fields: name, description, version. |
+| <!--DelRow-->[queryTools](arkts-climanager-querytools-f-sys.md#queryTools-1) | Query all detailed information of tools |
+| <!--DelRow-->[sendMessage](arkts-climanager-sendmessage-f-sys.md#sendMessage-1) | Send event to target process. |
+| <!--DelRow-->[subscribeSession](arkts-climanager-subscribesession-f-sys.md#subscribeSession-1) | Subscribe session event. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [CliSessionInfo](arkts-ability-clisessioninfo-i-sys.md) | Session information of a tool execution. |
-| [ExecCmdOptions](arkts-ability-execcmdoptions-i-sys.md) | Options for executing a command. |
-| [ExecOptions](arkts-ability-execoptions-i-sys.md) | Tool execution options. |
-| [ExecResult](arkts-ability-execresult-i-sys.md) | Execute result of a tool execution. |
-<!--DelEnd-->
+| <!--DelRow-->[CliSessionInfo](arkts-climanager-clisessioninfo-i-sys.md) | Session information of a tool execution. |
+| <!--DelRow-->[ExecCmdOptions](arkts-climanager-execcmdoptions-i-sys.md) | Options for executing a command. |
+| <!--DelRow-->[ExecOptions](arkts-climanager-execoptions-i-sys.md) | Tool execution options. |
+| <!--DelRow-->[ExecResult](arkts-climanager-execresult-i-sys.md) | Execute result of a tool execution. |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [SessionStatus](arkts-ability-sessionstatus-e-sys.md) | Enum for session status. |
-<!--DelEnd-->
+| <!--DelRow-->[SessionStatus](arkts-climanager-sessionstatus-e-sys.md) | Enum for session status. |
 

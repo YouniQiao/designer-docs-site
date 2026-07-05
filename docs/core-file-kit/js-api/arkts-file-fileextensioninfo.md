@@ -1,11 +1,9 @@
 # @ohos.file.fileExtensionInfo
 
-The **fileExtensionInfo** module defines attributes in **RootInfo** and **FileInfo** of the user file access and management module.
-
 ## Modules to Import
 
 ```TypeScript
-import { fileExtensionInfo } from '@ohos.file.fileExtensionInfo';
+import { fileExtensionInfo } from '@kit.CoreFileKit';
 ```
 
 ## Summary
@@ -14,5 +12,5 @@ import { fileExtensionInfo } from '@ohos.file.fileExtensionInfo';
 
 | Name | Description |
 | --- | --- |
-| [fileExtensionInfo](arkts-corefile-fileextensioninfo-sta-n.md) | The **fileExtensionInfo** module defines attributes in **RootInfo** and **FileInfo** of the user file access and management module. |
+| <!--DelRow-->[fileExtensionInfo](arkts-fileextensioninfo-n.md) | 该模块提供公共文件访问和管理模块中RootInfo与FileInfo中部分属性值的定义。 |
 

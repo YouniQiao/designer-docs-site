@@ -1,5 +1,9 @@
 # BufferingInfoType
 
+```TypeScript
+enum BufferingInfoType
+```
+
 Enumerates the buffering event types.
 
 **Since:** 8
@@ -16,7 +20,7 @@ Buffering starts. When this event is triggered, the player pauses the playback.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -30,7 +34,7 @@ Buffering ends. When this event is triggered, the player resumes the playback.
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -44,7 +48,7 @@ Buffering percentage. You can use this event to monitor the buffering status, in
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -58,7 +62,7 @@ Estimated duration, in ms, that the buffered data can be played. This event is t
 
 **Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

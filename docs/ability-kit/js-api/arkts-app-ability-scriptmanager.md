@@ -9,7 +9,7 @@ Namespace for managing and organizing script information.
 ## Modules to Import
 
 ```TypeScript
-import { scriptManager } from '@ohos.app.ability.scriptManager';
+import { scriptManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,12 +18,12 @@ import { scriptManager } from '@ohos.app.ability.scriptManager';
 
 | Name | Description |
 | --- | --- |
-| [completeArkTSScriptInApp](arkts-ability-completearktsscriptinapp-f.md#completearktsscriptinapp-1) | complete arkTS script for in-app skills. |
+| [completeArkTSScriptInApp](arkts-scriptmanager-completearktsscriptinapp-f.md#completeArkTSScriptInApp-1) | complete arkTS script for in-app skills. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ArkTSScriptInfo](arkts-ability-arktsscriptinfo-i.md) | arkTS script info. |
-| [ExecuteResult](arkts-ability-executeresult-i.md) | Result of arkTS script execution. |
+| [ArkTSScriptInfo](arkts-scriptmanager-arktsscriptinfo-i.md) | arkTS script info. |
+| [ExecuteResult](arkts-scriptmanager-executeresult-i.md) | Result of arkTS script execution. |
 

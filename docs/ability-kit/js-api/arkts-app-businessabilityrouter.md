@@ -11,41 +11,34 @@ This module is used to obtain business ability information of various applicatio
 ## Modules to Import
 
 ```TypeScript
-import { businessAbilityRouter } from '@ohos.app.businessAbilityRouter';
+import { businessAbilityRouter } from '@kit.AbilityKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [queryBusinessAbilityInfo](arkts-ability-querybusinessabilityinfo-f-sys.md#querybusinessabilityinfo-1) | Query the business ability info of by the given filter. ohos.permission.GET_BUNDLE_INFO_PRIVILEGED is required for cross user access. |
-| [queryBusinessAbilityInfo](arkts-ability-querybusinessabilityinfo-f-sys.md#querybusinessabilityinfo-2) | Query the business ability info of by the given filter. ohos.permission.GET_BUNDLE_INFO_PRIVILEGED is required for cross user access. |
-<!--DelEnd-->
+| <!--DelRow-->[queryBusinessAbilityInfo](arkts-businessabilityrouter-querybusinessabilityinfo-f-sys.md#queryBusinessAbilityInfo-1) | Query the business ability info of by the given filter. ohos.permission.GET_BUNDLE_INFO_PRIVILEGED is required for cross user access. |
+| <!--DelRow-->[queryBusinessAbilityInfo](arkts-businessabilityrouter-querybusinessabilityinfo-f-sys.md#queryBusinessAbilityInfo-2) | Query the business ability info of by the given filter. ohos.permission.GET_BUNDLE_INFO_PRIVILEGED is required for cross user access. |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [BusinessAbilityFilter](arkts-ability-businessabilityfilter-i-sys.md) | This filter value is used to filter business ability info |
-<!--DelEnd-->
+| <!--DelRow-->[BusinessAbilityFilter](arkts-businessabilityrouter-businessabilityfilter-i-sys.md) | This filter value is used to filter business ability info |
 
-<!--Del-->
-### Enums（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [BusinessType](arkts-ability-businesstype-e-sys.md) | This enumeration value is used to identify various types of business ability info |
-<!--DelEnd-->
+| <!--DelRow-->[BusinessAbilityInfo](arkts-businessabilityrouter-businessabilityinfo-t-sys.md) | Obtains business ability info. |
+| <!--DelRow-->[BusinessAbilityInfo](arkts-businessabilityrouter-businessabilityinfo-t-sys.md) | Obtains business ability info. |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [BusinessAbilityInfo](arkts-ability-businessabilityinfo-t-sys.md) | Obtains business ability info. |
-<!--DelEnd-->
+| <!--DelRow-->[BusinessType](arkts-businessabilityrouter-businesstype-e-sys.md) | This enumeration value is used to identify various types of business ability info |
 

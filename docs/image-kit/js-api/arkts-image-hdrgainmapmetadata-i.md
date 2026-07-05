@@ -1,6 +1,6 @@
 # HdrGainmapMetadata
 
-Describes the metadata keys used by a gain map, that is, the values available for **HDR_GAINMAP_METADATA** in [HdrMetadataKey](arkts-image-hdrmetadatakey-e.md#hdrmetadatakey). For details, see ISO 21496-1.
+Gainmap使用的元数据值，[HdrMetadataKey]image.HdrMetadataKey中HDR_GAINMAP_METADATA关键字对应的值，参考ISO 21496-1。
 
 **Since:** 12
 
@@ -9,18 +9,18 @@ Describes the metadata keys used by a gain map, that is, the values available fo
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
-## alternateHeadroom
+## useBaseColorFlag
 
 ```TypeScript
-alternateHeadroom: number
+useBaseColorFlag: boolean
 ```
 
-The alternate hdr headroom.
+Indicate whether to use the color space of the base image.
 
-**Type:** number
+**Type:** boolean
 
 **Since:** 12
 
@@ -29,12 +29,40 @@ The alternate hdr headroom.
 ## baseHeadroom
 
 ```TypeScript
-baseHeadroom: number
+baseHeadroom: double
 ```
 
 The baseline hdr headroom.
 
-**Type:** number
+**Type:** double
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## miniVersion
+
+```TypeScript
+miniVersion: int
+```
+
+The minimum version a parser needs to understand.
+
+**Type:** int
+
+**Since:** 12
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## alternateHeadroom
+
+```TypeScript
+alternateHeadroom: double
+```
+
+The alternate hdr headroom.
+
+**Type:** double
 
 **Since:** 12
 
@@ -57,40 +85,12 @@ The per-channel metadata.
 ## gainmapChannelCount
 
 ```TypeScript
-gainmapChannelCount: number
+gainmapChannelCount: int
 ```
 
 The number of gain map channels, with a value of 1 or 3.
 
-**Type:** number
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## miniVersion
-
-```TypeScript
-miniVersion: number
-```
-
-The minimum version a parser needs to understand.
-
-**Type:** number
-
-**Since:** 12
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## useBaseColorFlag
-
-```TypeScript
-useBaseColorFlag: boolean
-```
-
-Indicate whether to use the color space of the base image.
-
-**Type:** boolean
+**Type:** int
 
 **Since:** 12
 
@@ -99,12 +99,12 @@ Indicate whether to use the color space of the base image.
 ## writerVersion
 
 ```TypeScript
-writerVersion: number
+writerVersion: int
 ```
 
 The version used by the writer.
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 

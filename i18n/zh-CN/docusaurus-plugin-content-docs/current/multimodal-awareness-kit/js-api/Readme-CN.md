@@ -1,0 +1,107 @@
+# MultimodalAwarenessKit(多模态融合感知)
+
+- [@ohos.multimodalAwareness.deviceStatus](arkts-multimodalawareness-devicestatus.md)
+  - [offSteadyStandingDetect](arkts-devicestatus-offsteadystandingdetect-f.md)<!--Del-->
+  - [getDeviceRotationRadian(系统接口)](arkts-devicestatus-getdevicerotationradian-f-sys.md)<!--DelEnd-->
+  - [onSteadyStandingDetect](arkts-devicestatus-onsteadystandingdetect-f.md)
+  - [off](arkts-devicestatus-off-f.md)
+  - [on](arkts-devicestatus-on-f.md)<!--Del-->
+  - [DeviceRotationRadian(系统接口)](arkts-devicestatus-devicerotationradian-i-sys.md)<!--DelEnd-->
+  - [SteadyStandingStatus](arkts-devicestatus-steadystandingstatus-e.md)
+- [@ohos.multimodalAwareness.metadataBinding](arkts-multimodalawareness-metadatabinding.md)<!--Del-->
+  - [decodeImage(系统接口)](arkts-metadatabinding-decodeimage-f-sys.md)<!--DelEnd-->
+  - [onOperationSubmitMetadata](arkts-metadatabinding-onoperationsubmitmetadata-f.md)<!--Del-->
+  - [encodeImage(系统接口)](arkts-metadatabinding-encodeimage-f-sys.md)<!--DelEnd-->
+  - [submitMetadata](arkts-metadatabinding-submitmetadata-f.md)<!--Del-->
+  - [notifyMetadataBindingEvent(系统接口)](arkts-metadatabinding-notifymetadatabindingevent-f-sys.md)<!--DelEnd-->
+  - [offOperationSubmitMetadata](arkts-metadatabinding-offoperationsubmitmetadata-f.md)
+  - [off](arkts-metadatabinding-off-f.md)
+  - [on](arkts-metadatabinding-on-f.md)
+- [@ohos.multimodalAwareness.motion](arkts-multimodalawareness-motion.md)
+  - [offOperatingHandChanged](arkts-motion-offoperatinghandchanged-f.md)<!--Del-->
+  - [onPickupChange(系统接口)](arkts-motion-onpickupchange-f-sys.md)<!--DelEnd-->
+  - [onHoldingHandChanged](arkts-motion-onholdinghandchanged-f.md)
+  - [offHoldingHandChanged](arkts-motion-offholdinghandchanged-f.md)<!--Del-->
+  - [onSmartRotateChange(系统接口)](arkts-motion-onsmartrotatechange-f-sys.md)<!--DelEnd-->
+  - [getRecentOperatingHandStatus](arkts-motion-getrecentoperatinghandstatus-f.md)<!--Del-->
+  - [offSmartRotateChange(系统接口)](arkts-motion-offsmartrotatechange-f-sys.md)<!--DelEnd-->
+  - [onOperatingHandChanged](arkts-motion-onoperatinghandchanged-f.md)<!--Del-->
+  - [offPickupChange(系统接口)](arkts-motion-offpickupchange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onRotateChange(系统接口)](arkts-motion-onrotatechange-f-sys.md)<!--DelEnd-->
+  - [off](arkts-motion-off-f.md)<!--Del-->
+  - [offRotateChange(系统接口)](arkts-motion-offrotatechange-f-sys.md)<!--DelEnd-->
+  - [on](arkts-motion-on-f.md)<!--Del-->
+  - [SmartRotateEvent(系统接口)](arkts-motion-smartrotateevent-i-sys.md)<!--DelEnd-->
+  - [HoldingHandStatus](arkts-motion-holdinghandstatus-e.md)<!--Del-->
+  - [LogicalOrientation(系统接口)](arkts-motion-logicalorientation-e-sys.md)<!--DelEnd-->
+  - [OperatingHandStatus](arkts-motion-operatinghandstatus-e.md)<!--Del-->
+  - [PhysicalOrientation(系统接口)](arkts-motion-physicalorientation-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PickupEvent(系统接口)](arkts-motion-pickupevent-e-sys.md)<!--DelEnd--><!--Del-->
+  - [RotateEvent(系统接口)](arkts-motion-rotateevent-e-sys.md)<!--DelEnd-->
+- [@ohos.multimodalAwareness.onScreen](arkts-multimodalawareness-onscreen.md)<!--Del-->
+  - [apperceive(系统接口)](arkts-onscreen-apperceive-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendControlEvent(系统接口)](arkts-onscreen-sendcontrolevent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getPageContent(系统接口)](arkts-onscreen-getpagecontent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onReadingScreenPermissionListener(系统接口)](arkts-onscreen-onreadingscreenpermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [unsubscribe(系统接口)](arkts-onscreen-unsubscribe-f-sys.md)<!--DelEnd--><!--Del-->
+  - [subscribe(系统接口)](arkts-onscreen-subscribe-f-sys.md)<!--DelEnd--><!--Del-->
+  - [interact(系统接口)](arkts-onscreen-interact-f-sys.md)<!--DelEnd--><!--Del-->
+  - [capture(系统接口)](arkts-onscreen-capture-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offReadingScreenPermissionListener(系统接口)](arkts-onscreen-offreadingscreenpermissionlistener-f-sys.md)<!--DelEnd--><!--Del-->
+  - [trigger(系统接口)](arkts-onscreen-trigger-f-sys.md)<!--DelEnd--><!--Del-->
+  - [AwarenessItem(系统接口)](arkts-onscreen-awarenessitem-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ContentOptions(系统接口)](arkts-onscreen-contentoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ControlEvent(系统接口)](arkts-onscreen-controlevent-i-sys.md)<!--DelEnd--><!--Del-->
+  - [EntityInfo(系统接口)](arkts-onscreen-entityinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OnscreenAwarenessCap(系统接口)](arkts-onscreen-onscreenawarenesscap-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OnscreenAwarenessInfo(系统接口)](arkts-onscreen-onscreenawarenessinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [OnscreenAwarenessOptions(系统接口)](arkts-onscreen-onscreenawarenessoptions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PageContent(系统接口)](arkts-onscreen-pagecontent-i-sys.md)<!--DelEnd--><!--Del-->
+  - [Paragraph(系统接口)](arkts-onscreen-paragraph-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ReadingScreenPermissionStatus(系统接口)](arkts-onscreen-readingscreenpermissionstatus-i-sys.md)<!--DelEnd--><!--Del-->
+  - [CollectStrategy(系统接口)](arkts-onscreen-collectstrategy-e-sys.md)<!--DelEnd-->
+  - [EventType](arkts-onscreen-eventtype-e.md)
+  - [Scenario](arkts-onscreen-scenario-e.md)
+- [@ohos.multimodalAwareness.spatialAwareness](arkts-multimodalawareness-spatialawareness.md)<!--Del-->
+  - [onDistanceMeasure(系统接口)](arkts-spatialawareness-ondistancemeasure-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offIndoorOrOutdoorIdentify(系统接口)](arkts-spatialawareness-offindoororoutdooridentify-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offDistanceMeasure(系统接口)](arkts-spatialawareness-offdistancemeasure-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onIndoorOrOutdoorIdentify(系统接口)](arkts-spatialawareness-onindoororoutdooridentify-f-sys.md)<!--DelEnd--><!--Del-->
+  - [DistanceMeasurementConfigParams(系统接口)](arkts-spatialawareness-distancemeasurementconfigparams-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DistanceMeasurementResponse(系统接口)](arkts-spatialawareness-distancemeasurementresponse-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DoorPositionResponse(系统接口)](arkts-spatialawareness-doorpositionresponse-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DistanceRank(系统接口)](arkts-spatialawareness-distancerank-e-sys.md)<!--DelEnd--><!--Del-->
+  - [PositionRelativeToDoor(系统接口)](arkts-spatialawareness-positionrelativetodoor-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ReportingMode(系统接口)](arkts-spatialawareness-reportingmode-e-sys.md)<!--DelEnd--><!--Del-->
+  - [TechnologyType(系统接口)](arkts-spatialawareness-technologytype-e-sys.md)<!--DelEnd-->
+- [@ohos.multimodalAwareness.userStatus](arkts-multimodalawareness-userstatus.md)<!--Del-->
+  - [unsubscribe(系统接口)](arkts-userstatus-unsubscribe-f-sys.md)<!--DelEnd--><!--Del-->
+  - [subscribe(系统接口)](arkts-userstatus-subscribe-f-sys.md)<!--DelEnd-->
+  - [offUserAgeGroupDetected](arkts-userstatus-offuseragegroupdetected-f.md)<!--Del-->
+  - [queryCapabilities(系统接口)](arkts-userstatus-querycapabilities-f-sys.md)<!--DelEnd--><!--Del-->
+  - [configure(系统接口)](arkts-userstatus-configure-f-sys.md)<!--DelEnd-->
+  - [onUserAgeGroupDetected](arkts-userstatus-onuseragegroupdetected-f.md)
+  - [off](arkts-userstatus-off-f.md)
+  - [on](arkts-userstatus-on-f.md)<!--Del-->
+  - [ComfortReminderData(系统接口)](arkts-userstatus-comfortreminderdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceInfo(系统接口)](arkts-userstatus-deviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UserBlowData(系统接口)](arkts-userstatus-userblowdata-i-sys.md)<!--DelEnd-->
+  - [UserClassification](arkts-userstatus-userclassification-i.md)<!--Del-->
+  - [UserEmotionData(系统接口)](arkts-userstatus-useremotiondata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UserFaceAngleData(系统接口)](arkts-userstatus-userfaceangledata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UserFacesData(系统接口)](arkts-userstatus-userfacesdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UserGesturesData(系统接口)](arkts-userstatus-usergesturesdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [UserStatusData(系统接口)](arkts-userstatus-userstatusdata-i-sys.md)<!--DelEnd--><!--Del-->
+  - [DeviceType(系统接口)](arkts-userstatus-devicetype-e-sys.md)<!--DelEnd--><!--Del-->
+  - [ReminderLevel(系统接口)](arkts-userstatus-reminderlevel-e-sys.md)<!--DelEnd-->
+  - [UserAgeGroup](arkts-userstatus-useragegroup-e.md)<!--Del-->
+  - [UserStatusAtomicCap(系统接口)](arkts-userstatus-userstatusatomiccap-e-sys.md)<!--DelEnd--><!--Del-->
+  - [UserStatusFeature(系统接口)](arkts-userstatus-userstatusfeature-e-sys.md)<!--DelEnd-->
+- [@ohos.stationary](arkts-stationary.md)
+  - [once](arkts-stationary-once-f.md)
+  - [off](arkts-stationary-off-f.md)
+  - [on](arkts-stationary-on-f.md)
+  - [ActivityResponse](arkts-stationary-activityresponse-i.md)
+  - [ActivityType](arkts-stationary-activitytype-t.md)
+  - [ActivityEvent](arkts-stationary-activityevent-e.md)
+  - [ActivityState](arkts-stationary-activitystate-e.md)

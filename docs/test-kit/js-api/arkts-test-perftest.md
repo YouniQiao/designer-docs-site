@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { PerfTestStrategy, PerfMetric, PerfTest, PerfMeasureResult } from '@ohos.test.PerfTest';
+import { PerfTestStrategy,PerfMetric,PerfTest,PerfMeasureResult } from '@kit.TestKit';
 ```
 
 ## Summary
@@ -12,18 +12,18 @@ import { PerfTestStrategy, PerfMetric, PerfTest, PerfMeasureResult } from '@ohos
 
 | Name | Description |
 | --- | --- |
-| [PerfTest](arkts-test-perftest-c.md) | Represents the general entry of the white-box performance test framework. It provides capabilities such as test task creation, test code segment execution, data collection, and measurement result obtaining. |
+| [PerfTest](arkts-perftest-c.md) | 表示白盒性能测试框架的通用入口。 提供测试任务创建、测试代码段执行、数据采集和测量结果获取等能力。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PerfMeasureResult](arkts-test-perfmeasureresult-i.md) | Represents the measurement result data corresponding to the performance metric. |
-| [PerfTestStrategy](arkts-test-perfteststrategy-i.md) | Represents the performance test strategy. &gt; **NOTE** &gt; &gt; The input parameter type of the **actionCode** and **resetCode** attributes is the **Callback\&lt;boolean&gt;**. You need to call this callback in the code segment to notify the framework that the code segment execution is complete. Otherwise, the code segment execution times out. &gt; The callback parameter is of the **Boolean** type. The value **true** indicates that the code segment execution meets the expectation, and false indicates the opposite. |
+| [PerfMeasureResult](arkts-perfmeasureresult-i.md) | 表示性能指标对应的测量结果数据。 |
+| [PerfTestStrategy](arkts-perfteststrategy-i.md) | 表示性能测试策略。 > **说明：** > > **actionCode** 和 **resetCode** 属性的入参类型为 **Callback\<boolean>**。 需要在代码段中调用该回调以通知框架代码段执行完成， 否则代码段执行将超时。 > 回调参数为 **Boolean** 类型。 值 **true** 表示代码段执行符合预期，**false** 表示不符合预期。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [PerfMetric](arkts-test-perfmetric-e.md) | Represents performance metrics that can be collected by the framework. &gt; **NOTE** &gt; &gt; 1. The preceding metrics collect performance data for a specified application process, not for the system. &gt; 2. Description of collecting the CPU data (**CPU_LOAD** / **CPU_USAGE**) and memory (**MEMORY_RSS** / **MEMORY_PSS**): &gt; - During the test, the CPU and memory data of the specified application process is collected before and after the &gt; code segment execution. Therefore, ensure that the application process to be tested exists during the test. &gt; 3. Description of collecting the application startup latency data (**APP_START_RESPONSE_TIME** / **APP_START_COMPLETE_TIME**): &gt; - Application startup latency data is affected by system log reporting. The start time is when the tap event is reported, &gt; the end time of the response latency is when the first frame is displayed on the screen after the tap, &gt; and the end time of the completion latency is when the first frame is displayed on the screen after the application is started. &gt; The latency is different from what users perceive. &gt; - Application startup latency data can be collected in the following scenarios: tapping an application icon on the home screen, &gt; tapping an application icon on the dock bar, and tapping an application icon in the application center. &gt; - During a test, only the first startup latency of the specified application is collected. &gt; 4. Description of collecting the page switching latency data (**PAGE_SWITCH_COMPLETE_TIME**): &gt; - The page switching latency calculation is affected by the system log reporting. The start time is when the tap event is reported, &gt; and the end time is when the first frame is displayed on the screen after the page switching, &gt; which is different from what users perceive. &gt; - Page switching latency data can be collected in the **Router** and **Navigation** components. &gt; - During a test, only the first page switching latency in the specified application is collected. &gt; 5. Description of collecting the list scrolling frame rate (**LIST_SWIPE_FPS**): &gt; - **LIST_SWIPE_FPS**: The number of frames rendered and updated on the screen per second when the list is scrolled. &gt; - Supported scenarios: list scrolling of the **List**, **Grid**, **Scroll**, and **WaterFlow** components in the ArkUI subsystem. &gt; - During a test, only the first list scrolling frame rate in the specified application is collected. |
+| [PerfMetric](arkts-perfmetric-e.md) | 表示框架可采集的性能指标。 > **说明：** > > 1. 本枚举中各指标采集的是指定应用进程的性能数据，而非系统级性能数据。 > 2. CPU 数据（**CPU_LOAD** / **CPU_USAGE**）和内存数据（**MEMORY_RSS** / **MEMORY_PSS**）采集说明： > - 测试过程中会在代码段执行前后分别采集指定应用进程的 CPU 和内存数据，因此需要确保被测应用进程在测试期间存在。 > 3. 应用启动时延数据（**APP_START_RESPONSE_TIME** / **APP_START_COMPLETE_TIME**）采集说明： > - 应用启动时延数据受系统日志打点上报的影响。起始时间为点击事件上报的时刻， > 响应时延的结束时间为点击后首帧上屏的时刻， > 完成时延的结束时间为应用启动后首帧上屏的时刻。 > 该时延与用户实际感知的时延存在差异。 > - 应用启动时延数据可在以下场景采集：点击桌面应用图标、点击任务栏应用图标、点击应用中心应用图标。 > - 一次测试中仅采集指定应用的首次启动时延。 > 4. 页面切换时延数据（**PAGE_SWITCH_COMPLETE_TIME**）采集说明： > - 页面切换时延的计算受系统日志打点上报的影响。起始时间为点击事件上报的时刻， > 结束时间为页面切换后首帧上屏的时刻， > 与用户实际感知的时延存在差异。 > - 页面切换时延数据可在 **Router** 和 **Navigation** 组件中采集。 > - 一次测试中仅采集指定应用的首次页面切换时延。 > 5. 列表滑动帧率（**LIST_SWIPE_FPS**）采集说明： > - **LIST_SWIPE_FPS**：列表滑动时每秒在屏幕上渲染和更新的帧数。 > - 支持的场景：ArkUI 子系统中 **List**、**Grid**、**Scroll** 和 **WaterFlow** 组件的列表滚动。 > - 一次测试中仅采集指定应用的首次列表滑动帧率。 |
 

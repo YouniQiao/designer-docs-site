@@ -1,5 +1,9 @@
 # BackgroundPlayMode
 
+```TypeScript
+enum BackgroundPlayMode
+```
+
 Supported background play mode definitions.
 
 **Since:** 24
@@ -16,7 +20,7 @@ Enable background playback
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -30,7 +34,7 @@ Disable background playback
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

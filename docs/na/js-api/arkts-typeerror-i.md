@@ -1,0 +1,4 @@
+# TypeError
+
+**Inheritance:** TypeErrorextends: Error.
+

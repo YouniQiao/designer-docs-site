@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { EditorMenuOptions, SelectionMenuOptions, EditorEventInfo, SelectionMenu, ExpandedMenuOptions } from '@ohos.arkui.advanced.SelectionMenu';
+import { EditorMenuOptions,SelectionMenuOptions,EditorEventInfo,SelectionMenu,ExpandedMenuOptions } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,14 +12,14 @@ import { EditorMenuOptions, SelectionMenuOptions, EditorEventInfo, SelectionMenu
 
 | Name | Description |
 | --- | --- |
-| [SelectionMenu](arkts-arkui-arkui-advanced-selectionmenu-selectionmenu-f.md#selectionmenu-1) | Defines a **SelectionMenu** component. When the input parameter is empty, both the component and its content area have a zero size, making the component invisible. For example, when a **SelectionMenu** component activated via right -click is bound to a [RichEditor](../arkts-components/arkts-arkui-richeditor.md) component using [bindSelectionMenu](RichEditorAttribute#bindSelectionMenu), it will not be displayed when the **RichEditor** component receives a right-click event. |
+| [SelectionMenu](arkts-arkui-advanced-selectionmenu-selectionmenu-f.md#SelectionMenu-1) | 入参为空时，文本选择菜单组件SelectionMenu内容区大小及组件大小为零。表现例如，富文本组件[RichEditor]{@link rich_editor}使用 [bindSelectionMenu]{@link RichEditorAttribute#bindSelectionMenu}接口绑定一个SelectionMenu的右键菜单，则右键富文本组件区域时无任何菜单弹出。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [EditorEventInfo](arkts-arkui-editoreventinfo-i.md) | Provides the information about the selected content. |
-| [EditorMenuOptions](arkts-arkui-editormenuoptions-i.md) | Describes the edit menu options. |
-| [ExpandedMenuOptions](arkts-arkui-expandedmenuoptions-i.md) | Describes the expanded drop-down menu options. Inherits from [MenuItemOptions](../arkts-components/arkts-arkui-menuitemoptions-i.md#menuitemoptions). |
-| [SelectionMenuOptions](arkts-arkui-selectionmenuoptions-i.md) | Defines the configuration options of the **SelectionMenu** component. |
+| [EditorEventInfo](arkts-editoreventinfo-i.md) | 选中内容信息。 |
+| [EditorMenuOptions](arkts-editormenuoptions-i.md) | 编辑菜单选项。 |
+| [ExpandedMenuOptions](arkts-expandedmenuoptions-i.md) | 扩展下拉菜单。 继承于[MenuItemOptions](docroot://reference/apis-arkui/arkui-ts/ts-basic-components-menuitem.md#menuitemoptions对象说明)。 |
+| [SelectionMenuOptions](arkts-selectionmenuoptions-i.md) | SelectionMenuOptions定义SelectionMenu的可选菜单类型项及其具体配置参数。 |
 

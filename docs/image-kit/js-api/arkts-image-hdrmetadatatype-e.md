@@ -1,6 +1,10 @@
 # HdrMetadataType
 
-Enumerates the values available for **HDR_METADATA_TYPE** in [HdrMetadataKey](arkts-image-hdrmetadatakey-e.md#hdrmetadatakey).
+```TypeScript
+enum HdrMetadataType
+```
+
+表示[HdrMetadataKey]image.HdrMetadataKey中HDR_METADATA_TYPE关键字对应的值的枚举。
 
 **Since:** 12
 
@@ -12,7 +16,7 @@ Enumerates the values available for **HDR_METADATA_TYPE** in [HdrMetadataKey](ar
 NONE = 0
 ```
 
-No metadata.
+无元数据内容。
 
 **Since:** 12
 
@@ -24,7 +28,7 @@ No metadata.
 BASE = 1
 ```
 
-Metadata used for base graphics.
+表示用于基础图的元数据。
 
 **Since:** 12
 
@@ -36,7 +40,7 @@ Metadata used for base graphics.
 GAINMAP = 2
 ```
 
-Metadata used for gain maps.
+表示用于Gainmap图的元数据。
 
 **Since:** 12
 
@@ -48,7 +52,7 @@ Metadata used for gain maps.
 ALTERNATE = 3
 ```
 
-Metadata used for synthesized HDR graphics.
+表示用于合成后HDR图的元数据。
 
 **Since:** 12
 

@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Classes（系统接口）
+### Classes
 
 | Name | Description |
 | --- | --- |
-| [AbilityForegroundStateObserver](arkts-ability-abilityforegroundstateobserver-c-sys.md) | The module defines the listener used to listen for ability foreground and background state changes. |
-<!--DelEnd-->
+| <!--DelRow-->[AbilityForegroundStateObserver](arkts-abilityforegroundstateobserver-c.md) | 定义应用前后台状态监听。 |
 

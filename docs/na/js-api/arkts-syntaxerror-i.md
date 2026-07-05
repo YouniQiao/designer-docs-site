@@ -1,0 +1,4 @@
+# SyntaxError
+
+**Inheritance:** SyntaxErrorextends: Error.
+

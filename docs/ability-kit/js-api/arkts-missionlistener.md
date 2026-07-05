@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MissionListener](arkts-ability-missionlistener-i-sys.md) | The module defines the listeners used to observe the mission status. The listeners can be registered by using [on](arkts-ability-on-f-sys.md#on-1). |
-<!--DelEnd-->
+| <!--DelRow-->[MissionListener](arkts-missionlistener-i.md) | 定义系统任务状态监听，可以通过[on]{@link @ohos.app.ability.missionManager:missionManager.on_mission}注册。 |
 

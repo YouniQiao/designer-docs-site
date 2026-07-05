@@ -1,4 +1,4 @@
-# VolumeGroupInfo (System API)
+# VolumeGroupInfo
 
 Describes an audio volume group.
 
@@ -11,18 +11,18 @@ Describes an audio volume group.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
-## groupId
+## mappingId
 
 ```TypeScript
-readonly groupId: number
+readonly mappingId: int
 ```
 
-Volume group id.
+Volume mapping group id.
 
-**Type:** number
+**Type:** int
 
 **Since:** 9
 
@@ -46,15 +46,15 @@ Volume group name.
 
 **System API:** This is a system API.
 
-## mappingId
+## groupId
 
 ```TypeScript
-readonly mappingId: number
+readonly groupId: int
 ```
 
-Volume mapping group id.
+Volume group id.
 
-**Type:** number
+**Type:** int
 
 **Since:** 9
 

@@ -1,0 +1,48 @@
+# FocusTrackingInfo
+
+Describes the focus tracking information, which is obtained by calling VideoSessionForSys. [on('focusTrackingInfoAvailable')]camera.VideoSession.on(type: 'focusTrackingInfoAvailable', callback: Callback<FocusTrackingInfo>).
+
+**起始版本：** 15
+
+**系统能力：** SystemCapability.Multimedia.Camera.Core
+
+**系统接口：** 此接口为系统接口。
+
+## 导入模块
+
+```TypeScript
+import { camera } from '@kit.CameraKit';
+```
+
+## trackingRegion
+
+```TypeScript
+trackingRegion: Rect
+```
+
+Tracking region.
+
+**类型：** Rect
+
+**起始版本：** 15
+
+**系统能力：** SystemCapability.Multimedia.Camera.Core
+
+**系统接口：** 此接口为系统接口。
+
+## trackingMode
+
+```TypeScript
+trackingMode: FocusTrackingMode
+```
+
+Tracing mode.
+
+**类型：** FocusTrackingMode
+
+**起始版本：** 15
+
+**系统能力：** SystemCapability.Multimedia.Camera.Core
+
+**系统接口：** 此接口为系统接口。
+

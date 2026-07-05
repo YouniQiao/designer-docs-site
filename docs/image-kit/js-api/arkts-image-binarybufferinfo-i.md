@@ -1,6 +1,6 @@
 # BinaryBufferInfo
 
-Describes binary buffer info.
+描述二值图像缓冲区内的信息及数据。
 
 **Since:** 26.0.0
 
@@ -9,24 +9,8 @@ Describes binary buffer info.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
-
-## bytesPerRow
-
-```TypeScript
-bytesPerRow?: number
-```
-
-Bytes per row.If it is not specified, it will be calculated as (width + 7) / 8. The value range is all integers.
-
-**Type:** number
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
 ## data
 
@@ -34,13 +18,13 @@ Bytes per row.If it is not specified, it will be calculated as (width + 7) / 8. 
 data: ArrayBuffer
 ```
 
-Describes binary buffer.
+图像数据缓冲区，包含二值图像数据。
 
 **Type:** ArrayBuffer
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
@@ -50,13 +34,29 @@ Describes binary buffer.
 size: Size
 ```
 
-Describes binary buffer size.
+图像尺寸，包含宽度和高度。
 
 **Type:** Size
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.ImagePacker
+
+## bytesPerRow
+
+```TypeScript
+bytesPerRow?: int
+```
+
+每行字节数。若未指定，将按(width + 7) / 8计算。该值应为整数。
+
+**Type:** int
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 

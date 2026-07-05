@@ -1,4 +1,4 @@
-# SettingParam (System API)
+# SettingParam
 
 Defines the effect parameters used to preheat an image.
 
@@ -11,18 +11,18 @@ Defines the effect parameters used to preheat an image.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
-## faceSlender
+## skinSmoothLevel
 
 ```TypeScript
-faceSlender: number
+skinSmoothLevel: int
 ```
 
-Face slimming level, which is obtained through [Beauty.getSupportedBeautyRange](arkts-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1). For example, the value **1** indicates level-1 slimming.
+Skin smoothing level, which is obtained through [Beauty.getSupportedBeautyRange]camera.BeautyQuery.getSupportedBeautyRange. For example, the value **1** indicates level-1 smoothing.
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 
@@ -30,15 +30,15 @@ Face slimming level, which is obtained through [Beauty.getSupportedBeautyRange](
 
 **System API:** This is a system API.
 
-## skinSmoothLevel
+## faceSlender
 
 ```TypeScript
-skinSmoothLevel: number
+faceSlender: int
 ```
 
-Skin smoothing level, which is obtained through [Beauty.getSupportedBeautyRange](arkts-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1). For example, the value **1** indicates level-1 smoothing.
+Face slimming level, which is obtained through [Beauty.getSupportedBeautyRange]camera.BeautyQuery.getSupportedBeautyRange. For example, the value **1** indicates level-1 slimming.
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 
@@ -49,12 +49,12 @@ Skin smoothing level, which is obtained through [Beauty.getSupportedBeautyRange]
 ## skinTone
 
 ```TypeScript
-skinTone: number
+skinTone: int
 ```
 
-Skin tone perfection level, which is obtained through [Beauty.getSupportedBeautyRange](arkts-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1). For example, the value **0xBF986C** indicates a specific color.
+Skin tone perfection level, which is obtained through [Beauty.getSupportedBeautyRange]camera.BeautyQuery.getSupportedBeautyRange. For example, the value **0xBF986C** indicates a specific color.
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 

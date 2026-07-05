@@ -9,7 +9,7 @@ The continueManager module provides capabilities for managing cross-device appli
 ## Modules to Import
 
 ```TypeScript
-import { continueManager } from '@ohos.app.ability.continueManager';
+import { continueManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,18 +18,20 @@ import { continueManager } from '@ohos.app.ability.continueManager';
 
 | Name | Description |
 | --- | --- |
-| [off](arkts-ability-off-f.md#off-1) | Unregisters the callback used to obtain the quick start result when an application is launched quickly. This API uses an asynchronous callback to return the result. |
-| [on](arkts-ability-on-f.md#on-1) | Registers a callback to obtain the quick start result when an application is launched quickly. This API uses an asynchronous callback to return the result. |
+| [off](arkts-continuemanager-off-f.md#off-1) | Unregisters the callback used to obtain the quick start result when an application is launched quickly. This API uses an asynchronous callback to return the result. |
+| [offPrepareContinue](arkts-continuemanager-offpreparecontinue-f.md#offPrepareContinue-1) | Unregister prepareContinue event. |
+| [on](arkts-continuemanager-on-f.md#on-1) | Registers a callback to obtain the quick start result when an application is launched quickly. This API uses an asynchronous callback to return the result. |
+| [onPrepareContinue](arkts-continuemanager-onpreparecontinue-f.md#onPrepareContinue-1) | Register prepareContinue event, when the ability is configured with 'ContinueQuickStart' in the continueType, then can get the result of LaunchReason.PREPARE_CONTINUATION. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ContinueResultInfo](arkts-ability-continueresultinfo-i.md) | Describes the quick start result returned by the callback. |
+| [ContinueResultInfo](arkts-continuemanager-continueresultinfo-i.md) | Describes the quick start result returned by the callback. |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [ContinueStateCode](arkts-ability-continuestatecode-e.md) | Enumerates the status codes of the quick start result. |
+| [ContinueStateCode](arkts-continuemanager-continuestatecode-e.md) | Enumerates the status codes of the quick start result. |
 

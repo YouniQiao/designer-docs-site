@@ -9,24 +9,8 @@ Describes the interruption event received by the application when the audio is i
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## eventType
-
-```TypeScript
-eventType: InterruptType
-```
-
-Whether the audio interruption has started or ended.
-
-**Type:** InterruptType
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Audio.Renderer
 
 ## forceType
 
@@ -40,7 +24,7 @@ Whether the audio interruption is forcibly taken by the system or taken by an ap
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -56,7 +40,23 @@ Hint provided along the interruption to provide information related to the inter
 
 **Since:** 9
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+## eventType
+
+```TypeScript
+eventType: InterruptType
+```
+
+Whether the audio interruption has started or ended.
+
+**Type:** InterruptType
+
+**Since:** 9
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

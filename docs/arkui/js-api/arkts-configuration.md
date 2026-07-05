@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { LocaleResponse } from '@system.configuration';
+import { LocaleResponse } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,11 +12,11 @@ import { LocaleResponse } from '@system.configuration';
 
 | Name | Description |
 | --- | --- |
-| [Configuration](arkts-arkui-configuration-c.md) |  |
+| [Configuration](arkts-configuration-c.md) |  |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [LocaleResponse](arkts-arkui-localeresponse-i.md) |  |
+| [LocaleResponse](arkts-localeresponse-i.md) |  |
 

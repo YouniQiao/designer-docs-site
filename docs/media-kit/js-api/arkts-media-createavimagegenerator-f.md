@@ -1,18 +1,12 @@
 # createAVImageGenerator
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createAVImageGenerator
 
 ```TypeScript
 function createAVImageGenerator(): Promise<AVImageGenerator>
 ```
 
-Creates an AVImageGenerator instance. This API uses a promise to return the result.
+创建AVImageGenerator对象。使用Promise异步回调。
 
 **Since:** 12
 
@@ -22,13 +16,13 @@ Creates an AVImageGenerator instance. This API uses a promise to return the resu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVImageGenerator&gt; | Promise used to return the result. If the operation is successful, anAVImageGenerator instance is returned; otherwise, **null** is returned. The API can be used to obtain a videothumbnail. |
+| Promise&lt;AVImageGenerator> | Promise对象。异步返回AVImageGenerator实例，失败时返回null。可用于获取视频缩略图。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Returned by promise. |
+| 5400101 | No memory. Returned by promise. |
 
 **Example**
 
@@ -49,14 +43,13 @@ media.createAVImageGenerator().then((generator: media.AVImageGenerator) => {
 
 ```
 
-
 ## createAVImageGenerator
 
 ```TypeScript
 function createAVImageGenerator(callback: AsyncCallback<AVImageGenerator>): void
 ```
 
-Creates an AVImageGenerator instance. This API uses an asynchronous callback to return the result.
+创建AVImageGenerator实例。使用callback异步回调。
 
 **Since:** 12
 
@@ -66,13 +59,13 @@ Creates an AVImageGenerator instance. This API uses an asynchronous callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;AVImageGenerator&gt; | Yes | Callback used to return the result. If the operation issuccessful, an AVImageGenerator instance is returned; otherwise, **null** is returned. The API can be used toobtain a video thumbnail. |
+| callback | AsyncCallback&lt;AVImageGenerator> | Yes | 回调函数。异步返回AVImageGenerator实例，失败时返回null。可用于获取视频缩略图。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Returned by callback. |
+| 5400101 | No memory. Returned by callback. |
 
 **Example**
 

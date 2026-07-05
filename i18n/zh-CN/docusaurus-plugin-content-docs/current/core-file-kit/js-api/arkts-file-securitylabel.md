@@ -6,22 +6,28 @@
 
 **系统能力：** SystemCapability.FileManagement.File.FileIO
 
+## 导入模块
+
+```TypeScript
+import { securityLabel } from '@kit.CoreFileKit';
+```
+
 ## 汇总
 
 ### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [getSecurityLabel](arkts-corefile-getsecuritylabel-f.md#getsecuritylabel-1) | 获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。使用Promise异步回调。 |
-| [getSecurityLabel](arkts-corefile-getsecuritylabel-f.md#getsecuritylabel-2) | 获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。使用callback异步回调。 |
-| [getSecurityLabelSync](arkts-corefile-getsecuritylabelsync-f.md#getsecuritylabelsync-1) | 以同步方法获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。 |
-| [setSecurityLabel](arkts-corefile-setsecuritylabel-f.md#setsecuritylabel-1) | 设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用Promise异步回调。 |
-| [setSecurityLabel](arkts-corefile-setsecuritylabel-f.md#setsecuritylabel-2) | 设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用callback异步回调。 |
-| [setSecurityLabelSync](arkts-corefile-setsecuritylabelsync-f.md#setsecuritylabelsync-1) | 以同步方法设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。 |
+| [getSecurityLabel](arkts-securitylabel-getsecuritylabel-f.md#getSecurityLabel-1) | 获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。使用Promise异步回调。 |
+| [getSecurityLabel](arkts-securitylabel-getsecuritylabel-f.md#getSecurityLabel-2) | 获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。使用callback异步回调。 |
+| [getSecurityLabelSync](arkts-securitylabel-getsecuritylabelsync-f.md#getSecurityLabelSync-1) | 以同步方法获取文件或目录的数据安全等级。若未设置过数据安全等级则默认返回“s3”。 |
+| [setSecurityLabel](arkts-securitylabel-setsecuritylabel-f.md#setSecurityLabel-1) | 设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用Promise异步回调。 |
+| [setSecurityLabel](arkts-securitylabel-setsecuritylabel-f.md#setSecurityLabel-2) | 设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。使用callback异步回调。 |
+| [setSecurityLabelSync](arkts-securitylabel-setsecuritylabelsync-f.md#setSecurityLabelSync-1) | 以同步方法设置文件或目录的数据安全等级。数据安全等级仅可由低向高或平级设置。 |
 
 ### 类型
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [DataLevel](arkts-corefile-datalevel-t.md) | 数据安全等级。 |
+| [DataLevel](arkts-securitylabel-datalevel-t.md) | 数据安全等级。 |
 

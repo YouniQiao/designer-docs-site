@@ -9,22 +9,8 @@ Describes audio renderer configurations.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## privacyType
-
-```TypeScript
-privacyType?: AudioPrivacyType
-```
-
-Whether the audio stream can be recorded by other applications. The default value is **0**.
-
-**Type:** AudioPrivacyType
-
-**Since:** 10
-
-**System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 
 ## rendererInfo
 
@@ -40,6 +26,24 @@ Describes audio renderer information.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
+## originalAppIdInfo
+
+```TypeScript
+originalAppIdInfo?: AppIdInfo
+```
+
+Indicates the original app ID of the audio stream.
+
+**Type:** AppIdInfo
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.Core
+
+**System API:** This is a system API.
+
 ## streamInfo
 
 ```TypeScript
@@ -53,4 +57,18 @@ Describes audio stream information.
 **Since:** 8
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+## privacyType
+
+```TypeScript
+privacyType?: AudioPrivacyType
+```
+
+Whether the audio stream can be recorded by other applications. The default value is **0**.
+
+**Type:** AudioPrivacyType
+
+**Since:** 10
+
+**System capability:** SystemCapability.Multimedia.Audio.PlaybackCapture
 

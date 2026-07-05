@@ -1,8 +1,8 @@
-# TripodDetectionResult (System API)
+# TripodDetectionResult
 
-TripodDetectionResult extends [SceneFeatureDetectionResult](arkts-camera-scenefeaturedetectionresult-i-sys.md#scenefeaturedetectionresult) Describes the tripod detection result.
+TripodDetectionResult extends [SceneFeatureDetectionResult]camera.SceneFeatureDetectionResult Describes the tripod detection result.
 
-**Inheritance/Implementation:** TripodDetectionResult extends [SceneFeatureDetectionResult](arkts-camera-scenefeaturedetectionresult-i-sys.md#scenefeaturedetectionresult)
+**Inheritance:** TripodDetectionResultextends: SceneFeatureDetectionResult.
 
 **Since:** 13
 
@@ -13,7 +13,7 @@ TripodDetectionResult extends [SceneFeatureDetectionResult](arkts-camera-scenefe
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## tripodStatus

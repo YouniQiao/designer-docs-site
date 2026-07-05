@@ -9,22 +9,22 @@ The metadata of the current call.
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
 
-## avatar
+## phoneNumber
 
 ```TypeScript
-avatar?: image.PixelMap
+phoneNumber?: string
 ```
 
-The displayed picture that represents a particular user.
+The phone number of current call.
 
-**Type:** image.PixelMap
+**Type:** string
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
@@ -40,23 +40,23 @@ The displayed user name of current call.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 
-## phoneNumber
+## avatar
 
 ```TypeScript
-phoneNumber?: string
+avatar?: image.PixelMap
 ```
 
-The phone number of current call.
+The displayed picture that represents a particular user.
 
-**Type:** string
+**Type:** image.PixelMap
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.AVSession.Core
 

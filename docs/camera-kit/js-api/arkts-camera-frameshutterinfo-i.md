@@ -9,38 +9,38 @@ Describes the frame shutter information.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## captureId
 
 ```TypeScript
-captureId: number
+captureId: int
 ```
 
 ID of this capture action.
 
-**Type:** number
+**Type:** int
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
 ## timestamp
 
 ```TypeScript
-timestamp: number
+timestamp: long
 ```
 
 Timestamp of the shutter, in milliseconds.
 
-**Type:** number
+**Type:** long
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

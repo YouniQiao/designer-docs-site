@@ -1,5 +1,9 @@
 # VideoCodecType
 
+```TypeScript
+enum VideoCodecType
+```
+
 Enumerates the video codec types.
 
 **Since:** 13
@@ -16,7 +20,7 @@ AVC.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,7 +34,7 @@ HEVC.
 
 **Since:** 13
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

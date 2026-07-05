@@ -2,11 +2,9 @@
 
 ## Summary
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [MissionParameter](arkts-ability-missionparameter-i-sys.md) | Parameters corresponding to mission. |
-<!--DelEnd-->
+| <!--DelRow-->[MissionParameter](arkts-missionparameter-i.md) | Parameters corresponding to mission. |
 

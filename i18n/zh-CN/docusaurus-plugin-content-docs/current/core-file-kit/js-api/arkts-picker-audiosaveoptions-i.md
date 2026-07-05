@@ -1,0 +1,30 @@
+# AudioSaveOptions
+
+音频保存选项。
+
+**起始版本：** 23
+
+**系统能力：** SystemCapability.FileManagement.UserFileService
+
+## 导入模块
+
+```TypeScript
+import { picker } from '@kit.CoreFileKit';
+```
+
+## newFileNames
+
+```TypeScript
+newFileNames?: Array<string>
+```
+
+拉起audioPicker进行保存音频资源的文件名。若无此参数，则默认需要用户自行输入。
+
+**类型：** Array<string>
+
+**起始版本：** 23
+
+**模型约束：** 此接口仅可在Stage模型下使用。
+
+**系统能力：** SystemCapability.FileManagement.UserFileService
+

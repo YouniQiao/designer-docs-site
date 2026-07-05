@@ -1,11 +1,5 @@
 # getMediaKeySystems
 
-## Modules to Import
-
-```TypeScript
-import { drm } from '@ohos.multimedia.drm';
-```
-
 ## getMediaKeySystems
 
 ```TypeScript
@@ -16,7 +10,7 @@ Get all media key systems supported.
 
 **Since:** 14
 
-**Atomic service API:** This API can be used in atomic services since API version 14.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Drm.Core
 
@@ -30,8 +24,8 @@ Get all media key systems supported.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [24700101](../errorcode-drm.md#24700101-unknown-error) | All unknown errors. |
-| [24700201](../errorcode-drm.md#24700201-service-exception) | Fatal service error, for example, service died. |
+| 24700101 | All unknown errors. |
+| 24700201 | Fatal service error, for example, service died. |
 
 **Example**
 

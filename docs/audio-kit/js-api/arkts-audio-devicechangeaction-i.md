@@ -9,7 +9,7 @@ Describes the device connection status and device information.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
 ## deviceDescriptors

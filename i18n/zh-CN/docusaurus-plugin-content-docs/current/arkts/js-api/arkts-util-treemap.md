@@ -1,10 +1,23 @@
 # @ohos.util.TreeMap
 
+## 导入模块
+
+```TypeScript
+import { TreeMap } from '@kit.ArkTS';
+```
+
 ## 汇总
 
 ### 类
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [TreeMap](arkts-arkts-treemap-c.md) | TreeMap可用于存储具有关联关系的key-value键值对集合，存储元素中key值唯一，每个key对应一个value。 TreeMap底层使用红黑树实现，可以利用二叉树特性快速查找键值对。key值有序存储，可以实现快速的插入和删除。 |
+| [TreeMap](arkts-treemap-c.md) | TreeMap可用于存储具有关联关系的key-value键值对集合，存储元素中key值唯一，每个key对应一个value。 TreeMap底层使用红黑树实现，可以利用二叉树特性快速查找键值对。key值有序存储，可以实现快速的插入和删除。 |
+
+### 类型
+
+| 名称 | 描述 |
+| --- | --- |
+| [TreeMapComparator](arkts-treemapcomparator-t.md) | TreeMap的比较器类型。 |
+| [TreeMapForEachCb](arkts-treemapforeachcb-t.md) | TreeMap的回调函数类型。 |
 

@@ -1,6 +1,6 @@
 # @ohos.app.ability.appManager
 
-The appManager module implements application management. You can use the APIs of this module to query whether the application is undergoing a stability test, whether the application is running on a RAM constrained device, the memory size of the application, and information about the running process.
+appManager模块提供App管理的能力，包括查询当前是否处于稳定性测试场景、查询是否为ram受限设备、获取应用程序的内存大小、获取有关运行进程的信息等。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The appManager module implements application management. You can use the APIs of
 ## Modules to Import
 
 ```TypeScript
-import { appManager } from '@ohos.app.ability.appManager';
+import { appManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,114 +18,105 @@ import { appManager } from '@ohos.app.ability.appManager';
 
 | Name | Description |
 | --- | --- |
-| [getAppMemorySize](arkts-ability-getappmemorysize-f.md#getappmemorysize-1) | Obtains the maximum memory (RAM allocation) available to the current application. This API uses a promise to return the result. |
-| [getAppMemorySize](arkts-ability-getappmemorysize-f.md#getappmemorysize-2) | Obtains the maximum memory (RAM allocation) available to the current application. This API uses an asynchronous callback to return the result. |
-| [getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-1) | Obtains information about the running processes of the current application. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; - In versions earlier than API version 11, this API requires the ohos.permission.GET_RUNNING_INFO permission, &gt; which is available only for system applications. &gt; &gt; - Starting from API version 11, this API is used only to obtain the process information of the caller. No &gt; permission is required. |
-| [getRunningProcessInformation](arkts-ability-getrunningprocessinformation-f.md#getrunningprocessinformation-2) | Obtains information about the running processes of the current application. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; - In versions earlier than API version 11, this API requires the ohos.permission.GET_RUNNING_INFO permission, &gt; which is available only for system applications. &gt; &gt; - Starting from API version 11, this API is used only to obtain the process information of the caller. No &gt; permission is required. |
-| [isAppRunning](arkts-ability-isapprunning-f.md#isapprunning-1) | Checks whether the application with the specified bundle name and application clone index is running across all users. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; If the application is not installed for the current user, error code 16000073 is returned. If the application is &gt; installed for the current user, the system checks whether the application is running across all users. |
-| [isRamConstrainedDevice](arkts-ability-isramconstraineddevice-f.md#isramconstraineddevice-1) | Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources). This API uses a promise to return the result. |
-| [isRamConstrainedDevice](arkts-ability-isramconstraineddevice-f.md#isramconstraineddevice-2) | Checks whether the current device is a RAM-constrained device (a device with severely limited memory resources). This API uses an asynchronous callback to return the result. |
-| [isRunningInStabilityTest](arkts-ability-isrunninginstabilitytest-f.md#isrunninginstabilitytest-1) | Checks whether the system is undergoing a stability test. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; A stability test scenario refers to a specific testing environment designed to verify application reliability &gt; under complex, extreme, or long-term operating conditions. |
-| [isRunningInStabilityTest](arkts-ability-isrunninginstabilitytest-f.md#isrunninginstabilitytest-2) | Checks whether the system is undergoing a stability test. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; A stability test scenario refers to a specific testing environment designed to verify application reliability &gt; under complex, extreme, or long-term operating conditions. |
-| [killProcessesByBundleName](arkts-ability-killprocessesbybundlename-f.md#killprocessesbybundlename-2) | Kills a process by bundle name. This API uses a promise to return the result. |
-| [off](arkts-ability-off-f.md#off-1) | Unregisters the observer used to listen for application state changes. This API uses an asynchronous callback to return the result. |
-| [off](arkts-ability-off-f.md#off-2) | Unregisters the observer used to listen for application state changes. This API uses a promise to return the result. |
-| [on](arkts-ability-on-f.md#on-1) | Registers an observer to listen for lifecycle changes of all applications. |
-| [on](arkts-ability-on-f.md#on-2) | Registers an observer to listen for lifecycle changes of the specified application. |
+| <!--DelRow-->[clearUpAppData](arkts-appmanager-clearupappdata-f-sys.md#clearUpAppData-1) | 根据Bundle名称和应用分身索引，清除指定应用的数据。使用Promise异步回调。 |
+| <!--DelRow-->[clearUpApplicationData](arkts-appmanager-clearupapplicationdata-f-sys.md#clearUpApplicationData-1) | 通过Bundle名称清除应用数据。使用Promise异步回调。 |
+| <!--DelRow-->[clearUpApplicationData](arkts-appmanager-clearupapplicationdata-f-sys.md#clearUpApplicationData-2) | 通过Bundle名称清除应用数据。使用callback异步回调。 |
+| [getAppMemorySize](arkts-appmanager-getappmemorysize-f.md#getAppMemorySize-1) | 获取当前应用程序可以使用的最大内存（RAM）值。使用Promise异步回调。 |
+| [getAppMemorySize](arkts-appmanager-getappmemorysize-f.md#getAppMemorySize-2) | 获取当前应用程序可以使用的最大内存（RAM）值。使用callback异步回调。 |
+| <!--DelRow-->[getForegroundApplications](arkts-appmanager-getforegroundapplications-f-sys.md#getForegroundApplications-1) | 获取当前所有前台应用的信息。该应用信息由[AppStateData]{@link ./application/AppStateData:AppStateData}定义。使用callback异步回调。 |
+| <!--DelRow-->[getForegroundApplications](arkts-appmanager-getforegroundapplications-f-sys.md#getForegroundApplications-2) | 获取当前所有前台应用的信息。该应用信息由[AppStateData]{@link ./application/AppStateData:AppStateData}定义。使用Promise异步回调。 |
+| <!--DelRow-->[getKeepAliveAppServiceExtensions](arkts-appmanager-getkeepaliveappserviceextensions-f-sys.md#getKeepAliveAppServiceExtensions-1) | 获取所有保活的AppServiceExtensionAbility应用信息，此信息由[KeepAliveBundleInfo]{@link appManager.KeepAliveBundleInfo}定义。使用Promise异步 回调。 该接口在PC/2in1中可正常调用，在其他设备类型中返回801错误码。 |
+| <!--DelRow-->[getKeepAliveBundles](arkts-appmanager-getkeepalivebundles-f-sys.md#getKeepAliveBundles-1) | 获取指定用户下指定类型的保活应用信息。该应用信息由[KeepAliveBundleInfo]{@link appManager.KeepAliveBundleInfo}定义。使用Promise异步回调。 该接口在PC/2in1中可正常调用，在其他设备类型中返回801错误码。 **需要权限**：ohos.permission.MANAGE_APP_KEEP_ALIVE |
+| <!--DelRow-->[getProcessMemoryByPid](arkts-appmanager-getprocessmemorybypid-f-sys.md#getProcessMemoryByPid-1) | 通过pid查询对应进程占用的内存大小。使用Promise异步回调。 |
+| <!--DelRow-->[getProcessMemoryByPid](arkts-appmanager-getprocessmemorybypid-f-sys.md#getProcessMemoryByPid-2) | 通过pid查询对应进程占用的内存大小。使用callback异步回调。 |
+| <!--DelRow-->[getRunningMultiAppInfo](arkts-appmanager-getrunningmultiappinfo-f-sys.md#getRunningMultiAppInfo-1) | 根据应用包名获取系统中运行态的应用多开（即在一个设备上运行多个相同的应用）的相关信息。使用Promise异步回调。 |
+| <!--DelRow-->[getRunningProcessInfoByBundleName](arkts-appmanager-getrunningprocessinfobybundlename-f-sys.md#getRunningProcessInfoByBundleName-1) | 通过bundleName获取有关运行进程的信息。使用callback异步回调。 |
+| <!--DelRow-->[getRunningProcessInfoByBundleName](arkts-appmanager-getrunningprocessinfobybundlename-f-sys.md#getRunningProcessInfoByBundleName-2) | 通过bundleName和userId获取有关运行进程的信息。使用callback异步回调。 |
+| <!--DelRow-->[getRunningProcessInfoByBundleName](arkts-appmanager-getrunningprocessinfobybundlename-f-sys.md#getRunningProcessInfoByBundleName-3) | 通过bundleName获取有关运行进程的信息。使用Promise异步回调。 |
+| <!--DelRow-->[getRunningProcessInfoByBundleName](arkts-appmanager-getrunningprocessinfobybundlename-f-sys.md#getRunningProcessInfoByBundleName-4) | 通过bundleName和userId获取有关运行进程的信息。使用Promise异步回调。 |
+| [getRunningProcessInformation](arkts-appmanager-getrunningprocessinformation-f.md#getRunningProcessInformation-1) | 获取当前应用运行进程的相关信息。使用Promise异步回调。 > **说明：** > > - 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。 > > - 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。 |
+| [getRunningProcessInformation](arkts-appmanager-getrunningprocessinformation-f.md#getRunningProcessInformation-2) | 获取当前应用运行进程的相关信息。使用callback异步回调。 > **说明：** > > - 对于API version 11之前的版本，该接口需要申请权限ohos.permission.GET_RUNNING_INFO（该权限仅系统应用可申请）。 > > - 从API version 11开始，该接口仅用于获取调用方自身的进程信息，不再需要申请权限。 |
+| <!--DelRow-->[getRunningProcessInformationByBundleType](arkts-appmanager-getrunningprocessinformationbybundletype-f-sys.md#getRunningProcessInformationByBundleType-1) | 根据包类型获取当前运行进程的有关信息。使用Promise异步回调。 |
+| <!--DelRow-->[getSupportedProcessCachePids](arkts-appmanager-getsupportedprocesscachepids-f-sys.md#getSupportedProcessCachePids-1) | 查询当前应用中支持缓存后快速启动的进程PID。使用Promise异步回调。 > **说明：** > > 本接口仅支持获取调用者所在系统账号下的进程PID。 |
+| [isAppRunning](arkts-appmanager-isapprunning-f.md#isAppRunning-1) | 判断所有用户下指定包名和分身应用索引的应用是否正在运行。使用Promise异步回调。 > **说明：** > > 如果当前用户未安装该应用，则返回错误码16000073；如果当前用户已安装该应用，则判断所有用户下该指定应用是否正在运行。 |
+| <!--DelRow-->[isApplicationRunning](arkts-appmanager-isapplicationrunning-f-sys.md#isApplicationRunning-1) | 查询所有用户下指定包名的应用是否正在运行。使用Promise异步回调。 |
+| <!--DelRow-->[isApplicationRunning](arkts-appmanager-isapplicationrunning-f-sys.md#isApplicationRunning-2) | 查询所有用户下指定包名的应用是否正在运行。使用callback异步回调。 |
+| [isRamConstrainedDevice](arkts-appmanager-isramconstraineddevice-f.md#isRamConstrainedDevice-1) | 查询当前设备是否为RAM受限设备（内存资源严重受限的设备）。使用Promise异步回调。 |
+| [isRamConstrainedDevice](arkts-appmanager-isramconstraineddevice-f.md#isRamConstrainedDevice-2) | 查询当前设备是否为RAM受限设备（内存资源严重受限的设备）。使用callback异步回调。 |
+| [isRunningInStabilityTest](arkts-appmanager-isrunninginstabilitytest-f.md#isRunningInStabilityTest-1) | 查询当前系统是否处于稳定性测试场景。使用callback异步回调。 > **说明：** > > 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。 |
+| [isRunningInStabilityTest](arkts-appmanager-isrunninginstabilitytest-f.md#isRunningInStabilityTest-2) | 查询当前系统是否处于稳定性测试场景。使用Promise异步回调。 > **说明：** > > 稳定性测试场景指为验证应用在复杂、极端或长期运行条件下的可靠性而设计的特定测试环境。 |
+| <!--DelRow-->[isSharedBundleRunning](arkts-appmanager-issharedbundlerunning-f-sys.md#isSharedBundleRunning-1) | 检查共享库是否正在使用。使用Promise异步回调。 |
+| <!--DelRow-->[isSharedBundleRunning](arkts-appmanager-issharedbundlerunning-f-sys.md#isSharedBundleRunning-2) | 检查共享库是否正在使用。使用callback异步回调。 |
+| <!--DelRow-->[killProcessWithAccount](arkts-appmanager-killprocesswithaccount-f-sys.md#killProcessWithAccount-1) | 终止account进程。使用Promise异步回调。 > **说明：** > > 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。 |
+| <!--DelRow-->[killProcessWithAccount](arkts-appmanager-killprocesswithaccount-f-sys.md#killProcessWithAccount-2) | 终止account进程。使用Promise异步回调。 > **说明：** > > 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。 |
+| <!--DelRow-->[killProcessWithAccount](arkts-appmanager-killprocesswithaccount-f-sys.md#killProcessWithAccount-3) | 终止account进程。使用callback异步回调。 > **说明：** > > 当accountId为当前用户时，不需要校验ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS权限。 |
+| [killProcessesByBundleName](arkts-appmanager-killprocessesbybundlename-f.md#killProcessesByBundleName-1) | 终止指定应用包名的应用进程。使用Promise异步回调。 |
+| <!--DelRow-->[killProcessesByBundleName](arkts-appmanager-killprocessesbybundlename-f-sys.md#killProcessesByBundleName-1) | 通过Bundle名称终止进程。使用Promise异步回调。 |
+| <!--DelRow-->[killProcessesByBundleName](arkts-appmanager-killprocessesbybundlename-f-sys.md#killProcessesByBundleName-2) | 通过Bundle名称终止进程。使用callback异步回调。 |
+| <!--DelRow-->[killProcessesInBatch](arkts-appmanager-killprocessesinbatch-f-sys.md#killProcessesInBatch-1) | 批量终止进程。使用Promise异步回调。 该接口在PC/2in1中可正常调用，在其他设备类型中返回801错误码。 **需要权限**：ohos.permission.KILL_APP_PROCESSES |
+| [off](arkts-appmanager-off-f.md#off-1) | 注销应用状态监听器。使用callback异步回调。 |
+| [off](arkts-appmanager-off-f.md#off-2) | 注销应用状态监听器。使用Promise异步回调。 |
+| <!--DelRow-->[off](arkts-appmanager-off-f-sys.md#off-1) | 注销应用启动和退出的监听器。 |
+| <!--DelRow-->[off](arkts-appmanager-off-f-sys.md#off-2) | 取消注册监听Ability首帧绘制完成事件观察者对象。 |
+| <!--DelRow-->[offAbilityFirstFrameStateChange](arkts-appmanager-offabilityfirstframestatechange-f-sys.md#offAbilityFirstFrameStateChange-1) | 取消注册监听Ability首帧绘制完成事件观察者对象。 |
+| <!--DelRow-->[offAppForegroundStateChange](arkts-appmanager-offappforegroundstatechange-f-sys.md#offAppForegroundStateChange-1) | 注销应用启动和退出的监听器。 |
+| [offApplicationStateChange](arkts-appmanager-offapplicationstatechange-f.md#offApplicationStateChange-1) | 注销应用状态监听器。使用callback异步回调。 |
+| [offApplicationStateChange](arkts-appmanager-offapplicationstatechange-f.md#offApplicationStateChange-2) | 注销应用状态监听器。使用Promise异步回调。 |
+| [on](arkts-appmanager-on-f.md#on-1) | 注册所有应用程序的状态监听器。 |
+| [on](arkts-appmanager-on-f.md#on-2) | 注册指定应用程序的状态监听器。 |
+| <!--DelRow-->[on](arkts-appmanager-on-f-sys.md#on-1) | 注册应用程序的状态监听器，并通过设置过滤条件来筛选所需监听的应用生命周期变化事件。 |
+| <!--DelRow-->[on](arkts-appmanager-on-f-sys.md#on-2) | 注册应用启动和退出的监听器，可用于系统应用监听所有应用的启动和退出。 |
+| <!--DelRow-->[on](arkts-appmanager-on-f-sys.md#on-3) | 注册监听Ability首帧绘制完成事件观察者对象，可用于系统应用监听Ability首帧绘制事件。 |
+| <!--DelRow-->[onAbilityFirstFrameStateChange](arkts-appmanager-onabilityfirstframestatechange-f-sys.md#onAbilityFirstFrameStateChange-1) | 注册监听Ability首帧绘制完成事件观察者对象，可用于系统应用监听Ability首帧绘制事件。 |
+| <!--DelRow-->[onAppForegroundStateChange](arkts-appmanager-onappforegroundstatechange-f-sys.md#onAppForegroundStateChange-1) | 注册应用启动和退出的监听器，可用于系统应用监听所有应用的启动和退出。 |
+| [onApplicationStateChange](arkts-appmanager-onapplicationstatechange-f.md#onApplicationStateChange-1) | 注册所有应用程序的状态监听器。 |
+| [onApplicationStateChange](arkts-appmanager-onapplicationstatechange-f.md#onApplicationStateChange-2) | 注册指定应用程序的状态监听器。 |
+| <!--DelRow-->[onApplicationStateChange](arkts-appmanager-onapplicationstatechange-f-sys.md#onApplicationStateChange-1) | 注册应用程序的状态监听器，并通过设置过滤条件来筛选所需监听的应用生命周期变化事件。 |
+| <!--DelRow-->[preloadApplication](arkts-appmanager-preloadapplication-f-sys.md#preloadApplication-1) | 预加载应用进程。接口返回成功并不代表预加载成功，具体结果以目标应用进程是否创建成功为准。使用Promise异步回调。 |
+| <!--DelRow-->[setKeepAliveForAppServiceExtension](arkts-appmanager-setkeepaliveforappserviceextension-f-sys.md#setKeepAliveForAppServiceExtension-1) | 为AppServiceExtensionAbility设置保活或取消保活。使用Promise异步回调。 该接口在PC/2in1中可正常调用，在其他设备类型中返回801错误码。 > **说明：** > > - 仅当应用安装在userId为1的用户下，且应用中entry类型的HAP的module.json5配置文件中的mainElement字段配置为AppServiceExtensionAbility时，该接口才生效。 |
+| <!--DelRow-->[setKeepAliveForBundle](arkts-appmanager-setkeepaliveforbundle-f-sys.md#setKeepAliveForBundle-1) | 为指定用户下的应用设置或取消保活。使用Promise异步回调。 从API version 18开始，该接口仅在2in1和Wearable设备上生效。对于API version 18之前版本，该接口仅在2in1设备上生效。其他情况下调用该接口将返回错误码801。 > **说明：** > > - 应用如果需要支持保活，其[module.json5配置文件](docroot://quick-start/module-configuration-file.md)中的mainElement必须是UIAbility。只有当 > mainElement启动后，系统才会执行应用保活操作。 > > - 在2in1设备上，被保活的应用需要在启动后5秒内添加至状态栏。否则，系统将取消该应用的保活设置，并杀死保活重启的进程。 > > - 当被保活的应用进程退出时，系统将尝试重启该进程，连续3次重启失败后将不再继续重启。 |
+| <!--DelRow-->[terminateMission](arkts-appmanager-terminatemission-f-sys.md#terminateMission-1) | 关闭指定的任务。使用Promise异步回调。 |
 
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [clearUpAppData](arkts-ability-clearupappdata-f-sys.md#clearupappdata-1) | Clears data of a specified application based on the bundle name and application clone index. This API uses a promise to return the result. |
-| [clearUpApplicationData](arkts-ability-clearupapplicationdata-f-sys.md#clearupapplicationdata-1) | Clears application data by bundle name. This API uses a promise to return the result. |
-| [clearUpApplicationData](arkts-ability-clearupapplicationdata-f-sys.md#clearupapplicationdata-2) | Clears application data by bundle name. This API uses an asynchronous callback to return the result. |
-| [getForegroundApplications](arkts-ability-getforegroundapplications-f-sys.md#getforegroundapplications-1) | Obtains applications that are running in the foreground. The application information is defined by [AppStateData](arkts-ability-appstatedata-c.md#appstatedata). This API uses an asynchronous callback to return the result. |
-| [getForegroundApplications](arkts-ability-getforegroundapplications-f-sys.md#getforegroundapplications-2) | Obtains applications that are running in the foreground. The application information is defined by [AppStateData](arkts-ability-appstatedata-c.md#appstatedata). This API uses a promise to return the result. |
-| [getKeepAliveAppServiceExtensions](arkts-ability-getkeepaliveappserviceextensions-f-sys.md#getkeepaliveappserviceextensions-1) | Obtains information about all AppServiceExtensionAbility components that are kept alive. The information is defined by [KeepAliveBundleInfo](arkts-ability-keepalivebundleinfo-i-sys.md#keepalivebundleinfo). This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is returned. |
-| [getKeepAliveBundles](arkts-ability-getkeepalivebundles-f-sys.md#getkeepalivebundles-1) | Obtains information about a specified type of keep-alive application of a user. The application information is defined by [KeepAliveBundleInfo](arkts-ability-keepalivebundleinfo-i-sys.md#keepalivebundleinfo). This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is returned. **Required permissions**: ohos.permission.MANAGE_APP_KEEP_ALIVE |
-| [getProcessMemoryByPid](arkts-ability-getprocessmemorybypid-f-sys.md#getprocessmemorybypid-1) | Obtains the memory size of a process. This API uses a promise to return the result. |
-| [getProcessMemoryByPid](arkts-ability-getprocessmemorybypid-f-sys.md#getprocessmemorybypid-2) | Obtains the memory size of a process. This API uses an asynchronous callback to return the result. |
-| [getProcessRunningInfos](arkts-ability-getprocessrunninginfos-f-sys.md#getprocessrunninginfos-1) | Obtains information about the running processes of the current application. This API uses a promise to return the result. |
-| [getProcessRunningInfos](arkts-ability-getprocessrunninginfos-f-sys.md#getprocessrunninginfos-2) | Obtains information about the running processes of the current application. This API uses an asynchronous callback to return the result. |
-| [getRunningMultiAppInfo](arkts-ability-getrunningmultiappinfo-f-sys.md#getrunningmultiappinfo-1) | Obtains the information about running applications in multi-app mode. The multi-app mode means that an application can be simultaneously logged in with different accounts on the same device. This API uses a promise to return the result. |
-| [getRunningProcessInfoByBundleName](arkts-ability-getrunningprocessinfobybundlename-f-sys.md#getrunningprocessinfobybundlename-1) | Obtains information about the running processes by bundle name. This API uses an asynchronous callback to return the result. |
-| [getRunningProcessInfoByBundleName](arkts-ability-getrunningprocessinfobybundlename-f-sys.md#getrunningprocessinfobybundlename-2) | Obtains information about the running processes by bundle name and user ID. This API uses an asynchronous callback to return the result. |
-| [getRunningProcessInfoByBundleName](arkts-ability-getrunningprocessinfobybundlename-f-sys.md#getrunningprocessinfobybundlename-3) | Obtains information about the running processes by bundle name. This API uses a promise to return the result. |
-| [getRunningProcessInfoByBundleName](arkts-ability-getrunningprocessinfobybundlename-f-sys.md#getrunningprocessinfobybundlename-4) | Obtains information about the running processes by bundle name and user ID. This API uses a promise to return the result. |
-| [getRunningProcessInformationByBundleType](arkts-ability-getrunningprocessinformationbybundletype-f-sys.md#getrunningprocessinformationbybundletype-1) | Obtains the information about the running process based on the bundle type. This API uses a promise to return the result. |
-| [getSupportedProcessCachePids](arkts-ability-getsupportedprocesscachepids-f-sys.md#getsupportedprocesscachepids-1) | Obtains the PIDs of processes that support quick startup after caching in a specified application. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; This API can only be used to obtain the PIDs of the system account to which the caller belongs. |
-| [isApplicationRunning](arkts-ability-isapplicationrunning-f-sys.md#isapplicationrunning-1) | Checks whether the application with the specified bundle name is running across all users. This API uses a promise to return the result. |
-| [isApplicationRunning](arkts-ability-isapplicationrunning-f-sys.md#isapplicationrunning-2) | Checks whether the application with the specified bundle name is running across all users. This API uses an asynchronous callback to return the result. |
-| [isSharedBundleRunning](arkts-ability-issharedbundlerunning-f-sys.md#issharedbundlerunning-1) | Checks whether the shared library is in use. This API uses a promise to return the result. |
-| [isSharedBundleRunning](arkts-ability-issharedbundlerunning-f-sys.md#issharedbundlerunning-2) | Checks whether the shared library is in use. This API uses an asynchronous callback to return the result. |
-| [killProcessWithAccount](arkts-ability-killprocesswithaccount-f-sys.md#killprocesswithaccount-1) | Kills a process by bundle name and account ID. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the &gt; current user. |
-| [killProcessWithAccount](arkts-ability-killprocesswithaccount-f-sys.md#killprocesswithaccount-2) | Kills a process by bundle name and account ID. This API uses a promise to return the result. &gt; **NOTE** &gt; &gt; The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the &gt; current user. |
-| [killProcessWithAccount](arkts-ability-killprocesswithaccount-f-sys.md#killprocesswithaccount-3) | Kills a process by bundle name and account ID. This API uses an asynchronous callback to return the result. &gt; **NOTE** &gt; &gt; The ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permission is not required when **accountId** specifies the &gt; current user. |
-| [killProcessesByBundleName](arkts-ability-killprocessesbybundlename-f-sys.md#killprocessesbybundlename-1) | Kills a process by bundle name. This API uses a promise to return the result. |
-| [killProcessesByBundleName](arkts-ability-killprocessesbybundlename-f-sys.md#killprocessesbybundlename-3) | Kills a process by bundle name. This API uses an asynchronous callback to return the result. |
-| [killProcessesInBatch](arkts-ability-killprocessesinbatch-f-sys.md#killprocessesinbatch-1) | Kills processes in batches. This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is returned. **Required permissions**: ohos.permission.KILL_APP_PROCESSES |
-| [off](arkts-ability-off-f-sys.md#off-3) | Unregisters the observer used to listen for application start or exit events. |
-| [off](arkts-ability-off-f-sys.md#off-4) | Deregisters the observer used to listen for the complete of the first frame rendering of a given ability. |
-| [on](arkts-ability-on-f-sys.md#on-3) | Registers an application state observer, which allows you to filter for specific application lifecycle changes by setting filter criteria. |
-| [on](arkts-ability-on-f-sys.md#on-4) | Registers an observer to listen for application start or exit events. The observer can be used by a system application to observe the start or event events of all applications. |
-| [on](arkts-ability-on-f-sys.md#on-5) | Registers an observer to listen for the complete of the first frame rendering of a given ability. |
-| [preloadApplication](arkts-ability-preloadapplication-f-sys.md#preloadapplication-1) | Preloads an application process. A successful call does not always mean that the preloading is successful. In other words, the target application process may not be created even if the API is successfully called. This API uses a promise to return the result. |
-| [setKeepAliveForAppServiceExtension](arkts-ability-setkeepaliveforappserviceextension-f-sys.md#setkeepaliveforappserviceextension-1) | Sets or cancels the keep-alive status for an AppServiceExtensionAbility. This API uses a promise to return the result. This API can be properly called on PCs/2-in-1 devices. If it is called on other devices, error code 801 is returned. &gt; **NOTE** &gt; &gt; - This API takes effect only when the application is installed under the user with **userId** of 1 and the &gt; **mainElement** field in the **module.json5** file of the entry HAP is set to **AppServiceExtensionAbility**. |
-| [setKeepAliveForBundle](arkts-ability-setkeepaliveforbundle-f-sys.md#setkeepaliveforbundle-1) | Sets or cancels the keep-alive status for an application that belongs to a specified user. This API uses a promise to return the result. Starting from API version 18, this API can be properly called only on 2-in-1 devices and wearables. For versions earlier than API version 18, this API can be properly called only on 2-in-1 devices. If it is called on other device types, error code 801 is returned. &gt; **NOTE** &gt; &gt; - To support keep-alive, **mainElement** in the &gt; [module.json5](../../../../quick-start/module-configuration-file.md) file of the application must be a UIAbility. &gt; The system initiates the keep-alive operation only when this mainElement has been launched. &gt; &gt; - On 2-in-1 devices, the application must appear in the status bar within 5 seconds of launch. Otherwise, the &gt; system revokes the application's keep-alive status and terminate the restarted process. &gt; &gt; - When the kept-alive application process exits, the system attempts to restart it. If three consecutive restart &gt; attempts fail, the system stops restarting the process. |
-| [terminateMission](arkts-ability-terminatemission-f-sys.md#terminatemission-1) | Terminates a mission. This API uses a promise to return the result. |
-<!--DelEnd-->
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [AppStateFilter](arkts-ability-appstatefilter-i-sys.md) | Describes the filter for application lifecycle change events. It can be used as a parameter of [on](arkts-ability-on-f-sys.md#on-3) to filter application lifecycle change events you want to listen for. |
-| [KeepAliveBundleInfo](arkts-ability-keepalivebundleinfo-i-sys.md) | Describes the keep-alive application information, which can be obtained by calling [getKeepAliveBundles](arkts-ability-getkeepalivebundles-f-sys.md#getkeepalivebundles-1) or [getKeepAliveAppServiceExtensions](arkts-ability-getkeepaliveappserviceextensions-f-sys.md#getkeepaliveappserviceextensions-1). |
-<!--DelEnd-->
-
-### Enums
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ProcessState](arkts-ability-processstate-e.md) | Enumerates the processes states. |
-
-<!--Del-->
-### Enums（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [ApplicationState](arkts-ability-applicationstate-e-sys.md) | Enumerates the application states. This enum can be used together with [AbilityStateData](arkts-ability-abilitystatedata-c.md#abilitystatedata) to return the application state. |
-| [FilterAbilityStateType](arkts-ability-filterabilitystatetype-e-sys.md) | Enumerates the types of ability states to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the ability state types you want to listen for. |
-| [FilterAppStateType](arkts-ability-filterappstatetype-e-sys.md) | Enumerates the types of application states to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the application state types you want to listen for. |
-| [FilterBundleType](arkts-ability-filterbundletype-e-sys.md) | Enumerates the types of applications to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the application types you want to listen for. |
-| [FilterCallback](arkts-ability-filtercallback-e-sys.md) | Enumerates the callbacks to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the callbacks you want to listen for. |
-| [FilterProcessStateType](arkts-ability-filterprocessstatetype-e-sys.md) | Enumerates the types of process states to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the process state types you want to listen for. |
-| [KeepAliveAppType](arkts-ability-keepaliveapptype-e-sys.md) | Enumerates the types of applications to be kept alive. |
-| [KeepAliveSetter](arkts-ability-keepalivesetter-e-sys.md) | Enumerates the types of parties that set to keep applications alive. |
-| [PreloadMode](arkts-ability-preloadmode-e-sys.md) | Enumerates the modes used for preloading an application process. |
-<!--DelEnd-->
+| <!--DelRow-->[AppStateFilter](arkts-appmanager-appstatefilter-i-sys.md) | 应用生命周期变化事件的过滤器，可作为 [on]{@link appManager.on(type: 'applicationState', observer: ApplicationStateObserver, filter: AppStateFilter)}的参数用 于筛选所需监听的应用生命周期变化事件。 |
+| <!--DelRow-->[KeepAliveBundleInfo](arkts-appmanager-keepalivebundleinfo-i-sys.md) | 定义应用保活信息，可以通过[getKeepAliveBundles]{@link appManager.getKeepAliveBundles}或 [getKeepAliveAppServiceExtensions]{@link appManager.getKeepAliveAppServiceExtensions}获取。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [AbilityStateData](arkts-ability-abilitystatedata-t.md) | Defines the ability state data. |
-| [AppStateData](arkts-ability-appstatedata-t.md) | Defines the application state data. |
-| [ApplicationStateObserver](arkts-ability-applicationstateobserver-t.md) | Defines the observer used to listen for application state changes. |
-| [ProcessData](arkts-ability-processdata-t.md) | Defines the process data. |
-| [ProcessInformation](arkts-ability-processinformation-t.md) | Defines the process information. |
+| <!--DelRow-->[AbilityFirstFrameStateData](arkts-appmanager-abilityfirstframestatedata-t-sys.md) | UIAbility首帧绘制完成回调上报数据结构。 |
+| <!--DelRow-->[AbilityFirstFrameStateData](arkts-appmanager-abilityfirstframestatedata-t-sys.md) | UIAbility首帧绘制完成回调上报数据结构。 |
+| <!--DelRow-->[AbilityFirstFrameStateObserver](arkts-appmanager-abilityfirstframestateobserver-t-sys.md) | UIAbility首帧绘制完成事件监听对象。 |
+| <!--DelRow-->[AbilityFirstFrameStateObserver](arkts-appmanager-abilityfirstframestateobserver-t-sys.md) | UIAbility首帧绘制完成事件监听对象。 |
+| [AbilityStateData](arkts-appmanager-abilitystatedata-t.md) | Ability状态信息。 |
+| [AbilityStateData](arkts-appmanager-abilitystatedata-t.md) | Ability状态信息。 |
+| <!--DelRow-->[AppForegroundStateObserver](arkts-appmanager-appforegroundstateobserver-t-sys.md) | 应用启动和退出的状态监听。 |
+| <!--DelRow-->[AppForegroundStateObserver](arkts-appmanager-appforegroundstateobserver-t-sys.md) | 应用启动和退出的状态监听。 |
+| [ApplicationStateObserver](arkts-appmanager-applicationstateobserver-t.md) | 应用状态监听器。 |
+| [ApplicationStateObserver](arkts-appmanager-applicationstateobserver-t.md) | 应用状态监听器。 |
+| [AppStateData](arkts-appmanager-appstatedata-t.md) | 应用状态信息。 |
+| [AppStateData](arkts-appmanager-appstatedata-t.md) | 应用状态信息。 |
+| [ProcessData](arkts-appmanager-processdata-t.md) | 进程数据。 |
+| [ProcessData](arkts-appmanager-processdata-t.md) | 进程数据。 |
+| [ProcessInformation](arkts-appmanager-processinformation-t.md) | 进程信息。 |
+| <!--DelRow-->[RunningMultiAppInfo](arkts-appmanager-runningmultiappinfo-t-sys.md) | 应用多开在运行态的结构信息。 |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [AbilityFirstFrameStateData](arkts-ability-abilityfirstframestatedata-t-sys.md) | Defines the data structure reported when the first frame rendering of the UIAbility is complete. |
-| [AbilityFirstFrameStateObserver](arkts-ability-abilityfirstframestateobserver-t-sys.md) | Defines the listener for the completion of the first frame rendering of the UIAbility. |
-| [AppForegroundStateObserver](arkts-ability-appforegroundstateobserver-t-sys.md) | Defines the listener for the state of application launch and exit. |
-| [RunningMultiAppInfo](arkts-ability-runningmultiappinfo-t-sys.md) | Defines the information of an application in multi-app mode in the running state. |
-<!--DelEnd-->
+| <!--DelRow-->[ApplicationState](arkts-appmanager-applicationstate-e-sys.md) | 应用状态，该类型为枚举，可配合[AbilityStateData]{@link ./application/AbilityStateData:AbilityStateData}返回相应的应用状态。 |
+| <!--DelRow-->[FilterAbilityStateType](arkts-appmanager-filterabilitystatetype-e-sys.md) | 表示要监听的Ability状态，该类型为枚举。可配合[AppStateFilter]{@link appManager.AppStateFilter}过滤想要监听的Ability状态。 |
+| <!--DelRow-->[FilterAppStateType](arkts-appmanager-filterappstatetype-e-sys.md) | 表示要监听的应用状态，该类型为枚举。可配合[AppStateFilter]{@link appManager.AppStateFilter}过滤想要监听的应用状态。 |
+| <!--DelRow-->[FilterBundleType](arkts-appmanager-filterbundletype-e-sys.md) | 表示要监听的的应用类型，该类型为枚举。可配合[AppStateFilter]{@link appManager.AppStateFilter}过滤想要监听的应用类型。 |
+| <!--DelRow-->[FilterCallback](arkts-appmanager-filtercallback-e-sys.md) | 表示要监听的回调函数，该类型为枚举。可配合[AppStateFilter]{@link appManager.AppStateFilter}过滤想要监听的回调函数。 |
+| <!--DelRow-->[FilterProcessStateType](arkts-appmanager-filterprocessstatetype-e-sys.md) | 表示要监听的进程状态，该类型为枚举。可配合[AppStateFilter]{@link appManager.AppStateFilter}过滤想要监听的进程状态。 |
+| <!--DelRow-->[KeepAliveAppType](arkts-appmanager-keepaliveapptype-e-sys.md) | 表示被保活应用的应用类型。 |
+| <!--DelRow-->[KeepAliveSetter](arkts-appmanager-keepalivesetter-e-sys.md) | 表示应用保活的设置方类型。 |
+| <!--DelRow-->[PreloadMode](arkts-appmanager-preloadmode-e-sys.md) | 表示预加载应用进程模式的枚举。 |
+| [ProcessState](arkts-appmanager-processstate-e.md) | 表示进程状态的枚举。 |
 

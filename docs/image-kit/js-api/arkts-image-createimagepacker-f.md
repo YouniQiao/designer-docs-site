@@ -1,22 +1,16 @@
 # createImagePacker
 
-## Modules to Import
-
-```TypeScript
-import { image } from '@ohos.multimedia.image';
-```
-
 ## createImagePacker
 
 ```TypeScript
 function createImagePacker(): ImagePacker
 ```
 
-Creates an ImagePacker instance. Images occupy a large amount of memory. When you finish using an ImagePacker instance, call [release](arkts-image-imagepacker-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+创建ImagePacker实例。 由于图片占用内存较大，所以当ImagePacker实例使用完成后，应主动调用[release]image.ImagePacker.release(callback: AsyncCallback<void>)方法及时 释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
 
 **Since:** 6
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Image.ImagePacker
 
@@ -24,7 +18,7 @@ Creates an ImagePacker instance. Images occupy a large amount of memory. When yo
 
 | Type | Description |
 | --- | --- |
-| ImagePacker | ImagePacker instance created. |
+| ImagePacker | 返回ImagePacker实例。 |
 
 **Example**
 

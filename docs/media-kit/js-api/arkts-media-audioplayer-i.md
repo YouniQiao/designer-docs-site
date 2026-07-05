@@ -1,19 +1,19 @@
 # AudioPlayer
 
-AudioPlayer is a class for audio playback management. It provides APIs to manage and play audio. Before calling any API in AudioPlayer, you must use [createAudioPlayer()](arkts-media-createaudioplayer-f.md#createaudioplayer-1) to create an AudioPlayer instance.
+AudioPlayer is a class for audio playback management. It provides APIs to manage and play audio. Before calling any API in AudioPlayer, you must use [createAudioPlayer()](arkts-media-createaudioplayer-f.md#createAudioPlayer-1) to create an AudioPlayer instance.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitutes:** [media:media](arkts-multimedia-media.md#media)
+**Substitute:** @ohos.multimedia.media:media
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## getTrackDescription
@@ -28,7 +28,7 @@ Obtains the audio track information. It can be called only after the **'dataLoad
 
 **Deprecated since:** 9
 
-**Substitutes:** getTrackDescription(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.getTrackDescription(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -36,7 +36,7 @@ Obtains the audio track information. It can be called only after the **'dataLoad
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | AsyncCallback&lt;Array&lt;MediaDescription&gt;&gt; | Yes | Callback used to return the result. If the operationis successful, **err** is **undefined** and **data** is the MediaDescription array obtained; otherwise,**err** is an error object. |
+| callback | AsyncCallback&lt;Array&lt;MediaDescription>> | Yes | Callback used to return the result. If the operation  is successful, err is undefined and data is the MediaDescription array obtained; otherwise,  err is an error object. |
 
 ## getTrackDescription
 
@@ -50,7 +50,7 @@ Obtains the audio track information. It can be called only after the **'dataLoad
 
 **Deprecated since:** 9
 
-**Substitutes:** [getTrackDescription()](arkts-media-avplayer-i.md#gettrackdescription-2)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.getTrackDescription()
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -58,7 +58,7 @@ Obtains the audio track information. It can be called only after the **'dataLoad
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;MediaDescription&gt;&gt; | Promise used to return a **MediaDescription** array, which recordsthe audio track information. |
+| Promise&lt;Array&lt;MediaDescription>> | Promise used to return a MediaDescription array, which records  the audio track information. |
 
 ## on('bufferingUpdate')
 
@@ -72,7 +72,7 @@ Subscribes to the audio buffering update event. This API works only under online
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -80,8 +80,8 @@ Subscribes to the audio buffering update event. This API works only under online
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'bufferingUpdate' | Yes | Event type, which is **'bufferingUpdate'** in this case. |
-| callback | (infoType: BufferingInfoType, value: number) =&gt; void | Yes | Callback invoked when the event is triggered.<br>The value of[BufferingInfoType](arkts-media-bufferinginfotype-e.md#bufferinginfotype) is fixed at **0**. |
+| type | 'bufferingUpdate' | Yes | Event type, which is 'bufferingUpdate' in this case. |
+| callback | (infoType: BufferingInfoType, value: number) => void | Yes | Callback invoked when the event is triggered. The value of  [BufferingInfoType](arkts-media-bufferinginfotype-e.md#BufferingInfoType) is fixed at 0. |
 
 ## on('play' | 'pause' | 'stop' | 'reset' | 'dataLoad' | 'finish' | 'volumeChange')
 
@@ -95,7 +95,7 @@ Subscribes to the audio playback events.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -103,8 +103,8 @@ Subscribes to the audio playback events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. Thefollowing events are supported:<br>- 'play': triggered when the [play()](arkts-media-audioplayer-i.md#play-1) API iscalled and audio playback starts.<br>- 'pause': triggered when the [pause()](arkts-media-audioplayer-i.md#pause-1)API is called and audio playback is paused.<br>- 'stop': triggered when the[stop()](arkts-media-audioplayer-i.md#stop-1) API is called and audio playback stops.<br>- 'reset': triggered whenthe [reset()](arkts-media-audioplayer-i.md#reset-1) API is called and audio playback is reset.<br>- 'dataLoad':triggered when the audio data is loaded, that is, when the **src** property is configured.<br>- 'finish':triggered when the audio playback is finished.<br>- 'volumeChange': triggered when the[setVolume()](arkts-media-audioplayer-i.md#setvolume-1) API is called and the playback volume is changed. |
-| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. The  following events are supported: - 'play': triggered when the [play()]media.AudioPlayer.play API is  called and audio playback starts. - 'pause': triggered when the [pause()]media.AudioPlayer.pause  API is called and audio playback is paused. - 'stop': triggered when the  [stop()]media.AudioPlayer.stop API is called and audio playback stops. - 'reset': triggered when  the [reset()]media.AudioPlayer.reset API is called and audio playback is reset. - 'dataLoad':  triggered when the audio data is loaded, that is, when the src property is configured. - 'finish':  triggered when the audio playback is finished. - 'volumeChange': triggered when the  [setVolume()]media.AudioPlayer.setVolume API is called and the playback volume is changed. |
+| callback | () => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('play' | 'pause' | 'stop' | 'reset' | 'dataLoad' | 'finish' | 'volumeChange')
 
@@ -118,7 +118,7 @@ Subscribes to the audio playback events.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -126,8 +126,8 @@ Subscribes to the audio playback events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. Thefollowing events are supported:<br>- 'play': triggered when the [play()](arkts-media-audioplayer-i.md#play-1) API iscalled and audio playback starts.<br>- 'pause': triggered when the [pause()](arkts-media-audioplayer-i.md#pause-1)API is called and audio playback is paused.<br>- 'stop': triggered when the[stop()](arkts-media-audioplayer-i.md#stop-1) API is called and audio playback stops.<br>- 'reset': triggered whenthe [reset()](arkts-media-audioplayer-i.md#reset-1) API is called and audio playback is reset.<br>- 'dataLoad':triggered when the audio data is loaded, that is, when the **src** property is configured.<br>- 'finish':triggered when the audio playback is finished.<br>- 'volumeChange': triggered when the[setVolume()](arkts-media-audioplayer-i.md#setvolume-1) API is called and the playback volume is changed. |
-| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. The  following events are supported: - 'play': triggered when the [play()]media.AudioPlayer.play API is  called and audio playback starts. - 'pause': triggered when the [pause()]media.AudioPlayer.pause  API is called and audio playback is paused. - 'stop': triggered when the  [stop()]media.AudioPlayer.stop API is called and audio playback stops. - 'reset': triggered when  the [reset()]media.AudioPlayer.reset API is called and audio playback is reset. - 'dataLoad':  triggered when the audio data is loaded, that is, when the src property is configured. - 'finish':  triggered when the audio playback is finished. - 'volumeChange': triggered when the  [setVolume()]media.AudioPlayer.setVolume API is called and the playback volume is changed. |
+| callback | () => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('play' | 'pause' | 'stop' | 'reset' | 'dataLoad' | 'finish' | 'volumeChange')
 
@@ -141,7 +141,7 @@ Subscribes to the audio playback events.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -149,8 +149,8 @@ Subscribes to the audio playback events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. Thefollowing events are supported:<br>- 'play': triggered when the [play()](arkts-media-audioplayer-i.md#play-1) API iscalled and audio playback starts.<br>- 'pause': triggered when the [pause()](arkts-media-audioplayer-i.md#pause-1)API is called and audio playback is paused.<br>- 'stop': triggered when the[stop()](arkts-media-audioplayer-i.md#stop-1) API is called and audio playback stops.<br>- 'reset': triggered whenthe [reset()](arkts-media-audioplayer-i.md#reset-1) API is called and audio playback is reset.<br>- 'dataLoad':triggered when the audio data is loaded, that is, when the **src** property is configured.<br>- 'finish':triggered when the audio playback is finished.<br>- 'volumeChange': triggered when the[setVolume()](arkts-media-audioplayer-i.md#setvolume-1) API is called and the playback volume is changed. |
-| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. The  following events are supported: - 'play': triggered when the [play()]media.AudioPlayer.play API is  called and audio playback starts. - 'pause': triggered when the [pause()]media.AudioPlayer.pause  API is called and audio playback is paused. - 'stop': triggered when the  [stop()]media.AudioPlayer.stop API is called and audio playback stops. - 'reset': triggered when  the [reset()]media.AudioPlayer.reset API is called and audio playback is reset. - 'dataLoad':  triggered when the audio data is loaded, that is, when the src property is configured. - 'finish':  triggered when the audio playback is finished. - 'volumeChange': triggered when the  [setVolume()]media.AudioPlayer.setVolume API is called and the playback volume is changed. |
+| callback | () => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('play' | 'pause' | 'stop' | 'reset' | 'dataLoad' | 'finish' | 'volumeChange')
 
@@ -164,7 +164,7 @@ Subscribes to the audio playback events.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -172,8 +172,8 @@ Subscribes to the audio playback events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. Thefollowing events are supported:<br>- 'play': triggered when the [play()](arkts-media-audioplayer-i.md#play-1) API iscalled and audio playback starts.<br>- 'pause': triggered when the [pause()](arkts-media-audioplayer-i.md#pause-1)API is called and audio playback is paused.<br>- 'stop': triggered when the[stop()](arkts-media-audioplayer-i.md#stop-1) API is called and audio playback stops.<br>- 'reset': triggered whenthe [reset()](arkts-media-audioplayer-i.md#reset-1) API is called and audio playback is reset.<br>- 'dataLoad':triggered when the audio data is loaded, that is, when the **src** property is configured.<br>- 'finish':triggered when the audio playback is finished.<br>- 'volumeChange': triggered when the[setVolume()](arkts-media-audioplayer-i.md#setvolume-1) API is called and the playback volume is changed. |
-| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. The  following events are supported: - 'play': triggered when the [play()]media.AudioPlayer.play API is  called and audio playback starts. - 'pause': triggered when the [pause()]media.AudioPlayer.pause  API is called and audio playback is paused. - 'stop': triggered when the  [stop()]media.AudioPlayer.stop API is called and audio playback stops. - 'reset': triggered when  the [reset()]media.AudioPlayer.reset API is called and audio playback is reset. - 'dataLoad':  triggered when the audio data is loaded, that is, when the src property is configured. - 'finish':  triggered when the audio playback is finished. - 'volumeChange': triggered when the  [setVolume()]media.AudioPlayer.setVolume API is called and the playback volume is changed. |
+| callback | () => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('play' | 'pause' | 'stop' | 'reset' | 'dataLoad' | 'finish' | 'volumeChange')
 
@@ -187,7 +187,7 @@ Subscribes to the audio playback events.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -195,8 +195,8 @@ Subscribes to the audio playback events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. Thefollowing events are supported:<br>- 'play': triggered when the [play()](arkts-media-audioplayer-i.md#play-1) API iscalled and audio playback starts.<br>- 'pause': triggered when the [pause()](arkts-media-audioplayer-i.md#pause-1)API is called and audio playback is paused.<br>- 'stop': triggered when the[stop()](arkts-media-audioplayer-i.md#stop-1) API is called and audio playback stops.<br>- 'reset': triggered whenthe [reset()](arkts-media-audioplayer-i.md#reset-1) API is called and audio playback is reset.<br>- 'dataLoad':triggered when the audio data is loaded, that is, when the **src** property is configured.<br>- 'finish':triggered when the audio playback is finished.<br>- 'volumeChange': triggered when the[setVolume()](arkts-media-audioplayer-i.md#setvolume-1) API is called and the playback volume is changed. |
-| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. The  following events are supported: - 'play': triggered when the [play()]media.AudioPlayer.play API is  called and audio playback starts. - 'pause': triggered when the [pause()]media.AudioPlayer.pause  API is called and audio playback is paused. - 'stop': triggered when the  [stop()]media.AudioPlayer.stop API is called and audio playback stops. - 'reset': triggered when  the [reset()]media.AudioPlayer.reset API is called and audio playback is reset. - 'dataLoad':  triggered when the audio data is loaded, that is, when the src property is configured. - 'finish':  triggered when the audio playback is finished. - 'volumeChange': triggered when the  [setVolume()]media.AudioPlayer.setVolume API is called and the playback volume is changed. |
+| callback | () => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('play' | 'pause' | 'stop' | 'reset' | 'dataLoad' | 'finish' | 'volumeChange')
 
@@ -210,7 +210,7 @@ Subscribes to the audio playback events.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -218,8 +218,8 @@ Subscribes to the audio playback events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. Thefollowing events are supported:<br>- 'play': triggered when the [play()](arkts-media-audioplayer-i.md#play-1) API iscalled and audio playback starts.<br>- 'pause': triggered when the [pause()](arkts-media-audioplayer-i.md#pause-1)API is called and audio playback is paused.<br>- 'stop': triggered when the[stop()](arkts-media-audioplayer-i.md#stop-1) API is called and audio playback stops.<br>- 'reset': triggered whenthe [reset()](arkts-media-audioplayer-i.md#reset-1) API is called and audio playback is reset.<br>- 'dataLoad':triggered when the audio data is loaded, that is, when the **src** property is configured.<br>- 'finish':triggered when the audio playback is finished.<br>- 'volumeChange': triggered when the[setVolume()](arkts-media-audioplayer-i.md#setvolume-1) API is called and the playback volume is changed. |
-| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. The  following events are supported: - 'play': triggered when the [play()]media.AudioPlayer.play API is  called and audio playback starts. - 'pause': triggered when the [pause()]media.AudioPlayer.pause  API is called and audio playback is paused. - 'stop': triggered when the  [stop()]media.AudioPlayer.stop API is called and audio playback stops. - 'reset': triggered when  the [reset()]media.AudioPlayer.reset API is called and audio playback is reset. - 'dataLoad':  triggered when the audio data is loaded, that is, when the src property is configured. - 'finish':  triggered when the audio playback is finished. - 'volumeChange': triggered when the  [setVolume()]media.AudioPlayer.setVolume API is called and the playback volume is changed. |
+| callback | () => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('play' | 'pause' | 'stop' | 'reset' | 'dataLoad' | 'finish' | 'volumeChange')
 
@@ -233,7 +233,7 @@ Subscribes to the audio playback events.
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -241,8 +241,8 @@ Subscribes to the audio playback events.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. Thefollowing events are supported:<br>- 'play': triggered when the [play()](arkts-media-audioplayer-i.md#play-1) API iscalled and audio playback starts.<br>- 'pause': triggered when the [pause()](arkts-media-audioplayer-i.md#pause-1)API is called and audio playback is paused.<br>- 'stop': triggered when the[stop()](arkts-media-audioplayer-i.md#stop-1) API is called and audio playback stops.<br>- 'reset': triggered whenthe [reset()](arkts-media-audioplayer-i.md#reset-1) API is called and audio playback is reset.<br>- 'dataLoad':triggered when the audio data is loaded, that is, when the **src** property is configured.<br>- 'finish':triggered when the audio playback is finished.<br>- 'volumeChange': triggered when the[setVolume()](arkts-media-audioplayer-i.md#setvolume-1) API is called and the playback volume is changed. |
-| callback | () =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'play' \| 'pause' \| 'stop' \| 'reset' \| 'dataLoad' \| 'finish' \| 'volumeChange' | Yes | Event type. The  following events are supported: - 'play': triggered when the [play()]media.AudioPlayer.play API is  called and audio playback starts. - 'pause': triggered when the [pause()]media.AudioPlayer.pause  API is called and audio playback is paused. - 'stop': triggered when the  [stop()]media.AudioPlayer.stop API is called and audio playback stops. - 'reset': triggered when  the [reset()]media.AudioPlayer.reset API is called and audio playback is reset. - 'dataLoad':  triggered when the audio data is loaded, that is, when the src property is configured. - 'finish':  triggered when the audio playback is finished. - 'volumeChange': triggered when the  [setVolume()]media.AudioPlayer.setVolume API is called and the playback volume is changed. |
+| callback | () => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('timeUpdate')
 
@@ -256,7 +256,7 @@ Subscribes to the **'timeUpdate'** event. This event is reported every second wh
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -264,8 +264,8 @@ Subscribes to the **'timeUpdate'** event. This event is reported every second wh
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'timeUpdate' | Yes | Event type, which is **'timeUpdate'** in this case.<br>The **'timeUpdate'** eventis triggered when the audio playback starts after an audio playback timestamp update. |
-| callback | Callback&lt;number&gt; | Yes | Callback invoked when the event is triggered. The input parameter is theupdated timestamp. |
+| type | 'timeUpdate' | Yes | Event type, which is 'timeUpdate' in this case. The 'timeUpdate' event  is triggered when the audio playback starts after an audio playback timestamp update. |
+| callback | Callback&lt;number> | Yes | Callback invoked when the event is triggered. The input parameter is the  updated timestamp. |
 
 ## on('audioInterrupt')
 
@@ -273,13 +273,13 @@ Subscribes to the **'timeUpdate'** event. This event is reported every second wh
 on(type: 'audioInterrupt', callback: (info: audio.InterruptEvent) => void): void
 ```
 
-Subscribes to the audio interruption event. For details, see [audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md#interruptevent).
+Subscribes to the audio interruption event. For details, see [audio.InterruptEvent](../../apis-audio-kit/arkts-apis/arkts-audio-interruptevent-i.md#InterruptEvent).
 
 **Since:** 9
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -287,8 +287,8 @@ Subscribes to the audio interruption event. For details, see [audio.InterruptEve
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'audioInterrupt' | Yes | Event type, which is **'audioInterrupt'** in this case. |
-| callback | (info: audio.InterruptEvent) =&gt; void | Yes | Callback invoked when the event is triggered. |
+| type | 'audioInterrupt' | Yes | Event type, which is 'audioInterrupt' in this case. |
+| callback | (info: audio.InterruptEvent) => void | Yes | Callback invoked when the event is triggered. |
 
 ## on('error')
 
@@ -302,7 +302,7 @@ Subscribes to audio playback error events. After an error event is reported, you
 
 **Deprecated since:** 9
 
-**Substitutes:** on(type:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.on(type:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -310,7 +310,7 @@ Subscribes to audio playback error events. After an error event is reported, you
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type, which is **'error'** in this case.<br>This event is triggered when an erroroccurs during audio playback. |
+| type | 'error' | Yes | Event type, which is 'error' in this case. This event is triggered when an error  occurs during audio playback. |
 | callback | ErrorCallback | Yes | Callback invoked when the event is triggered. |
 
 ## pause
@@ -325,7 +325,7 @@ Pauses audio playback.
 
 **Deprecated since:** 9
 
-**Substitutes:** pause(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.pause(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -341,7 +341,7 @@ Starts to play an audio asset. This API can be called only after the **'dataLoad
 
 **Deprecated since:** 9
 
-**Substitutes:** play(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.play(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -357,7 +357,7 @@ Releases the audio playback resources.
 
 **Deprecated since:** 9
 
-**Substitutes:** release(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.release(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -373,7 +373,7 @@ Resets the audio asset to be played.
 
 **Deprecated since:** 9
 
-**Substitutes:** reset(callback:
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.reset(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -389,7 +389,7 @@ Seeks to the specified playback position.
 
 **Deprecated since:** 9
 
-**Substitutes:** [seek](arkts-media-avplayer-i.md#seek-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.seek
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -411,7 +411,7 @@ Sets the volume.
 
 **Deprecated since:** 9
 
-**Substitutes:** [setVolume](arkts-media-avplayer-i.md#setvolume-1)
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.setVolume
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -419,7 +419,7 @@ Sets the volume.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| vol | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value **1.00** indicates themaximum volume (100%). |
+| vol | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value 1.00 indicates the  maximum volume (100%). |
 
 ## stop
 
@@ -433,43 +433,7 @@ Stops audio playback.
 
 **Deprecated since:** 9
 
-**Substitutes:** stop(callback:
-
-**System capability:** SystemCapability.Multimedia.Media.AudioPlayer
-
-## audioInterruptMode
-
-```TypeScript
-audioInterruptMode?: audio.InterruptMode
-```
-
-Audio interruption mode.
-
-**Type:** audio.InterruptMode
-
-**Since:** 9
-
-**Deprecated since:** 9
-
-**Substitutes:** audioInterruptMode
-
-**System capability:** SystemCapability.Multimedia.Media.AudioPlayer
-
-## currentTime
-
-```TypeScript
-readonly currentTime: number
-```
-
-Current audio playback position, in ms.
-
-**Type:** number
-
-**Since:** 6
-
-**Deprecated since:** 9
-
-**Substitutes:** currentTime
+**Substitute:** @ohos.multimedia.media:media.AVPlayer.stop(callback:
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -487,25 +451,47 @@ Audio duration, in ms.
 
 **Deprecated since:** 9
 
-**Substitutes:** duration
+**Substitute:** ohos.multimedia.media/media.AVPlayer#duration
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
-## fdSrc
+## currentTime
 
 ```TypeScript
-fdSrc: AVFileDescriptor
+readonly currentTime: number
 ```
 
-Description of the audio file. This property is required when audio assets of an application are continuously stored in a file. Assume that a music file that stores continuous music assets consists of the following: Music 1 (address offset: 0, byte length: 100) Music 2 (address offset: 101; byte length: 50) Music 3 (address offset: 151, byte length: 150) 1. To play music 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play music 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play music 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent music file, use **src=fd://xx**.
+Current audio playback position, in ms.
 
-**Type:** AVFileDescriptor
+**Type:** number
 
-**Since:** 9
+**Since:** 6
 
 **Deprecated since:** 9
 
-**Substitutes:** fdSrc
+**Substitute:** ohos.multimedia.media/media.AVPlayer#currentTime
+
+**System capability:** SystemCapability.Multimedia.Media.AudioPlayer
+
+## src
+
+```TypeScript
+src: string
+```
+
+Audio file URI. The mainstream audio formats (M4A, AAC, MP3, OGG, WAV, and AMR) are supported. **Example of supported URLs**: 1. FD: fd://xx ![](docroot://reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx ohos.permission.READ_MEDIA or ohos.permission.INTERNET
+
+**Type:** string
+
+**Since:** 6
+
+**Deprecated since:** 9
+
+**Substitute:** ohos.multimedia.media/media.AVPlayer#url
+
+**Required permissions:** 
+
+ ohos.permission.READ_MEDIA or ohos.permission.INTERNET
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -523,27 +509,43 @@ Whether to loop audio playback. **true** to loop, **false** otherwise.
 
 **Deprecated since:** 9
 
-**Substitutes:** loop
+**Substitute:** ohos.multimedia.media/media.AVPlayer#loop
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
-## src
+## audioInterruptMode
 
 ```TypeScript
-src: string
+audioInterruptMode?: audio.InterruptMode
 ```
 
-Audio file URI. The mainstream audio formats (M4A, AAC, MP3, OGG, WAV, and AMR) are supported. **Example of supported URLs**: 1. FD: fd://xx ![](../../../../reference/apis-media-kit/figures/en-us_image_url.png) 2. HTTP: http://xx 3. HTTPS: https://xx 4. HLS: http://xx or https://xx ohos.permission.READ_MEDIA or ohos.permission.INTERNET
+Audio interruption mode.
 
-**Type:** string
+**Type:** audio.InterruptMode
 
-**Since:** 6
+**Since:** 9
 
 **Deprecated since:** 9
 
-**Substitutes:** url
+**Substitute:** ohos.multimedia.media/media.AVPlayer#audioInterruptMode
 
-**Required permissions:** ohos.permission.READ_MEDIA or ohos.permission.INTERNET
+**System capability:** SystemCapability.Multimedia.Media.AudioPlayer
+
+## fdSrc
+
+```TypeScript
+fdSrc: AVFileDescriptor
+```
+
+Description of the audio file. This property is required when audio assets of an application are continuously stored in a file. Assume that a music file that stores continuous music assets consists of the following: Music 1 (address offset: 0, byte length: 100) Music 2 (address offset: 101; byte length: 50) Music 3 (address offset: 151, byte length: 150) 1. To play music 1: AVFileDescriptor { fd = resource handle; offset = 0; length = 100; } 2. To play music 2: AVFileDescriptor { fd = resource handle; offset = 101; length = 50; } 3. To play music 3: AVFileDescriptor { fd = resource handle; offset = 151; length = 150; } To play an independent music file, use **src=fd://xx**.
+
+**Type:** AVFileDescriptor
+
+**Since:** 9
+
+**Deprecated since:** 9
+
+**Substitute:** ohos.multimedia.media/media.AVPlayer#fdSrc
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 
@@ -561,7 +563,7 @@ Audio playback state. This state cannot be used as the condition for triggering 
 
 **Deprecated since:** 9
 
-**Substitutes:** state
+**Substitute:** ohos.multimedia.media/media.AVPlayer#state
 
 **System capability:** SystemCapability.Multimedia.Media.AudioPlayer
 

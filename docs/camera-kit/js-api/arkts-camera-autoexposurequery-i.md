@@ -9,20 +9,20 @@ AutoExposureQuery provides APIs to query the automatic exposure feature of a cam
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getExposureBiasRange
 
 ```TypeScript
-getExposureBiasRange(): Array<number>
+getExposureBiasRange(): Array<double>
 ```
 
 Obtains the exposure compensation values of the camera device.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -30,13 +30,49 @@ Obtains the exposure compensation values of the camera device.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;number&gt; | Array of compensation values. If the operation fails, an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is returned. |
+| Array&lt;double> | Array of compensation values. If the operation fails, an error code defined in  [CameraErrorCode]camera.CameraErrorCode is returned. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 7400103 | Session not config, only throw in session usage. |
+
+## isExposureMeteringModeSupported
+
+```TypeScript
+isExposureMeteringModeSupported(aeMeteringMode: ExposureMeteringMode): boolean
+```
+
+Checks whether a specified exposure metering mode is supported.
+
+**Since:** 12
+
+**Atomic service API:** From API version 24 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| aeMeteringMode | ExposureMeteringMode | Yes | Exposure metering mode |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | Is the exposure metering mode supported. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not System Application. [since 12 - 23] |
+| 7400101 | Parameter missing or parameter type incorrect. [since 12 - 23] |
+| 7400103 | Session not config, only throw in session usage. |
 
 ## isExposureModeSupported
 
@@ -48,7 +84,7 @@ Checks whether an exposure mode is supported.
 
 **Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -56,17 +92,17 @@ Checks whether an exposure mode is supported.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| aeMode | ExposureMode | Yes | Exposure mode. If the input parameter is null or undefined, it is treated as 0and exposure is locked. |
+| aeMode | ExposureMode | Yes | Exposure mode. If the input parameter is null or undefined, it is treated as 0  and exposure is locked. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the exposure mode. **true** if supported, **false**otherwise. If the operation fails, undefined is returned and an error code defined in[CameraErrorCode](arkts-camera-cameraerrorcode-e.md#cameraerrorcode) is thrown. |
+| boolean | Check result for the support of the exposure mode. true if supported, false  otherwise. If the operation fails, undefined is returned and an error code defined in  [CameraErrorCode]camera.CameraErrorCode is thrown. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 7400103 | Session not config, only throw in session usage. |
 

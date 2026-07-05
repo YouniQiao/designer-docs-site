@@ -1,11 +1,9 @@
 # @ohos.app.ability.verticalPanelManager
 
-Defines a vertical domain panel manager.
-
 ## Modules to Import
 
 ```TypeScript
-import { verticalPanelManager } from '@ohos.app.ability.verticalPanelManager';
+import { verticalPanelManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -14,14 +12,12 @@ import { verticalPanelManager } from '@ohos.app.ability.verticalPanelManager';
 
 | Name | Description |
 | --- | --- |
-| [verticalPanelManager](arkts-ability-verticalpanelmanager-sta-n.md) | Defines a vertical domain panel manager. |
+| <!--DelRow-->[verticalPanelManager](arkts-verticalpanelmanager-n.md) | Defines a vertical domain panel manager. |
 
-<!--Del-->
-### Types（系统接口）
+### Types
 
 | Name | Description |
 | --- | --- |
-| [OnErrorFn](arkts-ability-onerrorfn-t-sys.md) | Defines a OnError function. |
-| [OnResultFn](arkts-ability-onresultfn-t-sys.md) | Defines a onResult function. |
-<!--DelEnd-->
+| <!--DelRow-->[OnErrorFn](arkts-onerrorfn-t.md) | Defines a OnError function. |
+| <!--DelRow-->[OnResultFn](arkts-onresultfn-t.md) | Defines a onResult function. |
 

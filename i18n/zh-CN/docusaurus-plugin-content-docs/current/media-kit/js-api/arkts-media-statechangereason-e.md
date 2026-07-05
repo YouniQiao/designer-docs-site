@@ -1,5 +1,9 @@
 # StateChangeReason
 
+```TypeScript
+enum StateChangeReason
+```
+
 表示播放或录制实例状态机切换原因的枚举，伴随state一起上报。
 
 **起始版本：** 9
@@ -16,7 +20,7 @@ USER = 1
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 
@@ -30,7 +34,7 @@ BACKGROUND = 2
 
 **起始版本：** 9
 
-**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+**原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。
 
 **系统能力：** SystemCapability.Multimedia.Media.Core
 

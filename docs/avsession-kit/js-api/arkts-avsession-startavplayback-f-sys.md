@@ -1,10 +1,4 @@
-# startAVPlayback (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# startAVPlayback
 
 ## startAVPlayback
 
@@ -16,7 +10,9 @@ Start an application for media playback.
 
 **Since:** 11
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -33,16 +29,16 @@ Start an application for media playback.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. Interface caller is not a system app. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. 3.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 201 | permission denied |
+| 202 | Not System App. Interface caller is not a system app. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 6600101 | Session service exception. |
 
 **Example**
 
@@ -55,7 +51,6 @@ avSession.startAVPlayback("com.example.myapplication", "121278").then(() => {
 
 ```
 
-
 ## startAVPlayback
 
 ```TypeScript
@@ -66,7 +61,9 @@ Start an application for media playback with command info.
 
 **Since:** 22
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -84,13 +81,13 @@ Start an application for media playback with command info.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. Interface caller is not a system app. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
+| 201 | permission denied |
+| 202 | Not System App. Interface caller is not a system app. |
+| 6600101 | Session service exception. |
 

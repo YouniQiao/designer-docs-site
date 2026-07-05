@@ -9,22 +9,24 @@ Describes the audio renderer change event.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
-## deviceDescriptors
+## rendererState
 
 ```TypeScript
-readonly deviceDescriptors: AudioDeviceDescriptors
+readonly rendererState: AudioState
 ```
 
-Audio device description.
+Audio state.
 
-**Type:** AudioDeviceDescriptors
+**Type:** AudioState
 
 **Since:** 9
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+**System API:** This is a system API.
 
 ## rendererInfo
 
@@ -40,15 +42,45 @@ Audio renderer information.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
+## clientUid
+
+```TypeScript
+readonly clientUid: int
+```
+
+Uid for audio renderer client application.
+
+**Type:** int
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+**System API:** This is a system API.
+
 ## streamId
 
 ```TypeScript
-readonly streamId: number
+readonly streamId: int
 ```
 
 Unique ID of an audio stream.
 
-**Type:** number
+**Type:** int
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Audio.Renderer
+
+## deviceDescriptors
+
+```TypeScript
+readonly deviceDescriptors: AudioDeviceDescriptors
+```
+
+Audio device description.
+
+**Type:** AudioDeviceDescriptors
 
 **Since:** 9
 

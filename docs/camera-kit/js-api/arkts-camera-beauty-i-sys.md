@@ -1,8 +1,8 @@
-# Beauty (System API)
+# Beauty
 
-Beauty extends [BeautyQuery](arkts-camera-beautyquery-i-sys.md#beautyquery) Provides APIs to obtain and set the beauty effect.
+Beauty extends [BeautyQuery]camera.BeautyQuery Provides APIs to obtain and set the beauty effect.
 
-**Inheritance/Implementation:** Beauty extends [BeautyQuery](arkts-camera-beautyquery-i-sys.md#beautyquery)
+**Inheritance:** Beautyextends: BeautyQuery.
 
 **Since:** 11
 
@@ -13,13 +13,13 @@ Beauty extends [BeautyQuery](arkts-camera-beautyquery-i-sys.md#beautyquery) Prov
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getBeauty
 
 ```TypeScript
-getBeauty(type: BeautyType): number
+getBeauty(type: BeautyType): int
 ```
 
 Obtains the level of the beauty type in use.
@@ -40,14 +40,14 @@ Obtains the level of the beauty type in use.
 
 | Type | Description |
 | --- | --- |
-| number | the beauty effect in use. |
+| int | the beauty effect in use. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -72,10 +72,10 @@ function getBeauty(portraitPhotoSession: camera.PortraitPhotoSession): number {
 ## setBeauty
 
 ```TypeScript
-setBeauty(type: BeautyType, value: number): void
+setBeauty(type: BeautyType, value: int): void
 ```
 
-Sets a beauty type and its level. Beauty mode is turned off only when all the [beauty types](arkts-camera-beautytype-e-sys.md#beautytype) obtained through [getSupportedBeautyTypes](arkts-camera-beautyquery-i-sys.md#getsupportedbeautytypes-1) are disabled.
+Sets a beauty type and its level. Beauty mode is turned off only when all the [beauty types]camera.BeautyType obtained through [getSupportedBeautyTypes]camera.BeautyQuery.getSupportedBeautyTypes are disabled.
 
 **Since:** 11
 
@@ -88,14 +88,14 @@ Sets a beauty type and its level. Beauty mode is turned off only when all the [b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | BeautyType | Yes | Beauty type. |
-| value | number | Yes | Beauty level, which is obtained through[getSupportedBeautyRange](arkts-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1). |
+| value | int | Yes | Beauty level, which is obtained through  [getSupportedBeautyRange]camera.BeautyQuery.getSupportedBeautyRange. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 **Example**
 
@@ -138,7 +138,7 @@ Sets a portrait theme type for a camera device.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config, only throw in session usage. |
 

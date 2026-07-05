@@ -1,55 +1,49 @@
 # @ohos.distributedHardware.deviceManager
 
-The APIs of this module are deprecated. You are advised to use [@ohos.distributedDeviceManager](arkts-distributeddevicemanager.md#distributeddevicemanager). The **deviceManager** module provides APIs for distributed device management. System applications can call the APIs to do the following: - Subscribe to or unsubscribe from device state changes. - Discover devices nearby. - Authenticate or deauthenticate a device. - Query the trusted device list. - Query local device information, including the device name, type, and ID. - Publishes device information for discovery purposes.
+本模块能力已更新至新模块。建议使用新模块的接口进行开发，参见 [@ohos.distributedDeviceManager]{@link @ohos.distributedDeviceManager:distributedDeviceManager}。 本模块提供分布式设备管理能力。 系统应用可调用接口实现如下功能： - 注册和解除注册设备上下线变化监听。 - 发现周边不可信设备。 - 认证和取消认证设备。 - 查询可信设备列表。 - 查询本地设备信息，包括设备名称，设备类型和设备标识。 - 发布设备发现。
 
 **Since:** 7
 
 **Deprecated since:** 11
 
-**Substitutes:** [distributedDeviceManager:distributedDeviceManager](arkts-distributeddevicemanager.md#distributeddevicemanager)
+**Substitute:** @ohos.distributedDeviceManager:distributedDeviceManager
 
 **System capability:** SystemCapability.DistributedHardware.DeviceManager
 
 ## Modules to Import
 
 ```TypeScript
-import { deviceManager } from '@ohos.distributedHardware.deviceManager';
+import { deviceManager } from '@kit.DistributedServiceKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [createDeviceManager](arkts-distributedservice-createdevicemanager-f-sys.md#createdevicemanager-1) | Creates a **DeviceManager** instance. |
-<!--DelEnd-->
+| <!--DelRow-->[createDeviceManager](arkts-devicemanager-createdevicemanager-f-sys.md#createDeviceManager-1) | 创建一个设备管理器实例。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AuthInfo](arkts-distributedservice-authinfo-i-sys.md) | Defines authentication information. |
-| [AuthParam](arkts-distributedservice-authparam-i-sys.md) | Defines the authentication parameters. |
-| [DeviceInfo](arkts-distributedservice-deviceinfo-i-sys.md) | Defines device information. |
-| [DeviceManager](arkts-distributedservice-devicemanager-i-sys.md) | Provides APIs to obtain information about trusted devices and local devices. Before calling any API in **DeviceManager**, you must use **createDeviceManager** to create a **DeviceManager** instance, for example, **dmInstance**. |
-| [PublishInfo](arkts-distributedservice-publishinfo-i-sys.md) | Defines published device information. |
-| [SubscribeInfo](arkts-distributedservice-subscribeinfo-i-sys.md) | Defines subscription information. |
-<!--DelEnd-->
+| <!--DelRow-->[AuthInfo](arkts-devicemanager-authinfo-i-sys.md) | 认证信息。 |
+| <!--DelRow-->[AuthParam](arkts-devicemanager-authparam-i-sys.md) | 认证参数。 |
+| <!--DelRow-->[DeviceInfo](arkts-devicemanager-deviceinfo-i-sys.md) | 设备信息。 |
+| [DeviceManager](arkts-devicemanager-devicemanager-i.md) | 设备管理实例，用于获取可信设备和本地设备的相关信息。在调用DeviceManager的方法前，需要先通过createDeviceManager构建一个DeviceManager实例dmInstance。 |
+| <!--DelRow-->[PublishInfo](arkts-devicemanager-publishinfo-i-sys.md) | 发布设备参数 |
+| <!--DelRow-->[SubscribeInfo](arkts-devicemanager-subscribeinfo-i-sys.md) | 发现信息。 |
 
-<!--Del-->
-### Enums（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [AuthForm](arkts-distributedservice-authform-e-sys.md) | Enumerates the device authentication types. |
-| [DeviceStateChangeAction](arkts-distributedservice-devicestatechangeaction-e-sys.md) | Enumerates the device states. |
-| [DeviceType](arkts-distributedservice-devicetype-e-sys.md) | Enumerates the device types. |
-| [DiscoverMode](arkts-distributedservice-discovermode-e-sys.md) | Enumerates the device discovery modes. |
-| [ExchangeFreq](arkts-distributedservice-exchangefreq-e-sys.md) | Enumerates the device discovery frequencies. |
-| [ExchangeMedium](arkts-distributedservice-exchangemedium-e-sys.md) | Enumerates the media used for device discovery. |
-| [SubscribeCap](arkts-distributedservice-subscribecap-e-sys.md) | Enumerates the discovery capabilities. |
-<!--DelEnd-->
+| <!--DelRow-->[AuthForm](arkts-devicemanager-authform-e-sys.md) | 表示设备认证类型的枚举类。 |
+| <!--DelRow-->[DeviceStateChangeAction](arkts-devicemanager-devicestatechangeaction-e-sys.md) | 表示设备状态变化的枚举。 |
+| <!--DelRow-->[DeviceType](arkts-devicemanager-devicetype-e-sys.md) | 表示设备类型的枚举类。 |
+| <!--DelRow-->[DiscoverMode](arkts-devicemanager-discovermode-e-sys.md) | 表示发现模式的枚举。 |
+| <!--DelRow-->[ExchangeFreq](arkts-devicemanager-exchangefreq-e-sys.md) | 表示发现频率的枚举。 |
+| <!--DelRow-->[ExchangeMedium](arkts-devicemanager-exchangemedium-e-sys.md) | 表示发现类型的枚举。 |
+| <!--DelRow-->[SubscribeCap](arkts-devicemanager-subscribecap-e-sys.md) | 表示发现能力的枚举。 |
 

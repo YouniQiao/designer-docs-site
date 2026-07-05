@@ -1,4 +1,4 @@
-# SecurityEventRule (System API)
+# SecurityEventRule
 
 Provides the conditions of querySecurityEvent.
 
@@ -11,16 +11,32 @@ Provides the conditions of querySecurityEvent.
 ## Modules to Import
 
 ```TypeScript
-import { securityGuard } from '@ohos.security.securityGuard';
+import { securityGuard } from '@kit.SecurityGuardKit';
 ```
 
-## beginTime
+## eventId
 
 ```TypeScript
-beginTime?: string
+eventId: number
 ```
 
-The begin time, format is YYYYMMDDHHMMSS.
+The security event ids.
+
+**Type:** number
+
+**Since:** 12
+
+**System capability:** SystemCapability.Security.SecurityGuard
+
+**System API:** This is a system API.
+
+## param
+
+```TypeScript
+param?: string
+```
+
+The query condition.
 
 **Type:** string
 
@@ -46,29 +62,13 @@ The end time, format is YYYYMMDDHHMMSS.
 
 **System API:** This is a system API.
 
-## eventId
+## beginTime
 
 ```TypeScript
-eventId: number
+beginTime?: string
 ```
 
-The security event ids.
-
-**Type:** number
-
-**Since:** 12
-
-**System capability:** SystemCapability.Security.SecurityGuard
-
-**System API:** This is a system API.
-
-## param
-
-```TypeScript
-param?: string
-```
-
-The query condition.
+The begin time, format is YYYYMMDDHHMMSS.
 
 **Type:** string
 

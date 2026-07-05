@@ -1,12 +1,16 @@
 # MediaErrorCode
 
+```TypeScript
+enum MediaErrorCode
+```
+
 Enumerates the media error codes.
 
 **Since:** 8
 
 **Deprecated since:** 11
 
-**Substitutes:** [AVErrorCode](arkts-media-averrorcode-e.md#averrorcode)
+**Substitute:** media.AVErrorCode
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -22,7 +26,7 @@ The operation is successful.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_OK
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_OK
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -38,7 +42,7 @@ Failed to allocate memory. The system may have no available memory.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_NO_MEMORY
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_NO_MEMORY
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -54,7 +58,7 @@ No permission to perform the operation.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_OPERATE_NOT_PERMIT
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_OPERATE_NOT_PERMIT
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -70,7 +74,7 @@ Invalid input parameter.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_INVALID_PARAMETER
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_INVALID_PARAMETER
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -86,7 +90,7 @@ An I/O error occurs.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_IO
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_IO
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -102,7 +106,7 @@ The operation times out.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_TIMEOUT
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_TIMEOUT
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -118,7 +122,7 @@ An unknown error occurs.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_INVALID_PARAMETER
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_INVALID_PARAMETER
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -134,7 +138,7 @@ Invalid server.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_SERVICE_DIED
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_SERVICE_DIED
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -150,7 +154,7 @@ The operation is not allowed in the current state.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_INVALID_PARAMETER
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_INVALID_PARAMETER
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
@@ -166,7 +170,7 @@ The operation is not supported in the current version.
 
 **Deprecated since:** 11
 
-**Substitutes:** AVERR_UNSUPPORT_CAPABILITY
+**Substitute:** ohos.multimedia.media/media.AVErrorCode#AVERR_UNSUPPORT_CAPABILITY
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

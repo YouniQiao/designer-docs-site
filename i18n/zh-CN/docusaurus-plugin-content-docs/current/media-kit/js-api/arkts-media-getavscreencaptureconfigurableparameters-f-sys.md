@@ -1,9 +1,9 @@
-# getAVScreenCaptureConfigurableParameters（系统接口）
+# getAVScreenCaptureConfigurableParameters
 
 ## getAVScreenCaptureConfigurableParameters
 
 ```TypeScript
-function getAVScreenCaptureConfigurableParameters(sessionId: number): Promise<string>
+function getAVScreenCaptureConfigurableParameters(sessionId: int): Promise<string>
 ```
 
 get Configurations which user can changes from AVScreenCapture server
@@ -18,20 +18,20 @@ get Configurations which user can changes from AVScreenCapture server
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sessionId | number | 是 | The AVScreenCapture server session ID. |
+| sessionId | int | 是 | The AVScreenCapture server session ID. |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;string&gt; | Returns a configurable configuration item string. |
+| Promise&lt;string> | Returns a configurable configuration item string. |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-系统api权限校验失败) |  |
-| [5400109](../errorcode-media.md#5400109-会话id不存在) | Sessions not exist. Return by promise. |
+| 202 |  |
+| 5400109 | Sessions not exist. Return by promise. |
 
 **示例：**
 

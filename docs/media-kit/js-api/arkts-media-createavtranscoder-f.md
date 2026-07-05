@@ -1,22 +1,16 @@
 # createAVTranscoder
 
-## Modules to Import
-
-```TypeScript
-import { media } from '@ohos.multimedia.media';
-```
-
 ## createAVTranscoder
 
 ```TypeScript
 function createAVTranscoder(): Promise<AVTranscoder>
 ```
 
-Creates an AVTranscoder instance. This API uses a promise to return the result. > **NOTE** > > A maximum of 2 AVTranscoder instances can be created.
+创建视频转码实例。使用Promise异步回调。 > **说明：** > > 可创建的视频转码实例不能超过2个。
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 22.
+**Atomic service API:** From API version 22 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.AVTranscoder
 
@@ -24,13 +18,13 @@ Creates an AVTranscoder instance. This API uses a promise to return the result. 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVTranscoder&gt; | Promise used to return the result. If the operation is successful, anAVTranscoder instance is returned; otherwise, **null** is returned. The instance can be used for videotranscoding. |
+| Promise&lt;AVTranscoder> | Promise对象。异步返回AVTranscoder实例，失败时返回null。可用于视频转码。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400101](../errorcode-media.md#5400101-memory-allocation-failed) | No memory. Return by promise. |
+| 5400101 | No memory. Return by promise. |
 
 **Example**
 

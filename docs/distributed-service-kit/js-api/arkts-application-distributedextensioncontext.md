@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { DistributedExtensionContext } from '@ohos.application.DistributedExtensionContext';
+import { DistributedExtensionContext } from '@kit.DistributedServiceKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { DistributedExtensionContext } from '@ohos.application.DistributedExtens
 
 | Name | Description |
 | --- | --- |
-| [DistributedExtensionContext](arkts-distributedservice-distributedextensioncontext-c.md) | Class inherited for the distributed extension function. |
+| [DistributedExtensionContext](arkts-distributedextensioncontext-c.md) | Class inherited for the distributed extension function. |
 

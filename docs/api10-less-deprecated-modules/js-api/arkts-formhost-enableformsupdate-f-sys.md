@@ -1,0 +1,65 @@
+# enableFormsUpdate
+
+## enableFormsUpdate
+
+```TypeScript
+function enableFormsUpdate(formIds: Array<string>, callback: AsyncCallback<void>): void
+```
+
+Instructs the widget framework to make a widget updatable. After this API is called, the widget is in the enabled state and can receive updates from the widget provider. This API uses an asynchronous callback to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** @ohos.app.form.formHost:formHost#enableFormsUpdate
+
+**Required permissions:** 
+
+ ohos.permission.REQUIRE_FORM
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| formIds | Array&lt;string> | Yes | List of widget IDs. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If a notification is sent to the  widget framework to make the widget updatable, error is undefined; otherwise, error is an error  object. |
+
+## enableFormsUpdate
+
+```TypeScript
+function enableFormsUpdate(formIds: Array<string>): Promise<void>
+```
+
+Instructs the widget framework to make a widget updatable. After this API is called, the widget is in the enabled state and can receive updates from the widget provider. This API uses a promise to return the result.
+
+**Since:** 8
+
+**Deprecated since:** 9
+
+**Substitute:** @ohos.app.form.formHost:formHost#enableFormsUpdate
+
+**Required permissions:** 
+
+ ohos.permission.REQUIRE_FORM
+
+**System capability:** SystemCapability.Ability.Form
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| formIds | Array&lt;string> | Yes | List of widget IDs. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;void> | Promise that returns no value. |
+

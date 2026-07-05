@@ -8,26 +8,28 @@
 
 **系统接口：** 此接口为系统接口。
 
+## 导入模块
+
+```TypeScript
+import { logLibrary } from '@kit.PerformanceAnalysisKit';
+```
+
 ## 汇总
 
-<!--Del-->
-### 函数（系统接口）
+### 函数
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-1) | 拷贝指定日志类型的指定文件到目标应用目录下。使用Promise回调。 |
-| [copy](arkts-performanceanalysis-copy-f-sys.md#copy-2) | 拷贝指定日志类型的指定文件到目标应用目录下。使用callback回调。 |
-| [list](arkts-performanceanalysis-list-f-sys.md#list-1) | 以同步方法查询指定类型的日志文件列表，接收string类型的对象作为参数，返回指定类型日志的文件列表信息。 |
-| [move](arkts-performanceanalysis-move-f-sys.md#move-1) | 移动指定日志类型的指定文件到目标应用目录下。使用Promise回调。 |
-| [move](arkts-performanceanalysis-move-f-sys.md#move-2) | 移动指定日志类型的指定文件到目标应用目录下。使用callback回调。 |
-| [remove](arkts-performanceanalysis-remove-f-sys.md#remove-1) | 以同步方法删除指定日志类型的指定文件。 |
-<!--DelEnd-->
+| <!--DelRow-->[copy](arkts-loglibrary-copy-f-sys.md#copy-1) | 拷贝指定日志类型的指定文件到目标应用目录下。使用Promise回调。 |
+| <!--DelRow-->[copy](arkts-loglibrary-copy-f-sys.md#copy-2) | 拷贝指定日志类型的指定文件到目标应用目录下。使用callback回调。 |
+| <!--DelRow-->[list](arkts-loglibrary-list-f-sys.md#list-1) | 以同步方法查询指定类型的日志文件列表，接收string类型的对象作为参数，返回指定类型日志的文件列表信息。 |
+| <!--DelRow-->[move](arkts-loglibrary-move-f-sys.md#move-1) | 移动指定日志类型的指定文件到目标应用目录下。使用Promise回调。 |
+| <!--DelRow-->[move](arkts-loglibrary-move-f-sys.md#move-2) | 移动指定日志类型的指定文件到目标应用目录下。使用callback回调。 |
+| <!--DelRow-->[remove](arkts-loglibrary-remove-f-sys.md#remove-1) | 以同步方法删除指定日志类型的指定文件。 |
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [LogEntry](arkts-performanceanalysis-logentry-i-sys.md) | 日志文件对象接口。 |
-<!--DelEnd-->
+| <!--DelRow-->[LogEntry](arkts-loglibrary-logentry-i-sys.md) | 日志文件对象接口。 |
 

@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ValueType, ValuesBucket } from '@ohos.data.ValuesBucket';
+import { ValueType,ValuesBucket } from '@kit.ArkData';
 ```
 
 ## Summary
@@ -12,6 +12,6 @@ import { ValueType, ValuesBucket } from '@ohos.data.ValuesBucket';
 
 | Name | Description |
 | --- | --- |
-| [ValueType](arkts-arkdata-valuetype-t.md) | Defines the value types allowed in a **ValuesBucket** instance. |
-| [ValuesBucket](arkts-arkdata-valuesbucket-t.md) | Defines the types of the key and value in a KV pair. This type is not multi-thread safe. If a **ValuesBucket** instance is operated by multiple threads at the same time in an application, use a lock for it. |
+| [ValuesBucket](arkts-valuesbucket-t.md) | Defines the types of the key and value in a KV pair. This type is not multi-thread safe. If a **ValuesBucket** instance is operated by multiple threads at the same time in an application, use a lock for it. |
+| [ValueType](arkts-valuetype-t.md) | Defines the value types allowed in a **ValuesBucket** instance. |
 

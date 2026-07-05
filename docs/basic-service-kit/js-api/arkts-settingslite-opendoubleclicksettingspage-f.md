@@ -1,0 +1,16 @@
+# openDoubleClickSettingsPage
+
+## openDoubleClickSettingsPage
+
+```TypeScript
+function openDoubleClickSettingsPage(): void
+```
+
+Opens the settings page for double-pressing the function key.
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the FA model.
+
+**System capability:** SystemCapability.Applications.Settings.Core.Lite
+

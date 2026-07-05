@@ -1,4 +1,8 @@
-# DepthDataAccuracy (System API)
+# DepthDataAccuracy
+
+```TypeScript
+enum DepthDataAccuracy
+```
 
 Describes the accuracy of depth data.
 

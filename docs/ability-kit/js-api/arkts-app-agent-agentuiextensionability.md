@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { AgentUIExtensionAbility } from '@ohos.app.agent.AgentUIExtensionAbility';
+import { AgentUIExtensionAbility } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { AgentUIExtensionAbility } from '@ohos.app.agent.AgentUIExtensionAbility
 
 | Name | Description |
 | --- | --- |
-| [AgentUIExtensionAbility](arkts-ability-agentuiextensionability-c.md) | The class of agent UI extension ability. This class cannot be used in Harmony Archive(HAR). |
+| [AgentUIExtensionAbility](arkts-agentuiextensionability-c.md) | The class of agent UI extension ability. This class cannot be used in Harmony Archive(HAR). |
 

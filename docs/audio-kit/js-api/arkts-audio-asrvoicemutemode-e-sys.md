@@ -1,4 +1,8 @@
-# AsrVoiceMuteMode (System API)
+# AsrVoiceMuteMode
+
+```TypeScript
+enum AsrVoiceMuteMode
+```
 
 ASR voice mute mode.
 

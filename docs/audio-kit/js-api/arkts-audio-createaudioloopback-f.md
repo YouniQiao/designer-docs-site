@@ -1,11 +1,5 @@
 # createAudioLoopback
 
-## Modules to Import
-
-```TypeScript
-import { audio } from '@ohos.multimedia.audio';
-```
-
 ## createAudioLoopback
 
 ```TypeScript
@@ -28,14 +22,14 @@ Creates an <b>AudioLoopback</b> instance, which provides low-latency in-ear moni
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioLoopback&gt; | Promise used to return the <b>AudioLoopback</b> instance. |
+| Promise&lt;AudioLoopback> | Promise used to return the AudioLoopback instance. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed. |
-| [6800104](../errorcode-audio.md#6800104-unsupported-parameter-value) | Loopback mode is unsupported. |
+| 6800101 | Parameter verification failed. |
+| 6800104 | Loopback mode is unsupported. |
 
 **Example**
 

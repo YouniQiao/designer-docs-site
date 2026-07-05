@@ -1,24 +1,18 @@
 # createImageCreator
 
-## Modules to Import
-
-```TypeScript
-import { image } from '@ohos.multimedia.image';
-```
-
 ## createImageCreator
 
 ```TypeScript
 function createImageCreator(width: number, height: number, format: number, capacity: number): ImageCreator
 ```
 
-Creates an ImageCreator instance by specifying the image width, height, format, and capacity. Images occupy a large amount of memory. When you finish using an ImageCreator instance, call [release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+通过宽、高、图片格式、容量创建ImageCreator实例。 由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用[release]image.ImageCreator.release(callback: AsyncCallback<void>)方法 及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。 > **说明：** > > 从API version 9开始支持，从API version 11废弃，建议使用[createImageCreator]image.createImageCreator代替。
 
 **Since:** 9
 
 **Deprecated since:** 11
 
-**Substitutes:** createImageCreator(size:
+**Substitute:** image.createImageCreator(size:
 
 **System capability:** SystemCapability.Multimedia.Image.ImageCreator
 
@@ -26,16 +20,16 @@ Creates an ImageCreator instance by specifying the image width, height, format, 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| width | number | Yes | Default image width, in px. |
-| height | number | Yes | Default image height, in px. |
-| format | number | Yes | Image format, for example, YCBCR_422_SP or JPEG. |
-| capacity | number | Yes | Maximum number of images that can be accessed at the same time. This parameter is usedonly as an expected value. The actual capacity is determined by the device hardware. |
+| width | number | Yes | 图像的默认宽度。单位：像素（px）。 |
+| height | number | Yes | 图像的默认高度。单位：像素（px）。 |
+| format | number | Yes | 图像格式，如YCBCR_422_SP，JPEG。 |
+| capacity | number | Yes | 同时访问的最大图像数。该参数仅作为期望值，实际capacity由设备硬件决定。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| ImageCreator | ImageCreator instance. |
+| ImageCreator | 如果操作成功，则返回ImageCreator实例。 |
 
 **Example**
 
@@ -44,14 +38,13 @@ let creator: image.ImageCreator = image.createImageCreator(8192, 8192, image.Ima
 
 ```
 
-
 ## createImageCreator
 
 ```TypeScript
-function createImageCreator(size: Size, format: ImageFormat, capacity: number): ImageCreator
+function createImageCreator(size: Size, format: ImageFormat, capacity: int): ImageCreator
 ```
 
-Creates an ImageCreator instance by specifying the image size, format, and capacity. Images occupy a large amount of memory. When you finish using an ImageCreator instance, call [release](arkts-image-imagecreator-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+通过图片大小、图片格式、容量创建ImageCreator实例。 由于图片占用内存较大，所以当ImageCreator实例使用完成后，应主动调用[release]image.ImageCreator.release(callback: AsyncCallback<void>)方法 及时释放内存。释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
 
 **Since:** 11
 
@@ -61,21 +54,21 @@ Creates an ImageCreator instance by specifying the image size, format, and capac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| size | Size | Yes | Default size of the image. |
-| format | ImageFormat | Yes | Image format, for example, YCBCR_422_SP or JPEG. |
-| capacity | number | Yes | Maximum number of images that can be accessed at the same time. This parameter is usedonly as an expected value. The actual capacity is determined by the device hardware. |
+| size | Size | Yes | 图像的默认大小。单位：像素（px）。 |
+| format | ImageFormat | Yes | 图像格式，如YCBCR_422_SP，JPEG。 |
+| capacity | int | Yes | 同时访问的最大图像数。该参数仅作为期望值，实际capacity由设备硬件决定。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| ImageCreator | ImageCreator instance. |
+| ImageCreator | 如果操作成功，则返回ImageCreator实例。 |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types; |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types; |
 
 **Example**
 

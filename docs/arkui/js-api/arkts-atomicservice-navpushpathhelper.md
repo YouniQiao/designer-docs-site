@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { NavPushPathHelper } from '@ohos.atomicservice.NavPushPathHelper';
+import { NavPushPathHelper } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,5 +12,5 @@ import { NavPushPathHelper } from '@ohos.atomicservice.NavPushPathHelper';
 
 | Name | Description |
 | --- | --- |
-| [NavPushPathHelper](arkts-arkui-navpushpathhelper-c.md) | provides a push method for the target page in the routing table. |
+| [NavPushPathHelper](arkts-navpushpathhelper-c.md) | provides a push method for the target page in the routing table. |
 

@@ -9,8 +9,24 @@ Describes the information of an SEI message.
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
+
+## payloadType
+
+```TypeScript
+payloadType: int
+```
+
+Payload type of SEI message.
+
+**Type:** int
+
+**Since:** 18
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Media.Core
 
 ## payload
 
@@ -24,23 +40,7 @@ Payload data of SEI message.
 
 **Since:** 18
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
-
-**System capability:** SystemCapability.Multimedia.Media.Core
-
-## payloadType
-
-```TypeScript
-payloadType: number
-```
-
-Payload type of SEI message.
-
-**Type:** number
-
-**Since:** 18
-
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 

@@ -1,4 +1,4 @@
-# ArkTS API<!--arkts-camerakit-->
+# CameraKit
 
 - [@ohos.multimedia.camera](arkts-multimedia-camera.md)
   - [getCameraManager](arkts-camera-getcameramanager-f.md)<!--Del-->
@@ -10,28 +10,21 @@
   - [AutoDeviceSwitch](arkts-camera-autodeviceswitch-i.md)
   - [AutoDeviceSwitchQuery](arkts-camera-autodeviceswitchquery-i.md)
   - [AutoDeviceSwitchStatus](arkts-camera-autodeviceswitchstatus-i.md)
-  - [AutoExposure](arkts-camera-autoexposure-i.md)<!--Del-->
-  - [AutoExposure(system api)](arkts-camera-autoexposure-i-sys.md)<!--DelEnd-->
+  - [AutoExposure](arkts-camera-autoexposure-i.md)
   - [AutoExposureQuery](arkts-camera-autoexposurequery-i.md)<!--Del-->
-  - [AutoExposureQuery(system api)](arkts-camera-autoexposurequery-i-sys.md)<!--DelEnd--><!--Del-->
   - [Beauty(system api)](arkts-camera-beauty-i-sys.md)<!--DelEnd--><!--Del-->
   - [BeautyQuery(system api)](arkts-camera-beautyquery-i-sys.md)<!--DelEnd-->
   - [CameraConcurrentInfo](arkts-camera-cameraconcurrentinfo-i.md)
-  - [CameraDevice](arkts-camera-cameradevice-i.md)<!--Del-->
-  - [CameraDevice(system api)](arkts-camera-cameradevice-i-sys.md)<!--DelEnd-->
-  - [CameraInput](arkts-camera-camerainput-i.md)<!--Del-->
-  - [CameraInput(system api)](arkts-camera-camerainput-i-sys.md)<!--DelEnd-->
+  - [CameraDevice](arkts-camera-cameradevice-i.md)
+  - [CameraInput](arkts-camera-camerainput-i.md)
   - [CameraManager](arkts-camera-cameramanager-i.md)<!--Del-->
-  - [CameraManager(system api)](arkts-camera-cameramanager-i-sys.md)<!--DelEnd--><!--Del-->
   - [CameraOcclusionDetectionResult(system api)](arkts-camera-cameraocclusiondetectionresult-i-sys.md)<!--DelEnd-->
   - [CameraOutput](arkts-camera-cameraoutput-i.md)
-  - [CameraOutputCapability](arkts-camera-cameraoutputcapability-i.md)<!--Del-->
-  - [CameraOutputCapability(system api)](arkts-camera-cameraoutputcapability-i-sys.md)<!--DelEnd-->
+  - [CameraOutputCapability](arkts-camera-cameraoutputcapability-i.md)
   - [CameraStatusInfo](arkts-camera-camerastatusinfo-i.md)
   - [CaptureEndInfo](arkts-camera-captureendinfo-i.md)
   - [CapturePhoto](arkts-camera-capturephoto-i.md)
-  - [CaptureSession](arkts-camera-capturesession-i.md)<!--Del-->
-  - [CaptureSession(system api)](arkts-camera-capturesession-i-sys.md)<!--DelEnd-->
+  - [CaptureSession](arkts-camera-capturesession-i.md)
   - [CaptureStartInfo](arkts-camera-capturestartinfo-i.md)<!--Del-->
   - [ColorEffect(system api)](arkts-camera-coloreffect-i-sys.md)<!--DelEnd--><!--Del-->
   - [ColorEffectQuery(system api)](arkts-camera-coloreffectquery-i-sys.md)<!--DelEnd-->
@@ -53,15 +46,11 @@
   - [DepthProfile(system api)](arkts-camera-depthprofile-i-sys.md)<!--DelEnd--><!--Del-->
   - [EffectSuggestion(system api)](arkts-camera-effectsuggestion-i-sys.md)<!--DelEnd--><!--Del-->
   - [ExposureInfo(system api)](arkts-camera-exposureinfo-i-sys.md)<!--DelEnd-->
-  - [Flash](arkts-camera-flash-i.md)<!--Del-->
-  - [Flash(system api)](arkts-camera-flash-i-sys.md)<!--DelEnd-->
+  - [Flash](arkts-camera-flash-i.md)
   - [FlashQuery](arkts-camera-flashquery-i.md)<!--Del-->
-  - [FlashQuery(system api)](arkts-camera-flashquery-i-sys.md)<!--DelEnd--><!--Del-->
   - [FluorescencePhotoSession(system api)](arkts-camera-fluorescencephotosession-i-sys.md)<!--DelEnd-->
-  - [Focus](arkts-camera-focus-i.md)<!--Del-->
-  - [Focus(system api)](arkts-camera-focus-i-sys.md)<!--DelEnd-->
+  - [Focus](arkts-camera-focus-i.md)
   - [FocusQuery](arkts-camera-focusquery-i.md)<!--Del-->
-  - [FocusQuery(system api)](arkts-camera-focusquery-i-sys.md)<!--DelEnd--><!--Del-->
   - [FocusTrackingInfo(system api)](arkts-camera-focustrackinginfo-i-sys.md)<!--DelEnd-->
   - [FoldStatusInfo](arkts-camera-foldstatusinfo-i.md)
   - [FrameRateRange](arkts-camera-frameraterange-i.md)
@@ -76,54 +65,45 @@
   - [Macro(system api)](arkts-camera-macro-i-sys.md)<!--DelEnd--><!--Del-->
   - [MacroPhotoSession(system api)](arkts-camera-macrophotosession-i-sys.md)<!--DelEnd--><!--Del-->
   - [MacroQuery(system api)](arkts-camera-macroquery-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MacroVideoSession(system api)](arkts-camera-macrovideosession-i-sys.md)<!--DelEnd-->
-  - [ManualExposure](arkts-camera-manualexposure-i.md)<!--Del-->
-  - [ManualExposure(system api)](arkts-camera-manualexposure-i-sys.md)<!--DelEnd-->
-  - [ManualExposureQuery](arkts-camera-manualexposurequery-i.md)<!--Del-->
+  - [MacroVideoSession(system api)](arkts-camera-macrovideosession-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ManualExposure(system api)](arkts-camera-manualexposure-i-sys.md)<!--DelEnd--><!--Del-->
   - [ManualExposureQuery(system api)](arkts-camera-manualexposurequery-i-sys.md)<!--DelEnd--><!--Del-->
   - [ManualFocus(system api)](arkts-camera-manualfocus-i-sys.md)<!--DelEnd-->
   - [ManualFocusQuery](arkts-camera-manualfocusquery-i.md)<!--Del-->
-  - [ManualIso(system api)](arkts-camera-manualiso-i-sys.md)<!--DelEnd-->
-  - [ManualIsoQuery](arkts-camera-manualisoquery-i.md)<!--Del-->
-  - [ManualIsoQuery(system api)](arkts-camera-manualisoquery-i-sys.md)<!--DelEnd-->
-  - [MetadataBarcodeObject](arkts-camera-metadatabarcodeobject-i.md)<!--Del-->
-  - [MetadataBasicFaceObject(system api)](arkts-camera-metadatabasicfaceobject-i-sys.md)<!--DelEnd-->
-  - [MetadataCatBodyObject](arkts-camera-metadatacatbodyobject-i.md)<!--Del-->
-  - [MetadataCatFaceObject(system api)](arkts-camera-metadatacatfaceobject-i-sys.md)<!--DelEnd-->
-  - [MetadataDogBodyObject](arkts-camera-metadatadogbodyobject-i.md)<!--Del-->
+  - [ManualIso(system api)](arkts-camera-manualiso-i-sys.md)<!--DelEnd--><!--Del-->
+  - [ManualIsoQuery(system api)](arkts-camera-manualisoquery-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MetadataBarcodeObject(system api)](arkts-camera-metadatabarcodeobject-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MetadataBasicFaceObject(system api)](arkts-camera-metadatabasicfaceobject-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MetadataCatBodyObject(system api)](arkts-camera-metadatacatbodyobject-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MetadataCatFaceObject(system api)](arkts-camera-metadatacatfaceobject-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MetadataDogBodyObject(system api)](arkts-camera-metadatadogbodyobject-i-sys.md)<!--DelEnd--><!--Del-->
   - [MetadataDogFaceObject(system api)](arkts-camera-metadatadogfaceobject-i-sys.md)<!--DelEnd--><!--Del-->
-  - [MetadataFaceObject(system api)](arkts-camera-metadatafaceobject-i-sys.md)<!--DelEnd-->
-  - [MetadataHumanBodyObject](arkts-camera-metadatahumanbodyobject-i.md)
-  - [MetadataObject](arkts-camera-metadataobject-i.md)<!--Del-->
-  - [MetadataObject(system api)](arkts-camera-metadataobject-i-sys.md)<!--DelEnd-->
+  - [MetadataFaceObject(system api)](arkts-camera-metadatafaceobject-i-sys.md)<!--DelEnd--><!--Del-->
+  - [MetadataHumanBodyObject(system api)](arkts-camera-metadatahumanbodyobject-i-sys.md)<!--DelEnd-->
+  - [MetadataObject](arkts-camera-metadataobject-i.md)
   - [MetadataOutput](arkts-camera-metadataoutput-i.md)<!--Del-->
-  - [MetadataOutput(system api)](arkts-camera-metadataoutput-i-sys.md)<!--DelEnd-->
-  - [MetadataSalientDetectionObject](arkts-camera-metadatasalientdetectionobject-i.md)<!--Del-->
+  - [MetadataSalientDetectionObject(system api)](arkts-camera-metadatasalientdetectionobject-i-sys.md)<!--DelEnd--><!--Del-->
   - [NightPhotoSession(system api)](arkts-camera-nightphotosession-i-sys.md)<!--DelEnd-->
   - [Notification](arkts-camera-notification-i.md)
   - [OIS](arkts-camera-ois-i.md)
   - [OISQuery](arkts-camera-oisquery-i.md)<!--Del-->
   - [PanoramaPhotoSession(system api)](arkts-camera-panoramaphotosession-i-sys.md)<!--DelEnd-->
-  - [Photo](arkts-camera-photo-i.md)<!--Del-->
-  - [Photo(system api)](arkts-camera-photo-i-sys.md)<!--DelEnd-->
-  - [PhotoCaptureSetting](arkts-camera-photocapturesetting-i.md)
-  - [PhotoConflictFunctions](arkts-camera-photoconflictfunctions-i.md)
-  - [PhotoFunctions](arkts-camera-photofunctions-i.md)
-  - [PhotoOutput](arkts-camera-photooutput-i.md)<!--Del-->
-  - [PhotoOutput(system api)](arkts-camera-photooutput-i-sys.md)<!--DelEnd-->
+  - [Photo](arkts-camera-photo-i.md)
+  - [PhotoCaptureSetting](arkts-camera-photocapturesetting-i.md)<!--Del-->
+  - [PhotoConflictFunctions(system api)](arkts-camera-photoconflictfunctions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PhotoFunctions(system api)](arkts-camera-photofunctions-i-sys.md)<!--DelEnd-->
+  - [PhotoOutput](arkts-camera-photooutput-i.md)
   - [PhotoSession](arkts-camera-photosession-i.md)<!--Del-->
-  - [PhotoSession(system api)](arkts-camera-photosession-i-sys.md)<!--DelEnd-->
-  - [PhotoSessionForSys](arkts-camera-photosessionforsys-i.md)<!--Del-->
+  - [PhotoSessionForSys(system api)](arkts-camera-photosessionforsys-i-sys.md)<!--DelEnd--><!--Del-->
   - [PhysicalAperture(system api)](arkts-camera-physicalaperture-i-sys.md)<!--DelEnd-->
   - [Point](arkts-camera-point-i.md)<!--Del-->
-  - [Portrait(system api)](arkts-camera-portrait-i-sys.md)<!--DelEnd-->
-  - [PortraitPhotoConflictFunctions](arkts-camera-portraitphotoconflictfunctions-i.md)
-  - [PortraitPhotoFunctions](arkts-camera-portraitphotofunctions-i.md)<!--Del-->
+  - [Portrait(system api)](arkts-camera-portrait-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PortraitPhotoConflictFunctions(system api)](arkts-camera-portraitphotoconflictfunctions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [PortraitPhotoFunctions(system api)](arkts-camera-portraitphotofunctions-i-sys.md)<!--DelEnd--><!--Del-->
   - [PortraitPhotoSession(system api)](arkts-camera-portraitphotosession-i-sys.md)<!--DelEnd--><!--Del-->
   - [PortraitQuery(system api)](arkts-camera-portraitquery-i-sys.md)<!--DelEnd--><!--Del-->
   - [PrelaunchConfig(system api)](arkts-camera-prelaunchconfig-i-sys.md)<!--DelEnd-->
   - [PreviewOutput](arkts-camera-previewoutput-i.md)<!--Del-->
-  - [PreviewOutput(system api)](arkts-camera-previewoutput-i-sys.md)<!--DelEnd--><!--Del-->
   - [ProfessionalPhotoSession(system api)](arkts-camera-professionalphotosession-i-sys.md)<!--DelEnd--><!--Del-->
   - [ProfessionalVideoSession(system api)](arkts-camera-professionalvideosession-i-sys.md)<!--DelEnd-->
   - [Profile](arkts-camera-profile-i.md)<!--Del-->
@@ -135,7 +115,6 @@
   - [SceneFeatureDetectionResult(system api)](arkts-camera-scenefeaturedetectionresult-i-sys.md)<!--DelEnd-->
   - [SecureSession](arkts-camera-securesession-i.md)
   - [Session](arkts-camera-session-i.md)<!--Del-->
-  - [Session(system api)](arkts-camera-session-i-sys.md)<!--DelEnd--><!--Del-->
   - [SettingParam(system api)](arkts-camera-settingparam-i-sys.md)<!--DelEnd-->
   - [Size](arkts-camera-size-i.md)<!--Del-->
   - [SketchStatusData(system api)](arkts-camera-sketchstatusdata-i-sys.md)<!--DelEnd--><!--Del-->
@@ -146,24 +125,18 @@
   - [TimeLapsePhotoSession(system api)](arkts-camera-timelapsephotosession-i-sys.md)<!--DelEnd-->
   - [TorchStatusInfo](arkts-camera-torchstatusinfo-i.md)<!--Del-->
   - [TripodDetectionResult(system api)](arkts-camera-tripoddetectionresult-i-sys.md)<!--DelEnd--><!--Del-->
-  - [TryAEInfo(system api)](arkts-camera-tryaeinfo-i-sys.md)<!--DelEnd-->
-  - [VideoConflictFunctions](arkts-camera-videoconflictfunctions-i.md)
-  - [VideoFunctions](arkts-camera-videofunctions-i.md)
-  - [VideoOutput](arkts-camera-videooutput-i.md)<!--Del-->
-  - [VideoOutput(system api)](arkts-camera-videooutput-i-sys.md)<!--DelEnd-->
+  - [TryAEInfo(system api)](arkts-camera-tryaeinfo-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoConflictFunctions(system api)](arkts-camera-videoconflictfunctions-i-sys.md)<!--DelEnd--><!--Del-->
+  - [VideoFunctions(system api)](arkts-camera-videofunctions-i-sys.md)<!--DelEnd-->
+  - [VideoOutput](arkts-camera-videooutput-i.md)
   - [VideoProfile](arkts-camera-videoprofile-i.md)
   - [VideoSession](arkts-camera-videosession-i.md)<!--Del-->
-  - [VideoSession(system api)](arkts-camera-videosession-i-sys.md)<!--DelEnd-->
-  - [VideoSessionForSys](arkts-camera-videosessionforsys-i.md)
-  - [WhiteBalance](arkts-camera-whitebalance-i.md)<!--Del-->
-  - [WhiteBalance(system api)](arkts-camera-whitebalance-i-sys.md)<!--DelEnd-->
-  - [WhiteBalanceQuery](arkts-camera-whitebalancequery-i.md)<!--Del-->
+  - [VideoSessionForSys(system api)](arkts-camera-videosessionforsys-i-sys.md)<!--DelEnd--><!--Del-->
+  - [WhiteBalance(system api)](arkts-camera-whitebalance-i-sys.md)<!--DelEnd--><!--Del-->
   - [WhiteBalanceQuery(system api)](arkts-camera-whitebalancequery-i-sys.md)<!--DelEnd-->
   - [Zoom](arkts-camera-zoom-i.md)<!--Del-->
-  - [Zoom(system api)](arkts-camera-zoom-i-sys.md)<!--DelEnd--><!--Del-->
   - [ZoomPointInfo(system api)](arkts-camera-zoompointinfo-i-sys.md)<!--DelEnd-->
   - [ZoomQuery](arkts-camera-zoomquery-i.md)<!--Del-->
-  - [ZoomQuery(system api)](arkts-camera-zoomquery-i-sys.md)<!--DelEnd--><!--Del-->
   - [ZoomRange(system api)](arkts-camera-zoomrange-i-sys.md)<!--DelEnd-->
   - [ImageType](arkts-camera-imagetype-t.md)
   - [NotificationInfo](arkts-camera-notificationinfo-t.md)
@@ -172,10 +145,8 @@
   - [AuxiliaryType(system api)](arkts-camera-auxiliarytype-e-sys.md)<!--DelEnd--><!--Del-->
   - [BeautyType(system api)](arkts-camera-beautytype-e-sys.md)<!--DelEnd-->
   - [CameraConcurrentType](arkts-camera-cameraconcurrenttype-e.md)
-  - [CameraErrorCode](arkts-camera-cameraerrorcode-e.md)<!--Del-->
-  - [CameraErrorCode(system api)](arkts-camera-cameraerrorcode-e-sys.md)<!--DelEnd-->
-  - [CameraFormat](arkts-camera-cameraformat-e.md)<!--Del-->
-  - [CameraFormat(system api)](arkts-camera-cameraformat-e-sys.md)<!--DelEnd-->
+  - [CameraErrorCode](arkts-camera-cameraerrorcode-e.md)
+  - [CameraFormat](arkts-camera-cameraformat-e.md)
   - [CameraPosition](arkts-camera-cameraposition-e.md)
   - [CameraStatus](arkts-camera-camerastatus-e.md)
   - [CameraType](arkts-camera-cameratype-e.md)<!--Del-->
@@ -189,8 +160,7 @@
   - [EffectSuggestionType(system api)](arkts-camera-effectsuggestiontype-e-sys.md)<!--DelEnd--><!--Del-->
   - [Emotion(system api)](arkts-camera-emotion-e-sys.md)<!--DelEnd--><!--Del-->
   - [ExposureMeteringMode(system api)](arkts-camera-exposuremeteringmode-e-sys.md)<!--DelEnd-->
-  - [ExposureMode](arkts-camera-exposuremode-e.md)<!--Del-->
-  - [ExposureMode(system api)](arkts-camera-exposuremode-e-sys.md)<!--DelEnd-->
+  - [ExposureMode](arkts-camera-exposuremode-e.md)
   - [ExposureState](arkts-camera-exposurestate-e.md)
   - [FlashMode](arkts-camera-flashmode-e.md)
   - [FlashState](arkts-camera-flashstate-e.md)<!--Del-->
@@ -204,8 +174,7 @@
   - [ImageRotation](arkts-camera-imagerotation-e.md)<!--Del-->
   - [LightPaintingType(system api)](arkts-camera-lightpaintingtype-e-sys.md)<!--DelEnd--><!--Del-->
   - [LightStatus(system api)](arkts-camera-lightstatus-e-sys.md)<!--DelEnd-->
-  - [MetadataObjectType](arkts-camera-metadataobjecttype-e.md)<!--Del-->
-  - [MetadataObjectType(system api)](arkts-camera-metadataobjecttype-e-sys.md)<!--DelEnd-->
+  - [MetadataObjectType](arkts-camera-metadataobjecttype-e.md)
   - [NotificationName](arkts-camera-notificationname-e.md)
   - [OISAxes](arkts-camera-oisaxes-e.md)
   - [OISMode](arkts-camera-oismode-e.md)
@@ -220,12 +189,11 @@
   - [QualityPrioritization](arkts-camera-qualityprioritization-e.md)<!--Del-->
   - [RestoreParamType(system api)](arkts-camera-restoreparamtype-e-sys.md)<!--DelEnd--><!--Del-->
   - [SceneFeatureType(system api)](arkts-camera-scenefeaturetype-e-sys.md)<!--DelEnd-->
-  - [SceneMode](arkts-camera-scenemode-e.md)<!--Del-->
-  - [SceneMode(system api)](arkts-camera-scenemode-e-sys.md)<!--DelEnd-->
+  - [SceneMode](arkts-camera-scenemode-e.md)
   - [SensorColorFilterArrangement](arkts-camera-sensorcolorfilterarrangement-e.md)<!--Del-->
   - [SlowMotionStatus(system api)](arkts-camera-slowmotionstatus-e-sys.md)<!--DelEnd-->
-  - [SmoothZoomMode](arkts-camera-smoothzoommode-e.md)<!--Del-->
-  - [SystemPressureLevel(system api)](arkts-camera-systempressurelevel-e.md)<!--DelEnd--><!--Del-->
+  - [SmoothZoomMode](arkts-camera-smoothzoommode-e.md)
+  - [SystemPressureLevel](arkts-camera-systempressurelevel-e.md)<!--Del-->
   - [TimeLapsePreviewType(system api)](arkts-camera-timelapsepreviewtype-e-sys.md)<!--DelEnd--><!--Del-->
   - [TimeLapseRecordState(system api)](arkts-camera-timelapserecordstate-e-sys.md)<!--DelEnd-->
   - [TorchMode](arkts-camera-torchmode-e.md)<!--Del-->
@@ -236,7 +204,7 @@
   - [VideoStabilizationMode](arkts-camera-videostabilizationmode-e.md)<!--Del-->
   - [WhiteBalanceMode(system api)](arkts-camera-whitebalancemode-e-sys.md)<!--DelEnd-->
 - [@ohos.multimedia.cameraPicker](arkts-multimedia-camerapicker.md)
-  - [pick](arkts-camera-pick-f.md)
-  - [PickerProfile](arkts-camera-pickerprofile-c.md)
-  - [PickerResult](arkts-camera-pickerresult-c.md)
-  - [PickerMediaType](arkts-camera-pickermediatype-e.md)
+  - [pick](arkts-camerapicker-pick-f.md)
+  - [PickerProfile](arkts-camerapicker-pickerprofile-c.md)
+  - [PickerResult](arkts-camerapicker-pickerresult-c.md)
+  - [PickerMediaType](arkts-camerapicker-pickermediatype-e.md)

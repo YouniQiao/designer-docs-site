@@ -1,0 +1,1175 @@
+# LightWeightMap
+
+LightWeightMap可用于存储具有关联关系的key-value键值对集合，存储元素中key值唯一，每个key对应一个value。
+
+**Since:** 8
+
+**System capability:** SystemCapability.Utils.Lang
+
+## Modules to Import
+
+```TypeScript
+import { LightWeightMap } from '@kit.ArkTS';
+```
+
+## $_iterator
+
+```TypeScript
+$_iterator(): IterableIterator<[K, V]>
+```
+
+返回一个迭代器，每一项都是一个JavaScript对象。
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| IterableIterator&lt;[K, V]> | LightWeightMap的迭代器。 |
+
+## [Symbol.iterator]
+
+```TypeScript
+[Symbol.iterator](): IterableIterator<[K, V]>
+```
+
+返回一个迭代器，迭代器的每一项都是一个JavaScript对象。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| IterableIterator&lt;[K, V]> |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The Symbol.iterator method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+
+// Method 1:
+for (let item of lightWeightMap) {
+  console.info("key:", item[0]);
+  console.info("value:", item[1]);
+}
+// key: sparrow
+// value: 356
+// key: squirrel
+// value: 123
+
+// Method 2:
+let iter = lightWeightMap[Symbol.iterator]();
+let temp: IteratorResult<Object[]> = iter.next();
+while(!temp.done) {
+  console.info("key:", temp.value[0]);
+  console.info("value:", temp.value[1]);
+  temp = iter.next();
+}
+// key: sparrow
+// value: 356
+// key: squirrel
+// value: 123
+
+
+// You are not advised to use the set, setValueAt, remove, or removeAt APIs in Symbol.iterator because they may cause unpredictable risks such as infinite loops. You can use the for loop when inserting or deleting data.
+let lightWeightMap = new LightWeightMap<string, number>();
+for(let i = 0; i < 10; i++) {
+  lightWeightMap.set("sparrow" + i, 123);
+}
+for(let i = 0; i < 10; i++) {
+  lightWeightMap.remove("sparrow" + i);
+}
+
+```
+
+## clear
+
+```TypeScript
+clear(): void
+```
+
+清除容器中的所有元素，并将length置为0。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The clear method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+lightWeightMap.clear();
+let result = lightWeightMap.isEmpty();
+console.info("result:", result);  // result: true
+
+```
+
+## constructor
+
+```TypeScript
+constructor()
+```
+
+LightWeightMap的构造函数。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200012 | The LightWeightMap's constructor cannot be directly invoked. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+
+```
+
+## entries
+
+```TypeScript
+entries(): IterableIterator<[K, V]>
+```
+
+返回包含此映射中所有键值对的新迭代器对象。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| IterableIterator&lt;[K, V]> | 返回一个迭代器。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The entries method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let iter = lightWeightMap.entries();
+let temp: IteratorResult<Object[]> = iter.next();
+while(!temp.done) {
+  console.info("key:" + temp.value[0]);
+  console.info("value:" + temp.value[1]);
+  temp = iter.next();
+}
+
+
+// You are not advised to use the set, setValueAt, remove, or removeAt APIs in entries because they may cause unpredictable risks such as infinite loops. You can use the for loop when inserting or deleting data.
+let lightWeightMap = new LightWeightMap<string, number>();
+for(let i = 0; i < 10; i++) {
+  lightWeightMap.set("sparrow" + i, 123);
+}
+for(let i = 0; i < 10; i++) {
+  lightWeightMap.remove("sparrow" + i);
+}
+
+```
+
+## forEach
+
+```TypeScript
+forEach(callbackFn: (value?: V, key?: K, map?: LightWeightMap<K, V>) => void, thisArg?: Object): void
+```
+
+通过回调函数来遍历LightWeightMap实例对象上的元素以及元素对应的下标。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | (value?: V, key?: K, map?: LightWeightMap&lt;K, V>) => void | Yes | 回调函数。 |
+| thisArg | Object | No |  |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The forEach method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("sparrow", 123);
+lightWeightMap.set("gull", 357);
+lightWeightMap.forEach((value: number, key: string) => {
+  console.info("value:" + value, "key:" + key);
+});
+// value:123 key:sparrow
+// value:357 key:gull
+
+
+// You are not advised to use the set, setValueAt, remove, or removeAt APIs in forEach because they may cause unpredictable risks such as infinite loops. You can use the for loop when inserting or deleting data.
+let lightWeightMap = new LightWeightMap<string, number>();
+for(let i = 0; i < 10; i++) {
+  lightWeightMap.set("sparrow" + i, 123);
+}
+for(let i = 0; i < 10; i++) {
+  lightWeightMap.remove("sparrow" + i);
+}
+
+```
+
+## forEach
+
+```TypeScript
+forEach(callbackFn: LightWeightMapCbFn<K, V>): void
+```
+
+通过回调函数遍历LightWeightMap实例对象中的所有键值对，并对每个键值对执行回调函数。
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callbackFn | LightWeightMapCbFn&lt;K, V> | Yes | 对每个元素执行的回调函数。 |
+
+## get
+
+```TypeScript
+get(key: K): V
+```
+
+获取指定key所对应的value。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | K | Yes | 查找的指定key。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| V | 返回key映射的value值。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The get method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.get("sparrow");
+console.info("result:", result);  // result: 356
+
+```
+
+## get
+
+```TypeScript
+get(key: K): V | undefined
+```
+
+获取指定key所对应的value，若为空则返回undefined。
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | K | Yes | 指定key。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| V | 如果存在与key关联的值则返回该值，否则返回undefined。 |
+
+## getIndexOfKey
+
+```TypeScript
+getIndexOfKey(key: K): int
+```
+
+查找指定key元素首次出现的下标值，如果未找到则返回-1。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | K | Yes | 指定key。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| int | 返回指定key元素首次出现时的下标值，查找失败返回-1。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The getIndexOfKey method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.getIndexOfKey("sparrow");
+console.info("result:", result);  // result: 0
+
+```
+
+## getIndexOfValue
+
+```TypeScript
+getIndexOfValue(value: V): int
+```
+
+查找指定value元素首次出现的下标值，如果未找到则返回-1。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | V | Yes | 指定value元素。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| int | 返回指定value元素首次出现时的下标值，查找失败返回-1。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The getIndexOfValue method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.getIndexOfValue(123);
+console.info("result:", result);  // result: 1
+
+```
+
+## getKeyAt
+
+```TypeScript
+getKeyAt(index: number): K
+```
+
+查找指定下标元素键值对中的key值。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | number | Yes | 指定下标。需要小于等于int32_max即2147483647。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| K | 返回该下标元素键值对中的key值，失败返回undefined。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The getKeyAt method cannot be bound. |
+| 10200001 | The value of index is out of range. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.getKeyAt(1);
+console.info("result:", result);  // result: squirrel
+
+```
+
+## getKeyAt
+
+```TypeScript
+getKeyAt(index: int): K | undefined
+```
+
+获取LightWeightMap容器中指定下标位置的key。
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | int | Yes | 检索值的下标位置。  该值为整数。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| K | 返回指定下标对应的key，如果下标超出范围则返回undefined。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200001 | The value of index is out of range. |
+
+## getValueAt
+
+```TypeScript
+getValueAt(index: number): V
+```
+
+获取指定下标对应键值对中的value值。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | number | Yes | 指定下标。需要小于等于int32_max即2147483647。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| V | 返回该下标对应键值对中的value值。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The getValueAt method cannot be bound. |
+| 10200001 | The value of index is out of range. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.getValueAt(1);
+console.info("result:", result);  // result: 123
+
+```
+
+## getValueAt
+
+```TypeScript
+getValueAt(index: int): V | undefined
+```
+
+获取LightWeightMap容器中指定下标位置的value。
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | int | Yes | 检索值的下标位置。  该值为整数。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| V | 返回指定下标对应的值，如果下标超出范围则返回undefined。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200001 | The value of index is out of range. |
+
+## hasAll
+
+```TypeScript
+hasAll(map: LightWeightMap<K, V>): boolean
+```
+
+判断容器中是否包含指定map中的所有元素。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| map | LightWeightMap&lt;K, V> | Yes | 比较对象。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | 包含所有元素时返回true，否则返回false。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The hasAll method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let map = new LightWeightMap<string, number>();
+map.set("sparrow", 356);
+let result = lightWeightMap.hasAll(map); 
+console.info("result = ", result); // result = true
+
+```
+
+## hasKey
+
+```TypeScript
+hasKey(key: K): boolean
+```
+
+判断容器中是否包含指定key。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | K | Yes | 指定key。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | 包含指定key时返回true，否则返回false。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The hasKey method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+let result = lightWeightMap.hasKey("squirrel");
+console.info("result:", result);  // result: true
+
+```
+
+## hasValue
+
+```TypeScript
+hasValue(value: V): boolean
+```
+
+判断容器中是否包含指定value。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | V | Yes | 指定value。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | 包含指定value时返回true，否则返回false。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The hasValue method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+let result = lightWeightMap.hasValue(123);
+console.info("result:", result);  // result: true
+
+```
+
+## increaseCapacityTo
+
+```TypeScript
+increaseCapacityTo(minimumCapacity: int): void
+```
+
+将当前LightWeightMap扩容至指定容量。如果传入的容量值大于或等于当前LightWeightMap中的元素个数，将容量变更为新容量，小于则不会变更。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| minimumCapacity | int | Yes | 需要容纳的元素数量。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The increaseCapacityTo method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.increaseCapacityTo(10);
+
+```
+
+## isEmpty
+
+```TypeScript
+isEmpty(): boolean
+```
+
+判断容器是否为空。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | 为空返回true，不为空返回false。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The isEmpty method cannot be bound. |
+
+**Example**
+
+```TypeScript
+const lightWeightMap = new LightWeightMap<string, number>();
+let result = lightWeightMap.isEmpty();
+console.info("result:", result);  // result: true
+
+```
+
+## keys
+
+```TypeScript
+keys(): IterableIterator<K>
+```
+
+返回包含此映射中所有键的新迭代器对象。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| IterableIterator&lt;K> | 返回一个迭代器。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The keys method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let keys = lightWeightMap.keys();
+for (let key of keys) {
+  console.info("key:", key);
+}
+// key: sparrow
+// key: squirrel
+
+```
+
+## remove
+
+```TypeScript
+remove(key: K): V
+```
+
+删除指定key映射的元素。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | K | Yes | 指定key。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| V | 返回删除元素的值。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The remove method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.remove("sparrow");
+console.info("result:", result);  // result: 356
+
+```
+
+## remove
+
+```TypeScript
+remove(key: K): V | undefined
+```
+
+删除指定key对应的元素。
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | K | Yes | 指定key。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| V | 如果删除了元素则返回该元素的值，否则返回undefined。 |
+
+## removeAt
+
+```TypeScript
+removeAt(index: int): boolean
+```
+
+删除指定下标对应的元素。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | int | Yes | 指定元素下标。需要小于等于int32_max即2147483647。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | 确认是否成功删除元素，成功删除元素返回true，否则返回false。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The removeAt method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.removeAt(1);
+console.info("result:", result);  // result: true
+
+```
+
+## set
+
+```TypeScript
+set(key: K, value: V): Object
+```
+
+向容器中添加或更新一组数据。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | K | Yes | 添加成员数据的键名。 |
+| value | V | Yes | 添加成员数据的值。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Object | 返回添加后的LightWeightMap。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The set method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+let result = lightWeightMap.set("squirrel", 123);
+console.info("result:", result);  // result: squirrel:123
+
+```
+
+## setAll
+
+```TypeScript
+setAll(map: LightWeightMap<K, V>): void
+```
+
+将一个LightWeightMap中的所有元素组添加到另一个LightWeightMap中。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| map | LightWeightMap&lt;K, V> | Yes | 该map会添加到其调用setAll接口的map对象中。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The setAll method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let map = new LightWeightMap<string, number>();
+map.setAll(lightWeightMap);   // Add all elements in lightWeightMap to the map.
+let result = map.get("sparrow");
+console.info("result:", result);  // result: 356
+
+```
+
+## setValueAt
+
+```TypeScript
+setValueAt(index: int, newValue: V): boolean
+```
+
+替换容器中指定下标对应键值对中的键值。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| index | int | Yes | 指定替换数据下标。需要小于等于int32_max即2147483647。 |
+| newValue | V | Yes | 替换键值对中的值。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| boolean | 是否成功对已有数据进行替换，成功返回true，失败返回false。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The setValueAt method cannot be bound. |
+| 10200001 | The value of index is out of range. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+lightWeightMap.setValueAt(1, 3546);
+console.info("result:", lightWeightMap.get("squirrel"));  // result: 3546
+
+```
+
+## toString
+
+```TypeScript
+toString(): String
+```
+
+将此映射中包含的键值对拼接成字符串并返回。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| String | 返回对应字符串。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The toString method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let result = lightWeightMap.toString();
+console.info("result:", result);  // result: sparrow:356,squirrel:123
+
+```
+
+## values
+
+```TypeScript
+values(): IterableIterator<V>
+```
+
+返回包含此映射中所有键对应值的新迭代器对象。
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| IterableIterator&lt;V> | 返回一个迭代器。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 10200011 | The values method cannot be bound. |
+
+**Example**
+
+```TypeScript
+let lightWeightMap = new LightWeightMap<string, number>();
+lightWeightMap.set("squirrel", 123);
+lightWeightMap.set("sparrow", 356);
+let values = lightWeightMap.values();
+for (let value of values) {
+  console.info("value:", value);
+}
+// value: 356
+// value: 123
+
+```
+
+## length
+
+```TypeScript
+length: number
+```
+
+LightWeightMap的元素个数。
+
+**Type:** number
+
+**Since:** 8
+
+**Atomic service API:** From API version 12 this API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+
+```TypeScript
+get length(): int
+```
+
+获取LightWeightMap的元素个数。
+
+**Type:** int
+
+**Since:** 23
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Utils.Lang
+

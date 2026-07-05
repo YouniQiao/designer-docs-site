@@ -1,4 +1,4 @@
-# SceneDetectionQuery (System API)
+# SceneDetectionQuery
 
 Provides the scene detection and query capabilities.
 
@@ -11,7 +11,7 @@ Provides the scene detection and query capabilities.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## isSceneFeatureSupported
@@ -38,14 +38,14 @@ Checks whether a scene feature is supported.
 
 | Type | Description |
 | --- | --- |
-| boolean | Check result for the support of the scene feature. **true** if supported, **false**otherwise. |
+| boolean | Check result for the support of the scene feature. true if supported, false  otherwise. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application, only throw in session usage. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
+| 202 | Not System Application, only throw in session usage. |
+| 7400101 | Parameter missing or parameter type incorrect. |
 
 **Example**
 

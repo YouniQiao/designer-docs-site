@@ -1,4 +1,8 @@
-# AuxiliaryStatus (System API)
+# AuxiliaryStatus
+
+```TypeScript
+enum AuxiliaryStatus
+```
 
 Enum for auxiliary status.
 

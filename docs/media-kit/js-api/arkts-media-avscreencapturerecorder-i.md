@@ -1,6 +1,6 @@
 # AVScreenCaptureRecorder
 
-AVScreenCaptureRecorder is a class for screen capture management. It provides APIs for screen capture. Before calling any API in AVScreenCaptureRecorder, you must use [createAVScreenCaptureRecorder()](arkts-media-createavscreencapturerecorder-f.md#createavscreencapturerecorder-1) to create an AVScreenCaptureRecorder instance.
+AVScreenCaptureRecorder is a class for screen capture management. It provides APIs for screen capture. Before calling any API in AVScreenCaptureRecorder, you must use [createAVScreenCaptureRecorder()](arkts-media-createavscreencapturerecorder-f.md#createAVScreenCaptureRecorder-1) to create an AVScreenCaptureRecorder instance.
 
 **Since:** 12
 
@@ -9,20 +9,20 @@ AVScreenCaptureRecorder is a class for screen capture management. It provides AP
 ## Modules to Import
 
 ```TypeScript
-import { media } from '@ohos.multimedia.media';
+import { media } from '@kit.MediaKit';
 ```
 
 ## addWatermark
 
 ```TypeScript
-addWatermark(watermark: image.PixelMap, config: WatermarkConfiguration): Promise<number>
+addWatermark(watermark: image.PixelMap, config: WatermarkConfiguration): Promise<int>
 ```
 
 add a watermark for the AVScreenCaptureRecorder. This API uses a promise to return the result. App can add up to 5 watermarks. This API can be called only before calling startRecording().
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -37,21 +37,21 @@ add a watermark for the AVScreenCaptureRecorder. This API uses a promise to retu
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;number&gt; | Promise that returns the watermark id. |
+| Promise&lt;int> | Promise that returns the watermark id. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
-| [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The parameter check failed, parameter value out of range. |
+| 5400102 | Operation not allowed. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
+| 5400108 | The parameter check failed, parameter value out of range. |
 
 ## excludePickerWindows
 
 ```TypeScript
-excludePickerWindows(excludedWindows: Array<number>): Promise<void>
+excludePickerWindows(excludedWindows: Array<int>): Promise<void>
 ```
 
 Sets the list of windows to be hidden in the picker. The setting takes effect the next time the picker is displayed. This API uses a promise to return the result.
@@ -64,21 +64,21 @@ Sets the list of windows to be hidden in the picker. The setting takes effect th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| excludedWindows | Array&lt;number&gt; | Yes | List of windows to be hidden in the picker. For details about how toobtain window properties, see[getWindowProperties](../../../../reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
+| excludedWindows | Array&lt;int> | Yes | List of windows to be hidden in the picker. For details about how to  obtain window properties, see  [getWindowProperties](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## init
 
@@ -102,15 +102,15 @@ Initializes screen capture and sets screen capture parameters. This API uses a p
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3. Parameter verification failed. Return by promise. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 401 | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.  2. Incorrect parameter types. 3. Parameter verification failed. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## off('stateChange')
 
@@ -128,8 +128,8 @@ Unsubscribes from screen capture state changes. You can specify a callback to ca
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'stateChange' | Yes | Event type, which is **'stateChange'** in this case. |
-| callback | Callback&lt;AVScreenCaptureStateCode&gt; | No | Callback used for unsubscription.[AVScreenCaptureStateCode](arkts-media-avscreencapturestatecode-e.md#avscreencapturestatecode) indicates the newstate. If this parameter is not specified, the last subscription is canceled. |
+| type | 'stateChange' | Yes | Event type, which is 'stateChange' in this case. |
+| callback | Callback&lt;AVScreenCaptureStateCode> | No | Callback used for unsubscription.  [AVScreenCaptureStateCode](arkts-media-avscreencapturestatecode-e.md#AVScreenCaptureStateCode) indicates the new  state. If this parameter is not specified, the last subscription is canceled. |
 
 ## off('error')
 
@@ -147,8 +147,44 @@ Unsubscribes from AVScreenCaptureRecorder errors. You can specify a callback to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type, which is **'error'** in this case. |
-| callback | ErrorCallback | No | Callback used for unsubscription. If this parameter is not specified, thelast subscription is canceled. |
+| type | 'error' | Yes | Event type, which is 'error' in this case. |
+| callback | ErrorCallback | No | Callback used for unsubscription. If this parameter is not specified, the  last subscription is canceled. |
+
+## offError
+
+```TypeScript
+offError(callback?: ErrorCallback): void
+```
+
+Unsubscribes from AVScreenCaptureRecorder errors. You can specify a callback to cancel the specified subscription.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | No |  |
+
+## offStateChange
+
+```TypeScript
+offStateChange(callback?: Callback<AVScreenCaptureStateCode>): void
+```
+
+Unsubscribes from screen capture state changes. You can specify a callback to cancel the specified subscription.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVScreenCaptureStateCode> | No |  |
 
 ## on('stateChange')
 
@@ -166,8 +202,8 @@ Subscribes to screen capture state changes. An application can subscribe to only
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'stateChange' | Yes | Event type, which is **'stateChange'** in this case. |
-| callback | Callback&lt;AVScreenCaptureStateCode&gt; | Yes | Callback invoked when the event is triggered.[AVScreenCaptureStateCode](arkts-media-avscreencapturestatecode-e.md#avscreencapturestatecode) indicates the newstate. |
+| type | 'stateChange' | Yes | Event type, which is 'stateChange' in this case. |
+| callback | Callback&lt;AVScreenCaptureStateCode> | Yes | Callback invoked when the event is triggered.  [AVScreenCaptureStateCode](arkts-media-avscreencapturestatecode-e.md#AVScreenCaptureStateCode) indicates the new  state. |
 
 ## on('error')
 
@@ -185,16 +221,60 @@ Subscribes to AVScreenCaptureRecorder errors. You can handle the errors based on
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type, which is **'error'** in this case. |
+| type | 'error' | Yes | Event type, which is 'error' in this case. |
 | callback | ErrorCallback | Yes | Callback invoked when the event is triggered. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by ErrorCallback. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by ErrorCallback. |
+| 201 | permission denied. |
+| 5400103 | IO error. Return by ErrorCallback. |
+| 5400105 | Service died. Return by ErrorCallback. |
+
+## onError
+
+```TypeScript
+onError(callback: ErrorCallback): void
+```
+
+Subscribes to AVScreenCaptureRecorder errors. You can handle the errors based on the application logic. An application can subscribe to only one AVScreenCaptureRecorder error event. When the application initiates multiple subscriptions to this event, the last subscription is applied.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | ErrorCallback | Yes | Callback invoked when the event is triggered. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 201 | permission denied. |
+| 5400103 | IO error. Return by ErrorCallback. |
+| 5400105 | Service died. Return by ErrorCallback. |
+
+## onStateChange
+
+```TypeScript
+onStateChange(callback: Callback<AVScreenCaptureStateCode>): void
+```
+
+Subscribes to screen capture state changes. An application can subscribe to only one screen capture state change event. When the application initiates multiple subscriptions to this event, the last subscription is applied.
+
+**Since:** 23
+
+**System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | Callback&lt;AVScreenCaptureStateCode> | Yes | Callback invoked when the event is triggered.  AVScreenCaptureStateCode indicates the new state. |
 
 ## pauseRecording
 
@@ -206,7 +286,7 @@ Pause screen capture. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -214,15 +294,15 @@ Pause screen capture. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not be permitted. Return by promise. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400102 | Operation not be permitted. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## presentPicker
 
@@ -240,15 +320,15 @@ Displays the Picker once more after the screen capture starts, allowing for dyna
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## release
 
@@ -266,14 +346,14 @@ Releases this AVScreenCaptureRecorder instance. This API uses a promise to retur
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## resumeRecording
 
@@ -285,7 +365,7 @@ Resume screen capture. This API uses a promise to return the result.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -293,15 +373,15 @@ Resume screen capture. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not be permitted. Return by promise. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400102 | Operation not be permitted. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## setContentAutoRotation
 
@@ -313,7 +393,7 @@ Sets whether the captured screen content automatically rotates to keep the image
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Media.AVScreenCapture
 
@@ -321,21 +401,21 @@ Sets whether the captured screen content automatically rotates to keep the image
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | boolean | Yes | Indicates whether to enable automatic rotation. The default value is **false**.A value of **true** indicates automatic rotation and the image content in the output frame remains upright. |
+| enable | boolean | Yes | Indicates whether to enable automatic rotation. The default value is false.  A value of true indicates automatic rotation and the image content in the output frame remains upright. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. Return by promise. |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 801 | Capability not supported. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## setMicEnabled
 
@@ -353,20 +433,20 @@ Enables or disables the microphone. This API uses a promise to return the result
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | boolean | Yes | Whether to enable the microphone. **true** to enable, **false** otherwise. |
+| enable | boolean | Yes | Whether to enable the microphone. true to enable, false otherwise. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## setPickerMode
 
@@ -384,26 +464,26 @@ Sets the display mode of the picker. The setting takes effect the next time the 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pickerMode | PickerMode | Yes | Picker mode.<br>It defines the content type displayed in the picker. Theoptions are as follows:<br>- **SCREEN_ONLY**: Displays only a list of screens.<br>- **WINDOW_ONLY**: Displaysonly a list of windows.<br>- **SCREEN_AND_WINDOW**: Displays both screens and windows. It is the defaultvalue. |
+| pickerMode | PickerMode | Yes | Picker mode. It defines the content type displayed in the picker. The  options are as follows: - SCREEN_ONLY: Displays only a list of screens. - WINDOW_ONLY: Displays  only a list of windows. - SCREEN_AND_WINDOW: Displays both screens and windows. It is the default  value. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400102 | Operation not allowed. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## skipPrivacyMode
 
 ```TypeScript
-skipPrivacyMode(windowIDs: Array<number>): Promise<void>
+skipPrivacyMode(windowIDs: Array<int>): Promise<void>
 ```
 
 During screen capture, the application can exempt its privacy windows from security purposes. This API uses a promise to return the result. For example, if a user enters a password in this application during screen capture, the application will not display a black screen.
@@ -416,20 +496,20 @@ During screen capture, the application can exempt its privacy windows from secur
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| windowIDs | Array&lt;number&gt; | Yes | IDs of windows that require privacy exemption, including the main window IDsand subwindow IDs. For details about how to obtain window properties, see[getWindowProperties](../../../../reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
+| windowIDs | Array&lt;int> | Yes | IDs of windows that require privacy exemption, including the main window IDs  and subwindow IDs. For details about how to obtain window properties, see  [getWindowProperties](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getwindowproperties9). |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## startRecording
 
@@ -437,7 +517,7 @@ During screen capture, the application can exempt its privacy windows from secur
 startRecording(): Promise<void>
 ```
 
-Starts screen recording. Before using this API, you must call [init](arkts-media-avscreencapturerecorder-i.md#init-1). This API uses a promise to return the result.
+Starts screen recording. Before using this API, you must call [init](arkts-media-avscreencapturerecorder-i.md#init). This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -447,14 +527,14 @@ Starts screen recording. Before using this API, you must call [init](arkts-media
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 
 ## stopRecording
 
@@ -472,12 +552,12 @@ Stops screen recording. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
-| [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
+| 5400103 | IO error. Return by promise. |
+| 5400105 | Service died. Return by promise. |
 

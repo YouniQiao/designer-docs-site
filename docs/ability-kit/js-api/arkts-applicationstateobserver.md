@@ -6,11 +6,11 @@
 
 | Name | Description |
 | --- | --- |
-| [ApplicationStateObserver](arkts-ability-applicationstateobserver-c.md) | The module defines an observer to listen for application state changes. It can be used as an input parameter in [on('applicationState')](arkts-ability-on-f.md#on-1) to listen for lifecycle changes of the application. |
+| [ApplicationStateObserver](arkts-applicationstateobserver-c.md) | 应用状态监听器，可以作为入参传入 [on('applicationState')]{@link ./../@ohos.app.ability.appManager:appManager.on(type: 'applicationState', observer: ApplicationStateObserver)} 方法，监听应用的生命周期变化。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ProcessData](arkts-ability-processdata-t.md) | The process data. |
+| [ProcessData](arkts-processdata-t.md) | 进程数据信息。 |
 

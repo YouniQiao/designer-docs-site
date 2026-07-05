@@ -1,6 +1,6 @@
 # @ohos.ability.ability
 
-The module provides all level-2 module APIs for developers to export.
+Ability模块将二级模块API组织在一起方便开发者进行导出。
 
 **Since:** 9
 
@@ -9,7 +9,7 @@ The module provides all level-2 module APIs for developers to export.
 ## Modules to Import
 
 ```TypeScript
-import { ability } from '@ohos.ability.ability';
+import { ability } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,11 +18,11 @@ import { ability } from '@ohos.ability.ability';
 
 | Name | Description |
 | --- | --- |
-| [AbilityResult](arkts-ability-abilityresult-t.md) | Defines the level-2 module AbilityResult. |
-| [ConnectOptions](arkts-ability-connectoptions-t.md) | Defines the level-2 module ConnectOptions. |
-| [DataAbilityHelper](arkts-ability-dataabilityhelper-t.md) | Defines the level-2 module DataAbilityHelper. |
-| [DataAbilityOperation](arkts-ability-dataabilityoperation-t.md) | Defines the level-2 module DataAbilityOperation. |
-| [DataAbilityResult](arkts-ability-dataabilityresult-t.md) | Defines the level-2 module DataAbilityResult. |
-| [PacMap](arkts-ability-pacmap-t.md) | Defines the level-2 module PacMap. |
-| [StartAbilityParameter](arkts-ability-startabilityparameter-t.md) | Defines the level-2 module StartAbilityParameter. |
+| [AbilityResult](arkts-ability-abilityresult-t.md) | AbilityResult二级模块。 |
+| [ConnectOptions](arkts-ability-connectoptions-t.md) | ConnectOptions二级模块。 |
+| [DataAbilityHelper](arkts-ability-dataabilityhelper-t.md) | DataAbilityHelper二级模块。 |
+| [DataAbilityOperation](arkts-ability-dataabilityoperation-t.md) | DataAbilityOperation二级模块。 |
+| [DataAbilityResult](arkts-ability-dataabilityresult-t.md) | DataAbilityResult二级模块。 |
+| [PacMap](arkts-ability-pacmap-t.md) | PacMap二级模块。 |
+| [StartAbilityParameter](arkts-ability-startabilityparameter-t.md) | StartAbilityParameter二级模块。 |
 

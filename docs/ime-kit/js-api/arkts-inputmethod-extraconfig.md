@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { InputMethodExtraConfig } from '@ohos.inputMethod.ExtraConfig';
+import { InputMethodExtraConfig } from '@kit.IMEKit';
 ```
 
 ## Summary
@@ -12,11 +12,11 @@ import { InputMethodExtraConfig } from '@ohos.inputMethod.ExtraConfig';
 
 | Name | Description |
 | --- | --- |
-| [InputMethodExtraConfig](arkts-ime-inputmethodextraconfig-i.md) | Represents the extension information of an input method. |
+| [InputMethodExtraConfig](arkts-inputmethodextraconfig-i.md) | Represents the extension information of an input method. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [CustomValueType](arkts-ime-customvaluetype-t.md) | Represents the extension information type. The specific type of the parameter depends on its functionality. |
+| [CustomValueType](arkts-customvaluetype-t.md) | Represents the extension information type. The specific type of the parameter depends on its functionality. |
 

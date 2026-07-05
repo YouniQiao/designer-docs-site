@@ -1,0 +1,10 @@
+# Exclude
+
+```TypeScript
+type Exclude<T, U> = T extends U ? never : T
+```
+
+Exclude from T those types that are assignable to U
+
+**Property type:** T extends U ? never : T
+

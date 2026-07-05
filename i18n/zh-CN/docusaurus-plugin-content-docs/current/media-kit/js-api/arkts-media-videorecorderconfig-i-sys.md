@@ -1,4 +1,4 @@
-# VideoRecorderConfig（系统接口）
+# VideoRecorderConfig
 
 Provides the video recorder configuration definitions.
 
@@ -7,6 +7,12 @@ Provides the video recorder configuration definitions.
 **系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
 
 **系统接口：** 此接口为系统接口。
+
+## 导入模块
+
+```TypeScript
+import { media } from '@kit.MediaKit';
+```
 
 ## audioSourceType
 
@@ -24,15 +30,15 @@ audio source type, details see @AudioSourceType .
 
 **系统接口：** 此接口为系统接口。
 
-## location
+## rotation
 
 ```TypeScript
-location?: Location
+rotation?: int
 ```
 
-geographical location information.
+Sets the video rotation angle in output file, and for the file to playback, in degrees. mp4 support. the range of rotation angle should be {0, 90, 180, 270}, default is 0.
 
-**类型：** Location
+**类型：** int
 
 **起始版本：** 9
 
@@ -56,31 +62,15 @@ video recorder profile, can get by "getVideoRecorderProfile", details see @Video
 
 **系统接口：** 此接口为系统接口。
 
-## rotation
+## location
 
 ```TypeScript
-rotation?: number
+location?: Location
 ```
 
-Sets the video rotation angle in output file, and for the file to playback. mp4 support. the range of rotation angle should be {0, 90, 180, 270}, default is 0.
+geographical location information.
 
-**类型：** number
-
-**起始版本：** 9
-
-**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
-
-**系统接口：** 此接口为系统接口。
-
-## url
-
-```TypeScript
-url: string
-```
-
-video output uri.support two kind of uri now. format like: scheme + "://" + "context". fd: fd://fd
-
-**类型：** string
+**类型：** Location
 
 **起始版本：** 9
 
@@ -97,6 +87,22 @@ videoSourceType: VideoSourceType
 video source type, details see @VideoSourceType .
 
 **类型：** VideoSourceType
+
+**起始版本：** 9
+
+**系统能力：** SystemCapability.Multimedia.Media.VideoRecorder
+
+**系统接口：** 此接口为系统接口。
+
+## url
+
+```TypeScript
+url: string
+```
+
+video output uri.support two kind of uri now. format like: scheme + "://" + "context". fd: fd://fd
+
+**类型：** string
 
 **起始版本：** 9
 

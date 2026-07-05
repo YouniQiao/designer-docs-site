@@ -6,31 +6,31 @@ Describes input parameters of audio interruption events.
 
 **Deprecated since:** 9
 
-**Substitutes:** AudioRendererOptions
+**Substitute:** ohos.multimedia.audio.AudioRendererOptions
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
 
-## contentType
+## streamUsage
 
 ```TypeScript
-contentType: ContentType
+streamUsage: StreamUsage
 ```
 
-Audio content type.
+Audio stream usage.
 
-**Type:** ContentType
+**Type:** StreamUsage
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** rendererInfo
+**Substitute:** ohos.multimedia.audio.AudioRendererOptions#rendererInfo
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -48,25 +48,25 @@ Whether audio playback can be paused during an audio interruption. **true** if a
 
 **Deprecated since:** 9
 
-**Substitutes:** hintType
+**Substitute:** ohos.multimedia.audio.InterruptEvent#hintType
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
-## streamUsage
+## contentType
 
 ```TypeScript
-streamUsage: StreamUsage
+contentType: ContentType
 ```
 
-Audio stream usage.
+Audio content type.
 
-**Type:** StreamUsage
+**Type:** ContentType
 
 **Since:** 7
 
 **Deprecated since:** 9
 
-**Substitutes:** rendererInfo
+**Substitute:** ohos.multimedia.audio.AudioRendererOptions#rendererInfo
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

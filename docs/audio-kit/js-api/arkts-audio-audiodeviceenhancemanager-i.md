@@ -9,8 +9,37 @@ Provides enhanced audio device management capabilities.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
+
+## getSoundCardInfo
+
+```TypeScript
+getSoundCardInfo(): Promise<SoundCardInfo>
+```
+
+Obtains the sound card information. This method uses a Promise to return the query result.
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Audio.DeviceEnhance
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;SoundCardInfo> | Promise used to return the sound card information. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 202 | Not system App. |
+| 801 | Capability not supported.  Failed to call the API due to limited device capabilities. |
 
 ## isEnhancedRoutingSupported
 
@@ -22,7 +51,7 @@ Queries whether the system supports the enhanced routing functions provided by t
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.DeviceEnhance
 
@@ -42,7 +71,7 @@ Selects the input device for your application. This setting applies to all recor
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.DeviceEnhance
 
@@ -50,20 +79,20 @@ Selects the input device for your application. This setting applies to all recor
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| inputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by{@link AudioRoutingManager.getAvailableDevices}. |
+| inputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed, for example,the selected device does not exist. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs, such as the service died. |
+| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
+| 6800301 | Audio service error occurs, such as the service died. |
 
 ## selectInputDeviceForAudioCapturer
 
@@ -75,7 +104,7 @@ Selects the input device for the target AudioCapturer. Your application must ens
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.DeviceEnhance
 
@@ -84,20 +113,20 @@ Selects the input device for the target AudioCapturer. Your application must ens
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | capturer | AudioCapturer | Yes | The instance of AudioCapturer. |
-| inputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by{@link AudioRoutingManager.getAvailableDevices}. |
+| inputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed, for example,the selected device does not exist. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs, such as the service died. |
+| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
+| 6800301 | Audio service error occurs, such as the service died. |
 
 ## selectOutputDevice
 
@@ -109,7 +138,7 @@ Selects the output device for your application. This setting applies to all play
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.DeviceEnhance
 
@@ -117,20 +146,20 @@ Selects the output device for your application. This setting applies to all play
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| outputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by{@link AudioRoutingManager.getAvailableDevices}. |
+| outputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed, for example,the selected device does not exist. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs, such as the service died. |
+| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
+| 6800301 | Audio service error occurs, such as the service died. |
 
 ## selectOutputDeviceForAudioRenderer
 
@@ -142,7 +171,7 @@ Selects the output device for the target AudioRenderer. Your application must en
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.DeviceEnhance
 
@@ -151,18 +180,18 @@ Selects the output device for the target AudioRenderer. Your application must en
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | renderer | AudioRenderer | Yes | The instance of AudioRenderer. |
-| outputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by{@link AudioRoutingManager.getAvailableDevices}. |
+| outputDevice | AudioDeviceDescriptor | Yes | Audio device descriptor in the array returned by  {@link AudioRoutingManager.getAvailableDevices}. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [6800101](../errorcode-audio.md#6800101-invalid-parameter) | Parameter verification failed, for example,the selected device does not exist. |
-| [6800301](../errorcode-audio.md#6800301-system-error) | Audio service error occurs, such as the service died. |
+| 6800101 | Parameter verification failed, for example,  the selected device does not exist. |
+| 6800301 | Audio service error occurs, such as the service died. |
 

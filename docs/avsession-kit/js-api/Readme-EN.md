@@ -1,144 +1,155 @@
-# ArkTS API<!--arkts-avsessionkit-->
+# AVSessionKit
 
-- [@ohos.app.ability.MediaControlExtensionAbility](arkts-app-ability-mediacontrolextensionability.md)
-  - [MediaControlExtensionAbility](arkts-avsession-mediacontrolextensionability-c.md)
+- [@ohos.app.ability.MediaControlExtensionAbility](arkts-app-ability-mediacontrolextensionability.md)<!--Del-->
+  - [MediaControlExtensionAbility(system api)](arkts-mediacontrolextensionability-c-sys.md)<!--DelEnd-->
 - [@ohos.multimedia.avCastPicker](arkts-multimedia-avcastpicker.md)
-  - [AVCastPicker](arkts-avsession-avcastpicker-s.md)
 - [@ohos.multimedia.avCastPickerParam](arkts-multimedia-avcastpickerparam.md)
-  - [AVCastPickerColorMode](arkts-avsession-avcastpickercolormode-e.md)
-  - [AVCastPickerState](arkts-avsession-avcastpickerstate-e.md)
-  - [AVCastPickerStyle](arkts-avsession-avcastpickerstyle-e.md)
+  - [AVCastPickerColorMode](arkts-avcastpickercolormode-e.md)
+  - [AVCastPickerState](arkts-avcastpickerstate-e.md)
+  - [AVCastPickerStyle](arkts-avcastpickerstyle-e.md)
 - [@ohos.multimedia.avInputCastPicker](arkts-multimedia-avinputcastpicker.md)
-  - [AVInputCastPicker](arkts-avsession-avinputcastpicker-s.md)
-  - [OnPickerStateCallback](arkts-avsession-onpickerstatecallback-t.md)
-- [@ohos.multimedia.avMusicTemplate](arkts-multimedia-avmusictemplate.md)
-  - [createAVMusicTemplate](arkts-avsession-createavmusictemplate-f.md)<!--Del-->
-  - [createAVMusicTemplateController(system api)](arkts-avsession-createavmusictemplatecontroller-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllAVMusicTemplateDescriptors(system api)](arkts-avsession-getallavmusictemplatedescriptors-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offAVMusicTemplateCreate(system api)](arkts-avsession-offavmusictemplatecreate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offAVMusicTemplateDestroy(system api)](arkts-avsession-offavmusictemplatedestroy-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onAVMusicTemplateCreate(system api)](arkts-avsession-onavmusictemplatecreate-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onAVMusicTemplateDestroy(system api)](arkts-avsession-onavmusictemplatedestroy-f-sys.md)<!--DelEnd-->
-  - [AVMusicTemplate](arkts-avsession-avmusictemplate-c.md)
-  - [AVMusicTemplateController](arkts-avsession-avmusictemplatecontroller-c.md)
-  - [Album](arkts-avsession-album-i.md)<!--Del-->
-  - [AVMusicTemplateDescriptor(system api)](arkts-avsession-avmusictemplatedescriptor-i-sys.md)<!--DelEnd-->
-  - [Banner](arkts-avsession-banner-i.md)
-  - [Compilation](arkts-avsession-compilation-i.md)
-  - [CustomElement](arkts-avsession-customelement-i.md)
-  - [DialogActionInfo](arkts-avsession-dialogactioninfo-i.md)
-  - [DialogButtonInfo](arkts-avsession-dialogbuttoninfo-i.md)
-  - [DialogInfo](arkts-avsession-dialoginfo-i.md)
-  - [EpisodeRange](arkts-avsession-episoderange-i.md)
-  - [FavoriteData](arkts-avsession-favoritedata-i.md)
-  - [MediaElement](arkts-avsession-mediaelement-i.md)
-  - [MediaEntity](arkts-avsession-mediaentity-i.md)
-  - [MediaTab](arkts-avsession-mediatab-i.md)
-  - [MediaTabContent](arkts-avsession-mediatabcontent-i.md)
-  - [MemberPurchaseInfo](arkts-avsession-memberpurchaseinfo-i.md)
-  - [OperResult](arkts-avsession-operresult-i.md)
-  - [PageMediaEntity](arkts-avsession-pagemediaentity-i.md)
-  - [PlayInfo](arkts-avsession-playinfo-i.md)
-  - [QrCodeInfo](arkts-avsession-qrcodeinfo-i.md)
-  - [QueryMediaEntityParam](arkts-avsession-querymediaentityparam-i.md)
-  - [Ranking](arkts-avsession-ranking-i.md)
-  - [SearchPlayInfo](arkts-avsession-searchplayinfo-i.md)
-  - [SearchPlayMusicInfo](arkts-avsession-searchplaymusicinfo-i.md)
-  - [SearchPlayMusicItem](arkts-avsession-searchplaymusicitem-i.md)
-  - [SearchPlayVideoInfo](arkts-avsession-searchplayvideoinfo-i.md)
-  - [SettingContent](arkts-avsession-settingcontent-i.md)
-  - [SettingItem](arkts-avsession-settingitem-i.md)
-  - [Single](arkts-avsession-single-i.md)
-  - [UserInfo](arkts-avsession-userinfo-i.md)
-  - [ActionType](arkts-avsession-actiontype-t.md)
-  - [ClearSearchHistoryEvent](arkts-avsession-clearsearchhistoryevent-t.md)
-  - [CustomType](arkts-avsession-customtype-t.md)
-  - [DialogActionType](arkts-avsession-dialogactiontype-t.md)
-  - [DialogControlType](arkts-avsession-dialogcontroltype-t.md)
-  - [DownloadControlType](arkts-avsession-downloadcontroltype-t.md)
-  - [DownloadMediaEntityEvent](arkts-avsession-downloadmediaentityevent-t.md)
-  - [ExecuteActionEvent](arkts-avsession-executeactionevent-t.md)
-  - [FavoriteMediaEntityEvent](arkts-avsession-favoritemediaentityevent-t.md)
-  - [HandleMemberPurchaseEvent](arkts-avsession-handlememberpurchaseevent-t.md)
-  - [LoginEvent](arkts-avsession-loginevent-t.md)
-  - [LoginType](arkts-avsession-logintype-t.md)
-  - [MediaFavoriteType](arkts-avsession-mediafavoritetype-t.md)
-  - [NoParamAsyncCallback](arkts-avsession-noparamasynccallback-t.md)
-  - [PlayForSearchEvent](arkts-avsession-playforsearchevent-t.md)
-  - [PlayMediaEntityEvent](arkts-avsession-playmediaentityevent-t.md)
-  - [ProblemAndAdviceEvent](arkts-avsession-problemandadviceevent-t.md)
-  - [QueryCompilationByKeywordEvent](arkts-avsession-querycompilationbykeywordevent-t.md)
-  - [QueryCompilationEvent](arkts-avsession-querycompilationevent-t.md)
-  - [QueryCurrentSingleEvent](arkts-avsession-querycurrentsingleevent-t.md)
-  - [QueryCustomContentEvent](arkts-avsession-querycustomcontentevent-t.md)
-  - [QueryHotWordsEvent](arkts-avsession-queryhotwordsevent-t.md)
-  - [QueryMainTabsEvent](arkts-avsession-querymaintabsevent-t.md)
-  - [QueryMediaEntityByKeywordEvent](arkts-avsession-querymediaentitybykeywordevent-t.md)
-  - [QueryMediaEntityEvent](arkts-avsession-querymediaentityevent-t.md)
-  - [QueryMediaTabContentEvent](arkts-avsession-querymediatabcontentevent-t.md)
-  - [QueryMemberPurchaseEvent](arkts-avsession-querymemberpurchaseevent-t.md)
-  - [QueryPlaylistEvent](arkts-avsession-queryplaylistevent-t.md)
-  - [QueryRecommendMediaEntityListEvent](arkts-avsession-queryrecommendmediaentitylistevent-t.md)
-  - [QuerySearchHistoryEvent](arkts-avsession-querysearchhistoryevent-t.md)
-  - [ReportCustomElementsChangeEvent](arkts-avsession-reportcustomelementschangeevent-t.md)
-  - [ReportDialogCommandEvent](arkts-avsession-reportdialogcommandevent-t.md)
-  - [ReportExecuteAbilityEvent](arkts-avsession-reportexecuteabilityevent-t.md)
-  - [ReportExecuteActionEvent](arkts-avsession-reportexecuteactionevent-t.md)
-  - [ReportTabContentEvent](arkts-avsession-reporttabcontentevent-t.md)
-  - [RequestDialogInfoEvent](arkts-avsession-requestdialoginfoevent-t.md)
-  - [SettingsChangeEvent](arkts-avsession-settingschangeevent-t.md)
-  - [AVMusicTemplateErrorCode](arkts-avsession-avmusictemplateerrorcode-e.md)
-  - [AVMusicTemplateType](arkts-avsession-avmusictemplatetype-e.md)
-  - [ButtonType](arkts-avsession-buttontype-e.md)
-  - [DialogType](arkts-avsession-dialogtype-e.md)
-  - [DownloadStatus](arkts-avsession-downloadstatus-e.md)
-  - [EntityType](arkts-avsession-entitytype-e.md)
-  - [MemberPurchaseType](arkts-avsession-memberpurchasetype-e.md)
-  - [PlaybackState](arkts-avsession-playbackstate-e.md)
-  - [SearchPlayInfoType](arkts-avsession-searchplayinfotype-e.md)
-  - [SettingType](arkts-avsession-settingtype-e.md)
-  - [Sort](arkts-avsession-sort-e.md)
+  - [OnPickerStateCallback](arkts-onpickerstatecallback-t.md)
+- [@ohos.multimedia.avMusicTemplate](arkts-multimedia-avmusictemplate.md)<!--Del-->
+  - [offAVMusicTemplateDestroy(system api)](arkts-avmusictemplate-offavmusictemplatedestroy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllAVMusicTemplateDescriptors(system api)](arkts-avmusictemplate-getallavmusictemplatedescriptors-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offAVMusicTemplateCreate(system api)](arkts-avmusictemplate-offavmusictemplatecreate-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onAVMusicTemplateCreate(system api)](arkts-avmusictemplate-onavmusictemplatecreate-f-sys.md)<!--DelEnd-->
+  - [createAVMusicTemplate](arkts-avmusictemplate-createavmusictemplate-f.md)<!--Del-->
+  - [onAVMusicTemplateDestroy(system api)](arkts-avmusictemplate-onavmusictemplatedestroy-f-sys.md)<!--DelEnd--><!--Del-->
+  - [createAVMusicTemplateController(system api)](arkts-avmusictemplate-createavmusictemplatecontroller-f-sys.md)<!--DelEnd-->
+  - [AVMusicTemplate](arkts-avmusictemplate-avmusictemplate-c.md)
+  - [AVMusicTemplateController](arkts-avmusictemplate-avmusictemplatecontroller-c.md)
+  - [Album](arkts-avmusictemplate-album-i.md)<!--Del-->
+  - [AVMusicTemplateDescriptor(system api)](arkts-avmusictemplate-avmusictemplatedescriptor-i-sys.md)<!--DelEnd-->
+  - [Banner](arkts-avmusictemplate-banner-i.md)
+  - [Compilation](arkts-avmusictemplate-compilation-i.md)
+  - [CustomElement](arkts-avmusictemplate-customelement-i.md)
+  - [DialogActionInfo](arkts-avmusictemplate-dialogactioninfo-i.md)
+  - [DialogButtonInfo](arkts-avmusictemplate-dialogbuttoninfo-i.md)
+  - [DialogInfo](arkts-avmusictemplate-dialoginfo-i.md)
+  - [EpisodeRange](arkts-avmusictemplate-episoderange-i.md)
+  - [FavoriteData](arkts-avmusictemplate-favoritedata-i.md)
+  - [MediaElement](arkts-avmusictemplate-mediaelement-i.md)
+  - [MediaEntity](arkts-avmusictemplate-mediaentity-i.md)
+  - [MediaTab](arkts-avmusictemplate-mediatab-i.md)
+  - [MediaTabContent](arkts-avmusictemplate-mediatabcontent-i.md)
+  - [MemberPurchaseInfo](arkts-avmusictemplate-memberpurchaseinfo-i.md)
+  - [OperResult](arkts-avmusictemplate-operresult-i.md)
+  - [PageMediaEntity](arkts-avmusictemplate-pagemediaentity-i.md)
+  - [PlayInfo](arkts-avmusictemplate-playinfo-i.md)
+  - [QrCodeInfo](arkts-avmusictemplate-qrcodeinfo-i.md)
+  - [QueryMediaEntityParam](arkts-avmusictemplate-querymediaentityparam-i.md)
+  - [Ranking](arkts-avmusictemplate-ranking-i.md)
+  - [SearchPlayInfo](arkts-avmusictemplate-searchplayinfo-i.md)
+  - [SearchPlayMusicInfo](arkts-avmusictemplate-searchplaymusicinfo-i.md)
+  - [SearchPlayMusicItem](arkts-avmusictemplate-searchplaymusicitem-i.md)
+  - [SearchPlayVideoInfo](arkts-avmusictemplate-searchplayvideoinfo-i.md)
+  - [SettingContent](arkts-avmusictemplate-settingcontent-i.md)
+  - [SettingItem](arkts-avmusictemplate-settingitem-i.md)
+  - [Single](arkts-avmusictemplate-single-i.md)
+  - [UserInfo](arkts-avmusictemplate-userinfo-i.md)
+  - [ActionType](arkts-avmusictemplate-actiontype-t.md)
+  - [ClearSearchHistoryEvent](arkts-avmusictemplate-clearsearchhistoryevent-t.md)
+  - [CustomType](arkts-avmusictemplate-customtype-t.md)
+  - [DialogActionType](arkts-avmusictemplate-dialogactiontype-t.md)
+  - [DialogControlType](arkts-avmusictemplate-dialogcontroltype-t.md)
+  - [DownloadControlType](arkts-avmusictemplate-downloadcontroltype-t.md)
+  - [DownloadMediaEntityEvent](arkts-avmusictemplate-downloadmediaentityevent-t.md)
+  - [ExecuteActionEvent](arkts-avmusictemplate-executeactionevent-t.md)
+  - [FavoriteMediaEntityEvent](arkts-avmusictemplate-favoritemediaentityevent-t.md)
+  - [HandleMemberPurchaseEvent](arkts-avmusictemplate-handlememberpurchaseevent-t.md)
+  - [LoginEvent](arkts-avmusictemplate-loginevent-t.md)
+  - [LoginType](arkts-avmusictemplate-logintype-t.md)
+  - [MediaFavoriteType](arkts-avmusictemplate-mediafavoritetype-t.md)
+  - [NoParamAsyncCallback](arkts-avmusictemplate-noparamasynccallback-t.md)
+  - [PlayForSearchEvent](arkts-avmusictemplate-playforsearchevent-t.md)
+  - [PlayMediaEntityEvent](arkts-avmusictemplate-playmediaentityevent-t.md)
+  - [ProblemAndAdviceEvent](arkts-avmusictemplate-problemandadviceevent-t.md)
+  - [QueryCompilationByKeywordEvent](arkts-avmusictemplate-querycompilationbykeywordevent-t.md)
+  - [QueryCompilationEvent](arkts-avmusictemplate-querycompilationevent-t.md)
+  - [QueryCurrentSingleEvent](arkts-avmusictemplate-querycurrentsingleevent-t.md)
+  - [QueryCustomContentEvent](arkts-avmusictemplate-querycustomcontentevent-t.md)
+  - [QueryHotWordsEvent](arkts-avmusictemplate-queryhotwordsevent-t.md)
+  - [QueryMainTabsEvent](arkts-avmusictemplate-querymaintabsevent-t.md)
+  - [QueryMediaEntityByKeywordEvent](arkts-avmusictemplate-querymediaentitybykeywordevent-t.md)
+  - [QueryMediaEntityEvent](arkts-avmusictemplate-querymediaentityevent-t.md)
+  - [QueryMediaTabContentEvent](arkts-avmusictemplate-querymediatabcontentevent-t.md)
+  - [QueryMemberPurchaseEvent](arkts-avmusictemplate-querymemberpurchaseevent-t.md)
+  - [QueryPlaylistEvent](arkts-avmusictemplate-queryplaylistevent-t.md)
+  - [QueryRecommendMediaEntityListEvent](arkts-avmusictemplate-queryrecommendmediaentitylistevent-t.md)
+  - [QuerySearchHistoryEvent](arkts-avmusictemplate-querysearchhistoryevent-t.md)
+  - [ReportCustomElementsChangeEvent](arkts-avmusictemplate-reportcustomelementschangeevent-t.md)
+  - [ReportDialogCommandEvent](arkts-avmusictemplate-reportdialogcommandevent-t.md)
+  - [ReportExecuteAbilityEvent](arkts-avmusictemplate-reportexecuteabilityevent-t.md)
+  - [ReportExecuteActionEvent](arkts-avmusictemplate-reportexecuteactionevent-t.md)
+  - [ReportTabContentEvent](arkts-avmusictemplate-reporttabcontentevent-t.md)
+  - [RequestDialogInfoEvent](arkts-avmusictemplate-requestdialoginfoevent-t.md)
+  - [SettingsChangeEvent](arkts-avmusictemplate-settingschangeevent-t.md)
+  - [AVMusicTemplateErrorCode](arkts-avmusictemplate-avmusictemplateerrorcode-e.md)
+  - [AVMusicTemplateType](arkts-avmusictemplate-avmusictemplatetype-e.md)
+  - [ButtonType](arkts-avmusictemplate-buttontype-e.md)
+  - [DialogType](arkts-avmusictemplate-dialogtype-e.md)
+  - [DownloadStatus](arkts-avmusictemplate-downloadstatus-e.md)
+  - [EntityType](arkts-avmusictemplate-entitytype-e.md)
+  - [MemberPurchaseType](arkts-avmusictemplate-memberpurchasetype-e.md)
+  - [PlaybackState](arkts-avmusictemplate-playbackstate-e.md)
+  - [SearchPlayInfoType](arkts-avmusictemplate-searchplayinfotype-e.md)
+  - [SettingType](arkts-avmusictemplate-settingtype-e.md)
+  - [Sort](arkts-avmusictemplate-sort-e.md)
 - [@ohos.multimedia.avsession](arkts-multimedia-avsession.md)<!--Del-->
-  - [castAudio(system api)](arkts-avsession-castaudio-f-sys.md)<!--DelEnd-->
-  - [createAVSession](arkts-avsession-createavsession-f.md)<!--Del-->
-  - [createController(system api)](arkts-avsession-createcontroller-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAllSessionDescriptors(system api)](arkts-avsession-getallsessiondescriptors-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getAVCastController(system api)](arkts-avsession-getavcastcontroller-f-sys.md)<!--DelEnd-->
-  - [getAVSession](arkts-avsession-getavsession-f.md)<!--Del-->
-  - [getDistributedSessionController(system api)](arkts-avsession-getdistributedsessioncontroller-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getHistoricalAVQueueInfos(system api)](arkts-avsession-gethistoricalavqueueinfos-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getHistoricalSessionDescriptors(system api)](arkts-avsession-gethistoricalsessiondescriptors-f-sys.md)<!--DelEnd--><!--Del-->
-  - [getSessionDescriptors(system api)](arkts-avsession-getsessiondescriptors-f-sys.md)<!--DelEnd-->
-  - [isDesktopLyricSupported](arkts-avsession-isdesktoplyricsupported-f.md)<!--Del-->
-  - [off(system api)](arkts-avsession-off-f-sys.md)<!--DelEnd--><!--Del-->
-  - [offActiveSessionChanged(system api)](arkts-avsession-offactivesessionchanged-f-sys.md)<!--DelEnd-->
-  - [offSessionCreate](arkts-avsession-offsessioncreate-f.md)
-  - [offSessionDestroy](arkts-avsession-offsessiondestroy-f.md)<!--Del-->
-  - [offSystemCommonEvent(system api)](arkts-avsession-offsystemcommonevent-f-sys.md)<!--DelEnd-->
-  - [offTopSessionChange](arkts-avsession-offtopsessionchange-f.md)<!--Del-->
-  - [on(system api)](arkts-avsession-on-f-sys.md)<!--DelEnd--><!--Del-->
-  - [onActiveSessionChanged(system api)](arkts-avsession-onactivesessionchanged-f-sys.md)<!--DelEnd-->
-  - [onSessionCreate](arkts-avsession-onsessioncreate-f.md)
+  - [onDeviceLogEvent(system api)](arkts-avsession-ondevicelogevent-f-sys.md)<!--DelEnd-->
   - [onSessionDestroy](arkts-avsession-onsessiondestroy-f.md)<!--Del-->
-  - [onSystemCommonEvent(system api)](arkts-avsession-onsystemcommonevent-f-sys.md)<!--DelEnd-->
-  - [onTopSessionChange](arkts-avsession-ontopsessionchange-f.md)<!--Del-->
-  - [sendSystemAVKeyEvent(system api)](arkts-avsession-sendsystemavkeyevent-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendSystemCommonCommand(system api)](arkts-avsession-sendsystemcommoncommand-f-sys.md)<!--DelEnd--><!--Del-->
-  - [sendSystemControlCommand(system api)](arkts-avsession-sendsystemcontrolcommand-f-sys.md)<!--DelEnd--><!--Del-->
-  - [setDiscoverable(system api)](arkts-avsession-setdiscoverable-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startAVPlayback(system api)](arkts-avsession-startavplayback-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onDistributedSessionChange(system api)](arkts-avsession-ondistributedsessionchange-f-sys.md)<!--DelEnd-->
+  - [offSessionCreate](arkts-avsession-offsessioncreate-f.md)
+  - [getAVSession](arkts-avsession-getavsession-f.md)<!--Del-->
   - [startCastDeviceDiscovery(system api)](arkts-avsession-startcastdevicediscovery-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onDeviceAvailable(system api)](arkts-avsession-ondeviceavailable-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSystemCommonEvent(system api)](arkts-avsession-offsystemcommonevent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSessionServiceDie(system api)](arkts-avsession-onsessionservicedie-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offActiveSessionChanged(system api)](arkts-avsession-offactivesessionchanged-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offDeviceOffline(system api)](arkts-avsession-offdeviceoffline-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offDistributedSessionChange(system api)](arkts-avsession-offdistributedsessionchange-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offDeviceAvailable(system api)](arkts-avsession-offdeviceavailable-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getAllSessionDescriptors(system api)](arkts-avsession-getallsessiondescriptors-f-sys.md)<!--DelEnd--><!--Del-->
   - [startCasting(system api)](arkts-avsession-startcasting-f-sys.md)<!--DelEnd--><!--Del-->
-  - [startDeviceLogging(system api)](arkts-avsession-startdevicelogging-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopCastDeviceDiscovery(system api)](arkts-avsession-stopcastdevicediscovery-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getSessionDescriptors(system api)](arkts-avsession-getsessiondescriptors-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onSystemCommonEvent(system api)](arkts-avsession-onsystemcommonevent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onDeviceStateChanged(system api)](arkts-avsession-ondevicestatechanged-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onDeviceOffline(system api)](arkts-avsession-ondeviceoffline-f-sys.md)<!--DelEnd--><!--Del-->
+  - [onActiveSessionChanged(system api)](arkts-avsession-onactivesessionchanged-f-sys.md)<!--DelEnd--><!--Del-->
+  - [castAudioSessionAll(system api)](arkts-avsession-castaudiosessionall-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendSystemCommonCommand(system api)](arkts-avsession-sendsystemcommoncommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offSessionServiceDie(system api)](arkts-avsession-offsessionservicedie-f-sys.md)<!--DelEnd--><!--Del-->
+  - [on(system api)](arkts-avsession-on-f-sys.md)<!--DelEnd--><!--Del-->
+  - [sendSystemControlCommand(system api)](arkts-avsession-sendsystemcontrolcommand-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startAVPlayback(system api)](arkts-avsession-startavplayback-f-sys.md)<!--DelEnd--><!--Del-->
   - [stopCasting(system api)](arkts-avsession-stopcasting-f-sys.md)<!--DelEnd--><!--Del-->
-  - [stopDeviceLogging(system api)](arkts-avsession-stopdevicelogging-f-sys.md)<!--DelEnd-->
+  - [getAVCastController(system api)](arkts-avsession-getavcastcontroller-f-sys.md)<!--DelEnd--><!--Del-->
+  - [castAudioSession(system api)](arkts-avsession-castaudiosession-f-sys.md)<!--DelEnd--><!--Del-->
+  - [castAudio(system api)](arkts-avsession-castaudio-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopDeviceLogging(system api)](arkts-avsession-stopdevicelogging-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getHistoricalSessionDescriptors(system api)](arkts-avsession-gethistoricalsessiondescriptors-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offDeviceLogEvent(system api)](arkts-avsession-offdevicelogevent-f-sys.md)<!--DelEnd--><!--Del-->
+  - [stopCastDeviceDiscovery(system api)](arkts-avsession-stopcastdevicediscovery-f-sys.md)<!--DelEnd-->
+  - [createAVSession](arkts-avsession-createavsession-f.md)<!--Del-->
+  - [off(system api)](arkts-avsession-off-f-sys.md)<!--DelEnd--><!--Del-->
+  - [startDeviceLogging(system api)](arkts-avsession-startdevicelogging-f-sys.md)<!--DelEnd--><!--Del-->
+  - [setDiscoverable(system api)](arkts-avsession-setdiscoverable-f-sys.md)<!--DelEnd-->
+  - [onSessionCreate](arkts-avsession-onsessioncreate-f.md)<!--Del-->
+  - [createController(system api)](arkts-avsession-createcontroller-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getHistoricalAVQueueInfos(system api)](arkts-avsession-gethistoricalavqueueinfos-f-sys.md)<!--DelEnd--><!--Del-->
+  - [getDistributedSessionController(system api)](arkts-avsession-getdistributedsessioncontroller-f-sys.md)<!--DelEnd--><!--Del-->
+  - [offDeviceStateChanged(system api)](arkts-avsession-offdevicestatechanged-f-sys.md)<!--DelEnd-->
+  - [isDesktopLyricSupported](arkts-avsession-isdesktoplyricsupported-f.md)<!--Del-->
+  - [sendSystemAVKeyEvent(system api)](arkts-avsession-sendsystemavkeyevent-f-sys.md)<!--DelEnd-->
+  - [offSessionDestroy](arkts-avsession-offsessiondestroy-f.md)
+  - [offTopSessionChange](arkts-avsession-offtopsessionchange-f.md)
+  - [onTopSessionChange](arkts-avsession-ontopsessionchange-f.md)
   - [AVCastPickerHelper](arkts-avsession-avcastpickerhelper-c.md)
   - [AudioCapabilities](arkts-avsession-audiocapabilities-i.md)
   - [AVCallState](arkts-avsession-avcallstate-i.md)
   - [AVCastControlCommand](arkts-avsession-avcastcontrolcommand-i.md)
-  - [AVCastController](arkts-avsession-avcastcontroller-i.md)<!--Del-->
-  - [AVCastController(system api)](arkts-avsession-avcastcontroller-i-sys.md)<!--DelEnd-->
+  - [AVCastController](arkts-avsession-avcastcontroller-i.md)
   - [AVCastPickerOptions](arkts-avsession-avcastpickeroptions-i.md)
   - [AVControlCommand](arkts-avsession-avcontrolcommand-i.md)
   - [AVMediaDescription](arkts-avsession-avmediadescription-i.md)
@@ -154,7 +165,6 @@
   - [CommandInfo](arkts-avsession-commandinfo-i.md)
   - [DesktopLyricState](arkts-avsession-desktoplyricstate-i.md)
   - [DeviceInfo](arkts-avsession-deviceinfo-i.md)<!--Del-->
-  - [DeviceInfo(system api)](arkts-avsession-deviceinfo-i-sys.md)<!--DelEnd--><!--Del-->
   - [DeviceState(system api)](arkts-avsession-devicestate-i-sys.md)<!--DelEnd--><!--Del-->
   - [HiPlayDeviceInfo(system api)](arkts-avsession-hiplaydeviceinfo-i-sys.md)<!--DelEnd-->
   - [MenuPosition](arkts-avsession-menuposition-i.md)
@@ -165,32 +175,32 @@
   - [AVControlCommandType](arkts-avsession-avcontrolcommandtype-t.md)
   - [AVMediaCenterControlType](arkts-avsession-avmediacentercontroltype-t.md)
   - [AVSessionType](arkts-avsession-avsessiontype-t.md)
+  - [ConnectionEvent](arkts-avsession-connectionevent-t.md)
+  - [EventProcess](arkts-avsession-eventprocess-t.md)
+  - [ExtraInfo](arkts-avsession-extrainfo-t.md)
   - [ExtraInfo](arkts-avsession-extrainfo-t.md)
   - [KeyRequestCallback](arkts-avsession-keyrequestcallback-t.md)
   - [NoParamCallback](arkts-avsession-noparamcallback-t.md)
   - [TwoParamCallback](arkts-avsession-twoparamcallback-t.md)
+  - [VideoSizeEvent](arkts-avsession-videosizeevent-t.md)
   - [AVCastCategory](arkts-avsession-avcastcategory-e.md)
   - [AVSessionErrorCode](arkts-avsession-avsessionerrorcode-e.md)
   - [BackgroundPlayMode](arkts-avsession-backgroundplaymode-e.md)
   - [CallerType](arkts-avsession-callertype-e.md)
   - [CallState](arkts-avsession-callstate-e.md)
   - [CastDisplayState](arkts-avsession-castdisplaystate-e.md)
-  - [ConnectionState](arkts-avsession-connectionstate-e.md)<!--Del-->
-  - [ConnectionState(system api)](arkts-avsession-connectionstate-e-sys.md)<!--DelEnd-->
+  - [ConnectionState](arkts-avsession-connectionstate-e.md)
   - [DecoderType](arkts-avsession-decodertype-e.md)<!--Del-->
   - [DeviceLogEventCode(system api)](arkts-avsession-devicelogeventcode-e-sys.md)<!--DelEnd-->
   - [DeviceType](arkts-avsession-devicetype-e.md)
   - [DisplayTag](arkts-avsession-displaytag-e.md)<!--Del-->
   - [DistributedSessionType(system api)](arkts-avsession-distributedsessiontype-e-sys.md)<!--DelEnd-->
-  - [ExtraKey](arkts-avsession-extrakey-e.md)<!--Del-->
-  - [ExtraKey(system api)](arkts-avsession-extrakey-e-sys.md)<!--DelEnd-->
+  - [ExtraKey](arkts-avsession-extrakey-e.md)
   - [LoopMode](arkts-avsession-loopmode-e.md)
   - [PlaybackState](arkts-avsession-playbackstate-e.md)
-  - [ProtocolType](arkts-avsession-protocoltype-e.md)<!--Del-->
-  - [ProtocolType(system api)](arkts-avsession-protocoltype-e-sys.md)<!--DelEnd-->
+  - [ProtocolType](arkts-avsession-protocoltype-e.md)
   - [ResolutionLevel](arkts-avsession-resolutionlevel-e.md)<!--Del-->
   - [SessionCategory(system api)](arkts-avsession-sessioncategory-e-sys.md)<!--DelEnd-->
   - [SkipIntervals](arkts-avsession-skipintervals-e.md)
-- application<!--arkts-avsessionkit-application-->
-  - [MediaControlExtensionContext](arkts-mediacontrolextensioncontext.md)
-    - [MediaControlExtensionContext](arkts-avsession-mediacontrolextensioncontext-c.md)
+- [MediaControlExtensionContext](arkts-mediacontrolextensioncontext.md)<!--Del-->
+  - [MediaControlExtensionContext(system api)](arkts-mediacontrolextensioncontext-c-sys.md)<!--DelEnd-->

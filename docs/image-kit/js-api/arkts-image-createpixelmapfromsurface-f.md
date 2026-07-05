@@ -1,20 +1,14 @@
 # createPixelMapFromSurface
 
-## Modules to Import
-
-```TypeScript
-import { sendableImage } from '@ohos.multimedia.sendableImage';
-```
-
 ## createPixelMapFromSurface
 
 ```TypeScript
-function createPixelMapFromSurface(surfaceId: string, region: image.Region): Promise<PixelMap>
+function createPixelMapFromSurface(surfaceId: string, region: Region): Promise<PixelMap>
 ```
 
 Creates a PixelMap object from surface id.
 
-**Since:** 12
+**Since:** 11
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -23,37 +17,82 @@ Creates a PixelMap object from surface id.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | surfaceId | string | Yes | surface id. |
-| region | image.Region | Yes | The region to surface. |
+| region | Region | Yes | The region to surface. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;PixelMap&gt; | Returns the instance if the operation is successful.Otherwise, an exception will be thrown. |
+| Promise&lt;PixelMap> | Returns the instance if the operation is successful;Otherwise, an exception will be thrown. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [62980115](../errorcode-image.md#62980115-invalid-image-parameter) | If the image parameter invalid. |
-| [62980105](../errorcode-image.md#62980105-failure-in-obtaining-image-data) | Failed to get the data. |
-| [62980178](../errorcode-image.md#62980178-failure-in-creating-a-pixelmap) | Failed to create the PixelMap. |
+| 62980115 | If the image parameter invalid. |
+| 62980105 | Failed to get the data. |
+| 62980178 | Failed to create the PixelMap. |
 
 **Example**
 
 ```TypeScript
-import { sendableImage } from '@kit.ImageKit';
-import { image } from '@kit.ImageKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
-async function Demo(surfaceId: string) {
+async function CreatePixelMapFromSurface(surfaceId: string) {
   let region: image.Region = { x: 0, y: 0, size: { height: 100, width: 100 } };
-  sendableImage.createPixelMapFromSurface(surfaceId, region).then(() => {
+  image.createPixelMapFromSurface(surfaceId, region).then(() => {
     console.info('Succeeded in creating pixelmap from Surface');
   }).catch((error: BusinessError) => {
     console.error(`Failed to create pixelmap. code is ${error.code}, message is ${error.message}`);
   });
-}
+} 
+
+```
+
+## createPixelMapFromSurface
+
+```TypeScript
+function createPixelMapFromSurface(surfaceId: string): Promise<PixelMap>
+```
+
+Creates a PixelMap object from surface id.
+
+**Since:** 15
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| surfaceId | string | Yes | surface id. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;PixelMap> | Returns the instance if the operation is successful;Otherwise, an exception will be thrown. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 401 | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.  2.Incorrect parameter types. 3.Parameter verification failed. |
+| 62980105 | Failed to get the data. |
+| 62980178 | Failed to create the PixelMap. |
+
+**Example**
+
+```TypeScript
+import { BusinessError } from '@kit.BasicServicesKit';
+
+async function CreatePixelMapFromSurface(surfaceId: string) {
+  image.createPixelMapFromSurface(surfaceId).then(() => {
+    console.info('Succeeded in creating pixelmap from Surface');
+  }).catch((error: BusinessError) => {
+    console.error(`Failed to create pixelmap. code is ${error.code}, message is ${error.message}`);
+  });
+} 
 
 ```
 

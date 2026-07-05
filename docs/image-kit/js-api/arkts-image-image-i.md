@@ -1,28 +1,46 @@
 # Image
 
-Provides APIs for basic image operations, including obtaining image information and reading and writing image data. An Image instance is returned when [readNextImage](arkts-image-imagereceiver-i.md#readnextimage-1) and [readLatestImage](arkts-image-imagereceiver-i.md#readlatestimage-1) are called. This class inherits from [ISendable](../../../../arkts-utils/arkts-sendable.md#isendable). Images occupy a large amount of memory. When you finish using an Image instance, call [release](arkts-image-pixelmap-i.md#release-1) to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+Image类，供ImageReceiver和ImageCreator使用，用于传输图片对象，其实际内容由生产者决定。如相机预览流提供的Image对象存储了YUV数据、相机拍照提供的Image对象存储了JPEG文件。 调用[readNextImage]image.ImageReceiver.readNextImage(callback: AsyncCallback<Image>)和 [readLatestImage]image.ImageReceiver.readLatestImage(callback: AsyncCallback<Image>)接口时会返回Image实例。 Image的属性仅支持在创建时初始化，后续无法再修改，且其属性不对图片内容产生实际影响，请以图片生产者写入的属性为准，即以向[ImageReceiver]image.ImageReceiver发送图片数据的发送方实 际写入的内容为准。 由于图片占用内存较大，所以当Image实例使用完成后，应主动调用[release]image.Image.release(callback: AsyncCallback<void>)方法及时释放内存。释放时应确保该 实例的所有异步方法均执行完成，且后续不再使用该实例。 > **说明：** > > - 本Interface首批接口从API version 9开始支持。
 
-**Inheritance/Implementation:** Image extends [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md#isendable)
-
-**Since:** 12
+**Since:** 9
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## Modules to Import
 
 ```TypeScript
-import { sendableImage } from '@ohos.multimedia.sendableImage';
+import { image } from '@kit.ImageKit';
 ```
+
+## getBufferData
+
+```TypeScript
+getBufferData(): ImageBufferData | null
+```
+
+从图像中获取ImageBufferData。 > **注意：** > > ImageBufferData中的byteBuffer是对内部缓存的浅拷贝，当Image的生命周期结束时，便不能对byteBuffer做任何操作，否则会导致未定义行为。
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| ImageBufferData | 获取封装图像数据缓冲区的结构体，获取不到时返回空值。 |
 
 ## getComponent
 
 ```TypeScript
-getComponent(componentType: image.ComponentType): Promise<image.Component>
+getComponent(componentType: ComponentType, callback: AsyncCallback<Component>): void
 ```
 
-Obtains the component buffer from the Image instance based on the color component type. This API uses a promise to return the result. The thread that runs **getComponent** is insecure.
+根据图像的组件类型从图像中获取组件缓存。使用callback异步回调。
 
-**Since:** 12
+**Since:** 9
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -30,36 +48,83 @@ Obtains the component buffer from the Image instance based on the color componen
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| componentType | image.ComponentType | Yes | Color component type of the image. |
+| componentType | ComponentType | Yes | 图像的组件类型（目前仅支持ComponentType:JPEG，实际返回格式由生产者决定，如相机）。 |
+| callback | AsyncCallback&lt;Component> | Yes | 回调函数，当返回组件缓冲区成功，err为undefined，data为获取到的组件缓冲区；否则为错误对象。 |
+
+## getComponent
+
+```TypeScript
+getComponent(componentType: ComponentType): Promise<Component>
+```
+
+根据图像的组件类型从图像中获取组件缓存。使用Promise异步回调。
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| componentType | ComponentType | Yes | 图像的组件类型（目前仅支持ComponentType:JPEG，实际返回格式由生产者决定，如相机）。 |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;image.Component&gt; | Promise used to return the component buffer. |
+| Promise&lt;Component> | Promise对象，返回组件缓冲区。 |
 
-**Example**
+## getMetadata
 
 ```TypeScript
-import { sendableImage } from '@kit.ImageKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-import { image } from '@kit.ImageKit';
-
-async function Demo() {
-  let size: image.Size = {
-    height: 8192,
-    width: 8
-  }
-  let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
-  let img = await receiver.readNextImage();
-  img.getComponent(image.ComponentType.JPEG).then((component: image.Component) => {
-    console.info('getComponent succeeded.');
-  }).catch((error: BusinessError) => {
-    console.error(`getComponent failed code ${error.code}, message is ${error.message}`);
-  })
-}
-
+getMetadata(key: HdrMetadataKey): HdrMetadataValue | null
 ```
+
+根据HDR元数据的类型从图像中获取HDR元数据。
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| key | HdrMetadataKey | Yes | HDR元数据的关键字，可用于查询对应值。 |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| HdrMetadataValue | 返回关键字对应的HDR元数据的值。如果图像没有HDR元数据，返回空值。 |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 7600206 | Invalid parameter. |
+| 7600302 | Memory copy failed. |
+
+## release
+
+```TypeScript
+release(callback: AsyncCallback<void>): void
+```
+
+释放当前图像。使用callback异步回调。 在接收另一个图像前必须先释放对应资源。 由于图片占用内存较大，所以当Image实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | AsyncCallback&lt;void> | Yes | 回调函数，当图像释放成功，err为undefined，否则为错误对象。 |
 
 ## release
 
@@ -67,9 +132,9 @@ async function Demo() {
 release(): Promise<void>
 ```
 
-Releases this Image instance. This API uses a promise to return the result. The corresponding resources must be released before another image arrives. Images occupy a large amount of memory. When you finish using an Image instance, call this API to free the memory promptly. Before releasing the instance, ensure that all asynchronous operations associated with the instance have finished and the instance is no longer needed.
+释放当前图像。使用Promise异步回调。 在接收另一个图像前必须先释放对应资源。 由于图片占用内存较大，所以当Image实例使用完成后，应主动调用该方法，及时释放内存。 释放时应确保该实例的所有异步方法均执行完成，且后续不再使用该实例。
 
-**Since:** 12
+**Since:** 9
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -77,56 +142,21 @@ Releases this Image instance. This API uses a promise to return the result. The 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise对象，无返回结果。 |
 
-**Example**
-
-```TypeScript
-import { sendableImage } from '@kit.ImageKit';
-import { BusinessError } from '@kit.BasicServicesKit';
-import { image } from '@kit.ImageKit';
-
-async function Demo() {
-  let size: image.Size = {
-    height: 8192,
-    width: 8
-  }
-  let receiver: sendableImage.ImageReceiver = sendableImage.createImageReceiver(size, image.ImageFormat.JPEG, 8);
-  let img = await receiver.readNextImage();
-  img.release().then(() => {
-    console.info('release succeeded.');
-  }).catch((error: BusinessError) => {
-    console.error(`release failed. code ${error.code}, message is ${error.message}`);
-  })
-}
-
-```
-
-## clipRect
+## colorSpace
 
 ```TypeScript
-clipRect: Region
+readonly colorSpace: colorSpaceManager.ColorSpace
 ```
 
-Image area to be cropped.
+图像色彩空间，色域枚举类型。
 
-**Type:** Region
+**Type:** colorSpaceManager.ColorSpace
 
-**Since:** 12
+**Since:** 23
 
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## format
-
-```TypeScript
-readonly format: number
-```
-
-Image format. For details, see [OH_NativeBuffer_Format](../../../../reference/apis-arkgraphics2d/c-apis/capi-buffer-common-h.md#oh_nativebuffer_format).
-
-**Type:** number
-
-**Since:** 12
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -136,23 +166,51 @@ Image format. For details, see [OH_NativeBuffer_Format](../../../../reference/ap
 readonly size: Size
 ```
 
-Image size. If the Image object stores camera preview stream data (YUV image data), the width and height in **size** reflect the dimensions of the YUV image. If the Image object stores camera capture stream data (JPEG image data), given that it is an encoded file, the width in **size** is the size of the JPEG file, while the height is set to **1**. The type of data stored in the Image object depends on whether the application passes the surface ID in the receiver to a previewOutput or captureOutput object of the camera. For details about the best practices of camera preview and photo capture, see [Dual-Channel Preview (ArkTS)](../../../../media/camera/camera-dual-channel-preview.md) and [Photo Capture Sample (ArkTS)](../../../../media/camera/camera-shooting-case.md).
+图像大小。 如果Image对象所存储的是相机预览流数据（YUV图像数据），那么获取到的size中的宽和高分别对应YUV图像的宽和高。 如果Image对象所存储的是相机拍照流数据（JPEG图像数据），由于已是编码后的文件，size中的宽等于JPEG文件大小，高等于1。 Image对象所存储的数据是预览流还是拍照流，取决于应用将receiver中的surfaceId通过 [createPreviewOutput](../../apis-camera-kit/arkts-apis/arkts-camera-cameramanager-i.md#createPreviewOutput) 接口还是 [createPhotoOutput](../../apis-camera-kit/arkts-apis/arkts-camera-cameramanager-i.md#createPhotoOutput) 接口传给相机。 相机预览与拍照最佳实践请参考[双路预览(ArkTS)](docroot://media/camera/camera-dual-channel-preview.md)与 [拍照实践(ArkTS)](docroot://media/camera/camera-shooting-case.md)。
 
 **Type:** Size
 
-**Since:** 12
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## clipRect
+
+```TypeScript
+clipRect: Region
+```
+
+要裁剪的图像区域。恒等于整个图像，不支持修改。
+
+**Type:** Region
+
+**Since:** 9
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## format
+
+```TypeScript
+readonly format: int
+```
+
+图像格式，参考 [OH_NativeBuffer_Format](docroot://reference/apis-arkgraphics2d/capi-buffer-common-h.md#oh_nativebuffer_format)。
+
+**Type:** int
+
+**Since:** 9
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## timestamp
 
 ```TypeScript
-readonly timestamp: number
+readonly timestamp: long
 ```
 
-Image timestamp. Timestamps, measured in nanoseconds, are usually monotonically increasing. The specific meaning and baseline of these timestamps are determined by the image producer, which is the camera in the camera preview and photo scenarios. As a result, images from different producers may carry timestamps with distinct meanings and baselines, making direct comparison between them infeasible. To obtain the generation time of a photo, you can use [getImageProperty](arkts-image-imagesource-i.md#getimageproperty-1) to read the related Exif information.
+图像时间戳。时间戳以纳秒为单位，通常是单调递增的。时间戳的具体含义和基准取决于图像的生产者，在相机预览/拍照场景，生产者就是相机。来自不同生产者的图像的时间戳可能有不同的含义和基准，因此可能无法进行比较。如果要获取某张照片的生 成时间，可以通过 [getImageProperty]image.ImageSource.getImageProperty(key: PropertyKey, options?: ImagePropertyOptions)接口读 取EXIF时间戳信息。
 
-**Type:** number
+**Type:** long
 
 **Since:** 12
 

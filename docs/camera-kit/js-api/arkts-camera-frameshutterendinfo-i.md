@@ -9,22 +9,22 @@ Describes the frame shutter end information during capture.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## captureId
 
 ```TypeScript
-captureId: number
+captureId: int
 ```
 
 ID of this capture action.
 
-**Type:** number
+**Type:** int
 
 **Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 19.
+**Atomic service API:** From API version 19 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 

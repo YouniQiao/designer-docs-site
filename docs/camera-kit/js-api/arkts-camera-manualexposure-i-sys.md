@@ -1,10 +1,10 @@
-# ManualExposure (System API)
+# ManualExposure
 
-ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md#manualexposurequery) Provides APIs to obtain and set the exposure duration.
+ManualExposure extends [ManualExposureQuery]camera.ManualExposureQuery Provides APIs to obtain and set the exposure duration.
 
-**Inheritance/Implementation:** ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.md#manualexposurequery)
+**Inheritance:** ManualExposureextends: ManualExposureQuery.
 
-**Since:** 24
+**Since:** 11
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -13,13 +13,13 @@ ManualExposure extends [ManualExposureQuery](arkts-camera-manualexposurequery-i.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## getExposure
 
 ```TypeScript
-getExposure(): number
+getExposure(): int
 ```
 
 Obtains the manual exposure duration in use.
@@ -34,15 +34,15 @@ Obtains the manual exposure duration in use.
 
 | Type | Description |
 | --- | --- |
-| number | The current exposure value, in units of ms |
+| int | The current exposure value, in units of ms |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect.<br>**Applicable version:** 12 |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400101 | Parameter missing or parameter type incorrect. [since 12] |
 
 **Example**
 
@@ -58,13 +58,40 @@ function getExposure(nightPhotoSession: camera.NightPhotoSession): number | unde
 
 ```
 
+## getExposureDuration
+
+```TypeScript
+getExposureDuration(): int
+```
+
+Gets current exposure value.
+
+**Since:** 24
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| int | The current exposure value, in units of microsecond |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 7400102 | Operation not allowed, session or inputdevice maybe abnormal. |
+| 7400103 | Session not config. |
+
 ## setExposure
 
 ```TypeScript
-setExposure(exposure: number): void
+setExposure(exposure: int): void
 ```
 
-Sets the manual exposure duration. Before using this API, call [getSupportedExposureRange](arkts-camera-manualexposurequery-i-sys.md#getsupportedexposurerange-1) to obtain the supported manual exposure durations, in ms.
+Sets the manual exposure duration. Before using this API, call [getSupportedExposureRange]camera.ManualExposureQuery.getSupportedExposureRange to obtain the supported manual exposure durations, in ms.
 
 **Since:** 11
 
@@ -76,13 +103,39 @@ Sets the manual exposure duration. Before using this API, call [getSupportedExpo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| exposure | number | Yes | Manual exposure duration, which must be one of the supported durations obtained byrunning [getSupportedExposureRange](arkts-camera-manualexposurequery-i-sys.md#getsupportedexposurerange-1). |
+| exposure | int | Yes | Manual exposure duration, which must be one of the supported durations obtained by  running [getSupportedExposureRange]camera.ManualExposureQuery.getSupportedExposureRange. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
-| [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 12 |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
+| 7400102 | Operation not allowed. [since 12] |
+
+## setExposureDuration
+
+```TypeScript
+setExposureDuration(exposureDuration: int): void
+```
+
+Sets Exposure duration value, units: microseconds.
+
+**Since:** 24
+
+**Atomic service API:** This API can be used in atomic services.
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| exposureDuration | int | Yes | Exposure duration value |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| 7400103 | Session not config. |
 

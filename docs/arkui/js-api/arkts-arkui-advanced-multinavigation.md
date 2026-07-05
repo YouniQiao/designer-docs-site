@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { MultiNavPathStack, MultiNavigation, SplitPolicy } from '@ohos.arkui.advanced.MultiNavigation';
+import { MultiNavPathStack,MultiNavigation,SplitPolicy } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,25 +12,19 @@ import { MultiNavPathStack, MultiNavigation, SplitPolicy } from '@ohos.arkui.adv
 
 | Name | Description |
 | --- | --- |
-| [MultiNavPathStack](arkts-arkui-multinavpathstack-c.md) | Implements a navigation stack of the **MultiNavigation** component. Currently, this stack can be created only by the user and cannot be obtained through callbacks. Do not use events or APIs such as **onReady** of **NavDestination** to obtain the navigation stack and perform stack operations, as this may lead to unpredictable issues. |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [MultiNavigation](arkts-arkui-multinavigation-s.md) | **MultiNavigation** is a component designed for multi-column display and routing navigation on large-screen devices. &gt; **NOTE** &gt; Due to the nested stack structure of **MultiNavigation**, calling APIs explicitly stated as unsupported in this &gt; document or APIs not listed in the supported API list (such as **getParent**, **setInterception**, and &gt; **pushDestination**) may lead to unpredictable issues. &gt; In scenarios with deep nesting, **MultiNavigation** may encounter routing animation issues. |
+| [MultiNavPathStack](arkts-multinavpathstack-c.md) | 当前，MultiNavigation的路由栈仅支持由使用方自行创建，不支持通过回调方式获取。请勿使用[NavDestination]{@link nav_destination}的 [onReady]{@link NavDestinationAttribute#onReady}等类似事件或接口来获取NavPathStack并进行栈操作，因为这可能会导致不可预知的问题。 |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [SplitPolicy](arkts-arkui-splitpolicy-e.md) | Enumerates the types of pages in **MultiNavigation**. |
+| [SplitPolicy](arkts-splitpolicy-e.md) | 表示MultiNavigation中页面的类型。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [NavDestinationBuildFunction](arkts-arkui-navdestinationbuildfunction-t.md) | Represents the function used by the **MultiNavigation** component to load navigation destination pages. |
-| [OnHomeShowOnTopCallback](arkts-arkui-onhomeshowontopcallback-t.md) | Represents the callback invoked when the home page is displayed at the top of the stack. |
-| [OnNavigationModeChangeCallback](arkts-arkui-onnavigationmodechangecallback-t.md) | Represents the callback invoked when the mode of the **MultiNavigation** component changes. |
+| [NavDestinationBuildFunction](arkts-navdestinationbuildfunction-t.md) | MultiNavigation用以加载NavDestination的方法。 |
+| [OnHomeShowOnTopCallback](arkts-onhomeshowontopcallback-t.md) | 当主页在栈顶显示时触发的回调函数。 |
+| [OnNavigationModeChangeCallback](arkts-onnavigationmodechangecallback-t.md) | 当MultiNavigation的mode变化时触发的回调函数。 |
 

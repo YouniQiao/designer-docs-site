@@ -1,0 +1,57 @@
+# getUserFileMgr
+
+## getUserFileMgr
+
+```TypeScript
+function getUserFileMgr(context: Context): UserFileManager
+```
+
+Returns an instance of UserFileManager
+
+**Since:** 9
+
+**Deprecated since:** 26.0.0
+
+**Substitute:** @ohos.file.photoAccessHelper:photoAccessHelper.getPhotoAccessHelper
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.FileManagement.UserFileManager.Core
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| context | Context | Yes | Hap context information |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| UserFileManager | Instance of UserFileManager |
+
+**Example**
+
+```TypeScript
+// The userFileManager instance obtained is a global object. It is used by default in subsequent operations. If the code snippet is not added, an error will be reported indicating that mgr is not defined.
+// Obtain the context from the component and ensure that the return value of this.getUiContext().getHostContext() is UIAbilityContext.
+import { common } from '@kit.AbilityKit';
+
+@Entry
+@Component
+struct Index {
+  build() {
+    Row() {
+      Button("example").onClick(async () => {
+        let context: Context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+        let mgr = userFileManager.getUserFileMgr(context);
+      }).width('100%')
+    }
+    .height('90%')
+  }
+}
+
+```
+

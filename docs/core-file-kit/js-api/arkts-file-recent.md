@@ -1,6 +1,6 @@
 # @ohos.file.recent
 
-The **file.recent** module provides APIs for managing the list of recently accessed files. > **NOTE** > > - Currently, the APIs of this module can be called only by **FileManager**.
+该模块提供最近访问列表插入、移除、查询等常用能力。 > **说明：** > > - 当前只支持文件管理器调用。
 
 **Since:** 10
 
@@ -13,26 +13,22 @@ The **file.recent** module provides APIs for managing the list of recently acces
 ## Modules to Import
 
 ```TypeScript
-import { recent } from '@ohos.file.recent';
+import { recent } from '@kit.CoreFileKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [add](arkts-corefile-add-f-sys.md#add-1) | Adds the file of the specified URI to the recent file list. |
-| [listFile](arkts-corefile-listfile-f-sys.md#listfile-1) | Lists the files that are accessed recently. |
-| [remove](arkts-corefile-remove-f-sys.md#remove-1) | Removes the file of the specified URI from the recent file list. |
-<!--DelEnd-->
+| <!--DelRow-->[add](arkts-recent-add-f-sys.md#add-1) | 将uri对应的文件加入最近访问列表。 |
+| <!--DelRow-->[listFile](arkts-recent-listfile-f-sys.md#listFile-1) | 查询最近访问列表中文件信息。 |
+| <!--DelRow-->[remove](arkts-recent-remove-f-sys.md#remove-1) | 将uri对应的文件从最近访问列表中移除。 |
 
-<!--Del-->
-### Interfaces（系统接口）
+### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [FileInfo](arkts-corefile-fileinfo-i-sys.md) | Represents information about the recent file list. |
-<!--DelEnd-->
+| <!--DelRow-->[FileInfo](arkts-recent-fileinfo-i-sys.md) | 最近访问列表文件信息。 |
 

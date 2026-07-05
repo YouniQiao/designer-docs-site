@@ -1,16 +1,10 @@
 # loadTrainModelFromFd
 
-## Modules to Import
-
-```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
-```
-
 ## loadTrainModelFromFd
 
 ```TypeScript
 function loadTrainModelFromFd(
-    model: number,
+    model: int,
     trainCfg?: TrainCfg,
     context?: Context): Promise<Model>
 ```
@@ -19,7 +13,7 @@ Load train model from file description
 
 **Since:** 12
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -27,22 +21,22 @@ Load train model from file description
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| model | number | Yes | model file description |
-| trainCfg | TrainCfg | No | model train configuration |
-| context | Context | No | model build context |
+| model | int | Yes | model file description |
+| trainCfg | TrainCfg | No |  |
+| context | Context | No |  |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Model&gt; | the promise of the built model |
+| Promise&lt;Model> | the promise of the built model |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. Thedevice information is incorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
-| 1000012 | Failed to create native training model from file descriptor (fd). Possiblecauses: 1. The model file or file descriptor (fd) is incorrect; 2. The training configuration isincorrect.**ArkTS mode:** This error code applies only to ArkTS-Sta. |
+| 1000001 | Invalid context. Possible causes: 1. The context target is incorrect; 2. The  device information is incorrect. [staticonly] |
+| 1000012 | Failed to create native training model from file descriptor (fd). Possible  causes: 1. The model file or file descriptor (fd) is incorrect; 2. The training configuration is  incorrect. [staticonly] |
 
 **Example**
 

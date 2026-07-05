@@ -1,10 +1,4 @@
-# createController (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# createController
 
 ## createController
 
@@ -16,7 +10,9 @@ Create an avsession controller
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -27,17 +23,17 @@ Create an avsession controller
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | sessionId | string | Yes | Specifies the sessionId to create the controller. |
-| callback | AsyncCallback&lt;AVSessionController&gt; | Yes | async callback for AVSessionController.If provided 'default', the system will create a default controller, Used to control the system default session |
+| callback | AsyncCallback&lt;AVSessionController> | Yes | async callback for AVSessionController.  If provided 'default', the system will create a default controller, Used to control the system default session |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
 
 **Example**
 
@@ -70,7 +66,6 @@ avSession.createController(descriptors[0]?.sessionId, (avcontroller: avSession.A
 
 ```
 
-
 ## createController
 
 ```TypeScript
@@ -79,11 +74,13 @@ function createController(sessionId: string): Promise<AVSessionController>
 
 Create an avsession controller
 
-**Since:** 23
+**Since:** 9
 
 **Required permissions:** 
-- API version 23+: ohos.permission.MANAGE_MEDIA_RESOURCES or ohos.permission.MANAGE_MEDIA_RESOURCES_FOR_PUBLIC
-- API version 9 - 22: ohos.permission.MANAGE_MEDIA_RESOURCES
+
+- API version9  to  22: ohos.permission.MANAGE_MEDIA_RESOURCES
+
+- API version23 and later: ohos.permission.MANAGE_MEDIA_RESOURCES or ohos.permission.MANAGE_MEDIA_RESOURCES_FOR_PUBLIC
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -93,22 +90,22 @@ Create an avsession controller
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| sessionId | string | Yes | Specifies the sessionId to create the controller.If provided 'default', the system will create a default controller, Used to control the system default session |
+| sessionId | string | Yes | Specifies the sessionId to create the controller.  If provided 'default', the system will create a default controller, Used to control the system default session |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AVSessionController&gt; | Promise for AVSessionController |
+| Promise&lt;AVSessionController> | Promise for AVSessionController |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App.<br>**Applicable version:** 9 - 22 |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600102](../errorcode-avsession.md#6600102-session-does-not-exist) | The session does not exist. |
+| 201 | Permission denied |
+| 202 | Not System App. [since 9 - 22] |
+| 6600101 | Session service exception. |
+| 6600102 | The session does not exist. |
 
 **Example**
 

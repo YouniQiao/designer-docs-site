@@ -1,19 +1,19 @@
 # GetImagePropertyOptions
 
-Describes the image properties.
+表示查询图片属性的索引。 > **说明：** > > [ImagePropertyOptions]image.ImagePropertyOptions代替。
 
 **Since:** 7
 
 **Deprecated since:** 11
 
-**Substitutes:** [ImagePropertyOptions](arkts-image-imagepropertyoptions-i.md#imagepropertyoptions)
+**Substitute:** image.ImagePropertyOptions
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## defaultValue
@@ -22,7 +22,7 @@ import { image } from '@ohos.multimedia.image';
 defaultValue?: string
 ```
 
-Default property value. The default value is null.
+默认属性值。默认值为空。
 
 **Type:** string
 
@@ -30,7 +30,7 @@ Default property value. The default value is null.
 
 **Deprecated since:** 11
 
-**Substitutes:** [defaultValue](arkts-image-imagepropertyoptions-i.md#defaultvalue)
+**Substitute:** image.ImagePropertyOptions#defaultValue
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 
@@ -40,7 +40,7 @@ Default property value. The default value is null.
 index?: number
 ```
 
-Index of the image. The default value is **0**.
+图片序号。默认值为0。
 
 **Type:** number
 
@@ -48,7 +48,7 @@ Index of the image. The default value is **0**.
 
 **Deprecated since:** 11
 
-**Substitutes:** [index](arkts-image-imagepropertyoptions-i.md#index)
+**Substitute:** image.ImagePropertyOptions#index
 
 **System capability:** SystemCapability.Multimedia.Image.ImageSource
 

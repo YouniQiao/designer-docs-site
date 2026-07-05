@@ -1,5 +1,9 @@
 # AudioEffectMode
 
+```TypeScript
+enum AudioEffectMode
+```
+
 Enumerates the audio effect modes.
 
 **Since:** 10
@@ -16,7 +20,7 @@ The audio effect is disabled.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 
@@ -30,7 +34,7 @@ The default audio effect is used.
 
 **Since:** 10
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** From API version 12 this API can be used in atomic services.
 
 **System capability:** SystemCapability.Multimedia.Audio.Renderer
 

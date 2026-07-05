@@ -9,7 +9,7 @@ Provides the CPU device info
 ## Modules to Import
 
 ```TypeScript
-import { mindSporeLite } from '@ohos.ai.mindSporeLite';
+import { mindSporeLite } from '@kit.MindSporeLiteKit';
 ```
 
 ## precisionMode
@@ -24,23 +24,23 @@ The precision mode
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
 ## threadAffinityCoreList
 
 ```TypeScript
-threadAffinityCoreList?: number[]
+threadAffinityCoreList?: int[]
 ```
 
 The thread affinity core list
 
-**Type:** number[]
+**Type:** int[]
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
@@ -56,23 +56,23 @@ The thread affinity mode
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 
 ## threadNum
 
 ```TypeScript
-threadNum?: number
+threadNum?: int
 ```
 
 The thread num
 
-**Type:** number
+**Type:** int
 
 **Since:** 10
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.AI.MindSporeLite
 

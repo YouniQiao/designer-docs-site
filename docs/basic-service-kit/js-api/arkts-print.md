@@ -1,6 +1,6 @@
 # @ohos.print
 
-The **print** module provides APIs for basic print operations.
+该模块为基本打印的操作API，提供调用基础打印功能的接口。
 
 **Since:** 10
 
@@ -9,7 +9,7 @@ The **print** module provides APIs for basic print operations.
 ## Modules to Import
 
 ```TypeScript
-import { print } from '@ohos.print';
+import { print } from '@kit.BasicServicesKit';
 ```
 
 ## Summary
@@ -18,170 +18,163 @@ import { print } from '@ohos.print';
 
 | Name | Description |
 | --- | --- |
-| [addPrinter](arkts-basicservices-addprinter-f.md#addprinter-1) | Add a printer to system. |
-| [addPrinterToDiscovery](arkts-basicservices-addprintertodiscovery-f.md#addprintertodiscovery-1) | Adds a printer to the printer discovery list. This API uses a promise to return the result. |
-| [getAddedPrinters](arkts-basicservices-getaddedprinters-f.md#getaddedprinters-1) | Obtains the list of printers added to the system. This API uses a promise to return the result. |
-| [getPrinterInformationById](arkts-basicservices-getprinterinformationbyid-f.md#getprinterinformationbyid-1) | Obtains printer information based on the printer ID. This API uses a promise to return the result. |
-| [notifyWatermarkComplete](arkts-basicservices-notifywatermarkcomplete-f.md#notifywatermarkcomplete-1) | Notify watermark complete. |
-| [off](arkts-basicservices-off-f.md#off-4) | Unregisters the listener for printer state change events. This API uses a callback to return the result. |
-| [on](arkts-basicservices-on-f.md#on-4) | Registers a listener for the printer change events. This API uses a callback to return the result. |
-| [print](arkts-basicservices-print-f.md#print-1) | Prints files. This API uses an asynchronous callback to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print-4) API and pass in context. |
-| [print](arkts-basicservices-print-f.md#print-2) | Prints files. This API uses a promise to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print-4) API and pass in context. |
-| [print](arkts-basicservices-print-f.md#print-3) | Prints files. This API uses an asynchronous callback to return the result. |
-| [print](arkts-basicservices-print-f.md#print-4) | Prints files. This API uses a promise to return the result. |
-| [print](arkts-basicservices-print-f.md#print-5) | Prints a file. This API uses a promise to return the result. |
-| [registerWatermarkCallback](arkts-basicservices-registerwatermarkcallback-f.md#registerwatermarkcallback-1) | Register to listen for watermark handling. |
-| [removePrinterFromDiscovery](arkts-basicservices-removeprinterfromdiscovery-f.md#removeprinterfromdiscovery-1) | Removes a printer from the printer discovery list. This API uses a promise to return the result. |
-| [startPrint](arkts-basicservices-startprint-f.md#startprint-1) | Prints a file or binary data. This API uses a promise to return the result. |
-| [unregisterWatermarkCallback](arkts-basicservices-unregisterwatermarkcallback-f.md#unregisterwatermarkcallback-1) | Unregister to listen for watermark handling. |
-| [updatePrinterInDiscovery](arkts-basicservices-updateprinterindiscovery-f.md#updateprinterindiscovery-1) | Updates the printer capabilities to the printer discovery list. This API uses a promise to return the result. |
-
-<!--Del-->
-### Functions（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [addPrinterToCups](arkts-basicservices-addprintertocups-f-sys.md#addprintertocups-1) | Add a printer to cups. |
-| [addPrinters](arkts-basicservices-addprinters-f-sys.md#addprinters-1) | Adds printers. This API uses an asynchronous callback to return the result. |
-| [addPrinters](arkts-basicservices-addprinters-f-sys.md#addprinters-2) | Adds printers. This API uses a promise to return the result. |
-| [analyzePrintEvents](arkts-basicservices-analyzeprintevents-f-sys.md#analyzeprintevents-1) | Analyze print events. |
-| [authPrintJob](arkts-basicservices-authprintjob-f-sys.md#authprintjob-1) | Authenticate a print job. |
-| [authSmbDeviceAsRegisteredUser](arkts-basicservices-authsmbdeviceasregistereduser-f-sys.md#authsmbdeviceasregistereduser-1) | Authenticate SMB device as registered user and get available printers. |
-| [cancelPrintJob](arkts-basicservices-cancelprintjob-f-sys.md#cancelprintjob-1) | Cancels the specified print job, which is on the print queue of the printer. This API uses an asynchronous callback to return the result. |
-| [cancelPrintJob](arkts-basicservices-cancelprintjob-f-sys.md#cancelprintjob-2) | Cancels the specified print job, which is on the print queue of the printer. This API uses a promise to return the result. |
-| [checkPreferencesConflicts](arkts-basicservices-checkpreferencesconflicts-f-sys.md#checkpreferencesconflicts-1) | Check preferences conflicts. |
-| [connectPrinter](arkts-basicservices-connectprinter-f-sys.md#connectprinter-1) | Connects to a printer by printer ID. This API uses an asynchronous callback to return the result. |
-| [connectPrinter](arkts-basicservices-connectprinter-f-sys.md#connectprinter-2) | Connects to a printer by printer ID. This API uses a promise to return the result. |
-| [connectPrinterByIdAndPpd](arkts-basicservices-connectprinterbyidandppd-f-sys.md#connectprinterbyidandppd-1) | Query recommend printer drivers by printer ID. |
-| [connectPrinterByIpAndPpd](arkts-basicservices-connectprinterbyipandppd-f-sys.md#connectprinterbyipandppd-1) | Connect a printer by the printer IP and ppd. |
-| [deletePrinterFromCups](arkts-basicservices-deleteprinterfromcups-f-sys.md#deleteprinterfromcups-1) | Delete a printer from cups. |
-| [disconnectPrinter](arkts-basicservices-disconnectprinter-f-sys.md#disconnectprinter-1) | Disconnects from the specified printer. This API uses an asynchronous callback to return the result. |
-| [disconnectPrinter](arkts-basicservices-disconnectprinter-f-sys.md#disconnectprinter-2) | Disconnects from the specified printer. This API uses a promise to return the result. |
-| [discoverUsbPrinters](arkts-basicservices-discoverusbprinters-f-sys.md#discoverusbprinters-1) | Discovers USB printers. This API uses a promise to return the result. |
-| [getPrinterDefaultPreferences](arkts-basicservices-getprinterdefaultpreferences-f-sys.md#getprinterdefaultpreferences-1) | Get default preferences by printer ID. |
-| [getPrinterInfoById](arkts-basicservices-getprinterinfobyid-f-sys.md#getprinterinfobyid-1) | Obtains printer information based on the printer ID. This API uses a promise to return the result. |
-| [getSharedHosts](arkts-basicservices-getsharedhosts-f-sys.md#getsharedhosts-1) | Get all available shared hosts. |
-| [notifyPrintService](arkts-basicservices-notifyprintservice-f-sys.md#notifyprintservice-1) | Notifies the print service of the spooler shutdown information. This API uses an asynchronous callback to return the result. |
-| [notifyPrintService](arkts-basicservices-notifyprintservice-f-sys.md#notifyprintservice-2) | Notifies the print service of the spooler shutdown information. This API uses a promise to return the result. |
-| [notifyPrintServiceEvent](arkts-basicservices-notifyprintserviceevent-f-sys.md#notifyprintserviceevent-1) | Notifies the print service of the print application events. This API uses a promise to return the result. |
-| [notifyPrintServiceEvent](arkts-basicservices-notifyprintserviceevent-f-sys.md#notifyprintserviceevent-2) | Notifies the print service of the print application events. This API uses a promise to return the result. |
-| [off](arkts-basicservices-off-f-sys.md#off-1) | Unregisters the listener for printer state change events. This API uses a callback to return the result. |
-| [off](arkts-basicservices-off-f-sys.md#off-2) | Unregisters the listener for print job state change events. This API uses a callback to return the result. |
-| [off](arkts-basicservices-off-f-sys.md#off-3) | Unregisters the listener for printer extension information change events. This API uses a callback to return the result. |
-| [offPrinterInfoQuery](arkts-basicservices-offprinterinfoquery-f-sys.md#offprinterinfoquery-1) | Unregister event callback for the printer info queried. |
-| [on](arkts-basicservices-on-f-sys.md#on-1) | Registers a listener for printer state change events. This API uses a callback to return the result. |
-| [on](arkts-basicservices-on-f-sys.md#on-2) | Registers a listener for print job state change events. This API uses a callback to return the result. |
-| [on](arkts-basicservices-on-f-sys.md#on-3) | Registers a listener for printer extension information change events. This API uses a callback to return the result. |
-| [onPrinterInfoQuery](arkts-basicservices-onprinterinfoquery-f-sys.md#onprinterinfoquery-1) | Register event callback for the printer info queried. |
-| [queryAllActivePrintJobs](arkts-basicservices-queryallactiveprintjobs-f-sys.md#queryallactiveprintjobs-1) | Queries all active print jobs. This API uses a promise to return the result. |
-| [queryAllPrintJobs](arkts-basicservices-queryallprintjobs-f-sys.md#queryallprintjobs-1) | Queries all print jobs. This API uses an asynchronous callback to return the result. |
-| [queryAllPrintJobs](arkts-basicservices-queryallprintjobs-f-sys.md#queryallprintjobs-2) | Queries all print jobs. This API uses a promise to return the result. |
-| [queryAllPrinterExtensionInfos](arkts-basicservices-queryallprinterextensioninfos-f-sys.md#queryallprinterextensioninfos-1) | Obtains the information of all installed printer extensions. This API uses an asynchronous callback to return the result. |
-| [queryAllPrinterExtensionInfos](arkts-basicservices-queryallprinterextensioninfos-f-sys.md#queryallprinterextensioninfos-2) | Obtains the information of all installed printer extensions. This API uses a promise to return the result. |
-| [queryAllPrinterPpds](arkts-basicservices-queryallprinterppds-f-sys.md#queryallprinterppds-1) | Query all printer ppds. |
-| [queryPrintJobById](arkts-basicservices-queryprintjobbyid-f-sys.md#queryprintjobbyid-1) | Queries a print job by ID. This API uses an asynchronous callback to return the result. |
-| [queryPrintJobById](arkts-basicservices-queryprintjobbyid-f-sys.md#queryprintjobbyid-2) | Queries a print job by ID. This API uses a promise to return the result. |
-| [queryPrintJobList](arkts-basicservices-queryprintjoblist-f-sys.md#queryprintjoblist-1) | Queries all print jobs. This API uses an asynchronous callback to return the result. |
-| [queryPrintJobList](arkts-basicservices-queryprintjoblist-f-sys.md#queryprintjoblist-2) | Queries all print jobs. This API uses a promise to return the result. |
-| [queryPrinterCapability](arkts-basicservices-queryprintercapability-f-sys.md#queryprintercapability-1) | Queries the printer capability. This API uses an asynchronous callback to return the result. |
-| [queryPrinterCapability](arkts-basicservices-queryprintercapability-f-sys.md#queryprintercapability-2) | Queries the printer capability. This API uses a promise to return the result. |
-| [queryPrinterCapabilityByUri](arkts-basicservices-queryprintercapabilitybyuri-f-sys.md#queryprintercapabilitybyuri-1) | Query printer capabilityies by printer uri. |
-| [queryPrinterInfoByIp](arkts-basicservices-queryprinterinfobyip-f-sys.md#queryprinterinfobyip-1) | Query printer info by ip. |
-| [queryRecommendDriversById](arkts-basicservices-queryrecommenddriversbyid-f-sys.md#queryrecommenddriversbyid-1) | Query recommend printer drivers by printer ID. |
-| [removePrinters](arkts-basicservices-removeprinters-f-sys.md#removeprinters-1) | Removes printers. This API uses an asynchronous callback to return the result. |
-| [removePrinters](arkts-basicservices-removeprinters-f-sys.md#removeprinters-2) | Removes printers. This API uses a promise to return the result. |
-| [requestPrintPreview](arkts-basicservices-requestprintpreview-f-sys.md#requestprintpreview-1) | Requests print preview data. This API uses a callback to return the result. |
-| [requestPrintPreview](arkts-basicservices-requestprintpreview-f-sys.md#requestprintpreview-2) | Requests print preview data. This API uses a promise to return the result. |
-| [restartPrintJob](arkts-basicservices-restartprintjob-f-sys.md#restartprintjob-1) | Restarts a print job that has been finished before. This API uses a promise to return the result. |
-| [savePdfFileJob](arkts-basicservices-savepdffilejob-f-sys.md#savepdffilejob-1) | Save the pdf file for a print job. |
-| [setDefaultPrinter](arkts-basicservices-setdefaultprinter-f-sys.md#setdefaultprinter-1) | Sets the default printer. This API uses a promise to return the result. |
-| [setPrinterPreferences](arkts-basicservices-setprinterpreferences-f-sys.md#setprinterpreferences-1) | Sets the printer preferences. This API uses a promise to return the result. |
-| [startDiscoverPrinter](arkts-basicservices-startdiscoverprinter-f-sys.md#startdiscoverprinter-1) | Discovers printers by specifying the extension list. The discovered printers contain the specified print extension abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses an asynchronous callback to return the result. |
-| [startDiscoverPrinter](arkts-basicservices-startdiscoverprinter-f-sys.md#startdiscoverprinter-2) | Discovers printers by specifying the extension list. The discovered printers contain the specified print extension abilities. If an empty extension list is specified, all extension abilities are loaded. This API uses a promise to return the result. |
-| [startGettingPrintFile](arkts-basicservices-startgettingprintfile-f-sys.md#startgettingprintfile-1) | Starts to obtain the print file. This API uses an asynchronous callback to return the result. |
-| [startPrintJob](arkts-basicservices-startprintjob-f-sys.md#startprintjob-1) | Starts the specified print job. This API uses an asynchronous callback to return the result. |
-| [startPrintJob](arkts-basicservices-startprintjob-f-sys.md#startprintjob-2) | Starts the specified print job. This API uses a promise to return the result. |
-| [stopDiscoverPrinter](arkts-basicservices-stopdiscoverprinter-f-sys.md#stopdiscoverprinter-1) | Stops discovering printers. This API uses an asynchronous callback to return the result. |
-| [stopDiscoverPrinter](arkts-basicservices-stopdiscoverprinter-f-sys.md#stopdiscoverprinter-2) | Stops discovering printers. This API uses a promise to return the result. |
-| [updateExtensionInfo](arkts-basicservices-updateextensioninfo-f-sys.md#updateextensioninfo-1) | Updates the printer extension information. This API uses an asynchronous callback to return the result. |
-| [updateExtensionInfo](arkts-basicservices-updateextensioninfo-f-sys.md#updateextensioninfo-2) | Updates the printer extension information. This API uses a promise to return the result. |
-| [updatePrintJobState](arkts-basicservices-updateprintjobstate-f-sys.md#updateprintjobstate-1) | Updates the print job state. This API uses an asynchronous callback to return the result. |
-| [updatePrintJobState](arkts-basicservices-updateprintjobstate-f-sys.md#updateprintjobstate-2) | Updates the print job state. This API uses a promise to return the result. |
-| [updatePrinterInformation](arkts-basicservices-updateprinterinformation-f-sys.md#updateprinterinformation-1) | Updates the information of a printer in the system. This API uses a promise to return the result. Currently, only the **alias** and **options** fields of [PrinterInformation](arkts-basicservices-printerinformation-i.md#printerinformation) can be updated. |
-| [updatePrinterState](arkts-basicservices-updateprinterstate-f-sys.md#updateprinterstate-1) | Updates the printer state. This API uses an asynchronous callback to return the result. |
-| [updatePrinterState](arkts-basicservices-updateprinterstate-f-sys.md#updateprinterstate-2) | Updates the printer state. This API uses a promise to return the result. |
-| [updatePrinters](arkts-basicservices-updateprinters-f-sys.md#updateprinters-1) | Updates information about the specified printers. This API uses an asynchronous callback to return the result. |
-| [updatePrinters](arkts-basicservices-updateprinters-f-sys.md#updateprinters-2) | Updates information about the specified printers. This API uses a promise to return the result. |
-<!--DelEnd-->
+| [addPrinter](arkts-print-addprinter-f.md#addPrinter-1) | 添加打印机到系统中，使用Promise异步回调。 |
+| <!--DelRow-->[addPrinterToCups](arkts-print-addprintertocups-f-sys.md#addPrinterToCups-1) | 添加打印机到cups，使用Promise异步回调。 |
+| [addPrinterToDiscovery](arkts-print-addprintertodiscovery-f.md#addPrinterToDiscovery-1) | 添加打印机到系统打印机发现列表，使用Promise异步回调。 |
+| <!--DelRow-->[addPrinters](arkts-print-addprinters-f-sys.md#addPrinters-1) | 添加打印机，使用callback异步回调。 |
+| <!--DelRow-->[addPrinters](arkts-print-addprinters-f-sys.md#addPrinters-2) | 添加打印机，使用Promise异步回调。 |
+| <!--DelRow-->[analyzePrintEvents](arkts-print-analyzeprintevents-f-sys.md#analyzePrintEvents-1) | 分析打印事件。 |
+| <!--DelRow-->[authPrintJob](arkts-print-authprintjob-f-sys.md#authPrintJob-1) | 验证打印作业。 |
+| <!--DelRow-->[authSmbDeviceAsRegisteredUser](arkts-print-authsmbdeviceasregistereduser-f-sys.md#authSmbDeviceAsRegisteredUser-1) | 以注册用户身份对SMB设备进行身份验证，并获取可用打印机。 |
+| <!--DelRow-->[cancelPrintJob](arkts-print-cancelprintjob-f-sys.md#cancelPrintJob-1) | 取消已发送到打印机的打印任务，使用callback异步回调。 |
+| <!--DelRow-->[cancelPrintJob](arkts-print-cancelprintjob-f-sys.md#cancelPrintJob-2) | 取消已发送到打印机的打印任务，使用Promise异步回调。 |
+| <!--DelRow-->[checkPreferencesConflicts](arkts-print-checkpreferencesconflicts-f-sys.md#checkPreferencesConflicts-1) | 检查首选项冲突。 |
+| <!--DelRow-->[connectPrinter](arkts-print-connectprinter-f-sys.md#connectPrinter-1) | 通过打印机ID连接打印机，使用callback异步回调。 |
+| <!--DelRow-->[connectPrinter](arkts-print-connectprinter-f-sys.md#connectPrinter-2) | 通过打印机ID连接打印机，使用Promise异步回调。 |
+| <!--DelRow-->[connectPrinterByIdAndPpd](arkts-print-connectprinterbyidandppd-f-sys.md#connectPrinterByIdAndPpd-1) | 根据打印机ID查询推荐的打印机驱动程序。 |
+| <!--DelRow-->[connectPrinterByIpAndPpd](arkts-print-connectprinterbyipandppd-f-sys.md#connectPrinterByIpAndPpd-1) | 通过打印机IP和ppd连接打印机。 |
+| <!--DelRow-->[deletePrinterFromCups](arkts-print-deleteprinterfromcups-f-sys.md#deletePrinterFromCups-1) | 从cups中删除打印机，使用Promise异步回调。 |
+| <!--DelRow-->[disconnectPrinter](arkts-print-disconnectprinter-f-sys.md#disconnectPrinter-1) | 断开特定打印机的连接，使用callback异步回调。 |
+| <!--DelRow-->[disconnectPrinter](arkts-print-disconnectprinter-f-sys.md#disconnectPrinter-2) | 断开特定打印机的连接，使用Promise异步回调。 |
+| <!--DelRow-->[discoverUsbPrinters](arkts-print-discoverusbprinters-f-sys.md#discoverUsbPrinters-1) | 发现usb打印机，使用Promise异步回调。 |
+| [getAddedPrinters](arkts-print-getaddedprinters-f.md#getAddedPrinters-1) | 获取系统中已添加的打印机列表，使用Promise异步回调。 |
+| <!--DelRow-->[getPrinterDefaultPreferences](arkts-print-getprinterdefaultpreferences-f-sys.md#getPrinterDefaultPreferences-1) | 按打印机ID获取默认首选项。 |
+| <!--DelRow-->[getPrinterInfoById](arkts-print-getprinterinfobyid-f-sys.md#getPrinterInfoById-1) | 根据打印机id获取打印机信息，使用Promise异步回调。 |
+| [getPrinterInformationById](arkts-print-getprinterinformationbyid-f.md#getPrinterInformationById-1) | 根据打印机id获取打印机信息，使用Promise异步回调。 |
+| <!--DelRow-->[getSharedHosts](arkts-print-getsharedhosts-f-sys.md#getSharedHosts-1) | 获取所有可用的共享主机。 |
+| <!--DelRow-->[notifyPrintService](arkts-print-notifyprintservice-f-sys.md#notifyPrintService-1) | 将spooler关闭信息通知打印服务，使用callback异步回调。 |
+| <!--DelRow-->[notifyPrintService](arkts-print-notifyprintservice-f-sys.md#notifyPrintService-2) | 将spooler关闭信息通知打印服务，使用Promise异步回调。 |
+| <!--DelRow-->[notifyPrintServiceEvent](arkts-print-notifyprintserviceevent-f-sys.md#notifyPrintServiceEvent-1) | 将打印应用相关事件通知打印服务，使用Promise异步回调。 |
+| <!--DelRow-->[notifyPrintServiceEvent](arkts-print-notifyprintserviceevent-f-sys.md#notifyPrintServiceEvent-2) | 将打印应用相关事件通知打印服务，使用Promise异步回调。 |
+| <!--DelRow-->[notifyPrintServiceSpoolerCloseForCancelled](arkts-print-notifyprintservicespoolercloseforcancelled-f-sys.md#notifyPrintServiceSpoolerCloseForCancelled-1) | Notify print service the information. |
+| <!--DelRow-->[notifyPrintServiceSpoolerCloseForCancelled](arkts-print-notifyprintservicespoolercloseforcancelled-f-sys.md#notifyPrintServiceSpoolerCloseForCancelled-2) | Notify print service the information. |
+| <!--DelRow-->[notifyPrintServiceSpoolerCloseForStarted](arkts-print-notifyprintservicespoolercloseforstarted-f-sys.md#notifyPrintServiceSpoolerCloseForStarted-1) | Notify print service the information. |
+| <!--DelRow-->[notifyPrintServiceSpoolerCloseForStarted](arkts-print-notifyprintservicespoolercloseforstarted-f-sys.md#notifyPrintServiceSpoolerCloseForStarted-2) | Notify print service the information. |
+| [notifyWatermarkComplete](arkts-print-notifywatermarkcomplete-f.md#notifyWatermarkComplete-1) | 通知水印处理完成。 |
+| [off](arkts-print-off-f.md#off-1) | 取消注册打印机变动事件回调，使用callback回调。 |
+| <!--DelRow-->[off](arkts-print-off-f-sys.md#off-1) | 取消注册打印机状态变化事件回调，使用callback回调。 |
+| <!--DelRow-->[off](arkts-print-off-f-sys.md#off-2) | 取消注册打印任务状态变化事件回调，使用callback回调。 |
+| <!--DelRow-->[off](arkts-print-off-f-sys.md#off-3) | 取消注册打印扩展信息变化事件回调，使用callback回调。 |
+| <!--DelRow-->[offExtInfoChange](arkts-print-offextinfochange-f-sys.md#offExtInfoChange-1) | Unregister event callback for the information change of print extension. |
+| <!--DelRow-->[offJobStateChange](arkts-print-offjobstatechange-f-sys.md#offJobStateChange-1) | Unregister event callback for the state change of print job. |
+| [offPrinterChange](arkts-print-offprinterchange-f.md#offPrinterChange-1) | Unregister event callback for the change of printer. |
+| <!--DelRow-->[offPrinterInfoQuery](arkts-print-offprinterinfoquery-f-sys.md#offPrinterInfoQuery-1) | 查询到的打印机信息的Unregister事件回调。 |
+| <!--DelRow-->[offPrinterStateChange](arkts-print-offprinterstatechange-f-sys.md#offPrinterStateChange-1) | Unregister event callback for the state change of printer. |
+| [on](arkts-print-on-f.md#on-1) | 注册打印机变动事件回调，使用callback回调。 |
+| <!--DelRow-->[on](arkts-print-on-f-sys.md#on-1) | 注册打印机状态变化事件回调，使用callback回调。 |
+| <!--DelRow-->[on](arkts-print-on-f-sys.md#on-2) | 注册打印任务状态变化事件回调，使用callback回调。 |
+| <!--DelRow-->[on](arkts-print-on-f-sys.md#on-3) | 注册打印扩展信息变化事件回调，使用callback回调。 |
+| <!--DelRow-->[onExtInfoChange](arkts-print-onextinfochange-f-sys.md#onExtInfoChange-1) | Register event callback for the information change of print extension. |
+| <!--DelRow-->[onJobStateChange](arkts-print-onjobstatechange-f-sys.md#onJobStateChange-1) | Register event callback for the state change of print job. |
+| [onPrinterChange](arkts-print-onprinterchange-f.md#onPrinterChange-1) | Register event callback for the change of printer. |
+| <!--DelRow-->[onPrinterInfoQuery](arkts-print-onprinterinfoquery-f-sys.md#onPrinterInfoQuery-1) | 为查询到的打印机信息注册事件回调。 |
+| <!--DelRow-->[onPrinterStateChange](arkts-print-onprinterstatechange-f-sys.md#onPrinterStateChange-1) | Register event callback for the state change of printer. |
+| [print](arkts-print-f.md#print-1) | 打印接口，传入文件进行打印，使用callback异步回调。拉起系统打印预览界面，需要使用[print]{@link print.print(files: Array<string>, context: Context)}接口，传入 context。 |
+| [print](arkts-print-f.md#print-2) | 打印接口，传入文件进行打印，使用Promise异步回调。拉起系统打印预览界面，需要使用[print]{@link print.print(files: Array<string>, context: Context)}接口，传入 context。 |
+| [print](arkts-print-f.md#print-3) | 打印接口，传入文件进行打印，使用callback异步回调。 |
+| [print](arkts-print-f.md#print-4) | 打印接口，传入文件进行打印，使用Promise异步回调。 |
+| [print](arkts-print-f.md#print-5) | 打印接口，传入文件进行打印，三方应用需要更新打印文件，使用Promise异步回调。当前支持的文件类型：".pdf"。 |
+| <!--DelRow-->[queryAllActivePrintJobs](arkts-print-queryallactiveprintjobs-f-sys.md#queryAllActivePrintJobs-1) | 查询所有活跃中的打印任务，使用Promise进行异步回调。 |
+| <!--DelRow-->[queryAllPrintJobs](arkts-print-queryallprintjobs-f-sys.md#queryAllPrintJobs-1) | 查询所有打印任务，使用callback异步回调。 |
+| <!--DelRow-->[queryAllPrintJobs](arkts-print-queryallprintjobs-f-sys.md#queryAllPrintJobs-2) | 查询所有打印任务，使用Promise异步回调。 |
+| <!--DelRow-->[queryAllPrinterExtensionInfos](arkts-print-queryallprinterextensioninfos-f-sys.md#queryAllPrinterExtensionInfos-1) | 查询所有已安装的打印机扩展服务，使用callback异步回调。 |
+| <!--DelRow-->[queryAllPrinterExtensionInfos](arkts-print-queryallprinterextensioninfos-f-sys.md#queryAllPrinterExtensionInfos-2) | 查询所有已安装的打印机扩展服务，使用Promise异步回调。 |
+| <!--DelRow-->[queryAllPrinterPpds](arkts-print-queryallprinterppds-f-sys.md#queryAllPrinterPpds-1) | 查询所有打印机ppd。 |
+| <!--DelRow-->[queryPrintJobById](arkts-print-queryprintjobbyid-f-sys.md#queryPrintJobById-1) | 按打印任务ID查询打印任务，使用callback异步回调。 |
+| <!--DelRow-->[queryPrintJobById](arkts-print-queryprintjobbyid-f-sys.md#queryPrintJobById-2) | 按打印任务ID查询打印任务，使用Promise异步回调。 |
+| <!--DelRow-->[queryPrintJobList](arkts-print-queryprintjoblist-f-sys.md#queryPrintJobList-1) | 查询所有打印任务，使用callback异步回调。 |
+| <!--DelRow-->[queryPrintJobList](arkts-print-queryprintjoblist-f-sys.md#queryPrintJobList-2) | 查询所有打印任务，使用Promise异步回调。 |
+| <!--DelRow-->[queryPrinterCapability](arkts-print-queryprintercapability-f-sys.md#queryPrinterCapability-1) | 查询打印机能力，使用callback异步回调。 |
+| <!--DelRow-->[queryPrinterCapability](arkts-print-queryprintercapability-f-sys.md#queryPrinterCapability-2) | 查询打印机能力，使用Promise异步回调。 |
+| <!--DelRow-->[queryPrinterCapabilityByUri](arkts-print-queryprintercapabilitybyuri-f-sys.md#queryPrinterCapabilityByUri-1) | 使用打印机的uri查询打印机能力，使用Promise异步回调。 |
+| <!--DelRow-->[queryPrinterInfoByIp](arkts-print-queryprinterinfobyip-f-sys.md#queryPrinterInfoByIp-1) | 根据ip查询打印机信息。 |
+| <!--DelRow-->[queryRecommendDriversById](arkts-print-queryrecommenddriversbyid-f-sys.md#queryRecommendDriversById-1) | 根据打印机ID查询推荐的打印机驱动程序。 |
+| [registerWatermarkCallback](arkts-print-registerwatermarkcallback-f.md#registerWatermarkCallback-1) | 注册强制水印处理的监听事件。 |
+| [removePrinterFromDiscovery](arkts-print-removeprinterfromdiscovery-f.md#removePrinterFromDiscovery-1) | 从系统打印机发现列表里移除打印机，使用Promise异步回调。 |
+| <!--DelRow-->[removePrinters](arkts-print-removeprinters-f-sys.md#removePrinters-1) | 移除打印机，使用callback异步回调。 |
+| <!--DelRow-->[removePrinters](arkts-print-removeprinters-f-sys.md#removePrinters-2) | 移除打印机，使用Promise异步回调。 |
+| <!--DelRow-->[requestPrintPreview](arkts-print-requestprintpreview-f-sys.md#requestPrintPreview-1) | 请求预览打印数据，使用callback回调。 |
+| <!--DelRow-->[requestPrintPreview](arkts-print-requestprintpreview-f-sys.md#requestPrintPreview-2) | 请求预览打印数据，使用Promise异步回调。 |
+| <!--DelRow-->[restartPrintJob](arkts-print-restartprintjob-f-sys.md#restartPrintJob-1) | 重新打印之前打印过的打印任务，使用Promise异步回调。 |
+| <!--DelRow-->[savePdfFileJob](arkts-print-savepdffilejob-f-sys.md#savePdfFileJob-1) | 保存打印作业的pdf文件。 |
+| <!--DelRow-->[setDefaultPrinter](arkts-print-setdefaultprinter-f-sys.md#setDefaultPrinter-1) | 设置默认打印机，使用Promise异步回调。 |
+| <!--DelRow-->[setPrinterPreferences](arkts-print-setprinterpreferences-f-sys.md#setPrinterPreferences-1) | 设置打印机首选项，使用Promise异步回调。 |
+| <!--DelRow-->[startDiscoverPrinter](arkts-print-startdiscoverprinter-f-sys.md#startDiscoverPrinter-1) | 通过指定“打印扩展能力列表”来发现打印机，发现的打印机具备包含指定的打印扩展能力。如果指定空的打印扩展能力列表，则表示加载所有扩展能力。使用callback异步回调。 |
+| <!--DelRow-->[startDiscoverPrinter](arkts-print-startdiscoverprinter-f-sys.md#startDiscoverPrinter-2) | 通过指定“打印扩展能力列表”来发现打印机，发现的打印机具备包含指定的打印扩展能力。如果指定空的打印扩展能力列表，则表示加载所有扩展能力，使用Promise异步回调。 |
+| <!--DelRow-->[startGettingPrintFile](arkts-print-startgettingprintfile-f-sys.md#startGettingPrintFile-1) | 开始获取打印文件，使用Callback异步回调。 |
+| [startPrint](arkts-print-startprint-f.md#startPrint-1) | 打印接口，传入文件或者二进制数据进行打印，使用Promise异步回调。 |
+| <!--DelRow-->[startPrintJob](arkts-print-startprintjob-f-sys.md#startPrintJob-1) | 开始打印任务，使用callback异步回调。 |
+| <!--DelRow-->[startPrintJob](arkts-print-startprintjob-f-sys.md#startPrintJob-2) | 开始打印任务，使用Promise异步回调。 |
+| <!--DelRow-->[stopDiscoverPrinter](arkts-print-stopdiscoverprinter-f-sys.md#stopDiscoverPrinter-1) | 停止发现打印机，使用callback异步回调。 |
+| <!--DelRow-->[stopDiscoverPrinter](arkts-print-stopdiscoverprinter-f-sys.md#stopDiscoverPrinter-2) | 停止发现打印机，使用Promise异步回调。 |
+| [unregisterWatermarkCallback](arkts-print-unregisterwatermarkcallback-f.md#unregisterWatermarkCallback-1) | 注销强制水印处理的监听事件。 |
+| <!--DelRow-->[updateExtensionInfo](arkts-print-updateextensioninfo-f-sys.md#updateExtensionInfo-1) | 更新打印扩展状态，使用callback异步回调。 |
+| <!--DelRow-->[updateExtensionInfo](arkts-print-updateextensioninfo-f-sys.md#updateExtensionInfo-2) | 更新打印扩展状态，使用Promise异步回调。 |
+| <!--DelRow-->[updatePrintJobState](arkts-print-updateprintjobstate-f-sys.md#updatePrintJobState-1) | 更新打印任务状态，使用callback异步回调。 |
+| <!--DelRow-->[updatePrintJobState](arkts-print-updateprintjobstate-f-sys.md#updatePrintJobState-2) | 更新打印任务状态，使用Promise异步回调。 |
+| [updatePrinterInDiscovery](arkts-print-updateprinterindiscovery-f.md#updatePrinterInDiscovery-1) | 更新打印机能力到系统打印机发现列表，使用Promise异步回调。 |
+| <!--DelRow-->[updatePrinterInformation](arkts-print-updateprinterinformation-f-sys.md#updatePrinterInformation-1) | 更新系统中打印机的部分信息，使用Promise异步回调。当前仅允许更新[PrinterInformation]{@link print.PrinterInformation}的alias和options字段。 |
+| <!--DelRow-->[updatePrinterState](arkts-print-updateprinterstate-f-sys.md#updatePrinterState-1) | 更新打印机状态，使用callback异步回调。 |
+| <!--DelRow-->[updatePrinterState](arkts-print-updateprinterstate-f-sys.md#updatePrinterState-2) | 更新打印机状态，使用Promise异步回调。 |
+| <!--DelRow-->[updatePrinters](arkts-print-updateprinters-f-sys.md#updatePrinters-1) | 更新特定打印机的信息，使用callback异步回调。 |
+| <!--DelRow-->[updatePrinters](arkts-print-updateprinters-f-sys.md#updatePrinters-2) | 更新特定打印机的信息，使用Promise异步回调。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [PpdInfo](arkts-basicservices-ppdinfo-i.md) | defines ppd info. |
-| [PrintAttributes](arkts-basicservices-printattributes-i.md) | Defines the print attributes. |
-| [PrintDocumentAdapter](arkts-basicservices-printdocumentadapter-i.md) | Provides information about the document to print. This API must be implemented by a third-party application. |
-| [PrintJob](arkts-basicservices-printjob-i.md) | Defines a print job. |
-| [PrintJobData](arkts-basicservices-printjobdata-i.md) | Defines a print job. |
-| [PrintPageRange](arkts-basicservices-printpagerange-i.md) | Defines the print range. |
-| [PrintPageSize](arkts-basicservices-printpagesize-i.md) | Defines the size of the printed page. |
-| [PrintTask](arkts-basicservices-printtask-i.md) | Implements event listeners for print jobs. |
-| [PrinterCapabilities](arkts-basicservices-printercapabilities-i.md) | Defines the printer capabilities. |
-| [PrinterInformation](arkts-basicservices-printerinformation-i.md) | Defines the printer information. |
-| [PrinterPreferences](arkts-basicservices-printerpreferences-i.md) | Defines the printer preferences. |
-| [SharedHost](arkts-basicservices-sharedhost-i.md) | Interface defining shared device information |
-
-<!--Del-->
-### Interfaces（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [PreviewAttribute](arkts-basicservices-previewattribute-i-sys.md) | Defines the print preview attributes. |
-| [PrintJob](arkts-basicservices-printjob-i-sys.md) | Defines a print job. |
-| [PrintMargin](arkts-basicservices-printmargin-i-sys.md) | Defines the page margins for printing. |
-| [PrintResolution](arkts-basicservices-printresolution-i-sys.md) | Defines the resolution for printing. |
-| [PrinterCapability](arkts-basicservices-printercapability-i-sys.md) | Defines the printer capabilities. |
-| [PrinterExtensionInfo](arkts-basicservices-printerextensioninfo-i-sys.md) | Provides the printer extension information. |
-| [PrinterInfo](arkts-basicservices-printerinfo-i-sys.md) | Provides the printer information. |
-| [PrinterRange](arkts-basicservices-printerrange-i-sys.md) | Defines the print range. |
-<!--DelEnd-->
-
-### Enums
-
-| Name | Description |
-| --- | --- |
-| [ApplicationEvent](arkts-basicservices-applicationevent-e.md) | Enumerates print application events. |
-| [DefaultPrinterType](arkts-basicservices-defaultprintertype-e.md) | Enumerates default printer types. |
-| [DocFlavor](arkts-basicservices-docflavor-e.md) | Enumerates the data source types for printing. |
-| [PrintColorMode](arkts-basicservices-printcolormode-e.md) | Enumerates the color modes. |
-| [PrintDirectionMode](arkts-basicservices-printdirectionmode-e.md) | Enumerates the print direction modes. |
-| [PrintDocumentAdapterState](arkts-basicservices-printdocumentadapterstate-e.md) | Enumerates the print job states. |
-| [PrintDocumentFormat](arkts-basicservices-printdocumentformat-e.md) | Enumerates the data formats. |
-| [PrintDuplexMode](arkts-basicservices-printduplexmode-e.md) | Enumerates the duplex modes. |
-| [PrintErrorCode](arkts-basicservices-printerrorcode-e.md) | Enumerates the print error codes. |
-| [PrintFileCreationState](arkts-basicservices-printfilecreationstate-e.md) | Enumerates the print file creation status. |
-| [PrintJobState](arkts-basicservices-printjobstate-e.md) | Enumerates the print job states. |
-| [PrintJobSubState](arkts-basicservices-printjobsubstate-e.md) | Enumerates the print job substates. |
-| [PrintOrientationMode](arkts-basicservices-printorientationmode-e.md) | Enumerates the print directions. |
-| [PrintPageType](arkts-basicservices-printpagetype-e.md) | Enumerates the print page types. |
-| [PrintQuality](arkts-basicservices-printquality-e.md) | Enumerates the print qualities. |
-| [PrinterEvent](arkts-basicservices-printerevent-e.md) | Enumerates printer-related events. |
-| [PrinterState](arkts-basicservices-printerstate-e.md) | Enumerates the printer states. |
-| [PrinterStatus](arkts-basicservices-printerstatus-e.md) | Enumerates the printer states. |
-| [WatermarkHandleResult](arkts-basicservices-watermarkhandleresult-e.md) | Watermark handling result. |
+| [PpdInfo](arkts-print-ppdinfo-i.md) | 定义打印机所使用驱动的PPD文件信息的接口。 |
+| <!--DelRow-->[PreviewAttribute](arkts-print-previewattribute-i-sys.md) | 定义打印预览属性的接口。 |
+| [PrintAttributes](arkts-print-printattributes-i.md) | 定义打印参数的接口。 |
+| [PrintDocumentAdapter](arkts-print-printdocumentadapter-i.md) | 第三方应用程序实现此接口来渲染要打印的文件。 |
+| [PrinterCapabilities](arkts-print-printercapabilities-i.md) | 定义打印机能力的接口。 |
+| <!--DelRow-->[PrinterCapability](arkts-print-printercapability-i-sys.md) | 定义打印能力的接口。 |
+| <!--DelRow-->[PrinterExtensionInfo](arkts-print-printerextensioninfo-i-sys.md) | 定义打印扩展信息的接口。 |
+| <!--DelRow-->[PrinterInfo](arkts-print-printerinfo-i-sys.md) | 定义打印信息的接口。 |
+| [PrinterInformation](arkts-print-printerinformation-i.md) | 定义打印机信息的接口。 |
+| [PrinterPreferences](arkts-print-printerpreferences-i.md) | 定义打印机首选项的接口。 |
+| <!--DelRow-->[PrinterRange](arkts-print-printerrange-i-sys.md) | 定义打印范围的接口。 |
+| <!--DelRow-->[PrintJob](arkts-print-printjob-i-sys.md) | 定义打印任务的接口。 |
+| [PrintJobData](arkts-print-printjobdata-i.md) | 定义打印任务的接口。 |
+| <!--DelRow-->[PrintMargin](arkts-print-printmargin-i-sys.md) | 定义打印页边距的接口。 |
+| [PrintPageRange](arkts-print-printpagerange-i.md) | 定义打印范围的接口。 |
+| [PrintPageSize](arkts-print-printpagesize-i.md) | 定义打印页面尺寸的接口。 |
+| <!--DelRow-->[PrintResolution](arkts-print-printresolution-i-sys.md) | 定义打印分辨率的接口。 |
+| [PrintTask](arkts-print-printtask-i.md) | 打印任务完成后的事件监听回调接口类。 |
+| [SharedHost](arkts-print-sharedhost-i.md) | 定义共享设备信息的接口。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [PrinterChangeCallback](arkts-basicservices-printerchangecallback-t.md) | Defines a callback that takes the printer event and printer information as parameters. |
-| [WatermarkCallback](arkts-basicservices-watermarkcallback-t.md) | Defines the callback type used in registering to listen for watermark handling. The value of jobId indicates the print job ID. The value of fd indicates the fd. |
+| <!--DelRow-->[ExtInfoChangeCallback](arkts-print-extinfochangecallback-t-sys.md) | Defines the callback type used in registering to listen for extension change. The value of extensionId indicates the print extension id. The value of info indicates the connect info. |
+| [PrinterChangeCallback](arkts-print-printerchangecallback-t.md) | 将打印机事件和打印机信息作为参数的回调方法。 |
+| <!--DelRow-->[PrinterInfoQueryCallback](arkts-print-printerinfoquerycallback-t-sys.md) | 定义注册监听printInfoQuery事件的回调类型。 printInfo的值表示打印机信息。 ppdInfo的值表示所有打印机的ppd信息。 |
+| <!--DelRow-->[PrinterStateChangeCallback](arkts-print-printerstatechangecallback-t-sys.md) | Defines the callback type used in registering to listen for PrinterState. The value of state indicates the state of printer. The value of info indicates the latest printer info. |
+| <!--DelRow-->[PrintJobStateChangeCallback](arkts-print-printjobstatechangecallback-t-sys.md) | Defines the callback type used in registering to listen for PrintJobState. The value of state indicates the state of print job. The value of job indicates the latest print job info. |
+| [WatermarkCallback](arkts-print-watermarkcallback-t.md) | 定义用来注册强制水印处理的监听事件时使用的回调类型。 |
 
-<!--Del-->
-### Types（系统接口）
+### Enums
 
 | Name | Description |
 | --- | --- |
-| [PrinterInfoQueryCallback](arkts-basicservices-printerinfoquerycallback-t-sys.md) | Defines the callback type used in registering to listen for printerInfoQuery event. The value of printerInfo indicates the printer info. The value of ppdInfo indicates all the printer ppd info. |
-<!--DelEnd-->
+| [ApplicationEvent](arkts-print-applicationevent-e.md) | 打印应用事件的枚举。 |
+| [DefaultPrinterType](arkts-print-defaultprintertype-e.md) | 默认打印类型的枚举。 |
+| [DocFlavor](arkts-print-docflavor-e.md) | 打印数据来源形式的枚举。 |
+| [PrintColorMode](arkts-print-printcolormode-e.md) | 打印色彩模式的枚举。 |
+| [PrintDirectionMode](arkts-print-printdirectionmode-e.md) | 打印纸张方向的枚举。 |
+| [PrintDocumentAdapterState](arkts-print-printdocumentadapterstate-e.md) | 打印任务状态的枚举。 |
+| [PrintDocumentFormat](arkts-print-printdocumentformat-e.md) | 打印数据格式的枚举。 |
+| [PrintDuplexMode](arkts-print-printduplexmode-e.md) | 打印单双面模式的枚举。 |
+| [PrinterEvent](arkts-print-printerevent-e.md) | 打印机相关事件的枚举。 |
+| [PrintErrorCode](arkts-print-printerrorcode-e.md) | 打印错误代码的枚举。 |
+| [PrinterState](arkts-print-printerstate-e.md) | 打印机状态的枚举。 |
+| [PrinterStatus](arkts-print-printerstatus-e.md) | 打印机状态的枚举。 |
+| [PrintFileCreationState](arkts-print-printfilecreationstate-e.md) | 打印文件创建状态的枚举。 |
+| [PrintJobState](arkts-print-printjobstate-e.md) | 打印任务状态的枚举。 |
+| [PrintJobSubState](arkts-print-printjobsubstate-e.md) | 打印任务子状态的枚举。 |
+| [PrintOrientationMode](arkts-print-printorientationmode-e.md) | 打印方向的枚举。 |
+| [PrintPageType](arkts-print-printpagetype-e.md) | 打印纸张类型的枚举。 |
+| [PrintQuality](arkts-print-printquality-e.md) | 打印质量的枚举。 |
+| [WatermarkHandleResult](arkts-print-watermarkhandleresult-e.md) | 强制水印处理结果的枚举。 |
 

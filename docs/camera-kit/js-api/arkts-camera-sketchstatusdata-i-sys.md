@@ -1,4 +1,4 @@
-# SketchStatusData (System API)
+# SketchStatusData
 
 Defines the PiP status data.
 
@@ -11,8 +11,24 @@ Defines the PiP status data.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
+
+## sketchRatio
+
+```TypeScript
+sketchRatio: double
+```
+
+Zoom ratio of PiP.
+
+**Type:** double
+
+**Since:** 11
+
+**System capability:** SystemCapability.Multimedia.Camera.Core
+
+**System API:** This is a system API.
 
 ## centerPointOffset
 
@@ -30,31 +46,15 @@ Offset of PiP.
 
 **System API:** This is a system API.
 
-## sketchRatio
-
-```TypeScript
-sketchRatio: number
-```
-
-Zoom ratio of PiP.
-
-**Type:** number
-
-**Since:** 11
-
-**System capability:** SystemCapability.Multimedia.Camera.Core
-
-**System API:** This is a system API.
-
 ## status
 
 ```TypeScript
-status: number
+status: int
 ```
 
 Status of PiP. The options are 0 (stopped), 1 (started), 2 (stopping), and 3 (starting).
 
-**Type:** number
+**Type:** int
 
 **Since:** 11
 

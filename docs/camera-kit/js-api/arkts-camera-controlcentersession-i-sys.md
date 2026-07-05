@@ -1,8 +1,8 @@
-# ControlCenterSession (System API)
+# ControlCenterSession
 
 Control center session object.
 
-**Inheritance/Implementation:** ControlCenterSession extends [Beauty](arkts-camera-beauty-i-sys.md#beauty), [Aperture](arkts-camera-aperture-i-sys.md#aperture), [ColorEffect](arkts-camera-coloreffect-i-sys.md#coloreffect)
+**Inheritance:** ControlCenterSessionextends: Beauty, Aperture, ColorEffect.
 
 **Since:** 20
 
@@ -13,7 +13,7 @@ Control center session object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## enableAutoFraming
@@ -40,9 +40,9 @@ Enable auto-framing effect.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 202 | Not System Application. |
+| 7400104 | Session not running. |
+| 7400201 | Camera service fatal error. |
 
 ## getAutoFramingStatus
 
@@ -68,19 +68,19 @@ Gets the status of auto-framing effect.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 ## getControlCenterHeight
 
 ```TypeScript
-getControlCenterHeight(): number
+getControlCenterHeight(): double
 ```
 
 Gets the control center height.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -90,13 +90,13 @@ Gets the control center height.
 
 | Type | Description |
 | --- | --- |
-| number | the control center height, in units of vp. |
+| double | the control center height, in units of vp. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 ## getCurrentDevice
 
@@ -108,7 +108,7 @@ Gets the current camera device.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -124,8 +124,8 @@ Gets the current camera device.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
+| 202 | Not System Application. |
+| 7400104 | Session not running. |
 
 ## isAutoFramingSupported
 
@@ -151,7 +151,7 @@ Checks whether auto-framing is supported.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 ## release
 
@@ -171,13 +171,13 @@ Release control center session object.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise used to return the result. |
+| Promise&lt;void> | Promise used to return the result. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
+| 202 | Not System Application. |
 
 ## usedAsPosition
 
@@ -189,7 +189,7 @@ Sets the camera to be used as a camera at the specified position.
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Camera.Core
 
@@ -205,7 +205,7 @@ Sets the camera to be used as a camera at the specified position.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
-| [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
+| 202 | Not System Application. |
+| 7400104 | Session not running. |
+| 7400201 | Camera service fatal error. |
 

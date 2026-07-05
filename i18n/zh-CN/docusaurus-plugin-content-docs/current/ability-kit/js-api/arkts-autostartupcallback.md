@@ -2,11 +2,9 @@
 
 ## 汇总
 
-<!--Del-->
-### 接口（系统接口）
+### 接口
 
-| 名称 | 说明 |
+| 名称 | 描述 |
 | --- | --- |
-| [AutoStartupCallback](arkts-ability-autostartupcallback-i-sys.md) | 应用设置为开机自启动时的回调函数。 |
-<!--DelEnd-->
+| <!--DelRow-->[AutoStartupCallback](arkts-autostartupcallback-i.md) | 应用设置为开机自启动时的回调函数。 |
 

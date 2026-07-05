@@ -3,7 +3,7 @@
 ## Modules to Import
 
 ```TypeScript
-import { ProgressButtonV2, ProgressButtonV2ColorOptions, ProgressButtonV2Color } from '@ohos.arkui.advanced.ProgressButtonV2';
+import { ProgressButtonV2,ProgressButtonV2ColorOptions,ProgressButtonV2Color } from '@kit.ArkUI';
 ```
 
 ## Summary
@@ -12,23 +12,17 @@ import { ProgressButtonV2, ProgressButtonV2ColorOptions, ProgressButtonV2Color }
 
 | Name | Description |
 | --- | --- |
-| [ProgressButtonV2Color](arkts-arkui-progressbuttonv2color-c.md) | Declare ProgressButtonV2 Color. |
-
-### Structs
-
-| Name | Description |
-| --- | --- |
-| [ProgressButtonV2](arkts-arkui-progressbuttonv2-s.md) | Declare Component ProgressButtonV2 |
+| [ProgressButtonV2Color](arkts-progressbuttonv2color-c.md) | Declare ProgressButtonV2 Color. |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [ProgressButtonV2ColorOptions](arkts-arkui-progressbuttonv2coloroptions-i.md) | Declare Color options interface of the ProgressButtonV2. |
+| [ProgressButtonV2ColorOptions](arkts-progressbuttonv2coloroptions-i.md) | Declare Color options interface of the ProgressButtonV2. |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [ClickCallback](arkts-arkui-clickcallback-t.md) | Defines ClickCallback of the ProgressButtonV2. |
+| [ClickCallback](arkts-clickcallback-t.md) | Defines ClickCallback of the ProgressButtonV2. |
 

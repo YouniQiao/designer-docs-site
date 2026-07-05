@@ -1,4 +1,4 @@
-# ActiveStreamsVolumeInfoArray (System API)
+# ActiveStreamsVolumeInfoArray
 
 ```TypeScript
 type ActiveStreamsVolumeInfoArray = Array<Readonly<ActiveStreamVolumeInfo>>
@@ -8,7 +8,7 @@ ActiveStreamVolumeInfo array.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Volume
 

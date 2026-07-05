@@ -1,11 +1,5 @@
 # createAudioRenderer
 
-## Modules to Import
-
-```TypeScript
-import { audio } from '@ohos.multimedia.audio';
-```
-
 ## createAudioRenderer
 
 ```TypeScript
@@ -23,7 +17,7 @@ Obtains an {@link AudioRenderer} instance. This method uses a promise to return 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | options | AudioRendererOptions | Yes | Renderer configurations. |
-| callback | AsyncCallback&lt;AudioRenderer&gt; | Yes | Callback used to return the result. If the operation issuccessful, **err** is **undefined** and **data** is the AudioRenderer instance obtained; otherwise, **err** isan error object. |
+| callback | AsyncCallback&lt;AudioRenderer> | Yes | Callback used to return the result. If the operation is  successful, err is undefined and data is the AudioRenderer instance obtained; otherwise, err is  an error object. |
 
 **Example**
 
@@ -60,7 +54,6 @@ audio.createAudioRenderer(audioRendererOptions,(err, data) => {
 
 ```
 
-
 ## createAudioRenderer
 
 ```TypeScript
@@ -83,7 +76,7 @@ Obtains an {@link AudioRenderer} instance. This method uses a promise to return 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AudioRenderer&gt; | Promise used to return the AudioRenderer instance. |
+| Promise&lt;AudioRenderer> | Promise used to return the AudioRenderer instance. |
 
 **Example**
 

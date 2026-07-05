@@ -1,4 +1,8 @@
-# SpatialAudioSourceType (System API)
+# SpatialAudioSourceType
+
+```TypeScript
+enum SpatialAudioSourceType
+```
 
 Enumerates the spatial audio source type.
 
@@ -18,7 +22,7 @@ stereo source type.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 
@@ -34,7 +38,7 @@ audio vivid source type.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 
@@ -50,7 +54,7 @@ multichannel source type.
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Audio.Spatialization
 

@@ -1,6 +1,6 @@
 # @ohos.file.keyManager
 
-This module provides common features related to user key management, including user key uninstallation. > **NOTE** > > - This topic describes only the system APIs provided by the module.
+该模块提供用户密钥管理相关的常用功能：包括用户密钥卸载等。 > **说明：** > > - 当前页面仅包含本模块的系统接口。
 
 **Since:** 15
 
@@ -9,16 +9,14 @@ This module provides common features related to user key management, including u
 ## Modules to Import
 
 ```TypeScript
-import { keyManager } from '@ohos.file.keyManager';
+import { keyManager } from '@kit.CoreFileKit';
 ```
 
 ## Summary
 
-<!--Del-->
-### Functions（系统接口）
+### Functions
 
 | Name | Description |
 | --- | --- |
-| [deactivateUserKey](arkts-corefile-deactivateuserkey-f-sys.md#deactivateuserkey-1) | When the screen is locked, the specified user key is uninstalled synchronously. **(Currently, this API is available only to lock screen applications.)** |
-<!--DelEnd-->
+| <!--DelRow-->[deactivateUserKey](arkts-keymanager-deactivateuserkey-f-sys.md#deactivateUserKey-1) | 用户锁屏时，同步卸载指定用户对应密钥。**（该接口目前仅开放给锁屏应用） |
 

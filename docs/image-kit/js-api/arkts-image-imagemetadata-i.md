@@ -1,6 +1,6 @@
 # ImageMetadata
 
-Metadata set of an image.
+图像的元数据集。
 
 **Since:** 23
 
@@ -9,7 +9,7 @@ Metadata set of an image.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
 
 ## avisMetadata
@@ -18,77 +18,13 @@ import { image } from '@ohos.multimedia.image';
 avisMetadata?: AvisMetadata
 ```
 
-Avis metadata.
+AVIS图像元数据。
 
 **Type:** AvisMetadata
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## dngMetadata
-
-```TypeScript
-dngMetadata?: DngMetadata
-```
-
-Dng metadata.
-
-**Type:** DngMetadata
-
-**Since:** 24
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## exifMetadata
-
-```TypeScript
-exifMetadata?: ExifMetadata
-```
-
-Exif metadata.
-
-**Type:** ExifMetadata
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## gifMetadata
-
-```TypeScript
-gifMetadata?: GifMetadata
-```
-
-Gif metadata.
-
-**Type:** GifMetadata
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## heifsMetadata
-
-```TypeScript
-heifsMetadata?: HeifsMetadata
-```
-
-Heifs metadata.
-
-**Type:** HeifsMetadata
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -98,29 +34,13 @@ Heifs metadata.
 jfifMetadata?: JfifMetadata
 ```
 
-Jfif metadata.
+JFIF图像元数据。
 
 **Type:** JfifMetadata
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
-
-## makerNoteHuaweiMetadata
-
-```TypeScript
-makerNoteHuaweiMetadata?: MakerNoteHuaweiMetadata
-```
-
-Huawei Camera metadata.
-
-**Type:** MakerNoteHuaweiMetadata
-
-**Since:** 23
-
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -130,45 +50,61 @@ Huawei Camera metadata.
 pngMetadata?: PngMetadata
 ```
 
-Png metadata.
+PNG图像元数据。
 
 **Type:** PngMetadata
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## tiffMetadata
+## makerNoteHuaweiMetadata
 
 ```TypeScript
-tiffMetadata?: TiffMetadata
+makerNoteHuaweiMetadata?: MakerNoteHuaweiMetadata
 ```
 
-Tiff metadata.
+来自Huawei相机的照片元数据。
 
-**Type:** TiffMetadata
+**Type:** MakerNoteHuaweiMetadata
 
-**Since:** 26.0.0
+**Since:** 23
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
-## webPMetadata
+## dngMetadata
 
 ```TypeScript
-webPMetadata?: WebPMetadata
+dngMetadata?: DngMetadata
 ```
 
-WebP metadata.
+DNG图像元数据。
 
-**Type:** WebPMetadata
+**Type:** DngMetadata
 
 **Since:** 24
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## exifMetadata
+
+```TypeScript
+exifMetadata?: ExifMetadata
+```
+
+Exif元数据。
+
+**Type:** ExifMetadata
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -178,13 +114,77 @@ WebP metadata.
 xmpMetadata?: XMPMetadata
 ```
 
-XMP metadata.
+XMP元数据。
 
 **Type:** XMPMetadata
 
 **Since:** 26.0.0
 
-**Model restriction:** This API can be used only in the stage model.
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## gifMetadata
+
+```TypeScript
+gifMetadata?: GifMetadata
+```
+
+GIF图像元数据。
+
+**Type:** GifMetadata
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## webPMetadata
+
+```TypeScript
+webPMetadata?: WebPMetadata
+```
+
+WebP图像元数据类，用于存储图像的元数据。
+
+**Type:** WebPMetadata
+
+**Since:** 24
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## tiffMetadata
+
+```TypeScript
+tiffMetadata?: TiffMetadata
+```
+
+TIFF图像元数据。
+
+**Type:** TiffMetadata
+
+**Since:** 26.0.0
+
+**Model restriction:** This API can be used only in the Stage model.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## heifsMetadata
+
+```TypeScript
+heifsMetadata?: HeifsMetadata
+```
+
+HEIF序列图像元数据类，用于存储图像的元数据。
+
+**Type:** HeifsMetadata
+
+**Since:** 23
+
+**Model restriction:** This API can be used only in the Stage model.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

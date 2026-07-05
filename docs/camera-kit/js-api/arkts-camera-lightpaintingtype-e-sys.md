@@ -1,4 +1,8 @@
-# LightPaintingType (System API)
+# LightPaintingType
+
+```TypeScript
+enum LightPaintingType
+```
 
 Enumerates the types of light painting shutter modes.
 

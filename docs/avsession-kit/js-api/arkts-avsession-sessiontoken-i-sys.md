@@ -1,4 +1,4 @@
-# SessionToken (System API)
+# SessionToken
 
 Session token. Used to judge the legitimacy of the session.
 
@@ -11,22 +11,44 @@ Session token. Used to judge the legitimacy of the session.
 ## Modules to Import
 
 ```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
+import { avSession } from '@kit.AVSessionKit';
 ```
+
+## uid
+
+```TypeScript
+uid?: long
+```
+
+User id
+
+**Type:** long
+
+**Since:** 9
+
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
+
+**System capability:** SystemCapability.Multimedia.AVSession.Manager
+
+**System API:** This is a system API.
 
 ## pid
 
 ```TypeScript
-pid?: number
+pid?: long
 ```
 
 Process id of session
 
-**Type:** number
+**Type:** long
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -44,25 +66,9 @@ The unique session id of the avsession object
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
 
-**System capability:** SystemCapability.Multimedia.AVSession.Manager
-
-**System API:** This is a system API.
-
-## uid
-
-```TypeScript
-uid?: number
-```
-
-User id
-
-**Type:** number
-
-**Since:** 9
-
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 

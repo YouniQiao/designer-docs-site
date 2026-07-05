@@ -9,22 +9,8 @@ Describes the audio device blocked status and device information.
 ## Modules to Import
 
 ```TypeScript
-import { audio } from '@ohos.multimedia.audio';
+import { audio } from '@kit.AudioKit';
 ```
-
-## blockStatus
-
-```TypeScript
-blockStatus: DeviceBlockStatus
-```
-
-Blocked status of the audio device.
-
-**Type:** DeviceBlockStatus
-
-**Since:** 13
-
-**System capability:** SystemCapability.Multimedia.Audio.Device
 
 ## devices
 
@@ -35,6 +21,20 @@ devices: AudioDeviceDescriptors
 Device information.
 
 **Type:** AudioDeviceDescriptors
+
+**Since:** 13
+
+**System capability:** SystemCapability.Multimedia.Audio.Device
+
+## blockStatus
+
+```TypeScript
+blockStatus: DeviceBlockStatus
+```
+
+Blocked status of the audio device.
+
+**Type:** DeviceBlockStatus
 
 **Since:** 13
 

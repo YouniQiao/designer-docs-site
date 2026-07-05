@@ -1,12 +1,16 @@
 # ContentType
 
+```TypeScript
+enum ContentType
+```
+
 Enumerates the audio content types.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** StreamUsage
+**Substitute:** ohos.multimedia.audio.StreamUsage
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -22,7 +26,7 @@ Unknown content.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_UNKNOWN
+**Substitute:** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_UNKNOWN
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -38,7 +42,7 @@ Speech.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_VOICE_COMMUNICATION
+**Substitute:** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_VOICE_COMMUNICATION
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -54,7 +58,7 @@ Music.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_MUSIC
+**Substitute:** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_MUSIC
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -70,7 +74,7 @@ Movie.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_MOVIE
+**Substitute:** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_MOVIE
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -86,7 +90,7 @@ Notification tone.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_NOTIFICATION
+**Substitute:** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_NOTIFICATION
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 
@@ -102,7 +106,7 @@ Ringtone.
 
 **Deprecated since:** 10
 
-**Substitutes:** STREAM_USAGE_RINGTONE
+**Substitute:** ohos.multimedia.audio.StreamUsage.STREAM_USAGE_RINGTONE
 
 **System capability:** SystemCapability.Multimedia.Audio.Core
 

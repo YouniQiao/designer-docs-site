@@ -1,6 +1,6 @@
 # PositionArea
 
-Describes area information in an image.
+表示图片指定区域内的数据。
 
 **Since:** 7
 
@@ -9,26 +9,8 @@ Describes area information in an image.
 ## Modules to Import
 
 ```TypeScript
-import { image } from '@ohos.multimedia.image';
+import { image } from '@kit.ImageKit';
 ```
-
-## offset
-
-```TypeScript
-offset: number
-```
-
-Offset for data reading, in bytes.
-
-**Type:** number
-
-**Since:** 7
-
-**Atomic service API:** This API can be used in atomic services since API version 11.
-
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
-
-**System capability:** SystemCapability.Multimedia.Image.Core
 
 ## pixels
 
@@ -36,15 +18,33 @@ Offset for data reading, in bytes.
 pixels: ArrayBuffer
 ```
 
-Pixels of the image. Only pixel data in BGRA_8888 format is supported.
+像素数据缓冲区。仅支持BGRA_8888格式的像素数据。
 
 **Type:** ArrayBuffer
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
+
+**System capability:** SystemCapability.Multimedia.Image.Core
+
+## offset
+
+```TypeScript
+offset: int
+```
+
+偏移量。单位：字节（Byte）。
+
+**Type:** int
+
+**Since:** 7
+
+**Atomic service API:** From API version 11 this API can be used in atomic services.
+
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
@@ -54,33 +54,33 @@ Pixels of the image. Only pixel data in BGRA_8888 format is supported.
 region: Region
 ```
 
-Region to read or write. The width of the region to write plus the X coordinate cannot be greater than the width of the original image. The height of the region to write plus the Y coordinate cannot be greater than the height of the original image.
+区域信息，用于按区域进行图像数据的读写。写入的区域宽度加X坐标不能大于原图的宽度，写入的区域高度加Y坐标不能大于原图的高度。
 
 **Type:** Region
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 
 ## stride
 
 ```TypeScript
-stride: number
+stride: int
 ```
 
-Number of bytes from one row of pixels in memory to the next row of pixels in memory. The value of **stride** must be greater than or equal to the value of **region.size.width** multiplied by 4.
+跨距，内存中每行像素所占的空间。单位：字节（Byte）。stride >= region.size.width * 4，不满足时数据读取异常。
 
-**Type:** number
+**Type:** int
 
 **Since:** 7
 
-**Atomic service API:** This API can be used in atomic services since API version 11.
+**Atomic service API:** From API version 11 this API can be used in atomic services.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 12.
+**Widget capability:** From API version 12 this API can be used in ArkTS widgets.
 
 **System capability:** SystemCapability.Multimedia.Image.Core
 

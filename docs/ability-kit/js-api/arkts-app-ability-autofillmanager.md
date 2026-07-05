@@ -1,6 +1,6 @@
 # @ohos.app.ability.autoFillManager
 
-The autoFillManager module provides APIs for saving accounts and passwords. Unlike the system's auto-save feature that triggers during page transitions, this feature requires manual activation by the user. For example, the user must input their account and password on a website and click the **Save** button to initiate the saving process.
+autoFillManager模块提供账号密码保存等功能。 不同于页面切换时触发的系统自动保存功能，该功能需要由用户手动触发。例如用户在网站上输入了账号密码，并点击“保存”按钮，才能触发相应的自动保存操作。
 
 **Since:** 11
 
@@ -9,7 +9,7 @@ The autoFillManager module provides APIs for saving accounts and passwords. Unli
 ## Modules to Import
 
 ```TypeScript
-import { autoFillManager } from '@ohos.app.ability.autoFillManager';
+import { autoFillManager } from '@kit.AbilityKit';
 ```
 
 ## Summary
@@ -18,41 +18,45 @@ import { autoFillManager } from '@ohos.app.ability.autoFillManager';
 
 | Name | Description |
 | --- | --- |
-| [requestAutoFill](arkts-ability-requestautofill-f.md#requestautofill-1) | Trigger an auto fill request. |
-| [requestAutoSave](arkts-ability-requestautosave-f.md#requestautosave-1) | Requests to automatically save the widget data. This API uses an asynchronous callback to return the result. If the current widget does not support widget switching, you can call this API to save historical widget input data. The callback is triggered when the auto-save request is complete. |
-| [requestAutoSave](arkts-ability-requestautosave-f.md#requestautosave-2) | Trigger an auto save request. |
+| [requestAutoSave](arkts-autofillmanager-requestautosave-f.md#requestAutoSave-1) | 请求保存表单数据。使用callback异步回调。 如果当前表单没有提供表单切换的功能，可以通过此接口保存历史表单输入数据，保存请求完成时会触发该回调。 |
 
 ### Interfaces
 
 | Name | Description |
 | --- | --- |
-| [AutoFillCallback](arkts-ability-autofillcallback-i.md) | Auto fill callback. |
-| [AutoSaveCallback](arkts-ability-autosavecallback-i.md) | Implements callbacks triggered when auto-save is complete. |
+| [AutoSaveCallback](arkts-autofillmanager-autosavecallback-i.md) | 当保存请求完成时所触发的回调接口。 |
 
 ### Types
 
 | Name | Description |
 | --- | --- |
-| [FillFailureResult](arkts-ability-fillfailureresult-t.md) | The interface of filling failure result. |
-| [OnFillFailureFn](arkts-ability-onfillfailurefn-t.md) | Called when auto fill request is failed to be handled. |
-| [OnFillSuccessFn](arkts-ability-onfillsuccessfn-t.md) | Called when auto fill request is successfully handled. |
-
-<!--Del-->
-### Types（系统接口）
-
-| Name | Description |
-| --- | --- |
-| [AutoFillPopupConfig](arkts-ability-autofillpopupconfig-t-sys.md) | Defines the size and position information of an auto-fill pop-up. |
-| [AutoFillRect](arkts-ability-autofillrect-t-sys.md) | Defines the rectangle used for auto-fill. |
-| [CustomData](arkts-ability-customdata-t-sys.md) | Defines the custom data. |
-| [FillRequest](arkts-ability-fillrequest-t-sys.md) | Defines the information about an auto-fill request. |
-| [FillRequestCallback](arkts-ability-fillrequestcallback-t-sys.md) | Defines the callback for an auto-fill request, which is used to automatically fill in or generate a password. The callback can be used to notify the client of the success or failure of the request. |
-| [FillResponse](arkts-ability-fillresponse-t-sys.md) | Defines the information about the response to an auto-fill request. |
-| [PageNodeInfo](arkts-ability-pagenodeinfo-t-sys.md) | Defines the page node information used for auto-fill. |
-| [PopupSize](arkts-ability-popupsize-t-sys.md) | Defines the width and height of an auto-fill pop-up. |
-| [SaveRequest](arkts-ability-saverequest-t-sys.md) | Defines the information about an auto-save request. |
-| [SaveRequestCallback](arkts-ability-saverequestcallback-t-sys.md) | Defines the callback for an automatic or a manual saving request. |
-| [UpdateRequest](arkts-ability-updaterequest-t-sys.md) | Defines the information about an auto-update request. |
-| [ViewData](arkts-ability-viewdata-t-sys.md) | Defines the view data used for auto-fill. |
-<!--DelEnd-->
+| <!--DelRow-->[AutoFillPopupConfig](arkts-autofillmanager-autofillpopupconfig-t-sys.md) | 自动填充气泡弹窗的尺寸和位置信息。 |
+| <!--DelRow-->[AutoFillPopupConfig](arkts-autofillmanager-autofillpopupconfig-t-sys.md) | 自动填充气泡弹窗的尺寸和位置信息。 |
+| <!--DelRow-->[AutoFillRect](arkts-autofillmanager-autofillrect-t-sys.md) | 用于自动填充的矩形区域。 |
+| <!--DelRow-->[AutoFillRect](arkts-autofillmanager-autofillrect-t-sys.md) | 用于自动填充的矩形区域。 |
+| <!--DelRow-->[AutoFillTriggerType](arkts-autofillmanager-autofilltriggertype-t-sys.md) | 自动填充拉起类型。 |
+| <!--DelRow-->[AutoFillType](arkts-autofillmanager-autofilltype-t-sys.md) | 自动填充的类型信息。 |
+| <!--DelRow-->[CustomData](arkts-autofillmanager-customdata-t-sys.md) | 自定义数据。 |
+| <!--DelRow-->[CustomData](arkts-autofillmanager-customdata-t-sys.md) | 自定义数据。 |
+| [FillRequest](arkts-autofillmanager-fillrequest-t.md) | 自动填充的请求信息。 |
+| [FillRequest](arkts-autofillmanager-fillrequest-t.md) | 自动填充的请求信息。 |
+| <!--DelRow-->[FillRequestCallback](arkts-autofillmanager-fillrequestcallback-t-sys.md) | 自动填充或者生成密码时的回调对象，可以通过此回调通知客户端成功或者失败。 |
+| <!--DelRow-->[FillRequestCallback](arkts-autofillmanager-fillrequestcallback-t-sys.md) | 自动填充或者生成密码时的回调对象，可以通过此回调通知客户端成功或者失败。 |
+| <!--DelRow-->[FillResponse](arkts-autofillmanager-fillresponse-t-sys.md) | 自动填充的响应信息。 |
+| <!--DelRow-->[FillResponse](arkts-autofillmanager-fillresponse-t-sys.md) | 自动填充的响应信息。 |
+| [OnFailureFn](arkts-autofillmanager-onfailurefn-t.md) | 当保存请求失败时，该回调被调用。 |
+| [OnSuccessFn](arkts-autofillmanager-onsuccessfn-t.md) | 当保存请求成功时，该回调被调用。 |
+| <!--DelRow-->[PageNodeInfo](arkts-autofillmanager-pagenodeinfo-t-sys.md) | 自动填充的页面节点信息。 |
+| <!--DelRow-->[PageNodeInfo](arkts-autofillmanager-pagenodeinfo-t-sys.md) | 自动填充的页面节点信息。 |
+| <!--DelRow-->[PopupPlacement](arkts-autofillmanager-popupplacement-t-sys.md) | 气泡弹窗的位置。 |
+| <!--DelRow-->[PopupSize](arkts-autofillmanager-popupsize-t-sys.md) | 气泡弹窗的宽和高。 |
+| <!--DelRow-->[PopupSize](arkts-autofillmanager-popupsize-t-sys.md) | 气泡弹窗的宽和高。 |
+| [SaveRequest](arkts-autofillmanager-saverequest-t.md) | 自动保存的请求信息。 |
+| [SaveRequest](arkts-autofillmanager-saverequest-t.md) | 自动保存的请求信息。 |
+| <!--DelRow-->[SaveRequestCallback](arkts-autofillmanager-saverequestcallback-t-sys.md) | 自动保存或者手动保存请求的回调对象。 |
+| <!--DelRow-->[SaveRequestCallback](arkts-autofillmanager-saverequestcallback-t-sys.md) | 自动保存或者手动保存请求的回调对象。 |
+| <!--DelRow-->[UpdateRequest](arkts-autofillmanager-updaterequest-t-sys.md) | 自动填充的更新信息。 |
+| <!--DelRow-->[UpdateRequest](arkts-autofillmanager-updaterequest-t-sys.md) | 自动填充的更新信息。 |
+| <!--DelRow-->[ViewData](arkts-autofillmanager-viewdata-t-sys.md) | 自动填充的视图数据信息。 |
+| <!--DelRow-->[ViewData](arkts-autofillmanager-viewdata-t-sys.md) | 自动填充的视图数据信息。 |
 

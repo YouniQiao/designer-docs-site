@@ -1,4 +1,4 @@
-# EffectSuggestion (System API)
+# EffectSuggestion
 
 EffectSuggestion object.
 
@@ -11,7 +11,7 @@ EffectSuggestion object.
 ## Modules to Import
 
 ```TypeScript
-import { camera } from '@ohos.multimedia.camera';
+import { camera } from '@kit.CameraKit';
 ```
 
 ## enableEffectSuggestion
@@ -38,9 +38,9 @@ Enable effect suggestion for session.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 
 ## getSupportedEffectSuggestionTypes
 
@@ -60,14 +60,14 @@ Gets supported effect suggestion types.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;EffectSuggestionType&gt; | The array of the effect suggestion types. |
+| Array&lt;EffectSuggestionType> | The array of the effect suggestion types. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 ## isEffectSuggestionSupported
 
@@ -93,8 +93,8 @@ Checks whether effect suggestion is supported.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400103 | Session not config. |
 
 ## setEffectSuggestionStatus
 
@@ -114,15 +114,15 @@ Set the range of effect suggestion type and enable status. The application shoul
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| status | Array&lt;EffectSuggestionStatus&gt; | Yes | The array of the effect suggestion status. |
+| status | Array&lt;EffectSuggestionStatus> | Yes | The array of the effect suggestion status. |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 
 ## updateEffectSuggestion
 
@@ -149,7 +149,7 @@ Update the enable status of the effect suggestion type.
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
-| [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
-| [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
+| 202 | Not System Application. |
+| 7400101 | Parameter missing or parameter type incorrect. |
+| 7400103 | Session not config. |
 

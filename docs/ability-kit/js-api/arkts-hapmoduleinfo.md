@@ -6,5 +6,5 @@
 
 | Name | Description |
 | --- | --- |
-| [HapModuleInfo](arkts-ability-hapmoduleinfo-depr-i.md) | The HapModuleInfo module provides information about an HAP module. Unless otherwise specified, the information is obtained through [bundle.getBundleInfo](arkts-ability-getbundleinfo-f.md#getbundleinfo-3) . &gt; **NOTE** &gt; &gt; The APIs of this module have been deprecated since API version 9. You are advised to use &gt; [bundleManager-HapModuleInfo](arkts-ability-hapmoduleinfo-depr-i.md#hapmoduleinfo) instead. |
+| [HapModuleInfo](arkts-hapmoduleinfo-i.md) | Hap模块信息，未做特殊说明的属性，均通过 [bundle.getBundleInfo]{@link ./../@ohos.bundle:bundle.getBundleInfo(bundleName: string, bundleFlags: number, options?: BundleOptions)} 获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-HapModuleInfo]{@link hapModuleInfo:HapModuleInfo}替代。 |
 

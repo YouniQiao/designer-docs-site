@@ -1,4 +1,4 @@
-# VolumeGroupInfos (System API)
+# VolumeGroupInfos
 
 ```TypeScript
 type VolumeGroupInfos = Array<Readonly<VolumeGroupInfo>>

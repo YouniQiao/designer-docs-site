@@ -1,10 +1,4 @@
-# sendSystemControlCommand (System API)
-
-## Modules to Import
-
-```TypeScript
-import { avSession } from '@ohos.multimedia.avsession';
-```
+# sendSystemControlCommand
 
 ## sendSystemControlCommand
 
@@ -16,7 +10,9 @@ Send system control command.The system automatically selects the recipient.
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -27,18 +23,18 @@ Send system control command.The system automatically selects the recipient.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | command | AVControlCommand | Yes | The command to be sent. See {@link AVControlCommand} |
-| callback | AsyncCallback&lt;void&gt; | Yes | The asyncCallback triggered when the command is executed successfully |
+| callback | AsyncCallback&lt;void> | Yes | The asyncCallback triggered when the command is executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600105 | Invalid session command. |
+| 6600107 | Too many commands or events. |
 
 **Example**
 
@@ -65,7 +61,6 @@ avSession.sendSystemControlCommand(avcommand, () => {
 
 ```
 
-
 ## sendSystemControlCommand
 
 ```TypeScript
@@ -76,7 +71,9 @@ Send system control command.The system automatically selects the recipient.
 
 **Since:** 9
 
-**Required permissions:** ohos.permission.MANAGE_MEDIA_RESOURCES
+**Required permissions:** 
+
+ ohos.permission.MANAGE_MEDIA_RESOURCES
 
 **System capability:** SystemCapability.Multimedia.AVSession.Manager
 
@@ -92,18 +89,18 @@ Send system control command.The system automatically selects the recipient.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | void promise when executed successfully |
+| Promise&lt;void> | void promise when executed successfully |
 
 **Error codes:**
 
 | Error Code ID | Error Message |
 | --- | --- |
-| [201](../../errorcode-universal.md#201-permission-denied) | permission denied |
-| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System App. |
-| [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | parameter check failed. 1.Mandatory parameters are left unspecified.2.Parameter verification failed. |
-| [6600101](../errorcode-avsession.md#6600101-session-service-exception) | Session service exception. |
-| [6600105](../errorcode-avsession.md#6600105-invalid-session-command) | Invalid session command. |
-| [6600107](../errorcode-avsession.md#6600107-too-many-commands-or-events) | Too many commands or events. |
+| 201 | permission denied |
+| 202 | Not System App. |
+| 401 | parameter check failed. 1.Mandatory parameters are left unspecified.  2.Parameter verification failed. |
+| 6600101 | Session service exception. |
+| 6600105 | Invalid session command. |
+| 6600107 | Too many commands or events. |
 
 **Example**
 

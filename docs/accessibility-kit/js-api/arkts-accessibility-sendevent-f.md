@@ -1,11 +1,5 @@
 # sendEvent
 
-## Modules to Import
-
-```TypeScript
-import { accessibility } from '@ohos.accessibility';
-```
-
 ## sendEvent
 
 ```TypeScript
@@ -18,7 +12,7 @@ Sends an accessibility event. This API uses an asynchronous callback to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** sendAccessibilityEvent(event:
+**Substitute:** accessibility.sendAccessibilityEvent(event:
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -27,7 +21,7 @@ Sends an accessibility event. This API uses an asynchronous callback to return t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | event | EventInfo | Yes | Accessibility event. |
-| callback | AsyncCallback&lt;void&gt; | Yes | Callback used to return the result. If the operation fails, **err** thatcontains data is returned. |
+| callback | AsyncCallback&lt;void> | Yes | Callback used to return the result. If the operation fails, err that  contains data is returned. |
 
 **Example**
 
@@ -51,7 +45,6 @@ accessibility.sendEvent(eventInfo, (err: BusinessError) => {
 
 ```
 
-
 ## sendEvent
 
 ```TypeScript
@@ -64,7 +57,7 @@ Sends an accessibility event. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** sendAccessibilityEvent(event:
+**Substitute:** accessibility.sendAccessibilityEvent(event:
 
 **System capability:** SystemCapability.BarrierFree.Accessibility.Core
 
@@ -78,7 +71,7 @@ Sends an accessibility event. This API uses a promise to return the result.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void> | Promise that returns no value. |
 
 **Example**
 
