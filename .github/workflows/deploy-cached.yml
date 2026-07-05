@@ -1,0 +1,38 @@
+name: Deploy Existing Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, linux, x64]
+    timeout-minutes: 120
+    steps:
+      - name: Deploy to Netlify
+        run: |
+          BUILD_DIR="/opt/actions-runner-designer/_work/designer-docs-site/designer-docs-site/build"
+
+          if [ ! -d "$BUILD_DIR" ]; then
+            echo "❌ Build directory not found: $BUILD_DIR"
+            echo "Run the full deploy workflow first to create a build."
+            exit 1
+          fi
+
+          HTML_COUNT=$(find "$BUILD_DIR" -name '*.html' | wc -l)
+          echo "📦 Build contains $HTML_COUNT HTML files"
+
+          if ! command -v netlify &> /dev/null; then
+            npm install -g netlify-cli
+          fi
+
+          netlify deploy \
+            --prod \
+            --dir="$BUILD_DIR" \
+            --message "Deploy cached build ${{ github.sha }}"
+
+          echo "✅ Deploy complete."
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          HTTP_PROXY: ''
+          HTTPS_PROXY: ''
