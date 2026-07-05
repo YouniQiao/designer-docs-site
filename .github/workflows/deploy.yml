@@ -43,6 +43,15 @@ jobs:
             echo "$LOCK_HASH" > .lock-hash
           fi
 
+      - name: Setup swap
+        run: |
+          sudo swapoff /swapfile 2>/dev/null || true
+          sudo rm -f /swapfile
+          sudo fallocate -l 16G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+
       - name: Build
         run: npx docusaurus build --no-minify
         env:
