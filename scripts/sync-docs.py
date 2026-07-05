@@ -29,10 +29,37 @@ def kit_slug(name: str) -> str:
     return name.replace("apis-", "").replace("_", "-")
 
 
+def normalized_content(path: str) -> str:
+    """Read file content, normalize CRLF→LF and strip last_update from frontmatter."""
+    with open(path, "r", encoding="utf-8", newline="") as f:
+        content = f.read()
+    # Normalize CRLF → LF
+    content = content.replace("\r\n", "\n")
+    # Strip last_update from frontmatter
+    if content.startswith("---\n"):
+        end_idx = content.find("\n---\n", 4)
+        if end_idx != -1:
+            fm = content[4:end_idx]
+            # Remove last_update block (flat: "last_update: 2026-07-04" or object: "last_update:\n  date: ...")
+            fm_cleaned = re.sub(
+                r"^last_update:.*(?:\n  .*)*",
+                "",
+                fm,
+                flags=re.MULTILINE,
+            )
+            # Clean up blank lines left by removal
+            fm_cleaned = re.sub(r"\n{3,}", "\n\n", fm_cleaned).strip("\n")
+            if fm_cleaned:
+                content = f"---\n{fm_cleaned}\n{content[end_idx:]}"
+            else:
+                # Empty frontmatter after removal → drop it entirely, strip leading blanks
+                content = content[end_idx + 4:].lstrip("\n")
+    return content
+
+
 def file_hash(path: str) -> str:
-    """SHA256 of file content."""
-    with open(path, "rb") as f:
-        return hashlib.sha256(f.read()).hexdigest()
+    """SHA256 of normalized file content (ignores line endings and last_update)."""
+    return hashlib.sha256(normalized_content(path).encode("utf-8")).hexdigest()
 
 
 def scan_source(source_dir: str) -> dict:
