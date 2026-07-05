@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CsrAttribute
 
 定义CSR属性表示。 CSR属性字段，当前仅支持字符串类型的属性字段，属性值添加到CSR中编码为utf-8。常见的type为challengePassword。

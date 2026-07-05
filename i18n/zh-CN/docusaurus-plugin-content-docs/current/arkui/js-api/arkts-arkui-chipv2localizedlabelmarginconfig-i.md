@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipV2LocalizedLabelMarginConfig
 
 定义标签边距类型。

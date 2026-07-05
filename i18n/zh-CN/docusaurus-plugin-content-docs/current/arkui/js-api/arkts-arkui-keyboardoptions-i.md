@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyboardOptions
 
 设置自定义键盘是否支持避让功能。

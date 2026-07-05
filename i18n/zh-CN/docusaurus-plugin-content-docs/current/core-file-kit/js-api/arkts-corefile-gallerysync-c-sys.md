@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GallerySync（系统接口）
 
 云图同步对象，用来支撑图库应用媒体资源端云同步流程。在使用前，需要先创建GallerySync实例。

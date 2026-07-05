@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextCascadePickerRangeContent
 
 多列联动数据选择器的数据选项内容。

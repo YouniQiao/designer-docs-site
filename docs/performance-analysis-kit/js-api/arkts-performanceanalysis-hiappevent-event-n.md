@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # event
 
 Provides event name constants, including system event name constants and application event name constants. <br>The application event name constants are optional custom event names reserved when you call Write for application event logging.

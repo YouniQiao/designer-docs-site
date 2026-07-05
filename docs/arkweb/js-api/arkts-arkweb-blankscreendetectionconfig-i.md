@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BlankScreenDetectionConfig
 
 Defines the configuration options of the blank screen detection policy.

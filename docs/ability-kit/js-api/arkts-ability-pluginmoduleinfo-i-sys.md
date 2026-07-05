@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PluginModuleInfo (System API)
 
 Defines the module information of a plugin.

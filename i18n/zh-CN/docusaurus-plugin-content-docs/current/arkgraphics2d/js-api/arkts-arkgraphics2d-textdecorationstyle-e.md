@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextDecorationStyle
 
 装饰线样式枚举。

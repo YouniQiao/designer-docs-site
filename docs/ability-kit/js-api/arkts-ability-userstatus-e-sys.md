@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserStatus (System API)
 
 Enumerates the assertion result for different user operations.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LayoutManager
 
 Implements a layout manager object. > **NOTE** > > After the text content is changed, you must wait for the layout to be completed before you can obtain the most up- > to-date layout information.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HashSet
 
 HashSet基于HashMap实现。在HashSet中，仅处理value对象。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TypedFrameNode
 
 TypedFrameNode继承自[FrameNode](arkts-arkui-framenode-c.md#framenode)，用于声明具体类型的FrameNode。

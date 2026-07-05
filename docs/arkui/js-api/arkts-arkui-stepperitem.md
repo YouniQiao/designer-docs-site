@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StepperItem
 
 The **StepperItem** component represents a page component used within a [Stepper]{@link stepper} container. > **NOTE** > - This component is supported since API version 8 and deprecated since API version 22. You are advised to use > [Swiper]{@link swiper} instead. > Updates will be marked with a superscript to indicate their

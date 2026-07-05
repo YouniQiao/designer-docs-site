@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccessibilityRoleType
 
 Enumerates the component role types used by screen readers.

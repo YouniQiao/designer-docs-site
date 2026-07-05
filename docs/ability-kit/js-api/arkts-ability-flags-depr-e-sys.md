@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Flags
 
 Enumerates the flags that specify how the Want will be handled.

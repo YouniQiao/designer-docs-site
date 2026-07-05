@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CMResult
 
 表示接口的返回结果。

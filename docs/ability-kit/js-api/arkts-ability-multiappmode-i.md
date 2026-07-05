@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MultiAppMode
 
 Defines the [multi-app mode](../../../../quick-start/multiInstance.md).

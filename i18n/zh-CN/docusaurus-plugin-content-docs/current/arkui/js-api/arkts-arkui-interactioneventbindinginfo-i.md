@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InteractionEventBindingInfo
 
 组件的交互事件绑定状态信息。如果当前节点上绑定了所要查询的交互事件，调用查询接口时返回一个InteractionEventBindingInfo对象，指示事件绑定详细信息。

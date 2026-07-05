@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorTextStyle
 
 文本样式信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Zip
 
 Defines the **Zip** instance. It provides APIs to zip or unzip data in Zlib, Deflate, or Gzip format.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.usb
 
 本模块主要提供管理USB设备的相关功能，包括查询USB设备列表、批量数据传输、控制命令传输、权限控制等。 > **说明：** > > 本模块首批接口从API version 8开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。 > 从API version 9开始，该接口不再维护，推荐使用新接口[@ohos.usbManager](arkts-usbmanager.md#usbmanager)。

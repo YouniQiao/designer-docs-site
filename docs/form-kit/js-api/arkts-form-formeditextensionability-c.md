@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FormEditExtensionAbility
 
 The **FormEditExtensionAbility** module, inherited from [UIExtensionAbility](../../apis-ability-kit/arkts-apis/arkts-ability-uiextensionability-c.md#uiextensionability), provides the widget editing function.

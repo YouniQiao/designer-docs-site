@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcAlphabetIndexerInitInfo
 
 定义弧形字母索引条的初始化参数。

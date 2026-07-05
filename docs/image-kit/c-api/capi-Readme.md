@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [image_processing_types.h](capi-image-processing-types-h.md)
     - [image_processing.h](capi-image-processing-h.md)

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TypeDescriptor
 
 Represents a class for defining a uniform data type. It provides properties and methods for describing a uniform data type and its relationship with other uniform data types.

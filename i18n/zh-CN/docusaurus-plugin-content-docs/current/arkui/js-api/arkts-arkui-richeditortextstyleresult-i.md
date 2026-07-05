@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorTextStyleResult
 
 后端返回的文本样式信息。 在RichEditorTextStyle中，fontWeight是设置字体粗细的输入参数。 RichEditorSymbolSpanStyle和RichEditorSymbolSpanStyleResult中fontWeight的转换关系，与RichEditorTextStyle和 RichEditorTextStyleResult中fontWeight的转换关系一致。

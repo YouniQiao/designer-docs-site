@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudDB (System API)
 
 Provides APIs for performing cloud database operations.

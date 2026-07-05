@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.file.volumeManager
 
 The **volumeManager** module provides APIs for querying and managing volumes and disks, including querying volume information, mounting or unmounting a volume, partitioning a disk, and formatting a volume.

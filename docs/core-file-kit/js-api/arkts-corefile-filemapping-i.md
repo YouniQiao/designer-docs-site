@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileMapping
 
 File mapping object. Before invoking the FileMapping method, you need to use the mmap() method (synchronous or asynchronous) to construct a FileMapping instance.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CropOffset (System API)
 
 2D offset for crop frame.

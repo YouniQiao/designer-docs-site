@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.net.mdns
 
 Provides interfaces to discover DNS based services on a local network over Multicast DNS.

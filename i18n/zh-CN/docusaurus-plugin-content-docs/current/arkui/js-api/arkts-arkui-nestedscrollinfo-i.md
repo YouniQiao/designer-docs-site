@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NestedScrollInfo
 
 嵌套可滚动容器组件信息

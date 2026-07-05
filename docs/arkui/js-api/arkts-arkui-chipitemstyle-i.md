@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipItemStyle
 
 Defines the common attributes shared by all chips. > **NOTE** > > 1. The size settings for chips can be of two types: (1) **ChipSize**, which conveniently offers two size options, > **NORMAL** and **SMALL**; (2) **SizeOptions**. > > 2. If **backgroundColor** or **selectedBackgroundColor** is set to **undefined**, the default background color is > used. If an invalid value is provided, the background color is transparent.

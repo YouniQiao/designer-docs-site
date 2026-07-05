@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ConstraintChangeInfo（系统接口）
 
 表示约束变更信息。

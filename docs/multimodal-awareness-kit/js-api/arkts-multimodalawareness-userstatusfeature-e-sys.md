@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserStatusFeature (System API)
 
 Enumerates user status detection features.

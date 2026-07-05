@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Range
 
 Provides Range with lower and upper limit.

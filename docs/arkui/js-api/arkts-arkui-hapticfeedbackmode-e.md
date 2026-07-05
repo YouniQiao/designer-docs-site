@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HapticFeedbackMode
 
 Enumerates the haptic feedback modes used when the menu is displayed.

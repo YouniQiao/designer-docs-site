@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioSessionStateChangedEvent
 
 Describes the event indicating that the audio session state changes.

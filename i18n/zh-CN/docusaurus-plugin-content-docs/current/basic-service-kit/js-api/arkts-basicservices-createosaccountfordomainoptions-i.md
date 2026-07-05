@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CreateOsAccountForDomainOptions（系统接口）
 
 表示用于创建与指定域账号绑定的系统账号的可选参数。继承自[CreateOsAccountOptions](arkts-basicservices-createosaccountoptions-i-sys.md#createosaccountoptions)。

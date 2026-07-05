@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FrictionMotion (System API)
 
 Friction animation model. You can build friction animation by friction force, initial position, and initial velocity.

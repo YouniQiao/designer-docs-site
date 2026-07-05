@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DownloadInfo
 
 预下载的下载信息。

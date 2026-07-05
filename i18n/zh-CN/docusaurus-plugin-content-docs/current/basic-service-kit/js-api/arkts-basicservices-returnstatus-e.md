@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReturnStatus
 
 压缩/解压缩函数的返回代码。

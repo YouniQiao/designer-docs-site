@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DelaySuspendInfo
 
 Defines the information about the transient task.

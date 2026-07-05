@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Stepper
 
 The **Stepper** component provides a step navigator, suitable for guiding users through a step-by-step task completion process. > **NOTE**

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WantAgent
 
 跳转目标的ability信息。

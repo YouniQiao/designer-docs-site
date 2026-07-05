@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TestRunner
 
 Base class for the test framework. If you want to implement your own unit test framework, you must inherit this class and overrides all its methods.

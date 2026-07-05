@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuPreviewMode
 
 菜单的预览样式。

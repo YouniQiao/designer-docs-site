@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomComponentV2
 
 自定义组件V2

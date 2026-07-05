@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Module (System API)
 
 Enumerates the modules from which information is obtained.

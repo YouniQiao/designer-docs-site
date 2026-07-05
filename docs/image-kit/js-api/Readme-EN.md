@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArkTS API<!--arkts-imagekit-->
 
 - [@ohos.multimedia.image](arkts-multimedia-image.md)

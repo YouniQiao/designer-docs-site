@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SharingCode (System API)
 
 Enumerates the error codes for device-cloud sharing.

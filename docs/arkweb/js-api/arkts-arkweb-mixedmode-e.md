@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MixedMode
 
 The Web's behavior to load from HTTP or HTTPS. Defaults to MixedMode.None.

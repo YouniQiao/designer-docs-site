@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RunningMultiAppInfo (System API)
 
 The class of running multi app information.

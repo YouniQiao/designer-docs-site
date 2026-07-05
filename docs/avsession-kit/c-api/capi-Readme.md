@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [native_avmetadata.h](capi-native-avmetadata-h.md)
     - [native_avsession_errors.h](capi-native-avsession-errors-h.md)

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IndexerAlign
 
 Enumerates the alignment styles of the indexer pop-up window.

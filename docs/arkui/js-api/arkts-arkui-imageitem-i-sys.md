@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageItem (System API)
 
 Image information for AI-generated images.

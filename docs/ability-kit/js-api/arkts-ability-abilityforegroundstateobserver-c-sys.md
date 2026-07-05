@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbilityForegroundStateObserver (System API)
 
 The module defines the listener used to listen for ability foreground and background state changes.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AppStorageV2
 
 For details about how to use AppStorageV2, see [AppStorageV2: Storing Application-wide UI State](../../../../ui/state-management/arkts-new-appstoragev2.md).

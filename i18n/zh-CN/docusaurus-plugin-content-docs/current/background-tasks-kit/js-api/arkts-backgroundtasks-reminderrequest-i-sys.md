@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReminderRequest
 
 代理提醒对象，用于设置提醒类型、响铃时长等具体信息。

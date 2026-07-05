@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PatternLockController
 
 PatternLock组件的控制器，用于重置组件状态和设置图案密码的正确或错误状态。 ###### 导入对象 ```ts patternLockController: PatternLockController = new PatternLockController() ```

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomComponentLifecycleObserver
 
 用户注册自定义组件生命周期回调后，当该自定义组件的生命周期发生变化时，将触发监听器中相应的生命周期回调。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AnchoredColorMode
 
 **Since:** 26.0.0

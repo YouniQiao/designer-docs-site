@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AgentUIExtensionAbility
 
 The class of agent UI extension ability. This class cannot be used in Harmony Archive(HAR).

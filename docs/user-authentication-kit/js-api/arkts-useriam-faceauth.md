@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.userIAM.faceAuth
 
 The **userIAM.faceAuth** module provides APIs for face enrollment.

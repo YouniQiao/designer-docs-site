@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LeadingMarginSpan
 
 Defines custom indentation for text paragraphs. Only a base class is provided; the specific implementation is left to developers.

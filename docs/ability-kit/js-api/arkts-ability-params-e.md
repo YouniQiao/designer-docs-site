@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Params
 
 Defines **Params** (specifying the action that can be performed) in the Want.

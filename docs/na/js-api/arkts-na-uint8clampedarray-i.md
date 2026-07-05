@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Uint8ClampedArray
 
 A typed array of 8-bit unsigned integer (clamped) values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EnableAlertBeforeBackPageOptions
 
 Defines the option of EnableAlertBeforeBackPage.

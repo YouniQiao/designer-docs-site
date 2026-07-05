@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InputerManager（系统接口）
 
 凭据输入管理器。

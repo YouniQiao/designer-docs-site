@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioDeviceType (System API)
 
 Indicates the device type of the audio device.

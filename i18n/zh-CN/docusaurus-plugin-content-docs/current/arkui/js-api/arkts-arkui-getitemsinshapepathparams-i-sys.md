@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GetItemsInShapePathParams（系统接口）
 
 需要获取图像对象时设置的图像选项。

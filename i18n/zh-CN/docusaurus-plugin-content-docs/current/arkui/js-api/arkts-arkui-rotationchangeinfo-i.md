@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RotationChangeInfo
 
 窗口旋转变化时的窗口信息。

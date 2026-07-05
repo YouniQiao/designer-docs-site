@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HighlightAlbumChangeAttribute (System API)
 
 Enumerates the types of the highlights album attribute which can be set.

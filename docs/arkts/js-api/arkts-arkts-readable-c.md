@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Readable
 
 Stream from which data can be read. A readable stream is used to read data from a source, such as a file or a network socket.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.telephony.data
 
 Provides methods related to cellular data services.

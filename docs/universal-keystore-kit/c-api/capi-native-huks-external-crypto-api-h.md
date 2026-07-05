@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # native_huks_external_crypto_api.h
 
 ## Overview

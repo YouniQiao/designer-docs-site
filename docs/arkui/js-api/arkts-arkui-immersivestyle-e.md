@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImmersiveStyle
 
 Enumerates immersive material styles. Different material styles correspond to different material parameters, including the blur degree and brightness.

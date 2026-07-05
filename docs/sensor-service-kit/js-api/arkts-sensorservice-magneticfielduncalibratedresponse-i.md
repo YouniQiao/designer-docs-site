@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MagneticFieldUncalibratedResponse
 
 Describes the uncalibrated magnetic field sensor data. It extends from [Response](arkts-sensorservice-response-i.md#response).

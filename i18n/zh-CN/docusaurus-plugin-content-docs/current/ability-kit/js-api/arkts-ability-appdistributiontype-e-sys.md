@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AppDistributionType（系统接口）
 
 标识应用[HarmonyAppProvision配置文件说明](../../../../security/app-provision-structure.md)。

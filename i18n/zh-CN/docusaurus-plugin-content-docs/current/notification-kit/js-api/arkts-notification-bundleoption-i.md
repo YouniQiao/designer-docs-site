@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleOption
 
 描述BundleOption信息，即应用的包信息。

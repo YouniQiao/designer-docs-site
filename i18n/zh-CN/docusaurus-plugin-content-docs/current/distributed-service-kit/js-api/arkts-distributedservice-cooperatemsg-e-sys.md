@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CooperateMsg（系统接口）
 
 键鼠穿越的消息通知。 > **说明：** > > 从API version 10开始不再维护。建议使用[CooperateState](arkts-distributedservice-cooperatestate-e-sys.md#cooperatestate)替代

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsKeyAgreeRecipientInfo
 
 CMS封装数据的KeyAgree接收方信息。

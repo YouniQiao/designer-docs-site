@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NoneActionProposal
 
 智慧手势空动作处理。当通过[registerMonitor](arkts-arkui-smartgesturecontroller-c.md#registermonitor-1)接口动态自定义智慧手势行为时，设置返回值 [GestureHandlingResolution](arkts-arkui-gesturehandlingresolution-c.md#gesturehandlingresolution)的selectedProposal为该类型对象，不会触发任何动作。

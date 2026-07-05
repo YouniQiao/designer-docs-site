@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PointLightStyle (System API)
 
 You apply a point light style by setting the light source that emits illumination and the components to be illuminated.

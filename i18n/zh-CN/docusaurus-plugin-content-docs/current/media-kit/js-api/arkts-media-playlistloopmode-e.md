@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PlaylistLoopMode
 
 表示播放列表循环模式的枚举。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuItemGroup属性/事件
 
 **继承/实现关系：** MenuItemGroupAttribute extends [CommonMethod<MenuItemGroupAttribute>](CommonMethod<MenuItemGroupAttribute>)

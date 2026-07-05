@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccessibilityNextFocusParams
 
 Defines struct of the parameters used to configure the next accessibility focus transition.

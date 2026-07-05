@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ohbattery_info.h
 
 ## 概述

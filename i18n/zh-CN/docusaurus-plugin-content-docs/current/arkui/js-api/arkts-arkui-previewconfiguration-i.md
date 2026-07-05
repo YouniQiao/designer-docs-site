@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PreviewConfiguration
 
 配置自定义拖拽过程中的预览图样式。

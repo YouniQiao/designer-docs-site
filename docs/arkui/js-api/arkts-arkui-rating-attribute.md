@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Rating properties/events
 
 **Inheritance/Implementation:** RatingAttribute extends [CommonMethod<RatingAttribute>](CommonMethod<RatingAttribute>)

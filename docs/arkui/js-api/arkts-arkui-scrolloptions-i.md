@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollOptions
 
 Provides parameters for scrolling to a specific position in a scrollable container.

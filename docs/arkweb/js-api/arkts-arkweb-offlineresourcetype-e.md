@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OfflineResourceType
 
 Enumerates the offline resource types corresponding to the [OfflineResourceMap](arkts-arkweb-offlineresourcemap-i.md#offlineresourcemap) object.

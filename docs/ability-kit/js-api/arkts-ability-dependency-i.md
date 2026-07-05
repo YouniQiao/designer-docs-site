@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Dependency
 
 Describes the information about the dynamic shared library on which the module depends.

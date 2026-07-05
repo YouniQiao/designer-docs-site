@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationRequest
 
 The **NotificationRequest** module provides APIs for defining the notification request.

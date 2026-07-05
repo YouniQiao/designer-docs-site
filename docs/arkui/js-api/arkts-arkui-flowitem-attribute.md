@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FlowItem properties/events
 
 Defines the water flow item attribute.

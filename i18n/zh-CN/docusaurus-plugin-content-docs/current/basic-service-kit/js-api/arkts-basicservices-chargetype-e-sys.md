@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChargeType（系统接口）
 
 表示充电类型的枚举。

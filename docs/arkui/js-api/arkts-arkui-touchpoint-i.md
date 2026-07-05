@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TouchPoint
 
 Defines the coordinates of the touch point. If it is not set, the touch point is centered.

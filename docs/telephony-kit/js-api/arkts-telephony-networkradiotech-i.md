@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetworkRadioTech
 
 Describes the radio access technology (RAT) of registered network.

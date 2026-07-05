@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SegmentButtonV2Items
 
 Represents items of the **SegmentButtonV2** component. This parameter is inherited from Array\<[SegmentButtonV2Item](arkts-arkui-segmentbuttonv2items-c.md#segmentbuttonv2items)>.

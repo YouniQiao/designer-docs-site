@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContinuousLocationRequest
 
 Configuring parameters in continuous location requests.

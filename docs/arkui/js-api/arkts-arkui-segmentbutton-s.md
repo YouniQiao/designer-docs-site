@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SegmentButton
 
 **SegmentButton** is a versatile component that organizes related options into visually grouped buttons. It supports three variants: tab-style, capsule-style single-select, and capsule-style multi-select. >**NOTE** > > - The **SegmentButton** component does not support [universal attributes](../arkts-components/arkts-arkui-commonmethod-c.md#commonmethod). The component occupies the maximum available width within its content area and distributes this width evenly among its items. It adapts its height automatically to the content (text and images), the minimum height being 28 vp. > > - Properties decorated with @Prop are optional. They are required during construction only when used together with the @Require decorator.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PreviewScaleMode
 
 预览图的缩放方式。

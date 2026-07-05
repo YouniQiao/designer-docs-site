@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StrokeJoinStyle
 
 An enumeration that defines the line corner style, i.e., the style of the brush when drawing a polyline at the corners of the line segments.

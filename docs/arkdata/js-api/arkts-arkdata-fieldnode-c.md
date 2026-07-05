@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FieldNode
 
 Represents a **Schema** instance, which provides the methods for defining the values stored in a KV store.

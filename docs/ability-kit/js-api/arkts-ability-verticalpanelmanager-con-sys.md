@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Constants (System API)
 
 ## SOURCE_APP_ABILITY_NAME

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LayoutConstraint
 
 描述组件的布局约束。

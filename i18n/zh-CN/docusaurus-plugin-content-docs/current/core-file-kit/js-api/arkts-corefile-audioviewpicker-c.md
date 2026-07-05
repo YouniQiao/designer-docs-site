@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioViewPicker
 
 音频选择器对象，用来支撑选择和保存音频类文件等用户场景。在使用前，需要先创建AudioViewPicker实例。

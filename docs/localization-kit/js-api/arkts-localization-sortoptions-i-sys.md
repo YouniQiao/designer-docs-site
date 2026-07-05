@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SortOptions (System API)
 
 Represents the language or country/region sorting option.

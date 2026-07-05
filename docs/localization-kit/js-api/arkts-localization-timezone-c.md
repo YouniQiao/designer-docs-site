@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TimeZone
 
 Provides time zone management capabilities, such as time zone name translation, offset retrieval, and transition rule retrieval.

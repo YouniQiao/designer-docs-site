@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIServiceExtensionConnectCallback
 
 ## 汇总

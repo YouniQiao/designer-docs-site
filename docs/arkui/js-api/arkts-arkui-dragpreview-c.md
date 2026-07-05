@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DragPreview
 
 Implements a **DragPreview** object. This API does not work in the **OnDrop** and **OnDragEnd** callbacks.

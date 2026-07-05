@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MappingMode
 
 Enumerated type of the file memory mapping mode, which can be used by the mmap API.

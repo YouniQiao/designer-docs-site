@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileInfo (System API)
 
 Represents information about a file or directory in the **Recently deleted** list.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SharingIfaceType (System API)
 
 Enumerates the network sharing types of an NIC.

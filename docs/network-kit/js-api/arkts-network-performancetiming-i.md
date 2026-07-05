@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PerformanceTiming
 
 Counting the time taken of various stages of HTTP request.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PerformanceInfo
 
 Describes the pre-downloaded performance information.

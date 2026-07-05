@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScaleRingStyleOptions
 
 Options of the ring style with scales. Inherits from [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions).

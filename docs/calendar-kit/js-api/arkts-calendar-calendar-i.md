@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Calendar
 
 In the following API examples, you need to use [createCalendar()](arkts-calendar-calendarmanager-i.md#createcalendar-2) or [getCalendar()](calendarManager.CalendarManager.getCalendar (callback: AsyncCallback<Calendar>)) to obtain a **Calendar** object before calling related APIs.

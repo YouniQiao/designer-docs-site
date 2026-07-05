@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CalendarPickerDialog
 
 A calendar picker dialog box is a dialog box that allows users to select a date from a calendar picker.

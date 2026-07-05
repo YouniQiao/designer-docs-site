@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SmartGestureShortcutOptions
 
 智慧手势响应行为配置对象。

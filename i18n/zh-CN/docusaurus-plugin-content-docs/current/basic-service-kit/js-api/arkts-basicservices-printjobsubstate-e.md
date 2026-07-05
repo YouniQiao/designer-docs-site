@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrintJobSubState
 
 打印任务子状态的枚举。

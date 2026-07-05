@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [cm_native_type.h](capi-cm-native-type-h.md)
     - [cm_native_api.h](capi-cm-native-api-h.md)

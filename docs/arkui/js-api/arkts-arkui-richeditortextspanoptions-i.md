@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorTextSpanOptions
 
 Describes the options for adding a text span.

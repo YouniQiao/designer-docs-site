@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebHttpCookieSameSitePolicy
 
 指示是否将 cookie 限制为仅创建它的同一站点的请求可以携带。指示是否将 cookie 限制为仅创建它的同一站点的请求可以携带。

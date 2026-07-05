@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PopInfo
 
 Provides the callback information returned when a page is popped out of the routing stack.

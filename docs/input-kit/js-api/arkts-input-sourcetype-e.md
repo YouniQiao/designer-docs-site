@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SourceType
 
 Enumerates touch sources. Currently, only the touchscreen and touchpad are supported.

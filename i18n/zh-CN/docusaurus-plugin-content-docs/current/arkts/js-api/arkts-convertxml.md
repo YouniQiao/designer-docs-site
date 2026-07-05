@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.convertxml
 
 本模块提供将XML文本转换为JavaScript对象的解析能力。

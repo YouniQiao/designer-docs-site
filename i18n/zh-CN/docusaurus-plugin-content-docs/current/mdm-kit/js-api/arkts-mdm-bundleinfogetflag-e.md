@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleInfoGetFlag
 
 包信息获取标志，指示需要获取的包信息的内容。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SignatureUtils
 
 Provides utilities for converting ECC/SM2 signature data.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ColumnLayoutAlgorithmOptions
 
 Sets the spacing, main axis alignment method, cross axis alignment method, and main axis arrangement direction of the vertical linear layout algorithm.

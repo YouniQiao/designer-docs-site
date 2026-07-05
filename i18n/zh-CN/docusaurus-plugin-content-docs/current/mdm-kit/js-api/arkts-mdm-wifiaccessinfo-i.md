@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WifiAccessInfo
 
 Wi-Fi的SSID和BSSID信息。

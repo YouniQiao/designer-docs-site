@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocalFilePresentStatus（系统接口）
 
 检测结果对象，包含应用包名及其在云盘存储空间内是否存在未上云文件的状态信息。

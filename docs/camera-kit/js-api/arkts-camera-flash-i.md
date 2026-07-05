@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Flash
 
 Flash extends [FlashQuery](arkts-camera-flashquery-i.md#flashquery) Provides APIs related to the flash.

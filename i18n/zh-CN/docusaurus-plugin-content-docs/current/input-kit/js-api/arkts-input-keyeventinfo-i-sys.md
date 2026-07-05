@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyEventInfo（系统接口）
 
 定义用户注入的按键事件信息。

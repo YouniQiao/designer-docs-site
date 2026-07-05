@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WeekDay
 
 Enumerates the first day of a week. The value ranges from Monday to Sunday.

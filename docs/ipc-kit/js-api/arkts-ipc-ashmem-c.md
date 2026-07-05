@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Ashmem
 
 Provides methods related to anonymous shared memory objects, including creating, closing, mapping, and unmapping an **Ashmem** object, reading data from and writing data to an **Ashmem** object, obtaining the **Ashmem** size, and setting **Ashmem** protection. The shared memory applies only to cross-process communication within the local device.

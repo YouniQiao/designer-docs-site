@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebContextMenuParam
 
 Defines the context menu param, related to {@link WebContextMenuParam} method.

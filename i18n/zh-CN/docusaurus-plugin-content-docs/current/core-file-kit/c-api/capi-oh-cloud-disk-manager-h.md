@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # oh_cloud_disk_manager.h
 
 ## 概述

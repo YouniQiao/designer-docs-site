@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FilterCallback（系统接口）
 
 表示要监听的回调函数，该类型为枚举。可配合[AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter)过滤想要监听的回调函数。

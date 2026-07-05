@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CertificateType
 
 Enumerates the types of the certificate to be installed.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ProgressStyleOptions
 
 Defines the progress bar style options. Inherits from [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions).

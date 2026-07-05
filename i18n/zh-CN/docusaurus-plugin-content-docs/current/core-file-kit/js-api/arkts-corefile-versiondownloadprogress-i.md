@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VersionDownloadProgress
 
 历史版本文件下载状态和进度信息，调用端云文件版本管理类[FileVersion](arkts-corefile-fileversion-c.md#fileversion)的 [downloadHistoryVersion](arkts-corefile-fileversion-c.md#downloadhistoryversion-1)方法时，回调函数的入参类型。

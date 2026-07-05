@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CornerPos
 
 Enumerates the corner positions of a rounded rectangle.

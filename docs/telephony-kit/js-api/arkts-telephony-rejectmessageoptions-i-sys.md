@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RejectMessageOptions (System API)
 
 Indicates the options for call rejection message.

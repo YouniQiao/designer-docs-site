@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MediaError
 
 播放器的错误类型。

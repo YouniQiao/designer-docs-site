@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TabsOptions
 
 Provides parameters for configuring the **Tabs** component, including tab positions, the current index of the displayed tab, the **Tabs** controller, and [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) for the **TabBar**.

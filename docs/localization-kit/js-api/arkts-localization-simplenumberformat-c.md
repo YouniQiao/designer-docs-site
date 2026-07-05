@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SimpleNumberFormat
 
 Formats a number based on the specified skeleton string.

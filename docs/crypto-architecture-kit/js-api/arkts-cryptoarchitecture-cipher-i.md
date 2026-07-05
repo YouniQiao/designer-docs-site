@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Cipher
 
 Provides APIs for cipher operations. The [init()](arkts-cryptoarchitecture-cipher-i.md#init-4), [update()](arkts-cryptoarchitecture-cipher-i.md#update-1), and [doFinal()](arkts-cryptoarchitecture-cipher-i.md#dofinal-2) APIs in this class are called in sequence to implement symmetric encryption or decryption and asymmetric encryption or decryption. For details about the complete encryption and decryption process, see [Encryption and Decryption Overview](../../../../security/CryptoArchitectureKit/crypto-encryption-decryption-overview.md) . A complete symmetric encryption/decryption process is slightly different from the asymmetric encryption/decryption process. - Symmetric encryption and decryption: **init()** and **doFinal()** are mandatory. **update()** is optional and can be called multiple times to encrypt or decrypt big data. After **doFinal()** is called to complete an encryption or decryption operation, **init()** can be called to start a new encryption or decryption operation. - RSA or SM2 asymmetric encryption and decryption: **init()** and **doFinal()** are mandatory, and **update()** is not supported. **doFinal()** can be called multiple times to encrypt or decrypt big data. **init()** cannot be called repeatedly. If the encryption/decryption mode or padding mode is changed, a new **Cipher** object must be created.

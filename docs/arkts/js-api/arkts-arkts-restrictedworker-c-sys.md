@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RestrictedWorker (System API)
 
 The RestrictedWorker class contains all Worker functions.

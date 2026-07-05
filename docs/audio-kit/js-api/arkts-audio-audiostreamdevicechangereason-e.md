@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioStreamDeviceChangeReason
 
 Enumerates the reasons for audio stream device changes.

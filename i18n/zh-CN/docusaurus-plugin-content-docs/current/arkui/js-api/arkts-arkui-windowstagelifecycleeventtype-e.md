@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowStageLifecycleEventType
 
 WindowStage生命周期的状态类型枚举。

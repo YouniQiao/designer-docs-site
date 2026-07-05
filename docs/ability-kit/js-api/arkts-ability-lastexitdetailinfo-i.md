@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LastExitDetailInfo
 
 Describes the key runtime information of the process where the ability last exited.

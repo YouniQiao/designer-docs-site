@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuxiliaryPictureType
 
 Enumerates the auxiliary pictures types. Auxiliary pictures do not directly participate in image display, and not all images contain auxiliary pictures. Before obtaining and using a specific auxiliary picture, call [getAuxiliaryPicture](arkts-image-picture-i.md#getauxiliarypicture-1) in Picture to obtain the auxiliary picture.

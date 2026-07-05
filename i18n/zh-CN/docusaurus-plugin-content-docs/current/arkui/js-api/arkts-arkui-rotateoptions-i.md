@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RotateOptions
 
 组件旋转参数。

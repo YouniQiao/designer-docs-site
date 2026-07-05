@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RenderStrategy
 
 Enumerates rendering strategies for drawing rounded corners.

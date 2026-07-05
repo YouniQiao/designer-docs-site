@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextGenerationModel (System API)
 
 AI Text Model Abstract Interface.

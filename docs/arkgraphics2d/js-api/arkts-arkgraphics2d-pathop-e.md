@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PathOp
 
 Enumerates the path operation types. It is often used in path combination and clipping scenarios.

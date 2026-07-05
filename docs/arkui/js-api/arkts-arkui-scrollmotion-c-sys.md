@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollMotion (System API)
 
 Rolling animation model: You can build rolling animation based on the initial position, initial speed, boundary position, and spring attributes.

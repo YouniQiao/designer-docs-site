@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PreviewAttribute (System API)
 
 Defines the print preview attributes.

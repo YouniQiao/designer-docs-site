@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MatchResult
 
 表示敏感内容的识别结果。

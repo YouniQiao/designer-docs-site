@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LineSpacingOptions
 
 Configures the line spacing of text and whether it applies only between lines.

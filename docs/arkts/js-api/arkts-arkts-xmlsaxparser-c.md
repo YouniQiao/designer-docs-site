@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # XmlSAXParser
 
 The XmlSAXParser provides the capability of parsing XML in a streaming manner.

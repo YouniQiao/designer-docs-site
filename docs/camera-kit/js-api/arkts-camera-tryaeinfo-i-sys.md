@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TryAEInfo (System API)
 
 Describes the Try AE parameters. Try AE indicates that the hardware reports the status based on the ambient illumination change during time-lapse photographing.

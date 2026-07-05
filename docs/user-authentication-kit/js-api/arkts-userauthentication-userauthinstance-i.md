@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserAuthInstance
 
 Provides APIs for user authentication. The user authentication widget is supported. Before using the APIs of **UserAuthInstance**, you must obtain a **UserAuthInstance** instance by using [getUserAuthInstance](arkts-userauthentication-getuserauthinstance-f.md#getuserauthinstance-1).

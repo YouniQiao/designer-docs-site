@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EventTarget
 
 [BaseEvent](arkts-arkui-baseevent-i.md#baseevent)中参数target的类型。 触发事件的元素对象的显示区域。

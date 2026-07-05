@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.enterprise.adminManager
 
 The **adminManager** module provides administrator permission management capabilities for enterprise MDM applications , including enabling or disabling administrator permissions, subscribing to events, delegating applications, and granting permissions. > **NOTE** > > The APIs of this module can be called only by a device administrator application. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md).

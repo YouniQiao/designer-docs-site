@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccessibilityFocusScene (System API)
 
 Enumeration of scenes of accessibility focus.

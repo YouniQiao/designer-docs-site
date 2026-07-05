@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyUsageType
 
 Enumerates the purposes for which the key in the certificate is used.

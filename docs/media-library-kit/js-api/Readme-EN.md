@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArkTS API<!--arkts-medialibrarykit-->
 
 - [@ohos.file.AlbumPickerComponent](arkts-file-albumpickercomponent.md)

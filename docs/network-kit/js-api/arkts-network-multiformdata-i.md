@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MultiFormData
 
 Represents the properties of a form object.

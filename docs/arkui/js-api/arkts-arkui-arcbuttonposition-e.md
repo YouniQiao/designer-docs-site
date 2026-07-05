@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcButtonPosition
 
 Enumerates the types of arc buttons that can be set for **ArcButton**.

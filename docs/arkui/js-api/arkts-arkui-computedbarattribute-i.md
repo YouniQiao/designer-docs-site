@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ComputedBarAttribute
 
 Provides information about the position and length of the scrollbar.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BleScanner
 
 Manages the ble scanner. Before calling a ble scanner method, you must use {@link createBleScanner} to create an BleScanner instance.

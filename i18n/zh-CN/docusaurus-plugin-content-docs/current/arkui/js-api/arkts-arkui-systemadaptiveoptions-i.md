@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemAdaptiveOptions
 
 系统自适应调节参数，系统会默认开启根据芯片算力进行自适应效果调节的能力。

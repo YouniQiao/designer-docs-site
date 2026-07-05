@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WatermarkType (System API)
 
 Enumerates the watermark editable flags.

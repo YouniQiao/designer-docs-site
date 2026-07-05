@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ItemFillPolicy
 
 定义一个适合WaterFlow、Grid、List和Swiper组件的响应式item布局。

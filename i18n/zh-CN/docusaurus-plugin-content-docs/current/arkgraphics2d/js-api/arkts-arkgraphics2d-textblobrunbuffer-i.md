@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextBlobRunBuffer
 
 描述一行文字中具有相同属性的连续字形。

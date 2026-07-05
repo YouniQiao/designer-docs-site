@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MemoryLimit
 
 Defines the memory limit of the application process.

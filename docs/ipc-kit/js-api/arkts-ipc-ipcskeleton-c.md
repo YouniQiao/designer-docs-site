@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IPCSkeleton
 
 Obtains IPC context, including the UID and PID, local and remote device IDs, and whether the method is invoked on the same device.

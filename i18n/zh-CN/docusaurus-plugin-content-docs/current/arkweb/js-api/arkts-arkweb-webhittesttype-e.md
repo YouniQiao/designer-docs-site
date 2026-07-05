@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebHitTestType
 
 [getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1)接口用于指示光标节点。

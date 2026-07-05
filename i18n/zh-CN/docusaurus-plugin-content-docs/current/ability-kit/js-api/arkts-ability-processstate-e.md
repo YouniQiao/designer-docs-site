@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ProcessState
 
 表示进程状态的枚举。

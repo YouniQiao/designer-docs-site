@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PathSeparatorStrategy
 
 PathSeparatorStrategy作为[Options](arkts-basicservices-options-i.md#options)的一个属性，用于指定解压时目标压缩包内文件路径中分隔符的处理策略。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Divider
 
 Provides a divider component to separate different content blocks/content elements.

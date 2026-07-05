@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SmartGestureAction
 
 智慧手势操作类型枚举。

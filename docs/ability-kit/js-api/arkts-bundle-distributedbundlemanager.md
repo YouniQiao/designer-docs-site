@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bundle.distributedBundleManager
 
 The module provides APIs for managing distributed bundles. > **NOTE** > > The APIs provided by this module are system APIs.

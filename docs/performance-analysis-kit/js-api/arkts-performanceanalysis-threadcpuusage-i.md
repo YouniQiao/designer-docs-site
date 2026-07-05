@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThreadCpuUsage
 
 Describes the CPU usage of a thread.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Event
 
 Describes an **Event** object, including the event title, start time, and end time.

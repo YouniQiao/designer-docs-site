@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DisplayRotation
 
 描述设备的显示旋转方向。

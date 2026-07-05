@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SelectionExtensionContext（系统接口）
 
 SelectionExtensionContext是 [SelectionExtensionAbility](arkts-basicservices-selectionextensionability-c-sys.md#selectionextensionability)的上下文，继承自 [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext)。 每个SelectionExtensionAbility组件实例化时，系统都会自动创建对应的SelectionExtensionContext。开发者可以通过SelectionExtensionContext拉起同应用内其他 Ability。 > **说明：** > - 本模块仅支持PC/2in1设备。

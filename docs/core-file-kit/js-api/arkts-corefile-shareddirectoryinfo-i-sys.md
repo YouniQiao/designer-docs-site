@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SharedDirectoryInfo (System API)
 
 The directory information shared with the system by the application.

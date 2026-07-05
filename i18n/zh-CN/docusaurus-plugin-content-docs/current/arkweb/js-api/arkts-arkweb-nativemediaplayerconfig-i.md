@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeMediaPlayerConfig
 
 用于[开启应用接管网页媒体播放功能](web:WebAttribute.enableNativeMediaPlayer)的配置信息。

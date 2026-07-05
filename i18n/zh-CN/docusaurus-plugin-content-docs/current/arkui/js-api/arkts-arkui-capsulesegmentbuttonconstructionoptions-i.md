@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CapsuleSegmentButtonConstructionOptions
 
 用于构建胶囊类的SegmentButtonOptions对象。 继承[CommonSegmentButtonOptions](arkts-arkui-commonsegmentbuttonoptions-i.md#commonsegmentbuttonoptions)。

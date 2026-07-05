@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MarkType (System API)
 
 Indicates the type of the number mark.

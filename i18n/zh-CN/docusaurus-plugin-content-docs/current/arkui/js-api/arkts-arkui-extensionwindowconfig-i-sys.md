@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtensionWindowConfig（系统接口）
 
 创建扩展窗口时需要配置的参数。

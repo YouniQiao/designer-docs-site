@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MinSpeed
 
 Defines the minimum speed of a task. If the task speed is lower than the preset value for a specified period of time, the task fails. The failure cause is [LOW_SPEED](arkts-basicservices-faults-e.md#faults).

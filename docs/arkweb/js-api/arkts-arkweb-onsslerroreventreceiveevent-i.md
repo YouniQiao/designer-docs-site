@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnSslErrorEventReceiveEvent
 
 Defines the triggered callback when the Web page receives an ssl Error.

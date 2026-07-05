@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Metadata
 
 The **Metadata** class provides APIs for storing image metadata. For details about the supported metadata types, see [MetadataType](arkts-image-metadatatype-e.md#metadatatype).

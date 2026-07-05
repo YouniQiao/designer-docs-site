@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HAMode (System API)
 
 Enumerates the high availability modes of the RDB store.

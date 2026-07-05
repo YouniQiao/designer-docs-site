@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogAlignment
 
 警告弹窗的对齐方式。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InterruptData
 
 Describe the interrupt data is received from remote host.

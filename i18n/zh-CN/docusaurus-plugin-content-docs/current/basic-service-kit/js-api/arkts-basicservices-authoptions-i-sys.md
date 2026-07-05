@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthOptions（系统接口）
 
 表示 [认证用户](arkts-basicservices-userauth-c-sys.md#auth-2) 的可选参数集合。

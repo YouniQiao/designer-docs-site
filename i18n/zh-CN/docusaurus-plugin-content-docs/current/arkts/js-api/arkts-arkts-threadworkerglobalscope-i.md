@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThreadWorkerGlobalScope
 
 Worker线程用于与宿主线程通信的类。其中postMessage接口用于向宿主线程发送消息，close接口用于销毁Worker线程。 ThreadWorkerGlobalScope类继承GlobalScope9+。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InputMethodSubtype
 
 The **InputMethodSubtype** module provides APIs for managing the attributes of input method subtypes. The input method subtype allows the input method to switch to a specific mode or language, for example, the Chinese or English keyboard.

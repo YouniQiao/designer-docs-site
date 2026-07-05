@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PinchGestureEvent
 
 Inherits from [BaseGestureEvent](arkts-arkui-basegestureevent-i.md#basegestureevent). This object can be passed as the **event** parameter of [onGestureJudgeBegin](arkts-arkui-commonmethod-c.md#ongesturejudgebegin-1).

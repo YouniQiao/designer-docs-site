@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwitchKey
 
 开关名称的枚举。

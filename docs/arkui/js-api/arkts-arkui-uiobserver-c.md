@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIObserver
 
 Provides APIs for listening for UI component behavior changes. > **NOTE** > > - The initial APIs of this class are supported since API version 11. > > - In the following API examples, you must first use [getUIObserver()](arkts-arkui-uicontext-c.md#getuiobserver-1) in > **UIContext** to obtain a **UIObserver** instance, and then call the APIs using the obtained instance. > > - UIObserver can only listen for relevant information within the current process and does not support obtaining > information in cross-process scenarios<!--Del--> such as [UIExtensionComponent](../arkts-components/arkts-arkui-uiextensioncomponent.md)<!-- > DelEnd-->.

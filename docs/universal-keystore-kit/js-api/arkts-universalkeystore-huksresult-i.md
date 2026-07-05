@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksResult
 
 Represents the result returned. > **NOTE** > > - For details about the error codes, see > [HUKS Error Codes](../../../../reference/apis-universal-keystore-kit/errorcode-huks.md).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebSoftKeyboardBehaviorMode
 
 Indicates the keyboard behavior mode of the web component, default value is DEFAULT.

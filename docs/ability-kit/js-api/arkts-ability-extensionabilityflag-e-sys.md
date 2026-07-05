@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtensionAbilityFlag (System API)
 
 Enumerates the ExtensionAbility flags, which indicate the type of ExtensionAbility information to obtain.

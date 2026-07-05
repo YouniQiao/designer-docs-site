@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OpenMode
 
 open接口flags参数常量。文件打开标签。

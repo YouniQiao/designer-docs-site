@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScaleToFit
 
 源矩形到目标矩形的缩放方式枚举。

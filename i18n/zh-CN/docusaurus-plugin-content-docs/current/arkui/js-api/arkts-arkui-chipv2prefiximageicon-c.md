@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipV2PrefixImageIcon
 
 定义前缀图标。

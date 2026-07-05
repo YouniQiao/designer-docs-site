@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageSpanAlignment
 
 The alignment mode of the image relative to the line height.

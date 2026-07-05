@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ManualExposureQuery (System API)
 
 Provides APIs to obtain the manual exposure range supported.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WatchEventListener
 
 (event: WatchEvent): void Provides APIs for observing events.

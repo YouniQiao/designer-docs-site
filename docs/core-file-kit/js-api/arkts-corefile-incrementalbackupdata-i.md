@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IncrementalBackupData (System API)
 
 Corresponds to an incremental application, including its last incremental time and incremental list.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Dirent
 
 在调用Dirent的方法前，需要先通过[dir.read()](arkts-corefile-fileio-read-f.md#read-1)方法（同步或异步）来构建一个Dirent实例。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuOutlineOptions
 
 Defines the outline of the drop-down menu.

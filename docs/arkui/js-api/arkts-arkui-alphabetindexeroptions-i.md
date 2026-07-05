@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AlphabetIndexerOptions
 
 Defines the options of the **AlphabetIndexer** component. > **NOTE** > To standardize anonymous object definitions, the element definitions here have been revised in API version 18. > While historical version information is preserved for anonymous objects, there may be cases where the outer element > 's @since version number is higher than inner elements'. This does not affect interface usability.

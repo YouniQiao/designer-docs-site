@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowTransitionType
 
 Enumerates the types of window transition animations.

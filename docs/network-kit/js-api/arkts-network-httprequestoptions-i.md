@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HttpRequestOptions
 
 Specifies the type and value range of the optional parameters in the HTTP request.
@@ -159,7 +154,7 @@ Supports specifying the user custom defined http request method
 dnsOverHttps?: string
 ```
 
-If this parameter is set, incoming DNS resolution server URL for the DoH server to use for name resolving. The parameter must be URL-encoded in the following format: `"https://host:port/path"`. It MUST specify an HTTPS URL.
+If this parameter is set, incoming DNS resolution server URL for the DoH server to use for name resolving. The parameter must be URL-encoded in the following format: "https://host:port/path". It MUST specify an HTTPS URL.
 
 **Type:** string
 

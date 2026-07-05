@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ClickEffectLevel
 
 定义点击效果的级别及对应动效参数。

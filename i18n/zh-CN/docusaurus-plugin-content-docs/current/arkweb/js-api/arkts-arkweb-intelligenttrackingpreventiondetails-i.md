@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IntelligentTrackingPreventionDetails
 
 提供智能防跟踪拦截的详细信息。

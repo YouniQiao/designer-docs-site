@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogOptions
 
 自定义弹窗的内容，继承自[BaseDialogOptions](#basedialogoptions11)。

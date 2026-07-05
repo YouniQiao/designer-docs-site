@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AdComponent
 
 This module provides the capability of displaying ads, covering native, roll, splash, and other ad styles.

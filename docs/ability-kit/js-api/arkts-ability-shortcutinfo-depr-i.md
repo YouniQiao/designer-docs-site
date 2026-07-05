@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ShortcutInfo
 
 > **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. You are advised to use > [bundleManager-ShortcutInfo](arkts-ability-shortcutinfo-depr-i.md#shortcutinfo) instead.

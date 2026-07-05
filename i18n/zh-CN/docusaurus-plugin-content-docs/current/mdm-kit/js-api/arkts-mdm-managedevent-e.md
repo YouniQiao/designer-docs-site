@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ManagedEvent
 
 可订阅的系统管理事件。

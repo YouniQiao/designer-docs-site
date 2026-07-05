@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScopeComparable
 
 The values of the **ScopeComparable** type are used to implement the **compareTo** method. Therefore, ensure that the input parameters are comparable.

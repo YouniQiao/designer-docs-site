@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TabSegmentButtonV2
 
 Defines segmented button with tab style.

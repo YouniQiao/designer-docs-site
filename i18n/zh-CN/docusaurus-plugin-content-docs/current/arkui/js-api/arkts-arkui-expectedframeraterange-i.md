@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExpectedFrameRateRange
 
 设置动画期望的帧率。

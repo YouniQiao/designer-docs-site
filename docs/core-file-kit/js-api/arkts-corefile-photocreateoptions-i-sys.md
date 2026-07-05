@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PhotoCreateOptions (System API)
 
 Describe additional operations for creating photo

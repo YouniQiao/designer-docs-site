@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationLongTextContent
 
 描述长文本通知。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md#notificationbasiccontent)。 > **说明：** > > 实际显示效果依赖于设备能力和通知中心UI样式。

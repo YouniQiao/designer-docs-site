@@ -1,31 +1,54 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommonShapeMethod
 
-常见的形状方法。
+CommonShapeMethod
 
-**起始版本：** 12
+**继承/实现关系：** CommonShapeMethod extends [CommonMethod<T>](CommonMethod<T>)
+
+**起始版本：** 11
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+## antiAlias
+
+```TypeScript
+antiAlias(value: boolean): T
+```
+
+Indicates whether to enable anti-aliasing
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | boolean | 是 | @returns { T } |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
 
 ## fill
 
 ```TypeScript
-fill(color: ResourceColor): T
+fill(value: ResourceColor): T
 ```
 
-设置形状的填充区域的透明度，黑色表示完全透明，白色表示完全不透明。
+Fill color.
 
-**起始版本：** 12
+**起始版本：** 11
 
-**模型约束：** 此接口仅可在Stage模型下使用。
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
-
-**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -33,29 +56,27 @@ fill(color: ResourceColor): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| color | ResourceColor | 是 | 形状的填充区域的透明度，黑色表示完全透明，白色表示完全不透明。 |
+| value | ResourceColor | 是 | @returns { T } |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前对象。 |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
 
-## offset
+## fillOpacity
 
 ```TypeScript
-offset(offset: Position): T
+fillOpacity(value: number | string | Resource): T
 ```
 
-设置相对于组件布局位置的坐标偏移。
+fill Opacity
 
-**起始版本：** 12
+**起始版本：** 11
 
-**模型约束：** 此接口仅可在Stage模型下使用。
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
-
-**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -63,29 +84,27 @@ offset(offset: Position): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| offset | Position | 是 | 相对于组件布局位置的坐标偏移。 |
+| value | number \| string \| Resource | 是 | @returns { T } |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前对象。 |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
 
-## position
+## stroke
 
 ```TypeScript
-position(position: Position): T
+stroke(value: ResourceColor): T
 ```
 
-设置形状的位置。
+border Color
 
-**起始版本：** 12
+**起始版本：** 11
 
-**模型约束：** 此接口仅可在Stage模型下使用。
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
 
-**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
-
-**卡片能力：** 从API版本12开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -93,11 +112,207 @@ position(position: Position): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| position | Position | 是 | 设置形状的位置。 |
+| value | ResourceColor | 是 | @returns { T } |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| T | 返回当前对象。 |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
+
+## strokeDashArray
+
+```TypeScript
+strokeDashArray(value: Array<any>): T
+```
+
+Sets the gap for the border.
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | Array&lt;any&gt; | 是 | @returns { T } |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
+
+## strokeDashOffset
+
+```TypeScript
+strokeDashOffset(value: number | string): T
+```
+
+Offset from the start point of the border drawing.
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | number \| string | 是 | @returns { T } |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
+
+## strokeLineCap
+
+```TypeScript
+strokeLineCap(value: LineCapStyle): T
+```
+
+Path endpoint drawing style.
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | LineCapStyle | 是 | @returns { T } |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
+
+## strokeLineJoin
+
+```TypeScript
+strokeLineJoin(value: LineJoinStyle): T
+```
+
+Border corner drawing style.
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | LineJoinStyle | 是 | @returns { T } |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
+
+## strokeMiterLimit
+
+```TypeScript
+strokeMiterLimit(value: number | string): T
+```
+
+Limits for drawing acute angles as bevels
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | number \| string | 是 |  |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
+
+## strokeOpacity
+
+```TypeScript
+strokeOpacity(value: number | string | Resource): T
+```
+
+Sets the opacity of the border.
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | number \| string \| Resource | 是 | @returns { T } |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
+
+## strokeWidth
+
+```TypeScript
+strokeWidth(value: Length): T
+```
+
+Sets the width of the dividing line.
+
+**起始版本：** 11
+
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
+
+**参数：**
+
+| 参数名 | 类型 | 必填 | 说明 |
+| --- | --- | --- | --- |
+| value | Length | 是 | @returns { T } |
+
+**返回值：**
+
+| 类型 | 说明 |
+| --- | --- |
+| T | @syscap SystemCapability.ArkUI.ArkUI.Full@FaAndStageModel@crossplatform@form@atomicservice |
 

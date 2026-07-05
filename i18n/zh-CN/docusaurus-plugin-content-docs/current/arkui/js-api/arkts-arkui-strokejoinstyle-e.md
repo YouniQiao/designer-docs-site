@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StrokeJoinStyle
 
 定义线条拐角的样式，即在绘制折线时线段拐角处的画笔样式。

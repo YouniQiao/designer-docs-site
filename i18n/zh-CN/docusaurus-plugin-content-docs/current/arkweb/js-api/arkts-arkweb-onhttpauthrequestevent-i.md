@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnHttpAuthRequestEvent
 
 定义通知收到http auth认证请求。

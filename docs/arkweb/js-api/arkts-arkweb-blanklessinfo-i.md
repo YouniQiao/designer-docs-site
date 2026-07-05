@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BlanklessInfo
 
 Describes the prediction information about blankless loading, including the first screen similarity, first screen loading duration, and error code. The application determines whether to enable the blankless loading solution based on the prediction information.

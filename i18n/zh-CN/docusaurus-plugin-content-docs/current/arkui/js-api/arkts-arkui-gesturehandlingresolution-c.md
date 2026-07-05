@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureHandlingResolution
 
 智慧手势处理结果声明类。

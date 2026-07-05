@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PersistenceV2
 
 继承自[AppStorageV2](arkts-arkui-appstoragev2-c.md#appstoragev2)，PersistenceV2具体UI使用说明，详见 [PersistenceV2(持久化存储UI状态)](../../../../ui/state-management/arkts-new-persistencev2.md)。

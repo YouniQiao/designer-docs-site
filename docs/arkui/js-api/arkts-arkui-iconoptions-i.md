@@ -1,55 +1,62 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IconOptions
 
-Defines the common attributes of icons.
+Defines the icon options.
 
-**Since:** 12
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## Modules to Import
+## color
 
 ```TypeScript
-import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixImageIconOptions, IconGroupSuffix, IconItemOptions, ChipItemStyle, ChipGroupItemOptions, ChipGroup, IconOptions } from '@ohos.arkui.advanced.ChipGroup';
+color?: ResourceColor
 ```
+
+Icon color.
+
+**Type:** ResourceColor
+
+**Since:** 10
+
+**Model restriction:** This API can be used only in the stage model.
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## size
 
 ```TypeScript
-size?: SizeOptions
+size?: Length
 ```
 
-Icon size. This parameter cannot be set in percentage. Default value: **undefined**
+Icon size. It cannot be set in percentage.
 
-**Type:** SizeOptions
+**Type:** Length
 
-**Since:** 12
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## src
 
 ```TypeScript
-src: ResourceStr
+src?: ResourceStr
 ```
 
-Icon source, which can be a specific image resource or an image address reference. For details, see [Image](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-image.md#image-1).
+Image source of the icon.
 
 **Type:** ResourceStr
 
-**Since:** 12
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

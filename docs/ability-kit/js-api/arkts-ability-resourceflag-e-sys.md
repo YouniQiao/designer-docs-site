@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResourceFlag (System API)
 
 Enumerates the resource information flags, which indicate the type of resource information to obtain.

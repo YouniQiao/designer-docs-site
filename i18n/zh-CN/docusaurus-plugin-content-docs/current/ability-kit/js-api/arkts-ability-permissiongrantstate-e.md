@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PermissionGrantState
 
 权限授予状态。

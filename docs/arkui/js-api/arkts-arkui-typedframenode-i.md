@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TypedFrameNode
 
 Extends [FrameNode](arkts-arkui-framenode-c.md#framenode) to define a FrameNode with specific type constraints.

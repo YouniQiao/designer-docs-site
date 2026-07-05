@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Action
 
 Enumerates the action constants of the Want object. **action** specifies the operation to execute.

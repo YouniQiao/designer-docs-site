@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatingBallController
 
 Implements a floating ball controller instance, which is used to start, update, and stop floating balls, and register callbacks. Before calling any of the following APIs, you must use [floatingBall.create()](arkts-arkui-create-f.md#create-1) to create a floating ball controller instance.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Visibility
 
 定义组件的可见性及布局占位状态。

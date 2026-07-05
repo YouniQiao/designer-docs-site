@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FluidLightMode (System API)
 
 Enumerates the fluid light modes of the input method.

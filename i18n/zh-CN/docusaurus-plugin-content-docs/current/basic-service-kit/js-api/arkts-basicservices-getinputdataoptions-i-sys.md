@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GetInputDataOptions（系统接口）
 
 表示[通知调用者获取数据](../../../../reference/apis-basic-services-kit/js-apis-osAccount-sys.md#ongetdata8)的可选参数集合。

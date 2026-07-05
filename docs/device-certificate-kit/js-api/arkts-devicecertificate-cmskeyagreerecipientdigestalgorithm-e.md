@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsKeyAgreeRecipientDigestAlgorithm
 
 Enumerates the digest algorithms of the CMS KeyAgree type.

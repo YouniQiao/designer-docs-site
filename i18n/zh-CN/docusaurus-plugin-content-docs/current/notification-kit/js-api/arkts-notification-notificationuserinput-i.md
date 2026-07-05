@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationUserInput
 
 保存用户输入的通知消息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollAlign
 
 滚动对齐模式枚举。

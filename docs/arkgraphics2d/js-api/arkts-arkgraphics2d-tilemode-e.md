@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TileMode
 
 Enumerates the tile modes of the shader effect.

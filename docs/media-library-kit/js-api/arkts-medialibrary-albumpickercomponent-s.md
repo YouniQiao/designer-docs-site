@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AlbumPickerComponent
 
 AlbumPickerComponent: can select a certain album and display the images in that album through PhotoPickerComponent

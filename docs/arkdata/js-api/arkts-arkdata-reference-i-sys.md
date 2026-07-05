@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Reference (System API)
 
 Indicates the reference between tables.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Vector4
 
 Defines a vector that contains the x, y, z, and w coordinate values.

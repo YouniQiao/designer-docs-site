@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ColorManagementQuery
 
 ColorManagementQuery provides the APIs for color space query.

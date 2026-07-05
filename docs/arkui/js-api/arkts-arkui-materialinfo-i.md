@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MaterialInfo
 
 Provides material configuration information, including the material enabling state and material type.

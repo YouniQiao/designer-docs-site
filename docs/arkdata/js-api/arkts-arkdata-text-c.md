@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Text
 
 Represents the text data. It is a child class of [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md#unifiedrecord) and a base class of text data. You are advised to use the child class of **Text**, for example, [PlainText](arkts-arkdata-plaintext-c.md#plaintext), [Hyperlink](arkts-arkdata-hyperlink-c.md#hyperlink), and [HTML](arkts-arkdata-html-c.md#html), to describe data.

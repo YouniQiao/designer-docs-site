@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AsyKeyGenerator
 
 非对称密钥生成器。在使用该类的方法前，需要先使用[createAsyKeyGenerator](arkts-cryptoarchitecture-createasykeygenerator-f.md#createasykeygenerator-1)方法构建 一个AsyKeyGenerator实例。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TimerOptions (System API)
 
 Defines the initialization options for the system timer.

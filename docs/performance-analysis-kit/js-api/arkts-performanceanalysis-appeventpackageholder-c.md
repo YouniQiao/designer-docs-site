@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AppEventPackageHolder
 
 Defines a subscription data holder for processing event information.

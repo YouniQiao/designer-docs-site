@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Config (System API)
 
 Implements configuration, acquisition, and listening for properties.

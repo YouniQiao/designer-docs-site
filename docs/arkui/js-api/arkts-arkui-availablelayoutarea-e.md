@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AvailableLayoutArea
 
 Enumerates the reference sizes of the available layout area when the preview image width and height are set to percentages.

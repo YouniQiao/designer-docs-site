@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Progress
 
 The **Progress** component represents a progress indicator that displays the progress of content loading or an operation.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TabContentAnimatedTransition
 
 Tabs自定义切换动画相关信息。

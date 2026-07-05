@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThreadAffinityMode
 
 Enum for provides CPU thread affinity mode

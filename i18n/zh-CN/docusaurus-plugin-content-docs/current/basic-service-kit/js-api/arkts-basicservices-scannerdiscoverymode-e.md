@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScannerDiscoveryMode
 
 定义扫描仪发现方式的枚举。

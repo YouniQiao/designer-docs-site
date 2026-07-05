@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CryptoMode
 
 表示加解密操作的枚举。

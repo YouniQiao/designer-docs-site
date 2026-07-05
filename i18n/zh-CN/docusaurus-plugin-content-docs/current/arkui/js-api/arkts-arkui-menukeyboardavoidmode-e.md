@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuKeyboardAvoidMode
 
 菜单避让软键盘的模式。

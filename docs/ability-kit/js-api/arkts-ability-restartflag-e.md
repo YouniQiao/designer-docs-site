@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RestartFlag
 
 Enumerates the application restart flags. This enum is used as an input parameter of [enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1).

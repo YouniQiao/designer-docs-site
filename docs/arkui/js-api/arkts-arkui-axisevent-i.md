@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AxisEvent
 
 Describes the axis event object. Inherits from [BaseEvent](arkts-arkui-baseevent-i.md#baseevent).

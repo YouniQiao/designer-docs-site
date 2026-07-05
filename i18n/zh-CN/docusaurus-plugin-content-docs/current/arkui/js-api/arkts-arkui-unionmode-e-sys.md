@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UnionMode（系统接口）
 
 融合效果枚举。

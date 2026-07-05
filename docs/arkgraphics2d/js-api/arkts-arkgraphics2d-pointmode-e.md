@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PointMode
 
 Enumerates the modes for drawing multiple points in an array.

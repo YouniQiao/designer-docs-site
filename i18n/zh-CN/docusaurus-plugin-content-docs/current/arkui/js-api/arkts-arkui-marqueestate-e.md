@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MarqueeState
 
 Marquee状态回调的返回值。

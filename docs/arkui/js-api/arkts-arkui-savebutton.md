@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SaveButton
 
 Defines the interface for setting a save button.

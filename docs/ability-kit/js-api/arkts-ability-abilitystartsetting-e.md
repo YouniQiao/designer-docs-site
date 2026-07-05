@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbilityStartSetting
 
 Enum for the special start setting used in starting ability.

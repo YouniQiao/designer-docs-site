@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationIconButton (System API)
 
 Describes the information of a system notification button.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bluetooth.wearDetection
 
 Provides methods to manage the wearing detection function.

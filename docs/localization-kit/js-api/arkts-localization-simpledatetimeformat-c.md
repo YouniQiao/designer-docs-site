@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SimpleDateTimeFormat
 
 Provide a simple date time formatting interface.

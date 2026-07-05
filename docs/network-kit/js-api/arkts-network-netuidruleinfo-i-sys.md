@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetUidRuleInfo (System API)
 
 The interface is used to generate network unique identifiers.

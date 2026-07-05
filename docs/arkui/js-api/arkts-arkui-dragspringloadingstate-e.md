@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DragSpringLoadingState
 
 Enumerates hover detection states during drag operations. Under default system configuration, if no CANCEL occurs, the state reporting is as follows: Hover still-->500ms-->BEGIN-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->UPDATE-->100ms-->END

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TipsOptions
 
 悬浮气泡自定义参数。

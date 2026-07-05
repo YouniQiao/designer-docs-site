@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GzHeader
 
 传递从zlib例程中获取的Gzip头部信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScopeHelper
 
 Provides APIs to define the valid range of a field. The constructor of this class creates comparable objects with lower and upper limits.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [tee_sharemem_ops.h](capi-tee-sharemem-ops-h.md)
     - [tee_log.h](capi-tee-log-h.md)

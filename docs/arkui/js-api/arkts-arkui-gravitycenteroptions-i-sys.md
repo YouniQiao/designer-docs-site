@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GravityCenterOptions (System API)
 
 Defines the parameters of the center of gravity.

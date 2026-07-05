@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVMediaDescription
 
 The description of the media for an item in the playlist of the session

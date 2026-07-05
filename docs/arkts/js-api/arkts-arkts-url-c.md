@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # URL
 
 The interface of URL is used to parse, construct, normalize, and encode URLs.

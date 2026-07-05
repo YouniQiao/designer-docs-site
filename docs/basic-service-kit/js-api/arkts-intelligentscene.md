@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.intelligentScene
 
 This module provides system focus modes and Do Not Disturb data access abilities.

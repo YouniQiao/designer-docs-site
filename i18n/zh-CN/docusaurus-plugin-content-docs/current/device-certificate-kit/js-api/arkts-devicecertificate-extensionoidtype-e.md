@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtensionOidType
 
 表示获取扩展域中对象标识符类型的枚举。

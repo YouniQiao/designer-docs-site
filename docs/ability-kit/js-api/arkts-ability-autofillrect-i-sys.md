@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoFillRect (System API)
 
 AutoFillRect describes the rectangle used for auto-fill.

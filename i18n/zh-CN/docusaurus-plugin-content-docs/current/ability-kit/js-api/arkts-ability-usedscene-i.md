@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UsedScene
 
 描述权限使用的场景和时机。

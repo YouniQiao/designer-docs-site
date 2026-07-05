@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Config
 
 Provides the configuration information of an upload or download task.

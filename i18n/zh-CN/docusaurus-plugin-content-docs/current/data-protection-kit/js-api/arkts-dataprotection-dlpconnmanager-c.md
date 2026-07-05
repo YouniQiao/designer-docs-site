@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DlpConnManager
 
 用于调用registerPlugin和unregisterPlugin接口，在SA（System Ability）中注册或注销回调能力。 > **说明：** > > registerPlugin接口将回调能力注册进SA（System Ability），而unregisterPlugin接口将回调能力从SA（System Ability）中注销。

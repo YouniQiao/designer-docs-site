@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResourceInfo
 
 预下载的资源信息。

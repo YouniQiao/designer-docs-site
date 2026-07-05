@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ProgressConfiguration
 
 进度条配置。继承自[CommonConfiguration](arkts-arkui-commonconfiguration-i.md#commonconfiguration)。

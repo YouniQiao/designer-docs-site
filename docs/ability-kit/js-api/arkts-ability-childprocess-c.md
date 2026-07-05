@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChildProcess
 
 ChildProcess is the base class for you to customize child processes. When starting a child process through [childProcessManager](arkts-app-ability-childprocessmanager.md#childprocessmanager), you must inherit this class and override the entrypoint method.

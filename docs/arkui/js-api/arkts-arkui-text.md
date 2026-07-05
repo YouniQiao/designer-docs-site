@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Text
 
 The **Text** component is used to display a piece of textual information.

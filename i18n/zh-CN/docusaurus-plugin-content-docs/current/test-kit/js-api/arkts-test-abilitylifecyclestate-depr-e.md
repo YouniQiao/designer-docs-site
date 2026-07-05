@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbilityLifecycleState
 
 Ability生命周期状态。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CalendarAlign
 
 对齐方式类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StartupListener
 
 The module defines the task listener used in [App Startup](../../../../application-models/app-startup.md).

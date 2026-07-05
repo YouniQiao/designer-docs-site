@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperContentWillScrollResult
 
 滑动的相关信息，主要包括：当前页面对应的index、滑动方向上即将显示的页面index和此次滑动的位移。

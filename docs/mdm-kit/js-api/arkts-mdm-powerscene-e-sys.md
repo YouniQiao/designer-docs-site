@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PowerScene (System API)
 
 Defines the scenario to which the power policy applies.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TabContentInfo
 
 Provides the **TabContent** switching information.

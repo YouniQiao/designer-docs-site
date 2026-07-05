@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InputEvent
 
 设备上报的基本事件。

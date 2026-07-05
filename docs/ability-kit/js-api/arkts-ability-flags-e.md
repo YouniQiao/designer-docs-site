@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Flags
 
 Enumerates the common preset keywords of the [Want.flags](arkts-ability-want-c.md#want) field. You can use these predefined keywords to set or retrieve additional flag information carried in application transitions.

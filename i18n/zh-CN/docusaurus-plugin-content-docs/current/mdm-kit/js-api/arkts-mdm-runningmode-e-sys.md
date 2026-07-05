@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RunningMode（系统接口）
 
 设备管理的运行模式。

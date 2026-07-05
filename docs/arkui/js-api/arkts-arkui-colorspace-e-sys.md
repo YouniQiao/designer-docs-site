@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ColorSpace
 
 Enumerates color space types for specifying color rendering modes.

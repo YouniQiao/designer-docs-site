@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CredentialType
 
 Enum type supplied to {@link CredentialType} when ClientAuthenticationHandler#confirm being called.

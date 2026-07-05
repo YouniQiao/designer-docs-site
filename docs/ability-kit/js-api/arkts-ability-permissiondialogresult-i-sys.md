@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PermissionDialogResult (System API)
 
 Result of querying whether a permission dialog is required.

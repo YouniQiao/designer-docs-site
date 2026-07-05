@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MacSpec
 
 Represents the message authentication code (MAC) parameters. You need to construct a child class object and use it as a parameter when generating an HMAC or a CMAC. > **NOTE** > > **algName** specifies the MAC algorithm to use. It is mandatory.

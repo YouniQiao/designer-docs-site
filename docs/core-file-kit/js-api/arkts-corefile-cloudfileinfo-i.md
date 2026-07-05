@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudFileInfo
 
 Represents the number and size of local and cloud files of an application.

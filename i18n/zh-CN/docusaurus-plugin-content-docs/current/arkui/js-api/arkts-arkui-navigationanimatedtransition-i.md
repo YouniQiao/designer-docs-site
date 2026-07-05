@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavigationAnimatedTransition
 
 自定义转场动画协议，开发者需实现该协议来定义Navigation路由跳转的跳转动画。

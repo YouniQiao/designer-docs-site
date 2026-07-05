@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyPressedConfig
 
 按键事件消费设置。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SizeInVP
 
 窗口大小，单位为vp。

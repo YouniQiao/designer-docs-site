@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrintAttributes
 
 定义打印参数的接口。

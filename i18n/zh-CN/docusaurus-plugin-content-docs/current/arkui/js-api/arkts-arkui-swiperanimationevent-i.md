@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperAnimationEvent
 
 Swiper组件动画相关信息集合。

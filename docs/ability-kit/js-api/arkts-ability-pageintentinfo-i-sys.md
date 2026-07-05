@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PageIntentInfo (System API)
 
 Describes the parameters supported by the [@InsightIntentPage](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentpage) decorator, such as the [NavDestination](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#navdestination10) name of the target page.

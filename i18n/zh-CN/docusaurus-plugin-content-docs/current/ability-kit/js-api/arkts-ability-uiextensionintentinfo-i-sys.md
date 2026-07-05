@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIExtensionIntentInfo（系统接口）
 
 用于描述[使用配置文件开发的意图](../../../../application-models/insight-intent-config-development.md)所绑定的UIExtensionAbility组件信息。

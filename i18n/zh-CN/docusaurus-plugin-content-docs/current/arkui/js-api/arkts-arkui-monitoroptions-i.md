@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MonitorOptions
 
 [addMonitor](arkts-arkui-uiutils-c.md#addmonitor-1)的可选参数，用于配置回调类型以及是否使能通配符能力。

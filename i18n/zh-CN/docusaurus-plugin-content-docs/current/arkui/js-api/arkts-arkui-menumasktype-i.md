@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuMaskType
 
 设置蒙层样式。

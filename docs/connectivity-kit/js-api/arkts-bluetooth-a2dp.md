@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bluetooth.a2dp
 
 Provides methods to accessing bluetooth audio related capabilities.

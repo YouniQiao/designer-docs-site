@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RightClickType
 
 右键菜单的触发方式。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReadonlyEnvKey
 
 定义只读系统环境键。

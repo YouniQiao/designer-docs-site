@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemDefinedRecord
 
 Represents specific data types defined by OpenHarmony. It is a child class of [UnifiedRecord](arkts-arkdata-unifiedrecord-c.md#unifiedrecord) and a base class of OpenHarmony-specific data types. You are advised to use the child class of **SystemDefinedRecord**, for example, [SystemDefinedForm](arkts-arkdata-systemdefinedform-c.md#systemdefinedform), [SystemDefinedAppItem](arkts-arkdata-systemdefinedappitem-c.md#systemdefinedappitem), and [SystemDefinedPixelMap](arkts-arkdata-systemdefinedpixelmap-c.md#systemdefinedpixelmap), to describe OpenHarmony-specific data.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnWindowNewExtEvent
 
 Callback invoked when the web page requests the user to create a window.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.security.cryptoFramework
 
 提供统一的密码算法库加解密接口，以屏蔽底层硬件和算法库。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthTokenType (System API)
 
 Enumerates the authentication token types.

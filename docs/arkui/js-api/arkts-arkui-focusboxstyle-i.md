@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FocusBoxStyle
 
 Sets the system focus box style for the component.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LinkParamCategory
 
 [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) 装饰器的意图参数类别，用于定义意图参数的传递形式。

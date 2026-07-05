@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwipeActionState
 
 列表项滑动状态枚举。

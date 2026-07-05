@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperContentInfo
 
 Swiper组件的内容区信息。

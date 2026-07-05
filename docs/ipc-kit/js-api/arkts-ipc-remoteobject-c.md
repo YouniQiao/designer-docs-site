@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RemoteObject
 
 Provides methods to implement **RemoteObject**. The service provider must inherit from this class.

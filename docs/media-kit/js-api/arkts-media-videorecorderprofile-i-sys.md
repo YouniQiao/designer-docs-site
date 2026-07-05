@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VideoRecorderProfile (System API)
 
 Provides the video recorder profile definitions.

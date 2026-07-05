@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ModifierUtils
 
 ModifierUtils provides utility methods for modifier and attribute operations.

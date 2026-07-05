@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PanelInfo
 
 Describes the attributes of the input method panel.

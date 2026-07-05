@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.security.identifySensitiveContent
 
 识别敏感内容通过输入的[Policy](arkts-dataprotection-policy-i.md#policy)来检测指定文件中的敏感信息。 系统根据提供的[Policy](arkts-dataprotection-policy-i.md#policy)策略（包括敏感标签、关键字集合和正则表达式）， 对文件内容进行关键字匹配和正则表达式匹配，返回匹配到的敏感内容结果。

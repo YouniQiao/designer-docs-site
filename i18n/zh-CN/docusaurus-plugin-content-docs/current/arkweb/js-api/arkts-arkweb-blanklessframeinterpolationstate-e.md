@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BlanklessFrameInterpolationState
 
 定义当前插帧状态 设备行为差异:仅支持手机平台，其他平台返回801

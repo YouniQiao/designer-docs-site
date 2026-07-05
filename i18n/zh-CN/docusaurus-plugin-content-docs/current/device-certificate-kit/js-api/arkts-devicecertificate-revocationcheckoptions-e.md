@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RevocationCheckOptions
 
 表示证书链在线校验证书吊销状态选项的枚举。

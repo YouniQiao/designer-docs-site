@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CaretStyle
 
 Defines the cursor style.

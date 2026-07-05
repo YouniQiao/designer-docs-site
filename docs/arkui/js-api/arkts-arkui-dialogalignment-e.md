@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogAlignment
 
 Enumerates the alignment modes of the alert dialog boxes.

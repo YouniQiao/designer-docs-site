@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InsightIntentInfo (System API)
 
 Defines the intent information, which is the specific parameter configuration of the intent in the device.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebNavigationType
 
 Enum type supplied to {@link navigationType} for the navigation's type.

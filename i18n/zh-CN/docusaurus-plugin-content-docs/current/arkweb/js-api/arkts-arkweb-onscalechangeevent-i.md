@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnScaleChangeEvent
 
 定义当前页面显示比例的变化时触发。

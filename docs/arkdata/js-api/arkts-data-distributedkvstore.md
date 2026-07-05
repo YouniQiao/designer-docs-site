@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.data.distributedKVStore
 
 The **distributedKVStore** module implements collaboration between databases for different devices that form a Super Device. You can use the APIs provided by this module to save application data to a distributed key-value (KV) store and perform operations, such as adding, deleting, modifying, and querying data, and synchronizing data across devices. The **distributedKVStore** module provides the following functionalities: - [KVManager](arkts-arkdata-kvmanagerconfig-i.md#kvmanagerconfig): provides a **KVManager** instance to obtain KV store information. - [KVStoreResultSet](arkts-arkdata-kvstoreresultset-i.md#kvstoreresultset): provides APIs for accessing the results obtained from a KV store. - [Query](arkts-arkdata-query-c.md#query): provides APIs for setting predicates for data query. - [SingleKVStore](arkts-arkdata-singlekvstore-i.md#singlekvstore): provides APIs for querying data in single KV stores and synchronizing data across devices. The single KV stores manage data without distinguishing devices. - [DeviceKVStore](arkts-arkdata-devicekvstore-i.md#devicekvstore): provides APIs for querying data in device KV stores and synchronizing data across devices. This class inherits from [SingleKVStore](arkts-arkdata-singlekvstore-i.md#singlekvstore). The device KV stores manage data by device.

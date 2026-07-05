@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DistortionMode（系统接口）
 
 非线性形变动画模式的枚举。

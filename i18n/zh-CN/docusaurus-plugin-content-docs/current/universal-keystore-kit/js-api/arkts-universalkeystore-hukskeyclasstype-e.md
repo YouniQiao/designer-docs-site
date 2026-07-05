@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksKeyClassType
 
 表示密钥的来源。

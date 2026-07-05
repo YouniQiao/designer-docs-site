@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.taskpool
 
 任务池（taskpool）的作用是为应用程序提供多线程运行环境，降低资源消耗并提升系统性能，且您无需关心线程的生命周期。您可以使用任务池API 创建后台任务（Task），并进行如执行任务或取消任务等操作。理论上，任务池API允许创建的任务数量不受限制，但由于内存限制，不建议这样做。此外， 不建议在任务中执行阻塞操作，尤其是无限期阻塞操作，因为长时间的阻塞操作会占用工作线程，可能阻塞其他任务的调度，影响应用性能。 创建同一优先级的任务时，可以自行决定其执行顺序。任务的实际执行顺序与调用任务池API提供的任务执行接口的顺序一致。任务的默认优先级为MEDIUM。 当同一时间待执行的任务数量大于任务池工作线程数量，任务池会根据负载均衡机制进行扩容，增加工作线程数量，减少整体等待时长。同样，当执行的任务数量减少， 工作线程数量大于执行任务数量，部分工作线程处于空闲状态，任务池会根据负载均衡机制进行缩容，减少工作线程数量。 如需了解任务池API返回错误码的详细信息，请参阅 [语言基础类库错误码](../../../../reference/apis-arkts/errorcode-utils.md)。 如需了解使用TaskPool时的相关注意点，请参阅 [TaskPool注意事项](../../../../arkts-utils/taskpool-introduction.md#taskpool注意事项)。 文档中涉及以下任务概念： - 任务组任务：对应为[TaskGroup](arkts-arkts-taskgroup-c.md#taskgroup)任务。 - 串行队列任务：对应为[SequenceRunner](arkts-arkts-sequencerunner-c.md#sequencerunner)任务。 - 异步队列任务：对应为[AsyncRunner](arkts-arkts-asyncrunner-c.md#asyncrunner)任务。 - 周期任务：由 [executePeriodically](arkts-arkts-executeperiodically-f.md#executeperiodically-1)执行的任务。

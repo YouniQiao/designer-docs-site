@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccountManager
 
 系统账号管理类。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReminderRequestAlarm
 
 ReminderRequestAlarm extends ReminderRequest Defines a reminder for an alarm.

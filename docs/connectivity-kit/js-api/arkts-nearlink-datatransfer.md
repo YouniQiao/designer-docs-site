@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.nearlink.dataTransfer
 
 Provides methods to operate and manage data transfer of NearLink.

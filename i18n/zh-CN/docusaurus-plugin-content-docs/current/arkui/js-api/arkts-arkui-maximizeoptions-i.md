@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MaximizeOptions
 
 最大化窗口时的可选配置。

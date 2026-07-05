@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InputCounterOptions
 
 Define the ratio of characters entered by the the percentage of InputCounterOptions.

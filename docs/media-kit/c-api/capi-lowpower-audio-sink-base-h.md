@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # lowpower_audio_sink_base.h
 
 ## Overview

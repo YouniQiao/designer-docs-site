@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BackgroundLuminanceSamplingConfigs（系统接口）
 
 背景取色参数配置。

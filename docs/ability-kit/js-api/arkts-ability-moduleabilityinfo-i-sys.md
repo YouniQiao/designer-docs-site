@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ModuleAbilityInfo (System API)
 
 ModuleAbilityInfo: the ability info of a module.

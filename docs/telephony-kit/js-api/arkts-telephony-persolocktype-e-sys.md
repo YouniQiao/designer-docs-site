@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PersoLockType (System API)
 
 Indicates the personalized lock types.

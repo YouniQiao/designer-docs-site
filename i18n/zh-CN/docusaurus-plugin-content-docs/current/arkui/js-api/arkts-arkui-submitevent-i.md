@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SubmitEvent
 
 定义用户提交事件。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageVideoKey (System API)
 
 Describes Image, Video TYPE FetchOptions's predicate

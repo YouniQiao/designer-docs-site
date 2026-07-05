@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChannelInfo
 
 Represents the proxy channel information, including the MAC address and service UUID of the peer device.

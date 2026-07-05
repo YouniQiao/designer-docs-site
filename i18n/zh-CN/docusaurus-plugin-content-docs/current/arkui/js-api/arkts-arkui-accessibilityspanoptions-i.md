@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccessibilitySpanOptions
 
 Span的无障碍朗读功能属性。

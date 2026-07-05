@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WifiEapProfile
 
 可扩展身份验证协议配置信息。

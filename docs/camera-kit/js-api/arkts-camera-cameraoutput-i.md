@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CameraOutput
 
 CameraOutput implements output information used in [Session](arkts-camera-session-i.md#session). It is the base class of **output**.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataAbilityOperation
 
 定义DataAbility数据操作方式，可以作为 [executeBatch](../../../../reference/apis-ability-kit/js-apis-inner-ability-dataAbilityHelper.md#dataabilityhelperexecutebatch) 的入参，操作数据库的信息。

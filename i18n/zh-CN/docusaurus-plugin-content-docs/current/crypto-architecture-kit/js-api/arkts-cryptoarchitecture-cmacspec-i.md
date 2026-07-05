@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmacSpec
 
 消息认证码参数[MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec)的子类，作为CMAC消息验证码计算的输入。 > **说明：** > > cipherName是必选参数，表示CMAC对称加密算法。

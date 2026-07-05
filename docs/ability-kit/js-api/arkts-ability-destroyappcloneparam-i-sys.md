@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DestroyAppCloneParam (System API)
 
 Describes the parameters used for destroying an application clone.

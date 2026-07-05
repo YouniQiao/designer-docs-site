@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SyncFolderState (System API)
 
 Enumerates the states of the sync root.

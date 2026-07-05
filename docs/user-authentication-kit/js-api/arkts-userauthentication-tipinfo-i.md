@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TipInfo
 
 Represents the tip information displayed during the authentication, which is used to provide feedback during the authentication process.

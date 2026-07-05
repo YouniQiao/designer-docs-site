@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RingtoneType（系统接口）
 
 描述自定义铃声类型。

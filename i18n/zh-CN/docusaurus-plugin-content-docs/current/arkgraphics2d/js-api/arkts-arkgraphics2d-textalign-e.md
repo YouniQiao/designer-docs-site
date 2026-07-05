@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextAlign
 
 文本对齐方式枚举。

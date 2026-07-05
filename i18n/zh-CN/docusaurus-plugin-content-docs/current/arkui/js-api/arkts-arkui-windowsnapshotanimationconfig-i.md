@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowSnapshotAnimationConfig
 
 窗口截图动效的配置。

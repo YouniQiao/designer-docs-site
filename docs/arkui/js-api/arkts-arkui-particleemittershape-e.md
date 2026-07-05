@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ParticleEmitterShape
 
 Enumerates the emitter shapes of a particle.

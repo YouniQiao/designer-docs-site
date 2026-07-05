@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LinkIntentParamMapping
 
 LinkIntentParamMapping defines the mapping between intent parameters and URI information for the [@InsightIntentLink](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentlink) decorator.

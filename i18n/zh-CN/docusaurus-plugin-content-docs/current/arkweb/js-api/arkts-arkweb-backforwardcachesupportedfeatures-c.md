@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BackForwardCacheSupportedFeatures
 
 This class is used to enable back forward cache supported features.

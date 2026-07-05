@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowSizeLayoutBreakpointInfo
 
 窗口尺寸布局断点变化回调的信息。

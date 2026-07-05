@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Summary
 
 Summarizes the data information of the **unifiedData** object, including the data type and size.

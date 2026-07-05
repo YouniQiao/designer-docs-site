@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # File
 
 Describes the list of files in [UploadConfig](arkts-basicservices-uploadconfig-i.md#uploadconfig).

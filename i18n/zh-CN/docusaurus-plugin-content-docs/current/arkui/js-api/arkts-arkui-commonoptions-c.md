@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommonOptions
 
 CommonOptions定义了Counter的共通属性和事件。

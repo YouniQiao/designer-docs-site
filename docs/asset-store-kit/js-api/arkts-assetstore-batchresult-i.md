@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BatchResult
 
 Result object containing batch operation,including {@link batchAdd},{@link batchUpdate},{@link batchRemove}.

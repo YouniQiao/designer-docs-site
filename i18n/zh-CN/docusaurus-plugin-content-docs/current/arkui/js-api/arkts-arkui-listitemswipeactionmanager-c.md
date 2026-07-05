@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ListItemSwipeActionManager
 
 ListItem划出菜单的管理器。

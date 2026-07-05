@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ColorMetricsStop
 
 线性渐变颜色断点类型，用于描述渐进色颜色断点。

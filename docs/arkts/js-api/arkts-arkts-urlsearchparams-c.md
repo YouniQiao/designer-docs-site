@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # URLSearchParams
 
 The URLSearchParams interface defines some practical methods to process URL query strings.

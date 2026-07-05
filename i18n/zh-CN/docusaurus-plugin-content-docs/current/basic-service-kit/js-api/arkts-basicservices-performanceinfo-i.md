@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PerformanceInfo
 
 预下载的性能信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioSessionBehaviorFlags
 
 Enumerates audio session behavior flags.

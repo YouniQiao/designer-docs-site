@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipV2Size
 
 控制ChipV2组件大小类型的枚举值

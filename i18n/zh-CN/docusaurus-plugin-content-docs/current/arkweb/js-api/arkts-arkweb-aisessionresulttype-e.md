@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AISessionResultType
 
 AI会话操作的结果状态。

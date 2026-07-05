@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtensionAbilityInfo
 
 The module defines the ExtensionAbility information. An application can obtain its own ExtensionAbility information through [bundleManager.getBundleInfoForSelf](arkts-ability-getbundleinfoforself-f.md#getbundleinfoforself-1) , with **GET_BUNDLE_INFO_WITH_HAP_MODULE** and **GET_BUNDLE_INFO_WITH_EXTENSION_ABILITY** passed in to [bundleFlags](arkts-ability-bundleflag-e.md#bundleflag).

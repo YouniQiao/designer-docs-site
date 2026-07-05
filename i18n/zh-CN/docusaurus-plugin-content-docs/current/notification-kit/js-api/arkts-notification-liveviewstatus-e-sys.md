@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LiveViewStatus（系统接口）
 
 描述普通实况通知的状态。

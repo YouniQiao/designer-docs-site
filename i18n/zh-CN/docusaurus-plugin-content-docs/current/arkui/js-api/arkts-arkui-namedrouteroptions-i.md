@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NamedRouterOptions
 
 命名路由跳转选项。

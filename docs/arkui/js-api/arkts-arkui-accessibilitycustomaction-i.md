@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccessibilityCustomAction
 
 Defines struct of AccessibilityCustomAction that can be processed in custom action processing under accessibility.

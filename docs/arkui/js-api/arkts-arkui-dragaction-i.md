@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DragAction
 
 Implements a **DragAction** object to subscribe to drag state changes and start the drag service.

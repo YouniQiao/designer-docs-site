@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DecimalConfig
 
 提供Decimal的配置属性，可使用Decimal.set方法进行配置。

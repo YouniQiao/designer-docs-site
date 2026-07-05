@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeEmbedInfo
 
 提供同层标签的详细信息。

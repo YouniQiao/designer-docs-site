@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NestedScrollOptionsExt
 
 通过NestedScrollOptionsExt可以设置上下左右四个方向的嵌套滚动规则。

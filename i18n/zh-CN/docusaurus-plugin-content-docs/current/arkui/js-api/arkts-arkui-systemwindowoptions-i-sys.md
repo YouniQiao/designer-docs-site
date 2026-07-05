@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemWindowOptions（系统接口）
 
 系统窗口的创建参数。

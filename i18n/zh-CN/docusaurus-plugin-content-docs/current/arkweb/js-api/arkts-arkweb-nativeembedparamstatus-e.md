@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeEmbedParamStatus
 
 定义同层渲染object标签内嵌param元素的状态变化类型，当添加param元素时触发ADD，修改param元素属性触发UPDATE，删除param元素触发DELETE。

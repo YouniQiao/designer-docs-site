@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AppAccountManager
 
 Defines the application account manager, which is used to manage account information of applications.

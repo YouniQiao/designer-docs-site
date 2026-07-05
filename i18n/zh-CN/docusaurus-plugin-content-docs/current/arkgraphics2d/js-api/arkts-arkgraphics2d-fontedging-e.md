@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FontEdging
 
 字型边缘效果类型枚举。 > **说明：** > > FontEdging不支持位图字体（如点阵字体、emoji等）。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ListBackPressBehavior
 
 定义List组件的系统返回键行为。

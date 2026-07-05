@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccessFlagType
 
 枚举，表示需要校验的文件位置。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SignSpecItem
 
 表示签名验签参数的枚举。这些参数支持通过 [setSignSpec](arkts-cryptoarchitecture-sign-i.md#setsignspec-1)、 [setVerifySpec](arkts-cryptoarchitecture-verify-i.md#setverifyspec-1)接口设置，通过 [getSignSpec](arkts-cryptoarchitecture-sign-i.md#getsignspec-1)、[getVerifySpec](arkts-cryptoarchitecture-verify-i.md#getverifyspec-1)接口 获取。 当前只支持RSA算法和SM2算法，从API version 11开始，增加对SM2_USER_ID_UINT8ARR参数的支持，详细规格请参考 [签名验签规格](../../../../security/CryptoArchitectureKit/crypto-sign-sig-verify-overview.md)。

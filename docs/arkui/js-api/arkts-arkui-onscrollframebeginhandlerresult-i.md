@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnScrollFrameBeginHandlerResult
 
 The data returned by the event handler when onScrollFrameBegin.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogMessage
 
 Message options for the dialog box, combining message content with text style.

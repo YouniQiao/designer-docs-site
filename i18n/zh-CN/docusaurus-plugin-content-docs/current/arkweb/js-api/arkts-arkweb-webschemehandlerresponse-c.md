@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebSchemeHandlerResponse
 
 请求的响应，可以为被拦截的请求创建一个Response并填充自定义的内容返回给Web组件。

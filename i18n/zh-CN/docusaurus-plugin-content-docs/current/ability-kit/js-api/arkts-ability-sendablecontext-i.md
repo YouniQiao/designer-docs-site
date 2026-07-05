@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SendableContext
 
 SendableContext符合[Sendable协议](../../../../arkts-utils/arkts-sendable.md#sendable协议)，继承自 [lang.ISendable](../../../../reference/apis-arkts/js-apis-arkts-lang.md#langisendable)。

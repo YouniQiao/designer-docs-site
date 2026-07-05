@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContextMenuDataMediaType
 
 触发上下文菜单的网页元素类型（增强获取类型能力）。

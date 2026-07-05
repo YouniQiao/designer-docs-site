@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HoldingHandStatus
 
 Represents the holding hand status. The holding hand status is returned if listening for holding hand status changes is enabled.

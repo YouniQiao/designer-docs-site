@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VideoPlayer
 
 VideoPlayer is a class for video playback management. It provides APIs to manage and play videos. Before calling any API in VideoPlayer, you must use [createVideoPlayer()](arkts-media-createvideoplayer-f.md#createvideoplayer-1) to create a VideoPlayer instance.

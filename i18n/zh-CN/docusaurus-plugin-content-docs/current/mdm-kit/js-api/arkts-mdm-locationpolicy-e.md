@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocationPolicy
 
 位置服务策略值。

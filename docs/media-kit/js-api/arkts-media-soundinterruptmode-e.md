@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SoundInterruptMode
 
 Enumerates the interruption modes of the audio files with the same ID in SoundPool.

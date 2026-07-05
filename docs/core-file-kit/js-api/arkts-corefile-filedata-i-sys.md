@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileData (System API)
 
 Corresponding to a file's data. Filedata is useful when doing IPC with the backup service.

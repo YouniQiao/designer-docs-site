@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WithTheme properties/events
 
 The [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) are not supported. The [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common) are not supported.

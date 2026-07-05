@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.fontManager
 
 The **fontManager** module provides APIs for system applications to install and uninstall third-party fonts.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BadgeStyle
 
 Describes the badge style. It includes the font color, font size, badge color, badge size, etc. > **NOTE** > > - When **borderWidth** is set to a value greater than 0 and **borderColor** is different from **badgeColor**, the > badge is drawn before the border. Edge pixels are anti-aliased, which produces semi-transparent pixels. This causes > the border in **badgeColor** to become visible at the four corners. To implement related scenarios, it is > recommended that you use the [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md#text) component with its > [outline](arkts-arkui-commonmethod-c.md#outline-1) attribute instead of the **Badge** component.

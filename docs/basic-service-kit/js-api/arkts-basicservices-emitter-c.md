@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Emitter
 
 This module provides the capabilities of sending and processing inter- or intra-thread events in a process of the same Emitter instance. You can use the following APIs to subscribe to an event in persistent or one-shot manner, unsubscribe from an event, or emit an event to the event queue.

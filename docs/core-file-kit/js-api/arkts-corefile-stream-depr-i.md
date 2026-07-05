@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Stream
 
 Provides a stream for file operations. Before calling any API of the **Stream** class, use **createStream()** to create a **Stream** instance synchronously or asynchronously.

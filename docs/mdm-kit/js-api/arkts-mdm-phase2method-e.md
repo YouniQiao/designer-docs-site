@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Phase2Method
 
 Enumerates the Phase 2 authentication methods.

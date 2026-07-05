@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PixelMapDrawableDescriptor
 
 Implements a **PixelMapDrawableDescriptor** object, which can be created by passing in a **PixelMap** object. Inherits from [DrawableDescriptor](arkts-arkui-drawabledescriptorloadedresult-i.md#drawabledescriptorloadedresult).

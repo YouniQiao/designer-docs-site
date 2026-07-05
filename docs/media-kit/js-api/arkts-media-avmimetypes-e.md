@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVMimeTypes
 
 Enumerates the MIME type, which is set by using [setMimeType](arkts-media-mediasource-i.md#setmimetype-1).

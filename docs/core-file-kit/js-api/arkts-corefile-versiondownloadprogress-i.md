@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VersionDownloadProgress
 
 Represents the download state and progress information of historical version files when the [downloadHistoryVersion](arkts-corefile-fileversion-c.md#downloadhistoryversion-1) method of the [FileVersion](arkts-corefile-fileversion-c.md#fileversion) class is called.

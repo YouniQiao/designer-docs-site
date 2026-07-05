@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.ability.wantConstant
 
 The wantConstant module provides the actions, entities, and flags used in Want objects.

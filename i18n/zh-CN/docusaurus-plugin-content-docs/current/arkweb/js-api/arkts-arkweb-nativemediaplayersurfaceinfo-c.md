@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeMediaPlayerSurfaceInfo
 
 [应用接管网页媒体播放功能](../../../../reference/apis-arkweb/arkts-basic-components-web-attributes.md#enablenativemediaplayer12)中 用于同层渲染的 surface 信息。 > **说明：** > > - 本Class首批接口从API version 12开始支持。 > > - 示例效果请以真机运行为准。

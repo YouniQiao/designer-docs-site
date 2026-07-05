@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WaitingReason
 
 枚举，定义任务等待的原因。

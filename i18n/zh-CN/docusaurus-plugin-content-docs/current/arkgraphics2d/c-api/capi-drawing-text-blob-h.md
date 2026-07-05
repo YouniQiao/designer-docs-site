@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # drawing_text_blob.h
 
 ## 概述

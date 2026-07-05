@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Action
 
 数据包的行为。

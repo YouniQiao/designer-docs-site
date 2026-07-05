@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CredentialAbstract
 
 表示凭据的简要信息。

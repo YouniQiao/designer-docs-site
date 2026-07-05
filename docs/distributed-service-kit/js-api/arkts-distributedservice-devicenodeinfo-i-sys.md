@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceNodeInfo (System API)
 
 Represents the device node information, including the networkId, device name, device type, nearby status and udid.

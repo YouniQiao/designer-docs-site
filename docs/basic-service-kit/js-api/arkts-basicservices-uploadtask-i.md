@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UploadTask
 
 Implements file uploads. Before using any APIs of this class, you must obtain an **UploadTask** object, from a promise through [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-2) or from a callback through [request.uploadFile](arkts-basicservices-uploadfile-f.md#uploadfile-1) .

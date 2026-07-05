@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavDestinationInfo
 
 Information about the **NavDestination** component, returned by the system to developers.

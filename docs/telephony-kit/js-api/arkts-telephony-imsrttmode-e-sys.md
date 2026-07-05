@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImsRttMode (System API)
 
 Indicates the mode of the ims rtt.

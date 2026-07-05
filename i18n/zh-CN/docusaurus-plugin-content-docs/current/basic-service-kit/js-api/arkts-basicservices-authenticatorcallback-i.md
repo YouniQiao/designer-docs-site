@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthenticatorCallback
 
 OAuth认证器回调接口。 > **说明：** > > 从API version 8开始支持，从API version 9开始废弃。建议使用[AuthCallback](arkts-basicservices-authcallback-i.md#authcallback)替代。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SingleKVStore
 
 Provides APIs for data management in a single KV store, such as adding data, deleting data, and subscribing to data changes or across-device data sync completion events. Before calling any method in **SingleKVStore**, you must use [getKVStore](arkts-arkdata-kvmanager-i.md#getkvstore-1) to obtain a **SingleKVStore** instance.

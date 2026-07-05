@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TiffPropertyKey
 
 Enumerates the properties available for the metadata of a TIFF image.

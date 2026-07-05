@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Schema
 
 Defines the schema of a KV store. You can create a **Schema** object and pass it in [Options](arkts-arkdata-options-i.md#options) when creating or opening a KV store.

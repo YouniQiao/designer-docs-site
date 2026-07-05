@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CertificatePurpose
 
 表示凭据用途的枚举。

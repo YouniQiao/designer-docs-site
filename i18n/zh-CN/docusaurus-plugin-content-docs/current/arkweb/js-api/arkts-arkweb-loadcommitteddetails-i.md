@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LoadCommittedDetails
 
 提供已提交跳转的网页的详细信息。

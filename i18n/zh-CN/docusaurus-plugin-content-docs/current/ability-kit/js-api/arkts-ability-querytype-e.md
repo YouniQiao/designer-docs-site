@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # QueryType
 
 查询实体模式的枚举。

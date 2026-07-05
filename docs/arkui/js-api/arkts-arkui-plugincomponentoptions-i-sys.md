@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PluginComponentOptions (System API)
 
 Define options used to construct a plugin component. AnonyMous Object Rectification

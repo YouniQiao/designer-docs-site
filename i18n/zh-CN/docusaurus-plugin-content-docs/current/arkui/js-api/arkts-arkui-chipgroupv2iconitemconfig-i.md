@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipGroupV2IconItemConfig
 
 ChipGroupV2IconItemConfig定义了尾部builder接口配置，针对背板大小及颜色设置限制。

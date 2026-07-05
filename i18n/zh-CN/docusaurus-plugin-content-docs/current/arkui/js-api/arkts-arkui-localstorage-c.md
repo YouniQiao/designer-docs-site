@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocalStorage
 
 LocalStorage具体UI使用说明，详见[LocalStorage(页面级UI状态存储)](../../../../ui/state-management/arkts-localstorage.md)

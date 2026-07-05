@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PriKey
 
 私钥，是[Key](arkts-cryptoarchitecture-key-i.md#key)的子类，在非对称加解密、签名、密钥协商时需要将其作为输入使用。 私钥可以通过非对称密钥生成器[AsyKeyGenerator](arkts-cryptoarchitecture-asykeygenerator-i.md#asykeygenerator)、 [AsyKeyGeneratorBySpec](arkts-cryptoarchitecture-asykeygeneratorbyspec-i.md#asykeygeneratorbyspec)来生成。

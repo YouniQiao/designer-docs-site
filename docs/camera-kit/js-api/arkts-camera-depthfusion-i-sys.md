@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DepthFusion (System API)
 
 Depth fusion class. It inherits from [DepthFusionQuery](arkts-camera-depthfusionquery-i-sys.md#depthfusionquery).

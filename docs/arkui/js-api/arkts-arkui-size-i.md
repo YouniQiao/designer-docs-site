@@ -1,13 +1,8 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Size
 
-Returns the width and height of the component. The default unit is vp, but APIs that use the Size type may specify a different unit, in which case the unit specified by the API takes precedence.
+Provides size information of the **DrawingRenderingContext** object.
 
-**Since:** 11
+**Since:** 12
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -17,11 +12,11 @@ Returns the width and height of the component. The default unit is vp, but APIs 
 height: number
 ```
 
-Height of the component. Unit: vp. Value range: [0, +∞).
+Height of the **DrawingRenderingContext** object, which corresponds to the height of the associated **Canvas** component. Default unit: vp. If the unit mode of the **DrawingRenderingContext** object is set to px, the unit is px.
 
 **Type:** number
 
-**Since:** 11
+**Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -35,11 +30,11 @@ Height of the component. Unit: vp. Value range: [0, +∞).
 width: number
 ```
 
-Width of the component. Unit: vp. Value range: [0, +∞).
+Width of the **DrawingRenderingContext** object, which corresponds to the width of the associated **Canvas** component. Default unit: vp. If the unit mode of the **DrawingRenderingContext** object is set to px, the unit is px.
 
 **Type:** number
 
-**Since:** 11
+**Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 

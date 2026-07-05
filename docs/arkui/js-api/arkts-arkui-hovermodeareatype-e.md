@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HoverModeAreaType
 
 Enumerates the type of area in hover mode.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CapStyle
 
 Enumerates the cap styles of a pen. The cap style defines the style of both ends of a line segment drawn by the pen.

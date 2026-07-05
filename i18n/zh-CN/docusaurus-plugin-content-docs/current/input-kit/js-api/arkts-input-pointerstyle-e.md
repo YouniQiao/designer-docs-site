@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PointerStyle
 
 鼠标光标样式类型。

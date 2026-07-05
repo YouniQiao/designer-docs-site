@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThreeFingersSwipe
 
 三指滑动手势事件。

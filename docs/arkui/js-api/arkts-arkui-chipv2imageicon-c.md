@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipV2ImageIcon
 
 ChipV2 icon common option

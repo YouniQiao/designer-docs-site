@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoAdComponent
 
 The AutoAdComponent module provides the capability of displaying carousel ads.

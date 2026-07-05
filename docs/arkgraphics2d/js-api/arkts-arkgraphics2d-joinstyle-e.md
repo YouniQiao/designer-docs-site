@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # JoinStyle
 
 Enumerates the join styles of a pen. The join style defines the shape of the joints of a polyline segment drawn by the pen.

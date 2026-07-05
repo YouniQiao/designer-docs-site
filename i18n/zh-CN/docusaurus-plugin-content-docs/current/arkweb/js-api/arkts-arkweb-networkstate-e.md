@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetworkState
 
 播放器的网络状态。

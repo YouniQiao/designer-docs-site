@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WhiteBalanceQuery (System API)
 
 WhiteBalanceQuery provides APIs to check whether a white balance mode is supported and obtain the white balance mode range supported.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MarqueeStartPolicy
 
 Marquee的滚动方式，可选择默认持续滚动或条件触发滚动。

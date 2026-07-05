@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SqlInfo
 
 Represents details about the SQL statement executed by the database.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IvParamsSpec
 
 加解密参数[ParamsSpec](arkts-cryptoarchitecture-paramsspec-i.md#paramsspec)的子类，用于在对称加解密时作为 [init()](arkts-cryptoarchitecture-cipher-i.md#init-4)方法的参数。 适用于CBC、CTR、OFB、CFB这些需要iv作为参数的加解密模式。 > **说明：** > > 传入[init()](arkts-cryptoarchitecture-cipher-i.md#init-4)方法前需要指定其 > algName属性（来源于父类[ParamsSpec](arkts-cryptoarchitecture-paramsspec-i.md#paramsspec)）。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bluetooth.pan
 
 Provides methods to accessing bluetooth PAN(Personal Area Networking Profile)-related capabilities.

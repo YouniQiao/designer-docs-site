@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SuffixImageIconOptions
 
 后缀图标选项的类型。 继承自[IconOptions](arkts-arkui-iconoptions-i.md#iconoptions)。

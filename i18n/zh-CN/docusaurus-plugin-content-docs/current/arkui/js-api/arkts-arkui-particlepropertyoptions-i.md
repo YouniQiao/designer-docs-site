@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ParticlePropertyOptions
 
 设置粒子属性选项。

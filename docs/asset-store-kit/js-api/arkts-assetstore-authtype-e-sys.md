@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthType
 
 Enumerates the types of user authentication supported by an asset.

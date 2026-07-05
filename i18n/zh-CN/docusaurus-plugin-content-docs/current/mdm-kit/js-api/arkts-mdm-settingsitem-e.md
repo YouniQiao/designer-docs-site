@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SettingsItem
 
 设置的策略类型。

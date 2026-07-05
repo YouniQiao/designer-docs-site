@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CompletionHandlerForAbilityStartCallback
 
 CompletionHandlerForAbilityStartCallback provides two callback functions, **onRequestSuccess** and **onRequestFailure**, which are invoked when launching the specified ability succeeds or fails, respectively.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Connection
 
 Represents a **Connection** object, which provides methods for connecting to and disconnecting from a peer device, obtaining the device's ID, sending data, and registering or unregistering event callbacks.

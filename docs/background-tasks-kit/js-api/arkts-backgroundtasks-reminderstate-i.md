@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReminderState
 
 Defines the agent-powered reminder state information, for which notifications are triggered in the following scenarios: 1. When a user taps a button on an agent-powered reminder notification, a notification specifying the tapped button type is sent to the application if it is running. If the application is not running, the notification will not be received. 2. Since the above scenario cannot guarantee that the application receives the notification, all callbacks associated with user-tapped button types under the application are returned to the application when it registers a new callback function. State information is retained for a maximum of 30 days. Cached state information is cleared when the application registers a new callback function or has not registered any callback function for more than 30 days.

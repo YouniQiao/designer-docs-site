@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SizeResult
 
 > **NOTE** > > - The custom layout does not support the LazyForEach syntax. > - When a custom layout is created in builder mode, only **this.builder()** is allowed in the **build()** method > of a custom component, as shown in the recommended usage in the example below. > - The size parameters of the parent component (custom component), except **aspectRatio**, are at a lower > priority than those specified by [onMeasureSize](CustomComponentV2#onMeasureSize). > - The position parameters of the child component, except **offset**, **position**, and **markAnchor**, are at > a lower priority than those specified by [onPlaceChildren](CustomComponentV2#onPlaceChildren), > and do not take effect. > - When using the custom layout method, you must call **onMeasureSize** and **onPlaceChildren** at the same > time for the layout to display properly.

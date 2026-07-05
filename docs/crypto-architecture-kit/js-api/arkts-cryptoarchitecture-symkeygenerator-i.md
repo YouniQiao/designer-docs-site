@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SymKeyGenerator
 
 Provides APIs for using the **symKeyGenerator**. Before using the APIs of this class, use [createSymKeyGenerator](arkts-cryptoarchitecture-createsymkeygenerator-f.md#createsymkeygenerator-1) to create a **SymKeyGenerator** instance.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FilterProcessStateType (System API)
 
 Enumerates the types of process states to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the process state types you want to listen for.

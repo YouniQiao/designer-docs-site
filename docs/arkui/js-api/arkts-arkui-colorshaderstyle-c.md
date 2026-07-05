@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ColorShaderStyle
 
 Displays a solid color. **ColorShaderStyle** inherits from [ShaderStyle](arkts-arkui-shaderstyle-c.md#shaderstyle).

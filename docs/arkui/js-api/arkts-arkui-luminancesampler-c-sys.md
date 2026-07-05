@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LuminanceSampler (System API)
 
 Sets the background luminance color picking parameters, registers the luminance change listening callback, and unregisters the listening callback. > **NOTE** > > In the following API examples, you must first use [getLuminanceSampler](arkts-arkui-uicontext-c-sys.md#getluminancesampler-1) in > **UIContext** to obtain a **LuminanceSampler** object, and then call the APIs using the obtained object.

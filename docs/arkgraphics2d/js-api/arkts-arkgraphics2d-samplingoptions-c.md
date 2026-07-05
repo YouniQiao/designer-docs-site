@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SamplingOptions
 
 Implements sampling options. > **NOTE** > > - The initial APIs of this class are supported since API version 12. > > - This module uses the physical pixel unit, px. > > - This module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.

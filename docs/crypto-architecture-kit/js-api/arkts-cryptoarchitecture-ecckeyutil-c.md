@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ECCKeyUtil
 
 Generates common parameters for an asymmetric key pair based on the specified elliptic curve name.

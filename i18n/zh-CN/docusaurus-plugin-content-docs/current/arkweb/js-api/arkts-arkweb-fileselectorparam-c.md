@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileSelectorParam
 
 封装消息信息，作为 {@link onFileSelectorShow} 方法的入参。

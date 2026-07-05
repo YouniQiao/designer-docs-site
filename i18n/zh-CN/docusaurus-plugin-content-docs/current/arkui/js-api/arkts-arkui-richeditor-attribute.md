@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditor属性/事件
 
 除支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)外，还支持以下属性： 除支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)外，还支持[OnDidChangeCallback](arkts-arkui-ondidchangecallback-t.md#ondidchangecallback)、 [StyledStringChangedListener](arkts-arkui-styledstringchangedlistener-i.md#styledstringchangedlistener)、 [StyledStringChangeValue](arkts-arkui-styledstringchangevalue-i.md#styledstringchangevalue)和以下事件：

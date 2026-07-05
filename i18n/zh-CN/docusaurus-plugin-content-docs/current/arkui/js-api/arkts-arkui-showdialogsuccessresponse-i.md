@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ShowDialogSuccessResponse
 
 对话框的响应结果。

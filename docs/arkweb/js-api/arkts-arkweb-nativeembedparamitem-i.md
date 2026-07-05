@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeEmbedParamItem
 
 Provides details about the **param** element embedded in the same-layer rendering tag **object**.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PatternLock properties/events
 
 In addition to the [universal attributes](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md), the following attributes are supported. In addition to the [universal events](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md), the following events are supported.

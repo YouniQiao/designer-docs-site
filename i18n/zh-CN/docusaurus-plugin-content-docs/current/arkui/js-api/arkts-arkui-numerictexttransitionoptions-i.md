@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NumericTextTransitionOptions
 
 数字翻牌的参数。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MediaAssetManager
 
 The MediaAssetManager class is used for manipulating the read and write operations of media assets.

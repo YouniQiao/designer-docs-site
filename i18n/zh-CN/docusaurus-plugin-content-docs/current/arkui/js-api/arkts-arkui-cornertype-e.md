@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CornerType
 
 屏幕圆角类型枚举。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AppProvisionInfo (System API)
 
 The module provides information in the [HarmonyAppProvision configuration file](../../../../security/app-provision-structure.md).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bundle.pluginBundleManager
 
 This module is used to manage plugins for applications.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WatermarkConfig (System API)
 
 Set configures of a watermark to AVRecorder. The position starts at top left corner.

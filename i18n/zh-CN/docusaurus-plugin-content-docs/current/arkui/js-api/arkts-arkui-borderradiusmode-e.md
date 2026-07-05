@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BorderRadiusMode
 
 边框圆角模式枚举，用于控制分段按钮的圆角计算方式。

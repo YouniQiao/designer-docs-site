@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PhoneNumberFormat
 
 Provides phone number management capabilities, such as phone number validity verification, formatting, and home location retrieval.

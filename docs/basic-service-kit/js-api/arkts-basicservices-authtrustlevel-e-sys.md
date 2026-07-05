@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthTrustLevel (System API)
 
 Enumerates the trust levels of the authentication result.

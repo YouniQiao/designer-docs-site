@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HeapMemoryInfo
 
 描述 ArkTS-VM 的堆内存信息，或当前进程的共享堆内存信息。

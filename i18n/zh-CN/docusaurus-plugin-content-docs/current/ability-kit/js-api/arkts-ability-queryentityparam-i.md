@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # QueryEntityParam
 
 查询实体的参数。

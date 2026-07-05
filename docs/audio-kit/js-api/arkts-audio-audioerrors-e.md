@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioErrors
 
 Enumerates the error codes available for audio management.

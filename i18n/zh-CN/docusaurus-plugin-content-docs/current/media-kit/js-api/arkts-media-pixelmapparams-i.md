@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PixelMapParams
 
 Defines the format parameters of the video thumbnail to be obtained.

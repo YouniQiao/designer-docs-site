@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ItemState
 
 步骤导航器nextLabel的显示状态。

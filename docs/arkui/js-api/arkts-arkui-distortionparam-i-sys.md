@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DistortionParam (System API)
 
 Defines the spatial distortion parameters. > **NOTE** > > - The coordinates of the four corners of the component can be set as follows: top-left corner: [0, 0], top-right > corner: [1, 0], bottom-left corner: [0, 1], bottom-right corner: [1, 1]. > > - For example, if the **bottomLeft** attribute is set to **[0.5, 0.5]**, the bottom-left corner is deformed to the > position of the component center, and the corresponding distortion effect is generated. > > - When setting the coordinates of the four corners, ensure they follow spatial logic. For example, if **topLeft** > is **[0, 0.7]** and **bottomLeft** is **[0, 0.2]**, the top-left corner is lower than the bottom-left corner, which > violates the spatial logic and may cause rendering exceptions.

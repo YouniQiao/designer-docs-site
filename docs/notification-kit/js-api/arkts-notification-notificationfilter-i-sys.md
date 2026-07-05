@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationFilter (System API)
 
 Describes the filter criteria for querying the live view.

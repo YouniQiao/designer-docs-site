@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipV2CloseConfig
 
 定义默认关闭图标的配置。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FetchResult
 
 表示批量获取缩略图操作结果的枚举。

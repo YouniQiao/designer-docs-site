@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ApplicationInfoFlag（系统接口）
 
 标识应用和用户之间的各种状态类型。

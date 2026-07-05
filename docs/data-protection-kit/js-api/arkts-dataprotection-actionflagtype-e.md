@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ActionFlagType
 
 Enumerates the operations that can be performed on a DLP file. For example, the DLP sandbox application can dim its button based on this parameter.

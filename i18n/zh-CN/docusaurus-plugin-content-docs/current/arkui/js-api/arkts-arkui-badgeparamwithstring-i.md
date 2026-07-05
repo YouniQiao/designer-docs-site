@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BadgeParamWithString
 
 BadgeParamWithNumber继承自[BadgeParam](arkts-arkui-badgeparam-i.md#badgeparam)，具有BadgeParam的全部属性。

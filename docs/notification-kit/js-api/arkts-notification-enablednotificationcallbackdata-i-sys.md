@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EnabledNotificationCallbackData (System API)
 
 Defines a callback function to listen for the enabling state changes of the application badge.

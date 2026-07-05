@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ShortcutWant（系统接口）
 
 > **说明：** > > 从API version 7开始支持，从API version 9开始废弃，建议使用[bundleManager-ShortcutWant](arkts-ability-shortcutwant-depr-i-sys.md#shortcutwant)替代。

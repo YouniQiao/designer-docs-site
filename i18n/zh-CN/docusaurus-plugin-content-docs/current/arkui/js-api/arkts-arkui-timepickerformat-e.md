@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TimePickerFormat
 
 时间选择器的数据格式。

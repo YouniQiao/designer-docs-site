@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.nearlink.cdsm
 
 Provides methods related to nearlink CDSM(Coordinated Devices Set Management).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuGridPosition
 
 栅格菜单在菜单中的位置枚举值。

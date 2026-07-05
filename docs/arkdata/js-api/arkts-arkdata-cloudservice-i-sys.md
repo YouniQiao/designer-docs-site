@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudService (System API)
 
 Provides APIs for interacting with the cloud sync service. You need to inherit this class and implement APIs of this class. The system calls these APIs to connect to the cloud and use the cloud sync service.

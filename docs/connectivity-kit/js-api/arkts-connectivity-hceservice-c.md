@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HceService
 
 A class for NFC host application. <p>The NFC host application use this class, then Nfc service can access the application installation information and connect to services of the application.

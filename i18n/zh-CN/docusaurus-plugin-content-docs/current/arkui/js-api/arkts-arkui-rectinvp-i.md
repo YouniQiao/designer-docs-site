@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RectInVP
 
 窗口矩形区域，单位为vp。

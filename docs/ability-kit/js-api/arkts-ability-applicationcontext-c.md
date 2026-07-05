@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ApplicationContext
 
 ApplicationContext inherits from [Context](arkts-ability-context-depr-i.md#context) and provides application-level management capabilities, such as application lifecycle listening, process management, and application environment setting. > **NOTE** > > The APIs of this module can be used only in the stage model.

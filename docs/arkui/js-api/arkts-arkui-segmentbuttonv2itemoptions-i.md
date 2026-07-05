@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SegmentButtonV2ItemOptions
 
 Defines segmented button item options. > **Description** > > 1. If both **symbol** and **icon** are configured, **symbol** takes precedence. > > 2. If both **symbol** and **symbolModifier** are configured with HM Symbol resources, the resources specified by > **symbolModifier** take precedence.

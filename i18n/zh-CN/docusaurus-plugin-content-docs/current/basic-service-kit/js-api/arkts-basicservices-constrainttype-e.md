@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ConstraintType
 
 定义参数限制类型的枚举。

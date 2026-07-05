@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HmacAlgo
 
 Enumerates the HMAC algorithms for the database. Use the enum name rather than the enum value.

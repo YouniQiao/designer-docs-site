@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIListEvent
 
 Represents the return value of the [getEvent('List')](FrameNode:typeNode.getEvent(node: FrameNode, nodeType: 'List')) method in **frameNode**, which can be used to set scroll events for a **List** node.

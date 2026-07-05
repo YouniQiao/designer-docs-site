@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MechEvent (System API)
 
 Definition of Mechanic device event.

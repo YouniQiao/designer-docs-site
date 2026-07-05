@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AddMethod (System API)
 
 Enumerates the methods used to add the network packets.

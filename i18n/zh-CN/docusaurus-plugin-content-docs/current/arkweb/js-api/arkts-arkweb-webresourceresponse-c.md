@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebResourceResponse
 
 Web组件资源响应对象。

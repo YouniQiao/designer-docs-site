@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # USBInterface
 
 一个[USBConfiguration](arkts-basicservices-usbconfiguration-i.md#usbconfiguration)中可以含有多个USBInterface，每个USBInterface提供一个功能。

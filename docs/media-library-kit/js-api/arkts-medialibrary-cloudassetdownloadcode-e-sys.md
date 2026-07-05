@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudAssetDownloadCode (System API)
 
 Add download cloud asset task result code.

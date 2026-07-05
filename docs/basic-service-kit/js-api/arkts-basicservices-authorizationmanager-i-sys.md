@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthorizationManager (System API)
 
 Defines the OS account authorization manager class.

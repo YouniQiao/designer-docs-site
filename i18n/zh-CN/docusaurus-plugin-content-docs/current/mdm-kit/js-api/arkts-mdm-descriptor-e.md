@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Descriptor
 
 USB描述符的枚举。

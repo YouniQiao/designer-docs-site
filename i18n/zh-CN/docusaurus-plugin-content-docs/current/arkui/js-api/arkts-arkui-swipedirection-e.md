@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwipeDirection
 
 定义滑动手势的触发方向。

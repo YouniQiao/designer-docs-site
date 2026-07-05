@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyboardFluidLightMode (System API)
 
 Enumerates keyboard fluid lighting effects.

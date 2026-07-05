@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DynamicRangeMode
 
 期望展示的图像动态范围。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtensionAbilityType
 
 Enumerates the types of ExtensionAbility components. <!--RP2--><!--RP2End-->

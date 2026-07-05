@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReminderInfo
 
 代理提醒信息，包含 ReminderRequest 和 ReminderId。

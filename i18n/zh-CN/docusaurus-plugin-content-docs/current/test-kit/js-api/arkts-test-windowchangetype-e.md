@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowChangeType
 
 枚举可监听的窗口变更事件类型。

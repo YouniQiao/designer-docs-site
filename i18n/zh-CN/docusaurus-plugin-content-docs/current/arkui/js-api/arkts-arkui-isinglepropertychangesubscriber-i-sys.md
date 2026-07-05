@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ISinglePropertyChangeSubscriber（系统接口）
 
 继承自[IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md#ipropertysubscriber)。用来定义变量。

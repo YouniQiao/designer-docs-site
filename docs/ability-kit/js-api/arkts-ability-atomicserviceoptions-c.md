@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AtomicServiceOptions
 
 **AtomicServiceOptions** is used as an input parameter of [openAtomicService()](arkts-ability-uiabilitycontext-c.md#openatomicservice-1) to carry arguments. It inherits from [StartOptions](arkts-ability-startoptions-c.md#startoptions).

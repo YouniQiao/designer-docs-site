@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommonEventBatteryChangedKey
 
 表示COMMON_EVENT_BATTERY_CHANGED通用事件附加信息的查询键。

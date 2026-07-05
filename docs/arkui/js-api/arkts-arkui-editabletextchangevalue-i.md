@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EditableTextChangeValue
 
 Provides detailed information of text changes, including preview text.

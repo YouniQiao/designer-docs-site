@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WaterRippleMode（系统接口）
 
 水波纹场景模式枚举。

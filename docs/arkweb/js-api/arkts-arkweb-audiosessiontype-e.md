@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioSessionType
 
 Enumerates the web audio types in the application.

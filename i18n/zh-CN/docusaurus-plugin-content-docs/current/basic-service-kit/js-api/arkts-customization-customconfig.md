@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.customization.customConfig
 
 本模块接口为应用提供定制配置的获取能力，如渠道号等。

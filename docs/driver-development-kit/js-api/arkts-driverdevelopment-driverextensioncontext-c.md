@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DriverExtensionContext
 
 The **DriverExtensionContext** module provides the context of **DriverExtensionAbility**. It inherits from **ExtensionContext**. The **DriverExtensionContext** module provides the operations that need to be actively initiated in the **DriverExtensionAbility** implementation. > **NOTE** > - The APIs of this module can be used only in the stage model.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ListItemAlign
 
 Sets the alignment mode of child components in the cross-axis direction of the list.

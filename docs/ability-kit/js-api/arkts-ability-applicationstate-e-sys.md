@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ApplicationState (System API)
 
 Enumerates the application states. This enum can be used together with [AbilityStateData](arkts-ability-abilitystatedata-c.md#abilitystatedata) to return the application state.

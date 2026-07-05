@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MediaAssetProgressHandler
 
 Data handler used to notify the progress of required media asset data

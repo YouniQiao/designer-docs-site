@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DoNotDisturbDate（系统接口）
 
 免打扰时间选项。

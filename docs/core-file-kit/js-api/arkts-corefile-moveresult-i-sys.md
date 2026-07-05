@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MoveResult (System API)
 
 Represents the information returned when the move operation fails. If the operation is successful, no information is returned.

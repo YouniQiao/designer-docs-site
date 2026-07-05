@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PickerProfile
 
 Defines the configuration information about the camera picker.

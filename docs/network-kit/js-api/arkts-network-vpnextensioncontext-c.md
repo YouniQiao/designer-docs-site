@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VpnExtensionContext
 
 The context of vpn extension. It allows access to serviceExtension-specific resources.

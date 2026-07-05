@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MediaHighlightAlbumChangeRequest (System API)
 
 Defines the class of media highlight album change request.

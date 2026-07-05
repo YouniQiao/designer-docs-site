@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorImageSpanStyleResult
 
 Provides the image span style information returned by the backend.

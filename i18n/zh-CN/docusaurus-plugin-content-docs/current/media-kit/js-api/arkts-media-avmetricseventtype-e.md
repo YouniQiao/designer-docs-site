@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVMetricsEventType
 
 表示媒体服务支持的指标事件的枚举。

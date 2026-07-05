@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Task
 
 上传或下载任务。使用该方法前需要先获取Task对象，promise形式通过 [request.agent.create](arkts-basicservices-create-f.md#create-2)获取， callback形式通过 [request.agent.create](arkts-basicservices-create-f.md#create-1)获取。 > **说明：** > > Task对象及其挂载回调函数会在调用remove方法后释放并被系统自动回收。

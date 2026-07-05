@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TargetedGestureProposal
 
 Base class for smart gesture handling with a target node.

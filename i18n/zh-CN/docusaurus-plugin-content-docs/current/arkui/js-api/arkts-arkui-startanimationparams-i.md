@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StartAnimationParams
 
 启动动画配置。 仅对同应用的不同ability间跳转生效。 仅对全屏应用生效。

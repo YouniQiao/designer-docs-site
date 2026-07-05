@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThreatType
 
 Enum type supplied to {@link threatType} for the website's threat type.

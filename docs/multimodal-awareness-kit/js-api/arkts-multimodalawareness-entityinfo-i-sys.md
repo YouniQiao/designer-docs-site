@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EntityInfo (System API)
 
 Provides entity information perceived, including content, links, images, and other types of entities.

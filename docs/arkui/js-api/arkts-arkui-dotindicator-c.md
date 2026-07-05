@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DotIndicator
 
 A constructor used to create a **DotIndicator** object. It inherits from [Indicator](arkts-arkui-indicator-c.md#indicator).

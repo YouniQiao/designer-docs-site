@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DistributedInfo
 
 提供操作系统账号的分布式信息。

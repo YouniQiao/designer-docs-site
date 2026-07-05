@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SegmentButtonItemOptions
 
 分段按钮中的按钮选项。

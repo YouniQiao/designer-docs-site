@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrintDocumentAdapterState
 
 打印任务状态的枚举。

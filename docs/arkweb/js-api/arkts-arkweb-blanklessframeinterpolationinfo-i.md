@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BlanklessFrameInterpolationInfo
 
 Defines the frame interpolation state information in the scenario where the ArkWeb blankless loading optimization is enabled. Device behavior differences: Only the mobile phone is supported. For other devices, 801 is returned.

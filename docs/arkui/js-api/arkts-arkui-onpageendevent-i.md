@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnPageEndEvent
 
 Page end event at the end of web page loading.

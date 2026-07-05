@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExchangeKey
 
 定义交换数据的新键值。

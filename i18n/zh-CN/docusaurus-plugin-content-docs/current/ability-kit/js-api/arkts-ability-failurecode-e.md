@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FailureCode
 
 打开原子化服务失败的特定错误码。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioSeparationVolumeType (System API)
 
 Volume type for audio separation effect.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # types
 
 Provides APIs to check different types of built-in objects, such as ArrayBuffer, Map, and Set, so as to avoid exceptions caused by type errors.

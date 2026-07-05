@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TimeLapsePreviewType (System API)
 
 Enumerates the time-lapse preview types, which affect the shooting algorithm.

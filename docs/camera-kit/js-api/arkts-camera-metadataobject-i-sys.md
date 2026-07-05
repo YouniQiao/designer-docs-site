@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MetadataObject
 
 Implements the basic metadata object used for camera detection. It serves as the data source of the camera information in [CameraInput](arkts-camera-camerainput-i.md#camerainput). It is obtained by calling metadataOutput. [on('metadataObjectsAvailable')](arkts-camera-metadataoutput-i.md#on-1).

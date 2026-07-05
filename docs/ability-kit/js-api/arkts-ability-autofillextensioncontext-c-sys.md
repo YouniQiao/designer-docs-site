@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoFillExtensionContext (System API)
 
 The AutoFillExtensionContext module provides the context environment for the AutoFillExtensionAbility. It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md#extensioncontext).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DiscoveryService
 
 Defines a DiscoveryService object for discovering mDNS services of the specified type.

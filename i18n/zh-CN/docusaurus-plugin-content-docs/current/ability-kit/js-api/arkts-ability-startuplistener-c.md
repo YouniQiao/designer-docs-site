@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StartupListener
 
 本模块提供[应用启动框架](../../../../application-models/app-startup.md)任务监听器的定义。

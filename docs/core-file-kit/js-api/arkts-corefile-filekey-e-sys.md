@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileKey (System API)
 
 Property elements that support the file queries.

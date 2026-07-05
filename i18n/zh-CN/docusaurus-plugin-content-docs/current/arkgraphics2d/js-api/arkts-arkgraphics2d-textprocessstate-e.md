@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextProcessState
 
 文本处理状态的枚举。

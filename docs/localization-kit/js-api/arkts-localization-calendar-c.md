@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Calendar
 
 Provides calendar management capabilities, such as calendar name retrieval and date calculation.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TransferProgress（系统接口）
 
 搬迁任务的进度信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FieldRegion
 
 用于设置粒子场的区域信息。

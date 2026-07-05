@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.web.webNativeMessagingExtensionManager
 
 The webNativeMessagingExtensionManager module provides the capability of managing message extensions based on web standards.

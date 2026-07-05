@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebKeyboardAvoidMode
 
 Enum type supplied to {@link keyboardAvoidMode} for setting the web keyboard avoid mode.

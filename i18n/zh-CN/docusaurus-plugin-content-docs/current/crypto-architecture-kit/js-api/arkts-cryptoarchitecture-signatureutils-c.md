@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SignatureUtils
 
 用于ECC/SM2签名数据转换的工具类。

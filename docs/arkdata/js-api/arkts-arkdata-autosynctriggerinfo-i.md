@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoSyncTriggerInfo
 
 Describes information about the automatic synchronization trigger mode.

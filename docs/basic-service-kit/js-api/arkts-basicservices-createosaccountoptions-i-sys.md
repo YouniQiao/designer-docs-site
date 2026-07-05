@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CreateOsAccountOptions (System API)
 
 Represents the optional parameter used to create an OS account.

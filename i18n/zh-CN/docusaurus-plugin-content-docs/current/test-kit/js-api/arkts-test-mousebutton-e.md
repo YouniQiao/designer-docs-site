@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MouseButton
 
 描述注入的模拟鼠标按键。

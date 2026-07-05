@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Window
 
 当前窗口实例，窗口管理器管理的基本单元。 下列API示例中都需先使用 [getLastWindow()](arkts-arkui-getlastwindow-f.md#getlastwindow-1)、 [createWindow()](arkts-arkui-createwindow-f.md#createwindow-1)、 [findWindow()](arkts-arkui-findwindow-f.md#findwindow-1)中的任一方法获取到Window实例（windowClass），再通过此实例调用对应方法。

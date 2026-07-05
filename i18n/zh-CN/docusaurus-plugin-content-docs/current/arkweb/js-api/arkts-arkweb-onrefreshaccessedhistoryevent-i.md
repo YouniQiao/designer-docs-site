@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnRefreshAccessedHistoryEvent
 
 定义导航完成时触发。

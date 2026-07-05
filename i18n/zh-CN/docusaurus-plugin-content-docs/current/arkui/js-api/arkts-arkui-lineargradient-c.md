@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LinearGradient
 
 线性渐变颜色类。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Kdf
 
 Defines the key derivation function class. Before using APIs of this class, you need to create an instance of this class by using **createKdf(algName: string): Kdf**.

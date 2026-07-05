@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScanOptions
 
 Describes the parameters for scan.

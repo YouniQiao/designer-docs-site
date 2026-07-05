@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CallRestrictionMode (System API)
 
 Indicates the mode of call restriction.

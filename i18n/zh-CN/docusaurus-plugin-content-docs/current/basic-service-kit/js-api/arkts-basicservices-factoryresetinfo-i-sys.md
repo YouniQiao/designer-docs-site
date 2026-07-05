@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FactoryResetInfo（系统接口）
 
 恢复出厂设置信息。

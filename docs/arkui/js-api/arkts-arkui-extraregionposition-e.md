@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtraRegionPosition
 
 Provides the position information of the extra region.

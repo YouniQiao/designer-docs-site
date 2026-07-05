@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ApplicationQuickFixInfo (System API)
 
 Defines the quick fix information at the application level.

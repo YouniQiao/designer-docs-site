@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserAgentFormFactor
 
 The form factors for User-Agent metadata.

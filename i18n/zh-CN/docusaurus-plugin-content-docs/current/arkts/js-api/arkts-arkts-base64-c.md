@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Base64
 
 将包含 Base64 数据的字符串或 Uint8Array 解码为重新分配的 Uint8Array。

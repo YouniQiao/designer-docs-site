@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksErrorCode
 
 表示错误码的枚举。 > **说明：** > > 从API version 9开始废弃，建议使用[HuksExceptionErrCode<sup>9+</sup>](arkts-universalkeystore-huksexceptionerrcode-e.md#huksexceptionerrcode)替代。

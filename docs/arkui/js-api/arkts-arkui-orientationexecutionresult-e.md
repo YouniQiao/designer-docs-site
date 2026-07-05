@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OrientationExecutionResult
 
 Type of execution result of setting preferred orientation

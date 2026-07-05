@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EditableTextChangeValue
 
 文本变化的详细信息，包括预上屏。

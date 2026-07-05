@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VisibleListContentInfo
 
 Describes the details of the child components in the visible area of a list.

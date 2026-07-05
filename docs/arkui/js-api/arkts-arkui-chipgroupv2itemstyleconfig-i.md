@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipGroupV2ItemStyleConfig
 
 Defines ChipGroupV2 item style.

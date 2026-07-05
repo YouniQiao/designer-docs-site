@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Result
 
 Records the number of affected data rows and the result set.

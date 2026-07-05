@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PickerElement
 
 The <picker> component supports common, date, time, and multi-column text.

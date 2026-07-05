@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.ability.missionManager
 
 The missionManager module provides APIs to lock, unlock, and clear missions, and switch a mission to the foreground.

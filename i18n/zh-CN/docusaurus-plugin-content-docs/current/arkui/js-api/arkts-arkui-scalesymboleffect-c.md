@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScaleSymbolEffect
 
 定义ScaleSymbolEffect类，继承自父类SymbolEffect。

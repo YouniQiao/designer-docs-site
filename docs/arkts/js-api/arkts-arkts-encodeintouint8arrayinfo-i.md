@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EncodeIntoUint8ArrayInfo
 
 Encrypted information, including the number of read characters and the number of written bytes.

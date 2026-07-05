@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AppStateFilter（系统接口）
 
 应用生命周期变化事件的过滤器，可作为 [on](arkts-ability-on-f-sys.md#on-3)的参数用 于筛选所需监听的应用生命周期变化事件。

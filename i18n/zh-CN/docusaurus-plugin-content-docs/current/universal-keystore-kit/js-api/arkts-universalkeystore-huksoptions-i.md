@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksOptions
 
 调用接口使用的options。

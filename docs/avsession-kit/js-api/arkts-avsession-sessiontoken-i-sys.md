@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SessionToken (System API)
 
 Session token. Used to judge the legitimacy of the session.

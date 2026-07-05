@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleOptions (System API)
 
 The bundle options of bundle manager

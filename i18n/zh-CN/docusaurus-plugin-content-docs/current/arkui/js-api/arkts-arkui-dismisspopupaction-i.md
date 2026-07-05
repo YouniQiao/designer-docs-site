@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DismissPopupAction
 
 气泡关闭的信息。

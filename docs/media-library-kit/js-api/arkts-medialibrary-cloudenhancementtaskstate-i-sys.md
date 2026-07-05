@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudEnhancementTaskState (System API)
 
 Represents the cloud enhancement task information, which includes the cloud enhancement task state and other information related to certain states.

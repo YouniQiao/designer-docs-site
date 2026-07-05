@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.file.trash
 
 The **file.trash** module provides APIs for querying, recovering, or permanently deleting the files or directories in Recently deleted (trash). Currently, only local files and directories are supported. You can use **delete()** of [@ohos.file.fileAccess](arkts-file-fileaccess.md#fileaccess) to move a file or directory to the trash. > **NOTE** > > - Currently, the APIs of this module can be called only by **FileManager**.

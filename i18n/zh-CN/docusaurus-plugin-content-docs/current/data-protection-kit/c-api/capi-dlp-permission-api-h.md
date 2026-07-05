@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # dlp_permission_api.h
 
 ## 概述

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudMediaAssetStatus (System API)
 
 Describes the details of a cloud media asset download task. It is the return value of the API used by applications to obtain the cloud asset download task status.

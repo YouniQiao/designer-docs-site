@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PdfConfiguration
 
 Specifies the input parameters of **createPdf()**. > **NOTE** > > The number of pixels is calculated as follows: Number of pixels = 96 x Number of inches.

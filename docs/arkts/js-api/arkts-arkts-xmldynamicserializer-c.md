@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # XmlDynamicSerializer
 
 The XmlDynamicSerializer interface is used to dynamically generate an xml file.

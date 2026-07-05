@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChannelStateInfo
 
 Represents the connection state information of the proxy channel.

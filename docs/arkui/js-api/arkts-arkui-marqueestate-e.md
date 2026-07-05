@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MarqueeState
 
 Enumerates the return values of the marquee state callback.

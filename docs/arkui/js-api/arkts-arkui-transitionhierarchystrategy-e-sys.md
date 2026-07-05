@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TransitionHierarchyStrategy (System API)
 
 Enumerates the strategies for the hierarchical position movement of **in** / **out** components in the component tree during the shared element transition process.

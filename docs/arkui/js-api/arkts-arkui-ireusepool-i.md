@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IReusePool
 
 The **IReusePool** API provides the features related to the global reuse pool of a custom component.

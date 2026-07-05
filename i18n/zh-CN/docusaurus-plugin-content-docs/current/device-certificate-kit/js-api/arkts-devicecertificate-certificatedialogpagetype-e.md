@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CertificateDialogPageType
 
 表示证书管理对话框的页面类型。

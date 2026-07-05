@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.data.dataShare
 
 The **DataShare** module allows an application to manage its own data and share data with other applications on the same device.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HitTestValue
 
 提供点击区域的元素信息。示例代码参考 [getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1).

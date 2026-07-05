@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DrawableDescriptorLoadedResult
 
 Represents the result of loading an image resource or URI.

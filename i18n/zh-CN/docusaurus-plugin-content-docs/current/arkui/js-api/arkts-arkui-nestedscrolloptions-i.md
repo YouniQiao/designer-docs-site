@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NestedScrollOptions
 
 定义嵌套滚动选项

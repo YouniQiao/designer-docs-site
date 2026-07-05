@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocatingRequiredData (System API)
 
 Describes the structure of the data required for locating.

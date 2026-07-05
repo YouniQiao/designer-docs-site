@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.file.environment
 
 该模块提供环境目录能力，获取内存存储根目录、公共文件根目录的ArkTS接口。

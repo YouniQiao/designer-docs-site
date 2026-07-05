@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetAccessPolicy
 
 Network policies that limit the specified UID of application to access the network.

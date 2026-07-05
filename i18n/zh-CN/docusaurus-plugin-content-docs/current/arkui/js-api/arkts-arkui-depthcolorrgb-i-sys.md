@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DepthColorRGB（系统接口）
 
 深度空间中的RGB颜色。

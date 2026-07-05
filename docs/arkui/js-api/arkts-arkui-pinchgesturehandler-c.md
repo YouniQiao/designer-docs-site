@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PinchGestureHandler
 
 Defines a type of gesture handler object for pinch gestures.

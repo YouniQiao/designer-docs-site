@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReadOut
 
 仅用于read方法，获取文件的读取结果。

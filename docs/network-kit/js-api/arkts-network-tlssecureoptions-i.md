@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TLSSecureOptions
 
 Defines TLS security options. The CA certificate is mandatory, and other parameters are optional.

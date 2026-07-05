@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Configuration
 
 创建子窗口或系统窗口时的参数。

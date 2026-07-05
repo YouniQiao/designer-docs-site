@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemBarProperties
 
 状态栏<!--Del-->、三键导航栏的<!--DelEnd-->属性。

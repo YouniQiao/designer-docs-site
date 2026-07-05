@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Client
 
 Manages SSAP client. Before calling a SSAP client method, you must use {@link createClient} to create a ssap client instance.

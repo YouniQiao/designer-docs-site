@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # unregisterAppGroupCallBack（系统接口）
 
 ## unregisterAppGroupCallBack

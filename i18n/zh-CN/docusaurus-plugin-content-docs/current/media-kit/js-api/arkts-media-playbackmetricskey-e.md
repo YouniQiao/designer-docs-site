@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PlaybackMetricsKey
 
 表示播放器指标信息的枚举。

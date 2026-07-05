@@ -1,21 +1,10 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Callback
 
-Defines the window callback.
+Defines the basic callback.
 
-**Since:** 15
+**Since:** 12
 
-**System capability:** SystemCapability.Window.SessionManager
-
-## Modules to Import
-
-```TypeScript
-import { window } from '@ohos.window';
-```
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## constructor
 
@@ -25,11 +14,13 @@ import { window } from '@ohos.window';
 
 Defines the callback info.
 
-**Since:** 15
+**Since:** 12
 
-**Atomic service API:** This API can be used in atomic services since API version 15.
+**Model restriction:** This API can be used only in the stage model.
 
-**System capability:** SystemCapability.Window.SessionManager
+**Atomic service API:** This API can be used in atomic services since API version 12.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **Parameters:**
 

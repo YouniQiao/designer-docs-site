@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavigationInfo
 
 Provides information about the **Navigation** component.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyboardAppearanceConfig (System API)
 
 Describes the keyboard visual style configuration.

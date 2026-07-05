@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipV2Accessibility
 
 定义ChipV2无障碍

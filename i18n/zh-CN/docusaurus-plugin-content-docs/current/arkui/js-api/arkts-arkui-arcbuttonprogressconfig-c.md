@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcButtonProgressConfig
 
 ArcButton内进度条的参数配置。

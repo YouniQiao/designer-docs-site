@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EuiccProfile (System API)
 
 Information about an embedded profile (subscription) on an eUICC.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LoadingRequestError
 
 Enumerates the reasons for data loading status changes.

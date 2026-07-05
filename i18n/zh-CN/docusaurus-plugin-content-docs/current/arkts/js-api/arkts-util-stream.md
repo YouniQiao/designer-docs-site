@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.util.stream
 
 stream模块提供了处理基本流类型的API。通过流，数据可按块读取或写入，而不是一次性加载到内存中。 有四种基本流类型：可写流（[Writable](arkts-arkts-writable-c.md#writable)）、可读流（[Readable](arkts-arkts-readableoptions-i.md#readableoptions)）、双工流（[Duplex](arkts-arkts-duplex-c.md#duplex)）和转换流（[Transform](arkts-arkts-transform-c.md#transform)）。

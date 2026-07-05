@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScreenCaptureEvent（系统接口）
 
 Enumerates the states available for the system screen recorder.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ComposeTitleBarV2MenuItem
 
 Declaration of the menu item on the right side.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResolvedSymbolNumberFormatOptions
 
 Represents optional element for the ResolvedSymbolNumberFormatOptions object. Define the resolved symbol element and value that need to get.

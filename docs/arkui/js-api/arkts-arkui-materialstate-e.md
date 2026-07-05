@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MaterialState
 
 Enumerates the material enabling states, indicating the states of the application-level immersive system material configuration.

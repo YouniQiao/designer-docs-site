@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Offset
 
 定义坐标属性。

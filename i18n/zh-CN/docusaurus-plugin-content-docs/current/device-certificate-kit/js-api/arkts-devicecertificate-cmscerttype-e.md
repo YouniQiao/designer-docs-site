@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsCertType
 
 从CMS中获取证书不同类型的枚举。

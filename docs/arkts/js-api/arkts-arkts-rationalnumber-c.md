@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RationalNumber
 
 Provides APIs to compare rational numbers and obtain numerators and denominators. For example, the **toString()** API can be used to convert a rational number into a string.

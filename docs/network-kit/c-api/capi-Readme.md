@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [net_http_type.h](capi-net-http-type-h.md)
     - [net_http.h](capi-net-http-h.md)

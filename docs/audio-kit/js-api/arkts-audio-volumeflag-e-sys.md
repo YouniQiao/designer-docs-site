@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VolumeFlag (System API)
 
 Enumerates volume related operations. Flags should be powers of 2!

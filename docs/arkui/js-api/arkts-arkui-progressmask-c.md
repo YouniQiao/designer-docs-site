@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ProgressMask
 
 Sets the progress, maximum value, and color for a mask.

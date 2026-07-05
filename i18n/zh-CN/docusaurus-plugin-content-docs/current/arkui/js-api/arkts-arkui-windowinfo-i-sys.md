@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowInfo（系统接口）
 
 当前窗口的详细信息。

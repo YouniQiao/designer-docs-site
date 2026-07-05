@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.batteryInfo
 
 The **batteryInfo** module provides APIs for querying the charger type, battery health status, and battery charging status.

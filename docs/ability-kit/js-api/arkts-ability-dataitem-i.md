@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataItem
 
 Describes the user-defined data in the routing table configuration of the module.

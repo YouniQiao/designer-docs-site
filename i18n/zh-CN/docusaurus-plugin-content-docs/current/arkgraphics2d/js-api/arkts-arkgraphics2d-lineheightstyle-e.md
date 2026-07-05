@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LineHeightStyle
 
 行高缩放基数枚举。

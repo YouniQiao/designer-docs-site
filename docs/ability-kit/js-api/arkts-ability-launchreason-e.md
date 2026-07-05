@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LaunchReason
 
 Enumerates the ability launch reasons. You can use it together with the value of **launchParam.launchReason** in [onCreate(want, launchParam)](arkts-ability-uiability-c.md#oncreate-1) of the UIAbility to complete different operations.

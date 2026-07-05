@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OperationType
 
 Identifies the operation for using a WantAgent, such as starting an ability or sending a common event.

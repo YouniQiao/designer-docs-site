@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DowngradeDownload (System API)
 
 Full download: provides the capability of downloading cloud data for applications. It supports the full download of cloud application files.

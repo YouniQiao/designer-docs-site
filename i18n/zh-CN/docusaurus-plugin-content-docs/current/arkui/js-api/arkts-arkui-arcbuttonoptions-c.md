@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcButtonOptions
 
 定义ArcButton的默认样式或自定义样式参数。

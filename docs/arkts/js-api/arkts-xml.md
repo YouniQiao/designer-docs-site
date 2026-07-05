@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.xml
 
 The xml module provides utilities for converting XML text to Javascript object, XML generation and parsing.

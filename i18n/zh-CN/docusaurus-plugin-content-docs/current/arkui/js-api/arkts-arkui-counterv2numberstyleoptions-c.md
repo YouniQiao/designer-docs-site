@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CounterV2NumberStyleOptions
 
 CounterV2NumberStyleOptions定义了列表型和紧凑型CounterV2的属性和事件。 继承于[CounterV2InlineStyleOptions](arkts-arkui-counterv2inlinestyleoptions-c.md#counterv2inlinestyleoptions)。

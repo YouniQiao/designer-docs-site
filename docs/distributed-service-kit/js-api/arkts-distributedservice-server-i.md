@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Server
 
 Represents a **Server** object, which provides methods for starting, stopping, and closing the server, and registering or unregistering event callbacks.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleInstaller (System API)
 
 The module provides APIs for you to install, uninstall, and recover bundles on devices.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScannerDevice
 
 定义扫描仪设备的接口。

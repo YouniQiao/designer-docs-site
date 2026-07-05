@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DfsListeners
 
 Provides APIs for observing events. listening for the distributed file system status.

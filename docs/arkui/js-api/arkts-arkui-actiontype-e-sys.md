@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ActionType (System API)
 
 Enumerates the trigger modes for user scenes (typically scenes involving animations).

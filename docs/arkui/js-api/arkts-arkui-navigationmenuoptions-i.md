@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavigationMenuOptions
 
 Defines options for menu items in the upper right corner of the page.

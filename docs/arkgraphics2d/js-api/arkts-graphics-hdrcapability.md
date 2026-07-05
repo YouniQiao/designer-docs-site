@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.graphics.hdrCapability
 
 The hdrCapability module provides enums related to the High Dynamic Range (HDR) capability.

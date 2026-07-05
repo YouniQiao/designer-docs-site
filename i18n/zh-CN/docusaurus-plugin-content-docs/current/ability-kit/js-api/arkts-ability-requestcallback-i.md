@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RequestCallback
 
 用于设置模态弹框请求结果的callback接口。

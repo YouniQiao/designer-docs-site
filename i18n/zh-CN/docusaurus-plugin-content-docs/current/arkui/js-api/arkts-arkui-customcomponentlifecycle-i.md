@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomComponentLifecycle
 
 CustomComponentLifecycle用于监控自定义组件生命周期的变化。

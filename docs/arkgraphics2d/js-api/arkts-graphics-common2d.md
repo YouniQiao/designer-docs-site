@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.graphics.common2D
 
 This module defines some common data types in the 2D graphics field. > **NOTE** > > - This module uses the physical pixel unit, px.

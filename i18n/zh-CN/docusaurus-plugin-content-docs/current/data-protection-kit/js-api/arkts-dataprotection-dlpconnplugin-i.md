@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DlpConnPlugin
 
 被用于registerPlugin接口中，将回调能力注册到SA（System Ability）中。 > **说明：** > > [registerPlugin](arkts-dataprotection-dlpconnmanager-c.md#registerplugin-1)接口的参数需要继承该接口， > [connectServer](arkts-dataprotection-dlpconnplugin-i.md#connectserver-1)由SA（System Ability）侧调用，通过callback进行回传参数。

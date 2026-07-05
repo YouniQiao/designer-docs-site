@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AcquireAuthorizationOptions (System API)
 
 Defines the options for acquiring the authorization.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DLPManagerResult
 
 Represents information about the trigger of the DLP manager application.

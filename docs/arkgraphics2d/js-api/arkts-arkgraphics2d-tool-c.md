@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Tool
 
 A utility class that provides only static methods to convert data structs defined in other modules and [common2D](arkts-graphics-common2d.md#common2d). > **NOTE** > > - The initial APIs of this class are supported since API version 15. > > - This module uses the physical pixel unit, px. > > - The module operates under a single-threaded model. The caller needs to manage thread safety and context state > transitions.

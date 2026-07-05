@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TabContentTransitionProxy
 
 Implements the proxy object returned during the execution of the custom switching animation of the **Tabs** component. You can use this object to obtain the start and target pages for the custom tab switching animation. In addition, you can call the **finishTransition** API of this object to notify the **Tabs** component of the ending of the custom animation.

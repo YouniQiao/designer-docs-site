@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceListener
 
 描述输入设备热插拔的信息。

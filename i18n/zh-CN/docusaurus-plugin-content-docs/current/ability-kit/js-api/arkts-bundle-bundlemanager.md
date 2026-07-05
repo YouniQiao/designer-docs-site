@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bundle.bundleManager
 
 本模块提供应用信息的查询能力，支持应用包信息[BundleInfo](bundleManager/BundleInfo)、应用程序信息 [ApplicationInfo](bundleManager/ApplicationInfo)、UIAbility组件信息 [AbilityInfo](bundleManager/AbilityInfo)、ExtensionAbility组件信息 [ExtensionAbilityInfo](bundleManager/ExtensionAbilityInfo:ExtensionAbilityInfo)等信息的查询。

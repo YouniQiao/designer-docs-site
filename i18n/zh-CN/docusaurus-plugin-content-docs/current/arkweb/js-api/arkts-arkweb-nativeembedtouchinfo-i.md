@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeEmbedTouchInfo
 
 提供手指触摸到同层标签的详细信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EventType
 
 事件类型枚举。 **ArkTS-Dyn起始版本：** 8 **ArkTS-Sta起始版本：** 23

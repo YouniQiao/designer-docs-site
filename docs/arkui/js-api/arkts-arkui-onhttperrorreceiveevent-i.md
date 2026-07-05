@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnHttpErrorReceiveEvent
 
 Http error receive event when the web page receives a web resource loading HTTP error.

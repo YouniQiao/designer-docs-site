@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.logLibrary
 
 本模块提供了获取各类系统维测日志的能力。

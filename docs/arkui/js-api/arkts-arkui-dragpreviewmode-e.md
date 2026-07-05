@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DragPreviewMode
 
 Sets the display mode of the drag preview.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ConflictFiles
 
 冲突文件信息，支持copyDir及moveDir接口使用。

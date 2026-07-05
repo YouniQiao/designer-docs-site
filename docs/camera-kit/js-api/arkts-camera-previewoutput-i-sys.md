@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PreviewOutput
 
 Implements preview output. It inherits from [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput).

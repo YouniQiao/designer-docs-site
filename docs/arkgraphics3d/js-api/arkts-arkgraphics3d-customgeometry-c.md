@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomGeometry
 
 An array of vertices and their data defining a custom geometric shape.

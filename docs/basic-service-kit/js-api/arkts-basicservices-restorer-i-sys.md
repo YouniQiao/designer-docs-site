@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Restorer (System API)
 
 Defines a tool class for restoring factory settings.

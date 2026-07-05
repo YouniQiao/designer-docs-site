@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GenericEventData
 
 Describes the generic data carried by the emitted event.

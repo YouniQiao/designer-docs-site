@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FocusMoveResultCode (System API)
 
 Enumerates the result codes returned by the focusable node query.

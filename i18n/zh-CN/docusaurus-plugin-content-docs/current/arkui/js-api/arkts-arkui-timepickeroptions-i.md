@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TimePickerOptions
 
 时间选择器组件的参数说明。 在TimePicker组件滑动过程中修改TimePickerOptions中的属性，会导致这些属性无法生效。 Date对象用于处理日期和时间，使用方式如下。 **方式1：** new Date() 获取系统当前日期和时间。 **方式2：** new Date(value: number | string) **方式3：** new Date(year: number, monthIndex: number, date?: number, hours?: number, minutes?: number, seconds?: number, ms?: number)

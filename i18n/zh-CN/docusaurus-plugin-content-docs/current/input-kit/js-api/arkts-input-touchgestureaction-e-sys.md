@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TouchGestureAction（系统接口）
 
 触摸屏手势类型。

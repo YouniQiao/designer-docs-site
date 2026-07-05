@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CarKeyActionType (System API)
 
 Enum for the action of car key.

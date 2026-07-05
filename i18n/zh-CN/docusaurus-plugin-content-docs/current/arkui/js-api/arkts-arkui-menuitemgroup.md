@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuItemGroup
 
 该组件用来展示菜单MenuItem的分组。 > **说明：** > - 该组件从API版本26.0.0开始支持[WithTheme]{@link with_theme}。

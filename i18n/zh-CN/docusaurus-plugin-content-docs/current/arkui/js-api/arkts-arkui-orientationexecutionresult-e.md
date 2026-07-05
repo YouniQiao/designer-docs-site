@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OrientationExecutionResult
 
 窗口显示方向的执行结果枚举。

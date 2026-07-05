@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InfraredFrequency（系统接口）
 
 红外信号的频率范围。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MouseButton
 
 Enumerates the mouse button types.

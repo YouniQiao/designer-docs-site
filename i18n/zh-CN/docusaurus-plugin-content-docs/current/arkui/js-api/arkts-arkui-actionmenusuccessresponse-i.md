@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ActionMenuSuccessResponse
 
 操作菜单的响应结果。

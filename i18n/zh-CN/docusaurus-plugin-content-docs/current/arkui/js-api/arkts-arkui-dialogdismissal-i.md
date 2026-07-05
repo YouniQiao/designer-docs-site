@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogDismissal
 
 提供有关关闭对话框的操作的信息。

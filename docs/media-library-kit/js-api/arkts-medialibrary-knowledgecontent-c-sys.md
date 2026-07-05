@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KnowledgeContent (System API)
 
 Knowledge Content class, used for geting related entity.

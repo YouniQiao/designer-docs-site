@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Span properties/events
 
 Inherited from [BaseSpan](arkts-arkui-basespan-c.md#basespan). Among universal events, only [onClick](arkts-arkui-commonmethod-c.md#onclick-2) click events and [onHover](arkts-arkui-commonmethod-c.md#onhover-1) hover events are supported.

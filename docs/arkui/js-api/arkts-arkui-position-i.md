@@ -1,47 +1,44 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Position
 
-Describes the position of the window or component.
+Defines the position.
 
-**Since:** 20
+**Since:** 11
 
-**System capability:** SystemCapability.Window.SessionManager
-
-## Modules to Import
-
-```TypeScript
-import { window } from '@ohos.window';
-```
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## x
 
 ```TypeScript
-x: number
+x?: Length
 ```
 
-X coordinate, in px. The value must be an integer.
+Coordinate x of the Position.
 
-**Type:** number
+**Type:** Length
 
-**Since:** 20
+**Since:** 11
 
-**System capability:** SystemCapability.Window.SessionManager
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## y
 
 ```TypeScript
-y: number
+y?: Length
 ```
 
-Y coordinate, in px. The value must be an integer.
+Coordinate y of the Position.
 
-**Type:** number
+**Type:** Length
 
-**Since:** 20
+**Since:** 11
 
-**System capability:** SystemCapability.Window.SessionManager
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 

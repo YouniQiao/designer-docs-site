@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MessageEvents
 
 Holds the data transferred between Worker threads.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AttributeUpdater
 
 Represents the implementation class of AttributeModifier. You need to customize a class to inherit AttributeUpdater. C indicates the constructor type of the component, for example, TextInterface of the Text component and ImageInterface of the Image component. It is required only when updateConstructorParams is used.

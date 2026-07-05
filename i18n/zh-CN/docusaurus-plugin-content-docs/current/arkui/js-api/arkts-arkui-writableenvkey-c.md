@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WritableEnvKey
 
 定义系统环境键。

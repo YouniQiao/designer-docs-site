@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StrutStyle
 
 Describes the strut style, which determines the line spacing, baseline alignment mode, and other properties related to the line height when drawing texts. The strut style is disabled by default.

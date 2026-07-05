@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbilityStartFailureCode
 
 Enumerates the specific error codes for ability launch failures.

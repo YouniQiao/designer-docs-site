@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextChangeReason（系统接口）
 
 组件内容变化原因。

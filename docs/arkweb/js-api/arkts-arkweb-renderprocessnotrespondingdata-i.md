@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RenderProcessNotRespondingData
 
 Provides detailed information about the unresponsive rendering process.

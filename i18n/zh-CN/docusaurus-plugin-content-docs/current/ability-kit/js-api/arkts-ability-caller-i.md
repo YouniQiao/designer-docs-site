@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Caller
 
 调用方Caller UIAbility通过[startAbilityByCall](arkts-ability-uiabilitycontext-c.md#startabilitybycall-1)接口 拉起目标Callee UIAbility，目标UIAbility启动成功后，返回一个Caller对象给调用方进行通信。

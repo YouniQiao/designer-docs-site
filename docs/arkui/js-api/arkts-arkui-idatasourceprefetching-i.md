@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IDataSourcePrefetching
 
 Extends the [IDataSource](../arkts-components/arkts-arkui-idatasource-i.md#idatasource) API to add data prefetching capability to your data source.

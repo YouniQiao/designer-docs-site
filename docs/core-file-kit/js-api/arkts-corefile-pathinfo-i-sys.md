@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PathInfo (System API)
 
 Path information for file migration.

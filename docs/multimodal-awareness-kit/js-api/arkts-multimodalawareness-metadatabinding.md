@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimodalAwareness.metadataBinding
 
 The **metadataBinding** module provides metadata binding–specific functions such as metadata transfer, event subscription, and event unsubscription.

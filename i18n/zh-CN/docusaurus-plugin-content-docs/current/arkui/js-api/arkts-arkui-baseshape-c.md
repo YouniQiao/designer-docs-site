@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BaseShape
 
 继承自[CommonShapeMethod](arkts-arkui-commonshapemethod-c.md#commonshapemethod)。

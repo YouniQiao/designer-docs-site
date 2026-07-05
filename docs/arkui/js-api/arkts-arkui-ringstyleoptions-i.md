@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RingStyleOptions
 
 Options of the ring style without scales. Inherits from [ScanEffectOptions](arkts-arkui-scaneffectoptions-i.md#scaneffectoptions) and [CommonProgressStyleOptions](arkts-arkui-commonprogressstyleoptions-i.md#commonprogressstyleoptions).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileMkdirOption
 
 可选项类型，支持mkdir接口使用。

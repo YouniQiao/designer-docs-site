@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebMessageType
 
 Enum type supplied to {@link onMessageEventExt} for indicating the type of web message.

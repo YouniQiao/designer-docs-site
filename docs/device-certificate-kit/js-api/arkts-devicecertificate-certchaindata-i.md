@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CertChainData
 
 Defines the certificate chain data, which is passed in as input parameters during certificate chain verification.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ColoringStrategy
 
 智能取色枚举类型。

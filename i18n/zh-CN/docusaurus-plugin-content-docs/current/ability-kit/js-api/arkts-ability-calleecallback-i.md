@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CalleeCallback
 
 通用组件服务端注册消息通知的回调函数类型。

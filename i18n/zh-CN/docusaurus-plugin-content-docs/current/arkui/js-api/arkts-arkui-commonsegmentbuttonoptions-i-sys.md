@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommonSegmentButtonOptions
 
 定义分段按钮组件的可自定义的属性。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnRemoteStateChangeCallback
 
 Defines the callback that is invoked when the remote UIAbility state changes in the collaboration scenario.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextHeightAdaptivePolicy
 
 The mode of adjusting the text font size to adapt to the layout.

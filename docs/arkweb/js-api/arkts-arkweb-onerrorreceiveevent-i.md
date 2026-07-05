@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnErrorReceiveEvent
 
 Defines the triggered function when the web page receives a web resource loading error.

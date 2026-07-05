@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VirtualScrollOptions
 
 Configures the expected total number of data items to be loaded in lazy loading mode, the reuse capability, and the precise data lazy loading capability.

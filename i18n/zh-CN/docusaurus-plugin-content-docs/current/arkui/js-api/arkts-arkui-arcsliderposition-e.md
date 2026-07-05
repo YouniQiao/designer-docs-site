@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcSliderPosition
 
 配置弧形Slider的屏幕显示位置。

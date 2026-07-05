@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AISessionEvent
 
 自定义AI会话配置对象，用于定义AI会话的生命周期回调。

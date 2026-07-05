@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GallerySync (System API)
 
 Provides APIs to implement device-cloud sync of media assets in **Gallery**. Before using the APIs of **GallerySync**, you need to create a **GallerySync** instance.

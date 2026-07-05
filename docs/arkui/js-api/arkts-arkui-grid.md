@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Grid
 
 The **Grid** component consists of cells formed by rows and columns. You can specify the cells where items are located to form various layouts. > **NOTE** > > The component has been bound with gestures to implement functions such as follow-up scrolling. If you need to add > custom gestures, refer to [Gesture Blocking Enhancement]{@link common}.

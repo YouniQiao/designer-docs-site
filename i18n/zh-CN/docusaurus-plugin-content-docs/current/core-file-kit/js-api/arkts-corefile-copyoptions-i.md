@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CopyOptions
 
 拷贝进度回调监听

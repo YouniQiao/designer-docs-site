@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HitTestType
 
 点击事件检测结果类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationTemplate
 
 The **NotificationTemplate** module describes the notification template. > **NOTE** > > The predefined system templates are supported. You only need to provide the template name and related data for the > system to automatically render the notification style that complies with the specifications. > > Application scenario: Currently, only the upload and download scenarios are supported.

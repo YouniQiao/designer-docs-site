@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TTS
 
 Provides methods for setting information about text-to-speech (TTS) conversion, including the pitch, speech rate, engine, and plug-ins.

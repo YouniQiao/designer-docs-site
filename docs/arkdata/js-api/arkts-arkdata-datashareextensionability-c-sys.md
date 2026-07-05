@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataShareExtensionAbility (System API)
 
 This module provides data sharing and expansion capabilities.

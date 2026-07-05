@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AtomicServiceMenuBar (System API)
 
 Provide configuration capabilities for the menuBar of atomicservice

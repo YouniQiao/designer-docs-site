@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [camera.h](capi-camera-h.md)
     - [capture_session.h](capi-capture-session-h.md)

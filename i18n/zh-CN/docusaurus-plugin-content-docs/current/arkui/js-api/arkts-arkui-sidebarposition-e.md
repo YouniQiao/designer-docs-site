@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SideBarPosition
 
 侧边栏显示位置。

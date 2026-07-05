@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperContentInfo
 
 Provides content area information of the **Swiper** component.

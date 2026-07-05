@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TouchEvent
 
 Inherits from [BaseEvent](arkts-arkui-baseevent-i.md#baseevent). In non-event injection scenarios, **changedTouches** contains points resampled at the screen refresh rate, while **touches** contains points reported at the device's refresh rate. As such, **changedTouches** data may differ from **touches**.

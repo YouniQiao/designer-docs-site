@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatingBallConfiguration
 
 Describes the parameters for creating a floating ball controller.

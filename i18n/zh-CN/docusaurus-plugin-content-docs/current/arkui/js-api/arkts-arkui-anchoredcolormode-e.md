@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AnchoredColorMode
 
 配置组件主题跟随的颜色模式。

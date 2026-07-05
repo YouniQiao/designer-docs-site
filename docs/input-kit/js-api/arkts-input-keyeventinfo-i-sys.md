@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyEventInfo (System API)
 
 Defines the key event information injected by the user.

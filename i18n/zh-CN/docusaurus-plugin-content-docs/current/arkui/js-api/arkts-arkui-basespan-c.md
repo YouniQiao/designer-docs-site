@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BaseSpan
 
 定义BaseSpan基础类，包含Span的通用属性。

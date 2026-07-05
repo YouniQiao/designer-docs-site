@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SubscribeType
 
 表示通知扩展订阅的类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataBlob
 
 二进制数据的封装接口，核心字段data为Uint8Array类型。

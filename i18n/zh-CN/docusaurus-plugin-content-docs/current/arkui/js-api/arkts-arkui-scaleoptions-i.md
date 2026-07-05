@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScaleOptions
 
 > **说明：** > > 当组件同时设置了[rotate](arkts-arkui-commonmethod-c.md#rotate-1)和 > [scale](arkts-arkui-commonmethod-c.md#scale-1)属性时，centerX和centerY的取值会发生冲突，此时centerX和centerY的值以最后设定的属性的值为准。

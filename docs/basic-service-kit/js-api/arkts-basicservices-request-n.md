@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # request
 
 The **request** module provides applications with basic upload, download, and background transmission agent capabilities. - Currently, the **request** module cannot be called in extensions.

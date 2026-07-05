@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationSubscribeInfo (System API)
 
 The **NotificationSubscribeInfo** module provides APIs for defining the information about the publisher for notification subscription. > **NOTE** > > The APIs provided by this module are system APIs.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WorkerGlobalScope
 
 Specifies the worker thread running environment, which is isolated from the host thread environment.

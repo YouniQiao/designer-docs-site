@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LabelStyle
 
 Represents a style object for the label text and font.

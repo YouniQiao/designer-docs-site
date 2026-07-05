@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThumbnailVisibility (System API)
 
 Ability to access thumbnail

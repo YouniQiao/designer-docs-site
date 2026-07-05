@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IReusableInfo
 
 The **IReusableInfo** API provides information about the current number and maximum number of reusable components managed by the reuse pool.

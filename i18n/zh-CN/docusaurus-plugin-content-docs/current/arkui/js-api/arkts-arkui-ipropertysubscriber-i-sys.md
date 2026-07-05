@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IPropertySubscriber（系统接口）
 
 提供属性订阅者的接口。

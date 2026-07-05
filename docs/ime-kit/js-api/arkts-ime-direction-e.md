@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Direction
 
 Enumerates the directions of cursor movement of the input method.

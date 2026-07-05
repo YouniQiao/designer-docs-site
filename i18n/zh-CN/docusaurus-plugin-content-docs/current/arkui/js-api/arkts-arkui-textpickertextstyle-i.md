@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextPickerTextStyle
 
 文本样式选项，继承自[PickerTextStyle](arkts-arkui-pickertextstyle-i.md#pickertextstyle)。

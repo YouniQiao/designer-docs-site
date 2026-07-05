@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OverScrollMode
 
 设置Web的过滚动模式为关闭或开启。

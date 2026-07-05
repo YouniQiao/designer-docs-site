@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PropertyReadRequest
 
 Describes the parameters of the SSAP client's property read request.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextHighContrast
 
 文字渲染高对比度配置类型枚举。

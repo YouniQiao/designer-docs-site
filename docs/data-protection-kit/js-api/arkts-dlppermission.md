@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.dlpPermission
 
 Data loss prevention (DLP) is a system solution provided to prevent data disclosure. This module provides APIs for cross-device file access management, encrypted storage, and access authorization. DLP protects sensitive files through encryption and generates encrypted files in .dlp format (DLP files). When opening a DLP file, the system automatically creates an isolated DLP sandbox environment to ensure that the file content is not leaked to unauthorized environments. > **NOTE** > > - The initial APIs of this module are supported since API version 10. Newly added APIs will be marked with a > superscript to indicate their earliest API version. > > - The kit to which **@ohos.dlpPermission** belongs has been changed from `DataLossPreventionKit` to ` > DataProtectionKit`. You are advised to use the new module name `@ > kit.DataProtectionKit` to import the module. If `@ > kit.DataLossPreventionKit` is imported, only the APIs before the change can be called and the APIs after the change > cannot be used.

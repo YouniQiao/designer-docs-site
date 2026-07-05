@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Folder
 
 Represents the folder data. It is a child class of [File](arkts-arkdata-file-c.md#file) and is used to describe a folder.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # USBDevice
 
 USB device information, which is inherited from [Device](arkts-driverdevelopment-querydevices-f.md#querydevices-1).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HdrGainmapMetadata
 
 Describes the metadata keys used by a gain map, that is, the values available for **HDR_GAINMAP_METADATA** in [HdrMetadataKey](arkts-image-hdrmetadatakey-e.md#hdrmetadatakey). For details, see ISO 21496-1.

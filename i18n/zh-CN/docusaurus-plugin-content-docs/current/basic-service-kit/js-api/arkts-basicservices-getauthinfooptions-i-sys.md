@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GetAuthInfoOptions（系统接口）
 
 表示[查询认证凭据信息](arkts-basicservices-useridentitymanager-c-sys.md#getauthinfo-4)的可选参数集合。

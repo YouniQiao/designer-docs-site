@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VisibilityChangeReason
 
 NavDestination可见性发生变化的原因。

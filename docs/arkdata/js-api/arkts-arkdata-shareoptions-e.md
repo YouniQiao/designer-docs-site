@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ShareOptions
 
 Enumerates the options for using **UnifiedData** in a device.

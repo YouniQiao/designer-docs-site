@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OffsetReferencePoint
 
 Defines the reference point for the offset.

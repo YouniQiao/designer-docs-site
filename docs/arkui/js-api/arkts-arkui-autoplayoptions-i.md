@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoPlayOptions
 
 Defines the properties for controlling the automatic playback behavior.

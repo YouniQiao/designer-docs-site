@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IMEClient
 
 Defines the input method client type bound to an input component.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PersistenceV2
 
 Inherits from [AppStorageV2](arkts-arkui-appstoragev2-c.md#appstoragev2). For details, see [PersistenceV2: Persisting Application State](../../../../ui/state-management/arkts-new-persistencev2.md).

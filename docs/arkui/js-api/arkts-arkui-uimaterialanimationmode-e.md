@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIMaterialAnimationMode
 
 Enumerates the component animation modes under the UI material effect.

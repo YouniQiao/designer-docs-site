@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.ability.dialogRequest
 
 The dialogRequest module provides APIs related to modal dialog box processing, including obtaining the request information (used to bind a modal dialog box) and request callback (used to set the request result). A modal dialog box is a system-level dialog box that blocks interactions such as mouse clicks, keyboard input, and touch events on the underlying page. The page can only be interacted with after the modal dialog box is closed. > **NOTE** > > - The APIs provided by this module are used in ServiceExtensionAbilities. For a ServiceExtensionAbility that > implements modal dialog boxes, you can use the APIs to obtain the request information and request callback and > return the request result.

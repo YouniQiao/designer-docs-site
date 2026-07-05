@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VibratorPatternBuilder
 
 Provide methods for adding long or short vibration events and generate VibratorPattern objects.

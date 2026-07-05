@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureModifier
 
 开发者需要自定义class实现GestureModifier接口。

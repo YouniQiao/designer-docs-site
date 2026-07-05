@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AnimationOptions
 
 Provides the configuration options for animation playback, including the playback duration, number of playback times, and autoplay behavior.

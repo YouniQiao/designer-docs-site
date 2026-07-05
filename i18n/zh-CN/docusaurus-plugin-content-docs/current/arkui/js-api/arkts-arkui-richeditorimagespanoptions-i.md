@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorImageSpanOptions
 
 设置图片的偏移位置和图片样式信息。

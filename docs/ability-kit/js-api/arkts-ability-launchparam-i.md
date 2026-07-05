@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LaunchParam
 
 Describes the launch parameters, which mainly include the ability launch reasons and reasons for the last exit. The parameter values are automatically passed in by the system when the ability is launched. You do not need to change the values.

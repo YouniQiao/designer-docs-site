@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExpandMode
 
 子节点展开模式枚举。

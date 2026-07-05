@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExchangeMedium (System API)
 
 Enumerates the media used for device discovery.

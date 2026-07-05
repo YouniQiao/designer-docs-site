@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DomainAccountAuthOptions (System API)
 
 Defines the options for domain account authentication.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FormInfoFilter
 
 The optional options used as filters to ask getFormsInfo to return formInfos from only forms that match the options.

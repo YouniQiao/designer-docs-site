@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuItemGroup properties/events
 
 **Inheritance/Implementation:** MenuItemGroupAttribute extends [CommonMethod<MenuItemGroupAttribute>](CommonMethod<MenuItemGroupAttribute>)

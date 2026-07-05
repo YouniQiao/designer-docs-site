@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuKeyboardAvoidMode
 
 Enumerates the modes in which the menu avoids the soft keyboard.

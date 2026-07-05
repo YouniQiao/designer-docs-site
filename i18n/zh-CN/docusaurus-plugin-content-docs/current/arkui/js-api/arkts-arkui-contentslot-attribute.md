@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContentSlot属性/事件
 
 定义ContentSlot属性，以防止不当的递归使用ContentSlot。

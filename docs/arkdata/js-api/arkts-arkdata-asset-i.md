@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Asset
 
 Represent the asset (such as a document, image, or video). **Asset** inherits from [lang.ISendable](../../apis-arkts/arkts-apis/arkts-arkts-isendable-i.md#isendable) and is used to implement cross-thread transfer of asset data. The asset data does not support **Datashare** APIs. Use [sendableRelationalStore.toSendableAsset](arkts-arkdata-tosendableasset-f.md#tosendableasset-1) to create an **Asset** instance.

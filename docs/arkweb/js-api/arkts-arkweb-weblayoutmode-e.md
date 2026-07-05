@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebLayoutMode
 
 Enum type supplied to {@link layoutMode} for setting the web layout mode.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnLoadInterceptEvent
 
 Load intercept event when the resources loading is intercepted.

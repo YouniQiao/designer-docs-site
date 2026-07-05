@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DevicePowerMode
 
 表示电源模式的枚举值。

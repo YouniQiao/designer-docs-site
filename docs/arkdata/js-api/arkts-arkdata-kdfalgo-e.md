@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KdfAlgo
 
 Enumerates the PBKDF2 algorithms for the database. Use the enum name rather than the enum value.

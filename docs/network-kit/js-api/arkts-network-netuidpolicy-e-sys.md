@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetUidPolicy (System API)
 
 Uid Specifies the Internet access policy in background mode.

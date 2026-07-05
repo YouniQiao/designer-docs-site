@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CertChainData
 
 证书链数据，在证书链校验时，作为入参传入。

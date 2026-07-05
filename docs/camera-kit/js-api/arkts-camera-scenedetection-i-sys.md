@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SceneDetection (System API)
 
 Provides the scene detection capability. It inherits from [SceneDetectionQuery](arkts-camera-scenedetectionquery-i-sys.md#scenedetectionquery).

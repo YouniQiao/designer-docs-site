@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RequestInfo
 
 Web组件发送的资源请求信息。

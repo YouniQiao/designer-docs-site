@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnDownloadCompleteOptions
 
 **起始版本：** 3

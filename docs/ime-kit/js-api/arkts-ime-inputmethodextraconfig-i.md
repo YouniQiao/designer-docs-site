@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InputMethodExtraConfig
 
 Represents the extension information of an input method.

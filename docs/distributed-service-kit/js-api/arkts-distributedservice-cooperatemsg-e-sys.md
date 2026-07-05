@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CooperateMsg (System API)
 
 Represents a screen hopping message notification.

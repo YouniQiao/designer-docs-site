@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HolidayLocalName
 
 Represents the name of a holiday in different languages.

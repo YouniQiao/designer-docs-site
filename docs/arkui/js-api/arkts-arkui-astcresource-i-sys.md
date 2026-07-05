@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ASTCResource (System API)
 
 Defines the resource which can use ASTC.

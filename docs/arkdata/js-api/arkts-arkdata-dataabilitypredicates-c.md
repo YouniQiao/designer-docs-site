@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataAbilityPredicates
 
 Provides APIs for creating diverse query conditions.

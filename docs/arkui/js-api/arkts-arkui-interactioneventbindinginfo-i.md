@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InteractionEventBindingInfo
 
 Describes the binding state of interaction events on components. When querying reveals an interaction event bound to the current node, this object provides detailed event binding information.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HitTestValue
 
 Provides the element information of the area being clicked. For the sample code, see [getLastHitTest](arkts-arkweb-webviewcontroller-c.md#getlasthittest-1).

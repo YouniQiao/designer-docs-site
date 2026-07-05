@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ApplicationType
 
 默认应用的应用类型。

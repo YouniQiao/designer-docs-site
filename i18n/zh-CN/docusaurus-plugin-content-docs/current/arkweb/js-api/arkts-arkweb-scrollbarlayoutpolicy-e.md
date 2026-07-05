@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollbarLayoutPolicy
 
 定义滚动条布局模式控制参数的枚举类型。

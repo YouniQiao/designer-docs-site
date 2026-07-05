@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AcceptableFileType
 
 定义文件选择器拉取文件时网页推荐的文件类型信息。

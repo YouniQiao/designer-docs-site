@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bundle.shortcutManager
 
 The module provides APIs to manage [shortcuts](../../../../quick-start/typical-scenario-configuration.md), including whether to display shortcuts.

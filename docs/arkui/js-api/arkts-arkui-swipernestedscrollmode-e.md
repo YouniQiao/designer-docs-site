@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperNestedScrollMode
 
 Enumerates the nested scrolling modes of the **Swiper** component and its parent container.

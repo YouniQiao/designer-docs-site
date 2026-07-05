@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StartMode
 
 子进程启动模式枚举。

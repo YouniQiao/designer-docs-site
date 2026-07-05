@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIFontAdjustInfo
 
 UI font configuration of the system.

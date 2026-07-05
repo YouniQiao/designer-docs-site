@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PerfTestStrategy
 
 表示性能测试策略。 > **说明：** > > **actionCode** 和 **resetCode** 属性的入参类型为 **Callback\<boolean>**。 需要在代码段中调用该回调以通知框架代码段执行完成， 否则代码段执行将超时。 > 回调参数为 **Boolean** 类型。 值 **true** 表示代码段执行符合预期，**false** 表示不符合预期。

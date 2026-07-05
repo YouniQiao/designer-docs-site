@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # URLSearchParams
 
 URLSearchParams接口定义了一些处理URL查询字符串的实用方法，从API version 9开始废弃，建议使用[URLParams](arkts-arkts-urlparams-c.md#urlparams)。

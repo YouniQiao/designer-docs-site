@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnDownloadStartEvent
 
 定义通知主应用开始下载一个文件。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtensionValue (System API)
 
 Represents additional information about a data record.

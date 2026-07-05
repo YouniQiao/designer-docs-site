@@ -1,14 +1,4 @@
----
-last_update:
-  date: 2026-07-04
----
+# ArkTS Components
 
-# ArkTS API
-
-- [@ohos.arkui.layoutAlgorithm](arkts-arkui-layoutalgorithm.md)
-- [@ohos.arkui.lazyLayoutAlgorithm](arkts-arkui-lazylayoutalgorithm.md)
-- [@ohos.arkui.modifier](arkts-arkui-modifier.md)
-- [@ohos.arkui.node](arkts-arkui-node.md)
-- [@ohos.graphics.scene](arkts-graphics-scene.md)
-- common
-  - [index](arkts-index.md)
+- [Index-full](arkts-index-full.md)
+  - [Index-full properties/events](arkts-index-full-attribute.md)

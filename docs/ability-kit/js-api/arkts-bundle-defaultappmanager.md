@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bundle.defaultAppManager
 
 The module provides APIs to query whether the current application is the default application of a specific type.

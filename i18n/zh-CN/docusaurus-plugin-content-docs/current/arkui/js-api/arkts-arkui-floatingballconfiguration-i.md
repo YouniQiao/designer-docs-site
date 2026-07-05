@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatingBallConfiguration
 
 创建闪控球控制器时需要提供的参数配置。

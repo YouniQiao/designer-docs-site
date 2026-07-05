@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollPageOptions
 
 翻页滚动行为的参数。

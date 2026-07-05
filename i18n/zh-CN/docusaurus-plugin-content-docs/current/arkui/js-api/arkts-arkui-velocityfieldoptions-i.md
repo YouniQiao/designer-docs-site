@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VelocityFieldOptions
 
 用于描述粒子速度场信息的参数。

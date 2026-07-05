@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIGestureEvent
 
 用于设置组件绑定的手势。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatingTabBarStyle
 
 Provides an interface for the options for the floating bar mode.

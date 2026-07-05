@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LazyLayoutHelper
 
 Helper class for lazy layout algorithm. Provides layout direction and view position information for lazy layout.

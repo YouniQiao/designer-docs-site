@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FunctionKey
 
 功能键的类型。

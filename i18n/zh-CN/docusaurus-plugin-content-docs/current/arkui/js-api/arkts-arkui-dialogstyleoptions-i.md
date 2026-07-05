@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogStyleOptions
 
 固定样式对话框的选项。

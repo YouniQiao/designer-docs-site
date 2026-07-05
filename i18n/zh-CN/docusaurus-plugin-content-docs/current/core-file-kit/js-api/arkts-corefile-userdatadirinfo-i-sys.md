@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserdataDirInfo（系统接口）
 
 用户设备中/data目录下的空间占用详情。

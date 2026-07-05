@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SymbolRenderingStrategy
 
 渲染模式的枚举值。

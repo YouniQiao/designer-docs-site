@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StartAnimationParams
 
 Describes the parameters for the startup animation. The configuration is valid only for transitions between different abilities within the same application. The configuration is valid only full-screen applications.

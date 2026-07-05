@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DragPreviewMode
 
 设置拖拽预览图的显示模式。

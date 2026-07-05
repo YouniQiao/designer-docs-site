@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StaticSubscriberExtensionAbility（系统接口）
 
 StaticSubscriberExtensionAbility模块提供静态订阅者ExtensionAbility类别的能力。

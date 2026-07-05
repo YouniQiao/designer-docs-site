@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IncrementalBackupTime (System API)
 
 Save the time information of the incremental backup. IncrementalBackupTime is useful when doing IPC with the backup service.

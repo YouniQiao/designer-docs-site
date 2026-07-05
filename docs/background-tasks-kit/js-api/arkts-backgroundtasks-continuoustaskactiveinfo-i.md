@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContinuousTaskActiveInfo
 
 Describes the activation information of a continuous task.

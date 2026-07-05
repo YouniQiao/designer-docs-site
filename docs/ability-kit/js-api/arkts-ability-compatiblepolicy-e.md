@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CompatiblePolicy
 
 Defines the version compatibility type of the dynamic shared library.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # USBInterfaceDesc (System API)
 
 Defines the interface descriptor of a USB device.

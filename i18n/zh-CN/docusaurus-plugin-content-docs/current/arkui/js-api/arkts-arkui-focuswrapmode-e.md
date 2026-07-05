@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FocusWrapMode
 
 交叉轴方向键走焦模式枚举。

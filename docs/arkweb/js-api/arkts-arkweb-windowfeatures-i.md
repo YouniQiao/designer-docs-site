@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowFeatures
 
 Represents the feature information of the new window requested to be created by the web page, including the size and location.

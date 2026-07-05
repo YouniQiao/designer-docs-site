@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PopupBorderLinearGradient
 
 Sets the color and direction of the linear gradient for the outlines.

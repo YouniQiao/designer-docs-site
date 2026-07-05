@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IntentDecoratorInfo
 
 意图装饰器的通用属性，用于定义意图的基本信息（包括意图名称、意图版本号）。适用于本模块的所有装饰器。 > **说明：** > > 如果根据schema与intentVersion字段，在标准意图列表存在匹配的标准意图，系统会将intentName、domain、llmDescription、keywords、parameters、result字段均设置为标准 > 意图的相应字段值。

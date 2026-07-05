@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebSchemeHandlerResponse
 
 Defines the Web resource response used for scheme handler.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollSnapAlign
 
 设置列表项滚动结束对齐效果。

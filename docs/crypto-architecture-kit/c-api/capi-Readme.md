@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [crypto_sym_key.h](capi-crypto-sym-key-h.md)
     - [crypto_asym_key.h](capi-crypto-asym-key-h.md)

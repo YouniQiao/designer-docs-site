@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Sequenceable
 
 Writes objects of classes to a **MessageParcel** and reads them from the **MessageParcel** during IPC.

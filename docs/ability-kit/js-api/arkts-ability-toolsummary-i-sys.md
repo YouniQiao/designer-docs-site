@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ToolSummary (System API)
 
 ToolInfo describes the basic summary information of a cli tool.

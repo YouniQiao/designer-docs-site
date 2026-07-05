@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FocusPriority
 
 设置组件焦点的优先级。

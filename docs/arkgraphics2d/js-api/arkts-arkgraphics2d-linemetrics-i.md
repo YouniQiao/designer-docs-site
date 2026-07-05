@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LineMetrics
 
 Describes the measurement information of a single line of text in the text layout.

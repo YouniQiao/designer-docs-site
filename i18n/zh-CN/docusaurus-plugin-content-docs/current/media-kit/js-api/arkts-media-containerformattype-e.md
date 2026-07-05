@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContainerFormatType
 
 表示容器格式类型的枚举，缩写为CFT。

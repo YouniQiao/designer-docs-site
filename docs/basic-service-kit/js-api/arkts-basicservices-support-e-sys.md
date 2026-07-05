@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Support
 
 System common events are events published by system services or system applications. Subscribing to these common events requires specific permissions and values.

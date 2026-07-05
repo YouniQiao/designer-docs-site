@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Gauge
 
 The **Gauge** component represents a gauge that displays data in a circular format. > **NOTE** > - This component supports [WithTheme]{@link with_theme} since API version 26.0.0.

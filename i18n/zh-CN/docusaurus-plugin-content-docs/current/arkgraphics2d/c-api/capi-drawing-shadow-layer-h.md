@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # drawing_shadow_layer.h
 
 ## 概述

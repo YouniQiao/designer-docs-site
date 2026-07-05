@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OsAccountSubProfileEventData（系统接口）
 
 表示系统账号子Profile事件数据。

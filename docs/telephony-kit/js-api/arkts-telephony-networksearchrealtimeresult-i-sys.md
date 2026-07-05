@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetworkSearchRealTimeResult (System API)
 
 Indicates the results of manual network scan

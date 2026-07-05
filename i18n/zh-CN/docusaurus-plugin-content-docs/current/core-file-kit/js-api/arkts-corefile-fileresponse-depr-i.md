@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileResponse
 
 文件返回。包含文件的信息。

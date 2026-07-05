@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ListItemGroupArea
 
 枚举了ListItemGroup各个区域。

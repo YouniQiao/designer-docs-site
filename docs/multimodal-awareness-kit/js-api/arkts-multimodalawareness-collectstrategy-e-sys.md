@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CollectStrategy (System API)
 
 Defines a page information collection policy.

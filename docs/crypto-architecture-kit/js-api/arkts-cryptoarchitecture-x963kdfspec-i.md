@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # X963KdfSpec
 
 Defines the child class of [KdfSpec](arkts-cryptoarchitecture-kdfspec-i.md#kdfspec). It is a parameter for X963KDF key derivation function (KDF). > **NOTE** > > **key** is the original key material entered by the user.

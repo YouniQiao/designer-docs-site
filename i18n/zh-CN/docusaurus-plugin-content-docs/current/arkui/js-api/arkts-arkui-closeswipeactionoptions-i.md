@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloseSwipeActionOptions
 
 收起EXPANDED状态ListItem回调事件集合，用于设置收起动画完成后回调事件。

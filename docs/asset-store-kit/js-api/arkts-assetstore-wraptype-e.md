@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WrapType
 
 Enumerates the encrypted import/export types supported by the asset.

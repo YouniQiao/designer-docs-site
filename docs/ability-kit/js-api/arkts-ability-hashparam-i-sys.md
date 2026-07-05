@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HashParam (System API)
 
 Defines the hash parameters for bundle installation and uninstall.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcButtonPosition
 
 定义ArcButton可设置的弧形按钮的类型。

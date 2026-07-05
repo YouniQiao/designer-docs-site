@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PubKey
 
 公钥，是[Key](arkts-cryptoarchitecture-key-i.md#key)的子类，在非对称加解密、验签、密钥协商时需要将其对象作为输入使用。 公钥可以通过非对称密钥生成器[AsyKeyGenerator](arkts-cryptoarchitecture-asykeygenerator-i.md#asykeygenerator)、 [AsyKeyGeneratorBySpec](arkts-cryptoarchitecture-asykeygeneratorbyspec-i.md#asykeygeneratorbyspec)来生成。

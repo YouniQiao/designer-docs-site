@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LongPressGestureHandlerOptions
 
 Provides the parameters of the long press gesture handler. Inherits from [BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md#basehandleroptions).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocatingRequiredDataConfig (System API)
 
 Describes the request parameters for obtaining the data required for locating.

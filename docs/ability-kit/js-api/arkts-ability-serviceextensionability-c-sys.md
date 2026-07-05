@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ServiceExtensionAbility (System API)
 
 The ServiceExtensionAbility module provides extended capabilities for background services, including lifecycle callbacks for creating, destroying, connecting, and disconnecting background services.

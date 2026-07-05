@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StreamParam (System API)
 
 Streaming configuration parameters.

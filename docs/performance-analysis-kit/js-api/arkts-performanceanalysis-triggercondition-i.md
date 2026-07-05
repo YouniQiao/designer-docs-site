@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TriggerCondition
 
 Defines the triggering condition parameters of the **onTrigger** callback of a [Watcher](arkts-performanceanalysis-watcher-i.md#watcher).

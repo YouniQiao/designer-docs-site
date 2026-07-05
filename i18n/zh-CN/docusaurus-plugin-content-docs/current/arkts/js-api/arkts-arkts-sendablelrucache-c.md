@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SendableLruCache
 
 用于存储近期最少使用的Sendable对象的缓冲区。

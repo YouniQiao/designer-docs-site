@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Vector4
 
 用于表示包含x、y、z、w四个值的向量。

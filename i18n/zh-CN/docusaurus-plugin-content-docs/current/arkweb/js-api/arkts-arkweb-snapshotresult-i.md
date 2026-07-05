@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SnapshotResult
 
 全量绘制回调结果。

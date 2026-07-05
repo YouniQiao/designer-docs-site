@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DateStyleOptions
 
 DateStyleOptions定义日期内联型Counter的属性和事件。 继承于[CommonOptions](arkts-arkui-commonoptions-c.md#commonoptions)。

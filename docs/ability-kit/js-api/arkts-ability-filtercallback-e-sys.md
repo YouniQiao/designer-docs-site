@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FilterCallback (System API)
 
 Enumerates the callbacks to filter. It can be used with [AppStateFilter](arkts-ability-appstatefilter-i-sys.md#appstatefilter) to filter the callbacks you want to listen for.

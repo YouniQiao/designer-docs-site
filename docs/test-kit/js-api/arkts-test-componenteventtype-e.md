@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ComponentEventType
 
 Enumerates the component operation event types that can be listened for.

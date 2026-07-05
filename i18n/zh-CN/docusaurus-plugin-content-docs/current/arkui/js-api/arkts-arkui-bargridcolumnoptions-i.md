@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BarGridColumnOptions
 
 TabBar栅格化方式设置的对象，包括栅格模式下的column边距和间隔，以及小、中、大屏下，页签占用的columns数量。

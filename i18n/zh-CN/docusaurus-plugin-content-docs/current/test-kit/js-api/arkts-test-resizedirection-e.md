@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResizeDirection
 
 枚举窗口可调整大小的方向。

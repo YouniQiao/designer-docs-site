@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NodeAdapter
 
 NodeAdapter提供FrameNode的数据懒加载能力，通过[LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md)实现接口功能。 > **说明：** > > 入参不能为负数，入参为负数时不做处理。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksTag
 
 表示调用参数的Tag。

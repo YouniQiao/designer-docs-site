@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DecoratorInfo
 
 Defines the decorator and component information associated with the observable object.

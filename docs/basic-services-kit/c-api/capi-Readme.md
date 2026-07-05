@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [oh_pasteboard_err_code.h](capi-oh-pasteboard-err-code-h.md)
     - [oh_pasteboard.h](capi-oh-pasteboard-h.md)

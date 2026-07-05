@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommonEventSubscribeInfo
 
 The **CommonEventSubscribeInfo** module provides APIs for providing subscriber information. > **NOTE** > > After users subscribing to custom common events, any application can send potential malicious common events to > subscribers. Use the **publisherPermission** and **publisherBundleName** parameters of this module to restrict the > publishing scope of common events.

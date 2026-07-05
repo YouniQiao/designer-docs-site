@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Worker
 
 Worker类包含所有Worker功能。

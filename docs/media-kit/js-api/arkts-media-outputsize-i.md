@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OutputSize
 
 This interface is used to define the output image size.

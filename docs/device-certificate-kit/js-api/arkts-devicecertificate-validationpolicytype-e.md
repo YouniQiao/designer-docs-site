@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ValidationPolicyType
 
 Enumerates the types of the online certificate chain validation policy.

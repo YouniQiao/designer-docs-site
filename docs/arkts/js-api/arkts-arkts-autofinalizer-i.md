@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoFinalizer
 
 Provides an interface that can be implemented for releasing a resource which is managed by developers through a developer-defined callback.

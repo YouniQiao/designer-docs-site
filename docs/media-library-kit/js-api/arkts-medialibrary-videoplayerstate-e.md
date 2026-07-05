@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VideoPlayerState
 
 VideoPlayerState. include PLAYING, PAUSED, STOPPED, SEEK_START and SEEK_FINISH

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BackgroundTaskStateInfo (System API)
 
 Defines the authorization information of a continuous task.

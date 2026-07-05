@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommonProgressStyleOptions
 
 进度条通用样式选项。

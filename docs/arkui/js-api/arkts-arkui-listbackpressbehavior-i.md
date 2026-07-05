@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ListBackPressBehavior
 
 Defines the system back button behavior of the **List** component.

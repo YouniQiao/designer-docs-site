@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowModeType (System API)
 
 Enumerates the window types of the authentication widget.

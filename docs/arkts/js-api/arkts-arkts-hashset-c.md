@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HashSet
 
 HashSet is implemented based on HashMap. In HashSet, only the value object is processed.

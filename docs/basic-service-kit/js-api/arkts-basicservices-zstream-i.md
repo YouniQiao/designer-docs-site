@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ZStream
 
 Process all the information required for compression and decompression.

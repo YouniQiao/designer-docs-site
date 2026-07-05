@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemBarRegionTint（系统接口）
 
 单个导航栏或状态栏回调信息。

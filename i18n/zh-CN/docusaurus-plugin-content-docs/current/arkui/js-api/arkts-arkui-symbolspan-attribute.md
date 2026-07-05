@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SymbolSpan属性/事件
 
 不支持[通用属性](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)，支持以下属性： 不支持[通用事件](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common)。

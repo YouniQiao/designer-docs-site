@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Battery
 
 The module allows you to query the charging status and remaining power of a device.

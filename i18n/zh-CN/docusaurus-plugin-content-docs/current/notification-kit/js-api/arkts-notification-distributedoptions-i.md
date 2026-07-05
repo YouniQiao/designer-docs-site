@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DistributedOptions
 
 描述跨设备协同选项。预留能力，暂未支持。

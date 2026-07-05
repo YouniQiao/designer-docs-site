@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResizableOptions
 
 Defines the resizable image options. **Figure 1** Effect of Setting EdgeWidths ![edgewidths](../../../../reference/apis-arkui/arkui-ts/figures/edgewidths.png)

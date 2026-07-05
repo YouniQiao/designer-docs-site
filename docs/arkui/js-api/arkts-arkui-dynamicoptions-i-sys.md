@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DynamicOptions (System API)
 
 This interface is used to set the options for DynamicComponentAttribute during construction

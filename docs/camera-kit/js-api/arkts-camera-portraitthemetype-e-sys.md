@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PortraitThemeType (System API)
 
 Enumerates the camera portrait theme types.

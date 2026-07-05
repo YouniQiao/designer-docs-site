@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Trigger (System API)
 
 Defines the details for triggering a geofence.

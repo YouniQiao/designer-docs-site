@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CameraManager
 
 Implements camera management. Before calling any API in CameraManager, you must use [getCameraManager](arkts-camera-getcameramanager-f.md#getcameramanager-1) to obtain a CameraManager instance.

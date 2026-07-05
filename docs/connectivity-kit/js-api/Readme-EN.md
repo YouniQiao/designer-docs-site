@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArkTS API<!--arkts-connectivitykit-->
 
 - [@ohos.FusionConnectivity.PartnerAgentExtensionAbility](arkts-fusionconnectivity-partneragentextensionability.md)

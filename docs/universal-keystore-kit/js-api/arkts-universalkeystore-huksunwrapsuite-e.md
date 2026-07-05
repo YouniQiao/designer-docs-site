@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksUnwrapSuite
 
 Enumerates the algorithm suites for securely importing a key.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DownloadRequestOptions
 
 > **NOTE** > > This API has been supported since API version 3 and deprecated since API version 9. You are advised to use > [UploadConfig](arkts-basicservices-config-i.md#config) instead.

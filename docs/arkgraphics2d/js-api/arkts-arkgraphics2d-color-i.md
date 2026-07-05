@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Color
 
 Describes a color in ARGB format.

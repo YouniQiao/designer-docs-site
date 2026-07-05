@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CheckBoxGroupConfiguration
 
 You must customize this class to implement the ContentModifier interface. For details, see [contentModifier](CheckboxGroupAttribute#contentModifier).

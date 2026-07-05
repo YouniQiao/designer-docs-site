@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnPdfLoadEvent
 
 Defines the function triggered when the PDF loading is successful or fails.

@@ -1,11 +1,6 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Edges
 
-Describes the edges.
+Defines the Edges.
 
 **Since:** 12
 
@@ -14,72 +9,80 @@ Describes the edges.
 ## bottom
 
 ```TypeScript
-bottom: T
+bottom?: Dimension
 ```
 
-Bottom edge.
+bottom property.
 
-**Type:** T
+**Type:** Dimension
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## left
 
 ```TypeScript
-left: T
+left?: Dimension
 ```
 
-Left edge.
+left property.
 
-**Type:** T
+**Type:** Dimension
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## right
 
 ```TypeScript
-right: T
+right?: Dimension
 ```
 
-Right edge.
+right property.
 
-**Type:** T
+**Type:** Dimension
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## top
 
 ```TypeScript
-top: T
+top?: Dimension
 ```
 
-Top edge.
+top property.
 
-**Type:** T
+**Type:** Dimension
 
 **Since:** 12
 
 **Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 12.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

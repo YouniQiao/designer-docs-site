@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SoundInterruptMode
 
 表示在SoundPool中，同一ID的音频在播放时的打断模式的枚举。

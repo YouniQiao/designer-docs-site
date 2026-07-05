@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RequestPhotoType (System API)
 
 Enumerates the types of the operation for obtaining image or video thumbnails.

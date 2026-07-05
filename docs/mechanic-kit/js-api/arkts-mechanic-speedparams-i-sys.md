@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SpeedParams (System API)
 
 Parameters for moving or turning at a speed.

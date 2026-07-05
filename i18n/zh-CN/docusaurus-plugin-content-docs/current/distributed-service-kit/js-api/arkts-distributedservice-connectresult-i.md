@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ConnectResult
 
 客户端调用connect()后，返回的连接结果。

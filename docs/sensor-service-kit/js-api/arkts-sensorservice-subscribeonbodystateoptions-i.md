@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SubscribeOnBodyStateOptions
 
 Defines the callback invoked upon change in the wearing state of the device that houses the sensor.

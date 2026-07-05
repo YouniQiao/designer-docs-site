@@ -1,23 +1,190 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BorderRadiuses
 
 ```TypeScript
-export type BorderRadiuses = Corners<number>
+declare type BorderRadiuses = {
+  /**
+   * top-left property.
+   *
+   *****/
+  /**
+   * top-left property.
+   *
+   ******/
+  /**
+   * top-left property.
+   *
+   *******/
+  topLeft?: Length;
+
+  /**
+   * top-right property.
+   *
+   *****/
+  /**
+   * top-right property.
+   *
+   ******/
+  /**
+   * top-right property.
+   *
+   *******/
+  topRight?: Length;
+
+  /**
+   * bottom-left property.
+   *
+   *****/
+  /**
+   * bottom-left property.
+   *
+   ******/
+  /**
+   * bottom-left property.
+   *
+   *******/
+  bottomLeft?: Length;
+
+  /**
+   * bottom-right property.
+   *
+   *****/
+  /**
+   * bottom-right property.
+   *
+   ******/
+  /**
+   * bottom-right property.
+   *
+   *******/
+  bottomRight?: Length;
+}
 ```
 
-Sets the uniform radius of the four corners.
+Defines the border radius property.
 
-**Since:** 12
+**Since:** 11
 
-**Model restriction:** This API can be used only in the stage model.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-**Property type:** Corners<number>
+**Property type:** {
+  /**
+   * top-left property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @since 9
+   * @form
+   */
+  /**
+   * top-left property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @since 10
+   * @form
+   */
+  /**
+   * top-left property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @form
+   * @atomicservice
+   * @since 11
+   */
+  topLeft?: Length;
+
+  /**
+   * top-right property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @since 9
+   * @form
+   */
+  /**
+   * top-right property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @since 10
+   * @form
+   */
+  /**
+   * top-right property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @form
+   * @atomicservice
+   * @since 11
+   */
+  topRight?: Length;
+
+  /**
+   * bottom-left property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @since 9
+   * @form
+   */
+  /**
+   * bottom-left property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @since 10
+   * @form
+   */
+  /**
+   * bottom-left property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @form
+   * @atomicservice
+   * @since 11
+   */
+  bottomLeft?: Length;
+
+  /**
+   * bottom-right property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @since 9
+   * @form
+   */
+  /**
+   * bottom-right property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @since 10
+   * @form
+   */
+  /**
+   * bottom-right property.
+   *
+   * @type { ?Length }
+   * @syscap SystemCapability.ArkUI.ArkUI.Full
+   * @crossplatform
+   * @form
+   * @atomicservice
+   * @since 11
+   */
+  bottomRight?: Length;
+}
 

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsRecipientInfo
 
 Represents recipient information encapsulated in CMS data. > **NOTE** > > At least one recipient needs to be set.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PopupCommonOptions
 
 Configures the parameters of a popup. You can use the [getPromptAction()](../../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#getpromptaction) method in [UIContext](../arkts-apis/arkts-arkui-uicontext.md) to obtain the [PromptAction](../arkts-apis/arkts-arkui-uicontext.md) object, and then call the attributes of **options** when [openPopup](../../../../reference/apis-arkui/arkts-apis-uicontext-promptaction.md#openpopup18) or [updatePopup](../../../../reference/apis-arkui/arkts-apis-uicontext-promptaction.md#updatepopup18) is called.

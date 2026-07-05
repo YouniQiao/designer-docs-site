@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Text properties/events
 
 In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), the following attributes are supported. **Layout and Alignment** In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), the following events are supported.

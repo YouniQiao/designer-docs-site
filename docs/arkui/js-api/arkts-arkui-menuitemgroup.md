@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuItemGroup
 
 The **MenuItemGroup** component represents a group of menu items. > **NOTE** > > This component is supported since API version 9. Newly added APIs will be marked with a superscript to indicate > their

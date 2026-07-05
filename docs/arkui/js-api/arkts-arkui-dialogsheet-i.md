@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogSheet
 
 The information of sheet item for action sheet style.

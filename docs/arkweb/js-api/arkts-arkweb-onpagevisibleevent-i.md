@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnPageVisibleEvent
 
 Represents the callback invoked when the old page is not displayed and the new page is about to be visible.

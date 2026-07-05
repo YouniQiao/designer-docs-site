@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DLPFeatureInfo（系统接口）
 
 DLP特性开关的状态信息。

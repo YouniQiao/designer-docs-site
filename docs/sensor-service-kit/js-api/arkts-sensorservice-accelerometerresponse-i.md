@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccelerometerResponse
 
 Defines the callback invoked when the acceleration sensor data changes.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LayoutChild
 
 Sub component info passed from framework when layout and measure happens.

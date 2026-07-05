@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # innerBundleManager
 
 The module provides APIs for the Home Screen application. > **NOTE** > > This module is deprecated since API version 9. You are advised to use > [launcherBundleManager](arkts-bundle-launcherbundlemanager.md#launcherbundlemanager) and > [bundleMonitor](arkts-bundle-bundlemonitor.md#bundlemonitor) instead. > > The APIs provided by this module are system APIs.

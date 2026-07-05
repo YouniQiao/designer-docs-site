@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SyncInfo (System API)
 
 Represents information about the last device-cloud sync.

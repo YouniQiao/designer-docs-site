@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnAlertEvent
 
 定义网页触发 `alert()` 告警时的回调函数。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.security.securityGuard
 
 Provides security event management and security model management. Based on event information, you will be able to analyze the running status of devices.

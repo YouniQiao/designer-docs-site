@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RemindType (System API)
 
 Specify the remind type, see {@link updateRemindPolicy}.

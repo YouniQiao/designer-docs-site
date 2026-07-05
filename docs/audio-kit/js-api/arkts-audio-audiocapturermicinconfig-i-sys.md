@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioCapturerMicInConfig (System API)
 
 Describes audio capturer configuration that can capture microphone input (mic-in) audio data before any processing.

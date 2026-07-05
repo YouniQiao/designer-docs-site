@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioLoopbackEqualizerPreset
 
 Enumerates the equalizer types of audio loopback.

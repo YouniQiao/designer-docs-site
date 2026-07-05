@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # X509CertMatchParameters
 
 Defines the parameters used to match a certificate. If no parameter is specified, all certificates are matched.

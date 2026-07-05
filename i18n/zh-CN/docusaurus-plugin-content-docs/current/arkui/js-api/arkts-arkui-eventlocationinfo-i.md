@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EventLocationInfo
 
 用于点击手势获取点击位置坐标。

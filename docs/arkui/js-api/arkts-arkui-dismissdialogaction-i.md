@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DismissDialogAction
 
 Provides information about the action to dismiss the dialog box.
@@ -10,12 +5,6 @@ Provides information about the action to dismiss the dialog box.
 **Since:** 12
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
-
-## Modules to Import
-
-```TypeScript
-import { LevelMode, ImmersiveMode, LevelOrder } from '@ohos.promptAction';
-```
 
 ## dismiss
 

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # X500DistinguishedName
 
 X509定义的Name类型的对象。

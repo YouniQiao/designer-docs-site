@@ -1,131 +1,44 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Configuration
 
-Defines the parameters for creating a child window or system window.
+Defines the data type of the interface restriction.
 
-**Since:** 9
+**Since:** 11
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## Modules to Import
-
-```TypeScript
-import { window } from '@ohos.window';
-```
-
-## ctx
+## colorMode
 
 ```TypeScript
-ctx?: BaseContext
+readonly colorMode: string
 ```
 
-Indicates window context.
-
-**Type:** BaseContext
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
-
-## decorEnabled
-
-```TypeScript
-decorEnabled?: boolean
-```
-
-Indicates whether enable window decor, only support dialog, The default value is false.
-
-**Type:** boolean
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Window.SessionManager
-
-## displayId
-
-```TypeScript
-displayId?: number
-```
-
-Screen ID of the current window. If it is not set, the screen ID of the parent window is used by default. The value is a non-negative integer and must correspond to an existing screen. In scenarios involving extended screens or heterogeneous virtual screens, a global floating window can be displayed on a specified screen by setting the screen ID. For modal windows and system windows, this parameter takes no effect, and the parent window's screen ID is used by default.
-
-**Type:** number
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
-
-## name
-
-```TypeScript
-name: string
-```
-
-Indicates window id.
+Set colorMode.
 
 **Type:** string
 
-**Since:** 9
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
-## parentId
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## fontScale
 
 ```TypeScript
-parentId?: number
+readonly fontScale: number
 ```
 
-Indicates Parent window id
+Set fontScale.
 
 **Type:** number
 
-**Since:** 9
+**Since:** 11
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**Widget capability:** This API can be used in ArkTS widgets since API version 11.
 
-## title
-
-```TypeScript
-title?: string
-```
-
-Indicates dialog window title when decor enabled.
-
-**Type:** string
-
-**Since:** 12
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.Window.SessionManager
-
-## windowType
-
-```TypeScript
-windowType: WindowType
-```
-
-Indicates window type
-
-**Type:** WindowType
-
-**Since:** 9
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IndicatorComponent properties/events
 
 Defines the IndicatorComponent attribute functions.

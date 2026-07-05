@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwipeInward（系统接口）
 
 向内滑动事件。

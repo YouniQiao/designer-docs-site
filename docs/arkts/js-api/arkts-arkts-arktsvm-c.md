@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArkTSVM
 
 A class that provides VM maintenance and test capabilities for developers.

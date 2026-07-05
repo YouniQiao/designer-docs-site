@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocalUpdater (System API)
 
 Defines a tool class for updating the local firmware.

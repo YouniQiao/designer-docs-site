@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TouchPadSwipeOptions
 
 描述触控板滑动手势选项的信息。

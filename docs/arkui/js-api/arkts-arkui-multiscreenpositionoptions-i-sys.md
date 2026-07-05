@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MultiScreenPositionOptions (System API)
 
 Describes the screen position information.

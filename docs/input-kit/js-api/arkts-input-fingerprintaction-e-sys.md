@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FingerprintAction (System API)
 
 Enumerates fingerprint gesture event types.

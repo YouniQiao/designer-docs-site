@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CameraCaptureStateChangeInfo
 
 Defines the state information of the camera before and after the callback is triggered.

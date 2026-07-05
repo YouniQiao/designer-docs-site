@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BluetoothAndNearlinkPreferredRecordCategory
 
 Enumerates the preferred device categories available for recording with Bluetooth or NearLink.

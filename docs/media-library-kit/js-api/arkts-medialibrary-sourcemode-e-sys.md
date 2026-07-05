@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SourceMode (System API)
 
 Enumerates the types of the file to read.

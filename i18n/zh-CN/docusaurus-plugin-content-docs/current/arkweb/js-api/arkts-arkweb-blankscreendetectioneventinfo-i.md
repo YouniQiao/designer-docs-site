@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BlankScreenDetectionEventInfo
 
 定义检测到白屏时的事件信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StartAnimationSystemParams（系统接口）
 
 启动动画配置，仅对全屏应用生效。 不同应用间跳转场景不生效，仍保持系统默认动效。

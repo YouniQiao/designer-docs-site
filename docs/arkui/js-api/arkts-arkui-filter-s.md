@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Filter
 
 Declare Filter.The Filter is used in scenarios where multi-dimensional filtering is required.

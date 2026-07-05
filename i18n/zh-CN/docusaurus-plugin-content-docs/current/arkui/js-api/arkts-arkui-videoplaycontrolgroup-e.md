@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VideoPlayControlGroup
 
 视频播放控件组枚举。仅当[PiPTemplateType](arkts-arkui-piptemplatetype-e.md#piptemplatetype)为VIDEO_PLAY时使用。

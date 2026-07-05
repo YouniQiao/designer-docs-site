@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WhenceType
 
 枚举，文件偏移指针相对偏移位置类型，支持lseek接口使用。

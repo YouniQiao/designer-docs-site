@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.graphics.displaySync
 
 The displaySync module allows your application to draw its custom UI content at a specified frame rate.

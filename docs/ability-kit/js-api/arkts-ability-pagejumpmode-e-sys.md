@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PageJumpMode (System API)
 
 Enumerates the page jump modes used when an application is blocked.

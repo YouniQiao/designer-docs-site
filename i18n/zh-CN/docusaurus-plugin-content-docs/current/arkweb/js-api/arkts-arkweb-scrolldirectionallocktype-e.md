@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollDirectionalLockType
 
 定义滑动方向锁定的场景类型。

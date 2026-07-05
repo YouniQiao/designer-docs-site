@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArkTS API<!--arkts-notificationkit-->
 
 - [@ohos.application.NotificationSubscriberExtensionAbility](arkts-application-notificationsubscriberextensionability.md)

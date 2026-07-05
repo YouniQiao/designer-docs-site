@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UIUtils
 
 Provides APIs for handling data transformations related to state management.

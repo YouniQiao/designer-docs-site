@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bluetooth.bas
 
 Provide methods to access BAS(Battery Service)-related capabilities.

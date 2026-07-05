@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CacheDownloadOptions
 
 缓存下载的配置选项。包括HTTP选项、传输选项和任务选项。

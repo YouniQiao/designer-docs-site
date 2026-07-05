@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditor properties/events
 
 In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), [OnDidChangeCallback](arkts-arkui-ondidchangecallback-t.md#ondidchangecallback), [StyledStringChangedListener](arkts-arkui-styledstringchangedlistener-i.md#styledstringchangedlistener), [StyledStringChangeValue](arkts-arkui-styledstringchangevalue-i.md#styledstringchangevalue), and the following events are supported.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SubscribeCompassOptions
 
 Defines the type of data to return for a subscription to data changes of the compass sensor.

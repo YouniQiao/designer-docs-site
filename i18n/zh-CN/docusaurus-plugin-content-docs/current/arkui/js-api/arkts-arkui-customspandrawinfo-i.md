@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomSpanDrawInfo
 
 定义自定义绘制Span的绘制信息接口。

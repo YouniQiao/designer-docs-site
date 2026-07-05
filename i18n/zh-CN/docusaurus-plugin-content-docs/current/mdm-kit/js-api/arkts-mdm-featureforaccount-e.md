@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FeatureForAccount
 
 可为指定用户设置禁用/启用的特性的枚举。

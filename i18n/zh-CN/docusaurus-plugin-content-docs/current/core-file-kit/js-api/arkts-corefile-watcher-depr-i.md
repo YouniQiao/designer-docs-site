@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Watcher
 
 Watcher是文件变化监听的实例，调用Watcher.stop()方法（同步或异步）来停止文件监听。

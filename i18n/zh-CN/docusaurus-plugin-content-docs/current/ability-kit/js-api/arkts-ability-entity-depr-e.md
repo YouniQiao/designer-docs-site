@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Entity
 
 want实体的常数。用于表示目标Ability额外的类别信息。

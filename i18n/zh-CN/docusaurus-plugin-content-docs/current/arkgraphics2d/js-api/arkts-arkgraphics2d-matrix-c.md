@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Matrix
 
 矩阵对象。 表示为3*3的矩阵，如下图所示： ![matrix_3x3](../../../../reference/apis-arkgraphics2d/figures/matrix3X3.PNG) 矩阵中的元素从左到右，从上到下分别表示水平缩放系数、水平倾斜系数、水平位移系数、垂直倾斜系数、垂直缩放系数、垂直位移系数、X轴透视系数、Y轴透视系数、透视缩放系数。 设(x<sub>1</sub>, y<sub>1</sub>)为源坐标点，(x<sub>2</sub>, y<sub>2</sub>)为源坐标点通过矩阵变换后的坐标点，则两个坐标点的关系如下： ![matrix_xy](../../../../reference/apis-arkgraphics2d/figures/matrix_xy.PNG) > **说明：** > > - 本Class首批接口从API version 12开始支持。 > > - 本模块使用屏幕物理像素单位px。 > > - 本模块为单线程模型策略，需要调用方自行管理线程安全和上下文状态的切换。

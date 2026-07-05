@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WorkInfo
 
 Represents the deferred task information, which is used to set the trigger condition.

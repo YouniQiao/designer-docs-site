@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnPromptEvent
 
 定义网页触发 `prompt()` 弹窗时的回调函数。

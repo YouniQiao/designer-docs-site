@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BlankScreenDetectionEventInfo
 
 Defines the event information when a blank screen is detected.

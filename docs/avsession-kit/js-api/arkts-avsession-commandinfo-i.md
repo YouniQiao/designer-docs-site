@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommandInfo
 
 The definition of command information to be sent to the session

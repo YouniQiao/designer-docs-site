@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Configuration
 
 The module defines environment change information. Configuration is an interface definition and is used only for field declaration.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PictureLightDegree（系统接口）
 
 图片颜色明亮度的枚举。

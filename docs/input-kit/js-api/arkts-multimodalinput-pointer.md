@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimodalInput.pointer
 
 The **pointer** module provides APIs related to pointer attribute management, such as querying and setting pointer attributes.

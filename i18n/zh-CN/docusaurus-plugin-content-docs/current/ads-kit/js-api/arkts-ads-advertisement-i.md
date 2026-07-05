@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Advertisement
 
 本模块为请求的广告内容。

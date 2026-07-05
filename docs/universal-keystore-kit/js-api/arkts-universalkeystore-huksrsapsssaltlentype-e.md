@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksRsaPssSaltLenType
 
 Enumerates the **salt_len** types to set when PSS padding is used in RSA signing or signature verification.

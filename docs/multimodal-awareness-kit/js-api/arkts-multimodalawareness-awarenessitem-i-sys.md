@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AwarenessItem (System API)
 
 Provides page information, which includes: * Basic page information, such as page content, links, and screenshots. * Page entity information, such as the title and body of a page article. * Page interaction information, such as clicks and scrolling.

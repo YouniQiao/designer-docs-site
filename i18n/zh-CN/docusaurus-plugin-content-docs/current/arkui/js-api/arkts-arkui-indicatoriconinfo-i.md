@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IndicatorIconInfo
 
 为指定的导航点索引设置的图标。

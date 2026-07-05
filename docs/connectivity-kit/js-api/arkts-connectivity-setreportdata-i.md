@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SetReportData
 
 Describe the SET_REPORT data is received from remote host.

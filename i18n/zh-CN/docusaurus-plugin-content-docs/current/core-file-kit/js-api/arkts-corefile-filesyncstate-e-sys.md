@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileSyncState（系统接口）
 
 端云文件同步状态，为枚举类型。

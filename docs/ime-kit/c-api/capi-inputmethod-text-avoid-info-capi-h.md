@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # inputmethod_text_avoid_info_capi.h
 
 ## Overview

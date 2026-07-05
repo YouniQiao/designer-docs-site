@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioTimestampInfo
 
 Describes the information about the audio stream timestamp and the current data frame position.

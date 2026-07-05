@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MutableBinding
 
 可变数据绑定的泛型类，允许对绑定值进行读写操作，提供完整的get和set访问器。

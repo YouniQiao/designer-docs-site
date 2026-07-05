@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ISO8601DateTimeFormat
 
 Provide a DateTime formatting interface which could format date to ISO 8601 standard string. [ISO8601](https://iso8601.com/).

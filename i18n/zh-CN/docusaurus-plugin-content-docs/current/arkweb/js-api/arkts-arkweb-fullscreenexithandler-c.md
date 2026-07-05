@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FullScreenExitHandler
 
 Define the handler to exit the full screen mode, related to the {@link onFullScreenEnter} event.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileWriteArrayBufferOption
 
 可选项类型，支持writeArrayBuffer接口使用。

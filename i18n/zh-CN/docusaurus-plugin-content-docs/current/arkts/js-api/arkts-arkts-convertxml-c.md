@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ConvertXML
 
 ConvertXML 表示可扩展标记语言。

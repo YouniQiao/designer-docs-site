@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BaseDialogOptions
 
 Defines the options of the dialog box.

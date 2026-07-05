@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationCheckResult (System API)
 
 Describes the result of check notifications.

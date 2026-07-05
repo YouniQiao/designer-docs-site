@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OverflowRequest (System API)
 
 Provides OverflowRequest about request/cancel form's overflow

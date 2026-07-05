@@ -1,21 +1,18 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PointerStyle
 
 ```TypeScript
-export type PointerStyle = pointer.PointerStyle
+declare type PointerStyle = import('../api/@ohos.multimodalInput.pointer').default.PointerStyle
 ```
 
-Defines the pointer style.
+Defines the pointer style. > **NOTE** > > Directly using **cursorControl** can lead to the issue of > [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain the > [UIContext](../arkts-apis/arkts-arkui-uicontext.md) object using the **getUIContext()** API and then obtain the > **cursorControl** bound to the instance using the > [getCursorController](@ohos.arkui.UIContext:UIContext#getcursorcontroller) API.
 
-**Since:** 12
+**Since:** 11
+
+**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 12.
 
-**System capability:** SystemCapability.MultimodalInput.Input.Pointer
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-**Property type:** pointer.PointerStyle
+**Property type:** import('../api/@ohos.multimodalInput.pointer').default.PointerStyle
 

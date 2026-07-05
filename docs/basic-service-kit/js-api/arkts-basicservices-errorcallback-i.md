@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ErrorCallback
 
 Defines a common callback that carries an error parameter. The information returned by the callback is of the [BusinessError](arkts-basicservices-businesserror-i.md#businesserror) type.

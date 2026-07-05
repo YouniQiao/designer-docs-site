@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AddressSanitizerPolicy
 
 Defines the address sanitizer event configuration policy.

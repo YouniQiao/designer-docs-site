@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EapMethod
 
 802.1x EAP method.

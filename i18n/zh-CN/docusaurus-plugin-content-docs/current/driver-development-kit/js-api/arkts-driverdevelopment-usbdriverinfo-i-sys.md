@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # USBDriverInfo（系统接口）
 
 USB设备驱动详细信息，继承自[DriverInfo](arkts-driverdevelopment-driverinfo-i-sys.md#driverinfo)。

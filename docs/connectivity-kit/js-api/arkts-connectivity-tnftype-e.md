@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TnfType
 
 TNF types definitions, see NFCForum-TS-NDEF_1.0.

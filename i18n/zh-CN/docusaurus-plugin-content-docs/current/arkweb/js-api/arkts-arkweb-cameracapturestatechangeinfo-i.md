@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CameraCaptureStateChangeInfo
 
 定义摄像头触发回调时的改变前后的状态信息。

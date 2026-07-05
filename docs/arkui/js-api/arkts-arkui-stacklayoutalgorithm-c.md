@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StackLayoutAlgorithm
 
 Stack layout algorithm class. > **NOTE** > > The object of the **StackLayoutAlgorithm** class can be assigned to a variable of the **LayoutAlgorithm** type as > the input parameter of the > [DynamicLayout](../../../../reference/apis-arkui/arkui-ts/ts-container-dynamiclayout.md) component to specify the > layout algorithm.

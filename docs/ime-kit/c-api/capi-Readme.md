@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [inputmethod_cursor_info_capi.h](capi-inputmethod-cursor-info-capi-h.md)
     - [inputmethod_attach_options_capi.h](capi-inputmethod-attach-options-capi-h.md)

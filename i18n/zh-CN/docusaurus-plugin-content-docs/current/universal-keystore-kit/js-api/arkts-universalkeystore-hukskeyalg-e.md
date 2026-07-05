@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksKeyAlg
 
 表示密钥使用的算法。

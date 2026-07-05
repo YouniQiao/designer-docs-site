@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IReusableInfo
 
 `IReusableInfo`接口提供有关复用池管理的可复用组件的当前数量和数量上限的信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DLPFile（系统接口）
 
 管理DLPFile的实例，表示一个DLP文件对象，需要通过 [generateDLPFile](arkts-dataprotection-generatedlpfile-f-sys.md#generatedlpfile-1) /[openDLPFile](arkts-dataprotection-opendlpfile-f-sys.md#opendlpfile-1)获取DLPFile的实例。DLPFile对象代表一个已打开 的DLP文件句柄，封装了对DLP文件的所有操作接口。对象在使用完毕后必须调用[closeDLPFile](arkts-dataprotection-dlpfile-i-sys.md#closedlpfile-1)方法释放资源，避免文件句柄泄漏。 DLPFile对象在跨进程传递时，需要进行授权。

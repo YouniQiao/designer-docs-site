@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioLoopbackReverbPreset
 
 Enumerates the reverb modes of audio loopback.

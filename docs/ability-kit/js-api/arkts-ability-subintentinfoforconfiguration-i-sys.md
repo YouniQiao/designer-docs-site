@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SubIntentInfoForConfiguration (System API)
 
 Describes the unique information of the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).

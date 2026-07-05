@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PbesEncryptionAlgorithm
 
 表示基于密码的加密算法枚举。

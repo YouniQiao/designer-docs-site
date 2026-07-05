@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleInfoGetFlag
 
 Enumerates the bundle flags, which indicate the type of bundle information to obtain.

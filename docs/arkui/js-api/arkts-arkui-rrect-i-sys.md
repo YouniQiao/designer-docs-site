@@ -1,23 +1,12 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RRect (System API)
 
 Round rect.
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
-
-## Modules to Import
-
-```TypeScript
-import { windowAnimationManager } from '@ohos.animation.windowAnimationManager';
-```
 
 ## height
 
@@ -25,13 +14,11 @@ import { windowAnimationManager } from '@ohos.animation.windowAnimationManager';
 height: number
 ```
 
-Height of the round rect, in pixels.
-
 **Type:** number
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 
@@ -41,13 +28,11 @@ Height of the round rect, in pixels.
 left: number
 ```
 
-The X-axis coordinate of the upper left vertex of the round rect, in pixels.
-
 **Type:** number
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 
@@ -57,13 +42,11 @@ The X-axis coordinate of the upper left vertex of the round rect, in pixels.
 radius: number
 ```
 
-Radius of the round corner of the round rect, in pixels.
-
 **Type:** number
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 
@@ -73,13 +56,11 @@ Radius of the round corner of the round rect, in pixels.
 top: number
 ```
 
-The Y-axis coordinate of the upper left vertex of the round rect, in pixels.
-
 **Type:** number
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 
@@ -89,13 +70,11 @@ The Y-axis coordinate of the upper left vertex of the round rect, in pixels.
 width: number
 ```
 
-Width of the round rect, in pixels.
-
 **Type:** number
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 

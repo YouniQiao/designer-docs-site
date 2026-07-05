@@ -1,23 +1,12 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowAnimationTarget (System API)
 
 Window animation target.
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
-
-## Modules to Import
-
-```TypeScript
-import { windowAnimationManager } from '@ohos.animation.windowAnimationManager';
-```
 
 ## abilityName
 
@@ -25,13 +14,11 @@ import { windowAnimationManager } from '@ohos.animation.windowAnimationManager';
 readonly abilityName: string
 ```
 
-/* The ability name of the window animation target.
-
 **Type:** string
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 
@@ -41,13 +28,11 @@ readonly abilityName: string
 readonly bundleName: string
 ```
 
-The bundle name of the window animation target.
-
 **Type:** string
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 
@@ -57,13 +42,11 @@ The bundle name of the window animation target.
 readonly missionId: number
 ```
 
-/* The mission id of the window animation target.
-
 **Type:** number
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 
@@ -73,13 +56,11 @@ readonly missionId: number
 readonly windowBounds: RRect
 ```
 
-/* The window bounds of the window animation target.
-
 **Type:** RRect
 
 **Since:** 9
 
-**System capability:** SystemCapability.WindowManager.WindowManager.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 **System API:** This is a system API.
 

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceChangeAction
 
 Describes the device connection status and device information.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyUsageType
 
 表示证书中密钥用途的枚举。

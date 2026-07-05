@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContinuousTaskCancelReason
 
 长时任务取消原因。

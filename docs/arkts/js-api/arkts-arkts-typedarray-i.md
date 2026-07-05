@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TypedArray
 
 TypedArray inherits the features and methods of Int8Array

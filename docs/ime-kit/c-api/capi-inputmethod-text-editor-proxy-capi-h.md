@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # inputmethod_text_editor_proxy_capi.h
 
 ## Overview

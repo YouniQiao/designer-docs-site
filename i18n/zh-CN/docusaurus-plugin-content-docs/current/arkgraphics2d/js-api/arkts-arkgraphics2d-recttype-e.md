@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RectType
 
 定义填充网格的矩形类型的枚举。仅在[Lattice](arkts-graphics-drawing.md#drawing)中使用。

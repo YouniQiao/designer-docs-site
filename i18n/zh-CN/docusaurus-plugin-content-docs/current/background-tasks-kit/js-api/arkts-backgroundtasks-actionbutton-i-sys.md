@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ActionButton
 
 弹出的提醒中按钮的类型和标题。

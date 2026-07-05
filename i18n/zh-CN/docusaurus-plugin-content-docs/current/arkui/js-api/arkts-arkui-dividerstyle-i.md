@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DividerStyle
 
 分割线样式对象。

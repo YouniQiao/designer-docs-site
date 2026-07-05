@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AsyncRunner
 
 Implements an asynchronous queue, for which you can specify the task execution concurrency and queuing policy.

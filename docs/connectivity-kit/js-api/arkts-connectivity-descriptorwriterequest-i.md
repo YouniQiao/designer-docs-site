@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DescriptorWriteRequest
 
 Describes the parameters of the Gatt client's characteristic write request.

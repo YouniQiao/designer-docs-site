@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # USBInterface
 
 Represents a USB interface. One [USBConfiguration](arkts-basicservices-usbconfiguration-i.md#usbconfiguration) object can contain multiple * *USBInterface** instances, each providing a specific function.

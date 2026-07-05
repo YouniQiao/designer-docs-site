@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SendableLruCache
 
 Object used for store least recently used sendable Object.

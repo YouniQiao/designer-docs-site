@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogCustomOptions
 
 Options for the custom-style dialog. The dialog content is provided as the first parameter of present() method, not inside this options object.

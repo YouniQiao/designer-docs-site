@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AcceptableFileType
 
 Defines the file types recommended by the web page when the file selector pulls files.

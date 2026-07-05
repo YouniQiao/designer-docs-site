@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DepthProfile (System API)
 
 Describes the profile of depth data. It inherits from [Profile](arkts-camera-profile-i.md#profile).

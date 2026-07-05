@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LayoutBorderInfo
 
 子组件边框信息

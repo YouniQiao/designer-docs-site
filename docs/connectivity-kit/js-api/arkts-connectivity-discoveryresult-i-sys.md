@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DiscoveryResult (System API)
 
 Describes the contents of the discovery results

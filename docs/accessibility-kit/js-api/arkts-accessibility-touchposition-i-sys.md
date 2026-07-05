@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TouchPosition (System API)
 
 Indicates touch position of accessibility virtual node.

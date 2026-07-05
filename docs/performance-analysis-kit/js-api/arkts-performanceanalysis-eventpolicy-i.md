@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EventPolicy
 
 Defines the system event configuration policy, which is set by calling [configEventPolicy](arkts-performanceanalysis-configeventpolicy-f.md#configeventpolicy-1).

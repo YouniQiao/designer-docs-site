@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MovingPhoto
 
 Provides APIs for managing a moving photo instance.

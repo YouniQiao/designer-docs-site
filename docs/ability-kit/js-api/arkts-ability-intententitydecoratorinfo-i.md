@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IntentEntityDecoratorInfo
 
 Describes the parameters supported by the [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) decorator.

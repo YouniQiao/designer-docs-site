@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ModuleMetadata
 
 描述模块的元数据信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomSpanMetrics
 
 定义自定义绘制Span的尺寸信息接口。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnScaleChangeEvent
 
 Represents the callback invoked when the display scale of this page changes.

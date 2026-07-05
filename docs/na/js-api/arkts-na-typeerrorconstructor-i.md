@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TypeErrorConstructor
 
 **Inheritance/Implementation:** TypeErrorConstructor extends [ErrorConstructor](arkts-na-errorconstructor-i.md#errorconstructor)

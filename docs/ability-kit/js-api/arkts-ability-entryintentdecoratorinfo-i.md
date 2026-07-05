@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EntryIntentDecoratorInfo
 
 Inherits from [IntentDecoratorInfo](arkts-ability-intentdecoratorinfo-i.md#intentdecoratorinfo) and is used to describe the parameters supported by the [@InsightIntentEntry](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententry) decorator.

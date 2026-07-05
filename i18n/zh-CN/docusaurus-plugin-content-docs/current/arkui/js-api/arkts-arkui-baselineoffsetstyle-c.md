@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BaselineOffsetStyle
 
 文本基线偏移量对象说明。

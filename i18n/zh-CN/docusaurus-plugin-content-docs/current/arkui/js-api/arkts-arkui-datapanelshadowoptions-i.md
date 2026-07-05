@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataPanelShadowOptions
 
 DataPanelShadowOptions继承自[MultiShadowOptions](arkts-arkui-multishadowoptions-i.md#multishadowoptions)，具有MultiShadowOptions的全部属性。

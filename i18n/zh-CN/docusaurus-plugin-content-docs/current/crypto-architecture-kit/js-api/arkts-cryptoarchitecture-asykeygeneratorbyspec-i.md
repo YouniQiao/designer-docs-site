@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AsyKeyGeneratorBySpec
 
 非对称密钥生成器。在使用该类的方法前，需要先使用 [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1)方法构建一个AsyKeyGeneratorBySpec 实例。

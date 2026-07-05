@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorStyledStringOptions
 
 Defines the options for initializing the **RichEditor** component.

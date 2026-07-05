@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtraData (System API)
 
 Represents the transparently transmitted data, which contains information required for a data change notification.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PluginErrorData (System API)
 
 Data provided when an error occurs. AnonyMous Object Rectification

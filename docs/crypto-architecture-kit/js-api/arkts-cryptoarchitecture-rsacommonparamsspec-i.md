@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RSACommonParamsSpec
 
 Defines a child class of [AsyKeySpec](arkts-cryptoarchitecture-asykeyspec-i.md#asykeyspec) used to specify the common parameters of the public and private keys in the RSA algorithm. It can be used to randomly generate a public or private key. To generate a key based on key parameters, pass it to [createAsyKeyGeneratorBySpec()](arkts-cryptoarchitecture-createasykeygeneratorbyspec-f.md#createasykeygeneratorbyspec-1) to create a key generator.

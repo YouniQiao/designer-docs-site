@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GetInsightIntentFlag（系统接口）
 
 意图信息（[InsightIntentInfo](arkts-ability-insightintentinfo-i-sys.md#insightintentinfo)）的标识，用于 [getAllInsightIntentInfo](arkts-ability-getinsightintentinfobybundlename-f-sys.md#getinsightintentinfobybundlename-1)、 [getInsightIntentInfoByBundleName](arkts-ability-getinsightintentinfobybundlename-f-sys.md#getinsightintentinfobybundlename-1)和 [getInsightIntentInfoByIntentName](arkts-ability-getinsightintentinfobyintentname-f-sys.md#getinsightintentinfobyintentname-1)接口查询意图信息。 > **说明：** > > - 对于使用配置文件开发的意图，通过上述接口查询的全量信息和简要信息完全一致。 > > - 对于使用装饰器开发的意图，通过上述接口查询的全量信息和简要信息存在差别，详见下表。 > > 表1 全量意图信息与简要意图信息差别 > > | 属性 | 全量意图信息是否包含 | 简要意图信息是否包含 | > | -------- | -------- | -------- | > | bundleName | 是 | 是 | > | moduleName | 是 | 是 | > | intentName | 是 | 是 | > | domain | 是 | 否 | > | intentVersion | 是 | 否 | > | displayName | 是 | 是 | > | displayDescription | 是 | 否 | > | schema | 是 | 否 | > | icon | 是 | 否 | > | llmDescription | 是 | 否 | > | keywords | 是 | 否 | > | intentType | 是 | 是 | > | subIntentInfo | 是 | 是 | > | parameters | 是 | 是 | > | entities | 否 | 否 | > | developType<sup>23+</sup> | 是 | 是 | > | subIntentInfoForConfiguration<sup>23+</sup> | 否 | 否 |

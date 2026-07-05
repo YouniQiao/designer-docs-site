@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebGL2RenderingContextOverloads
 
 WebGL 2.0

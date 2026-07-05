@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Rating
 
 The **Rating** component provides a rating bar. > **NOTE** > - If the parent node of the **Rating** component has fixed dimensions, you must also specify the width and height > for the **Rating** component, or set its parent node's [clip]{@link CommonMethod#clip(clip: Optional<boolean>)} > attribute to **true**.

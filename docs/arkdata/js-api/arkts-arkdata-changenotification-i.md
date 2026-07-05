@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChangeNotification
 
 Defines the content of a data change notification, including inserted data, updated data, deleted data, and device ID.

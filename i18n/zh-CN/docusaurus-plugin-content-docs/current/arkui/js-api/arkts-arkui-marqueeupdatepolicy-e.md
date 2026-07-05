@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MarqueeUpdatePolicy
 
 跑马灯组件属性更新后，跑马灯的滚动策略。

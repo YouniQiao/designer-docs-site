@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimodalAwareness.spatialAwareness
 
 This module provides the capability to subscribe to report the distance measurement result.

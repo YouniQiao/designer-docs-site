@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Pkcs12ParsingConfig
 
 表示解析P12文件的配置。

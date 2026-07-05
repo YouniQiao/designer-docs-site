@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DisplayPhysicalResolution
 
 Describes the display mode of a device and the corresponding physical screen resolution information.

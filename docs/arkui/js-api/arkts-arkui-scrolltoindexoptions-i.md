@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollToIndexOptions
 
 Provides parameters for scrolling to a specific index.

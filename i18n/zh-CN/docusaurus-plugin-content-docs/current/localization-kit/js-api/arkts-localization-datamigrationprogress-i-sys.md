@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataMigrationProgress（系统接口）
 
 描述数据迁移的进度信息。

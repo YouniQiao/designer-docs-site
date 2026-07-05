@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LazyForEachCustomComponentFreezeMode
 
 冻结模式枚举，用于配置LazyForEach中已移出组件树的缓存自定义节点的冻结行为。

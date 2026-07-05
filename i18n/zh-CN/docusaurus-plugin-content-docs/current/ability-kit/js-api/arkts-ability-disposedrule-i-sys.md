@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DisposedRule（系统接口）
 
 标识拦截规则。

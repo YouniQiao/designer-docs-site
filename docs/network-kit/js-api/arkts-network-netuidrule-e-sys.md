@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetUidRule (System API)
 
 Rules whether an uid can access to a metered or non-metered network.

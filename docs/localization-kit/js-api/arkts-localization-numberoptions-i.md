@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NumberOptions
 
 Options for creating the **NumberFormat** object. Since API version 9, the **NumberOptions** attribute is changed from mandatory to optional.

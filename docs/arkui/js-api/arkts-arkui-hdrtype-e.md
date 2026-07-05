@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HdrType
 
 Sets the HDR type of the XComponent.

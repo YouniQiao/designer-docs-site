@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnBeforeUnloadEvent
 
 Defines the triggered function when the web page wants to confirm navigation from JavaScript onbeforeunload.

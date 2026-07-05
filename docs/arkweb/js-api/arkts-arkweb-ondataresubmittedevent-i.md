@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnDataResubmittedEvent
 
 Defines the triggered callback to decision whether resend form data or not.

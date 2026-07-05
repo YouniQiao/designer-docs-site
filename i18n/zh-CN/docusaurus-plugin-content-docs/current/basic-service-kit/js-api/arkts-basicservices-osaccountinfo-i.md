@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OsAccountInfo
 
 表示系统账号信息。

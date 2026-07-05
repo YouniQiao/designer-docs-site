@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataShareHelperOptions (System API)
 
 Represents the optional parameters of [DataShareHelper](arkts-arkdata-datasharehelperoptions-i-sys.md#datasharehelperoptions).

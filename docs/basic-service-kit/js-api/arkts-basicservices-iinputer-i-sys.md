@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IInputer (System API)
 
 Provides callbacks for credential inputers.

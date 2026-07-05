@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DisplayIntentType（系统接口）
 
 枚举截图显示意图类型。

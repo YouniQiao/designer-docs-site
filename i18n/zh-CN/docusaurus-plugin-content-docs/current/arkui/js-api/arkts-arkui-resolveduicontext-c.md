@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResolvedUIContext
 
 ResolvedUIContext实例对象。 > **说明：** > > - 示例效果请以真机运行为准，当前DevEco Studio预览器不支持。 > > - ResolvedUIContext继承自[UIContext](arkts-arkui-uicontext.md)，该类对象包含[UIContext](arkts-arkui-uicontext.md)实例和 > [UIContext](arkts-arkui-uicontext.md)的解析策略。

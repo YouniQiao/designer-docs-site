@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DraggingSizeChangeEffect
 
 Enumerates the transition effects for switching between the floating image (set through [bindContextMenu](arkts-arkui-commonmethod-c.md#bindcontextmenu-2) ) and the drag preview when both are configured on a component.

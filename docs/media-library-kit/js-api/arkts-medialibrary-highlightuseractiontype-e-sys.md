@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HighlightUserActionType (System API)
 
 Enumerates the user behavior types of the highlights album.

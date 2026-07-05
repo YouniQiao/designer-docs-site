@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.thermal
 
 The **thermal** module provides thermal level-related callback and query APIs to obtain the information required for thermal control.

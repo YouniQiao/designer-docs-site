@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Role (System API)
 
 Enumerates the roles of the participants in a device-cloud share.

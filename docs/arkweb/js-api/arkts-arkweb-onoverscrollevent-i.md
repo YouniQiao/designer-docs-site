@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnOverScrollEvent
 
 Represents the callback invoked when the web page is overscrolled.

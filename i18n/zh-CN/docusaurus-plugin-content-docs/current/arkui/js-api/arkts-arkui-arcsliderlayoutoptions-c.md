@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcSliderLayoutOptions
 
 配置弧形Slider的布局信息。

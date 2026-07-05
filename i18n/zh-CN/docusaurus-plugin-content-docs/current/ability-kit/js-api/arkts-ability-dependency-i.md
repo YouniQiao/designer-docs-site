@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Dependency
 
 描述模块所依赖的动态共享库信息。

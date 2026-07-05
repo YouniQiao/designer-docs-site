@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OffsetOptions
 
 设置初始滚动偏移量的参数。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CheckPackageHasInstalledOptions
 
 > **NOTE** > > This API has been supported since API version 3 and deprecated since API version 9. Checks whether a bundle has been installed.

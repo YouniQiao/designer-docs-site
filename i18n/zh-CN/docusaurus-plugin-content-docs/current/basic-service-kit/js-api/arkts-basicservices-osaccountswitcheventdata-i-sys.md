@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OsAccountSwitchEventData（系统接口）
 
 表示系统账号前后台开始切换和结束切换事件的数据结构。

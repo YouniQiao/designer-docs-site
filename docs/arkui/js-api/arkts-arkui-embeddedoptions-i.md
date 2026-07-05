@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EmbeddedOptions
 
 This interface is used to set the options for EmbeddedComponentAttribute during construction

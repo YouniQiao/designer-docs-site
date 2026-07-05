@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PathIteratorVerb
 
 迭代器包含的路径操作类型枚举，可用于读取path的操作指令。

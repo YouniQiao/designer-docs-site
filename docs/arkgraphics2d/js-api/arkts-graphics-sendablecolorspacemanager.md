@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.graphics.sendableColorSpaceManager
 
 The **sendableColorSpaceManager** module provides APIs for creating and managing sendable color space objects and obtaining basic attributes of sendable color spaces.

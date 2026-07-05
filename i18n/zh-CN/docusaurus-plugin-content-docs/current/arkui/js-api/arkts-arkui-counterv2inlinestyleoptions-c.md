@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CounterV2InlineStyleOptions
 
 CounterV2InlineStyleOptions定义了数值内联型CounterV2的属性和事件。 继承于[CounterV2CommonOptions](arkts-arkui-counterv2commonoptions-c.md#counterv2commonoptions)。

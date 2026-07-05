@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SoftShadowConfig
 
 param config for soft shadow, control the algorithm type and its configuration

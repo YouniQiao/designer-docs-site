@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SecurityEvent (System API)
 
 Provides the SecurityEvent type, including the event id, version info, report content.

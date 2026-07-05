@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MicStateChangeEvent
 
 Describes the event received by the application when the microphone mute status is changed.

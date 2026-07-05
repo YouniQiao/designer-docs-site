@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LeadingMarginSpan
 
 文本段落的自定义缩进，仅提供基类，具体实现由开发者定义。

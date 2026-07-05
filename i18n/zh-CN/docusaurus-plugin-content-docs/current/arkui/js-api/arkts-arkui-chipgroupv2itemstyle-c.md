@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipGroupV2ItemStyle
 
 ChipGroupV2ItemStyle定义了ChipV2的共通属性类。

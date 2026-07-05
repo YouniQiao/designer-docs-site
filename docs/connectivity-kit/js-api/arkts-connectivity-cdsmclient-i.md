@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CdsmClient
 
 Manages a CDSM client instance. Before invoking any CDSM client method, you must use {@link createCdsmClient} to create a CDSM client instance.

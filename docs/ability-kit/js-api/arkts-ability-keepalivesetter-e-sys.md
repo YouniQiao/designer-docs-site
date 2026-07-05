@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeepAliveSetter (System API)
 
 Enumerates the types of parties that set to keep applications alive.

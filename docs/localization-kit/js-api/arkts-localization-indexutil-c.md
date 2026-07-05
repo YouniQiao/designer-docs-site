@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IndexUtil
 
 Provides index management capabilities, such as obtaining the locale index list and text index values.

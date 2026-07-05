@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmKeyPadding
 
 Enumerates the padding modes that can be used for signing and signature verification.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AnimationMode
 
 点击[TabBar](TabContentAttribute#tabBar(options: string | Resource | CustomBuilder | TabBarOptions))页签时切换 TabContent的动画形式枚举。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GattClientDevice
 
 Manages GATT client. Before calling an Gatt client method, you must use {@link createGattClientDevice} to create an GattClientDevice instance.

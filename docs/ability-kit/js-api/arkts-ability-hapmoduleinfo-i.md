@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HapModuleInfo
 
 The module defines the HAP module information.

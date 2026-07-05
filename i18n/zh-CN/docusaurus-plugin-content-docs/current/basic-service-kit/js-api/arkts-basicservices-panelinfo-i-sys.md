@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PanelInfo（系统接口）
 
 划词面板属性信息。

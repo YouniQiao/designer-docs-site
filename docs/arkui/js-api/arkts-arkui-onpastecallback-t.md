@@ -1,17 +1,14 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnPasteCallback
 
 ```TypeScript
-declare type OnPasteCallback = (pasteValue: string, event: PasteEvent) => void
+declare type OnPasteCallback = (content: string, event: PasteEvent) => void
 ```
 
-Callback when text is pasted into the search box.
+Defines the callback used to return the pasted text content.
 
 **Since:** 18
+
+**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
@@ -21,6 +18,6 @@ Callback when text is pasted into the search box.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pasteValue | string | Yes | Indicates the text content to be pasted. |
-| event | PasteEvent | Yes | Indicates a user-defined paste event. |
+| content | string | Yes | Text to be pasted. |
+| event | PasteEvent | Yes | Custom paste event. |
 

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BoidsSimPlugin (System API)
 
 Boids simulation plugin. Provides static methods to manage boids simulation components.

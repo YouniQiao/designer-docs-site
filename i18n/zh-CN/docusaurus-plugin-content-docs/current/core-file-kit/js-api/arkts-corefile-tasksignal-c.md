@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TaskSignal
 
 拷贝中断信号。

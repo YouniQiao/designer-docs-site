@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # cloud_disk_error_code.h
 
 ## Overview

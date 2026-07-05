@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.arkui.componentUtils
 
 提供获取组件绘制区域坐标和大小的能力。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileSelectorResult
 
 定义文件选择器结果，与 {@link onFileSelectorShow} 方法相关联。

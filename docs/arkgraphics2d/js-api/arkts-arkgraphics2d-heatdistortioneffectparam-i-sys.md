@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HeatDistortionEffectParam (System API)
 
 The parameters of heat distortion effect.

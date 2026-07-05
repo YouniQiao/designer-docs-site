@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SegmentButtonIconItem
 
 Icon button information. > **NOTE** > > Both the **icon** and **selectedIcon** attributes must be set. Setting only one of them is invalid.

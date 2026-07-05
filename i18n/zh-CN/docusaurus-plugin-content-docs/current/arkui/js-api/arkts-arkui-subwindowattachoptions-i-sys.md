@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SubWindowAttachOptions（系统接口）
 
 子窗与主窗保持相对位置不变时的参数。

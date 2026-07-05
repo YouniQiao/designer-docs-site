@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowStage
 
 窗口管理器。管理各个基本窗口单元，即[Window](arkts-window.md)实例。 下列API示例中都需在[onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-uiability-c.md#onwindowstagecreate-1)函数中使用WindowStage 的实例调用对应方法。

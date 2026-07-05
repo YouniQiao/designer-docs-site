@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialCallOptions (System API)
 
 Indicates the options for initiating a call.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SheetInfo
 
 Defines the option content in the dialog box. You can configure the text, icon, and callback for each option.

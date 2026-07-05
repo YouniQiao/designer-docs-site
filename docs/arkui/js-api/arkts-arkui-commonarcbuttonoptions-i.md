@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommonArcButtonOptions
 
 Defines the default or custom style parameters for the **ArcButton** component.

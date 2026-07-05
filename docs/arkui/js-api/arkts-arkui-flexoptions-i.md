@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FlexOptions
 
 Describes the layout and alignment of child components within the **Flex** component.

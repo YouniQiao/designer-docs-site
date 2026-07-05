@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GutterOption
 
 Provides the gutter options for the grid layout to define the spacing between child components in different directions.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ToolEventType (System API)
 
 Enum for query entity mode.

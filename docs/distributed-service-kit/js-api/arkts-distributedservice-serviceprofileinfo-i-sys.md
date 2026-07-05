@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ServiceProfileInfo (System API)
 
 Defines the service profile information. It is populated based on the data returned from the cloud.

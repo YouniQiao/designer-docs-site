@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IAuthWidgetCallback (System API)
 
 Provides the callback for returning the commands sent from the user authentication framework to the user authentication widget.

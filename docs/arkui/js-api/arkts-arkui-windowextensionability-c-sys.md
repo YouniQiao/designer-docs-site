@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowExtensionAbility (System API)
 
 class of window extension ability.

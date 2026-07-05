@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # QueryArg (System API)
 
 Defines arguments for an event query.

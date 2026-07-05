@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavDestinationSwitchObserverOptions
 
 Provides the observer options for the page switching event of the **Navigation** component.

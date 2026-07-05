@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EventResult
 
 Represents the event consumption result sent to the **Web** component. For details about the supported events, see [TouchType](../../apis-arkui/arkts-components/arkts-arkui-touchtype-e.md#touchtype), [MouseAction](../../apis-arkui/arkts-components/arkts-arkui-mouseaction-e.md#mouseaction), and left, middle, and right buttons in [MouseButton](../../apis-arkui/arkts-components/arkts-arkui-mousebutton-e.md#mousebutton). If the application does not consume the event, set the consumption result to **false**, and the event will be consumed by the **Web** component. If the application consumes the event, set the consumption result to **true**, and the **Web** component will not consume the event. If the consumption result is not set according to the preceding specifications, exceptions may occur. For details about the sample code of the touch event, see [onNativeEmbedGestureEvent](web:WebAttribute.onNativeEmbedGestureEvent). For details about the sample code of the mouse event, see [onNativeEmbedMouseEvent](web:WebAttribute.onNativeEmbedMouseEvent).

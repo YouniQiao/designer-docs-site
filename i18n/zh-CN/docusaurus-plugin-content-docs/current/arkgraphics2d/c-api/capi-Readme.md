@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - 头文件
     - [drawing_lattice.h](capi-drawing-lattice-h.md)
     - [drawing_point.h](capi-drawing-point-h.md)

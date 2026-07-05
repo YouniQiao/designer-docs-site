@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DecodeToStringOptions
 
 描述 **decodeToString** 方法在解码字节流时的行为参数。

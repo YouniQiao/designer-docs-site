@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # phone
 
 Provides methods for setting the answering mode of incoming and outgoing calls.

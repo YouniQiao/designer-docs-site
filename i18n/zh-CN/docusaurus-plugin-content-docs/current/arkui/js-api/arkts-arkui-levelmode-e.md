@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LevelMode
 
 弹窗显示层级模式。

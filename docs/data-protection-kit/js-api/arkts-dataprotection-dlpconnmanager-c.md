@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DlpConnManager
 
 Calls **registerPlugin** and **unregisterPlugin** to register or unregister callback capabilities in the SA. > **NOTE** > > **registerPlugin** registers callback capabilities in the SA, and **unregisterPlugin** unregisters callback > capabilities from the SA.

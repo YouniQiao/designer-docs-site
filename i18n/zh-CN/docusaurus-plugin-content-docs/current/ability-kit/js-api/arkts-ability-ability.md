@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.ability.ability
 
 Ability模块将二级模块API组织在一起方便开发者进行导出。

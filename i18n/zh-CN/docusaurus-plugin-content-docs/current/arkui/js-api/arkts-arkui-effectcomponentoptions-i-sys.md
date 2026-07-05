@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EffectComponentOptions（系统接口）
 
 设置当前EffectComponent构造参数，包含EffectComponent的渲染层级。

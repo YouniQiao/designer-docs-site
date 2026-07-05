@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BlurStyle（系统接口）
 
 窗口模糊类型枚举。

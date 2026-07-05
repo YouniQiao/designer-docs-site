@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemSoundError (System API)
 
 Error enum for system sound.

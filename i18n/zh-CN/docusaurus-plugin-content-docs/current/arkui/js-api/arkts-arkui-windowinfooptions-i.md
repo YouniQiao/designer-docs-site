@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowInfoOptions
 
 窗口布局信息过滤选项。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PathFillType
 
 Enumerates the fill types of a path. > **NOTE** > ![image_PathFillType_Winding_Even_Odd.png](../../../../reference/apis-arkgraphics2d/figures/zh-ch_image_PathFillType_Winding_Even_Odd.png) > As shown in the above figure, the path is a circle, the arrow indicates the path direction, **p** is any point " > inside" the path, the blue line is the ray emitted from **p**, and the black arrow indicates the fill result > using blue under the corresponding fill type. Under the **WINDING** fill rule, the number of intersection points > of the ray and path is 2 (not 0), and therefore **p** is colored. Under the **EVEN_ODD** filling rule, the number > of intersection points of the ray and path is 2 (an even number), and therefore **p** is not colored.

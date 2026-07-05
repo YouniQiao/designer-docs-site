@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrinterInformation
 
 定义打印机信息的接口。

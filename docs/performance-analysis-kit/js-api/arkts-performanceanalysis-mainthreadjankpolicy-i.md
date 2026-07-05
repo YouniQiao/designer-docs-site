@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MainThreadJankPolicy
 
 Defines the configuration policy for the main thread jank event.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Rotation2D (System API)
 
 Describes a rotation in 2D, which can be defined by rotation angle and rotation center.

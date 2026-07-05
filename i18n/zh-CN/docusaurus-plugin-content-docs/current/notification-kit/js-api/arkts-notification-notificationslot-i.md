@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationSlot
 
 描述通知渠道，不同通知渠道对应的通知提醒方式不同。

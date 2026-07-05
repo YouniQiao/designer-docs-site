@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MajorMinorClass
 
 The enum of major minor class of a bluetooth device.

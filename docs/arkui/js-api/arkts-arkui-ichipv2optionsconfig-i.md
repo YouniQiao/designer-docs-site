@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IChipV2OptionsConfig
 
 Defines ChipV2 options interface.

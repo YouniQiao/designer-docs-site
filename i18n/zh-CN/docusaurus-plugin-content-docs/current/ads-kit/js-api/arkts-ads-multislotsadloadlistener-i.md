@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MultiSlotsAdLoadListener
 
 多广告位广告请求回调。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbilityState（系统接口）
 
 Ability的状态信息。

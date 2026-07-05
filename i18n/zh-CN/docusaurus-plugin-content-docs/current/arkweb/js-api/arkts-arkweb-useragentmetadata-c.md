@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserAgentMetadata
 
 Holds User-Agent metadata information and uses to generate User-Agent client hints.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EditorMenuOptions
 
 编辑菜单选项。

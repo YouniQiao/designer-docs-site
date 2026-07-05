@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CacheOptions
 
 Represents a configuration object for precompiling JavaScript in the **Web** component to generate bytecode cache, which is designed to control the updating of the bytecode cache.

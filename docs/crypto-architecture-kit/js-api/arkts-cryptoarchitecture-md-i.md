@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Md
 
 Provides APIs for message digest operations. Before using any API of the **Md** class, you must create an **Md** instance by using [createMd](arkts-cryptoarchitecture-createmd-f.md#createmd-1).

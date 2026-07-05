@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ModuleDistroInfo（系统接口）
 
 module发行版信息。

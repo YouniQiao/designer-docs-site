@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UiComponent
 
 在**UiTest**中，**UiComponent**类表示UI上的组件，提供获取组件属性、单击组件、滚动查找组件和文本注入的API。 此类中提供的所有API都使用Promise返回结果，必须使用**await**调用。

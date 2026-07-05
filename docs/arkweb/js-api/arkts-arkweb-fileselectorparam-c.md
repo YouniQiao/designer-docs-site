@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileSelectorParam
 
 Encompassed message information as parameters to {@link onFileSelectorShow} method.

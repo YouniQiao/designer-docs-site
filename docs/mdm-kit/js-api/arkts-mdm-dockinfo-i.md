@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DockInfo
 
 Describes information about an application in the shortcut bar.

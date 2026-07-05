@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavigationCustomTitle
 
 Defines a custom title for the **Navigation** component.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PowerPolicyAction (System API)
 
 Enumerates the actions that can be performed to apply the power policy. <!--no_check-->

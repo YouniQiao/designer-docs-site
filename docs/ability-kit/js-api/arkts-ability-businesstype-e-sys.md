@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BusinessType (System API)
 
 This enumeration value is used to identify various types of business ability info

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorSymbolSpanStyleResult
 
 Provides the symbol span style information returned by the backend.

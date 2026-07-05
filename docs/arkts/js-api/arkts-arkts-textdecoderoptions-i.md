@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextDecoderOptions
 
 Describes decoding-related options, which include **fatal** and **ignoreBOM**.

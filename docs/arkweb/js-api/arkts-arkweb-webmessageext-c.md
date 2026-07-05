@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebMessageExt
 
 The message received or sent from web message port.

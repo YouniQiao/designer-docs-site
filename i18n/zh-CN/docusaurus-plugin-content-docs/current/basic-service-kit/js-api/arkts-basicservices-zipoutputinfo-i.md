@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ZipOutputInfo
 
 压缩和解压缩的返回值信息。

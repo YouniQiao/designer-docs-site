@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomComponentLifecycleState
 
 自定义组件当前的生命周期状态。

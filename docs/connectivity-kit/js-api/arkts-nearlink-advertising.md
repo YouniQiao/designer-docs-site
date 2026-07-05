@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.nearlink.advertising
 
 Provides methods related to advertising. Nearby devices can scan and discover this device.

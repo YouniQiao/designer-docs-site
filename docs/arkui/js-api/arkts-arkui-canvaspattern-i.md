@@ -1,13 +1,8 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CanvasPattern
 
-Describes an opaque object of a template, which is created using the createPattern() method.
+**CanvasPattern** represents an object, created by the [createPattern](CanvasRenderingContext2D#createPattern) API, describing an image filling pattern based on the image and repetition mode.
 
-**Since:** 11
+**Since:** 8
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -17,15 +12,13 @@ Describes an opaque object of a template, which is created using the createPatte
 setTransform(transform?: Matrix2D): void
 ```
 
-Adds the matrix transformation effect to the current template.
+Uses a **Matrix2D** object as a parameter to perform matrix transformation on the current **CanvasPattern** object.
 
-**Since:** 11
-
-**Model restriction:** This API can be used only in the FA model.
+**Since:** 8
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-**Widget capability:** This API can be used in ArkTS widgets since API version 11.
+**Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -33,5 +26,5 @@ Adds the matrix transformation effect to the current template.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| transform | Matrix2D | No | transformation matrix |
+| transform | Matrix2D | No | Transformation matrix.<br>The **undefined** and **null**values are treated as invalid.<br>Default value: **null**. |
 

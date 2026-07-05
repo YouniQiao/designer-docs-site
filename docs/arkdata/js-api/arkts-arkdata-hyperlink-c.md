@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Hyperlink
 
 Represents the hyperlink data. It is a child class of [Text](arkts-arkdata-text-c.md#text).

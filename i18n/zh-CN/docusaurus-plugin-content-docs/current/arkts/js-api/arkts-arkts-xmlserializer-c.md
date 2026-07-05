@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # XmlSerializer
 
 XmlSerializer接口用于生成XML文件。

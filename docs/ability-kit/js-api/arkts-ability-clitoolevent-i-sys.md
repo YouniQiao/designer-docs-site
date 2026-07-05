@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CliToolEvent (System API)
 
 The event data of cli execute.

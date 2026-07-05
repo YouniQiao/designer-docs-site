@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IntentDecoratorInfo
 
 Common properties for intent decorators, used to define basic information about an intent (including the intent name and version number). It applies to all decorators provided by this module. > **NOTE** > > If a matching intent is found in the standard intent list based on the **schema** and **intentVersion** fields, the > system automatically populates the **intentName**, **domain**, **llmDescription**, **keywords**, **parameters**, > and **result** fields with the values from the matching standard intent.

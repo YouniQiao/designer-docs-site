@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmacSpec
 
 Represents the child class of [MacSpec](arkts-cryptoarchitecture-macspec-i.md#macspec). It is used as an input parameter for CMAC generation. > **NOTE** > > **cipherName** specifies the CMAC symmetric encryption algorithm. It is mandatory.

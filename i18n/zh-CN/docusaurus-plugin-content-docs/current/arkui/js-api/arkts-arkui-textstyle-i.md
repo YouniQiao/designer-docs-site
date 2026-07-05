@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextStyle
 
 弹窗中message的截断方式。

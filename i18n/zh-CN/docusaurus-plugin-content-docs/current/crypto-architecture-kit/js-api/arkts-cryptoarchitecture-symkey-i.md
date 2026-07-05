@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SymKey
 
 对称密钥，是[Key](arkts-cryptoarchitecture-key-i.md#key)的子类，在对称加解密时需要将其对象传入 [Cipher](arkts-cryptoarchitecture-cipher-i.md#cipher)实例的 [init()](arkts-cryptoarchitecture-cipher-i.md#init-4)方法使用。 对称密钥通过对称密钥生成器[SymKeyGenerator](arkts-cryptoarchitecture-symkeygenerator-i.md#symkeygenerator)来生成。

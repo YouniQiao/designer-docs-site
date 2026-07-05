@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThreeFingersTap
 
 三指轻点手势事件。

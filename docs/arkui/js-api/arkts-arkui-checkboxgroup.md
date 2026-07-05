@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CheckboxGroup
 
 The **CheckboxGroup** component is used to select or deselect all check boxes in a group. > **NOTE**

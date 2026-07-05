@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AlphabetIndexer properties/events
 
 When the [width](arkts-arkui-commonmethod-c.md#width-1) attribute is set to **"auto"**, the width is adaptive. This means that the width will adjust according to the maximum width of the index items. The default value of the [padding](arkts-arkui-commonmethod-c.md#padding-1) attribute is 4 vp. The [maxFontScale](TextAttribute#maxFontScale) and [minFontScale](TextAttribute#minFontScale) attributes are both set to a constant value of 1, which means that they do not change with the system font size. In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), the following attributes are supported. In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md#common), the following events are supported.

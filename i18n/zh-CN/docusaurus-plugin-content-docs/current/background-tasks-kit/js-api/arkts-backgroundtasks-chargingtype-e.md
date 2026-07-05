@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChargingType
 
 触发延迟任务回调的充电类型。

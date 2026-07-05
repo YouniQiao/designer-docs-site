@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SliderCustomContentOptions
 
 Slider前后缀组件无障碍信息参数。

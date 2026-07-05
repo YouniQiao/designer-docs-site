@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EmitterOptions
 
 粒子发射器的配置。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MultiScreenMode (System API)
 
 Enumerates the display modes of secondary screens.

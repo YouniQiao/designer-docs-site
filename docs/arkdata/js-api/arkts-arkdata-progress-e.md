@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Progress
 
 Enumerates the stages in the device-cloud sync progress. Use the enum name rather than the enum value.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PiPControlType
 
 控制面板控件类型枚举。

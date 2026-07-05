@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SheetOptions
 
 Optional attributes of the sheet. Inherits from [BindOptions](arkts-arkui-bindoptions-i.md#bindoptions).

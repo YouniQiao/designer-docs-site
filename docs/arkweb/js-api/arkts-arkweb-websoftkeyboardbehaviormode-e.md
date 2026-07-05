@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebSoftKeyboardBehaviorMode
 
 Enumerates the behavior modes of the web soft keyboard.

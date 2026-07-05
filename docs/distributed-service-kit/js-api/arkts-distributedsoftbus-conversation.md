@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.distributedSoftBus.conversation
 
 The **conversation** module leverages softbus capabilities to provide agents with multi-device interaction capabilities. It offers fundamental agent interconnection tools, including retrieving the device list, waking up the device and sending messages. By utilizing this module, applications can obtain trusted devices on the same account, register listeners to receive cross-device messages and send messages to specific devices through a well-defined conversation channel.

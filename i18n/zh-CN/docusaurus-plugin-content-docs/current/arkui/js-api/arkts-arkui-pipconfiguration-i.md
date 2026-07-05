@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PiPConfiguration
 
 创建画中画控制器时的参数。

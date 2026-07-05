@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TimePickerDialog
 
 A time picker dialog box is a dialog box that allows users to select a time from the 24-hour range through scrolling.

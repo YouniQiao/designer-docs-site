@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PageFlipMode
 
 Page flip mode of Swiper and Tabs on mouse wheel event.

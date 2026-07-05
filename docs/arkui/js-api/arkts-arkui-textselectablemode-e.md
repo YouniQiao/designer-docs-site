@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextSelectableMode
 
 Sets whether text can be selected and focused on.

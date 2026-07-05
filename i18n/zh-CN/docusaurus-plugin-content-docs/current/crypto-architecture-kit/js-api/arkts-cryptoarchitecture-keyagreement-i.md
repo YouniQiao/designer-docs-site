@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeyAgreement
 
 KeyAgreement类，使用密钥协商方法之前需要创建该类的实例进行操作，通过 [createKeyAgreement(algName: string): KeyAgreement](arkts-cryptoarchitecture-createkeyagreement-f.md#createkeyagreement-1)方法构造此实例。

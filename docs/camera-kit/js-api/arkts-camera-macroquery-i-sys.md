@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MacroQuery (System API)
 
 MacroQuery provides the API to check the support for macro photography.

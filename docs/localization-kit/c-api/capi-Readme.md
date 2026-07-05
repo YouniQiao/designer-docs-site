@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [errorcode.h](capi-errorcode-h.md)
     - [timezone.h](capi-timezone-h.md)

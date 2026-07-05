@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RunningMultiInstanceInfo（系统接口）
 
 定义多实例应用在运行态的结构信息，通过appManager的 [getRunningMultiAppInfo](arkts-ability-getrunningmultiappinfo-f-sys.md#getrunningmultiappinfo-1)来获取。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FilterType
 
 枚举，联系人过滤类型。

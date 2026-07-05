@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AsyncLockState
 
 AsyncLock实例上所有锁操作的信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.effectKit
 
 图像效果模块提供了处理图像的基础能力，包括亮度调节、模糊化、灰度调节和智能取色等。effectKit用于离线处理图像（如pixelmap、png、jpeg）以获得视觉效果，而uiEffect则实时接入渲染服务，针对屏幕帧缓存进行处理以 获得动态视觉效果。 该模块提供以下图像效果相关的常用功能： - [Filter](arkts-arkgraphics2d-filter-i.md#filter)：效果类，用于添加指定效果到图像源。 - [Color](arkts-arkgraphics2d-color-i.md#color)：颜色类，用于保存取色的结果。 - [ColorPicker](arkts-arkgraphics2d-colorpicker-i.md#colorpicker)：智能取色器。

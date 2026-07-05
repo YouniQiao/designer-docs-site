@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InterfaceSharingStateInfo (System API)
 
 The interface is used to notify listeners of changes in shared interface status.

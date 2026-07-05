@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocalWantAgentInfo (System API)
 
 Defines the information required for triggering a local WantAgent object. The information can be used as an input parameter in [createLocalWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent-sys.md#wantagentcreatelocalwantagent20) to obtain a local WantAgent object.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DHKeyUtil
 
 Generates common parameters for a DH key based on the prime **p** length and the private key length.

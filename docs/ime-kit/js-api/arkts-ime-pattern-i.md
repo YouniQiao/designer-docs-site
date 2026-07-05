@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Pattern
 
 Define pattern of keyboard. The caller must be the current inputmethod.

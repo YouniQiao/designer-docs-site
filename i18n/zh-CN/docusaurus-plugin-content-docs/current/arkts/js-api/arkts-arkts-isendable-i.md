@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ISendable
 
 ISendable是所有Sendable类型（除null和undefined）的父类型。自身没有任何必须的方法和属性。

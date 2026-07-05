@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SnapshotRegion
 
 Defines the rectangular region for capturing the component snapshot.

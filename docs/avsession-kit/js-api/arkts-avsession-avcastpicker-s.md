@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVCastPicker
 
 A picker view to show available streaming device list.

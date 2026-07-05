@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DevelopType（系统接口）
 
 用于描述意图的开发方式。

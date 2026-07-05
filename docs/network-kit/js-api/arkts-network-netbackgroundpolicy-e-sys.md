@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetBackgroundPolicy (System API)
 
 Indicate whether the application can use metered networks in background.

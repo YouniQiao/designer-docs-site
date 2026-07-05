@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HapticFileDescriptor
 
 Describes the FD of a custom vibration configuration file. Ensure that the file is available, and the parameters in it can be obtained from the sandbox path through the [fileIo.open](../../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopen) API or from the HAP resource through the [getRawFd](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-i.md#getrawfd-1) API. The application scenario is as follows: The vibration sequence is stored in a file and vibration needs to be triggered based on the offset and length. For details about the storage format of the vibration sequence, see [Vibration Effect Description](../../../../device/sensor/vibrator-guidelines.md#vibration-effect-description).

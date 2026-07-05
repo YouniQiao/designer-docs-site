@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # content_embed_common.h
 
 ## Overview

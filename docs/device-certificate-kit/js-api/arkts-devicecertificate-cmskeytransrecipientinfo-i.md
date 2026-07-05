@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsKeyTransRecipientInfo
 
 Represents KeyTrans recipient information encapsulated in CMS data.

@@ -1,23 +1,18 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Context
 
 ```TypeScript
-export type Context = common.Context
+declare type Context = import('../api/application/Context').default
 ```
 
-Defines the context of the current ability.
+Get context.
 
-**Since:** 12
+**Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
-**System capability:** SystemCapability.Ability.AbilityRuntime.Core
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-**Property type:** common.Context
+**Property type:** import('../api/application/Context').default
 

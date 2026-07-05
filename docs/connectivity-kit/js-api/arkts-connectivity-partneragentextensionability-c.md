@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PartnerAgentExtensionAbility
 
 Class for the PartnerAgentExtensionAbility. Applications can use this ability to discover devices.

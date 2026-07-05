@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PdfLoadResult
 
 定义PDF页面的加载结果。

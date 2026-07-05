@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GenerateImageTaskParams (System API)
 
 Configuration parameter options for AI-generated image tasks.

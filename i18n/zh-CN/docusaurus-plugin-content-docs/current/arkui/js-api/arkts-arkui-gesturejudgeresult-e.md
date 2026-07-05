@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureJudgeResult
 
 定义手势竞争结果。

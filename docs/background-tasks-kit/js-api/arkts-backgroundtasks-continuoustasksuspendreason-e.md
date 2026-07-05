@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContinuousTaskSuspendReason
 
 Describes the reason why a continuous task is suspended.

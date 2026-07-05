@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CompleteData
 
 表示主动触发WantAgent返回的数据。

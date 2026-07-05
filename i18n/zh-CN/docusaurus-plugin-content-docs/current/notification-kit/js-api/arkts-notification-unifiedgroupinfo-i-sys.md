@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UnifiedGroupInfo（系统接口）
 
 描述通知智能聚合信息字段。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.url
 
 The url module provides APIs for parsing URL strings and constructing URL instances to process URL strings.

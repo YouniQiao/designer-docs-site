@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TabContentInfo
 
 TabContent页面的切换信息。

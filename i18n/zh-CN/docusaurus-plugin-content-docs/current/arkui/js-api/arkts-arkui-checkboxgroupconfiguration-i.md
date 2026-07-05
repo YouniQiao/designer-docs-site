@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CheckBoxGroupConfiguration
 
 开发者必须自定义此类以实现ContentModifier接口，使用方法见[contentModifier](CheckboxGroupAttribute#contentModifier)。

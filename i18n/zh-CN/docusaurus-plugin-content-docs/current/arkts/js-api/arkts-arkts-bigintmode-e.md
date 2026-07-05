@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BigIntMode
 
 枚举BigInt的处理模式。

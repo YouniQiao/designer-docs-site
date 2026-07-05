@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ToastShowMode
 
 设置Toast的显示模式，默认显示在应用内，支持显示在子窗。

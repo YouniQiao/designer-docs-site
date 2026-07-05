@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [neural_network_runtime_type.h](capi-neural-network-runtime-type-h.md)
     - [neural_network_core.h](capi-neural-network-core-h.md)

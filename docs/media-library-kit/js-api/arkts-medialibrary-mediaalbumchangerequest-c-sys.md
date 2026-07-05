@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MediaAlbumChangeRequest
 
 Defines the class of media album change request.

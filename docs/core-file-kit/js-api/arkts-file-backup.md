@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.file.backup
 
 Module providing backup and restore capabilities.

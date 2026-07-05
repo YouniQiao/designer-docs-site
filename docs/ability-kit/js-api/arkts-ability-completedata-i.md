@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CompleteData
 
 Describes the data returned by the operation of proactive triggering a WantAgent object.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Context
 
 Context模块提供了Ability或Application的上下文的基础能力，包括允许访问特定于应用程序的资源、请求和验证权限等。

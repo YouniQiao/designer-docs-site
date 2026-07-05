@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VibrateFromFile
 
 Represents a custom vibration pattern. It is supported only by certain devices. An error code will be returned if a device does not support this vibration mode. You can pass **VibrateFromFile** to [VibrateEffect9+](arkts-sensorservice-vibrateeffect-t.md#vibrateeffect) to specify a custom vibration pattern when calling [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-1) or [vibrator.startVibration9+](arkts-sensorservice-startvibration-f.md#startvibration-2).

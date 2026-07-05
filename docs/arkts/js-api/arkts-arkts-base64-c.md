@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Base64
 
 Decodes a string or Uint8Array containing Base64 data into a newly allocated Uint8Array.

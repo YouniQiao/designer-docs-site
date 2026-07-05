@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WithThemeOptions
 
 设置WithTheme作用域内组件缺省样式及深浅色模式。

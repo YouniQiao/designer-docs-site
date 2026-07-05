@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.calendarManager
 
 The calendarManager module provides APIs for calendar and event management, including those for creating, deleting, modifying, and querying calendars and events.

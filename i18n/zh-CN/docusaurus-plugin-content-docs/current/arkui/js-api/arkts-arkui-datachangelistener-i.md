@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataChangeListener
 
 数据变化监听器。 > **说明：** > > DataChangeListener除onDatasetChange以外的方法中，当参数包含index且值为负数时，会默认用0来替换。onDatasetChange中，当单个DataOperation参数包含index且值在数据源 > 索引范围之外（DataAddOperation中index可以等于数据源长度），则对应DataOperation不会生效。

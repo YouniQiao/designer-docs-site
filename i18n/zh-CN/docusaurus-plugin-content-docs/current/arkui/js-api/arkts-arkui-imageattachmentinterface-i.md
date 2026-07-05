@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageAttachmentInterface
 
 定义图片设置项接口。

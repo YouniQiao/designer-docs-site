@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DynamicIconInfo (System API)
 
 Obtains dynamic icon information about a bundle

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DriverExtensionAbility
 
 The **DriverExtensionAbility** module provides the ExtensionAbility related to drivers. It provides lifecycle callbacks to be invoked when a driver is created, destroyed, connected, or disconnected.

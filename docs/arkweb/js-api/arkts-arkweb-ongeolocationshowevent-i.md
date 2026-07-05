@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnGeolocationShowEvent
 
 Represents the callback invoked when a request to obtain the geolocation information is received.

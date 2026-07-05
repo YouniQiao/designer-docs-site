@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LocalizedLabelMarginOptions
 
 Defines the spacing between the localized text and the left and right icons.

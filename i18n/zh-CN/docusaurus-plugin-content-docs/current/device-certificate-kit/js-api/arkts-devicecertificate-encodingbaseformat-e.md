@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EncodingBaseFormat
 
 表示生成CSR的编码格式的枚举。

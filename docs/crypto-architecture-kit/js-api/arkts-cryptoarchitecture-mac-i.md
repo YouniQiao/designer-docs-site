@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Mac
 
 Provides APIs for message authentication code (MAC) operations. Before using any API of the **Mac** class, you must create a **Mac** instance by using [createMac](arkts-cryptoarchitecture-createmac-f.md#createmac-1).

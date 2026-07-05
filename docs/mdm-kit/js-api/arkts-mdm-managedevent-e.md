@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ManagedEvent
 
 Enumerates the system management events that can be subscribed to.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReminderRequestTimer
 
 ReminderRequestTimer extends ReminderRequest Defines a reminder for a scheduled timer.

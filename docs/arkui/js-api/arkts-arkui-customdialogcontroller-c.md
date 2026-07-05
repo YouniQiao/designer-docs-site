@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CustomDialogController
 
 Defines the controller of the custom dialog box. ###### Objects to Import ```ts dialogController : CustomDialogController | null = new CustomDialogController(CustomDialogControllerOptions) ``` > **NOTE** > > - **CustomDialogController** is effective only when it is a member variable of the @CustomDialog and @Component > decorated struct and is defined in the @Component decorated struct. For details, see the following example. > > - You can pass in multiple other controllers in the CustomDialog to open one or more other CustomDialogs in the > CustomDialog. In this case, you must place the controller pointing to the self behind all controllers. For details, > see > [Example 1: Opening Nested Dialog Boxes](../../../../reference/apis-arkui/arkui-ts/ts-methods-custom-dialog-box.md#example-1-opening-nested-dialog-boxes). >

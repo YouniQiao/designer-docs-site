@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # File
 
 由open接口打开的File对象。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureType
 
 定义手势类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Configuration
 
 Defines the parameters for creating a child window or system window.

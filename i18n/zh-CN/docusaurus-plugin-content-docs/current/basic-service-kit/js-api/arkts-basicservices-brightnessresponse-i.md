@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BrightnessResponse
 
 包含屏幕亮度的对象。

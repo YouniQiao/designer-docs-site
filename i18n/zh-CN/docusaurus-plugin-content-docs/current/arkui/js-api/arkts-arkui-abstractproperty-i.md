@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbstractProperty
 
 AbstractProperty是[AppStorage](../../../../ui/state-management/arkts-appstorage.md)/ [LocalStorage](../../../../ui/state-management/arkts-localstorage.md)中属性的引用。

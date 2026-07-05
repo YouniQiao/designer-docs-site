@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ListItemGroupHeaderFooterStyle
 
 ListItemGroup头部和尾部样式枚举。

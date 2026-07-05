@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChannelInfo
 
 打开代理通道函数的入参，包括对端设备的MAC地址和监听服务的UUID。

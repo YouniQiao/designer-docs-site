@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PointMode
 
 绘制数组点的方式的枚举。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # date
 
 Provides methods for setting time and date formats.

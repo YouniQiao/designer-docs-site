@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.ability.application
 
 开发者可以通过该模块创建[Context](../../../../application-models/application-context-stage.md)。

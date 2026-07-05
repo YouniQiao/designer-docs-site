@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Config (System API)
 
 Provides APIs for setting device-cloud synergy, including enabling and disabling device-cloud synergy, clearing data, and notifying data changes.

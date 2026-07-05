@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UnifiedDataProperties
 
 Defines the properties of the data records in the unified data object, including the timestamp, tag, pasting range, and additional data.

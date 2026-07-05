@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StateStyles
 
 组件不同状态下的样式。

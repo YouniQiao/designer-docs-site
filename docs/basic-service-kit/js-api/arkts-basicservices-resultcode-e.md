@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResultCode
 
 Enumerates the result codes. > **NOTE**<br> > > This API is supported since API version 8 and deprecated since API version 9. For details, see > [Account Management Error Codes](../../../../reference/apis-basic-services-kit/errorcode-account.md).

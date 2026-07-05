@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StaticSubscriberExtensionContext (System API)
 
 The **StaticSubscriberExtensionContext** module, inherited from **StaticSubscriberExtensionAbility**, provides context for StaticSubscriberExtensionAbilities. You can use the APIs of this module to start StaticSubscriberExtensionAbilities.

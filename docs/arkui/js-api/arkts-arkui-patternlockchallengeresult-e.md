@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PatternLockChallengeResult
 
 Authentication challenge result of the pattern password.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResponseRegionSupportedTool
 
 Sets the type of the input tool applicable to the touch target.

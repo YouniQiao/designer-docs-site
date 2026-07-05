@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemLocaleManager (System API)
 
 Provide some functions for settings and startup guide to select language or region.

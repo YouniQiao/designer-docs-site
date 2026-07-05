@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextAreaOptions
 
 Describes the initialization options of the **TextArea** component.

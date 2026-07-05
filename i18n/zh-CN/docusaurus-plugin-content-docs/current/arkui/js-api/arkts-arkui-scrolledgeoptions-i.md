@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollEdgeOptions
 
 滚动到容器边缘的参数。

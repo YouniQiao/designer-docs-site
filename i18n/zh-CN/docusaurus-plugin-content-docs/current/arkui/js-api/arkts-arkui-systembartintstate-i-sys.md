@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemBarTintState（系统接口）
 
 当前系统栏回调信息集合。

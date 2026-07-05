@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnGeolocationShowEvent
 
 Defines the triggered function when requesting to show the geolocation permission.

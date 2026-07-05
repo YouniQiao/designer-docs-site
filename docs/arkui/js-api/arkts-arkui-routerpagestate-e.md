@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RouterPageState
 
 Enumerates the states of a page during routing. **RouterPageState** is used in [RouterPageInfo](arkts-arkui-routerpageinfo-c.md#routerpageinfo) as the callback parameter for passive observation via [routerPageUpdate](arkts-arkui-on-f.md#on-5).

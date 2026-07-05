@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GlobalScope
 
 Implements the running environment of the Worker thread. The GlobalScope class inherits from WorkerEventTarget.

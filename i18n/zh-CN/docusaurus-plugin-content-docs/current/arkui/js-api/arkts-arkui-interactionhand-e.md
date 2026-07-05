@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InteractionHand
 
 定义事件是由左手点击触发还是右手点击触发。

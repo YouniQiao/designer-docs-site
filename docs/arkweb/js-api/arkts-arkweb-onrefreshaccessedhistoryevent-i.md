@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnRefreshAccessedHistoryEvent
 
 Callback triggered when the navigation is complete.

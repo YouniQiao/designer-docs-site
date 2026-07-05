@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Panel
 
 In the following API examples, you must first use [createPanel](arkts-ime-inputmethodability-i.md#createpanel-1) to obtain a **Panel** instance, and then call the APIs using the obtained instance.

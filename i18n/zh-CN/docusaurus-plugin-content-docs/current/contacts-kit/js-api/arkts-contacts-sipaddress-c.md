@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SipAddress
 
 联系人的会话发起协议(SIP)地址类。

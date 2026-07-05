@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ComposeTitleBarV2MenuItemParams
 
 Options for creating a menu item instance.

@@ -1,41 +1,44 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Position
 
-窗口或组件的位置。
+定义位置。
 
-**起始版本：** 20
+**起始版本：** 11
 
-**系统能力：** SystemCapability.Window.SessionManager
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## x
 
 ```TypeScript
-x: number
+x?: Length
 ```
 
-x坐标，单位为px，该参数应为整数。
+位置X坐标。
 
-**类型：** number
+**类型：** Length
 
-**起始版本：** 20
+**起始版本：** 11
 
-**系统能力：** SystemCapability.Window.SessionManager
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## y
 
 ```TypeScript
-y: number
+y?: Length
 ```
 
-y坐标，单位为px，该参数应为整数。
+位置Y坐标。
 
-**类型：** number
+**类型：** Length
 
-**起始版本：** 20
+**起始版本：** 11
 
-**系统能力：** SystemCapability.Window.SessionManager
+**元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

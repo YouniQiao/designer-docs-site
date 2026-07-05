@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AxisValue
 
 Defines the mouse axis type and axis value.

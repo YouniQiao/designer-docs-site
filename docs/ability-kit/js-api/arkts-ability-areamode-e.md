@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AreaMode
 
 Enumerates the file encryption levels, which are used to ensure data security for applications across different scenarios. You can select the appropriate encryption level based on the application requirements to protect user data.

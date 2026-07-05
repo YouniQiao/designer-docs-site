@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrintDuplexMode
 
 打印单双面模式的枚举。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebDownloadManager
 
 You can trigger download manually through this interface, or resume failed or canceled downloads.

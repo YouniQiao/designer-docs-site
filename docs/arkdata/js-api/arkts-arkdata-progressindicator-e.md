@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ProgressIndicator
 
 Enumerates the progress indicator options.

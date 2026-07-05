@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArkListOptions
 
 包含创建ArcList组件的基础参数。

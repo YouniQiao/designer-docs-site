@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Filter
 
 Defines the file filtering configuration used by **listFile()**.

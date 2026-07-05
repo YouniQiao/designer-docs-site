@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VibratorInfoParam
 
 Defines the vibrator parameters. If **VibratorInfoParam** is left unspecified, an API applies to all vibrators of the local device by default.

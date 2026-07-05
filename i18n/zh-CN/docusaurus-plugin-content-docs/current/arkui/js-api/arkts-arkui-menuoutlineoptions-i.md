@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuOutlineOptions
 
 下拉菜单框的外描边参数对象。

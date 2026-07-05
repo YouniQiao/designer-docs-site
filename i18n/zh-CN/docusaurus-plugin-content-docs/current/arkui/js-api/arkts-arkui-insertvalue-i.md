@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InsertValue
 
 定义插入的文本值信息。

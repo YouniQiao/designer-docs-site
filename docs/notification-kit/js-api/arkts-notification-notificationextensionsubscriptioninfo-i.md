@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationExtensionSubscriptionInfo
 
 The **NotificationExtensionSubscriptionInfo** module describes the information about notification extension subscription.

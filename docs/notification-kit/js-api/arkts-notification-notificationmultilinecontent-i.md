@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationMultiLineContent
 
 Describes the multi-line text notification. This API is inherited from [NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md#notificationbasiccontent). > **NOTE** > > - When the multi-line text notification and another notification form a group notification, the group notification > is displayed as a [normal text notification](arkts-notification-notificationbasiccontent-i.md#notificationbasiccontent) by default. After the group > notification is expanded, the value of **longTitle** is used as the title, and the value of **lines** is used as > the multi-line text content. When the multi-line text notification is displayed independently, the value of **longTitle** is used as the title, and the value of **lines** is used as the multi-line text content. > - The display effect depends on the device capability and notification center UI style.

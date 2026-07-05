@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChainAnimationOptions（系统接口）
 
 链式联动动效属性集合，用于设置List最大间距、最小间距、动效强度、传导系数和边缘效果。

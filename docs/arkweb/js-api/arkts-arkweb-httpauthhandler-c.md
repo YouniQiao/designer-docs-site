@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HttpAuthHandler
 
 Defines the http auth request result, related to {@link onHttpAuthRequest} method.

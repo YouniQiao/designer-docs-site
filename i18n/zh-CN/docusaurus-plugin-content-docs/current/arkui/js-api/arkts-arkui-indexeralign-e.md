@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IndexerAlign
 
 索引条提示弹窗的对齐样式枚举。

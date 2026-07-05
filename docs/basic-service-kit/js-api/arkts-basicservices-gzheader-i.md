@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GzHeader
 
 Gzip header information passed to and from zlib routines.

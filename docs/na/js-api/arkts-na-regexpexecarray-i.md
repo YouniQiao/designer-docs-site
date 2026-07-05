@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RegExpExecArray
 
 **Inheritance/Implementation:** RegExpExecArray extends [Array<string>](Array<string>)

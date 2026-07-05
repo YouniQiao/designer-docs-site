@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MediaAssetPermissionState
 
 Enumeration of permission level for an application to access asset.

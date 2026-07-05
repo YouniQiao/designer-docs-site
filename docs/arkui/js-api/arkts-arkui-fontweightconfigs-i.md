@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FontWeightConfigs
 
 Defines font weight configurations. When the configuration object (including an empty object **{}**) is passed, the default values are used for properties that are not explicitly set. When **null** or **undefined** is passed, default values are not applied, and the font weight behavior is consistent with that of the parent component text.

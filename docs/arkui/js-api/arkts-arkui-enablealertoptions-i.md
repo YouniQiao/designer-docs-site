@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EnableAlertOptions
 
 Describes the page routing state.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BaseSpan
 
 Defines the base class **BaseSpan**, including the universal attributes of the **Span** component.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NodeContainer属性/事件
 
 支持[通用属性](../../../../reference/apis-arkui/arkui-ts/ts-component-general-attributes.md)。 支持[通用事件](../../../../reference/apis-arkui/arkui-ts/ts-component-general-events.md)。

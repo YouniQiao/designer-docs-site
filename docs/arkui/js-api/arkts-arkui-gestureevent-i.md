@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureEvent
 
 Defines the gesture event information. Inherits from [BaseEvent](arkts-arkui-baseevent-i.md#baseevent).

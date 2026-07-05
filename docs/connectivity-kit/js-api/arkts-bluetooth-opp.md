@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bluetooth.opp
 
 Provides methods to accessing bluetooth OPP(OBEX OBJECT PUSH Profile)-related capabilities.

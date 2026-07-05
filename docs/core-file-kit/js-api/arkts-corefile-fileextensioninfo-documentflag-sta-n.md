@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DocumentFlag
 
 Defines the values of **mode** used in **FileInfo**.

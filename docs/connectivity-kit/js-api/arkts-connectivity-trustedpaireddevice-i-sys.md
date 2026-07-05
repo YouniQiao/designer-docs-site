@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TrustedPairedDevice (System API)
 
 Describes device of cloud pair.

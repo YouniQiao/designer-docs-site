@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebDownloadDelegate
 
 下载任务的状态会通过该类的回调接口通知给用户。

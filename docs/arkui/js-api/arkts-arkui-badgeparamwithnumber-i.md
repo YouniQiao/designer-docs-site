@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BadgeParamWithNumber
 
 Inherits from [BadgeParam](arkts-arkui-badgeparam-i.md#badgeparam) and has all attributes of **BadgeParam**.

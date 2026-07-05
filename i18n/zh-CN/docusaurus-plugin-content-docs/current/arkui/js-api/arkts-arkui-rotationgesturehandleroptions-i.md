@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RotationGestureHandlerOptions
 
 旋转手势处理器配置参数。继承自[BaseHandlerOptions](arkts-arkui-basehandleroptions-i.md#basehandleroptions)。

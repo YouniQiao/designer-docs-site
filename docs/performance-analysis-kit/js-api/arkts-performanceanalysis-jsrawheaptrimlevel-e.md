@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # JsRawHeapTrimLevel
 
 Trimming level of raw heap snapshot.

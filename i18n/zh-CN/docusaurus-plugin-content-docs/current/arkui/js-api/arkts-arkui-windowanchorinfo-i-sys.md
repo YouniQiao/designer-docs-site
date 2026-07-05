@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowAnchorInfo（系统接口）
 
 一级子窗与主窗保持相对位置的窗口锚点参数信息。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - 头文件
     - [transient_task_api.h](capi-transient-task-api-h.md)
     - [transient_task_type.h](capi-transient-task-type-h.md)

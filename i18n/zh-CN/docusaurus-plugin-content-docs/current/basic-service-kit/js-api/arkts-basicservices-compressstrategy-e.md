@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CompressStrategy
 
 CompressStrategy作为[Options](arkts-basicservices-options-i.md#options)的一个属性，用于指定压缩时的压缩策略。

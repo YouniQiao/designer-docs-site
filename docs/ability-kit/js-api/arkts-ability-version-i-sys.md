@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Version (System API)
 
 Version: the bundle version class.

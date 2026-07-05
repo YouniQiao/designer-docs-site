@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsContentType
 
 表示Cms内容类型的枚举。

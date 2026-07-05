@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [content_embed_proxy.h](capi-content-embed-proxy-h.md)
     - [content_embed_common.h](capi-content-embed-common-h.md)

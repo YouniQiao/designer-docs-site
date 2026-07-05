@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialType (System API)
 
 Indicates the types of the call to be made.

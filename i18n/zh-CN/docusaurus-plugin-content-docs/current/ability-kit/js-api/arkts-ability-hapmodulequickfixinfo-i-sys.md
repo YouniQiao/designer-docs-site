@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HapModuleQuickFixInfo（系统接口）
 
 hap级别的快速修复信息。

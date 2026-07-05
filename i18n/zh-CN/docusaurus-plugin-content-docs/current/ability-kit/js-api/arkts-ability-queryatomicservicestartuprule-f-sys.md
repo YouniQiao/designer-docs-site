@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # queryAtomicServiceStartupRule（系统接口）
 
 ## queryAtomicServiceStartupRule

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavPathStack
 
 A navigation controller that manages all child pages in the **Navigation** component with a stack data structure and provides stack operation methods for controlling page transitions. Starting from API version 12, **NavPathStack** is inheritable. Objects of a derived class can replace those of the base class. For details, see [Example 10](../../../../reference/apis-arkui/arkui-ts/ts-basic-components-navigation.md#example-10-defining-a-derived-class-of-navpathstack). > **NOTE** > > 1. When multiple navigation controller operations are triggered in succession, the intermediate states are > bypassed, and only the final result of the operations is rendered. > For example, if a Page1 is popped and then immediately pushed back, the system considers that the states before and > after these operations are identical, leading to no actual change in the stack. To ensure that a new instance of > Page1 is pushed onto the stack despite the consecutive operations, use the **NEW_INSTANCE** mode. > > 2. Avoid relying on lifecycle event listeners as a means to manage the navigation controller. > > 3. When the application is in the background, calling stack operation APIs of **NavPathStack** will trigger a > refresh upon the application's return to the foreground.

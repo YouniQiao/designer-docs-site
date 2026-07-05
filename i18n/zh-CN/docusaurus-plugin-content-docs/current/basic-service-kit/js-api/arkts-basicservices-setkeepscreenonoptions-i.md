@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SetKeepScreenOnOptions
 
 设置屏幕常亮的参数对象。

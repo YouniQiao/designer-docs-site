@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NestedScrollOptionsExt
 
 Implements a **NestedScrollOptionsExt** object to set up, down, left, and right nested scrolling options.

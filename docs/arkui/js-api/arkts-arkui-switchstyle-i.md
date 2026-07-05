@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwitchStyle
 
 Sets the style for the component of the **Switch** type.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContentCoverOptions
 
 继承自[BindOptions](arkts-arkui-bindoptions-i.md#bindoptions)。 全屏模态页面内容选项。

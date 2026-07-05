@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Content
 
 Defines the base class for {@link ComponentContent} and {@link NodeContent}.

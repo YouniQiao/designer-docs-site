@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WantAgentFlags
 
 Enumerates the flags used by the WantAgent objects.

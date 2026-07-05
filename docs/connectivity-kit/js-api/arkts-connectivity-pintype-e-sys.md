@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PinType (System API)
 
 Enum for the type of pairing to a remote device

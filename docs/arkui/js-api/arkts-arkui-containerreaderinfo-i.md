@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContainerReaderInfo
 
 Defines the configuration options for ContainerReader component. Used to specify the parameters for container dimension reading and breakpoint analysis.

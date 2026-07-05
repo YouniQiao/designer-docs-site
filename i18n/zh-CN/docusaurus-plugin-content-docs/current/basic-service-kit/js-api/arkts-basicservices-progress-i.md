@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Progress
 
 任务进度的数据结构。

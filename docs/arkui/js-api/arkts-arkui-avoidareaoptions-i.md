@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AvoidAreaOptions
 
 Describes the new area where the window cannot be displayed. The new area is returned when the corresponding event is triggered.

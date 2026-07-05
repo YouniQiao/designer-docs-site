@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [oh_sensor_type.h](capi-oh-sensor-type-h.md)
     - [oh_sensor.h](capi-oh-sensor-h.md)

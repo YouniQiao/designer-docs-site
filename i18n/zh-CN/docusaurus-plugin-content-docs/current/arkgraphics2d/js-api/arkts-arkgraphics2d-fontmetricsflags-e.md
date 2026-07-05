@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FontMetricsFlags
 
 字体度量标志枚举，指示字体度量中的各字段数据是否有效。

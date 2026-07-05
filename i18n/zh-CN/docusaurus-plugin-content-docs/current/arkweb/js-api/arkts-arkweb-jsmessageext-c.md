@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # JsMessageExt
 
 该消息用于指示JavaScript代码执行结果的状态。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CanvasRenderer
 
 After the **CanvasRenderingContext2D** object is bound to the **Canvas** component, you can draw shapes, texts, and images on the **Canvas** component. > **NOTE** > > * It is recommended that the **CanvasRenderingContext2D** object and the **Canvas** component be > encapsulated into the same custom component, ensuring a one-to-one correspondence and consistent > lifecycle between them. > > * When you call drawing APIs in this module, the commands are stored in the associated **Canvas** > component's command queue. These commands are only executed when the current frame enters the rendering > phase and the associated **Canvas** component is visible. Therefore, when the **Canvas** component is > invisible (for example, off-screen or hidden), avoid frequent drawing calls to prevent command queue > buildup and excessive memory usage. > > * When the width or height of the **Canvas** component exceeds 8000 px, rendering via the CPU causes > significant performance degradation.

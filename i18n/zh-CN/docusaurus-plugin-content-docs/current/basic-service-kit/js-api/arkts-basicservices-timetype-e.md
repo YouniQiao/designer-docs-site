@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TimeType
 
 定义获取时间的枚举类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DensityInfo
 
 Provides the information contained in the callback when the screen pixel density changes.

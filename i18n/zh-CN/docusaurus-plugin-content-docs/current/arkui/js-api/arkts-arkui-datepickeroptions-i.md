@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DatePickerOptions
 
 日期选择器组件的参数说明。 > **说明：** > > - Date的使用请参考[TimePickerOptions](arkts-arkui-timepickeroptions-i.md#timepickeroptions)。 > > - 在DatePicker组件滑动过程中修改DatePickerOptions中的属性，会导致这些属性无法生效。

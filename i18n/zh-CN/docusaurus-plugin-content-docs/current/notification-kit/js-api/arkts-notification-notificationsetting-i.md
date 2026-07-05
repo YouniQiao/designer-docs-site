@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationSetting
 
 通知提醒方式开关的设置状态。

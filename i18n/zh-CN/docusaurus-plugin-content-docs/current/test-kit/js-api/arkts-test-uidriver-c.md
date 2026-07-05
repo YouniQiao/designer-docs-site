@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UiDriver
 
 **UiDriver**类是UiTest框架的主要入口。它提供组件匹配/查找、按键注入、坐标单击/滑动和截图等功能的API。 此类提供的所有API（除**UiDriver.create()**外）都使用Promise返回结果，必须使用**await**调用。

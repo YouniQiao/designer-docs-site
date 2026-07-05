@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ModalTransition
 
 全屏模态转场方式枚举类型，用于设置全屏模态转场类型。

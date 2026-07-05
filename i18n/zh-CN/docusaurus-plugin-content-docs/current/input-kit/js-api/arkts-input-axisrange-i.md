@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AxisRange
 
 输入设备的轴信息。

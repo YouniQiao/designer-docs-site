@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CompletionHandler
 
 CompletionHandler provides two callback functions, [onRequestSuccess](arkts-ability-completionhandler-c.md#onrequestsuccess-1) and [onRequestFailure](arkts-ability-completionhandler-c.md#onrequestfailure-1), to handle the results of successful and failed application launch requests, respectively.

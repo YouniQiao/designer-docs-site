@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResponseRegionSupportedTool
 
 触摸热区适用的输入工具类型。

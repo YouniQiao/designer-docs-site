@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.enterprise.bluetoothManager
 
 本模块提供设备蓝牙管理的能力，包括设置和查询蓝牙信息等。 > **说明：** > > 本模块接口仅可在Stage模型下使用。 > > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../../mdm/mdm-kit-guide.md)。 > > 全局通用限制类策略由restrictions统一提供，若要全局禁用蓝牙，请参考 > [@ohos.enterprise.restrictions （限制类策略）](arkts-enterprise-restrictions.md#restrictions)。

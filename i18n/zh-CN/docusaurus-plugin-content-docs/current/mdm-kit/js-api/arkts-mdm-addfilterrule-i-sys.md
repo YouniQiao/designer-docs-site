@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AddFilterRule（系统接口）
 
 添加网络包过滤规则。

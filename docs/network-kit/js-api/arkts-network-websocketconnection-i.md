@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebSocketConnection
 
 Info about the connection from each specific client.

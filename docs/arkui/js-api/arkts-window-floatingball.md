@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.window.floatingBall
 
 This module provides essential functionalities for floating balls. It lets you check whether the device supports floating balls and create a controller to start, update, or stop them. It is ideal for tasks like comparing prices, searching for answers, or grabbing orders. The floating ball appears as a floating widget above other application, quickly showing important information. > **NOTE** > > - For the system capability SystemCapability.Window.SessionManager, use > [canIUse()](arkts-arkui-global-caniuse-f.md#caniuse-1) to check whether the device supports this system > capability and the corresponding APIs.

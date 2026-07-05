@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SecurityLevel
 
 当前网页的安全级别。

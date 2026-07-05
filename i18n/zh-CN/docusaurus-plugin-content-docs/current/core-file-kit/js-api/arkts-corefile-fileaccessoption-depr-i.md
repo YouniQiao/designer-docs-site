@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileAccessOption
 
 可选项类型，支持access接口使用。

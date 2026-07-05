@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavigationAnimatedTransition
 
 Defines the custom transition animation protocol. You need to implement this protocol to define the redirection animation of the navigation route.

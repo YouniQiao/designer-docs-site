@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContactAttributes
 
 Provides a list of contact attributes, which are generally used as arguments. If **null** is passed, all attributes are queried by default.

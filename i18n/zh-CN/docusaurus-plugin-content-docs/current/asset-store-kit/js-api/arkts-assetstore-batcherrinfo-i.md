@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BatchErrInfo
 
 批量操作中单个关键资产的错误信息。

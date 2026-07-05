@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EffectComponentOptions (System API)
 
 Sets the construction parameters of the current EffectComponent, including the rendering layer of the EffectComponent.

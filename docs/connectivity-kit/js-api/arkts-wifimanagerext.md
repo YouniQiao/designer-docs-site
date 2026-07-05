@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.wifiManagerExt
 
 Provides extended methods to operate or manage Wi-Fi. <p>The APIs involved in this file are non-general APIs. These extended APIs are only used by some product types, such as routers. Common products should not use these APIs.</p>

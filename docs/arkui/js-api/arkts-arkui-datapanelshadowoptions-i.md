@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataPanelShadowOptions
 
 Inherits from [MultiShadowOptions](arkts-arkui-multishadowoptions-i.md#multishadowoptions) and has all properties of **MultiShadowOptions**.

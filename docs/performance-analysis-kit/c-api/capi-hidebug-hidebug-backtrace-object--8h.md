@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HiDebug_Backtrace_Object__*
 
 ```c

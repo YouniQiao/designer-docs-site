@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UpgradeFlag（系统接口）
 
 仅供内部系统使用标志位

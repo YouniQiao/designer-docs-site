@@ -1,35 +1,63 @@
----
-last_update:
-  date: 2026-07-04
----
+# Shape
 
-# @ohos.arkui.shape
+Provides interfaces for drawing components.
 
-## Modules to Import
+## Shape
 
 ```TypeScript
-import { RectShape, CircleShape, EllipseShape, PathShape } from '@ohos.arkui.shape';
+Shape(value?: PixelMap)
 ```
+
+Use the new function to create Shape.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | PixelMap | No |  |
+
+## Shape
+
+```TypeScript
+Shape(value: PixelMap)
+```
+
+Since API version 9, this API is supported in ArkTS widgets, except that **PixelMap** objects are not supported.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| value | PixelMap | Yes | Drawing target. You can draw a shape in a specified **PixelMap** object. If thisparameter is not set, the shape is drawn in the current drawing target by default.<br>The **undefined** and**null** values are treated as invalid and will not take effect. |
+
+## Shape
+
+```TypeScript
+Shape()
+```
+
+Called when a component is drawn.
+
+**Since:** 7
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**Widget capability:** This API can be used in ArkTS widgets since API version 9.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
 
 ## Summary
 
-### Classes
-
-| Name | Description |
-| --- | --- |
-| [BaseShape](arkts-arkui-baseshape-c.md) | This API inherits from [CommonShapeMethod](arkts-arkui-commonshapemethod-c.md#commonshapemethod). |
-| [CircleShape](arkts-arkui-circleshape-c.md) | Represents a circle shape used in the **clipShape** and **maskShape** APIs. This API inherits from [BaseShape](arkts-arkui-baseshape-c.md#baseshape). |
-| [CommonShapeMethod](arkts-arkui-commonshapemethod-c.md) | Implements the common shape methods. |
-| [EllipseShape](arkts-arkui-ellipseshape-c.md) | Represents an ellipse shape used in the **clipShape** and **maskShape** APIs. This API inherits from [BaseShape](arkts-arkui-baseshape-c.md#baseshape). |
-| [PathShape](arkts-arkui-pathshape-c.md) | Represents a path used in the **clipShape** and **maskShape** APIs. This API inherits from [CommonShapeMethod](arkts-arkui-commonshapemethod-c.md#commonshapemethod). |
-| [RectShape](arkts-arkui-rectshape-c.md) | Represents a rectangle shape used in the **clipShape** and **maskShape** APIs. This API inherits from [BaseShape](arkts-arkui-baseshape-c.md#baseshape). |
-
-### Interfaces
-
-| Name | Description |
-| --- | --- |
-| [PathShapeOptions](arkts-arkui-pathshapeoptions-i.md) | Represents the parameter of the constructor used to create a **PathShape** object. |
-| [RectShapeOptions](arkts-arkui-rectshapeoptions-i.md) | Represents the parameter of the constructor used to create a **RectShape** object. This API inherits from [ShapeSize](arkts-arkui-shapesize-i.md#shapesize). |
-| [RoundRectShapeOptions](arkts-arkui-roundrectshapeoptions-i.md) | Represents the parameter of the constructor used to create a **RectShape** object with rounded corners. This API inherits from [ShapeSize](arkts-arkui-shapesize-i.md#shapesize). |
-| [ShapeSize](arkts-arkui-shapesize-i.md) | Describes the size of a shape. |
-
+- [ViewportRect](arkts-arkui-shape-viewportrect-i.md)

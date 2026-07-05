@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AppPreloadType
 
 表示应用当前进程的预加载类型枚举。

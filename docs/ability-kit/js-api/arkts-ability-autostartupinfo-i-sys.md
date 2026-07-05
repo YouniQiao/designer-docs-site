@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoStartupInfo (System API)
 
 The module defines information about the application component that automatically starts upon system boot.

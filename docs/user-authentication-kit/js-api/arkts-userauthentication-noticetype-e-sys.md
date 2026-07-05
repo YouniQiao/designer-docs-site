@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NoticeType (System API)
 
 Defines the type of the user authentication notification.

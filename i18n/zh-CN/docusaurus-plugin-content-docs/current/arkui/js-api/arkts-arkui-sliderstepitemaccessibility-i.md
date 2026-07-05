@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SliderStepItemAccessibility
 
 Slider刻度点的无障碍文本信息。

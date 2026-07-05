@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ClearConfig (System API)
 
 Defines the clearance configuration of a device-cloud synergy database.

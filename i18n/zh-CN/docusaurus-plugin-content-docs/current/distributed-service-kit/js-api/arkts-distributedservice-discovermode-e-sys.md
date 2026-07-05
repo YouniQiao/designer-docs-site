@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DiscoverMode（系统接口）
 
 表示发现模式的枚举。

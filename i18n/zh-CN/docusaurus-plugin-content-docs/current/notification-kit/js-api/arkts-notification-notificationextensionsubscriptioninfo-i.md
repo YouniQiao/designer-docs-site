@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationExtensionSubscriptionInfo
 
 用于描述通知扩展订阅的信息。

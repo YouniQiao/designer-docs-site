@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EventTarget
 
 Defines the type of the **target** parameter in [BaseEvent](arkts-arkui-baseevent-i.md#baseevent). Represents the display area of the element object that triggers the event.

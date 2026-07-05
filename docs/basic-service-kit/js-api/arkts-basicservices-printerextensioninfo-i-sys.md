@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrinterExtensionInfo (System API)
 
 Provides the printer extension information.

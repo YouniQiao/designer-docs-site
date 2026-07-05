@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Checkbox
 
 **Checkbox** is a component that is used to enable or disable an option. > **NOTE** > > Since API version 11, the default style of the **Checkbox** component is changed from rounded square to circle.

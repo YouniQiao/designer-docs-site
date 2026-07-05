@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioSamplingRate
 
 Enumerates the audio sampling rates. The sampling rates supported vary according to the device in use.

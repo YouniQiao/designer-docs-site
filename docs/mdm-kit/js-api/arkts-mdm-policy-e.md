@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Policy
 
 Defines the policy type for the trustlist or blocklist.

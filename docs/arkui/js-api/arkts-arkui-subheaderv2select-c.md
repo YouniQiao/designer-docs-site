@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SubHeaderV2Select
 
 Declare the SubHeaderV2Select

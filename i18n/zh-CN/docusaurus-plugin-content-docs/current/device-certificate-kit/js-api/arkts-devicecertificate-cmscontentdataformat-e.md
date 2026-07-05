@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsContentDataFormat
 
 表示Cms内容数据格式的枚举。

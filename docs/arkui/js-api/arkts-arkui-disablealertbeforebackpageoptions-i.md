@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DisableAlertBeforeBackPageOptions
 
 Defines the option of DisableAlertBeforeBackPage.

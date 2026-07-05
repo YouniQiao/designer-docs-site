@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EditableTitleBarMenuItemV2Options
 
 Indicates the options of the menu item.

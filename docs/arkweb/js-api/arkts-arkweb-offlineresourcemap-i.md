@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OfflineResourceMap
 
 Implements an **OfflineResourceMap** object, which is used to set information related to local offline resources that will be injected into memory cache through the [injectOfflineResources](arkts-arkweb-webviewcontroller-c.md#injectofflineresources-1) API. The ArkWeb engine will generate resource caches based on this information and control the validity period of the cache accordingly.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RenderExitReason
 
 Enumerates the reasons why the rendering process exits.

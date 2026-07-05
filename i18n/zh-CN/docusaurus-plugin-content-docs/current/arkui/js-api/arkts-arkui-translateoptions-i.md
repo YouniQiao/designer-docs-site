@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TranslateOptions
 
 Defines the options of translate.

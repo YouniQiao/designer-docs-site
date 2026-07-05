@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DownloadFileType
 
 Enumerates the download file types from the Drive Kit.

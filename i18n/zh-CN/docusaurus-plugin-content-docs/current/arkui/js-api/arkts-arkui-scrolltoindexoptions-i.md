@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollToIndexOptions
 
 滚动到指定索引的参数。

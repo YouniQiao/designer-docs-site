@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BreakpointOptions
 
 Defines the breakpoint configuration options for container dimension analysis. Specifies threshold values that trigger different layout behaviors based on container size.

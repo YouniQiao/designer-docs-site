@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Cipher
 
 提供加解密的算法操作功能，按序调用本类中的 [init()](arkts-cryptoarchitecture-cipher-i.md#init-4)、 [update()](arkts-cryptoarchitecture-cipher-i.md#update-1)、 [doFinal()](arkts-cryptoarchitecture-cipher-i.md#dofinal-2)方法， 可以实现对称加密/对称解密/非对称加密/非对称解密。 完整的加解密流程示例可参考[开发指南](../../../../security/CryptoArchitectureKit/crypto-encryption-decryption-overview.md)。 一次完整的加/解密流程在对称加密和非对称加密中略有不同： - 对称加解密：init为必选，update为可选（且允许多次update加/解密大数据），doFinal为必选；doFinal结束后可以重新init开始新一轮加/解密 流程。 - RSA、SM2非对称加解密：init为必选，不支持update操作，doFinal为必选（允许连续多次doFinal加/解密大数据）；RSA不支持重复init，切换 加解密模式或填充方式时，需要重新创建Cipher对象。

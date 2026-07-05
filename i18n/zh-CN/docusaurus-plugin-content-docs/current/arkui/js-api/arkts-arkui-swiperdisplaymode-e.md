@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperDisplayMode
 
 Swiper在主轴上的尺寸大小模式枚举。

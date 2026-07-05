@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BatteryStatus
 
 触发延迟任务回调的电池状态。

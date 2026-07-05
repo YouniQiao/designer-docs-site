@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StyledDateTimeFormat
 
 Provide a DateTime formatting interface which could format DateTime to StyleString.

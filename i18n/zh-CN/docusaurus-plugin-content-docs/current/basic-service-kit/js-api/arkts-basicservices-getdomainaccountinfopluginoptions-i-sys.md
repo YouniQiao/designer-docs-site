@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GetDomainAccountInfoPluginOptions（系统接口）
 
 表示插件查询域账号信息的选项。GetDomainAccountInfoPluginOptions类继承 [GetDomainAccountInfoOptions](arkts-basicservices-getdomainaccountinfooptions-i-sys.md#getdomainaccountinfooptions)

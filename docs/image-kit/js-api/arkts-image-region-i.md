@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Region
 
 Describes the region information. It inherits from [lang.ISendable](../../../../arkts-utils/arkts-sendable.md#isendable).

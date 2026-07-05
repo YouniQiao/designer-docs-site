@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Privilege (System API)
 
 Defines the privilege (permissions) on the shared data.

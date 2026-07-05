@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OffscreenCanvas
 
 The **OffscreenCanvas** component is used to draw custom graphics. When the [Canvas](Canvas) component or **CanvasRenderingContext2D** object is used, rendering, animation, and user interaction usually occur on the main thread of the application. Calculations related to canvas animation and rendering may affect application performance. **OffscreenCanvas** allows for rendering off the screen. This means that some tasks can be run in a separate thread to reduce the load on the main thread. > **NOTE** > > **OffscreenCanvas** cannot be used in ServiceExtensionAbility. It is recommended > that you use the > [drawing module](../../../../reference/apis-arkgraphics2d/arkts-apis-graphics-drawing.md) > for offscreen drawing in ServiceExtensionAbility.

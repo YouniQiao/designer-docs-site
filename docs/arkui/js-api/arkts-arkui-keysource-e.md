@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # KeySource
 
 Sets the device type that triggers the button event.

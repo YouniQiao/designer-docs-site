@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SplitLayout
 
 Declare SplitLayout.The SplitLayout is used for upper and lower graphic layouts.

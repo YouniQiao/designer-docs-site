@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - 头文件
     - [oh_display_manager.h](capi-oh-display-manager-h.md)
     - [oh_display_capture.h](capi-oh-display-capture-h.md)

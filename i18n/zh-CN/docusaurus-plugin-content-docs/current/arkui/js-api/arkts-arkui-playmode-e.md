@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PlayMode
 
 动画播放模式。

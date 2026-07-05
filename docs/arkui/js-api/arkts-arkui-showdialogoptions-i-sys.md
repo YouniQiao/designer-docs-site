@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ShowDialogOptions
 
 Describes the options for showing the dialog box.

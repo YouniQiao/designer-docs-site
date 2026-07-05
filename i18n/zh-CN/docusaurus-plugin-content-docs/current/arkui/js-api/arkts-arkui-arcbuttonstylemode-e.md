@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArcButtonStyleMode
 
 定义ArcButton可设置弧形按钮样式模式。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # minimizeAll (System API)
 
 ## Modules to Import

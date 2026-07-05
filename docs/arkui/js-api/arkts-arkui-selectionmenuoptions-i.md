@@ -1,163 +1,116 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SelectionMenuOptions
 
-Defines the configuration options of the **SelectionMenu** component.
+Sets menu options.
 
-**Since:** 11
-
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
-
-## Modules to Import
-
-```TypeScript
-import { EditorMenuOptions, SelectionMenuOptions, EditorEventInfo, SelectionMenu, ExpandedMenuOptions } from '@ohos.arkui.advanced.SelectionMenu';
-```
-
-## backgroundSystemMaterial
-
-```TypeScript
-backgroundSystemMaterial?: uiMaterial.Material
-```
-
-Set system-styled materials for the component. Different materials have different effects, which can influence the backgroundColor, border, shadow, and other visual attributes.
-
-**Type:** uiMaterial.Material
-
-**Since:** 26.0.0
-
-**Model restriction:** This API can be used only in the stage model.
-
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Since:** 10
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## controller
+## menuType
 
 ```TypeScript
-controller?: RichEditorController
+menuType?: MenuType
 ```
 
-Expanded drop-down menu options. If this parameter is left empty, the expanded drop-down menu is not displayed. The options configured for **ExpandedMenuOptions** are displayed in the **More** menu option, and clicking **More** shows the expanded drop-down menu.
+Type of the custom context menu on selection. Default value: **MenuType.SELECTION_MENU**
 
-**Type:** RichEditorController
+**Type:** MenuType
 
-**Since:** 11
+**Since:** 13
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 13.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## editorMenuOptions
+## onAppear
 
 ```TypeScript
-editorMenuOptions?: Array<EditorMenuOptions>
+onAppear?: MenuOnAppearCallback
 ```
 
-Edit menu. If **editorMenuOptions** is not set, the edit menu is not displayed. When both **action** and **builder** in **EditorMenuOptions** are configured, clicking the edit icon will trigger both. By default, the context menu is not closed when the edit menu icon is clicked. You can configure **closeSelectionMenu** of **RichEditorController** in **action** to enable the menu to be closed.
+Callback invoked when the custom context menu on selection appears.
 
-**Type:** Array<EditorMenuOptions>
+**Type:** MenuOnAppearCallback
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## expandedMenuOptions
+## onDisappear
 
 ```TypeScript
-expandedMenuOptions?: Array<ExpandedMenuOptions>
+onDisappear?: Callback<void>
 ```
 
-Expanded drop-down menu options. If this parameter is left empty, the expanded drop-down menu is not displayed. The options configured for **ExpandedMenuOptions** are displayed in the **More** menu option, and clicking **More** shows the expanded drop-down menu.
+Callback invoked when the custom context menu on selection disappears.
 
-**Type:** Array<ExpandedMenuOptions>
+**Type:** Callback<void>
 
-**Since:** 11
+**Since:** 10
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## onCopy
+## onMenuHide
 
 ```TypeScript
-onCopy?: (event?: EditorEventInfo) => void
+onMenuHide?: MenuCallback
 ```
 
-Event callback to take the place of the preset copy menu option. It is effective only when the **controller** parameter is set and the preset menu is available. **NOTE** **event** indicates the returned information.
+Callback invoked when the custom context menu on selection is hidden.
 
-**Type:** (event?: EditorEventInfo) => void
+**Type:** MenuCallback
 
-**Since:** 11
+**Since:** 15
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 15.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## onCut
+## onMenuShow
 
 ```TypeScript
-onCut?: (event?: EditorEventInfo) => void
+onMenuShow?: MenuCallback
 ```
 
-Event callback to take the place of the preset cut menu option. It is effective only when the **controller** parameter is set and the preset menu is available. **NOTE** **event** indicates the returned information.
+Callback invoked when the custom context menu on selection is shown.
 
-**Type:** (event?: EditorEventInfo) => void
+**Type:** MenuCallback
 
-**Since:** 11
+**Since:** 15
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 15.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## onPaste
+## previewMenuOptions
 
 ```TypeScript
-onPaste?: (event?: EditorEventInfo) => void
+previewMenuOptions?: PreviewMenuOptions
 ```
 
-Event callback to take the place of the preset paste menu option. It is effective only when the **controller** parameter is set and the preset menu is available. **NOTE** **event** indicates the returned information.
+Options of the preview menu. This parameter is valid only in **RichEditor**.
 
-**Type:** (event?: EditorEventInfo) => void
+**Type:** PreviewMenuOptions
 
-**Since:** 11
+**Since:** 18
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 12.
-
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
-
-## onSelectAll
-
-```TypeScript
-onSelectAll?: (event?: EditorEventInfo) => void
-```
-
-Event callback to take the place of the preset select-all menu option. It is effective only when the **controller** parameter is set and the preset menu is available. **NOTE** **event** indicates the returned information.
-
-**Type:** (event?: EditorEventInfo) => void
-
-**Since:** 11
-
-**Model restriction:** This API can be used only in the stage model.
-
-**Atomic service API:** This API can be used in atomic services since API version 12.
+**Atomic service API:** This API can be used in atomic services since API version 18.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

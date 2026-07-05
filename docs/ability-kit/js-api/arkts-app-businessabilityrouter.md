@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.businessAbilityRouter
 
 This module is used to obtain business ability information of various applications installed on the current device.

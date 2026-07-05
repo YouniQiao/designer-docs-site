@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AgentSkill
 
 Represents a distinct capability or function that an agent can perform.

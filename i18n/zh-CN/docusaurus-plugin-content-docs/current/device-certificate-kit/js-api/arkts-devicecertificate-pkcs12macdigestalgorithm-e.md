@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Pkcs12MacDigestAlgorithm
 
 表示PKCS12 MAC摘要算法枚举。

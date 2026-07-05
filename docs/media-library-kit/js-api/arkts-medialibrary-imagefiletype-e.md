@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageFileType
 
 Enumerates the types of image files to save.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DistributedHardwareErrorCode (System API)
 
 Enumerates the error codes used for the distributed hardware.

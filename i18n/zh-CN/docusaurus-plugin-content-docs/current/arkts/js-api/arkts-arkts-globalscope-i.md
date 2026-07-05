@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GlobalScope
 
 Worker线程自身的运行环境，GlobalScope类继承WorkerEventTarget。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GridDirection
 
 主轴布局方向枚举。

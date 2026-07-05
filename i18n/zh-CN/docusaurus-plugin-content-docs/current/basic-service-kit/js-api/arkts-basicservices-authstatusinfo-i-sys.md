@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthStatusInfo（系统接口）
 
 表示认证状态信息。

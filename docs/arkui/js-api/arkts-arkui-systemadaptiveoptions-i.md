@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemAdaptiveOptions
 
 Provides parameters for system adaptive adjustments. By default, the system performs adaptive adjustments based on chip performance.

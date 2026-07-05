@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.usbManager
 
 The **usbManager** module provides USB device management functions, including USB device list query, bulk data transfer, control transfer, and permission control on the host side as well as USB interface management, and function switch and query on the device side. > **NOTE** > > Perform the following steps when using the APIs with the [usbManager.USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md#usbdevicepipe) parameter: > **Before use**: > 1. Call [usbManager.getDevices](arkts-basicservices-getdevices-f.md#getdevices-1) to obtain the USB device list. > 2. Call [usbManager.requestRight](arkts-basicservices-requestright-f.md#requestright-1) to request the temporary device access permission. > 3. Call [usbManager.connectDevice](arkts-basicservices-connectdevice-f.md#connectdevice-1) to obtain [usbManager.USBDevicePipe](arkts-basicservices-usbdevicepipe-i.md#usbdevicepipe) as an input parameter. > **After use**: > Call [usbManager.closePipe](usbManager.closePipe(USBDevicePipe: pipe)) to close a USB device pipe. >

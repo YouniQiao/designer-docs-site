@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVScreenCaptureRecordPreset
 
 Enumerates the encoding and container formats used during screen capture.

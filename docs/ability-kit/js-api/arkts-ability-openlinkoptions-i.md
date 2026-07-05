@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OpenLinkOptions
 
 **OpenLinkOptions** can be used as an input parameter of [openLink()](arkts-ability-uiabilitycontext-c.md#openlink-1) to indicate whether to enable only App Linking and pass in optional parameters in the form of key-value pairs.

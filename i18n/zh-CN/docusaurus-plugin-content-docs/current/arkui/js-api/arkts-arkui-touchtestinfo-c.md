@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TouchTestInfo
 
 当前屏幕触点所在组件的坐标系、id和尺寸相关信息。

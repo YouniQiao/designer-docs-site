@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationReminderInfo（系统接口）
 
 描述指定应用提醒方式信息。

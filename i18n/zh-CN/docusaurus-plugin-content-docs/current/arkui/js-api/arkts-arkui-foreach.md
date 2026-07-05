@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ForEach
 
 ForEach接口基于数组类型数据来进行循环渲染。 > **说明：** 开发者指南见：[ForEach开发者指南](docroot://ui/rendering-control/arkts-rendering-control-foreach.md)。

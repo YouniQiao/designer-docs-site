@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - Header file
     - [telephony_data.h](capi-telephony-data-h.md)
     - [telephony_radio_type.h](capi-telephony-radio-type-h.md)

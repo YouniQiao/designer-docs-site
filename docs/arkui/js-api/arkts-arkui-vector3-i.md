@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Vector3
 
 Represents a vector including three values: x, y, and z.

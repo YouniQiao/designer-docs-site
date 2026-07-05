@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StatusBarProperty
 
 Describes the properties of the status bar. These properties are returned when you query the status bar's configuration details.

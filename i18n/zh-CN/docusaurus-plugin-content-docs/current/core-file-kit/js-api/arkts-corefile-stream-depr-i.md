@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Stream
 
 文件流，在调用Stream的方法前，需要先通过createStream()方法（同步或异步）来构建一个Stream实例。

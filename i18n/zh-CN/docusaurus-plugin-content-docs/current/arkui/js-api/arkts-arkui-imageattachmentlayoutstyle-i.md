@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageAttachmentLayoutStyle
 
 定义图片布局样式。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FolderStack properties/events
 
 In addition to the [universal events](arkts-arkui-commonmethod-c.md#commonmethod), the following events are supported.

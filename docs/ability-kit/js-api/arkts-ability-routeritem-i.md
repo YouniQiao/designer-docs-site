@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RouterItem
 
 Describes the router table configuration of the module.

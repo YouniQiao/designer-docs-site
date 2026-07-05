@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.graphics.colorSpaceManager
 
 The **colorSpaceManager** module provides APIs for creating and managing color space objects and obtaining basic color space attributes.

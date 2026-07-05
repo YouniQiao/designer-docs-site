@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CsrGenerationConfig
 
 RSA私钥生成CSR时的配置参数，包含主体、扩展、摘要算法、输出格式等。 > **说明：** > > - subject是X509定义的Name类型的对象。 > > - mdName是摘要算法名，当前支持SHA1、SHA256、SHA384、SHA512。 > > - attributes是可选参数，指定**PKCS #9**中规定的扩展类型跟扩展值生成CSR。例如challengePassword。 > > - outFormat指定输出CSR的格式，若不指定默认为PEM格式。

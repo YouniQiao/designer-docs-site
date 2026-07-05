@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnscreenAwarenessInfo (System API)
 
 Returns the list of onscreen awareness information.

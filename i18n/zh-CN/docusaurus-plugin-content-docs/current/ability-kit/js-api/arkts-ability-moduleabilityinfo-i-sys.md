@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ModuleAbilityInfo（系统接口）
 
 module包含的ability组件信息。

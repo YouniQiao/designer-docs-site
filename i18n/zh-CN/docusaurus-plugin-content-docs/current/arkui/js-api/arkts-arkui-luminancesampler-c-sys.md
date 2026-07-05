@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LuminanceSampler（系统接口）
 
 设置背景亮度取色参数、注册亮度变化监听回调、取消注册监听回调。 > **说明：** > > 以下API需先使用UIContext中的[getLuminanceSampler](arkts-arkui-uicontext-c-sys.md#getluminancesampler-1)方法获取到LuminanceSampler对象，再通过该对象调用对应方法。

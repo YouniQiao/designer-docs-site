@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DocumentViewPicker
 
 文件选择器对象，用来支撑选择和保存各种格式文档。在使用前，需要先创建DocumentViewPicker实例。

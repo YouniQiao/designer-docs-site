@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FullScreenEnterEvent
 
 Provides details about the event that the **Web** component to enter the full-screen mode.

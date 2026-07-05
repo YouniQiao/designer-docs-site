@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataBlob
 
 Encapsulates binary data. The core field **data** is of the Uint8Array type.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReminderRequestAlarm
 
 ReminderRequestAlarm extends ReminderRequest 闹钟实例对象，用于设置提醒的时间。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MaximizePresentation
 
 窗口最大化时的布局枚举。

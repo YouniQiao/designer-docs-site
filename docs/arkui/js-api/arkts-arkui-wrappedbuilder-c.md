@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WrappedBuilder
 
 The WrappedBuilder object is also a template class.

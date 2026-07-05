@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureGroupHandler
 
 手势组处理器对象类型。

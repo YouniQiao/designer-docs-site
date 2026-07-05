@@ -1,61 +1,84 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ItemState
 
-Declare enum ItemState
+Display status of **nextLabel** in the stepper.
 
-**Since:** 18
+**Since:** 8
 
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
+**Deprecated since:** 22
 
-## ENABLE
-
-```TypeScript
-ENABLE = 1
-```
-
-Enable type.
-
-**Since:** 18
-
-**Model restriction:** This API can be used only in the stage model.
-
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Substitutes:** Swiper
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## DISABLE
+## Normal
 
 ```TypeScript
-DISABLE = 2
+Normal = 0
 ```
 
-Disable type.
+The button on the right is clickable and can navigate users to the next **StepperItem** when it is clicked. **NOTE** This API is supported since API version 8 and deprecated since API version 22. You are advised to use [index](SwiperAttribute#index) instead.
 
-**Since:** 18
+**Since:** 8
 
-**Model restriction:** This API can be used only in the stage model.
+**Deprecated since:** 22
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Substitutes:** index
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-## ACTIVATE
+## Disabled
 
 ```TypeScript
-ACTIVATE = 3
+Disabled = 1
 ```
 
-Activate type.
+The button on the right is disabled. **NOTE** This API is supported since API version 8 and deprecated since API version 22. You are advised to use [indicatorInteractive](SwiperAttribute#indicatorInteractive) instead.
 
-**Since:** 18
+**Since:** 8
 
-**Model restriction:** This API can be used only in the stage model.
+**Deprecated since:** 22
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Substitutes:** indicatorInteractive
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Waiting
+
+```TypeScript
+Waiting = 2
+```
+
+The button on the right is not displayed, and a progress bar is displayed instead. **NOTE** This API is supported since API version 8 and deprecated since API version 22. You are advised to use [Swiper](arkts-arkui-swiper.md) instead.
+
+**Since:** 8
+
+**Deprecated since:** 22
+
+**Substitutes:** Swiper
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
+
+**System capability:** SystemCapability.ArkUI.ArkUI.Full
+
+## Skip
+
+```TypeScript
+Skip = 3
+```
+
+The button on the right reads "Skip" by default. You can define the processing logic for this state in the **onSkip** callback of the stepper. **NOTE** This API is supported since API version 8 and deprecated since API version 22. You are advised to use [index](SwiperAttribute#index) instead.
+
+**Since:** 8
+
+**Deprecated since:** 22
+
+**Substitutes:** index
+
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 

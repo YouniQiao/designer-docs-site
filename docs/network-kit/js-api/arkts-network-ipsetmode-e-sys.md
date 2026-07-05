@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IPSetMode (System API)
 
 Defines the configuration mode of the Ethernet connection.

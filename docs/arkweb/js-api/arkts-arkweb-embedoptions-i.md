@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EmbedOptions
 
 Represents the same-layer rendering configuration of the **Web** component.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Random
 
 Random类，调用Random方法生成随机数。调用前，需要通过[createRandom](arkts-cryptoarchitecture-createrandom-f.md#createrandom-1)构造Random实例。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MemoryLevel
 
 Enumerates the memory levels of the entire device. You can use it in [onMemoryLevel()](arkts-ability-ability-c.md#onmemorylevel-1) of the UIAbility to complete different operations. > **NOTE** > > - The trigger conditions may differ across various devices. For example, on a standard device with 12 GB of > memory: > - When the available memory of the entire device drops to 1700 MB to 1800 MB, the **onMemoryLevel** callback > with a value of **0** is triggered, indicating that the available memory is moderate. > - When the available memory of the entire device drops to 1600 MB to 1700 MB, the **onMemoryLevel** callback > with a value of **1** is triggered, indicating that the available memory is low. > - When the available memory of the entire device drops below 1600 MB, the **onMemoryLevel** callback with a > value of **2** is triggered, indicating that the available memory is critically low.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeMediaPlayerConfig
 
 Represents the configuration for [enabling the application to take over web page media playback](web:WebAttribute.enableNativeMediaPlayer).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EulerAngles (System API)
 
 Absolute euler angles relative to the home position.

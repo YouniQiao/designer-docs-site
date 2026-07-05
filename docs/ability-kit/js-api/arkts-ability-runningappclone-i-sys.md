@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RunningAppClone (System API)
 
 The RunningAppClone module defines the information of an application clone in the running state.

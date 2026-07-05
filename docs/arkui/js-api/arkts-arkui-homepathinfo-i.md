@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HomePathInfo
 
 Defines the home page **NavDestination** information.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NumberMarkInfo (System API)
 
 Indicates the mark information of the phone number.

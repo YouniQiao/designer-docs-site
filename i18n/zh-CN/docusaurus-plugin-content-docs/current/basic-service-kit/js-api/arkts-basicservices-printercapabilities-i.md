@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrinterCapabilities
 
 定义打印机能力的接口。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EntityInfo（系统接口）
 
 EntityInfo继承自[IntentEntityDecoratorInfo](arkts-ability-intententitydecoratorinfo-i.md#intententitydecoratorinfo)， 用于描述 [@InsightIntentEntity](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintententity) 装饰器定义的意图实体的信息。

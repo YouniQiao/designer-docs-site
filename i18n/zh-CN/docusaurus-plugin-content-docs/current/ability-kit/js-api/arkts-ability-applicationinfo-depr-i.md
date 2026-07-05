@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ApplicationInfo
 
 应用程序信息，未做特殊说明的属性，均通过 [bundle.getApplicationInfo](arkts-ability-getapplicationinfo-f.md#getapplicationinfo-3) 获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-ApplicationInfo](arkts-ability-applicationinfo-depr-i.md#applicationinfo)替代。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PanelInfo (System API)
 
 Describes the properties of the word selection panel.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OcspDigest
 
 表示OCSP摘要算法的枚举。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GridColOptions
 
 Defines the options of the **GridCol** component. The values of `span`, `offset`, and `order` attributes are inherited in the sequence of **xs**, **sm**, **md**, **lg**, **xl**, and **xxl**. If no value is set for a breakpoint, the value is obtained from the previous breakpoint. Since API version 20, inheritance of the **span** property follows rules detailed in [GridColColumnOption](arkts-arkui-gridcolcolumnoption-i.md#gridcolcolumnoption).

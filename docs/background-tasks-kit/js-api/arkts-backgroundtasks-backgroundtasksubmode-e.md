@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BackgroundTaskSubmode
 
 Defines the subtype of a continuous task. It is usually used together with the main type [BackgroundTaskMode](arkts-backgroundtasks-backgroundtaskmode-e.md#backgroundtaskmode). For details, see the mapping table. The two types are newly added in API version 21 for requesting and updating continuous tasks.

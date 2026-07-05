@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavigationMenuItem
 
 Defines the navigation menu item, including the menu icon and menu information.

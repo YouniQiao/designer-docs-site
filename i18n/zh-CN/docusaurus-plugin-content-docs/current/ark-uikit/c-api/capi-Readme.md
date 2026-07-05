@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - 结构体
     - [ArkUI_Margin](capi-arkui-nativemodule-arkui-margin.md)
     - [ArkUI_WaterFlowSectionOption](capi-arkui-nativemodule-arkui-waterflowsectionoption.md)

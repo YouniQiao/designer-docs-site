@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureCollectIntervention
 
 定义手势和事件收集的干预操作类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReusableOptions
 
 定义组件复用类装饰器的选项。

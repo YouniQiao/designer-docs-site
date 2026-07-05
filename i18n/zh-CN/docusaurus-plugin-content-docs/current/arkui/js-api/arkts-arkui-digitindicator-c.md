@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DigitIndicator
 
 构造数字指示器的样式，继承自[Indicator](arkts-arkui-indicator-c.md#indicator)。 > **说明：** > 按组翻页时，数字导航点显示的子节点数量不包括占位节点。 > 数字导航点文本最大的字体缩放倍数[maxFontScale](TextAttribute#maxFontScale)为2。 > 页码的镜像显示依据为系统的RTL状态。

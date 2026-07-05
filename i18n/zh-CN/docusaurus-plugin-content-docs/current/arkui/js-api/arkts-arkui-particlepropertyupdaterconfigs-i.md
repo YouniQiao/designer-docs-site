@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ParticlePropertyUpdaterConfigs
 
 设置粒子属性更新器配置。

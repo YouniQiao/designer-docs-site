@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WakeupIntelligentVoiceEventType (System API)
 
 Enumerates wakeup intelligent voice event type.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RotationInfoType
 
 Enumerates the types of rotation information.

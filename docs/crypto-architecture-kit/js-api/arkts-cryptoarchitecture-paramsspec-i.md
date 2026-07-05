@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ParamsSpec
 
 Encapsulates the parameters used for encryption or decryption. You need to construct its child class object and pass it to [init()](arkts-cryptoarchitecture-cipher-i.md#init-4) for symmetric encryption or decryption. It applies to the symmetric block cipher modes that require parameters such as the initialization vector (IV). If the IV is not required (for example, the ECB mode), pass in **null** to [init()](arkts-cryptoarchitecture-cipher-i.md#init-4). > **NOTE** > > An initialization vector (IV) is a byte sequence used to introduce randomness or uniqueness in symmetric > encryption modes (such as CBC, CTR, OFB, CFB, GCM, CCM, and Poly1305). It ensures that different ciphertexts are > generated for the same plaintext under the same key. > **NOTE** > > The **params** parameter in > [init()](arkts-cryptoarchitecture-cipher-i.md#init-4) is of the > **ParamsSpec** type (parent class). However, a child class object (such as > [IvParamsSpec](arkts-cryptoarchitecture-ivparamsspec-i.md#ivparamsspec)) needs to be passed in. When constructing the child class > object, you must set **algName** for its parent class **ParamsSpec** to specify the child class object to be > passed to **init()**.

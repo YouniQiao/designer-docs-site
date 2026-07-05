@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SelectionInfo（系统接口）
 
 划词事件信息。

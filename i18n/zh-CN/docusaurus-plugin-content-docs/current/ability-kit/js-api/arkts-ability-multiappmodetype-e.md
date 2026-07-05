@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MultiAppModeType
 
 标识应用多开的模式类型。

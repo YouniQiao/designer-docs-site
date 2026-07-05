@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # setKeyboardRepeatRate（系统接口）
 
 ## setKeyboardRepeatRate

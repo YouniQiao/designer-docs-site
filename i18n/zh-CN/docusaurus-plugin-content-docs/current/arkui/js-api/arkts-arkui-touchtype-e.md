@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TouchType
 
 定义触摸操作的触发状态类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebSchemeHandlerRequest
 
 Defines the Web resource request used for scheme handler.

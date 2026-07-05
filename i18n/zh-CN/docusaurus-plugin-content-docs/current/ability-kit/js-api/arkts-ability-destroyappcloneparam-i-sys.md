@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DestroyAppCloneParam（系统接口）
 
 删除分身应用可指定的参数信息。

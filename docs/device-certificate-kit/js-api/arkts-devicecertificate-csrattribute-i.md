@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CsrAttribute
 
 Defines the CSR attribute representation. CSR attribute field. Currently, only character string attribute fields are supported. The attribute value added to the CSR is encoded in UTF-8 format. The common type is challengePassword.

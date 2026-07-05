@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextVerticalAlign
 
 Defines the vertical alignment mode of text. The default value is **BASELINE** (aligning along the baseline).

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FillRequest（系统接口）
 
 自动填充的填充请求。

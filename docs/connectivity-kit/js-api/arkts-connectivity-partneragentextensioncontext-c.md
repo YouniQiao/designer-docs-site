@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PartnerAgentExtensionContext
 
 Class for the context of the PartnerAgentExtensionAbility.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsGeneratorOptions
 
 Represents the configuration for generating the CMS signing result.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextShadowStyle
 
 文本阴影对象说明。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ControlTypeValue (System API)
 
 Describes the control type value.

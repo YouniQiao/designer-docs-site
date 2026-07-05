@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ServerResponse
 
 Describes the parameters of a response send by the server to a specified read or write request.

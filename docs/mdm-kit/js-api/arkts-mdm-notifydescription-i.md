@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotifyDescription
 
 Represents the update notification defined by an enterprise.

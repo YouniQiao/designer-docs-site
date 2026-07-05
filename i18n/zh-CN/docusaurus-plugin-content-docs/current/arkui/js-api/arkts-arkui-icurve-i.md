@@ -1,11 +1,6 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ICurve
 
-曲线对象，支持通过本模块中的[curves.cubicBezierCurve](arkts-arkui-cubicbeziercurve-f.md#cubicbeziercurve-1)、 [curves.interpolatingSpring](arkts-arkui-interpolatingspring-f.md#interpolatingspring-1)等方法创建不同类型的曲线对象，并可通过曲线对象调用其 [interpolate](arkts-arkui-icurve-i.md#interpolate-1)的成员方法。
+曲线对象。
 
 **起始版本：** 9
 
@@ -23,6 +18,8 @@ interpolate(fraction : number) : number
 
 **元服务API：** 从API版本11开始，该接口支持在元服务API中使用。
 
+**卡片能力：** 从API版本9开始，该接口支持在ArkTS卡片中使用。
+
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 **参数：**
@@ -36,13 +33,4 @@ interpolate(fraction : number) : number
 | 类型 | 说明 |
 | --- | --- |
 | number | 返回归一化time时间点对应的曲线插值。 |
-
-**示例：**
-
-```TypeScript
-import { curves } from '@kit.ArkUI'
-let curveValue = curves.initCurve(Curve.EaseIn) // 创建一个默认先慢后快插值曲线
-let value: number = curveValue.interpolate(0.5) // 计算得到时间到一半时的插值
-
-```
 

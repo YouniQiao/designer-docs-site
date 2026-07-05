@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnFirstContentfulPaintEvent
 
 Represents the callback invoked when the first content paint occurs on the web page.

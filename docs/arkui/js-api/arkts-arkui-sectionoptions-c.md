@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SectionOptions
 
 Describes the configuration of the water flow item section.

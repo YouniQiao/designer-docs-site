@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InsightIntentContext
 
 本模块提供意图执行上下文，是[意图执行基类](arkts-ability-insightintentexecutor-c.md#insightintentexecutor)和 [@InsightIntentEntry的意图执行基类](arkts-ability-insightintententryexecutor-c.md#insightintententryexecutor)的属性，为意图执行提 供基础能力，例如启动本应用内的[UIAbility组件](arkts-app-ability-uiability.md)。

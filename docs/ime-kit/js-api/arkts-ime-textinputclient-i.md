@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextInputClient
 
 In the following API examples, you must first use [on('inputStart')](inputMethodEngine.InputMethodEngine.on(type: 'inputStart', callback: (kbController: KeyboardController, textInputClient: TextInputClient) => void): void;) to obtain a **TextInputClient** instance, and then call the APIs using the obtained instance.

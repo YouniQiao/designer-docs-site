@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GridLayoutAlgorithmOptions
 
 Sets the number of columns, column spacing, and row spacing of the grid layout algorithm.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PointParticleParameters
 
 设置粒子半径。

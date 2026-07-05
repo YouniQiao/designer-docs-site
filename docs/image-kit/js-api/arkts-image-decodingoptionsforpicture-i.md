@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DecodingOptionsForPicture
 
 Describes the image decoding options.

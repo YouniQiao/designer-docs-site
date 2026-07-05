@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MouseEventData（系统接口）
 
 鼠标注入描述信息。

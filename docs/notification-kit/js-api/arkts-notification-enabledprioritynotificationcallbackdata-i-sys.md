@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EnabledPriorityNotificationCallbackData (System API)
 
 Callback used to return the result.

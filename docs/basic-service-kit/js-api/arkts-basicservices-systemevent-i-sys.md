@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemEvent (System API)
 
 Indicates the system event type and parameter related to the screenlock management service.

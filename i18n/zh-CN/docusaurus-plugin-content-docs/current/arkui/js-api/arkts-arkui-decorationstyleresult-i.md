@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DecorationStyleResult
 
 后端返回的文本装饰线样式信息。

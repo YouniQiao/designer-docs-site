@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksKeyStorageType
 
 表示密钥存储方式。

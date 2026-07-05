@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.cli.cliManager
 
 The module provides the capability to interact with cli tools in the system.

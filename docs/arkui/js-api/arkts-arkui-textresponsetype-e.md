@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextResponseType
 
 Response type of the menu. > **NOTE** > > The system follows the priority order below when determining the menu type to display during text interactions: >

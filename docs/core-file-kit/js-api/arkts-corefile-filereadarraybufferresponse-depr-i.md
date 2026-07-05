@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FileReadArrayBufferResponse
 
 Returns the file read, including the file content.

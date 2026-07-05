@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageData
 
 An **ImageData** object stores pixel data rendered on a canvas. > **NOTE** > > A constructor used to create an **ImageData** object. To ensure successful drawing, > make sure the object's area does not exceed 16000 x 16000, with its width and height > not greater than 16384 px. If the created area exceeds 536870911 px, the returned > width and height are both 0 px, and **data** is **undefined**.

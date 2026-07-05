@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Priority
 
 表示发送消息时的优先级枚举，各优先级对应关系请参考EventHandler等级定义。

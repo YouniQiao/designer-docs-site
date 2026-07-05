@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebContextMenuParam
 
 定义上下文菜单参数，关联{@link WebContextMenuParam}方法。

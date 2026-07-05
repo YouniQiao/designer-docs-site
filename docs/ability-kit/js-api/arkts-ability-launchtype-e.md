@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LaunchType
 
 Enumerates the [launch types](../../../../application-models/uiability-launch-type.md) of the UIAbility.

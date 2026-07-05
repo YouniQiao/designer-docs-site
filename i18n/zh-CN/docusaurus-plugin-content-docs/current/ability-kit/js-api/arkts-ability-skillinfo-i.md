@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SkillInfo
 
 提供Skill的相关信息。Skill是一个可安装的能力单位，可以被发现并由Agent框架调用。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResultCode
 
 Enumerates the result codes of the request for the modal dialog box.

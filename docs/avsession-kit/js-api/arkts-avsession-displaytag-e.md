@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DisplayTag
 
 The pre-defined display tag by system.

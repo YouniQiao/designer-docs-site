@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextPickerOptions
 
 Defines the configuration options of the text picker.

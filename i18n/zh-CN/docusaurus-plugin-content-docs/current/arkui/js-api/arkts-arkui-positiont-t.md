@@ -1,15 +1,10 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PositionT
 
 ```TypeScript
-export type PositionT<T> = Vector2T<T>
+declare type PositionT<T> = import('../api/arkui/Graphics').PositionT<T>
 ```
 
-用于设置或返回组件的位置。
+Defines the PositionT type.
 
 **起始版本：** 12
 
@@ -19,5 +14,5 @@ export type PositionT<T> = Vector2T<T>
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
-**属性类型：** Vector2T<T>
+**属性类型：** import('../api/arkui/Graphics').PositionT<T>
 

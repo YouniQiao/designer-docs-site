@@ -1,17 +1,14 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnContentScrollCallback
 
 ```TypeScript
 declare type OnContentScrollCallback = (totalOffsetX: number, totalOffsetY: number) => void
 ```
 
-Callback when the content in the search box scrolls.
+Defines the callback for text content scrolling.
 
 **Since:** 18
+
+**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
@@ -21,6 +18,6 @@ Callback when the content in the search box scrolls.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| totalOffsetX | number | Yes | Indicates horizontal coordinate offset of the text in the content area, in px. |
-| totalOffsetY | number | Yes | Indicates the vertical coordinate offset of the text in the content area, in px. |
+| totalOffsetX | number | Yes | Offset in the X coordinate of the text in the content area, in px. |
+| totalOffsetY | number | Yes | Offset in the Y coordinate of the text in the content area, in px. |
 

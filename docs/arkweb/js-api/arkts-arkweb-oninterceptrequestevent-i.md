@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnInterceptRequestEvent
 
 Defines the triggered callback when the resources loading is intercepted.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CacheCountInfo
 
 定义缓存计数信息。

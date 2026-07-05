@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CalendarPickerDialog
 
 点击日期弹出日历选择器弹窗，可在弹窗内选择日期。

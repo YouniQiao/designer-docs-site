@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbilityFlag (System API)
 
 Enumerates the ability flags, which indicate the type of ability information to obtain.

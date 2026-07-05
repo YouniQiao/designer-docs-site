@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CallableFunction
 
 **Inheritance/Implementation:** CallableFunction extends [Function](arkts-na-function-i.md#function)

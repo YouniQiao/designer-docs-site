@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationMultiLineContent
 
 描述多行文本通知。继承自[NotificationBasicContent](arkts-notification-notificationbasiccontent-i.md#notificationbasiccontent)。 > **说明：** > > - 当该类型通知与其他通知形成组通知时，该通知显示默认与[普通文本](arkts-notification-notificationbasiccontent-i.md#notificationbasiccontent)相同。展开组通知后，标题显示为展开时的标题`longTitle`，多行文本内容`lines`多行显 > 示。 当该类型通知单独呈现时，该通知标题显示为展开时的标题`longTitle`，多行文本内容`lines`多行显示。 > - 实际显示效果依赖于设备能力和通知中心UI样式。

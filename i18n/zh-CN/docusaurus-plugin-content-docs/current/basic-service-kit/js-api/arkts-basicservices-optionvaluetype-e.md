@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OptionValueType
 
 定义选项值类型的枚举。

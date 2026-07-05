@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AgentProvider
 
 Represents the service provider of an agent.

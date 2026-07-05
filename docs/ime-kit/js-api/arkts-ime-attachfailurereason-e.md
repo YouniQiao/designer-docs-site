@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AttachFailureReason
 
 Enumerates the specific reasons for attachment failure

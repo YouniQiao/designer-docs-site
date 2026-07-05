@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EllipseShape
 
 用于clipShape和maskShape接口的椭圆形状。 继承自[BaseShape](arkts-arkui-baseshape-c.md#baseshape)。

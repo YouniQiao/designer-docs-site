@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnBodyStateResponse
 
 Specifies whether the device that houses the sensor is worn.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MetaSourceType (System API)
 
 Enumerates meta source type for recorder.

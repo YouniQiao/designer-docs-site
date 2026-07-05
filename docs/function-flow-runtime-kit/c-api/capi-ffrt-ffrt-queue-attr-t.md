@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ffrt_queue_attr_t
 
 ```c

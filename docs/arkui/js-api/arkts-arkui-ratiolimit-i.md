@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RatioLimit
 
 Provides the aspect ratio range of the float view. The aspect ratio is obtained by dividing the width of the rectangular area of the window by its height.

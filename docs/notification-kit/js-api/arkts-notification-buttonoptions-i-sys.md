@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ButtonOptions (System API)
 
 Provides the button information of the notification.

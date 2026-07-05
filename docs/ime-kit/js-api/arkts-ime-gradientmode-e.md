@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GradientMode
 
 Enumerates the gradient modes of the input method.

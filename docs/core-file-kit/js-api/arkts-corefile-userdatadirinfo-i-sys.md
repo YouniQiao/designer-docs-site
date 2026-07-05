@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserdataDirInfo (System API)
 
 Details the space usage of the **\/data** directory on the user device.

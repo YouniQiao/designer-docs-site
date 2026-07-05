@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # JsMessageType
 
 Enum type supplied to {@link runJavaScriptExt} for indicating the result of JavaScript code execution.

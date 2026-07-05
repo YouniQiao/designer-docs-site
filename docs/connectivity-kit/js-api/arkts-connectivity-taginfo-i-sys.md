@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TagInfo
 
 Provides tag information. <p>This class provides the technology a tag supports, for example, NFC-A. Applications can create different tags based on the supported technology.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowSize
 
 描述窗口尺寸。 **原子化服务API：** 从API version 11开始，该接口支持在原子化服务中使用。

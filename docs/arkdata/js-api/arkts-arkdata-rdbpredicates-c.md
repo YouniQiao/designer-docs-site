@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RdbPredicates
 
 Defines the predicates for an RDB store. This class determines whether the conditional expression for the RDB store is true or false. Multiple predicates statements can be concatenated by using **and()** by default. **RdbPredicates** cannot be passed across threads using Sendable.

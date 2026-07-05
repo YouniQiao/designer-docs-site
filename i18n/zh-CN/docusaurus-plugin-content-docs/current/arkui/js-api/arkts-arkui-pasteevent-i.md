@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PasteEvent
 
 定义用户粘贴事件。

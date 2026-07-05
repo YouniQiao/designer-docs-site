@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Constants
 
 ## CAPTURE_MODE_FRONT_LENS_NIGHT_VIEW

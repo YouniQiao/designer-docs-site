@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BusinessAbilityFilter (System API)
 
 This filter value is used to filter business ability info

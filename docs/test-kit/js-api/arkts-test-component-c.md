@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Component
 
 Represents a component on the UI and provides APIs for obtaining component attributes, clicking a component, scrolling to search for a component, and text injection. All APIs provided in this class use a promise to return the result and must be invoked using **await**.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnInterceptRequestEvent
 
 定义当Web组件加载url之前触发。

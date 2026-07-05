@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WantAgentInfo
 
 Defines the information required for triggering a WantAgent object. The information can be used as an input parameter in [getWantAgent](../../../../reference/apis-ability-kit/js-apis-app-ability-wantAgent.md#wantagentgetwantagent) to obtain a specified WantAgent object.

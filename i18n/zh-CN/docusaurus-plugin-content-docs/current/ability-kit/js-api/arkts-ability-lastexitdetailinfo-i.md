@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LastExitDetailInfo
 
 记录Ability所在进程上次退出时的关键运行信息。

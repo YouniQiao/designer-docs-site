@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.enterprise.usbManager
 
 The **usbManager** module provides APIs for USB management. > **NOTE** > > The APIs of this module can be used only in the stage model. > > The APIs of this module can be called only by a device administrator application that is enabled. For details, see > [MDM Kit Development](../../../../mdm/mdm-kit-guide.md). > > The global restriction policy is provided by **restrictions**. To disable USB globally, see > [@ohos.enterprise.restrictions (restriction policy)](arkts-enterprise-restrictions.md#restrictions).

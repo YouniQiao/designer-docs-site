@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SslError
 
 Enum type supplied to {@link error} when onSslErrorEventReceive being called.

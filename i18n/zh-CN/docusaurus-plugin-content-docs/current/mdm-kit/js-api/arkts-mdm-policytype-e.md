@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PolicyType
 
 升级策略类型枚举。

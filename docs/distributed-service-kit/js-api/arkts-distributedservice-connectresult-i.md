@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ConnectResult
 
 Represents the connection result, which is returned after the client calls **connect()**.

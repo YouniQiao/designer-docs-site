@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ClearOptions（系统接口）
 
 清除异常选项。

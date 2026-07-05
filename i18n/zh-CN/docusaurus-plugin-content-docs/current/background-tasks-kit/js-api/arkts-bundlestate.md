@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.bundleState
 
 本模块提供设备使用信息统计能力。

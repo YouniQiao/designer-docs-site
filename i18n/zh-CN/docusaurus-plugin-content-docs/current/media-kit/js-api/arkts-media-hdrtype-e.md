@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HdrType
 
 表示视频HDR类型的枚举。

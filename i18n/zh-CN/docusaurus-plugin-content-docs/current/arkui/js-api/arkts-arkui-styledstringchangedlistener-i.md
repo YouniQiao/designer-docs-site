@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StyledStringChangedListener
 
 属性字符串的文本内容变化监听器。

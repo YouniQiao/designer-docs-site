@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoStartupInfo（系统接口）
 
 定义开机自启动应用组件信息。

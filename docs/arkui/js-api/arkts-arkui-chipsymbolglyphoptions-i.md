@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipSymbolGlyphOptions
 
 Defines the prefix and suffix icon options. > **NOTE** > > The animation type cannot be modified via > [SymbolEffect](SymbolGlyphAttribute#symbolEffect(symbolEffect: SymbolEffect, isActive?: boolean)) and > animations cannot be set via **effectStrategy**.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LazyForEachReleaseStrategy
 
 资源释放策略枚举，用于配置LazyForEach待销毁节点的资源释放策略。

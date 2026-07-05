@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # USBDeviceRequestParams
 
 控制传输参数。

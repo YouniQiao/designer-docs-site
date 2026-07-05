@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BreakIterator
 
 Provides text line breaking capabilities, such as obtaining, moving, and identifying break points.

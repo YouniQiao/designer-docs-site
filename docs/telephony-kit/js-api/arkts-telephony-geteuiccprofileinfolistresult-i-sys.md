@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GetEuiccProfileInfoListResult (System API)
 
 Result of all eUICC profile information.

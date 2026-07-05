@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OffsetResult
 
 Represents the offset values resulting from a scroll operation.

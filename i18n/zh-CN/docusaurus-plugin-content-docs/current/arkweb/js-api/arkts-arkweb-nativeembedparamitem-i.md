@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NativeEmbedParamItem
 
 提供同层渲染object标签内嵌param元素的详细信息。

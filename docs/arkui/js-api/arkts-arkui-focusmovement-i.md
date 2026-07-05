@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FocusMovement
 
 Sets the target component for focus movement based on key presses. If it is not specified, the default focus movement logic applies. > **NOTE** > > Directly using **focusControl** can lead to the issue of > [ambiguous UI context](../../../../ui/arkts-global-interface.md#ambiguous-ui-context). To avoid this, obtain the > [UIContext](../arkts-apis/arkts-arkui-uicontext-c.md#uicontext) object using the **getUIContext()** API and then obtain the > **focusControl** bound to the instance using the > [getFocusController](../arkts-apis/arkts-arkui-uicontext-c.md#getfocuscontroller-1) API.

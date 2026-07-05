@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CounterV2Type
 
 Enum for the CounterV2 type.

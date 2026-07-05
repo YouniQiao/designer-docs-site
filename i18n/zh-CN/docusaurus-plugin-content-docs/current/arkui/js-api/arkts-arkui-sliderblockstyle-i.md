@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SliderBlockStyle
 
 Slider组件滑块形状参数。

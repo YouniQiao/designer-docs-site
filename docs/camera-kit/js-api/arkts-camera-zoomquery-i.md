@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ZoomQuery
 
 Provides the API to obtain the equivalent focal length information list in the current mode.

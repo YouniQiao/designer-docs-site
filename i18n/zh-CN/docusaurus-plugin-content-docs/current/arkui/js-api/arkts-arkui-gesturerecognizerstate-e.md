@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureRecognizerState
 
 定义手势识别器状态。

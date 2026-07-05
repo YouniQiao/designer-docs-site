@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StrongAssociationType (System API)
 
 Enumerates the flags of cloud-based enhancements for photos and videos.

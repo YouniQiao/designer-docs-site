@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReadableOptions
 
 描述**Readable**构造函数中使用的选项。

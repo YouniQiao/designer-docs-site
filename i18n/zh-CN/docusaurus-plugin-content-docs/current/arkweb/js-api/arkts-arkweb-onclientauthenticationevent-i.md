@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnClientAuthenticationEvent
 
 定义当需要用户提供SSL客户端证书时触发回调。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LineTypeset
 
 保存着文本内容以及样式的载体，可以用于计算单行排版信息。 下列API示例中都需先使用[ParagraphBuilder](arkts-arkgraphics2d-paragraphbuilder-c.md#paragraphbuilder)类的 [buildLineTypeset()](arkts-arkgraphics2d-paragraphbuilder-c.md#buildlinetypeset-1)接口获取到LineTypeset对象实例，再通过此实例调用对应方法。

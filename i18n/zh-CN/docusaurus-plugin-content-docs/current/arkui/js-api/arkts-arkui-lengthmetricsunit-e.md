@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LengthMetricsUnit
 
 长度属性单位枚举。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DLPPermissionInfo
 
 Represents the permission information about a DLP file.

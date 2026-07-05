@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatViewProperties
 
 标准悬浮窗窗口的属性。

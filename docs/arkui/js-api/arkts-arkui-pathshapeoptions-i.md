@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PathShapeOptions
 
 Represents the parameter of the constructor used to create a **PathShape** object.

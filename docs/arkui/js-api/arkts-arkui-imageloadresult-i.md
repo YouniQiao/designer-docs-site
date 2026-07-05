@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageLoadResult
 
 Describes the object returned after the callback is triggered when an image is successfully loaded or decoded.

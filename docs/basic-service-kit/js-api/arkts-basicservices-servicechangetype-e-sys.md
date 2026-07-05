@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ServiceChangeType (System API)
 
 Enumerates service change type.

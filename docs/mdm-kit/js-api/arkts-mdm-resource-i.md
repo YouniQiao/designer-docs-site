@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Resource
 
 Describes application resource information, including the bundle name, module name, and resource ID.

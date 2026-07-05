@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 - 头文件
     - [native_interface_arkweb.h](capi-native-interface-arkweb-h.md)
 - 模块

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EnrolledState
 
 Represents the state of a credential enrolled.

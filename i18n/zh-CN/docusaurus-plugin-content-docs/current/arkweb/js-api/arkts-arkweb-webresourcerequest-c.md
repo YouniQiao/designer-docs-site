@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebResourceRequest
 
 Encompassed message information as parameters to {@link onConsole} method.

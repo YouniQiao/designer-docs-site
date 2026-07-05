@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.file.hash
 
 The **FileHash** module implements hash processing on files.

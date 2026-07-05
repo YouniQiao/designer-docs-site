@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HeapMemoryInfo
 
 Describes heap memory information of either an ArkTS-VM, or the shared heap memory of current process.

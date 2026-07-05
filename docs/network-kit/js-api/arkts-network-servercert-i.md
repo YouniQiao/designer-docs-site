@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ServerCert
 
 The serverCert field of the server certificate, which includes two attributes: File paths of server certificate (certPath) and certificate private key (keyPath). Only support PEM format.

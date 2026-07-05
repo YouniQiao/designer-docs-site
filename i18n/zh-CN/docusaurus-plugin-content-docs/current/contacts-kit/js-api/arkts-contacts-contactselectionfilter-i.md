@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContactSelectionFilter
 
 联系人查询过滤器。

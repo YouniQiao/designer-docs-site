@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Queue
 
 Queue follows the principle of First In First Out (FIFO). It supports insertion of elements at the end and removal from the front of the queue. Queue is implemented based on the queue data structure.

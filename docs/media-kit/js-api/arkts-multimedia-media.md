@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimedia.media
 
 The multimedia subsystem provides a set of simple and easy-to-use APIs for you to access the system and use media resources.

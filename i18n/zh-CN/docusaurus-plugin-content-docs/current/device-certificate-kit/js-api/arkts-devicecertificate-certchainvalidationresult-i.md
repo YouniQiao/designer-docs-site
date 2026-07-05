@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CertChainValidationResult
 
 表示证书链校验的返回值。

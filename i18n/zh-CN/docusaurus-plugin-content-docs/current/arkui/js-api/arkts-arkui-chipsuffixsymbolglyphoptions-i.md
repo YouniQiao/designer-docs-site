@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipSuffixSymbolGlyphOptions
 
 symbol类型后缀图标属性的无障碍朗读功能属性类型。

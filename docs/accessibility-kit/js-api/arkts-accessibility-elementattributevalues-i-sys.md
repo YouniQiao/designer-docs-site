@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ElementAttributeValues
 
 Provides attribute names and value types of a node element.

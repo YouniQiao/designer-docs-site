@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatingTabBarStyle
 
 提供浮动条模式选项的接口。

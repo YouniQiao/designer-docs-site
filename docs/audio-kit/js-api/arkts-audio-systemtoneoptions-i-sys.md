@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SystemToneOptions (System API)
 
 Describes the options of system tones.

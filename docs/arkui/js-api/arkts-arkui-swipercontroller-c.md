@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperController
 
 Implements the controller for the **Swiper** component. Bind this object to a **Swiper** component to control page turning and other functionalities.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GainmapChannel
 
 Describes the data content of a single channel of the gain map. For details, see ISO 21496-1.

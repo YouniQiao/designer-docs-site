@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CaptionsManager
 
 Implements configuration management for captions. Before calling any API of **CaptionsManager**, you must use the [accessibility.getCaptionsManager()](arkts-accessibility-getcaptionsmanager-f.md#getcaptionsmanager-1) API to obtain a **CaptionsManager** instance.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LabelMarginOptions
 
 LabelMarginOptions用于定义文本与左右侧图标之间间距。

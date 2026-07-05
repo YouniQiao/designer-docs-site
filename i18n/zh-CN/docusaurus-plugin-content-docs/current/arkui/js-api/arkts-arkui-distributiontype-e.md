@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DistributionType
 
 初始颜色随机值分布类型。

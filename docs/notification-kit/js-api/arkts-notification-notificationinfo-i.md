@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationInfo
 
 The **NotificationInfo** module describes the notification information delivered to the [onReceiveMessage](arkts-notification-notificationsubscriberextensionability-c.md#onreceivemessage-1) callback of ExtensionAbility for notification subscriptions.

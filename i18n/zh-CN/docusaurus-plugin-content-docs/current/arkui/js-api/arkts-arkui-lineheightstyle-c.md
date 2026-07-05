@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LineHeightStyle
 
 文本行高对象说明。

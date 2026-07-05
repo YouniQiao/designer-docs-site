@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SetPropertiesOptions
 
 表示用于设置属性的选项。

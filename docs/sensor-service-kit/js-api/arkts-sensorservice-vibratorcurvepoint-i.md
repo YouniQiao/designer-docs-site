@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VibratorCurvePoint
 
 Defines the gain relative to the vibration intensity.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CreateAccountImplicitlyOptions
 
 表示隐式创建账号的选项。

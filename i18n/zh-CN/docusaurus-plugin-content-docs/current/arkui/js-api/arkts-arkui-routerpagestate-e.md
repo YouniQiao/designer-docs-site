@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RouterPageState
 
 routerPage生命周期触发时对应的状态。RouterPageState用于[RouterPageInfo](arkts-arkui-routerpageinfo-c.md#routerpageinfo)中，作为 [routerPageUpdate](arkts-arkui-on-f.md#on-5)无感监听的返回值。

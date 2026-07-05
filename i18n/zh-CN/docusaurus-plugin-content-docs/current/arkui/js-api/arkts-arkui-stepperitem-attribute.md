@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StepperItem属性/事件
 
 **继承/实现关系：** StepperItemAttribute extends [CommonMethod<StepperItemAttribute>](CommonMethod<StepperItemAttribute>)

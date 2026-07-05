@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TechnologyType (System API)
 
 Enum for distance measurement technology types.

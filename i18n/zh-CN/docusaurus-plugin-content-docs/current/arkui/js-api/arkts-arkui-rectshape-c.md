@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RectShape
 
 用于clipShape和maskShape接口的矩形形状。 继承自[BaseShape](arkts-arkui-baseshape-c.md#baseshape)。

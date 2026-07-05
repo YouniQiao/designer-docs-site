@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Accessibility
 
 Enumerates the types of access control based on the lock screen status.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PageNodeInfo（系统接口）
 
 自动填充的页面节点信息。

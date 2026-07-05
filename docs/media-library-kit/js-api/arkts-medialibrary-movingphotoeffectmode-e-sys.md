@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MovingPhotoEffectMode (System API)
 
 Enumeration of moving photo effect mode.

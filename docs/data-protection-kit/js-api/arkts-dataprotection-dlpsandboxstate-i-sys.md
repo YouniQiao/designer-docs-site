@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DLPSandboxState (System API)
 
 Represents the DLP sandbox state information.

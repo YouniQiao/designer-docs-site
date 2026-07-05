@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ToolBarItem properties/events
 
 Defines the ToolBarItem component attribute functions.

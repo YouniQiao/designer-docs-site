@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CurrentOutputDeviceChangedEvent
 
 Describes the event indicating that the output device changes.

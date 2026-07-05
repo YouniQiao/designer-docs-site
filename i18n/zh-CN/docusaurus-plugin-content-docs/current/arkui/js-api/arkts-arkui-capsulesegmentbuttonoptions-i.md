@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CapsuleSegmentButtonOptions
 
 胶囊类分段按钮选项。继承自[CapsuleSegmentButtonConstructionOptions](arkts-arkui-capsulesegmentbuttonconstructionoptions-i.md#capsulesegmentbuttonconstructionoptions)。

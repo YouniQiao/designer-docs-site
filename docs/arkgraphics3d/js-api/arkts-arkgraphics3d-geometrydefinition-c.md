@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GeometryDefinition
 
 Define a geometric shape for mesh creation.

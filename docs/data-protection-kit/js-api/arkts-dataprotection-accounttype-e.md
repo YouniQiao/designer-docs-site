@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AccountType (System API)
 
 Enumerates the types of authorized accounts.

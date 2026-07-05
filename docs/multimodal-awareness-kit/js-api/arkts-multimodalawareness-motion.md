@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimodalAwareness.motion
 
 The **motion** module provides the user motion awareness capabilities, including user gestures and actions.

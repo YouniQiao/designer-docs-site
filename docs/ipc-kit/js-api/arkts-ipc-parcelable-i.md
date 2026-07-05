@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Parcelable
 
 Writes an object to a **MessageSequence** and reads it from the **MessageSequence** during IPC.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AbstractProperty
 
 Provides a reference to properties stored in [AppStorage](../../../../ui/state-management/arkts-appstorage.md) or [LocalStorage](../../../../ui/state-management/arkts-localstorage.md).

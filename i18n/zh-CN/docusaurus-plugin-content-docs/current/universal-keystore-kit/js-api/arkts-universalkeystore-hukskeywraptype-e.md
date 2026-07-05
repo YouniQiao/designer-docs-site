@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HuksKeyWrapType
 
 表示密钥加密类型（加密导出或导入密钥）的枚举。

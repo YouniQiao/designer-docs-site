@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FirstScreenPaint
 
 Defines the event information when the first screen paint is detected.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatViewRectChangeInfo
 
 标准悬浮窗矩形区域变化信息。

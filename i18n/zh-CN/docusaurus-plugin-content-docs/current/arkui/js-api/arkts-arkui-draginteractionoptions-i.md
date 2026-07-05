@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DragInteractionOptions
 
 设置拖拽过程中预览图浮起的交互模式。

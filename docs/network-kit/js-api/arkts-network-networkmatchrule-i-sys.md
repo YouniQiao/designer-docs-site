@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NetworkMatchRule (System API)
 
 The matching rules of network quota policies.

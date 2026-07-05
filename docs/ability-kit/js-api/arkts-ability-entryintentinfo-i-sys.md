@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EntryIntentInfo (System API)
 
 Describes the parameters supported by the [@InsightIntentForm](../../../../reference/apis-ability-kit/js-apis-app-ability-InsightIntentDecorator.md#insightintentform) decorator, such as the widget name. It also describes the widget information bound to the [intent developed using a configuration file](../../../../application-models/insight-intent-config-development.md).

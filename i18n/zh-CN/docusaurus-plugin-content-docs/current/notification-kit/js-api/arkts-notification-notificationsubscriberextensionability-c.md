@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationSubscriberExtensionAbility
 
 NotificationSubscriberExtensionAbility 是通知订阅者扩展能力的基类，提供通知订阅的相关功能。 > **说明：** > > 本模块接口仅可在Stage模型下使用。

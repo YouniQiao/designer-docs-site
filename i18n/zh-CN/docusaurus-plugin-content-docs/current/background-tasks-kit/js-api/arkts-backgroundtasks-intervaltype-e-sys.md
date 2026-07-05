@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # IntervalType（系统接口）
 
 应用使用时长的查询类型。

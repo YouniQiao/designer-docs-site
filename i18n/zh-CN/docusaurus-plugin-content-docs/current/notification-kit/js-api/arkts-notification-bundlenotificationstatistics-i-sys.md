@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleNotificationStatistics（系统接口）
 
 描述指定应用通知统计信息。

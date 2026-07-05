@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DynamicRangeMode
 
 Describes the dynamic range of the image to be displayed.

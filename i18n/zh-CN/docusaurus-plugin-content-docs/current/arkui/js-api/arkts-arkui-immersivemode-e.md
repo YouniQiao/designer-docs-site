@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImmersiveMode
 
 页面内弹窗蒙层显示区域模式。

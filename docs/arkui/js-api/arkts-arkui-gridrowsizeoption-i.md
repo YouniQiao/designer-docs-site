@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GridRowSizeOption
 
 Describes the gutter sizes for different device width types.

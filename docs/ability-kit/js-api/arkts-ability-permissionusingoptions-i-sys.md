@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PermissionUsingOptions (System API)
 
 Options for permission usage.

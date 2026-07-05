@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CheckPackageHasInstalledResponse
 
 > **说明：** > > 从API version 3开始支持，从API version 9开始废弃。 指示应用包是否已安装。

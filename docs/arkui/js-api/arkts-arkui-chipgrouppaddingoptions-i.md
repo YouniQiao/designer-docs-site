@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipGroupPaddingOptions
 
 Defines the top and bottom padding of a **ChipGroup** component, which is used to control the overall height of the ChipGroup.

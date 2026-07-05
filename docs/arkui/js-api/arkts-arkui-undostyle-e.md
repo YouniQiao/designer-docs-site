@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UndoStyle
 
 Enumerates the options for whether to retain the original style during undo/redo operations.

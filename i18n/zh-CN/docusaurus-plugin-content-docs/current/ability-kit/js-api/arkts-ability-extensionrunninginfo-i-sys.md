@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtensionRunningInfo（系统接口）
 
 ExtensionRunningInfo模块封装了Extension运行的相关信息，可以通过 [getExtensionRunningInfos接口](arkts-ability-getextensionrunninginfos-f-sys.md#getextensionrunninginfos-2) 获取。

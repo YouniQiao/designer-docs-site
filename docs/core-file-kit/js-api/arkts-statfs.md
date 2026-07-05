@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.statfs
 
 The **statfs** module provides APIs for obtaining file system information, including the total size and free size of a file system, in bytes.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.FusionConnectivity.partnerAgent
 
 Provides APIs for managing partner agents.

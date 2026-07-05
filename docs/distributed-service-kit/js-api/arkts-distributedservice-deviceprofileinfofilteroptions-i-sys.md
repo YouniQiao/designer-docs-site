@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceProfileInfoFilterOptions (System API)
 
 Defines device profile information filter options.

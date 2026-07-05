@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmsRecipientEncryptionAlgorithm
 
 CMS接收者对称算法的枚举。

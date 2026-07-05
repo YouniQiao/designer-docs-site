@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CmKeyPurpose
 
 表示密钥使用目的的枚举，用于签名、验签。

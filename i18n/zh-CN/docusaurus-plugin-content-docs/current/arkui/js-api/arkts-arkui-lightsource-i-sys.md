@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LightSource（系统接口）
 
 一个组件支持添加1个光源。

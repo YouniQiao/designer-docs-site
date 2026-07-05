@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FocusBoxStyle
 
 设置当前组件系统焦点框样式。

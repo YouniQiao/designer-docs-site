@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AuthorizeRequest
 
 证书凭据授权请求信息。

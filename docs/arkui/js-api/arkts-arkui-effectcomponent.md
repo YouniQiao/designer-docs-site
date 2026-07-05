@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EffectComponent
 
 The **EffectComponent** component defines combined special effects for child components to optimize the special effect drawing performance. > **NOTE** > - The APIs provided by this component are system APIs. > > - Currently, this component provides only combined background blur effects for child components. > > - To use this component for combined background blur effects, first replace the **backgroundBlurStyle(BlurStyle)** > attribute of the target child components with **useEffect(true)**.

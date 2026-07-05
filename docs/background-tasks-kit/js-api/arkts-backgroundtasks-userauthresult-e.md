@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UserAuthResult
 
 Represents the user authorization result.

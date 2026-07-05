@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TabSegmentButtonOptions
 
 页签类分段按钮选项。继承自[TabSegmentButtonConstructionOptions](arkts-arkui-tabsegmentbuttonconstructionoptions-i.md#tabsegmentbuttonconstructionoptions)。

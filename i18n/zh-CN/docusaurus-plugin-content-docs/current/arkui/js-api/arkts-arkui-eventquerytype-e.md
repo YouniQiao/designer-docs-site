@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EventQueryType
 
 要查询的交互事件类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ElementName
 
 ElementName信息，通过接口 [Context.getElementName](../../../../reference/apis-ability-kit/js-apis-inner-app-context.md#contextgetelementname7)获取。 > **说明：** > > 从API version 9开始，该模块不再维护，建议使用[bundleManager-ElementName](arkts-ability-elementname-depr-i.md#elementname)替代。

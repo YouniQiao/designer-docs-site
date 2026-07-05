@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WatermarkHandleResult
 
 强制水印处理结果的枚举。

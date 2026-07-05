@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LruBuffer
 
 LruBuffer 算法在缓存空间不足时使用新数据替换最不常使用的数据。

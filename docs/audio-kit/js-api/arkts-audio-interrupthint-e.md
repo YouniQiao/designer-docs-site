@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InterruptHint
 
 Enumerates the hints provided along with audio interruption. The hint is obtained when an [InterruptEvent](arkts-audio-interruptevent-i.md#interruptevent) is received. The hint specifies the operation (such as audio pause or volume adjustment) to be performed on audio streams based on the focus strategy. You can determine whether the operation is forcibly performed by the system based on [InterruptForceType](arkts-audio-interruptforcetype-e.md#interruptforcetype) in **InterruptEvent**. For details, see [Introduction to Audio Focus](../../../../media/audio/audio-playback-concurrency.md).

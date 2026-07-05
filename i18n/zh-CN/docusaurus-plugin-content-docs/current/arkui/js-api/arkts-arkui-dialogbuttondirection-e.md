@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogButtonDirection
 
 警告弹窗中按钮的对齐方式。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CalendarDay (System API)
 
 Provides a monthly view component to display information such as date, shift break, and schedule.

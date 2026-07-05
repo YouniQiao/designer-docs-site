@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CommandPath
 
 用于设置路径绘制的指令。

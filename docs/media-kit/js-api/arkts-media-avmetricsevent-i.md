@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVMetricsEvent
 
 Describes the information of an Metrics Event.

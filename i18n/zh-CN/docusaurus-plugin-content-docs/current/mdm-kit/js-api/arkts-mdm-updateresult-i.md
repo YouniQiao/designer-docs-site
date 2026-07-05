@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UpdateResult
 
 系统更新结果信息。

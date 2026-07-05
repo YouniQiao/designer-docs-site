@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LazyVWaterFlowLayoutAttribute
 
 Defines the lazy vertical waterflow layout attribute.

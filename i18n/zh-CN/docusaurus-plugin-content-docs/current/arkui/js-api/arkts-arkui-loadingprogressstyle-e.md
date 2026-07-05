@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LoadingProgressStyle
 
 表示LoadingProgress的样式类型，不推荐使用。

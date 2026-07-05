@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DocumentViewPicker
 
 Provides APIs for selecting and saving documents in different formats. Before using the APIs of **DocumentViewPicker**, you need to create a **DocumentViewPicker** instance.

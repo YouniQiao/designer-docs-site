@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnRenderExitedEvent
 
 Represents the callback invoked when the rendering process exits.

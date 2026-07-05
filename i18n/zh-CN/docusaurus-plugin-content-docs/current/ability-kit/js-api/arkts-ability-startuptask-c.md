@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StartupTask
 
 The module provides capabilities related to startup tasks in [AppStartup](../../../../application-models/app-startup.md).

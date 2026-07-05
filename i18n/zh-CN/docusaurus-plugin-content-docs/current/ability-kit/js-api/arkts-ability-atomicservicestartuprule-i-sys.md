@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AtomicServiceStartupRule（系统接口）
 
 嵌入式拉起原子化服务的规则。

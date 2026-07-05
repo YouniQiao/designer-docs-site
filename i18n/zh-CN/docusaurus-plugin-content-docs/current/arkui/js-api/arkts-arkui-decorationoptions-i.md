@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DecorationOptions
 
 文本装饰线样式的额外配置选项对象说明。

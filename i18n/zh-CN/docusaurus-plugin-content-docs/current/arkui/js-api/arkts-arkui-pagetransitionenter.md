@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PageTransitionEnter
 
 当前页面的自定义入场动效。继承自[CommonTransition]{@link CommonTransition}。

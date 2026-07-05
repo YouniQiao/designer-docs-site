@@ -1,15 +1,10 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PositionT
 
 ```TypeScript
-export type PositionT<T> = Vector2T<T>
+declare type PositionT<T> = import('../api/arkui/Graphics').PositionT<T>
 ```
 
-Sets or returns the position of the component.
+Defines the PositionT type.
 
 **Since:** 12
 
@@ -19,5 +14,5 @@ Sets or returns the position of the component.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-**Property type:** Vector2T<T>
+**Property type:** import('../api/arkui/Graphics').PositionT<T>
 

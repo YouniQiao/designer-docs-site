@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatViewTemplateType
 
 标准悬浮窗模板类型的枚举。

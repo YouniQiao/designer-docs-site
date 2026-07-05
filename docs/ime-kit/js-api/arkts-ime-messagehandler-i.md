@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MessageHandler
 
 Represents a custom communication object. > **NOTE** > > You can register this object to receive custom communication data sent by the edit box application attached to > the input method application. When the custom communication data is received, the > [onMessage](arkts-ime-messagehandler-i.md#onmessage-1) callback in > this object is triggered. > > This object is globally unique. After multiple registrations, only the last registered object is valid and > retained, and the [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) callback of the > penultimate registered object is triggered. > > If this object is unregistered, its [onTerminated](arkts-ime-messagehandler-i.md#onterminated-1) > callback will be triggered.

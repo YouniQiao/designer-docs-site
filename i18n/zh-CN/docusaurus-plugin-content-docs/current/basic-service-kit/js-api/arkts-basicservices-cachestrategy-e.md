@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CacheStrategy
 
 表示缓存刷新策略的枚举。

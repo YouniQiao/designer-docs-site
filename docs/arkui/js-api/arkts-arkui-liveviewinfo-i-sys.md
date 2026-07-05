@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LiveViewInfo (System API)
 
 Information for LiveView in AI image generation.

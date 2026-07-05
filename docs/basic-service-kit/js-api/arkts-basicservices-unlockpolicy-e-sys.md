@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UnlockPolicy (System API)
 
 Indicates the screen lock authentication policy used to unlock the screen.

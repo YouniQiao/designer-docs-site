@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AutoCapitalizationMode
 
 自动大小写模式类型，只提供接口能力，具体实现以输入法应用为主。

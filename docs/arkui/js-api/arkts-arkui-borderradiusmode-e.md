@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BorderRadiusMode
 
 Enumerates the border radius modes for the **SegmentButton** component, which are used to control the border radius calculation method.

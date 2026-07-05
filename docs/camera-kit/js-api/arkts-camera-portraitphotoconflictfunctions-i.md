@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PortraitPhotoConflictFunctions (System API)
 
 Portrait Photo Conflict Functions object.

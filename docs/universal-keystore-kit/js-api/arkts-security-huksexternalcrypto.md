@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.security.huksExternalCrypto
 
 Provides the functionalities such as registration and deregistration of external key management extension, PIN authentication, and acquisition of authentication state.

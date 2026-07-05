@@ -1,17 +1,14 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnSelectCallback
 
 ```TypeScript
-declare type OnSelectCallback = (index: number, selectValue: string) => void
+declare type OnSelectCallback = (index: number, selectStr: string) => void
 ```
 
-Callback when the Select option is clicked.
+Defines the callback invoked when a drop-down menu option is selected.
 
 **Since:** 18
+
+**Model restriction:** This API can be used only in the stage model.
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
@@ -21,6 +18,6 @@ Callback when the Select option is clicked.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Indicates the index of the selected item. |
-| selectValue | string | Yes | Indicates the value of the selected item. |
+| index | number | Yes | Index of the selected option. The index is zero-based. |
+| selectStr | string | Yes | Value of the selected option. |
 

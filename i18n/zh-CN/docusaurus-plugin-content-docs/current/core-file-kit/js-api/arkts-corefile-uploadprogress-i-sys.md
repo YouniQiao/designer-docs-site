@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UploadProgress（系统接口）
 
 文件上传进度信息。

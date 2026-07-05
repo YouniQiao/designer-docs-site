@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NodeAdapter
 
 Provides lazy loading capabilities for FrameNode data, implementing [LazyForEach](../arkts-components/arkts-arkui-lazyforeach.md) API functionality. > **NOTE** > > Negative input parameters are ignored and trigger no processing.

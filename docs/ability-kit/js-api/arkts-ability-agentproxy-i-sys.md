@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AgentProxy (System API)
 
 The proxy object of the AgentExtensionAbility, used to send messages to the AgentExtensionAbility, etc.

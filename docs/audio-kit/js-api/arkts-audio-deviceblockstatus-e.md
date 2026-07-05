@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceBlockStatus
 
 Enumerates the blocked statuses of audio devices.

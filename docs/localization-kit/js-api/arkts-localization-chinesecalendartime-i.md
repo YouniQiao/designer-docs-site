@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChineseCalendarTime
 
 Represents chinese calendar time element for the ChineseCalendar object.

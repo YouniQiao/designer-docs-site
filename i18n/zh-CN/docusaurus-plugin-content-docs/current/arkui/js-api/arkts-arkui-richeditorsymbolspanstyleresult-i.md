@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorSymbolSpanStyleResult
 
 后端返回的SymbolSpan样式信息。

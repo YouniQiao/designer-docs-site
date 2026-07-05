@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Processor
 
 Defines a data processor for reporting and managing events. You can customize processor configurations as required.

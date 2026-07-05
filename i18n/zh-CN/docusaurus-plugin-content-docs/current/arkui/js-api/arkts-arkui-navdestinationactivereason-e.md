@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavDestinationActiveReason
 
 NavDestination激活态或者非激活态变化的原因。

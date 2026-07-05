@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LineMetrics
 
 描述文本布局中单行文字的度量信息。

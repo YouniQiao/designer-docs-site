@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # param
 
 Provides parameter name constants. | Name | Type | Read Only | Description | | ------------------------------- | ------ | ------ | ------------------ | | USER_ID | string | Yes| Custom user ID. | | DISTRIBUTED_SERVICE_NAME | string | Yes| Distributed service name. | | DISTRIBUTED_SERVICE_INSTANCE_ID | string | Yes| Distributed service instance ID.|

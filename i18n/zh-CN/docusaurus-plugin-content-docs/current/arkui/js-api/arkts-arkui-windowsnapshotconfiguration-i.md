@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WindowSnapshotConfiguration
 
 主窗口截图的配置项。

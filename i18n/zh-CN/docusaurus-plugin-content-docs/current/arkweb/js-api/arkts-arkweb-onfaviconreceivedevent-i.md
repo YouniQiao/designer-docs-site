@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnFaviconReceivedEvent
 
 定义应用为当前页面接收到新的网站图标（favicon）时的回调函数。

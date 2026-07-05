@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MultiScreenMode（系统接口）
 
 屏幕模式枚举。

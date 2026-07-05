@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RotationAxisLimited (System API)
 
 Enumerates the rotation axis limit states.

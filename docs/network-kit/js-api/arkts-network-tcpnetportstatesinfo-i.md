@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TcpNetPortStatesInfo
 
 Defines TCP port states of system network.

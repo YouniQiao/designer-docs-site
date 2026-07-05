@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebResourceHandler
 
 Used to intercept url requests. Response headers and body can be sent through WebResourceHandler.

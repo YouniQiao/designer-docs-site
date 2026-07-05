@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FoldStatusInfo
 
 Describes the fold state information about a foldable device.

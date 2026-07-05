@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SelectionType（系统接口）
 
 定义触发划词的类型枚举。

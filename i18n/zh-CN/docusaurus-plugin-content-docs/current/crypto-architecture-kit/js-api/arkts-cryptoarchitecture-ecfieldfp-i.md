@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ECFieldFp
 
 指定椭圆曲线的素数域。是[ECField](arkts-cryptoarchitecture-ecfield-i.md#ecfield)的子类。

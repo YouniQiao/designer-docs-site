@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PageNodeInfo (System API)
 
 PageNodeInfo defines the page node information used for auto-fill.

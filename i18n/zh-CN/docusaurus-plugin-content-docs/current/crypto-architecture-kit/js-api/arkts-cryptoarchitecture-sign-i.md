@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Sign
 
 Sign类，使用Sign方法之前需要创建该类的实例进行操作，通过 [createSign(algName: string): Sign](arkts-cryptoarchitecture-createsign-f.md#createsign-1)方法构造此实例。按序调用本类中的init、update、sign 方法完成签名操作。签名操作的示例代码详见 [签名验签开发指导](../../../../security/CryptoArchitectureKit/crypto-rsa-sign-sig-verify-pkcs1.md)。 Sign类不支持重复初始化，当业务方需要使用新密钥签名时，需要重新创建新Sign对象并调用init初始化。 业务方使用时，调用createSign接口确定签名的模式，调用init接口设置密钥。 当待签名数据长度较短时，可在初始化后直接调用sign接口传入数据进行签名，无需调用update。 当待签名数据较长时，可通过update接口分段传入切分后的原文数据，最后调用sign接口对整体原文数据进行签名。 当使用update分段传入原文时，sign接口API 10之前只支持传入DataBlob， API 10之后增加支持null。业务方可在循环中调用update接口，循环 结束后调用sign进行签名。 使用DSA算法签名时，如果摘要算法设置为NoHash，则不支持update操作，调用update接口将返回错误码ERR_CRYPTO_OPERATION。

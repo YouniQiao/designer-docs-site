@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DecodeToStringOptions
 
 Describes the behavioral parameters for the **decodeToString** method when decoding byte streams.

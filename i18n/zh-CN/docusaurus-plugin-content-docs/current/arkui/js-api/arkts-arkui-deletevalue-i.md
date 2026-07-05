@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeleteValue
 
 提供从文本中删除值的接口。

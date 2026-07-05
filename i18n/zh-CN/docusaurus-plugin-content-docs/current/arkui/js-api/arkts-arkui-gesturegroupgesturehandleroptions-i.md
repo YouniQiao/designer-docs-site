@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureGroupGestureHandlerOptions
 
 手势组处理器配置参数。

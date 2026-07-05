@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Dir
 
 Manages directories. Before calling a method of the **Dir** class, use the **opendir()** method synchronously or asynchronously to create a **Dir** instance.

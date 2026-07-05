@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CopyEvent
 
 定义用户复制事件。

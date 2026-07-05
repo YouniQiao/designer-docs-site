@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FontVariationInstance
 
 字体可变实例信息，存放预设的可变字体样式信息。

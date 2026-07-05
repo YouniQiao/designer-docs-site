@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AudioChannelLayout
 
 Audio AudioChannel Layout. A 64-bit integer indicates that the appearance and order of the speakers for recording or playback.

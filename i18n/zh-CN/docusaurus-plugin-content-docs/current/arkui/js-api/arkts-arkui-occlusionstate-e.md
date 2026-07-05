@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OcclusionState
 
 窗口可见性状态枚举。

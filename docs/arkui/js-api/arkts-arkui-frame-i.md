@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Frame
 
 Sets or returns the layout size and position of the component.

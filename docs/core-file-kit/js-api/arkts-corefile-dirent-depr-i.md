@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Dirent
 
 Provides information about files and directories. Before calling an API of the **Dirent** class, use [dir.read()](arkts-corefile-fileio-read-f.md#read-1) synchronously or asynchronously to create a **Dirent** instance.

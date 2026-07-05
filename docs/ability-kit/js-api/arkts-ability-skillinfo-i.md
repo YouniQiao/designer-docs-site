@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SkillInfo
 
 Provides information about a skill. A skill is an independent functional unit that can be called by an agent application.

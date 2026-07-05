@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.fontManager
 
 字体管理模块，提供给系统应用安装和卸载三方字体的能力。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReuseUnlockResult
 
 Represents information about the authentication result reuse. > **NOTE** > If the credential changes within the reuse duration after a successful identity authentication (including device > unlock authentication), the authentication result can still be reused and the actual **EnrolledState** is > returned in the authentication result. If the credential used for the previous authentication has been deleted > when the authentication result is used: - If the deleted credential is face or fingerprint, the authentication result can still be reused, but **credentialCount** and **credentialDigest** in the **EnrolledState** returned are both **0**. - If the deleted credential is a lock screen password, the reuse will fail.

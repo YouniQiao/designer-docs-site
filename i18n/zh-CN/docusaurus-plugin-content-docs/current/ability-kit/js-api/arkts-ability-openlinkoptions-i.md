@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OpenLinkOptions
 
 OpenLinkOptions可以作为[openLink()](arkts-ability-uiabilitycontext-c.md#openlink-1)的入参，用于标识是否仅打开 AppLinking和传递键值对可选参数。

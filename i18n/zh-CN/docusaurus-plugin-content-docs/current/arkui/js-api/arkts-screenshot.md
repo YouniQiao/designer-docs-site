@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.screenshot
 
 本模块提供屏幕截图的能力。

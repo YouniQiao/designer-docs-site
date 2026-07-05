@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AlertDialogParam
 
 Enumerates the alert dialog box styles.

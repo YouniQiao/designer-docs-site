@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.sendableResourceManager
 
 The **sendableResourceManager** module provides the [resourceToSendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) and [sendableResourceToResource](arkts-localization-sendableresourcetoresource-f.md#sendableresourcetoresource-1) APIs to implement conversion between [Resource](arkts-localization-resource-t.md#resource) and [SendableResource](arkts-localization-resourcetosendableresource-f.md#resourcetosendableresource-1) objects. A **Resource** object can be held by the [Sendable](../../../../arkts-utils/arkts-sendable.md) class after being converted into a **SendableResource** object. After cross-thread transmission, the **Sendable** class converts the **SendableResource** object into a **Resource** object and uses it as an input parameter for the API used to obtain resources.

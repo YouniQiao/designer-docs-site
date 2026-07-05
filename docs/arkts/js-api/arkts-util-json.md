@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.util.json
 
 The JSON module provides a series of APIs for converting JSON text into JSON objects or values and converting objects into JSON text.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnScrollEvent
 
 定义滚动条滑动到指定位置时触发。

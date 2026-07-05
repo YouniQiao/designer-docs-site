@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceType (System API)
 
 Defines the values of **deviceType** used in **RootInfo**.

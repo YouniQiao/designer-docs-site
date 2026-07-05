@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PointUtils
 
 This class offers a comprehensive set of operations for handling common2D Point objects.

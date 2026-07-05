@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ImageProcessor
 
 Provides the ImageProcessor type, including the processing function.

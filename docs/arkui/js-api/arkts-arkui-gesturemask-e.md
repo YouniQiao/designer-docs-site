@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GestureMask
 
 Enumerates masking modes of child component gestures.

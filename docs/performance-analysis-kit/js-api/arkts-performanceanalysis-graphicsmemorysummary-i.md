@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GraphicsMemorySummary
 
 Describes the GPU memory data of an application, including the GL and Graph parts.

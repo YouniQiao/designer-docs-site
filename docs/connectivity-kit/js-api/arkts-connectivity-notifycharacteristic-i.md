@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotifyCharacteristic
 
 Describes the value of the indication or notification sent by the Gatt server.

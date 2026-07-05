@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DisplayPhysicalResolution
 
 设备的显示模式以及对应的物理屏幕分辨率信息。

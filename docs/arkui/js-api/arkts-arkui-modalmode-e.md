@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ModalMode
 
 Enumerates modal modes of the sub-window menu.

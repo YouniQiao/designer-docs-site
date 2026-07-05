@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OfflineResourceType
 
 [OfflineResourceMap](arkts-arkweb-offlineresourcemap-i.md#offlineresourcemap)对象对应的本地离线资源的接口类型。

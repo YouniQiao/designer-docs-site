@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SharedPhotoAsset (System API)
 
 Defines the shared photo asset

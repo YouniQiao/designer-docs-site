@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationParameters
 
 描述[NotificationRequest](arkts-notification-notificationrequest-i.md#notificationrequest)中wantAgent的部分信息。

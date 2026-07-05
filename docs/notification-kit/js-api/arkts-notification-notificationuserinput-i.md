@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationUserInput
 
 The **NotificationUserInput** module provides APIs for defining the notification user input.

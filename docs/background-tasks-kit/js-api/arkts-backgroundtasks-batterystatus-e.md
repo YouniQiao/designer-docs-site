@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BatteryStatus
 
 Enumerates the battery status that triggers the deferred task callback.

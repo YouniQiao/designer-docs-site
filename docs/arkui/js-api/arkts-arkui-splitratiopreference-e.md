@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SplitRatioPreference
 
 Describes the type of split ratio preference.

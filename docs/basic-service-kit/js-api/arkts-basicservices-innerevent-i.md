@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InnerEvent
 
 Describes an event to subscribe to or emit. The **EventPriority** settings do not take effect under event subscription.

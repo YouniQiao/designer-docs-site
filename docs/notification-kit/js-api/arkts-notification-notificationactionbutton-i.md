@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotificationActionButton
 
 The **NotificationActionButton** module provides APIs for describing the button displayed in the notification.

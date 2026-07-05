@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SuperscriptStyle
 
 定义文本上下角标样式。

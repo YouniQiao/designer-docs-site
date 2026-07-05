@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExceptionMessage
 
 Represents an exception message about the SQL statement executed by the database.

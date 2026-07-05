@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.scan
 
 This module provides JavaScript APIs of the scan framework for discovering and connecting to scanners. > **NOTE** > > This topic describes only public APIs provided by the module.

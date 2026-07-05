@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DragInfo
 
 Defines the attributes required for initiating a drag action and information carried in the dragging process.

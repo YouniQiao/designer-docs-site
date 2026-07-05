@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScreenCaptureHandler
 
 Defines the onScreenCapture callback, related to {@link onScreenCapture} method.

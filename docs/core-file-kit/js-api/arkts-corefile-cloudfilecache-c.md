@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudFileCache
 
 Provides APIs for the file manager application to download files from the Drive Kit to a local device.

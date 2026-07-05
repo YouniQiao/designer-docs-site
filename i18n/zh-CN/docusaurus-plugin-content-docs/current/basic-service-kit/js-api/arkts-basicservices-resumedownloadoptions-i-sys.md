@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ResumeDownloadOptions（系统接口）
 
 恢复下载选项。

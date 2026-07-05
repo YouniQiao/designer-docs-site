@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BadgeParam
 
 包含用于创建Badge组件的基础参数。

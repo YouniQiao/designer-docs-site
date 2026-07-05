@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorTextSpanOptions
 
 添加文本的偏移位置和文本样式信息。

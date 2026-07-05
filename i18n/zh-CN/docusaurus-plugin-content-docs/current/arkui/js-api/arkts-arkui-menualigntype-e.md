@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MenuAlignType
 
 下拉菜单的对齐方式。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TreeSet
 
 TreeSet is implemented based on TreeMap. In TreeSet, only value objects are processed. TreeSet can be used to store values, each of which must be unique.

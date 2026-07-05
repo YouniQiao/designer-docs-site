@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LayoutSafeAreaType
 
 扩展布局安全区域的枚举类型。

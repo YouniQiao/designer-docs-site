@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HidDeviceQos
 
 Represents the Quality of Service (QoS) settings for a bluetooth hid device application.

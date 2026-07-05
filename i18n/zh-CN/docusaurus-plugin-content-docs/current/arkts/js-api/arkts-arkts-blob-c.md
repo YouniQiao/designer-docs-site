@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Blob
 
 将数据处理为blob类型。

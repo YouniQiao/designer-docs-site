@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RectShapeOptions
 
 RectShape 的构造函数参数。 继承自[ShapeSize](arkts-arkui-shapesize-i.md#shapesize)。

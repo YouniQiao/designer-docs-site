@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BackgroundTaskSubscriber（系统接口）
 
 后台任务监听。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CrownEvent
 
 Defines a data structure for the crown event received by a component. It includes the timestamp, angular velocity, rotation angle, crown action, and event propagation disabling.

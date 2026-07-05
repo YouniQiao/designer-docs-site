@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HdrBrightnessBlender (System API)
 
 The HDR enabled Blender of backgroundColorEffect.

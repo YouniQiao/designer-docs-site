@@ -1,15 +1,10 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SwiperContentTransitionProxy
 
-ArcSwiper自定义切换动画执行过程中，返回给开发者的proxy对象。开发者可通过该对象获取自定义动画视窗内的页面信息，同时，也可以通过调用该对象的finishTransition接口通知ArcSwiper组件页面自定义动画已结 束。 > **说明：** > - 假设当前选中的子组件的索引为0，从第0页切换到第1页的动画过程中，每帧都会对视窗内所有页面触发回调，当视窗内有第0页和第1页两页时，每帧会触发两次回调。其中第一次回调的selectedIndex为0，index为0， > position为当前帧第0页相对于动画开始前第0页的移动比例，mainAxisLength为主轴方向上第0页的长度；第二次回调的selectedIndex仍为0，index为1，position为当前帧第1页相对于动画开始前第0 > 页的移动比例，mainAxisLength为主轴方向上第1页的长度。 > > - 若动画曲线为弹簧插值曲线，从第0页切换到第1页的动画过程中，可能会因为离手时的位置和速度，先过滑到第2页，再回弹到第1页，该过程中每帧会对视窗内第1页和第2页触发回调。
+Swiper自定义切换动画执行过程中，返回给开发者的proxy对象。开发者可通过该对象获取自定义动画视窗内的页面信息，同时，也可以通过调用该对象的finishTransition接口通知Swiper组件页面自定义动画已结束。
 
-**起始版本：** 18
+**起始版本：** 12
 
-**系统能力：** SystemCapability.ArkUI.ArkUI.Circle
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## finishTransition
 
@@ -17,13 +12,17 @@ ArcSwiper自定义切换动画执行过程中，返回给开发者的proxy对象
 finishTransition(): void
 ```
 
-通知ArcSwiper组件，此页面的自定义动画已结束。
+通知Swiper组件，此页面的自定义动画已结束。
 
-**起始版本：** 18
+**起始版本：** 12
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**模型约束：** 此接口仅可在Stage模型下使用。
 
-**系统能力：** SystemCapability.ArkUI.ArkUI.Circle
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## index
 
@@ -35,11 +34,15 @@ index: number
 
 **类型：** number
 
-**起始版本：** 18
+**起始版本：** 12
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**模型约束：** 此接口仅可在Stage模型下使用。
 
-**系统能力：** SystemCapability.ArkUI.ArkUI.Circle
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## mainAxisLength
 
@@ -47,15 +50,19 @@ index: number
 mainAxisLength: number
 ```
 
-index对应页面在主轴方向上的长度。
+index对应页面在主轴方向上的长度，单位vp。
 
 **类型：** number
 
-**起始版本：** 18
+**起始版本：** 12
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**模型约束：** 此接口仅可在Stage模型下使用。
 
-**系统能力：** SystemCapability.ArkUI.ArkUI.Circle
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## position
 
@@ -63,15 +70,19 @@ index对应页面在主轴方向上的长度。
 position: number
 ```
 
-index页面相对于ArcSwiper主轴起始位置（selectedIndex对应页面的起始位置）的移动比例。
+index页面相对于Swiper主轴起始位置（selectedIndex对应页面的起始位置）的移动比例。
 
 **类型：** number
 
-**起始版本：** 18
+**起始版本：** 12
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**模型约束：** 此接口仅可在Stage模型下使用。
 
-**系统能力：** SystemCapability.ArkUI.ArkUI.Circle
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## selectedIndex
 
@@ -83,9 +94,13 @@ selectedIndex: number
 
 **类型：** number
 
-**起始版本：** 18
+**起始版本：** 12
 
-**元服务API：** 从API版本18开始，该接口支持在元服务API中使用。
+**模型约束：** 此接口仅可在Stage模型下使用。
 
-**系统能力：** SystemCapability.ArkUI.ArkUI.Circle
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**卡片能力：** 从API版本26.0.0开始，该接口支持在ArkTS卡片中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 

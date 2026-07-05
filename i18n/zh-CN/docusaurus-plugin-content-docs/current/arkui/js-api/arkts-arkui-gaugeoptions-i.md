@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GaugeOptions
 
 数据量规图表选项。

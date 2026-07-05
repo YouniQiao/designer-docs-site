@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AtomicFile
 
 AtomicFile is a class used to perform atomic read and write operations on files. A temporary file is written and renamed to the original file location, which ensures file integrity. If the write operation fails, the temporary file is deleted without modifying the original file content. You can call **finishWrite()** or **failWrite()** to write or roll back file content.

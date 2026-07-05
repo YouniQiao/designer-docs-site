@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloseOptions
 
 Defines the default close icon behavior attributes for the chip, including accessibility attributes. The default value of **accessibilityText** is **"Delete"**. Inherits from [AccessibilityOptions](arkts-arkui-accessibilityoptions-i.md#accessibilityoptions).

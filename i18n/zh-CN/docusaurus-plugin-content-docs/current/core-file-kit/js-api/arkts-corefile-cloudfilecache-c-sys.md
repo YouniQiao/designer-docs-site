@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CloudFileCache
 
 云盘文件缓存对象，用来支撑文件管理应用原文件下载流程。

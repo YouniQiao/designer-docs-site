@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextTab
 
 Implements a paragraph-style text tab, which stores the alignment mode and position.

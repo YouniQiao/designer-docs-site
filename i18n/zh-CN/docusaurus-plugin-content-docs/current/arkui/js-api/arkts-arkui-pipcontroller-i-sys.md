@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PiPController
 
 画中画控制器实例。用于启动、停止画中画以及更新回调注册等。 下列API示例中都需先使用[PiPWindow.create()](arkts-arkui-create-f.md#create-1)方法获取到PiPController实例，再通过此实例调用对应方 法。

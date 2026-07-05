@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NavigationPolicy
 
 Enumerates the modes of opening a new window in the WebView.

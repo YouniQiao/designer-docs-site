@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SourceType
 
 定义输入源对应的设备类型。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.curves
 
 The **Curves** module provides APIs for interpolation calculation to create step, cubic Bezier, and spring curves.

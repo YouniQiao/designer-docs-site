@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VideoEnhancementType (System API)
 
 Enumerates the types of segmented video enhancement.

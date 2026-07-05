@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleOptions
 
 > **NOTE** > > This API has been supported since API version 7 and deprecated since API version 9. No substitute is provided. Options that contain the user ID.

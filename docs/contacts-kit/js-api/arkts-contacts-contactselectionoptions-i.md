@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ContactSelectionOptions
 
 Defines the Contact selection options, which specifies whether one contact or multiple contacts can be selected.

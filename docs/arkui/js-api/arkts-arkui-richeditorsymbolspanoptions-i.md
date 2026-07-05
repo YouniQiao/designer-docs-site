@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorSymbolSpanOptions
 
 Sets the offset and style of the **SymbolSpan** component.

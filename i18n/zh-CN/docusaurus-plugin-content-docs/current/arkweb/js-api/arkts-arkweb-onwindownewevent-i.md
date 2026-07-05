@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnWindowNewEvent
 
 定义网页要求用户创建窗口时触发的回调。

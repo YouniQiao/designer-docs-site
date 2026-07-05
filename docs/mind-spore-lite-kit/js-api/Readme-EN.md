@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ArkTS API<!--arkts-mindsporelitekit-->
 
 - [@ohos.ai.mindSporeLite](arkts-ai-mindsporelite.md)

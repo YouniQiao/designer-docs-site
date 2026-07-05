@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ReactiveBuilderNode
 
 ReactiveBuilderNode支持通过无状态的UI方法[@Builder](../../../../ui/state-management/arkts-builder.md)生成组件树，并持有该组件树的根节点，不支持定义为状态变量 。ReactiveBuilderNode中持有的[FrameNode](arkts-arkui-framenode-c.md#framenode)仅用于将此ReactiveBuilderNode作为子节点挂载到其他FrameNode上。对ReactiveBuilderNode 持有的FrameNode进行属性设置与子节点操作可能会导致未定义行为，因此不建议通过ReactiveBuilderNode的[getFrameNode](arkts-arkui-buildernode-c.md#getframenode-1)方法和 [FrameNode](arkts-arkui-framenode-c.md#framenode)节点的[getRenderNode](arkts-arkui-framenode-c.md#getrendernode-1)方法获取RenderNode，并通过 [RenderNode](arkts-arkui-rendernode-c.md#rendernode)的接口对其进行属性设置与子节点操作。

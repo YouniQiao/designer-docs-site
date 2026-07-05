@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TextOverflow
 
 Display mode when the text is too long.

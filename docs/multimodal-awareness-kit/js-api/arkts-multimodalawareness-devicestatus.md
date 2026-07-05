@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimodalAwareness.deviceStatus
 
 The **deviceStatus** module provides the device status awareness functionality.

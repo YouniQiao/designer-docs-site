@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Participant (System API)
 
 Represents information about a participant of device-cloud sharing.

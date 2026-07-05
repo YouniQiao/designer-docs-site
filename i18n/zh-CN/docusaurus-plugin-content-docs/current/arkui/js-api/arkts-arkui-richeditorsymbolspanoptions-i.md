@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorSymbolSpanOptions
 
 设置SymbolSpan组件的偏移位置和样式。

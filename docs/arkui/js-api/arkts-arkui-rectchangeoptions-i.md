@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RectChangeOptions
 
 Describes the value and reason returned upon a window rectangle (position and size) change.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Macro (System API)
 
 Macro inherits from [MacroQuery](arkts-camera-macroquery-i-sys.md#macroquery). It provides the API to enable macro photography.

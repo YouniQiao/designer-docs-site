@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LongPressGestureInterface
 
 **LongPressGesture** is used to trigger a long press gesture. This gesture requires one or more fingers to be held down for a specified duration, which is 500 ms by default and can be adjusted using the **duration** parameter. > **NOTE** > > Since API version 18, on some devices, the system's two-finger long press gesture may take precedence, causing > the application's two-finger long press gesture to be ineffective.

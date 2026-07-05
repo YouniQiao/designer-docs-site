@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VideoScaleType
 
 枚举，视频缩放模式。

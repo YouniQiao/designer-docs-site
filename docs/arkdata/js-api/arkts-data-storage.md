@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.data.storage
 
 Lightweight storage provides applications with data processing capability and allows applications to perform lightweight data storage and query. Data is stored in key-value (KV) pairs. Keys are of the string type, and values can be of the number, string, or Boolean type. > **NOTE** > - The APIs of this module are no longer maintained since API version 9. You are advised to use > [@ohos.data.preferences](arkts-data-preferences.md#preferences).

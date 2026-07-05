@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TableDetails
 
 Defines a struct for statistics of device-cloud upload and download tasks of a database table.

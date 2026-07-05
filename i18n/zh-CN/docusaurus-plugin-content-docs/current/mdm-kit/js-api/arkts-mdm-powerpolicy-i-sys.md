@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PowerPolicy（系统接口）
 
 电源策略。

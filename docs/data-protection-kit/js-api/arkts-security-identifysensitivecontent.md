@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.security.identifySensitiveContent
 
 This module identifies sensitive information in a specified file based on the input [Policy](identifySensitiveContent.policy). The system matches the file content against the provided [Policy](identifySensitiveContent.policy) (including sensitive labels, keyword sets, and regular expressions) and returns the matched sensitive content.

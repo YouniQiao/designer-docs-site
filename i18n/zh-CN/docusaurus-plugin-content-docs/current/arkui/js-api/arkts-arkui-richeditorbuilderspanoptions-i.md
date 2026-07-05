@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorBuilderSpanOptions
 
 设置builder的偏移位置和样式。

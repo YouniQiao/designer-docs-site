@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RunningMode (System API)
 
 Represents the running mode of a device administrator application.

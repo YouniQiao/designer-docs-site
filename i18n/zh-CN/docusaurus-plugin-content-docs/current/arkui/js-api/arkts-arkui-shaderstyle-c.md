@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ShaderStyle
 
 文本着色器效果基类。

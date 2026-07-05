@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ComponentType (System API)
 
 Enumerates the types of application components that function as the displayed page.

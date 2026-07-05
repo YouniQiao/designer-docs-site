@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ChipGroupV2Item
 
 ChipGroupV2Item定义了芯片组中单个芯片项。

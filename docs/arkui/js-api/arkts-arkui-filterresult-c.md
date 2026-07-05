@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FilterResult
 
 This parameter specifies the selection result of a filtering dimension. The index starts from 0.

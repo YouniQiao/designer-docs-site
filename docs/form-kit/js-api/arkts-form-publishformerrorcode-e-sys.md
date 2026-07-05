@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PublishFormErrorCode (System API)
 
 Enumerates the result codes that may be used for the operation of adding a widget to the home screen.

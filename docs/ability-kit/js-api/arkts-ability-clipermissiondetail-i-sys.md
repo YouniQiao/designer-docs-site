@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CliPermissionDetail (System API)
 
 Detailed information about the required permission for a CLI.

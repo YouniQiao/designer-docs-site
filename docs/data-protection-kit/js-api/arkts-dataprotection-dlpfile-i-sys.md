@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DLPFile (System API)
 
 Provides APIs for managing DLP files. A **DLPFile** instance indicates a DLP file object. You can use [generateDLPFile](arkts-dataprotection-generatedlpfile-f-sys.md#generatedlpfile-1) or [openDLPFile](arkts-dataprotection-opendlpfile-f-sys.md#opendlpfile-1) to obtain a **DLPFile** instance. The **DLPFile** object represents an opened DLP file handle, which encapsulates all operation APIs for DLP files. After using the object, the system must call the [closeDLPFile](arkts-dataprotection-dlpfile-i-sys.md#closedlpfile-1) API to release resources to prevent file handle leaks. Authorization is required when the **DLPFile** object is transferred across processes.

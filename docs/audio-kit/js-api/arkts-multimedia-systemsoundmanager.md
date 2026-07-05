@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimedia.systemSoundManager
 
 This module provides basic capabilities for managing system sound effects, including defining system sound effect types and obtaining system sound effect players.

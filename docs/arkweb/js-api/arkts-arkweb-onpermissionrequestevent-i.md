@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnPermissionRequestEvent
 
 Represents the callback invoked when a permission request is received.

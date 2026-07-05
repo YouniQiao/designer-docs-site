@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnPageBeginEvent
 
 定义网页加载开始时触发的函数。

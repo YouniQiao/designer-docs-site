@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WorkSchedulerExtensionContext
 
 The **WorkSchedulerExtensionContext** module, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext), provides a context environment for the **WorkSchedulerExtensionAbility**. This module provides APIs for accessing the resources of a **WorkSchedulerExtensionAbility**.

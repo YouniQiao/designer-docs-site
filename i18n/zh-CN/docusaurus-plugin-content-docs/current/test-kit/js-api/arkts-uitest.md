@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.UiTest
 
 用于便捷构建{@link On}对象的静态构造器，使用示例：ON.text('txt').enabled(true)。

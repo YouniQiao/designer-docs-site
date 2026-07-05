@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RootScene properties/events
 
 Defines the attribute functions of RootScene.

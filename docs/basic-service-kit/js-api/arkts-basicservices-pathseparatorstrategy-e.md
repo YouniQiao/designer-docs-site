@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PathSeparatorStrategy
 
 Defines **PathSeparatorStrategy**, a property of [Options](arkts-basicservices-options-i.md#options), used to specify the separator strategy for the file path in the compressed package specified for decompression.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ForEach
 
 **ForEach** enables rendering of repeated content based on array type data. > **NOTE** For details about the development, see [ForEach: Rendering Repeated Content](docroot://ui/rendering-control/arkts-rendering-control-foreach.md).

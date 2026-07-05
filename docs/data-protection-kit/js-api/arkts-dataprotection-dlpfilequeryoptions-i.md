@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DlpFileQueryOptions
 
 Represents the query options about an enterprise DLP file.

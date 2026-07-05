@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # InputEventSubTypeMask
 
 输入事件子类型掩码枚举，用于标识不同类型的输入事件子类型。

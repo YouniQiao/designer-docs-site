@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PngPropertyKey
 
 Enumerates the properties available for the metadata of a PNG image.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PhotoAssetChangeInfos
 
 Defines the photo asset change infos.

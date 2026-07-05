@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FrameMetrics
 
 帧率指标。

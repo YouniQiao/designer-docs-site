@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrinterPreferences
 
 定义打印机首选项的接口。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # USBDevice
 
 USB设备信息，继承自[Device](arkts-driverdevelopment-querydevices-f.md#querydevices-1)。

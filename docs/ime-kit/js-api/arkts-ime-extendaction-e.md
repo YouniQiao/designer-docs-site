@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExtendAction
 
 Describes the type of the extended edit action on the text box.

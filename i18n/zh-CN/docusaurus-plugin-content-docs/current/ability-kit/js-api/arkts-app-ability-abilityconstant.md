@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.ability.AbilityConstant
 
 AbilityConstant提供Ability相关的枚举，包括应用启动原因[LaunchReason](arkts-ability-launchreason-e.md#launchreason)、上次退出原因 [LastExitReason](arkts-ability-lastexitreason-e.md#lastexitreason)、迁移结果[OnContinueResult](arkts-ability-oncontinueresult-e.md#oncontinueresult) 等。

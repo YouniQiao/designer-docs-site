@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataDeleteOperation
 
 Represents an operation for deleting data.

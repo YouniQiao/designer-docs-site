@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVControlCommand
 
 The definition of command to be sent to the session

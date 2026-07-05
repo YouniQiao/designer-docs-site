@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DomainAccountPolicy
 
 域账号策略。

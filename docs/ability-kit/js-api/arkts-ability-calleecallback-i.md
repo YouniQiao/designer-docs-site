@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CalleeCallback
 
 Defines the callback of the registration message notification of the UIAbility.

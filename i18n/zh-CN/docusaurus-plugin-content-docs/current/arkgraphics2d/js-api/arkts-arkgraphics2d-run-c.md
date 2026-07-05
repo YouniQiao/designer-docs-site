@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Run
 
 文本排版单元。 下列API示例中都需先使用[TextLine](arkts-arkgraphics2d-textline-c.md#textline)类的[getGlyphRuns()](arkts-arkgraphics2d-textline-c.md#getglyphruns-1)接口获取Run对象实例，再通过此实例调 用对应方法。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PrefixIconOptions
 
 Defines the prefix icon options. Inherits from [IconCommonOptions](arkts-arkui-iconcommonoptions-i.md#iconcommonoptions).

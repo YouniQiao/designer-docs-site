@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # HdrDarkenBlender（系统接口）
 
 支持HDR的压暗混合器，用于将压暗效果添加到指定的组件上。 在调用HdrDarkenBlender前，需要先通过createHdrDarkenBlender创建一个HdrDarkenBlender实例。

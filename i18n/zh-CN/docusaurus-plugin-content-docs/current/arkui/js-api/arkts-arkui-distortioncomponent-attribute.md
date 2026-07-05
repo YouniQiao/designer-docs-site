@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DistortionComponent属性/事件
 
 Defines the DistortionComponent attribute functions

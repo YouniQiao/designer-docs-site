@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # VolumeEvent
 
 Describes the event received by the application when the volume is changed.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ExifMetadata
 
 ExifMetadata implements Metadata Exchangeable Image File Format (Exif) metadata.

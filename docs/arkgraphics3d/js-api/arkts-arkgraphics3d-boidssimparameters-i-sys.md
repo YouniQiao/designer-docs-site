@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BoidsSimParameters (System API)
 
 Boids simulation parameters bound per-boid.

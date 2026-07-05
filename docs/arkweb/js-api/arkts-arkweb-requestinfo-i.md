@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RequestInfo
 
 Describes the information about the resource request sent by the **Web** component.

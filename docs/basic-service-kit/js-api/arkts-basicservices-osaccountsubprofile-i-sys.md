@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OsAccountSubProfile (System API)
 
 Definition of an OS account sub-profile.

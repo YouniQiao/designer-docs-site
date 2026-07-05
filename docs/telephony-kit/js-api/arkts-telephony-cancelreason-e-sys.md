@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CancelReason (System API)
 
 The reason for canceling a profile download session.

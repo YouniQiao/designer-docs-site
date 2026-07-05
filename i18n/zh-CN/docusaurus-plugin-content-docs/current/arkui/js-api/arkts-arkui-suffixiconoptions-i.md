@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # SuffixIconOptions
 
 SuffixIconOptions定义后缀图标的属性。 继承于[IconCommonOptions](arkts-arkui-iconcommonoptions-i.md#iconcommonoptions)。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ControllerHandler
 
 Defines the onWindowNew callback, related to {@link onWindowNew} method.

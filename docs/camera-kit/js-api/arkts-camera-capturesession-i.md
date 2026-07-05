@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CaptureSession
 
 Implements a capture session, which saves all [CameraInput](arkts-camera-camerainput-i.md#camerainput) and [CameraOutput](arkts-camera-cameraoutput-i.md#cameraoutput) instances required to run the camera and requests the camera to complete shooting or video recording.

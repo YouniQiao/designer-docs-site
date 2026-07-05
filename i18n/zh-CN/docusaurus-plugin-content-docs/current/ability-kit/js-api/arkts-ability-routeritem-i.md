@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RouterItem
 
 描述模块配置的路由表信息。

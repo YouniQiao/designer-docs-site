@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RingChannel
 
 自定义提示音的音频播放通道。

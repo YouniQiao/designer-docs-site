@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ProcessRunningInfo
 
 运行进程信息，可以通过appManager中 [getProcessRunningInfos](arkts-ability-getprocessrunninginfos-depr-f.md#getprocessrunninginfos-1)方法来获取运行进程信息。

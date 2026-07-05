@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # UsbDeviceType
 
 USB设备类型信息。

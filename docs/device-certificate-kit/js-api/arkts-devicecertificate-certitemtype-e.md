@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CertItemType
 
 Enumerates the certificate fields that can be obtained.

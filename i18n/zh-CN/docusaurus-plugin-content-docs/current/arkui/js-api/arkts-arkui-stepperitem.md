@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # StepperItem
 
 用作[Stepper]{@link stepper}组件的页面子组件。 > **说明：** > - 从API version 8开始支持，从API version 22开始废弃，建议使用[Swiper]{@link swiper}替代。

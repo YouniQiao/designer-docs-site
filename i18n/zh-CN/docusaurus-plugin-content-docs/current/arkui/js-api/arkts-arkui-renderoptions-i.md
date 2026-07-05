@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RenderOptions
 
 创建BuilderNode时的可选参数。

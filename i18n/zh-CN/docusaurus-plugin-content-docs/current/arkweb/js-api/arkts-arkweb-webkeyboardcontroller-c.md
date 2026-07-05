@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebKeyboardController
 
 Define the controller to interact with a custom keyboard, related to the {@link onInterceptKeyboardAttach} event.

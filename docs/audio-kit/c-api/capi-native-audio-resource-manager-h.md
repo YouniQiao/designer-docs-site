@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # native_audio_resource_manager.h
 
 ## Overview

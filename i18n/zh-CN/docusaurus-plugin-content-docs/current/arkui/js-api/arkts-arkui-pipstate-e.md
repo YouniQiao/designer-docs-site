@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PiPState
 
 画中画生命周期状态枚举。

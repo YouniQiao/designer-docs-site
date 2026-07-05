@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RichEditorDeleteValue
 
 删除操作和被删除内容的信息。

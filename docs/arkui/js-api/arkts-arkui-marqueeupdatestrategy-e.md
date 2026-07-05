@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MarqueeUpdateStrategy
 
 The scrolling strategy for the marquee after its attributes are updated.

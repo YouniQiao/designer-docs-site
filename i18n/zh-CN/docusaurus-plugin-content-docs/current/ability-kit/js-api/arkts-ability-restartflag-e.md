@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RestartFlag
 
 应用重启标志，[enableAppRecovery](arkts-ability-enableapprecovery-f.md#enableapprecovery-1)接口重启选项参数，该类型为枚举。

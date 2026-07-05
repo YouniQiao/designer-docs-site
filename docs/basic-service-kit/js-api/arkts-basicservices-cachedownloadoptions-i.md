@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CacheDownloadOptions
 
 Provides configuration options for download and cache, including HTTP options, transmission options, and task options.

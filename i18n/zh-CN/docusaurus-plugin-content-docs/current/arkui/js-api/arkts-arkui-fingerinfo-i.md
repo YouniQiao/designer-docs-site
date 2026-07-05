@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FingerInfo
 
 手指信息类型。

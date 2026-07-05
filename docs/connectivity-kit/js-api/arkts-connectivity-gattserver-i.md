@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # GattServer
 
 Manages GATT server. Before calling an Gatt server method, you must use {@link createGattServer} to create an GattServer instance.

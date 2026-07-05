@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # WebBlanklessErrorCode
 
 无白屏加载的异常错误码。

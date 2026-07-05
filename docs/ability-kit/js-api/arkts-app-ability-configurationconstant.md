@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.ability.ConfigurationConstant
 
 The ConfigurationConstant module provides preset enumerated values related to [Configuration](arkts-ability-configuration-i.md#configuration) operations.

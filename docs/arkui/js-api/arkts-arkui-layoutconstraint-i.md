@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LayoutConstraint
 
 Describes the layout constraints of the component.

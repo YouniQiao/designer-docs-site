@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CounterOptions
 
 CounterOptions定义Counter类型及样式。

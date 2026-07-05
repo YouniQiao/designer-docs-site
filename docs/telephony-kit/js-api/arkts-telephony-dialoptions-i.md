@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialOptions
 
 Indicates the options of placing a call.

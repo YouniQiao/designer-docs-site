@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.security.certManagerDialog
 
 The **certificateManagerDialog** module provides APIs for opening the certificate management pages, on which you can view and manage certificates (install, uninstall, and authorize certificates).

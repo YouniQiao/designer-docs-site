@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ConnectionStrategy (System API)
 
 Enum for connection strategy of the profile

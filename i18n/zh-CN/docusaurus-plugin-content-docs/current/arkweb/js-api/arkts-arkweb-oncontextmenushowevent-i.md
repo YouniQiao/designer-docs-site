@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnContextMenuShowEvent
 
 定义调用时触发的回调，以允许自定义显示上下文菜单。

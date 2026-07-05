@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceEncryptionStatus (System API)
 
 Represents the file system encryption status.

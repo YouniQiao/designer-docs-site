@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScrollableBarModeOptions
 
 Scrollable模式下的TabBar的布局样式对象。

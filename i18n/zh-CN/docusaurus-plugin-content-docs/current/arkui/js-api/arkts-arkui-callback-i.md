@@ -1,15 +1,10 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Callback
 
-Defines the window callback.
+定义基础的回调函数。
 
-**起始版本：** 15
+**起始版本：** 12
 
-**系统能力：** SystemCapability.Window.SessionManager
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 ## constructor
 
@@ -17,23 +12,25 @@ Defines the window callback.
 (data: T): V
 ```
 
-Defines the callback info.
+定义回调函数的信息。
 
-**起始版本：** 15
+**起始版本：** 12
 
-**元服务API：** 从API版本15开始，该接口支持在元服务API中使用。
+**模型约束：** 此接口仅可在Stage模型下使用。
 
-**系统能力：** SystemCapability.Window.SessionManager
+**元服务API：** 从API版本12开始，该接口支持在元服务API中使用。
+
+**系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
 **参数：**
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| data | T | 是 | the data will be used in the callback. |
+| data | T | 是 | 将会在回调函数中被使用的数据 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| V | - Returns result of the callback. |
+| V | - 返回回调函数的结果。 |
 

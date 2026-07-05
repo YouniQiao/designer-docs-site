@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.customization.customConfig
 
 This module provides APIs for applications to obtain custom configurations, such as channel IDs.

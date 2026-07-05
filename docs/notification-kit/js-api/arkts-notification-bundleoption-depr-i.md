@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # BundleOption
 
 > **NOTE** > This API is supported since API version 7 and deprecated since API version 9. You are advised to use [notificationManager.BundleOption](arkts-notification-bundleoption-i.md#bundleoption) instead.

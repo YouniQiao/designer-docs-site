@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ShowMode
 
 表示[EmbeddableUIAbility](arkts-ability-embeddableuiability-c.md#embeddableuiability)被拉起时的显示模式。

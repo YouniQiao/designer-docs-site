@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TapRecognizer
 
 点击手势识别器对象，继承自[GestureRecognizer](arkts-arkui-gesturerecognizer-c.md#gesturerecognizer)。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DrawableDescriptorLoadedResult
 
 传入的图片资源或地址的加载结果。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AVTranscoder
 
 视频转码管理类，用于视频转码。在调用AVTranscoder的方法前，需要先通过 [createAVTranscoder()](arkts-media-createavtranscoder-f.md#createavtranscoder-1)构建一个AVTranscoder实例。 视频转码demo可参考：[视频转码开发指导](../../../../media/media/using-avtranscoder-for-transcodering.md) > **说明：** > > - 本Interface首批接口从API version 12开始支持。

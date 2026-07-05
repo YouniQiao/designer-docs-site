@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Transform
 
 一种特殊的双工流，支持数据转换和结果输出。**Transform**类继承自[Duplex](arkts-arkts-duplex-c.md#duplex)，支持**Duplex**中的所有API。

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # OnLoadInterceptEvent
 
 定义截获资源加载时触发的回调。

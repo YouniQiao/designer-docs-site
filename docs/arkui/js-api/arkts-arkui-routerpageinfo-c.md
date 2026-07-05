@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # RouterPageInfo
 
 Provides the information contained in **RouterPageInfo**, returned by the system to developers.

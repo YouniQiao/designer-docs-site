@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FocusMovement
 
 设置对应的按键对应的走焦目的组件，缺省则遵循默认走焦规则。 > **说明：** > > 直接使用focusControl可能导致[UI上下文不明确](../../../../ui/arkts-global-interface.md#ui上下文不明确)的问题，建议使用getUIContext()获取 > [UIContext](../arkts-apis/arkts-arkui-uicontext-c.md#uicontext)实例，并使用 > [getFocusController](../arkts-apis/arkts-arkui-uicontext-c.md#getfocuscontroller-1)获取绑定实例的focusControl。

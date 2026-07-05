@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ThemeControl
 
 Class ThemeControl provides the Theme management for whole Ability and pages.

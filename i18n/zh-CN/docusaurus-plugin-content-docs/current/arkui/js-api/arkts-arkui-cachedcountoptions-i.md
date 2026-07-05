@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CachedCountOptions
 
 预加载子组件的配置选项。

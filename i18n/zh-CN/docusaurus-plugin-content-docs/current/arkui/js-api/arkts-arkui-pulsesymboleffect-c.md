@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # PulseSymbolEffect
 
 定义PulseSymbolEffect类，继承自父类SymbolEffect，脉冲动效。

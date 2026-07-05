@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.multimedia.audio
 
 The module provides basic audio control capabilities, including volume adjustment, device management, data capture, and rendering. This module provides the following common audio-related functions: - [AudioManager](arkts-multimedia-audio.md#audio): audio manager. - [AudioRenderer](arkts-multimedia-audio.md#audio): audio renderer, used to play Pulse Code Modulation (PCM) audio data. - [AudioCapturer](arkts-multimedia-audio.md#audio): audio capturer, used to record PCM audio data.

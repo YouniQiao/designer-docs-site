@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # NotifyType（系统接口）
 
 枚举，通知类型。

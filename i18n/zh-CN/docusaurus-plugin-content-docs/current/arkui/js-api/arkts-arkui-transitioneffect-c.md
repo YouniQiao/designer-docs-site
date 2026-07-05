@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # TransitionEffect
 
 定义TransitionEffect类指定转场效果。

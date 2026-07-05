@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ScreenSourceMode (System API)
 
 Enumerates the sources of the content displayed on the screen.

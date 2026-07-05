@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # EnabledPriorityNotificationByBundleCallbackData (System API)
 
 Describes the switch state to Restrict notification capability.

@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # @ohos.app.ability.appRecovery
 
 The appRecovery module provides APIs for recovering faulty applications.

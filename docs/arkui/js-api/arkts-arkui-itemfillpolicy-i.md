@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ItemFillPolicy
 
 Define a responsive item layout suitable for WaterFlow, Grid, List,and Swiper components.

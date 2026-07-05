@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Random
 
 Provides APIs for random number operations. Before using any API of the **Random** class, you must create a **Random** instance by using [createRandom](arkts-cryptoarchitecture-createrandom-f.md#createrandom-1).

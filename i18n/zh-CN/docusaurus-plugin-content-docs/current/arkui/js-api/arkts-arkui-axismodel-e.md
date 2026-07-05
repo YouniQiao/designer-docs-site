@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # AxisModel
 
 定义焦点轴事件的轴类型。

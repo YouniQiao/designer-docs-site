@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CapsuleSegmentButtonOptions
 
 Provides configuration options for capsule-style segmented buttons. Inherits from [CapsuleSegmentButtonConstructionOptions](arkts-arkui-capsulesegmentbuttonconstructionoptions-i.md#capsulesegmentbuttonconstructionoptions).

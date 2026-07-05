@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FirstScreenPaint
 
 检测到首屏渲染时的事件信息。

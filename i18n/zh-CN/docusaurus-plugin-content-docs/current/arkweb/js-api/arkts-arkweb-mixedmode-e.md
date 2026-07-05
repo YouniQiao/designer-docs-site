@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # MixedMode
 
 混合内容模式。默认设置为 MixedMode.None。

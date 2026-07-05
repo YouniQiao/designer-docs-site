@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FontHinting
 
 字型轮廓效果类型枚举。

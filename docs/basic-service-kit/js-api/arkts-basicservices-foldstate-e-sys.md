@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FoldState (System API)
 
 Define the folding state of wallpaper

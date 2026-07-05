@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # ControlDeviceActionParams (System API)
 
 Describes information about controlling the Bluetooth peripheral.

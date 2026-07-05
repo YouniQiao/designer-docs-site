@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Parameter (System API)
 
 Sets the parameter for a specific operation when the accessibility node element executes this operation. For details, see [AccessibilityAction](arkts-accessibility-accessibilityaction-e-sys.md#accessibilityaction) (executable actions for accessibility node elements).

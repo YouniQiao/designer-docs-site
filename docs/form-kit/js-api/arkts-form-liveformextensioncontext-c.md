@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # LiveFormExtensionContext
 
 **LiveFormExtensionContext**, inherited from [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md#extensioncontext), is the context of [LiveFormExtensionAbility](arkts-app-form-liveformextensionability.md).

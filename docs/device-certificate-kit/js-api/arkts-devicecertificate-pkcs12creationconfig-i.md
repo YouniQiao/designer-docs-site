@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # Pkcs12CreationConfig
 
 Represents the configuration for creating .p12 files.

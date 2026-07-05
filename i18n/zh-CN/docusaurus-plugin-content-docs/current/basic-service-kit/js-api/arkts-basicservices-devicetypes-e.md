@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DeviceTypes
 
 设备类型枚举值，可用于校验deviceType的返回值。

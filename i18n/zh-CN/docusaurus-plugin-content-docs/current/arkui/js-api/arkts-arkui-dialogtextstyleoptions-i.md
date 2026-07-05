@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DialogTextStyleOptions
 
 在Dialog定义文本样式属性。

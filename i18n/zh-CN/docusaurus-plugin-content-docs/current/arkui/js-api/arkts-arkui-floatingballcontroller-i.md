@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # FloatingBallController
 
 闪控球控制器实例，用于启动、更新、停止闪控球以及注册回调等操作。 下列API示例中都需先使用[floatingBall.create()](arkts-arkui-create-f.md#create-1)方法获取到闪控球控制器实例（即floatingBallController），再通过此实例调用对应方法。

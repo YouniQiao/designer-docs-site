@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # CacheOptions
 
 Web组件预编译JavaScript生成字节码缓存的配置对象，用于控制字节码缓存更新。

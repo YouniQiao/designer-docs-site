@@ -1,8 +1,3 @@
----
-last_update:
-  date: 2026-07-04
----
-
 # DataProxyConfig
 
 Defines a struct for the data proxy configuration.
