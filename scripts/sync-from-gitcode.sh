@@ -16,7 +16,7 @@ git clone --depth=1 --branch master \
 echo ""
 echo "🔄 Syncing docs..."
 cd "$PROJECT_DIR"
-python3 scripts/sync-docs.py "$SOURCE_DIR" "$PROJECT_DIR" --date "$(date +%Y-%m-%d)"
+python3 scripts/sync-docs.py "$SOURCE_DIR" "$PROJECT_DIR" --date "$(date +%Y-%m-%d)" || true
 
 echo ""
 echo "🧹 Cleaning up..."
