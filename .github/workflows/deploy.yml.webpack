@@ -45,9 +45,8 @@ jobs:
           sudo swapon /swapfile
 
       - name: Build
-        run: npx docusaurus build --no-minify
+        run: node --max-old-space-size=16384 --optimize-for-size --max-semi-space-size=128 ./node_modules/.bin/docusaurus build --no-minify
         env:
-          NODE_OPTIONS: '--max-old-space-size=16384'
           DOCUSAURUS_SSG_CONCURRENCY: '16'
 
       - name: Deploy to Netlify

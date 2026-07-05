@@ -17,6 +17,12 @@ const config: Config = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
+  future: {
+    faster: {
+      rspackBundler: true,
+    },
+  },
+
   onBrokenLinks: 'warn',
   onBrokenAnchors: 'warn',
 
