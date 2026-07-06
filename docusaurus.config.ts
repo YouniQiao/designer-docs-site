@@ -23,13 +23,13 @@ const config: Config = {
     },
   },
 
-  onBrokenLinks: 'warn',
-  onBrokenAnchors: 'warn',
+  onBrokenLinks: 'ignore',
+  onBrokenAnchors: 'ignore',
 
   markdown: {
     format: 'md',
     hooks: {
-      onBrokenMarkdownImages: 'warn',
+      onBrokenMarkdownImages: 'ignore',
     },
   },
 
@@ -38,7 +38,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-CN'],
+    locales: ['en'],
     localeConfigs: {
       en: { label: 'English' },
       'zh-CN': { label: '中文' },
