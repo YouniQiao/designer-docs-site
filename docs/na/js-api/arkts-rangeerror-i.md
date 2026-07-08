@@ -1,4 +1,0 @@
-# RangeError
-
-**Inheritance:** RangeErrorextends: Error.
-

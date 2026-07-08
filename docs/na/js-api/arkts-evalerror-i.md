@@ -1,4 +1,0 @@
-# EvalError
-
-**Inheritance:** EvalErrorextends: Error.
-

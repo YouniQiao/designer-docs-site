@@ -1,2 +1,0 @@
-# onP2pDeviceChange
-

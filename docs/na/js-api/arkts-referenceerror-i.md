@@ -1,4 +1,0 @@
-# ReferenceError
-
-**Inheritance:** ReferenceErrorextends: Error.
-
